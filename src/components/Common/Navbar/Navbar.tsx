@@ -28,7 +28,7 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: any; sidebar: any }) {
       <section className={`bg-white relative transition-all duration-500 ease-in-out ${isScrolled ? "lg:-translate-y-12" : "translate-y-0"}`}>
         <nav className="  py-0 max-w-[90%] mx-auto">
           {/* For large and Medium-sized Screen */}
-          <div className="flex items-center justify-between relative h-20 container-padding">
+          <div className="flex items-center justify-between relative py-4 container-padding">
             <div className="flex flex-row items-center w-36 md:w-40 2xl:w-60 h-10 relative">
               <Link href={"/"}>
                 <Image

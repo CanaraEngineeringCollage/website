@@ -6,19 +6,32 @@ import { IoIosArrowDown } from "react-icons/io";
 import { useRouter } from "next/navigation";
 import {
   academics,
+  accreditations,
   activities,
   administration,
-  basicScience,
+  learningHub,
   disclosure,
   examination,
   explore,
-  institution,
+  campusLegacy,
   newsAndEvents,
   other,
   research,
   studentSupport,
-  ugProgram,
+  curriculum,
+  departments,
+
 } from "@/utils/pagesData/navigation";
+import {
+  College,
+  Employees,
+  Certicficate,
+  HandShake,
+  Book,
+  Examination,
+  Learning,
+  Notpad,
+} from "../../../components/Icons/Icons";
 
 export default function Sidebar({ sidebar, openSidebar }: any) {
   const [open, setOpen] = useState({
@@ -38,11 +51,11 @@ export default function Sidebar({ sidebar, openSidebar }: any) {
           {
             {
               "main-menu": <MainMenu open={open} setOpen={setOpen} setVisible={setVisible} sidebar={sidebar} openSidebar={openSidebar} />,
-              ugProgram: (
+              curriculum: (
                 <SubMenu
                   data={{
-                    title: "U G Program",
-                    links: ugProgram,
+                    title: "Curriculum & Programs",
+                    links: curriculum,
                   }}
                   setVisible={setVisible}
                   openSidebar={openSidebar}
@@ -119,6 +132,16 @@ export default function Sidebar({ sidebar, openSidebar }: any) {
                   openSidebar={openSidebar}
                 />
               ),
+              departments: (
+                <SubMenu
+                  data={{
+                    title: "Departments",
+                    links: departments,
+                  }}
+                  setVisible={setVisible}
+                  openSidebar={openSidebar}
+                />
+              ),
               academics: (
                 <SubMenu
                   data={{
@@ -132,18 +155,18 @@ export default function Sidebar({ sidebar, openSidebar }: any) {
               examination: (
                 <SubMenu
                   data={{
-                    title: "Examination",
+                    title: "Examination & Records",
                     links: examination,
                   }}
                   setVisible={setVisible}
                   openSidebar={openSidebar}
                 />
               ),
-              institution: (
+              campusLegacy: (
                 <SubMenu
                   data={{
-                    title: "Institution",
-                    links: institution,
+                    title: "Campus Legacy",
+                    links: campusLegacy,
                   }}
                   setVisible={setVisible}
                   openSidebar={openSidebar}
@@ -159,11 +182,32 @@ export default function Sidebar({ sidebar, openSidebar }: any) {
                   openSidebar={openSidebar}
                 />
               ),
-              basicScience: (
+              accreditations: (
                 <SubMenu
                   data={{
-                    title: "Basic Science",
-                    links: basicScience,
+                    title: "Accreditations & Compliance",
+                    links: accreditations,
+                  }}
+                  setVisible={setVisible}
+                  openSidebar={openSidebar}
+                />
+              ),
+              studentSupport: (
+                <SubMenu
+                  data={{
+                    title: "Student Support & Welfare",
+                    links: studentSupport,
+                  }}
+                  setVisible={setVisible}
+                  openSidebar={openSidebar}
+                />
+              ),
+              
+              learningHub: (
+                <SubMenu
+                  data={{
+                    title: "Learning Hub",
+                    links: learningHub,
                   }}
                   setVisible={setVisible}
                   openSidebar={openSidebar}
@@ -202,7 +246,7 @@ function SubMenu({
         className="flex gap-2 items-center"
       >
         <IoIosArrowDown className={`w-4 h-4 text-webBlue rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
-        <Typography className="font-medium text-webBlue text-xl">{data.title}</Typography>
+        <Typography className="font-medium text-webBlue text-lg">{data.title}</Typography>
       </div>
       <div className={`space-y-2 transition-all ease-in-out duration-300 mt-2`}>
         {data.links.map((link, index) => (
@@ -250,7 +294,7 @@ function MainMenu({
           }}
           className="flex gap-4 text-xl "
         >
-          <Typography className="font-semibold text-webBlue  text">About</Typography>
+          <Typography className="font-semibold text-webBlue">About</Typography>
           <IoIosArrowDown className={`w-6 h-6 text-webBlue transition-all ease-in-out duration-300 lg:hidden ${open.ourCollege && "rotate-180"}`} />
         </div>
         <div className={`space-y-2 transition-all ease-in-out duration-300 ${open.ourCollege ? "h-full opacity-100 mt-2" : "h-0 opacity-0"}`}>
@@ -258,12 +302,15 @@ function MainMenu({
             <>
               <div
                 onClick={() => {
-                  setVisible("institution");
+                  setVisible("campusLegacy");
                 }}
                 className="flex gap-2 items-center"
               >
-                <Typography className=" text-webBlue ">Institution</Typography>
-                <IoIosArrowDown className={`w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
+                <div className="flex items-center gap-2">
+                  <College />
+                  <Typography className="text-sm">Campus Legacy</Typography>
+                  <IoIosArrowDown className="w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                </div>
               </div>
               <div
                 onClick={() => {
@@ -271,19 +318,36 @@ function MainMenu({
                 }}
                 className="flex gap-2 items-center"
               >
-                <Typography className=" text-webBlue ">Administration</Typography>
-                <IoIosArrowDown className={`w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
-              </div>
-              <div
+               <div className="flex items-center gap-2">
+                  <Employees />
+                  <Typography className="text-sm">Leadership & Administration</Typography>
+                  <IoIosArrowDown className="w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                </div>
+                </div>
+                <div
                 onClick={() => {
-                  openSidebar(false);
-                  router.push("/contact");
+                  setVisible("accreditations");
                 }}
                 className="flex gap-2 items-center"
               >
-                <Typography className=" text-webBlue ">Contact Us</Typography>
-                <IoIosArrowDown className={`w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
-              </div>
+               <div className="flex items-center gap-2">
+                  <Certicficate />
+                  <Typography className="text-sm">Accreditations & Compliance</Typography>
+                  <IoIosArrowDown className="w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                </div>
+                </div>
+                <div
+                onClick={() => {
+                  setVisible("studentSupport");
+                }}
+                className="flex gap-2 items-center"
+              >
+               <div className="flex items-center gap-2">
+                  <HandShake />
+                  <Typography className="text-sm">Student Support & Welfare</Typography>
+                  <IoIosArrowDown className="w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                </div>
+                </div>
             </>
           )}
         </div>
@@ -307,13 +371,15 @@ function MainMenu({
             <>
               <div
                 onClick={() => {
-                  setVisible("ugProgram");
+                  setVisible("curriculum");
                 }}
                 className="flex gap-2 items-center"
               >
-                <Typography className=" text-webBlue ">Under Graduate Program</Typography>
-                <IoIosArrowDown className={`w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
-              </div>
+             <div className="flex items-center gap-2">
+                  <Notpad />
+                  <Typography className="text-sm">Curriculum & Programs</Typography>
+                  <IoIosArrowDown className="w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                </div></div>
               {/* <div
                 onClick={() => {
                   setVisible("other");
@@ -327,61 +393,38 @@ function MainMenu({
               </div> */}
               <div
                 onClick={() => {
-                  openSidebar(false);
-                  router.push("/departments");
+                  setVisible("departments");
                 }}
                 className="flex gap-2 items-center"
               >
-                <Typography className=" text-webBlue ">Departments</Typography>
-                <IoIosArrowDown className={`w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
-              </div>
-              <div
-                onClick={() => {
-                  openSidebar(false);
-                  router.push("/research-programs");
-                }}
-                className="flex gap-2 items-center"
-              >
-                <Typography className=" text-webBlue ">Research Programs</Typography>
-                <IoIosArrowDown className={`w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
-              </div>
-              <div
-                onClick={() => {
-                  setVisible("basicScience");
-                }}
-                className="flex gap-2 items-center"
-              >
-                <Typography className=" text-webBlue ">Basic Science</Typography>
-                <IoIosArrowDown className={`w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
-              </div>
-              <div
-                onClick={() => {
-                  setVisible("academics");
-                }}
-                className="flex gap-2 items-center"
-              >
-                <Typography className=" text-webBlue ">Others</Typography>
-                <IoIosArrowDown className={`w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
-              </div>
+             <div className="flex items-center gap-2">
+                  <Book />
+                  <Typography className="text-sm">Departments</Typography>
+                  <IoIosArrowDown className="w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                </div> </div>
               <div
                 onClick={() => {
                   setVisible("examination");
                 }}
                 className="flex gap-2 items-center"
               >
-                <Typography className=" text-webBlue ">Examination</Typography>
-                <IoIosArrowDown className={`w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
-              </div>
+              <div className="flex items-center gap-2">
+                  <Examination />
+                  <Typography className="text-sm">Examinations & Records</Typography>
+                  <IoIosArrowDown className="w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                </div></div>
               <div
                 onClick={() => {
-                  openSidebar(false);
-                  router.push("/research");
+                  setVisible("learningHub");
                 }}
                 className="flex gap-2 items-center"
               >
-                <Typography className=" text-webBlue ">Research & Development</Typography>
-                <IoIosArrowDown className={`w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
-              </div>
+              <div className="flex items-center gap-2">
+                  <Learning />
+                  <Typography className="text-sm">Learning Hub</Typography>
+                  <IoIosArrowDown className="w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                </div></div>
+              
             </>
           )}
         </div>
@@ -409,7 +452,7 @@ function MainMenu({
           }}
           className="flex gap-4 "
         >
-          <Typography className="font-semibold text-webBlue ">Life At Sahyadri</Typography>
+          <Typography className="font-semibold text-webBlue ">Life At Canara</Typography>
           <IoIosArrowDown
             className={`w-6 h-6 text-webBlue transition-all ease-in-out duration-300 lg:hidden ${open.lifeAtSahyadri && "rotate-180"}`}
           />
