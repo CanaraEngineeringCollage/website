@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import Sidebar from "../SIdeBar/SIdeBar";
+import Footer from "../Footer/Footer";
 function Layout({ children }: any) {
   const [sidebar, openSidebar] = useState(false);
   return (
@@ -24,9 +25,7 @@ function Layout({ children }: any) {
             {children}
           </div>
         </main>
-        {/* <footer className="shadow-inner">
-          <Footer />
-        </footer> */}
+        <Footer/>
       </div>
     </>
   );

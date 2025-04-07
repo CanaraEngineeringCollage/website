@@ -25,14 +25,13 @@ const administration = [
   {
     title: "Educators & Administrators",
     link: "/administration",
-  }
+  },
 ];
 const accreditations = [
   {
     title: "Mandatory Disclosure",
     link: "/key-functionaries",
   },
-  
 ];
 const studentSupport = [
   {
@@ -43,16 +42,7 @@ const studentSupport = [
     title: "SWO Department",
     link: "/student-grievance-cell",
   },
-  
 ];
-
-
-
-
-
-
-
-
 
 const departments = [
   {
@@ -82,12 +72,8 @@ const departments = [
   {
     title: "Science & Humanities",
     link: "/administration",
-  }
+  },
 ];
-
-
-
-
 
 const curriculum = [
   {
@@ -98,265 +84,62 @@ const curriculum = [
     title: "Programs",
     link: "/student-grievance-cell",
   },
-  
 ];
 
-const studentSupport11 = [
+const campusBeats = [
   {
-    title: "Grievance Redressal Cell",
+    title: "Calendar of Events",
     link: "/anti-sexual-harassment",
   },
   {
-    title: "SWO Department",
+    title: "Alumni",
     link: "/student-grievance-cell",
   },
-  
 ];
-const studentSupport1111 = [
-  {
-    title: "Grievance Redressal Cell",
-    link: "/anti-sexual-harassment",
-  },
-  {
-    title: "SWO Department",
-    link: "/student-grievance-cell",
-  },
-  
-];
-
-
-
 
 const learningHub = [
   {
     title: "Resources",
     link: "/departments/details/chemistry",
   },
-  
 ];
 
-const explore = [
+const campusFacilities = [
   {
-    title: "Library",
-    link: "/library",
+    title: "Infrastructure",
+    link: "/Infrastructure",
   },
   {
-    title: "Hostel",
-    link: "/hostel",
-  },
-  {
-    title: "Core Facilities",
-    link: "/core-facilities",
-  },
-  {
-    title: "Transportation",
-    link: "/transportation",
-  },
-  {
-    title: "Campus",
-    link: "/campus",
+    title: "Hostel Life",
+    link: "/HostelLife",
   },
 ];
 
-
-
-const activities = [
+const studentLife = [
   {
-    title: "Journals",
-    link: "/journals",
+    title: "Cultural Activities",
+    link: "/culturalActivities",
   },
   {
-    title: "Conclave Updates",
-    link: "/conclave",
-  },
-  // {
-  //   title: "Industrial Visits",
-  //   link: "/industrial-visit",
-  // },
-  {
-    title: "Corporate Social Responsibility",
-    link: "/corporate-social-responsibility",
+    title: "Technical Activities",
+    link: "/HostelLife",
   },
   {
-    title: "Sahyadri Initiatives",
-    link: "/initiatives",
-  },
-  {
-    title: "Innovation And Entrpreneurship",
-    link: "/innovation-entrepreneurship",
-  },
-  {
-    title: "SSTH",
-    link: "/ssth",
-  },
-  {
-    title: "National & International Events",
-    link: "/nat-int-event",
-  },
-  {
-    title: "National Service Scheme Unit",
-    link: "/nss",
-  },
-  {
-    title: "Downloads",
-    link: "/downloads",
-  },
-  {
-    title: "Major Activities Flowchart ",
-    link: "/major-activities-flowchart",
+    title: "NSS",
+    link: "/HostelLife",
   },
 ];
 
-const research = [
+const innovation = [
   {
-    title: "Research And Development",
-    link: "/research",
-  },
-];
-
-const achievements = [
-  {
-    title: "Student Achievements",
-    link: "/student-achievements",
-  },
-  {
-    title: "Academic Excellence",
-    link: "/academic-excellence",
-  },
-  {
-    title: "Entrepreneurship Development Cell",
-    link: "/ecell",
-  },
-  {
-    title: "Shine Foundation",
-    link: "/corporate-recruitement",
-  },
-  {
-    title: "Spss",
-    link: "/spss",
-  },
-];
-
-const newsAndEvents = [
-  {
-    title: "Planned Events",
-    link: "/plannedevents",
-  },
-  {
-    title: "Dignitary Visits",
-    link: "/dignitaries-visit",
-  },
-  {
-    title: "Funded Projects",
-    link: "/funded-projects",
-  },
-  {
-    title: "Student Accomplishments",
-    link: "/student-accomplishment",
-  },
-];
-
-const disclosure = [
-  {
-    title: "Audited Financial Reports",
-    link: "/audited-finance-report",
-  },
-];
-
-const ugProgram = [
-  {
-    title: "Computer Science & Engineering",
-    link: "/departments/computer-science",
-  },
-  {
-    title: "AIML",
-    link: "/departments/ai-ml",
-  },
-  {
-    title: "Information Science",
-    link: "/departments/information-science",
-  },
-  {
-    title: "Electronics & Communication",
-    link: "/departments/electronics-communication",
-  },
-  {
-    title: "Mechanical Eng",
-    link: "/departments/mechanical-robotics-engineering",
-  },
-  {
-    title: "Robotics & Automation",
-    link: "/departments/mechanical-robotics-engineering",
-  },
-];
-const other = [
-  {
-    title: "Basic Science",
-    link: "/departments/basic-science",
-  },
-  {
-    title: "Art & Culture",
-    link: "/departments/art-culture",
+    title: "Entrepreneurship Cell",
+    link: "/culturalActivities",
   },
   {
     title: "Physical Education",
-    link: "/departments/physical-education",
+    link: "/HostelLife",
   },
 ];
-const academics = [
-  // {
-  //   title: "Academics",
-  //   link: "/academics",
-  // },
-  {
-    title: "Courses Offered",
-    link: "/courses-offered",
-  },
-  {
-    title: "Teaching Faculty",
-    link: "/teaching-faculty",
-  },
-  // {
-  //   title: "Non Teaching Faculty",
-  //   link: "/non-teaching-faculty",
-  // },
-  {
-    title: "Calendar of Events",
-    link: "/academics#calendar",
-  },
-  {
-    title: "Value Added Courses",
-    link: "/academics#value-added-courses",
-  },
-  // {
-  //   title: "Research Centre",
-  //   link: "/research",
-  // },
-  {
-    title: "Code of Conduct",
-    link: "/academics",
-  },
-  {
-    title: "Syllabus",
-    link: "/academics#syllabus",
-  },
-  {
-    title: "Useful Links",
-    link: "/useful-links",
-  },
-  {
-    title: "Results",
-    link: "/results",
-  },
-  {
-    title: "Announcements",
-    link: "/announcements",
-  },
-];
-
-
-
-
 
 const examination = [
   {
@@ -373,21 +156,16 @@ const examination = [
   },
 ];
 export {
-  ugProgram,
-  other,
-  academics,
-  disclosure,
-  achievements,
-  explore,
-  activities,
-  newsAndEvents,
-  research,
-  studentSupport,
-  examination,
-  campusLegacy,
-  administration,
-  learningHub,
-  accreditations,
-  curriculum,
-  departments,
+  campusFacilities, //
+  studentSupport, //
+  examination, //
+  campusLegacy, //
+  administration, //
+  learningHub, //
+  accreditations, //
+  curriculum, //
+  departments, //
+  studentLife, //
+  innovation, //
+  campusBeats, //
 };

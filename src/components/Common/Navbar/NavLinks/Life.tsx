@@ -1,21 +1,9 @@
 "use client";
-import {
-  Button,
-  ListItem,
-  Menu,
-  MenuHandler,
-  MenuList,
-  Typography,
-} from "@material-tailwind/react";
+import { Button, ListItem, Menu, MenuHandler, MenuList, Typography } from "@material-tailwind/react";
 import { useState } from "react";
 import { FaChevronUp } from "react-icons/fa6";
 import { useRouter } from "next/navigation";
-import {
-  Campus,
-  College,
-  StudentsLife,
-  Innovation,
-} from "@/components/Icons/Icons";
+import { Campus, College, StudentsLife, Innovation } from "@/components/Icons/Icons";
 
 export default function Life() {
   const router = useRouter();
@@ -23,20 +11,9 @@ export default function Life() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <Menu
-      open={isMenuOpen}
-      handler={setIsMenuOpen}
-      offset={{ mainAxis: 20 }}
-      placement="bottom"
-      allowHover={true}
-    >
+    <Menu open={isMenuOpen} handler={setIsMenuOpen} offset={{ mainAxis: 20 }} placement="bottom" allowHover={true}>
       <MenuHandler>
-        <Typography
-          color="inherit"
-          as="div"
-          variant="small"
-          className="text-sm xl:text-base"
-        >
+        <Typography color="inherit" as="div" variant="small" className="text-sm xl:text-base">
           <ListItem
             className={`flex items-center gap-2 py-2 pr-4 ${
               isMenuOpen ? "opacity-100" : "opacity-80"
@@ -46,12 +23,7 @@ export default function Life() {
             onClick={() => setIsMobileMenuOpen((cur) => !cur)}
           >
             Life At Canara
-            <FaChevronUp
-              strokeWidth={2.5}
-              className={`hidden h-3 w-3 transition-transform lg:block ${
-                isMenuOpen ? "" : "rotate-180"
-              }`}
-            />
+            <FaChevronUp strokeWidth={2.5} className={`hidden h-3 w-3 transition-transform lg:block ${isMenuOpen ? "" : "rotate-180"}`} />
           </ListItem>
         </Typography>
       </MenuHandler>
@@ -82,9 +54,7 @@ export default function Life() {
                 <StudentsLife />
               </div>
               <div className="flex flex-col gap-2">
-                <span className="font-bold text-lg">
-                  Student Life & Engagement
-                </span>
+                <span className="font-bold text-lg">Student Life & Engagement</span>
                 <ul className="list-none text-gray-500 leading-10">
                   <li>Cultural Activities</li>
                   <li>Technical Activities</li>
