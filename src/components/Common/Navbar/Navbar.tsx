@@ -2,33 +2,32 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
 import DropDown from "./DropDown/DropDown";
 import NavbarItems from "./NavbarItems/NavbarItems";
-function Navbar({ openSidebar, sidebar }: { openSidebar: any; sidebar: any }) {
+function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: boolean }) {
   const router = useRouter();
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
 
-  function handleScroll() {
-    if (window.scrollY > 100) {
-      setIsScrolled(true);
-    } else {
-      setIsScrolled(false);
-    }
-  }
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  // function handleScroll() {
+  //   if (window.scrollY > 100) {
+  //     setIsScrolled(true);
+  //   } else {
+  //     setIsScrolled(false);
+  //   }
+  // }
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
   return (
     <>
       {/* First Header */}
-      <section className={`bg-white relative transition-all duration-500 ease-in-out ${isScrolled ? "lg:-translate-y-12" : "translate-y-0"}`}>
+      <section className={`bg-white relative transition-all duration-500 ease-in-out `}>
         <nav className="  py-0 max-w-[90%] mx-auto">
           {/* For large and Medium-sized Screen */}
-          <div className="flex items-center justify-between relative h-20 container-padding">
+          <div className="flex items-center justify-between relative py-4 container-padding">
             <div className="flex flex-row items-center w-36 md:w-40 2xl:w-60 h-10 relative">
               <Link href={"/"}>
                 <Image
