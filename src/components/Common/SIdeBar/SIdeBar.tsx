@@ -32,7 +32,7 @@ import {
   Innovation,
 } from "../../../components/Icons/Icons";
 
-export default function Sidebar({ sidebar, openSidebar }: any) {
+export default function Sidebar({ sidebar, openSidebar }: { sidebar: boolean; openSidebar: ()=>void }) {
   const [open, setOpen] = useState({
     ourCollege: false,
     program: false,
@@ -196,9 +196,8 @@ export default function Sidebar({ sidebar, openSidebar }: any) {
 function SubMenu({
   setVisible,
   data,
-  openSidebar,
 }: {
-  setVisible: any;
+  setVisible: (visible: string) => void;
   data: {
     title: string;
     links: Array<{
@@ -206,7 +205,7 @@ function SubMenu({
       link: string;
     }>;
   };
-  openSidebar: any;
+  openSidebar: () => void;
 }) {
   const router = useRouter();
   return (
@@ -223,9 +222,9 @@ function SubMenu({
       <div className={`space-y-2 transition-all ease-in-out duration-300 mt-2`}>
         {data.links.map((link, index) => (
           <div
+            key={index}
             onClick={() => {
               router.push(link.link);
-              openSidebar(false);
               setVisible("main-menu");
             }}
             className="flex gap-2 items-center"
@@ -240,17 +239,15 @@ function SubMenu({
 }
 
 function MainMenu({
-  sidebar,
   setVisible,
   open,
   setOpen,
-  openSidebar,
 }: {
   sidebar: boolean;
-  setVisible: any;
-  open: any;
-  setOpen: any;
-  openSidebar: any;
+  setVisible: (visible: string) => void;
+  open: { ourCollege: boolean; program: boolean; lifeAtSahyadri: boolean };
+  setOpen: React.Dispatch<React.SetStateAction<{ ourCollege: boolean; program: boolean; lifeAtSahyadri: boolean }>>;
+  openSidebar: () => void;
 }) {
   const router = useRouter();
   return (
@@ -398,7 +395,6 @@ function MainMenu({
         <div
           onClick={() => {
             router.push("/admission");
-            openSidebar(false);
           }}
           className="flex gap-4 "
         >
@@ -481,7 +477,6 @@ function MainMenu({
         <div
           onClick={() => {
             router.push("/placements");
-            openSidebar(false);
           }}
           className="flex gap-4 "
         >

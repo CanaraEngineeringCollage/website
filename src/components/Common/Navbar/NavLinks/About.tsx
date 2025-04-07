@@ -1,6 +1,6 @@
 "use client";
 import {
-  Button,
+  
   ListItem,
   Menu,
   MenuHandler,
@@ -9,7 +9,6 @@ import {
 } from "@material-tailwind/react";
 import { useState } from "react";
 import { FaChevronUp } from "react-icons/fa6";
-import { useRouter } from "next/navigation";
 import {
   College,
   Employees,
@@ -18,7 +17,7 @@ import {
 } from "../../../../components/Icons/Icons";
 
 export default function About() {
-  const router = useRouter();
+  
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 

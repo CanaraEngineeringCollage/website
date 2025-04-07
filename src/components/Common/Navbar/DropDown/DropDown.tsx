@@ -1,10 +1,10 @@
 import React from "react";
 
-function DropDown({ openSidebar, sidebar }: any) {
+function DropDown({ openSidebar, sidebar }: { openSidebar: (callback: (prev: boolean) => boolean) => void; sidebar: boolean }) {
   return (
     <div className="dropdown ">
       <div
-        onClick={() => openSidebar((prev: any) => !prev)}
+        onClick={() => openSidebar((prev: boolean) => !prev)}
         tabIndex={0}
         className="  text-[#213557] hover:text-yellow-400   cursor-pointer"
       >

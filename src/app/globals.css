@@ -43,3 +43,27 @@ body {
 
 }
 
+
+.swiper-pagination-bullets {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  margin-top: 16px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 30px !important;
+  height: 4px !important;
+  border-radius: 9999px !important;
+  background-color: #d1d5db !important; /* gray-300 */
+  transition: all 0.3s ease !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #192F59 !important; /* blue-600 */
+  width: 36px !important;
+}
+
+
+

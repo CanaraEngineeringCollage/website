@@ -1,12 +1,10 @@
 "use client";
-import { Button, ListItem, Menu, MenuHandler, MenuList, Typography } from "@material-tailwind/react";
+import {  ListItem, Menu, MenuHandler, MenuList, Typography } from "@material-tailwind/react";
 import { useState } from "react";
 import { FaChevronUp } from "react-icons/fa6";
-import { useRouter } from "next/navigation";
 import { Campus, College, StudentsLife, Innovation } from "@/components/Icons/Icons";
 
 export default function Life() {
-  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 

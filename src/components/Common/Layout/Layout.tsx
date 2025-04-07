@@ -4,17 +4,17 @@ import { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import Sidebar from "../SIdeBar/SIdeBar";
 import Footer from "../Footer/Footer";
-function Layout({ children }: any) {
-  const [sidebar, openSidebar] = useState(false);
+function Layout({ children }: { children: React.ReactNode }) {
+  const [sidebar, openSidebar] = useState<boolean>(false);
   return (
     <>
       <div className="min-h-screen ">
         {/* overflow-x-hidden */}
         <header className="fixed top-0 left-0 right-0 z-[1111] ">
-          <Navbar openSidebar={openSidebar} sidebar={sidebar} />
+          <Navbar openSidebar={() => openSidebar((prev) => !prev)} sidebar={sidebar} />
         </header>
         <main className="mt-16 font-poppins">
-          <Sidebar openSidebar={openSidebar} sidebar={sidebar} />
+          <Sidebar openSidebar={() => openSidebar((prev) => !prev)} sidebar={sidebar} />
           <div
             onClick={() => {
               if (sidebar) {
