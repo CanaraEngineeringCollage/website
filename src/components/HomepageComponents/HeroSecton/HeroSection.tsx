@@ -18,7 +18,7 @@ import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
-import FutureCampusText from '../FutureCampusText/FutureCampusText';
+
 
 const HeroSection = () => {
   const logos = [
@@ -32,10 +32,10 @@ const HeroSection = () => {
     { label: 'NBA Accredited', src: nba },
   ];
 
-  const backgroundImages = [bg1, bg2, bg1];
+  const backgroundImages = [bg1, bg1, bg1];
 
   return (
-    <section className="relative w-full h-[90vh] md:h-[140vh]  flex flex-col justify-center items-center text-center px-4 overflow-hidden">
+    <section className="relative w-full h-[90vh] md:h-[120vh]  flex flex-col justify-center items-center text-center px-4 overflow-hidden">
       
       {/* Background Swiper with Overlay */}
       <div className="absolute inset-0 z-0">
@@ -54,10 +54,13 @@ const HeroSection = () => {
               <Image
                 src={img}
                 alt={`Background ${index + 1}`}
-                layout="fill"
-                objectFit="cover"
+               
+                className='object-cover w-full h-full'
                 priority
               />
+               <div className="absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-black/60 to-transparent z-10" />
+               <div className="absolute bottom-0 left-0 right-0 h-[200px] md:h-[1000px] bg-gradient-to-t from-white via-white/85 via-50% to-transparent z-[10] md:hidden" />
+               <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[1000px] bg-gradient-to-t from-white via-transparent to-transparent z-[10] hidden md:block" />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -67,16 +70,16 @@ const HeroSection = () => {
 
       {/* Main Content */}
       <div className="absolute top-10 md:top-20 max-w-4xl mx-auto text-white px-4 z-10">
-        <h2 className="text-lg md:text-2xl font-light text-[#F5F5F7]">
+        <h2 className="text-xl md:text-[32px] font-light text-[#F5F5F7]">
           Canara Engineering College
         </h2>
-        <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold mt-2">
+        <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold mt-2 !font-stretch-semi-condensed">
           Pioneering Innovation in <br /> Tech Learning
         </h1>
       </div>
 
       {/* Logos Carousel */}
-      <div className="absolute bottom-4 md:bottom-0 bg-[#f5f5f7] py-5 lg:bg-[#f5f5f7] rounded-xl shadow-lg md:p-4 w-[70%] md:w-full max-w-5xl z-10">
+      <div className="absolute bottom-4 md:bottom-10 bg-[#f5f5f7] py-5 lg:bg-[#f5f5f7] rounded-xl shadow-lg md:p-4 w-[70%] md:w-full max-w-5xl z-10">
         <Swiper
           modules={[Pagination, Autoplay]}
           slidesPerView={1}

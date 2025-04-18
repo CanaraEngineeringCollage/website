@@ -7,10 +7,10 @@ import Life from "../NavLinks/Life";
 function NavbarItems() {
   return (
     <div className="hidden nav-items lg:flex text-secondary lg2 flex-row space-x-3 xl:space-x-6">
-      <div className="cursor-pointer pt-[8px] text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
+      <div className="cursor-pointer z-100 pt-[8px] text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
         <About />
       </div>
-      <div className="cursor-pointer pt-[8px] text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
+      <div className="cursor-pointer z-100 pt-[8px] text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
         <Academics />
       </div>
       <div

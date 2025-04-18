@@ -27,7 +27,7 @@ export default function Life() {
       </MenuHandler>
 
       <MenuList
-        className="w-full bg-transparent p-0 border-none !border-0 shadow-none flex justify-center pb-4 
+        className="w-full bg-transparent p-0 border-none text-black cursor-pointer z-100 !border-0 shadow-none flex justify-center pb-4 
         outline-none focus:ring-0 focus:outline-none"
       >
         <div className="w-full max-w-screen-2xl bg-white shadow-md rounded-xl flex justify-center gap-8 p-8 border-none outline-none">
