@@ -196,6 +196,7 @@ export default function Sidebar({ sidebar, openSidebar }: { sidebar: boolean; op
 function SubMenu({
   setVisible,
   data,
+  openSidebar,
 }: {
   setVisible: (visible: string) => void;
   data: {
@@ -205,7 +206,7 @@ function SubMenu({
       link: string;
     }>;
   };
-  openSidebar: () => void;
+  openSidebar: (state: boolean) => void;
 }) {
   const router = useRouter();
   return (
@@ -226,6 +227,7 @@ function SubMenu({
             onClick={() => {
               router.push(link.link);
               setVisible("main-menu");
+              openSidebar(false);
             }}
             className="flex gap-2 items-center"
           >
@@ -242,14 +244,16 @@ function MainMenu({
   setVisible,
   open,
   setOpen,
+  openSidebar,
 }: {
   sidebar: boolean;
   setVisible: (visible: string) => void;
   open: { ourCollege: boolean; program: boolean; lifeAtSahyadri: boolean };
   setOpen: React.Dispatch<React.SetStateAction<{ ourCollege: boolean; program: boolean; lifeAtSahyadri: boolean }>>;
-  openSidebar: () => void;
+  openSidebar: (state:boolean) => void;
 }) {
   const router = useRouter();
+  
   return (
     <>
       <div className="border-b-webBlue/10 border-b-2 pb-4">
@@ -272,6 +276,7 @@ function MainMenu({
               <div
                 onClick={() => {
                   setVisible("campusLegacy");
+                  
                 }}
                 className="flex gap-2 items-center"
               >
@@ -394,7 +399,8 @@ function MainMenu({
       <div className="border-b-webBlue/10 border-b-2 py-4">
         <div
           onClick={() => {
-            router.push("/admission");
+            router.push("/");
+            openSidebar(false)
           }}
           className="flex gap-4 "
         >
@@ -477,6 +483,7 @@ function MainMenu({
         <div
           onClick={() => {
             router.push("/placements");
+            openSidebar(false)
           }}
           className="flex gap-4 "
         >

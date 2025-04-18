@@ -12,15 +12,15 @@ const campusLegacy = [
 const administration = [
   {
     title: "Our Founder",
-    link: "/key-functionaries",
+    link: "/about/our-founder",
   },
   {
     title: "Our Management",
-    link: "/director",
+    link: "/about/our-management",
   },
   {
     title: "Governing Council",
-    link: "/administration",
+    link: "/about/governing-council",
   },
   {
     title: "Educators & Administrators",
