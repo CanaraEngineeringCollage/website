@@ -59,7 +59,7 @@ export default function About() {
                     <li>Our Management</li>
                   </Link>
                   <Link href="/about/governing-council"><li>Governing Council</li></Link>
-                  <li>Educators & Administrators</li>
+                  <Link href="/about/educators-administrators"><li>Educators & Administrators</li></Link>
                 </ul>
               </div>
             </div>

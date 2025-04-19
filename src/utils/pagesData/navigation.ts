@@ -24,7 +24,7 @@ const administration = [
   },
   {
     title: "Educators & Administrators",
-    link: "/administration",
+    link: "/about/educators-administrators",
   },
 ];
 const accreditations = [

@@ -64,9 +64,9 @@ export default function FounderSection() {
             revolutionary step considering the prevalent values and attitude of the people towards ladies education at that time.
           </p>
           <p>
-            The disastrous crash of the Arbuthnot Company at the beginning of the 20th Century prompted him to start – in 1906 – The Canara Hindu
+            The disastrous crash of the Arbuthnot Company at the beginning of the 20th Century prompted him to start - in 1906 - The Canara Hindu
             Permanent Fund Ltd. (now Canara Bank) with a view to enabling the community to mobilise its own resources for self-help. Among his
-            important contributions to the GSB community was the setting up of the 'Poor Boys Education Fund' (which became ASRP Memorial Fund as per
+            important contributions to the GSB community was the setting up of the 'Poor Boys Education Fund' (which became ASRP Memorial Fund as per
             the decision taken at a meeting of the GSB Community held in the Bhuvanendra Hall on 1st August 1909) under the aegis of Gowda Saraswath
             Brahman Parishad, of which he was one of the founders. Throughout his life, Ammembal Subba Rao Pai suffered from a severe gout, an
             affliction to which he finally succumbed on 25th July 1909.

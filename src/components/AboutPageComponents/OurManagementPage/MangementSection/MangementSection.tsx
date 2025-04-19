@@ -1,36 +1,106 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+
+interface ManagementItem {
+  title: string;
+  name: string;
+}
+
+interface ManagementData {
+  [key: string]: ManagementItem[];
+}
 
 const HeroSection = () => {
+  const data: ManagementData = {
+    "Office Bearers": [
+      { title: "President", name: "Sri. D. Vasudeva Kamath" },
+      { title: "Vice-President", name: "Sri. K. Suresh Kamath" },
+      { title: "Honorary Secretary", name: "Sri. M. Ranganath Bhat" },
+      { title: "Treasurer", name: "Sri. M. Vaman Kamath" },
+      { title: "Alternate Treasurer", name: "Sri. M. Jagannath Kamath" },
+      { title: "Joint Secretary", name: "Sri. T. Gopalkrishna Shenoy" },
+    ],
+    "Governing Body Members": [
+      { title: "Member", name: "Sri. A. Krishna Rao" },
+      { title: "Member", name: "Sri. B. Nagesh Shenoy" },
+      { title: "Member", name: "Sri. C. Vinod Kamath" },
+    ],
+    "Special Invitee(s)": [
+      { title: "Invitee", name: "Sri. R. Shyam Sundar" },
+      { title: "Invitee", name: "Sri. P. Venkatesh Pai" },
+    ],
+    "Organisational Structure": [
+      { title: "Director", name: "Sri. L. Gopalakrishna" },
+      { title: "Coordinator", name: "Sri. M. Anand Shenoy" },
+    ],
+    "Canara Institutes": [
+      { title: "Principal", name: "Sri. K. Ramesh Kamath" },
+      { title: "Dean", name: "Sri. S. Vikas Shenoy" },
+    ],
+  };
+
+  const [selectedHeading, setSelectedHeading] = useState<string>("Office Bearers");
+
+  const headings: string[] = [
+    "Office Bearers",
+    "Governing Body Members",
+    "Special Invitee(s)",
+    "Organisational Structure",
+    "Canara Institutes",
+  ];
+
   return (
     <section>
-      <div className="mx-20 py-20">
-        <h1 className="text-[54px] mb-12 font-bold">Our Management</h1>
-        <div className="grid grid-cols-12">
-          <div className="col-span-4 text-[20px]">
-            <h1 className="border-b-2 pb-3 mb-3 w-96 border-[#e3e6ed] text-[#2884CA]">Office Bearers</h1>
-            <h1 className="border-b-2 pb-3 mb-3 w-96 border-[#e3e6ed]">Governing Body Members</h1>
-            <h1 className="border-b-2 pb-3 mb-3 w-96 border-[#e3e6ed]">Special Invitee(s)</h1>
-            <h1 className="border-b-2 pb-3 mb-3 w-96 border-[#e3e6ed]">Organisational Structure</h1>
-            <h1 className="border-b-2 pb-3 mb-3 w-96 border-[#e3e6ed]">Canara Institutes</h1>
+      <div className="px-4 sm:px-10 md:px-16 lg:px-20 py-12 sm:py-16 md:py-20">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-10 md:mb-12">
+          Our Management
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+          <div className="md:col-span-4 text-base sm:text-lg md:text-xl">
+            {headings.map((heading, index) => (
+              <h1
+                key={index}
+                className={`border-b-2 pb-3 mb-3 border-[#e3e6ed] cursor-pointer ${
+                  selectedHeading === heading ? "text-[#2884CA]" : ""
+                }`}
+                onClick={() => setSelectedHeading(heading)}
+              >
+                {heading}
+              </h1>
+            ))}
           </div>
-          <div className="col-span-8">
-            <h1 className="text-[#86868B] text-[20px] pb-10">Canara High School Association Office Bearers </h1>
-            <div className="grid grid-cols-2 ">
-              <div className="text-[17px] text-[#86868B]">
-                <h1 className="border-b-2 pb-3 mb-3  border-[#e3e6ed]">President</h1>
-                <h1 className="border-b-2 pb-3 mb-3  border-[#e3e6ed]">Vice-President</h1>
-                <h1 className="border-b-2 pb-3 mb-3  border-[#e3e6ed]">Honorary Secretary</h1>
-                <h1 className="border-b-2 pb-3 mb-3  border-[#e3e6ed]">Treasurer</h1>
-                <h1 className="border-b-2 pb-3 mb-3  border-[#e3e6ed]">Alternate Treasurer</h1>
-                <h1 className=" pb-3 mb-3  ">Joint Secretary</h1>
+          <div className="md:col-span-8">
+            <h1 className="text-[#86868B] text-base sm:text-lg md:text-xl pb-6 sm:pb-8 md:pb-10">
+              Canara High School Association {selectedHeading}
+            </h1>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="text-sm sm:text-base text-[#86868B]">
+                {data[selectedHeading].map((item, index) => (
+                  <h1
+                    key={index}
+                    className={`pb-3 mb-3 ${
+                      index < data[selectedHeading].length - 1
+                        ? "border-b-2 border-[#e3e6ed]"
+                        : ""
+                    }`}
+                  >
+                    {item.title}
+                  </h1>
+                ))}
               </div>
-              <div className="text-[17px] text-[#86868B]">
-                <h1 className="border-b-2 pb-3 mb-3  border-[#e3e6ed]">Sri. D. Vasudeva Kamath</h1>
-                <h1 className="border-b-2 pb-3 mb-3  border-[#e3e6ed]">Sri. K. Suresh Kamath</h1>
-                <h1 className="border-b-2 pb-3 mb-3  border-[#e3e6ed]">Sri. M. Ranganath Bhat</h1>
-                <h1 className="border-b-2 pb-3 mb-3  border-[#e3e6ed]">Sri. M. Vaman Kamath</h1>
-                <h1 className="border-b-2 pb-3 mb-3  border-[#e3e6ed]">Sri. M. Jagannath Kamath</h1>
-                <h1 className=" pb-3 mb-3  ">Sri. T. Gopalkrishna Shenoy</h1>
+              <div className="text-sm sm:text-base text-[#86868B]">
+                {data[selectedHeading].map((item, index) => (
+                  <h1
+                    key={index}
+                    className={`pb-3 mb-3 ${
+                      index < data[selectedHeading].length - 1
+                        ? "border-b-2 border-[#e3e6ed]"
+                        : ""
+                    }`}
+                  >
+                    {item.name}
+                  </h1>
+                ))}
               </div>
             </div>
           </div>

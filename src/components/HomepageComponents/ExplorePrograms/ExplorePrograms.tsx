@@ -1,8 +1,6 @@
 "use client";
 import { Card, Carousel } from "@/components/ui/apple-style-card";
-import Image from "next/image";
 import React from "react";
-import image1 from "../../../../public/homePageAppleCardImages/image1.png";
 
 export function ExplorePrograms() {
   const cards = data.map((card, index) => <Card key={card.src} card={card} index={index} />);
