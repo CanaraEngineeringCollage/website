@@ -181,8 +181,8 @@ const ProfileCard = () => {
               />
               <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
               <div className="absolute z-50 top-[80%] left-6">
-                <h2 className="text-lg font-bold">{item.name}</h2>
-                <p className="text-sm">
+                <h2 className="text-[20px] font-bold">{item.name}</h2>
+                <p className="text-[17px]">
                   {item.roles.map((role, idx) => (
                     <span key={idx}>
                       {role.title}, <span className="font-semibold">{role.organization}</span>
