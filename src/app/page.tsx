@@ -1,14 +1,17 @@
-import { ExplorePrograms } from "@/components/HomepageComponents/ExplorePrograms/ExplorePrograms";
-import FutureCampusText from "@/components/HomepageComponents/FutureCampusText/FutureCampusText";
-import HeroSecton from "@/components/HomepageComponents/HeroSecton/HeroSecton";
+
+import CampusTour from "@/components/HomePageComponents/CampusTour/CampusTour";
+import ExplorePrograms from "@/components/HomePageComponents/ExplorePrograms/ExplorePrograms";
+import FutureCampusText from "@/components/HomePageComponents/FutureCampusText/FutureCampusText";
+import HeroSection from "@/components/HomePageComponents/HeroSecton/HeroSection";
+
 
 export default function Home() {
   return (
     <>
-    <HeroSecton/>
+    <HeroSection/>
     <FutureCampusText/>
     <ExplorePrograms/>
-
+    <CampusTour/>
     </>
   );
 }

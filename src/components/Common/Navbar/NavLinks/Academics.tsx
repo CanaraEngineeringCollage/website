@@ -47,8 +47,8 @@ export default function Academics() {
       </MenuHandler>
 
       <MenuList
-        className="w-full bg-transparent p-0 border-none shadow-none flex justify-center pb-4 
-        outline-none focus:ring-0 focus:outline-none hover:border-none"
+        className="w-full bg-transparent p-0 border-none shadow-none cursor-pointer flex justify-center pb-4 
+        outline-none focus:ring-0 focus:outline-none hover:border-none text-black z-100"
       >
         <div className="w-full max-w-screen-2xl bg-white shadow-md rounded-xl flex justify-center gap-8 p-8 
         border-none outline-none hover:border-none"
@@ -61,7 +61,7 @@ export default function Academics() {
               </div>
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Curriculum & Programs</span>
-                <ul className="list-none text-gray-500 leading-10">
+                <ul className="list-none text-gray-500 leading-10 cursor-pointer">
                   <li>Academic Overview</li>
                   <li>Programs</li>
                 </ul>
@@ -75,7 +75,7 @@ export default function Academics() {
               </div>
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Departments</span>
-                <ul className="list-none text-gray-500 leading-10">
+                <ul className="list-none text-gray-500 leading-10 cursor-pointer">
                   <li>Computer Science & Engineering</li>
                   <li>Information Science & Engineering</li>
                   <li>Electronics & Communication Engineering</li>
@@ -94,7 +94,7 @@ export default function Academics() {
               </div>
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Examinations & Records</span>
-                <ul className="list-none text-gray-500 leading-10">
+                <ul className="list-none text-gray-500 leading-10 cursor-pointer">
                   <li>Timetables</li>
                   <li>Circulars</li>
                   <li>Marks & Attendance</li>
@@ -110,7 +110,7 @@ export default function Academics() {
               </div>
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Learning Hub</span>
-                <ul className="list-none text-gray-500 leading-10">
+                <ul className="list-none text-gray-500 leading-10 cursor-pointer">
                   <li>Resources</li>
                 </ul>
               </div>
