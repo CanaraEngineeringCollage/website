@@ -52,16 +52,16 @@ const HeroSection = () => {
   return (
     <section>
       <div className="px-4 sm:px-10 md:px-16 lg:px-20 py-12 sm:py-16 md:py-20">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-10 md:mb-12">
+        <h1 className="text-3xl text-black sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-10 md:mb-12">
           Our Management
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-          <div className="md:col-span-4 text-base sm:text-lg md:text-xl">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-20">
+          <div className="md:col-span-4 text-[20px]">
             {headings.map((heading, index) => (
               <h1
                 key={index}
                 className={`border-b-2 pb-3 mb-3 border-border cursor-pointer ${
-                  selectedHeading === heading ? "text-[#2884CA]" : ""
+                  selectedHeading === heading ? "text-[#2884CA]" : "text-textGray"
                 }`}
                 onClick={() => setSelectedHeading(heading)}
               >
@@ -70,11 +70,11 @@ const HeroSection = () => {
             ))}
           </div>
           <div className="md:col-span-8">
-            <h1 className="text-[#86868B] text-base sm:text-lg md:text-xl pb-6 sm:pb-8 md:pb-10">
+            <h1 className="text-textGray text-[20px] pb-6 sm:pb-8 md:pb-10">
               Canara High School Association {selectedHeading}
             </h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="text-sm sm:text-base text-[#86868B]">
+              <div className="text-[17px] text-textGray">
                 {data[selectedHeading].map((item, index) => (
                   <h1
                     key={index}
@@ -88,7 +88,7 @@ const HeroSection = () => {
                   </h1>
                 ))}
               </div>
-              <div className="text-sm sm:text-base text-[#86868B]">
+              <div className="text-sm sm:text-base text-textGray">
                 {data[selectedHeading].map((item, index) => (
                   <h1
                     key={index}

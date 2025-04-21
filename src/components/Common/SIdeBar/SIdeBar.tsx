@@ -217,8 +217,8 @@ function SubMenu({
         }}
         className="flex gap-2 items-center"
       >
-        <IoIosArrowDown className={`w-4 h-4 text-webBlue rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
-        <Typography className="font-medium text-webBlue text-lg">{data.title}</Typography>
+        <IoIosArrowDown className={`w-4 h-4 text-gray-500 rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
+        <Typography className="font-medium text-gray-500 text-gray-500 text-lg">{data.title}</Typography>
       </div>
       <div className={`space-y-2 transition-all ease-in-out duration-300 mt-2`}>
         {data.links.map((link, index) => (
@@ -231,8 +231,8 @@ function SubMenu({
             }}
             className="flex gap-2 items-center"
           >
-            <Typography className=" text-webBlue ">{link.title}</Typography>
-            <IoIosArrowDown className={`w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
+            <Typography className=" text-gray-500 ">{link.title}</Typography>
+            <IoIosArrowDown className={`w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
           </div>
         ))}
       </div>
@@ -256,7 +256,7 @@ function MainMenu({
   
   return (
     <>
-      <div className="border-b-webBlue/10 border-b-2 pb-4">
+      <div className="border-b-border border-b-2 pb-4">
         <div
           onClick={() => {
             setOpen((prev: { ourCollege: boolean; program: boolean; lifeAtSahyadri: boolean }) => ({
@@ -267,8 +267,8 @@ function MainMenu({
           }}
           className="flex gap-4 text-xl "
         >
-          <Typography className="font-semibold text-webBlue">About</Typography>
-          <IoIosArrowDown className={`w-6 h-6 text-webBlue transition-all ease-in-out duration-300 lg:hidden ${open.ourCollege && "rotate-180"}`} />
+          <Typography className="font-semibold text-[#2884CA]">About</Typography>
+          <IoIosArrowDown className={`w-6 h-6 text-[#2884CA] transition-all ease-in-out duration-300 lg:hidden ${open.ourCollege && "rotate-180"}`} />
         </div>
         <div className={`space-y-2 transition-all ease-in-out duration-300 ${open.ourCollege ? "h-full opacity-100 mt-2" : "h-0 opacity-0"}`}>
           {open.ourCollege && (
@@ -282,8 +282,8 @@ function MainMenu({
               >
                 <div className="flex items-center gap-2">
                   <College />
-                  <Typography className="text-sm">Campus Legacy</Typography>
-                  <IoIosArrowDown className="w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                  <Typography className="text-sm text-gray-500">Campus Legacy</Typography>
+                  <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
                 </div>
               </div>
               <div
@@ -294,8 +294,8 @@ function MainMenu({
               >
                 <div className="flex items-center gap-2">
                   <Employees />
-                  <Typography className="text-sm">Leadership & Administration</Typography>
-                  <IoIosArrowDown className="w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                  <Typography className="text-sm text-gray-500">Leadership & Administration</Typography>
+                  <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
                 </div>
               </div>
               <div
@@ -306,8 +306,8 @@ function MainMenu({
               >
                 <div className="flex items-center gap-2">
                   <Certicficate />
-                  <Typography className="text-sm">Accreditations & Compliance</Typography>
-                  <IoIosArrowDown className="w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                  <Typography className="text-sm text-gray-500">Accreditations & Compliance</Typography>
+                  <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
                 </div>
               </div>
               <div
@@ -318,15 +318,15 @@ function MainMenu({
               >
                 <div className="flex items-center gap-2">
                   <HandShake />
-                  <Typography className="text-sm">Student Support & Welfare</Typography>
-                  <IoIosArrowDown className="w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                  <Typography className="text-sm text-gray-500">Student Support & Welfare</Typography>
+                  <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
                 </div>
               </div>
             </>
           )}
         </div>
       </div>
-      <div className="border-b-webBlue/10 border-b-2 py-4">
+      <div className="border-b-border border-b-2 py-4">
         <div
           onClick={() => {
             setOpen((prev: { ourCollege: boolean; program: boolean; lifeAtSahyadri: boolean }) => ({
@@ -337,8 +337,8 @@ function MainMenu({
           }}
           className="flex gap-4 "
         >
-          <Typography className="font-semibold text-webBlue ">Academics</Typography>
-          <IoIosArrowDown className={`w-6 h-6 text-webBlue transition-all ease-in-out duration-300 lg:hidden ${open.program && "rotate-180"}`} />
+          <Typography className="font-semibold text-[#2884CA] ">Academics</Typography>
+          <IoIosArrowDown className={`w-6 h-6 text-[#2884CA] transition-all ease-in-out duration-300 lg:hidden ${open.program && "rotate-180"}`} />
         </div>
         <div className={`space-y-2 transition-all ease-in-out duration-300 ${open.program ? "h-full opacity-100 mt-2" : "h-0 opacity-0"}`}>
           {open.program && (
@@ -351,8 +351,8 @@ function MainMenu({
               >
                 <div className="flex items-center gap-2">
                   <Notpad />
-                  <Typography className="text-sm">Curriculum & Programs</Typography>
-                  <IoIosArrowDown className="w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                  <Typography className="text-sm text-gray-500">Curriculum & Programs</Typography>
+                  <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
                 </div>
               </div>
 
@@ -364,8 +364,8 @@ function MainMenu({
               >
                 <div className="flex items-center gap-2">
                   <Book />
-                  <Typography className="text-sm">Departments</Typography>
-                  <IoIosArrowDown className="w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                  <Typography className="text-sm text-gray-500">Departments</Typography>
+                  <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
                 </div>{" "}
               </div>
               <div
@@ -376,8 +376,8 @@ function MainMenu({
               >
                 <div className="flex items-center gap-2">
                   <Examination />
-                  <Typography className="text-sm">Examinations & Records</Typography>
-                  <IoIosArrowDown className="w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                  <Typography className="text-sm text-gray-500">Examinations & Records</Typography>
+                  <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
                 </div>
               </div>
               <div
@@ -388,15 +388,15 @@ function MainMenu({
               >
                 <div className="flex items-center gap-2">
                   <Learning />
-                  <Typography className="text-sm">Learning Hub</Typography>
-                  <IoIosArrowDown className="w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                  <Typography className="text-sm text-gray-500">Learning Hub</Typography>
+                  <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
                 </div>
               </div>
             </>
           )}
         </div>
       </div>
-      <div className="border-b-webBlue/10 border-b-2 py-4">
+      <div className="border-b-border border-b-2 py-4">
         <div
           onClick={() => {
             router.push("/");
@@ -404,11 +404,11 @@ function MainMenu({
           }}
           className="flex gap-4 "
         >
-          <Typography className="font-semibold text-webBlue ">Admissions</Typography>
-          <IoIosArrowDown className={`w-6 h-6 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
+          <Typography className="font-semibold text-[#2884CA] ">Admissions</Typography>
+          <IoIosArrowDown className={`w-6 h-6 text-[#2884CA] -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
         </div>
       </div>
-      <div className="border-b-webBlue/10 border-b-2 py-4">
+      <div className="border-b-border border-b-2 py-4">
         <div
           onClick={() => {
             setOpen((prev: { ourCollege: boolean; program: boolean; lifeAtSahyadri: boolean }) => ({
@@ -419,9 +419,9 @@ function MainMenu({
           }}
           className="flex gap-4 "
         >
-          <Typography className="font-semibold text-webBlue ">Life At Canara</Typography>
+          <Typography className="font-semibold text-[#2884CA] ">Life At Canara</Typography>
           <IoIosArrowDown
-            className={`w-6 h-6 text-webBlue transition-all ease-in-out duration-300 lg:hidden ${open.lifeAtSahyadri && "rotate-180"}`}
+            className={`w-6 h-6 text-[#2884CA] transition-all ease-in-out duration-300 lg:hidden ${open.lifeAtSahyadri && "rotate-180"}`}
           />
         </div>
         <div className={`space-y-2 transition-all ease-in-out duration-300 ${open.lifeAtSahyadri ? "h-full opacity-100 mt-2" : "h-0 opacity-0"}`}>
@@ -435,8 +435,8 @@ function MainMenu({
               >
                 <div className="flex items-center gap-2">
                   <College />
-                  <Typography className="text-sm">Campus Facilities</Typography>
-                  <IoIosArrowDown className="w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                  <Typography className="text-sm text-gray-500">Campus Facilities</Typography>
+                  <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
                 </div>
               </div>
               <div
@@ -447,8 +447,8 @@ function MainMenu({
               >
                 <div className="flex items-center gap-2">
                   <StudentsLife />
-                  <Typography className="text-sm"> Student Life & Engagement</Typography>
-                  <IoIosArrowDown className="w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                  <Typography className="text-sm text-gray-500"> Student Life & Engagement</Typography>
+                  <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
                 </div>
               </div>
               <div
@@ -459,8 +459,8 @@ function MainMenu({
               >
                 <div className="flex items-center gap-2">
                   <Innovation />
-                  <Typography className="text-sm"> Innovation & Health</Typography>
-                  <IoIosArrowDown className="w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                  <Typography className="text-sm text-gray-500"> Innovation & Health</Typography>
+                  <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
                 </div>
               </div>
               <div
@@ -471,15 +471,15 @@ function MainMenu({
               >
                 <div className="flex items-center gap-2">
                   <Campus />
-                  <Typography className="text-sm"> Campus Beats</Typography>
-                  <IoIosArrowDown className="w-4 h-4 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                  <Typography className="text-sm text-gray-500"> Campus Beats</Typography>
+                  <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
                 </div>
               </div>
             </>
           )}
         </div>
       </div>
-      <div className="border-b-webBlue/10 border-b-2 py-4">
+      <div className="border-b-border border-b-2 py-4">
         <div
           onClick={() => {
             router.push("/placements");
@@ -487,8 +487,8 @@ function MainMenu({
           }}
           className="flex gap-4 "
         >
-          <Typography className="font-semibold text-webBlue ">Training & Placements</Typography>
-          <IoIosArrowDown className={`w-6 h-6 text-webBlue -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
+          <Typography className="font-semibold text-[#2884CA] ">Training & Placements</Typography>
+          <IoIosArrowDown className={`w-6 h-6 text-[#2884CA] -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
         </div>
       </div>
     </>

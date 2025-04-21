@@ -16,7 +16,7 @@ export default function FounderSection() {
                   alt="Sri Ammembal Subba Rao Pai"
                   width={1000}
                   height={1000}
-                  className="object-cover"
+                  className="object-cover h-full"
                 />
               </div>
               <p className="mt-4 text-center text-[27px] font-semibold text-black">

@@ -30,8 +30,8 @@ export default function Academics() {
       <MenuHandler>
         <Typography as="div" variant="small" className="text-sm xl:text-base">
           <ListItem
-            className={`flex items-center gap-2 py-2 pr-4 text-webGreen1 transition-colors ease-in-out duration-300 hover:text-webGreen1
-            bg-transparent text-[#2884CA] font-semibold hover:bg-transparent border-none outline-none focus:ring-0 focus:outline-none`}
+            className={`flex items-center ${isMenuOpen ? "opacity-100" : "opacity-80"} gap-2 py-2 pr-4 text-webGreen1 transition-colors ease-in-out duration-300 hover:text-webGreen1
+            bg-transparent  text-[#2884CA] font-semibold hover:bg-transparent border-none outline-none focus:ring-0 focus:outline-none`}
             selected={isMenuOpen || isMobileMenuOpen}
             onClick={() => setIsMobileMenuOpen((cur) => !cur)}
           >

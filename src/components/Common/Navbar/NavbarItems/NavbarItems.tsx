@@ -15,7 +15,7 @@ function NavbarItems() {
       </div>
       <div
         id="admission"
-        className="cursor-pointer text-[#2884CA] pt-[8px] text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
+        className="cursor-pointer opacity-80 text-[#2884CA] pt-[8px] text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
       >
         <Link href={"/admission"} className="font-poppins">
           Admissions
@@ -29,7 +29,7 @@ function NavbarItems() {
       </div>
       <Link
         id="placement"
-        className="pt-[8px] text-[#2884CA] font-poppins text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
+        className="pt-[8px] opacity-80 text-[#2884CA]  font-poppins text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
         href={"/placements"}
       >
         Training & Placements
