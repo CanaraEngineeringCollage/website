@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import { MdKeyboardArrowRight } from "react-icons/md";
+import councilData from "../../../../utils/councilMembers/councilMembers.json"; // Import JSON data
 
 interface CouncilMember {
   id: number;
@@ -11,156 +13,28 @@ interface CouncilMember {
   department?: string;
 }
 
-// Dummy data for Faculty Members by Department
-const departmentData: CouncilMember[] = [
-  {
-    id: 101,
-    name: "Dr. Anil Kumar",
-    image: "/governingCounsilImages/1.png",
-    title: "Associate Professor",
-    category: "faculty",
-    department: "Computer Science & Engineering",
-  },
-  {
-    id: 102,
-    name: "Smt. Priya Desai",
-    image: "/governingCounsilImages/2.png",
-    title: "Professor",
-    category: "faculty",
-    department: "Computer Science & Engineering",
-  },
-  {
-    id: 103,
-    name: "Sri. Rohan Sharma",
-    image: "/governingCounsilImages/3.png",
-    title: "Professor",
-    category: "faculty",
-    department: "Computer Science & Engineering",
-  },
-  {
-    id: 104,
-    name: "Dr. Rajesh Sharma",
-    image: "/governingCounsilImages/4.png",
-    title: "Professor",
-    category: "faculty",
-    department: "Information Science & Engineering",
-  },
-  {
-    id: 105,
-    name: "Sri. Vinod Patel",
-    image: "/governingCounsilImages/5.png",
-    title: "Professor",
-    category: "faculty",
-    department: "Information Science & Engineering",
-  },
-  {
-    id: 106,
-    name: "Dr. Lakshmi Nair",
-    image: "/governingCounsilImages/6.png",
-    title: "Associate Professor",
-    category: "faculty",
-    department: "Electronics & Communication Engineering",
-  },
-  {
-    id: 107,
-    name: "Sri. Arjun Rao",
-    image: "/governingCounsilImages/7.png",
-    title: "Professor",
-    category: "faculty",
-    department: "Computer Science & Design",
-  },
-  {
-    id: 108,
-    name: "Dr. Sunita Gupta",
-    image: "/governingCounsilImages/8.png",
-    title: "Professor",
-    category: "faculty",
-    department: "Computer Science & Business System",
-  },
-  {
-    id: 109,
-    name: "Sri. Vikram Singh",
-    image: "/governingCounsilImages/9.png",
-    title: "Associate Professor",
-    category: "faculty",
-    department: "Artificial Intelligence & Machine Learning",
-  },
-  {
-    id: 110,
-    name: "Dr. Meena Sharma",
-    image: "/governingCounsilImages/10.png",
-    title: "Associate Professor",
-    category: "faculty",
-    department: "Science & Humanities",
-  },
-];
-
-const adminData: CouncilMember[] = [
-  {
-    id: 17,
-    name: "Sri Anil Kumar",
-    image: "/governingCounsilImages/1.png",
-    title: "HR Coordinator",
-    category: "admin",
-  },
-  {
-    id: 18,
-    name: "Smt. Priya Sharma",
-    image: "/governingCounsilImages/1.png",
-    title: "Operations Manager",
-    category: "admin",
-  },
-  {
-    id: 19,
-    name: "Sri Rajesh Nair",
-    image: "/governingCounsilImages/1.png",
-    title: "HR Coordinator",
-    category: "admin",
-  },
-  {
-    id: 20,
-    name: "Smt. Lakshmi Rao",
-    image: "/governingCounsilImages/1.png",
-    title: "Operations Manager",
-    category: "admin",
-  },
-];
-
-const generalData: CouncilMember[] = [
-  {
-    id: 21,
-    name: "Sri Manoj Gupta",
-    image: "/governingCounsilImages/1.png",
-    title: "Maintenance Associate Professor",
-    category: "general",
-  },
-  {
-    id: 22,
-    name: "Smt. Sunita Patil",
-    image: "/governingCounsilImages/1.png",
-    title: "Security Officer",
-    category: "general",
-  },
-  {
-    id: 23,
-    name: "Sri Vikram Singh",
-    image: "/governingCounsilImages/1.png",
-    title: "Security Officer",
-    category: "general",
-  },
-];
+interface CouncilData {
+  faculty: CouncilMember[];
+  admin: CouncilMember[];
+  general: CouncilMember[];
+}
 
 const FacultyMembersSection = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("faculty");
   const [selectedDepartment, setSelectedDepartment] = useState<string>("Computer Science & Engineering");
 
-  // Combine all data
-  const allData = [...departmentData, ...adminData, ...generalData];
+  // Use imported JSON data
+  const data: CouncilData = councilData;
+
+  // Combine all data for filtering
+  const allData = [...data.faculty, ...data.admin, ...data.general];
 
   // Filter data based on category and department
   let filteredData: CouncilMember[] = [];
   if (selectedCategory === "faculty") {
-    filteredData = allData.filter((item) => item.category === "faculty" && item.department === selectedDepartment);
+    filteredData = allData.filter(
+      (item) => item.category === "faculty" && item.department === selectedDepartment
+    );
   } else {
     filteredData = allData.filter((item) => item.category === selectedCategory);
   }
@@ -187,10 +61,12 @@ const FacultyMembersSection = () => {
           <div className="w-full sm:w-[80%] mx-auto md:mx-0">
             <div className="border-b-2 border-border pb-4 sm:pb-5">
               <h1
-                className={`text-lg sm:text-xl md:text-[20px] cursor-pointer ${selectedCategory === "faculty" ? "font-bold text-blue-600" : "text-textGray"}`}
+                className={`text-lg sm:text-xl md:text-[20px] cursor-pointer ${
+                  selectedCategory === "faculty" ? "font-bold text-[#2884CA]" : "text-textGray"
+                }`}
                 onClick={() => {
                   setSelectedCategory("faculty");
-                  setSelectedDepartment("Computer Science & Engineering"); // Default to CSE
+                  setSelectedDepartment("Computer Science & Engineering");
                 }}
               >
                 Faculty Members
@@ -200,7 +76,9 @@ const FacultyMembersSection = () => {
                   {departments.map((dept) => (
                     <li
                       key={dept}
-                      className={`cursor-pointer py-1 ${selectedDepartment === dept ? "font-bold text-blue-600" : "text-textGray"}`}
+                      className={`cursor-pointer py-1 ${
+                        selectedDepartment === dept ? "font-bold text-[#2884CA]" : "text-textGray"
+                      }`}
                       onClick={() => setSelectedDepartment(dept)}
                     >
                       {dept}
@@ -211,24 +89,28 @@ const FacultyMembersSection = () => {
             </div>
             <div className="border-b-2 border-border py-4 sm:py-5">
               <h1
-                className={`text-lg sm:text-xl md:text-[20px] cursor-pointer ${selectedCategory === "admin" ? "font-bold text-blue-600" : "text-textGray"}`}
+                className={`text-lg sm:text-xl md:text-[20px] cursor-pointer ${
+                  selectedCategory === "admin" ? "font-bold text-[#2884CA]" : "text-textGray"
+                }`}
                 onClick={() => {
                   setSelectedCategory("admin");
-                  setSelectedDepartment(""); // Reset department
+                  setSelectedDepartment("");
                 }}
               >
-                Administrative Associate Professor
+                Administrative Staff
               </h1>
             </div>
-            <div className="py-4 sm:py-5 border-border border-b-2  ">
+            <div className="py-4 sm:py-5 border-border border-b-2">
               <h1
-                className={`text-lg sm:text-xl md:text-[20px] cursor-pointer ${selectedCategory === "general" ? "font-bold text-blue-600" : "text-textGray"}`}
+                className={`text-lg sm:text-xl md:text-[20px] cursor-pointer ${
+                  selectedCategory === "general" ? "font-bold text-[#2884CA]" : "text-textGray"
+                }`}
                 onClick={() => {
                   setSelectedCategory("general");
-                  setSelectedDepartment(""); // Reset department
+                  setSelectedDepartment("");
                 }}
               >
-                General Associate Professor
+                General Staff
               </h1>
             </div>
           </div>
@@ -244,7 +126,7 @@ const FacultyMembersSection = () => {
                 <div
                   key={item.id}
                   className={`relative w-full max-w-[280px] sm:max-w-[300px] md:max-w-[309px] h-[400px] sm:h-[430px] md:h-[450px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center py-4 sm:py-6 shadow-md ${
-                    shouldCenterLast ? "sm:col-span-2 sm:justify-self-center" : ""
+                    shouldCenterLast ? "sm:col-span-2 sm: justify-self-center" : ""
                   }`}
                 >
                   <Image
@@ -259,7 +141,12 @@ const FacultyMembersSection = () => {
                     <h2 className="text-base sm:text-lg md:text-lg font-bold">{item.name}</h2>
                     <p className="text-xs font-bold sm:text-sm md:text-sm">{item.title && `${item.title}`}</p>
                     <p className="text-xs sm:text-sm md:text-sm">
-                      {item.department && `${item.department},`} <span className="font-semibold">{item.category}</span>
+                      {item.department && `${item.department},`}{" "}
+                      <span className="font-semibold">{item.category}</span>
+                    </p>
+                    <p className="text-xs font-bold sm:text-sm md:text-sm flex items-center">
+                      View Profile
+                      <MdKeyboardArrowRight className="ml-1 text-xl" />
                     </p>
                   </div>
                 </div>

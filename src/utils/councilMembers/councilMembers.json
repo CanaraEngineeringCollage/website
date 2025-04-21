@@ -1,0 +1,137 @@
+{
+    "faculty": [
+      {
+        "id": 101,
+        "name": "Dr. Anil Kumar",
+        "image": "/governingCounsilImages/1.png",
+        "title": "Associate Professor",
+        "category": "faculty",
+        "department": "Computer Science & Engineering"
+      },
+      {
+        "id": 102,
+        "name": "Smt. Priya Desai",
+        "image": "/governingCounsilImages/2.png",
+        "title": "Professor",
+        "category": "faculty",
+        "department": "Computer Science & Engineering"
+      },
+      {
+        "id": 103,
+        "name": "Sri. Rohan Sharma",
+        "image": "/governingCounsilImages/3.png",
+        "title": "Professor",
+        "category": "faculty",
+        "department": "Computer Science & Engineering"
+      },
+      {
+        "id": 104,
+        "name": "Dr. Rajesh Sharma",
+        "image": "/governingCounsilImages/4.png",
+        "title": "Professor",
+        "category": "faculty",
+        "department": "Information Science & Engineering"
+      },
+      {
+        "id": 105,
+        "name": "Sri. Vinod Patel",
+        "image": "/governingCounsilImages/5.png",
+        "title": "Professor",
+        "category": "faculty",
+        "department": "Information Science & Engineering"
+      },
+      {
+        "id": 106,
+        "name": "Dr. Lakshmi Nair",
+        "image": "/governingCounsilImages/6.png",
+        "title": "Associate Professor",
+        "category": "faculty",
+        "department": "Electronics & Communication Engineering"
+      },
+      {
+        "id": 107,
+        "name": "Sri. Arjun Rao",
+        "image": "/governingCounsilImages/7.png",
+        "title": "Professor",
+        "category": "faculty",
+        "department": "Computer Science & Design"
+      },
+      {
+        "id": 108,
+        "name": "Dr. Sunita Gupta",
+        "image": "/governingCounsilImages/8.png",
+        "title": "Professor",
+        "category": "faculty",
+        "department": "Computer Science & Business System"
+      },
+      {
+        "id": 109,
+        "name": "Sri. Vikram Singh",
+        "image": "/governingCounsilImages/9.png",
+        "title": "Associate Professor",
+        "category": "faculty",
+        "department": "Artificial Intelligence & Machine Learning"
+      },
+      {
+        "id": 110,
+        "name": "Dr. Meena Sharma",
+        "image": "/governingCounsilImages/10.png",
+        "title": "Associate Professor",
+        "category": "faculty",
+        "department": "Science & Humanities"
+      }
+    ],
+    "admin": [
+      {
+        "id": 17,
+        "name": "Sri Anil Kumar",
+        "image": "/governingCounsilImages/1.png",
+        "title": "HR Coordinator",
+        "category": "admin"
+      },
+      {
+        "id": 18,
+        "name": "Smt. Priya Sharma",
+        "image": "/governingCounsilImages/1.png",
+        "title": "Operations Manager",
+        "category": "admin"
+      },
+      {
+        "id": 19,
+        "name": "Sri Rajesh Nair",
+        "image": "/governingCounsilImages/1.png",
+        "title": "HR Coordinator",
+        "category": "admin"
+      },
+      {
+        "id": 20,
+        "name": "Smt. Lakshmi Rao",
+        "image": "/governingCounsilImages/1.png",
+        "title": "Operations Manager",
+        "category": "admin"
+      }
+    ],
+    "general": [
+      {
+        "id": 21,
+        "name": "Sri Manoj Gupta",
+        "image": "/governingCounsilImages/1.png",
+        "title": "Maintenance Associate Professor",
+        "category": "general"
+      },
+      {
+        "id": 22,
+        "name": "Smt. Sunita Patil",
+        "image": "/governingCounsilImages/1.png",
+        "title": "Security Officer",
+        "category": "general"
+      },
+      {
+        "id": 23,
+        "name": "Sri Vikram Singh",
+        "image": "/governingCounsilImages/1.png",
+        "title": "Security Officer",
+        "category": "general"
+      }
+    ]
+  }

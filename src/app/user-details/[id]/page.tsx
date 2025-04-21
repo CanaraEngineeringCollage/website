@@ -44,7 +44,7 @@ const page = () => {
 
   return (
     <section className="py-10 px-4 sm:px-8 md:px-16 lg:px-32">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 lg:gap-16">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 lg:gap-16">
         <div className="md:col-span-3 shadow-xl">
           {data?.image && (
             <Image
@@ -60,7 +60,7 @@ const page = () => {
           <div className="bg-white h-[100%] p-4 sm:p-6 rounded-lg shadow-sm w-full">
             <p className="text-sm text-gray-500">PROFILE TYPE</p>
             <h1 className="text-[47px] leading-[1] py-3 text-black  font-bold">{data?.profileType || "Prospective Student"}</h1>
-            <p className="text-gray-600  text-sm sm:text-base">
+            <p className="text-gray-600  text-base md:text-xl">
               Age: {data?.bio.age || "17-23"} | Location: {data?.bio.location || "India, along the Southern Kanara Belt"} | Educational Level: {data?.bio.educationalLevel || "Completed PU"}
             </p>
             <div className="flex flex-wrap gap-2 py-4">
@@ -71,16 +71,16 @@ const page = () => {
               ))}
             </div>
             <h2 className="text-lg sm:text-xl text-black font-semibold mt-5">Profile Bio</h2>
-            <p className="text-gray-700 mt-2 text-sm sm:text-base">{data?.bio.description}</p>
+            <p className="text-gray-700 mt-2 text-base md:text-xl">{data?.bio.description}</p>
           </div>
           </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-10 pt-10">
         <div className="bg-white p-4 sm:p-6 rounded-lg shadow-lg w-full">
           <h2 className="text-xl sm:text-2xl text-black font-bold text-center mb-6">Motivations</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 py-3 sm:grid-cols-3 gap-10 sm:gap-6">
             {data?.motivations.map((motivation, index) => (
-              <div key={index} className="text-center p-4 bg-white shadow rounded-lg">
+              <div key={index} className="text-center py-10 p-4 bg-white shadow rounded-lg">
                 <Image
                   src={motivation.icon}
                   alt="Motivation Icon"
@@ -88,16 +88,16 @@ const page = () => {
                   height={50}
                   className="mx-auto mb-2"
                 />
-                <p className="text-black text-sm sm:text-base font-medium">{motivation.description}</p>
+                <p className="text-black text-base ">{motivation.description}</p>
               </div>
             ))}
           </div>
         </div>
-        <div className="bg-white p-4 sm:p-6 rounded-lg shadow-lg w-full">
+        <div className="bg-white p-4 mt-10 lg:mt-0 sm:p-6 rounded-lg shadow-lg w-full">
           <h2 className="text-xl sm:text-2xl text-black font-bold text-center mb-6">Problem Areas</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 py-3 sm:grid-cols-3 gap-10 sm:gap-6">
             {data?.problemAreas.map((problem, index) => (
-              <div key={index} className="text-center p-4 bg-white shadow rounded-lg">
+              <div key={index} className="text-center py-10 p-4 bg-white shadow rounded-lg">
                 <Image
                   src={problem.icon}
                   alt="Problem Icon"
@@ -105,26 +105,26 @@ const page = () => {
                   height={50}
                   className="mx-auto mb-2"
                 />
-                <p className="text-black text-sm sm:text-base font-medium">{problem.description}</p>
+                <p className="text-black text-base ">{problem.description}</p>
               </div>
             ))}
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-10 pt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-10 mt-10 lg:pt-10">
         <div className="bg-white p-4 sm:p-6 rounded-lg shadow-lg w-full">
           <h2 className="text-xl sm:text-2xl text-black font-bold mb-6">Core Needs</h2>
-          <ul className="list-disc pl-6 sm:pl-10 text-gray-700 space-y-2 text-sm sm:text-base">
+          <ul className="list-disc pl-6 sm:pl-10 text-gray-700 space-y-2  text-base md:text-xl">
             {data?.coreNeeds.map((need, index) => (
               <li key={index}>{need}</li>
             ))}
           </ul>
         </div>
-        <div className="bg-white p-4 sm:p-6 rounded-lg shadow-lg w-full">
+        <div className="bg-white p-4 my-10 lg:my-0 sm:p-6 rounded-lg shadow-lg w-full">
           <div className="flex flex-col md:flex-row justify-between">
             <div className="md:w-1/2">
               <h2 className="text-xl sm:text-2xl text-black font-bold text-center md:text-left mb-4">Frustrations & Fears</h2>
-              <ul className="list-none pl-0 text-gray-700 space-y-2 text-sm sm:text-base">
+              <ul className="list-none pl-0 text-gray-700 space-y-2 text-base md:text-xl">
                 {data?.frustrationsAndFears.map((fear, index) => (
                   <li key={index}>{fear}</li>
                 ))}
@@ -135,7 +135,7 @@ const page = () => {
                 <BiSolidRightArrow className="text-[#2884CA] mr-2 text-xl" />
                 Addressal
               </h2>
-              <ul className="space-y-3 text-black text-sm sm:text-base">
+              <ul className="space-y-3 text-black text-base md:text-xl">
                 {data?.addressal.map((item, index) => (
                   <li key={index} className="flex items-start">
                     <BiSolidRightArrow className="text-[#2884CA] text-lg mt-1 mr-2 shrink-0" />

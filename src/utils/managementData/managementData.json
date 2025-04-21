@@ -1,0 +1,27 @@
+{
+    "Office Bearers": [
+      { "title": "President", "name": "Sri. D. Vasudeva Kamath" },
+      { "title": "Vice-President", "name": "Sri. K. Suresh Kamath" },
+      { "title": "Honorary Secretary", "name": "Sri. M. Ranganath Bhat" },
+      { "title": "Treasurer", "name": "Sri. M. Vaman Kamath" },
+      { "title": "Alternate Treasurer", "name": "Sri. M. Jagannath Kamath" },
+      { "title": "Joint Secretary", "name": "Sri. T. Gopalkrishna Shenoy" }
+    ],
+    "Governing Body Members": [
+      { "title": "Member", "name": "Sri. A. Krishna Rao" },
+      { "title": "Member", "name": "Sri. B. Nagesh Shenoy" },
+      { "title": "Member", "name": "Sri. C. Vinod Kamath" }
+    ],
+    "Special Invitee(s)": [
+      { "title": "Invitee", "name": "Sri. R. Shyam Sundar" },
+      { "title": "Invitee", "name": "Sri. P. Venkatesh Pai" }
+    ],
+    "Organisational Structure": [
+      { "title": "Director", "name": "Sri. L. Gopalakrishna" },
+      { "title": "Coordinator", "name": "Sri. M. Anand Shenoy" }
+    ],
+    "Canara Institutes": [
+      { "title": "Principal", "name": "Sri. K. Ramesh Kamath" },
+      { "title": "Dean", "name": "Sri. S. Vikas Shenoy" }
+    ]
+  }

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import managementData from "../../../../utils/managementData/managementData.json"; // Adjust the path based on your project structure
 
 interface ManagementItem {
   title: string;
@@ -11,34 +12,7 @@ interface ManagementData {
 }
 
 const HeroSection = () => {
-  const data: ManagementData = {
-    "Office Bearers": [
-      { title: "President", name: "Sri. D. Vasudeva Kamath" },
-      { title: "Vice-President", name: "Sri. K. Suresh Kamath" },
-      { title: "Honorary Secretary", name: "Sri. M. Ranganath Bhat" },
-      { title: "Treasurer", name: "Sri. M. Vaman Kamath" },
-      { title: "Alternate Treasurer", name: "Sri. M. Jagannath Kamath" },
-      { title: "Joint Secretary", name: "Sri. T. Gopalkrishna Shenoy" },
-    ],
-    "Governing Body Members": [
-      { title: "Member", name: "Sri. A. Krishna Rao" },
-      { title: "Member", name: "Sri. B. Nagesh Shenoy" },
-      { title: "Member", name: "Sri. C. Vinod Kamath" },
-    ],
-    "Special Invitee(s)": [
-      { title: "Invitee", name: "Sri. R. Shyam Sundar" },
-      { title: "Invitee", name: "Sri. P. Venkatesh Pai" },
-    ],
-    "Organisational Structure": [
-      { title: "Director", name: "Sri. L. Gopalakrishna" },
-      { title: "Coordinator", name: "Sri. M. Anand Shenoy" },
-    ],
-    "Canara Institutes": [
-      { title: "Principal", name: "Sri. K. Ramesh Kamath" },
-      { title: "Dean", name: "Sri. S. Vikas Shenoy" },
-    ],
-  };
-
+  const data: ManagementData = managementData; // Use imported JSON data
   const [selectedHeading, setSelectedHeading] = useState<string>("Office Bearers");
 
   const headings: string[] = [
@@ -73,7 +47,22 @@ const HeroSection = () => {
             <h1 className="text-textGray text-[20px] pb-6 sm:pb-8 md:pb-10">
               Canara High School Association {selectedHeading}
             </h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {/* Mobile layout: title and name in the same line */}
+            <div className="block sm:hidden">
+              {data[selectedHeading].map((item, index) => (
+                <div
+                  key={index}
+                  className={`flex justify-between pb-3 mb-3 ${
+                    index < data[selectedHeading].length - 1 ? "border-b-2 border-border" : ""
+                  }`}
+                >
+                  <h1 className="text-[15px] text-textGray font-semibold">{item.title}</h1>
+                  <h1 className="text-[13px] text-textGray">{item.name}</h1>
+                </div>
+              ))}
+            </div>
+            {/* Desktop layout: original two-column layout */}
+            <div className="hidden sm:grid sm:grid-cols-2 gap-4">
               <div className="text-[17px] text-textGray">
                 {data[selectedHeading].map((item, index) => (
                   <h1
