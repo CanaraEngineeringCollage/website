@@ -5,161 +5,157 @@ interface CouncilMember {
   id: number;
   name: string;
   image: string;
-  position: string;
-  subPosition: string;
-  position2?: string;
-  subPosition2?: string;
+  roles: { title: string; organization: string }[];
 }
 
-const data = [
+const data: CouncilMember[] = [
   {
     id: 1,
     name: "Sri D Vasudeva Kamath",
     image: "/governingCounsilImages/1.png",
-    postion: "Chairman",
-    subPosition: "CEC GC",
-    postion2: "President",
-    subPosition2: "CHSA",
+    roles: [
+      { title: "Chairman", organization: "CEC GC" },
+      { title: "President", organization: "CHSA" },
+    ],
   },
   {
     id: 2,
     name: "Sri M. Ranganath Bhat",
     image: "/governingCounsilImages/2.png",
-    postion: "Secretary",
-    subPosition: "CEC GC",
-    postion2: "Hon. Secretary",
-    subPosition2: "CHSA",
+    roles: [
+      { title: "Secretary", organization: "CEC GC" },
+      { title: "Hon. Secretary", organization: "CHSA" },
+    ],
   },
   {
     id: 3,
     name: "Sri Pradeep G Pai",
     image: "/governingCounsilImages/3.png",
-    postion: "Convenor Governing Council",
-    subPosition: "CEC",
+    roles: [{ title: "Convenor Governing Council", organization: "CEC" }],
   },
   {
     id: 4,
     name: "Sri CA. M.Vaman Kamath",
     image: "/governingCounsilImages/4.png",
-    postion: "Chairman",
-    subPosition: "CEC GC",
-    postion2: "President",
-    subPosition2: "CHSA",
+    roles: [
+      { title: "Chairman", organization: "CEC GC" },
+      { title: "President", organization: "CHSA" },
+    ],
   },
   {
     id: 5,
     name: "Sri K Suresh Kamath",
     image: "/governingCounsilImages/5.png",
-    postion: "Chairman",
-    subPosition: "CEC GC",
-    postion2: "President",
-    subPosition2: "CHSA",
+    roles: [
+      { title: "Chairman", organization: "CEC GC" },
+      { title: "President", organization: "CHSA" },
+    ],
   },
   {
     id: 6,
     name: "Sri T. Gopalkrishna Shenoy",
     image: "/governingCounsilImages/6.png",
-    postion: "Chairman",
-    subPosition: "CEC GC",
-    postion2: "President",
-    subPosition2: "CHSA",
+    roles: [
+      { title: "Chairman", organization: "CEC GC" },
+      { title: "President", organization: "CHSA" },
+    ],
   },
   {
     id: 7,
     name: "Sri M. Naresh Shenoy",
     image: "/governingCounsilImages/7.png",
-    postion: "Chairman",
-    subPosition: "CEC GC",
-    postion2: "President",
-    subPosition2: "CHSA",
+    roles: [
+      { title: "Chairman", organization: "CEC GC" },
+      { title: "President", organization: "CHSA" },
+    ],
   },
   {
     id: 8,
     name: "Sri Gopal Rao",
     image: "/governingCounsilImages/8.png",
-    postion: "Chairman",
-    subPosition: "CEC GC",
-    postion2: "President",
-    subPosition2: "CHSA",
+    roles: [
+      { title: "Chairman", organization: "CEC GC" },
+      { title: "President", organization: "CHSA" },
+    ],
   },
   {
     id: 9,
     name: "Sri. Vinayak Kamath",
     image: "/governingCounsilImages/9.png",
-    postion: "Chairman",
-    subPosition: "CEC GC",
-    postion2: "President",
-    subPosition2: "CHSA",
+    roles: [
+      { title: "Chairman", organization: "CEC GC" },
+      { title: "President", organization: "CHSA" },
+    ],
   },
   {
     id: 10,
     name: "Sri. Chakravarthy Sulibele",
     image: "/governingCounsilImages/10.png",
-    postion: "Chairman",
-    subPosition: "CEC GC",
-    postion2: "President",
-    subPosition2: "CHSA",
+    roles: [
+      { title: "Chairman", organization: "CEC GC" },
+      { title: "President", organization: "CHSA" },
+    ],
   },
   {
     id: 11,
     name: "Sri. Siddartha Pai",
     image: "/governingCounsilImages/11.png",
-    postion: "Chairman",
-    subPosition: "CEC GC",
-    postion2: "President",
-    subPosition2: "CHSA",
+    roles: [
+      { title: "Chairman", organization: "CEC GC" },
+      { title: "President", organization: "CHSA" },
+    ],
   },
   {
     id: 12,
     name: "Sri. Ullas Kamath",
     image: "/governingCounsilImages/12.png",
-    postion: "Chairman",
-    subPosition: "CEC GC",
-    postion2: "President",
-    subPosition2: "CHSA",
+    roles: [
+      { title: "Chairman", organization: "CEC GC" },
+      { title: "President", organization: "CHSA" },
+    ],
   },
   {
     id: 13,
     name: "Dr. P. Dayananda Pai",
     image: "/governingCounsilImages/14.png",
-    postion: "Chairman",
-    subPosition: "CEC GC",
-    postion2: "President",
-    subPosition2: "CHSA",
+    roles: [
+      { title: "Chairman", organization: "CEC GC" },
+      { title: "President", organization: "CHSA" },
+    ],
   },
   {
     id: 14,
     name: "Sri. Siddartha Pai",
     image: "/governingCounsilImages/15.png",
-    postion: "Chairman",
-    subPosition: "CEC GC",
-    postion2: "President",
-    subPosition2: "CHSA",
+    roles: [
+      { title: "Chairman", organization: "CEC GC" },
+      { title: "President", organization: "CHSA" },
+    ],
   },
   {
     id: 15,
     name: "Sri. Ullas Kamath",
     image: "/governingCounsilImages/16.png",
-    postion: "Chairman",
-    subPosition: "CEC GC",
-    postion2: "President",
-    subPosition2: "CHSA",
+    roles: [
+      { title: "Chairman", organization: "CEC GC" },
+      { title: "President", organization: "CHSA" },
+    ],
   },
   {
     id: 16,
     name: "Dr. P. Dayananda Pai",
     image: "/governingCounsilImages/13.png",
-    postion: "Chairman",
-    subPosition: "CEC GC",
-    postion2: "President",
-    subPosition2: "CHSA",
+    roles: [
+      { title: "Chairman", organization: "CEC GC" },
+      { title: "President", organization: "CHSA" },
+    ],
   },
 ];
 
 const ProfileCard = () => {
   return (
     <section className="pb-20 px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64">
-      <h1 className="text-[#1D1D1F] text-3xl sm:text-4xl md:text-[54px] mb-10 md:mb-20 font-bold text-center">
+      <h1 className="text-black text-3xl sm:text-4xl md:text-[54px] mb-10 md:mb-20 font-bold text-center">
         Governing Council
       </h1>
 
@@ -187,9 +183,12 @@ const ProfileCard = () => {
               <div className="absolute z-50 top-[80%] left-6">
                 <h2 className="text-lg font-bold">{item.name}</h2>
                 <p className="text-sm">
-                  {item.postion}, <span className="font-semibold">{item.subPosition}</span>
-                  <br />
-                  {item.postion2 && `& ${item.postion2},`} <span className="font-semibold">{item.subPosition2}</span>
+                  {item.roles.map((role, idx) => (
+                    <span key={idx}>
+                      {role.title}, <span className="font-semibold">{role.organization}</span>
+                      {idx < item.roles.length - 1 && <br />}
+                    </span>
+                  ))}
                 </p>
               </div>
             </div>

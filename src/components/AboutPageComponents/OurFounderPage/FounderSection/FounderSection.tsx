@@ -5,22 +5,26 @@ export default function FounderSection() {
   return (
     <section className="bg-[#fafbfe] py-20 px-4 overflow-hidden">
       <div className="max-w-5xl mx-auto">
-        
-
         <div className="flex flex-col md:flex-row items-start gap-12">
           {/* Left Column - Text */}
           <div className="flex-1  text-[#86868B] text-[17px] leading-relaxed space-y-6 ">
-          <h2 className="text-4xl font-bold text-center md:text-start  text-[#1D1D1F] mb-6">Our Founder</h2>
-          <div className="flex md:hidden flex-col items-center flex-shrink-0 mx-auto lg:px-20">
-            <div className="w-80 h-96 relative rounded-xl overflow-hidden shadow-md">
-              <Image src="/aboutPageImages/our-founder/canara-founder.png" alt="Sri Ammembal Subba Rao Pai" fill className="object-cover" />
+            <h2 className="text-4xl font-bold text-center md:text-start  text-black mb-6">Our Founder</h2>
+            <div className="flex md:hidden flex-col items-center flex-shrink-0 mx-auto lg:px-20">
+              <div className="w-80 h-96 relative rounded-xl overflow-hidden shadow-md">
+                <Image
+                  src="/aboutPageImages/our-founder/canara-founder.png"
+                  alt="Sri Ammembal Subba Rao Pai"
+                  width={1000}
+                  height={1000}
+                  className="object-cover"
+                />
+              </div>
+              <p className="mt-4 text-center text-[27px] font-semibold text-black">
+                Sri Ammembal Subba
+                <br />
+                Rao Pai
+              </p>
             </div>
-            <p className="mt-4 text-center text-[27px] font-semibold text-[#1D1D1F]">
-              Sri Ammembal Subba
-              <br />
-              Rao Pai
-            </p>
-          </div>
             <p>
               Canara High School Association (CHSA) was founded by Sri Ammembal Subba Rao Pai with the sole purpose of imparting the youth of Dakshina
               Kannada with modern education blended with ancient cultural values. He was a great social reformer and philanthropist with a rare
@@ -41,7 +45,7 @@ export default function FounderSection() {
             <div className="w-80  h-96 relative rounded-xl overflow-hidden shadow-md">
               <Image src="/aboutPagImages/our-founder/canara-founder.png" alt="Sri Ammembal Subba Rao Pai" fill className="object-cover" />
             </div>
-            <p className="mt-4 text-center text-[27px] font-semibold text-[#1D1D1F]">
+            <p className="mt-4 text-center text-[27px] font-semibold text-black">
               Sri Ammembal Subba
               <br />
               Rao Pai
