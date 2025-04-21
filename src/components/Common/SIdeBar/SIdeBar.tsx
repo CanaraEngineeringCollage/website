@@ -218,7 +218,7 @@ function SubMenu({
         className="flex gap-2 items-center"
       >
         <IoIosArrowDown className={`w-4 h-4 text-gray-500 rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
-        <Typography className="font-medium text-gray-500 text-gray-500 text-lg">{data.title}</Typography>
+        <Typography className="font-medium text-gray-500  text-lg">{data.title}</Typography>
       </div>
       <div className={`space-y-2 transition-all ease-in-out duration-300 mt-2`}>
         {data.links.map((link, index) => (
