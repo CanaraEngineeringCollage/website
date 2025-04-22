@@ -26,7 +26,7 @@ const HeroSection = () => {
   return (
     <section>
       <div className="px-4 sm:px-10 md:px-16 lg:px-20 py-12 sm:py-16 md:py-20">
-        <h1 className=" text-black text-[54px] font-bold mb-8 sm:mb-10 md:mb-12">
+        <h1 className=" text-black text-[39px] lg:text-[54px] font-bold mb-8 sm:mb-10 md:mb-12">
           Our Management
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-20">
@@ -44,7 +44,7 @@ const HeroSection = () => {
             ))}
           </div>
           <div className="md:col-span-8">
-            <h1 className="text-textGray text-[20px] pb-6 sm:pb-8 md:pb-10">
+            <h1 className="text-textGray font-extrabold text-[20px] pb-6 sm:pb-8 md:pb-10">
               Canara High School Association {selectedHeading}
             </h1>
             {/* Mobile layout: title and name in the same line */}
@@ -56,8 +56,8 @@ const HeroSection = () => {
                     index < data[selectedHeading].length - 1 ? "border-b-2 border-border" : ""
                   }`}
                 >
-                  <h1 className="text-[15px] text-textGray font-semibold">{item.title}</h1>
-                  <h1 className="text-[13px] text-textGray">{item.name}</h1>
+                  <h1 className="text-[17px] text-textGray font-bold">{item.title}</h1>
+                  <h1 className="text-[17px] text-textGray">{item.name}</h1>
                 </div>
               ))}
             </div>
