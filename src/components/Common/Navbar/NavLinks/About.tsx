@@ -98,7 +98,7 @@ export default function About() {
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Student Support & Welfare</span>
                 <ul className="list-none text-gray-500 leading-10">
-                  <li>Grievance Redressal Cell</li>
+                  <Link href="/about/student-welfare"><li>Grievance Redressal Cell</li></Link>
                   <li>SWO Department</li>
                 </ul>
               </div>
