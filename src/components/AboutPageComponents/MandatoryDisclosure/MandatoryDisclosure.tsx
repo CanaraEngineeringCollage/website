@@ -12,7 +12,7 @@ const MandatoryDisclosure = () => {
         <h1 className="text-[30px] lg:text-[54px]  font-bold pb-1 lg:pb-10 text-black">Mandatory Disclosure</h1>
         <div className="grid grid-cols-1 gap-3 md:gap-32 md:grid-cols-12 mt-10">
           <div className="col-span-4">
-            {disclosureData.map((section, index) => (
+            {disclosureData?.map((section, index) => (
               <h1
                 key={index}
                 onClick={() => setSelectedIndex(index)}
@@ -25,11 +25,11 @@ const MandatoryDisclosure = () => {
             ))}
           </div>
           <div className="col-span-8">
-            {disclosureData[selectedIndex].data.map((item, idx) => (
+            {disclosureData[selectedIndex]?.data?.map((item, idx) => (
               <div key={idx} className="mb-10">
                 <h2 className="text-[20px] font-extrabold text-textGray mb-2">{item.title}</h2>
                 <ul className="space-y-1">
-                  {item.links.map((link, i) => (
+                  {item?.links?.map((link, i) => (
                     <li key={i} className="flex items-center gap-2 text-[17px] text-textGray hover:text-blue-600 cursor-pointer">
                       <HiLink className="text-textGray" />
                       <a href={link.href} className="hover:underline">
