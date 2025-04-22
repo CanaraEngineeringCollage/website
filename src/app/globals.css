@@ -31,6 +31,7 @@ body {
   --color-foreground: var(--foreground);
   --color-primary: #2884CA;
   --color-secondary: #005580;
+  --color-border:#e3e6ed;
   --color-textGray: #86868B;
 
 

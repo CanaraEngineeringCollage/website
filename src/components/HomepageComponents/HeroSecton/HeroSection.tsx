@@ -19,7 +19,6 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 
-
 const HeroSection = () => {
   const logos = [
     { label: 'NIRF Recognised', src: nirf },
