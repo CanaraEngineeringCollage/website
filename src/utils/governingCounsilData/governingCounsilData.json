@@ -3,6 +3,7 @@
     "id": 1,
     "name": "Sri D Vasudeva Kamath",
     "image": "/governingCounsilImages/1.png",
+    "category":"Prospective",
     "roles": [
       { "title": "Chairman", "organization": "CEC GC" },
       { "title": "President", "organization": "CHSA" }
@@ -21,34 +22,7 @@
       "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
     },
     "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-    "motivations": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
-    "problemAreas": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
+    
     "coreNeeds": [
       "Understand the admission process step by step.",
       "Get clear eligibility criteria without confusion.",
@@ -76,6 +50,7 @@
     "id": 2,
     "name": "Sri M. Ranganath Bhat",
     "image": "/governingCounsilImages/2.png",
+    "category":"Current",
     "roles": [
       { "title": "Secretary", "organization": "CEC GC" },
       { "title": "Hon. Secretary", "organization": "CHSA" }
@@ -149,6 +124,8 @@
     "id": 3,
     "name": "Sri Pradeep G Pai",
     "image": "/governingCounsilImages/3.png",
+    "category":"Parents",
+
     "roles": [{ "title": "Convenor Governing Council", "organization": "CEC" }],
     "profileType": "Prospective Student",
     "roles2": [
@@ -164,34 +141,7 @@
       "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
     },
     "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-    "motivations": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
-    "problemAreas": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
+    
     "coreNeeds": [
       "Understand the admission process step by step.",
       "Get clear eligibility criteria without confusion.",
@@ -219,6 +169,8 @@
     "id": 2,
     "name": "Sri M. Ranganath Bhat",
     "image": "/governingCounsilImages/2.png",
+    "category":"Alumni",
+
     "roles": [
       { "title": "Secretary", "organization": "CEC GC" },
       { "title": "Hon. Secretary", "organization": "CHSA" }
@@ -237,34 +189,7 @@
       "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
     },
     "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-    "motivations": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
-    "problemAreas": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
+    
     "coreNeeds": [
       "Understand the admission process step by step.",
       "Get clear eligibility criteria without confusion.",
@@ -292,6 +217,8 @@
     "id": 4,
     "name": "Sri CA. M.Vaman Kamath",
     "image": "/governingCounsilImages/4.png",
+    "category":"Governing",
+
     "roles": [
       { "title": "Chairman", "organization": "CEC GC" },
       { "title": "President", "organization": "CHSA" }
@@ -310,34 +237,7 @@
       "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
     },
     "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-    "motivations": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
-    "problemAreas": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
+    
     "coreNeeds": [
       "Understand the admission process step by step.",
       "Get clear eligibility criteria without confusion.",
@@ -383,34 +283,7 @@
       "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
     },
     "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-    "motivations": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
-    "problemAreas": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
+    
     "coreNeeds": [
       "Understand the admission process step by step.",
       "Get clear eligibility criteria without confusion.",
@@ -438,6 +311,8 @@
     "id": 5,
     "name": "Sri K Suresh Kamath",
     "image": "/governingCounsilImages/5.png",
+    "category":"Governing",
+
     "roles": [
       { "title": "Chairman", "organization": "CEC GC" },
       { "title": "President", "organization": "CHSA" }
@@ -456,34 +331,7 @@
       "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
     },
     "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-    "motivations": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
-    "problemAreas": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
+    
     "coreNeeds": [
       "Understand the admission process step by step.",
       "Get clear eligibility criteria without confusion.",
@@ -529,34 +377,7 @@
       "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
     },
     "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-    "motivations": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
-    "problemAreas": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
+    
     "coreNeeds": [
       "Understand the admission process step by step.",
       "Get clear eligibility criteria without confusion.",
@@ -602,34 +423,7 @@
       "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
     },
     "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-    "motivations": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
-    "problemAreas": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
+    
     "coreNeeds": [
       "Understand the admission process step by step.",
       "Get clear eligibility criteria without confusion.",
@@ -675,34 +469,7 @@
       "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
     },
     "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-    "motivations": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
-    "problemAreas": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
+    
     "coreNeeds": [
       "Understand the admission process step by step.",
       "Get clear eligibility criteria without confusion.",
@@ -748,34 +515,7 @@
       "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
     },
     "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-    "motivations": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
-    "problemAreas": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
+    
     "coreNeeds": [
       "Understand the admission process step by step.",
       "Get clear eligibility criteria without confusion.",
@@ -894,34 +634,7 @@
       "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
     },
     "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-    "motivations": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
-    "problemAreas": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
+    
     "coreNeeds": [
       "Understand the admission process step by step.",
       "Get clear eligibility criteria without confusion.",
@@ -967,34 +680,7 @@
       "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
     },
     "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-    "motivations": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
-    "problemAreas": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
+    
     "coreNeeds": [
       "Understand the admission process step by step.",
       "Get clear eligibility criteria without confusion.",
@@ -1040,34 +726,7 @@
       "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
     },
     "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-    "motivations": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
-    "problemAreas": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
+    
     "coreNeeds": [
       "Understand the admission process step by step.",
       "Get clear eligibility criteria without confusion.",
@@ -1113,34 +772,7 @@
       "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
     },
     "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-    "motivations": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
-    "problemAreas": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
+    
     "coreNeeds": [
       "Understand the admission process step by step.",
       "Get clear eligibility criteria without confusion.",
@@ -1186,34 +818,7 @@
       "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
     },
     "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-    "motivations": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
-    "problemAreas": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
+    
     "coreNeeds": [
       "Understand the admission process step by step.",
       "Get clear eligibility criteria without confusion.",
@@ -1259,34 +864,7 @@
       "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
     },
     "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-    "motivations": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
-    "problemAreas": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
+    
     "coreNeeds": [
       "Understand the admission process step by step.",
       "Get clear eligibility criteria without confusion.",
@@ -1332,34 +910,7 @@
       "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
     },
     "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-    "motivations": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
-    "problemAreas": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
+    
     "coreNeeds": [
       "Understand the admission process step by step.",
       "Get clear eligibility criteria without confusion.",
@@ -1405,34 +956,7 @@
       "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
     },
     "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-    "motivations": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
-    "problemAreas": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
+    
     "coreNeeds": [
       "Understand the admission process step by step.",
       "Get clear eligibility criteria without confusion.",
@@ -1478,34 +1002,7 @@
       "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
     },
     "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-    "motivations": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
-    "problemAreas": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
+    
     "coreNeeds": [
       "Understand the admission process step by step.",
       "Get clear eligibility criteria without confusion.",
@@ -1551,34 +1048,7 @@
       "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
     },
     "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-    "motivations": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
-    "problemAreas": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
+    
     "coreNeeds": [
       "Understand the admission process step by step.",
       "Get clear eligibility criteria without confusion.",
@@ -1624,34 +1094,7 @@
       "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
     },
     "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-    "motivations": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
-    "problemAreas": [
-      {
-        "icon": "/svgs/common/3.svg",
-        "description": "Pursue a field with strong career prospects"
-      },
-      {
-        "icon": "/svgs/common/1.svg",
-        "description": "Achieve success in technology & innovation"
-      },
-      {
-        "icon": "/svgs/common/2.svg",
-        "description": "Secure a high-paying & stable profession"
-      }
-    ],
+    
     "coreNeeds": [
       "Understand the admission process step by step.",
       "Get clear eligibility criteria without confusion.",

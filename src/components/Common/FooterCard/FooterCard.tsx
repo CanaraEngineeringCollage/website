@@ -2,7 +2,7 @@ import React from "react";
 
 const FooterCard = () => {
   return (
-    <section className="py-36">
+    <section className="py-36 px-5 md:px-0">
       <div className="max-w-6xl mx-auto bg-[#2474b3]  rounded-2xl">
         <div className="text-center py-13 px-3  lg:px-36">
           <h1 className="text-[47px] text-white leading-[1.2] pb-2">Ready to take the next step?</h1>

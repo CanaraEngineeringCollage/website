@@ -26,7 +26,7 @@ const HeroSection = () => {
   return (
     <section>
       <div className="px-4 sm:px-10 md:px-16 lg:px-20 py-12 sm:py-16 md:py-20">
-        <h1 className="text-3xl text-black sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-10 md:mb-12">
+        <h1 className=" text-black text-[54px] font-bold mb-8 sm:mb-10 md:mb-12">
           Our Management
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-20">
@@ -77,7 +77,7 @@ const HeroSection = () => {
                   </h1>
                 ))}
               </div>
-              <div className="text-sm sm:text-base text-textGray">
+              <div className="text-[17px]  text-textGray">
                 {data[selectedHeading].map((item, index) => (
                   <h1
                     key={index}

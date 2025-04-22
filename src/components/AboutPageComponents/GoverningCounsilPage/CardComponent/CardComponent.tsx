@@ -21,7 +21,7 @@ const ProfileCard = () => {
   }, [governingCounsilData]);
   return (
     <section className="pb-20 px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64">
-      <h1 className="text-black text-[54px] mb-10 mt-10 md:mb-20 font-bold text-center">Governing Council</h1>
+      <h1 className="text-black text-[40px] lg:text-[54px] mb-10 mt-10 md:mb-20 font-bold text-center">Governing Council</h1>
 
       <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
         {data.map((item, index) => {

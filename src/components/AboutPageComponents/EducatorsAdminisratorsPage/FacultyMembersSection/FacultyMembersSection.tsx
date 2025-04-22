@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import councilData from "../../../../utils/councilMembers/councilMembers.json"; // Import JSON data
+import Link from "next/link";
 
 interface CouncilMember {
   id: number;
@@ -144,10 +145,12 @@ const FacultyMembersSection = () => {
                       {item.department && `${item.department},`}{" "}
                       <span className="font-semibold">{item.category}</span>
                     </p>
-                    <p className="text-xs font-bold sm:text-sm md:text-sm flex items-center">
+                    <Link href={`/user-details/${item.id}`}><p className="text-xs font-bold sm:text-sm md:text-sm flex items-center">
                       View Profile
                       <MdKeyboardArrowRight className="ml-1 text-xl" />
-                    </p>
+                      </p>
+                      </Link>
+
                   </div>
                 </div>
               );

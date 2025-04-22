@@ -1,0 +1,87 @@
+[
+    {
+        "category": "Prospective",
+        "motivations": [
+            {
+                "icon": "/svgs/common/1.svg",
+                "description": "Pursue a field with strong career prospects"
+            },
+            {
+                "icon": "/svgs/common/2.svg",
+                "description": "Achieve success in technology & innovation"
+            },
+            {
+                "icon": "/svgs/common/3.svg",
+                "description": "Secure a high-paying & stable profession"
+            }
+        ]
+    },
+    {
+        "category": "Current",
+        "motivations": [
+            {
+                "icon": "/svgs/common/7.svg",
+                "description": "Pursue a field with strong career prospects"
+            },
+            {
+                "icon": "/svgs/common/8.svg",
+                "description": "Achieve success in technology & innovation"
+            },
+            {
+                "icon": "/svgs/common/9.svg",
+                "description": "Secure a high-paying & stable profession"
+            }
+        ]
+    },
+    {
+        "category": "Parents",
+        "motivations": [
+            {
+                "icon": "/svgs/common/13.svg",
+                "description": "Pursue a field with strong career prospects"
+            },
+            {
+                "icon": "/svgs/common/14.svg",
+                "description": "Achieve success in technology & innovation"
+            },
+            {
+                "icon": "/svgs/common/15.svg",
+                "description": "Secure a high-paying & stable profession"
+            }
+        ]
+    },
+    {
+        "category": "Alumni",
+        "motivations": [
+            {
+                "icon": "/svgs/common/19.svg",
+                "description": "Pursue a field with strong career prospects"
+            },
+            {
+                "icon": "/svgs/common/20.svg",
+                "description": "Achieve success in technology & innovation"
+            },
+            {
+                "icon": "/svgs/common/21.svg",
+                "description": "Secure a high-paying & stable profession"
+            }
+        ]
+    },
+    {
+        "category": "Governing",
+        "motivations": [
+            {
+                "icon": "/svgs/common/25.svg",
+                "description": "Pursue a field with strong career prospects"
+            },
+            {
+                "icon": "/svgs/common/26.svg",
+                "description": "Achieve success in technology & innovation"
+            },
+            {
+                "icon": "/svgs/common/27.svg",
+                "description": "Secure a high-paying & stable profession"
+            }
+        ]
+    }
+]
