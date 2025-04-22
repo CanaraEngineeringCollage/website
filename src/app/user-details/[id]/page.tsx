@@ -60,17 +60,17 @@ const Page = () => {
 
   return (
     <section className="py-10 px-4 sm:px-8 md:px-16 lg:px-32">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 lg:gap-16">
-        <div className="md:col-span-3 shadow-xl">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-8 lg:gap-16">
+        <div className="lg:col-span-3 md:h-[50vh] lg:h-full shadow-xl">
           <Image
             src={data.image}
             width={100}
             height={100}
             alt="userperson"
-            className="w-full h-full object-cover rounded-lg"
+            className="w-full h-full object-contain md:object-fill lg:object-contain rounded-lg"
           />
         </div>
-        <div className="md:col-span-9">
+        <div className="lg:col-span-9">
           <div className="bg-white h-[100%] p-4 sm:p-6 rounded-lg shadow-sm w-full">
             <p className="text-sm text-gray-500">PROFILE TYPE</p>
             <h1 className="text-[47px] leading-[1] py-3 text-black font-bold">
@@ -91,7 +91,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-10 pt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-10 pt-10">
         <div className="bg-white p-4 sm:p-6 rounded-lg shadow-lg w-full">
           <h2 className="text-xl sm:text-2xl text-black font-bold text-center mb-6">Motivations</h2>
           <div className="grid grid-cols-1 py-3 sm:grid-cols-3 gap-10 sm:gap-6">
@@ -127,7 +127,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-10 mt-10 lg:pt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-10 mt-10 lg:pt-10">
         <div className="bg-white p-4 sm:p-6 rounded-lg shadow-lg w-full">
           <h2 className="text-xl sm:text-2xl text-black font-bold mb-6">Core Needs</h2>
           <ul className="list-disc pl-6 sm:pl-10 text-gray-700 space-y-2 text-base md:text-xl">

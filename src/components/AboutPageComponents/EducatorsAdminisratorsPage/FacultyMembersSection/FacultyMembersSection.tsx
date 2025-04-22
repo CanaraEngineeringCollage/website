@@ -33,9 +33,7 @@ const FacultyMembersSection = () => {
   // Filter data based on category and department
   let filteredData: CouncilMember[] = [];
   if (selectedCategory === "faculty") {
-    filteredData = allData.filter(
-      (item) => item.category === "faculty" && item.department === selectedDepartment
-    );
+    filteredData = allData.filter((item) => item.category === "faculty" && item.department === selectedDepartment);
   } else {
     filteredData = allData.filter((item) => item.category === selectedCategory);
   }
@@ -53,7 +51,7 @@ const FacultyMembersSection = () => {
 
   return (
     <section className="px-4 sm:px-6 md:px-10 lg:px-20 py-8 sm:py-10 md:py-16 lg:py-20">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black leading-tight mb-10 sm:mb-12 md:mb-16 lg:mb-20">
+      <h1 className="text-[54px] font-bold text-black leading-tight mb-10 sm:mb-12 md:mb-16 lg:mb-20">
         Educators &<br />
         Administrators
       </h1>
@@ -62,9 +60,7 @@ const FacultyMembersSection = () => {
           <div className="w-full sm:w-[80%] mx-auto md:mx-0">
             <div className="border-b-2 border-border pb-4 sm:pb-5">
               <h1
-                className={`text-[20px]  cursor-pointer ${
-                  selectedCategory === "faculty" ? "font-extrabold text-[#2884CA]" : "text-textGray"
-                }`}
+                className={`text-[20px]  cursor-pointer ${selectedCategory === "faculty" ? "font-extrabold text-[#2884CA]" : "text-textGray"}`}
                 onClick={() => {
                   setSelectedCategory("faculty");
                   setSelectedDepartment("Computer Science & Engineering");
@@ -77,9 +73,7 @@ const FacultyMembersSection = () => {
                   {departments.map((dept) => (
                     <li
                       key={dept}
-                      className={`cursor-pointer py-1 ${
-                        selectedDepartment === dept ? "font-bold text-[#2884CA]" : "text-textGray"
-                      }`}
+                      className={`cursor-pointer py-1 ${selectedDepartment === dept ? "font-bold text-[#2884CA]" : "text-textGray"}`}
                       onClick={() => setSelectedDepartment(dept)}
                     >
                       {dept}
@@ -90,9 +84,7 @@ const FacultyMembersSection = () => {
             </div>
             <div className="border-b-2 border-border py-4 sm:py-5">
               <h1
-                className={`text-[20px] cursor-pointer ${
-                  selectedCategory === "admin" ? "font-extrabold text-[#2884CA]" : "text-textGray"
-                }`}
+                className={`text-[20px] cursor-pointer ${selectedCategory === "admin" ? "font-extrabold text-[#2884CA]" : "text-textGray"}`}
                 onClick={() => {
                   setSelectedCategory("admin");
                   setSelectedDepartment("");
@@ -103,9 +95,7 @@ const FacultyMembersSection = () => {
             </div>
             <div className="py-4 sm:py-5 border-border border-b-2">
               <h1
-                className={`text-[20px] cursor-pointer ${
-                  selectedCategory === "general" ? "font-extrabold text-[#2884CA]" : "text-textGray"
-                }`}
+                className={`text-[20px] cursor-pointer ${selectedCategory === "general" ? "font-extrabold text-[#2884CA]" : "text-textGray"}`}
                 onClick={() => {
                   setSelectedCategory("general");
                   setSelectedDepartment("");
@@ -142,15 +132,14 @@ const FacultyMembersSection = () => {
                     <h2 className="text-base sm:text-lg md:text-lg font-bold">{item.name}</h2>
                     <p className="text-xs font-bold sm:text-sm md:text-sm">{item.title && `${item.title}`}</p>
                     <p className="text-xs sm:text-sm md:text-sm">
-                      {item.department && `${item.department},`}{" "}
-                      <span className="font-semibold">{item.category}</span>
+                      {item.department && `${item.department},`} <span className="font-semibold">{item.category}</span>
                     </p>
-                    <Link href={`/user-details/${item.id}`}><p className="text-xs font-bold sm:text-sm md:text-sm flex items-center">
-                      View Profile
-                      <MdKeyboardArrowRight className="ml-1 text-xl" />
+                    <Link href={`/user-details/${item.id}`}>
+                      <p className="text-xs font-bold sm:text-sm md:text-sm flex items-center">
+                        View Profile
+                        <MdKeyboardArrowRight className="ml-1 text-xl" />
                       </p>
-                      </Link>
-
+                    </Link>
                   </div>
                 </div>
               );
