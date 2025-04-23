@@ -13,7 +13,6 @@ const page = () => {
       <section>
         <HeroSection />
       </section>
-
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <AboutTheDepartment />
       </section>
@@ -26,10 +25,10 @@ const page = () => {
       <section className="bg-[#071D2C] px-6 md:px-12 lg:px-16 xl:px-0">
         <MessageSection />
       </section>
-      <section className="px-6 md:px-12 lg:pl-16 lg:px-0 xl:px-0">
+      <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">
         <HotOfThePress />
       </section>
-      <section className="bg-gray-100">
+      <section className="bg-[#e5e5ea]">
         <FooterCard />
       </section>
     </>
