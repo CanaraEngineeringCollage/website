@@ -40,7 +40,7 @@ const studentSupport = [
   },
   {
     title: "SWO Department",
-    link: "/about/swo-department",
+    link: "/about/student-welfare-department",
   },
 ];
 
