@@ -95,7 +95,7 @@ const EmpoweringFutures: React.FC = () => {
 
   return (
     <>
-      <section className="max-w-7xl xl:max-w-[75%] md:py-56 py-20 overflow-hidden text-black mx-auto hidden md:block">
+      <section className="max-w-7xl xl:max-w-[75%]  overflow-hidden text-black mx-auto hidden md:block">
         {/* Top Content */}
         <div className="flex justify-between items-start  mx-auto pb-16">
           <div>

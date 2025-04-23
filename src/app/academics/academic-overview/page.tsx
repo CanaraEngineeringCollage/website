@@ -1,32 +1,23 @@
+import HeroSection from "@/components/AcademicsPageComponents/AcacemicOverviewPage/HeroSection";
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
-import CampusTour from "@/components/HomePageComponents/CampusTour/CampusTour";
 import EmpoweringFutures from "@/components/HomePageComponents/EmpoweringFutures/EmpoweringFutures";
 import ExplorePrograms from "@/components/HomePageComponents/ExplorePrograms/ExplorePrograms";
-import FutureCampusText from "@/components/HomePageComponents/FutureCampusText/FutureCampusText";
-import HeroSection from "@/components/HomePageComponents/HeroSecton/HeroSection";
 import StudentTour from "@/components/HomePageComponents/StudentTour/StudentTour";
 import { Testimonials } from "@/components/HomePageComponents/Testimonials/Testimonials";
-import TopRecruiters from "@/components/HomePageComponents/TopRecruiters/TopRecruiters";
+import React from "react";
 
-export default function Home() {
+const page = () => {
   return (
     <>
-      <HeroSection />
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
-        <FutureCampusText />
-      </section>
+    <section>
+        <HeroSection/>
+    </section>
       <section className="pl-6 md:pl-12 lg:pl-16 xl:px-0">
         <ExplorePrograms />
       </section>
-      <section>
-        <CampusTour />
-      </section>
-      <section className="px-6 md:py-56 py-20 md:px-12 lg:px-16 xl:px-0">
-        <EmpoweringFutures />
-      </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
-        <TopRecruiters />
+        <EmpoweringFutures />
       </section>
       <section>
         <StudentTour />
@@ -42,4 +33,6 @@ export default function Home() {
       </section>
     </>
   );
-}
+};
+
+export default page;

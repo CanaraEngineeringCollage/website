@@ -14,6 +14,7 @@ import {
   Learning,
   Notpad,
 } from "@/components/Icons/Icons";
+import Link from "next/link";
 
 export default function Academics() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -62,7 +63,7 @@ export default function Academics() {
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Curriculum & Programs</span>
                 <ul className="list-none text-gray-500 leading-10 cursor-pointer">
-                  <li>Academic Overview</li>
+                  <Link href="/academics/academic-overview"><li>Academic Overview</li></Link>
                   <li>Programs</li>
                 </ul>
               </div>

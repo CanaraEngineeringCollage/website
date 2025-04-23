@@ -38,8 +38,8 @@ const HotOfThePress = () => {
         breakpoints={{
           640: { slidesPerView: 1, spaceBetween: 20 },
           768: { slidesPerView: 2, spaceBetween: 20 },
-          1024: { slidesPerView: 3.5, spaceBetween: 10 },
-          1280: { slidesPerView: 3.8, spaceBetween: 1 },
+          1024: { slidesPerView: 3.5, spaceBetween: 20 },
+          1580: { slidesPerView: 3.8, spaceBetween: 1 },
         }}
         className="mySwiper"
         onSwiper={(swiper) => {
