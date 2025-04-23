@@ -1,5 +1,6 @@
 // components/FounderSection.tsx
 import Image from "next/image";
+import img from "../../../../../public/aboutPageImages/our-founder/canara-founder.png"
 
 export default function FounderSection() {
   return (
@@ -12,7 +13,7 @@ export default function FounderSection() {
             <div className="flex md:hidden flex-col items-center flex-shrink-0 mx-auto lg:px-20">
               <div className="w-80 h-96 relative rounded-xl overflow-hidden shadow-md">
                 <Image
-                  src="/aboutPageImages/our-founder/canara-founder.png"
+                  src={img}
                   alt="Sri Ammembal Subba Rao Pai"
                   width={1000}
                   height={1000}
@@ -43,7 +44,7 @@ export default function FounderSection() {
           {/* Right Column - Image */}
           <div className=" hidden md:flex flex-col items-center flex-shrink-0 mx-auto lg:px-20">
             <div className="w-80  h-96 relative rounded-xl overflow-hidden shadow-md">
-              <Image src="/aboutPagImages/our-founder/canara-founder.png" alt="Sri Ammembal Subba Rao Pai" fill className="object-cover" />
+              <Image src={img} alt="Sri Ammembal Subba Rao Pai" fill className="object-cover" />
             </div>
             <p className="mt-4 text-center text-[27px] font-semibold text-black">
               Sri Ammembal Subba

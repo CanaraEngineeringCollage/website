@@ -49,9 +49,8 @@ const FunctionDepartment = () => {
   };
 
   return (
-    <section className="max-w-7xl lg2:w-full mx-auto xl:max-w-[75%]">
+    <section className="max-w-7xl xl:max-w-[75%]">
       <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl   font-bold text-black pb-6">Functions of the Department</h1>
-      <h1 className="text-black lg2:text-red-800 xl:text-yellow-400 2xl:text-green-900 3xl:text-blue-800">sdfdsfsd</h1>
       <Swiper
         modules={[Autoplay]}
         autoplay={{ delay: autoplayDelay, disableOnInteraction: false }}

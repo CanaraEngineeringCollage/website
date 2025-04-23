@@ -17,7 +17,7 @@ const page = () => {
     <YoutubeSection/>
 
     </section>
-    <section className='px-6 md:px-12 lg:px-1 xl:px-0'>
+    <section className='px-6 md:px-12 lg:px-16 xl:px-0'>
     <FunctionDepartment/>
 
     </section>
