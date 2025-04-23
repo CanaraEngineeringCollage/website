@@ -22,7 +22,7 @@ export default function ExplorePrograms() {
 
   return (
     <div className="w-full h-full py-20 text-black ">
-      <h2 className="max-w-7xl pl-4 mx-auto md:text-[54px] text-[31px]  font-bold text-neutral-800  font-sans">Explore our programs</h2>
+      <h2 className="max-w-7xl xl:max-w-[75%]  pl-4 mx-auto text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-neutral-800">Explore our programs</h2>
       <Carousel items={cards} />
     </div>
   );
@@ -175,7 +175,7 @@ function CardContent({ description }: CardContentProps) {
         </div>
         <div>
           <h3 className="text-2xl mb-2 font-semibold">{description.subtitle2}</h3>
-          <p className="text-lg  text-textGray">{description.subDescription2}</p>
+          <p className="text-lg   text-textGray">{description.subDescription2}</p>
         </div>
         <div>
           <h3 className="text-2xl mb-2 font-semibold">{description.subtitle3}</h3>
