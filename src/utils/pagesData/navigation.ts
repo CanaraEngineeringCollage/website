@@ -36,11 +36,11 @@ const accreditations = [
 const studentSupport = [
   {
     title: "Grievance Redressal Cell",
-    link: "/about/student-welfare",
+    link: "/about/grievance-redressal-cell",
   },
   {
     title: "SWO Department",
-    link: "/student-grievance-cell",
+    link: "/about/swo-department",
   },
 ];
 

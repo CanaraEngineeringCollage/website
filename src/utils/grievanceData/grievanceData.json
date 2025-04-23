@@ -1,0 +1,102 @@
+[
+    {
+        "title": "Health Services",
+        "data": [
+            {
+                "title": "Health Objectives"
+            },
+            {
+                "description": "The objective of health services is to ensure the physical and mental well-being of students and staff.The objective of health services is to ensure the physical and mental well-being of students and staff."
+            },
+            {
+                "points": [
+                    "Provide access to medical consultations and first aid.",
+                    "Organize health awareness programs and workshops.",
+                    "Promote mental health support and counseling.",
+                    "Ensure a hygienic and safe campus environment.",
+                    "Encourage regular health check-ups."
+                ]
+            }
+        ]
+    },
+    {
+        "title": "IT Support",
+        "data": [
+            {
+                "title": "IT Objectives"
+            },
+            {
+                "description": "The objective of IT support is to provide reliable and efficient technology services to students and staff."
+            },
+            {
+                "points": [
+                    "Maintain and upgrade campus IT infrastructure.",
+                    "Provide technical support for hardware and software issues.",
+                    "Ensure secure and fast internet connectivity.",
+                    "Organize training sessions on new technologies.",
+                    "Promote the use of digital tools for learning and administration."
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Environmental Initiatives",
+        "data": [
+            {
+                "title": "Environmental Objectives"
+            },
+            {
+                "description": "The objective of environmental initiatives is to promote sustainability and environmental awareness on campus."
+            },
+            {
+                "points": [
+                    "Encourage waste segregation and recycling.",
+                    "Organize tree plantation drives and green campaigns.",
+                    "Promote the use of renewable energy sources.",
+                    "Conduct workshops on environmental conservation.",
+                    "Foster a culture of eco-friendly practices."
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Career Services",
+        "data": [
+            {
+                "title": "Career Objectives"
+            },
+            {
+                "description": "The objective of career services is to guide students in achieving their professional goals."
+            },
+            {
+                "points": [
+                    "Provide career counseling and guidance.",
+                    "Organize job fairs and campus recruitment drives.",
+                    "Offer training on resume building and interview skills.",
+                    "Facilitate internships and industry exposure.",
+                    "Build partnerships with companies for placement opportunities."
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Community Engagement",
+        "data": [
+            {
+                "title": "Community Objectives"
+            },
+            {
+                "description": "The objective of community engagement is to foster social responsibility and active participation in community development."
+            },
+            {
+                "points": [
+                    "Organize volunteer programs and social drives.",
+                    "Collaborate with NGOs for community projects.",
+                    "Promote awareness on social issues.",
+                    "Encourage students to participate in outreach activities.",
+                    "Build a culture of empathy and service."
+                ]
+            }
+        ]
+    }
+]
