@@ -4,7 +4,7 @@ import { YouTubeEmbed } from "@next/third-parties/google";
 
 const CampusTour: React.FC = () => {
   return (
-    <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+    <section className="px-6 md:px-12 lg:px-16 xl:px-0 max-w-7xl mx-auto xl:max-w-[75%]">
       <div className="flex justify-center">
         <div className="w-full  mx-auto rounded-2xl aspect-video">
           <YouTubeEmbed

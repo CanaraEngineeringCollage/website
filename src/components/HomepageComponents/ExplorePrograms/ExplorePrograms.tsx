@@ -21,7 +21,7 @@ export default function ExplorePrograms() {
   const cards = programData.map((card, index) => <Card key={card.title} card={card} index={index} />);
 
   return (
-    <div className="w-full h-full py-20 text-black ">
+    <div className="w-full h-full md:py-56 py-20 text-black ">
       <h2 className="max-w-7xl xl:max-w-[75%]  pl-4 mx-auto text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-neutral-800">Explore our programs</h2>
       <Carousel items={cards} />
     </div>
@@ -167,7 +167,7 @@ const programData = [
 function CardContent({ description }: CardContentProps) {
   return (
     <div>
-      <Image src={description.src} alt="Image" loading="lazy" width={1000} height={700} className=" object-cover h-[700px] rounded-2xl mb-10" />
+      <Image src={description.src} alt="Image" loading="lazy" width={1000} height={700} className=" object-cover lg:h-[700px] h-[400px] rounded-2xl mb-10" />
       <div className="p-4 space-y-4 text-left text-sm text-black bg-white">
         <div>
           <h3 className="text-2xl mb-2 font-semibold">{description.subtitle1}</h3>

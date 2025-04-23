@@ -5,7 +5,7 @@ import img from "../../../../../public/aboutPageImages/our-founder/canara-founde
 const MessageSection = () => {
   return (
     <section className="max-w-7xl xl:max-w-[75%] mx-auto py-24 ">
-      <div className=" grid  lg:grid-cols-2 lg:gap-10 lg:px-10">
+      <div className=" grid  lg:grid-cols-2 lg:gap-10 lg:px-10 xl:px-0">
       <div className="block lg:hidden">
           <div className="flex lg:hidden flex-col items-center flex-shrink-0 mx-auto lg:px-20">
             <div className="w-80  h-96 relative rounded-xl overflow-hidden shadow-md">

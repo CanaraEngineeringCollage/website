@@ -50,7 +50,7 @@ const FunctionDepartment = () => {
   };
 
   return (
-    <section className="lg:ml-20  py-24">
+    <section className="lg:ml-20  py-24 xl:py-36 xl:ml-60">
       <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-black pb-6">Functions of the Department</h1>
       <Swiper
         modules={[Autoplay]}
@@ -70,7 +70,7 @@ const FunctionDepartment = () => {
       >
         {data?.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="max-w-sm h-[25vh] lg:h-[30vh] p-6 bg-white rounded-2xl shadow-md border border-gray-100">
+            <div className="max-w-sm h-[25vh] lg:h-[30vh] p-6 bg-[#ffffff] rounded-2xl">
               <div className="mb-4">
                 <Image src={item.icon} alt="Mental Health Icon" width={30} height={30} />
               </div>

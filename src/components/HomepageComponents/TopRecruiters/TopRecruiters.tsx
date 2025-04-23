@@ -3,9 +3,9 @@ import logos from '../../../utils/companyLogo/logos.json';
 
 const TopRecruiters: React.FC = () => {
   return (
-    <section className="max-w-7xl xl:max-w-[75%] mx-auto  py-16">
+    <section className="max-w-7xl xl:max-w-[75%] mx-auto  md:py-16  pb-12">
       <div className="translate-y-0 transition-all duration-1000 ease-out">
-        <h2 className="text-4xl text-black font-bold text-center mb-12">Top Recruiters</h2>
+        <h2 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-black text-center mb-22 ">Top Recruiters</h2>
 
         {/* Marquee wrapper */}
         <div className="marquee-container">

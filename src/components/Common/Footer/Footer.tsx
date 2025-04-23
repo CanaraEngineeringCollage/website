@@ -70,7 +70,7 @@ const Footer: FC = () => {
   const [stayConnectedIsOpen, setStayConnectedIsOpen] = useState<boolean>(false);
 
   return (
-    <footer className="bg-gray-100 text-gray-700 text-sm pt-10">
+    <footer className="bg-[#e5e5ea] text-gray-700 text-sm pt-10">
       {/* Desktop Version */}
       <div className="lg:max-w-7xl  xl:mx-auto xl:max-w-[75%] mx-auto lg:block hidden">
         <hr className="text-gray-300 pb-3.5" />
