@@ -3,6 +3,8 @@ import EmpoweringFutures from "@/components/HomePageComponents/EmpoweringFutures
 import ExplorePrograms from "@/components/HomePageComponents/ExplorePrograms/ExplorePrograms";
 import FutureCampusText from "@/components/HomePageComponents/FutureCampusText/FutureCampusText";
 import HeroSection from "@/components/HomePageComponents/HeroSecton/HeroSection";
+import StudentTour from "@/components/HomePageComponents/StudentTour/StudentTour";
+import { Testimonials } from "@/components/HomePageComponents/Testimonials/Testimonials";
 import TopRecruiters from "@/components/HomePageComponents/TopRecruiters/TopRecruiters";
 
 export default function Home() {
@@ -23,6 +25,12 @@ export default function Home() {
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <TopRecruiters />
+      </section>
+      <section>
+        <StudentTour />
+      </section>
+      <section className="px-0 bg-white">
+        <Testimonials />
       </section>
     </>
   );

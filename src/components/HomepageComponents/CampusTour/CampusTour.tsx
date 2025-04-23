@@ -6,7 +6,7 @@ const CampusTour: React.FC = () => {
   return (
     <section className="w-full bg-[#144A72] px-6 md:px-12 lg:px-16 xl:px-0 md:py-40 py-20 ">
       <div className="max-w-4xl mx-auto text-center text-white mb-16">
-        <h2 className="md:text-6xl text-3xl  font-extrabold   mb-5">Experience the Campus</h2>
+        <h2 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold mb-5">Experience the Campus</h2>
         <p className=" font-medium md:text-2xl text-base text-white/60">
           Explore the campus with a virtual tour & discover one among the
           <br />
