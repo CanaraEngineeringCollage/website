@@ -1,11 +1,12 @@
 "use client";
 import Image from "next/image";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { CiPlay1, CiPause1 } from "react-icons/ci";
+import functionDeprtmentData from "../../../../utils/functionDepartmentData/functionDepartmentData.json";
 
 interface DataItem {
   title: string;
@@ -13,49 +14,20 @@ interface DataItem {
   icon: string;
 }
 
-const data: DataItem[] = [
-  {
-    title: "Counselling & Mental Health Support",
-    description: "Offers psychological counselling services for stress, anxiety, and personal issues.",
-    icon: "/studentWelfarePage/self-love.svg",
-  },
-  {
-    title: "Student Grievance Redressal",
-    description: "Addresses students' complaints and concerns related to academics, facilities, or any institutional issues.",
-    icon: "/studentWelfarePage/2.svg",
-  },
-  {
-    title: "Accommodation & Hostel Facilities",
-    description: "Ensures safe and comfortable housing for students, especially those from out of town.Manages hostel services and addresses related issues.",
-    icon: "/studentWelfarePage/3.svg",
-  },
-  {
-    title: "Career Guidance ",
-    description: "Organizes career counselling and skill development programs.",
-    icon: "/studentWelfarePage/4.svg",
-  },
-  {
-    title: "Career Guidance & Placement Support",
-    description: "Provides career counselling, resume building, and interview preparation.",
-    icon: "/studentWelfarePage/self-love.svg",
-  },
-  {
-    title: "Self-Care Workshops",
-    description: "Organizes workshops focused on self-care practices and mental wellness.",
-    icon: "/studentWelfarePage/2.svg",
-  },
-  {
-    title: "Peer Support Programs",
-    description: "Facilitates peer support groups for students to share experiences and coping strategies.",
-    icon: "/studentWelfarePage/3.svg",
-  },
-];
-
 const FunctionDepartment = () => {
-  const swiperRef = useRef<any>(null);
+  const [data, setData] = useState<DataItem[]>(functionDeprtmentData);
+  const swiperRef = useRef<SwiperType | null>(null);
   const [isPlay, setIsPlay] = useState(true);
   const [progress, setProgress] = useState(0);
   const autoplayDelay = 3000; // Swiper autoplay delay in ms
+
+  const fecthData = async () => {
+    setData(functionDeprtmentData);
+  };
+
+  useEffect(() => {
+    fecthData();
+  }, []);
 
   // Handle play/pause toggle
   const togglePlayPause = () => {
@@ -77,8 +49,9 @@ const FunctionDepartment = () => {
   };
 
   return (
-    <section className="lg:ml-20 ml-6 py-14">
-      <h1 className="text-[45px] text-black font-bold pb-6">Functions of the Department</h1>
+    <section className="max-w-7xl lg2:w-full mx-auto xl:max-w-[75%]">
+      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl   font-bold text-black pb-6">Functions of the Department</h1>
+      <h1 className="text-black lg2:text-red-800 xl:text-yellow-400 2xl:text-green-900 3xl:text-blue-800">sdfdsfsd</h1>
       <Swiper
         modules={[Autoplay]}
         autoplay={{ delay: autoplayDelay, disableOnInteraction: false }}
@@ -95,7 +68,7 @@ const FunctionDepartment = () => {
         }}
         onAutoplayTimeLeft={handleAutoplayTimeLeft} // Sync progress with autoplay
       >
-        {data.map((item, index) => (
+        {data?.map((item, index) => (
           <SwiperSlide key={index}>
             <div className="max-w-sm h-[25vh] lg:h-[30vh] p-6 bg-white rounded-2xl shadow-md border border-gray-100">
               <div className="mb-4">
@@ -109,10 +82,7 @@ const FunctionDepartment = () => {
       </Swiper>
       <div className="flex justify-between items-center mt-9 me-8 gap-4">
         {/* Play/Pause Button with Progress Circle */}
-        <div
-          className="relative lg:pe-5  md:pb-0 md:pe-3 lg:pb-0 cursor-pointer"
-          onClick={togglePlayPause}
-        >
+        <div className="relative lg:pe-5  md:pb-0 md:pe-3 lg:pb-0 cursor-pointer" onClick={togglePlayPause}>
           <svg width="50" height="50" viewBox="0 0 50 50">
             {/* Background Circle */}
             <circle cx="25" cy="25" r="22" stroke="#e8e8ed" strokeWidth="2" fill="none" opacity="0.3" />
@@ -132,15 +102,8 @@ const FunctionDepartment = () => {
             />
             {/* Play/Pause Icon */}
             <foreignObject x="14" y="14" width="22" height="22">
-              <button
-                className="w-full h-full flex items-center justify-center"
-                aria-label={isPlay ? "Pause" : "Play"}
-              >
-                {isPlay ? (
-                  <CiPause1 className="text-2xl text-[#666668]" />
-                ) : (
-                  <CiPlay1 className="text-2xl text-[#666668]" />
-                )}
+              <button className="w-full h-full flex items-center justify-center" aria-label={isPlay ? "Pause" : "Play"}>
+                {isPlay ? <CiPause1 className="text-2xl text-[#666668]" /> : <CiPlay1 className="text-2xl text-[#666668]" />}
               </button>
             </foreignObject>
           </svg>

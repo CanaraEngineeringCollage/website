@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@material-tailwind/react": "^2.1.10",
+    "@next/third-parties": "^15.3.1",
     "@tabler/icons-react": "^3.31.0",
     "clsx": "^2.1.1",
     "motion": "^12.6.3",
