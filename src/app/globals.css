@@ -42,17 +42,11 @@ lite-youtube {
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-primary: #2884CA;
+  --color-primary: #2884ca;
   --color-secondary: #005580;
-  --color-border:#e3e6ed;
-  --color-textGray: #86868B;
-
-
- 
-
+  --color-border: #e3e6ed;
+  --color-textGray: #86868b;
 }
-
-
 
 @theme {
   --breakpoint-*: initial;
@@ -61,7 +55,7 @@ lite-youtube {
   --breakpoint-lg: 1024px;
   --breakpoint-lg2: 1200px;
   --breakpoint-xl: 1580px;
-  --breakpoint-2xl: 2000px;
+  --breakpoint-2xl: 2000px;
 }
 
 .swiper-pagination-bullets {
@@ -81,30 +75,28 @@ lite-youtube {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #192F59 !important; /* blue-600 */
+  background-color: #192f59 !important; /* blue-600 */
   width: 36px !important;
 }
 
-
-
 lite-youtube {
   max-width: none !important;
-  }
-  
-  /* Option 2: More specific selector for better specificity */
-  .your-container-class lite-youtube {
+}
+
+/* Option 2: More specific selector for better specificity */
+.your-container-class lite-youtube {
   max-width: none;
-  }
-  
-  lite-youtube {
+}
+
+lite-youtube {
   max-width: 100% !important;
   border-radius: 20px;
-  }
+}
 
 .marquee-container {
   overflow: hidden;
   position: relative;
-  width: 100%;
+  width: 100% !important;
 }
 
 .animate-marquee {
@@ -122,7 +114,3 @@ lite-youtube {
     transform: translateX(-50%);
   }
 }
-
-
-
-

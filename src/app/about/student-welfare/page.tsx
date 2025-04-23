@@ -1,28 +1,39 @@
-import AboutTheDepartment from '@/components/AboutPageComponents/StudentWelfarePage/AboutTheDepartment/AboutTheDepartment'
-import FunctionDepartment from '@/components/AboutPageComponents/StudentWelfarePage/FunctionDepartment/FunctionDepartment'
-import HeroSection from '@/components/AboutPageComponents/StudentWelfarePage/HeroSection/HeroSection'
-import YoutubeSection from '@/components/AboutPageComponents/StudentWelfarePage/YoutubeSection/YoutubeSection'
-import React from 'react'
+import AboutTheDepartment from "@/components/AboutPageComponents/StudentWelfarePage/AboutTheDepartment/AboutTheDepartment";
+import FunctionDepartment from "@/components/AboutPageComponents/StudentWelfarePage/FunctionDepartment/FunctionDepartment";
+import HeroSection from "@/components/AboutPageComponents/StudentWelfarePage/HeroSection/HeroSection";
+import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
+import MessageSection from "@/components/AboutPageComponents/StudentWelfarePage/MessageSection/MessageSection";
+import YoutubeSection from "@/components/AboutPageComponents/StudentWelfarePage/YoutubeSection/YoutubeSection";
+import React from "react";
+import FooterCard from "@/components/Common/FooterCard/FooterCard";
 
 const page = () => {
   return (
     <>
+      <section>
+        <HeroSection />
+      </section>
 
-    <HeroSection/>
-    <section className='px-6 md:px-12 lg:px-16 xl:px-0'>
-    <AboutTheDepartment/>
-
-    </section>
-    <section className='px-6 md:px-12 lg:px-16 xl:px-0'>
-    <YoutubeSection/>
-
-    </section>
-    <section className='px-6 md:px-12 lg:px-16 xl:px-0'>
-    <FunctionDepartment/>
-
-    </section>
+      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+        <AboutTheDepartment />
+      </section>
+      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+        <YoutubeSection />
+      </section>
+      <section className="px-6 md:px-12 lg:pl-16 lg:px-0 xl:px-0">
+        <FunctionDepartment />
+      </section>
+      <section className="bg-[#071D2C] px-6 md:px-12 lg:px-16 xl:px-0">
+        <MessageSection />
+      </section>
+      <section className="px-6 md:px-12 lg:pl-16 lg:px-0 xl:px-0">
+        <HotOfThePress />
+      </section>
+      <section className="bg-gray-100">
+        <FooterCard />
+      </section>
     </>
-  )
-}
+  );
+};
 
-export default page
+export default page;
