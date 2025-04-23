@@ -48,16 +48,21 @@ lite-youtube {
   --color-textGray: #86868B;
 
 
+ 
+
+}
+
+
+
+@theme {
+  --breakpoint-*: initial;
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
   --breakpoint-lg2: 1200px;
-  --breakpoint-xl: 1280px;
-  --breakpoint-2xl: 1536px;
-  --breakpoint-3xl: 1920px;
-
+  --breakpoint-xl: 1580px;
+  --breakpoint-2xl: 2000px;
 }
-
 
 .swiper-pagination-bullets {
   display: flex !important;
@@ -80,6 +85,21 @@ lite-youtube {
   width: 36px !important;
 }
 
+
+
+lite-youtube {
+  max-width: none !important;
+  }
+  
+  /* Option 2: More specific selector for better specificity */
+  .your-container-class lite-youtube {
+  max-width: none;
+  }
+  
+  lite-youtube {
+  max-width: 100% !important;
+  border-radius: 20px;
+  }
 
 .marquee-container {
   overflow: hidden;
