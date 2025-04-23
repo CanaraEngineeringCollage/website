@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper as SwiperType } from "swiper";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
@@ -49,8 +50,8 @@ const FunctionDepartment = () => {
   };
 
   return (
-    <section className="max-w-7xl xl:max-w-[75%]">
-      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl   font-bold text-black pb-6">Functions of the Department</h1>
+    <section className="lg:ml-20  py-24">
+      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-black pb-6">Functions of the Department</h1>
       <Swiper
         modules={[Autoplay]}
         autoplay={{ delay: autoplayDelay, disableOnInteraction: false }}
