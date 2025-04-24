@@ -6,7 +6,7 @@ const GrievanceRedressalCell = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
 
   return (
-    <section className="py-10 text-black lg2:px-24 mx-5 overflow-hidden">
+    <section className="py-10 xl:py-36 text-black lg2:px-24 mx-5 overflow-hidden">
       <div className="">
         <h1 className="text-[30px] lg:text-[54px] font-bold pb-1 lg:pb-10 text-black">Mandatory Disclosure</h1>
         <div className="grid grid-cols-1 gap-3 md:gap-32 md:grid-cols-12 mt-10">

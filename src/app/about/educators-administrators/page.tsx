@@ -6,7 +6,7 @@ const page = () => {
   return (
     <>
     <FacultyMembersSection/>
-    <section className='bg-gray-100'>
+    <section className='bg-[#E5E5EA]'>
    <FooterCard/>
    </section>
     </>

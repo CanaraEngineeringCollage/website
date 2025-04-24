@@ -107,7 +107,7 @@ const FacultyMembersSection = () => {
           </div>
         </div>
         <div className="md:col-span-7 text-sm sm:text-base md:text-lg">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 justify-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 xl:grid-c gap-4 sm:gap-6 md:gap-8 justify-items-center">
             {filteredData.map((item, index) => {
               const isLastCard = index === filteredData.length - 1;
               const remainder = filteredData.length % 2;
@@ -116,7 +116,7 @@ const FacultyMembersSection = () => {
               return (
                 <div
                   key={item.id}
-                  className={`relative w-full max-w-[280px] sm:max-w-[300px] md:max-w-[309px] h-[400px] sm:h-[430px] md:h-[450px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center py-4 sm:py-6 shadow-md ${
+                  className={`relative w-full max-w-[280px] sm:max-w-[300px] md:max-w-[309px] h-[400px] sm:h-[430px] md:h-[450px] xl:h-[500px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center py-4 sm:py-6 shadow-md ${
                     shouldCenterLast ? "sm:col-span-2 sm: justify-self-center" : ""
                   }`}
                 >

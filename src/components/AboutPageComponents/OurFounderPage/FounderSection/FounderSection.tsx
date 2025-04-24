@@ -5,7 +5,7 @@ import img from "../../../../../public/aboutPageImages/our-founder/canara-founde
 export default function FounderSection() {
   return (
     <section className="bg-[#fafbfe] py-20 px-4 overflow-hidden">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-7xl xl:max-w-[75%] mx-auto">
         <div className="flex flex-col md:flex-row items-start gap-12">
           {/* Left Column - Text */}
           <div className="flex-1  text-[#86868B] text-[17px] leading-relaxed space-y-6 ">

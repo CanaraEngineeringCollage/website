@@ -23,7 +23,7 @@ const ProfileCard = () => {
     <section className="pb-20 px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64">
       <h1 className="text-black text-[40px] lg:text-[54px] mb-10 mt-10 md:mb-20 font-bold text-center">Governing Council</h1>
 
-      <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
+      <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 lg:gap-8 justify-items-center">
         {data.map((item, index) => {
           const isLastCard = index === data.length - 1;
           const remainder = data.length % 3;

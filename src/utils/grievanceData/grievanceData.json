@@ -1,29 +1,34 @@
 [
     {
-        "title": "Health Services",
+        "title": "Objectives",
         "data": [
             {
                 "title": "Health Objectives"
             },
             {
-                "description": "The objective of health services is to ensure the physical and mental well-being of students and staff.The objective of health services is to ensure the physical and mental well-being of students and staff."
+                "description": "The objective of the Students Grievance Redressal Cell is to develop a responsible and positive attitude among students in order to maintain a harmonious educational atmosphere in Canara Engineering College Campus."
             },
             {
                 "points": [
-                    "Provide access to medical consultations and first aid.",
-                    "Organize health awareness programs and workshops.",
-                    "Promote mental health support and counseling.",
-                    "Ensure a hygienic and safe campus environment.",
-                    "Encourage regular health check-ups."
+                    "Upholding the dignity of the Institution by ensuring strife free atmosphere in the Institute through promoting cordial student-student relationship and student teacher relationship etc.",
+                    "To support, those students who have been deprived of the services for which he/she is entitled.",
+                    "To make teaching and supporting staff responsive, accountable, courteous in dealing with the students.",
+                    "To ensure effective solution to the student grievances with an impartial and fair approach.",
+                    "Encouraging the students to express their grievance/problems freely and frankly without any fear of being victimized.",
+                    "Advising the students to respect the right of dignity of one another and show restraint and patience whenever any occasion arises.",
+                    "Advising the students to refrain from inciting students against other students or teachers and lnstitute Administration.",
+                    "Ragging in any form is strictly prohibited in and outside the lnstitution.",
+                    "Any violation of ragging or disciplinary rules should be urgently brought to the notice of the Principal/Anti Ragging Committee of the Institution.",
+                    "To ensure effective solution to the students grievances with an impartial and fair approach."
                 ]
             }
         ]
     },
     {
-        "title": "IT Support",
+        "title": "Grievance Redressal Policy",
         "data": [
             {
-                "title": "IT Objectives"
+                "title": "Grievance Redressal Policy"
             },
             {
                 "description": "The objective of IT support is to provide reliable and efficient technology services to students and staff."
@@ -40,10 +45,10 @@
         ]
     },
     {
-        "title": "Environmental Initiatives",
+        "title": "Functioning of Cell",
         "data": [
             {
-                "title": "Environmental Objectives"
+                "title": "Functioning of Cell"
             },
             {
                 "description": "The objective of environmental initiatives is to promote sustainability and environmental awareness on campus."
@@ -60,10 +65,10 @@
         ]
     },
     {
-        "title": "Career Services",
+        "title": "Responsibilities",
         "data": [
             {
-                "title": "Career Objectives"
+                "title": "Responsibilities"
             },
             {
                 "description": "The objective of career services is to guide students in achieving their professional goals."
@@ -80,10 +85,70 @@
         ]
     },
     {
-        "title": "Community Engagement",
+        "title": "Student Grievance Redressal Committee (SGRC): 2024-25",
         "data": [
             {
-                "title": "Community Objectives"
+                "title": "Student Grievance Redressal Committee (SGRC): 2024-25"
+            },
+            {
+                "description": "The objective of community engagement is to foster social responsibility and active participation in community development."
+            },
+            {
+                "points": [
+                    "Organize volunteer programs and social drives.",
+                    "Collaborate with NGOs for community projects.",
+                    "Promote awareness on social issues.",
+                    "Encourage students to participate in outreach activities.",
+                    "Build a culture of empathy and service."
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Ombudsman for Grievance Redressal",
+        "data": [
+            {
+                "title": "Student Grievance Redressal Committee (SGRC): 2024-25"
+            },
+            {
+                "description": "The objective of community engagement is to foster social responsibility and active participation in community development."
+            },
+            {
+                "points": [
+                    "Organize volunteer programs and social drives.",
+                    "Collaborate with NGOs for community projects.",
+                    "Promote awareness on social issues.",
+                    "Encourage students to participate in outreach activities.",
+                    "Build a culture of empathy and service."
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Online Grievance",
+        "data": [
+            {
+                "title": "Online Grievance"
+            },
+            {
+                "description": "The objective of community engagement is to foster social responsibility and active participation in community development."
+            },
+            {
+                "points": [
+                    "Organize volunteer programs and social drives.",
+                    "Collaborate with NGOs for community projects.",
+                    "Promote awareness on social issues.",
+                    "Encourage students to participate in outreach activities.",
+                    "Build a culture of empathy and service."
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Outcomes",
+        "data": [
+            {
+                "title": "Outcomes"
             },
             {
                 "description": "The objective of community engagement is to foster social responsibility and active participation in community development."

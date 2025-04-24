@@ -7,7 +7,7 @@ const MandatoryDisclosure = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
 
   return (
-    <section className="py-10 text-black">
+    <section className="py-10 xl:py-36 text-black">
       <div className="lg2:mx-24 mx-5">
         <h1 className="text-[30px] lg:text-[54px]  font-bold pb-1 lg:pb-10 text-black">Mandatory Disclosure</h1>
         <div className="grid grid-cols-1 gap-3 md:gap-32 md:grid-cols-12 mt-10">
