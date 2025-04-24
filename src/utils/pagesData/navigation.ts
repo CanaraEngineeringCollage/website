@@ -1,11 +1,11 @@
 const campusLegacy = [
   {
     title: "About the CEC Campus",
-    link: "/about",
+    link: "/about/about-cec",
   },
   {
     title: "History of CEC",
-    link: "/vision-and-mission",
+    link: "/about/history-of-cee",
   },
 ];
 
