@@ -31,7 +31,7 @@ const ourCollege = [
 ];
 
 const academics = [
-  { data: "Admissions", links: "#" },
+  { data: "Admissions", links: "/admission" },
   { data: "Courses & Programs", links: "#" },
   { data: "Syllabus", links: "#" },
   { data: "Academic Calendar", links: "#" },
