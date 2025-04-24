@@ -7,12 +7,12 @@ const FormSection: React.FC = () => {
   const data: string[] = ["Marks & Attendance", "Circulars", "Examination Timetables"];
 
   return (
-    <section className="max-w-7xl xl:max-w-[75%] mx-auto py-10 text-black px-4">
+    <section className="px-4 sm:px-10 md:px-16 lg:px-20 py-12 sm:py-16 xl:py-36 md:py-20 text-black">
     <div>
       <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-black text-center md:text-left">
         Examinations & Records
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-20 mt-8">
         <div className="md:col-span-4 mt-10">
           <div>
             {data.map((item, index) => (
