@@ -10,9 +10,9 @@ import React from "react";
 const page = () => {
   return (
     <>
-    <section>
-        <HeroSection/>
-    </section>
+      <section>
+        <HeroSection />
+      </section>
       <section className="pl-6 md:pl-12 lg:pl-16 xl:px-0">
         <ExplorePrograms />
       </section>
