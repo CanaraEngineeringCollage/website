@@ -100,7 +100,7 @@ const campusBeats = [
 const learningHub = [
   {
     title: "Resources",
-    link: "/departments/details/chemistry",
+    link: "/academics/learning-hub",
   },
 ];
 
