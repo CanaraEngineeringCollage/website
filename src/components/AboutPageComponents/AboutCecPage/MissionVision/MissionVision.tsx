@@ -8,13 +8,13 @@ export default function MissionVision() {
     <section className="py-16 px-6 md:px-12 ">
       <div className="max-w-7xl xl:max-w-[75%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-20">
         {/* Mission Card */}
-        <div className="bg-white rounded-2xl shadow p-18 space-y-6">
+        <div className="bg-white rounded-2xl shadow p-10 lg:p-18 space-y-6">
           <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-16">Our Mission</h2>
 
           <div className="grid grid-rows-3 gap-6 h-full pb-16">
 
             {/* Item 1 */}
-            <div className="flex gap-10 items-center">
+            <div className="flex gap-10 flex-col lg:flex-row text-center lg:text-start items-center">
               <Image src={visionImage1} alt="bookImage" className="max-w-[50px] my-auto" />
               <div>
                 <h3 className=" text-xl text-textGray font-extrabold">Ethical & Industry-Ready Learning</h3>
@@ -26,7 +26,7 @@ export default function MissionVision() {
             </div>
 
             {/* Item 2 */}
-            <div className="flex gap-10 items-center">
+            <div className="flex gap-10 flex-col lg:flex-row text-center lg:text-start items-center">
               <Image src={visionImage2} alt="ideaIcon" className="max-w-[50px] my-auto" />
               <div>
                 <h3 className="text-xl text-textGray font-extrabold">Innovation Excellence</h3>
@@ -35,7 +35,7 @@ export default function MissionVision() {
             </div>
 
             {/* Item 3 */}
-            <div className="flex gap-10 items-center">
+            <div className="flex gap-10 flex-col lg:flex-row text-center lg:text-start items-center">
               <Image src={visionImage3} alt="valueIcon" className="max-w-[50px] my-auto" />
               <div>
                 <h3 className="text-xl text-textGray font-extrabold">Instilling Core Values</h3>

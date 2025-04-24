@@ -13,7 +13,7 @@ export default function NextStepSection() {
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <div className="space-y-6 flex flex-col items-center">
-          <h2 className="max-w-md  text-[84px] md:text-5xl font-extrabold text-white">
+          <h2 className="max-w-md  text-[31px] md:text-5xl font-extrabold text-white">
             Ready to take the next step?
           </h2>
 
