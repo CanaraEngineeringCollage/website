@@ -78,11 +78,11 @@ const departments = [
 const curriculum = [
   {
     title: "Academic Overview",
-    link: "/anti-sexual-harassment",
+    link: "/academics/academic-overview",
   },
   {
     title: "Programs",
-    link: "/student-grievance-cell",
+    link: "/academics/programs",
   },
 ];
 
