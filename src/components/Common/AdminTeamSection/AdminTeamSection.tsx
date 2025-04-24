@@ -74,7 +74,7 @@ export default function AdminTeamSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 w-full sm:grid-cols-2 gap-6">
           {visibleMembers.map((member, index) => (
             <div
               key={index}
@@ -124,7 +124,7 @@ export default function AdminTeamSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1  gap-6">
+        <div className="grid grid-cols-1 w-full gap-6">
           {visibleMembersMobile.map((member, index) => (
             <div
               key={index}
