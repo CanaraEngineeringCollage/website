@@ -112,7 +112,7 @@ export default function Academics() {
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Learning Hub</span>
                 <ul className="list-none text-gray-500 leading-10 cursor-pointer">
-                  <li>Resources</li>
+                  <Link href="/academics/learning-hub"><li>Resources</li></Link>
                 </ul>
               </div>
             </div>
