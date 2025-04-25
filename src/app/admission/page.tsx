@@ -1,5 +1,6 @@
 import HeroSection from "@/components/AdmissionPageComponents/HeroSection/HeroSection";
 import HowToApply from "@/components/AdmissionPageComponents/HowToApply/HowToApply";
+import YoutubeSection from "@/components/AdmissionPageComponents/YoutubeSection/YoutubeSection";
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
 import EmpoweringFutures from "@/components/HomePageComponents/EmpoweringFutures/EmpoweringFutures";
@@ -17,7 +18,13 @@ const page = () => {
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <EmpoweringFutures />
       </section>
-<HowToApply/>
+      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+        <HowToApply />
+      </section>
+      
+      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+        <YoutubeSection />
+      </section>
       <section className="px-0 bg-white">
         <Testimonials />
       </section>
