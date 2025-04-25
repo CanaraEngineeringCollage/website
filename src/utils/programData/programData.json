@@ -1,0 +1,83 @@
+[
+  {
+    "category": "Library at CEC",
+    "title": "Learning Tech, Leading Change",
+    "src": "/campusFacilitiesPageImages/4.png",
+    "style": "lg:top-[250]  lg:left-[600]",
+    "description": {
+      "src": "/campusFacilitiesPageImages/4.png",
+      "date": "TECHFEST 2025 |  Feb 10, 2025",
+      "topTitle": "Pushing the Boundaries of Engineering Innovation",
+      "topDescription": "The annual InnovateX 2025 Tech Fest at [College Name] was a grand success, bringing together students, faculty, and industry leaders for two days of innovation, competition, and collaboration. With over 500 participants and 20+ industry partners, the event showcased cutting-edge technology, insightful talks, and hands-on workshops that inspired the next generation of engineers.",
+      "middleTitle": "Key Highlights",
+      "middleSubTitle": "Keynote Speeches by Industry Experts",
+      "middleDescription": "Leading engineers and tech innovators from companies like Tata Technologies, Infosys, and Bosch shared insights on AI, robotics, and sustainable engineering. Their sessions provided valuable industry perspectives, bridging the gap between academic learning and real-world applications.",
+      "image1": "/campusFacilitiesPageImages/3.jpg",
+      "middleTitle2": "Hackathon: Solving Real-World Problems",
+      "middleDescription2": "Over 30 teams participated in a 24-hour coding marathon, tackling challenges in automation, cybersecurity, and smart cities. The winning team, “CodeCrafters,” designed an AI-powered traffic management system that earned high praise from industry mentors.",
+      "middleTitle3": "Workshops & Hands-on Learning",
+      "middleDescription3": "From 3D printing and IoT development to renewable energy solutions, students engaged in immersive learning experiences guided by industry professionals. These workshops provided hands-on exposure to the latest technological advancements.",
+      "image2": "/campusFacilitiesPageImages/3.jpg",
+      "middleTitle4": "Startup Expo & Career Networking",
+      "middleDescription4": "Budding entrepreneurs pitched their tech startups to investors and incubators, fostering innovation and business acumen. Additionally, a career fair connected students with potential recruiters, offering internship and job opportunities.",
+
+      "bottomTitile": "Looking Ahead",
+      "subDescription3": "InnovateX 2025 reinforced [College Name]’s commitment to fostering innovation, skill development, and industry engagement. With growing participation each year, the event continues to shape the future of engineering education.For those who missed it, stay tuned for InnovateX 2026! Until then, keep innovating, keep exploring!"
+    }
+  },
+  {
+    "category": "",
+    "title": "In-Campus Hostels",
+    "src": "/campusFacilitiesPageImages/2.jpg",
+    "style": "lg:top-[450]",
+    "desc":"Comfortable, secure & well-equipped hostels designed to provide a home away from home for our students",
+
+    "description": {
+      "src": "/campusFacilitiesPageImages/2.jpg",
+      "date": "TECHFEST 2025 |  Feb 10, 2025",
+      "topTitle": "Pushing the Boundaries of Engineering Innovation",
+      "topDescription": "The annual InnovateX 2025 Tech Fest at [College Name] was a grand success, bringing together students, faculty, and industry leaders for two days of innovation, competition, and collaboration. With over 500 participants and 20+ industry partners, the event showcased cutting-edge technology, insightful talks, and hands-on workshops that inspired the next generation of engineers.",
+      "middleTitle": "Key Highlights",
+      "middleSubTitle": "Keynote Speeches by Industry Experts",
+      "middleDescription": "Leading engineers and tech innovators from companies like Tata Technologies, Infosys, and Bosch shared insights on AI, robotics, and sustainable engineering. Their sessions provided valuable industry perspectives, bridging the gap between academic learning and real-world applications.",
+      "image1": "/campusFacilitiesPageImages/3.jpg",
+      "middleTitle2": "Hackathon: Solving Real-World Problems",
+      "middleDescription2": "Over 30 teams participated in a 24-hour coding marathon, tackling challenges in automation, cybersecurity, and smart cities. The winning team, “CodeCrafters,” designed an AI-powered traffic management system that earned high praise from industry mentors.",
+      "middleTitle3": "Workshops & Hands-on Learning",
+      "middleDescription3": "From 3D printing and IoT development to renewable energy solutions, students engaged in immersive learning experiences guided by industry professionals. These workshops provided hands-on exposure to the latest technological advancements.",
+      "image2": "/campusFacilitiesPageImages/3.jpg",
+      "middleTitle4": "Startup Expo & Career Networking",
+      "middleDescription4": "Budding entrepreneurs pitched their tech startups to investors and incubators, fostering innovation and business acumen. Additionally, a career fair connected students with potential recruiters, offering internship and job opportunities.",
+
+      "bottomTitile": "Looking Ahead",
+      "subDescription3": "InnovateX 2025 reinforced [College Name]’s commitment to fostering innovation, skill development, and industry engagement. With growing participation each year, the event continues to shape the future of engineering education.For those who missed it, stay tuned for InnovateX 2026! Until then, keep innovating, keep exploring!"
+    }
+  },
+  {
+    "category": "",
+    "title": "Research Labs",
+    "src": "/campusFacilitiesPageImages/3.jpg",
+    "style": "lg:top-[530] lg:left-[350]",
+
+    "description": {
+      "src": "/campusFacilitiesPageImages/3.jpg",
+      "date": "TECHFEST 2025 |  Feb 10, 2025",
+      "topTitle": "Pushing the Boundaries of Engineering Innovation",
+      "topDescription": "The annual InnovateX 2025 Tech Fest at [College Name] was a grand success, bringing together students, faculty, and industry leaders for two days of innovation, competition, and collaboration. With over 500 participants and 20+ industry partners, the event showcased cutting-edge technology, insightful talks, and hands-on workshops that inspired the next generation of engineers.",
+      "middleTitle": "Key Highlights",
+      "middleSubTitle": "Keynote Speeches by Industry Experts",
+      "middleDescription": "Leading engineers and tech innovators from companies like Tata Technologies, Infosys, and Bosch shared insights on AI, robotics, and sustainable engineering. Their sessions provided valuable industry perspectives, bridging the gap between academic learning and real-world applications.",
+      "image1": "/campusFacilitiesPageImages/3.jpg",
+      "middleTitle2": "Hackathon: Solving Real-World Problems",
+      "middleDescription2": "Over 30 teams participated in a 24-hour coding marathon, tackling challenges in automation, cybersecurity, and smart cities. The winning team, “CodeCrafters,” designed an AI-powered traffic management system that earned high praise from industry mentors.",
+      "middleTitle3": "Workshops & Hands-on Learning",
+      "middleDescription3": "From 3D printing and IoT development to renewable energy solutions, students engaged in immersive learning experiences guided by industry professionals. These workshops provided hands-on exposure to the latest technological advancements.",
+      "image2": "/campusFacilitiesPageImages/3.jpg",
+      "middleTitle4": "Startup Expo & Career Networking",
+      "middleDescription4": "Budding entrepreneurs pitched their tech startups to investors and incubators, fostering innovation and business acumen. Additionally, a career fair connected students with potential recruiters, offering internship and job opportunities.",
+
+      "bottomTitile": "Looking Ahead",
+      "subDescription3": "InnovateX 2025 reinforced [College Name]’s commitment to fostering innovation, skill development, and industry engagement. With growing participation each year, the event continues to shape the future of engineering education.For those who missed it, stay tuned for InnovateX 2026! Until then, keep innovating, keep exploring!"
+    }
+  }
+]

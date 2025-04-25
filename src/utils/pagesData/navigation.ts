@@ -107,11 +107,11 @@ const learningHub = [
 const campusFacilities = [
   {
     title: "Infrastructure",
-    link: "/Infrastructure",
+    link: "/campus-facilities/infrastructure",
   },
   {
     title: "Hostel Life",
-    link: "/HostelLife",
+    link: "/campus-facilities/hostel-life",
   },
 ];
 

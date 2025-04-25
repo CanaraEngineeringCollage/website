@@ -3,6 +3,7 @@ import {  ListItem, Menu, MenuHandler, MenuList, Typography } from "@material-ta
 import { useState } from "react";
 import { FaChevronUp } from "react-icons/fa6";
 import { Campus, College, StudentsLife, Innovation } from "@/components/Icons/Icons";
+import Link from "next/link";
 
 export default function Life() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,8 +41,8 @@ export default function Life() {
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Campus Facilities</span>
                 <ul className="list-none text-gray-500 leading-10">
-                  <li>Infrastructure</li>
-                  <li>Hostel Life</li>
+                  <Link href="/campus-facilities/infrastructure"><li>Infrastructure</li></Link>
+                  <Link href="/campus-facilities/hostel-life"><li>Hostel Life</li></Link>
                 </ul>
               </div>
             </div>
