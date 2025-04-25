@@ -9,7 +9,7 @@ interface CouncilMember {
   id: number;
   name: string;
   image: string;
-  title: string;
+  designation: string;
   category: string;
   department?: string;
 }
@@ -130,7 +130,7 @@ const FacultyMembersSection = () => {
                   <div className="absolute bottom-0 left-0 w-full h-48 sm:h-52 md:h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
                   <div className="absolute z-50 top-[75%] sm:top-[78%] md:top-[80%] left-4 sm:left-5 md:left-6">
                     <h2 className="text-base sm:text-lg md:text-lg font-bold">{item.name}</h2>
-                    <p className="text-xs font-bold sm:text-sm md:text-sm">{item.title && `${item.title}`}</p>
+                    <p className="text-xs font-bold sm:text-sm md:text-sm">{item.designation && `${item.designation}`}</p>
                     <p className="text-xs sm:text-sm md:text-sm">
                       {item.department && `${item.department},`} <span className="font-semibold">{item.category}</span>
                     </p>

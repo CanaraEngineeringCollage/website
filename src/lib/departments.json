@@ -1,0 +1,366 @@
+[
+  {
+    "name": "Computer Science & Engineering",
+    "bannerUrl":"/departmentImages/computer-science.png",
+    "slug": "computer-science-engineering",
+    "description": "Established in 2001, the Computer Science & Engineering department has a strong foundation in academics, research & industry collaboration. With dedicated & experienced faculty actively engaged in teaching, product development & research, the department has contributed to numerous publications in prestigious international journals & conferences like IEEE, ACM & Springer. It emphasizes continuous learning through faculty development programs, industry interactions & expert-led sessions, ensuring students stay ahead in emerging technologies. The department also enhances career opportunities through technical training, soft skills development & self-learning initiatives like IIT Bombay’s Spoken Tutorial. A strong placement record with top multinational companies reflects this commitment. Beyond academics, students engage in extracurricular activities through SPECS & the NSS, fostering leadership, teamwork & social responsibility. The department also publishes an annual technical magazine & newsletter, showcasing student & faculty contributions to computing & technology.",
+    "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
+    "ethicalLearning": "To cultivate a value-based learning environment that upholds ethics, honesty & integrity, preparing students to meet the evolving needs of society & industry.",
+    "innovationExcellence": "To enhance student knowledge in cutting-edge technologies & state-of-the-art tools in Computer Science & Engineering, fostering technical excellence & innovation.",
+    "holisticGrowthResearch": "To promote holistic development through co-curricular & extra-curricular activities while encouraging unbiased research, innovation & advancement in the field.",
+    "ourVision": "To be recognized as a center of knowledge dissemination in Computer Science and Engineering by imparting value-added education to transform budding minds into competent computer professionals.",
+    "depatmentHead": {
+      "messageFromtheDepartmentHead": "I’m proud to introduce the department and its web pages. Explore our Outcome-Based Education (OBE) approach, student achievements, and activities. Our goal is to deliver quality technical education in Computer Science & Engineering, grounded in core principles and enriched with values. We bridge the theory-practice gap, equipping students with problem-solving skills and exposure to cutting-edge technologies. Alongside technical skills, we focus on enhancing communication, analytical thinking, and soft skills for success in the corporate world. With a strong foundation in computer fundamentals and hands-on experience, our students are prepared to thrive in the ever-evolving tech landscape.",
+      "name": "Karthik Pai B H",
+      "position": "Professor & HoD",
+      "imageUrl": "/departmentImages/departmentHeads/computer-science.png"
+    },
+    "placement": {
+      "placementPercentage": "30%",
+      "2024-25": {
+        "totalStudents": 1000,
+        "studentPlaced": 300,
+        "offersRecived": 400
+      },
+      "2023-24": {
+        "totalStudents": 1000,
+        "studentPlaced": 300,
+        "offersRecived": 400
+      },
+      "2022-23": {
+        "totalStudents": 1000,
+        "studentPlaced": 300,
+        "offersRecived": 400
+      }
+    },
+    "examPassOut": {
+      "examPassOutPercentage": 97,
+      "2024-25": {
+        "percentage": "97.52"
+      },
+      "2023-24": {
+        "percentage": "98.52"
+      },
+      "2022-23": {
+        "percentage": "98.52"
+      }
+    },
+    "awards": {
+      "award1": "1award",
+      "award2": "2award",
+      "award3": "3award"
+    }
+  },
+  {
+    "name": "Information Science & Engineering",
+    "slug": "information-science-engineering",
+    "bannerUrl":"/departmentImages/computer-science.png",
+    "description": "Established in 2001, the Computer Science & Engineering department has a strong foundation in academics, research & industry collaboration. With dedicated & experienced faculty actively engaged in teaching, product development & research, the department has contributed to numerous publications in prestigious international journals & conferences like IEEE, ACM & Springer. It emphasizes continuous learning through faculty development programs, industry interactions & expert-led sessions, ensuring students stay ahead in emerging technologies. The department also enhances career opportunities through technical training, soft skills development & self-learning initiatives like IIT Bombay’s Spoken Tutorial. A strong placement record with top multinational companies reflects this commitment. Beyond academics, students engage in extracurricular activities through SPECS & the NSS, fostering leadership, teamwork & social responsibility. The department also publishes an annual technical magazine & newsletter, showcasing student & faculty contributions to computing & technology.",
+    "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
+    "ethicalLearning": "To cultivate a value-based learning environment that upholds ethics, honesty & integrity, preparing students to meet the evolving needs of society & industry.",
+    "innovationExcellence": "To enhance student knowledge in cutting-edge technologies & state-of-the-art tools in Computer Science & Engineering, fostering technical excellence & innovation.",
+    "holisticGrowthResearch": "To promote holistic development through co-curricular & extra-curricular activities while encouraging unbiased research, innovation & advancement in the field.",
+    "ourVision": "To be recognized as a center of knowledge dissemination in Computer Science and Engineering by imparting value-added education to transform budding minds into competent computer professionals.",
+    "depatmentHead": {
+      "messageFromtheDepartmentHead": "I’m proud to introduce the department and its web pages. Explore our Outcome-Based Education (OBE) approach, student achievements, and activities. Our goal is to deliver quality technical education in Computer Science & Engineering, grounded in core principles and enriched with values. We bridge the theory-practice gap, equipping students with problem-solving skills and exposure to cutting-edge technologies. Alongside technical skills, we focus on enhancing communication, analytical thinking, and soft skills for success in the corporate world. With a strong foundation in computer fundamentals and hands-on experience, our students are prepared to thrive in the ever-evolving tech landscape.",
+      "name": "Karthik Pai B H",
+      "position": "Professor & HoD",
+      "imageUrl": "/images/"
+    },
+    "placement": {
+      "placementPercentage": "30%",
+      "2024-25": {
+        "totalStudents": 1000,
+        "studentPlaced": 300,
+        "offersRecived": 400
+      },
+      "2023-24": {
+        "totalStudents": 1000,
+        "studentPlaced": 300,
+        "offersRecived": 400
+      },
+      "2022-23": {
+        "totalStudents": 1000,
+        "studentPlaced": 300,
+        "offersRecived": 400
+      }
+    },
+    "examPassOut": {
+      "examPassOutPercentage": 97,
+      "2024-25": {
+        "percentage": "97.52"
+      },
+      "2023-24": {
+        "percentage": "98.52"
+      },
+      "2022-23": {
+        "percentage": "98.52"
+      }
+    },
+    "awards": {
+      "award1": "1award",
+      "award2": "2award",
+      "award3": "3award"
+    }
+  },
+  {
+    "name": "Electronics & Communication Engineering",
+    "slug": "electronics-communication-engineering",
+    "bannerUrl":"/departmentImages/computer-science.png",
+    "description": "Established in 2001, the Computer Science & Engineering department has a strong foundation in academics, research & industry collaboration. With dedicated & experienced faculty actively engaged in teaching, product development & research, the department has contributed to numerous publications in prestigious international journals & conferences like IEEE, ACM & Springer. It emphasizes continuous learning through faculty development programs, industry interactions & expert-led sessions, ensuring students stay ahead in emerging technologies. The department also enhances career opportunities through technical training, soft skills development & self-learning initiatives like IIT Bombay’s Spoken Tutorial. A strong placement record with top multinational companies reflects this commitment. Beyond academics, students engage in extracurricular activities through SPECS & the NSS, fostering leadership, teamwork & social responsibility. The department also publishes an annual technical magazine & newsletter, showcasing student & faculty contributions to computing & technology.",
+    "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
+    "ethicalLearning": "To cultivate a value-based learning environment that upholds ethics, honesty & integrity, preparing students to meet the evolving needs of society & industry.",
+    "innovationExcellence": "To enhance student knowledge in cutting-edge technologies & state-of-the-art tools in Computer Science & Engineering, fostering technical excellence & innovation.",
+    "holisticGrowthResearch": "To promote holistic development through co-curricular & extra-curricular activities while encouraging unbiased research, innovation & advancement in the field.",
+    "ourVision": "To be recognized as a center of knowledge dissemination in Computer Science and Engineering by imparting value-added education to transform budding minds into competent computer professionals.",
+    "depatmentHead": {
+      "messageFromtheDepartmentHead": "I’m proud to introduce the department and its web pages. Explore our Outcome-Based Education (OBE) approach, student achievements, and activities. Our goal is to deliver quality technical education in Computer Science & Engineering, grounded in core principles and enriched with values. We bridge the theory-practice gap, equipping students with problem-solving skills and exposure to cutting-edge technologies. Alongside technical skills, we focus on enhancing communication, analytical thinking, and soft skills for success in the corporate world. With a strong foundation in computer fundamentals and hands-on experience, our students are prepared to thrive in the ever-evolving tech landscape.",
+      "name": "Karthik Pai B H",
+      "position": "Professor & HoD",
+      "imageUrl": "/images/"
+    },
+    "placement": {
+      "placementPercentage": "30%",
+      "2024-25": {
+        "totalStudents": 1000,
+        "studentPlaced": 300,
+        "offersRecived": 400
+      },
+      "2023-24": {
+        "totalStudents": 1000,
+        "studentPlaced": 300,
+        "offersRecived": 400
+      },
+      "2022-23": {
+        "totalStudents": 1000,
+        "studentPlaced": 300,
+        "offersRecived": 400
+      }
+    },
+    "examPassOut": {
+      "examPassOutPercentage": 97,
+      "2024-25": {
+        "percentage": "97.52"
+      },
+      "2023-24": {
+        "percentage": "98.52"
+      },
+      "2022-23": {
+        "percentage": "98.52"
+      }
+    },
+    "awards": {
+      "award1": "1award",
+      "award2": "2award",
+      "award3": "3award"
+    }
+  },
+  {
+    "name": "Computer Science & Design",
+    "slug": "computer-science-design",
+    "bannerUrl":"/departmentImages/computer-science.png",
+    "description": "Established in 2001, the Computer Science & Engineering department has a strong foundation in academics, research & industry collaboration. With dedicated & experienced faculty actively engaged in teaching, product development & research, the department has contributed to numerous publications in prestigious international journals & conferences like IEEE, ACM & Springer. It emphasizes continuous learning through faculty development programs, industry interactions & expert-led sessions, ensuring students stay ahead in emerging technologies. The department also enhances career opportunities through technical training, soft skills development & self-learning initiatives like IIT Bombay’s Spoken Tutorial. A strong placement record with top multinational companies reflects this commitment. Beyond academics, students engage in extracurricular activities through SPECS & the NSS, fostering leadership, teamwork & social responsibility. The department also publishes an annual technical magazine & newsletter, showcasing student & faculty contributions to computing & technology.",
+    "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
+    "ethicalLearning": "To cultivate a value-based learning environment that upholds ethics, honesty & integrity, preparing students to meet the evolving needs of society & industry.",
+    "innovationExcellence": "To enhance student knowledge in cutting-edge technologies & state-of-the-art tools in Computer Science & Engineering, fostering technical excellence & innovation.",
+    "holisticGrowthResearch": "To promote holistic development through co-curricular & extra-curricular activities while encouraging unbiased research, innovation & advancement in the field.",
+    "ourVision": "To be recognized as a center of knowledge dissemination in Computer Science and Engineering by imparting value-added education to transform budding minds into competent computer professionals.",
+    "depatmentHead": {
+      "messageFromtheDepartmentHead": "I’m proud to introduce the department and its web pages. Explore our Outcome-Based Education (OBE) approach, student achievements, and activities. Our goal is to deliver quality technical education in Computer Science & Engineering, grounded in core principles and enriched with values. We bridge the theory-practice gap, equipping students with problem-solving skills and exposure to cutting-edge technologies. Alongside technical skills, we focus on enhancing communication, analytical thinking, and soft skills for success in the corporate world. With a strong foundation in computer fundamentals and hands-on experience, our students are prepared to thrive in the ever-evolving tech landscape.",
+      "name": "Karthik Pai B H",
+      "position": "Professor & HoD",
+      "imageUrl": "/images/"
+    },
+    "placement": {
+      "placementPercentage": "30%",
+      "2024-25": {
+        "totalStudents": 1000,
+        "studentPlaced": 300,
+        "offersRecived": 400
+      },
+      "2023-24": {
+        "totalStudents": 1000,
+        "studentPlaced": 300,
+        "offersRecived": 400
+      },
+      "2022-23": {
+        "totalStudents": 1000,
+        "studentPlaced": 300,
+        "offersRecived": 400
+      }
+    },
+    "examPassOut": {
+      "examPassOutPercentage": 97,
+      "2024-25": {
+        "percentage": "97.52"
+      },
+      "2023-24": {
+        "percentage": "98.52"
+      },
+      "2022-23": {
+        "percentage": "98.52"
+      }
+    },
+    "awards": {
+      "award1": "1award",
+      "award2": "2award",
+      "award3": "3award"
+    }
+  },
+  {
+    "name": "Computer Science & Business System",
+    "slug": "computer-science-business-system",
+    "bannerUrl":"/departmentImages/computer-science.png",
+    "description": "Established in 2001, the Computer Science & Engineering department has a strong foundation in academics, research & industry collaboration. With dedicated & experienced faculty actively engaged in teaching, product development & research, the department has contributed to numerous publications in prestigious international journals & conferences like IEEE, ACM & Springer. It emphasizes continuous learning through faculty development programs, industry interactions & expert-led sessions, ensuring students stay ahead in emerging technologies. The department also enhances career opportunities through technical training, soft skills development & self-learning initiatives like IIT Bombay’s Spoken Tutorial. A strong placement record with top multinational companies reflects this commitment. Beyond academics, students engage in extracurricular activities through SPECS & the NSS, fostering leadership, teamwork & social responsibility. The department also publishes an annual technical magazine & newsletter, showcasing student & faculty contributions to computing & technology.",
+    "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
+    "ethicalLearning": "To cultivate a value-based learning environment that upholds ethics, honesty & integrity, preparing students to meet the evolving needs of society & industry.",
+    "innovationExcellence": "To enhance student knowledge in cutting-edge technologies & state-of-the-art tools in Computer Science & Engineering, fostering technical excellence & innovation.",
+    "holisticGrowthResearch": "To promote holistic development through co-curricular & extra-curricular activities while encouraging unbiased research, innovation & advancement in the field.",
+    "ourVision": "To be recognized as a center of knowledge dissemination in Computer Science and Engineering by imparting value-added education to transform budding minds into competent computer professionals.",
+    "depatmentHead": {
+      "messageFromtheDepartmentHead": "I’m proud to introduce the department and its web pages. Explore our Outcome-Based Education (OBE) approach, student achievements, and activities. Our goal is to deliver quality technical education in Computer Science & Engineering, grounded in core principles and enriched with values. We bridge the theory-practice gap, equipping students with problem-solving skills and exposure to cutting-edge technologies. Alongside technical skills, we focus on enhancing communication, analytical thinking, and soft skills for success in the corporate world. With a strong foundation in computer fundamentals and hands-on experience, our students are prepared to thrive in the ever-evolving tech landscape.",
+      "name": "Karthik Pai B H",
+      "position": "Professor & HoD",
+      "imageUrl": "/images/"
+    },
+    "placement": {
+      "placementPercentage": "30%",
+      "2024-25": {
+        "totalStudents": 1000,
+        "studentPlaced": 300,
+        "offersRecived": 400
+      },
+      "2023-24": {
+        "totalStudents": 1000,
+        "studentPlaced": 300,
+        "offersRecived": 400
+      },
+      "2022-23": {
+        "totalStudents": 1000,
+        "studentPlaced": 300,
+        "offersRecived": 400
+      }
+    },
+    "examPassOut": {
+      "examPassOutPercentage": 97,
+      "2024-25": {
+        "percentage": "97.52"
+      },
+      "2023-24": {
+        "percentage": "98.52"
+      },
+      "2022-23": {
+        "percentage": "98.52"
+      }
+    },
+    "awards": {
+      "award1": "1award",
+      "award2": "2award",
+      "award3": "3award"
+    }
+  },
+  {
+    "name": "Artificial Intelligence & Machine Learning",
+    "slug": "artificial-intelligence-machine-learning",
+    "bannerUrl":"/departmentImages/computer-science.png",
+    "description": "Established in 2001, the Computer Science & Engineering department has a strong foundation in academics, research & industry collaboration. With dedicated & experienced faculty actively engaged in teaching, product development & research, the department has contributed to numerous publications in prestigious international journals & conferences like IEEE, ACM & Springer. It emphasizes continuous learning through faculty development programs, industry interactions & expert-led sessions, ensuring students stay ahead in emerging technologies. The department also enhances career opportunities through technical training, soft skills development & self-learning initiatives like IIT Bombay’s Spoken Tutorial. A strong placement record with top multinational companies reflects this commitment. Beyond academics, students engage in extracurricular activities through SPECS & the NSS, fostering leadership, teamwork & social responsibility. The department also publishes an annual technical magazine & newsletter, showcasing student & faculty contributions to computing & technology.",
+    "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
+    "ethicalLearning": "To cultivate a value-based learning environment that upholds ethics, honesty & integrity, preparing students to meet the evolving needs of society & industry.",
+    "innovationExcellence": "To enhance student knowledge in cutting-edge technologies & state-of-the-art tools in Computer Science & Engineering, fostering technical excellence & innovation.",
+    "holisticGrowthResearch": "To promote holistic development through co-curricular & extra-curricular activities while encouraging unbiased research, innovation & advancement in the field.",
+    "ourVision": "To be recognized as a center of knowledge dissemination in Computer Science and Engineering by imparting value-added education to transform budding minds into competent computer professionals.",
+    "depatmentHead": {
+      "messageFromtheDepartmentHead": "I’m proud to introduce the department and its web pages. Explore our Outcome-Based Education (OBE) approach, student achievements, and activities. Our goal is to deliver quality technical education in Computer Science & Engineering, grounded in core principles and enriched with values. We bridge the theory-practice gap, equipping students with problem-solving skills and exposure to cutting-edge technologies. Alongside technical skills, we focus on enhancing communication, analytical thinking, and soft skills for success in the corporate world. With a strong foundation in computer fundamentals and hands-on experience, our students are prepared to thrive in the ever-evolving tech landscape.",
+      "name": "Karthik Pai B H",
+      "position": "Professor & HoD",
+      "imageUrl": "/images/"
+    },
+    "placement": {
+      "placementPercentage": "30%",
+      "2024-25": {
+        "totalStudents": 1000,
+        "studentPlaced": 300,
+        "offersRecived": 400
+      },
+      "2023-24": {
+        "totalStudents": 1000,
+        "studentPlaced": 300,
+        "offersRecived": 400
+      },
+      "2022-23": {
+        "totalStudents": 1000,
+        "studentPlaced": 300,
+        "offersRecived": 400
+      }
+    },
+    "examPassOut": {
+      "examPassOutPercentage": 97,
+      "2024-25": {
+        "percentage": "97.52"
+      },
+      "2023-24": {
+        "percentage": "98.52"
+      },
+      "2022-23": {
+        "percentage": "98.52"
+      }
+    },
+    "awards": {
+      "award1": "1award",
+      "award2": "2award",
+      "award3": "3award"
+    }
+  },
+  {
+    "name": "Science & Humanities",
+    "slug": "science-humanities",
+    "bannerUrl":"/departmentImages/computer-science.png",
+    "description": "Established in 2001, the Computer Science & Engineering department has a strong foundation in academics, research & industry collaboration. With dedicated & experienced faculty actively engaged in teaching, product development & research, the department has contributed to numerous publications in prestigious international journals & conferences like IEEE, ACM & Springer. It emphasizes continuous learning through faculty development programs, industry interactions & expert-led sessions, ensuring students stay ahead in emerging technologies. The department also enhances career opportunities through technical training, soft skills development & self-learning initiatives like IIT Bombay’s Spoken Tutorial. A strong placement record with top multinational companies reflects this commitment. Beyond academics, students engage in extracurricular activities through SPECS & the NSS, fostering leadership, teamwork & social responsibility. The department also publishes an annual technical magazine & newsletter, showcasing student & faculty contributions to computing & technology.",
+    "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
+    "ethicalLearning": "To cultivate a value-based learning environment that upholds ethics, honesty & integrity, preparing students to meet the evolving needs of society & industry.",
+    "innovationExcellence": "To enhance student knowledge in cutting-edge technologies & state-of-the-art tools in Computer Science & Engineering, fostering technical excellence & innovation.",
+    "holisticGrowthResearch": "To promote holistic development through co-curricular & extra-curricular activities while encouraging unbiased research, innovation & advancement in the field.",
+    "ourVision": "To be recognized as a center of knowledge dissemination in Computer Science and Engineering by imparting value-added education to transform budding minds into competent computer professionals.",
+    "depatmentHead": {
+      "messageFromtheDepartmentHead": "I’m proud to introduce the department and its web pages. Explore our Outcome-Based Education (OBE) approach, student achievements, and activities. Our goal is to deliver quality technical education in Computer Science & Engineering, grounded in core principles and enriched with values. We bridge the theory-practice gap, equipping students with problem-solving skills and exposure to cutting-edge technologies. Alongside technical skills, we focus on enhancing communication, analytical thinking, and soft skills for success in the corporate world. With a strong foundation in computer fundamentals and hands-on experience, our students are prepared to thrive in the ever-evolving tech landscape.",
+      "name": "Karthik Pai B H",
+      "position": "Professor & HoD",
+      "imageUrl": "/images/"
+    },
+    "placement": {
+      "placementPercentage": "30%",
+      "2024-25": {
+        "totalStudents": 1000,
+        "studentPlaced": 300,
+        "offersRecived": 400
+      },
+      "2023-24": {
+        "totalStudents": 1000,
+        "studentPlaced": 300,
+        "offersRecived": 400
+      },
+      "2022-23": {
+        "totalStudents": 1000,
+        "studentPlaced": 300,
+        "offersRecived": 400
+      }
+    },
+    "examPassOut": {
+      "examPassOutPercentage": 97,
+      "2024-25": {
+        "percentage": "97.52"
+      },
+      "2023-24": {
+        "percentage": "98.52"
+      },
+      "2022-23": {
+        "percentage": "98.52"
+      }
+    },
+    "awards": {
+      "award1": "1award",
+      "award2": "2award",
+      "award3": "3award"
+    }
+  }
+]

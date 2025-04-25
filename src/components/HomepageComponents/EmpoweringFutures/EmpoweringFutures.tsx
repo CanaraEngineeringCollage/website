@@ -200,8 +200,9 @@ const EmpoweringFutures: React.FC = () => {
       <section className="w-full md:hidden block px-1 py-24">
         {/* Mobile View */}
         <h1 className="text-3xl text-center text-black font-bold pb-4">Empowering Futures</h1>
-        
-        <p className="text-center text-textGray font-medium pb-16 text-[14px]">Discover exceptional placement opportunities and industry connections that pave the way for success at Canara Engineering College.     </p>
+        <p className="text-center text-textGray font-medium pb-16 text-[14px]">
+          Discover exceptional placement opportunities and industry connections that pave the way for success at Canara Engineering College.{" "}
+        </p>
         <div className="md:hidden flex flex-col items-center">
           <motion.div
             key={activeIndex}

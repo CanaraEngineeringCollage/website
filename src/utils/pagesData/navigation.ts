@@ -47,31 +47,31 @@ const studentSupport = [
 const departments = [
   {
     title: "Computer Science & Engineering",
-    link: "/key-functionaries",
+    link: "/department/computer-science-engineering",
   },
   {
     title: "Information Science & Engineering",
-    link: "/director",
+    link: "/department/information-science-engineering",
   },
   {
     title: "Electronics & Communication Engineering",
-    link: "/administration",
+    link: "/department/electronics-communication-engineering",
   },
   {
     title: "Computer Science & Design",
-    link: "/administration",
+    link: "/department/computer-science-design",
   },
   {
     title: "Computer Science & Business System",
-    link: "/director",
+    link: "/department/computer-science-business-system",
   },
   {
     title: "Artificial Intelligence & Machine Learning",
-    link: "/administration",
+    link: "/department/artificial-intelligence-machine-learning",
   },
   {
     title: "Science & Humanities",
-    link: "/administration",
+    link: "/department/cience-humanities",
   },
 ];
 
