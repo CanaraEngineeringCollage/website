@@ -11,7 +11,6 @@ import IdeasToImpact from "@/components/DepartmentComponents/IdeasToImpact/Ideas
 import SpotlightSection from "@/components/DepartmentComponents/SpotlightSection/SpotlightSection";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
 
-
 interface Qualification {
   degree: string;
   passingYear: number;
@@ -27,8 +26,8 @@ interface CouncilMember {
   designation: string;
   category: string;
   department: string;
-  joiningDate?: string;  // Make this optional
-  experience?: string;   // Make this optional
+  joiningDate?: string; // Make this optional
+  experience?: string; // Make this optional
   employmentType?: string; // Make this optional
   qualifications: Qualification[]; // Ensure qualifications include the right data
 }
@@ -43,11 +42,9 @@ export default async function DepartmentPage({ params }: { params: { slug: strin
   if (!department) return notFound();
 
   // Filter council data as needed
-  const facultyData = councilData.faculty.filter((faculty) => 
-    faculty.department === department.name
-  ) as CouncilMember[];
+  const facultyData = councilData.faculty.filter((faculty) => faculty.department === department.name) as CouncilMember[];
 
-  console.log(facultyData); 
+  console.log(facultyData);
   return (
     <>
       <HeroSection departmentName={department.name} imageUrl={department.bannerUrl} />
@@ -72,15 +69,14 @@ export default async function DepartmentPage({ params }: { params: { slug: strin
         <DepartmentFacultySection governingCounsilData={facultyData} />
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
-        <IdeasToImpact/>
+        <IdeasToImpact />
       </section>
       <section>
-        <SpotlightSection/>
+        <SpotlightSection />
       </section>
       <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">
         <HotOfThePress />
       </section>
-      IdeasToImpact
     </>
   );
 }

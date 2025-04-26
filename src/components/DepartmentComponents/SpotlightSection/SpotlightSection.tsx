@@ -2,7 +2,7 @@ import Image from "next/image"; // If you're using Next.js, otherwise use normal
 import image from "../../../../public/departmentImages/SpotLightImage/image.png";
 export default function SpotlightSection() {
   return (
-    <div className=" my-32 xl:my-56  py-16 text-white bg-center" style={{
+    <div className=" mt-32 xl:mt-56  py-16 text-white bg-center" style={{
         backgroundImage:"url(/backgroundImages/department.png)"
     }}>
       {/* Top Section */}
