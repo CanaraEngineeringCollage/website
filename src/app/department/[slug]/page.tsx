@@ -44,7 +44,6 @@ export default async function DepartmentPage({ params }: { params: { slug: strin
   // Filter council data as needed
   const facultyData = councilData.faculty.filter((faculty) => faculty.department === department.name) as CouncilMember[];
 
-  console.log(facultyData);
   return (
     <>
       <HeroSection departmentName={department.name} imageUrl={department.bannerUrl} />
@@ -74,7 +73,7 @@ export default async function DepartmentPage({ params }: { params: { slug: strin
       <section>
         <SpotlightSection />
       </section>
-      <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">
+      <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0 pb-20">
         <HotOfThePress />
       </section>
     </>

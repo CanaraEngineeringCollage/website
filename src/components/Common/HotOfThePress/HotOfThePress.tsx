@@ -23,7 +23,9 @@ const HotOfThePress = () => {
     <section className="lg:ml-20 xl:ml-60 py-24">
       <div className="lg:flex lg:justify-between md:pb-14 pb-10">
         <div className="flex">
-          <h1 className="text-3xl md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-black md:pb-6">Hot off the Press</h1>
+          <h1 className="text-3xl md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-black md:pb-6">
+            Hot off the Press
+          </h1>
         </div>
         <div className="hidden md:block">
           <button className="text-black cursor-pointer font-bold bg-[#c3d5ed] px-5 py-2 rounded-3xl">Explore More Campus Stories</button>
@@ -51,8 +53,8 @@ const HotOfThePress = () => {
             <div className="max-w-sm min-h-[55vh] md:min-h-[45vh] bg-white lg:min-h-[65vh] xl:min-h-auto   rounded-3xl overflow-hidden ">
               <div className="h-60 overflow-hidden">
                 <Image
-                width={200}
-                height={200}
+                  width={200}
+                  height={200}
                   src={item.image} // Replace with your actual image path
                   alt="Techfest 2025"
                   className="w-full h-full object-cover"
@@ -70,8 +72,8 @@ const HotOfThePress = () => {
         ))}
       </Swiper>
       <div className="md:hidden  mt-12 flex ">
-          <button className="text-black mx-auto cursor-pointer font-bold bg-[#c3d5ed] px-5 py-2 rounded-3xl">Explore More Campus Stories</button>
-        </div>
+        <button className="text-black mx-auto cursor-pointer font-bold bg-[#c3d5ed] px-5 py-2 rounded-3xl">Explore More Campus Stories</button>
+      </div>
     </section>
   );
 };

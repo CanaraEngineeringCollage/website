@@ -71,7 +71,7 @@ const departments = [
   },
   {
     title: "Science & Humanities",
-    link: "/department/cience-humanities",
+    link: "/department/science-humanities",
   },
 ];
 

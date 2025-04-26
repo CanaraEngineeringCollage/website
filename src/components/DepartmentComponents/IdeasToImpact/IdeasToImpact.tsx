@@ -182,14 +182,14 @@ export default function IdeasToImpact() {
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);
   return (
-    <section className="w-full px-6 ">
-      <div className="max-w-7xl xl:max-w-[70%] mx-auto text-center">
+    <section className="w-full md:px-6 ">
+      <div className="md:max-w-7xl xl:max-w-[70%]  mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-8">From Ideas to Impact</h2>
 
         <div className="flex justify-center mb-6">
           <div className="inline-flex rounded-full p-1">
-            <button className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-full">Student Achievements</button>
-            <button className="px-4 py-2 text-sm font-medium text-gray-600 rounded-full">Research & Product Development</button>
+            <button className="px-4 py-2 text-sm font-medium text-black  rounded-full">Student Achievements</button>
+            <button className="px-4 py-2 text-sm font-medium text-black rounded-full">Research & Product Development</button>
           </div>
         </div>
 
@@ -215,9 +215,9 @@ export default function IdeasToImpact() {
           <div className="">
             {/* Examination Pass Out Rate */}
             <div className="bg-white  rounded-2xl mb-6">
-              <div className="grid grid-cols-2 items-center gap-6 h-full w-full">
-                {/* Left Side - Image */}
-                <div className="relative w-full h-full p-6">
+              <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-6 h-full w-full">
+             
+                <div className="relative w-full h-52 md:h-full p-6">
                   <h3 className="text-4xl font-[900] mb-2 text-left lg:text-[60px]">97+</h3>
                   <p className="text-left text-2xl">Examination Pass Out Rate</p>
                   <p className="text-[16px] max-w-md text-left">Over the Past Six Academic Years</p>
@@ -231,7 +231,7 @@ export default function IdeasToImpact() {
 
                 {/* Right Side - Text */}
                 <div>
-                  <div className="flex items-end justify-between w-full gap-4">
+                  <div className="flex items-end justify-between w-full md:gap-4 gap-2 px-12 md:px-0">
                     {[
                       { year: "2021-22", value: 97.52 },
                       { year: "2019-20", value: 98.4 },

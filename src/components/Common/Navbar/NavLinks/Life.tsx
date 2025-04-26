@@ -32,7 +32,7 @@ export default function Life() {
         outline-none focus:ring-0 focus:outline-none"
       >
         <div className="w-full max-w-screen-2xl bg-white shadow-md rounded-xl flex justify-center gap-8 p-8 border-none outline-none">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mx-16 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-8 mx-16 w-full">
             {/* Column 1 */}
             <div className="flex gap-4 pr-4 border-r border-gray-300">
               <div className="flex items-start">
@@ -43,12 +43,13 @@ export default function Life() {
                 <ul className="list-none text-gray-500 leading-10">
                   <Link href="/campus-facilities/infrastructure"><li>Infrastructure</li></Link>
                   <Link href="/campus-facilities/hostel-life"><li>Hostel Life</li></Link>
+                  <Link href="/campus-facilities/studentlife-engagement"><li>Student Life & Engagement</li></Link>
                 </ul>
               </div>
             </div>
 
             {/* Column 2 */}
-            <div className="flex gap-4 pr-4 border-r border-gray-300">
+            {/* <div className="flex gap-4 pr-4 border-r border-gray-300">
               <div className="flex items-start">
                 <StudentsLife />
               </div>
@@ -60,7 +61,7 @@ export default function Life() {
                   <li>NSS</li>
                 </ul>
               </div>
-            </div>
+            </div> */}
 
             {/* Column 3 */}
             <div className="flex gap-4 pr-4 border-r border-gray-300">

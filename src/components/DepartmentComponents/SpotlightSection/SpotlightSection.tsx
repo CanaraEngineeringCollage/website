@@ -6,7 +6,7 @@ export default function SpotlightSection() {
         backgroundImage:"url(/backgroundImages/department.png)"
     }}>
       {/* Top Section */}
-      <div className="max-w-7xl xl:max-w-[75%] mx-auto px-4 text-center py-32">
+      <div className="max-w-7xl xl:max-w-[75%] mx-auto px-4 text-center py-16 md:py-32">
         <h2 className="text-3xl md:text-4xl lg:text-[80px] font-bold mb-4 xl:mb-8 ">In the Spotlight</h2>
         <p className="text-lg mb-12 text-white/70">Honoring Our Toppers for Their Dedication & Excellence!</p>
 
