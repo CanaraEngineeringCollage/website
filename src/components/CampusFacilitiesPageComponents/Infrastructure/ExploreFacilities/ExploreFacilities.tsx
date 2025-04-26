@@ -216,8 +216,8 @@ const ExploreFacilities = () => {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <div className="h-60 overflow-hidden">
-                  <Image width={200} height={200} src={item.image} alt={item.title} className="w-full h-full object-cover !rounded-t-2xl " />
+                <div className="h-60 overflow-hidden cursor-pointer">
+                  <Image width={200} height={200} src={item.image} alt={item.title} className="w-full h-full object-cover !rounded-t-2xl cursor-pointer " />
                 </div>
                 <div className="p-8 text-center">
                   <h3 className="text-[27px] font-bold text-black mb-2 line-clamp-2">{item.title}</h3>
