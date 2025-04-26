@@ -1,44 +1,16 @@
+"use client";
 import AmenitiesCard from "@/components/Common/AmenitiesCard/AmenitiesCard";
 import React from "react";
+import data from "../../../../utils/amenitiesSectionData/amenitiesData.json";
 
 const AmenitiesSection = () => {
-  // Data for the main image
-  const title = "Modern Amenities for Everyday Comfort";
-  const mainImage = {
-    imageSrc: "/campusFacilitiesPageImages/hostelLifePageImages/1.png",
-    title: "Gymnasium",
-    description:
-      "A state-of-the-art gym facility enables students to maintain a healthy and active lifestyle. Fitness enthusiasts can follow their workout routines within the campus itself.",
-    alt: "Gymnasium facility",
-  };
-
-  // Data for the amenities cards
-  const amenities = [
-    {
-      imageSrc: "/campusFacilitiesPageImages/hostelLifePageImages/2.png",
-      title: "Medical Assistance",
-      description:
-        "A qualified doctor visits the campus regularly on weekdays, ensuring that students have immediate access to medical consultation.",
-      alt: "Medical assistance",
-    },
-    {
-      imageSrc: "/campusFacilitiesPageImages/hostelLifePageImages/3.png",
-      title: "Health Insurance",
-      description:
-        "Every hostel student is covered under a Group Health Insurance Plan, offering financial security in case of medical emergencies.",
-      alt: "Health insurance",
-    },
-    {
-      imageSrc: "/campusFacilitiesPageImages/hostelLifePageImages/4.png",
-      title: "Priority Medical Care",
-      description:
-        "The hostel has an MOU with Father Muller’s Hospital, Thumbay, ensuring priority treatment for residents in case of any medical needs.",
-      alt: "Priority medical care",
-    },
-  ];
-
   return (
-  <AmenitiesCard title={title} amenities={amenities} mainImage={mainImage} />);
+    <AmenitiesCard
+      title={data.title}
+      amenities={data.amenities}
+      mainImage={data.mainImage}
+    />
+  );
 };
 
 export default AmenitiesSection;
