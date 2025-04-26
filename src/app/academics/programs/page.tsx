@@ -5,6 +5,7 @@ import HeroSection from "@/components/AcademicsPageComponents/AcademicProgramsPa
 import YoutubeSection from "@/components/AcademicsPageComponents/AcademicProgramsPage/YoutubeSection/YoutubeSection";
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
+import data from "../../../utils/functionDepartmentData/functionDepartmentData.json"
 import React from "react";
 
 const page = () => {
@@ -23,7 +24,7 @@ const page = () => {
         <EducationalObjectives/>
       </section>
       <section className="px-6 md:px-12 lg:pl-16 lg:px-0 xl:px-0">
-        <FunctionDepartment />
+        <FunctionDepartment title="Program Outcomes" functionDeprtmentData={data}/>
       </section>
       <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">
         <HotOfThePress />

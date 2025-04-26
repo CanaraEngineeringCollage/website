@@ -133,11 +133,11 @@ const studentLife = [
 const innovation = [
   {
     title: "Entrepreneurship Cell",
-    link: "/culturalActivities",
+    link: "/entrepreneurship-cell",
   },
   {
     title: "Physical Education",
-    link: "/HostelLife",
+    link: "/physical-education",
   },
 ];
 

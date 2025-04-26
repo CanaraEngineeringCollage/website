@@ -71,8 +71,8 @@ export default function Life() {
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Innovation & Health</span>
                 <ul className="list-none text-gray-500 leading-10">
-                  <li>Entrepreneurship Cell</li>
-                  <li>Physical Education</li>
+                  <Link href="/entrepreneurship-cell"><li>Entrepreneurship Cell</li></Link>
+                  <Link href="/physical-education"><li>Physical Education</li></Link>
                 </ul>
               </div>
             </div>

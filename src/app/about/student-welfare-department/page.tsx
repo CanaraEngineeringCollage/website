@@ -6,6 +6,7 @@ import MessageSection from "@/components/AboutPageComponents/StudentWelfarePage/
 import YoutubeSection from "@/components/AboutPageComponents/StudentWelfarePage/YoutubeSection/YoutubeSection";
 import React from "react";
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
+import data from "../../../utils/functionDepartmentData/functionDepartmentData.json"
 
 const page = () => {
   return (
@@ -20,7 +21,7 @@ const page = () => {
         <YoutubeSection />
       </section>
       <section className="px-6 md:px-12 lg:pl-16 lg:px-0 xl:px-0">
-        <FunctionDepartment />
+        <FunctionDepartment title="Functions of the Department" functionDeprtmentData={data}/>
       </section>
       <section className="bg-[#071D2C] px-6 md:px-12 lg:px-16 xl:px-0">
         <MessageSection />
