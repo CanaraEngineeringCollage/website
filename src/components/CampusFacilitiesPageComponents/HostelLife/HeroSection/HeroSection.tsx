@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import bgImage from "../../../../../public/campusFacilitiesPageImages/hostelLifePageImages/bgImage.png";
+import bgImage from "../../../../../public/campusFacilitiesPageImages/hostelLifePageImages/bgImage.jpg";
 
 const HeroSection = () => {
   return (
@@ -13,7 +13,7 @@ const HeroSection = () => {
         {/* Desktop Gradient */}
         <div className="absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-black/60 to-transparent z-10" />
                <div className="absolute bottom-0 left-0 right-0 h-[200px] md:h-[230px] bg-gradient-to-t from-white via-white/85 via-50% to-transparent z-[10] " />
-               <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[1000px] bg-gradient-to-t from-white via-transparent to-transparent z-[10] hidden md:block" />
+               <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[250px] bg-gradient-to-t from-white via-transparent to-transparent z-[10] hidden md:block" />
       </div>
 
      
