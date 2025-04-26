@@ -15,7 +15,7 @@ interface DataItem {
   icon: string;
 }
 
-const FunctionDepartment = () => {
+const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; functionDeprtmentData: DataItem[] }) => {
   const [data, setData] = useState<DataItem[]>(functionDeprtmentData);
   const swiperRef = useRef<SwiperType | null>(null);
   const [isPlay, setIsPlay] = useState(true);
@@ -51,7 +51,7 @@ const FunctionDepartment = () => {
 
   return (
     <section className="lg:ml-20  py-24 xl:py-36 xl:ml-60">
-      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-black pb-6">Functions of the Department</h1>
+      {title&&<h1 className="text-3xl md:text-[40px] text-center lg2:text-5xl xl:text-6xl  font-bold text-black pb-6">{title}</h1>}
       <Swiper
         modules={[Autoplay]}
         autoplay={{ delay: autoplayDelay, disableOnInteraction: false }}
