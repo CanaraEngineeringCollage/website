@@ -1,0 +1,29 @@
+{
+    "title": "",
+    "mainImage": {
+      "imageSrc": "/campusFacilitiesPageImages/studentLifePageImages/1.png",
+      "title": "Sharpen Your Skills, Elevate Your Future",
+      "description": "Our skill enhancement workshops equip students with practical knowledge, from technical mastery to leadership & creative problem-solving, ensuring they stay ahead in a competitive world.",
+      "alt": "Gymnasium facility"
+    },
+    "amenities": [
+      {
+        "imageSrc": "/campusFacilitiesPageImages/studentLifePageImages/2.png",
+        "title": "Tech Masterclasses",
+        "description": "Hands-on workshops designed to equip students with practical skills, industry insights & innovative techniques across engineering, tech & beyond.",
+        "alt": "Tech Masterclasses"
+      },
+      {
+        "imageSrc": "/campusFacilitiesPageImages/studentLifePageImages/3.png",
+        "title": "Celebrate. Express. Unite.",
+        "description": "Our cultural events celebrate creativity, talent & tradition through music, dance, art & drama, bringing students together in a vibrant, unforgettable experience.",
+        "alt": "Celebrate. Express. Unite."
+      },
+      {
+        "imageSrc": "/campusFacilitiesPageImages/studentLifePageImages/4.png",
+        "title": "Beyond the Blueprint",
+        "description": "Our technical events unite bright minds to innovate, compete & gain real-world experience in coding, robotics, AI & more.",
+        "alt": "Beyond the Blueprint"
+      }
+    ]
+  }
