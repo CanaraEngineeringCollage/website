@@ -482,7 +482,7 @@ function MainMenu({
       <div className="border-b-border border-b-2 py-4">
         <div
           onClick={() => {
-            router.push("/placements");
+            router.push("/training-placements");
             openSidebar(false)
           }}
           className="flex gap-4 "

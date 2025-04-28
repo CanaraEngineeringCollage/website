@@ -1,14 +1,14 @@
-import GrievanceRedressalCell from '@/components/AboutPageComponents/StudentWelfarePage/GrievanceRedressalCell/GrievanceRedressalCell'
-import React from 'react'
+import GrievanceRedressalCell from "@/components/AboutPageComponents/StudentWelfarePage/GrievanceRedressalCell/GrievanceRedressalCell";
+import React from "react";
 
 const page = () => {
   return (
- <>
-  <section>
+    <>
+      <section>
         <GrievanceRedressalCell />
       </section>
- </>
-  )
-}
+    </>
+  );
+};
 
-export default page
+export default page;
