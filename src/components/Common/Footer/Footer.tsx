@@ -19,15 +19,15 @@ const quickLinks = [
 ];
 
 const ourCollege = [
-  { data: "About Us", links: "#" },
-  { data: "Founder & Our Management", links: "#" },
+  { data: "About Us", links: "/about/about-cec" },
+  { data: "Founder & Our Management", links: "/about/our-founder" },
   { data: "Key Functionaries & HODs", links: "#" },
   { data: "Teaching Faculty", links: "#" },
   { data: "Non Teaching Staff", links: "#" },
   { data: "Administration Staff", links: "#" },
   { data: "Departments", links: "#" },
   { data: "Accreditations", links: "#" },
-  { data: "Mandatory Disclosures", links: "#" },
+  { data: "Mandatory Disclosures", links: "/about/mandatory-disclosure" },
 ];
 
 const academics = [
@@ -43,16 +43,16 @@ const academics = [
 ];
 
 const facilities = [
-  { data: "Training & Placements", links: "#" },
+  { data: "Training & Placements", links: "/training-placements" },
   { data: "Campus", links: "#" },
-  { data: "Hostels", links: "#" },
+  { data: "Hostels", links: "/campus-facilities/hostel-life" },
   { data: "Sports & Cultures", links: "#" },
-  { data: "Entrepreneurship Cell", links: "#" },
+  { data: "Entrepreneurship Cell", links: "/entrepreneurship-cell" },
 ];
 
 const stayConnected = [
   { data: "Alumni", links: "/alumini" },
-  { data: "Media", links: "#" },
+  { data: "Media", links: "/media" },
   { data: "Calendar of Events", links: "/events" },
   { data: "Careers", links: "#" },
 ];

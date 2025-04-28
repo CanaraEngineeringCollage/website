@@ -32,7 +32,7 @@ import {
   Innovation,
 } from "../../../components/Icons/Icons";
 
-export default function Sidebar({ sidebar, openSidebar }: { sidebar: boolean; openSidebar: ()=>void }) {
+export default function Sidebar({ sidebar, openSidebar }: { sidebar: boolean; openSidebar: () => void }) {
   const [open, setOpen] = useState({
     ourCollege: false,
     program: false,
@@ -42,7 +42,7 @@ export default function Sidebar({ sidebar, openSidebar }: { sidebar: boolean; op
   return (
     <div>
       <div
-        className={`sidebar bg-white z-[1000] fixed md:top-[8rem] top-20 left-0 scrollbar pb-36 ${
+        className={`sidebar bg-white z-[1000] h-[100vh] fixed md:top-[5rem] top-20 left-0  pb-36 ${
           !sidebar ? "translate-x-[-100%]" : "translate-x-0"
         } ease-in-out duration-500 pt-6 ${sidebar ? "shadow-2xl" : ""}`}
       >
@@ -250,10 +250,10 @@ function MainMenu({
   setVisible: (visible: string) => void;
   open: { ourCollege: boolean; program: boolean; lifeAtSahyadri: boolean };
   setOpen: React.Dispatch<React.SetStateAction<{ ourCollege: boolean; program: boolean; lifeAtSahyadri: boolean }>>;
-  openSidebar: (state:boolean) => void;
+  openSidebar: (state: boolean) => void;
 }) {
   const router = useRouter();
-  
+
   return (
     <>
       <div className="border-b-border border-b-2 pb-4">
@@ -276,7 +276,6 @@ function MainMenu({
               <div
                 onClick={() => {
                   setVisible("campusLegacy");
-                  
                 }}
                 className="flex gap-2 items-center"
               >
@@ -400,7 +399,7 @@ function MainMenu({
         <div
           onClick={() => {
             router.push("/");
-            openSidebar(false)
+            openSidebar(false);
           }}
           className="flex gap-4 "
         >
@@ -483,7 +482,7 @@ function MainMenu({
         <div
           onClick={() => {
             router.push("/training-placements");
-            openSidebar(false)
+            openSidebar(false);
           }}
           className="flex gap-4 "
         >
