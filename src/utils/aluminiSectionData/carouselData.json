@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "date": "Oct 5,2024",
+    "title": "Your Contribution, Their Success Story",
+    "imageSrc": "/campusFacilitiesPageImages/aluminiPageImages/image.png",
+    "description": "The Hall, built with generous alumni contributions, stands as a testament to the enduring bond between past and present, fostering collaboration and innovation for future generations."
+  },
+  {
+    "id": "2",
+    "date": "Oct 5,2024",
+    "title": "Alumni Mentorship Program Launched",
+    "imageSrc": "/eventImages/image.png",
+    "description": "Our new mentorship initiative pairs graduates with current students, providing guidance, career advice, & industry insights to the next generation of engineers."
+  },
+  {
+    "id": "3",
+    "date": "Oct 5,2024",
+    "title": "Your Contribution, Their Success Story",
+    "imageSrc": "/campusFacilitiesPageImages/aluminiPageImages/image.png",
+    "description": "The Hall, built with generous alumni contributions, stands as a testament to the enduring bond between past and present, fostering collaboration and innovation for future generations."
+  }
+]

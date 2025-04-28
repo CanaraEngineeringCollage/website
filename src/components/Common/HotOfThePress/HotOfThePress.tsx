@@ -1,11 +1,11 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper";
 
-import { Autoplay } from "swiper/modules";
+import { Autoplay,Navigation } from "swiper/modules";
 import "swiper/css";
-import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import pressData from "../../../utils/hotOFThePressData/hotOfThePressData.json";
 import Image from "next/image";
 interface DataItem {
@@ -28,15 +28,19 @@ const HotOfThePress = () => {
           </h1>
         </div>
         <div className="hidden md:block">
-          <button className="text-black cursor-pointer font-bold bg-[#c3d5ed] px-5 py-2 rounded-3xl">Explore More Campus Stories</button>
+          <button className="text-black cursor-pointer font-bold bg-[#c3d5ed] px-5 py-2 rounded-3xl mr-12">Explore More Campus Stories</button>
         </div>
       </div>
       <Swiper
-        modules={[Autoplay]}
+        modules={[Autoplay,Navigation]}
         autoplay={{ delay: autoplayDelay, disableOnInteraction: false }}
         spaceBetween={20}
         slidesPerView={1}
         loop={true}
+        navigation={{
+          nextEl: ".swiper-button-next-custom",
+          prevEl: ".swiper-button-prev-custom",
+        }}
         breakpoints={{
           640: { slidesPerView: 1, spaceBetween: 20 },
           768: { slidesPerView: 2, spaceBetween: 20 },
@@ -71,6 +75,20 @@ const HotOfThePress = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      <div className="lg:flex lg:justify-between md:pb-14 pb-10">
+        <div className="flex"></div>
+        <div className="hidden md:block">
+          <div className="flex mr-22 gap-6 mt-20">
+
+          <button className="swiper-button-prev-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-[#D2D2D7A3] flex items-center justify-center disabled:opacity-50">
+            <MdKeyboardArrowLeft />
+          </button>
+          <button className="swiper-button-next-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-[#D2D2D7A3] flex items-center justify-center disabled:opacity-50">
+            <MdKeyboardArrowRight />
+          </button>
+          </div>
+        </div>
+      </div>
       <div className="md:hidden  mt-12 flex ">
         <button className="text-black mx-auto cursor-pointer font-bold bg-[#c3d5ed] px-5 py-2 rounded-3xl">Explore More Campus Stories</button>
       </div>

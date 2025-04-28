@@ -85,8 +85,13 @@ export default function Life() {
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Campus Beats</span>
                 <ul className="list-none text-gray-500 leading-10">
+                <Link href="/events">
                   <li>Calendar of Events</li>
+                </Link>
+                <Link href="/alumini">
+                
                   <li>Alumni</li>
+                </Link>
                 </ul>
               </div>
             </div>

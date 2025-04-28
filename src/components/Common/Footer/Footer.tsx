@@ -51,9 +51,9 @@ const facilities = [
 ];
 
 const stayConnected = [
-  { data: "Alumni", links: "#" },
+  { data: "Alumni", links: "/alumini" },
   { data: "Media", links: "#" },
-  { data: "Calendar of Events", links: "#" },
+  { data: "Calendar of Events", links: "/events" },
   { data: "Careers", links: "#" },
 ];
 

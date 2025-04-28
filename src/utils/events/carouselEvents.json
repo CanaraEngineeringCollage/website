@@ -1,0 +1,23 @@
+[
+    {
+        "id":"1",
+        "date":"Oct 5,2024",
+        "title":"Alumni Mentorship Program Launched",
+        "imageSrc":"/eventImages/1.png",
+        "description":"Our new mentorship initiative pairs graduates with current students, providing guidance, career advice, & industry insights to the next generation of engineers."
+    },
+    {
+        "id":"2",
+        "date":"Oct 5,2024",
+        "title":"Alumni Mentorship Program Launched",
+        "imageSrc":"/eventImages/image.png",
+        "description":"Our new mentorship initiative pairs graduates with current students, providing guidance, career advice, & industry insights to the next generation of engineers."
+    },
+    {
+        "id":"3",
+        "date":"Oct 5,2024",
+        "imageSrc":"/eventImages/1.png",
+        "title":"Alumni Mentorship Program Launched",
+        "description":"Our new mentorship initiative pairs graduates with current students, providing guidance, career advice, & industry insights to the next generation of engineers."
+    }
+]
