@@ -7,6 +7,33 @@ import StudentTour from "@/components/HomePageComponents/StudentTour/StudentTour
 import { Testimonials } from "@/components/HomePageComponents/Testimonials/Testimonials";
 import React from "react";
 
+export const metadata = {
+  title: 'Academic Overview | Canara College',
+  description: 'Explore the academic programs, opportunities, and student testimonials at Canara College. Empowering futures through quality education.',
+  openGraph: {
+    title: 'Academic Overview | Canara College',
+    description: 'Learn about the academic offerings at Canara College, from diverse programs to student experiences and opportunities.',
+    url: 'https://your-website-url.com/academic-overview', 
+    siteName: 'Canara College',
+    images: [
+      {
+        url: 'https://your-website-url.com/og-academic-overview.jpg', 
+        width: 1200,
+        height: 630,
+        alt: 'Academic Overview at Canara College',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Academic Overview | Canara College',
+    description: 'Discover the academic programs and student experiences at Canara College.',
+    images: ['https://your-website-url.com/og-academic-overview.jpg'],
+  },
+};
+
 const page = () => {
   return (
     <>

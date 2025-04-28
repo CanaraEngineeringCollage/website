@@ -8,6 +8,34 @@ import React from "react";
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import data from "../../../utils/functionDepartmentData/functionDepartmentData.json"
 
+export const metadata = {
+  title: 'Student Welfare Department | Canara College',
+  description: 'Explore the Student Welfare Department of Canara College, providing support, services, and a nurturing environment for students.',
+  openGraph: {
+    title: 'Student Welfare Department | Canara College',
+    description: 'Learn about the student welfare services offered at Canara College, including departmental functions, messages, and resources.',
+    url: 'https://your-website-url.com/student-welfare-department', // update this
+    siteName: 'Canara College',
+    images: [
+      {
+        url: 'https://your-website-url.com/og-student-welfare.jpg', // update this
+        width: 1200,
+        height: 630,
+        alt: 'Student Welfare Department at Canara College',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Student Welfare Department | Canara College',
+    description: 'Discover the student welfare services and resources at Canara College.',
+    images: ['https://your-website-url.com/og-student-welfare.jpg'], // update
+  },
+};
+
+
 const page = () => {
   return (
     <>

@@ -7,6 +7,18 @@ import React from "react";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 
+export const metadata = {
+  title: "Physical Education Department | Canara College",
+  description: "Learn more about the Physical Education Department at Canara College, including its mission, facilities, and modern amenities.",
+  openGraph: {
+    title: "Physical Education Department | Canara College",
+    description: "Explore the Physical Education Department at Canara College, featuring state-of-the-art facilities and a strong focus on building strength and health.",
+    url: "https://your-website.com/physical-education",
+    siteName: "Canara College",
+  },
+};
+
+
 const page = () => {
   return (
     <>

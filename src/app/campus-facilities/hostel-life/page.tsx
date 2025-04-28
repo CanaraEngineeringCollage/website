@@ -7,6 +7,34 @@ import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
 import React from "react";
 
+export const metadata = {
+  title: "Hostel Life | Canara College",
+  description:
+    "Explore the vibrant hostel life at Canara College, featuring amenities, student life, and the facilities available to make the stay comfortable and enjoyable.",
+  openGraph: {
+    title: "Hostel Life | Canara College",
+    description: "Discover the unique aspects of hostel life at Canara College, including amenities, activities, and life in the hostels.",
+    url: "https://your-website-url.com/hostel-life", // Update with the actual URL
+    siteName: "Canara College",
+    images: [
+      {
+        url: "https://your-website-url.com/og-hostel-life.jpg", // Update image URL
+        width: 1200,
+        height: 630,
+        alt: "Hostel Life at Canara College",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hostel Life | Canara College",
+    description: "Learn about the facilities, amenities, and student life in the hostels at Canara College.",
+    images: ["https://your-website-url.com/og-hostel-life.jpg"], // Update image URL
+  },
+};
+
 const page = () => {
   return (
     <>
