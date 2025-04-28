@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
 import CampusTour from "@/components/HomePageComponents/CampusTour/CampusTour";
@@ -8,6 +9,35 @@ import HeroSection from "@/components/HomePageComponents/HeroSecton/HeroSection"
 import StudentTour from "@/components/HomePageComponents/StudentTour/StudentTour";
 import { Testimonials } from "@/components/HomePageComponents/Testimonials/Testimonials";
 import TopRecruiters from "@/components/HomePageComponents/TopRecruiters/TopRecruiters";
+
+
+export const metadata = {
+  title: 'Canara College, Mangalore | NAAC A Grade Institution',
+  description: 'Canara College, accredited with A Grade by NAAC and affiliated to Mangalore University, offers premier undergraduate programs. Join a legacy of excellence in education since 1973!',
+  openGraph: {
+    title: 'Canara College, Mangalore | NAAC A Grade Institution',
+    description: 'Providing excellent undergraduate education since 1973. Accredited with A Grade by NAAC and affiliated to Mangalore University.',
+    url: 'https://your-website-url.com',
+    siteName: 'Canara College',
+    images: [
+      {
+        url: 'https://your-website-url.com/og-image.jpg', // update with your real OG image
+        width: 1200,
+        height: 630,
+        alt: 'Canara College Campus',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Canara College, Mangalore | NAAC A Grade Institution',
+    description: 'Providing excellent undergraduate education since 1973.',
+    images: ['https://your-website-url.com/og-image.jpg'], // update with your real OG image
+  },
+};
+
 
 export default function Home() {
   return (

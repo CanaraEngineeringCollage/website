@@ -7,6 +7,33 @@ import SecretaryMessage from "@/components/AboutPageComponents/AboutCecPage/Secr
 import NextStepSection from "@/components/AboutPageComponents/AboutCecPage/NextStepSection/NextStepSection";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
 
+export const metadata = {
+  title: 'About Canara College | Legacy of Excellence Since 1973',
+  description: 'Learn about Canara College, Mangalore — an institution accredited with A Grade by NAAC, fostering academic excellence and holistic development since 1973.',
+  openGraph: {
+    title: 'About Canara College | Legacy of Excellence Since 1973',
+    description: 'Explore the rich history, vision, mission, and values of Canara College, a premier institution affiliated to Mangalore University.',
+    url: 'https://your-website-url.com/about', // update with real URL
+    siteName: 'Canara College',
+    images: [
+      {
+        url: 'https://your-website-url.com/og-about-image.jpg', // update with your real OG image
+        width: 1200,
+        height: 630,
+        alt: 'About Canara College Campus',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Canara College | Legacy of Excellence Since 1973',
+    description: 'Discover the legacy and mission of Canara College, empowering students for a brighter future.',
+    images: ['https://your-website-url.com/og-about-image.jpg'], // update this
+  },
+};
+
 
 export default function AboutCec() {
   return (

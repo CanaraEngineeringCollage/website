@@ -12,7 +12,7 @@ function Layout({ children }: { children: React.ReactNode }) {
 
   const pathname = usePathname(); // get current route
 
-  const isCampusRoute = pathname.startsWith("/campus");
+  const isCampusRoute = pathname.startsWith("/events") || pathname.startsWith("/alumini");
 
   return (
     <>
