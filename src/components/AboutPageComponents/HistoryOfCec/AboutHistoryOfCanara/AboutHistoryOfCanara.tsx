@@ -1,5 +1,4 @@
 import React from "react";
-import { MdKeyboardArrowRight } from "react-icons/md";
 import image1 from "../../../../../public/aboutPageImages/campusLegacy/historyimage.png";
 import Image from "next/image";
 const AboutHistoryCanara = () => {

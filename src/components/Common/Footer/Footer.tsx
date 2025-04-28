@@ -35,7 +35,7 @@ const academics = [
   { data: "Courses & Programs", links: "#" },
   { data: "Syllabus", links: "#" },
   { data: "Academic Calendar", links: "#" },
-  { data: "Examinations & Timetables", links: "#" },
+  { data: "Examinations & Timetables", links: "/examination-records" },
   { data: "Circulars", links: "#" },
   { data: "Marks & Attendance", links: "#" },
   { data: "Learning Resources", links: "#" },

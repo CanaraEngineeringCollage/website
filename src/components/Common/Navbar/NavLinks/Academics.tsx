@@ -82,9 +82,15 @@ export default function Academics() {
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Examinations & Records</span>
                 <ul className="list-none text-gray-500 leading-10 cursor-pointer">
-                  <li>Timetables</li>
-                  <li>Circulars</li>
-                  <li>Marks & Attendance</li>
+                  <Link href="/academics/examination-records">
+                    <li>Timetables</li>
+                  </Link>
+                  <Link href="/academics/examination-records">
+                    <li>Circulars</li>
+                  </Link>
+                  <Link href="/academics/examination-records">
+                    <li>Marks & Attendance</li>
+                  </Link>
                 </ul>
               </div>
             </div>

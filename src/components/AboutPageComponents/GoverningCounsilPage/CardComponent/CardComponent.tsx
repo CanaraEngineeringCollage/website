@@ -18,7 +18,7 @@ const ProfileCard = () => {
 
   useEffect(() => {
     setData(governingCounsilData);
-  }, [governingCounsilData]);
+  }, []);
   return (
     <section className="pb-20 px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64">
       <h1 className="text-black text-[40px] lg:text-[54px] mb-10 mt-10 md:mb-20 font-bold text-center">Governing Council</h1>

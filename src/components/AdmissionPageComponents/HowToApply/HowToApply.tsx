@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import { GoDash } from "react-icons/go";
-import { BsDash } from "react-icons/bs";
 import { RxDash } from "react-icons/rx";
 
 const HowToApply = () => {

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import img from "../../../../../public/aboutPageImages/our-founder/canara-founder.png";
 
 const MessageSection = () => {
   return (

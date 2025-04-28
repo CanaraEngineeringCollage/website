@@ -1,4 +1,3 @@
-import { Metadata } from "next";
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
 import CampusTour from "@/components/HomePageComponents/CampusTour/CampusTour";

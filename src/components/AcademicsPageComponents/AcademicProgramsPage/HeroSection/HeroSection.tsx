@@ -13,12 +13,12 @@ const HeroSection = () => {
         {/* Desktop Gradient */}
         <div className="absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-black/60 to-transparent z-10" />
         <div className="absolute bottom-0 left-0 right-0 h-[200px] md:h-[1000px] bg-gradient-to-t from-white via-white/85 via-50% to-transparent z-[10] md:hidden" />
-        <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[1000px] bg-gradient-to-t from-white via-transparent to-transparent z-[10] hidden md:block" />
+        <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[900px] bg-gradient-to-t from-white via-transparent to-transparent z-[10] hidden md:block" />
       </div>
 
       <div className="absolute top-20 md:top-28  mx-auto text-white px-4 z-10">
         <h3 className="text-[#F5F5F7] text-[19px] md:text-[25px] leading-10 lg:leading-0 lg:text-[31px]">Bachelors of Engineering in</h3>
-        <h2 className="text-[23px] md:text-[40px]  lg:text-[77px] leading-[30px] md:leading-10 lg:leading-[1] font-extrabold text-white">
+        <h2 className="text-[23px] md:text-[40px]  lg:text-[77px] leading-[30px] md:leading-10 lg:leading-[1] xl:leading-[1.3] font-extrabold text-white">
           Electronics and <br />
           Communication Engineering
         </h2>

@@ -18,12 +18,12 @@ const SecretaryMessage = () => {
         <div className="">
           <h1 className="text-3xl text-start my-10 md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold">Message from the Honorary Secretary</h1>
           <p className="text-[17px] text-[#76838b] text-start">
-            Canara’s 126-year legacy is built on adaptability, innovation & progress. Embracing change has been our strength, preparing us to meet
-            evolving challenges head-on. The Valediction of the Post-Centennial Silver Jubilee on June 30, 2016, marked a milestone with the
-            inauguration of 'Shree Bhuvanendra Sabha Bhavan' by alumnus Sri P. Dayananda Pai, who generously funded its refurbishment. Initiatives
-            like 'Play Schools @ Canara' reflect our commitment to holistic education. At Canara Engineering College, our pursuit of excellence
-            extends beyond academics to research, innovation & placements. With plans for an Incubation Centre, we continue our journey toward
-            becoming an Institute of Repute.
+          Canara&rsquo;s 126-year legacy is built on adaptability, innovation &amp; progress. Embracing change has been our strength, preparing us to meet
+  evolving challenges head-on. The Valediction of the Post-Centennial Silver Jubilee on June 30, 2016, marked a milestone with the
+  inauguration of &lsquo;Shree Bhuvanendra Sabha Bhavan&rsquo; by alumnus Sri P. Dayananda Pai, who generously funded its refurbishment. Initiatives
+  like &lsquo;Play Schools @ Canara&rsquo; reflect our commitment to holistic education. At Canara Engineering College, our pursuit of excellence
+  extends beyond academics to research, innovation &amp; placements. With plans for an Incubation Centre, we continue our journey toward
+  becoming an Institute of Repute.
           </p>
         </div>
         <div>

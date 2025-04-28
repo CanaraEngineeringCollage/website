@@ -7,7 +7,6 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { CiPlay1, CiPause1 } from "react-icons/ci";
-import functionDeprtmentData from "../../../../utils/functionDepartmentData/functionDepartmentData.json";
 
 interface DataItem {
   title: string;
