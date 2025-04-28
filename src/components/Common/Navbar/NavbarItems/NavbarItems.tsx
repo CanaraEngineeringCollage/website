@@ -30,7 +30,7 @@ function NavbarItems() {
       <Link
         id="placement"
         className="pt-[8px] opacity-80 text-[#2884CA]  font-poppins text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
-        href={"/placements"}
+        href={"/training-placements"}
       >
         Training & Placements
       </Link>

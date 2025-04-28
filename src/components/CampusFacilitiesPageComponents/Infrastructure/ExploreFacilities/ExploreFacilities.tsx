@@ -212,14 +212,14 @@ const ExploreFacilities = () => {
             <SwiperSlide key={index}>
               <motion.button
                 onClick={() => openCard(index)}
-                className="max-w-sm min-h-[55vh] md:min-h-[45vh] bg-white lg:min-h-[65vh] xl:min-h-auto rounded-3xl overflow-hidden"
+                className="max-w-sm min-h-[55vh] md:min-h-[45vh]  lg:min-h-[65vh] xl:min-h-auto rounded-3xl overflow-hidden"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
                 <div className="h-60 overflow-hidden cursor-pointer">
                   <Image width={200} height={200} src={item.image} alt={item.title} className="w-full h-full object-cover !rounded-t-2xl cursor-pointer " />
                 </div>
-                <div className="p-8 text-center">
+                <div className="p-8 text-center bg-white rounded-b-2xl">
                   <h3 className="text-[27px] font-bold text-black mb-2 line-clamp-2">{item.title}</h3>
                   <span className="text-[#2997FF] inline-flex text-[17px] items-center hover:underline font-medium text-sm">
                     Read More <MdKeyboardArrowRight className="ml-1" />
