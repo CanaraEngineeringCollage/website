@@ -13,11 +13,12 @@ const TopRecruiters: React.FC = () => {
           <div className="animate-marquee">
             {[...logos, ...logos].map((logo, index) => (
               <Image
-                fill
-                key={index}
-                src={logo.src}
-                alt={logo.alt}
-                className={`${logo.height} w-auto`}
+              key={index}
+              src={logo.src}
+              alt={logo.alt}
+              width={100} // or adjust as per your design
+              height={40} // provide fallback or map height dynamically
+              className="w-full h-full"
               />
             ))}
           </div>
