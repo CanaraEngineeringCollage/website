@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import governingCounsilData from "../../../utils/governingCounsilData/governingCounsilData.json";
+import governingCounsilData from "../../../utils/departmentFacultyData/departmentFacultyData.json";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
@@ -89,7 +89,12 @@ export default function DepartmentFaculty() {
                   <p className="text-[17px]">
                     {member.roles.map((role, idx) => (
                       <span key={idx}>
-                        {role.title}, <span className="font-semibold">{role.organization}</span>
+                        {role.title}
+                        {role.organization && (
+                          <>
+                            , <span className="font-semibold">{role.organization}</span>
+                          </>
+                        )}
                         {idx < member.roles.length - 1 && <br />}
                       </span>
                     ))}
@@ -136,7 +141,12 @@ export default function DepartmentFaculty() {
                   <p className="text-[17px]">
                     {member.roles.map((role, idx) => (
                       <span key={idx}>
-                        {role.title}, <span className="font-semibold">{role.organization}</span>
+                        {role.title}
+                        {role.organization && (
+                          <>
+                            , <span className="font-semibold">{role.organization}</span>
+                          </>
+                        )}
                         {idx < member.roles.length - 1 && <br />}
                       </span>
                     ))}
