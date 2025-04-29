@@ -257,7 +257,7 @@ const ContactFormModal: React.FC<ContactFormModalProps> = ({ isOpen, onClose, cl
                 <div className="text-center">
                   <button
                     type="button"
-                    className="px-10 cursor-pointer py-2 bg-[#2884CA] rounded-3xl text-white"
+                    className="px-10 z-50 cursor-pointer py-2 bg-[#2884CA] rounded-3xl text-white"
                     onClick={handleSubmit}
                   >
                     Submit

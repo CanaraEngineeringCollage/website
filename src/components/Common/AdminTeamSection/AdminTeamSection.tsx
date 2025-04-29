@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import governingCounsilData from "../../../utils/governingCounsilData/governingCounsilData.json";
+import governingCounsilData from "../../../utils/adminTeamData/adminTeamData.json"
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { MdKeyboardArrowRight } from "react-icons/md";
@@ -12,6 +12,7 @@ interface CouncilMember {
   id: number;
   name: string;
   image: string;
+  postion: string;
   roles: { title: string; organization: string }[];
 }
 
@@ -90,16 +91,18 @@ export default function AdminTeamSection() {
               />
               <Link href={`/user-details/${member.id}`}>
                 <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
-                <div className="absolute z-50 top-[75%] left-6">
+                <div className="absolute z-50 top-[78%] left-6">
                   <h2 className="text-[20px] font-bold">{member.name}</h2>
-                  <p className="text-[17px]">
+                  <p className="text-[17px] ">{member.postion}</p>
+
+                  {/* <p className="text-[17px]">
                     {member.roles.map((role, idx) => (
                       <span key={idx}>
                         {role.title}, <span className="font-semibold">{role.organization}</span>
                         {idx < member.roles.length - 1 && <br />}
                       </span>
                     ))}
-                  </p>
+                  </p> */}
                   <p className="text-xs font-bold sm:text-sm md:text-sm flex items-center">
                     View Profile
                     <MdKeyboardArrowRight className="ml-1 text-xl" />
