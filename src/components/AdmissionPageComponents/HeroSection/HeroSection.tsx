@@ -1,8 +1,11 @@
+"use client";
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import bgImage from "../../../../public/admissionPageImages/hero.png"
+import ContactFormModal from '@/components/Modal/Modal'
 
 const HeroSection = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false)
   return (
     <section className="relative w-full h-[90vh] lg:h-screen overflow-hidden">
       {/* Background Image */}
@@ -21,10 +24,11 @@ const HeroSection = () => {
         <p className="text-[#CDE5FF] text-[16px] pe-10 md:text-[31px] mt-4">
           Begin your engineering journey with a foundation-built curriculum.
         </p>
-        <button className="mt-6 bg-white text-[#2884CA] font-bold px-6 py-2 cursor-pointer rounded-full  ">
+        <button onClick={()=>setIsOpen(true)} className="mt-6 bg-white text-[#2884CA] font-bold px-6 py-2 cursor-pointer rounded-full  ">
           Apply Now
         </button>
       </div>
+      <ContactFormModal isOpen={isOpen} onClose={setIsOpen} />
     </section>
   )
 }
