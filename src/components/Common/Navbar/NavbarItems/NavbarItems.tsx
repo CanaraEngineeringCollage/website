@@ -3,9 +3,13 @@ import Link from "next/link";
 import About from "../NavLinks/About";
 import Academics from "../NavLinks/Academics";
 import Life from "../NavLinks/Life";
+import ContactFormModal from "@/components/Modal/Modal";
+import { useState } from "react";
 
 function NavbarItems() {
+  const [modalOpen, setModalOpen] = useState<boolean>(false);
   return (
+    <>
     <div className="hidden nav-items lg:flex text-secondary lg2 flex-row space-x-3 xl:space-x-6">
       <div className="cursor-pointer  pt-[8px] text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
         <About />
@@ -34,16 +38,18 @@ function NavbarItems() {
       >
         Training & Placements
       </Link>
-      <Link
+      <div
         id="apply"
         className="pt-[8px] font-poppins text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
-        href={"/apply"}
       >
-        <button className="bg-primary text-white px-7 py-2.5 cursor-pointer rounded-[30px]">
+        <button onClick={() => setModalOpen(true)} className="bg-primary text-white px-7 py-2.5 cursor-pointer rounded-[30px]">
           Apply Now
         </button>
-      </Link>
+      </div>
+
     </div>
+      <ContactFormModal isOpen={modalOpen} onClose={setModalOpen}/>
+    </>
   );
 }
 
