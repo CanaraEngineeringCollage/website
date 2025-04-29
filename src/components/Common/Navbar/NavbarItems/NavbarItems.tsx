@@ -5,12 +5,14 @@ import Academics from "../NavLinks/Academics";
 import Life from "../NavLinks/Life";
 import ContactFormModal from "@/components/Modal/Modal";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 function NavbarItems() {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
+const pathname = usePathname()
   return (
     <>
-    <div className="hidden nav-items lg:flex text-secondary lg2 flex-row space-x-3 xl:space-x-6">
+    <div className="hidden nav-items lg:flex text-secondary lg2 flex-row space-x-3  xl:space-x-6">
       <div className="cursor-pointer  pt-[8px] text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
         <About />
       </div>
@@ -19,9 +21,9 @@ function NavbarItems() {
       </div>
       <div
         id="admission"
-        className="cursor-pointer opacity-80 text-[#2884CA] pt-[8px] text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
+        className="cursor-pointer opacity-80  text-[#2884CA] pt-[8px]  text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
       >
-        <Link href={"/admission"} className="font-poppins">
+        <Link href={"/admission"} className={`font-poppins ${(pathname==="/admission")?'border-b-2 border-[#005580] text-[#005580]':" text-[#2884CA]"} py-1.5 `}>
           Admissions
         </Link>
       </div>
@@ -33,10 +35,11 @@ function NavbarItems() {
       </div>
       <Link
         id="placement"
-        className="pt-[8px] opacity-80 text-[#2884CA]  font-poppins text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
+        className="pt-[8px] opacity-80 text-[#2884CA]   font-poppins text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
         href={"/training-placements"}
       >
-        Training & Placements
+       <p className={`font-poppins ${pathname==="/training-placements"?'border-b-2 border-[#005580] text-[#005580]':" text-[#2884CA]"} py-1.5 `}> Training & Placements</p>
+       
       </Link>
       <div
         id="apply"

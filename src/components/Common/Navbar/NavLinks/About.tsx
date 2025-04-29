@@ -4,10 +4,13 @@ import { useState } from "react";
 import { FaChevronUp } from "react-icons/fa6";
 import { College, Employees, Certicficate, HandShake } from "../../../../components/Icons/Icons";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function About() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname=usePathname()
+  
 
   return (
     <Menu open={isMenuOpen} handler={setIsMenuOpen} offset={{ mainAxis: 20 }} placement="bottom" allowHover={true}>
@@ -16,7 +19,7 @@ export default function About() {
           <ListItem
             className={`flex items-center gap-2 ${
               isMenuOpen ? "opacity-100" : "opacity-80"
-            } py-2 pr-4 text-[#2884CA] transition-colors ease-in-out duration-300 hover:text-we bg-transparent font-semibold hover:bg-transparent border-none outline-none focus:ring-0`}
+            } py-2 pr-4  transition-colors ease-in-out duration-300 hover:text-we bg-transparent font-semibold hover:bg-transparent  ${pathname.includes("about")?`border-[#005580] border-b-2 text-[#005580]`:" text-[#2884CA]"} shadow-none rounded-none outline-none focus:ring-0`}
             selected={isMenuOpen || isMobileMenuOpen}
             placeholder=""
             onClick={() => setIsMobileMenuOpen((cur) => !cur)}
