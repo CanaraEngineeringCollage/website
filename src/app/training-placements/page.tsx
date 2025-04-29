@@ -1,6 +1,6 @@
 import YoutubeSection from "@/components/AcademicsPageComponents/AcademicProgramsPage/YoutubeSection/YoutubeSection";
 import ExploreFacilities from "@/components/CampusFacilitiesPageComponents/Infrastructure/ExploreFacilities/ExploreFacilities";
-import TopRecruiters from "@/components/HomePageComponents/TopRecruiters/TopRecruiters";
+import TopRecruiters from "@/components/Common/TopRecruiters/TopRecruiters";
 import AboutDepartment from "@/components/TrainingPlacementPageComponents/AboutDepartment/AboutDepartment";
 import DepartmentFaculty from "@/components/TrainingPlacementPageComponents/DepartmentFaculty/DepartmentFaculty";
 import HeroSection from "@/components/TrainingPlacementPageComponents/HeroSection/HeroSection";

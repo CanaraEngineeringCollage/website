@@ -1,13 +1,13 @@
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
-import CampusTour from "@/components/HomePageComponents/CampusTour/CampusTour";
+import CampusTour from "@/components/Common/CampusTour/CampusTour";
 import EmpoweringFutures from "@/components/Common/EmpoweringFutures/EmpoweringFutures";
 import ExplorePrograms from "@/components/Common/ExplorePrograms/ExplorePrograms";
-import FutureCampusText from "@/components/HomePageComponents/FutureCampusText/FutureCampusText";
-import HeroSection from "@/components/HomePageComponents/HeroSecton/HeroSection";
+import FutureCampusText from "@/components/Common/FutureCampusText/FutureCampusText";
+import HeroSection from "@/components/Common/HeroSecton/HeroSection";
 import StudentTour from "@/components/Common/StudentTour/StudentTour";
 import { Testimonials } from "@/components/Common/Testimonials/Testimonials";
-import TopRecruiters from "@/components/HomePageComponents/TopRecruiters/TopRecruiters";
+import TopRecruiters from "@/components/Common/TopRecruiters/TopRecruiters";
 
 
 export const metadata = {
