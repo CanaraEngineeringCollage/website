@@ -3,7 +3,7 @@ import HowToApply from "@/components/AdmissionPageComponents/HowToApply/HowToApp
 import YoutubeSection from "@/components/AdmissionPageComponents/YoutubeSection/YoutubeSection";
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
-import EmpoweringFutures from "@/components/HomePageComponents/EmpoweringFutures/EmpoweringFutures";
+import EmpoweringFutures from "@/components/Common/EmpoweringFutures/EmpoweringFutures";
 import ExplorePrograms from "@/components/HomePageComponents/ExplorePrograms/ExplorePrograms";
 import { Testimonials } from "@/components/HomePageComponents/Testimonials/Testimonials";
 import React from "react";
