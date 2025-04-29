@@ -21,14 +21,10 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
   const [progress, setProgress] = useState(0);
   const autoplayDelay = 3000; // Swiper autoplay delay in ms
 
-  const fecthData = async () => {
-    setData(functionDeprtmentData);
-  };
-
   useEffect(() => {
-    fecthData();
-  }, []);
-
+    setData(functionDeprtmentData);
+  }, [functionDeprtmentData]);
+  
   // Handle play/pause toggle
   const togglePlayPause = () => {
     if (swiperRef.current) {
@@ -43,7 +39,7 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
   };
 
   // Handle Swiper's autoplay time left to sync progress
-  const handleAutoplayTimeLeft = (_swiper: any, _time: number, progress: number) => {
+  const handleAutoplayTimeLeft = (_swiper: SwiperType, _time: number, progress: number) => {
     // Progress is a value from 0 to 1; convert to 0-100 for the circle
     setProgress((1 - progress) * 100);
   };

@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 interface Testimonial {
@@ -33,7 +33,7 @@ const renderTestimonials = (testimonials: Testimonial[]) => (
           className="bg-white rounded-[26px] p-6 w-[350px] h-full"
         >
           <div className="h-full max-w-2xl flex flex-col">
-            <p className="text-lg text-textGray  flex-grow mb-4">"{testimonial.quote}"</p>
+            <p className="text-lg text-textGray  flex-grow mb-4">&ldquo;{testimonial.quote}&rdquo;</p>
             <div className="mt-auto">
               <p className="font-semibold text-textGray">{testimonial.author}</p>
               <p className="text-sm text-textGray">

@@ -29,7 +29,7 @@ const EventVision: React.FC = ({}) => {
                 <Image src={visionImage2} alt="ideaIcon" className="max-w-[50px] my-auto" />
                 <div>
                   <p className="text-textGray text-[17px]">
-                    To serve as a link between the Institution's faculty, students, Management and the industries.
+                    To serve as a link between the Institution&rsquo;s faculty, students, Management and the industries.
                   </p>
                 </div>
               </div>

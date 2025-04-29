@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState, createContext, useContext, HTMLAttributes, ButtonHTMLAttributes, RefAttributes } from "react";
+import React, { useEffect, useRef, useState, createContext, useContext, HTMLAttributes, ButtonHTMLAttributes, RefAttributes, useCallback } from "react";
 import { IconX } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion, MotionProps } from "framer-motion";
@@ -161,7 +161,16 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
 export const Card = ({ card, index, layout = false }: { card: Card; index: number; layout?: boolean }) => {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  const { onCardClose, currentIndex } = useContext(CarouselContext);
+  const { onCardClose } = useContext(CarouselContext);
+
+  // Wrap handleClose in useCallback to memoize it
+  const handleClose = useCallback(() => {
+    setOpen(false);
+    onCardClose(index);
+  }, [index, onCardClose]);
+
+  // Move useOutsideClick to top level
+  useOutsideClick(containerRef, handleClose);
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
@@ -178,21 +187,10 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
 
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [open]);
-
-  useEffect(() => {
-    if (containerRef.current) {
-      useOutsideClick({ current: containerRef.current }, () => handleClose());
-    }
-  }, []);
+  }, [open, handleClose]); // Add handleClose to dependency array
 
   const handleOpen = () => {
     setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-    onCardClose(index);
   };
 
   // Animation variants for the card
@@ -260,7 +258,7 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
               layoutId={layout ? `card-${card.title}` : undefined}
               className="max-w-5xl mx-auto bg-white h-fit z-[60] my-10 p-4 md:p-10 rounded-3xl font-sans relative shadow-2xl"
             >
-              <motion.button
+              <MotionButton
                 variants={contentVariants}
                 className="sticky top-4 h-8 w-8 right-0 cursor-pointer ml-auto bg-black rounded-full flex items-center justify-center"
                 onClick={handleClose}
@@ -268,7 +266,7 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
                 whileTap={{ scale: 0.9 }}
               >
                 <IconX className="h-6 w-6 text-white" />
-              </motion.button>
+              </MotionButton>
               <MotionP variants={contentVariants} layoutId={layout ? `category-${card.title}` : undefined} className="text-lg font-medium text-black">
                 {card.category}
               </MotionP>

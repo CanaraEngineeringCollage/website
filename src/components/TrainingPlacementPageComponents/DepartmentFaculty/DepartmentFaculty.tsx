@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import governingCounsilData from "../../../utils/governingCounsilData/governingCounsilData.json";
 import { useRouter } from "next/navigation";
 import Link from "next/link";

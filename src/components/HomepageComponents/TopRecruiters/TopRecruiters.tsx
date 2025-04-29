@@ -1,5 +1,6 @@
 import React from 'react';
 import logos from '../../../utils/companyLogo/logos.json';
+import Image from 'next/image';
 
 const TopRecruiters: React.FC = () => {
   return (
@@ -11,7 +12,8 @@ const TopRecruiters: React.FC = () => {
         <div className="marquee-container">
           <div className="animate-marquee">
             {[...logos, ...logos].map((logo, index) => (
-              <img
+              <Image
+                fill
                 key={index}
                 src={logo.src}
                 alt={logo.alt}
