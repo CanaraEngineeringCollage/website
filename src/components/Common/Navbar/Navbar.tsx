@@ -27,7 +27,7 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
       <section className={`bg-white relative transition-all duration-500 ease-in-out `}>
         <nav className="  py-0 max-w-[90%] mx-auto">
           {/* For large and Medium-sized Screen */}
-          <div className="flex items-center justify-between relative py-7 container-padding">
+          <div className="flex items-center justify-between relative lg:py-7 xl:py-3 container-padding">
             <div className="flex flex-row items-center w-36 md:w-40 2xl:w-60 h-10 relative">
               <Link href={"/"}>
                 <Image
