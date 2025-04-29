@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState, useRef, useEffect, createContext, useContext } from "react";
+import React, { useState, useRef, useEffect, createContext } from "react";
 import { MdKeyboardArrowRight, MdKeyboardArrowRight as MdKeyboardArrowRightIcon } from "react-icons/md";
 import { IconX } from "@tabler/icons-react";
 import { AnimatePresence, motion } from "framer-motion";

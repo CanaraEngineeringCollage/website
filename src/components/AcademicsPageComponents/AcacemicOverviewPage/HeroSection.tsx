@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useRef } from "react";
-import { CiPause1, CiPlay1 } from "react-icons/ci";
+import { CiPlay1 } from "react-icons/ci";
 
 const HeroSection = () => {
   const videoRef = useRef<HTMLVideoElement | null>(null);

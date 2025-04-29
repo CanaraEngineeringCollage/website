@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState, createContext, useContext } from "react";
+import React, { useEffect, useRef, useState, createContext } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper";
 import { Autoplay } from "swiper/modules";
@@ -103,12 +103,11 @@ const contentVariants = {
 };
 
 const ExploreFacilities = () => {
-  const [data, setData] = useState<DataItem[]>(pressData);
   const swiperRef = useRef<SwiperType | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-
+  
   const autoplayDelay = 3000;
 
   const handleCardClose = (index: number) => {
@@ -126,7 +125,7 @@ const ExploreFacilities = () => {
   };
 
   const goToNextCard = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % pressData.length);
     setIsOpen(true);
   };
 
@@ -152,7 +151,7 @@ const ExploreFacilities = () => {
   // Map DataItem to DescriptionProps (adjust based on actual JSON)
   const getDescription = (item: DataItem): DescriptionProps => ({
     src: item.image,
-    date: "2025-04-25", // Placeholder; update JSON to include actual data
+    date: "2025-04-25", // Placeholder; update JSON to include actual pressData
     topTitle: item.title,
     topDescription: "Explore the details of this facility.", // Placeholder
     middleTitle: "Facility Overview",
@@ -176,7 +175,7 @@ const ExploreFacilities = () => {
       value={{
         onCardClose: handleCardClose,
         currentIndex,
-        totalItems: data.length,
+        totalItems: pressData.length,
         goToNextCard,
         openCard,
         closeCard,
@@ -208,7 +207,7 @@ const ExploreFacilities = () => {
             swiperRef.current = swiper;
           }}
         >
-          {data?.map((item, index) => (
+          {pressData?.map((item, index) => (
             <SwiperSlide key={index}>
               <motion.button
                 onClick={() => openCard(index)}
@@ -264,12 +263,12 @@ const ExploreFacilities = () => {
                   <IconX className="h-6 w-6 text-white" />
                 </motion.button>
                 <motion.div variants={contentVariants}>
-                  <CardContent description={getDescription(data[currentIndex])} />
+                  <CardContent description={getDescription(pressData[currentIndex])} />
                 </motion.div>
                 <motion.div variants={contentVariants} className="p-4 lg:px-20 mt-10">
                   <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">NextUp</h1>
                   <h1 onClick={goToNextCard} className="text-[#2997FF] inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]">
-                    {data[(currentIndex + 1) % data.length]?.title || "First Card"}
+                    {pressData[(currentIndex + 1) % pressData.length]?.title || "First Card"}
                     <MdKeyboardArrowRightIcon className="ml-1 mt-1 text-[20px] md:text-[25px]" />
                   </h1>
                 </motion.div>

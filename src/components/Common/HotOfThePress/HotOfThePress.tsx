@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper";
 
@@ -8,16 +8,10 @@ import "swiper/css";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import pressData from "../../../utils/hotOFThePressData/hotOfThePressData.json";
 import Image from "next/image";
-interface DataItem {
-  title: string;
-  image: string;
-  date: string;
-  id: number;
-}
-const HotOfThePress = () => {
-  const [data, setData] = useState<DataItem[]>(pressData);
-  const swiperRef = useRef<SwiperType | null>(null);
 
+const HotOfThePress = () => {
+
+  const swiperRef = useRef<SwiperType | null>(null);
   const autoplayDelay = 3000; // Swiper autoplay delay in ms
   return (
     <section className="lg:ml-20 xl:ml-60 py-24">
@@ -52,7 +46,7 @@ const HotOfThePress = () => {
           swiperRef.current = swiper;
         }}
       >
-        {data?.map((item, index) => (
+        {pressData?.map((item, index) => (
           <SwiperSlide key={index}>
             <div className="max-w-sm min-h-[55vh] md:min-h-[45vh] bg-white lg:min-h-[65vh] xl:min-h-auto   rounded-3xl overflow-hidden ">
               <div className="h-60 overflow-hidden">

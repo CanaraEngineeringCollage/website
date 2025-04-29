@@ -72,7 +72,7 @@ const Footer: FC = () => {
   return (
     <footer className="bg-[#e5e5ea] text-gray-700 text-sm pt-10">
       {/* Desktop Version */}
-      <div className="lg:max-w-7xl  xl:mx-auto xl:max-w-[75%] mx-auto lg:block hidden">
+      <div className="lg:max-w-7xl  xl:mx-auto xl:max-w-[75%]  mx-auto lg:block hidden">
         <hr className="text-gray-300 pb-3.5" />
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 border-b border-gray-300 pb-10">
           <div>

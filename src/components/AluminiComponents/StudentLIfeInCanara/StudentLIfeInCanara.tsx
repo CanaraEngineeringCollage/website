@@ -6,7 +6,7 @@ const StudentLIfeInCanara = () => {
       <div className="">
         <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-black pb-5 lg:pb-10">A Holistic Student Life at Canara</h1>
         <p className="text-textGray  text-[20px]">
-          Alumni can give back to their college by sharing the invaluable lessons they've learned along their journey. Whether through mentoring,
+          Alumni can give back to their college by sharing the invaluable lessons they&aposve learned along their journey. Whether through mentoring,
           guest lectures, or offering internships, they have the unique opportunity to inspire students just as they once were. Returning to the
           campus where their dreams took shape is a way to pay forward the support, guidance, and memories that helped them succeed. By contributing
           their time, knowledge, or resources, alumni help create a legacy of growth, ensuring the college continues to nurture future leaders with

@@ -8,6 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { IconX } from "@tabler/icons-react";
 import { CiPlay1 } from "react-icons/ci";
 import Image from "next/image";
+import { SwiperRef } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -71,7 +72,7 @@ export default function LegacyExcellance() {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [progress, setProgress] = useState<number>(0);
   const [isPlaying, setIsPlaying] = useState<boolean>(true);
-  const swiperRef = useRef<any>(null);
+  const swiperRef = useRef<SwiperRef>(null);
 
   // Open modal with item data
   const openModal = (item: ModalContentType, index: number) => {

@@ -7,7 +7,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Autoplay } from "swiper/modules"; // Import Autoplay module
-
+import type { Swiper as SwiperType } from "swiper";
 // CarouselDots Component
 interface CarouselDotsProps {
   total: number;
@@ -43,7 +43,7 @@ function CarouselDots({ total, active, onDotClick, className }: CarouselDotsProp
 
 const HighlightsSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [swiperInstance, setSwiperInstance] = useState<any>(null);
+  const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
 
   const dummyData = [
     {

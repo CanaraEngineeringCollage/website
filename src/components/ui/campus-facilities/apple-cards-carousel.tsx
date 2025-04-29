@@ -57,7 +57,7 @@ const MotionP = motion.p as React.ComponentType<MotionPProps>;
 interface MotionButtonProps extends CustomMotionProps, ButtonHTMLAttributes<HTMLButtonElement>, RefAttributes<HTMLButtonElement> {}
 const MotionButton = motion.button as React.ComponentType<MotionButtonProps>;
 
-export const Carousel = ({ items, layout = "list" }: CarouselProps) => {
+export const Carousel = ({ items }: CarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
 

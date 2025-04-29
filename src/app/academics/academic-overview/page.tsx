@@ -1,10 +1,10 @@
 import HeroSection from "@/components/AcademicsPageComponents/AcacemicOverviewPage/HeroSection";
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
-import EmpoweringFutures from "@/components/HomePageComponents/EmpoweringFutures/EmpoweringFutures";
-import ExplorePrograms from "@/components/HomePageComponents/ExplorePrograms/ExplorePrograms";
-import StudentTour from "@/components/HomePageComponents/StudentTour/StudentTour";
-import { Testimonials } from "@/components/HomePageComponents/Testimonials/Testimonials";
+import EmpoweringFutures from "@/components/Common/EmpoweringFutures/EmpoweringFutures";
+import ExplorePrograms from "@/components/Common/ExplorePrograms/ExplorePrograms";
+import StudentTour from "@/components/Common/StudentTour/StudentTour";
+import { Testimonials } from "@/components/Common/Testimonials/Testimonials";
 import React from "react";
 
 export const metadata = {

@@ -2,10 +2,6 @@
 
 import Image from 'next/image';
 import bg1 from "../../../../public/backgroundImages/homeHeroBg.jpg";
-import bg2 from "../../../../public/homePageAppleCardImages/1.png"
-
-
-
 import nirf from "../../../../public/svgs/heropageLogos/1.svg";
 import iso from "../../../../public/svgs/heropageLogos/2.svg";
 import nba from "../../../../public/svgs/heropageLogos/3.svg";

@@ -82,7 +82,7 @@ const stats: Stat[] = [
   },
 ];
 
-const EmpoweringFutures: React.FC = () => {
+export default function EmpoweringFutures() {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   useEffect(() => {
@@ -223,4 +223,3 @@ const EmpoweringFutures: React.FC = () => {
   );
 };
 
-export default EmpoweringFutures;

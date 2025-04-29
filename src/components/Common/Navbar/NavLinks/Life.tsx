@@ -2,7 +2,7 @@
 import {  ListItem, Menu, MenuHandler, MenuList, Typography } from "@material-tailwind/react";
 import { useState } from "react";
 import { FaChevronUp } from "react-icons/fa6";
-import { Campus, College, StudentsLife, Innovation } from "@/components/Icons/Icons";
+import { Campus, College, Innovation } from "@/components/Icons/Icons";
 import Link from "next/link";
 
 export default function Life() {

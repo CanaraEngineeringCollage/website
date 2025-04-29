@@ -1,5 +1,6 @@
 import React from 'react';
 import logos from '../../../utils/companyLogo/logos.json';
+import Image from 'next/image';
 
 const TopRecruiters: React.FC = () => {
   return (
@@ -11,11 +12,13 @@ const TopRecruiters: React.FC = () => {
         <div className="marquee-container">
           <div className="animate-marquee">
             {[...logos, ...logos].map((logo, index) => (
-              <img
-                key={index}
-                src={logo.src}
-                alt={logo.alt}
-                className={`${logo.height} w-auto`}
+              <Image
+              key={index}
+              src={logo.src}
+              alt={logo.alt}
+              width={100} // or adjust as per your design
+              height={40} // provide fallback or map height dynamically
+              className="w-full h-full"
               />
             ))}
           </div>

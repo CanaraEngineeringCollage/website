@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import { Dialog } from "@headlessui/react";
 import { X } from "lucide-react";
+import Image from "next/image";
 
 interface Qualification {
   degree: string;
@@ -58,7 +59,7 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                 <div className=" gap-6 flex-col lg:flex-row flex items-center">
                   <div className="flex-shrink-0">
                     <div className="rounded-lg overflow-hidden w-60 h-80 bg-sky-400">
-                      <img src={facultyData.image} alt="Faculty profile" className="w-full h-full object-cover" />
+                      <Image fill src={facultyData.image} alt="Faculty profile" className="w-full h-full object-cover" />
                     </div>
                   </div>
 

@@ -32,27 +32,28 @@ const Page = () => {
   const { id } = useParams<{ id: string }>();
   const [data, setData] = useState<CouncilMember | null>(null);
 
-  const fetchUserData = () => {
-    const councilData = governingCounsilData.find((item) => item.id === parseInt(id));
-    if (councilData) {
-      const motivationData = motivationsData.find(
-        (category) => category.category === councilData.category 
-      );
-      const problemAreasData = problemAreas.find(
-        (category) => category.category === councilData.category 
-      );
-
-      setData({
-        ...councilData,
-        motivations: motivationData?.motivations || [],
-        problemAreas: problemAreasData?.problemAreas || [],
-      });
-    }
-  };
-
   useEffect(() => {
+    const fetchUserData = () => {
+      const councilData = governingCounsilData.find((item) => item.id === parseInt(id));
+      if (councilData) {
+        const motivationData = motivationsData.find(
+          (category) => category.category === councilData.category 
+        );
+        const problemAreasData = problemAreas.find(
+          (category) => category.category === councilData.category 
+        );
+  
+        setData({
+          ...councilData,
+          motivations: motivationData?.motivations || [],
+          problemAreas: problemAreasData?.problemAreas || [],
+        });
+      }
+    };
+  
     fetchUserData();
   }, [id]);
+  
 
   if (!data) {
     return <div>Loading...</div>;

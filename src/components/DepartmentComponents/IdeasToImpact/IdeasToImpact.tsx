@@ -1,6 +1,6 @@
 "use client";
 
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
@@ -14,12 +14,6 @@ const placementData = [
   { year: "2024-25", total: 100, placed: 40, offers: 20 },
   { year: "2023-24", total: 90, placed: 38, offers: 18 },
   { year: "2022-23", total: 120, placed: 70, offers: 30 },
-];
-
-const examData = [
-  { year: "2020-21", passRate: 97 },
-  { year: "2021-22", passRate: 98 },
-  { year: "2022-23", passRate: 99 },
 ];
 
 type Stat = {
