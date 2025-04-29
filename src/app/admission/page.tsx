@@ -4,8 +4,8 @@ import YoutubeSection from "@/components/AdmissionPageComponents/YoutubeSection/
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
 import EmpoweringFutures from "@/components/Common/EmpoweringFutures/EmpoweringFutures";
-import ExplorePrograms from "@/components/HomePageComponents/ExplorePrograms/ExplorePrograms";
-import { Testimonials } from "@/components/HomePageComponents/Testimonials/Testimonials";
+import ExplorePrograms from "@/components/Common/ExplorePrograms/ExplorePrograms";
+import { Testimonials } from "@/components/Common/Testimonials/Testimonials";
 import React from "react";
 
 export const metadata = {
