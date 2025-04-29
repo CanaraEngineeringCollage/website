@@ -1,6 +1,9 @@
-import React from "react";
+"use client";
+import ContactFormModal from "@/components/Modal/Modal";
+import React, { useState } from "react";
 
 const FooterCard = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
     <section className="py-36  md:px-0">
       <div
@@ -15,9 +18,10 @@ const FooterCard = () => {
             Book a one-on-one <span className="text-white font-bold">counselling session</span> & get all your questions answered about admissions, programs &
             your future opportunities.
           </p>
-          <button className="text-[#2884CA] cursor-pointer px-5 py-3 bg-white rounded-4xl">Book Your Counselling Session Today</button>
+          <button onClick={()=>setIsOpen(true)} className="text-[#2884CA] cursor-pointer px-5 py-3 bg-white rounded-4xl">Book Your Counselling Session Today</button>
         </div>
       </div>
+      <ContactFormModal isOpen={isOpen} onClose={setIsOpen} />
     </section>
   );
 };

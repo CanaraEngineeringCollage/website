@@ -2,14 +2,15 @@
   "faculty": [
     {
       "id": 1,
-      "name": "Dr. Anil Kumar",
-      "image": "/governingCounsilImages/1.png",
+      "name": "Dr. Karthik Pai B H",
+      "image": "/computerEngineeringStaffs/1.png",
       "designation": "Associate Professor",
       "category": "faculty",
       "department": "Computer Science & Engineering",
       "joiningDate": "16-10-2023",
       "experience": "28 Years",
       "employmentType": "Regular",
+      "position": "Professor & HoD",
       "qualifications": [
         {
           "degree": "B. Tech",
@@ -33,11 +34,16 @@
     },
     {
       "id": 2,
-      "name": "Smt. Priya Desai",
-      "image": "/governingCounsilImages/2.png",
-      "designation": "Professor",
+      "name": "Dr. Nagesh H R",
+      "image": "/computerEngineeringStaffs/2.png",
+      "designation": "Associate Professor",
       "category": "faculty",
       "department": "Computer Science & Engineering",
+      "joiningDate": "16-10-2023",
+      "experience": "28 Years",
+      "employmentType": "Regular",
+      "position": "Professor",
+
       "qualifications": [
         {
           "degree": "B. Tech",
@@ -61,11 +67,16 @@
     },
     {
       "id": 3,
-      "name": "Sri. Rohan Sharma",
-      "image": "/governingCounsilImages/3.png",
-      "designation": "Professor",
+      "name": "Dr. Demian Antony D'Mello",
+      "image": "/computerEngineeringStaffs/3.png",
+      "designation": "Associate Professor",
       "category": "faculty",
       "department": "Computer Science & Engineering",
+      "joiningDate": "16-10-2023",
+      "experience": "28 Years",
+      "employmentType": "Regular",
+      "position": "Professor",
+
       "qualifications": [
         {
           "degree": "B. Tech",
@@ -89,11 +100,175 @@
     },
     {
       "id": 4,
+      "name": "Dr. Nagesh Shenoy H",
+      "image": "/computerEngineeringStaffs/4.png",
+      "designation": "Associate Professor",
+      "category": "faculty",
+      "department": "Computer Science & Engineering",
+      "joiningDate": "16-10-2023",
+      "experience": "28 Years",
+      "employmentType": "Regular",
+      "position": "Associate Professor",
+
+      "qualifications": [
+        {
+          "degree": "B. Tech",
+          "passingYear": 1996,
+          "collegeOrUniversity": "Mangalore University",
+          "areaOfSpecialization": "Computer Science & Engineering"
+        },
+        {
+          "degree": "M. Tech",
+          "passingYear": 2002,
+          "collegeOrUniversity": "Mangalore University",
+          "areaOfSpecialization": "Computer Science & Engineering"
+        },
+        {
+          "degree": "M. Tech",
+          "passingYear": 2008,
+          "collegeOrUniversity": "Mangalore University",
+          "areaOfSpecialization": "Computer Science & Engineering"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Dr. Sunil Kumar B L",
+      "image": "/computerEngineeringStaffs/5.png",
+      "designation": "Associate Professor",
+      "category": "faculty",
+      "department": "Computer Science & Engineering",
+      "joiningDate": "16-10-2023",
+      "experience": "28 Years",
+      "employmentType": "Regular",
+      "position": "Associate Professor",
+      "qualifications": [
+        {
+          "degree": "B. Tech",
+          "passingYear": 1996,
+          "collegeOrUniversity": "Mangalore University",
+          "areaOfSpecialization": "Computer Science & Engineering"
+        },
+        {
+          "degree": "M. Tech",
+          "passingYear": 2002,
+          "collegeOrUniversity": "Mangalore University",
+          "areaOfSpecialization": "Computer Science & Engineering"
+        },
+        {
+          "degree": "M. Tech",
+          "passingYear": 2008,
+          "collegeOrUniversity": "Mangalore University",
+          "areaOfSpecialization": "Computer Science & Engineering"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Dr. Gurudeva S Hiremath",
+      "image": "/computerEngineeringStaffs/6.png",
+      "designation": "Associate Professor",
+      "category": "faculty",
+      "department": "Computer Science & Engineering",
+      "joiningDate": "16-10-2023",
+      "experience": "28 Years",
+      "employmentType": "Regular",
+      "position": "Associate Professor",
+      "qualifications": [
+        {
+          "degree": "B. Tech",
+          "passingYear": 1996,
+          "collegeOrUniversity": "Mangalore University",
+          "areaOfSpecialization": "Computer Science & Engineering"
+        },
+        {
+          "degree": "M. Tech",
+          "passingYear": 2002,
+          "collegeOrUniversity": "Mangalore University",
+          "areaOfSpecialization": "Computer Science & Engineering"
+        },
+        {
+          "degree": "M. Tech",
+          "passingYear": 2008,
+          "collegeOrUniversity": "Mangalore University",
+          "areaOfSpecialization": "Computer Science & Engineering"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Dr. Pavithra D S",
+      "image": "/computerEngineeringStaffs/7.png",
+      "designation": "Associate Professor",
+      "category": "faculty",
+      "department": "Computer Science & Engineering",
+      "joiningDate": "16-10-2023",
+      "experience": "28 Years",
+      "employmentType": "Regular",
+      "position": "Associate Professor",
+      "qualifications": [
+        {
+          "degree": "B. Tech",
+          "passingYear": 1996,
+          "collegeOrUniversity": "Mangalore University",
+          "areaOfSpecialization": "Computer Science & Engineering"
+        },
+        {
+          "degree": "M. Tech",
+          "passingYear": 2002,
+          "collegeOrUniversity": "Mangalore University",
+          "areaOfSpecialization": "Computer Science & Engineering"
+        },
+        {
+          "degree": "M. Tech",
+          "passingYear": 2008,
+          "collegeOrUniversity": "Mangalore University",
+          "areaOfSpecialization": "Computer Science & Engineering"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Dr. Vinay P",
+      "image": "/computerEngineeringStaffs/8.png",
+      "designation": "Associate Professor",
+      "category": "faculty",
+      "department": "Computer Science & Engineering",
+      "joiningDate": "16-10-2023",
+      "experience": "28 Years",
+      "employmentType": "Regular",
+      "position": "Associate Professor",
+      "qualifications": [
+        {
+          "degree": "B. Tech",
+          "passingYear": 1996,
+          "collegeOrUniversity": "Mangalore University",
+          "areaOfSpecialization": "Computer Science & Engineering"
+        },
+        {
+          "degree": "M. Tech",
+          "passingYear": 2002,
+          "collegeOrUniversity": "Mangalore University",
+          "areaOfSpecialization": "Computer Science & Engineering"
+        },
+        {
+          "degree": "M. Tech",
+          "passingYear": 2008,
+          "collegeOrUniversity": "Mangalore University",
+          "areaOfSpecialization": "Computer Science & Engineering"
+        }
+      ]
+    },
+    
+    {
+      "id": 4,
       "name": "Dr. Rajesh Sharma",
       "image": "/governingCounsilImages/4.png",
       "designation": "Professor",
       "category": "faculty",
       "department": "Information Science & Engineering",
+      "position": "Associate Professor",
+
       "qualifications": [
         {
           "degree": "B. Tech",
@@ -122,6 +297,8 @@
       "designation": "Professor",
       "category": "faculty",
       "department": "Information Science & Engineering",
+      "position": "Associate Professor",
+
       "qualifications": [
         {
           "degree": "B. Tech",
@@ -150,6 +327,8 @@
       "designation": "Associate Professor",
       "category": "faculty",
       "department": "Electronics & Communication Engineering",
+      "position": "Associate Professor",
+
       "qualifications": [
         {
           "degree": "B. Tech",
@@ -178,6 +357,8 @@
       "designation": "Professor",
       "category": "faculty",
       "department": "Computer Science & Design",
+      "position": "Associate Professor",
+
       "qualifications": [
         {
           "degree": "B. Tech",
@@ -206,6 +387,8 @@
       "designation": "Professor",
       "category": "faculty",
       "department": "Computer Science & Business System",
+      "position": "Associate Professor",
+
       "qualifications": [
         {
           "degree": "B. Tech",
@@ -234,6 +417,8 @@
       "designation": "Associate Professor",
       "category": "faculty",
       "department": "Artificial Intelligence & Machine Learning",
+      "position": "Associate Professor",
+
       "qualifications": [
         {
           "degree": "B. Tech",
@@ -261,7 +446,10 @@
       "image": "/governingCounsilImages/.png",
       "designation": "Associate Professor",
       "category": "faculty",
-      "department": "Science & Humanities"
+      "department": "Science & Humanities",
+      "position": "Associate Professor"
+
+      
     }
   ],
   "admin": [
@@ -270,28 +458,37 @@
       "name": "Sri Anil Kumar",
       "image": "/governingCounsilImages/1.png",
       "designation": "HR Coordinator",
-      "category": "admin"
+      "category": "admin",
+      "position": "Associate Professor"
+
+
     },
     {
       "id": 8,
       "name": "Smt. Priya Sharma",
       "image": "/governingCounsilImages/1.png",
       "designation": "Operations Manager",
-      "category": "admin"
+      "category": "admin",
+      "position": "Associate Professor"
+
     },
     {
       "id": 9,
       "name": "Sri Rajesh Nair",
       "image": "/governingCounsilImages/1.png",
       "designation": "HR Coordinator",
-      "category": "admin"
+      "category": "admin",
+      "position": "Associate Professor"
+
     },
     {
       "id": 2,
       "name": "Smt. Lakshmi Rao",
       "image": "/governingCounsilImages/1.png",
       "designation": "Operations Manager",
-      "category": "admin"
+      "category": "admin",
+      "position": "Associate Professor"
+
     }
   ],
   "general": [
@@ -300,21 +497,27 @@
       "name": "Sri Manoj Gupta",
       "image": "/governingCounsilImages/1.png",
       "designation": "Maintenance Associate Professor",
-      "category": "general"
+      "category": "general",
+      "position": "Associate Professor"
+
     },
     {
       "id": 2,
       "name": "Smt. Sunita Patil",
       "image": "/governingCounsilImages/1.png",
       "designation": "Security Officer",
-      "category": "general"
+      "category": "general",
+      "position": "Associate Professor"
+
     },
     {
       "id": 3,
       "name": "Sri Vikram Singh",
       "image": "/governingCounsilImages/1.png",
       "designation": "Security Officer",
-      "category": "general"
+      "category": "general",
+      "position": "Associate Professor"
+
     }
   ]
 }

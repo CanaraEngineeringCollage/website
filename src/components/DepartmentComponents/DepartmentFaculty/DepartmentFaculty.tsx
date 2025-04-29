@@ -122,7 +122,7 @@ export default function DepartmentFacultySection({ governingCounsilData }: Depar
               />
 
               <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
-              <div className="absolute z-50 top-[75%] left-6">
+              <div className="absolute z-50 top-[79%] left-6">
                 <h2 className="text-[20px] font-bold">{member.name}</h2>
                 <p className="text-[17px]">
                   <span>{member.designation}</span>

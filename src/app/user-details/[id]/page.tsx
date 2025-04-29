@@ -62,7 +62,7 @@ const Page = () => {
   return (
     <section className="py-10 px-4 sm:px-8 md:px-16 lg:px-32">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-8 lg:gap-16">
-        <div className="lg:col-span-3 md:h-[50vh] lg:h-full shadow-xl">
+        <div className="lg:col-span-3 md:h-[50vh] lg:h-full ">
           <Image
             src={data.image}
             width={100}
@@ -72,7 +72,7 @@ const Page = () => {
           />
         </div>
         <div className="lg:col-span-9">
-          <div className="bg-white h-[100%] p-4 sm:p-6 rounded-lg shadow-sm w-full">
+          <div className="bg-white h-[100%] p-4 sm:p-6 rounded-lg  w-full">
             <p className="text-sm text-gray-500">PROFILE TYPE</p>
             <h1 className="text-[47px] leading-[1] py-3 text-black font-bold">
               {data.profileType}
@@ -93,11 +93,11 @@ const Page = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-10 pt-10">
-        <div className="bg-white p-4 sm:p-6 rounded-lg shadow-lg w-full">
+        <div className="bg-white p-4 sm:p-6 rounded-lg  w-full">
           <h2 className="text-xl sm:text-2xl text-black font-bold text-center mb-6">Motivations</h2>
           <div className="grid grid-cols-1 py-3 sm:grid-cols-3 gap-10 sm:gap-6">
             {data.motivations.map((motivation, index) => (
-              <div key={index} className="text-center py-10 p-4 bg-white shadow rounded-lg">
+              <div key={index} className="text-center py-10 p-4 bg-white  rounded-lg">
                 <Image
                   src={motivation.icon}
                   alt="Motivation Icon"
@@ -110,11 +110,11 @@ const Page = () => {
             ))}
           </div>
         </div>
-        <div className="bg-white p-4 mt-10 lg:mt-0 sm:p-6 rounded-lg shadow-lg w-full">
+        <div className="bg-white p-4 mt-10 lg:mt-0 sm:p-6 rounded-lg  w-full">
           <h2 className="text-xl sm:text-2xl text-black font-bold text-center mb-6">Problem Areas</h2>
           <div className="grid grid-cols-1 py-3 sm:grid-cols-3 gap-10 sm:gap-6">
             {data.problemAreas.map((problem, index) => (
-              <div key={index} className="text-center py-10 p-4 bg-white shadow rounded-lg">
+              <div key={index} className="text-center py-10 p-4 bg-white  rounded-lg">
                 <Image
                   src={problem.icon}
                   alt="Problem Icon"
@@ -129,7 +129,7 @@ const Page = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-10 mt-10 lg:pt-10">
-        <div className="bg-white p-4 sm:p-6 rounded-lg shadow-lg w-full">
+        <div className="bg-white p-4 sm:p-6 rounded-lg  w-full">
           <h2 className="text-xl sm:text-2xl text-black font-bold mb-6">Core Needs</h2>
           <ul className="list-disc pl-6 sm:pl-10 text-gray-700 space-y-2 text-base md:text-xl">
             {data.coreNeeds.map((need, index) => (
@@ -137,7 +137,7 @@ const Page = () => {
             ))}
           </ul>
         </div>
-        <div className="bg-white p-4 my-10 lg:my-0 sm:p-6 rounded-lg shadow-lg w-full">
+        <div className="bg-white p-4 my-10 lg:my-0 sm:p-6 rounded-lg  w-full">
           <div className="flex flex-col md:flex-row justify-between">
             <div className="md:w-1/2">
               <h2 className="text-xl sm:text-2xl text-black font-bold text-center md:text-left mb-4">Frustrations & Fears</h2>

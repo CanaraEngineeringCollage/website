@@ -3,16 +3,32 @@
       "title": "NBA Acrreditation status of Programs",
       "data": [
         {
-          "title": "NBA 2023",
+          "title": "NAAC Certificate",
           "links": [
-            { "text": "Accredited Program List", "href": "#" },
-            { "text": "NBA Certificate Download", "href": "#" }
+            { "text": "View NAAC Certificate 2018-2026", "href": "#" },
+            { "text": "View NAAC AQAR Report AY 2021-22", "href": "#" }
           ]
         },
         {
-          "title": "NBA Review",
-          "links": [{ "text": "Self-Assessment Report", "href": "#" }]
+          "title": "NAAC 2021-22",
+          "links": [{ "text": "Student Satisfaction Survey", "href": "#" }]
+        },
+        {
+          "title": "NAAC 2020-21",
+          "links": [
+            { "text": "NAAC AQAR Report 2020-2021", "href": "#" }
+          ]
+        },
+        {
+          "title": "NAAC 2019-20",
+          "links": [{ "text": "Academic Calendar Odd Semester", "href": "#" },
+          { "text": "IQAC (Composition)", "href": "#" },
+          { "text": "IQAC (Minutes of the Meeting AUGUST)", "href": "#" },
+          { "text": "IQAC (Minutes of the Meeting MAY)", "href": "#" }
+        ]
         }
+        
+        
       ]
     },
     {
