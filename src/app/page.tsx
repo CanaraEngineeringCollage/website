@@ -43,7 +43,7 @@ export default function Home() {
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <FutureCampusText />
       </section>
-      <section className="pl-6 md:pl-12 lg:pl-16 xl:px-0">
+      <section className="pl- md:pl-12 lg:pl-16 xl:px-0">
         <ExplorePrograms />
       </section>
       <section className="bg-[#144A72] lg:py-20 py-4">
@@ -55,7 +55,7 @@ export default function Home() {
           thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1745989242/yfidl5ycyaxiqwcvwm2j.jpg"
         />
       </section>
-      <section className="px-6 md:py-56 py-20 md:px-12 lg:px-16 xl:px-0">
+      <section className="px-6 md:py-56 py-2 md:px-12 lg:px-16 xl:px-0">
         <EmpoweringFutures />
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">

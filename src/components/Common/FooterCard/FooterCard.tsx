@@ -5,7 +5,7 @@ import React, { useState } from "react";
 const FooterCard = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <section className="py-36  md:px-0">
+    <section className="md:py-36 py-10  md:px-0">
       <div
         className="max-w-6xl mx-auto  md:rounded-2xl"
         style={{

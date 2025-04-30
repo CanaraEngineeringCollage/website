@@ -13,7 +13,7 @@ const HotOfThePress = () => {
   const swiperRef = useRef<SwiperType | null>(null);
   const autoplayDelay = 3000; // Swiper autoplay delay in ms
   return (
-    <section className="lg:ml-20 xl:ml-60 py-24">
+    <section className="lg:ml-20 xl:ml-60 md:py-24 py-10">
       <div className="lg:flex lg:justify-between md:pb-14 pb-10">
         <div className="flex">
           <h1 className="text-3xl md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-black md:pb-6">

@@ -118,7 +118,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                   },
                 }}
                 key={"card" + index}
-                className="last:pr-[5%] md:last:pr-[9%] rounded-3xl"
+                className="last:pr-[1%] md:last:pr-[9%] rounded-3xl"
               >
                 {item}
               </MotionDiv>
@@ -287,7 +287,7 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
       <MotionButton
         layoutId={layout ? `card-${card.title}` : undefined}
         onClick={handleOpen}
-        className="rounded-3xl bg-white h-[35rem] w-80 md:h-[45rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10"
+        className="rounded-3xl bg-white h-[30rem] w-80 md:h-[45rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10"
         whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
         whileTap={{ scale: 0.98 }}
       >
