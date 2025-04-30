@@ -1,6 +1,6 @@
-import YoutubeSection from "@/components/AcademicsPageComponents/AcademicProgramsPage/YoutubeSection/YoutubeSection";
 import ExploreFacilities from "@/components/CampusFacilitiesPageComponents/Infrastructure/ExploreFacilities/ExploreFacilities";
 import TopRecruiters from "@/components/Common/TopRecruiters/TopRecruiters";
+import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 import AboutDepartment from "@/components/TrainingPlacementPageComponents/AboutDepartment/AboutDepartment";
 import DepartmentFaculty from "@/components/TrainingPlacementPageComponents/DepartmentFaculty/DepartmentFaculty";
 import HeroSection from "@/components/TrainingPlacementPageComponents/HeroSection/HeroSection";
@@ -25,8 +25,12 @@ const page = () => {
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <AboutDepartment />
       </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
-        <YoutubeSection />
+      <section>
+        <VideoPlayer
+          videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
+          youtubeUrl="https://youtu.be/rv0KerNW4QE?si=ObYcwEiaqF0UD90P"
+          thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1746007133/yfqf8rnceq50jdtttp7y.png"
+        />
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <DepartmentFaculty />

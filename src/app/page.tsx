@@ -1,42 +1,40 @@
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
-import CampusTour from "@/components/Common/CampusTour/CampusTour";
 import EmpoweringFutures from "@/components/Common/EmpoweringFutures/EmpoweringFutures";
 import ExplorePrograms from "@/components/Common/ExplorePrograms/ExplorePrograms";
 import FutureCampusText from "@/components/Common/FutureCampusText/FutureCampusText";
 import HeroSection from "@/components/Common/HeroSecton/HeroSection";
-import StudentTour from "@/components/Common/StudentTour/StudentTour";
 import { Testimonials } from "@/components/Common/Testimonials/Testimonials";
 import TopRecruiters from "@/components/Common/TopRecruiters/TopRecruiters";
-
+import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 
 export const metadata = {
-  title: 'Canara College, Mangalore | NAAC A Grade Institution',
-  description: 'Canara College, accredited with A Grade by NAAC and affiliated to Mangalore University, offers premier undergraduate programs. Join a legacy of excellence in education since 1973!',
+  title: "Canara College, Mangalore | NAAC A Grade Institution",
+  description:
+    "Canara College, accredited with A Grade by NAAC and affiliated to Mangalore University, offers premier undergraduate programs. Join a legacy of excellence in education since 1973!",
   openGraph: {
-    title: 'Canara College, Mangalore | NAAC A Grade Institution',
-    description: 'Providing excellent undergraduate education since 1973. Accredited with A Grade by NAAC and affiliated to Mangalore University.',
-    url: 'https://your-website-url.com',
-    siteName: 'Canara College',
+    title: "Canara College, Mangalore | NAAC A Grade Institution",
+    description: "Providing excellent undergraduate education since 1973. Accredited with A Grade by NAAC and affiliated to Mangalore University.",
+    url: "https://your-website-url.com",
+    siteName: "Canara College",
     images: [
       {
-        url: 'https://your-website-url.com/og-image.jpg', // update with your real OG image
+        url: "https://your-website-url.com/og-image.jpg", // update with your real OG image
         width: 1200,
         height: 630,
-        alt: 'Canara College Campus',
+        alt: "Canara College Campus",
       },
     ],
-    locale: 'en_US',
-    type: 'website',
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Canara College, Mangalore | NAAC A Grade Institution',
-    description: 'Providing excellent undergraduate education since 1973.',
-    images: ['https://your-website-url.com/og-image.jpg'], // update with your real OG image
+    card: "summary_large_image",
+    title: "Canara College, Mangalore | NAAC A Grade Institution",
+    description: "Providing excellent undergraduate education since 1973.",
+    images: ["https://your-website-url.com/og-image.jpg"],
   },
 };
-
 
 export default function Home() {
   return (
@@ -48,8 +46,14 @@ export default function Home() {
       <section className="pl-6 md:pl-12 lg:pl-16 xl:px-0">
         <ExplorePrograms />
       </section>
-      <section>
-        <CampusTour />
+      <section className="bg-[#144A72] py-20">
+        <VideoPlayer
+          subTitle="Explore the campus with a virtual tour & discover one among the best colleges in the region."
+          title="Experience the Campus"
+          videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745927948/zeyhw0sg2xksws9sonbl.mp4"
+          youtubeUrl="https://youtu.be/oHWMDPeP1Ew?si=qqtEqsXt4DoODEmV"
+          thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1745989242/yfidl5ycyaxiqwcvwm2j.jpg"
+        />
       </section>
       <section className="px-6 md:py-56 py-20 md:px-12 lg:px-16 xl:px-0">
         <EmpoweringFutures />
@@ -58,7 +62,11 @@ export default function Home() {
         <TopRecruiters />
       </section>
       <section>
-        <StudentTour />
+        <VideoPlayer
+          videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
+          youtubeUrl="https://youtu.be/rv0KerNW4QE?si=ObYcwEiaqF0UD90P"
+          thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1745989151/gerbybf4ejfgs7aeajyq.jpg"
+        />
       </section>
       <section className="px-0 bg-white">
         <Testimonials />

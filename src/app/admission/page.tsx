@@ -1,12 +1,12 @@
 import HeroSection from "@/components/AdmissionPageComponents/HeroSection/HeroSection";
 import HowToApply from "@/components/AdmissionPageComponents/HowToApply/HowToApply";
-import YoutubeSection from "@/components/AdmissionPageComponents/YoutubeSection/YoutubeSection";
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
 import EmpoweringFutures from "@/components/Common/EmpoweringFutures/EmpoweringFutures";
 import ExplorePrograms from "@/components/Common/ExplorePrograms/ExplorePrograms";
 import { Testimonials } from "@/components/Common/Testimonials/Testimonials";
 import React from "react";
+import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 
 export const metadata = {
   title: "Admissions | Canara College",
@@ -48,9 +48,12 @@ const page = () => {
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <HowToApply />
       </section>
-
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
-        <YoutubeSection />
+      <section>
+        <VideoPlayer
+          videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
+          youtubeUrl="https://youtu.be/rv0KerNW4QE?si=ObYcwEiaqF0UD90P"
+          thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1745989151/gerbybf4ejfgs7aeajyq.jpg"
+        />
       </section>
       <section className="px-0 bg-white">
         <Testimonials />

@@ -3,13 +3,13 @@ import departments from "@/lib/departments.json";
 import councilData from "../../../utils/councilMembers/councilMembers.json"; // Import the council data
 import HeroSection from "@/components/DepartmentComponents/HeroBanner/HeroBanner";
 import AboutTheDepartment from "@/components/DepartmentComponents/AboutTheDepartment/AboutTheDepartment";
-import YoutubeSection from "@/components/DepartmentComponents/YoutubeSection/YoutubeSection";
 import DepartmentMissionVision from "@/components/DepartmentComponents/DepartmentMissionVision/page";
 import DepartmentHeadMessage from "@/components/DepartmentComponents/DepartmentHeadMessage/DepartmentHeadMessage";
 import DepartmentFacultySection from "@/components/DepartmentComponents/DepartmentFaculty/DepartmentFaculty";
 import IdeasToImpact from "@/components/DepartmentComponents/IdeasToImpact/IdeasToImpact";
 import SpotlightSection from "@/components/DepartmentComponents/SpotlightSection/SpotlightSection";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
+import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 
 interface Qualification {
   degree: string;
@@ -50,8 +50,12 @@ export default async function DepartmentPage({ params }: { params: { slug: strin
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <AboutTheDepartment aboutTheDepartment={department.description} />
       </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
-        <YoutubeSection url={department.youtubeUrl} />
+      <section>
+        <VideoPlayer
+          videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
+          youtubeUrl="https://youtu.be/rv0KerNW4QE?si=ObYcwEiaqF0UD90P"
+          thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1745994337/bzjmgq1zvi0ksxyptkz6.png"
+        />
       </section>
       <section>
         <DepartmentMissionVision

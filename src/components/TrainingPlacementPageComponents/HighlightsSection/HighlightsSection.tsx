@@ -75,6 +75,7 @@ const HighlightsSection = () => {
 
   return (
     <section className="max-w-7xl xl:max-w-[75%] mx-auto py-28 text-black">
+       <h2 className="text-3xl md:text-[40px] lg2:text-5xl  font-bold text-black text-center mb-22 ">Key Highlights</h2>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Left Column */}
         <div className="flex flex-col gap-6 px-3">
@@ -119,7 +120,7 @@ const HighlightsSection = () => {
             >
               {dummyData.map((item) => (
                 <SwiperSlide key={item.id}>
-                  <div className="flex flex-col justify-between items-center rounded-4xl p-6 bg-white h-[60vh]">
+                  <div className="flex flex-col justify-between items-center rounded-4xl p-6 bg-white h-[60vh] xl:h-[50vh]">
                     <div className="flex flex-col items-center">
                       <Image
                         src={item.img}

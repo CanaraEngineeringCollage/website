@@ -1,11 +1,11 @@
 import FunctionDepartment from "@/components/AboutPageComponents/StudentWelfarePage/FunctionDepartment/FunctionDepartment";
-import YoutubeSection from "@/components/AdmissionPageComponents/YoutubeSection/YoutubeSection";
 import HeroSection from "@/components/EntrepreneurshipCellPageComponents/HeroSection/HeroSection";
 import IdeasText from "@/components/EntrepreneurshipCellPageComponents/IdeasText/IdeasText";
 import data from "../../utils/functionDepartmentData/functionDepartmentData.json";
 import React from "react";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
+import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 
 export const metadata = {
   title: "Entrepreneurship Cell | Canara College",
@@ -27,8 +27,12 @@ const page = () => {
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <IdeasText />
       </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
-        <YoutubeSection />
+      <section>
+        <VideoPlayer
+          videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
+          youtubeUrl="https://youtu.be/rv0KerNW4QE?si=ObYcwEiaqF0UD90P"
+          thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1745989151/gerbybf4ejfgs7aeajyq.jpg"
+        />
       </section>
       <section className="px-6 md:px-12 lg:pl-16 lg:px-0 xl:px-0">
         <FunctionDepartment title="Cell Objectives" functionDeprtmentData={data} />

@@ -1,39 +1,39 @@
 import AboutCanara from "@/components/AboutPageComponents/AboutCecPage/AboutCanara/AboutCanara";
-import AboutCanaraVideo from "@/components/AboutPageComponents/AboutCecPage/AboutCanaraVideo/AboutCanaraVideo";
 import AdminTeamSection from "@/components/Common/AdminTeamSection/AdminTeamSection";
 import HeroSection from "@/components/AboutPageComponents/AboutCecPage/HeroSection/HeroSection";
 import MissionVision from "@/components/AboutPageComponents/AboutCecPage/MissionVision/MissionVision";
 import SecretaryMessage from "@/components/AboutPageComponents/AboutCecPage/SecretaryMessage/SecretaryMessage";
 import NextStepSection from "@/components/AboutPageComponents/AboutCecPage/NextStepSection/NextStepSection";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
+import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 
 export const metadata = {
-  title: 'About Canara College | Legacy of Excellence Since 1973',
-  description: 'Learn about Canara College, Mangalore — an institution accredited with A Grade by NAAC, fostering academic excellence and holistic development since 1973.',
+  title: "About Canara College | Legacy of Excellence Since 1973",
+  description:
+    "Learn about Canara College, Mangalore — an institution accredited with A Grade by NAAC, fostering academic excellence and holistic development since 1973.",
   openGraph: {
-    title: 'About Canara College | Legacy of Excellence Since 1973',
-    description: 'Explore the rich history, vision, mission, and values of Canara College, a premier institution affiliated to Mangalore University.',
-    url: 'https://your-website-url.com/about', // update with real URL
-    siteName: 'Canara College',
+    title: "About Canara College | Legacy of Excellence Since 1973",
+    description: "Explore the rich history, vision, mission, and values of Canara College, a premier institution affiliated to Mangalore University.",
+    url: "https://your-website-url.com/about", // update with real URL
+    siteName: "Canara College",
     images: [
       {
-        url: 'https://your-website-url.com/og-about-image.jpg', // update with your real OG image
+        url: "https://your-website-url.com/og-about-image.jpg", // update with your real OG image
         width: 1200,
         height: 630,
-        alt: 'About Canara College Campus',
+        alt: "About Canara College Campus",
       },
     ],
-    locale: 'en_US',
-    type: 'website',
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'About Canara College | Legacy of Excellence Since 1973',
-    description: 'Discover the legacy and mission of Canara College, empowering students for a brighter future.',
-    images: ['https://your-website-url.com/og-about-image.jpg'], // update this
+    card: "summary_large_image",
+    title: "About Canara College | Legacy of Excellence Since 1973",
+    description: "Discover the legacy and mission of Canara College, empowering students for a brighter future.",
+    images: ["https://your-website-url.com/og-about-image.jpg"], // update this
   },
 };
-
 
 export default function AboutCec() {
   return (
@@ -43,10 +43,14 @@ export default function AboutCec() {
         <AboutCanara />
       </section>
       <section>
-        <AboutCanaraVideo />
+        <VideoPlayer
+          videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745927948/zeyhw0sg2xksws9sonbl.mp4"
+          youtubeUrl="https://youtu.be/oHWMDPeP1Ew?si=qqtEqsXt4DoODEmV"
+          thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1745992220/wuayrpgijvzzg5pwvlxr.png"
+        />
       </section>
       <section>
-        <MissionVision/>
+        <MissionVision />
       </section>
       <section className="bg-[#071D2C] px-6 md:px-12 lg:px-16 xl:px-0">
         <SecretaryMessage />
@@ -55,7 +59,7 @@ export default function AboutCec() {
         <AdminTeamSection />
       </section>
       <section>
-        <NextStepSection/>
+        <NextStepSection />
       </section>
       <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">
         <HotOfThePress />

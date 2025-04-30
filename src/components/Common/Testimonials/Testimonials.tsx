@@ -129,7 +129,7 @@ export function Testimonials({ className }: TestimonialsProps) {
   return (
     <div className={cn("w-full  mx-auto px-4 overflow-hidden py-44", className)}>
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-black  mb-1">What Past Alumni Say</h2>
+        <h2 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-black  mb-4">What Past Alumni Say</h2>
         <p className="text-[14px] md:text-xl text-textGray max-w-3xl mx-auto">
           Insights & experiences from our graduates on how Canara Engineering College shaped & prepared them for their future
         </p>

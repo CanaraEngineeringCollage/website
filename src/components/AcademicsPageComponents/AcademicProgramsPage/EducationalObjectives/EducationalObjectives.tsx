@@ -7,8 +7,8 @@ const EducationalObjectives = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
         {/* Left Card */}
         <div className="md:col-span-7 ">
-          <div className="bg-white px-8 rounded-3xl shadow-md py-10 space-y-6 h-full">
-            <h2 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-gray-900">Educational Objectives</h2>
+          <div className="bg-white px-8 rounded-3xl shadow-md py-12 space-y-16 h-full">
+            <h2 className="text-3xl md:text-[40px] lg2:text-5xl  font-bold text-gray-900">Educational Objectives</h2>
             <div className="space-y-10">
               <div className="flex gap-10 items-center">
                 <div className="flex-shrink-0">
@@ -48,7 +48,7 @@ const EducationalObjectives = () => {
         {/* Right Card */}
         <div className="md:col-span-5">
           <div className="bg-white px-8 rounded-3xl shadow-md py-10 h-full space-y-6">
-            <h2 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold leading-[1.1] text-gray-900">Program Specific Outcomes</h2>
+            <h2 className="text-3xl md:text-[40px] lg2:text-5xl  font-bold leading-[1.1] text-gray-900">Program Specific Outcomes</h2>
 
             <div className="flex gap-10 items-start">
               <div className="flex-shrink-0">

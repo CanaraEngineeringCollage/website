@@ -6,7 +6,7 @@ import { Swiper as SwiperType } from "swiper";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
-import { CiPlay1, CiPause1 } from "react-icons/ci";
+import { Pause, Play } from "@/components/Icons/Icons";
 
 interface DataItem {
   title: string;
@@ -24,7 +24,7 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
   useEffect(() => {
     setData(functionDeprtmentData);
   }, [functionDeprtmentData]);
-  
+
   // Handle play/pause toggle
   const togglePlayPause = () => {
     if (swiperRef.current) {
@@ -46,7 +46,7 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
 
   return (
     <section className="lg:ml-20  py-24 xl:py-36 xl:ml-60">
-      {title&&<h1 className="text-3xl md:text-[40px] text-center lg2:text-5xl xl:text-6xl  font-bold text-black pb-6">{title}</h1>}
+      {title && <h1 className="text-3xl md:text-[40px] text-center lg2:text-5xl  font-bold text-black pb-6 xl:pb-22">{title}</h1>}
       <Swiper
         modules={[Autoplay]}
         autoplay={{ delay: autoplayDelay, disableOnInteraction: false }}
@@ -80,13 +80,13 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
         <div className="relative lg:pe-5  md:pb-0 md:pe-3 lg:pb-0 cursor-pointer" onClick={togglePlayPause}>
           <svg width="50" height="50" viewBox="0 0 50 50">
             {/* Background Circle */}
-            <circle cx="25" cy="25" r="22" stroke="#e8e8ed" strokeWidth="2" fill="none" opacity="0.3" />
+            <circle cx="25" cy="25" r="22" stroke="#ffff" strokeWidth="2" fill="none" opacity="0.3" />
             {/* Progress Circle */}
             <circle
               cx="25"
               cy="25"
               r="22"
-              stroke="#e8e8ed"
+              stroke="#E8E8ED"
               strokeWidth="2"
               fill="none"
               strokeDasharray={138}
@@ -96,9 +96,9 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
               transform="rotate(-90 25 25)"
             />
             {/* Play/Pause Icon */}
-            <foreignObject x="14" y="14" width="22" height="22">
-              <button className="w-full h-full flex items-center justify-center" aria-label={isPlay ? "Pause" : "Play"}>
-                {isPlay ? <CiPause1 className="text-2xl text-[#666668]" /> : <CiPlay1 className="text-2xl text-[#666668]" />}
+            <foreignObject x="9" y="8" width="32" height="32">
+              <button className="w-full h-full cursor-pointer flex items-center justify-center" aria-label={isPlay ? "Pause" : "Play"}>
+                {isPlay ? <Pause /> : <Play />}
               </button>
             </foreignObject>
           </svg>
