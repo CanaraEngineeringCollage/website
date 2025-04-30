@@ -46,7 +46,7 @@ export default function Home() {
       <section className="pl-6 md:pl-12 lg:pl-16 xl:px-0">
         <ExplorePrograms />
       </section>
-      <section className="bg-[#144A72] py-20">
+      <section className="bg-[#144A72] lg:py-20 py-4">
         <VideoPlayer
           subTitle="Explore the campus with a virtual tour & discover one among the best colleges in the region."
           title="Experience the Campus"
