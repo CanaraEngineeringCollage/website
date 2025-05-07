@@ -50,9 +50,9 @@ export default function Home() {
         <VideoPlayer
           subTitle="Explore the campus with a virtual tour & discover one among the best colleges in the region."
           title="Experience the Campus"
-          videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745927948/zeyhw0sg2xksws9sonbl.mp4"
+          videoUrl="https://dl.dropboxusercontent.com/scl/fi/sxt23aryqw0lbyvjl0no9/CEC-WALKTHROUGH.mp4?rlkey=8xmhol3cr0o9pyrlp88f3ngny&st=vt015r3l"
           youtubeUrl="https://youtu.be/oHWMDPeP1Ew?si=qqtEqsXt4DoODEmV"
-          thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1745989242/yfidl5ycyaxiqwcvwm2j.jpg"
+          thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1746612052/duzvb3twtlcu0xve8off.png"
         />
       </section>
       <section className="px-6 md:py-56 py-2 md:px-12 lg:px-16 xl:px-0">
