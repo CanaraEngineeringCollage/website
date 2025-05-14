@@ -15,37 +15,39 @@ interface TestimonialsProps {
   className?: string;
 }
 
-const renderTestimonials = (testimonials: Testimonial[]) => (
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-marquee mb-12 ">
-    {testimonials.map((testimonial, index) => (
-      <div
-        className="p-[2px] rounded-[28px]"
-        style={{
-          background: "linear-gradient(90deg, #2884CA, #6DC0EB)",
-        }}
-        key={index}
-      >
-        <motion.div
+const renderTestimonials = (testimonials: Testimonial[], reverse = false) => (
+  <div className="marquee-container">
+    <div className={`animate-marquee ${reverse ? "reverse" : ""}`}>
+      {[...testimonials, ...testimonials].map((testimonial, index) => (
+        <div
+          className="p-[2px] rounded-[28px] mx-4 hover:!bg-blue-600 group transition-colors duration-300"
+          style={{
+            background: "linear-gradient(90deg, #2884CA, #6DC0EB)",
+          }}
           key={index}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: index * 0.1 }}
-          className="bg-white rounded-[26px] p-6 w-[350px] h-full"
         >
-          <div className="h-full max-w-2xl flex flex-col">
-            <p className="text-lg text-textGray  flex-grow mb-4">&ldquo;{testimonial.quote}&rdquo;</p>
-            <div className="mt-auto">
-              <p className="font-semibold text-textGray">{testimonial.author}</p>
-              <p className="text-sm text-textGray">
-                {testimonial.course} - {testimonial.year}
-              </p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: (index % testimonials.length) * 0.1 }}
+            className="testimonial-card bg-white rounded-[26px] p-6 w-[350px] h-full group-hover:bg-blue-100 transition-colors duration-300"
+          >
+            <div className="h-full max-w-2xl flex flex-col">
+              <p className="text-lg text-textGray flex-grow mb-4">&ldquo;{testimonial.quote}&rdquo;</p>
+              <div className="mt-auto">
+                <p className="font-semibold text-textGray">{testimonial.author}</p>
+                <p className="text-sm text-textGray">
+                  {testimonial.course} - {testimonial.year}
+                </p>
+              </div>
             </div>
-          </div>
-        </motion.div>
-      </div>
-    ))}
+          </motion.div>
+        </div>
+      ))}
+    </div>
   </div>
 );
+
 export function Testimonials({ className }: TestimonialsProps) {
   const testimonials: Testimonial[] = [
     {
@@ -61,16 +63,16 @@ export function Testimonials({ className }: TestimonialsProps) {
       year: "2018-19",
     },
     {
-        quote: "Innovation-driven approach helped me excel in my field.",
-        author: "Anonymous",
-        course: "CSE",
-        year: "2019-20",
+      quote: "Innovation-driven approach helped me excel in my field.",
+      author: "Anonymous",
+      course: "CSE",
+      year: "2019-20",
     },
     {
-        quote: "Great learning & placement support helped me land my dream job.",
-        author: "Priya Menon",
-        course: "ISE",
-        year: "2016-17",
+      quote: "Great learning & placement support helped me land my dream job.",
+      author: "Priya Menon",
+      course: "ISE",
+      year: "2016-17",
     },
     {
       quote: "Workshops & projects gave me valuable industry insights.",
@@ -91,22 +93,22 @@ export function Testimonials({ className }: TestimonialsProps) {
       year: "2018-19",
     },
     {
-        quote: "Workshops & projects gave me valuable industry insights.",
-        author: "Sneha Reddy",
-        course: "CSE",
-        year: "2019-20",
+      quote: "Workshops & projects gave me valuable industry insights.",
+      author: "Sneha Reddy",
+      course: "CSE",
+      year: "2019-20",
     },
     {
-        quote: "Innovation-driven approach helped me excel in my field.",
-        author: "Anonymous",
-        course: "CSE",
-        year: "2019-20",
+      quote: "Innovation-driven approach helped me excel in my field.",
+      author: "Anonymous",
+      course: "CSE",
+      year: "2019-20",
     },
     {
-        quote: "Hands-on labs & research focus prepared me for real-world challenges.",
-        author: "Arjun Desai",
-        course: "CSAD",
-        year: "2020-21",
+      quote: "Hands-on labs & research focus prepared me for real-world challenges.",
+      author: "Arjun Desai",
+      course: "CSAD",
+      year: "2020-21",
     },
     {
       quote: "CEC's faculty & industry-focused curriculum shaped my career.",
@@ -122,7 +124,7 @@ export function Testimonials({ className }: TestimonialsProps) {
     },
   ];
   // Split testimonials into two halves
-  
+
   const middleIndex = Math.ceil(testimonials.length / 2);
   const topTestimonials = testimonials.slice(0, middleIndex);
   const bottomTestimonials = testimonials.slice(middleIndex);
@@ -135,13 +137,16 @@ export function Testimonials({ className }: TestimonialsProps) {
         </p>
       </div>
       {/* Top Half */}
-      <div className="hidden md:block">
+      <div className="flex flex-col gap-7">
 
-      {renderTestimonials(topTestimonials)}
+      <div className="hidden md:block">
+        {renderTestimonials(topTestimonials)} {/* Scrolls left */}
       </div>
 
-      {/* Bottom Half */}
-      {renderTestimonials(bottomTestimonials)}
+      <div className="hidden md:block">
+        {renderTestimonials(bottomTestimonials, true)} {/* Scrolls right */}
+      </div>
+      </div>
     </div>
   );
 }

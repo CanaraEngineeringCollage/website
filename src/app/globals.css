@@ -96,14 +96,17 @@ lite-youtube {
 .marquee-container {
   overflow: hidden;
   position: relative;
-  width: 100% !important;
+  width: 100%;
 }
 
 .animate-marquee {
   display: flex;
-  gap: 40px;
-  min-width: max-content;
+  width: max-content;
   animation: marquee 30s linear infinite;
+}
+
+.animate-marquee.reverse {
+  animation: marqueeReverse 30s linear infinite;
 }
 
 @keyframes marquee {
@@ -114,3 +117,23 @@ lite-youtube {
     transform: translateX(-50%);
   }
 }
+
+@keyframes marqueeReverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.marquee-container:hover .animate-marquee {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+/* Hover effect on card */
+.testimonial-card:hover {
+  background-color: #d7ebf5 !important; /* Blue background */
+  color: white;
+}
+

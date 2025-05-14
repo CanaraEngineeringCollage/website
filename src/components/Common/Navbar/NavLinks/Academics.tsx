@@ -49,10 +49,10 @@ export default function Academics() {
                 <span className="font-bold text-lg">Curriculum & Programs</span>
                 <ul className="list-none text-gray-500 leading-10 cursor-pointer">
                   <Link href="/academics/academic-overview">
-                    <li>Academic Overview</li>
+                    <li className={`${pathname.includes("/academics/academic-overview") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Academic Overview</li>
                   </Link>
                   <Link href="/academics/programs">
-                    <li>Programs</li>
+                    <li className={`${pathname.includes("/academics/programs") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Programs</li>
                   </Link>
                 </ul>
               </div>
@@ -68,7 +68,7 @@ export default function Academics() {
                 <ul className="list-none text-gray-500 leading-10 cursor-pointer">
                   {departments.map((dept, index) => (
                     <li key={index}>
-                      <Link href={dept.link} className="hover:text-gray-900 transition-colors duration-200">
+                      <Link href={dept.link} className={`${pathname.includes(dept.link) ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>
                         {dept.title}
                       </Link>
                     </li>
@@ -107,7 +107,7 @@ export default function Academics() {
                 <span className="font-bold text-lg">Learning Hub</span>
                 <ul className="list-none text-gray-500 leading-10 cursor-pointer">
                   <Link href="/academics/learning-hub">
-                    <li>Resources</li>
+                    <li className={`${pathname.includes("/academics/learning-hub") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Resources</li>
                   </Link>
                 </ul>
               </div>

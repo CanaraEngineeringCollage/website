@@ -43,9 +43,9 @@ export default function Life() {
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Campus Facilities</span>
                 <ul className="list-none text-gray-500 leading-10">
-                  <Link href="/campus-facilities/infrastructure"><li>Infrastructure</li></Link>
-                  <Link href="/campus-facilities/hostel-life"><li>Hostel Life</li></Link>
-                  <Link href="/campus-facilities/studentlife-engagement"><li>Student Life & Engagement</li></Link>
+                  <Link href="/campus-facilities/infrastructure"><li className={`${pathname.includes("/campus-facilities/infrastructure") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Infrastructure</li></Link>
+                  <Link href="/campus-facilities/hostel-life"><li className={`${pathname.includes("/campus-facilities/hostel-life") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Hostel Life</li></Link>
+                  <Link href="/campus-facilities/studentlife-engagement"><li className={`${pathname.includes("/campus-facilities/studentlife-engagement") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Student Life & Engagement</li></Link>
                 </ul>
               </div>
             </div>
@@ -73,8 +73,8 @@ export default function Life() {
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Innovation & Health</span>
                 <ul className="list-none text-gray-500 leading-10">
-                  <Link href="/entrepreneurship-cell"><li>Entrepreneurship Cell</li></Link>
-                  <Link href="/physical-education"><li>Physical Education</li></Link>
+                  <Link href="/entrepreneurship-cell"><li className={`${pathname.includes("/entrepreneurship-cell") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Entrepreneurship Cell</li></Link>
+                  <Link href="/physical-education"><li className={`${pathname.includes("/physical-education") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Physical Education</li></Link>
                 </ul>
               </div>
             </div>
@@ -88,11 +88,11 @@ export default function Life() {
                 <span className="font-bold text-lg">Campus Beats</span>
                 <ul className="list-none text-gray-500 leading-10">
                 <Link href="/events">
-                  <li>Calendar of Events</li>
+                  <li className={`${pathname.includes("/events") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Calendar of Events</li>
                 </Link>
                 <Link href="/alumini">
                 
-                  <li>Alumni</li>
+                  <li className={`${pathname.includes("/alumini") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Alumni</li>
                 </Link>
                 </ul>
               </div>

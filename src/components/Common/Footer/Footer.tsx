@@ -2,8 +2,9 @@ import Link from "next/link";
 import React, { FC, useState } from "react";
 import Image from "next/image";
 import footericon1 from "../../../../public/svgs/logos/FooterIcon1.svg"; // Adjust path as needed
-import { FooterIcon,FooterIconMobile, Instagram, LinkedIn, Meta, Twitter, Yt } from "@/components/Icons/Icons"; // Adjust import path
+import { FooterIcon, FooterIconMobile, Instagram, LinkedIn, Meta, Twitter, Yt } from "@/components/Icons/Icons"; // Adjust import path
 import { motion } from "framer-motion";
+import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 
 // Data arrays remain unchanged from your first snippet
 const quickLinks = [
@@ -73,25 +74,61 @@ const Footer: FC = () => {
     <footer className="bg-[#e5e5ea] text-gray-700 text-sm pt-10">
       {/* Desktop Version */}
       <div className="lg:max-w-7xl  xl:mx-auto xl:max-w-[75%]  mx-auto lg:block hidden">
+        <Breadcrumbs
+          items={[
+            { label: "", href: "" },
+            { label: "About CEC", href: "/about/about-cec" },
+            { label: "History of CEC", href: "/about/history-of-cec" },
+            { label: "Our Founder", href: "/about/our-founder" },
+            { label: "Our Management", href: "/about/our-management" },
+            { label: "Governing Council", href: "/about/governing-council" },
+            { label: "Mandatory Disclosure", href: "/about/mandatory-disclosure" },
+            { label: "Grievance Redressal Cell", href: "/about/grievance-redressal-cell" },
+            { label: "SWO Department", href: "/about/student-welfare-department" },
+            { label: "Academic Overview", href: "/academics/academic-overview" },
+            { label: "Programs", href: "/academics/programs" },
+            { label: "Computer Science & Engineering", href: "/department/computer-science-engineering" },
+            { label: "Artificial Intelligence & Machine Learning", href: "/department/artificial-intelligence-machine-learning" },
+            { label: "Information Science & Engineering", href: "/department/information-science-engineering" },
+            { label: "Electronics & Communication Engineering", href: "/department/electronics-communication-engineering" },
+            { label: "Computer Science & Business System", href: "/department/computer-science-business-system" },
+            { label: "Computer Science & Design", href: "/department/computer-science-design" },
+            { label: "Science & Humanities", href: "/department/science-humanities" },
+            { label: "Timetables", href: "/academics/examination-records" },
+            // { label: "Circulars", href: "/about" },
+            // { label: "Marks & Attendance", href: "/our-founder" },
+            { label: "Resources", href: "/academics/learning-hub" },
+            { label: "Infrastructure", href: "/campus-facilities/infrastructuret" },
+            { label: "Hostel Life", href: "/campus-facilities/hostel-life" },
+            { label: "Student Life & Engagement", href: "/campus-facilities/studentlife-engagement" },
+            { label: "Entrepreneurship Cell", href: "/entrepreneurship-cell" },
+            { label: "Physical Education", href: "/physical-education" },
+            { label: "Calendar of Events", href: "/events" },
+            { label: "Alumni", href: "/alumini" },
+            { label: "Admissions", href: "/admission" },
+            { label: "Training & Placements", href: "/training-placements" },
+          ]}
+        />
+
         <hr className="text-gray-300 pb-3.5" />
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 border-b border-gray-300 pb-10">
           <div>
             <h4 className="font-semibold mb-1">Quick Links</h4>
             <FooterList data={quickLinks} />
           </div>
-          <div>
+          <div className="ml-[40%] ">
             <h4 className="font-semibold mb-1">Our College</h4>
             <FooterList data={ourCollege} />
           </div>
-          <div>
+          <div className="ml-[40%] ">
             <h4 className="font-semibold mb-1">Academics</h4>
             <FooterList data={academics} />
           </div>
-          <div>
+          <div className="ml-[40%] ">
             <h4 className="font-semibold mb-1">Facilities</h4>
             <FooterList data={facilities} />
           </div>
-          <div>
+          <div className="ml-auto ">
             <h4 className="font-semibold mb-1">Stay Connected</h4>
             <FooterList data={stayConnected} />
           </div>

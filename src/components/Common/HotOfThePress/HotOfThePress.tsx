@@ -15,13 +15,16 @@ const HotOfThePress = () => {
   return (
     <section className="lg:ml-20 xl:ml-60 md:py-24 py-10">
       <div className="lg:flex lg:justify-between md:pb-14 pb-10">
-        <div className="flex">
-          <h1 className="text-3xl md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-black md:pb-6">
+        <div className="flex text-black flex-col">
+          
+          <h1 className="text-3xl md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-semibold font-sans text-black md:pb-6 tracking-[0.13px]">
             Hot off the Press
           </h1>
+        
+
         </div>
         <div className="hidden md:block">
-          <button className="text-black cursor-pointer font-bold bg-[#c3d5ed] px-5 py-2 rounded-3xl mr-12">Explore More Campus Stories</button>
+          <button className="text-black cursor-pointer font-semibold font-sans bg-[#c3d5ed] px-5 py-2 rounded-3xl mr-12">Explore More Campus Stories</button>
         </div>
       </div>
       <Swiper
@@ -59,7 +62,7 @@ const HotOfThePress = () => {
               </div>
               <div className="p-8 text-center">
                 <p className="text-textGray text-[17px] mb-1">{item.date}</p>
-                <h3 className="text-[27px] font-bold text-black mb-2 line-clamp-2">{item.title}</h3>
+                <h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">{item.title}</h3>
                 <a href="#" className="text-[#2997FF] inline-flex text-[17px] items-center hover:underline font-medium text-sm">
                   Read More <MdKeyboardArrowRight className="ml-1 " />
                 </a>

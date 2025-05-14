@@ -9,11 +9,11 @@ import TopRecruiters from "@/components/Common/TopRecruiters/TopRecruiters";
 import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 
 export const metadata = {
-  title: "Canara College, Mangalore | NAAC A Grade Institution",
+  title: "Canara Engineering College, Mangalore | NAAC A Grade Institution",
   description:
     "Canara College, accredited with A Grade by NAAC and affiliated to Mangalore University, offers premier undergraduate programs. Join a legacy of excellence in education since 1973!",
   openGraph: {
-    title: "Canara College, Mangalore | NAAC A Grade Institution",
+    title: "Canara Engineering College, Mangalore | NAAC A Grade Institution",
     description: "Providing excellent undergraduate education since 1973. Accredited with A Grade by NAAC and affiliated to Mangalore University.",
     url: "https://your-website-url.com",
     siteName: "Canara College",
