@@ -62,7 +62,7 @@ const HeroSection = () => {
               ))}
             </div>
             {/* Desktop layout: original two-column layout */}
-            <div className="hidden sm:grid sm:grid-cols-2 gap-4">
+            <div className="hidden sm:grid sm:grid-cols-2">
               <div className="text-[17px] text-textGray">
                 {data[selectedHeading].map((item, index) => (
                   <h1

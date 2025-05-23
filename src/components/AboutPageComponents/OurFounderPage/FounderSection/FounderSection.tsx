@@ -37,7 +37,7 @@ export default function FounderSection() {
 
           {/* Right Column - Image */}
           <div className=" hidden md:flex flex-col items-center flex-shrink-0 mx-auto lg:px-20">
-            <div className="w-80  h-96 relative rounded-xl overflow-hidden shadow-md">
+            <div className="w-80  lg:h-96 relative rounded-xl overflow-hidden shadow-md">
               <Image src={img} alt="Sri Ammembal Subba Rao Pai" fill className="object-cover" />
             </div>
             <p className="mt-4 text-center text-[27px] font-semibold text-black">
