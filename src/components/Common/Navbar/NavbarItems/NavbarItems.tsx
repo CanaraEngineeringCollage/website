@@ -3,9 +3,9 @@ import Link from "next/link";
 import About from "../NavLinks/About";
 import Academics from "../NavLinks/Academics";
 import Life from "../NavLinks/Life";
-import ContactFormModal from "@/components/Modal/Modal";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import FormModal from "@/components/campusComponent/FromModal/FromModal";
 
 function NavbarItems() {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
@@ -51,7 +51,8 @@ const pathname = usePathname()
       </div>
 
     </div>
-      <ContactFormModal isOpen={modalOpen} onClose={setModalOpen}/>
+      <FormModal isOpen={modalOpen} onClose={setModalOpen}/>
+      
     </>
   );
 }

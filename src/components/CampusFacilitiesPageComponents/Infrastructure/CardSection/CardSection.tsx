@@ -74,16 +74,16 @@ function CardContent({ description }: CardContentProps) {
       <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
         {/* Top Section */}
         <div >
-          <p className="text-[16px] font-bold text-[#F5F5F7] mb-5">{description.date}</p>
+          <p className="text-[16px] font-bold text-[#88888a] mb-5">{description.date}</p>
           <h3 className="text-[31px] lg:text-[46px]  leading-[1.1] lg:max-w-[70%] mb-5 font-bold">{description.topTitle}</h3>
-          <p className="text-xl text-[#F5F5F7]">{description.topDescription}</p>
+          <p className="text-xl text-[#88888a]">{description.topDescription}</p>
         </div>
 
         {/* Middle Section 1 */}
         <div>
           <h3 className="text-[32px] mb-6 font-extrabold ">{description.middleTitle}</h3>
-          <h4 className="text-[22px] text-[#F5F5F7] mb-3 font-[900]">{description.middleSubTitle}</h4>
-          <p className="text-xl text-[#F5F5F7]">{description.middleDescription}</p>
+          <h4 className="text-[22px] text-[#88888a] mb-3 font-[900]">{description.middleSubTitle}</h4>
+          <p className="text-xl text-[#88888a]">{description.middleDescription}</p>
         </div>
         {description.image1 && (
           <Image

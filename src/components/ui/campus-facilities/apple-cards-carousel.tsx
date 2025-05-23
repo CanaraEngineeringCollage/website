@@ -260,35 +260,38 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
         whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
         whileTap={{ scale: 0.98 }}
       >
+        {/* Top gradient overlay */}
         <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
+        {/* Bottom gradient overlay */}
+        <div className="absolute bottom-0 left-0 right-0 h-[60vh] bg-gradient-to-t from-black/70 via-transparent to-transparent z-30 pointer-events-none" />
         <div className={`relative ${card.style} z-40 p-8`}>
           <MotionP
-            layoutId={layout ? `category-${card.category}` : undefined}
-            className="text-[#c3bfbf] text-[18px] md:text-[31px] font-bold md:font-medium font-sans text-left"
+        layoutId={layout ? `category-${card.category}` : undefined}
+        className="text-[#c3bfbf] text-[18px] md:text-[31px] font-bold md:font-medium font-sans text-left"
           >
-            {card.category}
+        {card.category}
           </MotionP>
           <MotionP
-            layoutId={layout ? `title-${card.title}` : undefined}
-            className="text-white text-[31px]  md:text-[76px] font-semibold max-w-3xl leading-[1.1] text-left [text-wrap:balance] font-sans mt-2"
+        layoutId={layout ? `title-${card.title}` : undefined}
+        className="text-white text-[31px]  md:text-[76px] font-semibold max-w-3xl leading-[1.1] text-left [text-wrap:balance] font-sans mt-2"
           >
-            {card.title}
+        {card.title}
           </MotionP>
           <MotionP
-            layoutId={layout ? `category-${card.category}` : undefined}
-            className="text-[#c3bfbf] text-[18px] md:text-[31px] max-w-3xl font-bold md:font-medium font-sans text-left"
+        layoutId={layout ? `category-${card.category}` : undefined}
+        className="text-[#c3bfbf] text-[18px] md:text-[31px] max-w-3xl font-bold md:font-medium font-sans text-left"
           >
-            {card.desc}
+        {card.desc}
           </MotionP>
         </div>
         <BlurImage src={card.src} alt={card.title} fill className="object-cover absolute z-10 inset-0" />
         <div className="absolute bottom-4 right-4 z-40">
           <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0.888672" y="0.464844" width="36" height="36" rx="18" fill="#FFFFFF" />
-            <path
-              d="M25.4137 17.1238H20.2387V11.9398C20.2387 11.5818 20.0964 11.2384 19.8433 10.9852C19.5901 10.7321 19.2467 10.5898 18.8887 10.5898C18.5306 10.5898 18.1873 10.7321 17.9341 10.9852C17.6809 11.2384 17.5387 11.5818 17.5387 11.9398V17.1148H12.3637C12.0056 17.1148 11.6623 17.2571 11.4091 17.5102C11.1559 17.7634 11.0137 18.1068 11.0137 18.4648C11.0137 18.8229 11.1559 19.1663 11.4091 19.4194C11.6623 19.6726 12.0056 19.8148 12.3637 19.8148H17.5387V24.9898C17.5387 25.3479 17.6809 25.6913 17.9341 25.9444C18.1873 26.1976 18.5306 26.3398 18.8887 26.3398C19.2467 26.3398 19.5901 26.1976 19.8433 25.9444C20.0964 25.6913 20.2387 25.3479 20.2387 24.9898V19.8148H25.4137C25.7717 19.8148 26.1151 19.6726 26.3683 19.4194C26.6214 19.1663 26.7637 18.8229 26.7637 18.4648C26.7637 18.1068 26.6214 17.7634 26.3683 17.5102C26.1151 17.2571 25.7717 17.1148 25.4137 17.1148V17.1238Z"
-              fill="#000000"
-            />
+        <rect x="0.888672" y="0.464844" width="36" height="36" rx="18" fill="#FFFFFF" />
+        <path
+          d="M25.4137 17.1238H20.2387V11.9398C20.2387 11.5818 20.0964 11.2384 19.8433 10.9852C19.5901 10.7321 19.2467 10.5898 18.8887 10.5898C18.5306 10.5898 18.1873 10.7321 17.9341 10.9852C17.6809 11.2384 17.5387 11.5818 17.5387 11.9398V17.1148H12.3637C12.0056 17.1148 11.6623 17.2571 11.4091 17.5102C11.1559 17.7634 11.0137 18.1068 11.0137 18.4648C11.0137 18.8229 11.1559 19.1663 11.4091 19.4194C11.6623 19.6726 12.0056 19.8148 12.3637 19.8148H17.5387V24.9898C17.5387 25.3479 17.6809 25.6913 17.9341 25.9444C18.1873 26.1976 18.5306 26.3398 18.8887 26.3398C19.2467 26.3398 19.5901 26.1976 19.8433 25.9444C20.0964 25.6913 20.2387 25.3479 20.2387 24.9898V19.8148H25.4137C25.7717 19.8148 26.1151 19.6726 26.3683 19.4194C26.6214 19.1663 26.7637 18.8229 26.7637 18.4648C26.7637 18.1068 26.6214 17.7634 26.3683 17.5102C26.1151 17.2571 25.7717 17.1148 25.4137 17.1148V17.1238Z"
+          fill="#000000"
+        />
           </svg>
         </div>
       </MotionButton>
