@@ -13,7 +13,7 @@ export default function SpotlightSection() {
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 xl:gap-16 mb-20">
           {[1, 2, 3].map((item) => (
-            <div key={item} className=" text-white rounded-lg p-6 flex flex-row items-center border-white border-[1px]">
+            <div key={item} className=" text-white rounded-md p-6 flex flex-row items-center border-white border-[1px]">
               <div>
                 <Image
                   src={image} // Replace with real image URL
@@ -23,8 +23,8 @@ export default function SpotlightSection() {
               </div>
               <div className="text-left pl-6">
                 <h3 className="text-xl  font-semibold mb-1">Aamoth Shammoon T S</h3>
-                <p className="text-sm">HSC 2023 | CBSE Board</p>
-                <p className="text-sm">97.4%</p>
+                <p className="text-sm opacity-[0.8]">HSC 2023 | CBSE Board</p>
+                <p className="text-sm opacity-[0.8]">97.4%</p>
               </div>
             </div>
           ))}

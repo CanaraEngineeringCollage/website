@@ -59,7 +59,7 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                 <div className=" gap-6 flex-col lg:flex-row flex items-center">
                   <div className="flex-shrink-0">
                     <div className="rounded-lg overflow-hidden w-60 h-80 bg-sky-400">
-                      <Image fill src={facultyData.image} alt="Faculty profile" className="w-full h-full object-cover" />
+                      <Image width={100} height={100} src={facultyData.image} alt="Faculty profile" className="w-full h-full object-cover" />
                     </div>
                   </div>
 
@@ -112,7 +112,7 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                         </tr>
                       </thead>
                       <tbody className=" text-gray-700">
-                        {facultyData.qualifications.map((qual, index) => (
+                        {facultyData?.qualifications?.map((qual, index) => (
                           <tr key={index} className="border-t border-gray-200 last:rounded-b-xl">
                             <td className="px-6 py-4">{qual.degree}</td>
                             <td className="px-6 py-4">{qual.passingYear}</td>

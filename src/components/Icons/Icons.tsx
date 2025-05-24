@@ -763,9 +763,9 @@ export function Play() {
   );
 }
 
-export function HowToApply1() {
+export function HowToApply1({fillColor}) {
   return (
-    <svg width="137" height="122" viewBox="0 0 137 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="137" height="122" viewBox="0 0 137 122" fill={fillColor} xmlns="http://www.w3.org/2000/svg">
       <path
         d="M87.1174 8.96877C87.1174 10.0498 86.2412 10.9258 85.1604 10.9258C84.0796 10.9258 83.2031 10.0498 83.2031 8.96877C83.2031 7.888 84.0796 7.01176 85.1604 7.01176C86.2412 7.01176 87.1174 7.888 87.1174 8.96877Z"
         fill="#2884CA"
@@ -873,9 +873,9 @@ export function HowToApply1() {
   );
 }
 
-export function HowToApply2() {
+export function HowToApply2({fillColor}) {
   return (
-    <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="140" height="140" viewBox="0 0 140 140" fill={fillColor} xmlns="http://www.w3.org/2000/svg">
       <path
         d="M122.201 54.4357C122.201 52.3214 123.915 50.6074 126.029 50.6074C128.144 50.6074 129.858 52.3214 129.858 54.4357V61.2871C129.858 63.4015 128.144 65.1154 126.029 65.1154C123.915 65.1154 122.201 63.4015 122.201 61.2871V54.4357Z"
         stroke="#747474"
@@ -1116,9 +1116,9 @@ export function HowToApply2() {
   );
 }
 
-export function HowToApply3() {
+export function HowToApply3({fillColor}) {
   return (
-    <svg width="128" height="151" viewBox="0 0 128 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="128" height="151" viewBox="0 0 128 151" fill={fillColor} xmlns="http://www.w3.org/2000/svg">
       <path
         d="M67.6297 90.2169C65.8107 95.6522 67.0651 101.89 71.3935 106.219"
         stroke="#747474"
@@ -1197,9 +1197,9 @@ export function HowToApply3() {
   );
 }
 
-export function HowToApply4() {
+export function HowToApply4({fillColor}) {
   return (
-    <svg width="115" height="152" viewBox="0 0 115 152" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="115" height="152" viewBox="0 0 115 152" fill={fillColor} xmlns="http://www.w3.org/2000/svg">
       <path
         d="M102.613 28.3262V16.4245C102.613 15.11 101.548 14.0443 100.233 14.0443H69.2891"
         stroke="#747474"

@@ -6,9 +6,9 @@ import visionImage4 from "../../../../../public/aboutPageImages/MissionVision/vi
 export default function MissionVision() {
   return (
     <section className="py-16 px-6 md:px-12 ">
-      <div className="max-w-7xl xl:max-w-[75%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-20">
+      <div className="max-w-7xl xl:max-w-[75%] mx-auto grid grid-cols-1 lg:grid-cols-12 lg:gap-20">
         {/* Mission Card */}
-        <div className="bg-white rounded-2xl shadow p-10 lg:p-18 space-y-6">
+        <div className="bg-white col-span-7 overflow-hidden rounded-2xl shadow p-10 lg:p-18 space-y-6">
           <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-16">Our Mission</h2>
 
           <div className="grid grid-rows-3 gap-6 h-full pb-16">
@@ -46,7 +46,7 @@ export default function MissionVision() {
         </div>
 
         {/* Vision Card */}
-        <div className="bg-white rounded-2xl shadow p-8 flex flex-col items-center justify-center text-center space-y-6">
+        <div className="bg-white col-span-5 mt-10 lg:mt-0 rounded-2xl shadow p-8 flex flex-col items-center justify-center text-center space-y-6">
           <Image src={visionImage4} alt="visionIcon" />
           <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-10">Our Vision</h2>
           <p className="text-textGray text-xl max-w-sm">
