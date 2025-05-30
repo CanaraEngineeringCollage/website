@@ -148,7 +148,7 @@ export default function LegacyExcellance() {
                     <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6 lg2:p-16 rounded-b-3xl">
                       <h2 className="text-white text-lg lg:text-[40px] font-bold mt-1">{item.title}</h2>
                       <p className="text-white  mt-2 text-lg max-w-2/3">{item.description}</p>
-                      <button
+                      <button aria-label="Learn More"
                         onClick={() => openModal(item, index)}
                         className="mt-4 px-5 py-2 bg-white rounded-full text-slg font-semibold hover:bg-gray-200 absolute right-6 bottom-14 text-primary"
                       >
@@ -162,10 +162,10 @@ export default function LegacyExcellance() {
 
             {/* Navigation Buttons */}
             <div className="absolute bottom-4 right-4 flex gap-2 z-10">
-              <button className="swiper-button-prev-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50">
+              <button aria-label="Previous Slide" className="swiper-button-prev-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50">
                 <MdKeyboardArrowLeft />
               </button>
-              <button className="swiper-button-next-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50">
+              <button aria-label="Next Slide" className="swiper-button-next-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50">
                 <MdKeyboardArrowRight />
               </button>
             </div>

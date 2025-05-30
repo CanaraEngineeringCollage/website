@@ -24,10 +24,10 @@ function NavbarItems() {
         className="pt-[8px] font-poppins text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
         href={"/apply"}
       >
-        <button className="bg-none text-primary border-primary border-[1px] px-7 py-2.5 cursor-pointer rounded-[30px]">Alumni Portal</button>
+        <button aria-label="Alumni Portal" className="bg-none text-primary border-primary border-[1px] px-7 py-2.5 cursor-pointer rounded-[30px]">Alumni Portal</button>
       </Link>
       <div onClick={()=>setOpen(true)} className="pt-[8px] font-poppins text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
-        <button className="bg-primary text-white px-7 py-2.5 cursor-pointer rounded-[30px]">Give to Canara</button>
+        <button aria-label="Give to Canara" className="bg-primary text-white px-7 py-2.5 cursor-pointer rounded-[30px]">Give to Canara</button>
       </div>
     </div>
     <FormModal isOpen={open} onClose={setOpen} /></>

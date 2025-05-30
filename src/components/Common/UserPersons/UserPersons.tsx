@@ -24,10 +24,18 @@ const UserPersons = () => {
               Age: 17-23 | Location: India, along the Southern Kanara Belt | Educational Level: Completed PU
             </p>
             <div className="flex flex-wrap gap-2 mt-4">
-              <button className="px-3 py-1 bg-gray-200 text-gray-700 text-sm">Pressure-Driven</button>
-              <button className="px-3 py-1 bg-gray-200 text-gray-700 text-sm">Competitive</button>
-              <button className="px-3 py-1 bg-gray-200 text-gray-700 text-sm">Curious</button>
-              <button className="px-3 py-1 bg-gray-200 text-gray-700 text-sm">Tech-Savvy</button>
+              <button 
+                aria-label="Pressure-Driven"
+              className="px-3 py-1 bg-gray-200 text-gray-700 text-sm">Pressure-Driven</button>
+              <button 
+              aria-label="Pressure-Driven"
+              className="px-3 py-1 bg-gray-200 text-gray-700 text-sm">Competitive</button>
+              <button 
+              aria-label="Curious"
+              className="px-3 py-1 bg-gray-200 text-gray-700 text-sm">Curious</button>
+              <button 
+              aria-label="Tech-Savvy"
+              className="px-3 py-1 bg-gray-200 text-gray-700 text-sm">Tech-Savvy</button>
             </div>
             <h2 className="text-lg sm:text-xl font-semibold mt-6">Profile Bio</h2>
             <p className="text-gray-700 mt-2 text-sm sm:text-base">

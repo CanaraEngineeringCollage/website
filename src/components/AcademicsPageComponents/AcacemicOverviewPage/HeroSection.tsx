@@ -59,7 +59,7 @@ const HeroSection = () => {
                 />
                 {/* Play/Pause Icon */}
                 <foreignObject x="9" y="8" width="32" height="32">
-                  <button className="w-full cursor-pointer h-full flex items-center justify-center" aria-label={isPlaying ? "Pause" : "Play"}>
+                  <button  className="w-full cursor-pointer h-full flex items-center justify-center" aria-label={isPlaying ? "Pause" : "Play"}>
                     {isPlaying ? (
                      <Pause/>
                     ) : (

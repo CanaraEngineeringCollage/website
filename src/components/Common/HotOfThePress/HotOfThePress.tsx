@@ -2,33 +2,34 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper";
-import { Autoplay,Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import pressData from "../../../utils/hotOFThePressData/hotOfThePressData.json";
 import Image from "next/image";
 
 const HotOfThePress = () => {
-
   const swiperRef = useRef<SwiperType | null>(null);
   const autoplayDelay = 3000; // Swiper autoplay delay in ms
   return (
     <section className="lg:ml-20 xl:ml-60 md:py-24 py-10">
       <div className="lg:flex lg:justify-between md:pb-14 pb-10">
         <div className="flex text-black flex-col">
-          
           <h1 className="text-3xl md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-semibold font-sans text-black md:pb-6 tracking-[0.13px]">
             Hot off the Press
           </h1>
-        
-
         </div>
         <div className="hidden md:block">
-          <button className="text-black cursor-pointer font-semibold font-sans bg-[#c3d5ed] px-5 py-2 rounded-3xl mr-12">Explore More Campus Stories</button>
+          <button
+            aria-label="Explore More Campus Stories"
+            className="text-black cursor-pointer font-semibold font-sans bg-[#c3d5ed] px-5 py-2 rounded-3xl mr-12"
+          >
+            Explore More Campus Stories
+          </button>
         </div>
       </div>
       <Swiper
-        modules={[Autoplay,Navigation]}
+        modules={[Autoplay, Navigation]}
         autoplay={{ delay: autoplayDelay, disableOnInteraction: false }}
         spaceBetween={20}
         slidesPerView={1}
@@ -63,7 +64,11 @@ const HotOfThePress = () => {
               <div className="p-8 text-center">
                 <p className="text-textGray text-[17px] mb-1">{item.date}</p>
                 <h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">{item.title}</h3>
-                <a href="#" className="text-[#2997FF] inline-flex text-[17px] items-center hover:underline font-medium text-sm">
+                <a
+                  href="#"
+                  aria-label="Read More about Hot of the Press"
+                  className="text-[#2997FF] inline-flex text-[17px] items-center hover:underline font-medium text-sm"
+                >
                   Read More <MdKeyboardArrowRight className="ml-1 " />
                 </a>
               </div>
@@ -75,18 +80,25 @@ const HotOfThePress = () => {
         <div className="flex"></div>
         <div className="hidden md:block">
           <div className="flex mr-22 gap-6 mt-20">
-
-          <button className="swiper-button-prev-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-[#D2D2D7A3] flex items-center justify-center disabled:opacity-50">
-            <MdKeyboardArrowLeft />
-          </button>
-          <button className="swiper-button-next-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-[#D2D2D7A3] flex items-center justify-center disabled:opacity-50">
-            <MdKeyboardArrowRight />
-          </button>
+            <button
+              aria-label="Previous Slide"
+              className="swiper-button-prev-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-[#D2D2D7A3] flex items-center justify-center disabled:opacity-50"
+            >
+              <MdKeyboardArrowLeft />
+            </button>
+            <button
+              aria-label="Next Slide"
+              className="swiper-button-next-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-[#D2D2D7A3] flex items-center justify-center disabled:opacity-50"
+            >
+              <MdKeyboardArrowRight />
+            </button>
           </div>
         </div>
       </div>
       <div className="md:hidden  mt-12 flex ">
-        <button className="text-black mx-auto cursor-pointer font-bold bg-[#c3d5ed] px-5 py-2 rounded-3xl">Explore More Campus Stories</button>
+        <button aria-label="Explore More Campus Stories" className="text-black mx-auto cursor-pointer font-bold bg-[#c3d5ed] px-5 py-2 rounded-3xl">
+          Explore More Campus Stories
+        </button>
       </div>
     </section>
   );

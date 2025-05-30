@@ -19,7 +19,7 @@ const HeroSection = () => {
             <div className="mb-10">
               <input type="text" placeholder="Enter Your Student USN" className="w-full outline-none border-b-2 pb-2 border-border" />
             </div>
-            <button className="text-center  text-white cursor-pointer px-6 sm:px-8 py-2 rounded-3xl bg-[#2884CA]">Apply Now</button>
+            <button aria-label="Apply Now" className="text-center  text-white cursor-pointer px-6 sm:px-8 py-2 rounded-3xl bg-[#2884CA]">Apply Now</button>
           </div>
         </div>
         {/* <div className="absolute bottom-0 left-0 right-0 h-[250px] bg-gradient-to-t from-white via-white/85 to-transparent z-[10] md:hidden" /> 

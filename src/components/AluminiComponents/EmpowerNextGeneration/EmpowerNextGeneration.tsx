@@ -111,7 +111,7 @@ const EmpowerNextGeneration: React.FC = () => {
 
             <div className="flex items-center justify-between me-8 lg:me-28 mt-2">
               <p className="text-white lg:text-[20px] text-[14px] max-w-2/3">{mainImage?.description}</p>
-              <button onClick={() => openCard(0)} className="text-sm lg:text-base bg-white text-black px-4 py-2 rounded-full hover:bg-gray-200 transition">Read More</button>
+              <button aria-label="Read More" onClick={() => openCard(0)} className="text-sm lg:text-base bg-white text-black px-4 py-2 rounded-full hover:bg-gray-200 transition">Read More</button>
             </div>
           </div>
         </div>
@@ -131,7 +131,7 @@ const EmpowerNextGeneration: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-3xl"></div>
                 <div className="absolute  top-[120px] lg:top-[150px] xl:top-[220px]  w-full h-full flex justify-center flex-col">
                   <h1 className="text-white text-[21px] font-bold text-center">{amenity?.title}</h1>
-                 <button onClick={() => openCard(index)} className="text-white border rounded-full py-2 mx-12 mt-6 cursor-pointer">Read More</button>
+                 <button aria-label="Read More" onClick={() => openCard(index)} className="text-white border rounded-full py-2 mx-12 mt-6 cursor-pointer">Read More</button>
                 </div>
               </div>
             </div>

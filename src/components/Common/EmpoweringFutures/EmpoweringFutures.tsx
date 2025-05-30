@@ -107,7 +107,9 @@ export default function EmpoweringFutures() {
               Discover exceptional placement opportunities and industry connections that pave the way for success at Canara Engineering College.
             </p>
           </div>
-          <button className="bg-primary text-white font-medium px-6 py-2 rounded-full mt-4 md:mt-0">Learn More</button>
+          <button
+          aria-label="Learn More"
+           className="bg-primary text-white font-medium px-6 py-2 rounded-full mt-4 md:mt-0">Learn More</button>
         </div>
 
         {/* Banner Section */}
@@ -217,7 +219,10 @@ export default function EmpoweringFutures() {
           {/* Carousel Dots */}
           <CarouselDots total={stats.length} active={activeIndex} onDotClick={setActiveIndex} className="mt-6" />
         </div>
-        <button className="bg-primary text-white font-medium px-6 py-2 rounded-full mt-10 md:mt-0 w-full">Learn More</button>
+        <button
+          aria-label="Learn More"
+          onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" })}
+         className="bg-primary text-white font-medium px-6 py-2 rounded-full mt-10 md:mt-0 w-full">Learn More</button>
       </section>
     </>
   );

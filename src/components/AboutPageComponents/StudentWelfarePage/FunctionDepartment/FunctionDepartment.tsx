@@ -98,7 +98,7 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
             />
             {/* Play/Pause Icon */}
             <foreignObject x="9" y="8" width="32" height="32">
-              <button className="w-full h-full cursor-pointer flex items-center justify-center" aria-label={isPlay ? "Pause" : "Play"}>
+              <button  className="w-full h-full cursor-pointer flex items-center justify-center" aria-label={isPlay ? "Pause" : "Play"}>
                 {isPlay ? <Pause /> : <Play />}
               </button>
             </foreignObject>
@@ -106,13 +106,14 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
         </div>
         {/* Navigation Buttons */}
         <div className="flex gap-2">
-          <button
+          <button 
+          aria-label="Previous Slide"
             onClick={() => swiperRef.current?.slidePrev()}
             className="relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
           >
             <MdKeyboardArrowLeft />
           </button>
-          <button
+          <button aria-label="Next Slide"
             onClick={() => swiperRef.current?.slideNext()}
             className="relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
           >

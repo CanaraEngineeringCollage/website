@@ -38,6 +38,7 @@ const FormSection: React.FC = () => {
         <div className="md:col-span-8">
           <div className="flex flex-row justify-center sm:gap-10 gap-4 items-center mb-10">
             <button
+            aria-label="Marks Tab"
               onClick={() => setActiveTab("Marks")}
               className={`border-b-2 ${
                 activeTab == "Marks" ? "font-bold" : ""
@@ -45,7 +46,7 @@ const FormSection: React.FC = () => {
             >
               Marks
             </button>
-            <button
+            <button aria-label="Attendance Tab"
               onClick={() => setActiveTab("Attendance")}
               className={`border-b-2 ${
                 activeTab == "Attendance" ? "font-bold" : ""
@@ -70,7 +71,7 @@ const FormSection: React.FC = () => {
           )}
 
           <div className="flex justify-center items-center mt-10">
-            <button className="text-center text-white cursor-pointer px-6 sm:px-8 py-2 rounded-3xl bg-[#2884CA]">
+            <button aria-label="Apply Now" className="text-center text-white cursor-pointer px-6 sm:px-8 py-2 rounded-3xl bg-[#2884CA]">
               Apply Now
             </button>
           </div>

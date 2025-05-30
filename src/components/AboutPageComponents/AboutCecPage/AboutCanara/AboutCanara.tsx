@@ -25,7 +25,7 @@ const AboutCanara = () => {
         With active industry tie-ups, government-funded R&D projects, & growing research contributions, CEC continues to evolve, ensuring students
         stay ahead in the ever-changing tech landscape.
       </p>
-      <button className="pt-8 inline-flex items-center cursor-pointer text-[#0066CC]">
+      <button aria-label="Read More" className="pt-8 inline-flex items-center cursor-pointer text-[#0066CC]">
         Read More <MdKeyboardArrowRight className="text-xl text-[#0066CC]" />
       </button>
     </div>

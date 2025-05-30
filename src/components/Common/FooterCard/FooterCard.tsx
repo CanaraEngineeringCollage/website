@@ -18,7 +18,8 @@ const FooterCard = () => {
             Book a one-on-one <span className="text-white font-bold">counselling session</span> & get all your questions answered about admissions, programs &
             your future opportunities.
           </p>
-          <button onClick={()=>setIsOpen(true)} className="text-[#2884CA] cursor-pointer px-5 py-3 bg-white rounded-4xl">Book Your Counselling Session Today</button>
+          <button aria-label="Book Your Counselling Session Today"
+           onClick={()=>setIsOpen(true)} className="text-[#2884CA] cursor-pointer px-5 py-3 bg-white rounded-4xl">Book Your Counselling Session Today</button>
         </div>
       </div>
       <ContactFormModal isOpen={isOpen} onClose={setIsOpen} />

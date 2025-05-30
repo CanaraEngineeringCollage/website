@@ -182,8 +182,12 @@ export default function IdeasToImpact() {
 
         <div className="flex justify-center mb-6">
           <div className="inline-flex rounded-full p-1">
-            <button className="px-4 py-2 text-sm font-medium text-black  rounded-full">Student Achievements</button>
-            <button className="px-4 py-2 text-sm font-medium text-black rounded-full">Research & Product Development</button>
+            <button 
+            aria-label="Student Achievements"
+             className="px-4 py-2 text-sm font-medium text-black  rounded-full">Student Achievements</button>
+            <button 
+            aria-label="Student Placements"
+             className="px-4 py-2 text-sm font-medium text-black rounded-full">Research & Product Development</button>
           </div>
         </div>
 
