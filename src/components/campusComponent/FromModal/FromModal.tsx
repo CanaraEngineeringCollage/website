@@ -138,7 +138,6 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onClose, className = "", 
   // Handle form submission
   const handleSubmit = () => {
     if (validateForm()) {
-      console.log("Form data:", formData);
       // Add your submission logic here (e.g., API call)
       setFormData({
         fullName: "",

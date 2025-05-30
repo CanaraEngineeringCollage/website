@@ -111,7 +111,6 @@ const ContactFormModal: React.FC<ContactFormModalProps> = ({ isOpen, onClose, cl
   // Handle form submission
   const handleSubmit = () => {
     if (validateForm()) {
-      console.log("Form data:", formData);
       // Add your submission logic here (e.g., API call)
       // Optionally reset form and close modal
       setFormData({ fullName: "", email: "", phone: "", comments: "" });
