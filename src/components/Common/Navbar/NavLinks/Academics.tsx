@@ -84,15 +84,15 @@ export default function Academics() {
               </div>
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Examinations & Records</span>
-                <ul className="list-none text-gray-500 leading-10 cursor-pointer">
+                <ul className="list-none text-gray-500 leading-10 cursor-pointer ">
                   <Link href="/academics/examination-records">
-                    <li>Timetables</li>
+                    <li className="hover:text-primary">Timetables</li>
                   </Link>
                   <Link href="/academics/examination-records">
-                    <li>Circulars</li>
+                    <li className="hover:text-primary">Circulars</li>
                   </Link>
                   <Link href="/academics/examination-records">
-                    <li>Marks & Attendance</li>
+                    <li className="hover:text-primary">Marks & Attendance</li>
                   </Link>
                 </ul>
               </div>

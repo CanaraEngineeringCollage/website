@@ -342,7 +342,7 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onClose, className = "", 
                 </div>
                 {/* Submit Button */}
                 <div className="text-center">
-                  <button type="button" className="px-10 cursor-pointer py-2 bg-[#2884CA] rounded-3xl text-white" onClick={handleSubmit}>
+                  <button aria-label="Submit" type="button" className="px-10 cursor-pointer py-2 bg-[#2884CA] rounded-3xl text-white" onClick={handleSubmit}>
                     Submit
                   </button>
                 </div>

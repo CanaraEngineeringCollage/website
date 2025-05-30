@@ -2,9 +2,12 @@ import Image from "next/image"; // If you're using Next.js, otherwise use normal
 import image from "../../../../public/departmentImages/SpotLightImage/image.png";
 export default function SpotlightSection() {
   return (
-    <div className=" mt-32 xl:mt-56  py-16 text-white bg-center" style={{
-        backgroundImage:"url(/backgroundImages/department.png)"
-    }}>
+    <div
+      className=" mt-32 xl:mt-56  py-16 text-white bg-center"
+      style={{
+        backgroundImage: "url(/backgroundImages/department.png)",
+      }}
+    >
       {/* Top Section */}
       <div className="max-w-7xl xl:max-w-[75%] mx-auto px-4 text-center py-16 md:py-32">
         <h2 className="text-3xl md:text-4xl lg:text-[80px] font-bold mb-4 xl:mb-8 ">In the Spotlight</h2>
@@ -36,7 +39,10 @@ export default function SpotlightSection() {
           <p className="text-lg mb-6 max-w-2xl text-white/70  mx-auto">
             Book a one-on-one counseling session & get all your questions answered about admissions, programs & your future opportunities.
           </p>
-          <button className="bg-white text-primary font-semibold py-3 px-6 rounded-full shadow-md hover:bg-gray-100 transition">
+          <button
+            aria-label="Book Your Counseling Session Today"
+            className="bg-white text-primary font-semibold py-3 px-6 rounded-full shadow-md hover:bg-gray-100 transition"
+          >
             Book Your Counseling Session Today
           </button>
         </div>

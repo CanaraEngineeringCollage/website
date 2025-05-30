@@ -82,7 +82,7 @@ const Page = () => {
             </p>
             <div className="flex flex-wrap gap-2 py-4">
               {data.tags.map((tag, index) => (
-                <button key={index} className="px-3 py-1 bg-gray-200 text-gray-700 text-sm">
+                <button aria-label={tag} key={index} className="px-3 py-1 bg-gray-200 text-gray-700 text-sm">
                   {tag}
                 </button>
               ))}

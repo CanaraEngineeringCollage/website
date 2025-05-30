@@ -45,7 +45,9 @@ const pathname = usePathname()
         id="apply"
         className="pt-[8px] font-poppins text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
       >
-        <button onClick={() => setModalOpen(true)} className="bg-primary text-white px-7 py-2.5 cursor-pointer rounded-[30px]">
+        <button 
+        aria-label="Apply Now Button"
+        onClick={() => setModalOpen(true)} className="bg-primary text-white px-7 py-2.5 cursor-pointer rounded-[30px]">
           Apply Now
         </button>
       </div>

@@ -41,7 +41,7 @@ export default function AlumniMentorshipAndEvents() {
                       <p className="text-xs text-gray-300">{item.date}</p>
                       <h2 className="text-white text-lg font-bold mt-1">{item.title}</h2>
                       <p className="text-gray-400 text-sm mt-2">{item.description}</p>
-                      <button className="mt-4 px-5 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-gray-200">Read More</button>
+                      <button aria-label="Read More" className="mt-4 px-5 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-gray-200">Read More</button>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -53,14 +53,14 @@ export default function AlumniMentorshipAndEvents() {
             {/* View More button below Swiper */}
             <div className="mt-22">
               <div className="absolute bottom-4 right-4 flex gap-2 z-10">
-                <button className=" swiper-button-prev-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50">
+                <button aria-label="Previous Slide" className=" swiper-button-prev-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50">
                   <MdKeyboardArrowLeft />
                 </button>
-                <button className="swiper-button-next-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50">
+                <button aria-label="Next Slide" className="swiper-button-next-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50">
                   <MdKeyboardArrowRight />
                 </button>
               </div>
-              <button className="px-6 py-2 text-black rounded-full  border hover:bg-gray-800">View More</button>
+              <button aria-label="View More" className="px-6 py-2 text-black rounded-full  border hover:bg-gray-800">View More</button>
             </div>
           </div>
         </div>
@@ -98,7 +98,7 @@ export default function AlumniMentorshipAndEvents() {
           </div>
           <div className="mt-6 mx-auto">
             
-            <button className="px-6  py-2  bg-[#F5F5F7] font-normal rounded-full  hover:bg-gray-800">View More</button>{" "}
+            <button aria-label="View More" className="px-6  py-2  bg-[#F5F5F7] font-normal rounded-full  hover:bg-gray-800">View More</button>{" "}
           </div>
         </div>
             </div>

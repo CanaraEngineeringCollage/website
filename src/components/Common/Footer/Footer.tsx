@@ -208,13 +208,13 @@ const Footer: FC = () => {
 const FooterList: FC<FooterListProps> = ({ data }) => {
   return (
     <>
-      {data.map((item, index) => (
-        <ul className="space-y-3" key={index}>
-          <Link href={item.links}>
-            <li className="leading-8">{item.data}</li>
-          </Link>
-        </ul>
-      ))}
+      <ul className="space-y-3">
+        {data.map((item, index) => (
+          <li className="leading-8" key={index}>
+            <Link href={item.links}>{item.data}</Link>
+          </li>
+        ))}
+      </ul>
     </>
   );
 };

@@ -48,16 +48,20 @@ export default function DepartmentFaculty() {
             </p>
           </div>
           <div className="flex items-center justify-between gap-4">
-            <button className="bg-[#d0e2f8] text-black text-block  px-6 py-2 rounded-full text-[17px] font-medium ">Meet more of our Faculty</button>
+            <button 
+            aria-label="Meet more of our Faculty"
+            className="bg-[#d0e2f8] text-black text-block  px-6 py-2 rounded-full text-[17px] font-medium ">Meet more of our Faculty</button>
             <div className="flex items-center gap-3">
-              <button
+              <button 
+              aria-label="Previous Faculty Member"
                 onClick={handlePrev}
                 disabled={startIndex === 0}
                 className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full   text-[#616164] hover:bg-gray-200 transition disabled:opacity-30"
               >
                 <MdKeyboardArrowLeft size={32} />
               </button>
-              <button
+              <button 
+              aria-label="Next Faculty Member"
                 onClick={handleNext}
                 disabled={startIndex + 2 >= data.length}
                 className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full  text-[#616164]  transition disabled:opacity-30"
@@ -161,11 +165,14 @@ export default function DepartmentFaculty() {
           ))}
         </div>
         <div className="flex flex-col items-center gap-10">
-          <button className="bg-blue-100 text-black text-block px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition">
+          <button
+          aria-label="Meet more of our Admin Team" 
+            className="bg-blue-100 text-black text-block px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition">
             Meet more of our Admin Team
           </button>
           <div className="flex items-center gap-2">
-            <button
+            <button 
+              aria-label="Previous Faculty Member"
               onClick={handlePrev}
               disabled={startIndex === 0}
               className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full   text-[#616164] hover:bg-gray-200 transition disabled:opacity-30"
@@ -173,6 +180,7 @@ export default function DepartmentFaculty() {
               <MdKeyboardArrowLeft size={24} />
             </button>
             <button
+              aria-label="Next Faculty Member"
               onClick={handleNext}
               disabled={startIndex + 2 >= data.length}
               className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full  text-[#616164]  transition disabled:opacity-30"

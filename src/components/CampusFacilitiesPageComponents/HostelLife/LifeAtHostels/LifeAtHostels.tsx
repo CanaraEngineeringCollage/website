@@ -7,7 +7,7 @@ const LifeAtHostels = () => {
       <div className="">
         <div className="flex justify-between items-center pb-5 lg:pb-10">
           <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-black ">Life at CEC Hostels</h1>
-          <button className="text-[#2884CA] hidden  font-bold text-[17px] bg-[#d9ebff] px-6 py-2 cursor-pointer rounded-3xl lg:inline-flex gap-3">
+          <button aria-label="Download Hostel Rulebook" className="text-[#2884CA] hidden  font-bold text-[17px] bg-[#d9ebff] px-6 py-2 cursor-pointer rounded-3xl lg:inline-flex gap-3">
             Download Hostel Rulebook <HiDownload className="text-[24px] font-extrabold" />
           </button>
         </div>
@@ -20,7 +20,7 @@ const LifeAtHostels = () => {
         The hostel fosters an environment where students can excel academically while also engaging in diverse extracurricular activities. A well-equipped study hall provides a quiet space for learning, and peer discussions help in the exchange of ideas and knowledge. The faculty support system ensures that hostel students receive mentorship and guidance beyond classroom hours.
         </p>
       </div>
-      <button className="text-[#2884CA] lg:hidden mt-10 font-bold text-[17px] bg-[#d9ebff] px-6 py-2 cursor-pointer rounded-3xl inline-flex gap-3">
+      <button aria-label="Download Hostel Rulebook" className="text-[#2884CA] lg:hidden mt-10 font-bold text-[17px] bg-[#d9ebff] px-6 py-2 cursor-pointer rounded-3xl inline-flex gap-3">
             Download Hostel Rulebook <HiDownload className="text-[24px] font-extrabold" />
           </button>
     </section>

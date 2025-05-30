@@ -21,7 +21,7 @@ export default function JoinAluminiNetwork() {
             inspires, & uplifts.
           </p>
 
-          <button className="mt-8 bg-white text-primary px-8 py-3 rounded-full font-medium hover:bg-white/90 transition-colors">
+          <button aria-label="Join the Alumni Network" className="mt-8 bg-white text-primary px-8 py-3 rounded-full font-medium hover:bg-white/90 transition-colors">
             Join the Alumni Network
           </button>
         </div>

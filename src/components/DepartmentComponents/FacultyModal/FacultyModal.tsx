@@ -52,7 +52,9 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
               className="relative w-full max-w-7xl bg-[#F5F5F7] rounded-xl shadow-lg overflow-auto h-[90vh] p-6 lg:p-32"
             >
               <Dialog.Panel>
-                <button onClick={onClose} className="absolute cursor-pointer top-4 right-4">
+                <button
+                aria-label="Close Modal"
+                 onClick={onClose} className="absolute cursor-pointer top-4 right-4">
                   <X className="w-6 h-6 text-black " />
                 </button>
 

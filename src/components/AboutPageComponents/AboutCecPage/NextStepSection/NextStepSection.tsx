@@ -21,7 +21,7 @@ export default function NextStepSection() {
             Book a one-on-one counseling session & get all your questions answered about admissions programs & your future opportunities.
           </p>
 
-          <button className="mt-8 bg-white text-[#0071E3] px-8 py-3 rounded-full font-medium hover:bg-white/90 transition-colors">
+          <button aria-label="Book Your Counseling Session Today" className="mt-8 bg-white text-[#0071E3] px-8 py-3 rounded-full font-medium hover:bg-white/90 transition-colors">
             Book Your Counseling Session Today
           </button>
         </div>

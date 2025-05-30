@@ -229,13 +229,15 @@ const ExploreFacilities = () => {
           ))}
         </Swiper>
         <div className="flex gap-4 justify-end mt-10 me-5">
-          <button
+          <button 
+          aria-label="Previous Slide"
             onClick={() => swiperRef.current?.slidePrev()}
             className="relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
           >
             <MdKeyboardArrowLeft />
           </button>
           <button
+            aria-label="Next Slide"
             onClick={() => swiperRef.current?.slideNext()}
             className="relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
           >

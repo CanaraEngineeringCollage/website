@@ -256,6 +256,7 @@ const ContactFormModal: React.FC<ContactFormModalProps> = ({ isOpen, onClose, cl
                 {/* Submit Button */}
                 <div className="text-center">
                   <button
+                  aria-label="Submit Form"
                     type="button"
                     className="px-10 z-50 cursor-pointer py-2 bg-[#2884CA] rounded-3xl text-white"
                     onClick={handleSubmit}

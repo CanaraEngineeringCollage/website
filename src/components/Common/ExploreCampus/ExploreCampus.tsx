@@ -199,7 +199,9 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ title, description, campu
           </div>
         )}
         <div className="flex justify-between items-center pb-5 lg:pb-10 flex-wrap gap-2">
-          <button className="border text-lg font-bold px-3 py-1 rounded-4xl cursor-pointer" onClick={() => setActiveCategory("All")}>
+          <button
+          aria-label="Clear All Filters" 
+          className="border text-lg font-bold px-3 py-1 rounded-4xl cursor-pointer" onClick={() => setActiveCategory("All")}>
             Clear All Filters
           </button>
           {categories.map((category, index) => (
@@ -242,7 +244,9 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ title, description, campu
           ))}
         </div>
         <div className="flex justify-center mt-10">
-          <button className="bg-[#eff1f6] text-black px-5 py-2 cursor-pointer rounded-3xl">Explore More Campus Stories</button>
+          <button 
+          aria-label="Explore More Campus Stories"
+          className="bg-[#eff1f6] text-black px-5 py-2 cursor-pointer rounded-3xl">Explore More Campus Stories</button>
         </div>
 
         {/* Modal */}
