@@ -5,7 +5,7 @@ export default function SpotlightSection() {
     <div
       className=" mt-32 xl:mt-56  py-16 text-white bg-center"
       style={{
-        backgroundImage: "url(/backgroundImages/department.png)",
+        backgroundImage: "url(/backgroundImages/department.webp)",
       }}
     >
       {/* Top Section */}

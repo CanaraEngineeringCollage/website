@@ -1,6 +1,6 @@
 // components/FounderSection.tsx
 import Image from "next/image";
-import img from "../../../../../public/aboutPageImages/our-founder/canara-founder.png";
+import img from "../../../../../public/aboutPageImages/our-founder/canara-founder.webp";
 
 export default function FounderSection() {
   return (

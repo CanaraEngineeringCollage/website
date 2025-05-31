@@ -64,13 +64,13 @@ const HotOfThePress = () => {
               <div className="p-8 text-center">
                 <p className="text-textGray text-[17px] mb-1">{item.date}</p>
                 <h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">{item.title}</h3>
-                <a
-                  href="#"
+                <button
+                  
                   aria-label="Read More about Hot of the Press"
                   className="text-[#2997FF] inline-flex text-[17px] items-center hover:underline font-medium text-sm"
                 >
                   Read More <MdKeyboardArrowRight className="ml-1 " />
-                </a>
+                </button>
               </div>
             </div>
           </SwiperSlide>
