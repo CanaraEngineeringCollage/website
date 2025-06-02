@@ -1,8 +1,8 @@
 import Image from "next/image";
-import visionImage1 from "../../../../public/aboutPageImages/MissionVision/visionImage1.png";
-import visionImage2 from "../../../../public/aboutPageImages/MissionVision/visionImage2.png";
-import visionImage3 from "../../../../public/aboutPageImages/MissionVision/visionImage3.png";
-import visionImage4 from "../../../../public/aboutPageImages/MissionVision/visionImage4.png";
+import visionImage1 from "../../../../public/aboutPageImages/MissionVision/visionImage1.webp";
+import visionImage2 from "../../../../public/aboutPageImages/MissionVision/visionImage2.webp";
+import visionImage3 from "../../../../public/aboutPageImages/MissionVision/visionImage3.webp";
+import visionImage4 from "../../../../public/aboutPageImages/MissionVision/visionImage4.webp";
 
 interface DepartmentMissionVisionProps {
   ethicalLearning: string;
