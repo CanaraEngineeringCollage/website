@@ -2,7 +2,7 @@ import Image from "next/image";
 import visionImage1 from "../../../../public/campusFacilitiesPageImages/objective1.png";
 import visionImage2 from "../../../../public/campusFacilitiesPageImages/objective2.png";
 import visionImage3 from "../../../../public/campusFacilitiesPageImages/objective3.png";
-import visionImage4 from "../../../../public/aboutPageImages/MissionVision/visionImage4.png";
+import visionImage4 from "../../../../public/aboutPageImages/MissionVision/visionImage4.webp";
 
 const EventVision: React.FC = ({}) => {
   return (
