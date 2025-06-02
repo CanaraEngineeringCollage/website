@@ -219,7 +219,7 @@ const ExploreFacilities = () => {
                   <Image width={200} height={200} src={item.image} alt={item.title} className="w-full h-full object-cover !rounded-t-2xl cursor-pointer " />
                 </div>
                 <div className="p-8 text-center bg-white rounded-b-2xl">
-                  <h3 className="text-[27px] font-bold text-black mb-2 line-clamp-2">{item.title}</h3>
+                  <h2 className="text-[27px] font-bold text-black mb-2 line-clamp-2">{item.title}</h2>
                   <span className="text-[#2997FF] inline-flex text-[17px] items-center hover:underline font-medium text-sm">
                     Read More <MdKeyboardArrowRight className="ml-1" />
                   </span>
