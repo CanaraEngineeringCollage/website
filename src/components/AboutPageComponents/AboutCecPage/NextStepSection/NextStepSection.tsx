@@ -7,7 +7,7 @@ export default function NextStepSection() {
       <div
         className="absolute inset-0 z-0"
         style={{
-            backgroundImage:"url(/gradientBackgrounds/image.webp)",
+            backgroundImage:"url(/gradientBackgrounds/image.png)",
           }}
       />
 

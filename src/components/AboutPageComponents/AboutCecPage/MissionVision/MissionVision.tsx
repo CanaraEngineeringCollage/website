@@ -1,8 +1,8 @@
 import Image from "next/image";
-import visionImage1 from "../../../../../public/aboutPageImages/MissionVision/visionImage1.webp";
-import visionImage2 from "../../../../../public/aboutPageImages/MissionVision/visionImage2.webp";
-import visionImage3 from "../../../../../public/aboutPageImages/MissionVision/visionImage3.webp";
-import visionImage4 from "../../../../../public/aboutPageImages/MissionVision/visionImage4.webp";
+import visionImage1 from "../../../../../public/aboutPageImages/MissionVision/visionImage1.png";
+import visionImage2 from "../../../../../public/aboutPageImages/MissionVision/visionImage2.png";
+import visionImage3 from "../../../../../public/aboutPageImages/MissionVision/visionImage3.png";
+import visionImage4 from "../../../../../public/aboutPageImages/MissionVision/visionImage4.png";
 export default function MissionVision() {
   return (
     <section className="py-16 px-6 md:px-12 ">

@@ -9,7 +9,7 @@ const FooterCard = () => {
       <div
         className="max-w-6xl mx-auto  md:rounded-2xl"
         style={{
-          backgroundImage:"url(/gradientBackgrounds/image.webp)",
+          backgroundImage:"url(/gradientBackgrounds/image.png)",
         }}
       >
         <div className="text-center py-13  lg:px-36">

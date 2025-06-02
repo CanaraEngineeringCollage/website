@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import empoweringFuture from "../../../../public/backgroundImages/empoweringFutures.webp";
+import empoweringFuture from "../../../../public/backgroundImages/empoweringFutures.png";
 import { motion } from "framer-motion";
 import { CarouselDots } from "@/components/Common/CarouselDots/CarouselDots";
 

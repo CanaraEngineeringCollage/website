@@ -18,12 +18,6 @@ export default function Academics() {
       <MenuHandler>
         <Typography as="div" variant="small" className="text-sm xl:text-base">
           <ListItem
-      placeholder={"Life At Canara"} // ✅ Added placeholder for better UX
-          role="button" // ✅ Added role for accessibility: required for aria-* to be valid
-      aria-expanded={isMenuOpen} // ✅ Added to indicate the toggle state
-      aria-controls="about-menu" // ✅ Optional: add an ID to the target menu section if applicable
-      aria-haspopup="true" // ✅ Indicates that it opens a submenu
-      tabIndex={0} // ✅ Ensures the element is keyboard focusable
             className={`flex items-center ${
               isMenuOpen ? "opacity-100" : "opacity-80"
             } gap-2 py-2 pr-4 text-webGreen1 transition-colors ease-in-out duration-300 hover:text-webGreen1

@@ -29,16 +29,16 @@ const MandatoryDisclosure = () => {
               <div key={idx} className="mb-10">
                 <h2 className="text-[20px] font-extrabold text-textGray mb-2">{item.title}</h2>
                 <ul className="space-y-1">
-                  {item?.links?.map((link, i) =>
-                    link?.href ? (
-                      <li key={i} className="flex items-center gap-2 text-[17px] text-textGray hover:text-blue-600 cursor-pointer">
-                        <HiLink className="text-textGray" />
-                        <a aria-label="Mandatory Disclosure Link" href={link.href} className="hover:underline">
-                          {link.text}
-                        </a>
-                      </li>
-                    ) : null
-                  )}
+                  {item?.links?.map((link, i) => (
+                    <li key={i} className="flex items-center gap-2 text-[17px] text-textGray hover:text-blue-600 cursor-pointer">
+                      <HiLink className="text-textGray" />
+                      <a 
+                      aria-label="Mandatory Disclosure Link"
+                       href={link.href} className="hover:underline">
+                        {link.text}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             ))}
