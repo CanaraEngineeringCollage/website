@@ -55,7 +55,7 @@ export default function Home() {
           thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1746612052/duzvb3twtlcu0xve8off.png"
         />
       </section>
-      <section className="px-6 md:py-56 py-2 md:px-12 lg:px-16 xl:px-0">
+      <section className="px-6 md:py-28 py-2 md:px-12 lg:px-16 xl:px-0">
         <EmpoweringFutures />
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
