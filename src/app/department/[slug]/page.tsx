@@ -11,6 +11,7 @@ import SpotlightSection from "@/components/DepartmentComponents/SpotlightSection
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
 import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 
+
 interface Qualification {
   degree: string;
   passingYear: number;
@@ -37,7 +38,7 @@ export async function generateStaticParams() {
 }
 
 export default async function DepartmentPage({ params }: { params: { slug: string } }) {
-  const department = departments.find((dept) => dept.slug === params.slug);
+  const department = departments?.find((dept) => dept?.slug === params?.slug);
 
   if (!department) return notFound();
 
