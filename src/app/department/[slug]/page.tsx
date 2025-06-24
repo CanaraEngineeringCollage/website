@@ -11,6 +11,7 @@ import SpotlightSection from "@/components/DepartmentComponents/SpotlightSection
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
 import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 
+
 interface Qualification {
   degree: string;
   passingYear: number;
