@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import governingCounsilData from "../../../utils/adminTeamData/adminTeamData.json"
+import governingCounsilData from "../../../utils/adminTeamData/adminTeamData.json";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { MdKeyboardArrowRight } from "react-icons/md";
@@ -39,7 +39,7 @@ export default function AdminTeamSection() {
   };
 
   return (
-    <section className="py-16 px-6 md:px-12 max-w-7xl mx-auto my-56  xl:max-w-[75%] bg-[#F5F5F7] rounded-3xl">
+    <section className=" px-6 md:px-12 max-w-7xl mx-auto my-32  xl:max-w-[75%] bg-[#F5F5F7] rounded-3xl">
       <div className=" mx-auto lg:flex hidden  flex-col-reverse md:flex-row items-center justify-between gap-10">
         <div className="max-w-md space-y-44">
           <div>
@@ -54,13 +54,14 @@ export default function AdminTeamSection() {
           </div>
           <div className="flex items-center gap-4">
             <button
-            aria-label="Meet more of our Admin Team" 
-             className="bg-blue-100 text-black text-block px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition">
+              aria-label="Meet more of our Admin Team"
+              className="bg-blue-100 text-black text-block px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition"
+            >
               Meet more of our Admin Team
             </button>
             <div className="flex items-center gap-2">
               <button
-              aria-label="Previous"
+                aria-label="Previous"
                 onClick={handlePrev}
                 disabled={startIndex === 0}
                 className="w-8 h-8 flex items-center justify-center rounded-full border border-[#0071E3] text-gray-600 hover:bg-gray-200 transition disabled:opacity-30"
@@ -68,7 +69,7 @@ export default function AdminTeamSection() {
                 <ChevronLeft size={16} />
               </button>
               <button
-              aria-label="Next"
+                aria-label="Next"
                 onClick={handleNext}
                 disabled={startIndex + 2 >= data.length}
                 className="w-8 h-8 flex items-center justify-center rounded-full bg-[#0071E3] text-white hover:bg-blue-700 transition disabled:opacity-30"
@@ -168,8 +169,9 @@ export default function AdminTeamSection() {
         </div>
         <div className="flex items-center gap-4">
           <button
-          aria-label="Meet more of our Admin Team" 
-           className="bg-blue-100 text-black text-block px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition">
+            aria-label="Meet more of our Admin Team"
+            className="bg-blue-100 text-black text-block px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition"
+          >
             Meet more of our Admin Team
           </button>
           <div className="flex items-center gap-2">
