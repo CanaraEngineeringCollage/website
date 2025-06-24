@@ -5,6 +5,7 @@ import Image from "next/image";
 import empoweringFuture from "../../../../public/backgroundImages/empoweringFutures.webp";
 import { motion } from "framer-motion";
 import { CarouselDots } from "@/components/Common/CarouselDots/CarouselDots";
+import Link from "next/link";
 
 type Stat = {
   component: React.ReactNode;
@@ -107,9 +108,12 @@ export default function EmpoweringFutures() {
               Discover exceptional placement opportunities and industry connections that pave the way for success at Canara Engineering College.
             </p>
           </div>
-          <button
-          aria-label="Learn More"
-           className="bg-primary text-white font-medium px-6 py-2 rounded-full mt-4 md:mt-0">Learn More</button>
+          <Link href="/training-placements">
+            {" "}
+            <button aria-label="Learn More" className="bg-primary text-white font-medium px-6 py-2 rounded-full mt-4 md:mt-0">
+              Learn More
+            </button>
+          </Link>{" "}
         </div>
 
         {/* Banner Section */}
@@ -222,9 +226,11 @@ export default function EmpoweringFutures() {
         <button
           aria-label="Learn More"
           onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" })}
-         className="bg-primary text-white font-medium px-6 py-2 rounded-full mt-10 md:mt-0 w-full">Learn More</button>
+          className="bg-primary text-white font-medium px-6 py-2 rounded-full mt-10 md:mt-0 w-full"
+        >
+          Learn More
+        </button>
       </section>
     </>
   );
-};
-
+}
