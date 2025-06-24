@@ -37,7 +37,7 @@ export async function generateStaticParams() {
 }
 
 export default async function DepartmentPage({ params }: { params: { slug: string } }) {
-  const department = departments.find((dept) => dept.slug === params.slug);
+  const department = departments?.find((dept) => dept?.slug === params?.slug);
 
   if (!department) return notFound();
 
