@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
@@ -12,11 +13,11 @@ const FutureCampusText = () => {
         branches, it has since expanded to seven branches with a total intake of 664 students, shaping future-ready engineers through quality
         education & strong industry connections.
       </p>
-      <button 
-        aria-label="Read More"
-       className="pt-8 inline-flex items-center cursor-pointer text-[#0066CC]">
-        Read More <MdKeyboardArrowRight className="text-xl text-[#0066CC]" />
-      </button>
+      <Link href="/about/about-cec">
+        <button aria-label="Read More" className="pt-8 inline-flex items-center cursor-pointer text-[#0066CC]">
+          Read More <MdKeyboardArrowRight className="text-xl text-[#0066CC]" />
+        </button>
+      </Link>
     </div>
   );
 };
