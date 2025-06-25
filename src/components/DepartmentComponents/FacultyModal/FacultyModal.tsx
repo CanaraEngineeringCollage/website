@@ -17,18 +17,19 @@ interface CouncilMember {
   id: number;
   name: string;
   image: string;
-  designation: string;
-  category: string;
-  department: string;
+  designation?: string;
+  category?: string;
+  department?: string;
   joiningDate?: string;
   experience?: string;
   employmentType?: string;
-  qualifications: Qualification[];
+  qualifications?: Qualification[];
+    roles?: { title: string; organization: string }[];
 }
 
 interface FacultyModalProps {
   isOpen: boolean;
-  onClose: () => void;
+  onClose: (isOpen: boolean) => void;
   facultyData: CouncilMember | null;
 }
 
@@ -54,7 +55,7 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
               <Dialog.Panel>
                 <button
                 aria-label="Close Modal"
-                 onClick={onClose} className="absolute cursor-pointer top-4 right-4">
+                 onClick={()=>onClose(false)} className="absolute cursor-pointer top-4 right-4">
                   <X className="w-6 h-6 text-black " />
                 </button>
 
