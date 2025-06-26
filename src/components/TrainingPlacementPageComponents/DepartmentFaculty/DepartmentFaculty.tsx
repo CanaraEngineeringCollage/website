@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import governingCounsilData from "../../../utils/placementFaculties/placementFaculties.json"
+import governingCounsilData from "../../../utils/placementFaculties/placementFaculties.json";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
@@ -51,20 +51,23 @@ export default function DepartmentFaculty() {
             </p>
           </div>
           <div className="flex items-center justify-between gap-4">
-            <button 
-            aria-label="Meet more of our Faculty"
-            className="bg-[#d0e2f8] text-black text-block  px-6 py-2 rounded-full text-[17px] font-medium ">Meet more of our Faculty</button>
+            <button
+              aria-label="Meet more of our Faculty"
+              className="bg-[#d0e2f8] text-black text-block  px-6 py-2 rounded-full text-[17px] font-medium "
+            >
+              Meet more of our Faculty
+            </button>
             <div className="flex items-center gap-3">
-              <button 
-              aria-label="Previous Faculty Member"
+              <button
+                aria-label="Previous Faculty Member"
                 onClick={handlePrev}
                 disabled={startIndex === 0}
                 className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full   text-[#616164] hover:bg-gray-200 transition disabled:opacity-30"
               >
                 <MdKeyboardArrowLeft size={32} />
               </button>
-              <button 
-              aria-label="Next Faculty Member"
+              <button
+                aria-label="Next Faculty Member"
                 onClick={handleNext}
                 disabled={startIndex + 2 >= data.length}
                 className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full  text-[#616164]  transition disabled:opacity-30"
@@ -79,7 +82,7 @@ export default function DepartmentFaculty() {
           {visibleMembers.map((member, index) => (
             <div
               key={index}
-              className={`relative cursor-pointer w-full max-w-[309px] h-[480px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center py-6 shadow-md`}
+              className={`relative cursor-pointer w-full max-w-[309px] h-[480px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center  shadow-md`}
             >
               <Image
                 onClick={() => router.push(`/user-details/${member.id}`)}
@@ -87,29 +90,34 @@ export default function DepartmentFaculty() {
                 alt={member.name}
                 width={300}
                 height={300}
-                className="rounded-full  w-full object-contain"
+                className="  w-full object-contain"
               />
-                <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
-                <div className="absolute z-50 top-[75%] left-6">
-                  <h2 className="text-[20px] font-bold">{member.name}</h2>
-                  <p className="text-[17px]">
-                    {member.roles.map((role, idx) => (
-                      <span key={idx}>
-                        {role.title}
-                        {role.organization && (
-                          <>
-                            , <span className="font-semibold">{role.organization}</span>
-                          </>
-                        )}
-                        {idx < member.roles.length - 1 && <br />}
-                      </span>
-                    ))}
-                  </p>
-                  <p  onClick={()=>{setSelectedMember(member),setIsModalOpen(true)}} className="text-xs font-bold sm:text-sm md:text-sm flex items-center">
-                    View Profile
-                    <MdKeyboardArrowRight className="ml-1 text-xl" />
-                  </p>
-                </div>
+              <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
+              <div className="absolute z-50 top-[75%] left-6">
+                <h2 className="text-[20px] font-bold">{member.name}</h2>
+                <p className="text-[17px]">
+                  {member.roles.map((role, idx) => (
+                    <span key={idx}>
+                      {role.title}
+                      {role.organization && (
+                        <>
+                          , <span className="font-semibold">{role.organization}</span>
+                        </>
+                      )}
+                      {idx < member.roles.length - 1 && <br />}
+                    </span>
+                  ))}
+                </p>
+                <p
+                  onClick={() => {
+                    setSelectedMember(member), setIsModalOpen(true);
+                  }}
+                  className="text-xs font-bold sm:text-sm md:text-sm flex items-center"
+                >
+                  View Profile
+                  <MdKeyboardArrowRight className="ml-1 text-xl" />
+                </p>
+              </div>
             </div>
           ))}
         </div>
@@ -129,7 +137,7 @@ export default function DepartmentFaculty() {
           {visibleMembersMobile.map((member, index) => (
             <div
               key={index}
-              className={`relative cursor-pointer w-full max-w-[309px] h-[480px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center py-6 shadow-md`}
+              className={`relative cursor-pointer w-full max-w-[309px] h-[480px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center  shadow-md`}
             >
               <Image
                 onClick={() => router.push(`/user-details/${member.id}`)}
@@ -137,41 +145,47 @@ export default function DepartmentFaculty() {
                 alt={member.name}
                 width={300}
                 height={300}
-                className="rounded-full  w-full object-contain"
+                className="  w-full object-contain"
               />
-              
-                <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
-                <div className="absolute z-50 top-[75%] left-6">
-                  <h2 className="text-[20px] font-bold">{member.name}</h2>
-                  <p className="text-[17px]">
-                    {member.roles.map((role, idx) => (
-                      <span key={idx}>
-                        {role.title}
-                        {role.organization && (
-                          <>
-                            , <span className="font-semibold">{role.organization}</span>
-                          </>
-                        )}
-                        {idx < member.roles.length - 1 && <br />}
-                      </span>
-                    ))}
-                  </p>
-                  <p onClick={()=>{setSelectedMember(member),setIsModalOpen(true)}} className="text-xs font-bold sm:text-sm md:text-sm flex items-center">
-                    View Profile
-                    <MdKeyboardArrowRight className="ml-1 text-xl" />
-                  </p>
-                </div>
+
+              <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
+              <div className="absolute z-50 top-[75%] left-6">
+                <h2 className="text-[20px] font-bold">{member.name}</h2>
+                <p className="text-[17px]">
+                  {member.roles.map((role, idx) => (
+                    <span key={idx}>
+                      {role.title}
+                      {role.organization && (
+                        <>
+                          , <span className="font-semibold">{role.organization}</span>
+                        </>
+                      )}
+                      {idx < member.roles.length - 1 && <br />}
+                    </span>
+                  ))}
+                </p>
+                <p
+                  onClick={() => {
+                    setSelectedMember(member), setIsModalOpen(true);
+                  }}
+                  className="text-xs font-bold sm:text-sm md:text-sm flex items-center"
+                >
+                  View Profile
+                  <MdKeyboardArrowRight className="ml-1 text-xl" />
+                </p>
+              </div>
             </div>
           ))}
         </div>
         <div className="flex flex-col items-center gap-10">
           <button
-          aria-label="Meet more of our Admin Team" 
-            className="bg-blue-100 text-black text-block px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition">
+            aria-label="Meet more of our Admin Team"
+            className="bg-blue-100 text-black text-block px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition"
+          >
             Meet more of our Admin Team
           </button>
           <div className="flex items-center gap-2">
-            <button 
+            <button
               aria-label="Previous Faculty Member"
               onClick={handlePrev}
               disabled={startIndex === 0}
@@ -190,7 +204,7 @@ export default function DepartmentFaculty() {
           </div>
         </div>
       </div>
-       <FacultyModal isOpen={isModalOpen} onClose={setIsModalOpen} facultyData={selectedMember} />
+      <FacultyModal isOpen={isModalOpen} onClose={setIsModalOpen} facultyData={selectedMember} />
     </section>
   );
 }

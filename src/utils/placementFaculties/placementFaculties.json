@@ -4,6 +4,14 @@
       "name": "Deepthi Dinesh Prabhu",
       "image": "https://www.canaraengineering.in/departments/faculty/0120240012.jpg",
       "category": "Prospective",
+      "desiganation": "Placement Officer",
+      "department": "General(Central) Department",
+      "joiningDate": "07-05-2024",
+      "experience": "2 years",
+      "employmentType": "Regular",
+      "qualifications": [
+        { "degree": "Bachelor Degree", "degreeName":"BACHELOR OF ENGINEERING","passingYear": "2012","college":"Visvesvaraya Technological University, Belgaum","specializedArea":"Environmental Engineering" }
+      ],
       "roles": [
         { "title": "Head Training, Placements", "organization": "" },
         { "title": "and Alumni Relations", "organization": "" }
@@ -17,39 +25,28 @@
         "location": "India, along the Southern Kanara Belt",
         "educationalLevel": "Completed PU",
         "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
-      },
-      "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-      "coreNeeds": [
-        "Understand the admission process step by step.",
-        "Get clear eligibility criteria without confusion.",
-        "Explore available courses & specializations.",
-        "Learn about campus life, facilities & culture.",
-        "Discover placement records & career opportunities.",
-        "Find information on scholarships & financial aid.",
-        "Read alumni success stories & career paths.",
-        "Access application support & deadline reminders."
-      ],
-      "frustrationsAndFears": [
-        "Unclear admission process & eligibility criteria.",
-        "Fear of not securing admission due to competition.",
-        "Misinformation about job placements & campus facilities.",
-        "Pressure from family expectations."
-      ],
-      "addressal": [
-        "Display the admission process in a simple, step-by-step format.",
-        "Clearly outline eligibility criteria for easy understanding.",
-        "Present key statistics with an option to download detailed reports.",
-        "Highlight future career prospects."
-      ]
+      }
+
+     
     },
+   
     {
       "id": 2,
       "name": "Keerthan Kini",
       "image": "https://www.canaraengineering.in/departments/faculty/0120220001.jpg",
-      "category": "Current",
+       "category": "Prospective",
+      "desiganation": "Asst. Placement Officer",
+      "department": "Placement",
+      "joiningDate": "01-01-2022",
+      "experience": "6 Years",
+      "employmentType": "Regular",
+      "qualifications": [
+        { "degree": "Bachelor Degree", "degreeName":"BBM","passingYear": "2014","college":"Mangalore University","specializedArea":"Human Resource Management" },
+        { "degree": "Master Degree", "degreeName":"MCMS","passingYear": "2017","college":"Mangalore University","specializedArea":"Media & Publication" },
+        { "degree": "Others", "degreeName":"POST GRADUATE DIPLOMA IN GUIDANCE & COUNSELLING","passingYear": "2024","college":"St. Agnes PG Centre","specializedArea":"Guidance & Counselling" }
+      ],
       "roles": [
         { "title": "Placement Officer", "organization": "" }
-
       ],
       "profileType": "Prospective Student",
       "roles2": [
@@ -60,47 +57,53 @@
         "location": "India, along the Southern Kanara Belt",
         "educationalLevel": "Completed PU",
         "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
-      },
-      "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-      "motivations": [
-        { "icon": "/svgs/common/3.svg", "description": "Pursue a field with strong career prospects" },
-        { "icon": "/svgs/common/2.svg", "description": "Achieve success in technology & innovation" },
-        { "icon": "/svgs/common/1.svg", "description": "Secure a high-paying & stable profession" }
+      }
+    },
+      {
+      "id": 7,
+      "name": "M Panchami Nayak",
+      "image": "https://www.canaraengineering.in/departments/faculty/0120220004.jpg",
+      "category": "Prospective",
+      "desiganation": "Asst. Placement Officer",
+      "department": "Placement",
+      "joiningDate": "14-02-2022",
+      "experience": "0 Years",
+      "employmentType": "Regular",
+      "qualifications": [
+        { "degree": "Bachelor Degree", "degreeName":"BACHELOR OF COMMERCE","passingYear": "2017","college":"Mangalore University","specializedArea":"Accounts And Tax" }
+
       ],
-      "problemAreas": [
-        { "icon": "/svgs/common/3.svg", "description": "Pursue a field with strong career prospects" },
-        { "icon": "/svgs/common/1.svg", "description": "Achieve success in technology & innovation" },
-        { "icon": "/svgs/common/2.svg", "description": "Secure a high-paying & stable profession" }
+      "roles": [
+        { "title": "Asst.Placement Officer", "organization": "" }
       ],
-      "coreNeeds": [
-        "Understand the admission process step by step.",
-        "Get clear eligibility criteria without confusion.",
-        "Explore available courses & specializations.",
-        "Learn about campus life, facilities & culture.",
-        "Discover placement records & career opportunities.",
-        "Find information on scholarships & financial aid.",
-        "Read alumni success stories & career paths.",
-        "Access application support & deadline reminders."
+      "profileType": "Prospective Student",
+      "roles2": [
+        { "title": "Student", "organization": "N/A" }
       ],
-      "frustrationsAndFears": [
-        "Unclear admission process & eligibility criteria.",
-        "Fear of not securing admission due to competition.",
-        "Misinformation about job placements & campus facilities.",
-        "Pressure from family expectations."
-      ],
-      "addressal": [
-        "Display the admission process in a simple, step-by-step format.",
-        "Clearly outline eligibility criteria for easy understanding.",
-        "Present key statistics with an option to download detailed reports.",
-        "Highlight future career prospects."
-      ]
+      "bio": {
+        "age": "17-23",
+        "location": "India, along the Southern Kanara Belt",
+        "educationalLevel": "Completed PU",
+        "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
+      }
     },
     {
       "id": 5,
-      "name": "Sri Pradeep G Pai",
+      "name": "Shubha Arun Kottary",
       "image": "https://www.canaraengineering.in/departments/faculty/0120220018.jpg",
-      "category": "Parents",
-      "roles": [{ "title": "Convenor Governing Council", "organization": "CEC" }],
+      "category": "Prospective",
+      "desiganation": "Placement Asst.",
+      "department": "Placement",
+      "joiningDate": "26-08-2022",
+      "experience": "0 Years",
+      "employmentType": "Regular",
+      "qualifications": [
+        { "degree": "Bachelor Degree", "degreeName":"BCA","passingYear": "2009","college":"Mangalore University","specializedArea":""}
+      
+      ],
+      "roles": [
+        { "title": "Placement Asst.", "organization": "" }
+      ],
       "profileType": "Prospective Student",
       "roles2": [
         { "title": "Student", "organization": "N/A" }
@@ -110,39 +113,25 @@
         "location": "India, along the Southern Kanara Belt",
         "educationalLevel": "Completed PU",
         "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
-      },
-      "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-      "coreNeeds": [
-        "Understand the admission process step by step.",
-        "Get clear eligibility criteria without confusion.",
-        "Explore available courses & specializations.",
-        "Learn about campus life, facilities & culture.",
-        "Discover placement records & career opportunities.",
-        "Find information on scholarships & financial aid.",
-        "Read alumni success stories & career paths.",
-        "Access application support & deadline reminders."
-      ],
-      "frustrationsAndFears": [
-        "Unclear admission process & eligibility criteria.",
-        "Fear of not securing admission due to competition.",
-        "Misinformation about job placements & campus facilities.",
-        "Pressure from family expectations."
-      ],
-      "addressal": [
-        "Display the admission process in a simple, step-by-step format.",
-        "Clearly outline eligibility criteria for easy understanding.",
-        "Present key statistics with an option to download detailed reports.",
-        "Highlight future career prospects."
-      ]
+      }
     },
     {
       "id": 4,
-      "name": "Sri CA. M.Vaman Kamath",
+      "name": "DIVYESH . DIVAKAR",
       "image": "https://www.canaraengineering.in/departments/faculty/0120110013.jpg",
-      "category": "Alumni",
+    "category": "Prospective",
+      "desiganation": "Asst. Professor",
+      "department": "Artificial Intelligence & Machine Learning",
+      "joiningDate": "04-07-2011",
+      "experience": "15 Years",
+      "employmentType": "Regular",
+      "qualifications": [
+        { "degree": "Bachelor Degree", "degreeName":"BE","passingYear": "2008","college":"Visvesvaraya Technological University","specializedArea":"Electrical And Electronics Engineering" },
+        { "degree": "Master Degree", "degreeName":"M.TECH","passingYear": "2011","college":"Nmamit, Nitte","specializedArea":"Microelectronics And Control Systems" },
+        { "degree": "PhD", "degreeName":"(PHD)","passingYear": "","college":"","specializedArea":"" }
+      ],
       "roles": [
-        { "title": "Member", "organization": "CEC GC" },
-        { "title": "Treasurer", "organization": "CHSA" }
+        { "title": "Training Officer", "organization": "" }
       ],
       "profileType": "Prospective Student",
       "roles2": [
@@ -153,84 +142,9 @@
         "location": "India, along the Southern Kanara Belt",
         "educationalLevel": "Completed PU",
         "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
-      },
-      "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-      "coreNeeds": [
-        "Understand the admission process step by step.",
-        "Get clear eligibility criteria without confusion.",
-        "Explore available courses & specializations.",
-        "Learn about campus life, facilities & culture.",
-        "Discover placement records & career opportunities.",
-        "Find information on scholarships & financial aid.",
-        "Read alumni success stories & career paths.",
-        "Access application support & deadline reminders."
-      ],
-      "frustrationsAndFears": [
-        "Unclear admission process & eligibility criteria.",
-        "Fear of not securing admission due to competition.",
-        "Misinformation about job placements & campus facilities.",
-        "Pressure from family expectations."
-      ],
-      "addressal": [
-        "Display the admission process in a simple, step-by-step format.",
-        "Clearly outline eligibility criteria for easy understanding.",
-        "Present key statistics with an option to download detailed reports.",
-        "Highlight future career prospects."
-      ]
-    },
-     {
-      "id": 2,
-      "name": "Keerthan Kini",
-      "image": "https://www.canaraengineering.in/departments/faculty/0120220001.jpg",
-      "category": "Current",
-      "roles": [
-        { "title": "Placement Officer", "organization": "" }
-
-      ],
-      "profileType": "Prospective Student",
-      "roles2": [
-        { "title": "Student", "organization": "N/A" }
-      ],
-      "bio": {
-        "age": "17-23",
-        "location": "India, along the Southern Kanara Belt",
-        "educationalLevel": "Completed PU",
-        "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
-      },
-      "tags": ["Pressure-Driven", "Competitive", "Curious", "Tech-Savvy"],
-      "motivations": [
-        { "icon": "/svgs/common/3.svg", "description": "Pursue a field with strong career prospects" },
-        { "icon": "/svgs/common/2.svg", "description": "Achieve success in technology & innovation" },
-        { "icon": "/svgs/common/1.svg", "description": "Secure a high-paying & stable profession" }
-      ],
-      "problemAreas": [
-        { "icon": "/svgs/common/3.svg", "description": "Pursue a field with strong career prospects" },
-        { "icon": "/svgs/common/1.svg", "description": "Achieve success in technology & innovation" },
-        { "icon": "/svgs/common/2.svg", "description": "Secure a high-paying & stable profession" }
-      ],
-      "coreNeeds": [
-        "Understand the admission process step by step.",
-        "Get clear eligibility criteria without confusion.",
-        "Explore available courses & specializations.",
-        "Learn about campus life, facilities & culture.",
-        "Discover placement records & career opportunities.",
-        "Find information on scholarships & financial aid.",
-        "Read alumni success stories & career paths.",
-        "Access application support & deadline reminders."
-      ],
-      "frustrationsAndFears": [
-        "Unclear admission process & eligibility criteria.",
-        "Fear of not securing admission due to competition.",
-        "Misinformation about job placements & campus facilities.",
-        "Pressure from family expectations."
-      ],
-      "addressal": [
-        "Display the admission process in a simple, step-by-step format.",
-        "Clearly outline eligibility criteria for easy understanding.",
-        "Present key statistics with an option to download detailed reports.",
-        "Highlight future career prospects."
-      ]
+      }
     }
+    
 ]
 
 

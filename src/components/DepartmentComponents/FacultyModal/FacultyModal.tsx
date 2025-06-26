@@ -9,8 +9,9 @@ import Image from "next/image";
 interface Qualification {
   degree: string;
   passingYear: number;
-  collegeOrUniversity: string;
-  areaOfSpecialization: string;
+  college: string;
+  specializedArea: string;
+  degreeName: string;
 }
 
 interface CouncilMember {
@@ -24,7 +25,8 @@ interface CouncilMember {
   experience?: string;
   employmentType?: string;
   qualifications?: Qualification[];
-    roles?: { title: string; organization: string }[];
+  roles?: { title: string; organization: string }[];
+  desiganation?: string;
 }
 
 interface FacultyModalProps {
@@ -53,9 +55,7 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
               className="relative w-full max-w-7xl bg-[#F5F5F7] rounded-xl shadow-lg overflow-auto h-[90vh] p-6 lg:p-32"
             >
               <Dialog.Panel>
-                <button
-                aria-label="Close Modal"
-                 onClick={()=>onClose(false)} className="absolute cursor-pointer top-4 right-4">
+                <button aria-label="Close Modal" onClick={() => onClose(false)} className="absolute cursor-pointer top-4 right-4">
                   <X className="w-6 h-6 text-black " />
                 </button>
 
@@ -74,7 +74,7 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                       </div>
                       <div className="flex gap-2">
                         <span className="font-bold ">Designation:</span>
-                        <span>{facultyData.designation}</span>
+                        <span>{facultyData.desiganation}</span>
                       </div>
                       <div className="flex gap-2">
                         <span className="font-bold ">Department:</span>
@@ -109,6 +109,7 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                       <thead>
                         <tr className="bg-gray-50 text-gray-700">
                           <th className="px-6 py-3 text-left font-semibold">Degree</th>
+                           <th className="px-6 py-3 text-left font-semibold">Name Of Degree</th>
                           <th className="px-6 py-3 text-left font-semibold">Passing Year</th>
                           <th className="px-6 py-3 text-left font-semibold">College/University</th>
                           <th className="px-6 py-3 text-left font-semibold">Area of Specialization</th>
@@ -118,9 +119,10 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                         {facultyData?.qualifications?.map((qual, index) => (
                           <tr key={index} className="border-t border-gray-200 last:rounded-b-xl">
                             <td className="px-6 py-4">{qual.degree}</td>
+                            <td className="px-6 py-4">{qual.degreeName}</td>
                             <td className="px-6 py-4">{qual.passingYear}</td>
-                            <td className="px-6 py-4">{qual.collegeOrUniversity}</td>
-                            <td className="px-6 py-4">{qual.areaOfSpecialization}</td>
+                            <td className="px-6 py-4">{qual.college}</td>
+                            <td className="px-6 py-4">{qual.specializedArea}</td>
                           </tr>
                         ))}
                       </tbody>
