@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import managementData from "../../../../utils/managementData/managementData.json"; // Adjust the path based on your project structure
+import Image from "next/image";
 
 interface ManagementItem {
   title: string;
@@ -36,34 +37,42 @@ const HeroSection = () => {
           <div className="md:col-span-8">
             <h1 className="text-textGray font-extrabold text-[20px] pb-6 sm:pb-8 md:pb-10">Canara High School Association {selectedHeading}</h1>
             {/* Mobile layout: title and name in the same line */}
-            <div className="block sm:hidden">
-              {data[selectedHeading].map((item, index) => (
-                <div
-                  key={index}
-                  className={`flex justify-between pb-3 mb-3 ${index < data[selectedHeading].length - 1 ? "border-b-2 border-border" : ""}`}
-                >
-                  <h1 className="text-[17px] text-textGray font-bold">{item.title}</h1>
-                  <h1 className="text-[17px] text-textGray">{item.name}</h1>
+            {selectedHeading === "Organisational Structure" ? (
+              <div>
+                <Image alt="orginazation" src="https://www.canaraengineering.in/orgchart.png" width={1000} height={100} className="object-cover w-[100%] h-[100%]" />
+              </div>
+            ) : (
+              <>
+                <div className="block sm:hidden">
+                  {data[selectedHeading].map((item, index) => (
+                    <div
+                      key={index}
+                      className={`flex justify-between pb-3 mb-3 ${index < data[selectedHeading].length - 1 ? "border-b-2 border-border" : ""}`}
+                    >
+                      <h1 className="text-[17px] text-textGray font-bold">{item.title}</h1>
+                      <h1 className="text-[17px] text-textGray">{item.name}</h1>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-            {/* Desktop layout: original two-column layout */}
-            <div className="hidden sm:grid sm:grid-cols-2">
-              <div className="text-[17px] text-textGray">
-                {data[selectedHeading].map((item, index) => (
-                  <h1 key={index} className={`pb-3 mb-3 ${index < data[selectedHeading].length - 1 ? "border-b-2 border-border" : ""}`}>
-                    {item.title}
-                  </h1>
-                ))}
-              </div>
-              <div className="text-[17px]  text-textGray">
-                {data[selectedHeading].map((item, index) => (
-                  <h1 key={index} className={`pb-3 mb-3 ${index < data[selectedHeading].length - 1 ? "border-b-2 border-border" : ""}`}>
-                    {item.name}
-                  </h1>
-                ))}
-              </div>
-            </div>
+                {/* Desktop layout: original two-column layout */}
+                <div className="hidden sm:grid sm:grid-cols-2">
+                  <div className="text-[17px] text-textGray">
+                    {data[selectedHeading].map((item, index) => (
+                      <h1 key={index} className={`pb-3 mb-3 ${index < data[selectedHeading].length - 1 ? "border-b-2 border-border" : ""}`}>
+                        {item.title}
+                      </h1>
+                    ))}
+                  </div>
+                  <div className="text-[17px]  text-textGray">
+                    {data[selectedHeading].map((item, index) => (
+                      <h1 key={index} className={`pb-3 mb-3 ${index < data[selectedHeading].length - 1 ? "border-b-2 border-border" : ""}`}>
+                        {item.name}
+                      </h1>
+                    ))}
+                  </div>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>
