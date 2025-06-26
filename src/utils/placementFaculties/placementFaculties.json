@@ -1,0 +1,150 @@
+[
+    {
+      "id": 1,
+      "name": "Deepthi Dinesh Prabhu",
+      "image": "https://www.canaraengineering.in/departments/faculty/0120240012.jpg",
+      "category": "Prospective",
+      "desiganation": "Placement Officer",
+      "department": "General(Central) Department",
+      "joiningDate": "07-05-2024",
+      "experience": "2 years",
+      "employmentType": "Regular",
+      "qualifications": [
+        { "degree": "Bachelor Degree", "degreeName":"BACHELOR OF ENGINEERING","passingYear": "2012","college":"Visvesvaraya Technological University, Belgaum","specializedArea":"Environmental Engineering" }
+      ],
+      "roles": [
+        { "title": "Head Training, Placements", "organization": "" },
+        { "title": "and Alumni Relations", "organization": "" }
+      ],
+      "profileType": "Prospective Student",
+      "roles2": [
+        { "title": "Student", "organization": "N/A" }
+      ],
+      "bio": {
+        "age": "17-23",
+        "location": "India, along the Southern Kanara Belt",
+        "educationalLevel": "Completed PU",
+        "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
+      }
+
+     
+    },
+   
+    {
+      "id": 2,
+      "name": "Keerthan Kini",
+      "image": "https://www.canaraengineering.in/departments/faculty/0120220001.jpg",
+       "category": "Prospective",
+      "desiganation": "Asst. Placement Officer",
+      "department": "Placement",
+      "joiningDate": "01-01-2022",
+      "experience": "6 Years",
+      "employmentType": "Regular",
+      "qualifications": [
+        { "degree": "Bachelor Degree", "degreeName":"BBM","passingYear": "2014","college":"Mangalore University","specializedArea":"Human Resource Management" },
+        { "degree": "Master Degree", "degreeName":"MCMS","passingYear": "2017","college":"Mangalore University","specializedArea":"Media & Publication" },
+        { "degree": "Others", "degreeName":"POST GRADUATE DIPLOMA IN GUIDANCE & COUNSELLING","passingYear": "2024","college":"St. Agnes PG Centre","specializedArea":"Guidance & Counselling" }
+      ],
+      "roles": [
+        { "title": "Placement Officer", "organization": "" }
+      ],
+      "profileType": "Prospective Student",
+      "roles2": [
+        { "title": "Student", "organization": "N/A" }
+      ],
+      "bio": {
+        "age": "17-23",
+        "location": "India, along the Southern Kanara Belt",
+        "educationalLevel": "Completed PU",
+        "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
+      }
+    },
+      {
+      "id": 7,
+      "name": "M Panchami Nayak",
+      "image": "https://www.canaraengineering.in/departments/faculty/0120220004.jpg",
+      "category": "Prospective",
+      "desiganation": "Asst. Placement Officer",
+      "department": "Placement",
+      "joiningDate": "14-02-2022",
+      "experience": "0 Years",
+      "employmentType": "Regular",
+      "qualifications": [
+        { "degree": "Bachelor Degree", "degreeName":"BACHELOR OF COMMERCE","passingYear": "2017","college":"Mangalore University","specializedArea":"Accounts And Tax" }
+
+      ],
+      "roles": [
+        { "title": "Asst.Placement Officer", "organization": "" }
+      ],
+      "profileType": "Prospective Student",
+      "roles2": [
+        { "title": "Student", "organization": "N/A" }
+      ],
+      "bio": {
+        "age": "17-23",
+        "location": "India, along the Southern Kanara Belt",
+        "educationalLevel": "Completed PU",
+        "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
+      }
+    },
+    {
+      "id": 5,
+      "name": "Shubha Arun Kottary",
+      "image": "https://www.canaraengineering.in/departments/faculty/0120220018.jpg",
+      "category": "Prospective",
+      "desiganation": "Placement Asst.",
+      "department": "Placement",
+      "joiningDate": "26-08-2022",
+      "experience": "0 Years",
+      "employmentType": "Regular",
+      "qualifications": [
+        { "degree": "Bachelor Degree", "degreeName":"BCA","passingYear": "2009","college":"Mangalore University","specializedArea":""}
+      
+      ],
+      "roles": [
+        { "title": "Placement Asst.", "organization": "" }
+      ],
+      "profileType": "Prospective Student",
+      "roles2": [
+        { "title": "Student", "organization": "N/A" }
+      ],
+      "bio": {
+        "age": "17-23",
+        "location": "India, along the Southern Kanara Belt",
+        "educationalLevel": "Completed PU",
+        "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
+      }
+    },
+    {
+      "id": 4,
+      "name": "DIVYESH . DIVAKAR",
+      "image": "https://www.canaraengineering.in/departments/faculty/0120110013.jpg",
+    "category": "Prospective",
+      "desiganation": "Asst. Professor",
+      "department": "Artificial Intelligence & Machine Learning",
+      "joiningDate": "04-07-2011",
+      "experience": "15 Years",
+      "employmentType": "Regular",
+      "qualifications": [
+        { "degree": "Bachelor Degree", "degreeName":"BE","passingYear": "2008","college":"Visvesvaraya Technological University","specializedArea":"Electrical And Electronics Engineering" },
+        { "degree": "Master Degree", "degreeName":"M.TECH","passingYear": "2011","college":"Nmamit, Nitte","specializedArea":"Microelectronics And Control Systems" },
+        { "degree": "PhD", "degreeName":"(PHD)","passingYear": "","college":"","specializedArea":"" }
+      ],
+      "roles": [
+        { "title": "Training Officer", "organization": "" }
+      ],
+      "profileType": "Prospective Student",
+      "roles2": [
+        { "title": "Student", "organization": "N/A" }
+      ],
+      "bio": {
+        "age": "17-23",
+        "location": "India, along the Southern Kanara Belt",
+        "educationalLevel": "Completed PU",
+        "description": "Prospective engineering students in India are often driven by a combination of factors including the technology-oriented culture and the associated prestige. These individuals possess strong analytical and logical skills honed through rigorous academic preparation. The competitive nature of entrance exams fosters a drive to succeed, though this may also experience pressure from family or societal expectations to pursue this path."
+      }
+    }
+    
+]
+
+

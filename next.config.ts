@@ -7,7 +7,12 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  productionBrowserSourceMaps: true, // ✅ Enable source maps in production
+  productionBrowserSourceMaps: true,
+
+  // ✅ Add this to allow external image domains
+  images: {
+    domains: ["www.canaraengineering.in"],
+  },
 };
 
 export default nextConfig;
