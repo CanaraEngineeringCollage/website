@@ -142,11 +142,22 @@ const Footer: FC = () => {
           <div>
             <h1 className="flex justify-end font-bold pb-3 cursor-pointer">Follow Us</h1>
             <div className="flex gap-2 cursor-pointer">
-              <LinkedIn />
-              <Instagram />
-              <Meta />
-              <Yt />
-              <Twitter />
+              <Link href="https://www.linkedin.com/school/77697892/admin/dashboard/">
+                <LinkedIn />
+              </Link>
+              <Link href="https://www.instagram.com/cecmangalore/">
+                <Instagram />
+              </Link>
+              <Link href="https://www.facebook.com/profile.php?id=61575102539032">
+                <Meta />
+              </Link>
+              <Link href="https://www.youtube.com/@canaraengineeringcollegema3340">
+                <Yt />
+              </Link>
+
+              <Link href="https://x.com/cecmangalore">
+                <Twitter />
+              </Link>
             </div>
           </div>
         </div>
@@ -185,11 +196,22 @@ const Footer: FC = () => {
           <div className="mt-4">
             <h1 className="text-center font-bold pb-3">Follow Us</h1>
             <div className="flex gap-2 justify-center">
-              <LinkedIn />
-              <Instagram />
-              <Meta />
-              <Yt />
-              <Twitter />
+              <Link href="https://www.linkedin.com/school/77697892/admin/dashboard/">
+                <LinkedIn />
+              </Link>
+              <Link href="https://www.instagram.com/cecmangalore/">
+                <Instagram />
+              </Link>
+              <Link href="https://www.facebook.com/profile.php?id=61575102539032">
+                <Meta />
+              </Link>
+              <Link href="https://www.youtube.com/@canaraengineeringcollegema3340">
+                <Yt />
+              </Link>
+
+              <Link href="https://x.com/cecmangalore">
+                <Twitter />
+              </Link>
             </div>
           </div>
         </div>

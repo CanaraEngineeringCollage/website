@@ -10,7 +10,7 @@ const TopRecruiters: React.FC = () => {
 
         {/* Marquee wrapper */}
         <div className="marquee-container">
-          <div className="animate-marquee">
+          <div className="animate-marquee gap-8">
             {[...logos, ...logos].map((logo, index) => (
               <Image
               key={index}
@@ -18,7 +18,7 @@ const TopRecruiters: React.FC = () => {
               alt={logo.alt}
               width={100} // or adjust as per your design
               height={40} // provide fallback or map height dynamically
-              className="w-full h-full"
+              className="w-32 h-20"
               />
             ))}
           </div>

@@ -85,7 +85,9 @@ export default function DepartmentFaculty() {
               className={`relative cursor-pointer w-full max-w-[309px] h-[480px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center  shadow-md`}
             >
               <Image
-                onClick={() => router.push(`/user-details/${member.id}`)}
+                  onClick={() => {
+                    setSelectedMember(member), setIsModalOpen(true);
+                  }}
                 src={member.image}
                 alt={member.name}
                 width={300}
@@ -140,7 +142,9 @@ export default function DepartmentFaculty() {
               className={`relative cursor-pointer w-full max-w-[309px] h-[480px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center  shadow-md`}
             >
               <Image
-                onClick={() => router.push(`/user-details/${member.id}`)}
+               onClick={() => {
+                setSelectedMember(member), setIsModalOpen(true);
+              }}
                 src={member.image}
                 alt={member.name}
                 width={300}
