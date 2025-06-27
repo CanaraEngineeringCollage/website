@@ -33,7 +33,7 @@ const MandatoryDisclosure = () => {
                     link?.href ? (
                       <li key={i} className="flex items-center gap-2 text-[17px] text-textGray hover:text-blue-600 cursor-pointer">
                         <HiLink className="text-textGray" />
-                        <a aria-label="Mandatory Disclosure Link" href={link.href} className="hover:underline">
+                        <a aria-label="Mandatory Disclosure Link" target="_blank" href={link.href} className="hover:underline">
                           {link.text}
                         </a>
                       </li>
