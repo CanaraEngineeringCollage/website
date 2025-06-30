@@ -21,7 +21,7 @@ export default function ExplorePrograms() {
   const cards = programData.map((card, index) => <Card key={card.title} card={card} index={index} />);
 
   return (
-    <div className="w-full h-full md:py-56 py-20 text-black ">
+    <div className="w-full h-full md:py-28 py-20 text-black ">
       <h2 className="max-w-7xl xl:max-w-[75%]  pl-4 mx-auto text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-neutral-800">Explore our programs</h2>
       <Carousel items={cards} />
     </div>
