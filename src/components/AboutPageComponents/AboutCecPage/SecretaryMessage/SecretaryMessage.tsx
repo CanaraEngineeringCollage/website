@@ -8,7 +8,7 @@ const SecretaryMessage = () => {
       <div className=" grid  lg:grid-cols-2 lg:gap-10 lg:px-10 xl:px-0">
         <div className="block lg:hidden">
           <div className="flex lg:hidden flex-col items-center flex-shrink-0 mx-auto lg:px-20">
-            <div className="w-80  h-96 relative rounded-xl overflow-hidden shadow-md">
+            <div className="w-80  h-96 relative overflow-hidden shadow-md">
               <Image src={img} alt="Sri Ammembal Subba Rao Pai"  className="object-cover bg-[#6dc0eb]" />
             </div>
             <p className="mt-4 text-center text-[27px] font-bold text-white">M. Ranganath Bhat</p>
@@ -28,7 +28,7 @@ const SecretaryMessage = () => {
         </div>
         <div>
           <div className="hidden lg:flex flex-col items-center flex-shrink-0 mx-auto lg:px-20">
-            <div className="w-80  h-96 relative rounded-xl overflow-hidden shadow-md">
+            <div className="w-80  h-96 relative overflow-hidden shadow-md">
             <Image src={img} alt="Sri Ammembal Subba Rao Pai"  className="object-cover bg-[#6dc0eb]" />
             </div>
             <p className="mt-4 text-center text-[27px] font-bold text-white">M. Ranganath Bhat</p>

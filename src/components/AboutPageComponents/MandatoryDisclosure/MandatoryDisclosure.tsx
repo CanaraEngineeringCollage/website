@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { HiLink } from "react-icons/hi";
 import disclosureData from "../../../utils/mandatoryDisclosure/mandatoryDisclosure.json";
 
 const MandatoryDisclosure = () => {
@@ -32,10 +31,9 @@ const MandatoryDisclosure = () => {
                   {item?.links?.map((link, i) =>
                     link?.href ? (
                       <li key={i} className="flex items-center gap-2 text-[17px] text-textGray hover:text-blue-600 cursor-pointer">
-                        <HiLink className="text-textGray" />
-                        <a aria-label="Mandatory Disclosure Link" target="_blank" href={link.href} className="hover:underline">
-                          {link.text}
-                        </a>
+                     
+                        <iframe src={link.href} className="w-[100%] h-[100vh]"   style={{ zoom: 1, transform: "scale(1)", transformOrigin: "0 0" }} />
+                       
                       </li>
                     ) : null
                   )}

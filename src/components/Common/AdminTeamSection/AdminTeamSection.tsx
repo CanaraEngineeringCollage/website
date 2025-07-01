@@ -39,7 +39,7 @@ export default function AdminTeamSection() {
   };
 
   return (
-    <section className=" px-6 md:px-12 max-w-7xl mx-auto my-32  xl:max-w-[75%] bg-[#F5F5F7] rounded-3xl">
+    <section className="py-12 px-6 md:px-12 max-w-7xl mx-auto my-32  xl:max-w-[75%] bg-[#F5F5F7] rounded-3xl">
       <div className=" mx-auto lg:flex hidden  flex-col-reverse md:flex-row items-center justify-between gap-10">
         <div className="max-w-md space-y-44">
           <div>
@@ -84,7 +84,7 @@ export default function AdminTeamSection() {
           {visibleMembers.map((member, index) => (
             <div
               key={index}
-              className={`relative cursor-pointer w-full max-w-[309px] h-[480px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center py-6 shadow-md`}
+              className={`relative cursor-pointer w-full max-w-[309px] h-[440px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md`}
             >
               <Image
                 onClick={() => router.push(`/user-details/${member.id}`)}
@@ -92,7 +92,7 @@ export default function AdminTeamSection() {
                 alt={member.name}
                 width={300}
                 height={300}
-                className="rounded-full  w-full object-contain"
+                className="w-full object-cover"
               />
               <Link href={`/user-details/${member.id}`}>
                 <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>

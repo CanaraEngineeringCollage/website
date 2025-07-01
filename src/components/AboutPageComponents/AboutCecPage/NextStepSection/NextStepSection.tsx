@@ -1,6 +1,11 @@
+"use client";
+import ContactFormModal from "@/components/Modal/Modal";
+import { useState } from "react";
 
 
 export default function NextStepSection() {
+
+  const [isOpen, setIsOpen] = useState<boolean>(false)
   return (
     <section className="relative py-24 lg:py-40 overflow-hidden bg-[#0A0A0A]">
       {/* Background gradient */}
@@ -21,11 +26,12 @@ export default function NextStepSection() {
             Book a one-on-one counseling session & get all your questions answered about admissions programs & your future opportunities.
           </p>
 
-          <button aria-label="Book Your Counseling Session Today" className="mt-8 bg-white text-[#0071E3] px-8 py-3 rounded-full font-medium hover:bg-white/90 transition-colors">
+          <button aria-label="Book Your Counseling Session Today" onClick={()=>{setIsOpen(true)}} className="mt-8 bg-white text-[#2884CA] font-bold px-8 py-3 rounded-full  hover:bg-white/90 transition-colors">
             Book Your Counseling Session Today
           </button>
         </div>
       </div>
+      <ContactFormModal isOpen={isOpen} onClose={setIsOpen} />
     </section>
   );
 }

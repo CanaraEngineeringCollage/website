@@ -126,7 +126,7 @@ const FacultyMembersSection = () => {
                     alt={item.name}
                     width={260}
                     height={260}
-                    className="rounded-full w-[80%] sm:w-[85%] md:w-full object-contain"
+                    className=" w-[80%] sm:w-[85%] md:w-full object-contain"
                   />
                   <div className="absolute bottom-0 left-0 w-full h-48 sm:h-52 md:h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
                   <div className="absolute z-50 top-[75%] sm:top-[78%] md:top-[80%] left-4 sm:left-5 md:left-6">

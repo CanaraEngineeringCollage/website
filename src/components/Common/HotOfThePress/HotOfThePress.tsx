@@ -7,6 +7,7 @@ import "swiper/css";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import pressData from "../../../utils/hotOFThePressData/hotOfThePressData.json";
 import Image from "next/image";
+import Link from "next/link";
 
 const HotOfThePress = () => {
   const swiperRef = useRef<SwiperType | null>(null);
@@ -20,12 +21,14 @@ const HotOfThePress = () => {
           </h1>
         </div>
         <div className="hidden md:block">
+          <Link href="/media">
           <button
             aria-label="Explore More Campus Stories"
             className="text-black cursor-pointer font-semibold font-sans bg-[#c3d5ed] px-5 py-2 rounded-3xl mr-12"
           >
             Explore More Campus Stories
           </button>
+          </Link>
         </div>
       </div>
       <Swiper

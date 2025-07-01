@@ -18,13 +18,16 @@ import 'swiper/css/effect-fade';
 const HeroSection = () => {
   const logos = [
     { label: 'NIRF Recognised', src: nirf },
-    { label: 'NBA Accredited', src: nba },
+    { label: 'NAAC Accredited', src: nba },
     { label: 'ISO 21001:2018', src: iso },
     { label: 'NBA Accredited', src: nba2 },
     { label: 'Affiliated to VTU', src: affiliated },
     { label: 'NIRF Recognised', src: nirf },
+    { label: 'NAAC Accredited', src: nba },
     { label: 'ISO 21001:2018', src: iso },
-    { label: 'NBA Accredited', src: nba },
+    { label: 'NBA Accredited', src: nba2 },
+    { label: 'Affiliated to VTU', src: affiliated },
+  
   ];
 
   const backgroundImages = [bg1, bg1, bg1];

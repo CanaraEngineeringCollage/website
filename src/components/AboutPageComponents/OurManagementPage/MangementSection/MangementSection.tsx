@@ -38,7 +38,7 @@ const HeroSection = () => {
             {headings.map((heading, index) => (
               <h1
                 key={index}
-                className={`border-b-2 pb-3 mb-3 border-border cursor-pointer ${selectedHeading === heading ? "text-[#2884CA]" : "text-textGray"}`}
+                className={`border-b-2 pb-3 mb-3 border-border cursor-pointer ${selectedHeading === heading ? "text-[#2884CA] font-bold" : "text-textGray"}`}
                 onClick={() => setSelectedHeading(heading)}
               >
                 {heading}

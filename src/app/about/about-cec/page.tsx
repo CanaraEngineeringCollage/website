@@ -39,7 +39,7 @@ export default function AboutCec() {
   return (
     <>
       <HeroSection />
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+      <section className="px-6 md:px-12 lg:px-16 xl:px-0 bg-white">
         <AboutCanara />
       </section>
       <section>

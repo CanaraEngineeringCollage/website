@@ -38,20 +38,8 @@
       {
         "title": "AICTE Documents",
         "links": [
-          { "text": "AICTE Approval 2023-24", "href": "#" },
-          { "text": "AICTE Handbook", "href": "#" }
+          { "text": "AICTE Approval", "href": "https://www.canaraengineering.in/download/EOA%20Report.pdf" }
         ]
-      },
-      {
-        "title": "NBA 2023",
-        "links": [
-          { "text": "Accredited Program List", "href": "#" },
-          { "text": "NBA Certificate Download", "href": "#" }
-        ]
-      },
-      {
-        "title": "NBA Review",
-        "links": [{ "text": "Self-Assessment Report", "href": "#" }]
       }
     ]
   },
@@ -61,20 +49,8 @@
       {
         "title": "Affiliation Letters",
         "links": [
-          { "text": "VTU 2023 Affiliation", "href": "#" },
-          { "text": "VTU Regulations", "href": "#" }
+          { "text": "VTU Affiliation", "href": "https://www.canaraengineering.in/download/vtu%20affiliaton.pdf" }
         ]
-      },
-      {
-        "title": "NBA 2023",
-        "links": [
-          { "text": "Accredited Program List", "href": "#" },
-          { "text": "NBA Certificate Download", "href": "#" }
-        ]
-      },
-      {
-        "title": "NBA Review",
-        "links": [{ "text": "Self-Assessment Report", "href": "#" }]
       }
     ]
   },
@@ -84,20 +60,8 @@
       {
         "title": "UGC Details",
         "links": [
-          { "text": "UGC Approval Certificate", "href": "#" },
-          { "text": "UGC Guidelines", "href": "#" }
+          { "text": "UGC Approval Certificate", "href": "https://www.canaraengineering.in/download/cecugc2f.pdf" }
         ]
-      },
-      {
-        "title": "NBA 2023",
-        "links": [
-          { "text": "Accredited Program List", "href": "#" },
-          { "text": "NBA Certificate Download", "href": "#" }
-        ]
-      },
-      {
-        "title": "NBA Review",
-        "links": [{ "text": "Self-Assessment Report", "href": "#" }]
       }
     ]
   },
@@ -105,19 +69,8 @@
     "title": "Audit Report",
     "data": [
       {
-        "title": "Audit FY 2022-23",
-        "links": [{ "text": "Download Report", "href": "#" }]
-      },
-      {
-        "title": "NBA 2023",
-        "links": [
-          { "text": "Accredited Program List", "href": "#" },
-          { "text": "NBA Certificate Download", "href": "#" }
-        ]
-      },
-      {
-        "title": "NBA Review",
-        "links": [{ "text": "Self-Assessment Report", "href": "#" }]
+        "title": "Audit FY",
+        "links": [{ "text": "View Report", "href": "/dede" }]
       }
     ]
   },
@@ -170,20 +123,8 @@
       {
         "title": "Fees Structure",
         "links": [
-          { "text": "UG Fees 2023", "href": "#" },
-          { "text": "PG Fees 2023", "href": "#" }
+          { "text": "UG Fees 2025-2-26", "href": "https://www.canaraengineering.in/download/Details%20of%20Nominal%20fee.pdf" }
         ]
-      },
-      {
-        "title": "NBA 2023",
-        "links": [
-          { "text": "Accredited Program List", "href": "#" },
-          { "text": "NBA Certificate Download", "href": "#" }
-        ]
-      },
-      {
-        "title": "NBA Review",
-        "links": [{ "text": "Self-Assessment Report", "href": "#" }]
       }
     ]
   },
