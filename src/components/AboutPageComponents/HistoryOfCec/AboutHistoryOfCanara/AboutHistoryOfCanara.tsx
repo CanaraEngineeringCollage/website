@@ -52,6 +52,72 @@ const AboutHistoryCanara = () => {
         several programs like training the students to face campus recruitment tests and interviews through regular soft skill/communication skill
         development programs, Entrepreneurship Awareness Camps and helping the desired students to productize/commercialize their creative ideas.
       </p>
+      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold">CANARA ENGINEERING COLLEGE ROAD MAP... </h1>
+      <p className="lg:text-xl md:text-lg text-[14px] py-12 leading-7  text-textGray">
+        In an attempt to impart holistic education, to make "Canara Engineering College" a role model in higher education and the most preferred
+        choice of students, staff, parents, society and industry in the near future; the following few proposals or action plans are projected, for 2
+        to 3 years down the lane:
+      </p>
+      <div className="md:pl-12">
+        <ul className="list-disc list-inside space-y-4 text-textGray text-[14px] md:text-lg lg:text-xl leading-7">
+          <li>
+            In line with NEP-2020, adding new UG and PG programs in emerging and multidisciplinary areas, like Cyber Security, Data Science, IOT,
+            Business Management, Automation & Robotics & the like is being planned. Building of strong PG & Ph.D. programs is needed for further
+            growth towards promoting research culture in the institute, establishing Centers of Excellence or Active Research Centers and in turn,
+            contributing to attain University status soon.
+          </li>
+          <li>
+            To promote creative power & innovative ideas of the students, to conduct or practice for in-house, inter-school or inter-collegiate
+            innovation competitions and to facilitate total personality development of the students, developing state-of-the-art "Student Activity
+            Centre" is proposed.
+          </li>
+          <li>
+            In compliance with phase-wise implementation of NEP 2020, to explore introduction of 'Internationalization' towards improving national or
+            international visibility and accelerated, multi-dimensional growth of CEC. Possible collaboration through MOUs with foreign universities,
+            like academic tie-ups, semester abroad study program, twinning programs, student internships, joint project works, joint research funding
+            & publications etc. will be tried in due course.
+          </li>
+          <li>
+            Planned to possess necessary infrastructure & modern lab facilities for quality research works, setting-up start-up incubation centres,
+            technology development centres and seamless access to modern information resources.
+          </li>
+          <li>
+            To explore 'Academic Partnerships' with reputed companies/organisations which enables the students and faculty to access modern learning
+            assets as academic support at free of cost, provides for specialized training and lab assistance to the students, provides Integrated
+            Student Personality Development Program and the like. Recently introduced 'Professor of Practice' scheme from UGC will be tried.
+          </li>
+          <li>
+            To tap the leading companies & R&D organizations for faculty development training, courseware redesign, campus-connect programmes and live
+            projects on campus to bridge the workplace-campus gap. 'Finishing school' concept to be tried with contributing companies through
+            distinguished alumni support.
+          </li>
+          <li>
+            To encourage participation in online education platforms like Coursera/Udemy/Udacity etc. offering open elective certified courses from
+            reputed foreign universities; e-learning resource development like YouTube videos, national NPTEL online certification courses, SWAYAM
+            platform MOOCs (massive online open courses) & the like.
+          </li>
+          <li>
+            Image and Brand Building Events: Planning to organize ambitious programs to highlight or promote the visibility of the institution among
+            the general public, academia and industry professionals in the state level or national level or globally, through conduction of mega
+            events, conferences, conclaves or summits on focused themes, like IEEE Conferences, Smart India Hackathon (SIH) Finale; IEEE Women in
+            Engineering International Leadership Summits (ILS); Technology Summit with a far reaching visibility & community linkages like TEDx;
+            Ideathons; Project expos; Technology Conclave with Gadget Expo; IEEE Summer schools for High School or PU Students; Engineering Projects
+            in Community Service(EPICS) initiatives etc.
+          </li>
+          <li>
+            A few 'Smart Classrooms' with intelligent interactive panels are being developed in the institute to enhance state-of-the-art teaching
+            pedagogy and level of modern education.
+          </li>
+          <li>
+            Finally, to set benchmarks against reputed institutes or universities around, to draw some of their best practices for enhanced
+            visibility, sustainable market standing and higher ranking.
+          </li>
+        </ul>
+      </div>
+      <p className="lg:text-xl md:text-lg text-[14px] leading-7 py-12 text-black font-bold">
+        Canara Engineering College being a flagship institution under Canara Educational Group, has a major role to play towards becoming an
+        Autonomous or Deemed University in the near future.
+      </p>
     </div>
   );
 };

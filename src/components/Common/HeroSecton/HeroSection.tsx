@@ -1,9 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import bg1 from "../../../../public/backgroundImages/homeHeroBg.jpg";
+import bg1 from "../../../../public/herosectionImages/herosection1.webp";
 import nirf from "../../../../public/svgs/heropageLogos/1.svg";
-import iso from "../../../../public/svgs/heropageLogos/2.svg";
+import iso from "../../../../public/svgs/heropageLogos/6.webp";
 import nba from "../../../../public/svgs/heropageLogos/3.svg";
 import nba2 from "../../../../public/svgs/heropageLogos/4.svg";
 import affiliated from "../../../../public/svgs/heropageLogos/5.svg";
@@ -18,8 +18,8 @@ import 'swiper/css/effect-fade';
 const HeroSection = () => {
   const logos = [
     { label: 'NIRF Recognised', src: nirf },
-    { label: 'ISO 21001:2018', src: iso },
     { label: 'NBA Accredited', src: nba },
+    { label: 'ISO 21001:2018', src: iso },
     { label: 'NBA Accredited', src: nba2 },
     { label: 'Affiliated to VTU', src: affiliated },
     { label: 'NIRF Recognised', src: nirf },
@@ -53,7 +53,7 @@ const HeroSection = () => {
                 className='object-cover w-full h-full'
                 priority
               />
-               <div className="absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-black/60 to-transparent z-10" />
+            
                <div className="absolute bottom-0 left-0 right-0 h-[200px] md:h-[1000px] bg-gradient-to-t from-white via-white/85 via-50% to-transparent z-[10] md:hidden" />
                <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[1000px] bg-gradient-to-t from-white via-transparent to-transparent z-[10] hidden md:block" />
             </SwiperSlide>

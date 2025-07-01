@@ -50,8 +50,8 @@ export default function Home() {
         <VideoPlayer
           subTitle="Explore the campus with a virtual tour & discover one among the best colleges in the region."
           title="Experience the Campus"
-          videoUrl="https://dl.dropboxusercontent.com/scl/fi/sxt23aryqw0lbyvjl0no9/CEC-WALKTHROUGH.mp4?rlkey=8xmhol3cr0o9pyrlp88f3ngny&st=vt015r3l"
-          youtubeUrl="https://youtu.be/oHWMDPeP1Ew?si=qqtEqsXt4DoODEmV"
+          videoUrl="z-Axfq0HfZOLspAj"
+          youtubeUrl="DotJvDklT5Y"
           thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1746612052/duzvb3twtlcu0xve8off.png"
         />
       </section>
@@ -64,11 +64,12 @@ export default function Home() {
       <section className="py-12">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
-          youtubeUrl="https://youtu.be/rv0KerNW4QE?si=ObYcwEiaqF0UD90P"
+          // videoUrl="z-Axfq0HfZOLspAj"
+          youtubeUrl="Xhq4QpXZco8"
           thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1745989151/gerbybf4ejfgs7aeajyq.jpg"
         />
       </section>
-      <section className="px-0 bg-white py-12">
+      <section className="px-0 bg-white py-20">
         <Testimonials />
       </section>
       <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0 py-12">

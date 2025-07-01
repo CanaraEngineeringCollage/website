@@ -5,9 +5,15 @@ const campusLegacy = [
   },
   {
     title: "History of CEC",
-    link: "/about/history-of-cee",
+    link: "/about/history-of-cec",
+  },
+  {
+    title: "Glimpses of CEC",
+    link: "/about/glimpses-of-cec",
   },
 ];
+
+
 
 const administration = [
   {
@@ -25,6 +31,9 @@ const administration = [
   {
     title: "Educators & Administrators",
     link: "/about/educators-administrators",
+  },
+  { href: "/about/distinctive-practices", 
+    link: "Distinctive & Practices" 
   },
 ];
 const accreditations = [

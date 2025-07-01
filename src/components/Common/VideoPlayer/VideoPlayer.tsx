@@ -1,10 +1,11 @@
 "use client";
+import { YouTubeEmbed } from "@next/third-parties/google";
 import Link from "next/link";
 import React, { useState, useRef } from "react";
 
 interface VideoPlayerProps {
   youtubeUrl: string;
-  videoUrl: string;
+  videoUrl?: string;
   title?: string;
   subTitle?: string;
   thumbnail?: string;
@@ -27,15 +28,6 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ youtubeUrl, videoUrl, title, 
       setIsPlaying(!isPlaying);
     }
   };
-
-  // Update progress based on video time
-  const handleTimeUpdate = () => {
-    if (videoRef.current) {
-      const progressPercent = (videoRef.current.currentTime / videoRef.current.duration) * 100;
-      setProgress(progressPercent);
-    }
-  };
-
   return (
     <div className="overflow-hidden max-w-7xl mx-auto xl:max-w-[75%] rounded-3xl  px-6 md:px-12 lg:px-16 xl:px-0  py-20">
       <div className=" mx-auto text-center text-white mb-16">
@@ -43,10 +35,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ youtubeUrl, videoUrl, title, 
         <p className=" font-medium md:text-2xl text-base text-white/60 max-w-4xl mx-auto">{subTitle}</p>
       </div>
       <div className="relative ">
-        <video poster={thumbnail} ref={videoRef} className="rounded-3xl"  loop playsInline onTimeUpdate={handleTimeUpdate} width="100%">
-          <source src={videoUrl} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <YouTubeEmbed videoid={youtubeUrl} params="autoplay=0&rel=0" />
         <div className="absolute bottom-0 w-full  p-4 z-10 flex flex-row justify-end md:justify-between ">
           <div className="hidden md:block">
             <svg width="180" height="41" viewBox="0 0 180 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,7 +75,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ youtubeUrl, videoUrl, title, 
             </svg>
           </div>
           <div className="flex gap-4">
-            <div>
+            {/* <div>
               <Link href={youtubeUrl} target="_blank">
                 <button 
                   aria-label="Watch the Full Video"
@@ -95,13 +84,13 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ youtubeUrl, videoUrl, title, 
                   Watch the Full Video
                 </button>
               </Link>
-            </div>
-            <div className="cursor-pointer" onClick={togglePlayPause}>
-              <svg width="50" height="50" viewBox="0 0 50 50">
+            </div> */}
+            {/* <div className="cursor-pointer" onClick={togglePlayPause}>
+              <svg width="50" height="50" viewBox="0 0 50 50"> */}
                 {/* Background Circle */}
-                <circle cx="25" cy="25" r="22" stroke="#ffff" strokeWidth="2" fill="none" opacity="0.3" />
+                {/* <circle cx="25" cy="25" r="22" stroke="#ffff" strokeWidth="2" fill="none" opacity="0.3" /> */}
                 {/* Progress Circle */}
-                <circle
+                {/* <circle
                   cx="25"
                   cy="25"
                   r="22"
@@ -113,10 +102,10 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ youtubeUrl, videoUrl, title, 
                   strokeLinecap="round"
                   className="transition-all duration-100"
                   transform="rotate(-90 25 25)"
-                />
+                /> */}
                 {/* Play/Pause Icon */}
-                <foreignObject x="9" y="8" width="32" height="32">
-                  <button className="w-full h-full cursor-pointer flex items-center justify-center" aria-label={isPlaying ? "Pause" : "Play"}>
+                {/* <foreignObject x="9" y="8" width="32" height="32"> */}
+                  {/* <button className="w-full h-full cursor-pointer flex items-center justify-center" aria-label={isPlaying ? "Pause" : "Play"}>
                     {isPlaying ? (
                       <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.5" y="0.851562" width="36" height="36" rx="18" fill="#E8E8ED" />
@@ -141,10 +130,10 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ youtubeUrl, videoUrl, title, 
                         />
                       </svg>
                     )}
-                  </button>
-                </foreignObject>
-              </svg>
-            </div>
+                  </button> */}
+                {/* </foreignObject> */}
+              {/* </svg>
+            </div> */}
           </div>
         </div>
       </div>

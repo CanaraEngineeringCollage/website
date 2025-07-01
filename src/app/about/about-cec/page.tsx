@@ -44,8 +44,8 @@ export default function AboutCec() {
       </section>
       <section>
         <VideoPlayer
-          videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745927948/zeyhw0sg2xksws9sonbl.mp4"
-          youtubeUrl="https://youtu.be/oHWMDPeP1Ew?si=qqtEqsXt4DoODEmV"
+          videoUrl="DotJvDklT5Y"
+          youtubeUrl="DotJvDklT5Y"
           thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1745992220/wuayrpgijvzzg5pwvlxr.png"
         />
       </section>
