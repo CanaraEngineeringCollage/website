@@ -40,13 +40,13 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+      <section className="px-6 md:px-12 lg:px-16 xl:px-0 py-12">
         <FutureCampusText />
       </section>
-      <section className="pl- md:pl-12 lg:pl-16 xl:px-0">
+      <section className="md:pl-12 lg:pl-16 xl:px-0 py-12">
         <ExplorePrograms />
       </section>
-      <section className="bg-[#144A72] lg:py-20 py-4">
+      <section className="bg-[#144A72] my-12">
         <VideoPlayer
           subTitle="Explore the campus with a virtual tour & discover one among the best colleges in the region."
           title="Experience the Campus"
@@ -55,23 +55,23 @@ export default function Home() {
           thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1746612052/duzvb3twtlcu0xve8off.png"
         />
       </section>
-      <section className="px-6 md:py-56 py-2 md:px-12 lg:px-16 xl:px-0">
+      <section className="px-6  md:px-12 lg:px-16 xl:px-0 py-12">
         <EmpoweringFutures />
       </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+      <section className="px-6 md:px-12 lg:px-16 xl:px-0 ">
         <TopRecruiters />
       </section>
-      <section>
+      <section className="py-12">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           youtubeUrl="https://youtu.be/rv0KerNW4QE?si=ObYcwEiaqF0UD90P"
           thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1745989151/gerbybf4ejfgs7aeajyq.jpg"
         />
       </section>
-      <section className="px-0 bg-white">
+      <section className="px-0 bg-white py-12">
         <Testimonials />
       </section>
-      <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">
+      <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0 py-12">
         <HotOfThePress />
       </section>
       <section className="bg-[#E5E5EA]">

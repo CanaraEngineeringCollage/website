@@ -1,27 +1,135 @@
 {
-    "Office Bearers": [
-      { "title": "President", "name": "Sri. D. Vasudeva Kamath" },
-      { "title": "Vice-President", "name": "Sri. K. Suresh Kamath" },
-      { "title": "Honorary Secretary", "name": "Sri. M. Ranganath Bhat" },
-      { "title": "Treasurer", "name": "Sri. M. Vaman Kamath" },
-      { "title": "Alternate Treasurer", "name": "Sri. M. Jagannath Kamath" },
-      { "title": "Joint Secretary", "name": "Sri. T. Gopalkrishna Shenoy" }
-    ],
-    "Governing Body Members": [
-      { "title": "Sri. Basty Purushotham Shenoy", "name": "Sri. K. Shivananda Shenoy" },
-      { "title": "Sri. M. Naresh Shenoy", "name": "Sri. Raghavendra Kudwa" },
-      { "title": "Sri. Gopalkrishna Bhat K", "name": "Sri. Yogesh Kamath" },
-      { "title": "Smt. Ashwini Kamath", "name": "Sri. D. Vikram Pai" }
-    ],
-    "Special Invitee(s)": [
-      { "title": "Invitee", "name": "Sri. Giridhar Kamath" }
-    ],
-    "Organisational Structure": [
-      { "title": "Director", "name": "Sri. L. Gopalakrishna" },
-      { "title": "Coordinator", "name": "Sri. M. Anand Shenoy" }
-    ],
-    "Canara Institutes": [
-      { "title": "Principal", "name": "Sri. K. Ramesh Kamath" },
-      { "title": "Dean", "name": "Sri. S. Vikas Shenoy" }
-    ]
-  }
+  "Office Bearers": [
+    { "title": "President", "name": "Sri. D. Vasudeva Kamath" },
+    { "title": "Vice-President", "name": "Sri. K. Suresh Kamath" },
+    { "title": "Honorary Secretary", "name": "Sri. M. Ranganath Bhat" },
+    { "title": "Treasurer", "name": "Sri. M. Vaman Kamath" },
+    { "title": "Alternate Treasurer", "name": "Sri. M. Jagannath Kamath" },
+    { "title": "Joint Secretary", "name": "Sri. T. Gopalkrishna Shenoy" }
+  ],
+  "Governing Body Members": [
+    { "title": "Sri. Basty Purushotham Shenoy", "name": "Sri. K. Shivananda Shenoy" },
+    { "title": "Sri. M. Naresh Shenoy", "name": "Sri. Raghavendra Kudwa" },
+    { "title": "Sri. Gopalkrishna Bhat K", "name": "Sri. Yogesh Kamath" },
+    { "title": "Smt. Ashwini Kamath", "name": "Sri. D. Vikram Pai" }
+  ],
+  "Special Invitee(s)": [{ "title": "Invitee", "name": "Sri. Giridhar Kamath" }],
+  "Organisational Structure": [
+    { "title": "Director", "name": "Sri. L. Gopalakrishna" },
+    { "title": "Coordinator", "name": "Sri. M. Anand Shenoy" }
+  ],
+  "Canara Institutes": [
+    {
+      "Sl.No": "01",
+      "Name": "Canara High School-Main",
+      "Year of Est.": "1891",
+      "Programs of Study": "Courses till 10th Std",
+      "Address": "Dongerkery, Mangalore-575003"
+    },
+    {
+      "Sl.No": "02",
+      "Name": "Canara Girls High School",
+      "Year of Est.": "1894",
+      "Programs of Study": "Courses till 10th Std",
+      "Address": "Dongerkery, Mangalore-575003"
+    },
+    {
+      "Sl.No": "03",
+      "Name": "Canara High School-Urva",
+      "Year of Est.": "1944",
+      "Programs of Study": "Courses till 10th Std",
+      "Address": "Urva, Mangalore-575006"
+    },
+    {
+      "Sl.No": "04",
+      "Name": "Canara Kannada Hr. Pr. School",
+      "Year of Est.": "1944",
+      "Programs of Study": "Courses till 7th Std",
+      "Address": "Dongerkery, Mangalore-575003"
+    },
+    {
+      "Sl.No": "05",
+      "Name": "Canara Nursery School",
+      "Year of Est.": "1969",
+      "Programs of Study": "Pre Primary Courses",
+      "Address": "Dongerkery, Mangalore-575003"
+    },
+    {
+      "Sl.No": "06",
+      "Name": "Canara English Hr. Pr. School",
+      "Year of Est.": "1970",
+      "Programs of Study": "Courses till 5th Std",
+      "Address": "Dongerkery, Mangalore-575003"
+    },
+    {
+      "Sl.No": "07",
+      "Name": "Canara Pre-University College",
+      "Year of Est.": "1972",
+      "Programs of Study": "11th & 12th Std",
+      "Address": "MG Road, Mangalore-575003"
+    },
+    {
+      "Sl.No": "08",
+      "Name": "Canara College",
+      "Year of Est.": "1974",
+      "Programs of Study": "B.Sc, B.Com, M.Com, BCA, BBM",
+      "Address": "MG Road, Mangalore-575003"
+    },
+    {
+      "Sl.No": "09",
+      "Name": "Canara Balawadi",
+      "Year of Est.": "1978",
+      "Programs of Study": "Pre Primary Courses",
+      "Address": "Dongerkery, Mnagalore-575003"
+    },
+    {
+      "Sl.No": "10",
+      "Name": "Canara Higher Primary School, Urva",
+      "Year of Est.": "1989",
+      "Programs of Study": "Courses till 7th Std",
+      "Address": "Urva, Mangalore-575006"
+    },
+    {
+      "Sl.No": "11",
+      "Name": "Canara Nursery School, Urva",
+      "Year of Est.": "1991",
+      "Programs of Study": "Pre Primary Courses",
+      "Address": "Urva, Mangalore-575006"
+    },
+    {
+      "Sl.No": "12",
+      "Name": "Canara Tennis Academy",
+      "Year of Est.": "1997",
+      "Programs of Study": "Sports",
+      "Address": "Urva, Mangalore-575006"
+    },
+    {
+      "Sl.No": "13",
+      "Name": "Canara Engineering College",
+      "Year of Est.": "2001",
+      "Programs of Study": "B.E",
+      "Address": "Benjanapadavu, Bantwal Taluk-574219"
+    },
+    {
+      "Sl.No": "14",
+      "Name": "Canara Montessori",
+      "Year of Est.": "2009",
+      "Programs of Study": "Pre Primary Courses",
+      "Address": "Dongerkery, Mangalore-575003"
+    },
+    {
+      "Sl.No": "15",
+      "Name": "Canara CBSE School",
+      "Year of Est.": "2009",
+      "Programs of Study": "Courses from 1st - 10th Std",
+      "Address": "Dongerkery, Mangalore-575003"
+    },
+    {
+      "Sl.No": "16",
+      "Name": "Canara Evening College",
+      "Year of Est.": "2014",
+      "Programs of Study": "B.Com",
+      "Address": "MG Road, Mangalore-575003"
+    }
+  ]
+}

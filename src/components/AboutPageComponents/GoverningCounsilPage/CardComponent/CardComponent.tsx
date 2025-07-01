@@ -45,7 +45,6 @@ const ProfileCard = () => {
           return (
             <div
               key={index}
-              onClick={() => openModal(item)}
               className={`relative cursor-pointer w-full max-w-[309px] h-[450px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center py-6 shadow-md ${
               shouldCenterLast ? "md:col-start-2 xl:col-start-auto" : ""
               }`}
@@ -55,7 +54,7 @@ const ProfileCard = () => {
               alt={item.name}
               width={300}
               height={300}
-              className="rounded-full w-full object-contain"
+              className=" w-full object-contain"
               />
               <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
               <div className="absolute z-10 top-[75%] left-6">
@@ -75,7 +74,6 @@ const ProfileCard = () => {
       </div>
 
       {/* Faculty Modal */}
-      {/* @ts-expect-error: GoverningCouncilMember is structurally different from FacultyModal's CouncilMember */}
       <FacultyModal isOpen={isModalOpen} onClose={closeModal} facultyData={selectedMember} />
     </section>
   );

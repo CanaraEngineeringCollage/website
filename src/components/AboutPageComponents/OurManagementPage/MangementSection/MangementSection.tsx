@@ -6,10 +6,21 @@ import Image from "next/image";
 interface ManagementItem {
   title: string;
   name: string;
+  year?: string;
+  programs?: string;
+  address?: string;
+}
+
+interface CanaraInstituteItem {
+  "Sl.No": string;
+  "Name": string;
+  "Year of Est.": string;
+  "Programs of Study": string;
+  "Address": string;
 }
 
 interface ManagementData {
-  [key: string]: ManagementItem[];
+  [key: string]: ManagementItem[] | CanaraInstituteItem[];
 }
 
 const HeroSection = () => {
@@ -39,33 +50,64 @@ const HeroSection = () => {
             {/* Mobile layout: title and name in the same line */}
             {selectedHeading === "Organisational Structure" ? (
               <div>
-                <Image alt="orginazation" src="https://www.canaraengineering.in/orgchart.png" width={1000} height={100} className="object-cover w-[100%] h-[100%]" />
+                <Image
+                  alt="orginazation"
+                  src="https://www.canaraengineering.in/orgchart.png"
+                  width={1000}
+                  height={100}
+                  className="object-cover w-[100%] h-[100%]"
+                />
+              </div>
+            ) : selectedHeading === "Canara Institutes" ? (
+              <div className="overflow-x-auto">
+                <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                  <thead>
+                    <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                      <th className="py-3 md:px-4 px-1 border-b">Sl.No</th>
+                      <th className="py-3 md:px-4 px-1 border-b">Institution Name</th>
+                      <th className="py-3 md:px-4 px-1 border-b">Year of Est.</th>
+                      <th className="py-3 md:px-4 px-1 border-b">Programs of Study</th>
+                      <th className="py-3 md:px-4 px-1 border-b">Address</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {(data["Canara Institutes"] as CanaraInstituteItem[])?.map((item, index) => (
+                      <tr key={index} className="text-textGray">
+                        <td className="py-3 md:px-4 px-1 border-b">{index + 1}</td>
+                        <td className="py-3 md:px-4 px-1 border-b">{item["Name"]}</td>
+                        <td className="py-3 md:px-4 px-1 border-b">{item["Year of Est."]}</td>
+                        <td className="py-3 md:px-4 px-1 border-b">{item["Programs of Study"]}</td>
+                        <td className="py-3 md:px-4 px-1 border-b">{item["Address"]}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             ) : (
               <>
                 <div className="block sm:hidden">
-                  {data[selectedHeading].map((item, index) => (
+                  {(data[selectedHeading] as ManagementItem[]).map((item, index) => (
                     <div
                       key={index}
-                      className={`flex justify-between pb-3 mb-3 ${index < data[selectedHeading].length - 1 ? "border-b-2 border-border" : ""}`}
+                      className={`flex justify-between gap-2 pb-3 mb-3 ${index < (data[selectedHeading] as ManagementItem[]).length - 1 ? "border-b-2 border-border" : ""}`}
                     >
-                      <h1 className="text-[17px] text-textGray font-bold">{item.title}</h1>
-                      <h1 className="text-[17px] text-textGray">{item.name}</h1>
+                      <h1 className="text-[16px] text-textGray font-bold">{item.title}</h1>
+                      <h1 className="text-[16px] text-textGray">{item.name}</h1>
                     </div>
                   ))}
                 </div>
                 {/* Desktop layout: original two-column layout */}
                 <div className="hidden sm:grid sm:grid-cols-2">
                   <div className="text-[17px] text-textGray">
-                    {data[selectedHeading].map((item, index) => (
-                      <h1 key={index} className={`pb-3 mb-3 ${index < data[selectedHeading].length - 1 ? "border-b-2 border-border" : ""}`}>
+                    {(data[selectedHeading] as ManagementItem[]).map((item, index) => (
+                      <h1 key={index} className={`pb-3 mb-3 ${index < (data[selectedHeading] as ManagementItem[]).length - 1 ? "border-b-2 border-border" : ""}`}>
                         {item.title}
                       </h1>
                     ))}
                   </div>
                   <div className="text-[17px]  text-textGray">
-                    {data[selectedHeading].map((item, index) => (
-                      <h1 key={index} className={`pb-3 mb-3 ${index < data[selectedHeading].length - 1 ? "border-b-2 border-border" : ""}`}>
+                    {(data[selectedHeading] as ManagementItem[]).map((item, index) => (
+                      <h1 key={index} className={`pb-3 mb-3 ${index < (data[selectedHeading] as ManagementItem[]).length - 1 ? "border-b-2 border-border" : ""}`}>
                         {item.name}
                       </h1>
                     ))}

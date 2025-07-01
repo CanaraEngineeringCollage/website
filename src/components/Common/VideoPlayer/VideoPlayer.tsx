@@ -37,7 +37,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ youtubeUrl, videoUrl, title, 
   };
 
   return (
-    <section className="overflow-hidden max-w-7xl mx-auto xl:max-w-[75%] rounded-3xl  px-6 md:px-12 lg:px-16 xl:px-0 lg:py-20 py-6">
+    <section className="overflow-hidden max-w-7xl mx-auto xl:max-w-[75%] rounded-3xl  px-6 md:px-12 lg:px-16 xl:px-0  py-20">
       <div className=" mx-auto text-center text-white mb-16">
         <h2 className={`${titleClassname} text-3xl md:text-[40px] max-w-4xl mx-auto lg2:text-5xl xl:text-6xl font-bold mb-5`}>{title}</h2>
         <p className=" font-medium md:text-2xl text-base text-white/60 max-w-4xl mx-auto">{subTitle}</p>
