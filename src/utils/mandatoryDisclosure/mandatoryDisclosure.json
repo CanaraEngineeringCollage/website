@@ -37,9 +37,7 @@
     "data": [
       {
         "title": "AICTE Documents",
-        "links": [
-          { "text": "AICTE Approval", "href": "https://www.canaraengineering.in/download/EOA%20Report.pdf" }
-        ]
+        "links": [{ "text": "AICTE Approval", "href": "https://www.canaraengineering.in/download/EOA%20Report.pdf" }]
       }
     ]
   },
@@ -48,9 +46,7 @@
     "data": [
       {
         "title": "Affiliation Letters",
-        "links": [
-          { "text": "VTU Affiliation", "href": "https://www.canaraengineering.in/download/vtu%20affiliaton.pdf" }
-        ]
+        "links": [{ "text": "VTU Affiliation", "href": "https://www.canaraengineering.in/download/vtu%20affiliaton.pdf" }]
       }
     ]
   },
@@ -59,9 +55,7 @@
     "data": [
       {
         "title": "UGC Details",
-        "links": [
-          { "text": "UGC Approval Certificate", "href": "https://www.canaraengineering.in/download/cecugc2f.pdf" }
-        ]
+        "links": [{ "text": "UGC Approval Certificate", "href": "https://www.canaraengineering.in/download/cecugc2f.pdf" }]
       }
     ]
   },
@@ -69,8 +63,24 @@
     "title": "Audit Report",
     "data": [
       {
-        "title": "Audit FY",
-        "links": [{ "text": "View Report", "href": "/dede" }]
+        "title": "2023-2024",
+        "links": [{ "text": "Download", "href": "https://www.canaraengineering.in/download/audited%20report/AR%2023-24.pdf" }]
+      },
+      {
+        "title": "2022-2023",
+        "links": [{ "text": "Download", "href": "https://www.canaraengineering.in/download/audited%20report/AR%2022-23.pdf" }]
+      },
+      {
+        "title": "2021-2022",
+        "links": [{ "text": "Download", "href": "https://www.canaraengineering.in/download/audited%20report/AR%2021-22.pdf" }]
+      },
+      {
+        "title": "2020-2021",
+        "links": [{ "text": "Download", "href": "https://www.canaraengineering.in/download/audited%20report/AR%2020-21.pdf" }]
+      },
+      {
+        "title": "2019-2020",
+        "links": [{ "text": "Download", "href": "https://www.canaraengineering.in/download/audited%20report/AR%2019-20.pdf" }]
       }
     ]
   },
@@ -78,19 +88,24 @@
     "title": "GC Meeting",
     "data": [
       {
-        "title": "Meeting Minutes",
-        "links": [{ "text": "GC Meeting 2023", "href": "#" }]
+        "title": "35th Governing Council Meeting",
+        "links": [{ "text": "Download", "href": "https://www.canaraengineering.in/download/35th%20GC%20meeting%20MoM_Signed%20copy.pdf" }]
       },
       {
-        "title": "NBA 2023",
-        "links": [
-          { "text": "Accredited Program List", "href": "#" },
-          { "text": "NBA Certificate Download", "href": "#" }
-        ]
+        "title": "34th Governing Council Meeting",
+        "links": [{ "text": "Download", "href": "https://www.canaraengineering.in/download/34th%20GC%20meeting%20MoM_Signed%20copy.pdf" }]
       },
       {
-        "title": "NBA Review",
-        "links": [{ "text": "Self-Assessment Report", "href": "#" }]
+        "title": "33rd Governing Council Meeting",
+        "links": [{ "text": "Download", "href": "https://www.canaraengineering.in/download/REPORT%20OF%2033TH%20GOVERNUNG%20COUNCIL%20MEETING.pdf" }]
+      },
+      {
+        "title": "32nd Governing Council Meeting",
+        "links": [{ "text": "Download", "href": "https://www.canaraengineering.in/download/Last%20three%20GC%20Minutes.pdf" }]
+      },
+      {
+        "title": "31st Governing Council Meeting",
+        "links": [{ "text": "Download", "href": "https://www.canaraengineering.in/download/Last%20three%20GC%20Minutes.pdf" }]
       }
     ]
   },
@@ -98,22 +113,76 @@
     "title": "Policy",
     "data": [
       {
-        "title": "Institutional Policy",
-        "links": [
-          { "text": "Policy Document", "href": "#" },
-          { "text": "Review Policy 2023", "href": "#" }
-        ]
+        "title": "Academic policy",
+        "links": [{ "text": "Download", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Academic%20policy.pdf" }]
       },
       {
-        "title": "NBA 2023",
-        "links": [
-          { "text": "Accredited Program List", "href": "#" },
-          { "text": "NBA Certificate Download", "href": "#" }
-        ]
+        "title": "Admission policy",
+        "links": [{ "text": "Download", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Admission%20policy.pdf" }]
       },
       {
-        "title": "NBA Review",
-        "links": [{ "text": "Self-Assessment Report", "href": "#" }]
+        "title": "Campus Placement policy",
+        "links": [{ "text": "Download", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Campus%20Placement%20policy.pdf" }]
+      },
+      {
+        "title": "Environment and Sustainability Policy",
+        "links": [{ "text": "Download", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Environment%20and%20Sustainability%20Policy.pdf" }]
+      },
+      {
+        "title": "Feedback policy",
+        "links": [{ "text": "Download", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Feedback%20policy.pdf" }]
+      },
+      {
+        "title": "Human Resourse policy",
+        "links": [{ "text": "Download", "href": "https://www.imscec.canaraengineering.in/cms/cms/human%20resource%20policy_revised_signed.pdf" }]
+      },
+      {
+        "title": "Industry institute partnership cell policy",
+        "links": [{ "text": "Download", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Industry%20institute%20partnership%20cell%20policy.pdf" }]
+      },
+      {
+        "title": "IQAC policy",
+        "links": [{ "text": "Download", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/iqac%20policy.pdf" }]
+      },
+      {
+        "title": "IT and E-Governance policy",
+        "links": [{ "text": "Download", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/IT%20and%20e-%20governance%20policy.pdf" }]
+      },
+      {
+        "title": "Library policy",
+        "links": [{ "text": "Download", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Library%20Policy.pdf" }]
+      },
+      {
+        "title": "Life Long Learning policy",
+        "links": [{ "text": "Download", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Life%20long%20learning%20policy.pdf" }]
+      },
+      {
+        "title": "Maintenance policy",
+        "links": [{ "text": "Download", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Maintenance%20Policy.pdf" }]
+      },
+      {
+        "title": "R&D and Innovation policy",
+        "links": [{ "text": "Download", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/R&D%20and%20Innovation%20policy.pdf" }]
+      },
+      {
+        "title": "Sports policy",
+        "links": [{ "text": "Download", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Sports%20policy.pdf" }]
+      },
+      {
+        "title": "Student Welfare policy",
+        "links": [{ "text": "Download", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Student%20welfare%20policy.pdf" }]
+      },
+      {
+        "title": "Teachers Training Policy",
+        "links": [{ "text": "Download", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Teachers%20Trainig%20Policy.pdf" }]
+      },
+      {
+        "title": "Scholarship policy",
+        "links": [{ "text": "Download", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Student%20welfare%20policy.pdf" }]
+      },
+      {
+        "title": "Campus Management Policies",
+        "links": [{ "text": "Download", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Waste%20disposal%20policies.pdf" }]
       }
     ]
   },
@@ -122,9 +191,7 @@
     "data": [
       {
         "title": "Fees Structure",
-        "links": [
-          { "text": "UG Fees 2025-2-26", "href": "https://www.canaraengineering.in/download/Details%20of%20Nominal%20fee.pdf" }
-        ]
+        "links": [{ "text": "UG Fees 2025-2-26", "href": "https://www.canaraengineering.in/download/Details%20of%20Nominal%20fee.pdf" }]
       }
     ]
   },
@@ -198,22 +265,27 @@
     ]
   },
   {
-    "title": "Organisational Chart",
+    "title": "Privacy policy"
+  },
+  {
+    "title": "UGC Declaration",
     "data": [
       {
-        "title": "Org Structure",
-        "links": [{ "text": "View Chart", "href": "#" }]
-      },
-      {
-        "title": "NBA 2023",
+        "title": "UGC Declaration",
         "links": [
-          { "text": "Accredited Program List", "href": "#" },
-          { "text": "NBA Certificate Download", "href": "#" }
+          { "text": "", "href": "https://www.canaraengineering.in/download/UGC%20UNDERTAKING.pdf" }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "title": "Fee Refund Policy",
+    "data": [
       {
-        "title": "NBA Review",
-        "links": [{ "text": "Self-Assessment Report", "href": "#" }]
+        "title": "Fee Refund Policy",
+        "links": [
+          { "text": "", "href": "https://www.canaraengineering.in/download/FEE%20REFUND%20POLICY.pdf" }
+        ]
       }
     ]
   }
