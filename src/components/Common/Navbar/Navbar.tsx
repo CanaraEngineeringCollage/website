@@ -66,20 +66,9 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
               >
                 CET Code: E123
               </Link>
-              <Link
-                href={"/home/nirf"}
-                className="text-[0.7rem] xl:text-[0.875rem] text-white/50 font-poppins hover:text-white transition-colors ease-in-out duration-300"
-              >
-                NIRF
-              </Link>
             </div>
             <div className="flex items-center justify-center space-x-6">
-              <Link
-                href={"/#enquiry"}
-                className="text-[0.7rem] xl:text-[0.875rem] text-white/50 font-poppins hover:text-white transition-colors ease-in-out duration-300"
-              >
-                Admission Enquiry
-              </Link>
+            
               <Link
                 href={"/admission"}
                 className="text-[0.7rem] xl:text-[0.875rem] text-white/50 font-poppins hover:text-white transition-colors ease-in-out duration-300"
@@ -87,7 +76,8 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
                 Admission Procedure
               </Link>
               <Link
-                href={"/admission"}
+                href={"https://apply.canaraengineering.in/"}
+                target="_blank"
                 className="text-[0.7rem] xl:text-[0.875rem] text-white/50 font-poppins hover:text-white transition-colors ease-in-out duration-300"
               >
                 Admission Open 2025

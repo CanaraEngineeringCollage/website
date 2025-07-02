@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import disclosureData from "../../../utils/mandatoryDisclosure/mandatoryDisclosure.json";
 import Image from "next/image";
+import Link from "next/link";
+import { HiLink } from "react-icons/hi";
 
 const MandatoryDisclosure = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
@@ -228,7 +230,7 @@ const MandatoryDisclosure = () => {
                         <td className="px-4 py-2 border">SW</td>
                       </tr>
                       <tr>
-                        <td className="px-4 py-2 border">Dr. Demian Antony D’ Mello</td>
+                        <td className="px-4 py-2 border">Dr. Demian Antony D' Mello</td>
                         <td className="px-4 py-2 border">Member</td>
                         <td className="px-4 py-2 border">CSE</td>
                       </tr>
@@ -897,14 +899,14 @@ const MandatoryDisclosure = () => {
                   <h2 className="text-lg font-bold text-textGray mb-2 mt-6">Log Data</h2>
                   <p className="text-textGray text-[16px] pt-2 leading-7">
                     We want to inform you that whenever you visit our Service, we collect information that your browser sends to us that is called Log
-                    Data. This Log Data may include information such as your computer’s IP address, browser version, pages of our Service that you
+                    Data. This Log Data may include information such as your computer's IP address, browser version, pages of our Service that you
                     visit, the time and date of your visit, the time spent on those pages, and other statistics.
                   </p>
 
                   <h2 className="text-lg font-bold text-textGray mb-2 mt-6">Cookies</h2>
                   <p className="text-textGray text-[16px] pt-2 leading-7">
                     Cookies are files with a small amount of data that is commonly used as an anonymous unique identifier. These are sent to your
-                    browser from the website that you visit and are stored on your computer’s hard drive.
+                    browser from the website that you visit and are stored on your computer's hard drive.
                   </p>
                   <p className="text-textGray text-[16px] pt-2 leading-7">
                     Our website uses these "cookies" to collect information and to improve our Service. You have the option to either accept or refuse
@@ -963,6 +965,26 @@ const MandatoryDisclosure = () => {
                   </p>
                 </div>
               </>
+            ) : selectedIndex === 0 ? (
+              <>
+                {disclosureData[selectedIndex]?.data?.map((item, idx) => (
+                  <div key={idx} className="mb-10">
+                    <h2 className="text-[20px] font-extrabold text-textGray mb-2">{item.title}</h2>
+                    <ul className="space-y-1">
+                      {item?.links?.map((link, i) =>
+                        link?.href ? (
+                          <li key={i} className="flex items-center gap-2 text-[17px] text-textGray hover:text-blue-600 cursor-pointer">
+                            <Link href={link.href} className="flex items-center gap-2 hover:text-blue-600">
+                              <HiLink className="text-textGray hover:text-blue-600 mt-2" />
+                              <span className="text-textGray hover:text-blue-600 text-[16px] pt-2 leading-7">{link.text}</span>
+                            </Link>
+                          </li>
+                        ) : null
+                      )}
+                    </ul>
+                  </div>
+                ))}
+              </>
             ) : (
               <>
                 {disclosureData[selectedIndex]?.data?.map((item, idx) => (
@@ -972,7 +994,7 @@ const MandatoryDisclosure = () => {
                       {item?.links?.map((link, i) =>
                         link?.href ? (
                           <li key={i} className="flex items-center gap-2 text-[17px] text-textGray hover:text-blue-600 cursor-pointer">
-                            <iframe src={link.href} className="w-[100%] h-[50vh]" />
+                            <iframe src={link.href} className="w-[100%] h-[70vh]" />
                           </li>
                         ) : null
                       )}
