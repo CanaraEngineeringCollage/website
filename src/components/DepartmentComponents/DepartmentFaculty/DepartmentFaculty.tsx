@@ -13,7 +13,17 @@ interface Qualification {
   collegeOrUniversity: string;
   areaOfSpecialization: string;
 }
-
+interface Faculty {
+  name: string;
+  image: string;
+  category: string;
+  desiganation: string;
+  department: string;
+  joiningDate: string;
+  experience: string;
+  employmentType: string;
+  qualifications: Qualification[];
+}
 // Interface for council member
 interface CouncilMember {
   id: number;
@@ -26,21 +36,24 @@ interface CouncilMember {
   experience?: string; // Make this optional
   employmentType?: string; // Make this optional
   qualifications: Qualification[];
+  faculties?: Faculty[];
+  
 }
+
 
 // Props interface for the component
 interface DepartmentSectionProps {
-  governingCounsilData: CouncilMember[];
+  faculties: CouncilMember[];
 }
 
-export default function DepartmentFacultySection({ governingCounsilData }: DepartmentSectionProps) {
+export default function DepartmentFacultySection({ faculties }: DepartmentSectionProps) {
   const [data, setData] = useState<CouncilMember[]>([]);
   const [startIndex, setStartIndex] = useState(0);
   const router = useRouter();
 
   useEffect(() => {
-    setData(governingCounsilData);
-  }, [governingCounsilData]);
+    setData(faculties);
+  }, [faculties]);
 
   const visibleMembers = data.slice(startIndex, startIndex + 2);
   const visibleMembersMobile = data.slice(startIndex, startIndex + 1);
@@ -86,21 +99,21 @@ export default function DepartmentFacultySection({ governingCounsilData }: Depar
           <div className="flex items-center gap-4">
             <button 
             aria-label="Meet more of our Admin Team"
-            className="bg-blue-100 text-black text-block px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition">
+            className="bg-blue-100 text-black rounded-full text-block px-6 py-2  text-sm font-medium hover:bg-blue-700 transition">
               Meet more of our Admin Team
             </button>
             <div className="flex items-center gap-2">
               <button aria-label="Previous Slide"
                 onClick={handlePrev}
                 disabled={startIndex === 0}
-                className="w-8 h-8 flex items-center justify-center rounded-full border border-[#0071E3] text-gray-600 hover:bg-gray-200 transition disabled:opacity-30"
+                className="w-8 h-8 flex rounded-full items-center justify-center  border border-[#0071E3] text-gray-600 hover:bg-gray-200 transition disabled:opacity-30"
               >
                 <ChevronLeft size={16} />
               </button>
               <button aria-label="Next Slide"
                 onClick={handleNext}
                 disabled={startIndex + 2 >= data.length}
-                className="w-8 h-8 flex items-center justify-center rounded-full bg-[#0071E3] text-white hover:bg-blue-700 transition disabled:opacity-30"
+                className="w-8 h-8 flex items-center justify-center rounded-full  bg-[#0071E3] text-white hover:bg-blue-700 transition disabled:opacity-30"
               >
                 <ChevronRight size={16} />
               </button>
@@ -113,14 +126,14 @@ export default function DepartmentFacultySection({ governingCounsilData }: Depar
             <div
               key={index}
               onClick={() => openModal(member)}
-              className={`relative cursor-pointer w-full max-w-[309px] h-[480px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center py-6 shadow-md`}
+              className={`relative cursor-pointer w-full max-w-[309px] h-[480px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center  shadow-md`}
             >
               <Image
                 src={member.image}
                 alt={member.name}
                 width={300}
                 height={300}
-                className="rounded-full w-full object-contain"
+                className=" w-full object-contain"
               />
 
               <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
@@ -159,7 +172,7 @@ export default function DepartmentFacultySection({ governingCounsilData }: Depar
             <div
               key={index}
               onClick={() => openModal(member)}
-              className={`relative cursor-pointer w-full max-w-[309px] h-[480px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center py-6 shadow-md`}
+              className={`relative cursor-pointer w-full max-w-[309px] h-[480px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center  shadow-md`}
             >
               <Image
                 onClick={() => router.push(`/user-details/${member.id}`)}
@@ -167,7 +180,7 @@ export default function DepartmentFacultySection({ governingCounsilData }: Depar
                 alt={member.name}
                 width={300}
                 height={300}
-                className="rounded-full w-full object-contain"
+                className=" w-full object-contain"
               />
 
               <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
@@ -186,21 +199,21 @@ export default function DepartmentFacultySection({ governingCounsilData }: Depar
         </div>
 
         <div className="flex items-center gap-4">
-          <button className="bg-blue-100 text-black text-block px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition">
+          <button className="bg-blue-100 text-black text-block px-6 py-2  text-sm font-medium hover:bg-blue-700 transition">
             Meet more of Our Faculty
           </button>
           <div className="flex items-center gap-2">
             <button aria-label="Previous Slide"
               onClick={handlePrev}
               disabled={startIndex === 0}
-              className="w-8 h-8 flex items-center justify-center rounded-full border border-[#0071E3] text-gray-600 hover:bg-gray-200 transition disabled:opacity-30"
+              className="w-8 h-8 flex rounded-full items-center justify-center  border border-[#0071E3] text-gray-600 hover:bg-gray-200 transition disabled:opacity-30"
             >
               <ChevronLeft size={16} />
             </button>
             <button aria-label="Next Slide"
               onClick={handleNext}
               disabled={startIndex + 2 >= data.length}
-              className="w-8 h-8 flex items-center justify-center rounded-full bg-[#0071E3] text-white hover:bg-blue-700 transition disabled:opacity-30"
+              className="w-8 h-8 flex items-center rounded-full justify-center  bg-[#0071E3] text-white hover:bg-blue-700 transition disabled:opacity-30"
             >
               <ChevronRight size={16} />
             </button>

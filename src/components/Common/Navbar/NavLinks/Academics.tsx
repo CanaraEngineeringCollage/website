@@ -42,10 +42,10 @@ export default function Academics() {
         outline-none focus:ring-0 focus:outline-none hover:border-none text-black z-100"
       >
         <div
-          className="w-full max-w-screen-2xl bg-white shadow-md rounded-xl flex justify-center gap-8 p-8 
+          className="w-full max-w-screen-2xl bg-white shadow-md rounded-xl flex justify-center gap-8 lg:py-8 xl:p-8 
         border-none outline-none hover:border-none"
         >
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mx-16 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0 xl:gap-8 mx-16 w-full">
             {/* Column 1 */}
             <div className="flex gap-4 pr-4 border-r border-gray-300 ">
               <div className="flex items-start">
@@ -65,8 +65,8 @@ export default function Academics() {
             </div>
 
             {/* Column 2 */}
-            <div className="flex gap-4 pr-4 border-r border-gray-300 ">
-              <div className="flex items-start">
+            <div className="flex lg:gap-2 xl:gap-4 pr-4 border-r border-gray-300 ">
+              <div className="flex lg:ml-3 xl:ml-0 items-start">
                 <Book />
               </div>
               <div className="flex flex-col gap-2">
@@ -85,7 +85,7 @@ export default function Academics() {
 
             {/* Column 3 */}
             <div className="flex gap-4 pr-4 border-r border-gray-300 ">
-              <div className="flex items-start">
+              <div className="flex lg:ml-3 xl:ml-0 items-start">
                 <Examination />
               </div>
               <div className="flex flex-col gap-2">
@@ -106,7 +106,7 @@ export default function Academics() {
 
             {/* Column 4 */}
             <div className="flex gap-4 hover:border-none">
-              <div className="flex items-start">
+              <div className="flex lg:ml-3 xl:ml-0 items-start">
                 <Learning />
               </div>
               <div className="flex flex-col gap-2">
