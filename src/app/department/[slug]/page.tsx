@@ -18,6 +18,17 @@ interface Qualification {
   collegeOrUniversity: string; // This property
   areaOfSpecialization: string; // This property
 }
+interface Faculty {
+  name: string;
+  image: string;
+  category: string;
+  desiganation: string;
+  department: string;
+  joiningDate: string;
+  experience: string;
+  employmentType: string;
+  qualifications: Qualification[];
+}
 
 // Interface for council member
 interface CouncilMember {
@@ -31,6 +42,8 @@ interface CouncilMember {
   experience?: string; // Make this optional
   employmentType?: string; // Make this optional
   qualifications: Qualification[]; // Ensure qualifications include the right data
+  faculties?: Faculty[]; // Optional property for faculties
+
 }
 
 export async function generateStaticParams() {
@@ -40,10 +53,13 @@ export async function generateStaticParams() {
 export default async function DepartmentPage({ params }: { params: { slug: string } }) {
   const department = departments?.find((dept) => dept?.slug === params?.slug);
 
+
   if (!department) return notFound();
+  console.log(department.faculties);
 
   // Filter council data as needed
   const facultyData = councilData.faculty.filter((faculty) => faculty.department === department.name) as CouncilMember[];
+  
 
   return (
     <>
@@ -70,7 +86,7 @@ export default async function DepartmentPage({ params }: { params: { slug: strin
         <DepartmentHeadMessage depatmentHead={department.depatmentHead} />
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
-        <DepartmentFacultySection governingCounsilData={facultyData} />
+        <DepartmentFacultySection faculties={department.faculties} />
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <IdeasToImpact />

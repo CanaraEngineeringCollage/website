@@ -15,7 +15,7 @@ interface Qualification {
 }
 
 interface CouncilMember {
-  id: number;
+  id?: number;
   name: string;
   image: string;
   designation?: string;
