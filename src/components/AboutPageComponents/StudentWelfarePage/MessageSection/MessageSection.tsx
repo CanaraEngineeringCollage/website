@@ -8,7 +8,7 @@ const MessageSection = () => {
       <div className="block lg:hidden">
           <div className="flex lg:hidden flex-col items-center flex-shrink-0 mx-auto lg:px-20">
             <div className="w-80  h-96 relative rounded-xl overflow-hidden shadow-md">
-              <Image src="/studentWelfarepage/message.png" alt="Sri Ammembal Subba Rao Pai" fill className="object-cover bg-[#6dc0eb]" />
+              <Image src="/studentWelfarePage/message.png" alt="Sri Ammembal Subba Rao Pai" fill className="object-cover bg-[#6dc0eb]" />
             </div>
             <p className="mt-4 text-center text-[27px] font-bold text-white">Dr. Priya V. Frank</p>
             <p className="text-[17px] text-[#76838b]">Dean - Student Welfare</p>
@@ -28,7 +28,7 @@ const MessageSection = () => {
         <div>
           <div className="hidden lg:flex flex-col items-center flex-shrink-0 mx-auto lg:px-20">
             <div className="w-80  h-96 relative rounded-xl overflow-hidden shadow-md">
-              <Image src="/studentWelfarepage/message.png" alt="Sri Ammembal Subba Rao Pai" fill className="object-cover bg-[#6dc0eb]" />
+              <Image src="/studentWelfarePage/message.png" alt="Sri Ammembal Subba Rao Pai" fill className="object-cover bg-[#6dc0eb]" />
             </div>
             <p className="mt-4 text-center text-[27px] font-bold text-white">Dr. Priya V. Frank</p>
             <p className="text-[17px] text-[#76838b]">Dean - Student Welfare</p>
