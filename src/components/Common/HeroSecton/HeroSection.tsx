@@ -57,8 +57,8 @@ const HeroSection = () => {
                 priority
               />
             
-               <div className="absolute bottom-0 left-0 right-0 h-[200px] md:h-[1000px] bg-gradient-to-t from-white via-white/85 via-50% to-transparent z-[10] md:hidden" />
-               <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[1000px] bg-gradient-to-t from-white via-transparent to-transparent z-[10] hidden md:block" />
+               <div className="absolute bottom-0 left-0 right-0 h-[200px] md:h-[500px] bg-gradient-to-t from-white via-white/85 via-50% to-transparent z-[10] md:hidden" />
+               <div className="absolute bottom-0 left-0 right-0 h-[300px] md:h-[500px] bg-gradient-to-t from-white via-transparent to-transparent z-[10] hidden md:block" />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -71,7 +71,7 @@ const HeroSection = () => {
         <h2 className="text-xl md:text-[32px] font-light text-[#F5F5F7]">
           Canara Engineering College
         </h2>
-        <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold mt-2 !font-stretch-semi-condensed">
+        <h1 className="text-2xl md:text-4xl lg:text-6xl font-extrabold mt-2 ">
           Pioneering Innovation in <br /> Tech Learning
         </h1>
       </div>
