@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import empoweringFuture from "../../../../public/backgroundImages/empoweringFutures.webp";
+import empoweringFuture from "../../../../public/backgroundImages/empower.jpeg";
 import { motion } from "framer-motion";
 import { CarouselDots } from "@/components/Common/CarouselDots/CarouselDots";
 import Link from "next/link";
@@ -130,7 +130,7 @@ export default function EmpoweringFutures() {
           </div>
 
           {/* Image */}
-          <Image src={empoweringFuture} alt="empoweringFuture" className="rounded-xl w-full h-auto object-cover" />
+          <Image src={empoweringFuture} alt="empoweringFuture" className="rounded-xl w-full h-[500px] object-cover" />
         </div>
 
         {/* Stats Section */}
