@@ -68,7 +68,7 @@ const DepartmentDetailes = () => {
           </div>
           <div className="col-span-8">
             {selectedSection === "Department Profile" && <DepartmentProfile keyPoints={department?.keyPractices} data={department?.description} />}
-            {selectedSection === "Organisation Structure" && <Organaisation data={department?.organisation}/>}
+            {selectedSection === "Organisation Structure" && department?.organisation && <Organaisation data={department?.organisation}/>}
             {selectedSection === "Head of Department" && <Hod data={department?.depatmentHead} />}
             {selectedSection === "Faculty & Staff" && <Faculty />}
             {selectedSection === "Academic Programs" && department?.academicsProgram && <Academic data={department.academicsProgram} />}
@@ -78,9 +78,9 @@ const DepartmentDetailes = () => {
             {selectedSection === "Student Achievement" && department?.studentAcheivemtents && (
               <StudentAchievement data={department?.studentAcheivemtents} />
             )}
-            {selectedSection === "Research & Product Development" && <Research data={department?.research}/>}
+            {selectedSection === "Research & Product Development" && department?.research && <Research data={department?.research}/>}
             {selectedSection === "Publications" && department?.publications &&<Publications data={department?.publications}/>}
-            {selectedSection === "Magazines & Newsletters" && <Magazines data={department?.magazines}/>}
+            {selectedSection === "Magazines & Newsletters" && department?.magazines && <Magazines data={department?.magazines}/>}
             {selectedSection === "Events" && <Events />}
             {selectedSection === "Gallery" && <Gallery />}
           </div>

@@ -6,6 +6,7 @@ import React from "react";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
+import DepartmentSection from "@/components/PhysicalEducationPageComponents/DepartmentSection/DepartmentSection";
 
 export const metadata = {
   title: "Physical Education Department | Canara College",
@@ -28,6 +29,7 @@ const page = () => {
       <section className="px-6 md:px-12 lg:px-20 xl:px-0">
         <BuildingStrength />
       </section>
+      <section><DepartmentSection/></section>
       <section>
         <VideoPlayer
           title="Modern Amenities for Everyday Comfort"
