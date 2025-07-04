@@ -6,6 +6,7 @@ import React from "react";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
+import Activities from "@/components/EntrepreneurshipCellPageComponents/Activities/Activities";
 
 export const metadata = {
   title: "Entrepreneurship Cell | Canara College",
@@ -26,6 +27,9 @@ const page = () => {
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <IdeasText />
+      </section>
+      <section>
+        <Activities />
       </section>
       <section>
         <VideoPlayer
