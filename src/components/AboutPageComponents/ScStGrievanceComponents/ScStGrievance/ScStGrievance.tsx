@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import GrievanceForm from "../GrievanceForm/GrievanceForm";
+import KnowYourStatus from "../KnowYourStatus/KnowYourStatus";
 
 const ScStGrievance = () => {
 
@@ -14,6 +15,7 @@ const ScStGrievance = () => {
       </div>
 
        {selected==="New Grievance"&&<GrievanceForm />}
+        {selected==="Know Your Status"&&<KnowYourStatus/>}
     </div>
   );
 };
