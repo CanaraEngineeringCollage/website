@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0 py-12">
+      <section className="px-6 md:px-12 lg:px-36 xl:px-20 py-12">
         <FutureCampusText />
       </section>
       <section className="md:pl-12 lg:pl-16 xl:px-0 py-12">

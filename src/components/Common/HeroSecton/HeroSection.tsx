@@ -77,7 +77,7 @@ const HeroSection = () => {
       </div>
 
       {/* Logos Carousel */}
-      <div className="absolute bottom-4 md:bottom-10 bg-[#f5f5f7] py-5 lg:bg-[#f5f5f7] rounded-xl shadow-lg md:p-4 w-[70%] md:w-full max-w-5xl z-10">
+      <div className="absolute bottom-4 md:bottom-10 bg-[#f5f5f7] py-5 lg:bg-[#f5f5f7] rounded-xl shadow-lg md:p-4 xl:max-w-[90%] md:max-w-[90%] lg:max-5-7xl z-10">
         <Swiper
           modules={[Pagination, Autoplay]}
           slidesPerView={1}
