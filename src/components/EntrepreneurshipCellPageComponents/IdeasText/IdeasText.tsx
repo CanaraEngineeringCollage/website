@@ -32,7 +32,7 @@ const IdeasText = () => {
           <li>{objective}</li>
         ))}
       </ul>
-         <h1 className='text-3xl  md:text-[40px] lg2:text-5xl text-start xl:text-6xl font-bold'>Flow Chart</h1>
+      <h1 className="text-3xl  md:text-[40px] lg2:text-5xl text-start xl:text-6xl font-bold">Flow Chart</h1>
       <img src="https://www.canaraengineering.in/assets/images/e1.jpg" alt="" className="py-10" />
     </div>
   );

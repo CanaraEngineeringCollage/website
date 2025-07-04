@@ -29,7 +29,9 @@ const page = () => {
       <section className="px-6 md:px-12 lg:px-20 xl:px-0">
         <BuildingStrength />
       </section>
-      <section><DepartmentSection/></section>
+      <section>
+        <DepartmentSection />
+      </section>
       <section>
         <VideoPlayer
           title="Modern Amenities for Everyday Comfort"

@@ -29,7 +29,7 @@ const page = () => {
         <IdeasText />
       </section>
       <section>
-        <Activities/>
+        <Activities />
       </section>
       <section>
         <VideoPlayer
