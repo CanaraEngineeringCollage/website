@@ -3,7 +3,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <section className="py-12">
+    <section className="py-10">
      <ScStGrievance/>
     </section>
   );
