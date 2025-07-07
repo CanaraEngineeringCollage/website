@@ -7,9 +7,15 @@ const LifeAtHostels = () => {
       <div className="">
         <div className="flex justify-between items-center pb-5 lg:pb-10">
           <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-black ">Life at CEC Hostels</h1>
-          <button aria-label="Download Hostel Rulebook" className="text-[#2884CA] hidden  font-bold text-[17px] bg-[#d9ebff] px-6 py-2 cursor-pointer rounded-3xl lg:inline-flex gap-3">
+          <a
+            href="https://drive.google.com/file/d/1dSk9BXF68175ikakeHivmiNrI1DO2QsU/view"
+            download
+            target="_blank"
+            aria-label="Download Hostel Rulebook"
+            className="text-[#2884CA] hidden font-bold text-[17px] bg-[#d9ebff] px-6 py-2 cursor-pointer rounded-3xl lg:inline-flex gap-3"
+          >
             Download Hostel Rulebook <HiDownload className="text-[24px] font-extrabold" />
-          </button>
+          </a>
         </div>
         <p className="text-textGray  text-[20px] pb-10">
           Nestled within a sprawling 25-acre lush green campus, our college hostel offers a serene and refreshing environment, making it the perfect

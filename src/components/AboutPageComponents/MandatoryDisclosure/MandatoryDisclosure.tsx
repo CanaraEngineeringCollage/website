@@ -782,9 +782,10 @@ const MandatoryDisclosure = () => {
                   </ul>
 
                   <div className="mt-4">
-                    <a href="#" className="text-blue-600 underline text-sm">
+                    <Link href="/about/mandatory-disclosure/sc-st-grievance" className="text-blue-600 underline text-sm">
                       Click Here to Submit Online Grievance
-                    </a>
+                    </Link>
+                   
                   </div>
 
                   <div className="overflow-x-auto mt-10">
