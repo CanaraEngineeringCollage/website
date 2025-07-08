@@ -6,15 +6,13 @@ import image3 from "../../../../public/DistinctivePractiesImages/solar.jpg"
 const DistinctivePracties = () => {
   return (
     <div className="max-w-7xl mx-auto xl:max-w-[75%] pt-20 text-black">
-      <h1 className="text-3xl md:text-[40px] lg2:text-4xl xl:text-5xl font-bold">DISTINCTIVE PRACTICES</h1>
+      <h1 className="text-3xl md:text-[40px] lg2:text-4xl xl:text-5xl font-bold">Distinctive  Practices</h1>
       <p className="lg:text-xl md:text-lg text-[14px] leading-7 pt-8 text-textGray">
         Canara Engineering College follows the following practices which are aimed at improving the overall services towards faculty and students.
       </p>
 
-      <hr className="my-12 border-t border-textGray" />
 
-      <h1 className="text-3xl md:text-[40px] lg2:text-4xl font-bold">Institution Level Practices</h1>
-      <hr className="my-6 border-t border-textGray" />
+      
 
       <div className="flex flex-col gap-3">
         <p className="lg:text-xl md:text-lg text-[14px] leading-7 pt-8 text-textGray">
@@ -34,7 +32,6 @@ const DistinctivePracties = () => {
         </div>
       </div>
       <h1 className="text-3xl md:text-[40px] lg2:text-4xl font-bold pt-12">Faculty Centric Practices</h1>
-      <hr className="my-6 border-t border-textGray" />
       <div className="flex flex-col gap-3">
         <div className="md:pl-12">
           <ul className="list-disc list-inside space-y-4 text-textGray text-[14px] md:text-lg lg:text-xl leading-7">
@@ -50,7 +47,6 @@ const DistinctivePracties = () => {
         </div>
       </div>
       <h1 className="text-3xl md:text-[40px] lg2:text-4xl font-bold pt-12">Student Centric Practices</h1>
-      <hr className="my-6 border-t border-textGray" />
       <div className="flex flex-col gap-3">
         <div className="md:pl-12">
           <ul className="list-disc list-inside space-y-4 text-textGray text-[14px] md:text-lg lg:text-xl leading-7">

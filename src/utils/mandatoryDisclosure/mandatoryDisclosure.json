@@ -1,7 +1,11 @@
 [
   {
-    "title": "NBA Acrreditation status of Programs",
+    "title": "NBA Acrreditation",
     "data": [
+      {
+        "title": "Status Program",
+        "links": [{ "text": "View Status Program", "href": "https://www.canaraengineering.in/download/disclosure/NBA_Accreditation.pdf" }]
+      },
       {
         "title": "NAAC AQAR",
         "links": [{ "text": "View YEARLY STATUS REPORT - 2023-2024", "href": "https://canaraengineering.in/AQAR_23-24%20uploaded_16-01-25.pdf" }]
@@ -32,6 +36,49 @@
       }
     ]
   },
+
+{
+    "title": "NIRF Disclosure",
+     "data": [
+      {
+        "title": "Year 2024-2025",
+        "links": [{ "text": "View REPORT - 2024-2025", "href": "https://www.canaraengineering.in/download/NIRF/submitted%20data_NIRF_24-25.pdf" }]
+      },
+      {
+        "title": "Year 2023-2024",
+        "links": [{ "text": "View REPORT - 2023-2024", "href": "https://www.canaraengineering.in/download/NIRF/NIRF%20sumbitted%20report_2024_CEC_IR-E-C-1323.pdf" }]
+      },
+      {
+        "title": "Year 2022-2023",
+        "links": [{ "text": "View REPORT - 2022-2023", "href": "https://www.canaraengineering.in/download/NIRF/All%20Report-MHRD,%20National%20Institutional%20Ranking%20Framework%20(NIRF).pdf" }]
+      },
+      {
+        "title": "Year 2021-2022",
+        "links": [{ "text": "View REPORT - 2021-2022", "href": "https://www.canaraengineering.in/download/NIRF/completed%20data_NIRF_2022.pdf" }]
+      },
+      {
+        "title": "Year 2020-2021",
+        "links": [{ "text": "View REPORT - 2020-2021", "href": "https://www.canaraengineering.in/download/NIRF/Canara%20Engineering%20College%202021.pdf" }]
+      },
+      {
+        "title": "Year 2019-2020",
+        "links": [{ "text": "View REPORT - 2019-2020", "href": "https://www.canaraengineering.in/download/NIRF/Canara%20Engineering%20College23_12_2019_17_50_31.pdf" }]
+      },
+      {
+        "title": "Year 2018-2019",
+        "links": [{ "text": "View REPORT - 2018-2019", "href": "https://www.canaraengineering.in/download/NIRF/Canara%20Engineering%20College20190219-.pdf" }]
+      },
+      {
+        "title": "Year 2017-2018",
+        "links": [{ "text": "View REPORT - 2017-2018", "href": "https://canaraengineering.in/SSR.pdf" }]
+      }
+    ]
+  },
+
+
+
+
+
   {
     "title": "AICTE Approval",
     "data": [
@@ -289,4 +336,5 @@
       }
     ]
   }
+  
 ]
