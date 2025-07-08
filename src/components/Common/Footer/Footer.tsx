@@ -8,15 +8,15 @@ import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 
 // Data arrays remain unchanged from your first snippet
 const quickLinks = [
-  { data: "NIRF Disclosure", links: "#" },
-  { data: "Committee Members", links: "#" },
-  { data: "AICTE Scholarships", links: "#" },
-  { data: "Press Releases", links: "#" },
-  { data: "Grievance Redressal Committee", links: "#" },
-  { data: "VTU Website", links: "#" },
-  { data: "AICTE Website", links: "#" },
-  { data: "AICTE Feedback Portal", links: "#" },
-  { data: "Vidya Lakshmi Portal", links: "#" },
+  { data: "NIRF Disclosure", links: "/about/mandatory-disclosure" },
+  { data: "Committee Members", links: "https://www.canaraengineering.in/download/Institutional%20Committee.pdf" },
+  { data: "AICTE Scholarships", links: "https://www.canaraengineering.in/download/scholarship_2020.pdf" },
+  { data: "Press Releases", links: "https://canaraengineering.in/download/News Paper Clipping.pdf" },
+  { data: "Grievance Redressal Committee", links: "/about/grievance-redressal-cell" },
+  { data: "VTU Website", links: "https://vtu.ac.in/" },
+  { data: "AICTE Website", links: "https://www.aicte.gov.in/" },
+  // { data: "AICTE Feedback Portal", links: "#" },
+  { data: "Vidya Lakshmi Portal", links: "https://www.vidyalakshmi.co.in/Students/login#studentlogin" },
 ];
 
 const ourCollege = [
@@ -26,28 +26,28 @@ const ourCollege = [
   { data: "Teaching Faculty", links: "#" },
   { data: "Non Teaching Staff", links: "#" },
   { data: "Administration Staff", links: "#" },
-  { data: "Departments", links: "#" },
-  { data: "Accreditations", links: "#" },
+  // { data: "Departments", links: "#" },
+  // { data: "NBA Accreditations", links: "#" },
   { data: "Mandatory Disclosures", links: "/about/mandatory-disclosure" },
 ];
 
 const academics = [
   { data: "Admissions", links: "/admission" },
-  { data: "Courses & Programs", links: "#" },
+  // { data: "Courses & Programs", links: "#" },
   { data: "Syllabus", links: "#" },
-  { data: "Academic Calendar", links: "#" },
-  { data: "Examinations & Timetables", links: "/examination-records" },
-  { data: "Circulars", links: "#" },
-  { data: "Marks & Attendance", links: "#" },
-  { data: "Learning Resources", links: "#" },
-  { data: "Scholarships", links: "#" },
+  { data: "Academic Calendar", links: "https://www.canaraengineering.in/download/calender.pdf" },
+  { data: "Examinations & Timetables", links: "/academics/examination-records" },
+  { data: "Circulars", links: "https://vtu.ac.in/en/#1554889506437-64c3b5d5-d21e" },
+  { data: "Marks & Attendance", links: "/academics/examination-records" },
+  { data: "Learning Resources", links: "/academics/learning-hub" },
+  { data: "Scholarships", links: "https://www.canaraengineering.in/download/scholarship_2020.pdf" },
 ];
 
 const facilities = [
   { data: "Training & Placements", links: "/training-placements" },
-  { data: "Campus", links: "#" },
+  { data: "Campus", links: "/about/about-cec" },
   { data: "Hostels", links: "/campus-facilities/hostel-life" },
-  { data: "Sports & Cultures", links: "#" },
+  { data: "Sports & Cultures", links: "/physical-education" },
   { data: "Entrepreneurship Cell", links: "/entrepreneurship-cell" },
 ];
 
@@ -55,7 +55,7 @@ const stayConnected = [
   { data: "Alumni", links: "/alumini" },
   { data: "Media", links: "/media" },
   { data: "Calendar of Events", links: "/events" },
-  { data: "Careers", links: "#" },
+  // { data: "Careers", links: "#" },
 ];
 
 interface FooterListProps {
@@ -116,19 +116,19 @@ const Footer: FC = () => {
             <h3 className="font-semibold mb-1">Quick Links</h3>
             <FooterList data={quickLinks} />
           </div>
-          <div className="ml-[40%] ">
+          <div className="xl:ml-[40%] ml-[20%]">
             <h3 className="font-semibold mb-1">Our College</h3>
             <FooterList data={ourCollege} />
           </div>
-          <div className="ml-[40%] ">
+          <div className="xl:ml-[40%] ml-[20%]">
             <h3 className="font-semibold mb-1">Academics</h3>
             <FooterList data={academics} />
           </div>
-          <div className="ml-[40%] ">
+          <div className="xl:ml-[40%] ml-[20%]">
             <h3 className="font-semibold mb-1">Facilities</h3>
             <FooterList data={facilities} />
           </div>
-          <div className="ml-auto ">
+          <div className="xl:ml-auto ml-[20%]">
             <h3 className="font-semibold mb-1">Stay Connected</h3>
             <FooterList data={stayConnected} />
           </div>
@@ -229,15 +229,21 @@ const Footer: FC = () => {
 // Reusable Footer List Component
 const FooterList: FC<FooterListProps> = ({ data }) => {
   return (
-    <>
-      <ul className="space-y-3">
-        {data.map((item, index) => (
+    <ul className="space-y-3">
+      {data.map((item, index) => {
+        const isExternal = item.links.startsWith("http");
+        return (
           <li className="leading-8" key={index}>
-            <Link href={item.links}>{item.data}</Link>
+            <Link
+              href={item.links}
+              {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+            >
+              {item.data}
+            </Link>
           </li>
-        ))}
-      </ul>
-    </>
+        );
+      })}
+    </ul>
   );
 };
 const ArrowIcon = ({ isOpen }: { isOpen: boolean }) => (

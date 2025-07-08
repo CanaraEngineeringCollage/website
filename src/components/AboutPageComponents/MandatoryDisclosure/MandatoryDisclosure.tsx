@@ -966,7 +966,7 @@ const MandatoryDisclosure = () => {
                   </p>
                 </div>
               </>
-            ) : selectedIndex === 0 ? (
+            ) : selectedIndex === 0 || selectedIndex === 1 ? (
               <>
                 {disclosureData[selectedIndex]?.data?.map((item, idx) => (
                   <div key={idx} className="mb-10">

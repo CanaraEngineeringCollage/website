@@ -9,6 +9,7 @@ const LeadearShiplinks = [
   { href: "/about/our-founder", label: "Our Founder" },
   { href: "/about/our-management", label: "Our Management" },
   { href: "/about/governing-council", label: "Governing Council" },
+  { href: "/about/key-functionaries-and-hods", label: "Key Functionaries & HODs" },
   { href: "/about/educators-administrators", label: "Educators & Administrators" },
   { href: "/about/distinctive-practices", label: "Distinctive & Practices" },
 ];

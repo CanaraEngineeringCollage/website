@@ -5,6 +5,13 @@
   --foreground: #ffffff;
 }
 
+h1{
+  color: #1D1D1F;
+}
+h2{
+  color: #1D1D1F;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
