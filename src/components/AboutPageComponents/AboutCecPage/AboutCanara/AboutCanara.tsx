@@ -3,10 +3,12 @@ import React from "react";
 
 const AboutCanara = () => {
   return (
-    <div className="max-w-5xl mx-auto xl:max-w-[65%] text-center pt-20 text-black">
-      <h4 className="text-3xl text-textGray py-12">About Canara Engineering College</h4>
-      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold">A Campus Like No other</h1>
+    <div className="max-w-5xl mx-auto xl:max-w-[65%] text-center  pt-20 ">
+      <h4 className="text-3xl text-[#1D1D1F] py-12">About Canara Engineering College</h4>
+      <h1 className="text-3xl md:text-[40px] text-[#1D1D1F] lg2:text-5xl xl:text-6xl font-bold">A Campus Like No other</h1>
+      <div className="text-justify">
       <p className="lg:text-xl md:text-lg text-[14px] leading-7 pt-16 text-textGray">
+       
         Canara Engineering College(CEC), established in the year 2001 as a new millennium project of Canara High School Association, in the sprawling
         campus of 26 acres of pristine natural beauty at Benjanapadavu, Mangalore has now grown as a promising engineering institution with
         distinction in the coastal region of Karnataka, India, where values and technology converge! The lofty dream of our founder, Late Sri Ammembal
@@ -46,6 +48,7 @@ const AboutCanara = () => {
         Ph.D. registrations and Scopus indexed or web of science or quartile ranked journal publications, in the recent past! Infrastructure additions
         with modern facilities are happening in the campus, in full swing
       </p>
+      </div>
       {/* <button aria-label="Read More" className="pt-8 inline-flex items-center cursor-pointer text-[#0066CC]">
         Read More <MdKeyboardArrowRight className="text-xl text-[#0066CC]" />
       </button> */}
