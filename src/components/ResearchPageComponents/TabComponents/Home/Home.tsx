@@ -25,7 +25,7 @@ const objectives = [
 const Home = () => {
   return (
     <div className=" text-[#86868B] mx-5 text-[17px]">
-      <h1 className="text-[#86868B] text-xl font-extrabold mb-2">RESEARCH AND DEVELOPMENT</h1>
+      <h1 className="text-[#86868B] text-xl font-extrabold mb-2">Research and Development</h1>
       <div className="space-y-8">
         <p>
           The only teaching model doesn’t match the current rapid developments in technical education. Imparting quality education in technical

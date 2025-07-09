@@ -5,36 +5,36 @@ import image2 from "../../../../public/DistinctivePractiesImages/CHC.jpg"
 import image3 from "../../../../public/DistinctivePractiesImages/solar.jpg"
 const DistinctivePracties = () => {
   return (
-    <div className="max-w-7xl mx-auto xl:max-w-[75%] pt-20 text-black">
+    <div className="max-w-7xl mx-auto xl:max-w-[75%] pt-20 text-[#1D1D1F]">
       <h1 className="text-3xl md:text-[40px] lg2:text-4xl xl:text-5xl font-bold">Distinctive  Practices</h1>
-      <p className="lg:text-xl md:text-lg text-[14px] leading-7 pt-8 text-textGray">
+      <p className="lg:text-xl md:text-lg text-[14px] leading-4 pt-4 text-textGray">
         Canara Engineering College follows the following practices which are aimed at improving the overall services towards faculty and students.
       </p>
 
 
       
 
-      <div className="flex flex-col gap-3">
-        <p className="lg:text-xl md:text-lg text-[14px] leading-7 pt-8 text-textGray">
-          1. Free Community health center for students, staff and local community in association with Father Mullers Hospital, Thumbe, Mangaluru.
+      <div className="flex flex-col gap-1.5">
+        <p className="lg:text-xl md:text-lg text-[14px] leading-5 pt-2 text-textGray">
+           Free Community health center for students, staff and local community in association with Father Mullers Hospital, Thumbe, Mangaluru.
         </p>
-        <p className="lg:text-xl md:text-lg text-[14px] leading-7 text-textGray">
-          2. Plastic Recycling research center for converting waste plastic into useful products.
+        <p className="lg:text-xl md:text-lg text-[14px] leading-5 text-textGray">
+           Plastic Recycling research center for converting waste plastic into useful products.
         </p>
-        <p className="lg:text-xl md:text-lg text-[14px] leading-7 text-textGray">3. Commitment to Environment Sustainability via</p>
+        <p className="lg:text-xl md:text-lg text-[14px] leading-5 text-textGray">Commitment to Environment Sustainability via</p>
 
-        <div className="md:pl-12">
-          <ul className="list-disc list-inside space-y-4 text-textGray text-[14px] md:text-lg lg:text-xl leading-7">
+        <div className="md:pl-12 pt-2">
+          <ul className="list-disc list-inside space-y-4 text-textGray text-[14px] md:text-lg lg:text-xl leading-5">
             <li>Harnessing Solar energy – 140kW Roof top Solar system.</li>
             <li>Installation of sewage treatment plant and using recycled water for gardening purposes.</li>
             <li>Rainwater harvesting and construction of water ponds to improve underground water table.</li>
           </ul>
         </div>
       </div>
-      <h1 className="text-3xl md:text-[40px] lg2:text-4xl font-bold pt-12">Faculty Centric Practices</h1>
+      <h1 className="text-3xl md:text-[40px] lg2:text-4xl xl:text-5xl font-bold pb-4 pt-12">Faculty Centric Practices</h1>
       <div className="flex flex-col gap-3">
         <div className="md:pl-12">
-          <ul className="list-disc list-inside space-y-4 text-textGray text-[14px] md:text-lg lg:text-xl leading-7">
+          <ul className="list-disc list-inside space-y-4 text-textGray text-[14px] md:text-lg lg:text-xl leading-5">
             <li>Financial support for faculty for publishing papers in national and international journals and conferences.</li>
             <li>Sponsorship for faculty and staff to attend Conferences, Seminars, Workshops, FDPs, Industrial Trainings, and NPTEL courses.</li>
             <li>Research allowance for those who have completed/pursuing Ph.D.</li>
@@ -46,10 +46,10 @@ const DistinctivePracties = () => {
           </ul>
         </div>
       </div>
-      <h1 className="text-3xl md:text-[40px] lg2:text-4xl font-bold pt-12">Student Centric Practices</h1>
+      <h1 className="text-3xl md:text-[40px] lg2:text-4xl font-bold pb-4 pt-12">Student Centric Practices</h1>
       <div className="flex flex-col gap-3">
         <div className="md:pl-12">
-          <ul className="list-disc list-inside space-y-4 text-textGray text-[14px] md:text-lg lg:text-xl leading-7">
+          <ul className="list-disc list-inside space-y-4 text-textGray text-[14px] md:text-lg lg:text-xl leading-5">
             <li>
               Recognition and awarding students for their extraordinary performance in academics, co-curricular and extra-curricular activities.
             </li>
@@ -65,13 +65,13 @@ const DistinctivePracties = () => {
         </div>
       </div>
 
-      <h1 className="text-3xl  md:text-[40px  lg2:text-4xl font-bold py-12">Plastic Recycling</h1>
-      <Image src={image1} alt="image1" className="w-[100%]" />
-      <h1 className="text-3xl md:text-[40px] lg2:text-4xl font-bold py-12">Community Health Center
+      <h1 className="text-3xl  md:text-[40px]  lg2:text-4xl font-bold pt-12 pb-4">Plastic Recycling</h1>
+      <Image src={image1} alt="image1" className="w-[70%]" />
+      <h1 className="text-3xl md:text-[40px] lg2:text-4xl font-bold pt-12 pb-4">Community Health Center
       </h1>
-      <Image src={image2} alt="image3" className="w-[100%]" />
-      <h1 className="text-3xl md:text-[40px] lg2:text-4xl font-bold py-12">Roof Top Solar</h1>
-      <Image className="pb-20 w-[100%]" src={image3} alt="image3"  />
+      <Image src={image2} alt="image3" className="w-[70%]" />
+      <h1 className="text-3xl md:text-[40px] lg2:text-4xl font-bold pt-12 pb-4">Roof Top Solar</h1>
+      <Image className="pb-20 w-[70%]" src={image3} alt="image3"  />
     </div>
   );
 };

@@ -1,16 +1,24 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { HiLink } from "react-icons/hi";
+import { useSearchParams } from "next/navigation";
 
 const FormSection: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>("Marks");
   const [activeHeader, setActiveHeader] = useState<string>("Marks & Attendance");
   const data: string[] = ["Marks & Attendance", "Circulars", "Examination Timetables"];
+  const searchParams = useSearchParams();
+  const parmasActive = searchParams.get("tab");
 
+  useEffect(() => {
+    if (parmasActive === "tt") setActiveHeader("Examination Timetables");
+    else if (parmasActive === "circulars") setActiveHeader("Circulars");
+    else setActiveHeader("Marks & Attendance");
+  }, [parmasActive]);
   return (
-    <section className="px-4 sm:px-10 md:px-16 lg:px-20 py-12 sm:py-16 xl:py-36 md:py-20 text-black">
+    <section className="px-4 sm:px-10 md:px-16 lg:px-20 py-12 sm:py-16 xl:py-36 md:py-20 text-[#1D1D1F]">
       <div>
-        <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-black text-center md:text-left">Examinations & Records</h1>
+        <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-[#1D1D1F] text-center md:text-left">Examinations & Records</h1>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-20 mt-8">
           <div className="md:col-span-4 mt-10">
             <div>
@@ -67,12 +75,11 @@ const FormSection: React.FC = () => {
             <div className="md:col-span-8 text-[#959cb4]">
               <h1 className="text-[20px] font-extrabold text-textGray mb-2">VTU Circular</h1>
               <div className="flex items-center">
-                
-               <div className="flex items-center gap-2 mt-2 hover:text-blue-600">
-                <HiLink className="text-textGray hover:text-blue-600 " />
-                <a  href="https://vtu.ac.in/en/#1554889506437-64c3b5d5-d21e"  target="_blank">
-                  Open VTU Circulars
-                </a>
+                <div className="flex items-center gap-2 mt-2 hover:text-blue-600">
+                  <HiLink className="text-textGray hover:text-blue-600 " />
+                  <a href="https://vtu.ac.in/en/#1554889506437-64c3b5d5-d21e" target="_blank">
+                    Open VTU Circulars
+                  </a>
                 </div>
               </div>
             </div>

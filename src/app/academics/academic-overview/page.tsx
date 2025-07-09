@@ -54,7 +54,7 @@ const page = () => {
           thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1745994337/bzjmgq1zvi0ksxyptkz6.png"
         />
       </section>
-      <section className="px-0 bg-white">
+      <section className="px-0 pb-20 bg-white">
         <Testimonials />
       </section>
       <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">

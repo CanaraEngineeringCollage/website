@@ -6,9 +6,9 @@ const GrievanceRedressalCell = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [activeTab, setActiveTab] = useState<string>("New Grievance");
   return (
-    <section className="py-10 text-black lg2:px-24 mx-5 overflow-hidden">
+    <section className="py-10 text-[#1D1D1F] lg2:px-24 mx-5 overflow-hidden">
       <div>
-        <h1 className="text-[30px] lg:text-[54px] font-bold pb-1 lg:pb-10 text-black">Grievance Redressal Cell</h1>
+        <h1 className="text-[30px] lg:text-[54px] font-bold pb-1 lg:pb-10 text-[#1D1D1F]">Grievance Redressal Cell</h1>
         <div className="grid grid-cols-1 gap-3 md:gap-32 md:grid-cols-12 mt-10">
           {/* Sidebar */}
           <div className="col-span-4">

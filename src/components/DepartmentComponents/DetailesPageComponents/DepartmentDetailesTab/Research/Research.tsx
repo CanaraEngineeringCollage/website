@@ -91,34 +91,34 @@ const Research: React.FC<ResearchProps> = ({ data }) => {
                 const showHeader = Array.isArray(table.title) && table.title.length > 0;
 
                 return (
-                  <table key={tIdx} className="w-full border mt-4">
+                  <table key={tIdx} className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     {showHeader && (
                       <thead>
-                        <tr>
-                          {showSlNo && <th className="border px-2 py-1 text-center">Sl.No</th>}
+                        <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                          {showSlNo && <th className="py-3 md:px-4 px-1 border-b">Sl.No</th>}
                           {table.title.slice(0, columns + (showSlNo ? 1 : 0)).map((title, i) => (
-                            <th key={i} className="border px-2 py-1">{title}</th>
+                            <th key={i} className="py-3 md:px-4 px-1 border-b">{title}</th>
                           ))}
                         </tr>
                       </thead>
                     )}
                     <tbody>
                       {Array.from({ length: maxRows }).map((_, rowIdx) => (
-                        <tr key={rowIdx}>
+                        <tr key={rowIdx} className="text-textGray">
                           {showSlNo && (
-                            <td className="border px-2 py-1 text-center">{rowIdx + 1}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">{rowIdx + 1}</td>
                           )}
                           {table.firstColumn[rowIdx] && (
-                            <td className="border px-2 py-1">{table.firstColumn[rowIdx]}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">{table.firstColumn[rowIdx]}</td>
                           )}
                           {table.secondColumn[rowIdx] && (
-                            <td className="border px-2 py-1">{table.secondColumn[rowIdx]}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">{table.secondColumn[rowIdx]}</td>
                           )}
                           {table.thirdColumn[rowIdx] && (
-                            <td className="border px-2 py-1">{table.thirdColumn[rowIdx]}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">{table.thirdColumn[rowIdx]}</td>
                           )}
                           {table.fourthColumn[rowIdx] && (
-                            <td className="border px-2 py-1">{table.fourthColumn[rowIdx]}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">{table.fourthColumn[rowIdx]}</td>
                           )}
                         </tr>
                       ))}
@@ -128,21 +128,21 @@ const Research: React.FC<ResearchProps> = ({ data }) => {
               })}
 
             {section.moreDetailesTable && section.moreDetailesTable.length > 0 && (
-              <table className="w-full border mt-4">
+              <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]" >
                 <thead>
-                  <tr>
+                  <tr className="bg-[#F3F8FC] text-[#2884CA]">
                     {section.th?.map((item, idx) => (
-                      <th key={idx} className="border px-2 py-1">{item}</th>
+                      <th key={idx} className="py-3 md:px-4 px-1 border-b">{item}</th>
                     ))}
                   </tr>
                 </thead>
                 <tbody>
                   {section.moreDetailesTable.map((row, i) => (
-                    <tr key={i}>
-                      {row.year && <td className="border px-2 py-1">{row.year}</td>}
-                      <td className="border px-2 py-1">{row.domain}</td>
-                      <td className="border px-2 py-1">{row.faculty.join(', ')}</td>
-                      <td className="border px-2 py-1">{row.researchScholars.join(', ')}</td>
+                    <tr key={i} className="text-textGray">
+                      {row.year && <td className="py-3 md:px-4 px-1 border-b">{row.year}</td>}
+                      <td className="py-3 md:px-4 px-1 border-b">{row.domain}</td>
+                      <td className="py-3 md:px-4 px-1 border-b">{row.faculty.join(', ')}</td>
+                      <td className="py-3 md:px-4 px-1 border-b">{row.researchScholars.join(', ')}</td>
                     </tr>
                   ))}
                 </tbody>

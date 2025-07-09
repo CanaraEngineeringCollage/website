@@ -132,15 +132,15 @@ const ResearchCenter = () => {
         <div>
           <h1 className="text-[#86868B] text-xl font-extrabold mb-2">Research Facility</h1>
           <div className="overflow-x-auto">
-            <table className="min-w-full border border-gray-300">
+            <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
               <thead>
-                <tr className="bg-gray-100 text-gray-800">
-                  <th className="text-left px-4 py-3 border-b border-gray-300">Name</th>
-                  <th className="text-left px-4 py-3 border-b border-gray-300">Facility Details</th>
+                <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                  <th className="py-3 md:px-4 px-1 border-b">Name</th>
+                  <th className="py-3 md:px-4 px-1 border-b">Facility Details</th>
                 </tr>
               </thead>
-              <tbody className="text-gray-700 bg-white">
-                <tr className="border-b border-gray-200">
+              <tbody>
+                <tr className="text-textGray">
                   <td className="px-4 py-3 align-top font-medium">Chemistry Research Laboratory</td>
                   <td className="px-4 py-3">
                     <ul className="list-disc pl-5 space-y-1">
@@ -163,17 +163,17 @@ const ResearchCenter = () => {
         </div>
         <div className="overflow-x-auto">
           <h1 className="text-[#86868B] text-xl font-extrabold mb-2">Research Facility</h1>
-          <table className="min-w-full border border-gray-300">
+          <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
             <thead>
-              <tr className="bg-gray-100 text-gray-800">
-                <th className="text-left px-4 py-3 border-b  border-r border-gray-300">Name</th>
-                <th className="text-left px-4 py-3 border-b border-gray-300">Facility Details</th>
+              <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                <th className="py-3 md:px-4 px-1 border-b">Name</th>
+                <th className="py-3 md:px-4 px-1 border-b">Facility Details</th>
               </tr>
             </thead>
-            <tbody className="text-gray-700 bg-white">
-              <tr className="border-b border-gray-200">
-                <td className="px-4 py-3 align-top font-medium border-r border-gray-300">Research Center</td>
-                <td className="px-4 py-3">
+            <tbody className="text-textGray">
+              <tr >
+                <td className="py-3 md:px-4 px-1 border-b">Research Center</td>
+                <td className="py-3 md:px-4 px-1 border-b">
                   <p>
                     HP Workstation Z2 Tower G9 Workstation with Core I7 processor, 32 GB RAM with Windows11 Professional. Other Softwares: Netbeans,
                     Java, Eclipse, Visual Studio 2012, Python 3.7, Anaconda IDE, Jupyter, SPYDER, MySQL, MS OFFICE 2007, 2016.
@@ -213,15 +213,15 @@ const ResearchCenter = () => {
         <div>
           <h1 className="text-[#86868B] text-xl font-extrabold mb-2">Research Facility</h1>
           <div className="overflow-x-auto">
-            <table className="min-w-full border border-gray-300">
+            <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
               <thead>
-                <tr className="bg-gray-100 text-gray-800">
-                  <th className="text-left px-4 py-3 border-b border-gray-300">Name</th>
-                  <th className="text-left px-4 py-3 border-b border-gray-300">Facility Details</th>
+                <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                  <th className="py-3 md:px-4 px-1 border-b">Name</th>
+                  <th className="py-3 md:px-4 px-1 border-b">Facility Details</th>
                 </tr>
               </thead>
-              <tbody className="text-gray-700 bg-white">
-                <tr className="border-b border-gray-200">
+              <tbody className="text-textGray">
+                <tr >
                   <td className="px-4 py-3 align-top font-medium">R&D Laboratory Analog Oscilloscopes</td>
                   <td className="px-4 py-3">
                     <ul className="list-disc pl-5 space-y-1">

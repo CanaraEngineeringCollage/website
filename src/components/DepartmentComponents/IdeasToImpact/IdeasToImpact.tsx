@@ -34,7 +34,7 @@ const stats: Stat[] = [
 
           {/* Right Side - Text */}
           <div>
-            <h4 className="text-2xl text-black font-semibold mb-4 text-left">Awards won in Technical Fest</h4>
+            <h4 className="text-2xl text-[#1D1D1F] font-semibold mb-4 text-left">Awards won in Technical Fest</h4>
             <p className="text-gray-600 text-left max-w-[70%]">During the Academic Year 2023-24</p>
           </div>
         </div>
@@ -54,7 +54,7 @@ const stats: Stat[] = [
 
           {/* Right Side - Text */}
           <div>
-            <h4 className="text-2xl text-black font-semibold mb-4 text-left">Awards won in Technical Fest</h4>
+            <h4 className="text-2xl text-[#1D1D1F] font-semibold mb-4 text-left">Awards won in Technical Fest</h4>
             <p className="text-gray-600 text-left max-w-[70%]">During the Academic Year 2023-24</p>
           </div>
         </div>
@@ -74,7 +74,7 @@ const stats: Stat[] = [
 
           {/* Right Side - Text */}
           <div>
-            <h4 className="text-2xl text-black font-semibold mb-4 text-left">Awards won in Technical Fest</h4>
+            <h4 className="text-2xl text-[#1D1D1F] font-semibold mb-4 text-left">Awards won in Technical Fest</h4>
             <p className="text-gray-600 text-left max-w-[70%]">During the Academic Year 2023-24</p>
           </div>
         </div>
@@ -178,20 +178,20 @@ export default function IdeasToImpact() {
   return (
     <section className="w-full md:px-6 ">
       <div className="md:max-w-7xl xl:max-w-[70%]  mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-8">From Ideas to Impact</h2>
+        <h2 className="text-3xl lg:text-5xl font-bold text-[#1D1D1F] mb-8">From Ideas to Impact</h2>
 
         <div className="flex justify-center mb-6">
           <div className="inline-flex rounded-full p-1">
             <button 
             aria-label="Student Achievements"
-             className="px-4 py-2 text-sm font-medium text-black  rounded-full">Student Achievements</button>
+             className="px-4 py-2 text-sm font-medium text-[#1D1D1F]  rounded-full">Student Achievements</button>
             <button 
             aria-label="Student Placements"
-             className="px-4 py-2 text-sm font-medium text-black rounded-full">Research & Product Development</button>
+             className="px-4 py-2 text-sm font-medium text-[#1D1D1F] rounded-full">Research & Product Development</button>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-black mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-[#1D1D1F] mt-10">
           {/* Placement and Job Offers */}
           <div className="bg-white rounded-2xl flex flex-col ">
             <div className="flex justify-center items-center">

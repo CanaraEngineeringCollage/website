@@ -9,7 +9,7 @@ export default function MissionVision() {
       <div className="max-w-7xl xl:max-w-[75%] mx-auto grid grid-cols-1 lg:grid-cols-12 lg:gap-20">
         {/* Mission Card */}
         <div className="bg-white col-span-7 overflow-hidden rounded-2xl shadow p-10 lg:p-18 space-y-6">
-          <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-16">Our Mission</h2>
+          <h2 className="text-3xl lg:text-5xl font-bold text-[#1D1D1F] mb-16">Our Mission</h2>
 
           <div className="grid grid-rows-3 gap-6 h-full pb-16">
 
@@ -48,7 +48,7 @@ export default function MissionVision() {
         {/* Vision Card */}
         <div className="bg-white col-span-5 mt-10 lg:mt-0 rounded-2xl shadow p-8 flex flex-col items-center justify-center text-center space-y-6">
           <Image src={visionImage4} alt="visionIcon" />
-          <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-10">Our Vision</h2>
+          <h2 className="text-3xl lg:text-5xl font-bold text-[#1D1D1F] mb-10">Our Vision</h2>
           <p className="text-textGray text-xl max-w-sm">
             To be an Engineering Institute of highest repute and produce world-class engineers catering to the needs of mankind.
           </p>

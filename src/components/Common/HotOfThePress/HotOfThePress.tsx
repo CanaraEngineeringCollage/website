@@ -16,7 +16,7 @@ const HotOfThePress = () => {
     <section className="lg:ml-20 xl:ml-60 md:py-24 py-10">
       <div className="lg:flex lg:justify-between md:pb-14 pb-10">
         <div className="flex text-black flex-col">
-          <h1 className="text-3xl md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-semibold font-sans text-black md:pb-6 tracking-[0.13px]">
+          <h1 className="text-3xl text-[#1D1D1F] md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-semibold font-sans  md:pb-6 tracking-[0.13px]">
             Hot off the Press
           </h1>
         </div>

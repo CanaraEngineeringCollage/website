@@ -7,21 +7,34 @@ import Grants from "../TabComponents/Grants/Grants";
 import Activities from "../TabComponents/Activities/Activities";
 import Patents from "../TabComponents/Patents/Patents";
 
-const titles = ["Home", "Research Center", "Publications", "Grants", "Activities", "IPR/Patents", "R&D Cell", "IPR Cell", "IRINS Profile"];
+
+const IframLinks = ({title,link}:{title?:string;link?:string}) => {return(
+  <div className="mb-10">
+    <h2 className="text-[20px] font-extrabold text-textGray mb-2">{title}</h2>
+    <ul className="space-y-1">
+      <li className="flex items-center gap-2 text-[17px] text-textGray hover:text-blue-600 cursor-pointer">
+        <iframe src={link} className="w-[100%] h-[70vh]" />
+      </li>
+    </ul>
+  </div>)
+};
+
 
 const ResearchPageSection = () => {
+const titles = ["Home", "Research Center", "Publications", "Grants", "Activities", "IPR/Patents", "R&D Cell", "IPR Cell", "IRINS Profile"];
+
   const [selectedIndex, setSelectedIndex] = useState(0); // use index instead of title string
 
   return (
     <>
-      <section className="py-10 xl:py-20 text-black overflow-hidden">
+      <section className="py-10 xl:py-20 text-[#1D1D1F] overflow-hidden">
         <div className="lg2:mx-24 mx-5">
-          <h1 className="text-[30px] lg:text-[54px]  font-bold pb-1 lg:pb-10 text-black">Research</h1>
-          <div className="grid grid-cols-1 gap-3 md:gap-32 md:grid-cols-12 mt-10">
+          <h1 className="text-[30px] lg:text-[54px]  font-bold pb-1 lg:pb-10 text-[#1D1D1F]">Research</h1>
+          <div className="grid grid-cols-1 gap-3 md:gap-28 md:grid-cols-12 mt-10">
             <div className="col-span-4 sticky top-32 self-start hidden md:block">
               {titles?.map((title, index) => (
                 <>
-                  {title === "R&D Cell" ? (
+                  { title === "IRINS Profile" ? (
                     <h1
                       key={index}
                       onClick={() => setSelectedIndex(index)}
@@ -29,27 +42,7 @@ const ResearchPageSection = () => {
                         selectedIndex === index ? "text-[#2884CA] font-bold" : "text-textGray font-[500]"
                       }`}
                     >
-                      <a href="https://canaraengineering.in/download/R&D%20Cell.pdf">{title}</a>
-                    </h1>
-                  ) : title === "IPR Cell" ? (
-                    <h1
-                      key={index}
-                      onClick={() => setSelectedIndex(index)}
-                      className={`text-[20px] pb-3 mb-3 cursor-pointer ${index !== titles.length - 1 ? "border-b-2 border-border" : ""} ${
-                        selectedIndex === index ? "text-[#2884CA] font-bold" : "text-textGray font-[500]"
-                      }`}
-                    >
-                      <a href="https://canaraengineering.in/download/IPR%20Cell.pdf">{title}</a>
-                    </h1>
-                  ) : title === "IRINS Profile" ? (
-                    <h1
-                      key={index}
-                      onClick={() => setSelectedIndex(index)}
-                      className={`text-[20px] pb-3 mb-3 cursor-pointer ${index !== titles.length - 1 ? "border-b-2 border-border" : ""} ${
-                        selectedIndex === index ? "text-[#2884CA] font-bold" : "text-textGray font-[500]"
-                      }`}
-                    >
-                      <a href="https://canaraengineering.irins.org/">{title}</a>
+                      <a target="_blank" href="https://canaraengineering.irins.org/">{title}</a>
                     </h1>
                   ) : (
                     <h1
@@ -72,7 +65,8 @@ const ResearchPageSection = () => {
               {selectedIndex === 3 && <Grants />}
               {selectedIndex === 4 && <Activities />}
               {selectedIndex === 5 && <Patents />}
-              {selectedIndex === 8 && <Home />}
+              {selectedIndex === 6 && <IframLinks link="https://canaraengineering.in/download/R&D%20Cell.pdf" title="R&D Cell"/>}
+              {selectedIndex === 7 && <IframLinks link="https://canaraengineering.in/download/R&D%20Cell.pdf" title="R&D Cell"/>}
             </div>
           </div>
         </div>
@@ -82,3 +76,5 @@ const ResearchPageSection = () => {
 };
 
 export default ResearchPageSection;
+
+

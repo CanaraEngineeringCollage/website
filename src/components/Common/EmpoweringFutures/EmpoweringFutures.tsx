@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import empoweringFuture from "../../../../public/backgroundImages/empower.jpeg";
+import empoweringFuture from "../../../../public/backgroundImages/empoverImages.jpg";
 import { motion } from "framer-motion";
 import { CarouselDots } from "@/components/Common/CarouselDots/CarouselDots";
 import Link from "next/link";
@@ -100,7 +100,7 @@ export default function EmpoweringFutures() {
         {/* Top Content */}
         <div className="flex justify-between items-start  mx-auto pb-16">
           <div>
-            <h2 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold leading-tight">
+            <h2 className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold leading-tight">
               Empowering <br />
               Futures
             </h2>
