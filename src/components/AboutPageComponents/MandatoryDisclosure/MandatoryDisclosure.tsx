@@ -11,7 +11,7 @@ const MandatoryDisclosure = () => {
   return (
     <section className="py-10 xl:py-20 text-[#1D1D1F] overflow-hidden">
       <div className="lg2:mx-24 mx-5">
-        <h1 className="text-[30px] lg:text-[54px]  font-bold pb-1 lg:pb-10 text-[#1D1D1F]">Mandatory Disclosure</h1>
+        <h1 className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold pb-1 lg:pb-10">Mandatory Disclosure</h1>
         <div className="grid grid-cols-1 gap-3 md:gap-28 md:grid-cols-12 mt-10">
           <div className="col-span-4 sticky top-32 self-start hidden md:block">
             {disclosureData?.map((section, index) => (
@@ -271,16 +271,16 @@ const MandatoryDisclosure = () => {
               <>
                 {" "}
                 <h2 className="text-[20px] font-extrabold text-textGray mb-2">Anti Ragging Policy</h2>
-                <h2 className="text-[16px] font-bold text-textGray mb-2">Karnataka Education Act, 1983</h2>
-                <h2 className="text-[16px] font-bold text-textGray mb-2">Section 2(29):</h2>
-                <p className=" md:text-lg text-[14px] leading-7 pt-4 text-textGray">
+                <h2 className="text-lg font-bold text-textGray mb-2">Karnataka Education Act, 1983</h2>
+                <h2 className="text-lg font-bold text-textGray mb-2">Section 2(29):</h2>
+                <p className=" md:text-lg  text-[14px] leading-7 pt-4 text-textGray">
                   Ragging means causing, inducing, compelling or forcing a student, whether by way of a practical joke or otherwise, to do any act
                   which detracts from human dignity or violated his person or exposes him to ridicule or to forbear from doing any lawful act, by
                   intimidating wrongfully restraining, wrongfully confining, or injuring him or by using criminal force to him or by holding out to
                   him any treat of such intimidation, wrongful restraint, wrongful confinement, injury or the use of criminal force
                 </p>
-                <h2 className="text-[16px] font-bold  text-textGray mt-6 mb-2">Section 116 – Penalty for Ragging:</h2>
-                <ul className="space-y-1">
+                <h2 className="text-lg font-bold text-textGray mt-6 mb-2">Section 116 – Penalty for Ragging:</h2>
+                <ul className="space-y-1 md:text-lg  text-[14px] leading-7  text-textGray">
                   <li className="flex gap-2 items-start text-textGray">
                     No person who is a student in an educational institution including an institution under the direct management of the University or
                     of the Central Government shall commit ragging.
@@ -290,15 +290,15 @@ const MandatoryDisclosure = () => {
                     year or with fine which may extend to two thousand rupees or with both.
                   </li>
                 </ul>
-                <h2 className="text-[16px] font-bold  text-textGray mt-6 mb-2">
+                <h2 className="text-lg font-bold text-textGray mt-6 mb-2">
                   The following punishments have been laid down for Ragging under the Regulations of the University Grants Commission at the
                   Institutional level.
                 </h2>
-                <p className=" md:text-lg text-[14px] leading-7 pt-4 text-textGray">
+                <p className=" md:text-lg  text-[14px] leading-7  text-textGray">
                   Depending upon the nature and gravity of the offence as established by the Anti-Ragging Committee of the Institution, the possible
                   punishments for those found guilty of ragging at the institutional level shall be any one or any combination of the following:
                 </p>
-                <ul className="space-y-2 list-disc list-inside text-textGray mt-6">
+                <ul className="space-y-2 list-disc pl-5 md:text-lg  text-[14px] leading-7  text-textGray mt-6">
                   <li>Suspension from attending classes and academic privileges.</li>
                   <li>Withholding / withdrawing scholarship / fellowship and other benefits.</li>
                   <li>Debarring from appearing in any test / examination or other evaluation process.</li>
@@ -316,23 +316,23 @@ const MandatoryDisclosure = () => {
                     institution shall resort to collective punishment.
                   </li>
                 </ul>
-                <h2 className="text-[16px] font-bold  text-textGray mt-6 mb-2">Objectives:</h2>
-                <ul className="space-y-2 list-disc list-inside  text-textGray ">
+                <h2 className="text-lg font-bold text-textGray mt-6 mb-2">Objectives:</h2>
+                <ul className="space-y-2 list-disc pl-5 md:text-lg  text-[14px] leading-7  text-textGray  ">
                   <li>To preserve a culture of ragging-free environment in the college campus by prohibiting it as per law.</li>
                   <li>Preventing its occurrence by following provisions of regulations provided as per law.</li>
                   <li>Design strategies and action plan for curbing the menace of ragging in the college.</li>
                   <li>Punishing those who indulge in ragging as per provisions of the law in force.</li>
                 </ul>
-                <h2 className="text-[16px] font-bold  text-textGray mt-6 mb-2">Outcomes:</h2>
-                <ul className="space-y-2 list-disc list-inside  text-textGray ">
+                <h2 className="text-lg font-bold text-textGray mt-6 mb-2">Outcomes:</h2>
+                <ul className="space-y-2 list-disc pl-5 md:text-lg  text-[14px] leading-7  text-textGray  ">
                   <li>Have preserved a ragging free campus with no incidents of ragging been reported so far, in the college and hostel premises.</li>
                 </ul>
-                <h2 className="text-[16px] font-bold  text-textGray mt-6 mb-2">Anti Ragging Committee Organisation Chart</h2>
-                <div className="relative w-[50%] h-[300px] object-cover">
-                  <Image alt="ragging" fill src="/mandatory/ragging-commite/antiragging.jpg" />
+                <h2 className="text-lg font-bold text-textGray mt-6 mb-2">Anti Ragging Committee Organisation Chart</h2>
+                <div className="relative w-[50%] h-[600px] object-cover">
+                  <Image alt="ragging" fill src="/mandatory/ragging-commite/antiraggingCommitte.jpg" />
                 </div>
-                <h2 className="text-[16px] font-bold  text-textGray mt-2 mb-2">Process:</h2>
-                <ul className="space-y-2 list-disc list-inside  text-textGray ">
+                <h2 className="text-lg font-bold text-textGray mt-2 mb-2">Process:</h2>
+                <ul className="space-y-2 list-disc pl-5 md:text-lg  text-[14px] leading-7  text-textGray">
                   <li>Anti-Ragging Committee is constituted at the beginning of every Academic Year.</li>
                   <li>Anti-Ragging Squads are formed every year.</li>
                   <li>List of Committee and Squad is displayed on the College notice boards.</li>
@@ -350,14 +350,14 @@ const MandatoryDisclosure = () => {
                   </li>
                   <li>The Committee meets in case any incident of ragging is reported. Necessary action is taken based on the issue.</li>
                 </ul>
-                <h2 className="text-[16px] font-bold  text-textGray mt-6 mb-2">Anti Ragging Committee Functioning Flowchart</h2>
-                <div className="relative w-[50%] h-[300px] object-cover">
-                  <Image alt="ragging" fill src="/mandatory/ragging-commite/antiragging.jpg" />
+                <h2 className="text-lg font-bold text-textGray mt-6 mb-2">Anti Ragging Committee Functioning Flowchart</h2>
+                <div className="relative w-[50%] h-[600px] object-cover">
+                  <Image alt="ragging" fill src="/mandatory/ragging-commite/antiragging.png" />
                 </div>
-                <h2 className="text-[16px] font-bold  text-textGray mt-6 mb-2">ANTI RAGGING COMMITTEE (2024-25)</h2>
-                <h2 className="text-[14px] font-bold  text-textGray mt-2 mb-2">Review Committee:</h2>
+                {/* <h2 className="text-lg font-bold text-textGray mt-6 mb-2">ANTI RAGGING COMMITTEE (2024-25)</h2>
+                <h2 className="text-lg font-bold text-textGray mt-2 mb-2">Review Committee:</h2> */}
                 <div className="overflow-x-auto">
-                  <h2 className="text-xl font-bold mb-4 text-textGray">Anti-Ragging Committee</h2>
+                  <h2 className="text-xl font-bold mb-4 mt-8 text-textGray">ANTI RAGGING COMMITTEE (2024-25)</h2>
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead>
                       <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -711,7 +711,7 @@ const MandatoryDisclosure = () => {
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-extrabold text-textGray mb-4">Internal Committee</h2>
                   <h2 className="text-lg font-bold text-textGray mb-2">Objectives:</h2>
-                  <ul className="space-y-1">
+                  <ul className="space-y-1  md:text-lg  text-[14px] leading-7  text-textGray" >
                     <li className="flex gap-2 items-start text-textGray">
                       To handle and resolve complaints related to harassment and discrimination against women effectively.
                     </li>
@@ -724,8 +724,8 @@ const MandatoryDisclosure = () => {
                       and empowerment.
                     </li>
                   </ul>{" "}
-                  <h2 className="text-lg font-bold text-textGray mb-2 mt-6">Outcomes:</h2>
-                  <ul className="space-y-1">
+                  <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Outcomes:</h2>
+                  <ul className="space-y-1  md:text-lg  text-[14px] leading-7  text-textGray">
                     <li className="flex gap-2 items-start text-textGray">
                       The resolution of complaints ensures a fair and just outcome for all parties involved.
                     </li>
@@ -738,7 +738,7 @@ const MandatoryDisclosure = () => {
                       safer and more inclusive environment.
                     </li>
                   </ul>
-                  <h2 className="text-lg font-bold text-textGray mb-2 mt-6">Functioning Of Internal Committee</h2>
+                  <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Functioning Of Internal Committee</h2>
                   <p className=" md:text-lg text-[14px] leading-7  text-textGray">
                     The Cell deals with grievances in the form of written complaints and e-mails with signatures from the students, staff, women,
                     parents and any other stake holders.
@@ -825,10 +825,10 @@ const MandatoryDisclosure = () => {
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-extrabold text-textGray mb-4">SC/ST, OBC, Minority Scholarship Information</h2>
 
-                  <h2 className="text-lg font-bold text-textGray mb-2">Details of Online Websites to Apply for Scholarships:</h2>
-                  <p className="text-textGray text-sm mb-2">* The student can apply for only one of the category scholarships given below.</p>
+                  <h2 className="text-xl font-bold  text-textGray mb-1">Details of Online Websites to Apply for Scholarships:</h2>
+                  <p className="md:text-lg  text-[14px] leading-7 mb-2  text-textGray">The student can apply for only one of the category scholarships given below.</p>
 
-                  <ul className="space-y-1">
+                  <ul className="space-y-1 md:text-lg  text-[14px] leading-7  text-textGray">
                     <li className="flex gap-2 items-start text-textGray">
                       <span className="font-medium">•</span>
                       Lower Income for SC students –{" "}
@@ -859,12 +859,12 @@ const MandatoryDisclosure = () => {
                     </li>
                   </ul>
 
-                  <p className="text-textGray text-sm mt-2">
+                  <p className="md:text-lg  text-[14px] leading-7  text-textGray mt-2">
                     Hard copy of the application along with uploaded documents should be submitted to the college office without fail.
                   </p>
 
-                  <h2 className="text-lg font-bold text-textGray mt-6 mb-2">SC/ST Grievance Redressal & Welfare</h2>
-                  <ul className="space-y-1 text-textGray">
+                  <h2 className="text-xl font-bold mb-2 text-textGray mt-6 ">SC/ST Grievance Redressal & Welfare</h2>
+                  <ul className="space-y-1 md:text-lg  text-[14px] leading-7  text-textGray">
                     <li className="flex gap-2 items-start">
                       <span className="font-medium">•</span>
                       Function as a Grievance Redressal Cell for SC/ST/OBC students and help solve academic and administrative issues.
@@ -891,8 +891,8 @@ const MandatoryDisclosure = () => {
                     </li>
                   </ul>
 
-                  <h2 className="text-lg font-bold text-textGray mt-6 mb-2">Activities:</h2>
-                  <ul className="space-y-1 text-textGray">
+                  <h2 className="text-xl font-bold mb-2 text-textGray mt-6">Activities:</h2>
+                  <ul className="space-y-1 md:text-lg  text-[14px] leading-7  text-textGray">
                     <li className="flex gap-2 items-start">
                       <span className="font-medium">•</span>
                       Publishing SC/ST/OBC student facilities on website and college calendar.
@@ -924,13 +924,13 @@ const MandatoryDisclosure = () => {
                   </ul>
 
                   <div className="mt-4">
-                    <Link href="/about/mandatory-disclosure/sc-st-grievance" className="text-blue-600 underline text-sm">
+                    <Link href="/about/mandatory-disclosure/sc-st-grievance" className="text-blue-600 underline md:text-lg  text-[14px] leading-7 ">
                       Click Here to Submit Online Grievance
                     </Link>
                    
                   </div>
 
-                  <div className="overflow-x-auto mt-10">
+                  <div className="overflow-x-auto mt-5">
                     <h2 className="text-xl font-bold mb-4 text-textGray">Committee List – SC/ST</h2>
                     <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                       <thead className="bg-[#F3F8FC] text-[#2884CA]">
@@ -1004,9 +1004,9 @@ const MandatoryDisclosure = () => {
             ) : selectedIndex === 12 ? (
               <>
                 <div className="overflow-x-auto">
-                  <h2 className="text-[20px] font-extrabold text-textGray mb-4">Privacy Policy of Canara Engineering College</h2>
+                  <h2 className="text-[20px] font-extrabold text-textGray mb-2">Privacy Policy of Canara Engineering College</h2>
 
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray ">
                     Canara Engineering College operates the
                     <a href="https://www.canaraengineering.in/" target="_blank" className="text-blue-600 underline ml-1">
                       https://www.canaraengineering.in/
@@ -1014,17 +1014,17 @@ const MandatoryDisclosure = () => {
                     website, which provides the SERVICE.
                   </p>
 
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal
                     Information if anyone decided to use our Service, the CEC website.
                   </p>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     If you choose to use our Service, then you agree to the collection and use of information in relation with this policy. The
                     Personal Information that we collect is used for providing and improving the Service. We will not use or share your information
                     with anyone except as described in this Privacy Policy.
                   </p>
 
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at
                     <a href="https://www.canaraengineering.in/" target="_blank" className="text-blue-600 underline ml-1">
                       https://www.canaraengineering.in/
@@ -1032,78 +1032,78 @@ const MandatoryDisclosure = () => {
                     , unless otherwise defined in this Privacy Policy.
                   </p>
 
-                  <h2 className="text-lg font-bold text-textGray mb-2 mt-6">Information Collection and Use</h2>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Information Collection and Use</h2>
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray ">
                     For a better experience while using our Service, we may require you to provide us with certain personally identifiable
                     information, including but not limited to your name, phone number, and postal address. The information that we collect will be
                     used to contact or identify you.
                   </p>
 
-                  <h2 className="text-lg font-bold text-textGray mb-2 mt-6">Log Data</h2>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Log Data</h2>
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray ">
                     We want to inform you that whenever you visit our Service, we collect information that your browser sends to us that is called Log
                     Data. This Log Data may include information such as your computer's IP address, browser version, pages of our Service that you
                     visit, the time and date of your visit, the time spent on those pages, and other statistics.
                   </p>
 
-                  <h2 className="text-lg font-bold text-textGray mb-2 mt-6">Cookies</h2>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Cookies</h2>
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray ">
                     Cookies are files with a small amount of data that is commonly used as an anonymous unique identifier. These are sent to your
                     browser from the website that you visit and are stored on your computer's hard drive.
                   </p>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray ">
                     Our website uses these "cookies" to collect information and to improve our Service. You have the option to either accept or refuse
                     these cookies and know when a cookie is being sent to your computer. If you choose to refuse our cookies, you may not be able to
                     use some portions of our Service.
                   </p>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">For more general information on cookies, please read "What Are Cookies".</p>
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray ">For more general information on cookies, please read "What Are Cookies".</p>
 
-                  <h2 className="text-lg font-bold text-textGray mb-2 mt-6">Service Providers</h2>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Service Providers</h2>
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray ">
                     We may employ third-party companies and individuals due to the following reasons:
                   </p>
-                  <ul className="list-disc list-inside text-textGray text-[14px] pt-2 leading-7 space-y-1">
+                  <ul className="list-disc md:text-lg  text-[14px] leading-7  text-textGray">
                     <li>To facilitate our Service</li>
                     <li>To provide the Service on our behalf</li>
                     <li>To perform Service-related services</li>
                     <li>To assist us in analyzing how our Service is used</li>
                   </ul>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     These third parties have access to your Personal Information only to perform the tasks assigned to them on our behalf. However,
                     they are obligated not to disclose or use the information for any other purpose.
                   </p>
 
-                  <h2 className="text-lg font-bold text-textGray mb-2 mt-6">Security</h2>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Security</h2>
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     We value your trust in providing us your Personal Information, thus we strive to use commercially acceptable means of protecting
                     it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable,
                     and we cannot guarantee its absolute security.
                   </p>
 
-                  <h2 className="text-lg font-bold text-textGray mb-2 mt-6">Links to Other Sites</h2>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Links to Other Sites</h2>
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     Our Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. These
                     external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have
                     no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
                   </p>
 
-                  <h2 className="text-lg font-bold text-textGray mb-2 mt-6">Children's Privacy</h2>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Children's Privacy</h2>
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     Our Services do not address anyone under the age of 13. We do not knowingly collect personal identifiable information from
                     children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete
                     it from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information,
                     please contact us so that we can take necessary actions.
                   </p>
 
-                  <h2 className="text-lg font-bold text-textGray mb-2 mt-6">Changes to This Privacy Policy</h2>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Changes to This Privacy Policy</h2>
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will
                     notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are
                     posted.
                   </p>
 
-                  <h2 className="text-lg font-bold text-textGray mb-2 mt-6">Contact Us</h2>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Contact Us</h2>
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.
                   </p>
                 </div>
@@ -1113,7 +1113,7 @@ const MandatoryDisclosure = () => {
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-extrabold text-textGray mb-4">Privacy Policy of Canara Engineering College</h2>
 
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     Canara Engineering College operates the
                     <a href="https://www.canaraengineering.in/" target="_blank" className="text-blue-600 underline ml-1">
                       https://www.canaraengineering.in/
@@ -1121,17 +1121,17 @@ const MandatoryDisclosure = () => {
                     website, which provides the SERVICE.
                   </p>
 
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal
                     Information if anyone decided to use our Service, the CEC website.
                   </p>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     If you choose to use our Service, then you agree to the collection and use of information in relation with this policy. The
                     Personal Information that we collect is used for providing and improving the Service. We will not use or share your information
                     with anyone except as described in this Privacy Policy.
                   </p>
 
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at
                     <a href="https://www.canaraengineering.in/" target="_blank" className="text-blue-600 underline ml-1">
                       https://www.canaraengineering.in/
@@ -1139,78 +1139,78 @@ const MandatoryDisclosure = () => {
                     , unless otherwise defined in this Privacy Policy.
                   </p>
 
-                  <h2 className="text-lg font-bold text-textGray mb-2 mt-6">Information Collection and Use</h2>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Information Collection and Use</h2>
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     For a better experience while using our Service, we may require you to provide us with certain personally identifiable
                     information, including but not limited to your name, phone number, and postal address. The information that we collect will be
                     used to contact or identify you.
                   </p>
 
-                  <h2 className="text-lg font-bold text-textGray mb-2 mt-6">Log Data</h2>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Log Data</h2>
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     We want to inform you that whenever you visit our Service, we collect information that your browser sends to us that is called Log
                     Data. This Log Data may include information such as your computer's IP address, browser version, pages of our Service that you
                     visit, the time and date of your visit, the time spent on those pages, and other statistics.
                   </p>
 
-                  <h2 className="text-lg font-bold text-textGray mb-2 mt-6">Cookies</h2>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Cookies</h2>
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     Cookies are files with a small amount of data that is commonly used as an anonymous unique identifier. These are sent to your
                     browser from the website that you visit and are stored on your computer's hard drive.
                   </p>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     Our website uses these "cookies" to collect information and to improve our Service. You have the option to either accept or refuse
                     these cookies and know when a cookie is being sent to your computer. If you choose to refuse our cookies, you may not be able to
                     use some portions of our Service.
                   </p>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">For more general information on cookies, please read "What Are Cookies".</p>
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">For more general information on cookies, please read "What Are Cookies".</p>
 
-                  <h2 className="text-lg font-bold text-textGray mb-2 mt-6">Service Providers</h2>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Service Providers</h2>
+                  <p className="md:text-lg  text-[14px] leading-7  text-textGray">
                     We may employ third-party companies and individuals due to the following reasons:
                   </p>
-                  <ul className="list-disc list-inside text-textGray text-[14px] pt-2 leading-7 space-y-1">
+                  <ul className="list-disc  text-textGray text-[14px] pt-2 leading-7 space-y-1">
                     <li>To facilitate our Service</li>
                     <li>To provide the Service on our behalf</li>
                     <li>To perform Service-related services</li>
                     <li>To assist us in analyzing how our Service is used</li>
                   </ul>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     These third parties have access to your Personal Information only to perform the tasks assigned to them on our behalf. However,
                     they are obligated not to disclose or use the information for any other purpose.
                   </p>
 
-                  <h2 className="text-lg font-bold text-textGray mb-2 mt-6">Security</h2>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Security</h2>
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     We value your trust in providing us your Personal Information, thus we strive to use commercially acceptable means of protecting
                     it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable,
                     and we cannot guarantee its absolute security.
                   </p>
 
-                  <h2 className="text-lg font-bold text-textGray mb-2 mt-6">Links to Other Sites</h2>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Links to Other Sites</h2>
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     Our Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. These
                     external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have
                     no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
                   </p>
 
-                  <h2 className="text-lg font-bold text-textGray mb-2 mt-6">Children's Privacy</h2>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Children's Privacy</h2>
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     Our Services do not address anyone under the age of 13. We do not knowingly collect personal identifiable information from
                     children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete
                     it from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information,
                     please contact us so that we can take necessary actions.
                   </p>
 
-                  <h2 className="text-lg font-bold text-textGray mb-2 mt-6">Changes to This Privacy Policy</h2>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Changes to This Privacy Policy</h2>
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will
                     notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are
                     posted.
                   </p>
 
-                  <h2 className="text-lg font-bold text-textGray mb-2 mt-6">Contact Us</h2>
-                  <p className="text-textGray text-[16px] pt-2 leading-7">
+                  <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Contact Us</h2>
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.
                   </p>
                 </div>

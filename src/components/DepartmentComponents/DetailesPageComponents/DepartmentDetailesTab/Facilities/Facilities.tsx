@@ -32,18 +32,18 @@ const Facilities: React.FC<FacilitiesProps> = ({ data }) => {
   return (
     <div className="lg2:px-24 mx-5 text-[#86868B] text-[17px] space-y-8">
       <div>
-        <h1 className="text-[20px] mb-2 font-extrabold">FACILITIES</h1>
-        <p>{data.description}</p>
+        <h1 className="text-[20px] mb-2 font-extrabold">Facilities</h1>
+        <p className="md:text-lg  text-[14px] leading-7  text-textGray">{data.description}</p>
       </div>
       <div className="space-y-6">
         
         {data.allFacilities.map((facility, idx) => (
             <div key={idx} className="pb-4">
-            <h3 className="font-extrabold text-[20px] mb-2">{facility.title}</h3>
-            {facility.desc && <p className="mb-2">{facility.desc}</p>}
-            {facility.methodes && <p className="mb-2">{facility.methodes}</p>}
+            <h3 className="text-xl font-bold  text-textGray mb-2">{facility.title}</h3>
+            {facility.desc && <p className="mb-2 md:text-lg  text-[14px] leading-7  text-textGray">{facility.desc}</p>}
+            {facility.methodes && <p className="mb-2 md:text-lg  text-[14px] leading-7  text-textGray">{facility.methodes}</p>}
             {facility.points && (
-              <ul className="list-disc ml-6 space-y-1">
+              <ul className="list-disc ml-6 space-y-1 md:text-lg  text-[14px] leading-7  text-textGray">
               {facility.points.map((point, i) => (
                 <li key={i}>{point}</li>
               ))}
@@ -63,8 +63,8 @@ const Facilities: React.FC<FacilitiesProps> = ({ data }) => {
               <div className="mt-2 space-y-2">
               {facility.categories.map((cat, j) => (
                 <div key={j}>
-                <div className="font-medium">{cat.title}</div>
-                <ul className="list-disc ml-6 space-y-1">
+                <div className=" text-lg font-[600] mb-1">{cat.title}</div>
+                <ul className="list-disc font-medium ml-6 space-y-1 text-lg">
                   {cat.items.map((item, k) => (
                   <li key={k}>{item}</li>
                   ))}

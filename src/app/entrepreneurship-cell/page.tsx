@@ -31,7 +31,7 @@ const page = () => {
       <section>
         <Activities />
       </section>
-      <section>
+      <section className="py-10">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           youtubeUrl="https://youtu.be/rv0KerNW4QE?si=ObYcwEiaqF0UD90P"

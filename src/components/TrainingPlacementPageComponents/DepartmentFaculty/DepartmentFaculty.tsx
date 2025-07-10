@@ -29,13 +29,13 @@ export default function DepartmentFaculty() {
   const visibleMembersMobile = data.slice(startIndex, startIndex + 1);
   const handleNext = () => {
     if (startIndex + 1 < data.length) {
-      setStartIndex(startIndex + 1);
+      setStartIndex(startIndex + 2);
     }
   };
 
   const handlePrev = () => {
     if (startIndex - 1 >= 0) {
-      setStartIndex(startIndex - 1);
+      setStartIndex(startIndex - 2);
     }
   };
 

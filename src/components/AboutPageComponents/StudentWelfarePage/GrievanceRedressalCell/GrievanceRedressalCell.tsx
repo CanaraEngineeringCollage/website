@@ -5,12 +5,12 @@ import grievanceRedressalCell from "../../../../utils/grievanceData/grievanceDat
 const GrievanceRedressalCell = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [activeTab, setActiveTab] = useState<string>("New Grievance");
-   const defaultDate = new Date().toLocaleDateString('en-GB');
+  const defaultDate = new Date().toLocaleDateString("en-GB");
 
   return (
     <section className="py-10 text-[#1D1D1F] lg2:px-24 mx-5 overflow-hidden">
       <div>
-        <h1 className="text-[30px] lg:text-[54px] font-bold pb-1 lg:pb-10 text-[#1D1D1F]">Grievance Redressal Cell</h1>
+        <h1 className="text-3xl  md:text-[40px] lg2:text-5xl xl:text-6xl font-bold pb-1 lg:pb-10 text-[#1D1D1F]">Grievance Redressal Cell</h1>
         <div className="grid grid-cols-1 gap-3 md:gap-32 md:grid-cols-12 mt-10">
           {/* Sidebar */}
           <div className="col-span-4">
@@ -53,17 +53,31 @@ const GrievanceRedressalCell = () => {
 
               {activeTab === "New Grievance" && (
                 <form className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-4xl mx-auto">
+                  {/* Date */}
                   <div className="flex flex-col">
-                    <label className="text-sm font-medium">Date</label>
-                    <input type="text" defaultValue={defaultDate} readOnly className="border-b-2 outline-none border-border pb-2 text-textGray" />
+                    <label className="text-lg mb-3 font-[500]">Date</label>
+                    <input
+                      type="text"
+                      defaultValue={defaultDate}
+                      readOnly
+                      className="border-b-2 outline-none border-border pb-2 text-textGray text-base"
+                    />
                   </div>
+
+                  {/* Name */}
                   <div className="flex flex-col">
-                    <label className="text-sm font-medium">Name</label>
-                    <input type="text" placeholder="Enter your full name" className="border-b-2 outline-none border-border pb-2 text-textGray" />
+                    <label className="text-lg mb-3 font-[500]">Name</label>
+                    <input
+                      type="text"
+                      placeholder="Enter your full name"
+                      className="border-b-2 outline-none border-border pb-2 text-textGray text-base"
+                    />
                   </div>
+
+                  {/* Grievance From */}
                   <div className="flex flex-col">
-                    <label className="text-sm font-medium">Grievance From</label>
-                    <select className="border-b-2 outline-none border-border pb-2 text-textGray">
+                    <label className="text-lg mb-3 font-[500]">Grievance From</label>
+                    <select className="border-b-2 outline-none border-border pb-[13px] text-textGray text-base">
                       <option>SELECT TYPE</option>
                       <option>STUDENT</option>
                       <option>PARENT</option>
@@ -71,27 +85,33 @@ const GrievanceRedressalCell = () => {
                       <option>ANY OTHER STAKE HOLDER</option>
                     </select>
                   </div>
+
+                  {/* Contact Number */}
                   <div className="flex flex-col">
-                    <label className="text-sm font-medium">Contact Number</label>
+                    <label className="text-lg mb-3 font-[500]">Contact Number</label>
                     <input
                       type="tel"
                       maxLength={10}
                       pattern="[0-9]{10}"
                       placeholder="Enter valid 10 digit mobile number"
-                      className="border-b-2 outline-none border-border pb-2 text-textGray"
+                      className="border-b-2 outline-none border-border pb-2 text-textGray text-base"
                     />
                   </div>
+
+                  {/* Email */}
                   <div className="flex flex-col">
-                    <label className="text-sm font-medium">Email</label>
+                    <label className="text-lg mb-3 font-[500]">Email</label>
                     <input
                       type="email"
                       placeholder="Enter your E-Mail address"
-                      className="border-b-2 outline-none border-border pb-2 text-textGray"
+                      className="border-b-2 outline-none border-border pb-2 text-textGray text-base"
                     />
                   </div>
+
+                  {/* Grievance Related To */}
                   <div className="flex flex-col sm:col-span-2">
-                    <label className="text-sm font-medium">Grievance Related To</label>
-                    <select className="border-b-2 outline-none border-border pb-2 text-textGray">
+                    <label className="text-lg mb-3 font-[500]">Grievance Related To</label>
+                    <select className="border-b-2 outline-none border-border pb-2 text-textGray text-base">
                       <option>SELECT</option>
                       <option>ACADEMICS</option>
                       <option>INFRASTRUCTURE</option>
@@ -100,17 +120,29 @@ const GrievanceRedressalCell = () => {
                       <option>ANY OTHER ISSUE</option>
                     </select>
                   </div>
+
+                  {/* Nature of Grievance */}
                   <div className="flex flex-col sm:col-span-2">
-                    <label className="text-sm font-medium">Nature of Grievance</label>
+                    <label className="text-lg mb-3 font-[500]">Nature of Grievance</label>
                     <textarea
                       rows={4}
                       placeholder="Describe your grievance..."
-                      className="border-b-2 outline-none border-border pb-2 text-textGray"
+                      className="border-b-2 outline-none border-border pb-2 text-textGray text-base"
                     />
                   </div>
+
+                  {/* Buttons */}
                   <div className="flex sm:col-span-2 justify-center gap-4 mt-6">
-                    <button type="submit" aria-label="Submit" className="px-6 py-2 rounded-3xl bg-[#2884CA] text-white font-semibold">Submit</button>
-                    <button type="reset" aria-label="Reset" className="px-6 py-2 rounded-3xl border border-[#2884CA] text-[#2884CA] bg-white font-semibold">Reset</button>
+                    <button type="submit" aria-label="Submit" className="px-6 py-2 rounded-3xl bg-[#2884CA] text-white font-semibold">
+                      Submit
+                    </button>
+                    <button
+                      type="reset"
+                      aria-label="Reset"
+                      className="px-6 py-2 rounded-3xl border border-[#2884CA] text-[#2884CA] bg-white font-semibold"
+                    >
+                      Reset
+                    </button>
                   </div>
                 </form>
               )}
@@ -118,7 +150,7 @@ const GrievanceRedressalCell = () => {
               {activeTab === "Know your status" && (
                 <form className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-2xl mx-auto">
                   <div className="flex flex-col">
-                    <label className="text-sm font-medium">Contact Number</label>
+                    <label className="text-lg  mb-3 font-[500]">Contact Number</label>
                     <input
                       type="tel"
                       maxLength={10}
@@ -128,7 +160,7 @@ const GrievanceRedressalCell = () => {
                     />
                   </div>
                   <div className="flex flex-col">
-                    <label className="text-sm font-medium">Email</label>
+                    <label className="text-lg  mb-3 font-[500]">Email</label>
                     <input
                       type="email"
                       placeholder="Enter your E-Mail address"
@@ -147,18 +179,18 @@ const GrievanceRedressalCell = () => {
           ) : (
             <div className="col-span-8">
               {grievanceRedressalCell[selectedIndex]?.data?.map((item, i) => (
-                <div key={i} className="mb-6">
+                <div key={i} className="">
                   {/* Title */}
                   {item.title && <h2 className="text-[20px] font-extrabold text-textGray mb-2">{item.title}</h2>}
 
                   {/* Description */}
-                  {"description" in item && item.description && <p className="text-[17px] text-textGray lg:pe-16 mt-1">{item.description}</p>}
+                  {"description" in item && item.description && <p className="md:text-lg  text-[14px] leading-7  text-textGray lg:pe-16 ">{item.description}</p>}
 
                   {/* Bullet Points */}
                   {"points" in item && item.points && (
-                    <ul className="list-disc pl-5 space-y-1 mt-4">
+                    <ul className="list-disc mt-5 pl-5  md:text-lg  text-[14px] leading-7  text-textGray">
                       {item.points.map((point: string, j: number) => (
-                        <li key={j} className="text-[17px] text-textGray">
+                        <li key={j} className="pb-2">
                           {point}
                         </li>
                       ))}
@@ -173,11 +205,11 @@ const GrievanceRedressalCell = () => {
                   {/* Table */}
                   {"type" in item && item.type === "table" && (
                     <div className="overflow-x-auto mt-6">
-                      <table className="min-w-full text-sm border border-gray-300">
-                        <thead className="bg-gray-100">
+                      <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                        <thead className="bg-[#F3F8FC] text-[#2884CA]">
                           <tr>
                             {item.headers?.map((header: string, hIndex: number) => (
-                              <th key={hIndex} className="text-left p-2 border border-gray-300 font-semibold">
+                              <th key={hIndex} className="py-3 md:px-4 px-1 border-b">
                                 {header}
                               </th>
                             ))}
@@ -185,9 +217,9 @@ const GrievanceRedressalCell = () => {
                         </thead>
                         <tbody>
                           {item.rows?.map((row: string[], rIndex: number) => (
-                            <tr key={rIndex} className="hover:bg-gray-50">
+                            <tr key={rIndex} className="text-textGray">
                               {row.map((cell: string, cIndex: number) => (
-                                <td key={cIndex} className="p-2 border border-gray-300 text-textGray">
+                                <td key={cIndex} className="py-3 md:px-4 px-1 border-b">
                                   {cell}
                                 </td>
                               ))}

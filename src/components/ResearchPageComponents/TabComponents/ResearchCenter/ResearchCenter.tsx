@@ -118,11 +118,11 @@ const detailes2 = [
 const ResearchCenter = () => {
   return (
     <div className=" text-[#86868B] mx-5 text-[17px]">
-      <h1 className="text-[#86868B] text-2xl font-extrabold mb-5">Dept. of Chemistry</h1>
+      <h1 className="text-[#86868B] text-[20px] font-extrabold mb-5">Dept. of Chemistry</h1>
       <div className="space-y-8">
         <div>
-          <h1 className="text-[#86868B] text-xl font-extrabold mb-2">Domain of Research</h1>
-          <ul className="list-decimal ml-5 text-lg">
+          <h1 className="text-xl font-bold  text-textGray mb-2">Domain of Research</h1>
+          <ul className="list-disc ml-5 text-lg">
             {research.map((item) => (
               <li>{item}</li>
             ))}
@@ -130,7 +130,7 @@ const ResearchCenter = () => {
         </div>
 
         <div>
-          <h1 className="text-[#86868B] text-xl font-extrabold mb-2">Research Facility</h1>
+          <h1 className="text-xl font-bold  text-textGray mb-2">Research Facility</h1>
           <div className="overflow-x-auto">
             <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
               <thead>
@@ -155,14 +155,14 @@ const ResearchCenter = () => {
           </div>
         </div>
         <div>
-          <h1 className="text-[#86868B] text-xl font-extrabold mb-2">Research Guides & Research Scholars</h1>
-          <ul className="list-decimal ml-5 text-lg">
-            <li>Dr. Priya V. Frank</li>
+          <h1 className="text-xl font-bold  text-textGray mb-2">Research Guides & Research Scholars</h1>
+          <ul className=" ml-5 md:text-lg  text-[14px] leading-7  text-textGray">
+            <li className="font-bold mt-5">Dr. Priya V. Frank</li>
             <li className="list-disc ml-10">Lavanya D. Kateel - Completed</li>
           </ul>
         </div>
         <div className="overflow-x-auto">
-          <h1 className="text-[#86868B] text-xl font-extrabold mb-2">Research Facility</h1>
+          <h1 className="text-xl font-bold  text-textGray mb-2">Research Facility</h1>
           <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
             <thead>
               <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -186,10 +186,10 @@ const ResearchCenter = () => {
 
         <div className="">
           <h2 className="text-xl font-semibold mb-4">Research Guides & Research Scholars</h2>
-          <ol className="list-decimal pl-5 space-y-3">
+          <ol className=" pl-5 space-y-3 md:text-lg  text-[14px] leading-7  text-textGray">
             {researchGuides.map((guide, index) => (
               <li key={index}>
-                <p className="font-medium">{guide.name}</p>
+                <p className="font-bold">{guide.name}</p>
                 <ul className="list-disc pl-5 mt-1 space-y-1">
                   {guide.scholars.map((scholar, idx) => (
                     <li key={idx} className="">
@@ -211,7 +211,7 @@ const ResearchCenter = () => {
           </ul>
         </div>
         <div>
-          <h1 className="text-[#86868B] text-xl font-extrabold mb-2">Research Facility</h1>
+          <h1 className="text-xl font-bold  text-textGray mb-2">Research Facility</h1>
           <div className="overflow-x-auto">
             <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
               <thead>
@@ -237,10 +237,10 @@ const ResearchCenter = () => {
         </div>
          <div className="">
           <h2 className="text-xl font-semibold mb-4">Research Guides & Research Scholars</h2>
-          <ol className="list-decimal pl-5 space-y-3">
+          <ol className=" pl-5 space-y-3  md:text-lg  text-[14px] leading-7  text-textGray">
             {researchGuides2.map((guide, index) => (
               <li key={index}>
-                <p className="font-medium">{guide.name}</p>
+                <p className="font-bold">{guide.name}</p>
                 <ul className="list-disc pl-5 mt-1 space-y-1">
                   {guide.scholars.map((scholar, idx) => (
                     <li key={idx} className="">
