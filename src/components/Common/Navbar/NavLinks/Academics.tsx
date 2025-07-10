@@ -10,26 +10,27 @@ import { usePathname, useSearchParams } from "next/navigation";
 export default function Academics() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const pathname=usePathname()
-      const searchParams = useSearchParams();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
   const tab = searchParams.get("tab");
-  
 
   return (
     <Menu open={isMenuOpen} handler={setIsMenuOpen} offset={{ mainAxis: 20 }} placement="bottom" allowHover={true}>
       <MenuHandler>
         <Typography as="div" variant="small" className="text-sm xl:text-base">
           <ListItem
-      placeholder={"Life At Canara"} // ✅ Added placeholder for better UX
-          role="button" // ✅ Added role for accessibility: required for aria-* to be valid
-      aria-expanded={isMenuOpen} // ✅ Added to indicate the toggle state
-      aria-controls="about-menu" // ✅ Optional: add an ID to the target menu section if applicable
-      aria-haspopup="true" // ✅ Indicates that it opens a submenu
-      tabIndex={0} // ✅ Ensures the element is keyboard focusable
+            placeholder={"Life At Canara"} // ✅ Added placeholder for better UX
+            role="button" // ✅ Added role for accessibility: required for aria-* to be valid
+            aria-expanded={isMenuOpen} // ✅ Added to indicate the toggle state
+            aria-controls="about-menu" // ✅ Optional: add an ID to the target menu section if applicable
+            aria-haspopup="true" // ✅ Indicates that it opens a submenu
+            tabIndex={0} // ✅ Ensures the element is keyboard focusable
             className={`flex items-center ${
               isMenuOpen ? "opacity-100" : "opacity-80"
             } gap-2 py-2 pr-4 text-webGreen1 transition-colors ease-in-out duration-300 hover:text-webGreen1
-            bg-transparent   font-semibold hover:bg-transparent ${pathname.includes("academics")||pathname.includes("/department")?`border-[#005580] border-b-2 text-[#005580]`:" text-[#2884CA]"} shadow-none rounded-none outline-none focus:ring-0 focus:outline-none`}
+            bg-transparent   font-semibold hover:bg-transparent ${
+              pathname.includes("academics") || pathname.includes("/department") ? `border-[#005580] border-b-2 text-[#005580]` : " text-[#2884CA]"
+            } shadow-none rounded-none outline-none focus:ring-0 focus:outline-none`}
             selected={isMenuOpen || isMobileMenuOpen}
             onClick={() => setIsMobileMenuOpen((cur) => !cur)}
           >
@@ -57,7 +58,13 @@ export default function Academics() {
                 <span className="font-bold text-lg">Curriculums</span>
                 <ul className="list-none text-gray-500 leading-10 cursor-pointer">
                   <Link href="/academics/academic-overview">
-                    <li className={`${pathname.includes("/academics/academic-overview") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Academic Overview</li>
+                    <li
+                      className={`${
+                        pathname.includes("/academics/academic-overview") ? `text-primary font-bold` : "text-gray-500"
+                      } hover:text-primary `}
+                    >
+                      Academic Overview
+                    </li>
                   </Link>
                   {/* <Link href="/academics/programs">
                     <li className={`${pathname.includes("/academics/programs") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Programs</li>
@@ -76,7 +83,10 @@ export default function Academics() {
                 <ul className="list-none text-gray-500 leading-10 cursor-pointer">
                   {departments.map((dept, index) => (
                     <li key={index}>
-                      <Link href={dept.link} className={`${pathname.includes(dept.link) ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>
+                      <Link
+                        href={dept.link}
+                        className={`${pathname.includes(dept.link) ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
+                      >
                         {dept.title}
                       </Link>
                     </li>
@@ -93,17 +103,15 @@ export default function Academics() {
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Examinations & Records</span>
                 <ul className="list-none text-gray-500 leading-10 cursor-pointer ">
-                   <Link href="/academics/examination-records?tab=marks">
-                    <li className={`${tab==="marks" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Marks & Attendance</li>
+                  <Link href="/academics/examination-records?tab=marks">
+                    <li className={`${tab === "marks" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Marks & Attendance</li>
                   </Link>
-                   <Link href="/academics/examination-records?tab=circulars">
-                    <li className={`${tab==="circulars" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Circulars</li>
+                  <Link href="/academics/examination-records?tab=circulars">
+                    <li className={`${tab === "circulars" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Circulars</li>
                   </Link>
                   <Link href="/academics/examination-records?tab=tt">
-                    <li className={`${tab==="tt" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Timetables</li>
+                    <li className={`${tab === "tt" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Timetables</li>
                   </Link>
-                 
-                 
                 </ul>
               </div>
             </div>
@@ -117,10 +125,16 @@ export default function Academics() {
                 <span className="font-bold text-lg">Learning Hub</span>
                 <ul className="list-none text-gray-500 leading-10 cursor-pointer">
                   <Link href="/academics/learning-hub">
-                    <li className={`${pathname.includes("/academics/learning-hub") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Resources</li>
+                    <li
+                      className={`${pathname.includes("/academics/learning-hub") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
+                    >
+                      Resources
+                    </li>
                   </Link>
                   <Link href="/academics/research">
-                    <li className={`${pathname.includes("/academics/research") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Research</li>
+                    <li className={`${pathname.includes("/academics/research") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>
+                      Research
+                    </li>
                   </Link>
                 </ul>
               </div>
