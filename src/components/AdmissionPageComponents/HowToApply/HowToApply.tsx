@@ -48,7 +48,7 @@ const HowToApply = () => {
     <section className="max-w-7xl xl:max-w-[75%] mx-auto py-20 md:pt-36 overflow-hidden">
       <div className="lg:max-w-[60%] mb-20">
         <motion.h1
-          className="text-3xl mb-7 md:text-[40px] lg:text-5xl xl:text-6xl text-black font-extrabold"
+          className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold leading-tight"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}

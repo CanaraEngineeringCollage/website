@@ -5,7 +5,7 @@ const AboutHistoryCanara = () => {
   return (
     <div className="max-w-7xl mx-auto xl:max-w-[75%]  pt-20 text-black">
       <h4 className="text-3xl text-textGray py-5 xl:py-12">About Canara Engineering College</h4>
-      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold">A Campus Like No other</h1>
+      <h1 className="text-3xl md:text-[40px] text-[#1D1D1F] lg2:text-5xl xl:text-6xl font-bold">A Campus Like No other</h1>
       <p className="lg:text-xl md:text-lg text-[14px] leading-7 pt-8 xl:pt-16 text-textGray">
         Canara Engineering College(CEC), established in the year 2001 as a new millennium project of Canara High School Association, in the sprawling
         campus of 26 acres of pristine natural beauty at Benjanapadavu, Mangalore has now grown as a promising engineering institution with
@@ -52,14 +52,14 @@ const AboutHistoryCanara = () => {
         several programs like training the students to face campus recruitment tests and interviews through regular soft skill/communication skill
         development programs, Entrepreneurship Awareness Camps and helping the desired students to productize/commercialize their creative ideas.
       </p>
-      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold">CANARA ENGINEERING COLLEGE ROAD MAP... </h1>
-      <p className="lg:text-xl md:text-lg text-[14px] py-12 leading-7  text-textGray">
+      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl text-[#1D1D1F] font-bold">Canara Engineering College Road Map </h1>
+      <p className="lg:text-xl md:text-lg text-[14px] pb-5 pt-5 leading-7  text-textGray">
         In an attempt to impart holistic education, to make "Canara Engineering College" a role model in higher education and the most preferred
         choice of students, staff, parents, society and industry in the near future; the following few proposals or action plans are projected, for 2
         to 3 years down the lane:
       </p>
-      <div className="md:pl-12">
-        <ul className="list-disc list-inside space-y-4 text-textGray text-[14px] md:text-lg lg:text-xl leading-7">
+      <div className="pl-5">
+        <ul className="list-disc  space-y-4 text-textGray text-[14px] md:text-lg lg:text-xl leading-7">
           <li>
             In line with NEP-2020, adding new UG and PG programs in emerging and multidisciplinary areas, like Cyber Security, Data Science, IOT,
             Business Management, Automation & Robotics & the like is being planned. Building of strong PG & Ph.D. programs is needed for further
@@ -114,7 +114,7 @@ const AboutHistoryCanara = () => {
           </li>
         </ul>
       </div>
-      <p className="lg:text-xl md:text-lg text-[14px] leading-7 py-12 text-black font-bold">
+      <p className="lg:text-xl md:text-lg text-[14px] leading-7 py-12 text-[#1D1D1F] font-bold">
         Canara Engineering College being a flagship institution under Canara Educational Group, has a major role to play towards becoming an
         Autonomous or Deemed University in the near future.
       </p>

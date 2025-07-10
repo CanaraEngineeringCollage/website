@@ -5,12 +5,14 @@ import { FaChevronUp } from "react-icons/fa6";
 import { Book, Examination, Learning, Notpad } from "@/components/Icons/Icons";
 import Link from "next/link";
 import { departments } from "@/utils/pagesData/navigation";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 
 export default function Academics() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const pathname=usePathname()
+      const searchParams = useSearchParams();
+  const tab = searchParams.get("tab");
   
 
   return (
@@ -91,15 +93,17 @@ export default function Academics() {
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Examinations & Records</span>
                 <ul className="list-none text-gray-500 leading-10 cursor-pointer ">
-                  <Link href="/academics/examination-records">
-                    <li className="hover:text-primary">Timetables</li>
+                   <Link href="/academics/examination-records?tab=marks">
+                    <li className={`${tab==="marks" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Marks & Attendance</li>
                   </Link>
-                  <Link href="/academics/examination-records">
-                    <li className="hover:text-primary">Circulars</li>
+                   <Link href="/academics/examination-records?tab=circulars">
+                    <li className={`${tab==="circulars" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Circulars</li>
                   </Link>
-                  <Link href="/academics/examination-records">
-                    <li className="hover:text-primary">Marks & Attendance</li>
+                  <Link href="/academics/examination-records?tab=tt">
+                    <li className={`${tab==="tt" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Timetables</li>
                   </Link>
+                 
+                 
                 </ul>
               </div>
             </div>

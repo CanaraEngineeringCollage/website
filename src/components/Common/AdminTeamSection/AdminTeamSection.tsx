@@ -43,7 +43,7 @@ export default function AdminTeamSection() {
       <div className=" mx-auto lg:flex hidden  flex-col-reverse md:flex-row items-center justify-between gap-10">
         <div className="max-w-md space-y-44">
           <div>
-            <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-gray-900 leading-tight">
+            <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-[#1D1D1F] leading-tight">
               Meet Our <br />
               <span className="">Administrative Team</span>
             </h2>
@@ -55,7 +55,7 @@ export default function AdminTeamSection() {
           <div className="flex items-center gap-4">
             <button
               aria-label="Meet more of our Admin Team"
-              className="bg-blue-100 text-black text-block px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition"
+              className="bg-blue-100 text-[#1D1D1F] text-block px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition"
             >
               Meet more of our Admin Team
             </button>

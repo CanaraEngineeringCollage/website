@@ -35,7 +35,7 @@ const page = () => {
       <section>
         <VideoPlayer
           title="Modern Amenities for Everyday Comfort"
-          titleClassname="text-black !max-w-full"
+          titleClassname="text-[#1D1D1F] !max-w-full"
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           youtubeUrl="https://youtu.be/rv0KerNW4QE?si=ObYcwEiaqF0UD90P"
           thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1746006620/Container_3_vv5tog.png"

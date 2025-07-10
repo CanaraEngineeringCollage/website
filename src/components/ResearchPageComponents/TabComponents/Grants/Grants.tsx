@@ -341,24 +341,24 @@ import React from "react"
 const Grants = () => {
   return (
     <div className="overflow-x-auto">
-      <table className="min-w-full border border-gray-300 text-sm">
+      <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
         <thead>
-          <tr className="bg-gray-100 text-[#86868B]">
-            <th className="px-4 py-2 border">Name of the research project/ endowment</th>
-            <th className="px-4 py-2 border">Year of Award</th>
-            <th className="px-4 py-2 border">Amount Sanctioned</th>
-            <th className="px-4 py-2 border">Name of the Funding Agency</th>
-            <th className="px-4 py-2 border">Status</th>
+          <tr className="bg-[#F3F8FC] text-[#2884CA]">
+            <th className="py-3 md:px-4 px-1 border-b">Name of the research project / endowment</th>
+            <th className="py-3 md:px-4 px-1 border-b">Year of Award</th>
+            <th className="py-3 md:px-4 px-1 border-b">Amount Sanctioned</th>
+            <th className="py-3 md:px-4 px-1 border-b">Name of the Funding Agency</th>
+            <th className="py-3 md:px-4 px-1 border-b">Status</th>
           </tr>
         </thead>
-        <tbody className="bg-white text-gray-700">
+        <tbody className="text-textGray">
           {fundedProjectsData.map((item, index) => (
-            <tr key={index} className="border-t">
-              <td className="px-4 py-2 border">{item.name}</td>
-              <td className="px-4 py-2 border">{item.year}</td>
-              <td className="px-4 py-2 border">{item.amount}</td>
-              <td className="px-4 py-2 border">{item.fundingAgency}</td>
-              <td className="px-4 py-2 border">{item.status}</td>
+            <tr key={index} className="h-24 max-h-24">
+              <td className="py-3 md:px-4 px-1 border-b">{item.name}</td>
+              <td className="py-3 md:px-4 px-1 border-b">{item.year}</td>
+              <td className="py-3 md:px-4 px-1 border-b">{item.amount}</td>
+              <td className="py-3 md:px-4 px-1 border-b">{item.fundingAgency}</td>
+              <td className="py-3 md:px-4 px-1 border-b">{item.status}</td>
             </tr>
           ))}
         </tbody>

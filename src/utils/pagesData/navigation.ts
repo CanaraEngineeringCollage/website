@@ -29,6 +29,10 @@ const administration = [
     link: "/about/governing-council",
   },
   {
+    title: "Key Functionaries & HODs",
+    link: "/about/key-functionaries-and-hods",
+  },
+  {
     title: "Educators & Administrators",
     link: "/about/educators-administrators",
   },
@@ -110,6 +114,10 @@ const learningHub = [
   {
     title: "Resources",
     link: "/academics/learning-hub",
+  },
+  {
+    title: "Research",
+    link: "/academics/research",
   },
 ];
 

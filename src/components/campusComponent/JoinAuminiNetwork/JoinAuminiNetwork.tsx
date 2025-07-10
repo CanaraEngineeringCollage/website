@@ -5,7 +5,7 @@ export default function JoinAluminiNetwork() {
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: "url(/gradientBackgrounds/image.png)",
+          backgroundImage: "url(/gradientBackgrounds/image.webp)",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover", // Optional: make sure it covers the section nicely
           backgroundPosition: "center", // Optional: center it perfectly

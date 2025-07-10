@@ -10,7 +10,7 @@ const TopRecruiters: React.FC = () => {
   return (
     <section className="max-w-7xl xl:max-w-[75%] mx-auto md:py-10 md:pb-0 pb-12">
       <div className="translate-y-0 transition-all duration-1000 ease-out">
-        <h2 className="text-3xl md:text-[40px] lg2:text-5xl font-bold text-black text-center mb-22">
+        <h2 className="text-3xl md:text-[40px] lg2:text-5xl font-bold text-[#1D1D1F] text-center mb-22">
           Top Recruiters
         </h2>
 

@@ -193,34 +193,34 @@ const data = [
 const Patents = () => {
   return (
 <div className="overflow-x-auto">
-  <table className="min-w-full border border-gray-300 text-sm">
+  <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
     <thead>
-      <tr className="bg-gray-100 text-[#86868B]">
-        <th className="px-4 py-2 border text-left align-top">Sl No</th>
-        <th className="px-4 py-2 border text-left align-top">Patent No.</th>
-        <th className="px-4 py-2 border text-left align-top">Patent Title</th>
-        <th className="px-4 py-2 border text-left align-top">Applicant Name</th>
-        <th className="px-4 py-2 border text-left align-top">Inventors Name</th>
-        <th className="px-4 py-2 border text-left align-top">Status</th>
-        <th className="px-4 py-2 border text-left align-top">Year</th>
+      <tr className="bg-[#F3F8FC] text-[#2884CA]">
+        <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
+        <th className="py-3 md:px-4 px-1 border-b">Patent No.</th>
+        <th className="py-3 md:px-4 px-1 border-b">Patent Title</th>
+        <th className="py-3 md:px-4 px-1 border-b">Applicant Name</th>
+        <th className="py-3 md:px-4 px-1 border-b">Inventors Name</th>
+        <th className="py-3 md:px-4 px-1 border-b">Status</th>
+        <th className="py-3 md:px-4 px-1 border-b">Year</th>
       </tr>
     </thead>
-    <tbody className="bg-white text-gray-700">
+    <tbody className="text-textGray">
       {data.map((item, index) => (
-        <tr key={index} className="border-t">
-          <td className="px-4 py-2 border text-left align-top">{index+1}</td>
-          <td className="px-4 py-2 border text-left align-top">{item.patentNo}</td>
-          <td className="px-4 py-2 border text-left align-top">{item.patentTitle}</td>
-          <td className="px-4 py-2 border text-left align-top">{item.applicantName}</td>
-          <td className="px-4 py-2 border text-left align-top">
+        <tr key={index} >
+          <td className="py-3 md:px-4 align-top px-1 border-b">{index+1}</td>
+          <td className="py-3 md:px-4 align-top px-1 border-b">{item.patentNo}</td>
+          <td className="py-3 md:px-4 align-top px-1 border-b">{item.patentTitle}</td>
+          <td className="py-3 md:px-4 align-top px-1 border-b">{item.applicantName}</td>
+          <td className="py-3 md:px-4 align-top px-1 border-b">
             <ul className="list-disc pl-5">
               {item.inventorsName.map((inventor, i) => (
                 <li key={i} className="py-1">{inventor}</li>
               ))}
             </ul>
           </td>
-          <td className="px-4 py-2 border text-left align-top">{item.status}</td>
-          <td className="px-4 py-2 border text-left align-top">{item.year}</td>
+          <td className="py-3 md:px-4 px-1 align-top border-b">{item.status}</td>
+          <td className="py-3 md:px-4 px-1 align-top border-b">{item.year}</td>
         </tr>
       ))}
     </tbody>

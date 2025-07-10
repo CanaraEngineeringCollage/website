@@ -21,8 +21,9 @@ const quickLinks = [
 
 const ourCollege = [
   { data: "About Us", links: "/about/about-cec" },
-  { data: "Founder & Our Management", links: "/about/our-founder" },
-  { data: "Key Functionaries & HODs", links: "#" },
+  { data: "Our Founder", links: "/about/our-founder" },
+  { data: "Our Management", links: "/about/our-management" },
+  { data: "Key Functionaries & HODs", links: "/about/key-functionaries-and-hods" },
   { data: "Teaching Faculty", links: "#" },
   { data: "Non Teaching Staff", links: "#" },
   { data: "Administration Staff", links: "#" },

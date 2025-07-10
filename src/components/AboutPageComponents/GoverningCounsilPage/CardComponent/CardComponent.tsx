@@ -31,7 +31,7 @@ const ProfileCard = ({datam,title}:{datam:GoverningCouncilMember;title:string}) 
 
   return (
     <section className="pb-20 px-4 sm:px-8 md:px-16 lg:px-64 xl:px-64">
-      <h1 className="text-black text-[40px] lg:text-[54px] mb-10 mt-10 md:mb-20 font-bold text-center">
+      <h1 className="text-[#1D1D1F] text-[40px] lg:text-[54px] mb-10 mt-10 md:mb-20 font-bold text-center">
         {title}
       </h1>
 

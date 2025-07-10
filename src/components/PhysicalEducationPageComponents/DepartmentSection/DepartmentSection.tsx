@@ -79,7 +79,7 @@ const participation = [
 
 const DepartmentSection = () => {
   return (
-    <div className="max-w-7xl mx-auto lg:px-36 xl:max-w-[75%]  py-20 text-black">
+    <div className="max-w-7xl mx-auto lg:px-36 xl:max-w-[75%]  py-20 text-[#1D1D1F]">
       <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold "> Department of Physical Education</h1>
       <p className="lg:text-xl md:text-lg text-[14px] leading-7 pt-10 text-textGray">
         Physical education-is an integral part of educational program designed to promote the optimum development of an individual. It makes one

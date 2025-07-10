@@ -33,8 +33,8 @@ const Organaisation = ({ data }: { data: Organaisation }) => {
       <h3 className="text-xl font-semibold mb-3">{table.title}</h3>
     )}
     <div className="overflow-x-auto">
-      <table className="min-w-full border border-gray-300 text-left">
-        <tbody>
+      <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+        <tbody className="bg-[#F3F8FC] text-[#2884CA]">
           {table.firstColumn.map((firstCol, colIdx) => {
             const secondCol = table.secondColumn[colIdx];
             const maxLength = Math.max(
@@ -49,7 +49,7 @@ const Organaisation = ({ data }: { data: Organaisation }) => {
                   <tr>
                     <td
                       colSpan={2}
-                      className="border border-gray-300 font-semibold  px-4 py-2 bg-gray-100 text-center"
+                      className="py-3 md:px-4 px-1 border-b text-center"
                     >
                       {firstCol.title.join(', ')}
                     </td>
@@ -58,11 +58,11 @@ const Organaisation = ({ data }: { data: Organaisation }) => {
 
                 {/* Data rows */}
                 {Array.from({ length: maxLength }).map((_, rowIdx) => (
-                  <tr key={rowIdx}>
-                    <td className="border border-gray-300 px-4 py-2">
+                  <tr key={rowIdx}  className="text-textGray">
+                    <td className="py-3 md:px-4 px-1 border-b">
                       {firstCol.data[rowIdx] || ''}
                     </td>
-                    <td className="border border-gray-300 px-4 py-2">
+                    <td className="py-3 md:px-4 px-1 border-b">
                       {secondCol?.data[rowIdx] || ''}
                     </td>
                   </tr>
