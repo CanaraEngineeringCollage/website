@@ -5,6 +5,8 @@ import grievanceRedressalCell from "../../../../utils/grievanceData/grievanceDat
 const GrievanceRedressalCell = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [activeTab, setActiveTab] = useState<string>("New Grievance");
+   const defaultDate = new Date().toLocaleDateString('en-GB');
+
   return (
     <section className="py-10 text-[#1D1D1F] lg2:px-24 mx-5 overflow-hidden">
       <div>
@@ -53,7 +55,7 @@ const GrievanceRedressalCell = () => {
                 <form className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-4xl mx-auto">
                   <div className="flex flex-col">
                     <label className="text-sm font-medium">Date</label>
-                    <input type="text" defaultValue="01/07/2025" readOnly className="border-b-2 outline-none border-border pb-2 text-textGray" />
+                    <input type="text" defaultValue={defaultDate} readOnly className="border-b-2 outline-none border-border pb-2 text-textGray" />
                   </div>
                   <div className="flex flex-col">
                     <label className="text-sm font-medium">Name</label>

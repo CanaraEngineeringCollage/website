@@ -1,5 +1,6 @@
 import FormSection from "@/components/AcademicsPageComponents/ExaminationsAndRecords/FormSection/FormSection";
 import React from "react";
+import { Suspense } from "react";
 
 export const metadata = {
   title: "Examination Records | Canara College",
@@ -32,7 +33,9 @@ const page = () => {
   return (
     <>
       <section className="px-6 md:px-12 lg:pl-16 lg:px-0 xl:px-0">
-        <FormSection />
+        <Suspense fallback={<div>Loading department info...</div>}>
+          <FormSection />
+        </Suspense>
       </section>
     </>
   );

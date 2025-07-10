@@ -6,6 +6,7 @@ import Life from "../NavLinks/Life";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import FormModal from "@/components/campusComponent/FromModal/FromModal";
+import { Suspense } from "react"
 
 function NavbarItems() {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
@@ -17,7 +18,8 @@ const pathname = usePathname()
         <About />
       </div>
       <div className="cursor-pointer pt-[8px] text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
-        <Academics />
+       <Suspense fallback={null}><Academics /></Suspense>
+        
       </div>
       <div
         id="admission"
