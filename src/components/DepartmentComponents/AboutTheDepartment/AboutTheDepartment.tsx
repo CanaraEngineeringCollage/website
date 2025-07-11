@@ -12,7 +12,7 @@ const AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepartm
   console.log(slug);
 
   return (
-    <section className="md:py-20 text-[#1D1D1F] xl:py-44 pb-10 max-w-7xl xl:max-w-[75%] mx-auto lg:px-32">
+    <section className="md:py-14 text-[#1D1D1F] xl:py-44 pb-10 max-w-7xl xl:max-w-[75%] mx-auto lg:px-32">
       <div>
         <div className="flex justify-between items-center mb-5 lg:mb-10">
           <div>

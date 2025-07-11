@@ -32,7 +32,7 @@ const page = () => {
       <section>
         <DepartmentSection />
       </section>
-      <section>
+      <section className="py-20">
         <VideoPlayer
           title="Modern Amenities for Everyday Comfort"
           titleClassname="text-[#1D1D1F] !max-w-full"

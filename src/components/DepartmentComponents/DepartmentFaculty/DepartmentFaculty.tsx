@@ -83,7 +83,7 @@ export default function DepartmentFacultySection({ faculties }: DepartmentSectio
     setSelectedMember(null);
   };
   return (
-    <section className="py-16 px-6 md:px-12 max-w-7xl mx-auto my-56 xl:max-w-[75%] bg-[#F5F5F7] rounded-3xl">
+    <section className="py-16 px-6 md:px-12 max-w-7xl mx-auto my-32 xl:max-w-[75%] bg-[#F5F5F7] rounded-3xl">
       <div className="mx-auto lg:flex hidden flex-col-reverse md:flex-row items-center justify-between gap-10">
         <div className="max-w-md space-y-44">
           <div>
