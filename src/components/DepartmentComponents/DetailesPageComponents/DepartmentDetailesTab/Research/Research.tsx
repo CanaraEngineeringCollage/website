@@ -51,11 +51,11 @@ const Research: React.FC<ResearchProps> = ({ data }) => {
         return (
           <div key={idx} className="mb-8">
             {section.heading && (
-              <h2 className="font-bold text-xl mb-2">{section.heading}</h2>
+              <h2 className="text-xl font-bold mb-2 text-textGray">{section.heading}</h2>
             )}
 
             {section.points.length > 0 && (
-              <ul className="list-disc ml-6 mb-2">
+              <ul className="list-disc ml-6 mb-2 md:text-lg  text-[14px] leading-7  text-textGray">
                 {section.points.map((point, i) => (
                   <li key={i}>{point}</li>
                 ))}

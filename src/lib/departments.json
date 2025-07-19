@@ -3,7 +3,7 @@
     "name": "Computer Science & Engineering",
     "bannerUrl": "/departmentImages/dept.webp",
     "slug": "computer-science-engineering",
-    "departmentAboutDescription":"Established in 2001, the Department of Computer Science & Engineering offers a robust undergraduate program (B.E. in CSE) and previously offered M.Tech from 2011 to 2021. The department boasts a team of experienced and research-oriented faculty actively engaged in teaching, product development, and publishing in reputed journals and conferences.Regular training sessions, expert talks, and industry interactions help bridge academia and industry. Students are groomed for career success through placement training, technical workshops, and self-learning initiatives like IIT Bombay’s Spoken Tutorial. Active student clubs, annual magazines, and NSS activities promote leadership, innovation, and social responsibility..",
+    "departmentAboutDescription": "Established in 2001, the Department of Computer Science & Engineering offers a robust undergraduate program (B.E. in CSE) and previously offered M.Tech from 2011 to 2021. The department boasts a team of experienced and research-oriented faculty actively engaged in teaching, product development, and publishing in reputed journals and conferences.Regular training sessions, expert talks, and industry interactions help bridge academia and industry. Students are groomed for career success through placement training, technical workshops, and self-learning initiatives like IIT Bombay’s Spoken Tutorial. Active student clubs, annual magazines, and NSS activities promote leadership, innovation, and social responsibility..",
     "description": "The department was started in the year 2001 to offer under graduate degree programme i.e. Bachelor of Engineering (BE) in Computer Science & Engineering (CS&E). The department also offered post graduate programme in engineering i.e. MTech in Computer Science Engineering (CS&E) from 2011 to 2021. The department has dedicated, qualified and experienced faculty members to guide the students in academics. The faculty members are actively involved in teaching, product development and research. The faculty members have published number of research and review papers/articles in referred International journals and reputed International conferences which are archived at IEEE/ACM/Springer and other renowned digital libraries. The department frequently organizes training programmes for the faculty, technical staff and students. The faculty frequently attends staff development programmes (SDP/FDP/Seminar) to update themselves in technological advancements and conferences to present research findings.The department aims at building the students’ career by placing special emphasis on all-round development through continuous interaction with Industry. Interactive sessions with experts from academia, research laboratories and industry are constantly held so as to enable students to gain knowledge on diverse and emerging fields. The campus placement has been scaling higher and higher peaks right from its inception with multinational companies recruiting students in large numbers. To increase the opportunity of placements to students, the department conducts soft skills training programmes, technical skill development activities and initiatives on self-learning (Spoken Tutorial programmes by IIT Bombay). The department promotes extracurricular activities under the umbrella of the students’ association & SPECS. The department brings out Annual technical magazine and newsletter which provides an opportunity for the students and staff to publish innovative ideas, programming tips and articles on current trends in computing and technology. The students’association and National Service Scheme (NSS) wing frequently conducts various programmes to strengthen leadership skills, teamwork and communication; and awareness on protection of environment and social responsibilities.",
     "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
     "ethicalLearning": "Provide a value-based learning environment enriched with ethics, honesty and integrity that equips students to cater to the needs of society and industry.",
@@ -171,19 +171,19 @@
     },
     "studentAcheivemtents": [
       {
-        "title": "EXAMINATION RESULTS (VIII SEMESTER)",
+        "title": "Examination Results (VIII Semester)",
         "imageUrl": "https://www.canaraengineering.in/departments/cse/Examination%20%20Results.png"
       },
       {
-        "title": "PUBLICATIONS IN CONFERENCES",
+        "title": "Publications in Conferences",
         "imageUrl": "https://www.canaraengineering.in/departments/cse/Publications%20in%20Conferences.png"
       },
       {
-        "title": "AWARDS IN TECHNICAL EVENTS/CONFERENCES",
+        "title": "Awards in Technical Events/Conferences",
         "imageUrl": "https://www.canaraengineering.in/departments/cse/Awards%20in%20Technical%20Events%20Conferences.png"
       },
       {
-        "title": "PARTICIPATION IN TECHNICAL EVENTS",
+        "title": "Participation in Technical Events",
         "imageUrl": "https://www.canaraengineering.in/departments/cse/Participation%20in%20Technical%20Events%20(1).png"
       }
     ],
@@ -259,7 +259,7 @@
     },
     "research": [
       {
-        "heading": "RESEARCH AREAS",
+        "heading": "Research Areas",
         "points": [
           "Computer Vision, Image and Video Processing",
           "Cloud Computing",
@@ -281,7 +281,7 @@
         ]
       },
       {
-        "heading": "PUBLICATIONS IN INTERNATIONAL JOURNALS",
+        "heading": "Publications in International Journals",
         "points": [],
         "imageUrl": "https://www.canaraengineering.in/departments/cse/Faculty%20Publications%20in%20International%20Journals.png",
         "table": [
@@ -295,7 +295,7 @@
         ]
       },
       {
-        "heading": "PUBLICATIONS IN INTERNATIONAL CONFERENCES",
+        "heading": "Publications in International Conferences",
         "points": [],
         "imageUrl": "https://www.canaraengineering.in/departments/cse/Faculty%20Publications%20in%20International%20Conferences.png",
         "table": [
@@ -309,7 +309,7 @@
         ]
       },
       {
-        "heading": "CITATIONS TO PUBLICATIONS",
+        "heading": "Citations to Publications",
         "points": [],
         "imageUrl": "https://www.canaraengineering.in/departments/cse/Citations%20(Google)%20to%20Faculty%20Publications.png",
         "table": [
@@ -323,7 +323,7 @@
         ]
       },
       {
-        "heading": "FACULTY PURSUING DOCTORAL STUDIES",
+        "heading": "Faculty Pursuing Doctoral Studies",
         "points": [],
         "imageUrl": "",
         "table": [
@@ -399,7 +399,7 @@
     ],
     "magazines": [
       {
-        "title": "MAGAZINES",
+        "title": "Magazines",
         "data": [
           {
             "image": [
@@ -414,7 +414,7 @@
         ]
       },
       {
-        "title": "NEWSLETTERS",
+        "title": "Newsletters",
         "data": [
           {
             "image": [
@@ -1489,12 +1489,12 @@
       }
     ],
     "academicsProgram": {
-      "title": "ACADEMIC DETAILS",
+      "title": "Academic Details",
       "des": "Bachelor of Engineering (BE) in Information Science & Engineering (IS&E) programme is affiliated to Visvesvaraya Technological University (VTU), Belgaum, Karnataka. The department aims at cultivating thirst for knowledge, vigor and the vision to look beyond the evident in students. The students are well versed with the exhaustive and thoroughly chosen curriculum, guided as they are by an experienced faculty. Hands on training sessions in various fields of application of IT have imparted to the students considerable acumen in the vast sector. The students perform project work as part of their curriculum to enhance their specification skills, leading to multifaceted development of their engineering concepts.",
       "points": [],
       "academicAdditionalSkills": [
         {
-          "title": "ACADEMIC & ADDITIONAL SKILLS",
+          "title": "Academic & Additional Skills",
           "imageUrl": "https://www.canaraengineering.in/departments/is/skill.jpg",
           "points": []
         }
@@ -1564,7 +1564,7 @@
     },
     "research": [
       {
-        "heading": "RESEARCH AREAS",
+        "heading": "Research Areas",
         "points": [
           "Computer Vision, Image and Video Processing",
           "Cloud Computing",
@@ -1586,7 +1586,7 @@
         ]
       },
       {
-        "heading": "PUBLICATIONS IN INTERNATIONAL JOURNALS",
+        "heading": "Publications in International Journals",
         "points": [],
         "imageUrl": "https://www.canaraengineering.in/departments/cse/Faculty%20Publications%20in%20International%20Journals.png",
         "table": [
@@ -1600,7 +1600,7 @@
         ]
       },
       {
-        "heading": "PUBLICATIONS IN INTERNATIONAL CONFERENCES",
+        "heading": "Publications in International Conferences",
         "points": [],
         "imageUrl": "https://www.canaraengineering.in/departments/cse/Faculty%20Publications%20in%20International%20Conferences.png",
         "table": [
@@ -1614,7 +1614,7 @@
         ]
       },
       {
-        "heading": "CITATIONS TO PUBLICATIONS",
+        "heading": "Citations to Publications",
         "points": [],
         "imageUrl": "https://www.canaraengineering.in/departments/cse/Citations%20(Google)%20to%20Faculty%20Publications.png",
         "table": [
@@ -1628,7 +1628,7 @@
         ]
       },
       {
-        "heading": "FACULTY PURSUING DOCTORAL STUDIES",
+        "heading": "Faculty Pursuing Doctoral Studies",
         "points": [],
         "imageUrl": "",
         "table": [
@@ -1642,7 +1642,7 @@
         ]
       },
       {
-        "heading": "PRODUCT DESIGN AND DEVELOPMENT",
+        "heading": "Product Design and Development",
         "points": [],
         "imageUrl": "",
         "table": [
@@ -1704,7 +1704,7 @@
     ],
     "magazines": [
       {
-        "title": "NEWSLETTERS",
+        "title": "Newsletters",
         "data": [
           {
             "image": [
@@ -2823,24 +2823,24 @@
     ],
     "studentAcheivemtents": [
       {
-        "title": "EXAMINATION RESULTS (VIII SEMESTER)",
+        "title": "Examination Results (VIII Semester)",
         "imageUrl": "https://www.canaraengineering.in/departments/ec/EXAMINATION%20RESULTS%20(VIII%20SEMESTER).png"
       },
       {
-        "title": "AWARDS IN TECHNICAL EVENTS CONFERENCES",
+        "title": "Publications in Conferences",
         "imageUrl": "https://www.canaraengineering.in/departments/ec/AWARDS%20IN%20TECHNICAL%20EVENTS%20CONFERENCES.png"
       },
       {
-        "title": "PARTICIPATION IN TECHNICAL EVENTS",
+        "title": "Participation in Technical Events",
         "imageUrl": "https://www.canaraengineering.in/departments/ec/Techical%20Events.png"
       },
       {
-        "title": "PUBLICATIONS IN CONFERENCES",
+        "title": "Publications in Conferences",
         "imageUrl": "https://www.canaraengineering.in/departments/ec/PUBLICATION%20IN%20CONFERENCE.png"
       }
     ],
     "academicsProgram": {
-      "title": "ACADEMICS",
+      "title": "Academics",
       "des": "Established in 2001, the Department of Electronics and Communication Engineering is affiliated with Visvesvaraya Technological University (VTU), Belagavi, Karnataka. The department is approved by the All India Council for Technical Education (AICTE) for its undergraduate program and is accredited by the National Board of Accreditation (NBA) until July 2025. Committed to imparting quality education, the department aims to nurture students to meet the evolving needs of the industry.",
       "points": [],
       "academicAdditionalSkills": [
@@ -2887,7 +2887,7 @@
     },
     "research": [
       {
-        "heading": "RESEARCH AREAS",
+        "heading": "Research Areas",
         "points": [],
         "imageUrl": "",
         "table": [
@@ -2941,7 +2941,7 @@
             "fourthColumn": []
           }
         ],
-        "th": ["YEAR", "PROJECT TITLE", "GUIDE", "MEMBERS"],
+        "th": ["Year", "Project Title", "Guide", "Team Members"],
         "moreDetailesTable": [
           {
             "year": "2022-23",
@@ -2982,7 +2982,7 @@
         ]
       },
       {
-        "heading": "PUBLICATIONS IN INTERNATIONAL JOURNALS",
+        "heading": "Publications in International Journals",
         "points": [],
         "imageUrl": "https://www.canaraengineering.in/departments/ec/journals.png",
         "table": [
@@ -2996,7 +2996,7 @@
         ]
       },
       {
-        "heading": "PUBLICATIONS IN INTERNATIONAL CONFERENCES",
+        "heading": "Publications in International Conferences",
         "points": [],
         "imageUrl": "https://www.canaraengineering.in/departments/ec/conferences.png",
         "table": [
@@ -3024,7 +3024,7 @@
         ]
       },
       {
-        "heading": "FACULTY PURSUING DOCTORAL STUDIES",
+        "heading": "Faculty Pursuing Doctoral Studies",
         "points": [],
         "imageUrl": "",
         "table": [
@@ -3040,7 +3040,7 @@
     ],
     "magazines": [
       {
-        "title": "NEWSLETTERS",
+        "title": "Newsletters",
         "data": [
           {
             "image": [
@@ -3936,7 +3936,7 @@
     "name": "Computer Science & Design",
     "slug": "computer-science-design",
     "bannerUrl": "/departmentImages/dept.webp",
-    "departmentAboutDescription":"Established in 2021, the Department of Computer Science & Design (CS&D) offers a unique blend of computing and design. Supported by experienced faculty, the department focuses on academics, research, and product development. Faculty contributions are regularly published in reputed international journals and conferences.The department emphasizes holistic student development through expert talks, industry interactions, and hands-on training. Regular FDPs, technical skill development programs, and self-learning initiatives like IIT Bombay’s Spoken Tutorials and ICT Academy certifications are integral to the learning process.With strong placement support, a growing industry interface, and a bi-annual newsletter to showcase innovation, the department is committed to shaping career-ready professionals. NSS activities further enhance student leadership, communication, and social responsibility.",
+    "departmentAboutDescription": "Established in 2021, the Department of Computer Science & Design (CS&D) offers a unique blend of computing and design. Supported by experienced faculty, the department focuses on academics, research, and product development. Faculty contributions are regularly published in reputed international journals and conferences.The department emphasizes holistic student development through expert talks, industry interactions, and hands-on training. Regular FDPs, technical skill development programs, and self-learning initiatives like IIT Bombay’s Spoken Tutorials and ICT Academy certifications are integral to the learning process.With strong placement support, a growing industry interface, and a bi-annual newsletter to showcase innovation, the department is committed to shaping career-ready professionals. NSS activities further enhance student leadership, communication, and social responsibility.",
     "description": "The department was started in the year 2021 to offer under graduate degree programme i.e. Bachelor of Engineering (BE) in Computer Science & Design (CS&D). The department has dedicated, qualified and experienced faculty members to guide the students in academics. The faculty members are actively involved in teaching, product development and research. The faculty members have published number of researchpapers/articles in referred International journals and reputed International conferences which are archived at IEEE, Springer-Nature and other renowned digital libraries. The faculty frequently attends staff development programmes (SDP/FDP/Seminar) to update themselves in technological advancements and conferences to present research findings.The department aims at building the students’ career by placing special emphasis on all-round development through continuous interaction with Industry. Interactive sessions with experts from academia, research laboratories and industry are constantly held so as to enable students to gain knowledge on diverse and emerging fields. The campus placement has been scaling higher and higher peaks right from its inception with multinational companies recruiting students in large numbers. To increase the opportunity of placements to students, the department conducts soft skills training programmes, technical skill development activities and initiatives on self-learning (Spoken Tutorial programmes by IIT Bombay, and Certification Courses by ICT Academy). The department brings out Bi-Annual newsletter which provides an opportunity for the students and staff to publish innovative ideas, programming tips and articles on current trends in computing and technology. The National Service Scheme (NSS) wing frequently conducts various programmes to strengthen leadership skills, teamwork, and communication; and awareness on protection of environment and social responsibilities.",
     "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
     "ethicalLearning": "Provide the environment to become industry ready Professionals, Researchers and Entrepreneurs by offering emerging courses.",
@@ -4087,11 +4087,11 @@
     ],
     "studentAcheivemtents": [
       {
-        "title": "EXAMINATION RESULTS",
+        "title": "Examination Results",
         "imageUrl": "https://www.canaraengineering.in/departments/csd/labpics/Result.jpg"
       },
       {
-        "title": "PARTICIPATION IN TECHNICAL EVENTS",
+        "title": "Participation in Technical Events",
         "imageUrl": "https://www.canaraengineering.in/departments/csd/labpics/Technical.jpg"
       }
     ],
@@ -4188,7 +4188,7 @@
         "moreDetailesTable": []
       },
       {
-        "heading": "PUBLICATIONS IN INTERNATIONAL CONFERENCES/JOURNALS & PATENT",
+        "heading": "Publications in International Conferences/Journals & Patents",
         "points": [],
         "imageUrl": "https://www.canaraengineering.in/departments/csd/Publications.jpg",
         "table": [
@@ -4220,7 +4220,7 @@
     ],
     "magazines": [
       {
-        "title": "NEWSLETTERS",
+        "title": "Newsletters",
         "data": [
           {
             "image": [
@@ -5260,19 +5260,19 @@
     ],
     "studentAcheivemtents": [
       {
-        "title": "UNIVERSITY EXAMINATION RESULTS",
+        "title": "University Examination Results",
         "imageUrl": "https://www.canaraengineering.in/departments/csb/labpics/University%20Result_CSBS.jpg"
       },
       {
-        "title": "AWARDS IN TECHNICAL EVENTS/CONFERENCES",
+        "title": "Awards in Technical Events/Conferences",
         "imageUrl": "https://www.canaraengineering.in/departments/csb/labpics/Student%20Achievement.png"
       },
       {
-        "title": "PARTICIPATION IN TECHNICAL EVENTS",
+        "title": "Participation in Technical Events",
         "imageUrl": "https://www.canaraengineering.in/departments/csb/labpics/Participation%20in%20Technical%20Events.png"
       },
       {
-        "title": "PARTICIPATION IN TECHNICAL CERTIFICATION",
+        "title": "Participation in Technical Certification",
         "imageUrl": "https://www.canaraengineering.in/departments/csb/labpics/student%20certification.png"
       }
     ],
@@ -5368,7 +5368,7 @@
         "moreDetailesTable": []
       },
       {
-        "heading": "FACULTY ACHIVEMENTS",
+        "heading": "Faculty Achivements",
         "points": [],
         "imageUrl": "https://www.canaraengineering.in/departments/csb/Faculty%20Achivement.jpeg-1.jpg",
         "table": [
@@ -5384,7 +5384,7 @@
         "moreDetailesTable": []
       },
       {
-        "heading": "FACULTY PURSUING DOCTORAL STUDIES",
+        "heading": "Faculty Pursuing Doctoral Studies",
         "points": ["Pavithra H B", "Yathish K", "Vinod Kumar B", "Ramesh E", "Yojana Kiran kumar"],
         "imageUrl": "",
         "table": [
@@ -5400,7 +5400,7 @@
     ],
     "magazines": [
       {
-        "title": "NEWSLETTERS",
+        "title": "Newsletters",
         "data": [
           {
             "image": [
@@ -6463,7 +6463,7 @@
         "moreDetailesTable": []
       },
       {
-        "heading": "FACULTY PURSUING DOCTORAL STUDIES",
+        "heading": "Faculty Pursuing Doctoral Studies",
         "points": [],
         "imageUrl": "",
         "table": [
@@ -6506,7 +6506,7 @@
     ],
     "magazines": [
       {
-        "title": "NEWSLETTERS",
+        "title": "Newsletters",
         "data": [
           {
             "image": [
@@ -6619,23 +6619,23 @@
     ],
     "studentAcheivemtents": [
       {
-        "title": "UNIVERSITY RESULTS",
+        "title": "University Results",
         "imageUrl": "https://www.canaraengineering.in/departments/ai/labpics/UniversityResults.JPG"
       },
       {
-        "title": "CERTIFICATION COURSES",
+        "title": "Certification Courses",
         "imageUrl": "https://www.canaraengineering.in/departments/ai/labpics/Certification-students_2.jpeg"
       },
       {
-        "title": "AWARDS IN EVENTS",
+        "title": "Awards in Events",
         "imageUrl": "https://www.canaraengineering.in/departments/ai/Awards.jpg"
       },
       {
-        "title": "PARTICIPATION IN TECHNICAL EVENTS",
+        "title": "Participation in Technical Events",
         "imageUrl": "https://www.canaraengineering.in/departments/ai/Technical-Participation.jpeg"
       },
       {
-        "title": "PARTICIPATION IN NON-TECHNICAL EVENTS",
+        "title": "Participation in non Technical Events",
         "imageUrl": "https://www.canaraengineering.in/departments/ai/NonTechnical-Participation.jpeg"
       }
     ],
@@ -7575,7 +7575,7 @@
     "slug": "science-humanities",
     "bannerUrl": "/departmentImages/dept.webp",
     "description": "The Department of Science &Humanities comprises Chemistry, Physics, Mathematics & English .The department is highly focused on imparting quality education to meet the global challenges of modern Science and Technology. The department provides foundation for Engineering students to attain excellence in core competencies with high level of motivation, positive attitude, technical competent, ethical value and pedestal knowledge to face the global challenges to become world class engineers and scientists. The department has well qualified, experienced and dedicated faculty members, who are blend of knowledge and experience.Engineering Chemistry laboratory & Engineering Physics laboratory are well equipped with major equipments and caters to the needs of the students. As added gem to the crown, the Department of Science and Humanities has one VTU recognized research centre under Department of Chemistry.",
-    "departmentAboutDescription":"The Department of Science &Humanities comprises Chemistry, Physics, Mathematics & English .The department is highly focused on imparting quality education to meet the global challenges of modern Science and Technology. The department provides foundation for Engineering students to attain excellence in core competencies with high level of motivation, positive attitude, technical competent, ethical value and pedestal knowledge to face the global challenges to become world class engineers and scientists. The department has well qualified, experienced and dedicated faculty members, who are blend of knowledge and experience.Engineering Chemistry laboratory & Engineering Physics laboratory are well equipped with major equipments and caters to the needs of the students. As added gem to the crown, the Department of Science and Humanities has one VTU recognized research centre under Department of Chemistry.",
+    "departmentAboutDescription": "The Department of Science &Humanities comprises Chemistry, Physics, Mathematics & English .The department is highly focused on imparting quality education to meet the global challenges of modern Science and Technology. The department provides foundation for Engineering students to attain excellence in core competencies with high level of motivation, positive attitude, technical competent, ethical value and pedestal knowledge to face the global challenges to become world class engineers and scientists. The department has well qualified, experienced and dedicated faculty members, who are blend of knowledge and experience.Engineering Chemistry laboratory & Engineering Physics laboratory are well equipped with major equipments and caters to the needs of the students. As added gem to the crown, the Department of Science and Humanities has one VTU recognized research centre under Department of Chemistry.",
     "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
     "ethicalLearning": "To cultivate a value-based learning environment that upholds ethics, honesty & integrity, preparing students to meet the evolving needs of society & industry.",
     "innovationExcellence": "To enhance student knowledge in cutting-edge technologies & state-of-the-art tools in Computer Science & Engineering, fostering technical excellence & innovation.",
@@ -7692,12 +7692,12 @@
     ],
     "studentAcheivemtents": [
       {
-        "title": "UNIVERSITY RESULTS",
+        "title": "University Results",
         "imageUrl": "https://www.canaraengineering.in/departments/sm/Student%20Achievements/result.jpg",
         "desc": ""
       },
       {
-        "title": "CERTIFICATION COURSES",
+        "title": "Certification Courses",
         "imageUrl": "https://www.canaraengineering.in/departments/sm/Student%20Achievements/Shravya%20Shetty.jpeg",
         "desc": "Shravya V Shetty, First Semester student of CSE branch has secured First place in Weight Lifting Event at Dasara Kreeda koota"
       },
@@ -7713,7 +7713,7 @@
       }
     ],
     "academicsProgram": {
-      "title": "ACADEMIC DETAILS",
+      "title": "Academic Details",
       "des": "The Physics Department comprises a team of dynamic and highly experienced faculty members dedicated to teaching Engineering Physics to B.E. first-year students across all branches. The department offers the following courses:",
       "points": ["Engineering Physics", "Engineering Physics Lab"],
       "academicAdditionalSkills": [
@@ -7799,7 +7799,7 @@
     },
     "research": [
       {
-        "heading": "RESEARCH AREAS",
+        "heading": "Research Areas",
         "points": [
           "Corrosion Science",
           "Molecular dynamics and simulation",
@@ -7822,7 +7822,7 @@
         "moreDetailesTable": []
       },
       {
-        "heading": "PUBLICATIONS IN INTERNATIONAL JOURNALS",
+        "heading": "Publications in International Journals",
         "points": [],
         "imageUrl": "https://www.canaraengineering.in/departments/sm/Images/PUBLICATION.jpg",
         "table": [
@@ -7838,7 +7838,7 @@
         "moreDetailesTable": []
       },
       {
-        "heading": "FACULTY PURSUING DOCTORAL STUDIES",
+        "heading": "Faculty Pursuing Doctoral Studies",
         "points": ["Mr. Prashantha Somayaji", "Mr. Padmanabha Kamath", "Ms. Rajashree", "Mr. Satish Hegde H", "Mr. Ganesh Kamath M"],
         "imageUrl": "",
         "table": [
@@ -7854,7 +7854,7 @@
     ],
     "magazines": [
       {
-        "title": "NEWSLETTERS",
+        "title": "Newsletters",
         "data": [
           {
             "image": [

@@ -65,17 +65,17 @@ const HeroSection = () => {
                     <tr className="bg-[#F3F8FC] text-[#2884CA]">
                       <th className="py-3 md:px-4 px-1 border-b">Sl.No</th>
                       <th className="py-3 md:px-4 px-1 border-b">Institution Name</th>
-                      <th className="py-3 md:px-4 px-1 border-b">Year of Est.</th>
+                      <th className="py-3 md:px-4 px-1 border-b min-w-[120px]">Year of Est.</th>
                       <th className="py-3 md:px-4 px-1 border-b">Programs of Study</th>
                       <th className="py-3 md:px-4 px-1 border-b">Address</th>
                     </tr>
                   </thead>
                   <tbody>
                     {(data["Canara Institutes"] as CanaraInstituteItem[])?.map((item, index) => (
-                      <tr key={index} className="text-textGray">
+                      <tr key={index} className="text-textGray h-16">
                         <td className="py-3 md:px-4 px-1 border-b">{index + 1}</td>
                         <td className="py-3 md:px-4 px-1 border-b">{item["Name"]}</td>
-                        <td className="py-3 md:px-4 px-1 border-b">{item["Year of Est."]}</td>
+                        <td className="py-3 md:px-4 px-1 border-b min-w-[120px]">{item["Year of Est."]}</td>
                         <td className="py-3 md:px-4 px-1 border-b">{item["Programs of Study"]}</td>
                         <td className="py-3 md:px-4 px-1 border-b">{item["Address"]}</td>
                       </tr>

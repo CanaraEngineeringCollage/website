@@ -2,7 +2,7 @@ import React from "react";
 
 const StudentLIfeInCanara = () => {
   return (
-    <section className="md:py-20 xl:py-44 pb-20  text-center max-w-7xl xl:max-w-[75%] mx-auto lg:px-32">
+    <section className="md:py-10 xl:py-44 pb-20  text-center max-w-7xl xl:max-w-[75%] mx-auto lg:px-32">
       <div className="">
         <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-[#1D1D1F] pb-5 lg:pb-10">A Holistic Student Life at Canara</h1>
         <p className="text-textGray  text-[20px]">

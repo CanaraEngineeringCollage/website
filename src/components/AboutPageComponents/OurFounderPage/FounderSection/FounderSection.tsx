@@ -9,8 +9,8 @@ export default function FounderSection() {
         <div className="flex flex-col md:flex-row items-start gap-12">
           {/* Left Column - Text */}
           <div className="flex-1  text-[#86868B] text-[17px] leading-relaxed space-y-6 ">
-            <h2 className="text-4xl font-bold text-center md:text-start  text-[#1D1D1F] mb-6">Our Founder</h2>
-            <div className="flex md:hidden flex-col items-center flex-shrink-0 mx-auto lg:px-20">
+            <h2 className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold mb-6">Our Founder</h2>
+            <div className="flex md:hidden flex-col items-center mt-4 flex-shrink-0 mx-auto lg:px-20">
               <div className="w-80 h-96 relative rounded-xl overflow-hidden shadow-md">
                 <Image src={img} alt="Sri Ammembal Subba Rao Pai" width={1000} height={1000} className="object-cover h-full" />
               </div>
@@ -37,7 +37,7 @@ export default function FounderSection() {
 
           {/* Right Column - Image */}
           <div className=" hidden md:flex flex-col items-center flex-shrink-0 mx-auto lg:px-20">
-            <div className="w-80  lg:h-96 relative rounded-xl overflow-hidden shadow-md">
+            <div className="w-80  lg:h-[20rem] relative rounded-xl overflow-hidden shadow-md">
               <Image src={img} alt="Sri Ammembal Subba Rao Pai" fill className="object-cover" />
             </div>
             <p className="mt-4 text-center text-[27px] font-semibold text-[#1D1D1F]">
@@ -47,7 +47,7 @@ export default function FounderSection() {
             </p>
           </div>
         </div>
-        <div className="text-[#86868B] text-[17px] leading-relaxed  space-y-6 pt-12">
+        <div className="text-[#86868B] text-[17px] leading-relaxed  space-y-6 pt-5">
           <p>
             Born on 19th November, 1852, at Mulky, near Mangalore, he underwent early schooling at Government High School, Mangalore, and it was the
             early demise of his mother that is believed to have profoundly influenced him to take to studies seriously. After passing his F.A.

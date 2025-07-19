@@ -25,9 +25,9 @@ const objectives = [
 const Home = () => {
   return (
     <div className=" text-[#86868B] mx-5 text-[17px]">
-      <h1 className="text-[#86868B] text-xl font-extrabold mb-2">Research and Development</h1>
-      <div className="space-y-8">
-        <p>
+      <h1 className="text-[20px] font-extrabold mb-2">Research and Development</h1>
+      <div className="space-y-5">
+        <p className="md:text-lg  text-[14px] leading-7  text-textGray">
           The only teaching model doesn’t match the current rapid developments in technical education. Imparting quality education in technical
           colleges needs to be ensured with up-to-date knowledge of technology and science. This can be ensured with the active participation of
           faculty and students in research & development activities. Thus, the college's R&D, innovation cell has been established to inculcate
@@ -37,16 +37,16 @@ const Home = () => {
           collaboration projects with Tier-1 institutes.
         </p>
         <div>
-          <h1 className="text-[#86868B] text-xl font-extrabold mb-2">Thrust Areas</h1>
-          <ul className="list-decimal ml-5 text-lg">
+          <h1 className="text-xl font-bold  text-textGray mb-2">Thrust Areas</h1>
+          <ul className="list-disc ml-5 md:text-lg  text-[14px] leading-7  text-textGray">
             {thrustAreas.map((item, index) => (
               <li className="pb-1">{item}</li>
             ))}
           </ul>
         </div>
           <div>
-          <h1 className="text-[#86868B] text-xl font-extrabold mb-2">Objectives</h1>
-          <ul className="list-decimal ml-5 text-lg">
+          <h1 className="text-xl font-bold  text-textGray mb-2">Objectives</h1>
+          <ul className="list-disc ml-5 text-lg">
             {objectives.map((item, index) => (
               <li className="pb-1">{item}</li>
             ))}

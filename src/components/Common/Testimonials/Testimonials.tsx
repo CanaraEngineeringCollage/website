@@ -49,80 +49,93 @@ const renderTestimonials = (testimonials: Testimonial[], reverse = false) => (
 );
 
 export function Testimonials({ className }: TestimonialsProps) {
-  const testimonials: Testimonial[] = [
-    {
-      quote: "Soft skills & technical training made me industry-ready.",
-      author: "Raj Sharma",
-      course: "CSE",
-      year: "2018-19",
-    },
-    {
-      quote: "CEC's faculty & industry-focused curriculum shaped my career.",
-      author: "Rahul Sharma",
-      course: "CSE",
-      year: "2018-19",
-    },
-    {
-      quote: "Innovation-driven approach helped me excel in my field.",
-      author: "Anonymous",
-      course: "CSE",
-      year: "2019-20",
-    },
-    {
-      quote: "Great learning & placement support helped me land my dream job.",
-      author: "Priya Menon",
-      course: "ISE",
-      year: "2016-17",
-    },
-    {
-      quote: "Workshops & projects gave me valuable industry insights.",
-      author: "Sneha Reddy",
-      course: "CSE",
-      year: "2019-20",
-    },
-    {
-      quote: "Hands-on labs & research focus prepared me for real-world challenges.",
-      author: "Arjun Desai",
-      course: "CSAD",
-      year: "2020-21",
-    },
-    {
-      quote: "Soft skills & technical training made me industry-ready.",
-      author: "Raj Sharma",
-      course: "CSE",
-      year: "2018-19",
-    },
-    {
-      quote: "Workshops & projects gave me valuable industry insights.",
-      author: "Sneha Reddy",
-      course: "CSE",
-      year: "2019-20",
-    },
-    {
-      quote: "Innovation-driven approach helped me excel in my field.",
-      author: "Anonymous",
-      course: "CSE",
-      year: "2019-20",
-    },
-    {
-      quote: "Hands-on labs & research focus prepared me for real-world challenges.",
-      author: "Arjun Desai",
-      course: "CSAD",
-      year: "2020-21",
-    },
-    {
-      quote: "CEC's faculty & industry-focused curriculum shaped my career.",
-      author: "Rahul Sharma",
-      course: "CSE",
-      year: "2018-19",
-    },
-    {
-      quote: "Great learning & placement support helped me land my dream job.",
-      author: "Priya Menon",
-      course: "ISE",
-      year: "2016-17",
-    },
-  ];
+  const testimonials: Testimonial[]= [
+  {
+    quote: "CEC’s training and guidance helped me become an engineer at Intel.",
+    author: "Sneha K",
+    course: "CSE",
+    year: "2013-17",
+  },
+  {
+    quote: "CEC nurtured excellence; I topped my batch and got into NITK via GATE.",
+    author: "Dr. Vighnesha Nayak",
+    course: "ME",
+    year: "2005-09",
+  },
+  {
+    quote: "Supportive CSE faculty and serene campus helped shape my career at Nokia.",
+    author: "Samhitha Padiyar",
+    course: "CSE",
+    year: "2010-14",
+  },
+  {
+    quote: "CEC enhanced my confidence and soft skills to thrive at Infosys.",
+    author: "Akshatha Shenoy",
+    course: "ISE",
+    year: "2012-16",
+  },
+  {
+    quote: "Ranked 3rd in CS; CEC trained me to excel at White Clarke.",
+    author: "Preethi Hebbar",
+    course: "CSE",
+    year: "2015-19",
+  },
+  {
+    quote: "Faculty guidance and tech exposure landed me a role at VMware.",
+    author: "Navami Kini",
+    course: "ECE",
+    year: "2013-17",
+  },
+  {
+    quote: "CEC’s collaborative learning environment paved my way to Oracle Australia.",
+    author: "Venkatesh P. Mundkur",
+    course: "ECE",
+    year: "2005-09",
+  },
+  {
+    quote: "CEC helped me found LEVO and develop COVID-era safety solutions.",
+    author: "Arther Vishruth D.B",
+    course: "ECE",
+    year: "2013-17",
+  },
+  {
+    quote: "CEC’s faculty, notes, and labs fueled my growth at Infosys.",
+    author: "Ganesh B. Bhat",
+    course: "ECE",
+    year: "2006-10",
+  },
+  {
+    quote: "CEC and ISE faculty inspired my journey into Tech Mahindra.",
+    author: "Ganesh Shenoy",
+    course: "ISE",
+    year: "2013-17",
+  },
+  {
+    quote: "Faculty support and workshops helped me succeed at Siemens Healthineers.",
+    author: "Floyd J. Sequeira",
+    course: "EEE",
+    year: "2013-17",
+  },
+  {
+    quote: "Practical workshops and training at CEC placed me in Infinite Solutions.",
+    author: "Harisha",
+    course: "ME",
+    year: "2013-17",
+  },
+  {
+    quote: "Balanced curriculum and co-curricular support shaped my path to TE Connectivity.",
+    author: "M Rajath Bhandarkar",
+    course: "ME",
+    year: "2014-18",
+  },
+  {
+    quote: "Thanks to EEE faculty, I launched my career at L&T.",
+    author: "Akshatha Mallya",
+    course: "EEE",
+    year: "2013-17",
+  }
+];
+
   // Split testimonials into two halves
 
   const middleIndex = Math.ceil(testimonials.length / 2);

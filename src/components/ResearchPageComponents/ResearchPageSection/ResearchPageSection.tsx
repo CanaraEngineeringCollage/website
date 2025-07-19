@@ -42,7 +42,7 @@ const titles = ["Home", "Research Center", "Publications", "Grants", "Activities
                         selectedIndex === index ? "text-[#2884CA] font-bold" : "text-textGray font-[500]"
                       }`}
                     >
-                      <a target="_blank" href="https://canaraengineering.irins.org/">{title}</a>
+                      <a  href="https://canaraengineering.irins.org/">{title}</a>
                     </h1>
                   ) : (
                     <h1
@@ -66,7 +66,7 @@ const titles = ["Home", "Research Center", "Publications", "Grants", "Activities
               {selectedIndex === 4 && <Activities />}
               {selectedIndex === 5 && <Patents />}
               {selectedIndex === 6 && <IframLinks link="https://canaraengineering.in/download/R&D%20Cell.pdf" title="R&D Cell"/>}
-              {selectedIndex === 7 && <IframLinks link="https://canaraengineering.in/download/R&D%20Cell.pdf" title="R&D Cell"/>}
+              {selectedIndex === 7 && <IframLinks link="https://canaraengineering.in/download/IPR%20Cell.pdf" title="IPR Cell"/>}
             </div>
           </div>
         </div>
