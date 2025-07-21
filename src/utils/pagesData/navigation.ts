@@ -70,10 +70,10 @@ const departments = [
     title: "Electronics & Communication Engineering",
     link: "/department/electronics-communication-engineering",
   },
-  // {
-  //   title: "Computer Science & Design",
-  //   link: "/department/computer-science-design",
-  // },
+  {
+    title: "Computer Science & Design",
+    link: "/department/computer-science-design",
+  },
   {
     title: "Computer Science & Business System",
     link: "/department/computer-science-business-system",
