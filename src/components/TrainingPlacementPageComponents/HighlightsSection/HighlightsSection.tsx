@@ -48,21 +48,21 @@ const HighlightsSection = () => {
   const dummyData = [
     {
       id: 1,
-      img: "/trainingPlacementPageImages/1.svg",
+      img: "/trainingPlacementPageImages/lpa.png",
       title: "Highest Package",
-      company: "Flipkart",
+      company: "",
     },
     {
       id: 2,
-      img: "/trainingPlacementPageImages/1.svg",
+      img: "/trainingPlacementPageImages/hp.svg",
       title: "Best Internships",
-      company: "Amazon",
+      company: "Hewlett-Packard",
     },
     {
       id: 3,
-      img: "/trainingPlacementPageImages/1.svg",
+      img: "/trainingPlacementPageImages/verifone.png",
       title: "Dream Offers",
-      company: "Google",
+      company: "Verifone",
     },
   ];
 
@@ -80,8 +80,8 @@ const HighlightsSection = () => {
         {/* Left Column */}
         <div className="flex flex-col gap-6 px-3">
           {[
-            { title: "27 LPA", subtitle: "Median Salary", description: "Offered to Top 5% of Student Candidates" },
-            { title: "34%", subtitle: "Pre-Placement Offers", description: "of placed students received PPOs" },
+            { title: "5.6 LPA", subtitle: "Median Salary", description: "Offered to Top 5% of Student Candidates" },
+            { title: "42%", subtitle: "Pre-Placement Offers", description: "of placed students received PPOs" },
             {
               title: "30%",
               subtitle: "Higher Rate of placement",
@@ -130,7 +130,7 @@ const HighlightsSection = () => {
                         className="w-[80%] h-[30vh] object-contain"
                       />
                       <h1 className="text-2xl font-bold text-center mt-4">{item.title}</h1>
-                      <h2 className="text-[14px] text-center">{item.company}</h2>
+                      {item.company&&<h2 className="text-[14px] text-center">{item.company}</h2>}
                     </div>
                   </div>
                 </SwiperSlide>
@@ -149,7 +149,7 @@ const HighlightsSection = () => {
 
           {/* Static second card */}
           <div className="flex flex-col justify-center items-center rounded-4xl p-6 bg-white mt-5 lg:mt-7">
-            <h1 className=" text-[45px] lg:text-[60px] font-[900] text-black text-center">180+</h1>
+            <h1 className=" text-[45px] lg:text-[60px] font-[900] text-black text-center">220+</h1>
             <h2 className="font-bold text-center text-[20px] text-black">Companies Visited on Campus</h2>
             <p className="text-xl text-center">Offered to Top 5% of Student Candidates</p>
             <p className="text-[17px] mt-3 text-[#0066CC] flex items-center">
@@ -162,8 +162,8 @@ const HighlightsSection = () => {
         {/* Right Column */}
         <div className="flex flex-col gap-6 px-3">
           {[
-            { title: "23+ LPA", subtitle: "Average Salary", description: "Statistics based on 2023-24 Batch Data" },
-            { title: "14%", subtitle: "Students Pursuing Higher Studies", description: "" },
+            { title: "3.25 LPA", subtitle: "Average Salary", description: "Statistics based on 2023-24 Batch Data" },
+            { title: "18%", subtitle: "Students Pursuing Higher Studies", description: "" },
             {
               title: "98%",
               subtitle: "Internship Completion Rate",

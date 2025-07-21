@@ -43,13 +43,13 @@ const DepartmentMissionVision: React.FC<DepartmentMissionVisionProps> = ({
             </div>
 
             {/* Item 3 */}
-            <div className="flex gap-10 flex-col lg:flex-row text-center lg:text-start items-center">
+           { holisticGrowthResearch&&<div className="flex gap-10 flex-col lg:flex-row text-center lg:text-start items-center">
               <Image src={visionImage3} alt="valueIcon" className="max-w-[50px] my-auto" />
               <div>
                 <h3 className="text-xl text-textGray font-extrabold">Holistic Growth & Research</h3>
                 <p className="text-textGray text-[17px]">{holisticGrowthResearch}</p>
               </div>
-            </div>
+            </div>}
           </div>
         </div>
 

@@ -70,10 +70,10 @@ const departments = [
     title: "Electronics & Communication Engineering",
     link: "/department/electronics-communication-engineering",
   },
-  {
-    title: "Computer Science & Design",
-    link: "/department/computer-science-design",
-  },
+  // {
+  //   title: "Computer Science & Design",
+  //   link: "/department/computer-science-design",
+  // },
   {
     title: "Computer Science & Business System",
     link: "/department/computer-science-business-system",
@@ -82,10 +82,10 @@ const departments = [
     title: "Artificial Intelligence & Machine Learning",
     link: "/department/artificial-intelligence-machine-learning",
   },
-  {
-    title: "Science & Humanities",
-    link: "/department/science-humanities",
-  },
+  // {
+  //   title: "Science & Humanities",
+  //   link: "/department/science-humanities",
+  // },
 ];
 
 const curriculum = [
