@@ -49,8 +49,8 @@ const DepartmentDetailes = () => {
       <div className="">
         <h1 className="text-[#1D1D1F] text-xl lg:text-[31px] mb-2">Department of </h1>
         <h2 className="text-[30px] lg:w-[50%]  lg:text-[54px] font-bold leading-[1.1] pb-1 lg:pb-10 text-black">{department?.name}</h2>
-        <div className={`grid grid-cols-1 gap-3 ${selectedSection === "Faculty & Staff"?"md:gap-[125px]":"md:gap-32"}  md:grid-cols-12 mt-10`}>
-          <div className="col-span-4">
+        <div className={`grid grid-cols-1 gap-3  md:grid-cols-12 mt-10`}>
+          <div className="col-span-3">
             {departmentMenuItems?.map((section, index) => (
               <h1
                 key={index}
@@ -66,6 +66,7 @@ const DepartmentDetailes = () => {
               </h1>
             ))}
           </div>
+          <div className="col-span-1"></div>
           <div className="col-span-8">
             {selectedSection === "Department Profile" && <DepartmentProfile keyPoints={department?.keyPractices} data={department?.description} />}
             {selectedSection === "Organisation Structure" && department?.organisation && <Organaisation data={department?.organisation}/>}
