@@ -166,3 +166,9 @@ lite-youtube {
 .animate-marquee-right {
   animation: marquee-right 25s linear infinite;
 }
+
+.TopRecruiters {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}

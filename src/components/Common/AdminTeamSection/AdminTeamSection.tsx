@@ -7,6 +7,7 @@ import governingCounsilData from "../../../utils/adminTeamData/adminTeamData.jso
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import FacultyModal from "@/components/DepartmentComponents/FacultyModal/FacultyModal";
 
 interface CouncilMember {
   id: number;
@@ -19,6 +20,8 @@ interface CouncilMember {
 export default function AdminTeamSection() {
   const [data, setData] = useState<CouncilMember[]>([]);
   const [startIndex, setStartIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedMember, setSelectedMember] = useState<CouncilMember | null>(null);
   const router = useRouter();
   useEffect(() => {
     setData(governingCounsilData);
@@ -27,14 +30,14 @@ export default function AdminTeamSection() {
   const visibleMembers = data.slice(startIndex, startIndex + 2);
   const visibleMembersMobile = data.slice(startIndex, startIndex + 1);
   const handleNext = () => {
-    if (startIndex + 1 < data.length) {
-      setStartIndex(startIndex + 1);
+    if (startIndex + 2 < data.length) {
+      setStartIndex(startIndex + 2);
     }
   };
 
   const handlePrev = () => {
-    if (startIndex - 1 >= 0) {
-      setStartIndex(startIndex - 1);
+    if (startIndex - 2 >= 0) {
+      setStartIndex(startIndex - 2);
     }
   };
 
@@ -53,12 +56,12 @@ export default function AdminTeamSection() {
             </p>
           </div>
           <div className="flex items-center gap-4">
-            <button
+           <Link href="/about/educators-administrators"> <button
               aria-label="Meet more of our Admin Team"
-              className="bg-blue-100 text-[#1D1D1F] text-block px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition"
+              className="bg-blue-100 text-[#1D1D1F] hover:bg-blue-200 text-block px-6 py-2 rounded-full text-sm font-medium  transition"
             >
               Meet more of our Admin Team
-            </button>
+            </button></Link>
             <div className="flex items-center gap-2">
               <button
                 aria-label="Previous"
@@ -83,6 +86,7 @@ export default function AdminTeamSection() {
         <div className="grid grid-cols-1 w-full sm:grid-cols-2 gap-6">
           {visibleMembers.map((member, index) => (
             <div
+             onClick={() => {setSelectedMember(member); setIsModalOpen(true);}}
               key={index}
               className={`relative cursor-pointer w-full max-w-[309px] h-[440px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md`}
             >
@@ -94,7 +98,6 @@ export default function AdminTeamSection() {
                 height={300}
                 className="w-full object-cover"
               />
-              <Link href={`/user-details/${member.id}`}>
                 <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
                 <div className="absolute z-50 top-[78%] left-6">
                   <h2 className="text-[20px] font-bold">{member.name}</h2>
@@ -113,7 +116,6 @@ export default function AdminTeamSection() {
                     <MdKeyboardArrowRight className="ml-1 text-xl" />
                   </p>
                 </div>
-              </Link>
             </div>
           ))}
         </div>
@@ -135,18 +137,19 @@ export default function AdminTeamSection() {
         <div className="grid grid-cols-1 w-full gap-6">
           {visibleMembersMobile.map((member, index) => (
             <div
+            onClick={() => {setSelectedMember(member); setIsModalOpen(true);}}
+            
               key={index}
               className={`relative cursor-pointer w-full max-w-[309px] h-[480px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center py-6 shadow-md`}
             >
               <Image
-                onClick={() => router.push(`/user-details/${member.id}`)}
+                onClick={() => {}}
                 src={member.image}
                 alt={member.name}
                 width={300}
                 height={300}
                 className="rounded-full  w-full object-contain"
               />
-              <Link href={`/user-details/${member.id}`}>
                 <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
                 <div className="absolute z-50 top-[75%] left-6">
                   <h2 className="text-[20px] font-bold">{member.name}</h2>
@@ -163,7 +166,6 @@ export default function AdminTeamSection() {
                     <MdKeyboardArrowRight className="ml-1 text-xl" />
                   </p>
                 </div>
-              </Link>
             </div>
           ))}
         </div>
@@ -194,6 +196,8 @@ export default function AdminTeamSection() {
           </div>
         </div>
       </div>
+            <FacultyModal isOpen={isModalOpen} onClose={setIsModalOpen} facultyData={selectedMember} />
+      
     </section>
   );
 }

@@ -11,9 +11,8 @@ const GrievanceRedressalCell = () => {
     <section className="py-10 text-[#1D1D1F] lg2:px-24 mx-5 overflow-hidden">
       <div>
         <h1 className="text-3xl  md:text-[40px] lg2:text-5xl xl:text-6xl font-bold pb-1 lg:pb-10 text-[#1D1D1F]">Grievance Redressal Cell</h1>
-        <div className="grid grid-cols-1 gap-3 md:gap-32 md:grid-cols-12 mt-10">
-          {/* Sidebar */}
-          <div className="col-span-4">
+        <div className={`grid grid-cols-1 gap-3  md:grid-cols-12 mt-10`}>
+          <div className="col-span-3">
             {grievanceRedressalCell?.map((section, index) => (
               <h1
                 key={index}
@@ -26,7 +25,7 @@ const GrievanceRedressalCell = () => {
               </h1>
             ))}
           </div>
-
+          <div className="col-span-1"></div>
           {/* Content */}
           {selectedIndex === 6 ? (
             <div className="col-span-8">
@@ -184,7 +183,9 @@ const GrievanceRedressalCell = () => {
                   {item.title && <h2 className="text-[20px] font-extrabold text-textGray mb-2">{item.title}</h2>}
 
                   {/* Description */}
-                  {"description" in item && item.description && <p className="md:text-lg  text-[14px] leading-7  text-textGray lg:pe-16 ">{item.description}</p>}
+                  {"description" in item && item.description && (
+                    <p className="md:text-lg  text-[14px] leading-7  text-textGray lg:pe-16 ">{item.description}</p>
+                  )}
 
                   {/* Bullet Points */}
                   {"points" in item && item.points && (
@@ -199,7 +200,11 @@ const GrievanceRedressalCell = () => {
 
                   {/* Iframe */}
                   {"href" in item && item.href && (
-                    <iframe src={item.href} className="w-full h-[100vh] mt-6" title={item.title || `Document-${i}`}></iframe>
+                    <iframe
+                      src={`${item.href}#toolbar=0&navpanes=0&view=FitH`}
+                      className="w-full h-[100vh] mt-6"
+                      title={item.title || `Document-${i}`}
+                    ></iframe>
                   )}
 
                   {/* Table */}

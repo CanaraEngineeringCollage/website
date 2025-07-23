@@ -167,7 +167,7 @@ const programData = [
 function CardContent({ description }: CardContentProps) {
   return (
     <div>
-      <Image src={description.src} alt="Image" loading="lazy" width={1000} height={700} className=" object-cover lg:h-[700px] h-[400px] rounded-2xl mb-10" />
+      <Image src={description.src} alt="Image" loading="lazy" width={800} height={300} className=" object-cover lg:h-[700px] h-[400px] rounded-2xl mb-10" />
       <div className="p-4 space-y-4 text-left text-sm text-black bg-white">
         <div>
           <h3 className="text-2xl mb-2 font-semibold">{description.subtitle1}</h3>

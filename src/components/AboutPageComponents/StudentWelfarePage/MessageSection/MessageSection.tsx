@@ -15,7 +15,7 @@ const MessageSection = () => {
           </div>
         </div>
         <div className="">
-          <h1 className="text-3xl text-start my-10 md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold">Message from the Student Welfare Officer</h1>
+          <h1 className="text-3xl text-start lg:leading-[1.2] my-10 md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold">Message from the Student Welfare Officer</h1>
           <p className="text-[17px] text-[#76838b] text-start">
             The Student Welfare Department (SWD) is dedicated to ensuring your well-being and fostering an environment that supports your academic and
             personal growth. We oversee various welfare activities on campus that play a significant role in shaping your future. More than just a

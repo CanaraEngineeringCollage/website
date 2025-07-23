@@ -76,10 +76,10 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                         <span className="font-bold ">Designation:</span>
                         <span>{facultyData.desiganation}</span>
                       </div>
-                      <div className="flex gap-2">
+                     {facultyData.department&& <div className="flex gap-2">
                         <span className="font-bold ">Department:</span>
                         <span>{facultyData.department}</span>
-                      </div>
+                      </div>}
                       {facultyData.joiningDate && (
                         <div className="flex gap-2">
                           <span className="font-bold ">Joining Date:</span>
@@ -98,11 +98,29 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                           <span>{facultyData.employmentType}</span>
                         </div>
                       )}
+                       {facultyData.address && (
+                        <div className="flex gap-2">
+                          <span className="font-bold">Address:</span>
+                          <span>{facultyData.address}</span>
+                        </div>
+                      )}
+                      {facultyData.contact && (
+                        <div className="flex gap-2">
+                          <span className="font-bold ">Contact:</span>
+                          <span>{facultyData.contact}</span>
+                        </div>
+                      )}
+                       {facultyData.email && (
+                        <div className="flex gap-2">
+                          <span className="font-bold">Email:</span>
+                          <span>{facultyData.email}</span>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
 
-                <div className="mt-10 lg:mt-24 text-black">
+                {facultyData?.qualifications&&<div className="mt-10 lg:mt-24 text-black">
                   <h3 className="text-xl font-semibold mb-4 text-center">Qualifications</h3>
                   <div className="overflow-x-auto">
                     <table className="w-full table-auto border-collapse rounded-xl overflow-hidden shadow-sm">
@@ -128,7 +146,7 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                       </tbody>
                     </table>
                   </div>
-                </div>
+                </div>}
               </Dialog.Panel>
             </motion.div>
           </div>

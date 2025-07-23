@@ -12,8 +12,8 @@ const MandatoryDisclosure = () => {
     <section className="py-10 xl:py-20 text-[#1D1D1F] overflow-hidden">
       <div className="lg2:mx-24 mx-5">
         <h1 className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold pb-1 lg:pb-10">Mandatory Disclosure</h1>
-        <div className="grid grid-cols-1 gap-3 md:gap-28 md:grid-cols-12 mt-10">
-          <div className="col-span-4 sticky top-32 self-start hidden md:block">
+        <div className="grid grid-cols-1  md:grid-cols-12 mt-10">
+          <div className="col-span-3 sticky top-32 self-start hidden md:block">
             {disclosureData?.map((section, index) => (
               <h1
                 key={index}
@@ -26,6 +26,7 @@ const MandatoryDisclosure = () => {
               </h1>
             ))}
           </div>
+            <div className="col-span-1"></div>
           <div className="col-span-8">
             {selectedIndex === 4 ? (
               <>
@@ -1226,7 +1227,7 @@ const MandatoryDisclosure = () => {
                         link?.href ? (
 
                           <li key={i} className="flex items-center gap-2 text-[17px] text-textGray hover:text-blue-600 cursor-pointer">
-                            <Link href={link.href} className="flex items-center gap-2 hover:text-blue-600">
+                            <Link href={link.href} target="_blank" className="flex items-center gap-2 hover:text-blue-600">
                               <HiLink className="text-textGray hover:text-blue-600 mt-2" />
                               <span className="text-textGray hover:text-blue-600 text-[16px] pt-2 leading-7">{link.text}</span>
                             </Link>
