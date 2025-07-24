@@ -85,7 +85,7 @@ export default function DepartmentFacultySection({ faculties }: DepartmentSectio
   };
   return (
     <section className="py-16 px-6 md:px-12 max-w-7xl mx-auto my-32 xl:max-w-[75%] bg-[#F5F5F7] rounded-3xl">
-      <div className="mx-auto lg:flex hidden flex-col-reverse md:flex-row items-center justify-between gap-10">
+      <div className="mx-auto py-10 lg:flex hidden flex-col-reverse md:flex-row items-center justify-between gap-10">
         <div className="max-w-md space-y-44">
           <div>
             <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-gray-900 leading-tight">

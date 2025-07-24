@@ -12,7 +12,7 @@ interface VideoPlayerProps {
   titleClassname?: string;
 }
 
-const VideoPlayer: React.FC<VideoPlayerProps> = ({ youtubeUrl, videoUrl, title, subTitle, thumbnail, titleClassname }) => {
+const   VideoPlayer: React.FC<VideoPlayerProps> = ({ youtubeUrl, videoUrl, title, subTitle, thumbnail, titleClassname }) => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [progress, setProgress] = useState<number>(0);
