@@ -4,6 +4,7 @@ import Image from "next/image";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import councilData from "../../../../utils/councilMembers/councilMembers.json"; // Import JSON data
 import Link from "next/link";
+import FacultyModal from "@/components/DepartmentComponents/FacultyModal/FacultyModal";
 
 interface CouncilMember {
   id: number;
@@ -24,6 +25,8 @@ interface CouncilData {
 const FacultyMembersSection = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("faculty");
   const [selectedDepartment, setSelectedDepartment] = useState<string>("Computer Science & Engineering");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedMember, setSelectedMember] = useState<CouncilMember | null>(null);
 
   // Use imported JSON data
   const data: CouncilData = councilData;
@@ -116,6 +119,7 @@ const FacultyMembersSection = () => {
 
               return (
                 <div
+                onClick={() => {setSelectedMember(item); setIsModalOpen(true);}}
                   key={item.id}
                   className={`relative w-full max-w-[280px] sm:max-w-[300px] md:max-w-[309px] h-[400px] sm:h-[430px] md:h-[450px] xl:h-[500px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center py-4 sm:py-6 shadow-md ${
                     shouldCenterLast ? "sm:col-span-2 sm: justify-self-center" : ""
@@ -132,12 +136,10 @@ const FacultyMembersSection = () => {
                   <div className="absolute z-50 top-[75%] sm:top-[78%] md:top-[80%] left-4 sm:left-5 md:left-6">
                     <h2 className="text-base sm:text-lg md:text-lg font-bold">{item.name}</h2>
                   <p>{item.position}</p>
-                    <Link href={`/user-details/${item.id}`}>
-                      <p className="text-xs font-bold sm:text-sm md:text-sm flex items-center">
+                      <p className="text-xs cursor-pointer font-bold sm:text-sm md:text-sm flex items-center">
                         View Profile
                         <MdKeyboardArrowRight className="ml-1 text-xl" />
                       </p>
-                    </Link>
                   </div>
                 </div>
               );
@@ -145,6 +147,7 @@ const FacultyMembersSection = () => {
           </div>
         </div>
       </div>
+        <FacultyModal isOpen={isModalOpen} onClose={setIsModalOpen} facultyData={selectedMember} />
     </section>
   );
 };

@@ -112,24 +112,24 @@ const Footer: FC = () => {
         />
 
         <hr className="text-gray-300 pb-3.5" />
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 border-b border-gray-300 pb-10">
+        <div className="grid grid-cols-2 md:grid-cols-5  border-b border-gray-300 pb-10">
           <div>
             <h3 className="font-semibold mb-1">Quick Links</h3>
             <FooterList data={quickLinks} />
           </div>
-          <div className="xl:ml-[40%] ml-[20%]">
+          <div className="xl:ml-[40%] lg2:ml-[20%]">
             <h3 className="font-semibold mb-1">Our College</h3>
             <FooterList data={ourCollege} />
           </div>
-          <div className="xl:ml-[40%] ml-[20%]">
+          <div className="xl:ml-[40%] lg2:ml-[20%]">
             <h3 className="font-semibold mb-1">Academics</h3>
             <FooterList data={academics} />
           </div>
-          <div className="xl:ml-[40%] ml-[20%]">
+          <div className="xl:ml-[40%] lg2:ml-[20%]">
             <h3 className="font-semibold mb-1">Facilities</h3>
             <FooterList data={facilities} />
           </div>
-          <div className="xl:ml-auto ml-[20%]">
+          <div className="xl:ml-auto lg2:ml-[20%]">
             <h3 className="font-semibold mb-1">Stay Connected</h3>
             <FooterList data={stayConnected} />
           </div>

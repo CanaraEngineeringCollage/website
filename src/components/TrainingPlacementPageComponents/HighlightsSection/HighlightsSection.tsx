@@ -93,12 +93,12 @@ const HighlightsSection = () => {
               <h1 className=" text-[45px] lg:text-[60px] font-[900] text-black text-center">{item.title}</h1>
               <h2 className="font-bold text-center text-[20px] text-black">{item.subtitle}</h2>
               <p className="text-xl text-center">{item.description}</p>
-              {item.link && (
+              {/* {item.link && (
                 <p className="text-[17px] mt-3 text-[#0066CC] flex items-center">
                   View Profile
                   <MdKeyboardArrowRight className="ml-1 text-xl" />
                 </p>
-              )}
+              )} */}
             </div>
           ))}
         </div>
@@ -152,10 +152,10 @@ const HighlightsSection = () => {
             <h1 className=" text-[45px] lg:text-[60px] font-[900] text-black text-center">220+</h1>
             <h2 className="font-bold text-center text-[20px] text-black">Companies Visited on Campus</h2>
             <p className="text-xl text-center">Offered to Top 5% of Student Candidates</p>
-            <p className="text-[17px] mt-3 text-[#0066CC] flex items-center">
+            {/* <p className="text-[17px] mt-3 text-[#0066CC] flex items-center">
               View Profile
               <MdKeyboardArrowRight className="ml-1 text-xl" />
-            </p>
+            </p> */}
           </div>
         </div>
 
@@ -175,12 +175,12 @@ const HighlightsSection = () => {
               <h1 className=" text-[45px] lg:text-[60px] font-[900] text-black text-center">{item.title}</h1>
               <h2 className="font-bold text-center text-[20px] text-black">{item.subtitle}</h2>
               <p className="text-xl text-center">{item.description}</p>
-              {item.link && (
+              {/* {item.link && (
                 <p className="text-[17px] mt-3 text-[#0066CC] flex items-center">
                   View Profile
                   <MdKeyboardArrowRight className="ml-1 text-xl" />
                 </p>
-              )}
+              )} */}
             </div>
           ))}
         </div>

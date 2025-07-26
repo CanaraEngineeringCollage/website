@@ -17,7 +17,7 @@ const DepartmentMissionVision: React.FC<DepartmentMissionVisionProps> = ({
   ourVision,
 }) => {
   return (
-    <section className="py-16 px-6 md:px-12 ">
+    <section className="py-10 px-6 md:px-12 ">
       <div className="max-w-7xl xl:max-w-[75%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-20">
         {/* Mission Card */}
         <div className="bg-white rounded-2xl shadow p-10 lg:p-18 space-y-6">

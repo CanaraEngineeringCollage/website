@@ -6,6 +6,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import FacultyModal from "../FacultyModal/FacultyModal";
+import Link from "next/link";
 // Interface for qualifications
 interface Qualification {
   degree: string;
@@ -59,14 +60,14 @@ export default function DepartmentFacultySection({ faculties }: DepartmentSectio
   const visibleMembersMobile = data.slice(startIndex, startIndex + 1);
 
   const handleNext = () => {
-    if (startIndex + 1 < data.length) {
-      setStartIndex(startIndex + 1);
+    if (startIndex + 2 < data.length) {
+      setStartIndex(startIndex + 2);
     }
   };
 
   const handlePrev = () => {
-    if (startIndex - 1 >= 0) {
-      setStartIndex(startIndex - 1);
+    if (startIndex - 2 >= 0) {
+      setStartIndex(startIndex - 2);
     }
   };
   // inside DepartmentFacultySection
@@ -84,7 +85,7 @@ export default function DepartmentFacultySection({ faculties }: DepartmentSectio
   };
   return (
     <section className="py-16 px-6 md:px-12 max-w-7xl mx-auto my-32 xl:max-w-[75%] bg-[#F5F5F7] rounded-3xl">
-      <div className="mx-auto lg:flex hidden flex-col-reverse md:flex-row items-center justify-between gap-10">
+      <div className="mx-auto py-10 lg:flex hidden flex-col-reverse md:flex-row items-center justify-between gap-10">
         <div className="max-w-md space-y-44">
           <div>
             <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-gray-900 leading-tight">
@@ -97,11 +98,11 @@ export default function DepartmentFacultySection({ faculties }: DepartmentSectio
             </p>
           </div>
           <div className="flex items-center gap-4">
-            <button 
-            aria-label="Meet more of our Admin Team"
-            className="bg-blue-100 text-black rounded-full text-block px-6 py-2  text-sm font-medium hover:bg-blue-700 transition">
-              Meet more of our Admin Team
-            </button>
+            <Link href="/about/educators-administrators"><button 
+            aria-label="Meet more of our Faculty"
+            className="bg-blue-100 text-black rounded-full text-block px-6 py-2  text-sm font-medium hover:bg-blue-200 transition">
+              Meet more of our Faculty
+            </button></Link>
             <div className="flex items-center gap-2">
               <button aria-label="Previous Slide"
                 onClick={handlePrev}

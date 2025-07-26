@@ -33,7 +33,7 @@ interface DepartmentHeadMessageProps {
         </div>
         <div>
           <div className="hidden lg:flex flex-col items-center flex-shrink-0 mx-auto lg:px-20">
-            <div className="w-80  h-96 relative rounded-xl overflow-hidden shadow-md">
+            <div className="w-96  h-[450px] relative rounded-xl overflow-hidden shadow-md">
             <Image src={depatmentHead.imageUrl} fill alt="Sri Ammembal Subba Rao Pai"  className="object-cover bg-[#6dc0eb]" />
             </div>
             <p className="mt-4 text-center text-[27px] font-bold text-white">{depatmentHead.name}</p>
