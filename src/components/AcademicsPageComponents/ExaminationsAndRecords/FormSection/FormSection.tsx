@@ -1,19 +1,26 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { HiLink } from "react-icons/hi";
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
+import Link from "next/link";
 
 const FormSection: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<string>("Marks");
-  const [activeHeader, setActiveHeader] = useState<string>("Marks & Attendance");
-  const data: string[] = ["Marks & Attendance", "Circulars", "Examination Timetables"];
+  const [activeTab, setActiveTab] = useState<string>("");
+  const [activeHeader, setActiveHeader] = useState<string>("");
+  const router = useRouter();
+  const data: { key: string; label: string }[] = [
+    { key: "marks", label: "Marks & Attendance" },
+    { key: "circulars", label: "Circulars" },
+    { key: "tt", label: "Examination Timetables" },
+  ];
   const searchParams = useSearchParams();
   const parmasActive = searchParams.get("tab");
 
   useEffect(() => {
     if (parmasActive === "tt") setActiveHeader("Examination Timetables");
     else if (parmasActive === "circulars") setActiveHeader("Circulars");
-    else setActiveHeader("Marks & Attendance");
+    else if (parmasActive === "marks") setActiveHeader("Marks & Attendance");
+    else router.replace("/not-found");
   }, [parmasActive]);
   return (
     <section className="px-4 sm:px-10 md:px-16 lg:px-20 py-12 sm:py-16 xl:py-36 md:py-20 text-[#1D1D1F]">
@@ -23,14 +30,16 @@ const FormSection: React.FC = () => {
           <div className="md:col-span-4 mt-10">
             <div>
               {data.map((item, index) => (
-                <div key={index} className={`flex justify-between pb-3 mb-3 ${index < data.length - 1 ? "border-b-2 border-border" : ""}`}>
-                  <h1
-                    className={`text-[20px] ${activeHeader === item ? "text-[#2884CA] font-extrabold" : "text-textGray"} cursor-pointer`}
-                    onClick={() => setActiveHeader(item)}
-                  >
-                    {item}
-                  </h1>
-                </div>
+                <Link href={`/academics/examination-records?tab=${item.key}`} key={item.key}>
+                  <div key={index} className={`flex justify-between pb-3 mb-3 ${index < data.length - 1 ? "border-b-2 border-border" : ""}`}>
+                    <h1
+                      className={`text-[20px] ${activeHeader === item.label ? "text-[#2884CA] font-extrabold" : "text-textGray"} cursor-pointer`}
+                      onClick={() => setActiveHeader(item.label)}
+                    >
+                      {item.label}
+                    </h1>
+                  </div>
+                </Link>
               ))}
             </div>
           </div>

@@ -28,7 +28,7 @@ const page = () => {
       <section className="py-20">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
-          youtubeUrl="https://youtu.be/rv0KerNW4QE?si=ObYcwEiaqF0UD90P"
+          youtubeUrl="r6MXt_aTeS0"
           thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1746007133/yfqf8rnceq50jdtttp7y.png"
         />
       </section>

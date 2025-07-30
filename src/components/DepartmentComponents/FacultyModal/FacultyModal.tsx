@@ -76,10 +76,12 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                         <span className="font-bold ">Designation:</span>
                         <span>{facultyData.desiganation}</span>
                       </div>
-                     {facultyData.department&& <div className="flex gap-2">
-                        <span className="font-bold ">Department:</span>
-                        <span>{facultyData.department}</span>
-                      </div>}
+                      {facultyData.department && (
+                        <div className="flex gap-2">
+                          <span className="font-bold ">Department:</span>
+                          <span>{facultyData.department}</span>
+                        </div>
+                      )}
                       {facultyData.joiningDate && (
                         <div className="flex gap-2">
                           <span className="font-bold ">Joining Date:</span>
@@ -98,7 +100,7 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                           <span>{facultyData.employmentType}</span>
                         </div>
                       )}
-                       {facultyData.address && (
+                      {facultyData.address && (
                         <div className="flex gap-2">
                           <span className="font-bold">Address:</span>
                           <span>{facultyData.address}</span>
@@ -110,7 +112,7 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                           <span>{facultyData.contact}</span>
                         </div>
                       )}
-                       {facultyData.email && (
+                      {facultyData.email && (
                         <div className="flex gap-2">
                           <span className="font-bold">Email:</span>
                           <span>{facultyData.email}</span>
@@ -120,33 +122,35 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                   </div>
                 </div>
 
-                {facultyData?.qualifications&&<div className="mt-10 lg:mt-24 text-black">
-                  <h3 className="text-xl font-semibold mb-4 text-center">Qualifications</h3>
-                  <div className="overflow-x-auto">
-                    <table className="w-full table-auto border-collapse rounded-xl overflow-hidden shadow-sm">
-                      <thead>
-                        <tr className="bg-gray-50 text-gray-700">
-                          <th className="px-6 py-3 text-left font-semibold">Degree</th>
-                           <th className="px-6 py-3 text-left font-semibold">Name Of Degree</th>
-                          <th className="px-6 py-3 text-left font-semibold">Passing Year</th>
-                          <th className="px-6 py-3 text-left font-semibold">College/University</th>
-                          <th className="px-6 py-3 text-left font-semibold">Area of Specialization</th>
-                        </tr>
-                      </thead>
-                      <tbody className=" text-gray-700">
-                        {facultyData?.qualifications?.map((qual, index) => (
-                          <tr key={index} className="border-t border-gray-200 last:rounded-b-xl">
-                            <td className="px-6 py-4">{qual.degree}</td>
-                            <td className="px-6 py-4">{qual.degreeName}</td>
-                            <td className="px-6 py-4">{qual.passingYear}</td>
-                            <td className="px-6 py-4">{qual.college}</td>
-                            <td className="px-6 py-4">{qual.specializedArea}</td>
+                {facultyData?.qualifications && (
+                  <div className="mt-10 lg:mt-24 text-black">
+                    <h3 className="text-xl font-semibold mb-4 text-center">Qualifications</h3>
+                    <div className="overflow-x-auto">
+                      <table className="w-full table-auto border-collapse rounded-xl overflow-hidden shadow-sm">
+                        <thead>
+                          <tr className="bg-gray-50 text-gray-700">
+                            <th className="px-6 py-3 text-left font-semibold">Degree</th>
+                            <th className="px-6 py-3 text-left font-semibold">Name Of Degree</th>
+                            <th className="px-6 py-3 text-left font-semibold">Passing Year</th>
+                            <th className="px-6 py-3 text-left font-semibold">College/University</th>
+                            <th className="px-6 py-3 text-left font-semibold">Area of Specialization</th>
                           </tr>
-                        ))}
-                      </tbody>
-                    </table>
+                        </thead>
+                        <tbody className=" text-gray-700">
+                          {facultyData?.qualifications?.map((qual, index) => (
+                            <tr key={index} className="border-t border-gray-200 last:rounded-b-xl">
+                              <td className="px-6 py-4">{qual.degree}</td>
+                              <td className="px-6 py-4">{qual.degreeName}</td>
+                              <td className="px-6 py-4">{qual.passingYear}</td>
+                              <td className="px-6 py-4">{qual.college}</td>
+                              <td className="px-6 py-4">{qual.specializedArea}</td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
-                </div>}
+                )}
               </Dialog.Panel>
             </motion.div>
           </div>

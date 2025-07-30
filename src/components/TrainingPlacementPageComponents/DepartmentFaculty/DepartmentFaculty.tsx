@@ -51,12 +51,12 @@ export default function DepartmentFaculty() {
             </p>
           </div>
           <div className="flex items-center justify-between gap-4">
-            <button
+            <Link href="/about/educators-administrators"><button
               aria-label="Meet more of our Faculty"
               className="bg-[#d0e2f8] text-black text-block  px-6 py-2 rounded-full text-[17px] font-medium "
             >
               Meet more of our Faculty
-            </button>
+            </button></Link>
             <div className="flex items-center gap-3">
               <button
                 aria-label="Previous Faculty Member"
@@ -182,12 +182,12 @@ export default function DepartmentFaculty() {
           ))}
         </div>
         <div className="flex flex-col items-center gap-10">
-          <button
+          <Link href="/about/educators-administrators"> <button
             aria-label="Meet more of our Admin Team"
             className="bg-blue-100 text-black text-block px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition"
           >
-            Meet more of our Admin Team
-          </button>
+                  Meet more of our Faculty
+          </button></Link>
           <div className="flex items-center gap-2">
             <button
               aria-label="Previous Faculty Member"

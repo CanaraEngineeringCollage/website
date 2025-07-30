@@ -108,6 +108,9 @@ const Footer: FC = () => {
             { label: "Alumni", href: "/alumini" },
             { label: "Admissions", href: "/admission" },
             { label: "Training & Placements", href: "/training-placements" },
+            { label: "Examination Timetables", href: "tt" },
+            { label: "Marks & Attendance", href: "marks" },
+            { label: "Circulars", href: "circulars" },
           ]}
         />
 

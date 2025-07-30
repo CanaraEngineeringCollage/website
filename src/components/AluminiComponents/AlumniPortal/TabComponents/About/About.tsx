@@ -7,7 +7,7 @@ const About = ({ data }) => {
       {data.map((item, index) => {
         return (
           <>
-            <h2 className="text-[20px] font-extrabold text-textGray mb-2">{item.title}</h2>
+            <h2 className="text-[20px] font-extrabold text-textGray mb-2 uppercase">{item.title}</h2>
             {item.image && <Image className="pb-4" alt="" width={300} height={300} src={item.image} />}
             {item.descrtiption&&<p className=" md:text-lg  text-[14px] leading-7 mb-6  text-textGray">{item.descrtiption}</p>}
              {item.points && (
