@@ -52,7 +52,7 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 50, scale: 0.95 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="relative w-full max-w-7xl bg-[#F5F5F7] rounded-xl shadow-lg overflow-auto h-[90vh] p-6 lg:p-32"
+              className="relative w-full max-w-7xl bg-[#F5F5F7] rounded-xl shadow-lg overflow-auto h-[90vh] p-6 lg:py-32 lg:pl-32"
             >
               <Dialog.Panel>
                 <button aria-label="Close Modal" onClick={() => onClose(false)} className="absolute cursor-pointer top-4 right-4">
