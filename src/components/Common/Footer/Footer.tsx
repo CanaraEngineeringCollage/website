@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { FC, useState } from "react";
+import React, { FC, Suspense, useState } from "react";
 import Image from "next/image";
 import footericon1 from "../../../../public/svgs/logos/FooterIcon1.svg"; // Adjust path as needed
 import { FooterIcon, FooterIconMobile, Instagram, LinkedIn, Meta, Twitter, Yt } from "@/components/Icons/Icons"; // Adjust import path
@@ -24,9 +24,7 @@ const ourCollege = [
   { data: "Our Founder", links: "/about/our-founder" },
   { data: "Our Management", links: "/about/our-management" },
   { data: "Key Functionaries & HODs", links: "/about/key-functionaries-and-hods" },
-  { data: "Teaching Faculty", links: "#" },
-  { data: "Non Teaching Staff", links: "#" },
-  { data: "Administration Staff", links: "#" },
+  { data: "Educators & Administrators", links: "/about/educators-administrators" },
   // { data: "Departments", links: "#" },
   // { data: "NBA Accreditations", links: "#" },
   { data: "Mandatory Disclosures", links: "/about/mandatory-disclosure" },
@@ -75,7 +73,7 @@ const Footer: FC = () => {
     <footer className="bg-[#e5e5ea] text-gray-700 text-sm pt-10">
       {/* Desktop Version */}
       <div className="lg:max-w-7xl  xl:mx-auto xl:max-w-[75%]  mx-auto lg:block hidden">
-        <Breadcrumbs
+          <Suspense fallback={null}> <Breadcrumbs
           items={[
             { label: "", href: "" },
             { label: "About CEC", href: "/about/about-cec" },
@@ -108,8 +106,11 @@ const Footer: FC = () => {
             { label: "Alumni", href: "/alumini" },
             { label: "Admissions", href: "/admission" },
             { label: "Training & Placements", href: "/training-placements" },
+            { label: "Examination Timetables", href: "tt" },
+            { label: "Marks & Attendance", href: "marks" },
+            { label: "Circulars", href: "circulars" },
           ]}
-        />
+        /></Suspense>
 
         <hr className="text-gray-300 pb-3.5" />
         <div className="grid grid-cols-2 md:grid-cols-5  border-b border-gray-300 pb-10">

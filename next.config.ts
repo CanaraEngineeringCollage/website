@@ -9,7 +9,6 @@ const nextConfig: NextConfig = {
   },
   productionBrowserSourceMaps: true,
 
-  // ✅ Add this to allow external image domains
   images: {
     domains: ["www.canaraengineering.in"],
   },

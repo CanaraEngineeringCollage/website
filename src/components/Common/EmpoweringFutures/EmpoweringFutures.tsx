@@ -176,7 +176,7 @@ export default function EmpoweringFutures() {
             className="text-white rounded-xl p-6 shadow flex flex-col justify-center items-center"
           >
             <Image src="/svgs/common/buisnessBag.svg" alt="image" width={250} height={100} className="absolute" />
-            <h3 className="text-[100px] font-bold leading-none">1.2K+</h3>
+            <h3 className="text-[100px] font-bold leading-none">1.6K+</h3>
             <p className="mt-2 text-3xl font-bold">Student placed</p>
             <p className="text-sm opacity-80">Over the past 4 Years</p>
           </div>

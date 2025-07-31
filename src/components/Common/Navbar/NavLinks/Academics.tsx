@@ -79,25 +79,20 @@ export default function Academics() {
                 <Book />
               </div>
               <div className="flex flex-col gap-2">
-  <span className="font-bold text-lg">Departments</span>
-  <ul className="list-none text-gray-500 cursor-pointer">
-    {departments.map((dept, index) => (
-      <li key={index} className="leading-10">
-        <Link
-          href={dept.link}
-          className={`${
-            pathname.includes(dept.link)
-              ? "text-primary font-bold"
-              : "text-gray-500"
-          } hover:text-primary`}
-        >
-          {dept.title}
-        </Link>
-      </li>
-    ))}
-  </ul>
-</div>
-
+                <span className="font-bold text-lg">Departments</span>
+                <ul className="list-none text-gray-500 cursor-pointer">
+                  {departments.map((dept, index) => (
+                    <li key={index} className="leading-10">
+                      <Link
+                        href={dept.link}
+                        className={`${pathname.includes(dept.link) ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
+                      >
+                        {dept.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
 
             {/* Column 3 */}
