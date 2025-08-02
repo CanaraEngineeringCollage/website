@@ -94,9 +94,9 @@ export default async function DepartmentPage({ params }: { params: { slug: strin
       <section>
         <SpotlightSection />
       </section>
-      <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0 pb-8">
+      {/* <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0 pb-8">
         <HotOfThePress />
-      </section>
+      </section> */}
     </>
   );
 }

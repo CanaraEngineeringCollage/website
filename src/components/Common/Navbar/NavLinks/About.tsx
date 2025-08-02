@@ -45,7 +45,7 @@ export default function About() {
       </MenuHandler>
 
       <MenuList className="w-full bg-transparent text-black p-0  z-100 border-none !border-0 shadow-none flex justify-center pb-4 outline-none focus:ring-0">
-        <div className="w-full cursor-pointer max-w-screen-2xl bg-white z-100 shadow-md rounded-xl flex justify-center gap-8 p-8 border-none outline-none">
+        <div className="w-full  max-w-screen-2xl bg-white z-100 shadow-md rounded-xl flex justify-center gap-8 p-8 border-none outline-none">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mx-16 w-full">
             {/* Column 1 */}
             <div className="flex gap-4 pr-4 border-r border-gray-300">

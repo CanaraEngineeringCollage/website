@@ -72,7 +72,7 @@ export default function Home() {
       <section className="px-0 bg-white pt-5 pb-10">
         <Testimonials />
       </section>
-      <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0 py-12">
+      <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0 py-0">
         <HotOfThePress />
       </section>
       <section className="bg-[#E5E5EA]">

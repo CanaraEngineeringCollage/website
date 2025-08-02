@@ -10,7 +10,7 @@ const ModelTable: React.FC<ModelTableProps> = ({ title, headers, rows }) => {
   return (
     <div className="pb-10">
       {" "}
-      <h1 className="text-3xl text-start md:text-[40px] lg2:text-4xl xl:text-6xl mb-5 font-bold">{title}</h1>
+      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl mb-5 font-bold text-[#1D1D1F]">{title}</h1>
       <div className="overflow-x-auto">
         <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
           <thead className="bg-[#F3F8FC] text-[#2884CA]">

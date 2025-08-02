@@ -1,6 +1,10 @@
+"use client"
 import Image from "next/image"; // If you're using Next.js, otherwise use normal <img>
 import image from "../../../../public/departmentImages/SpotLightImage/image.png";
+import ContactFormModal from "@/components/Modal/Modal";
+import { useState } from "react";
 export default function SpotlightSection() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div
       className=" mt-32 xl:mt-56  py-16 text-white bg-center"
@@ -39,12 +43,13 @@ export default function SpotlightSection() {
           <p className="text-lg mb-6 max-w-2xl text-white/70  mx-auto">
             Book a one-on-one counseling session & get all your questions answered about admissions, programs & your future opportunities.
           </p>
-          <button
+          <button onClick={()=>setIsOpen(true)}
             aria-label="Book Your Counseling Session Today"
             className="bg-white text-primary font-semibold py-3 px-6 rounded-full shadow-md hover:bg-gray-100 transition"
           >
             Book Your Counseling Session Today
           </button>
+            <ContactFormModal isOpen={isOpen} onClose={setIsOpen} />
         </div>
       </div>
     </div>

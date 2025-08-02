@@ -41,7 +41,7 @@ export default function Academics() {
       </MenuHandler>
 
       <MenuList
-        className="w-full bg-transparent p-0 border-none shadow-none cursor-pointer flex justify-center pb-4 
+        className="w-full bg-transparent p-0 border-none shadow-none  flex justify-center pb-4 
         outline-none focus:ring-0 focus:outline-none hover:border-none  text-[#1D1D1F] z-100"
       >
         <div
@@ -80,12 +80,12 @@ export default function Academics() {
               </div>
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Departments</span>
-                <ul className="list-none text-gray-500 cursor-pointer">
+                <ul className="list-none text-gray-500 ">
                   {departments.map((dept, index) => (
-                    <li key={index} className="leading-10">
+                    <li key={index} className="leading-10 ">
                       <Link
                         href={dept.link}
-                        className={`${pathname.includes(dept.link) ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
+                        className={`${pathname.includes(dept.link) ? "text-primary cursor-pointer font-bold" : "text-gray-500"} hover:text-primary`}
                       >
                         {dept.title}
                       </Link>
@@ -102,15 +102,15 @@ export default function Academics() {
               </div>
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Examinations & Records</span>
-                <ul className="list-none text-gray-500 leading-10 cursor-pointer ">
+                <ul className="list-none text-gray-500 leading-10  ">
                   <Link href="/academics/examination-records?tab=marks">
-                    <li className={`${tab === "marks" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Marks & Attendance</li>
+                    <li className={`${tab === "marks" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary cursor-pointer`}>Marks & Attendance</li>
                   </Link>
                   <Link href="/academics/examination-records?tab=circulars">
-                    <li className={`${tab === "circulars" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Circulars</li>
+                    <li className={`${tab === "circulars" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary cursor-pointer`}>Circulars</li>
                   </Link>
                   <Link href="/academics/examination-records?tab=tt">
-                    <li className={`${tab === "tt" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Timetables</li>
+                    <li className={`${tab === "tt" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary cursor-pointer`}>Timetables</li>
                   </Link>
                 </ul>
               </div>

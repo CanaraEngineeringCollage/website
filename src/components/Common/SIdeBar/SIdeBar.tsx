@@ -1,7 +1,7 @@
 "use client";
 
 import { Typography } from "@material-tailwind/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { useRouter } from "next/navigation";
 import {
@@ -39,12 +39,28 @@ export default function Sidebar({ sidebar, openSidebar }: { sidebar: boolean; op
     lifeAtSahyadri: false,
   });
   const [visible, setVisible] = useState("main-menu");
+
+
+    useEffect(() => {
+      if (sidebar) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "auto";
+      }
+      const handleKeyDown = (event: KeyboardEvent) => {
+        if (event.key === "Escape" && sidebar) {
+          openSidebar(false);
+        }
+      };
+      window.addEventListener("keydown", handleKeyDown);
+      return () => window.removeEventListener("keydown", handleKeyDown);
+    }, [sidebar, openSidebar]);
   return (
     <div>
       <div
-        className={`sidebar bg-white z-[1000] h-[100vh] fixed md:top-[5rem] top-20 left-0  pb-36 ${
+        className={`sidebar bg-white z-[1000] h-[100vh] fixed md:top-[5rem] top-[90px] left-0  pb-36 ${
           !sidebar ? "translate-x-[-100%]" : "translate-x-0"
-        } ease-in-out duration-500 pt-6 ${sidebar ? "shadow-2xl" : ""}`}
+        } ease-in-out duration-500 pt-6 ${sidebar ? "" : ""}`}
       >
         <div className="px-8 max-w-xs">
           {

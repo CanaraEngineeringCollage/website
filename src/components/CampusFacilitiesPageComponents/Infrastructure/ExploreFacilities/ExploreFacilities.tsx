@@ -107,7 +107,7 @@ const ExploreFacilities = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  
+
   const autoplayDelay = 3000;
 
   const handleCardClose = (index: number) => {
@@ -182,53 +182,43 @@ const ExploreFacilities = () => {
         isOpen,
       }}
     >
-      <section className="lg:ml-20 xl:ml-60 pb-24">
-        <div className="lg:flex lg:justify-between md:pb-14 pb-10">
+      <section className="max-w-7xl mx-auto xl:max-w-[75%]  pb-24">
+        <div className="lg:flex lg:justify-between md:pb-5 pb-10">
           <div className="flex">
-            <h1 className="text-3xl md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-[#1D1D1F] md:pb-6">
-              Explore Our Facilities
+            <h1 className="text-3xl md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-[#1D1D1F] md:pb-0">
+              Our Initiatives
             </h1>
           </div>
         </div>
-        <Swiper
-          modules={[Autoplay]}
-          autoplay={{ delay: autoplayDelay, disableOnInteraction: false }}
-          spaceBetween={20}
-          slidesPerView={1}
-          loop={true}
-          breakpoints={{
-            640: { slidesPerView: 1, spaceBetween: 20 },
-            768: { slidesPerView: 2, spaceBetween: 20 },
-            1024: { slidesPerView: 3.5, spaceBetween: 20 },
-            1580: { slidesPerView: 3.8, spaceBetween: 1 },
-          }}
-          className="mySwiper"
-          onSwiper={(swiper) => {
-            swiperRef.current = swiper;
-          }}
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
           {pressData?.map((item, index) => (
-            <SwiperSlide key={index}>
-              <motion.button
-                onClick={() => openCard(index)}
-                className="max-w-sm min-h-[55vh] md:min-h-[45vh]  lg:min-h-[65vh] xl:min-h-auto rounded-3xl overflow-hidden"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <div className="h-60 overflow-hidden cursor-pointer">
-                  <Image width={200} height={200} src={item.image} alt={item.title} className="w-full h-full object-cover !rounded-t-2xl cursor-pointer " />
-                </div>
-                <div className="p-8 text-center bg-white rounded-b-2xl">
-                  <h2 className="text-[27px] font-bold text-black mb-2 line-clamp-2">{item.title}</h2>
-                  <span className="text-[#2997FF] inline-flex text-[17px] items-center hover:underline font-medium text-sm">
-                    Read More <MdKeyboardArrowRight className="ml-1" />
-                  </span>
-                </div>
-              </motion.button>
-            </SwiperSlide>
+            <motion.button
+              key={index}
+              onClick={() => openCard(index)}
+              className="max-w-sm min-h-[55vh] md:min-h-[45vh] lg:min-h-[65vh] xl:min-h-auto rounded-3xl overflow-hidden"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <div className="h-60 overflow-hidden cursor-pointer">
+                <Image
+                  width={200}
+                  height={200}
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover !rounded-t-2xl cursor-pointer"
+                />
+              </div>
+              <div className="p-8 text-center bg-white rounded-b-2xl">
+                <h2 className="text-[27px] font-bold text-black mb-2 line-clamp-2">{item.title}</h2>
+                <span className="text-[#2997FF] inline-flex text-[17px] items-center hover:underline font-medium text-sm">
+                  Read More <MdKeyboardArrowRight className="ml-1" />
+                </span>
+              </div>
+            </motion.button>
           ))}
-        </Swiper>
-        <div className="flex gap-4 justify-end mt-10 me-5">
+        </div>
+
+        {/* <div className="flex gap-4 justify-end mt-10 me-5">
           <button 
           aria-label="Previous Slide"
             onClick={() => swiperRef.current?.slidePrev()}
@@ -243,7 +233,7 @@ const ExploreFacilities = () => {
           >
             <MdKeyboardArrowRight />
           </button>
-        </div>
+        </div> */}
 
         {/* Modal */}
         <AnimatePresence>

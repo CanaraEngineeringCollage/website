@@ -30,19 +30,19 @@ const titles = ["Home", "Research Center", "Publications", "Grants", "Activities
       <section className="py-10 xl:py-20 text-[#1D1D1F] overflow-hidden">
         <div className="lg2:mx-24 mx-5">
           <h1 className="text-[30px] lg:text-[54px]  font-bold pb-1 lg:pb-10 text-[#1D1D1F]">Research</h1>
-          <div className="grid grid-cols-1 gap-3 md:gap-28 md:grid-cols-12 mt-10">
-            <div className="col-span-4 sticky top-32 self-start hidden md:block">
+          <div className="grid grid-cols-1 gap-3 md:gap-0 md:grid-cols-12 mt-10">
+            <div className="col-span-3 sticky top-32 self-start hidden md:block">
               {titles?.map((title, index) => (
                 <>
                   { title === "IRINS Profile" ? (
                     <h1
                       key={index}
-                      onClick={() => setSelectedIndex(index)}
+                      onClick={() => setSelectedIndex(0)}
                       className={`text-[20px] pb-3 mb-3 cursor-pointer ${index !== titles.length - 1 ? "border-b-2 border-border" : ""} ${
                         selectedIndex === index ? "text-[#2884CA] font-bold" : "text-textGray font-[500]"
                       }`}
                     >
-                      <a  href="https://canaraengineering.irins.org/">{title}</a>
+                      <a  href="https://canaraengineering.irins.org/" target="_blank">{title}</a>
                     </h1>
                   ) : (
                     <h1
@@ -58,6 +58,7 @@ const titles = ["Home", "Research Center", "Publications", "Grants", "Activities
                 </>
               ))}
             </div>
+            <div className="col-span-1"></div>
             <div className="col-span-8">
               {selectedIndex === 0 && <Home />}
               {selectedIndex === 1 && <ResearchCenter />}

@@ -57,9 +57,9 @@ const page = () => {
       <section className="px-0 pt-5 pb-20 bg-white">
         <Testimonials />
       </section>
-      <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">
+      {/* <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">
         <HotOfThePress />
-      </section>
+      </section> */}
       <section className="bg-[#E5E5EA]">
         <FooterCard />
       </section>
