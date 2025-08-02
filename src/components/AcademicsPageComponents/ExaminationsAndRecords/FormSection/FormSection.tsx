@@ -68,7 +68,7 @@ const FormSection: React.FC = () => {
               {activeTab === "Attendance" && (
                 <input
                   type="text"
-                  placeholder="Enter Your Student Mark"
+                  placeholder="Enter Your Student USN"
                   className="border-b-2 outline-none w-full border-border pb-2 text-textGray"
                 />
               )}
