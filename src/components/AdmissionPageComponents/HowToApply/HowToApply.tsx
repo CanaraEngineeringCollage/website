@@ -5,49 +5,8 @@ import { RxDash } from "react-icons/rx";
 import React, { useEffect, useRef } from "react";
 
 const HowToApply = () => {
-  // Animation controls for each step
-  const controls1 = useAnimation();
-  const controls2 = useAnimation();
-  const controls3 = useAnimation();
-  const controls4 = useAnimation();
-
-  // Helper to trigger next animation
-  const stepRefs = [controls1, controls2, controls3, controls4];
-
-  // Start the first animation when in view
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (sectionRef.current) {
-        const rect = sectionRef.current.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
-          controls1.start("visible");
-          window.removeEventListener("scroll", handleScroll);
-        }
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    // In case already in view
-    handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  // Animation variants
-  const itemVariants = {
-    hidden: { opacity: 0, x: -50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: "easeOut" } },
-  };
-
-  const colorVariants = {
-    hidden: { color: "#747474" },
-    visible: { color: "#2563EB", transition: { duration: 0.5 } },
-  };
-
-  const pathVariants = {
-    hidden: { pathLength: 0, stroke: "#747474", fill: "none" },
-    visible: { pathLength: 1, stroke: "#2563EB", fill: "none", transition: { duration: 1.2 } },
-  };
+  // Animation controls for SVGs and dashes (total: 4 SVGs + 3*3 dashes)
+  const controls = Array.from({ length: 16 }, () => useAnimation());
 
   // SVG path arrays for each step
   const svgPaths = [
@@ -142,10 +101,8 @@ const HowToApply = () => {
     ],
   ];
 
-  // Step labels
   const stepLabels = ["Get in touch with college", "Counselling by Admission team", "Pay Admission fee", "Enroll for the course"];
 
-  // SVG sizes
   const svgSizes = [
     { width: 137, height: 136, viewBox: "0 0 137 136" },
     { width: 140, height: 140, viewBox: "0 0 140 140" },
@@ -153,12 +110,44 @@ const HowToApply = () => {
     { width: 115, height: 152, viewBox: "0 0 115 152" },
   ];
 
-  // Animation complete handlers
-  const handleComplete = (step) => {
-    if (step < stepRefs.length - 1) {
-      stepRefs[step + 1].start("visible");
+  // Animation variants
+  const itemVariants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: "easeOut" } },
+  };
+  const colorVariants = {
+    hidden: { color: "#747474" },
+    visible: { color: "#2884CA", transition: { duration: 0.5 } },
+  };
+  const pathVariants = {
+    hidden: { pathLength: 0, stroke: "#747474", fill: "none" },
+    visible: { pathLength: 1, stroke: "#2884CA", fill: "none", transition: { duration: 1.2 } },
+  };
+
+  // Chain the animation sequence
+  useEffect(() => {
+    const handleScroll = () => {
+      if (sectionRef.current) {
+        const rect = sectionRef.current.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          controls[0].start("visible");
+          window.removeEventListener("scroll", handleScroll);
+        }
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Animation complete handler
+  const handleComplete = (idx) => {
+    if (idx < controls.length - 1) {
+      controls[idx + 1].start("visible");
     }
   };
+
+  const sectionRef = useRef(null);
 
   return (
     <section className="max-w-7xl xl:max-w-[75%] mx-auto py-20 md:pt-36 overflow-hidden" ref={sectionRef}>
@@ -182,38 +171,38 @@ const HowToApply = () => {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-7 gap-10 lg:gap-2 w-full">
         {/* Steps and Dashes */}
-        {svgPaths.map((paths, idx) => (
-          <React.Fragment key={idx}>
+        {[0, 1, 2, 3].map((stepIdx) => (
+          <React.Fragment key={stepIdx}>
             {/* Step SVG */}
             <motion.div
               className="flex items-center flex-col justify-between"
-              initial="hidden"
-              animate={stepRefs[idx]}
+              initial={{ opacity: 0 }}
+              animate={controls[stepIdx * 4]}
               variants={itemVariants}
               viewport={{ once: true }}
-              onAnimationComplete={() => handleComplete(idx)}
+              onAnimationComplete={() => handleComplete(stepIdx * 4)}
             >
               <div className="flex items-center">
                 <svg
-                  width={svgSizes[idx].width}
-                  height={svgSizes[idx].height}
-                  viewBox={svgSizes[idx].viewBox}
+                  width={svgSizes[stepIdx].width}
+                  height={svgSizes[stepIdx].height}
+                  viewBox={svgSizes[stepIdx].viewBox}
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  {idx === 0 && (
+                  {stepIdx === 0 && (
                     <mask id="mask0_606_8" style={{ maskType: "luminance" }} maskUnits="userSpaceOnUse" x="0" y="0" width="137" height="136">
                       <path d="M0.496094 0.0195312H136.322V135.846H0.496094V0.0195312Z" fill="white" />
                     </mask>
                   )}
-                  {idx === 0 ? (
+                  {stepIdx === 0 ? (
                     <g mask="url(#mask0_606_8)">
-                      {paths.map((d, i) => (
+                      {svgPaths[stepIdx].map((d, i) => (
                         <motion.path
                           key={d}
                           d={d}
                           initial="hidden"
-                          animate={stepRefs[idx]}
+                          animate={controls[stepIdx * 4]}
                           variants={pathVariants}
                           strokeWidth="4"
                           strokeMiterlimit="10"
@@ -223,12 +212,12 @@ const HowToApply = () => {
                       ))}
                     </g>
                   ) : (
-                    paths.map((d, i) => (
+                    svgPaths[stepIdx].map((d, i) => (
                       <motion.path
                         key={d}
                         d={d}
                         initial="hidden"
-                        animate={stepRefs[idx]}
+                        animate={controls[stepIdx * 4]}
                         variants={pathVariants}
                         strokeWidth="4"
                         strokeMiterlimit="10"
@@ -241,27 +230,26 @@ const HowToApply = () => {
               </div>
               <motion.p
                 className="text-lg md:text-2xl pt-4 text-center"
-                initial="hidden"
-                animate={stepRefs[idx]}
+                animate={controls[stepIdx * 4]}
                 variants={colorVariants}
                 viewport={{ once: true }}
               >
-                {stepLabels[idx]}
+                {stepLabels[stepIdx]}
               </motion.p>
             </motion.div>
             {/* Dashes between steps */}
-            {idx < svgPaths.length - 1 && (
-              <motion.div
-                className="mt-12 flex items-center"
-                initial="hidden"
-                animate={stepRefs[idx]}
-                variants={colorVariants}
-                viewport={{ once: true }}
-              >
-                <RxDash className="text-3xl md:text-4xl lg:rotate-0 rotate-90" />
-                <GoDash className="text-3xl md:text-4xl lg:rotate-0 rotate-90" />
-                <RxDash className="text-3xl md:text-4xl lg:rotate-0 rotate-90" />
-              </motion.div>
+            {stepIdx < 3 && (
+              <div className="flex flex-col lg:flex-row justify-center items-center">
+                <motion.span animate={controls[stepIdx * 4 + 1]} variants={colorVariants} onAnimationComplete={() => handleComplete(stepIdx * 4 + 1)}>
+                  <RxDash className="text-3xl md:text-4xl lg:rotate-0 rotate-90" />
+                </motion.span>
+                <motion.span animate={controls[stepIdx * 4 + 2]} variants={colorVariants} onAnimationComplete={() => handleComplete(stepIdx * 4 + 2)}>
+                  <GoDash className="text-3xl md:text-4xl lg:rotate-0 rotate-90" />
+                </motion.span>
+                <motion.span animate={controls[stepIdx * 4 + 3]} variants={colorVariants} onAnimationComplete={() => handleComplete(stepIdx * 4 + 3)}>
+                  <RxDash className="text-3xl md:text-4xl lg:rotate-0 rotate-90" />
+                </motion.span>
+              </div>
             )}
           </React.Fragment>
         ))}
