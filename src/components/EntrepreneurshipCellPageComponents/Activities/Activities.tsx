@@ -55,7 +55,7 @@ const sampleList = [
 
 const Activities = () => {
   return (
-    <div className="max-w-7xl mx-auto lg:px-36 xl:max-w-[75%] pt-2 pb-10 text-black">
+    <div className="max-w-7xl mx-auto lg:px-36 xl:max-w-[75%] pt-2 pb-5 text-black">
       <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl leading-[1.2]  text-start font-bold text-[#1D1D1F]">Entrepreneurship Cell Activities</h1>
       <div className="overflow-x-auto pt-4 pb-10">
         <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">

@@ -45,7 +45,7 @@ const page = () => {
         <AboutTheDepartment />
       </section>
 
-      <section className="py-20">
+      <section className="py-3">
         <VideoPlayer videoUrl="DotJvDklT5Y" youtubeUrl="DotJvDklT5Y" />
       </section>
       <section className="px-6 md:px-12 lg:pl-16 lg:px-0 xl:px-0">

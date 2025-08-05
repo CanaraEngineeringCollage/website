@@ -32,7 +32,7 @@ const page = () => {
       <section>
         <DepartmentSection />
       </section>
-      <section className="py-20">
+      <section className="pt-16 pb-4">
         <VideoPlayer
           title="Modern Amenities for Everyday Comfort"
           titleClassname="text-[#1D1D1F] !max-w-full"
@@ -44,7 +44,7 @@ const page = () => {
       <section className="px-6 md:px-12 lg:pl-16 lg:px-0 xl:px-0">
         <FunctionDepartment title="Department Duties" functionDeprtmentData={data} />
       </section>
-      <section className="pb-20">
+      <section className="pb-20 -mt-[40px]">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           youtubeUrl="https://youtu.be/rv0KerNW4QE?si=ObYcwEiaqF0UD90P"

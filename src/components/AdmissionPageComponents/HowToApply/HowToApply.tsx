@@ -150,7 +150,7 @@ const HowToApply = () => {
   const sectionRef = useRef(null);
 
   return (
-    <section className="max-w-7xl xl:max-w-[75%] mx-auto py-20 md:pt-36 overflow-hidden" ref={sectionRef}>
+    <section className="max-w-7xl xl:max-w-[75%] mx-auto py-20 md:pb-10 md:pt-28 overflow-hidden" ref={sectionRef}>
       <div className="lg:max-w-[60%] mb-20">
         <motion.h1
           className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold leading-tight"

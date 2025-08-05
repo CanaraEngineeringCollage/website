@@ -33,7 +33,7 @@ const IdeasText = () => {
         ))}
       </ul>
       <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl text-start  font-bold text-[#1D1D1F]">Flow Chart</h1>
-      <img src="https://www.canaraengineering.in/assets/images/e1.jpg" alt="" className="pt-4 pb-10" />
+      <img src="https://www.canaraengineering.in/assets/images/e1.jpg" alt="" className="pt-4 pb-10 rounded-3xl" />
     </div>
   );
 };

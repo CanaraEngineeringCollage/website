@@ -50,7 +50,7 @@ const page = () => {
       <section className="px-6    md:px-12 lg:pl-16 lg:px-0 xl:px-0">
         <ExploreFacilities />
       </section>
-      <section className="pb-20">
+      <section className="pb-20 -mt-[50px]">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           youtubeUrl="https://youtu.be/rv0KerNW4QE?si=ObYcwEiaqF0UD90P"
