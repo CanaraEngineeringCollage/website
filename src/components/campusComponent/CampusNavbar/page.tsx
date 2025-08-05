@@ -12,7 +12,7 @@ function CampusNavbar({ openSidebar, sidebar }: { openSidebar: () => void; sideb
   return (
     <>
       {/* First Header */}
-      <section className={`bg-white relative lg:hidden transition-all duration-500 ease-in-out `}>
+      <section className={`bg-white relative  transition-all duration-500 ease-in-out `}>
         <nav className="  py-0 max-w-[90%] mx-auto">
           {/* For large and Medium-sized Screen */}
           <div className="flex items-center justify-between relative py-2 container-padding">

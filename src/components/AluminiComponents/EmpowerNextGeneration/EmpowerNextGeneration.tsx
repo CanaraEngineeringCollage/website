@@ -92,7 +92,7 @@ const EmpowerNextGeneration: React.FC = () => {
   });
 
   return (
-    <section className="max-w-7xl xl:max-w-[75%] mx-auto py-20 overflow-hidden text-black">
+    <section className="max-w-7xl xl:max-w-[75%] mx-auto pt-10 pb-16 overflow-hidden text-black">
       <div>
         {title && <h1 className="text-3xl text-center mb-14 md:text-[40px] lg2:text-5xl xl:text-6xl font-bold">{title}</h1>}
 
