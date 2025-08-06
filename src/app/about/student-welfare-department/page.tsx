@@ -45,7 +45,7 @@ const page = () => {
         <AboutTheDepartment />
       </section>
 
-      <section className="py-20">
+      <section className="py-3">
         <VideoPlayer videoUrl="DotJvDklT5Y" youtubeUrl="DotJvDklT5Y" />
       </section>
       <section className="px-6 md:px-12 lg:pl-16 lg:px-0 xl:px-0">
@@ -54,9 +54,9 @@ const page = () => {
       <section className="bg-[#071D2C] px-6 md:px-12 lg:px-16 xl:px-0">
         <MessageSection />
       </section>
-      <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">
+      {/* <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">
         <HotOfThePress />
-      </section>
+      </section> */}
       <section className="bg-[#e5e5ea]">
         <FooterCard />
       </section>

@@ -16,24 +16,24 @@ const IdeasText = () => {
         successful ventures. Through mentorship, startup incubation, industry collaborations, & hands-on workshops, we provide the perfect launchpad
         for aspiring entrepreneurs to thrive in the ever-evolving business landscape.
       </p>
-      <h1 className="text-3xl text-start md:text-[40px] lg2:text-4xl xl:text-6xl font-bold">Vision</h1>
+      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  text-start font-bold text-[#1D1D1F]">Vision</h1>
       <p className="lg:text-xl text-start md:text-lg text-[14px] leading-7 pt-4 pb-10 text-textGray">
         To be a center of excellence for entrepreneurship development and to mentor and enhance the entrepreneurial prospective of engineering
         students to create successful entrepreneurs.
       </p>
-      <h1 className="text-3xl text-start md:text-[40px] lg2:text-4xl xl:text-6xl font-bold">Mission</h1>
+      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl text-start  font-bold text-[#1D1D1F]">Mission</h1>
       <p className="lg:text-xl text-start md:text-lg text-[14px] leading-7 pt-4 pb-10 text-textGray">
         To develop entrepreneurial thinking, facilitate the business knowledge and imbibe leadership qualities in engineering students to pursue
         entrepreneurship through various programs.
       </p>
-      <h1 className="text-3xl text-start md:text-[40px] lg2:text-4xl xl:text-6xl font-bold">Objectives</h1>
+      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl text-start font-bold text-[#1D1D1F]">Objectives</h1>
       <ul className="lg:text-xl text-start list-disc ml-5 md:text-lg text-[14px] leading-7 pt-4 pb-10 text-textGray">
         {objectives.map((objective, index) => (
           <li>{objective}</li>
         ))}
       </ul>
-      <h1 className="text-3xl  md:text-[40px] lg2:text-4xl text-start xl:text-6xl font-bold">Flow Chart</h1>
-      <img src="https://www.canaraengineering.in/assets/images/e1.jpg" alt="" className="pt-4 pb-10" />
+      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl text-start  font-bold text-[#1D1D1F]">Flow Chart</h1>
+      <img src="https://www.canaraengineering.in/assets/images/e1.jpg" alt="" className="pt-4 pb-10 rounded-3xl" />
     </div>
   );
 };

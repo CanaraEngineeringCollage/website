@@ -3,7 +3,7 @@ import image1 from "../../../../../public/aboutPageImages/campusLegacy/historyim
 import Image from "next/image";
 const AboutHistoryCanara = () => {
   return (
-    <div className="max-w-7xl mx-auto xl:max-w-[75%] pb-28 pt-20 text-black">
+    <div className="max-w-7xl mx-auto xl:max-w-[75%] pb-16 pt-20 text-black">
       <h4 className="text-3xl text-textGray py-5 xl:py-12">About Canara Engineering College</h4>
       <h1 className="text-3xl md:text-[40px] text-[#1D1D1F] lg2:text-5xl xl:text-6xl font-bold">A Campus Like No other</h1>
       <p className="lg:text-xl md:text-lg text-[14px] leading-7 pt-8 xl:pt-16 text-textGray">

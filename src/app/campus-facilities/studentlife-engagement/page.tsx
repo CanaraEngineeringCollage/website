@@ -49,7 +49,7 @@ const page = () => {
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <YoutubeSection />
       </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+      <section className="px-6 -mt-[36px] md:mb-10 md:px-12 lg:px-16 xl:px-0">
         <ExploreCampusSection />
       </section>
       <section className="bg-[#e5e5ea] ">

@@ -5,7 +5,7 @@ import image2 from "../../../../public/DistinctivePractiesImages/CHC.jpg";
 import image3 from "../../../../public/DistinctivePractiesImages/solar.jpg";
 const DistinctivePracties = () => {
   return (
-    <div className="max-w-7xl mx-auto xl:max-w-[75%] pt-20 text-[#1D1D1F]">
+    <div className="max-w-7xl mx-auto xl:max-w-[75%] pt-16 text-[#1D1D1F]">
       
       <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold">Distinctive Practices</h1>
       <p className="lg:text-xl md:text-lg text-[14px] leading-5 pt-8 text-textGray">
@@ -29,7 +29,7 @@ const DistinctivePracties = () => {
           </ul>
         </div>
       </div>
-      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold pb-8 pt-20">Faculty Centric Practices</h1>
+      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold pb-8 pt-14">Faculty Centric Practices</h1>
       <div className="flex flex-col gap-3">
         <div className="md:pl-1">
           <ul className="list-disc list-inside space-y-4 text-textGray text-[14px] md:text-lg lg:text-xl leading-5">
@@ -44,7 +44,7 @@ const DistinctivePracties = () => {
           </ul>
         </div>
       </div>
-      <h1 className="text-3xl md:text-[40px] lg2:text-5xl font-bold pb-8 pt-20">Student Centric Practices</h1>
+      <h1 className="text-3xl md:text-[40px] lg2:text-5xl font-bold pb-8 pt-14">Student Centric Practices</h1>
       <div className="flex flex-col gap-3">
         <div className="md:pl-1">
           <ul className="list-disc list-inside space-y-4 text-textGray text-[14px] md:text-lg lg:text-xl leading-5">
@@ -63,11 +63,11 @@ const DistinctivePracties = () => {
         </div>
       </div>
 
-      <h1 className="text-3xl  md:text-[40px]  lg2:text-5xl font-bold pt-20 pb-8">Plastic Recycling</h1>
+      <h1 className="text-3xl  md:text-[40px]  lg2:text-5xl font-bold pt-14 pb-8">Plastic Recycling</h1>
       <Image src={image1} alt="image1" className="w-[70%] rounded-3xl" />
-      <h1 className="text-3xl md:text-[40px] lg2:text-5xl font-bold pt-20 pb-8">Community Health Center</h1>
+      <h1 className="text-3xl md:text-[40px] lg2:text-5xl font-bold pt-14 pb-8">Community Health Center</h1>
       <Image src={image2} alt="image3" className="w-[70%] rounded-3xl" />
-      <h1 className="text-3xl md:text-[40px] lg2:text-5xl font-bold pt-20 pb-8">Roof Top Solar</h1>
+      <h1 className="text-3xl md:text-[40px] lg2:text-5xl font-bold pt-14 pb-8">Roof Top Solar</h1>
       <Image className="mb-20 w-[70%] rounded-3xl" src={image3} alt="image3" />
     </div>
   );

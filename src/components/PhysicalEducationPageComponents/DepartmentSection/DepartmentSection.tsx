@@ -80,25 +80,25 @@ const participation = [
 const DepartmentSection = () => {
   return (
     <div className="max-w-7xl mx-auto lg:px-36 xl:max-w-[75%]   text-[#1D1D1F]">
-      {/* <h1 className="text-3xl text-start md:text-[40px] lg2:text-4xl xl:text-6xl font-bold"> Department of Physical Education</h1>
+      {/* <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-[#1D1D1F]"> Department of Physical Education</h1>
       <p className="lg:text-xl md:text-lg text-[14px] leading-7 pt-5 pb-8 text-textGray">
         Physical education-is an integral part of educational program designed to promote the optimum development of an individual. It makes one
         emotionally, mentally and physically strong. The primary aims of physical education are varied, based on the needs of time and place. Sports
         is commonly defined as an organized, competitive and skillful physical activity requiring commitment and fair play.
       </p> */}
-      <h1 className="text-3xl text-start md:text-[40px] lg2:text-4xl xl:text-6xl font-bold">Goals</h1>
+      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-[#1D1D1F]">Goals</h1>
       <p className="lg:text-xl md:text-lg text-[14px] leading-7 pt-5 pb-8 text-textGray">
         The Aim of organized physical education, sports and games activities is to create an environment that stimulates selected movement experiences
         resulting in desirable responses that contribute to the optimal development of the individual's potentialities in all the phases of life. In
         this direction, in order to organize and conduct various activities, the Sports and Games Committee is formed with the following objectives:{" "}
       </p>
-      <h1 className="text-3xl text-start md:text-[40px] lg2:text-4xl xl:text-6xl font-bold">Objectives</h1>
+      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-[#1D1D1F]">Objectives</h1>
       <ul className="lg:text-xl text-start list-disc ml-5 md:text-lg text-[14px] leading-7 pt-5 pb-8 text-textGray">
         {objectives.map((objective, index) => (
           <li>{objective}</li>
         ))}
       </ul>
-      <h1 className="text-3xl text-start md:text-[40px] lg2:text-4xl xl:text-6xl font-bold">Responsibilities</h1>
+      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-[#1D1D1F]">Responsibilities</h1>
       <ul className="lg:text-xl text-start list-disc ml-5 md:text-lg text-[14px] leading-7 pt-5 pb-8 text-textGray">
         {duty.map((objective, index) => (
           <li>{objective}</li>
@@ -106,7 +106,7 @@ const DepartmentSection = () => {
       </ul>
 
       <ModelTable title="Sports Committee Panel" headers={["Sl No", "Name", "Designation", "Department"]} rows={members} />
-      <ModelTable title="Our College Provides the Following Sports Facilities" headers={["Sl No", "Sports", "No"]} rows={sportsFacilities} />
+      <ModelTable title="College Sports Facilities" headers={["Sl No", "Sports", "No"]} rows={sportsFacilities} />
        <ModelTable title="Our Journey in State-Level Sports" headers={["Sl No", "Year", "Number of Events (State Level)","Number of Participants"]} rows={participation} />
     </div>
   );

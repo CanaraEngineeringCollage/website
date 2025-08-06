@@ -42,7 +42,7 @@ export default function AboutCec() {
       <section className="px-6 md:px-12 lg:px-16 xl:px-0 bg-white">
         <AboutCanara />
       </section>
-      <section className="py-20">
+      <section className="py-10">
         <VideoPlayer
           videoUrl="DotJvDklT5Y"
           youtubeUrl="DotJvDklT5Y"
@@ -61,9 +61,9 @@ export default function AboutCec() {
       <section>
         <NextStepSection />
       </section>
-      <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">
+      {/* <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">
         <HotOfThePress />
-      </section>
+      </section> */}
     </>
   );
 }

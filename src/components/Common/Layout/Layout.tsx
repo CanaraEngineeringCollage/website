@@ -26,7 +26,9 @@ function Layout({ children }: { children: React.ReactNode }) {
           )}
         </header>
         <main className=" font-poppins">
+          <div className="lg:hidden">
           <Sidebar openSidebar={() => openSidebar((prev) => !prev)} sidebar={sidebar} />
+          </div>
           <div
             onClick={() => {
               if (sidebar) {
