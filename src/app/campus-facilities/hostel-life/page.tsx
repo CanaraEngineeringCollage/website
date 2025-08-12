@@ -1,7 +1,6 @@
 import AmenitiesSection from "@/components/CampusFacilitiesPageComponents/HostelLife/AmenitiesSection/AmenitiesSection";
 import HeroSection from "@/components/CampusFacilitiesPageComponents/HostelLife/HeroSection/HeroSection";
 import LifeAtHostels from "@/components/CampusFacilitiesPageComponents/HostelLife/LifeAtHostels/LifeAtHostels";
-import ExploreFacilities from "@/components/CampusFacilitiesPageComponents/Infrastructure/ExploreFacilities/ExploreFacilities";
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
 import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
@@ -47,9 +46,7 @@ const page = () => {
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <AmenitiesSection />
       </section>
-      <section className="px-6    md:px-12 lg:pl-16 lg:px-0 xl:px-0">
-        <ExploreFacilities />
-      </section>
+     
       <section className="pb-20 -mt-[50px]">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
