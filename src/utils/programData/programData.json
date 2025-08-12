@@ -2,10 +2,10 @@
   {
     "category": "Library at CEC",
     "title": "Learning Tech, Leading Change",
-    "src": "/campusFacilitiesPageImages/4.png",
+    "src": "/campusFacilitiesPageImages/4.webp",
     "style": "lg:top-[250]  lg:left-[600]",
     "description": {
-      "src": "/campusFacilitiesPageImages/4.png",
+      "src": "/campusFacilitiesPageImages/4.webp",
       "date": "TECHFEST 2025 |  Feb 10, 2025",
       "topTitle": "Pushing the Boundaries of Engineering Innovation",
       "topDescription": "The annual InnovateX 2025 Tech Fest at [College Name] was a grand success, bringing together students, faculty, and industry leaders for two days of innovation, competition, and collaboration. With over 500 participants and 20+ industry partners, the event showcased cutting-edge technology, insightful talks, and hands-on workshops that inspired the next generation of engineers.",
@@ -57,7 +57,7 @@
     "category": "",
     "title": "Research Labs",
     "src": "/campusFacilitiesPageImages/3.jpg",
-    "style": "lg:top-[530] lg:left-[350]",
+    "style": "lg:top-[100] lg:left-[600]",
 
     "description": {
       "src": "/campusFacilitiesPageImages/3.jpg",

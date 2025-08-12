@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section className="text-black    relative  w-full overflow-hidden pb-28">
       <div className="relative h-[90vh] lg:h-[150vh] w-[100vw] flex justify-center items-center">
-        <Image src="/backgroundImages/homeHeroBg.jpg" alt="" width={1000} height={1000} className="object-cover w-full h-full" />
+        <Image src="/backgroundImages/1.webp" alt="" width={1000} height={1000} className="object-cover w-full h-full" />
         <div className="absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-black/60 to-transparent z-10" />
         {/* <div className="absolute bottom-0 left-0 right-0 h-[200px] md:h-[1000px] bg-gradient-to-t from-white via-white/85 via-50% to-transparent z-[10] md:hidden" /> */}
         <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[600px] bg-gradient-to-t from-white via-transparent to-transparent z-[10] " />
