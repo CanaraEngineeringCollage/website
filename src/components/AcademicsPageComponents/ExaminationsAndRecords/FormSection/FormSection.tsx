@@ -5,7 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 
 const FormSection: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<string>("");
+  const [activeTab, setActiveTab] = useState<string>("Marks");
   const [activeHeader, setActiveHeader] = useState<string>("");
   const router = useRouter();
   const data: { key: string; label: string }[] = [

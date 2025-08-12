@@ -46,6 +46,51 @@ interface CouncilMember {
 
 }
 
+
+
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const department = departments.find((dept) => dept.slug === params.slug);
+
+  if (!department) return notFound();
+
+  const title = `${department.name} Department | Canara Engineering College`;
+
+  // Use department description if available, otherwise a default
+  const description = department.departmentAboutDescription?.trim()
+    ? department.departmentAboutDescription
+    : `Explore the ${department.name} Department at Canara Engineering College, offering quality education, experienced faculty, and a commitment to excellence.`;
+
+  const imageUrl = department.bannerUrl || "https://your-website-url.com/default-og-image.jpg";
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: `https://your-website-url.com/department/${params.slug}`,
+      siteName: "Canara College",
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: `${department.name} Department Banner`,
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [imageUrl],
+    },
+  };
+}
+
+
 export async function generateStaticParams() {
   return departments.map((dept) => ({ slug: dept.slug }));
 }
