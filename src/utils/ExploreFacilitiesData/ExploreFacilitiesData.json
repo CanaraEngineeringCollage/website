@@ -1,39 +1,74 @@
 [
+  {
+    "id": 1,
+    "image": "/campusFacilitiesPageImages/exploreFacilities/1.webp",
+    "title": "Soft Skills & Aptitude Training",
+    "desc": "We conduct regular training sessions covering communication skills, logical reasoning, group discussions, and personal interviews — all designed to help students navigate recruitment processes with confidence.",
+    "link": "#"
+  },
+  {
+    "id": 2,
+    "image": "/campusFacilitiesPageImages/exploreFacilities/2.webp",
+    "title": "Industry-Oriented Technical Training",
+    "desc": "Workshops, coding bootcamps, and domain-specific certification programs (AI/ML, Data Analytics, Cybersecurity, Core Engineering, etc.) are organized in collaboration with industry professionals to bridge the gap between academics and industry requirements.",
+    "link": "#"
+  },
+  {
+    "id": 3,
+    "image": "/campusFacilitiesPageImages/exploreFacilities/3.webp",
+    "title": "Internship & Live Project Facilitation",
+    "desc": "We actively connect students to internships and live projects across various domains, helping them gain hands-on experience, apply classroom knowledge, and build a strong professional portfolio.",
+    "link": "#"
+  },
+  {
+    "id": 4,
+    "image": "/campusFacilitiesPageImages/exploreFacilities/1.webp",
+    "title": "MoUs & Industry Collaborations",
+
+    "desc": "Through strategic partnerships and MoUs with leading companies, we facilitate exclusive training programs, placement opportunities, guest lectures, and curriculum inputs to align with current industry trends.",
+    "link": "#"
+  },
+  {
+    "id": 5,
+    "image": "/campusFacilitiesPageImages/exploreFacilities/2.webp",
+    "title": "Alumni Interaction & Mentorship Programs",
+    "desc": "Regular sessions with our alumni working at top-tier companies give students valuable insights into real-world challenges, interview experiences, career planning, and workplace expectations.",
+    "link": "#"
+  },
+  {
+    "id": 6,
+    "image": "/campusFacilitiesPageImages/exploreFacilities/3.webp",
+    "title": "Pre-Placement & Company-Specific Training",
+    "desc": "We offer targeted preparation for companies like TCS, Infosys, Wipro, Accenture, and others. This includes mock aptitude tests, coding rounds, technical interviews, resume reviews, and HR-tech training.",
+    "link": "#"
+  },
+  {
+    "id": 7,
+    "image": "/campusFacilitiesPageImages/exploreFacilities/1.webp",
+    "title": "Full-Length Mock Placement Drives",
+
+    "desc": "We simulate the complete recruitment process — from aptitude tests and group discussions to technical and HR interviews — under real-time conditions to prepare students for the high-pressure environment of actual campus drives.",
+    "link": "#"
+  },
+  {
+    "id": 8,
+    "image": "/campusFacilitiesPageImages/exploreFacilities/2.webp",
+    "title": "One-on-One Mock Interviews",
+    "desc": "Personalized mock interviews with internal and external evaluators help students fine-tune their responses, improve articulation, and gain detailed feedback on technical and behavioral performance.",
+    "link": "#"
+  },
+  {
+    "id": 9,
+    "image": "/campusFacilitiesPageImages/exploreFacilities/3.webp",
+    "title": "Industry Talks & Leadership Connects",
+    "desc": "We regularly invite industry leaders, hiring managers, and startup founders for interactive sessions on hiring trends, future skill requirements, and innovation — giving students a pulse on what recruiters are really looking for.",
+    "link": "#"
+  },
     {
-      "id": 1,
-      "image": "/campusFacilitiesPageImages/exploreFacilities/1.webp",
-      "title": "College Transportation Facilities",
-      "link": "#"
-    },
-    {
-      "id": 2,
-      "image": "/campusFacilitiesPageImages/exploreFacilities/2.webp",
-      "title": "College Canteen Facilities",
-      "link": "#"
-    },
-    {
-      "id": 3,
-      "image": "/campusFacilitiesPageImages/exploreFacilities/3.webp",
-      "title": "College Internet Facilities",
-      "link": "#"
-    },
-    {
-      "id": 1,
-      "image": "/campusFacilitiesPageImages/exploreFacilities/1.webp",
-      "title": "College Transportation Facilities",
-      "link": "#"
-    },
-    {
-      "id": 2,
-      "image": "/campusFacilitiesPageImages/exploreFacilities/2.webp",
-      "title": "Initiative to Create Lasting Community Impact",
-      "link": "#"
-    },
-    {
-      "id": 3,
-      "image": "/campusFacilitiesPageImages/exploreFacilities/3.webp",
-      "title": "College Internet Facilities",
-      "link": "#"
-    }
-  ]
-  
+    "id": 10,
+    "image": "/campusFacilitiesPageImages/exploreFacilities/3.webp",
+    "title": "Career Counselling & Progress Tracking",
+    "desc": "Every student’s progress is tracked, and individual guidance is provided to help them choose the right career path — whether it’s campus placements, higher studies, or entrepreneurship.",
+    "link": "#"
+  }
+]

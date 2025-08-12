@@ -14,6 +14,7 @@ import pressData from "../../../../utils/ExploreFacilitiesData/ExploreFacilities
 // DescriptionProps from the first code
 type DescriptionProps = {
   src: string;
+  description: string;
   date: string;
   topTitle: string;
   topDescription: string;
@@ -38,6 +39,7 @@ interface DataItem {
   id: number;
   title: string;
   image: string;
+  desc: string;
   description?: DescriptionProps; // Extend JSON to include this
 }
 
@@ -77,7 +79,7 @@ function CardContent({ description }: { description: DescriptionProps }) {
       <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
         <div>
           <h3 className="text-[31px] lg:text-[46px] leading-[1.1] lg:max-w-[70%] mb-5 font-bold">{description.topTitle}</h3>
-          <p className="text-xl text-textGray">{description.topDescription}</p>
+          <p className="text-xl text-textGray">{description.description}</p>
         </div>
       </div>
     </div>
@@ -151,6 +153,7 @@ const ExploreFacilities = () => {
   // Map DataItem to DescriptionProps (adjust based on actual JSON)
   const getDescription = (item: DataItem): DescriptionProps => ({
     src: item.image,
+    description: item.desc,
     date: "2025-04-25", // Placeholder; update JSON to include actual pressData
     topTitle: item.title,
     topDescription: "Explore the details of this facility.", // Placeholder
@@ -190,32 +193,41 @@ const ExploreFacilities = () => {
             </h1>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
-          {pressData?.map((item, index) => (
-            <motion.button
-              key={index}
-              onClick={() => openCard(index)}
-              className="max-w-sm min-h-[55vh] md:min-h-[45vh] lg:min-h-[65vh] xl:min-h-auto rounded-3xl overflow-hidden"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <div className="h-60 overflow-hidden cursor-pointer">
-                <Image
-                  width={200}
-                  height={200}
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover !rounded-t-2xl cursor-pointer"
-                />
-              </div>
-              <div className="p-8 text-center bg-white rounded-b-2xl">
-                <h2 className="text-[27px] font-bold text-black mb-2 line-clamp-2">{item.title}</h2>
-                <span className="text-[#2997FF] inline-flex text-[17px] items-center hover:underline font-medium text-sm">
-                  Read More <MdKeyboardArrowRight className="ml-1" />
-                </span>
-              </div>
-            </motion.button>
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg2:grid-cols-3  ">
+          {pressData?.map((item, index) => {
+            const total = pressData.length;
+            const isLast = index === total - 1;
+
+            // Check if last row has only 1 card for lg (3 cols) or xl (4 cols)
+            const isLastSingleLg = total % 3 === 1 && isLast;
+            const isLastSingleXl = total % 4 === 1 && isLast;
+            return (
+              <motion.button
+                key={index}
+                onClick={() => openCard(index)}
+                className={`max-w-sm min-h-[55vh] md:min-h-[45vh] lg:min-h-[65vh] xl:min-h-[50vh]  rounded-3xl overflow-hidden
+          ${isLastSingleLg ? "lg:col-span-3 lg:justify-self-center" : ""}`}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <div className="h-60 overflow-hidden cursor-pointer">
+                  <Image
+                    width={200}
+                    height={200}
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover !rounded-t-2xl cursor-pointer"
+                  />
+                </div>
+                <div className="p-8 text-center bg-white rounded-b-2xl">
+                  <h2 className="text-[27px] font-bold text-black mb-2 line-clamp-2">{item.title}</h2>
+                  <span className="text-[#2997FF] inline-flex text-[17px] items-center hover:underline font-medium text-sm">
+                    Read More <MdKeyboardArrowRight className="ml-1" />
+                  </span>
+                </div>
+              </motion.button>
+            );
+          })}
         </div>
 
         {/* <div className="flex gap-4 justify-end mt-10 me-5">
