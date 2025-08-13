@@ -4,6 +4,7 @@ import HolisticStudent from "@/components/CampusFacilitiesPageComponents/Student
 import YourSkills from "@/components/CampusFacilitiesPageComponents/StudentLifeEngagement/YourSkills/YourSkills";
 import YoutubeSection from "@/components/CampusFacilitiesPageComponents/StudentLifeEngagement/YoutubeSection/YoutubeSection";
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
+import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 import React from "react";
 
 export const metadata = {
@@ -46,11 +47,8 @@ const page = () => {
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <YourSkills />
       </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
-        <YoutubeSection />
-      </section>
-      <section className="px-6 -mt-[36px] md:mb-10 md:px-12 lg:px-16 xl:px-0">
-        <ExploreCampusSection />
+      <section className="px-6 -mt-10 md:px-12 pb-20 lg:px-16 xl:px-0">
+        <VideoPlayer videoUrl="NhwFJ89AJ2k" youtubeUrl="oHWMDPeP1Ew" />
       </section>
       <section className="bg-[#e5e5ea] ">
         <FooterCard />
