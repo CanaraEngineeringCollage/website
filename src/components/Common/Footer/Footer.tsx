@@ -115,23 +115,23 @@ const Footer: FC = () => {
         <hr className="text-gray-300 pb-3.5" />
         <div className="grid grid-cols-2 md:grid-cols-5  border-b border-gray-300 pb-10">
           <div>
-            <h3 className="font-semibold mb-1">Quick Links</h3>
+            <h3 className="font-semibold mt-5 mb-2">Quick Links</h3>
             <FooterList data={quickLinks} />
           </div>
           <div className="xl:ml-[40%] lg2:ml-[20%]">
-            <h3 className="font-semibold mb-1">Our College</h3>
+            <h3 className="font-semibold mt-5 mb-2">Our College</h3>
             <FooterList data={ourCollege} />
           </div>
           <div className="xl:ml-[40%] lg2:ml-[20%]">
-            <h3 className="font-semibold mb-1">Academics</h3>
+            <h3 className="font-semibold mt-5 mb-2">Academics</h3>
             <FooterList data={academics} />
           </div>
           <div className="xl:ml-[40%] lg2:ml-[20%]">
-            <h3 className="font-semibold mb-1">Facilities</h3>
+            <h3 className="font-semibold mt-5 mb-2">Facilities</h3>
             <FooterList data={facilities} />
           </div>
           <div className="xl:ml-auto lg2:ml-[20%]">
-            <h3 className="font-semibold mb-1">Stay Connected</h3>
+            <h3 className="font-semibold mt-5 mb-2">Stay Connected</h3>
             <FooterList data={stayConnected} />
           </div>
         </div>
@@ -231,7 +231,7 @@ const Footer: FC = () => {
 // Reusable Footer List Component
 const FooterList: FC<FooterListProps> = ({ data }) => {
   return (
-    <ul className="space-y-3">
+    <ul className="space-y-1">
       {data.map((item, index) => {
         const isExternal = item.links.startsWith("http");
         return (

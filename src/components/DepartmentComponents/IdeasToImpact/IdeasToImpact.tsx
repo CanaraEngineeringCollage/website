@@ -221,10 +221,10 @@ export default function IdeasToImpact() {
                   <p className="text-[16px] max-w-md text-left">Over the Past Six Academic Years</p>
 
                   {/* Bottom-anchored "View Report" */}
-                  <div className="absolute bottom-0 left-0 p-6 flex items-center gap-1">
+                  {/* <div className="absolute bottom-0 left-0 p-6 flex items-center gap-1">
                     <p className="text-[16px] text-left">View Report</p>
                     <ChevronRight />
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Right Side - Text */}

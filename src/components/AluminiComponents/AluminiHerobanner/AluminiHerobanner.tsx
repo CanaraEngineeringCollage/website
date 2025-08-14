@@ -26,7 +26,7 @@ const AluminiHeroBanner: React.FC = () => {
       </div>
 
       <div className="absolute top-28 md:top-28 max-w-5xl mx-auto text-white px-4 z-10">
-        <h2 className="text-[40px] md:text-[77px] leading-[50px] md:leading-[1] font-extrabold">
+        <h2 className="text-[40px] md:text-[77px] leading-[50px] md:leading-[1] font-bold">
         Stay Connected & Support Future Generations
         </h2>
       </div>

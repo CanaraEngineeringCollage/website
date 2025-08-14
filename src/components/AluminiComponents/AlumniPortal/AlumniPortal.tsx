@@ -39,7 +39,7 @@ const AlumniPortal = () => {
             {selectedIndex === 5 && (
               <>
                 <div className="overflow-x-auto">
-                  <h2 className="text-[20px] font-extrabold text-textGray mb-4">{alumniData[5].title}</h2>
+                  <h2 className="text-[20px] font-bold text-textGray mb-4">{alumniData[5].title}</h2>
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead>
                       <tr className="bg-[#F3F8FC] text-[#2884CA]">

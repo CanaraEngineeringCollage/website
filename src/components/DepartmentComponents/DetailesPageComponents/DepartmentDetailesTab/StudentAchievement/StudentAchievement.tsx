@@ -16,7 +16,7 @@ const StudentAchievement: React.FC<StudentAchievementProps> = ({ data }) => {
     <div>
       {data.map((item, idx) => (
         <div key={idx} className='mb-10'>
-          <h3 className='text-[#86868B] text-xl font-extrabold mb-3'>{item.title}</h3>
+          <h3 className='text-[#86868B] text-xl font-bold mb-3'>{item.title}</h3>
           <Image
             src={item.imageUrl}
             alt={item.title}

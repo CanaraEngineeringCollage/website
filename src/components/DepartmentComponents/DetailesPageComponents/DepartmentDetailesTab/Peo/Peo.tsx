@@ -15,14 +15,14 @@ const Peo = ({ data,deptName }:{data:PeoProps;deptName:string}) => {
   
   return (
     <div className='lg2:px-24 mx-5'>
-      {data?.programEducation&&<h1 className="text-[20px] font-extrabold text-[#86868B] mb-3">Program Educational Objectives (PEO)</h1>}
+      {data?.programEducation&&<h1 className="text-[20px] font-bold text-[#86868B] mb-3">Program Educational Objectives (PEO)</h1>}
       {data?.programEducation&&<ul className="list-disc pl-5 md:text-lg  text-[14px] leading-7 pt-2 text-textGray">
         {data?.programEducation?.map((item, index) => (
           <li key={index} className="mb-2">{item}</li>
         ))}
       </ul>}
 
-      <h1 className="text-[20px] font-extrabold mt-5 mb-2 text-[#86868B]">Program Outcomes (PO)</h1>
+      <h1 className="text-[20px] font-bold mt-5 mb-2 text-[#86868B]">Program Outcomes (PO)</h1>
       <h3 className='mb-3 md:text-lg  text-[14px] leading-7  text-textGray'>Engineering graduates in <span className='font-bold'>{`${deptName}`}</span> will be able to:</h3>
       <ul className="list-disc pl-5 md:text-lg  text-[14px] leading-7  text-textGray">
         {data?.programOutComes?.map((item, index) => {
@@ -42,7 +42,7 @@ const Peo = ({ data,deptName }:{data:PeoProps;deptName:string}) => {
         })}
       </ul>
 
-    {data?.programSpecific&& <h1 className="text-[20px] font-extrabold mt-5 mb-2 text-[#86868B]">Program Specific Outcomes (PSO)</h1>}
+    {data?.programSpecific&& <h1 className="text-[20px] font-bold mt-5 mb-2 text-[#86868B]">Program Specific Outcomes (PSO)</h1>}
       {data?.programSpecific&&<ul className="list-disc pl-5 md:text-lg  text-[14px] leading-7  text-textGray">
         {data?.programSpecific?.map((item, index) => (
           <li key={index} className="mb-2">{item}</li>
