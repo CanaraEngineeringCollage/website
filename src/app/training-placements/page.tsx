@@ -33,7 +33,10 @@ const page = () => {
         />
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
-        <DepartmentFaculty />
+       <DepartmentFaculty
+  heading="Meet Our Placement Team"
+  description="Our dedicated placement team works tirelessly to connect students with top companies, guiding them towards successful careers and brighter futures."
+/>
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <TopRecruiters />
