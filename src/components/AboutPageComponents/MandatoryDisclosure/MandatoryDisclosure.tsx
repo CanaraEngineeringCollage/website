@@ -31,7 +31,7 @@ const MandatoryDisclosure = () => {
             {selectedIndex === 4 ? (
               <>
                 <div className="overflow-x-hidden">
-                  <h2 className="text-[20px] font-extrabold text-textGray mb-4">List of UGC 2(f) Status</h2>
+                  <h2 className="text-[20px] font-bold text-textGray mb-4">List of UGC 2(f) Status</h2>
                   <table className="w-[85%] text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead className="bg-gray-100">
                       <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -61,7 +61,7 @@ const MandatoryDisclosure = () => {
             ) : selectedIndex === 5 ? (
               <>
                 <div className="overflow-x-auto">
-                  <h2 className="text-[20px] font-extrabold text-textGray mb-4">Audit Report</h2>
+                  <h2 className="text-[20px] font-bold text-textGray mb-4">Audit Report</h2>
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead >
                       <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -91,7 +91,7 @@ const MandatoryDisclosure = () => {
             ):selectedIndex === 2 ? (
               <>
                 <div className="overflow-x-auto">
-                  <h2 className="text-[20px] font-extrabold text-textGray mb-4">AICTE Approval</h2>
+                  <h2 className="text-[20px] font-bold text-textGray mb-4">AICTE Approval</h2>
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead >
                       <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -121,7 +121,7 @@ const MandatoryDisclosure = () => {
             ):selectedIndex === 3 ? (
               <>
                 <div className="overflow-x-auto">
-                  <h2 className="text-[20px] font-extrabold text-textGray mb-4">VTU Affiliation</h2>
+                  <h2 className="text-[20px] font-bold text-textGray mb-4">VTU Affiliation</h2>
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead >
                       <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -151,7 +151,7 @@ const MandatoryDisclosure = () => {
             ):selectedIndex === 13 ? (
               <>
                 <div className="overflow-x-auto">
-                  <h2 className="text-[20px] font-extrabold text-textGray mb-4">UGC Declaration</h2>
+                  <h2 className="text-[20px] font-bold text-textGray mb-4">UGC Declaration</h2>
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead >
                       <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -181,7 +181,7 @@ const MandatoryDisclosure = () => {
             ):selectedIndex === 14 ? (
               <>
                 <div className="overflow-x-auto">
-                  <h2 className="text-[20px] font-extrabold text-textGray mb-4">Fee Refund Policy</h2>
+                  <h2 className="text-[20px] font-bold text-textGray mb-4">Fee Refund Policy</h2>
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead >
                       <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -211,7 +211,7 @@ const MandatoryDisclosure = () => {
             ):selectedIndex === 8 ? (
               <>
                 <div className="overflow-x-auto">
-                  <h2 className="text-[20px] font-extrabold text-textGray mb-4">Fees to be Paid</h2>
+                  <h2 className="text-[20px] font-bold text-textGray mb-4">Fees to be Paid</h2>
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead >
                       <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -241,7 +241,7 @@ const MandatoryDisclosure = () => {
             ) : selectedIndex === 6 ? (
               <>
                 <div className="overflow-x-auto">
-                  <h2 className="text-[20px] font-extrabold text-textGray mb-4">GC Meeting</h2>
+                  <h2 className="text-[20px] font-bold text-textGray mb-4">GC Meeting</h2>
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead >
                       <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -271,7 +271,7 @@ const MandatoryDisclosure = () => {
             ) : selectedIndex === 9 ? (
               <>
                 {" "}
-                <h2 className="text-[20px] font-extrabold text-textGray mb-2">Anti Ragging Policy</h2>
+                <h2 className="text-[20px] font-bold text-textGray mb-2">Anti Ragging Policy</h2>
                 <h2 className="text-lg font-bold text-textGray mb-2">Karnataka Education Act, 1983</h2>
                 <h2 className="text-lg font-bold text-textGray mb-2">Section 2(29):</h2>
                 <p className=" md:text-lg  text-[14px] leading-7 pt-4 text-textGray">
@@ -710,7 +710,7 @@ const MandatoryDisclosure = () => {
             ) : selectedIndex === 10 ? (
               <>
                 <div className="overflow-x-auto">
-                  <h2 className="text-[20px] font-extrabold text-textGray mb-4">Internal Committee</h2>
+                  <h2 className="text-[20px] font-bold text-textGray mb-4">Internal Committee</h2>
                   <h2 className="text-lg font-bold text-textGray mb-2">Objectives:</h2>
                   <ul className="space-y-1  md:text-lg  text-[14px] leading-7  text-textGray" >
                     <li className="flex gap-2 items-start text-textGray">
@@ -824,7 +824,7 @@ const MandatoryDisclosure = () => {
             ) : selectedIndex === 11 ? (
               <>
                 <div className="overflow-x-auto">
-                  <h2 className="text-[20px] font-extrabold text-textGray mb-4">SC/ST, OBC, Minority Scholarship Information</h2>
+                  <h2 className="text-[20px] font-bold text-textGray mb-4">SC/ST, OBC, Minority Scholarship Information</h2>
 
                   <h2 className="text-xl font-bold  text-textGray mb-1">Details of Online Websites to Apply for Scholarships:</h2>
                   <p className="md:text-lg  text-[14px] leading-7 mb-2  text-textGray">The student can apply for only one of the category scholarships given below.</p>
@@ -1005,7 +1005,7 @@ const MandatoryDisclosure = () => {
             ) : selectedIndex === 12 ? (
               <>
                 <div className="overflow-x-auto">
-                  <h2 className="text-[20px] font-extrabold text-textGray mb-2">Privacy Policy of Canara Engineering College</h2>
+                  <h2 className="text-[20px] font-bold text-textGray mb-2">Privacy Policy of Canara Engineering College</h2>
 
                   <p className="md:text-lg  text-[14px] leading-7 text-textGray ">
                     Canara Engineering College operates the
@@ -1112,7 +1112,7 @@ const MandatoryDisclosure = () => {
             ) : selectedIndex === 12 ? (
               <>
                 <div className="overflow-x-auto">
-                  <h2 className="text-[20px] font-extrabold text-textGray mb-4">Privacy Policy of Canara Engineering College</h2>
+                  <h2 className="text-[20px] font-bold text-textGray mb-4">Privacy Policy of Canara Engineering College</h2>
 
                   <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     Canara Engineering College operates the
@@ -1221,15 +1221,15 @@ const MandatoryDisclosure = () => {
                 {disclosureData[selectedIndex]?.data?.map((item, idx) => (
                   <div key={idx} className="mb-10">
                     
-                    <h2 className="text-[20px] font-extrabold text-textGray mb-2">{item.title}</h2>
+                    <h2 className="text-[20px] font-bold text-textGray mb-2">{item.title}</h2>
                     <ul className="space-y-1">
                       {item?.links?.map((link, i) =>
                         link?.href ? (
 
-                          <li key={i} className="flex items-center gap-2 text-[17px] text-textGray hover:text-blue-600 cursor-pointer">
+                          <li key={i} className="flex group items-center gap-2 text-[17px] text-textGray hover:text-blue-600 cursor-pointer">
                             <Link href={link.href} target="_blank" className="flex items-center gap-2 hover:text-blue-600">
-                              <HiLink className="text-textGray hover:text-blue-600 mt-2" />
-                              <span className="text-textGray hover:text-blue-600 text-[16px] pt-2 leading-7">{link.text}</span>
+                              <HiLink className="text-textGray group-hover:text-blue-600 mt-2" />
+                              <span className="text-textGray group-hover:text-blue-600 text-[16px] pt-2 leading-7">{link.text}</span>
                             </Link>
                           </li>
                         ) : null
@@ -1242,7 +1242,7 @@ const MandatoryDisclosure = () => {
               <>
                 {disclosureData[selectedIndex]?.data?.map((item, idx) => (
                   <div key={idx} className="mb-10">
-                    <h2 className="text-[20px] font-extrabold text-textGray mb-2">{item.title}</h2>
+                    <h2 className="text-[20px] font-bold text-textGray mb-2">{item.title}</h2>
                     <ul className="space-y-1">
                       {item?.links?.map((link, i) =>
                         link?.href ? (

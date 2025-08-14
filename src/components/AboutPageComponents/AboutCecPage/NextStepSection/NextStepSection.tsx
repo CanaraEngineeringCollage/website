@@ -17,16 +17,16 @@ export default function NextStepSection() {
       />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-        <div className="space-y-6 flex flex-col items-center">
-          <h2 className="max-w-md  text-[31px] md:text-5xl font-extrabold text-white">
+        <div className=" flex flex-col items-center">
+          <h2 className="max-w-lg  text-[31px] md:text-6xl font-bold text-white">
             Ready to take the next step?
           </h2>
 
-          <p className="text-white/70 text-xl max-w-2xl mx-auto">
-            Book a one-on-one counseling session & get all your questions answered about admissions programs & your future opportunities.
+          <p className="text-white/70 mt-7 text-xl max-w-2xl mx-auto">
+            Book a one-on-one <span className="text-white">counseling session</span> & get all your questions answered about admissions programs & your future opportunities.
           </p>
 
-          <button aria-label="Book Your Counseling Session Today" onClick={()=>{setIsOpen(true)}} className="mt-8 bg-white text-[#2884CA] font-bold px-8 py-3 rounded-full  hover:bg-white/90 transition-colors">
+          <button aria-label="Book Your Counseling Session Today" onClick={()=>{setIsOpen(true)}} className="mt-5 bg-white text-[#2884CA] font-bold px-8 py-3 rounded-full  hover:bg-white/90 transition-colors">
             Book Your Counseling Session Today
           </button>
         </div>

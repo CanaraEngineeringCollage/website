@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutTheDepartment = () => {
   return (
-    <section className="md:pt-20 xl:pt-44  max-w-8xl xl:max-w-[90%] mx-auto text-[#1D1D1F] lg:px-32">
+    <section className="md:pt-20 xl:pt-44  max-w-7xl  xl:max-w-[75%] mx-auto text-[#1D1D1F] ">
       <div className="">
         <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-[#1D1D1F] pb-6 ">About the Department</h1>
         <p className="text-textGray text-justify text-[20px]">

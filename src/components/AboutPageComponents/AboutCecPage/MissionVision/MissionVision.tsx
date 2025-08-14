@@ -5,8 +5,7 @@ import visionImage3 from "../../../../../public/aboutPageImages/MissionVision/vi
 import visionImage4 from "../../../../../public/aboutPageImages/MissionVision/visionImage4.webp";
 export default function MissionVision() {
   return (
-    <section className="pt-14 pb-24 px-6 md:px-12 ">
-      <div className="max-w-7xl xl:max-w-[75%] mx-auto grid grid-cols-1 lg:grid-cols-12 lg:gap-20">
+      <div className="max-w-7xl pt-14 pb-24 xl:max-w-[75%] mx-auto grid grid-cols-1 lg:grid-cols-12 lg:gap-20">
         {/* Mission Card */}
         <div className="bg-white col-span-7 overflow-hidden rounded-2xl shadow p-10 lg:p-18 space-y-6">
           <h2 className="text-3xl lg:text-5xl font-bold text-[#1D1D1F] mb-16">Our Mission</h2>
@@ -54,6 +53,5 @@ export default function MissionVision() {
           </p>
         </div>
       </div>
-    </section>
   );
 }

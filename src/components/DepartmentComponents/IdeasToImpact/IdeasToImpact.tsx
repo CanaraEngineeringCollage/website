@@ -176,11 +176,11 @@ export default function IdeasToImpact() {
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);
   return (
-    <section className="w-full md:px-6 ">
-      <div className="md:max-w-7xl xl:max-w-[70%]  mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-bold text-[#1D1D1F] mb-8">From Ideas to Impact</h2>
+    <section className="w-full">
+      <div className="max-w-7xl mx-auto xl:max-w-[75%]  text-center">
+        <h2 className="text-3xl lg:text-5xl font-bold text-[#1D1D1F] mb-16">From Ideas to Impact</h2>
 
-        <div className="flex justify-center mb-6">
+        {/* <div className="flex justify-center mb-6">
           <div className="inline-flex rounded-full p-1">
             <button 
             aria-label="Student Achievements"
@@ -189,7 +189,7 @@ export default function IdeasToImpact() {
             aria-label="Student Placements"
              className="px-4 py-2 text-sm font-medium text-[#1D1D1F] rounded-full">Research & Product Development</button>
           </div>
-        </div>
+        </div> */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-[#1D1D1F] mt-10">
           {/* Placement and Job Offers */}

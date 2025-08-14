@@ -118,7 +118,7 @@ const detailes2 = [
 const ResearchCenter = () => {
   return (
     <div className=" text-[#86868B] mx-5 text-[17px]">
-      <h1 className="text-[#86868B] text-[20px] font-extrabold mb-5">Dept. of Chemistry</h1>
+      <h1 className="text-[#86868B] text-[20px] font-bold mb-5">Dept. of Chemistry</h1>
       <div className="space-y-8">
         <div>
           <h1 className="text-xl font-bold  text-textGray mb-2">Domain of Research</h1>

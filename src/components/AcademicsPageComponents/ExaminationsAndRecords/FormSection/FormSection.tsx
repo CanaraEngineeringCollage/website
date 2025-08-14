@@ -26,14 +26,14 @@ const FormSection: React.FC = () => {
     <section className="px-4 sm:px-10 md:px-16 lg:px-20 py-12 sm:py-16 xl:py-36 md:py-20 text-[#1D1D1F]">
       <div>
         <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-[#1D1D1F] text-center md:text-left">Examinations & Records</h1>
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-20 mt-8">
-          <div className="md:col-span-4 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-20 mt-14">
+          <div className="md:col-span-4 ">
             <div>
               {data.map((item, index) => (
                 <Link href={`/academics/examination-records?tab=${item.key}`} key={item.key}>
                   <div key={index} className={`flex justify-between pb-3 mb-3 ${index < data.length - 1 ? "border-b-2 border-border" : ""}`}>
                     <h1
-                      className={`text-[20px] ${activeHeader === item.label ? "text-[#2884CA] font-extrabold" : "text-textGray"} cursor-pointer`}
+                      className={`text-[20px] ${activeHeader === item.label ? "text-[#2884CA] font-bold" : "text-textGray"} cursor-pointer`}
                       onClick={() => setActiveHeader(item.label)}
                     >
                       {item.label}
@@ -82,7 +82,7 @@ const FormSection: React.FC = () => {
           )}
           {activeHeader === "Circulars" && (
             <div className="md:col-span-8 text-[#959cb4]">
-              <h1 className="text-[20px] font-extrabold text-textGray mb-2">VTU Circular</h1>
+              <h1 className="text-[20px] font-bold text-textGray mb-2">VTU Circular</h1>
               <div className="flex items-center">
                 <div className="flex items-center gap-2 mt-2 hover:text-blue-600">
                   <HiLink className="text-textGray hover:text-blue-600 " />

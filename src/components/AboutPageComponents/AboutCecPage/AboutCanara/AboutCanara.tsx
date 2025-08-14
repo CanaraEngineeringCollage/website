@@ -3,9 +3,9 @@ import React from "react";
 
 const AboutCanara = () => {
   return (
-    <div className="max-w-5xl mx-auto xl:max-w-[65%] text-justify pt-10 text-black">
+    <div className="max-w-7xl mx-auto xl:max-w-[75%] text-justify pt-10 text-black">
       <h4 className="text-3xl text-textGray  text-center pt-12 pb-6">About Canara Engineering College</h4>
-      <h1 className="text-3xl text-[#1D1D1F] text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-extrabold">A Campus Like No other</h1>
+      <h1 className="text-3xl text-[#1D1D1F] text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-bold">A Campus Like No other</h1>
       <p className="lg:text-xl md:text-lg text-[14px] leading-7 pt-16 text-textGray">
         Canara Engineering College(CEC), established in the year 2001 as a new millennium project of Canara High School Association, in the sprawling
         campus of 26 acres of pristine natural beauty at Benjanapadavu, Mangalore has now grown as a promising engineering institution with

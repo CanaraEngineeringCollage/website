@@ -16,7 +16,7 @@ const SecretaryMessage = () => {
           </div>
         </div>
         <div className="">
-          <h1 className="text-3xl text-start my-10 md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold">Message from the Honorary Secretary</h1>
+          <h1 className="text-3xl text-start my-10 md:text-[40px] lg:leading-[1.1] lg2:text-5xl xl:text-6xl  font-bold">Message from the Honorary Secretary</h1>
           <p className="text-[17px] text-[#76838b] text-start">
           Canara&rsquo;s 126-year legacy is built on adaptability, innovation &amp; progress. Embracing change has been our strength, preparing us to meet
   evolving challenges head-on. The Valediction of the Post-Centennial Silver Jubilee on June 30, 2016, marked a milestone with the
