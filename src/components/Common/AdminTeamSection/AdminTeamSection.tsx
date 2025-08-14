@@ -50,7 +50,7 @@ export default function AdminTeamSection() {
               Meet Our <br />
               <span className="">Administrative Team</span>
             </h2>
-            <p className="text-gray-700 text-lg">
+            <p className="text-gray-700 pt-4 text-lg">
               Our admin team is the backbone of our institution, ensuring seamless operations with their expertise, dedication & commitment to
               excellence.
             </p>

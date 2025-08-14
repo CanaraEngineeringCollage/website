@@ -180,7 +180,7 @@ const GrievanceRedressalCell = () => {
               {grievanceRedressalCell[selectedIndex]?.data?.map((item, i) => (
                 <div key={i} className="">
                   {/* Title */}
-                  {item.title && <h2 className="text-[20px] font-extrabold text-textGray mb-2">{item.title}</h2>}
+                  {item.title && <h2 className="text-[20px] font-bold text-textGray mb-2">{item.title}</h2>}
 
                   {/* Description */}
                   {"description" in item && item.description && (

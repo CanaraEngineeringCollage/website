@@ -8,7 +8,7 @@ interface keyPoints {
 const DepartmentProfile = ({ data, keyPoints }: { data?: string; keyPoints?: keyPoints[] }) => {
   return (
     <div className="lg2:px-24 px-5 text-[#86868B]">
-      <h1 className="text-[#86868B] text-lg md:text-xl font-extrabold mb-2">About The Department</h1>
+      <h1 className="text-[#86868B] text-lg md:text-xl font-bold mb-2">About The Department</h1>
       <p className="md:text-lg  text-[14px] leading-7 text-justify text-textGray">{data}</p>
       {keyPoints &&
         keyPoints.map((item) => {

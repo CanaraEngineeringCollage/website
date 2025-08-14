@@ -19,7 +19,7 @@ const HeroSection = () => {
       </div>
 
       <div className="absolute top-28 md:top-28 max-w-4xl mx-auto text-white px-4 z-10">
-        <h2 className="text-[32px] md:text-[77px] leading-[50px] md:leading-[1] font-extrabold text-white">
+        <h2 className="text-[32px] md:text-[77px] leading-[50px] md:leading-[1] font-bold text-white">
         A Campus Designed<br />
         for your Success
         </h2>

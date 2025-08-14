@@ -2,8 +2,8 @@ import React from "react";
 
 const BuildingStrength = () => {
   return (
-    <div className="max-w-7xl mx-auto lg:px-36 xl:max-w-[75%] text-center py-20 text-[#1D1D1F]">
-      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold"> Building Strength, Discipline & <br className="hidden lg:block" /> Team Spirit</h1>
+    <div className="max-w-7xl mx-auto  xl:max-w-[75%] text-center py-20 text-[#1D1D1F]">
+      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl leading-[1.2] font-bold"> Building Strength, Discipline & <br className="hidden lg:block" /> Team Spirit</h1>
       <p className="lg:text-xl md:text-lg text-[14px] leading-7 pt-10 text-textGray">
         Physical Education is an integral part of a well-rounded academic program, fostering the holistic development of individuals. It enhances
         emotional, mental & physical strength, instilling discipline, resilience & teamwork. With evolving needs, the objectives of Physical Education

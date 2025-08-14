@@ -56,7 +56,7 @@ const ProfileCard = ({ datam, title }: { datam: GoverningCouncilMember; title: s
                   {item.roles.map((role, idx) => (
                     <span key={idx}>
                       {role.title}
-                      {item.roles.length > 1 && ","} <span className="font-semibold">{role.organization}</span>
+                      {item.roles.length > 1 &&role.organization&& ","} <span className="font-semibold">{role.organization}</span>
                       {idx < item.roles.length - 1 && <br />}
                     </span>
                   ))}

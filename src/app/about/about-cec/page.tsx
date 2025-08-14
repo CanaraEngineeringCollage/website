@@ -39,7 +39,7 @@ export default function AboutCec() {
   return (
     <>
       <HeroSection />
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0 bg-white">
+      <section className="px-6 md:px-0 xl:px-0 bg-white">
         <AboutCanara />
       </section>
       <section className="py-10">
@@ -52,7 +52,7 @@ export default function AboutCec() {
       <section>
         <MissionVision />
       </section>
-      <section className="bg-[#071D2C] px-6 md:px-12 lg:px-16 xl:px-0">
+      <section className="bg-[#071D2C] px-6 md:px-0 xl:px-0">
         <SecretaryMessage />
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">

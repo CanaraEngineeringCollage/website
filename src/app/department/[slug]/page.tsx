@@ -108,8 +108,8 @@ export default async function DepartmentPage({ params }: { params: { slug: strin
 
   return (
     <>
-      <HeroSection departmentName={department.name} imageUrl={department.bannerUrl} />
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+      <HeroSection departmentName={department.name} wdith={department.width} imageUrl={department.bannerUrl} />
+      <section className="px-6 md:px-0 xl:px-0">
         <AboutTheDepartment aboutTheDepartment={department.departmentAboutDescription} />
       </section>
       <section className="">

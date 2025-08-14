@@ -28,7 +28,7 @@ const DepartmentMissionVision: React.FC<DepartmentMissionVisionProps> = ({
             <div className="flex gap-10 flex-col lg:flex-row text-center lg:text-start items-center">
               <Image src={visionImage1} alt="bookImage" className="max-w-[50px] my-auto" />
               <div>
-                <h3 className=" text-xl text-textGray font-extrabold">Ethical & Industry-Ready Learning</h3>
+                <h3 className=" text-xl text-textGray font-bold">Ethical & Industry-Ready Learning</h3>
                 <p className="text-textGray text-[17px]">{ethicalLearning}</p>
               </div>
             </div>
@@ -37,7 +37,7 @@ const DepartmentMissionVision: React.FC<DepartmentMissionVisionProps> = ({
             <div className="flex gap-10 flex-col lg:flex-row text-center lg:text-start items-center">
               <Image src={visionImage2} alt="ideaIcon" className="max-w-[50px] my-auto" />
               <div>
-                <h3 className="text-xl text-textGray font-extrabold">Innovation Excellence</h3>
+                <h3 className="text-xl text-textGray font-bold">Innovation Excellence</h3>
                 <p className="text-textGray text-[17px]">{innovationExcellence}</p>
               </div>
             </div>
@@ -46,7 +46,7 @@ const DepartmentMissionVision: React.FC<DepartmentMissionVisionProps> = ({
            { holisticGrowthResearch&&<div className="flex gap-10 flex-col lg:flex-row text-center lg:text-start items-center">
               <Image src={visionImage3} alt="valueIcon" className="max-w-[50px] my-auto" />
               <div>
-                <h3 className="text-xl text-textGray font-extrabold">Holistic Growth & Research</h3>
+                <h3 className="text-xl text-textGray font-bold">Holistic Growth & Research</h3>
                 <p className="text-textGray text-[17px]">{holisticGrowthResearch}</p>
               </div>
             </div>}

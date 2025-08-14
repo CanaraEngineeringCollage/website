@@ -20,7 +20,7 @@ const semesters = ["I Semester", "II Semester", "III Semester", "IV Semester", "
 const CourseOutCome = () => {
   return (
     <div className="lg2:px-24 mx-5 text-[#86868B] text-[17px]">
-      <h2 className="text-xl mb-5 font-extrabold">Course Outcomes(CO)</h2>
+      <h2 className="text-xl mb-5 font-bold">Course Outcomes(CO)</h2>
       <div className="flex  justify-between">
         <select className="border outline-none p-2 rounded pe-20">
           <option value="">Select Admission Year</option>

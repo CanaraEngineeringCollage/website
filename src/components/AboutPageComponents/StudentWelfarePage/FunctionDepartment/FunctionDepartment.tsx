@@ -45,7 +45,7 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
   };
 
   return (
-    <section className="lg:ml-20  py-24 xl:py-36 xl:ml-60">
+    <section className="lg:ml-16  py-24 xl:py-36 xl:ml-60">
       {title && <h1 className="text-3xl md:text-[40px] text-center lg2:text-5xl  font-bold text-[#1D1D1F] pb-6 xl:pb-22">{title}</h1>}
       <Swiper
         modules={[Autoplay]}

@@ -181,3 +181,10 @@ lite-youtube {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;    /* Firefox */
 }
+
+
+.logo-scroll-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}

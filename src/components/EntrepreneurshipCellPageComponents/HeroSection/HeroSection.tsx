@@ -18,7 +18,7 @@ const HeroSection = () => {
 
       <div className="absolute top-20 md:top-28 space-y-6  mx-auto text-white px-4 z-10">
         <h3 className="text-[#F5F5F7] text-[19px] md:text-[25px] leading-10 lg:leading-0 lg:text-[31px]">Entrepreneurship Development Cell</h3>
-        <h2 className="text-[23px] md:text-[40px]  lg:text-[77px] leading-[30px] md:leading-10 lg:leading-[1.1] font-extrabold text-white">
+        <h2 className="text-[23px] md:text-[40px]  lg:text-[77px] leading-[30px] md:leading-10 lg:leading-[1.1] font-bold text-white">
           Empowering Future <br />
           Entrepreneurs
         </h2>
