@@ -15,7 +15,7 @@ interface CouncilMember {
   roles: { title: string; organization: string }[];
 }
 
-export default function DepartmentFaculty() {
+export default function DepartmentFaculty({heading,description}:{heading:string,description:string}) {
   const [data, setData] = useState<CouncilMember[]>([]);
   const [startIndex, setStartIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -44,10 +44,9 @@ export default function DepartmentFaculty() {
       <div className=" mx-auto lg:flex hidden  flex-col-reverse md:flex-row items-center justify-between gap-10">
         <div className="max-w-md space-y-44">
           <div>
-            <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-gray-900 leading-tight">Get to Know Our Department’s Faculty</h2>
-            <p className="text-gray-700 text-lg">
-              Our faculty members are the heart of our department, guiding & inspiring students with their expertise, dedication & passion for
-              education.
+            <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-gray-900 leading-[1.1]">{heading}</h2>
+            <p className="text-gray-700 text-lg mt-6">
+             {description}
             </p>
           </div>
           <div className="flex items-center justify-between gap-4">

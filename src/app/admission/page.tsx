@@ -7,6 +7,7 @@ import ExplorePrograms from "@/components/Common/ExplorePrograms/ExplorePrograms
 import { Testimonials } from "@/components/Common/Testimonials/Testimonials";
 import React from "react";
 import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
+import DepartmentFaculty from "@/components/TrainingPlacementPageComponents/DepartmentFaculty/DepartmentFaculty";
 
 export const metadata = {
   title: "Admissions | Canara College",
@@ -39,10 +40,14 @@ const page = () => {
   return (
     <>
       <HeroSection />
-       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <HowToApply />
       </section>
-        <section className="py-5">
+  <DepartmentFaculty
+  heading="Meet Our Admissions Team"
+  description="Our admissions team is here to guide you through every step of the enrollment process, ensuring a smooth and welcoming journey into our institution."
+/>
+      <section className="pb-5 ">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           youtubeUrl="61dDoLO9ohc"
@@ -55,8 +60,7 @@ const page = () => {
       {/* <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <EmpoweringFutures />
       </section> */}
-     
-    
+
       {/* <section className="px-0 py-20 bg-white">
         <Testimonials />
       </section> */}
