@@ -39,25 +39,27 @@ const page = () => {
   return (
     <>
       <HeroSection />
-      <section className="pl-6 md:pl-12 lg:pl-16 py-20 xl:px-0">
-        <ExplorePrograms />
-      </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
-        <EmpoweringFutures />
-      </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <HowToApply />
       </section>
-      <section className="py-5">
+        <section className="py-5">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           youtubeUrl="61dDoLO9ohc"
           thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1745989151/gerbybf4ejfgs7aeajyq.jpg"
         />
       </section>
-      <section className="px-0 py-20 bg-white">
-        <Testimonials />
+      <section className="pl-6 md:pl-12 lg:pl-16 py-20 xl:px-0">
+        <ExplorePrograms />
       </section>
+      {/* <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+        <EmpoweringFutures />
+      </section> */}
+     
+    
+      {/* <section className="px-0 py-20 bg-white">
+        <Testimonials />
+      </section> */}
       {/* <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">
         <HotOfThePress />
       </section> */}

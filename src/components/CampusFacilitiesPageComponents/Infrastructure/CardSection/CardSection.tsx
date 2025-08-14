@@ -85,7 +85,7 @@ function CardContent({ description }: CardContentProps) {
           <h4 className="text-[22px] text-[#88888a] mb-3 font-[900]">{description.middleSubTitle}</h4>
           <p className="text-xl text-[#88888a]">{description.middleDescription}</p>
         </div>
-        {description.image1 && (
+        {/* {description.image1 && (
           <Image
             src={description.image1}
             alt="Middle Image 1"
@@ -93,7 +93,7 @@ function CardContent({ description }: CardContentProps) {
             height={1000}
             className="w-full rounded-2xl my-16"
           />
-        )}
+        )} */}
 
         {/* Middle Section 2 */}
         <div>
@@ -106,7 +106,7 @@ function CardContent({ description }: CardContentProps) {
           <h3 className="text-[22px] text-[#88888a] mb-3 font-[900]">{description.middleTitle3}</h3>
           <p className="text-xl text-textGray">{description.middleDescription3}</p>
         </div>
-        {description.image2 && (
+        {/* {description.image2 && (
           <Image
             src={description.image2}
             alt="Middle Image 2"
@@ -114,7 +114,7 @@ function CardContent({ description }: CardContentProps) {
             height={1000}
             className="w-full rounded-2xl my-16"
           />
-        )}
+        )} */}
 
         {/* Middle Section 4 */}
         <div>
@@ -127,7 +127,7 @@ function CardContent({ description }: CardContentProps) {
           <h3 className="text-[32px] mb-2 font-extrabold">{description.bottomTitile}</h3>
           <p className="text-xl text-textGray">{description.subDescription3}</p>
         </div>
-        {description.image3 && (
+        {/* {description.image3 && (
           <Image
             src={description.image3}
             alt="Bottom Image"
@@ -135,7 +135,7 @@ function CardContent({ description }: CardContentProps) {
             height={1000}
             className="w-full rounded-2xl"
           />
-        )}
+        )} */}
       </div>
     </div>
   );
