@@ -6,34 +6,34 @@
     "style": "lg:top-[250]  lg:left-[600]",
     "description": {
       "src": "/campusFacilitiesPageImages/4.webp",
-      "date": "TECHFEST 2025 |  Feb 10, 2025",
-      "topTitle": "Pushing the Boundaries of Engineering Innovation",
-      "topDescription": "The annual InnovateX 2025 Tech Fest at [College Name] was a grand success, bringing together students, faculty, and industry leaders for two days of innovation, competition, and collaboration. With over 500 participants and 20+ industry partners, the event showcased cutting-edge technology, insightful talks, and hands-on workshops that inspired the next generation of engineers.",
+      "date": "",
+      "topTitle": "",
+      "topDescription": "Library is a store house of Knowledge.The central Library of CEC is located in the heart of the institution and it is easily accessible to its clientele. The library has got independent building with carpet area of 1305.68 spread in 2 Floors it can accommodated 300 users at a time. The collection of library is more than47000 including general Book bank books and SC/ST Book Bank which includes Text and Reference books, Competitive Examination books and general knowledge books are available for all round development of personality. The Library subscribes 42Indian Journals, and 16 magazines in print version for various departments of UG and PG students and Faculty and Staff. We have access more than 11000+online journals, 21000+ E books, Articles from various publishers like IEEE ASPP,& POP ALL, EBSCO Engineering Suit, IEEE Blended e-Learning Platform, Eduport Global-CBS, BSP E-Book, Cengage Learning, Cambridge University Press , Mint Books, Quiklrn e-Books, Drillbit Plagiarism Originality online Check Tool,Quiklrn English Communication Language Lab etc. Subscribed packages under the VTU Consortium. Library has separate Reading Room and Reference section reading hall. Library has separate stack hall for books, Reference section and Book Bank. The in-house activities of the Library have been computerized and all books are bar coded.",
       "middleTitle": "Key Highlights",
-      "middleSubTitle": "Keynote Speeches by Industry Experts",
-      "middleDescription": "Leading engineers and tech innovators from companies like Tata Technologies, Infosys, and Bosch shared insights on AI, robotics, and sustainable engineering. Their sessions provided valuable industry perspectives, bridging the gap between academic learning and real-world applications.",
+      "middleSubTitle": "VISION",
+      "middleDescription": "To make world class centre for quality resources in print and digital form to facilitate learning and research.",
       "image1": "/campusFacilitiesPageImages/3.jpg",
-      "middleTitle2": "Hackathon: Solving Real-World Problems",
-      "middleDescription2": "Over 30 teams participated in a 24-hour coding marathon, tackling challenges in automation, cybersecurity, and smart cities. The winning team, “CodeCrafters,” designed an AI-powered traffic management system that earned high praise from industry mentors.",
-      "middleTitle3": "Workshops & Hands-on Learning",
-      "middleDescription3": "From 3D printing and IoT development to renewable energy solutions, students engaged in immersive learning experiences guided by industry professionals. These workshops provided hands-on exposure to the latest technological advancements.",
-      "image2": "/campusFacilitiesPageImages/3.jpg",
-      "middleTitle4": "Startup Expo & Career Networking",
-      "middleDescription4": "Budding entrepreneurs pitched their tech startups to investors and incubators, fostering innovation and business acumen. Additionally, a career fair connected students with potential recruiters, offering internship and job opportunities.",
-
-      "bottomTitile": "Looking Ahead",
-      "subDescription3": "InnovateX 2025 reinforced [College Name]’s commitment to fostering innovation, skill development, and industry engagement. With growing participation each year, the event continues to shape the future of engineering education.For those who missed it, stay tuned for InnovateX 2026! Until then, keep innovating, keep exploring!"
+      "middleTitle2": "MISSION",
+      "middleDescription2": "To enable our readers to make use of Library resource and services most effectively with help from modern technological tools and applications.",
+      "middleTitle3": "OBJECTIVES",
+      "middleDescription3":[
+  "Build collections and create tools to support teaching, learning, and research",
+  "Provide access to current and updated information resources",
+  "Help users find the right information at the right time",
+  "Support users in their curriculum activities with knowledge resources",
+  "Provide a comfortable and engaging learning environment"
+]
     }
   },
   {
     "category": "",
     "title": "In-Campus Hostels",
-    "src": "/campusFacilitiesPageImages/2.jpg",
+    "src": "/campusFacilitiesPageImages/hostelLifePageImages/bgImage.jpg",
     "style": "lg:top-[450] opcity-[100] ",
     "desc":"Comfortable, secure & well-equipped hostels designed to provide a home away from home for our students",
 
     "description": {
-      "src": "/campusFacilitiesPageImages/2.jpg",
+      "src": "/campusFacilitiesPageImages/hostelLifePageImages/bgImage.jpg",
       "date": "TECHFEST 2025 |  Feb 10, 2025",
       "topTitle": "Pushing the Boundaries of Engineering Innovation",
       "topDescription": "The annual InnovateX 2025 Tech Fest at [College Name] was a grand success, bringing together students, faculty, and industry leaders for two days of innovation, competition, and collaboration. With over 500 participants and 20+ industry partners, the event showcased cutting-edge technology, insightful talks, and hands-on workshops that inspired the next generation of engineers.",
@@ -44,10 +44,10 @@
       "middleTitle2": "Hackathon: Solving Real-World Problems",
       "middleDescription2": "Over 30 teams participated in a 24-hour coding marathon, tackling challenges in automation, cybersecurity, and smart cities. The winning team, “CodeCrafters,” designed an AI-powered traffic management system that earned high praise from industry mentors.",
       "middleTitle3": "Workshops & Hands-on Learning",
-      "middleDescription3": "From 3D printing and IoT development to renewable energy solutions, students engaged in immersive learning experiences guided by industry professionals. These workshops provided hands-on exposure to the latest technological advancements.",
+      "middleDescription3": [],
       "image2": "/campusFacilitiesPageImages/3.jpg",
       "middleTitle4": "Startup Expo & Career Networking",
-      "middleDescription4": "Budding entrepreneurs pitched their tech startups to investors and incubators, fostering innovation and business acumen. Additionally, a career fair connected students with potential recruiters, offering internship and job opportunities.",
+      "middleDescription4": [],
 
       "bottomTitile": "Looking Ahead",
       "subDescription3": "InnovateX 2025 reinforced [College Name]’s commitment to fostering innovation, skill development, and industry engagement. With growing participation each year, the event continues to shape the future of engineering education.For those who missed it, stay tuned for InnovateX 2026! Until then, keep innovating, keep exploring!"
@@ -61,23 +61,31 @@
 
     "description": {
       "src": "/campusFacilitiesPageImages/3.jpg",
-      "date": "TECHFEST 2025 |  Feb 10, 2025",
-      "topTitle": "Pushing the Boundaries of Engineering Innovation",
-      "topDescription": "The annual InnovateX 2025 Tech Fest at [College Name] was a grand success, bringing together students, faculty, and industry leaders for two days of innovation, competition, and collaboration. With over 500 participants and 20+ industry partners, the event showcased cutting-edge technology, insightful talks, and hands-on workshops that inspired the next generation of engineers.",
-      "middleTitle": "Key Highlights",
-      "middleSubTitle": "Keynote Speeches by Industry Experts",
-      "middleDescription": "Leading engineers and tech innovators from companies like Tata Technologies, Infosys, and Bosch shared insights on AI, robotics, and sustainable engineering. Their sessions provided valuable industry perspectives, bridging the gap between academic learning and real-world applications.",
+      "date": "",
+      "topTitle": "",
+      "topDescription": "The 'only teaching' model doesn’t match the current rapid developments in technical education. Imparting quality education in technical colleges needs to be ensured with up-to-date knowledge of technology and science. This can be ensured with the active participation of faculty and students in research & development activities. Thus, the college's R&D, innovation cell has been established to inculcate research activities among faculty, scholars, and students.The research activity comprising fundamental research, interdisciplinary and multidisciplinary research, and product developments till TRL 6 to 7 are encouraged under the cell. Further, faculty and students were motivated to carry out projects with government and private funded projects. Also, the college is striving to impart a culture of collaboration projects with Tier-1 institutes.",
+      "middleTitle": "",
+      "middleSubTitle": "",
+      "middleDescription": "",
       "image1": "/campusFacilitiesPageImages/3.jpg",
-      "middleTitle2": "Hackathon: Solving Real-World Problems",
-      "middleDescription2": "Over 30 teams participated in a 24-hour coding marathon, tackling challenges in automation, cybersecurity, and smart cities. The winning team, “CodeCrafters,” designed an AI-powered traffic management system that earned high praise from industry mentors.",
-      "middleTitle3": "Workshops & Hands-on Learning",
-      "middleDescription3": "From 3D printing and IoT development to renewable energy solutions, students engaged in immersive learning experiences guided by industry professionals. These workshops provided hands-on exposure to the latest technological advancements.",
+     "middleTitle3": "Thrust Areas",
+      "middleDescription3":[ "Artificial Intelligence",
+  "Data Science and Analytics",
+  "Data Mining",
+  "Distributed Computing",
+  "VLSI",
+  "IoT and Embedded Systems",
+  "Power Systems",
+  "Energy Engineering",
+  "Additive Manufacturing",
+  "Advanced Manufacturing Systems",
+  "Advanced Materials Processing and Characterisation",
+  "Blockchain Technology",
+  "Cyber Security"],
       "image2": "/campusFacilitiesPageImages/3.jpg",
-      "middleTitle4": "Startup Expo & Career Networking",
-      "middleDescription4": "Budding entrepreneurs pitched their tech startups to investors and incubators, fostering innovation and business acumen. Additionally, a career fair connected students with potential recruiters, offering internship and job opportunities.",
-
-      "bottomTitile": "Looking Ahead",
-      "subDescription3": "InnovateX 2025 reinforced [College Name]’s commitment to fostering innovation, skill development, and industry engagement. With growing participation each year, the event continues to shape the future of engineering education.For those who missed it, stay tuned for InnovateX 2026! Until then, keep innovating, keep exploring!"
-    }
+     "middleTitle4": "Objectives",
+      "middleDescription4":["To foster a research culture among faculty members, students, and research scholars to engage in research activities.",
+  "To support funding and grant opportunities, both internal and external agencies for research and innovation projects.",
+  "To facilitate collaborative project work among the faculty, students, and research scholars within the institution and external organization."]}
   }
 ]

@@ -161,6 +161,24 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
     goToNextCard(); // Move to the next card
   };
 
+
+
+    React.useEffect(() => {
+      if (isOpen) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "auto";
+      }
+      const handleKeyDown = (event: KeyboardEvent) => {
+        if (event.key === "Escape" && isOpen) {
+        closeCard();
+    onCardClose(index);
+        }
+      };
+      window.addEventListener("keydown", handleKeyDown);
+      return () => window.removeEventListener("keydown", handleKeyDown);
+    }, [isOpen,closeCard]);
+
   // Calculate the next card's title
   const nextIndex = (index + 1) % totalItems;
   const nextCardTitle = programData[nextIndex]?.title || "First Card";
@@ -214,6 +232,8 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
       },
     },
   };
+
+  
 
   return (
     <>

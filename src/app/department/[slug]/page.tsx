@@ -115,7 +115,7 @@ export default async function DepartmentPage({ params }: { params: { slug: strin
       <section className="">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
-          youtubeUrl="https://youtu.be/rv0KerNW4QE?si=ObYcwEiaqF0UD90P"
+          youtubeUrl={department?.ytUrl}
           thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1745994337/bzjmgq1zvi0ksxyptkz6.png"
         />
       </section>

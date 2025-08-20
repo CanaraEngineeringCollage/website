@@ -48,7 +48,7 @@ const Home = () => {
           <h1 className="text-xl font-bold  text-textGray mb-2">Objectives</h1>
           <ul className="list-disc ml-5 text-lg">
             {objectives.map((item, index) => (
-              <li className="pb-1">{item}</li>
+              <li className="pb-1" key={index}>{item}</li>
             ))}
           </ul>
         </div>

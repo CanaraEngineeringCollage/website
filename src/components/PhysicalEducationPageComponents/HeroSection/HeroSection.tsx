@@ -16,7 +16,7 @@ const HeroSection = () => {
         <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[500px] bg-gradient-to-t from-white via-transparent to-transparent z-[10] hidden md:block" />
       </div>
 
-      <div className="absolute top-20 md:top-28 lg:space-y-6  mx-auto text-white px-4 z-10">
+      <div className="absolute top-20 md:top-16 lg:space-y-6  mx-auto text-white px-4 z-10">
         <h3 className="text-[#F5F5F7] text-[19px] md:text-[25px] leading-10 lg:leading-0 lg:text-[31px]">Department of Physical Education</h3>
         <h2 className="text-[32px] md:text-[40px]  lg:text-[77px] leading-[40px] md:leading-10 lg:leading-[1.1] font-bold text-white">
         Unleashing Potential <br />

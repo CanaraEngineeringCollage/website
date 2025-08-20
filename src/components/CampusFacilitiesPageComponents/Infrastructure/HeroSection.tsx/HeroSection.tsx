@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import bg1 from "../../../../../public/aboutPageImages/campusLegacy/campus-colored.png";
+import bg1 from "../../../../../public/aboutPageImages/campusLegacy/campus.jpg";
 
 const HeroSection = () => {
   return (
