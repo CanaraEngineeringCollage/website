@@ -95,7 +95,7 @@ const DepartmentSection = () => {
       <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-[#1D1D1F]">Objectives</h1>
       <ul className="lg:text-xl text-start list-disc ml-5 md:text-lg text-[14px] leading-7 pt-5 pb-8 text-textGray">
         {objectives.map((objective, index) => (
-          <li>{objective}</li>
+          <li key={index}>{objective}</li>
         ))}
       </ul>
       <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-[#1D1D1F]">Responsibilities</h1>

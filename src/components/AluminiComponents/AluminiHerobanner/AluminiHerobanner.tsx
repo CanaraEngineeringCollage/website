@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import imageUrl from "../../../../public/aboutPageImages/campusLegacy/campus-colored.png"
+import imageUrl from "../../../../public/alumniPageImages/alumniHero.webp"
 
 
 const AluminiHeroBanner: React.FC = () => {
@@ -25,7 +25,7 @@ const AluminiHeroBanner: React.FC = () => {
         <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[200px] bg-gradient-to-t from-white via-transparent to-transparent z-[10] hidden md:block" />
       </div>
 
-      <div className="absolute top-28 md:top-28 max-w-5xl mx-auto text-white px-4 z-10">
+      <div className="absolute top-28 md:top-16 max-w-5xl mx-auto text-white px-4 z-10">
         <h2 className="text-[40px] md:text-[77px] leading-[50px] md:leading-[1] font-bold">
         Stay Connected & Support Future Generations
         </h2>

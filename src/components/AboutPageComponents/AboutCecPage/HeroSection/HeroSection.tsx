@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import bg1 from "../../../../../public/aboutPageImages/campusLegacy/aboutcec.webp";
+import bg1 from "../../../../../public/aboutPageImages/campusLegacy/aboutcec.jpg";
 
 import "swiper/css";
 import "swiper/css/pagination";

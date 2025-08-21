@@ -43,7 +43,7 @@ export default function Home() {
       <section className="px-6 md:px-12 lg:px-36 xl:px-20 py-12">
         <FutureCampusText />
       </section>
-      <section className="md:pl-12 lg:pl-16 xl:px-0 py-12">
+      <section className=" xl:px-0 py-12">
         <ExplorePrograms />
       </section>
       <section className="bg-[#144A72] my-12 py-20">

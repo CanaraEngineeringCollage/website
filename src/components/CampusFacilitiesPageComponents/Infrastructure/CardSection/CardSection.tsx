@@ -17,10 +17,10 @@ type DescriptionProps = {
   middleTitle2: string;
   middleDescription2: string;
   middleTitle3: string;
-  middleDescription3: string;
+  middleDescription3: [];
   image2?: string;
   middleTitle4: string;
-  middleDescription4: string;
+  middleDescription4: [];
   bottomTitile: string; // Note: Typo in JSON ("bottomTitile" instead of "bottomTitle")
   subDescription3: string;
   image3?: string;
@@ -71,12 +71,14 @@ function CardContent({ description }: CardContentProps) {
         height={700}
         className="object-cover overflow-hidden rounded-t-2xl w-full lg:h-[700px] h-[400px] mb-10"
       />
-      <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-[#1D1D1F] bg-white">
+      <div className="p-4 lg:p-0 lg:px-20 space-y-10 text-left text-sm text-[#1D1D1F] bg-white">
         {/* Top Section */}
-        <div >
-          <p className="text-[16px] font-bold text-[#88888a] mb-5">{description.date}</p>
-          <h3 className="text-[31px] lg:text-[46px]  leading-[1.1] lg:max-w-[70%] mb-5 font-bold">{description.topTitle}</h3>
-          <p className="text-xl text-[#88888a]">{description.topDescription}</p>
+        <div>
+          {description.date && <p className="text-[16px] font-bold text-[#88888a] mb-5">{description.date}</p>}
+
+          {description.topTitle && <h3 className="text-[31px] lg:text-[46px] leading-[1.1] lg:max-w-[70%] mb-5 font-bold">{description.topTitle}</h3>}
+
+          {description.topDescription && <p className="text-xl text-[#88888a]">{description.topDescription}</p>}
         </div>
 
         {/* Middle Section 1 */}
@@ -103,8 +105,14 @@ function CardContent({ description }: CardContentProps) {
 
         {/* Middle Section 3 */}
         <div>
-          <h3 className="text-[22px] text-[#88888a] mb-3 font-bold">{description.middleTitle3}</h3>
-          <p className="text-xl text-textGray">{description.middleDescription3}</p>
+          <h3 className="text-[22px] text-[#88888a] mb-3  font-bold">{description.middleTitle3}</h3>
+          <ul>
+            {description.middleDescription3.map((item, index) => (
+              <li key={index} className="text-xl text-textGray">
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
         {/* {description.image2 && (
           <Image
@@ -117,16 +125,24 @@ function CardContent({ description }: CardContentProps) {
         )} */}
 
         {/* Middle Section 4 */}
+        {/* Middle Section */}
         <div>
-          <h3 className="text-[22px] text-[#88888a] mb-2 font-bold">{description.middleTitle4}</h3>
-          <p className="text-xl text-textGray">{description.middleDescription4}</p>
+          {description.middleTitle4 && <h3 className="text-[22px] text-[#88888a] mb-2 font-bold">{description.middleTitle4}</h3>}
+          <ul>
+            {description.middleDescription4.map((item, index) => (
+              <li key={index} className="text-xl text-textGray">
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
 
         {/* Bottom Section */}
         <div>
-          <h3 className="text-[32px] mb-2 font-bold">{description.bottomTitile}</h3>
-          <p className="text-xl text-textGray">{description.subDescription3}</p>
+          {description.bottomTitile && <h3 className="text-[32px] mb-2 font-bold">{description.bottomTitile}</h3>}
+          {description.subDescription3 && <p className="text-xl text-textGray">{description.subDescription3}</p>}
         </div>
+
         {/* {description.image3 && (
           <Image
             src={description.image3}

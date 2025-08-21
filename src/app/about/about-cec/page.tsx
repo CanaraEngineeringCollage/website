@@ -44,8 +44,8 @@ export default function AboutCec() {
       </section>
       <section className="py-10">
         <VideoPlayer
-          videoUrl="DotJvDklT5Y"
-          youtubeUrl="DotJvDklT5Y"
+          videoUrl="BEVUuWkR7LU"
+          youtubeUrl="BEVUuWkR7LU"
           thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1745992220/wuayrpgijvzzg5pwvlxr.png"
         />
       </section>

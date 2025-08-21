@@ -41,7 +41,7 @@ const page = () => {
       <section>
         <HeroSection />
       </section>
-      <section className="pl-6 md:pl-12 lg:pl-16 xl:px-0">
+      <section className=" pt-28   xl:px-0">
         <ExplorePrograms />
       </section>
       <section className="px-6 mt-10 md:px-12 lg:px-16 xl:px-0">

@@ -74,67 +74,7 @@ const   VideoPlayer: React.FC<VideoPlayerProps> = ({ youtubeUrl, videoUrl, title
               </g>
             </svg>
           </div>
-          <div className="flex gap-4">
-            {/* <div>
-              <Link href={youtubeUrl} target="_blank">
-                <button 
-                  aria-label="Watch the Full Video"
-                  
-                className="text-white bg-transparent rounded-full border-white border py-2.5 px-4 hidden md:block cursor-pointer">
-                  Watch the Full Video
-                </button>
-              </Link>
-            </div> */}
-            {/* <div className="cursor-pointer" onClick={togglePlayPause}>
-              <svg width="50" height="50" viewBox="0 0 50 50"> */}
-                {/* Background Circle */}
-                {/* <circle cx="25" cy="25" r="22" stroke="#ffff" strokeWidth="2" fill="none" opacity="0.3" /> */}
-                {/* Progress Circle */}
-                {/* <circle
-                  cx="25"
-                  cy="25"
-                  r="22"
-                  stroke="#ffffff"
-                  strokeWidth="2"
-                  fill="none"
-                  strokeDasharray={138}
-                  strokeDashoffset={(1 - progress / 100) * 138}
-                  strokeLinecap="round"
-                  className="transition-all duration-100"
-                  transform="rotate(-90 25 25)"
-                /> */}
-                {/* Play/Pause Icon */}
-                {/* <foreignObject x="9" y="8" width="32" height="32"> */}
-                  {/* <button className="w-full h-full cursor-pointer flex items-center justify-center" aria-label={isPlaying ? "Pause" : "Play"}>
-                    {isPlaying ? (
-                      <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="0.5" y="0.851562" width="36" height="36" rx="18" fill="#E8E8ED" />
-                        <path
-                          d="M15.25 11.8516H13.75C12.9216 11.8516 12.25 12.5231 12.25 13.3516V24.3516C12.25 25.18 12.9216 25.8516 13.75 25.8516H15.25C16.0784 25.8516 16.75 25.18 16.75 24.3516V13.3516C16.75 12.5231 16.0784 11.8516 15.25 11.8516Z"
-                          fill="black"
-                          fillOpacity="0.56"
-                        />
-                        <path
-                          d="M23.25 11.8516H21.75C20.9216 11.8516 20.25 12.5231 20.25 13.3516V24.3516C20.25 25.18 20.9216 25.8516 21.75 25.8516H23.25C24.0784 25.8516 24.75 25.18 24.75 24.3516V13.3516C24.75 12.5231 24.0784 11.8516 23.25 11.8516Z"
-                          fill="black"
-                          fillOpacity="0.56"
-                        />
-                      </svg>
-                    ) : (
-                      <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="0.140625" y="0.261719" width="36" height="36" rx="18" fill="#E8E8ED" />
-                        <path
-                          d="M13.1441 23.5118V13.0318C13.1184 12.8282 13.1366 12.6214 13.1974 12.4254C13.2582 12.2293 13.3602 12.0485 13.4965 11.8951C13.6329 11.7417 13.8005 11.6192 13.9881 11.5359C14.1756 11.4525 14.3789 11.4102 14.5841 11.4118C14.9776 11.3951 15.3663 11.5036 15.6941 11.7218L24.2241 16.7218C24.9841 17.1618 25.3941 17.5218 25.3941 18.2318C25.3941 18.9418 24.9841 19.3018 24.2241 19.7418L15.6941 24.7418C15.3663 24.9601 14.9776 25.0686 14.5841 25.0518C14.3854 25.0554 14.1882 25.0171 14.0052 24.9396C13.8222 24.8621 13.6575 24.7471 13.5218 24.6019C13.3861 24.4568 13.2823 24.2847 13.2173 24.097C13.1522 23.9092 13.1273 23.7099 13.1441 23.5118Z"
-                          fill="black"
-                          fillOpacity="0.56"
-                        />
-                      </svg>
-                    )}
-                  </button> */}
-                {/* </foreignObject> */}
-              {/* </svg>
-            </div> */}
-          </div>
+        
         </div>
       </div>
     </div>

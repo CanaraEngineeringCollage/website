@@ -8,7 +8,8 @@ import iso from "../../../../public/svgs/heropageLogos/6.webp";
 import nba from "../../../../public/svgs/heropageLogos/3.svg";
 import nba2 from "../../../../public/svgs/heropageLogos/4.svg";
 import affiliated from "../../../../public/svgs/heropageLogos/5.svg";
-import bg2 from "../../../../public/aboutPageImages/campusLegacy/aboutcec.webp";
+import bg3 from "../../../../public/herosectionImages/hero3.webp";
+import bg2 from "../../../../public/herosectionImages/heroBg.webp";
 
 // Swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -32,7 +33,7 @@ const HeroSection = () => {
   
   ];
 
-  const backgroundImages = [bg2, bg1, bg1];
+  const backgroundImages = [bg3,bg2, bg1, bg1];
 
   return (
     <section className="relative w-full h-[90vh] md:h-[120vh]  flex flex-col justify-center items-center text-center px-4 overflow-hidden">
