@@ -24,7 +24,7 @@ const HeroSection = () => {
         <p className="text-[#CDE5FF] text-[16px] pe-10 leading-[1.3] md:text-[31px] mt-2">
           Begin your engineering journey with a foundation-built curriculum.
         </p>
-        <button aria-label='Apply Now' onClick={()=>setIsOpen(true)} className="mt-6 bg-white text-[#2884CA] font-bold px-6 py-2 cursor-pointer rounded-full  ">
+        <button aria-label='Apply Now' onClick={()=>setIsOpen(true)} className="mt-6 text-lg bg-white text-[#2884CA] font-bold px-10 py-4 cursor-pointer rounded-full  ">
           Apply Now
         </button>
       </div>

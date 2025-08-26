@@ -26,7 +26,7 @@ const MessageSection = () => {
           </p>
         </div>
         <div>
-          <div className="hidden lg:flex flex-col items-center flex-shrink-0 mx-auto lg:px-20">
+          <div className="hidden lg:flex flex-col items-center justify-center flex-shrink-0 mx-auto lg:px-20">
             <div className="w-80  h-96 relative rounded-xl overflow-hidden shadow-md">
               <Image src="/studentWelfarePage/message.png" alt="Sri Ammembal Subba Rao Pai" fill className="object-cover bg-[#6dc0eb]" />
             </div>

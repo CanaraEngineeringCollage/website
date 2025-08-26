@@ -40,7 +40,7 @@ export default function Life() {
         outline-none focus:ring-0 focus:outline-none"
       >
         <div className="w-full max-w-screen-2xl bg-white shadow-md rounded-xl flex justify-center gap-8 p-8 border-none outline-none">
-          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-8 mx-16 w-full">
+          <div className="grid grid-cols-1 w-[1500px] sm:grid-cols-3 lg:grid-cols-3 gap-8 mx-16 ">
             {/* Column 1 */}
             <div className="flex gap-4 pr-4 border-r border-gray-300">
               <div className="flex items-start">

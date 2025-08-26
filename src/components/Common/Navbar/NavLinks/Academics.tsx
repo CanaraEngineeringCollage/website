@@ -50,7 +50,7 @@ export default function Academics() {
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 xl:grid-cols-4 lg:gap-0 xl:gap-8 mx-16 w-full">
             {/* Column 1 */}
-            <div className="flex lg:col-span-2 xl:col-auto gap-4 pr-4 border-r border-gray-300 ">
+            {/* <div className="flex lg:col-span-2 xl:col-auto gap-4 pr-4 border-r border-gray-300 ">
               <div className="flex items-start">
                 <Notpad />
               </div>
@@ -65,13 +65,13 @@ export default function Academics() {
                     >
                       Academic Overview
                     </li>
-                  </Link>
+                  </Link> */}
                   {/* <Link href="/academics/programs">
                     <li className={`${pathname.includes("/academics/programs") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Programs</li>
                   </Link> */}
-                </ul>
+                {/* </ul>
               </div>
-            </div>
+            </div> */}
 
             {/* Column 2 */}
             <div className="flex lg:col-span-4 xl:col-auto lg:gap-2 xl:gap-4 pr-4 border-r border-gray-300 ">

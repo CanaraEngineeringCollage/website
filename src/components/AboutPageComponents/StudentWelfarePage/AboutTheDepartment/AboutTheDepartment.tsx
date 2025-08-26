@@ -2,16 +2,13 @@ import React from "react";
 
 const AboutTheDepartment = () => {
   return (
-    <section className="md:pt-20 xl:pt-44  max-w-7xl  xl:max-w-[75%] mx-auto text-[#1D1D1F] ">
+    <section className="md:pt-20 pb-16 xl:pt-44  max-w-7xl  xl:max-w-[75%] mx-auto text-[#1D1D1F] ">
       <div className="">
         <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-[#1D1D1F] pb-6 ">About the Department</h1>
         <p className="text-textGray text-justify text-[20px]">
-          The Department of Student Welfare was setup in Canara Engineering College during the academic year 2010-2011. Ably lead by{" "}
-          <strong> Dr. Priya V. Frank,</strong>the department is committed to student wellbeing and betterment. It strives for the all round
-          development of the students in all spheres of life through counseling & various other student-oriented programs. The Department aims to
-          facilitate a congenial atmosphere for students overall advancemen
+        The Department of Student Welfare, established at Canara Engineering College in the academic year 2010–2011 under the leadership of <strong> Dr. Priya V. Frank,</strong> is dedicated to ensuring the overall wellbeing and holistic development of students. The department strives to foster academic, personal, and social growth through counseling, leadership initiatives, extracurricular activities, and student-centered programs. Guided by its vision to prepare students for a diverse and dynamic global society, the department upholds integrity, transparency, and accountability while promoting peace, harmony, and coexistence. It is equally committed to providing a supportive platform for grievance redressal and creating a positive and inclusive learning environment that enables students to evolve into responsible and productive citizens.
         </p>
-        <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-[#1D1D1F] pt-14 pb-6">Vision</h1>
+        {/* <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-[#1D1D1F] pt-14 pb-6">Vision</h1>
         <p className="text-textGray text-justify text-[20px]">
           To encourage students' individual, academic and integrated development by providing leadership and counseling services and thus prepare them
           for a diverse, enterprising and global society.
@@ -26,7 +23,7 @@ const AboutTheDepartment = () => {
           <li>To uphold integrity, the highest level of transparency, and accountability.</li>
           <li>To maintain peace, harmony, co-existence, and public goodwill.</li>
           <li>To provide a platform for students to redress their grievances.</li>
-        </ul>
+        </ul> */}
       </div>
     </section>
   );

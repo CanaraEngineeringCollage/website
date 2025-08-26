@@ -110,7 +110,7 @@ export default async function DepartmentPage({ params }: { params: { slug: strin
     <>
       <HeroSection departmentName={department.name} wdith={department.width} imageUrl={department.bannerUrl} />
       <section className="px-6 md:px-0 xl:px-0">
-        <AboutTheDepartment aboutTheDepartment={department.departmentAboutDescription} />
+        <AboutTheDepartment departmentName={department.name} aboutTheDepartment={department.departmentAboutDescription} />
       </section>
       <section className="">
         <VideoPlayer

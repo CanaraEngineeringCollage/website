@@ -33,9 +33,9 @@ const page = () => {
   return (
     <>
       <HeroSection />
-      <section className="bg-[#E5E5EA]">
+      {/* <section className="bg-[#E5E5EA]">
         <FooterCard />
-      </section>
+      </section> */}
     </>
   );
 };

@@ -113,11 +113,11 @@ const HowToApply = () => {
   // Animation variants
   const itemVariants = {
     hidden: { opacity: 0, x: -50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: "easeOut" } },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.3, ease: "easeOut" } },
   };
   const colorVariants = {
     hidden: { color: "#747474" },
-    visible: { color: "#2884CA", transition: { duration: 0.5 } },
+    visible: { color: "#2884CA", transition: { duration: 0.3 } },
   };
   const pathVariants = {
     hidden: { pathLength: 0, stroke: "#747474", fill: "none" },

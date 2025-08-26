@@ -3,7 +3,7 @@ import image1 from "../../../../../public/aboutPageImages/campusLegacy/historyim
 import Image from "next/image";
 const AboutHistoryCanara = () => {
   return (
-    <div className="max-w-7xl mx-auto xl:max-w-[75%] pb-16 pt-20 text-black">
+    <div className="max-w-7xl mx-auto xl:max-w-[75%] text-justify pb-16 pt-20 text-black">
       <h4 className="text-3xl text-textGray py-5 xl:py-12">About Canara Engineering College</h4>
       <h1 className="text-3xl md:text-[40px] text-[#1D1D1F] lg2:text-5xl xl:text-6xl font-bold">A Campus Like No other</h1>
       <p className="lg:text-xl md:text-lg text-[14px] leading-7 pt-8 xl:pt-16 text-textGray">
@@ -22,8 +22,8 @@ const AboutHistoryCanara = () => {
         industrial trends. Glad to inform that all eligible BE programs here are accredited by National Board of Accreditation(NBA), New Delhi and the
         institute is also accredited by National Assessment and Accreditation Council(NAAC) with A Grade-CGPA-3.24
       </p>
-      <div className="overflow-hidden rounded-3xl ">
-        <Image src={image1} alt="historyimage" className="" />
+      <div className="overflow-hidden mx-auto w-[80%]  rounded-3xl ">
+        <Image src={image1} alt="historyimage" className="object-cover   h-[70vh]" />
       </div>
 
       <p className="lg:text-xl md:text-lg text-[14px] leading-7 pt-12 text-textGray">
@@ -41,8 +41,8 @@ const AboutHistoryCanara = () => {
         several programs like training the students to face campus recruitment tests and interviews through regular soft skill/communication skill
         development programs, Entrepreneurship Awareness Camps and helping the desired students to productize/commercialize their creative ideas.
       </p>
-      <div className="overflow-hidden rounded-3xl ">
-        <Image src={image1} alt="historyimage" className="" />
+      <div className="overflow-hidden mx-auto w-[80%] rounded-3xl ">
+        <Image src={image1} alt="historyimage" className="object-cover   h-[70vh]" />
       </div>
 
       <p className="lg:text-xl md:text-lg text-[14px] py-12 leading-7  text-textGray">
@@ -53,7 +53,7 @@ const AboutHistoryCanara = () => {
         development programs, Entrepreneurship Awareness Camps and helping the desired students to productize/commercialize their creative ideas.
       </p>
       <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl text-[#1D1D1F] font-bold">Canara Engineering College Road Map </h1>
-      <p className="lg:text-xl md:text-lg text-[14px] pb-5 pt-5 leading-7  text-textGray">
+      <p className="lg:text-xl md:text-lg text-[14px] pb-5  pt-8 xl:pt-16 leading-7  text-textGray">
         In an attempt to impart holistic education, to make "Canara Engineering College" a role model in higher education and the most preferred
         choice of students, staff, parents, society and industry in the near future; the following few proposals or action plans are projected, for 2
         to 3 years down the lane:
