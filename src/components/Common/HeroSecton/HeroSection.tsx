@@ -61,7 +61,7 @@ const HeroSection = () => {
               />
             
                <div className="absolute bottom-0 left-0 right-0 h-[200px] md:h-[500px] bg-gradient-to-t from-white via-white/85 via-50% to-transparent z-[10] md:hidden" />
-               <div className="absolute bottom-0 left-0 right-0 h-[300px] md:h-[500px] bg-gradient-to-t from-white via-transparent to-transparent z-[10] hidden md:block" />
+               <div className="absolute bottom-0 left-0 right-0 h-[300px] md:h-[200px] bg-gradient-to-t from-white via-white/85 to-transparent z-[10] hidden md:block" />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -80,7 +80,7 @@ const HeroSection = () => {
       </div>
 
       {/* Logos Carousel */}
-      <div className="absolute bottom-4 md:bottom-10 bg-[#f5f5f7] py-5 lg:bg-[#f5f5f7] rounded-xl shadow-lg md:p-4 xl:max-w-[90%] md:max-w-[90%] lg:max-5-7xl z-10">
+      <div className="absolute bottom-4 md:bottom-3 shadow-sm bg-[#f5f5f7] py-5 lg:bg-[#f5f5f7] rounded-xl  md:p-4 xl:max-w-[90%] md:max-w-[90%] lg:max-5-7xl z-10">
         <Swiper
           modules={[Pagination, Autoplay]}
           slidesPerView={1}

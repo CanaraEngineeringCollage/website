@@ -10,7 +10,7 @@ import Patents from "../TabComponents/Patents/Patents";
 
 const IframLinks = ({title,link}:{title?:string;link?:string}) => {return(
   <div className="mb-10">
-    <h2 className="text-[20px] font-bold text-textGray mb-2">{title}</h2>
+    <h2 className="text-[24px] text-[#1d1d1f] font-bold  mb-2">{title}</h2>
     <ul className="space-y-1">
       <li className="flex items-center gap-2 text-[17px] text-textGray hover:text-blue-600 cursor-pointer">
         <iframe src={link} className="w-[100%] h-[70vh]" />

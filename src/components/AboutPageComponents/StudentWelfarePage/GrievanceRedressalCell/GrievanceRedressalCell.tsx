@@ -184,7 +184,7 @@ const GrievanceRedressalCell = () => {
 
                   {/* Description */}
                   {"description" in item && item.description && (
-                    <p className="md:text-lg  text-[14px] leading-7  text-textGray lg:pe-16 ">{item.description}</p>
+                    <p className="md:text-lg mt-5  text-[14px] leading-7  text-textGray lg:pe-16 ">{item.description}</p>
                   )}
 
                   {/* Bullet Points */}
@@ -202,14 +202,14 @@ const GrievanceRedressalCell = () => {
                   {"href" in item && item.href && (
                     <iframe
                       src={`${item.href}#toolbar=0&navpanes=0&view=FitH`}
-                      className="w-full h-[100vh] mt-6"
+                      className="w-full h-[100vh] mt-7"
                       title={item.title || `Document-${i}`}
                     ></iframe>
                   )}
 
                   {/* Table */}
                   {"type" in item && item.type === "table" && (
-                    <div className="overflow-x-auto mt-6">
+                    <div className="overflow-x-auto mt-7">
                       <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                         <thead className="bg-[#F3F8FC] text-[#2884CA]">
                           <tr>
