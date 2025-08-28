@@ -13,14 +13,14 @@ export default function SpotlightSection() {
       }}
     >
       {/* Top Section */}
-      <div className="max-w-7xl xl:max-w-[75%] mx-auto px-4 text-center py-16 md:py-10">
-        <h2 className="text-3xl md:text-4xl lg:text-[80px] font-bold mb-4 xl:mb-8 ">In the Spotlight</h2>
-        <p className="text-lg mb-12 text-white/70">Honoring Our Toppers for Their Dedication & Excellence!</p>
+      <div className="max-w-7xl xl:max-w-[75%] mx-auto px-4 lg:px-18 text-center py-16 md:py-10 mt-12">
+        <h2 className="text-3xl md:text-4xl lg:text-[80px] font-bold mb-4 lg:mb-8 xl:mb-8 ">In the Spotlight</h2>
+      <p className="text-lg lg:text-[20.34px] mb-12 text-[#FFFFFFB2]">Honoring Our Toppers for Their Dedication & Excellence!</p>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-[90px] xl:gap-16 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[50px] xl:gap-16 mb-20">
           {[1, 2, 3].map((item) => (
-            <div key={item} className=" text-white rounded-2xl p-6 flex flex-row items-center border-white border-[1px]">
+            <div key={item} className=" text-white rounded-2xl px-8 py-4 flex flex-row items-center border-white border-[1px]">
               <div>
                 <Image
                   src={image} // Replace with real image URL
@@ -38,14 +38,14 @@ export default function SpotlightSection() {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-32 mb-5">
+        <div className="text-center mt-52 mb-5 space-y-8">
           <h2 className="text-3xl md:text-4xl lg2:text-[76px] font-bold mb-4 max-w-2xl text-center mx-auto">Ready to take the next step?</h2>
           <p className="text-lg mb-6 max-w-2xl text-white/70  mx-auto">
             Book a one-on-one counseling session & get all your questions answered about admissions, programs & your future opportunities.
           </p>
           <button onClick={()=>setIsOpen(true)}
             aria-label="Book Your Counseling Session Today"
-            className="bg-white text-primary font-semibold py-3 px-6 rounded-full shadow-md hover:bg-gray-100 transition"
+            className="bg-white text-primary font-semibold py-[9px] px-5 rounded-full shadow-md hover:bg-gray-100 transition"
           >
             Book Your Counseling Session Today
           </button>

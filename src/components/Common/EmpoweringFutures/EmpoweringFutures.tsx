@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import empoweringFuture from "../../../../public/backgroundImages/empoverImages.jpg";
+import empoweringFuture from "../../../../public/backgroundImages/empoverImages-2.png";
 import { motion } from "framer-motion";
 import { CarouselDots } from "@/components/Common/CarouselDots/CarouselDots";
 import Link from "next/link";
@@ -96,7 +96,7 @@ export default function EmpoweringFutures() {
 
   return (
     <>
-      <section className="max-w-7xl xl:max-w-[75%]  overflow-hidden text-black mx-auto hidden md:block">
+      <section className="max-w-6xl xl:max-w-[75%]  overflow-hidden text-black mx-auto hidden md:block">
         {/* Top Content */}
         <div className="flex justify-between items-start  mx-auto pb-16">
           <div>
@@ -122,14 +122,14 @@ export default function EmpoweringFutures() {
             <h3 className="text-4xl md:text-2xl lg:text-3xl lg2:text-4xl xl:text-5xl font-semibold pb-6 xl:leading-13">
               A fulfilling career begins with our dedicated Placement Department.{" "}
             </h3>
-            <p className="text-xl text-white/80">
+            <p className="text-[19px] text-white/80">
               Step into a world of exciting career possibilities, where we focus not just on placements, but on honing your skills through tailored
               training and internship opportunities.{" "}
             </p>
           </div>
 
           {/* Image */}
-          <Image src={empoweringFuture} alt="empoweringFuture" className="rounded-xl w-full h-[500px] object-cover" />
+          <Image src={empoweringFuture} alt="empoweringFuture" className="rounded-xl w-full h-[500px] object-cover object-center" />
         </div>
 
         {/* Stats Section */}

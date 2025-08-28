@@ -86,7 +86,7 @@ const DepartmentSection = () => {
         emotionally, mentally and physically strong. The primary aims of physical education are varied, based on the needs of time and place. Sports
         is commonly defined as an organized, competitive and skillful physical activity requiring commitment and fair play.
       </p> */}
-     <section className="w-full bg-[#F5F5F7] py-16 px-6 md:px-12">
+     <section className="w-full bg-none py-16 px-6 md:px-12">
   <div className="grid md:grid-cols-2 gap-10 max-w-7xl mx-auto">
     {/* Goals Section */}
     <div className="bg-white py-10 px-9 w-[613px] h-[678px] rounded-lg shadow-sm">
@@ -94,7 +94,7 @@ const DepartmentSection = () => {
         Goals
       </h1>
       <p className="lg:text-[17px] md:text-md text-[14px] leading-7 pt-5 pb-8 text-[#86868B]">
-      The Aim of organized physical education, sports and games activities is to create an environment that stimulates selected movement experiences resulting in desirable responses that contribute to the optimal development of the individu al's potentialities in all the phases of life. In this direction, in order to organize and conduct various activities, the Sports and Games Committee is formed with the following objectives:
+      The Aim of organized physical educ  ation, sports and games activities is to create an environment that stimulates selected movement experiences resulting in desirable responses that contribute to the optimal development of the individu al's potentialities in all the phases of life. In this direction, in order to organize and conduct various activities, the Sports and Games Committee is formed with the following objectives:
       </p>
       <ul className="lg:text-lg list-square ml-5 md:text-md text-[14px] leading-7 text-[#86868B] space-y-2">
         {objectives.map((objective, index) => (
@@ -116,10 +116,12 @@ const DepartmentSection = () => {
     </div>
   </div>
 </section>
-
-      <ModelTable title="Sports Committee Panel" headers={["Sl No", "Name", "Designation", "Department"]} rows={members} />
+<div className="lg:px-32 mt-12">
+       <ModelTable title="Sports Committee Panel" headers={["Sl No", "Name", "Designation", "Department"]} rows={members} />
       <ModelTable title="College Sports Facilities" headers={["Sl No", "Sports", "No"]} rows={sportsFacilities} />
        <ModelTable title="Our Journey in State-Level Sports" headers={["Sl No", "Year", "Number of Events (State Level)","Number of Participants"]} rows={participation} />
+</div>
+ 
     </div>
   );
 };

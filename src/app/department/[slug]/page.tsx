@@ -116,7 +116,7 @@ export default async function DepartmentPage({ params }: { params: { slug: strin
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           youtubeUrl={department?.ytUrl}
-          thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1745994337/bzjmgq1zvi0ksxyptkz6.png"
+          thumbnail=""
         />
       </section>
       <section className="pt-26">
@@ -127,7 +127,7 @@ export default async function DepartmentPage({ params }: { params: { slug: strin
           ourVision={department.ourVision}
         />
       </section>
-      <section className="bg-[#071D2C] px-6 md:px-12 lg:px-16 xl:px-0">
+      <section className="bg-[#071D2C] px-6 md:px-12 lg:px-32 xl:px-0">
         <DepartmentHeadMessage depatmentHead={department.depatmentHead} />
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">

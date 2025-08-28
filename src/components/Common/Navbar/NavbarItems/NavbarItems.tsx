@@ -7,6 +7,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import FormModal from "@/components/campusComponent/FromModal/FromModal";
 import { Suspense } from "react"
+import ContactFormModal from "@/components/Modal/Modal";
 
 function NavbarItems() {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
@@ -55,7 +56,7 @@ const pathname = usePathname()
       </div>
 
     </div>
-      <FormModal isOpen={modalOpen} onClose={setModalOpen}/>
+      <ContactFormModal isOpen={modalOpen} onClose={setModalOpen}/>
       
     </>
   );

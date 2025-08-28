@@ -60,8 +60,8 @@ const HeroSection = () => {
                 priority
               />
             
-               <div className="absolute bottom-0 left-0 right-0 h-[200px] md:h-[500px] bg-gradient-to-t from-[#f5f4f4] via-white/85 via-50% to-transparent z-[10] md:hidden" />
-               {/* <div className="absolute bottom-0 left-0 right-0 h-[300px] md:h-[200px] bg-gradient-to-t from-[white] via-white/85 to-transparent z-[10] hidden md:block" /> */}
+               <div className="absolute bottom-0 left-0 right-0 h-[200px] md:h-[500px] bg-gradient-to-t from-[#fcfdff] via-white/85 via-50% to-transparent z-[10] md:hidden" />
+               <div className="absolute bottom-0 left-0 right-0 h-[300px] md:h-[200px] bg-gradient-to-t from-[#fcfdff] via-white/85 to-transparent z-[10] hidden md:block" />
             </SwiperSlide>
           ))}
         </Swiper>

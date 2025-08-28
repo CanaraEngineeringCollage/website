@@ -7,6 +7,8 @@ import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 import Activities from "@/components/EntrepreneurshipCellPageComponents/Activities/Activities";
+import DepartmentMissionVision from "@/components/DepartmentComponents/DepartmentMissionVision/page";
+import EnterpreneurshipMission from "@/components/EntrepreneurshipCellPageComponents/EnterpreneurshipMissionVision/EnterpreneurshipMission";
 
 export const metadata = {
   title: "Entrepreneurship Cell | Canara College",
@@ -25,9 +27,9 @@ const page = () => {
       <section>
         <HeroSection />
       </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
-        <IdeasText />
-      </section>
+      <section className="">
+        {/* <IdeasText /> */}
+<EnterpreneurshipMission/>      </section>
       <section>
         <Activities />
       </section>

@@ -46,7 +46,7 @@ export default function AboutCec() {
         <VideoPlayer
           videoUrl="BEVUuWkR7LU"
           youtubeUrl="BEVUuWkR7LU"
-          thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1745992220/wuayrpgijvzzg5pwvlxr.png"
+          thumbnail=""
         />
       </section>
       <section>
@@ -55,9 +55,9 @@ export default function AboutCec() {
       <section className="bg-[#071D2C] px-6 md:px-0 xl:px-0">
         <SecretaryMessage />
       </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+      {/* <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <AdminTeamSection />
-      </section>
+      </section> */}
       <section>
         <NextStepSection />
       </section>

@@ -38,7 +38,7 @@ const page = () => {
           titleClassname="text-[#1D1D1F] !max-w-full"
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           youtubeUrl="gdDkusd3udw"
-          thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1746006620/Container_3_vv5tog.png"
+          thumbnail=""
         />
       </section>
       <section className="px-6 md:px-12 lg:pl-16 lg:px-0 xl:px-0">
