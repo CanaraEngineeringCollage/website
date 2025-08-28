@@ -20,6 +20,8 @@ type Card = {
   content: React.ReactNode;
   style: string;
   desc?: string;
+  textalign?: string;
+  id?: number;
 };
 
 interface CarouselContextType {
@@ -284,22 +286,22 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
         <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
         {/* Bottom gradient overlay */}
         <div className="absolute bottom-0 left-0 right-0 h-[60vh] bg-gradient-to-t from-black/70 via-transparent to-transparent z-30 pointer-events-none" />
-        <div className={`relative ${card.style} z-40 p-8`}>
+        <div className={`relative ${card.style} z-40 p-8 ${card.textalign}`}>
           <MotionP
         layoutId={layout ? `category-${card.category}` : undefined}
-        className="text-[#c3bfbf] text-[18px] md:text-[31px] font-bold md:font-medium font-sans text-left"
+        className={`text-[white] text-[18px] ${card.id==1?"max-w-xl":"max-w-2xl"} md:text-[31px] font-bold md:font-medium font-sans `}
           >
         {card.category}
           </MotionP>
           <MotionP
         layoutId={layout ? `title-${card.title}` : undefined}
-        className="text-white text-[31px]  md:text-[76px] font-semibold max-w-3xl leading-[1.1] text-left [text-wrap:balance] font-sans mt-2"
+        className={`text-white text-[31px] ${card.id==1?"text-right":"text-left"} md:text-[76px] font-semibold max-w-5xl leading-[1.1]  [text-wrap:balance] font-sans mt-2`}
           >
         {card.title}
           </MotionP>
           <MotionP
         layoutId={layout ? `category-${card.category}` : undefined}
-        className="text-[#c3bfbf] text-[18px] md:text-[31px] max-w-3xl font-bold md:font-medium font-sans text-left"
+        className="text-[white] text-[18px] md:text-[31px] max-w-6xl font-bold md:font-medium font-sans text-left"
           >
         {card.desc}
           </MotionP>

@@ -79,31 +79,43 @@ const participation = [
 
 const DepartmentSection = () => {
   return (
-    <div className="max-w-7xl mx-auto  xl:max-w-[75%]   text-[#1D1D1F]">
+    <div className="w-full mx-auto  xl:max-w-[75%]   text-[#1D1D1F]">
       {/* <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-[#1D1D1F]"> Department of Physical Education</h1>
       <p className="lg:text-xl md:text-lg text-[14px] leading-7 pt-5 pb-8 text-textGray">
         Physical education-is an integral part of educational program designed to promote the optimum development of an individual. It makes one
         emotionally, mentally and physically strong. The primary aims of physical education are varied, based on the needs of time and place. Sports
         is commonly defined as an organized, competitive and skillful physical activity requiring commitment and fair play.
       </p> */}
-      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-[#1D1D1F]">Goals</h1>
-      <p className="lg:text-xl md:text-lg text-[14px] leading-7 pt-5 pb-8 text-textGray">
-        The Aim of organized physical education, sports and games activities is to create an environment that stimulates selected movement experiences
-        resulting in desirable responses that contribute to the optimal development of the individual's potentialities in all the phases of life. In
-        this direction, in order to organize and conduct various activities, the Sports and Games Committee is formed with the following objectives:{" "}
+     <section className="w-full bg-[#F5F5F7] py-16 px-6 md:px-12">
+  <div className="grid md:grid-cols-2 gap-10 max-w-7xl mx-auto">
+    {/* Goals Section */}
+    <div className="bg-white py-10 px-9 w-[613px] h-[678px] rounded-lg shadow-sm">
+      <h1 className="text-3xl md:text-[40px] lg2:text-[36px]  xl:text-6xl font-bold text-[#1D1D1F]">
+        Goals
+      </h1>
+      <p className="lg:text-[17px] md:text-md text-[14px] leading-7 pt-5 pb-8 text-[#86868B]">
+      The Aim of organized physical education, sports and games activities is to create an environment that stimulates selected movement experiences resulting in desirable responses that contribute to the optimal development of the individu al's potentialities in all the phases of life. In this direction, in order to organize and conduct various activities, the Sports and Games Committee is formed with the following objectives:
       </p>
-      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-[#1D1D1F]">Objectives</h1>
-      <ul className="lg:text-xl text-start list-disc ml-5 md:text-lg text-[14px] leading-7 pt-5 pb-8 text-textGray">
+      <ul className="lg:text-lg list-square ml-5 md:text-md text-[14px] leading-7 text-[#86868B] space-y-2">
         {objectives.map((objective, index) => (
           <li key={index}>{objective}</li>
         ))}
       </ul>
-      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-[#1D1D1F]">Responsibilities</h1>
-      <ul className="lg:text-xl text-start list-disc ml-5 md:text-lg text-[14px] leading-7 pt-5 pb-8 text-textGray">
-        {duty.map((objective, index) => (
-          <li>{objective}</li>
+    </div>
+
+    {/* Responsibilities Section */}
+    <div className="bg-white py-10 px-9  rounded-lg border w-[613px] h-[678px] border-gray-200 shadow-sm">
+      <h1 className="text-3xl md:text-[40px] lg2:text-[36px] xl:text-6xl font-bold text-[#1D1D1F]">
+        Responsibilities
+      </h1>
+      <ul className="lg:text-[17px] list-square ml-5 md:text-md text-[14px] leading-7 text-[#86868B] space-y-2 pt-5">
+        {duty.map((responsibility, index) => (
+          <li key={index}>{responsibility}</li>
         ))}
       </ul>
+    </div>
+  </div>
+</section>
 
       <ModelTable title="Sports Committee Panel" headers={["Sl No", "Name", "Designation", "Department"]} rows={members} />
       <ModelTable title="College Sports Facilities" headers={["Sl No", "Sports", "No"]} rows={sportsFacilities} />

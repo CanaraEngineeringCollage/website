@@ -5,13 +5,13 @@ const HeroSection = () => {
   return (
     <section className="text-black    relative  w-full overflow-hidden pb-28">
       <div className="relative h-[90vh] lg:h-[150vh] w-[100vw] flex justify-center items-center">
-        <Image src="/backgroundImages/1.webp" alt="" width={1000} height={1000} className="object-cover w-full h-full" />
+        <Image src="/backgroundImages/1.webp" alt="" width={1000} height={1000} className="object-cover object-top md:object-bottom w-full h-full" />
         <div className="absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-black/60 to-transparent z-10" />
         {/* <div className="absolute bottom-0 left-0 right-0 h-[200px] md:h-[1000px] bg-gradient-to-t from-white via-white/85 via-50% to-transparent z-[10] md:hidden" /> */}
         <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[600px] bg-gradient-to-t from-white via-transparent to-transparent z-[10] " />
-        <div className="absolute lg:top-20 top-20 text-center leading-[1.2] text-[28px] md:text-[40px]  lg:text-[77px] text-white font-bold left-0 w-full z-10 ">
+        <div className="absolute flex justify-end items-center top-1/2 -translate-y-1/2 right-12 max-w-2xl text-end leading-[1.2] text-[28px] md:text-[40px] lg:text-[77px] text-[white] font-bold w-full z-10">
           <h1>
-            Welcomes to the Digital <br /> Learning Resources
+            Welcomes to the Digital Learning Resources
           </h1>
         </div>
         <div className="absolute bottom-0 z-[999] w-full left-0   text-center flex justify-center">

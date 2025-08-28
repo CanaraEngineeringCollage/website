@@ -10,7 +10,7 @@ const objectives = [
 const IdeasText = () => {
   return (
     <div className="max-w-7xl mx-auto lg:px-36 xl:max-w-[75%] text-center pt-20 text-[#1D1D1F]">
-      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold">Where Ideas Take Flight</h1>
+      <h1 className="text-3xl md:text-[40px] lg2:text-[46.5px] xl:text-6xl font-bold">Where Ideas Take Flight</h1>
       <p className="lg:text-xl md:text-lg text-[14px] leading-7 py-10 text-textGray">
         The Canara Entrepreneurship Cell is dedicated to nurturing innovation, fostering leadership, & empowering students to transform ideas into
         successful ventures. Through mentorship, startup incubation, industry collaborations, & hands-on workshops, we provide the perfect launchpad

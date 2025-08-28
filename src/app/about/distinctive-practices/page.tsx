@@ -31,12 +31,12 @@ export const metadata = {
 export default function DistinctiveCec() {
   return (
     <>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+      <section className="">
         <DistinctivePracties />
       </section>
-      <section className="bg-[#E5E5EA]">
+      {/* <section className="bg-[#E5E5EA]">
         <FooterCard />
-      </section>
+      </section> */}
     </>
   );
 }

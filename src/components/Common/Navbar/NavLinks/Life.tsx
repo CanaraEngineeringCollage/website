@@ -86,8 +86,8 @@ export default function Life() {
             </div>
 
             {/* Column 4 */}
-            <div className="flex gap-4">
-              <div className="flex items-start">
+            <div className="flex gap-4 ">
+              <div className="flex items-start mt-1">
                 <Campus />
               </div>
               <div className="flex flex-col gap-2">

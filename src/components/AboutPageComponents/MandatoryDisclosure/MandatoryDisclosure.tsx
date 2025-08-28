@@ -18,8 +18,8 @@ const MandatoryDisclosure = () => {
               <h1
                 key={index}
                 onClick={() => setSelectedIndex(index)}
-                className={`border-b-2 text-[20px] pb-3 mb-3 border-border cursor-pointer ${
-                  selectedIndex === index ? "text-[#2884CA] font-bold" : "text-textGray font-[500]"
+                className={`border-b-2  pb-3 mb-3 border-border cursor-pointer ${
+                  selectedIndex === index ? "text-[#2884CA] font-bold text-[18px]" : "text-textGray font-[500] text-[20px]"
                 }`}
               >
                 {section.title}
