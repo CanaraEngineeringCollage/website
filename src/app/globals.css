@@ -36,6 +36,10 @@ lite-youtube {
 .your-container-class lite-youtube {
   max-width: none;
 }
+.list-square {
+  list-style-type: square;
+  padding-left: 1.25rem; /* optional */
+}
 
 /* Option 3: If you want a specific width instead */
 lite-youtube {

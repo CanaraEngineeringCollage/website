@@ -83,7 +83,7 @@ const stats: Stat[] = [
   },
 ];
 
-export default function EmpoweringFutures() {
+export default function   EmpoweringFutures() {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   useEffect(() => {

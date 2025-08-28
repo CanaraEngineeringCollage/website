@@ -138,7 +138,13 @@
           "categories": [
             {
               "title": "Hardware Facilities:",
-              "items": ["Desktop Computers", "Network Switch", "Centralised UPS", "Projector", "Printer"]
+              "items": [
+                "Desktop Computers",
+                "Network Switch",
+                "Centralised UPS",
+                "Projector",
+                "Printer"
+              ]
             },
             {
               "title": "Software Facilities:",
@@ -204,7 +210,9 @@
           "title": "DAC: Departmental Advisory Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Expert from Academia",
@@ -216,23 +224,53 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "DQAC: Departmental Quality Assurance Committe",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "SIX Senior Faculty Members", "Programme Coordinator"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "SIX Senior Faculty Members",
+                "Programme Coordinator"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Members", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Members",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Budget/Purchase Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Programme Coordinator",
@@ -242,17 +280,47 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Project Assessment Committee (DPAC)",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "Programme Coordinator", "Seminar Coordinator", "Research Coordinator", "Project Coordinator"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "Programme Coordinator",
+                "Seminar Coordinator",
+                "Research Coordinator",
+                "Project Coordinator"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -328,10 +396,30 @@
         "table": [
           {
             "title": [],
-            "firstColumn": ["Alok Ranjan", "Saritha Suvarna", "Namitha A Amdalli", "Sowmya K"],
-            "secondColumn": ["Verdine Noronha", "Shatananda Bhat P", "Kishor Shivathaya S", "Aruna Kumari G K"],
-            "thirdColumn": ["Annapurna M", "Kavya A M", "Sukshma Shetty", "Tara B B"],
-            "fourthColumn": ["Babitha Ganesh Kulal", "Saritha M", "Janardhana Bhat K", "Sushma"]
+            "firstColumn": [
+              "Alok Ranjan",
+              "Saritha Suvarna",
+              "Namitha A Amdalli",
+              "Sowmya K"
+            ],
+            "secondColumn": [
+              "Verdine Noronha",
+              "Shatananda Bhat P",
+              "Kishor Shivathaya S",
+              "Aruna Kumari G K"
+            ],
+            "thirdColumn": [
+              "Annapurna M",
+              "Kavya A M",
+              "Sukshma Shetty",
+              "Tara B B"
+            ],
+            "fourthColumn": [
+              "Babitha Ganesh Kulal",
+              "Saritha M",
+              "Janardhana Bhat K",
+              "Sushma"
+            ]
           }
         ]
       },
@@ -342,7 +430,12 @@
         "table": [
           {
             "slNo": "true",
-            "title": ["Product", "Year", "Team Members", "Team Leader"],
+            "title": [
+              "Product",
+              "Year",
+              "Team Members",
+              "Team Leader"
+            ],
             "firstColumn": [
               "Institue Managment System for 15 Educational Institutions",
               "Placement Department Automation System 2.0",
@@ -359,7 +452,22 @@
               "VTU Result Extractor",
               "Library Visit Monitoring System"
             ],
-            "secondColumn": ["2022", "2022", "2023", "2023", "2023", "2023", "2023", "2023", "2024", "2024", "2024", "2024", "2024", "2025"],
+            "secondColumn": [
+              "2022",
+              "2022",
+              "2023",
+              "2023",
+              "2023",
+              "2023",
+              "2023",
+              "2023",
+              "2024",
+              "2024",
+              "2024",
+              "2024",
+              "2024",
+              "2025"
+            ],
             "thirdColumn": [
               "Shatananda Bhat P",
               "Shatananda Bhat P",
@@ -1377,27 +1485,37 @@
       "allFacilities": [
         {
           "title": "Advance Computing Laboratory",
-          "points": ["This lab is utilized by the 2nd year ISE students for Java & Advanced Java experiments."],
+          "points": [
+            "This lab is utilized by the 2nd year ISE students for Java & Advanced Java experiments."
+          ],
           "imageUrl": "https://www.canaraengineering.in/departments/is/facilities/Advance%20Computing%20Lab(ISEL03)_400.jpg"
         },
         {
           "title": "Algorithm Laboratory",
-          "points": ["This lab is utilized by the 2nd year ISE students to conduct lab programs related to Data structures and Algorithms."],
+          "points": [
+            "This lab is utilized by the 2nd year ISE students to conduct lab programs related to Data structures and Algorithms."
+          ],
           "imageUrl": "https://www.canaraengineering.in/departments/is/facilities/Algorithm%20Lab(ISEL02)_400.jpg"
         },
         {
           "title": "Machine Learning/Data Processing & Visualization Laboratory",
-          "points": ["This lab is utilized by 3rd year ISE students for laboratories such as Machine Learning, Python and Data Visualization Lab."],
+          "points": [
+            "This lab is utilized by 3rd year ISE students for laboratories such as Machine Learning, Python and Data Visualization Lab."
+          ],
           "imageUrl": "https://www.canaraengineering.in/departments/is/facilities/Project%20Lab(ISEL04)_400.jpg"
         },
         {
           "title": "Project Laboratory",
-          "points": ["This lab is utilized by the 3rd and 4th year students for developing mini-projects and major project."],
+          "points": [
+            "This lab is utilized by the 3rd and 4th year students for developing mini-projects and major project."
+          ],
           "imageUrl": "https://www.canaraengineering.in/departments/is/facilities/Project%20Lab(ISEL04)_400.jpg"
         },
         {
           "title": "Code Nest Laboratory",
-          "points": ["This lab is utilized by 2nd and 3rd year ISE students for Latex Lab and Devops Labs."],
+          "points": [
+            "This lab is utilized by 2nd and 3rd year ISE students for Latex Lab and Devops Labs."
+          ],
           "imageUrl": "https://www.canaraengineering.in/departments/is/facilities/CodeNest%20Lab(ISEL05)_400.jpg"
         },
         {
@@ -1464,9 +1582,17 @@
     "publications": [
       {
         "title": "Staff Publications",
-        "imageUrl": ["https://www.canaraengineering.in/departments/is/citation.jpg", "https://www.canaraengineering.in/departments/is/INDEXED.jpg"]
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/citation.jpg",
+          "https://www.canaraengineering.in/departments/is/INDEXED.jpg"
+        ]
       },
-      { "title": "Student Publications", "imageUrl": ["https://www.canaraengineering.in/departments/is/student%20publication.jpg"] }
+      {
+        "title": "Student Publications",
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/student%20publication.jpg"
+        ]
+      }
     ],
     "studentAcheivemtents": [
       {
@@ -1497,7 +1623,6 @@
           "points": []
         }
       ],
-
       "annualIntake": ""
     },
     "organisation": {
@@ -1508,7 +1633,9 @@
           "title": "DAC: Departmental Advisory Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Expert from Academia",
@@ -1520,23 +1647,53 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "DQAC: Departmental Quality Assurance Committe",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "SIX Senior Faculty Members", "Programme Coordinator"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "SIX Senior Faculty Members",
+                "Programme Coordinator"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Members", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Members",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Budget/Purchase Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Programme Coordinator",
@@ -1546,17 +1703,47 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Project Assessment Committee (DPAC)",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "Programme Coordinator", "Seminar Coordinator", "Research Coordinator", "Project Coordinator"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "Programme Coordinator",
+                "Seminar Coordinator",
+                "Research Coordinator",
+                "Project Coordinator"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1632,10 +1819,30 @@
         "table": [
           {
             "title": [],
-            "firstColumn": ["Alok Ranjan", "Saritha Suvarna", "Namitha A Amdalli", "Sowmya K"],
-            "secondColumn": ["Verdine Noronha", "Shatananda Bhat P", "Kishor Shivathaya S", "Aruna Kumari G K"],
-            "thirdColumn": ["Annapurna M", "Kavya A M", "Sukshma Shetty", "Tara B B"],
-            "fourthColumn": ["Babitha Ganesh Kulal", "Saritha M", "Janardhana Bhat K", "Sushma"]
+            "firstColumn": [
+              "Alok Ranjan",
+              "Saritha Suvarna",
+              "Namitha A Amdalli",
+              "Sowmya K"
+            ],
+            "secondColumn": [
+              "Verdine Noronha",
+              "Shatananda Bhat P",
+              "Kishor Shivathaya S",
+              "Aruna Kumari G K"
+            ],
+            "thirdColumn": [
+              "Annapurna M",
+              "Kavya A M",
+              "Sukshma Shetty",
+              "Tara B B"
+            ],
+            "fourthColumn": [
+              "Babitha Ganesh Kulal",
+              "Saritha M",
+              "Janardhana Bhat K",
+              "Sushma"
+            ]
           }
         ]
       },
@@ -1646,7 +1853,12 @@
         "table": [
           {
             "slNo": "true",
-            "title": ["Product", "Year", "Team Members", "Team Leader"],
+            "title": [
+              "Product",
+              "Year",
+              "Team Members",
+              "Team Leader"
+            ],
             "firstColumn": [
               "Institue Managment System for 15 Educational Institutions",
               "Placement Department Automation System 2.0",
@@ -1663,7 +1875,22 @@
               "VTU Result Extractor",
               "Library Visit Monitoring System"
             ],
-            "secondColumn": ["2022", "2022", "2023", "2023", "2023", "2023", "2023", "2023", "2024", "2024", "2024", "2024", "2024", "2025"],
+            "secondColumn": [
+              "2022",
+              "2022",
+              "2023",
+              "2023",
+              "2023",
+              "2023",
+              "2023",
+              "2023",
+              "2024",
+              "2024",
+              "2024",
+              "2024",
+              "2024",
+              "2025"
+            ],
             "thirdColumn": [
               "Shatananda Bhat P",
               "Shatananda Bhat P",
@@ -2590,7 +2817,6 @@
       }
     ]
   },
-
   {
     "name": "Electronics & Communication Engineering",
     "slug": "electronics-communication-engineering",
@@ -2743,14 +2969,28 @@
           "title": "Software Lab I-VLSI Lab/Computer Networks Lab",
           "desc": "This laboratory is utilized by the 4th year students for VLSI Lab and 3rd year students for Computer Networks lab.Electric software enables to design analog VSLI circuits and layouts and simulate them. Xilinx IDE enables to simulate digital VLSI designs.NCTUNS is used to simulate computer networks using switch and hub for TCP and UDP protocols for different bandwidths and error rates. Shortest routing protocols are executed using C compiler",
           "methodes": "Major tools",
-          "points": ["35 Pentium Core PCs", "48 port Ethernet Switch", "Centralised UPS", "Xilinx software", "Electric software", "NCTUNS software"],
+          "points": [
+            "35 Pentium Core PCs",
+            "48 port Ethernet Switch",
+            "Centralised UPS",
+            "Xilinx software",
+            "Electric software",
+            "NCTUNS software"
+          ],
           "imageUrl": "sshttps://www.canaraengineering.in/departments/is/facilities/Project%20Lab(ISEL04)_400.jpg"
         },
         {
           "title": "Software Lab II-DSP Lab/Embedded Controller Lab",
           "desc": "This laboratory is equipped with MATLAB software, Code Composer Studiowhere students learn to execute signal processing programs in the 5th semester. In the Embedded Controller Lab, the students of 6th semester interface STM32F100RB microcontroller with various peripherals.",
           "methodes": "List of major tools",
-          "points": ["MATLAB 6.5", "KeilUVision 4", "CCS Full version software", "STM32F100RB kits", "Interfacing Kits", "TMS DSP Processor kits"],
+          "points": [
+            "MATLAB 6.5",
+            "KeilUVision 4",
+            "CCS Full version software",
+            "STM32F100RB kits",
+            "Interfacing Kits",
+            "TMS DSP Processor kits"
+          ],
           "imageUrl": "sshttps://www.canaraengineering.in/departments/is/facilities/Project%20Lab(ISEL04)_400.jpg"
         },
         {
@@ -2814,9 +3054,17 @@
     "publications": [
       {
         "title": "Staff Publications",
-        "imageUrl": ["https://www.canaraengineering.in/departments/is/citation.jpg", "https://www.canaraengineering.in/departments/is/INDEXED.jpg"]
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/citation.jpg",
+          "https://www.canaraengineering.in/departments/is/INDEXED.jpg"
+        ]
       },
-      { "title": "Student Publications", "imageUrl": ["https://www.canaraengineering.in/departments/is/student%20publication.jpg"] }
+      {
+        "title": "Student Publications",
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/student%20publication.jpg"
+        ]
+      }
     ],
     "studentAcheivemtents": [
       {
@@ -2874,7 +3122,6 @@
           "points": []
         }
       ],
-
       "annualIntake": ""
     },
     "organisation": {
@@ -2896,32 +3143,67 @@
             "fourthColumn": []
           }
         ],
-        "th": ["Domain", "Faculty", "Research Holders"],
+        "th": [
+          "Domain",
+          "Faculty",
+          "Research Holders"
+        ],
         "moreDetailesTable": [
           {
             "domain": "Applied Electronics",
-            "faculty": ["Mrs. Jayashree K", "Mr. Sandeep Prabhu M"],
-            "researchScholars": ["Mrs. Tara B B", "Mr. Divyesh Divakar", "Mr. Anantha Krishna Kamath"]
+            "faculty": [
+              "Mrs. Jayashree K",
+              "Mr. Sandeep Prabhu M"
+            ],
+            "researchScholars": [
+              "Mrs. Tara B B",
+              "Mr. Divyesh Divakar",
+              "Mr. Anantha Krishna Kamath"
+            ]
           },
           {
             "domain": "Communication System",
-            "faculty": ["Mr. Vinay H S", "Mrs. Rajitha A A", "Mr. Sreerama Samartha J G"],
-            "researchScholars": ["Research Scholars"]
+            "faculty": [
+              "Mr. Vinay H S",
+              "Mrs. Rajitha A A",
+              "Mr. Sreerama Samartha J G"
+            ],
+            "researchScholars": [
+              "Research Scholars"
+            ]
           },
           {
             "domain": "VLSI and Embedded System",
-            "faculty": ["Dr. Dayananda G K"],
-            "researchScholars": ["Mr. Mohan A R"]
+            "faculty": [
+              "Dr. Dayananda G K"
+            ],
+            "researchScholars": [
+              "Mr. Mohan A R"
+            ]
           },
           {
             "domain": "Signal Processing and Computer Programming",
-            "faculty": ["Dr. Ganesh V. Bhat"],
-            "researchScholars": ["Mr. Padmahasa M", "Mr. Vayusutha M"]
+            "faculty": [
+              "Dr. Ganesh V. Bhat"
+            ],
+            "researchScholars": [
+              "Mr. Padmahasa M",
+              "Mr. Vayusutha M"
+            ]
           },
           {
             "domain": "Artificial Intelligence & Machine Learning",
-            "faculty": ["Mr. Manjunatha I R", "Mr. Sujit Satish Pai", "Mrs. Savitha Acharya", "Mrs. Akshatha G Baliga", "Dr. Raghavendra M Shetty K"],
-            "researchScholars": ["Mrs. Suchitra N Shenoy", "Mr. Ajeya B"]
+            "faculty": [
+              "Mr. Manjunatha I R",
+              "Mr. Sujit Satish Pai",
+              "Mrs. Savitha Acharya",
+              "Mrs. Akshatha G Baliga",
+              "Dr. Raghavendra M Shetty K"
+            ],
+            "researchScholars": [
+              "Mrs. Suchitra N Shenoy",
+              "Mr. Ajeya B"
+            ]
           }
         ]
       },
@@ -2938,43 +3220,90 @@
             "fourthColumn": []
           }
         ],
-        "th": ["YEAR", "PROJECT TITLE", "GUIDE", "MEMBERS"],
+        "th": [
+          "YEAR",
+          "PROJECT TITLE",
+          "GUIDE",
+          "MEMBERS"
+        ],
         "moreDetailesTable": [
           {
             "year": "2022-23",
             "domain": "MULTI CONTROLLED ELECTRIC WHEEL CHAIR",
-            "faculty": ["Ms. Savitha Acharya"],
-            "researchScholars": ["4CB19EC021 Dheeraj Shenoy", "4CB19EC002 Aghan Jain", "4CB19EC023 Harsvaradhan", "4CB19EC034 K S Muhammad Sawad"]
+            "faculty": [
+              "Ms. Savitha Acharya"
+            ],
+            "researchScholars": [
+              "4CB19EC021 Dheeraj Shenoy",
+              "4CB19EC002 Aghan Jain",
+              "4CB19EC023 Harsvaradhan",
+              "4CB19EC034 K S Muhammad Sawad"
+            ]
           },
           {
             "year": "2023-24",
             "domain": "AUTOMATIC RUBBER MILK MIXING MACHINE BY DETERMINING THE DRY RUBBER CONTENT OF LATEX",
-            "faculty": ["Mr. Vinay H S"],
-            "researchScholars": ["4CB20EC008 Ashish Kotian", "4CB21EC402 NaviKarthik", "4CB21EC400 Abhishek Gatty", "4CB20EC042 Sanketh Rao"]
+            "faculty": [
+              "Mr. Vinay H S"
+            ],
+            "researchScholars": [
+              "4CB20EC008 Ashish Kotian",
+              "4CB21EC402 NaviKarthik",
+              "4CB21EC400 Abhishek Gatty",
+              "4CB20EC042 Sanketh Rao"
+            ]
           },
           {
             "year": "2023-24",
             "domain": "ADVAYA VAHANA",
-            "faculty": ["Ms. Jayashree K"],
-            "researchScholars": ["4CB20EC032 Pruthviraj S Uppar", "4CB20EC034 Rachan A R", "4CB20EC043 Sahana", "4CB20EC051 Shrilakshmi G Hegde"]
+            "faculty": [
+              "Ms. Jayashree K"
+            ],
+            "researchScholars": [
+              "4CB20EC032 Pruthviraj S Uppar",
+              "4CB20EC034 Rachan A R",
+              "4CB20EC043 Sahana",
+              "4CB20EC051 Shrilakshmi G Hegde"
+            ]
           },
           {
             "year": "2023-24",
             "domain": "LOW-COST MYOELECTRIC PROSTHETIC ARM",
-            "faculty": ["Dr. Dayananda G K"],
-            "researchScholars": ["4CB20EC004 Aditya P", "4CB20EC006 Amel Rayaz Bailur", "4CB20EC022 Nisha Shetty", "4CB20EC047 Sameer M Hegde"]
+            "faculty": [
+              "Dr. Dayananda G K"
+            ],
+            "researchScholars": [
+              "4CB20EC004 Aditya P",
+              "4CB20EC006 Amel Rayaz Bailur",
+              "4CB20EC022 Nisha Shetty",
+              "4CB20EC047 Sameer M Hegde"
+            ]
           },
           {
             "year": "2023-24",
             "domain": "VENDING MACHINE USING UPI",
-            "faculty": ["Ms. Rajitha A A"],
-            "researchScholars": ["4CB20EC002 Abhijith A", "4CB20EC009 Ashwin K S", "4CB20EC016 Krithik S K", "4CB20EC019 Manoj Hegde"]
+            "faculty": [
+              "Ms. Rajitha A A"
+            ],
+            "researchScholars": [
+              "4CB20EC002 Abhijith A",
+              "4CB20EC009 Ashwin K S",
+              "4CB20EC016 Krithik S K",
+              "4CB20EC019 Manoj Hegde"
+            ]
           },
           {
             "year": "2024-25",
             "domain": "DESIGN AND IMPLEMENTATION OF HELICAL ANTENNA FOR AIRCRAFT COMMUNICATION",
-            "faculty": ["Mr. Sreerama Samartha J G"],
-            "researchScholars": ["4CB21EC001 Aishwarya H S", "4CB21EC054 Spandana", "4CB21EC020 Lata Keshav Naik", "4CB21EC053 Sonali S"]
+            "faculty": [
+              "Mr. Sreerama Samartha J G"
+            ],
+            "researchScholars": [
+              "4CB21EC001 Aishwarya H S",
+              "4CB21EC054 Spandana",
+              "4CB21EC020 Lata Keshav Naik",
+              "4CB21EC053 Sonali S"
+            ]
           }
         ]
       },
@@ -3027,9 +3356,21 @@
         "table": [
           {
             "title": [],
-            "firstColumn": ["Ms. savitha Acharya", "Mr. Sreerama Samarta J G", "Mr. Vinay H S"],
-            "secondColumn": ["Ms.Jayasree K", "Mr. Sandeep Prabhu M", "Mr. Manjunath I R"],
-            "thirdColumn": ["Ms. Akshatha G Baliga", "Ms.Rajitha A A", "Mr. Sujith S Pai"],
+            "firstColumn": [
+              "Ms. savitha Acharya",
+              "Mr. Sreerama Samarta J G",
+              "Mr. Vinay H S"
+            ],
+            "secondColumn": [
+              "Ms.Jayasree K",
+              "Mr. Sandeep Prabhu M",
+              "Mr. Manjunath I R"
+            ],
+            "thirdColumn": [
+              "Ms. Akshatha G Baliga",
+              "Ms.Rajitha A A",
+              "Mr. Sujith S Pai"
+            ],
             "fourthColumn": []
           }
         ]
@@ -4077,9 +4418,17 @@
     "publications": [
       {
         "title": "Staff Publications",
-        "imageUrl": ["https://www.canaraengineering.in/departments/is/citation.jpg", "https://www.canaraengineering.in/departments/is/INDEXED.jpg"]
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/citation.jpg",
+          "https://www.canaraengineering.in/departments/is/INDEXED.jpg"
+        ]
       },
-      { "title": "Student Publications", "imageUrl": ["https://www.canaraengineering.in/departments/is/student%20publication.jpg"] }
+      {
+        "title": "Student Publications",
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/student%20publication.jpg"
+        ]
+      }
     ],
     "studentAcheivemtents": [
       {
@@ -4103,7 +4452,6 @@
         "Game Design"
       ],
       "academicAdditionalSkills": [],
-
       "annualIntake": "60"
     },
     "organisation": {
@@ -4114,7 +4462,9 @@
           "title": "DAC: Departmental Advisory Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Expert from Academia",
@@ -4126,23 +4476,53 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "DQAC: Departmental Quality Assurance Committe",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "SIX Senior Faculty Members", "Programme Coordinator"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "SIX Senior Faculty Members",
+                "Programme Coordinator"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Members", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Members",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Budget/Purchase Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Programme Coordinator",
@@ -4152,24 +4532,59 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Project Assessment Committee (DPAC)",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "Programme Coordinator", "Seminar Coordinator", "Research Coordinator", "Project Coordinator"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "Programme Coordinator",
+                "Seminar Coordinator",
+                "Research Coordinator",
+                "Project Coordinator"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         }
       ]
     },
     "research": [
       {
         "heading": "Research Areas",
-        "points": ["Machine Learning", "Biomedical Signal Processing", "Data Science and Big Data Analytics", "Computer Vision & Deep Learning"],
+        "points": [
+          "Machine Learning",
+          "Biomedical Signal Processing",
+          "Data Science and Big Data Analytics",
+          "Computer Vision & Deep Learning"
+        ],
         "imageUrl": "",
         "table": [
           {
@@ -4201,7 +4616,11 @@
       },
       {
         "heading": "",
-        "points": ["Mr. Anantha Krishna Kamath", "Mrs. Pooja N S", "Mr. Ravishankara K"],
+        "points": [
+          "Mr. Anantha Krishna Kamath",
+          "Mrs. Pooja N S",
+          "Mr. Ravishankara K"
+        ],
         "imageUrl": "",
         "table": [
           {
@@ -5215,7 +5634,13 @@
           "categories": [
             {
               "title": "Hardware Facilities:",
-              "items": ["Desktop Computers", "Network Switch", "Centralised UPS", "Projector", "Printer"]
+              "items": [
+                "Desktop Computers",
+                "Network Switch",
+                "Centralised UPS",
+                "Projector",
+                "Printer"
+              ]
             },
             {
               "title": "Software Facilities:",
@@ -5249,9 +5674,17 @@
     "publications": [
       {
         "title": "Staff Publications",
-        "imageUrl": ["https://www.canaraengineering.in/departments/is/citation.jpg", "https://www.canaraengineering.in/departments/is/INDEXED.jpg"]
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/citation.jpg",
+          "https://www.canaraengineering.in/departments/is/INDEXED.jpg"
+        ]
       },
-      { "title": "Student Publications", "imageUrl": ["https://www.canaraengineering.in/departments/is/student%20publication.jpg"] }
+      {
+        "title": "Student Publications",
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/student%20publication.jpg"
+        ]
+      }
     ],
     "studentAcheivemtents": [
       {
@@ -5282,7 +5715,6 @@
         "Business Skill Development Courses"
       ],
       "academicAdditionalSkills": [],
-
       "annualIntake": "60"
     },
     "organisation": {
@@ -5293,7 +5725,9 @@
           "title": "DAC: Departmental Advisory Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Expert from Academia",
@@ -5305,23 +5739,53 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "DQAC: Departmental Quality Assurance Committe",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "SIX Senior Faculty Members", "Programme Coordinator"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "SIX Senior Faculty Members",
+                "Programme Coordinator"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Members", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Members",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Budget/Purchase Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Programme Coordinator",
@@ -5331,24 +5795,58 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Project Assessment Committee (DPAC)",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "Programme Coordinator", "Seminar Coordinator", "Research Coordinator", "Project Coordinator"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "Programme Coordinator",
+                "Seminar Coordinator",
+                "Research Coordinator",
+                "Project Coordinator"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         }
       ]
     },
     "research": [
       {
         "heading": "Research Areas",
-        "points": ["Artificial Intelligence", "Nanotechnology", "Cryptography"],
+        "points": [
+          "Artificial Intelligence",
+          "Nanotechnology",
+          "Cryptography"
+        ],
         "imageUrl": "",
         "table": [
           {
@@ -5380,7 +5878,13 @@
       },
       {
         "heading": "FACULTY PURSUING DOCTORAL STUDIES",
-        "points": ["Pavithra H B", "Yathish K", "Vinod Kumar B", "Ramesh E", "Yojana Kiran kumar"],
+        "points": [
+          "Pavithra H B",
+          "Yathish K",
+          "Vinod Kumar B",
+          "Ramesh E",
+          "Yojana Kiran kumar"
+        ],
         "imageUrl": "",
         "table": [
           {
@@ -6361,7 +6865,9 @@
           "title": "DAC: Departmental Advisory Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Expert from Academia",
@@ -6373,13 +6879,28 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member Secretary", "Member", "Member", "Member"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member Secretary",
+                "Member",
+                "Member",
+                "Member"
+              ]
+            }
+          ]
         },
         {
           "title": "DQAC: Departmental Quality Assurance Committe",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Accreditation (NBA/NAAC)/Program Coordinator",
@@ -6391,27 +6912,78 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member Secretary", "Member", "Member", "Member", "Member", "Spl. Invitee(s)"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member Secretary",
+                "Member",
+                "Member",
+                "Member",
+                "Member",
+                "Spl. Invitee(s)"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Budget/Purchase Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "Senior Faculty Member", "Accreditation Coordinator", "R&D Coordinator", "Faculty Member"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "Senior Faculty Member",
+                "Accreditation Coordinator",
+                "R&D Coordinator",
+                "Faculty Member"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member Secretary", "Member", "Member", "Member"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member Secretary",
+                "Member",
+                "Member",
+                "Member"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Project Assessment Committee (DPAC)",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "Project Coordinator", "Senior Faculty Member", "Guide", "R&D Coordinator or Domain Expert(s)"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "Project Coordinator",
+                "Senior Faculty Member",
+                "Guide",
+                "R&D Coordinator or Domain Expert(s)"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Coordinator", "Member", "Member", "Spl. Invitee(s)"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Coordinator",
+                "Member",
+                "Member",
+                "Spl. Invitee(s)"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6446,7 +7018,11 @@
         "imageUrl": "https://www.canaraengineering.in/departments/ai/labpics/FacultyAchievements.JPG",
         "table": [
           {
-            "title": ["Faculty Name", "Research Domain", "University"],
+            "title": [
+              "Faculty Name",
+              "Research Domain",
+              "University"
+            ],
             "firstColumn": [],
             "secondColumn": [],
             "thirdColumn": [],
@@ -6462,7 +7038,11 @@
         "imageUrl": "",
         "table": [
           {
-            "title": ["Faculty Name", "Research Domain", "University"],
+            "title": [
+              "Faculty Name",
+              "Research Domain",
+              "University"
+            ],
             "firstColumn": [
               "Kanmani",
               "Siju V Soman",
@@ -6550,7 +7130,6 @@
           "points": [],
           "imageUrl": "https://www.canaraengineering.in/departments/ai/labpics/DLAIL04.png"
         },
-
         {
           "title": "",
           "desc": "Project Laboratory (AIL05): The Project Laboratory (AIL05) provides dedicated workspaces for students to collaborate and work on their projects while utilizing the available computing resources. This lab fosters innovation by offering a conducive environment for designing, developing, and testing various academic and research-based projects.",
@@ -6594,11 +7173,17 @@
           "tableHeading": [
             {
               "title": "Items",
-              "data": ["Number of Book Titles available", "Number of Volumes available"]
+              "data": [
+                "Number of Book Titles available",
+                "Number of Volumes available"
+              ]
             },
             {
               "title": "Count",
-              "data": ["48", "71"]
+              "data": [
+                "48",
+                "71"
+              ]
             }
           ]
         }
@@ -6607,9 +7192,17 @@
     "publications": [
       {
         "title": "Staff Publications",
-        "imageUrl": ["https://www.canaraengineering.in/departments/is/citation.jpg", "https://www.canaraengineering.in/departments/is/INDEXED.jpg"]
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/citation.jpg",
+          "https://www.canaraengineering.in/departments/is/INDEXED.jpg"
+        ]
       },
-      { "title": "Student Publications", "imageUrl": ["https://www.canaraengineering.in/departments/is/student%20publication.jpg"] }
+      {
+        "title": "Student Publications",
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/student%20publication.jpg"
+        ]
+      }
     ],
     "studentAcheivemtents": [
       {
@@ -6668,7 +7261,6 @@
             "In the final year, students participate in utilizing the skill set earned during II, III Year programs to solve real-world problems. In addition to this, the students will be involved in industry internships, placement training, and project work. These programs provide students with valuable practical experience, exposure to real-world projects, and the opportunity to apply their skills in professional careers. This hands-on experience greatly enhances their employability and prepares them for industry roles."
           ]
         },
-
         {
           "title": "Soft Skill Development Courses",
           "desc": "",
@@ -6700,7 +7292,6 @@
           "points": []
         }
       ],
-
       "annualIntake": "120"
     },
     "faculties": [
@@ -7679,9 +8270,17 @@
     "publications": [
       {
         "title": "Staff Publications",
-        "imageUrl": ["https://www.canaraengineering.in/departments/is/citation.jpg", "https://www.canaraengineering.in/departments/is/INDEXED.jpg"]
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/citation.jpg",
+          "https://www.canaraengineering.in/departments/is/INDEXED.jpg"
+        ]
       },
-      { "title": "Student Publications", "imageUrl": ["https://www.canaraengineering.in/departments/is/student%20publication.jpg"] }
+      {
+        "title": "Student Publications",
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/student%20publication.jpg"
+        ]
+      }
     ],
     "studentAcheivemtents": [
       {
@@ -7708,7 +8307,10 @@
     "academicsProgram": {
       "title": "ACADEMIC DETAILS",
       "des": "The Physics Department comprises a team of dynamic and highly experienced faculty members dedicated to teaching Engineering Physics to B.E. first-year students across all branches. The department offers the following courses:",
-      "points": ["Engineering Physics", "Engineering Physics Lab"],
+      "points": [
+        "Engineering Physics",
+        "Engineering Physics Lab"
+      ],
       "academicAdditionalSkills": [
         {
           "title": "",
@@ -7738,7 +8340,9 @@
           "title": "DAC: Departmental Advisory Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Expert from Academia",
@@ -7750,23 +8354,53 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "DQAC: Departmental Quality Assurance Committe",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "SIX Senior Faculty Members", "Programme Coordinator"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "SIX Senior Faculty Members",
+                "Programme Coordinator"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Members", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Members",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Budget/Purchase Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Programme Coordinator",
@@ -7776,17 +8410,47 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Project Assessment Committee (DPAC)",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "Programme Coordinator", "Seminar Coordinator", "Research Coordinator", "Project Coordinator"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "Programme Coordinator",
+                "Seminar Coordinator",
+                "Research Coordinator",
+                "Project Coordinator"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -7832,7 +8496,13 @@
       },
       {
         "heading": "FACULTY PURSUING DOCTORAL STUDIES",
-        "points": ["Mr. Prashantha Somayaji", "Mr. Padmanabha Kamath", "Ms. Rajashree", "Mr. Satish Hegde H", "Mr. Ganesh Kamath M"],
+        "points": [
+          "Mr. Prashantha Somayaji",
+          "Mr. Padmanabha Kamath",
+          "Ms. Rajashree",
+          "Mr. Satish Hegde H",
+          "Mr. Ganesh Kamath M"
+        ],
         "imageUrl": "",
         "table": [
           {
