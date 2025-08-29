@@ -13,7 +13,7 @@ const MandatoryDisclosure = () => {
       <div className="lg2:mx-24 mx-5">
         <h1 className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold pb-1 lg:pb-10">Mandatory Disclosure</h1>
         <div className="grid grid-cols-1  md:grid-cols-12 mt-10">
-          <div className="col-span-3 sticky top-32 self-start hidden md:block">
+          <div className="col-span-3  self-start ">
             {disclosureData?.map((section, index) => (
               <h1
                 key={index}
@@ -27,7 +27,7 @@ const MandatoryDisclosure = () => {
             ))}
           </div>
             <div className="col-span-1"></div>
-          <div className="col-span-8">
+          <div className="col-span-8 mt-5 lg:mt-0">
             {selectedIndex === 4 ? (
               <>
                 <div className="overflow-x-hidden">

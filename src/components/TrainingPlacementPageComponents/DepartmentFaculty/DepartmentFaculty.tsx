@@ -50,12 +50,12 @@ export default function DepartmentFaculty({heading,description}:{heading:string,
             </p>
           </div>
           <div className="flex items-center justify-between gap-4">
-            <Link href="/about/educators-administrators"><button
+            {heading!="Meet Our Admissions Team"&&<Link href="/about/educators-administrators"><button
               aria-label="Meet more of our Faculty"
               className="bg-[#d0e2f8] text-black text-block  px-6 py-2 rounded-full text-[17px] font-medium "
             >
               Meet more of our Faculty
-            </button></Link>
+            </button></Link>}
             <div className="flex items-center gap-3">
               <button
                 aria-label="Previous Faculty Member"

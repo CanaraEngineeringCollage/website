@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const AboutHistoryCanara = () => {
   return (
-    <div className="w-full max-w-7xl mx-auto px-3 lg:px-18 xl:px-16 pb-16 pt-20 text-black">
+    <div className="w-full max-w-7xl mx-auto px-3 lg:px-18 xl:px-16 pb-16 pt-5 text-black">
       {/* Sub Heading */}
       <h4 className="text-2xl md:text-3xl text-textGray py-5 xl:py-12">
         About Canara Engineering College
@@ -45,7 +45,7 @@ const AboutHistoryCanara = () => {
       </p>
 
       {/* Image 1 */}
-      <div className="overflow-hidden w-full rounded-3xl my-12">
+      <div className="overflow-hidden w-full rounded-3xl my-7">
         <Image
           src={image1}
           alt="historyimage"
@@ -84,7 +84,7 @@ const AboutHistoryCanara = () => {
       </p>
 
       {/* Image 2 */}
-      <div className="overflow-hidden w-full rounded-3xl my-12">
+      <div className="overflow-hidden w-full rounded-3xl my-7">
         <Image
           src={image1}
           alt="historyimage"
@@ -106,7 +106,7 @@ const AboutHistoryCanara = () => {
       </p>
 
       {/* Roadmap Heading */}
-      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl text-[#1D1D1F] font-bold mt-16">
+      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl text-[#1D1D1F] font-bold ">
         Canara Engineering College Road Map
       </h1>
 

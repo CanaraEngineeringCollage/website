@@ -156,7 +156,7 @@ export function Testimonials({ className }: TestimonialsProps) {
         {renderTestimonials(topTestimonials)} {/* Scrolls left */}
       </div>
 
-      <div className="hidden md:block">
+      <div className="block">
         {renderTestimonials(bottomTestimonials, true)} {/* Scrolls right */}
       </div>
       </div>

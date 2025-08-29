@@ -160,16 +160,16 @@ const innovation = [
 
 const examination = [
   {
-    title: "Timetables",
-    link: "/examination-records",
+    title: "Examination Timetables",
+    link: "/academics/examination-records?tab=tt",
   },
   {
     title: "Circulars",
-    link: "/examination-records",
+    link: "/academics/examination-records?tab=circulars",
   },
   {
     title: "Marks & Attendance",
-    link: "/examination-records",
+    link: "/academics/examination-records?tab=marks",
   },
 ];
 export {

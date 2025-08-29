@@ -119,7 +119,7 @@ export default async function DepartmentPage({ params }: { params: { slug: strin
           thumbnail={department?.thumbnail}
         />
       </section>
-      <section className="pt-26">
+      <section className="pt-10 lg:pt-26">
         <DepartmentMissionVision
           ethicalLearning={department.ethicalLearning}
           holisticGrowthResearch={department.holisticGrowthResearch}
@@ -127,7 +127,7 @@ export default async function DepartmentPage({ params }: { params: { slug: strin
           ourVision={department.ourVision}
         />
       </section>
-      <section className="bg-[#071D2C] px-6 md:px-12 lg:px-32 xl:px-0">
+      <section className="bg-[#071D2C] px-6 md:px-0 lg:px-0 xl:px-0">
         <DepartmentHeadMessage depatmentHead={department.depatmentHead} />
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">

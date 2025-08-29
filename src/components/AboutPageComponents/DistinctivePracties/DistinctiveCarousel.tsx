@@ -154,7 +154,7 @@ export default function DistinctiveCarousel() {
 
 
   return (
-    <section className="  mx-auto  py-12 overflow-hidden  flex justify-center items-center h-[100vh]">
+    <section className="  mx-auto  py-12 overflow-hidden  flex justify-center items-center lg:h-[100vh]">
       <div className="grid grid-cols-1 gap-8 lg2:gap-16 ">
         {/* Left Side - Swiper */}
         <div className="relative w-full">
@@ -170,12 +170,12 @@ export default function DistinctiveCarousel() {
    
   loop={true}
   centeredSlides={true}
-  slidesPerView={3}
-  spaceBetween={24}
+  slidesPerView={1}
+  spaceBetween={2}
   className="w-full"
   breakpoints={{
     320: {
-      slidesPerView: 1.2,
+      slidesPerView: 1,
       spaceBetween: 16,
       centeredSlides: true,
     },
@@ -194,9 +194,9 @@ export default function DistinctiveCarousel() {
   {images.map((src, index) => (
     <SwiperSlide
       key={index}
-      className="!w-auto"
+      className=" lg:!w-auto"
     >
-      <div className="relative h-[400px] lg:h-[500px] w-full rounded-3xl overflow-hidden">
+      <div className="relative h-[200px] lg:h-[500px] w-full rounded-3xl overflow-hidden">
         <img
           src={src}
           alt="carousel image"
@@ -211,10 +211,8 @@ export default function DistinctiveCarousel() {
 
             {/* Navigation Buttons */}
 
-            <div className="flex justify-evenly lg:justify-between items-center mt-12 me-12">
-              <div className=" cursor-pointer" onClick={toggleCarousel}>
-              
-              </div>
+            <div className="flex justify-center lg:justify-end items-center mt-12 lg:me-12">
+            
 
               <div className=" flex gap-2 z-10">
                 <button

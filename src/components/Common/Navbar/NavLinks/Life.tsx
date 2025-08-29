@@ -40,13 +40,13 @@ export default function Life() {
         outline-none focus:ring-0 focus:outline-none"
       >
         <div className="w-full max-w-screen-2xl bg-white shadow-md rounded-xl flex justify-center gap-8 p-8 border-none outline-none">
-          <div className="grid grid-cols-1 w-[1500px] sm:grid-cols-3 lg:grid-cols-3 gap-8 mx-16 ">
+          <div className="grid grid-cols-1 w-[75%] sm:grid-cols-3 lg:grid-cols-12 gap-8 mx-auto ">
             {/* Column 1 */}
-            <div className="flex gap-4 pr-4 border-r border-gray-300">
+            <div className="flex gap-4 pr-4 lg:col-span-4 border-r border-gray-300">
               <div className="flex items-start">
                 <College />
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col  gap-2">
                 <span className="font-bold text-lg">Campus Facilities</span>
                 <ul className="list-none text-gray-500 leading-10">
                   <Link href="/campus-facilities/infrastructure"><li className={`${pathname.includes("/campus-facilities/infrastructure") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Infrastructure</li></Link>
@@ -72,7 +72,7 @@ export default function Life() {
             </div> */}
 
             {/* Column 3 */}
-            <div className="flex gap-4 pr-4 border-r border-gray-300">
+            <div className="flex gap-4 pr-4 border-r lg:col-span-4 border-gray-300">
               <div className="flex items-start">
                 <Innovation />
               </div>
@@ -86,8 +86,8 @@ export default function Life() {
             </div>
 
             {/* Column 4 */}
-            <div className="flex gap-4 ">
-              <div className="flex items-start mt-1">
+            <div className="flex lg:col-span-3 gap-4">
+              <div className="flex items-start">
                 <Campus />
               </div>
               <div className="flex flex-col gap-2">

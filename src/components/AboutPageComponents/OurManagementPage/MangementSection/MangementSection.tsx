@@ -47,7 +47,7 @@ const HeroSection = () => {
           </div>
           <div className="md:col-span-1"></div>
           <div className="md:col-span-8">
-            <h1 className="text-textGray font-bold text-[20px] pb-6 sm:pb-8 md:pb-14">Canara High School Association {selectedHeading}</h1>
+            <h1 className="text-textGray font-bold text-[20px] pb-6 sm:pb-8 md:pb-8">Canara High School Association {selectedHeading}</h1>
             {/* Mobile layout: title and name in the same line */}
             {selectedHeading === "Organisational Structure" ? (
               <div>

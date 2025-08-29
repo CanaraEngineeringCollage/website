@@ -8,7 +8,7 @@ export default function AboutCanara() {
 
   return (
     <div className="max-w-7xl mx-auto xl:max-w-[75%] text-justify  text-black">
-      <h4 className="text-3xl text-textGray text-center pt-7 pb-6">
+      <h4 className="text-3xl text-textGray text-center pt-10 lg:pt-7 pb-6">
         About Canara Engineering College
       </h4>
       <h1 className="text-3xl text-[#1D1D1F] text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-bold">
