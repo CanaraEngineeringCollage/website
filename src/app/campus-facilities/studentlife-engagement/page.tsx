@@ -48,7 +48,7 @@ const page = () => {
         <YourSkills />
       </section>
       <section className="px-6 -mt-10 md:px-12 pb-20 lg:px-16 xl:px-0">
-        <VideoPlayer videoUrl="NhwFJ89AJ2k" youtubeUrl="oHWMDPeP1Ew" />
+        <VideoPlayer videoUrl="NhwFJ89AJ2k" youtubeUrl="" />
       </section>
       <section className="bg-[#e5e5ea] ">
         <FooterCard />

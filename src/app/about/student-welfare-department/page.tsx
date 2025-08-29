@@ -46,7 +46,7 @@ const page = () => {
       </section>
 
       <section className="">
-        <VideoPlayer videoUrl="NhwFJ89AJ2k" youtubeUrl="NhwFJ89AJ2k" />
+        <VideoPlayer videoUrl="NhwFJ89AJ2k" youtubeUrl="/youtubeThumbnails/Akrathi Aftermovie-Thumbail copy 3@300x.webp" />
       </section>
       <section className="px-6 md:px-12 lg:pl-16 lg:px-0 xl:px-0">
         <FunctionDepartment title="Functions of the Department" functionDeprtmentData={data} />

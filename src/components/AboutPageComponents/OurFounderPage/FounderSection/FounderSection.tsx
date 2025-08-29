@@ -9,7 +9,7 @@ export default function FounderSection() {
         <div className="flex flex-col md:flex-row items-start gap-12">
           {/* Left Column - Text */}
           <div className="flex-1  text-[#86868B] text-[17px] leading-relaxed space-y-6 ">
-            <h2 className="text-3xl text-[#1D1D1F] md:text-[36px] lg2:text-[36px] xl:text-[36px] font-bold mb-6">Our Founder</h2>
+            <h2 className="text-3xl text-[#1D1D1F] md:text-[36px] lg2:text-[36px] xl:text-[36px] font-bold mb-6 text-center lg:text-start">Our Founder</h2>
             <div className="flex md:hidden flex-col items-center mt-4 flex-shrink-0 mx-auto lg:px-20">
               <div className="w-80 h-96 relative rounded-xl overflow-hidden shadow-md">
                 <Image src={img} alt="Sri Ammembal Subba Rao Pai" width={1000} height={1000} className="object-cover h-full" />

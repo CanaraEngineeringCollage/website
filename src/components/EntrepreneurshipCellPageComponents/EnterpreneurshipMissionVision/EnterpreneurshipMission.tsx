@@ -12,46 +12,49 @@ export default function EnterpreneurshipMission() {
   <div className="flex flex-col gap-8 lg:gap-12">
     {/* Objectives */}
     <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 md:p-10 lg:px-12">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[46px] text-black font-semibold mb-6">
-        Our Objectives
-      </h2>
-      <ul className="space-y-6 sm:space-y-8">
-        <li className="flex items-start gap-6 sm:gap-10 lg:gap-12">
-          <img
-            src="/aboutPageImages/MissionVision/visionImage1.webp"
-            alt="icon"
-            className="w-12 sm:w-[50px] md:w-[59px] h-auto"
-          />
-          <p className="text-[#afafb3] text-sm sm:text-base leading-relaxed">
-            To play a proactive and supporting role for the college, its students and the institution at large.
-          </p>
-        </li>
-        <li className="flex items-start gap-6 sm:gap-10 lg:gap-16">
-          <img
-            src="/aboutPageImages/MissionVision/visionImage2.webp"
-            alt="icon"
-            className="w-12 sm:w-[50px] md:w-[59px] h-auto"
-          />
-          <p className="text-[#afafb3] text-sm sm:text-base leading-relaxed">
-            To serve as a link between the Institution’s faculty, students, Management and the industries.
-          </p>
-        </li>
-        <li className="flex items-start gap-6 sm:gap-10 lg:gap-16">
-          <img
-            src="/aboutPageImages/MissionVision/visionImage3.webp"
-            alt="icon"
-            className="w-12 sm:w-[50px] md:w-[59px] h-auto"
-          />
-          <p className="text-[#afafb3] text-sm sm:text-base leading-relaxed">
-            To bring about an effective, cohesive and Z between the members of the alumni.
-          </p>
-        </li>
-      </ul>
-    </div>
+  <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[46px] text-black font-semibold mb-6 text-center lg:text-start">
+    Our Objectives
+  </h2>
+  <ul className="space-y-6 sm:space-y-8">
+    <li className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 sm:gap-10 lg:gap-12">
+      <img
+        src="/aboutPageImages/MissionVision/visionImage1.webp"
+        alt="icon"
+        className="w-12 sm:w-[50px] md:w-[59px] h-auto"
+      />
+      <p className="text-[#afafb3] text-sm sm:text-base leading-relaxed">
+        To play a proactive and supporting role for the college, its students and the institution at large.
+      </p>
+    </li>
+
+    <li className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 sm:gap-10 lg:gap-16">
+      <img
+        src="/aboutPageImages/MissionVision/visionImage2.webp"
+        alt="icon"
+        className="w-12 sm:w-[50px] md:w-[59px] h-auto"
+      />
+      <p className="text-[#afafb3] text-sm sm:text-base leading-relaxed">
+        To serve as a link between the Institution’s faculty, students, Management and the industries.
+      </p>
+    </li>
+
+    <li className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 sm:gap-10 lg:gap-16">
+      <img
+        src="/aboutPageImages/MissionVision/visionImage3.webp"
+        alt="icon"
+        className="w-12 sm:w-[50px] md:w-[59px] h-auto"
+      />
+      <p className="text-[#afafb3] text-sm sm:text-base leading-relaxed">
+        To bring about an effective, cohesive and Z between the members of the alumni.
+      </p>
+    </li>
+  </ul>
+</div>
+
 
     {/* Mission */}
     <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 md:p-10">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[46px] text-black font-semibold mb-6">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[46px] text-black font-semibold mb-6 text-center lg:text-start">
         Our Mission
       </h2>
       <p className="text-[#afafb3] text-sm sm:text-base leading-relaxed">

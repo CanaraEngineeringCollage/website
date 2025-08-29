@@ -19,10 +19,10 @@ const AluminiHeroBanner: React.FC = () => {
         <div className="absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-black/40 to-transparent z-10" />
 
         {/* Bottom Gradient - Mobile */}
-        <div className="absolute bottom-0 left-0 right-0 h-[250px] bg-gradient-to-t from-white via-white/85 to-transparent z-[10] md:hidden" />
+        <div className="absolute bottom-0 left-0 right-0 h-[250px] bg-gradient-to-t from-white via-[#fcfdff]/50 to-transparent z-[10] md:hidden" />
 
         {/* Bottom Gradient - Desktop */}
-        <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[200px] bg-gradient-to-t from-white via-transparent to-transparent z-[10] hidden md:block" />
+        <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[200px] bg-gradient-to-t from-[#fcfdff] via-transparent to-transparent z-[10] hidden md:block" />
       </div>
 
       <div className="absolute top-28 md:top-16 max-w-5xl mx-auto text-white px-4 z-10">

@@ -20,12 +20,12 @@ const LifeAtHostels = () => {
         Our hostels are located inside the campus, surrounded by greenery and a peaceful, quiet atmosphere that makes it easy to focus on studies while still enjoying college life. They accommodate over 850+ students, creating a safe, friendly environment where you can make lifelong friends. You’ll have access to indoor sports facilities, a well-equipped gym, on-site laundry services, and regular medical visits in collaboration with Father Muller’s Medical Hospital. We also ensure 24/7 security so parents can feel reassured, and our dedicated wardens and assistant wardens are always on-site to support and guide students whenever needed.
         </p>
         <p className="text-textGray  text-[20px]">
-         Life in the hostel at CEC is a balance of academics, fitness, and fun — all in a setting that’s amidst nature, calm, and away from the city’s rush. We’re confident you’ll enjoy your time here and create wonderful memories over the next four years.
+         Life in the hostel at CEC is a balance of academics, fitness, and fun all in a setting that’s amidst nature, calm, and away from the city’s rush. We’re confident you’ll enjoy your time here and create wonderful memories over the next four years.
         </p>
       </div>
       <button
         aria-label="Download Hostel Rulebook"
-        className="text-[#2884CA] lg:hidden mt-10 font-bold text-[17px] bg-[#d9ebff] px-6 py-2 cursor-pointer rounded-3xl inline-flex gap-3"
+        className="text-[#2884CA] lg:hidden mt-10 font-bold text-[17px] bg-[#d9ebff] px-6 py-2 cursor-pointer rounded-3xl inline-flex gap-3 justify-center w-full"
       >
         Download Hostel Rulebook <HiDownload className="text-[24px] font-extrabold" />
       </button>

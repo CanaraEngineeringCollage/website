@@ -162,9 +162,9 @@ export default function LegacyExcellance() {
               navigation={{
                 nextEl: ".swiper-button-next-custom",
                 prevEl: ".swiper-button-prev-custom",
-                  
+
               }}
-              spaceBetween={-220}
+              spaceBetween={-240}
               breakpoints={{
                 640: { slidesPerView: 1.1, spaceBetween: 20 },
               }}
@@ -262,7 +262,7 @@ export default function LegacyExcellance() {
             </div>
           </div>
         </div>
-          <div className="relative w-full lg:hidden block">
+        <div className="relative w-full lg:hidden block">
           <div className="relative">
             <Swiper
               ref={swiperRef}
@@ -272,7 +272,7 @@ export default function LegacyExcellance() {
                 prevEl: ".swiper-button-prev-custom",
               }}
               breakpoints={{
-                640: { slidesPerView: 1.1, spaceBetween: 20 },
+                640: { slidesPerView: 1.1, spaceBetween: 40 },
               }}
               autoplay={{ delay: 3000 }}
               loop={true}

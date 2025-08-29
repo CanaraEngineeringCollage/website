@@ -90,7 +90,7 @@ const DepartmentSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 max-w-7xl mx-auto">
           {/* Goals Section */}
           <div className="bg-white py-6 sm:py-8 md:py-10 px-5 sm:px-7 md:px-9 w-full min-h-[500px] rounded-lg shadow-sm">
-            <h1 className="text-2xl sm:text-3xl md:text-[40px] lg2:text-[36px] xl:text-6xl font-bold text-[#1D1D1F]">
+            <h1 className="text-2xl sm:text-3xl md:text-[40px] text-center lg:text-start lg2:text-[36px] xl:text-6xl font-bold text-[#1D1D1F]">
               Goals
             </h1>
             <p className="text-sm sm:text-base md:text-md lg:text-[17px] leading-6 sm:leading-7 pt-4 sm:pt-5 pb-6 sm:pb-8 text-[#86868B]">
@@ -111,7 +111,7 @@ const DepartmentSection = () => {
 
           {/* Responsibilities Section */}
           <div className="bg-white py-6 sm:py-8 md:py-10 px-5 sm:px-7 md:px-9 w-full min-h-[500px] rounded-lg border border-gray-200 shadow-sm">
-            <h1 className="text-2xl sm:text-3xl md:text-[40px] lg2:text-[36px] xl:text-6xl font-bold text-[#1D1D1F]">
+            <h1 className="text-2xl sm:text-3xl md:text-[40px] lg2:text-[36px] xl:text-6xl font-bold text-[#1D1D1F] text-center lg:text-start">
               Responsibilities
             </h1>
             <ul className="list-square ml-4 sm:ml-5 text-sm sm:text-base md:text-md lg:text-[17px] leading-6 sm:leading-7 text-[#86868B] space-y-2 pt-4 sm:pt-5">

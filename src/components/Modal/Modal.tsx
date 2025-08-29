@@ -132,7 +132,7 @@ const ContactFormModal: React.FC<ContactFormModalProps> = ({ isOpen, onClose, cl
             </motion.button>
 
             {/* Form Content */}
-            <motion.div variants={contentVariants} className="p-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-8 sm:py-12 lg:py-16">
+            <motion.div variants={contentVariants} className="p-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-12 sm:py-12 lg:py-16">
               <h2 className="text-2xl sm:text-3xl lg:text-[46px] font-bold text-[#2884CA] text-center">
                 Ready to Shape Your Future?
               </h2>

@@ -2,6 +2,7 @@
   {
     "name": "Computer Science & Engineering",
     "ytUrl":"rv0KerNW4QE",
+    "thumbnail":"/youtubeThumbnails/cseThumb.webp",
     "bannerUrl": "/departmentImages/dept.webp",
     "slug": "computer-science-engineering",
     "departmentAboutDescription": "Established in 2001, the Department of Computer Science & Engineering offers a robust undergraduate program (B.E. in CSE) and previously offered M.Tech from 2011 to 2021. The department boasts a team of experienced and research-oriented faculty actively engaged in teaching, product development, and publishing in reputed journals and conferences.Regular training sessions, expert talks, and industry interactions help bridge academia and industry. Students are groomed for career success through placement training, technical workshops, and self-learning initiatives like IIT Bombay’s Spoken Tutorial. Active student clubs, annual magazines, and NSS activities promote leadership, innovation, and social responsibility..",
@@ -1301,6 +1302,8 @@
   {
     "name": "Information Science & Engineering",
     "ytUrl":"m0znTqrPg1k",
+        "thumbnail":"/youtubeThumbnails/iseThumb.webp",
+
     "slug": "information-science-engineering",
     "bannerUrl": "/departmentImages/1.webp",
     "departmentAboutDescription":"The Department of Information Science & Engineering is committed to shaping future-ready professionals through strong academic practices and industry-aligned training. With well-equipped labs and experienced faculty, the department emphasizes holistic development through seminars, workshops, industry visits, and add-on courses in emerging technologies.Student growth is further supported through motivational talks, placement and career guidance, and active alumni interaction. The department also encourages participation in co-curricular activities under the CiPix association and promotes social responsibility through outreach programs. A consistent academic track record and continuous faculty upskilling ensure excellence in all aspects.",
@@ -2598,6 +2601,8 @@
   {
     "name": "Electronics & Communication Engineering",
     "ytUrl":"6d1ZJODiDbU",
+            "thumbnail":"/youtubeThumbnails/eceThumb.webp",
+
     "width":"max-w-6xl",
     "slug": "electronics-communication-engineering",
     "bannerUrl": "/departmentImages/2.webp",
@@ -3939,6 +3944,7 @@
   {
     "name": "Computer Science & Design",
     "ytUrl":"RzRByOfY7LA",
+    "thumbnail":"/youtubeThumbnails/csdThumb.webp",
     "slug": "computer-science-design",
     "bannerUrl": "/departmentImages/5.webp",
     "departmentAboutDescription": "Established in 2021, the Department of Computer Science & Design (CS&D) offers a unique blend of computing and design. Supported by experienced faculty, the department focuses on academics, research, and product development. Faculty contributions are regularly published in reputed international journals and conferences.The department emphasizes holistic student development through expert talks, industry interactions, and hands-on training. Regular FDPs, technical skill development programs, and self-learning initiatives like IIT Bombay’s Spoken Tutorials and ICT Academy certifications are integral to the learning process.With strong placement support, a growing industry interface, and a bi-annual newsletter to showcase innovation, the department is committed to shaping career-ready professionals. NSS activities further enhance student leadership, communication, and social responsibility.",
@@ -5110,6 +5116,7 @@
   {
     "name": "Computer Science & Business System",
     "ytUrl":"7sAPnoYfGI4",
+    "thumbnail":"/youtubeThumbnails/csbThumb.webp",
     "slug": "computer-science-business-system",
     "bannerUrl": "/departmentImages/3.webp",
     "departmentAboutDescription":"Greetings from the department of Computer Science and Business Systems (CSBS). The Department of Computer Science and Business System (CSBS) aims to meet the growing demand for engineering talent with technological skills. This innovative program provides a well-rounded education that blends technical skills in Computer Science with a strong foundation in the Humanities, Management, and Business Strategies. Students will gain practical experience in emerging technologies like Analytics, Machine Learning, Cloud Computing, and IoT, preparing them for successful careers in today's tech-driven world.The Department provides students with a top-quality education that equips them for a bright future. Our commitment is supported by our exceptional teaching staff, state-of-the-art facilities, and dedicated Training & Placement Cell. We strongly encourage innovation in research, education, and community engagement. In this regard, it gives me immense pleasure to invite you all to be part of the Department of Computer Science and Business System to take it to greater heights.",
@@ -6292,6 +6299,7 @@
     "name": "Artificial Intelligence & Machine Learning",
     "slug": "artificial-intelligence-machine-learning",
     "ytUrl":"h9M-zIKXv_E",
+    "thumbnail":"/youtubeThumbnails/aimlThumb.webp",
     "bannerUrl": "/departmentImages/4.webp",
     "departmentAboutDescription":"Established in 2021, the Department of AIML offers a B.E. program focused on cutting-edge technologies driving today’s digital transformation. With applications across healthcare, robotics, finance, and more, the curriculum equips students with strong foundations in AI, ML, data science, computer vision, and programming.The department emphasizes industry readiness through technical training, soft skills development, and self-paced certifications via platforms like SWAYAM, Coursera, and edX. Faculty and students are actively involved in research and continuous upskilling. Extracurricular and club activities further support holistic growth and strong placement outcomes.",
     "description": "The department was established in 2021 to offer an undergraduate degree program, the Bachelor of Engineering (BE) in Artificial Intelligence and Machine Learning (AIML). AIML is at the forefront of computer science, expanding rapidly into sectors such as healthcare, security, entertainment, education, autonomous transportation, robotics, space exploration, speech processing, and stock trading, among others. The pervasive influence of artificial intelligence has profoundly impacted our lives.AI aims to emulate human intelligence, imparting cognitive abilities to robots. Machine learning (ML), a subset of AI, enables machines to learn autonomously. The emergence of AI and ML has generated numerous career opportunities and is a pivotal driver of digital transformation, creating a high demand for skilled engineers proficient in these technologies. Graduates of this program possess a highly valuable degree, opening doors to employment across various industries. The curriculum emphasizes core competencies in mathematics, network architectures, computer vision, Computer programming, communication networks, machine learning, Artificial Intelligence, and Data Science equipping students to develop intelligent applications that address societal and national needs.The department actively conducts skill enhancement training programs for both faculty and students, fostering technological advancements and disseminating research findings. It offers soft skills training, technical skill development activities, and encourages self-learning through certification courses available on prominent online platforms (SWAYAM-NPTEL, Coursera, Udemy, edX), as well as extracurricular engagements facilitated by various clubs, aimed at enhancing placement opportunities and fostering overall personality development.",

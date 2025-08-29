@@ -50,8 +50,9 @@ const page = () => {
       <section className="pb-20 -mt-[50px]">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
-          youtubeUrl="https://youtu.be/rv0KerNW4QE?si=ObYcwEiaqF0UD90P"
+          youtubeUrl="https://youtu.be/m0znTqrPg1k?si=axPi_tWGFHTHxZNl"
           thumbnail=""
+          startTime={165} // Start at 30 seconds
         />
       </section>
       {/* <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">

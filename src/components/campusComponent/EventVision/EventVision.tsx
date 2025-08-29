@@ -10,8 +10,8 @@ const EventVision: React.FC = ({}) => {
       <div className="max-w-7xl xl:max-w-[75%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-20">
         {/* Mission Card */}
         <div className="flex flex-col justify-between gap-8">
-          <div className="bg-white rounded-2xl shadow p-10 lg:p-18 space-y-6">
-            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-16">Our Objectives</h2>
+          <div className="bg-white rounded-2xl text-center lg:text-start shadow p-10 lg:p-18 space-y-6 py-23">
+            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-16  text-center lg:text-start ">Our Objectives</h2>
 
             <div className="grid grid-rows-3 h-full pb-16">
               {/* Item 1 */}
@@ -45,7 +45,7 @@ const EventVision: React.FC = ({}) => {
           </div>
           <div className="bg-white rounded-2xl shadow p-10 lg:p-18 space-y-6">
             {" "}
-            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-">Our Objectives</h2>
+            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 text-center lg:text-start">Our Objectives</h2>
             <p className="text-textGray text-[17px]">
               As a dynamic organization, keen and excellence of CEC and its alumni, the alumni association strives to nurture a lifelong intellectual
               and emotional relationship with a college and amongst alumni; and to provide sustainable platform for effective networking, goodwill and

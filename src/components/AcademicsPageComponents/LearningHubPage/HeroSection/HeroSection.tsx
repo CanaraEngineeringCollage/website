@@ -21,7 +21,7 @@ const HeroSection = () => {
 
     {/* Heading */}
     <div className="absolute flex justify-center lg:justify-end items-center top-1/2 -translate-y-1/2 w-full px-6 sm:px-10 lg:px-14 z-10">
-      <h1 className="leading-[1.2] text-[24px] sm:text-[32px] md:text-[40px] lg:text-[77px] font-bold text-white text-center lg:text-end max-w-xl sm:max-w-2xl lg:max-w-3xl">
+      <h1 className="leading-[1.2] text-[34px] sm:text-[32px] md:text-[40px] lg:text-[77px] font-bold text-white text-center lg:text-end max-w-xl sm:max-w-2xl lg:max-w-3xl">
         Welcomes to the Digital Learning Resources
       </h1>
     </div>

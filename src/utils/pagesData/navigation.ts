@@ -37,7 +37,7 @@ const administration = [
     link: "/about/educators-administrators",
   },
   { href: "/about/distinctive-practices", 
-    link: "Distinctive & Practices" 
+    title: "Distinctive & Practices" 
   },
 ];
 const accreditations = [
@@ -89,24 +89,24 @@ const departments = [
 ];
 
 const curriculum = [
-  {
-    title: "Academic Overview",
-    link: "/academics/academic-overview",
-  },
-  {
-    title: "Programs",
-    link: "/academics/programs",
-  },
+  // {
+  //   title: "Academic Overview",
+  //   link: "/academics/academic-overview",
+  // },
+  // {
+  //   title: "Programs",
+  //   link: "/academics/programs",
+  // },
 ];
 
 const campusBeats = [
   {
     title: "Calendar of Events",
-    link: "/anti-sexual-harassment",
+    link: "/events",
   },
   {
     title: "Alumni",
-    link: "/student-grievance-cell",
+    link: "/alumini",
   },
 ];
 
@@ -161,15 +161,15 @@ const innovation = [
 const examination = [
   {
     title: "Timetables",
-    link: "/examination-circulations",
+    link: "/examination-records",
   },
   {
     title: "Circulars",
-    link: "/examination-docs-issued",
+    link: "/examination-records",
   },
   {
     title: "Marks & Attendance",
-    link: "/examination-guidelines",
+    link: "/examination-records",
   },
 ];
 export {

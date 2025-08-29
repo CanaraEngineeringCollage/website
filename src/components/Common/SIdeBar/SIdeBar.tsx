@@ -58,7 +58,7 @@ export default function Sidebar({ sidebar, openSidebar }: { sidebar: boolean; op
   return (
     <div>
       <div
-        className={`sidebar bg-white z-[1000] h-[100vh] fixed md:top-[5rem] top-[90px] left-0  pb-36 ${
+        className={`sidebar bg-white z-[1000] h-[100vh] fixed   left-0  pb-36 ${
           !sidebar ? "translate-x-[-100%]" : "translate-x-0"
         } ease-in-out duration-500 pt-6 ${sidebar ? "" : ""}`}
       >
@@ -358,7 +358,7 @@ function MainMenu({
         <div className={`space-y-2 transition-all ease-in-out duration-300 ${open.program ? "h-full opacity-100 mt-2" : "h-0 opacity-0"}`}>
           {open.program && (
             <>
-              <div
+              {/* <div
                 onClick={() => {
                   setVisible("curriculum");
                 }}
@@ -369,7 +369,7 @@ function MainMenu({
                   <Typography className="text-sm text-gray-500">Curriculum & Programs</Typography>
                   <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
                 </div>
-              </div>
+              </div> */}
 
               <div
                 onClick={() => {
@@ -414,7 +414,7 @@ function MainMenu({
       <div className="border-b-border border-b-2 py-4">
         <div
           onClick={() => {
-            router.push("/");
+            router.push("/admission");
             openSidebar(false);
           }}
           className="flex gap-4 "
@@ -454,7 +454,7 @@ function MainMenu({
                   <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
                 </div>
               </div>
-              <div
+              {/* <div
                 onClick={() => {
                   setVisible("studentLife");
                 }}
@@ -465,7 +465,7 @@ function MainMenu({
                   <Typography className="text-sm text-gray-500"> Student Life & Engagement</Typography>
                   <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
                 </div>
-              </div>
+              </div> */}
               <div
                 onClick={() => {
                   setVisible("innovation");

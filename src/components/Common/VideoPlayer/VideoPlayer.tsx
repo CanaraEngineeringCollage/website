@@ -11,6 +11,7 @@ interface VideoPlayerProps {
   subTitle?: string;
   thumbnail?: string;
   titleClassname?: string;
+  startTime?: number; // in seconds
 }
 
 const VideoPlayer: React.FC<VideoPlayerProps> = ({
@@ -20,9 +21,10 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
   subTitle,
   thumbnail,
   titleClassname,
+  startTime,
 }) => {
   const [isPlaying, setIsPlaying] = useState(false);
-console.log(youtubeUrl);
+  console.log(youtubeUrl);
 
   // Universal extractor for videoId
   function extractVideoId(input: string): string | null {
@@ -63,9 +65,9 @@ console.log(youtubeUrl);
   }
 
   const thumbnailUrl =
-  thumbnail || `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
-  console.log(thumbnailUrl,"tt");
-  
+    thumbnail || `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+  console.log(thumbnailUrl, "tt");
+
 
 
   return (
@@ -137,7 +139,8 @@ console.log(youtubeUrl);
         {isPlaying && (
           <motion.iframe
             key="video"
-            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1`}
+            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1${startTime ? `&start=${startTime}` : ""
+              }`}
             title="YouTube video player"
             allow="autoplay; encrypted-media"
             allowFullScreen

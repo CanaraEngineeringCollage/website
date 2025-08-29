@@ -12,7 +12,7 @@ const HeroSection = () => {
       <Image
         src={bgImage}
         alt="Hero Background"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover md:object-center object-[80%_center] "
         priority
       />
 

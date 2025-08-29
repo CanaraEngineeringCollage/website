@@ -36,6 +36,7 @@ export default function AboutCec() {
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <AboutHistoryCanara />
       </section>
+
       <section className="bg-[#E5E5EA]">
         <FooterCard />
       </section>

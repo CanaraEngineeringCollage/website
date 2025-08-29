@@ -61,7 +61,7 @@ const HeroSection = () => {
               </div>
             ) : selectedHeading === "Canara Institutes" ? (
               <div className="overflow-x-auto">
-                <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px] ">
                   <thead>
                     <tr className="bg-[#F3F8FC] text-[#2884CA]">
                       <th className="py-3 md:px-4 px-1 border-b">Sl.No</th>
@@ -86,7 +86,7 @@ const HeroSection = () => {
               </div>
             ) : (
               <>
-                <div className="block sm:hidden">
+                <div className="block sm:hidden ">
                   {(data[selectedHeading] as ManagementItem[]).map((item, index) => (
                     <div
                       key={index}

@@ -52,7 +52,7 @@ export default function Home() {
           title="Experience the Campus"
           videoUrl="z-Axfq0HfZOLspAj"
           youtubeUrl="DotJvDklT5Y"
-          thumbnail=""
+          thumbnail="/youtubeThumbnails/Campus Tour-Thumbnail@300x.webp"
         />
       </section>
       <section className="px-6  md:px-12 lg:px-26 xl:px-0 py-12">
@@ -66,7 +66,7 @@ export default function Home() {
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           // videoUrl="z-Axfq0HfZOLspAj"
           youtubeUrl="Xhq4QpXZco8"
-          thumbnail="/herosectionImages/hero3.webp"
+          thumbnail="/youtubeThumbnails/Homepage-Thumbnail@300x.webp"
         />
       </section>
       <section className="px-0 bg-white pt-5 pb-10">

@@ -10,7 +10,7 @@ const HeroSection = () => {
     <Image 
       src={bgImage} 
       alt="Background 1" 
-      className="object-cover object-right w-full h-[80vh] md:h-full" 
+      className="object-cover lg:object-right object-center w-full h-[80vh] md:h-full" 
       priority 
     />
 
@@ -18,7 +18,7 @@ const HeroSection = () => {
     <div className="absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-black/60 to-transparent z-10" />
 
     {/* Mobile Bottom Gradient */}
-    <div className="absolute bottom-0 left-0 right-0 h-[200px] md:h-[1000px] bg-gradient-to-t from-white via-white/85 via-50% to-transparent z-[10] md:hidden" />
+    <div className="absolute bottom-0 left-0 right-0 h-[400px] md:h-[1000px] bg-gradient-to-t from-[#fcfdff] via-transparent to-transparent z-[10] md:hidden" />
 
     {/* Desktop Bottom Gradient */}
     <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[800px] bg-gradient-to-t from-[#fcfdff] via-transparent to-transparent z-[10] hidden md:block" />
