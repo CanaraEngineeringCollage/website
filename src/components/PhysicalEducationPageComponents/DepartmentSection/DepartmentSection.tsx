@@ -69,12 +69,12 @@ const sportsFacilities = [
 ];
 
 const participation = [
-["2023-24", "18", "156"],
-["2022-23", "12", "107"],
-["2021-22", "06", "68"],
-["2019-20", "11", "83"],
-["2018-19", "13", "119"],
-["2017-18", "12", "101"],
+  ["2023-24", "18", "156"],
+  ["2022-23", "12", "107"],
+  ["2021-22", "06", "68"],
+  ["2019-20", "11", "83"],
+  ["2018-19", "13", "119"],
+  ["2017-18", "12", "101"],
 ];
 
 const DepartmentSection = () => {
@@ -86,42 +86,49 @@ const DepartmentSection = () => {
         emotionally, mentally and physically strong. The primary aims of physical education are varied, based on the needs of time and place. Sports
         is commonly defined as an organized, competitive and skillful physical activity requiring commitment and fair play.
       </p> */}
-     <section className="w-full bg-none py-16 px-6 md:px-12">
-  <div className="grid md:grid-cols-2 gap-10 max-w-7xl mx-auto">
-    {/* Goals Section */}
-    <div className="bg-white py-10 px-9 w-[613px] h-[678px] rounded-lg shadow-sm">
-      <h1 className="text-3xl md:text-[40px] lg2:text-[36px]  xl:text-6xl font-bold text-[#1D1D1F]">
-        Goals
-      </h1>
-      <p className="lg:text-[17px] md:text-md text-[14px] leading-7 pt-5 pb-8 text-[#86868B]">
-      The Aim of organized physical educ  ation, sports and games activities is to create an environment that stimulates selected movement experiences resulting in desirable responses that contribute to the optimal development of the individu al's potentialities in all the phases of life. In this direction, in order to organize and conduct various activities, the Sports and Games Committee is formed with the following objectives:
-      </p>
-      <ul className="lg:text-lg list-square ml-5 md:text-md text-[14px] leading-7 text-[#86868B] space-y-2">
-        {objectives.map((objective, index) => (
-          <li key={index}>{objective}</li>
-        ))}
-      </ul>
-    </div>
+      <section className="w-full bg-none py-10 sm:py-16 px-4 sm:px-6 md:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 max-w-7xl mx-auto">
+          {/* Goals Section */}
+          <div className="bg-white py-6 sm:py-8 md:py-10 px-5 sm:px-7 md:px-9 w-full min-h-[500px] rounded-lg shadow-sm">
+            <h1 className="text-2xl sm:text-3xl md:text-[40px] lg2:text-[36px] xl:text-6xl font-bold text-[#1D1D1F]">
+              Goals
+            </h1>
+            <p className="text-sm sm:text-base md:text-md lg:text-[17px] leading-6 sm:leading-7 pt-4 sm:pt-5 pb-6 sm:pb-8 text-[#86868B]">
+              The Aim of organized physical education, sports and games activities is
+              to create an environment that stimulates selected movement experiences
+              resulting in desirable responses that contribute to the optimal
+              development of the individual's potentialities in all the phases of
+              life. In this direction, in order to organize and conduct various
+              activities, the Sports and Games Committee is formed with the following
+              objectives:
+            </p>
+            <ul className="list-square ml-4 sm:ml-5 text-sm sm:text-base md:text-md lg:text-lg leading-6 sm:leading-7 text-[#86868B] space-y-2">
+              {objectives.map((objective, index) => (
+                <li key={index}>{objective}</li>
+              ))}
+            </ul>
+          </div>
 
-    {/* Responsibilities Section */}
-    <div className="bg-white py-10 px-9  rounded-lg border w-[613px] h-[678px] border-gray-200 shadow-sm">
-      <h1 className="text-3xl md:text-[40px] lg2:text-[36px] xl:text-6xl font-bold text-[#1D1D1F]">
-        Responsibilities
-      </h1>
-      <ul className="lg:text-[17px] list-square ml-5 md:text-md text-[14px] leading-7 text-[#86868B] space-y-2 pt-5">
-        {duty.map((responsibility, index) => (
-          <li key={index}>{responsibility}</li>
-        ))}
-      </ul>
-    </div>
-  </div>
-</section>
-<div className="lg:px-32 mt-12">
-       <ModelTable title="Sports Committee Panel" headers={["Sl No", "Name", "Designation", "Department"]} rows={members} />
-      <ModelTable title="College Sports Facilities" headers={["Sl No", "Sports", "No"]} rows={sportsFacilities} />
-       <ModelTable title="Our Journey in State-Level Sports" headers={["Sl No", "Year", "Number of Events (State Level)","Number of Participants"]} rows={participation} />
-</div>
- 
+          {/* Responsibilities Section */}
+          <div className="bg-white py-6 sm:py-8 md:py-10 px-5 sm:px-7 md:px-9 w-full min-h-[500px] rounded-lg border border-gray-200 shadow-sm">
+            <h1 className="text-2xl sm:text-3xl md:text-[40px] lg2:text-[36px] xl:text-6xl font-bold text-[#1D1D1F]">
+              Responsibilities
+            </h1>
+            <ul className="list-square ml-4 sm:ml-5 text-sm sm:text-base md:text-md lg:text-[17px] leading-6 sm:leading-7 text-[#86868B] space-y-2 pt-4 sm:pt-5">
+              {duty.map((responsibility, index) => (
+                <li key={index}>{responsibility}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div className="lg:px-32 px-5 mt-12">
+        <ModelTable title="Sports Committee Panel" headers={["Sl No", "Name", "Designation", "Department"]} rows={members} />
+        <ModelTable title="College Sports Facilities" headers={["Sl No", "Sports", "No"]} rows={sportsFacilities} />
+        <ModelTable title="Our Journey in State-Level Sports" headers={["Sl No", "Year", "Number of Events (State Level)", "Number of Participants"]} rows={participation} />
+      </div>
+
     </div>
   );
 };

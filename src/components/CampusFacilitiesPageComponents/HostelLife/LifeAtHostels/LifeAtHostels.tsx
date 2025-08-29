@@ -17,14 +17,10 @@ const LifeAtHostels = () => {
           </a>
         </div>
         <p className="text-textGray text-justify  text-[20px] pb-10">
-          Nestled within a sprawling 25-acre lush green campus, our college hostel offers a serene and refreshing environment, making it the perfect
-          home away from home for students. Located in close proximity to the Polali Rajarajeshwari Temple and just 5 kilometers from the National
-          Highway, the hostel ensures ease of access while maintaining a peaceful atmosphere for focused academic pursuits.
+        Our hostels are located inside the campus, surrounded by greenery and a peaceful, quiet atmosphere that makes it easy to focus on studies while still enjoying college life. They accommodate over 850+ students, creating a safe, friendly environment where you can make lifelong friends. You’ll have access to indoor sports facilities, a well-equipped gym, on-site laundry services, and regular medical visits in collaboration with Father Muller’s Medical Hospital. We also ensure 24/7 security so parents can feel reassured, and our dedicated wardens and assistant wardens are always on-site to support and guide students whenever needed.
         </p>
         <p className="text-textGray  text-[20px]">
-          The hostel fosters an environment where students can excel academically while also engaging in diverse extracurricular activities. A
-          well-equipped study hall provides a quiet space for learning, and peer discussions help in the exchange of ideas and knowledge. The faculty
-          support system ensures that hostel students receive mentorship and guidance beyond classroom hours.
+         Life in the hostel at CEC is a balance of academics, fitness, and fun — all in a setting that’s amidst nature, calm, and away from the city’s rush. We’re confident you’ll enjoy your time here and create wonderful memories over the next four years.
         </p>
       </div>
       <button

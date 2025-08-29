@@ -3,30 +3,50 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="text-black    relative  w-full overflow-hidden pb-28 ">
-      <div className="relative h-[90vh] lg:h-[150vh] w-[100vw] flex justify-center items-center">
-        <Image src="/backgroundImages/1.webp" alt="" width={1000} height={1000} className="object-cover object-top md:object-bottom w-full h-full" />
-        <div className="absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-black/60 to-transparent z-10" />
-        {/* <div className="absolute bottom-0 left-0 right-0 h-[200px] md:h-[1000px] bg-gradient-to-t from-white via-white/85 via-50% to-transparent z-[10] md:hidden" /> */}
-        <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[600px] bg-gradient-to-t from-white via-transparent to-transparent z-[10] " />
-        <div className="absolute flex justify-end items-center top-1/2 -translate-y-1/2 right-12 max-w-3xl text-end leading-[1.2] text-[28px] md:text-[40px] lg:text-[77px] text-[white] font-bold w-full z-10 px-14">
-          <h1>
-            Welcomes to the Digital Learning Resources
-          </h1>
+  <section className="text-black relative w-full overflow-hidden pb-28">
+  <div className="relative h-[90vh] lg:h-[120vh] w-[100vw] flex justify-center items-center">
+    <Image
+      src="/backgroundImages/1.webp"
+      alt=""
+      width={1000}
+      height={1000}
+      className="object-cover object-top md:object-center w-full h-full"
+    />
+
+    {/* Top Gradient */}
+    <div className="absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-black/60 to-transparent z-10" />
+
+    {/* Bottom Gradient */}
+    <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[600px] bg-gradient-to-t from-white via-transparent to-transparent z-[10]" />
+
+    {/* Heading */}
+    <div className="absolute flex justify-center lg:justify-end items-center top-1/2 -translate-y-1/2 w-full px-6 sm:px-10 lg:px-14 z-10">
+      <h1 className="leading-[1.2] text-[24px] sm:text-[32px] md:text-[40px] lg:text-[77px] font-bold text-white text-center lg:text-end max-w-xl sm:max-w-2xl lg:max-w-3xl">
+        Welcomes to the Digital Learning Resources
+      </h1>
+    </div>
+
+    {/* Input + Button Section */}
+    <div className="absolute bottom-0 z-[999] w-full left-0 text-center flex justify-center">
+      <div className="lg:mx-20 mx-4 rounded-2xl w-full bg-[#F5F5F7] px-4 sm:px-6 lg:px-28 pt-16 sm:pt-20 pb-10">
+        <div className="mb-8 sm:mb-10">
+          <input
+            type="text"
+            placeholder="Enter Your Student USN"
+            className="w-full outline-none border-b-2 pb-2 border-border text-sm sm:text-base"
+          />
         </div>
-        <div className="absolute bottom-0 z-[999] w-full left-0   text-center flex justify-center">
-          <div className="lg:mx-20 mx-4 rounded-2xl w-full bg-[#F5F5F7] px-3.5 lg:px-28 pt-20 pb-10">
-            <div className="mb-10">
-              <input type="text" placeholder="Enter Your Student USN" className="w-full outline-none border-b-2 pb-2 border-border" />
-            </div>
-            <button aria-label="Apply Now" className="text-center  text-white cursor-pointer px-6 sm:px-8 py-2 rounded-3xl bg-[#2884CA]">Apply Now</button>
-          </div>
-        </div>
-        {/* <div className="absolute bottom-0 left-0 right-0 h-[250px] bg-gradient-to-t from-white via-white/85 to-transparent z-[10] md:hidden" /> 
-        <div className="absolute bottom-0 left-0 right-0 h-[250px] bg-gradient-to-t from-white via-white/85 to-transparent z-[10] md:hidden" /> 
-        <div className="absolute bottom-0 left-0 right-0 h-[250px] bg-gradient-to-t from-white via-white/85 to-transparent z-[10] md:hidden" />  */}
+        <button
+          aria-label="Apply Now"
+          className="text-center text-white cursor-pointer px-6 sm:px-8 py-2 rounded-3xl bg-[#2884CA] text-sm sm:text-base"
+        >
+          Apply Now
+        </button>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
   );
 };
 

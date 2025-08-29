@@ -96,7 +96,7 @@ export default function EmpoweringFutures() {
 
   return (
     <>
-      <section className="max-w-6xl xl:max-w-[75%]  overflow-hidden text-black mx-auto hidden md:block">
+      <section className="max-w-5xl xl:max-w-[75%]  overflow-hidden text-black mx-auto hidden md:block">
         {/* Top Content */}
         <div className="flex justify-between items-start  mx-auto pb-16">
           <div>
@@ -116,21 +116,25 @@ export default function EmpoweringFutures() {
         </div>
 
         {/* Banner Section */}
-        <div className="w-full hidden md:flex relative rounded-xl items-center  shadow-lg">
-          {/* Text Overlay (Top Left) */}
-          <div className="absolute text-white w-1/2  rounded-md z-10 pl-20">
-            <h3 className="text-4xl md:text-2xl lg:text-3xl lg2:text-4xl xl:text-5xl font-semibold pb-6 xl:leading-13">
-              A fulfilling career begins with our dedicated Placement Department.{" "}
-            </h3>
-            <p className="text-[19px] text-white/80">
-              Step into a world of exciting career possibilities, where we focus not just on placements, but on honing your skills through tailored
-              training and internship opportunities.{" "}
-            </p>
-          </div>
+      <div className="w-full flex relative rounded-xl items-center shadow-lg">
+  {/* Text Overlay (Top Left) */}
+  <div className="absolute text-white w-full md:w-1/2 rounded-md z-10 px-6 md:pl-20 text-center md:text-left">
+    <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold pb-4 md:pb-6 leading-snug">
+      A fulfilling career begins with our dedicated Placement Department.
+    </h3>
+    <p className="text-sm sm:text-base md:text-lg text-white/80">
+      Step into a world of exciting career possibilities, where we focus not just on placements,
+      but on honing your skills through tailored training and internship opportunities.
+    </p>
+  </div>
 
-          {/* Image */}
-          <Image src={empoweringFuture} alt="empoweringFuture" className="rounded-xl w-full h-[500px] object-cover object-center" />
-        </div>
+  {/* Image */}
+  <Image
+    src={empoweringFuture}
+    alt="empoweringFuture"
+    className="rounded-4xl w-full h-[300px] sm:h-[400px] md:h-[490px] object-cover object-center"
+  />
+</div>
 
         {/* Stats Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center w-full mt-12">

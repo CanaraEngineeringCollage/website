@@ -16,7 +16,7 @@ const   AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepar
     <section className="md:py-14 text-[#1D1D1F] xl:py-28 pb-10 max-w-7xl xl:max-w-[75%] mx-auto lg:px-32 ">
       <div>
         <div className="flex justify-between  mb-5 lg:mb-10">
-          <div className="w-[75%]">
+          <div className="lg:w-[75%] ">
             <h1 className="text-3xl w-[90%] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-[#1D1D1F]  ">Department of {departmentName}</h1>
           </div>
           <div className="hidden lg:block ">

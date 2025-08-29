@@ -92,7 +92,7 @@ const EmpowerNextGeneration: React.FC = () => {
   });
 
   return (
-    <section className="max-w-7xl xl:max-w-[75%] mx-auto pt-10 pb-16 overflow-hidden text-black">
+    <section className="max-w-5xl xl:max-w-[65%] mx-auto pt-10 pb-16 overflow-hidden text-black">
       <div>
         {title && <h1 className="text-3xl text-center mb-14 md:text-[40px] lg2:text-5xl xl:text-6xl font-bold">{title}</h1>}
 
@@ -103,10 +103,10 @@ const EmpowerNextGeneration: React.FC = () => {
             alt={mainImage?.alt || mainImage?.title}
             width={1000}
             height={1000}
-            className="rounded-3xl w-full h-[50vh] lg:h-full object-cover"
+            className="rounded-3xl lg:w-full h-[50vh] lg:h-[500px]  object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-3xl"></div>
-          <div className="absolute mx-6 lg:mx-12 top-[120px] lg:top-[270px] left-0 w-full h-full flex justify-center flex-col">
+          <div className="absolute mx-6 lg:mx-12 top-[120px] lg:top-[120px] left-0 w-full h-full flex justify-center flex-col">
             <h1 className="text-white lg:text-[40px] text-[21px] text-start font-bold me-8 lg:me-28">{mainImage?.title}</h1>
 
             <div className="flex items-center justify-between me-8 lg:me-28 mt-2">

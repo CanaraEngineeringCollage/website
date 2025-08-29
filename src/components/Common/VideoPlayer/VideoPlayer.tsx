@@ -90,7 +90,7 @@ console.log(youtubeUrl);
 
       <div
         className={cn(
-          "relative w-full lg:max-h-[500px] mx-auto aspect-video rounded-2xl overflow-hidden"
+          "relative w-full lg:max-h-[500px] mx-auto aspect-video rounded-4xl overflow-hidden"
         )}
       >
         <AnimatePresence>

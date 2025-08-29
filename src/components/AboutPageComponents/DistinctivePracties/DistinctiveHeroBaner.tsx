@@ -5,7 +5,7 @@ import imageUrl from "../../../../public/herosectionImages/herosection1.webp"
 
 const DistinctiveHeroBaner: React.FC = () => {
   return (
-    <section className="relative w-full h-[90vh] md:h-[100vh] flex flex-col justify-center items-center text-center px-4 overflow-hidden">
+    <section className="relative w-full h-[90vh] md:h-[70vh] flex flex-col justify-center items-center text-center px-4 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           src={imageUrl}
