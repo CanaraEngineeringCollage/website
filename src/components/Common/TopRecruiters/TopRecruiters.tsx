@@ -4,9 +4,15 @@ import logos from "../../../utils/companyLogo/logos.json";
 import Image from "next/image";
 import { cn } from "@/lib/utils"; // If you don't have cn, remove it
 
-const renderLogos = (logosArray: { src: string; alt: string }[], reverse = false) => (
+const renderLogos = (
+  logosArray: { src: string; alt: string }[],
+  reverse = false,
+  speed = 50) => (
   <div className="logo-scroll-container">
-    <div className={`animate-marquee ${reverse ? "reverse" : ""}`}>
+    <div   style={{
+        animation: `${reverse ? "marquee-right" : "marquee-left"} ${speed}s linear infinite`,  display: "flex",
+  width: "max-content"
+      }}>
       {[...logosArray, ...logosArray].map((logo, index) => (
         <div key={index} className="flex items-center justify-center mx-4">
           <Image
@@ -39,7 +45,7 @@ const TopRecruiters: React.FC = () => {
           {renderLogos(row1)}
 
           {/* Row 2 - scroll right */}
-          {renderLogos(row2, true)}
+          {renderLogos(row2, true,80)}
 
           {/* Row 3 - scroll left */}
           {renderLogos(row3)}

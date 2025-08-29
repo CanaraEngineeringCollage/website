@@ -45,12 +45,12 @@ export default function Academics() {
         outline-none focus:ring-0 focus:outline-none hover:border-none  text-[#1D1D1F] z-100"
       >
         <div
-          className="w-full max-w-screen-2xl bg-white shadow-md rounded-xl flex justify-center gap-8 lg:py-8 xl:p-8 
+          className="w-full max-w-screen-2xl bg-white shadow-md  rounded-xl flex justify-center gap-8 lg:py-8 xl:p-8 
         border-none outline-none hover:border-none"
         >
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 xl:grid-cols-4 lg:gap-0 xl:gap-8 mx-16 w-full">
+          <div className="grid grid-cols-1 max-w-[75%] sm:grid-cols-2 lg:grid-cols-12  lg:gap-0 xl:gap-8 mx-16 w-full">
             {/* Column 1 */}
-            {/* <div className="flex lg:col-span-2 xl:col-auto gap-4 pr-4 border-r border-gray-300 ">
+            {/* <div className="flex lg:col-span-2  gap-4 pr-4 border-r border-gray-300 ">
               <div className="flex items-start">
                 <Notpad />
               </div>
@@ -74,7 +74,7 @@ export default function Academics() {
             </div> */}
 
             {/* Column 2 */}
-            <div className="flex lg:col-span-4 xl:col-auto lg:gap-2 xl:gap-4 pr-4 border-r border-gray-300 ">
+            <div className="flex lg:col-span-5  lg:gap-2 xl:gap-4 pr-4 border-r border-gray-300 ">
               <div className="flex lg:ml-3 xl:ml-0 items-start">
                 <Book />
               </div>
@@ -96,7 +96,7 @@ export default function Academics() {
             </div>
 
             {/* Column 3 */}
-            <div className="flex lg:col-span-4 xl:col-auto gap-4 pr-4 border-r border-gray-300 ">
+            <div className="flex lg:col-span-4  gap-4 pr-4 border-r border-gray-300 ">
               <div className="flex lg:ml-3 xl:ml-0 items-start">
                 <Examination />
               </div>
@@ -117,7 +117,7 @@ export default function Academics() {
             </div>
 
             {/* Column 4 */}
-            <div className="flex lg:col-span-2 xl:col-auto gap-4 hover:border-none">
+            <div className="flex lg:col-span-3  gap-4 hover:border-none">
               <div className="flex lg:ml-3 xl:ml-0 items-start">
                 <Learning />
               </div>
