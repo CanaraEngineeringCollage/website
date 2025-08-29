@@ -19,7 +19,7 @@ const FooterCard = () => {
             your future opportunities.
           </p>
           <button aria-label="Book Your Counselling Session Today"
-           onClick={()=>setIsOpen(true)} className="text-[#2884CA] cursor-pointer lg:px-5 px-3 py-3 bg-white rounded-4xl">Book Your Counselling Session Today</button>
+           onClick={()=>setIsOpen(true)} className="text-[#2884CA] cursor-pointer text-[14px] lg:text-[20px] lg:px-5 px-3 py-3 bg-white rounded-4xl">Book Your Counselling Session Today</button>
         </div>
       </div>
       <ContactFormModal isOpen={isOpen} onClose={setIsOpen} />

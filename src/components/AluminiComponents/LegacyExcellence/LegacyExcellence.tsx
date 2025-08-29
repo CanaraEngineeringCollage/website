@@ -164,7 +164,7 @@ export default function LegacyExcellance() {
                 prevEl: ".swiper-button-prev-custom",
 
               }}
-              spaceBetween={-240}
+              spaceBetween={-260}
               breakpoints={{
                 640: { slidesPerView: 1.1, spaceBetween: 20 },
               }}

@@ -143,6 +143,7 @@ export default function DistinctiveCarousel() {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isPlaying]);
+  
 
 
     const images = [
@@ -153,12 +154,12 @@ export default function DistinctiveCarousel() {
 
 
   return (
-    <section className="  mx-auto  py-12 overflow-hidden flex justify-center items-center h-[100vh]">
+    <section className="  mx-auto  py-12 overflow-hidden  flex justify-center items-center h-[100vh]">
       <div className="grid grid-cols-1 gap-8 lg2:gap-16 ">
         {/* Left Side - Swiper */}
         <div className="relative w-full">
           <div className="relative">
-  <Swiper
+  <Swiper 
   ref={swiperRef}
   modules={[Navigation, Autoplay]}
   navigation={{
@@ -166,18 +167,36 @@ export default function DistinctiveCarousel() {
     prevEl: ".swiper-button-prev-custom",
   }}
   autoplay={{ delay: 3000 }}
+   
   loop={true}
-  centeredSlides={true}    // 👈 keeps active slide centered
-  slidesPerView={"auto"}   // 👈 lets us define custom widths
-  spaceBetween={270}        // 👈 clean gap between slides
+  centeredSlides={true}
+  slidesPerView={3}
+  spaceBetween={24}
   className="w-full"
+  breakpoints={{
+    320: {
+      slidesPerView: 1.2,
+      spaceBetween: 16,
+      centeredSlides: true,
+    },
+    768: {
+      slidesPerView: 2.5,
+      spaceBetween: 20,
+      centeredSlides: true,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+      centeredSlides: true,
+    },
+  }}
 >
   {images.map((src, index) => (
     <SwiperSlide
       key={index}
-      className="!w-[80%] md:!w-[60%] lg:!w-[50%]"  // 👈 controls how much to show (peek)
+      className="!w-auto"
     >
-      <div className="relative h-[400px] lg:h-[500px] w-[1000px] rounded-3xl overflow-hidden">
+      <div className="relative h-[400px] lg:h-[500px] w-full rounded-3xl overflow-hidden">
         <img
           src={src}
           alt="carousel image"

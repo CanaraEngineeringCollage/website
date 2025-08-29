@@ -6,8 +6,8 @@ const SecretaryMessage = () => {
   return (
    <section className="w-full bg-[#051B2C]">
   {/* ✅ Container with equal padding left/right */}
-  <div className="max-w-7xl mx-auto px-1 md:px-10 lg:px-22 xl:px-20 py-16 md:py-20 lg:py-24">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+  <div className=" py-16  md:py-20 lg:py-24">
+    <div className="grid grid-cols-1 w-[70%] overflow-hidden mx-auto lg:grid-cols-12  items-center">
 
 
       <div className=" lg:hidden block">
@@ -30,7 +30,7 @@ const SecretaryMessage = () => {
       </div>
       
       {/* Text Section */}
-      <div>
+      <div className="col-span-7">
         <h1 className="text-3xl text-center lg:text-start  md:text-[40px] lg:text-5xl xl:text-6xl font-bold leading-snug lg:leading-[1.1] text-white mb-6 ">
           Message from the Honorary Secretary
         </h1>
@@ -44,10 +44,10 @@ const SecretaryMessage = () => {
           we continue our journey toward becoming an Institute of Repute.
         </p>
       </div>
-
+<div className=" col-span-1"></div>
       {/* Image Section */}
-      <div className=" hidden lg:block ms-1">
-        <div className="flex flex-col items-center lg:ms-46  min-w-md max-w-md ">
+      <div className=" hidden col-span-4   lg:block ms-1">
+        <div className="flex flex-col items-center   w-full ">
         <div className="w-72 md:w-80 h-96 relative overflow-hidden shadow-md rounded-xl">
           <Image
             src={img}

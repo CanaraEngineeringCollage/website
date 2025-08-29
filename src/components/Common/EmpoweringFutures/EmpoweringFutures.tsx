@@ -116,7 +116,7 @@ export default function EmpoweringFutures() {
         </div>
 
         {/* Banner Section */}
-      <div className="w-full flex relative rounded-xl items-center shadow-lg">
+      <div className="w-full overflow-hidden flex relative rounded-4xl items-center shadow-lg">
   {/* Text Overlay (Top Left) */}
   <div className="absolute text-white w-full md:w-1/2 rounded-md z-10 px-6 md:pl-20 text-center md:text-left">
     <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold pb-4 md:pb-6 leading-snug">
@@ -132,7 +132,7 @@ export default function EmpoweringFutures() {
   <Image
     src={empoweringFuture}
     alt="empoweringFuture"
-    className="rounded-4xl w-full h-[300px] sm:h-[400px] md:h-[490px] object-cover object-center"
+    className=" w-full h-[300px] overflow-hidden sm:h-[400px] md:h-[490px] object-cover object-center"
   />
 </div>
 
