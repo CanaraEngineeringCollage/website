@@ -6,7 +6,7 @@ export const metadata = {
   openGraph: {
     title: "Alumni Portal | Canara Engineering College",
     description: "Join the Canara Engineering College Alumni Portal to reconnect, collaborate, and stay informed about events, news, and opportunities.",
-    url: "https://your-website-url.com/alumini/portal", // update this
+    url: "https://your-website-url.com/alumni/portal", // update this
     siteName: "Canara Engineering College",
     images: [
       {

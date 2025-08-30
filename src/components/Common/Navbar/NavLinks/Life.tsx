@@ -96,9 +96,9 @@ export default function Life() {
                 <Link href="/events">
                   <li className={`${pathname.includes("/events") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Calendar of Events</li>
                 </Link>
-                <Link href="/alumini">
+                <Link href="/alumni">
                 
-                  <li className={`${pathname.includes("/alumini") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Alumni</li>
+                  <li className={`${pathname.includes("/alumni") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Alumni</li>
                 </Link>
                 </ul>
               </div>

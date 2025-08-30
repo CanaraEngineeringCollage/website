@@ -53,8 +53,9 @@ const Advisory = ({ datam }) => {
                 className="w-full  object-cover h-[350px] rounded-t-xl"
               />
               <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
-              <div className="absolute z-10 top-[75%] left-6">
-                <h2 className="text-[20px] font-bold">{item.name}</h2>
+              <div className="absolute z-10 top-[75%] left-4">
+                <div className="pe-2">
+                <h2 className="text-[20px] font-bold ">{item.name}</h2>
                 <p className="text-[17px]">{item.title}</p>
                 <p
                   onClick={() => openModal(item)}
@@ -63,6 +64,7 @@ const Advisory = ({ datam }) => {
                   View Profile
                   <MdKeyboardArrowRight className="ml-1 text-xl" />
                 </p>
+              </div>
               </div>
             </div>
           );

@@ -14,7 +14,7 @@ const AlumniPortal = () => {
   return (
     <section className="py-10 xl:py-20 text-[#1D1D1F] overflow-hidden">
       <div className="lg2:mx-24 mx-5">
-        <h1 className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold pb-1 lg:pb-10">Alumni Portal</h1>
+        <h1 className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold pb-1 lg:pb-10">About the Alumni Assocation</h1>
         <div className="grid grid-cols-1  md:grid-cols-12 mt-10">
           <div className="col-span-3 sticky top-32 self-start hidden md:block">
             {alumniData?.map((section, index) => (

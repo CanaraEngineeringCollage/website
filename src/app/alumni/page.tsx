@@ -41,9 +41,9 @@ const page = () => {
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <StudentLIfeInCanara />
       </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+      {/* <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <EmpowerNextGeneration />
-      </section>
+      </section> */}
       <section className="pb-6">
         <LegacyExcellance />
       </section>

@@ -106,7 +106,7 @@ const campusBeats = [
   },
   {
     title: "Alumni",
-    link: "/alumini",
+    link: "/alumni",
   },
 ];
 

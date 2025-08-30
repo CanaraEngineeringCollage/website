@@ -119,7 +119,7 @@ export default async function DepartmentPage({ params }: { params: { slug: strin
           thumbnail={department?.thumbnail}
         />
       </section>
-      <section className="pt-10 lg:pt-26">
+      <section className="pt-10 lg:mb-20 lg:pt-20">
         <DepartmentMissionVision
           ethicalLearning={department.ethicalLearning}
           holisticGrowthResearch={department.holisticGrowthResearch}
