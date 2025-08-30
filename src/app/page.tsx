@@ -43,7 +43,7 @@ export default function Home() {
       <section className="px-6 md:px-12 lg:px-36 xl:px-20 py-12">
         <FutureCampusText />
       </section>
-      <section className=" xl:px-0 py-12">
+      <section className="  lg:px-0 xl:px-0  py-12 ">
         <ExplorePrograms />
       </section>
       <section className="bg-[#144A72] my-12 py-20">
@@ -52,10 +52,10 @@ export default function Home() {
           title="Experience the Campus"
           videoUrl="z-Axfq0HfZOLspAj"
           youtubeUrl="DotJvDklT5Y"
-          thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1746612052/duzvb3twtlcu0xve8off.png"
+          thumbnail="/youtubeThumbnails/Campus Tour-Thumbnail@300x.webp"
         />
       </section>
-      <section className="px-6  md:px-12 lg:px-16 xl:px-0 py-12">
+      <section className="px-6  md:px-12 lg:px-26 xl:px-0 py-12">
         <EmpoweringFutures />
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0 ">
@@ -66,7 +66,7 @@ export default function Home() {
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           // videoUrl="z-Axfq0HfZOLspAj"
           youtubeUrl="Xhq4QpXZco8"
-          thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1745989151/gerbybf4ejfgs7aeajyq.jpg"
+          thumbnail="/youtubeThumbnails/Homepage-Thumbnail@300x.webp"
         />
       </section>
       <section className="px-0 bg-white pt-5 pb-10">

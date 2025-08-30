@@ -78,6 +78,8 @@ lite-youtube {
   opacity: 1 !important;
 }
 
+
+
 .swiper-pagination-bullet-active {
   background-color: #192f59 !important; /* blue-600 */
   width: 36px !important;
@@ -107,6 +109,10 @@ lite-youtube {
   display: flex;
   width: max-content;
   animation: marquee 30s linear infinite;
+}
+
+.list-square {
+  list-style-type: square;
 }
 
 .animate-marquee.reverse {

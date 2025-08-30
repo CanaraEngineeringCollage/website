@@ -50,12 +50,12 @@ export default function DepartmentFaculty({heading,description}:{heading:string,
             </p>
           </div>
           <div className="flex items-center justify-between gap-4">
-            <Link href="/about/educators-administrators"><button
+            {heading!="Meet Our Admissions Team"&&<Link href="/about/educators-administrators"><button
               aria-label="Meet more of our Faculty"
               className="bg-[#d0e2f8] text-black text-block  px-6 py-2 rounded-full text-[17px] font-medium "
             >
               Meet more of our Faculty
-            </button></Link>
+            </button></Link>}
             <div className="flex items-center gap-3">
               <button
                 aria-label="Previous Faculty Member"
@@ -123,11 +123,11 @@ export default function DepartmentFaculty({heading,description}:{heading:string,
           ))}
         </div>
       </div>
-      <div className="max-w-7xl mx-auto flex flex-col items-center justify-between gap-10 lg:hidden ">
+      <div className="max-w-7xl mx-auto flex flex-col items-center justify-between gap-10 lg:hidden  ">
         <div className="max-w-md space-y-44">
           <div>
-            <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-gray-900 leading-tight">Get to Know Our Department’s Faculty</h2>
-            <p className="text-gray-700 text-lg">
+            <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-center text-gray-900 leading-tight">Get to Know Our Department’s Faculty</h2>
+            <p className="text-gray-700 text-lg text-center">
               Our faculty members are the heart of our department, guiding & inspiring students with their expertise, dedication & passion for
               education.
             </p>
@@ -138,7 +138,7 @@ export default function DepartmentFaculty({heading,description}:{heading:string,
           {visibleMembersMobile.map((member, index) => (
             <div
               key={index}
-              className={`relative cursor-pointer w-full max-w-[309px] h-[480px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center  shadow-md`}
+              className={`relative cursor-pointer w-full ms-5 max-w-[309px] h-[480px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center  shadow-md`}
             >
               <Image
                onClick={() => {

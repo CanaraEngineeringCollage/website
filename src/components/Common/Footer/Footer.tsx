@@ -168,7 +168,8 @@ const Footer: FC = () => {
           <p className="text-center md:text-left mb-2 md:mb-0">Copyright © 2024 CEC & Canara High School Association. All rights reserved.</p>
           <div className="flex space-x-6 items-center">
             <div className="flex space-x-2">
-              <p>Privacy Policy | Terms of Use</p>
+              <Link href={'/privacy-policy'}><p>Privacy Policy | Terms of Use</p></Link>
+              
             </div>
           </div>
         </div>

@@ -31,7 +31,7 @@ const page = () => {
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           youtubeUrl="https://youtu.be/rv0KerNW4QE?si=ObYcwEiaqF0UD90P"
-          thumbnail="https://res.cloudinary.com/dvandhsai/image/upload/v1746007133/yfqf8rnceq50jdtttp7y.png"
+          thumbnail=""
         />
       </section>
       <section className="px-6 pb-10  md:px-12 lg:px-16 xl:px-0">

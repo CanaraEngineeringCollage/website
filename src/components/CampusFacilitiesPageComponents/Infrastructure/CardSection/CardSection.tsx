@@ -17,10 +17,10 @@ type DescriptionProps = {
   middleTitle2: string;
   middleDescription2: string;
   middleTitle3: string;
-  middleDescription3: [];
+  middleDescription3?: [];
   image2?: string;
   middleTitle4: string;
-  middleDescription4: [];
+  middleDescription4?: [];
   bottomTitile: string; // Note: Typo in JSON ("bottomTitile" instead of "bottomTitle")
   subDescription3: string;
   image3?: string;

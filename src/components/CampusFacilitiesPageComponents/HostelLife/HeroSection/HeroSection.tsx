@@ -4,7 +4,7 @@ import bgImage from "../../../../../public/campusFacilitiesPageImages/hostelLife
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full h-[90vh] md:h-[120vh]  flex flex-col justify-center items-center text-center px-4 overflow-hidden">
+    <section className="relative w-full h-[60vh] md:h-[70vh]  flex flex-col justify-center items-center text-center px-4 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image src={bgImage} alt="Background 1" className="object-cover w-full h-[80vh] md:h-full" priority />
 

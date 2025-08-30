@@ -17,7 +17,7 @@ const HotOfThePress = () => {
       <div className="lg:flex lg:justify-between md:pb-14 pb-10">
         <div className="flex text-black flex-col">
           <h1 className="text-3xl text-[#1D1D1F] md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-semibold font-sans  md:pb-6 tracking-[0.13px]">
-           News Letters
+           Highlights
           </h1>
         </div>
         <div className="hidden md:block">

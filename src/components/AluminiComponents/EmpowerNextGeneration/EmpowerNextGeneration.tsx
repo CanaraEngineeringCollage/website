@@ -92,7 +92,7 @@ const EmpowerNextGeneration: React.FC = () => {
   });
 
   return (
-    <section className="max-w-7xl xl:max-w-[75%] mx-auto pt-10 pb-16 overflow-hidden text-black">
+    <section className="max-w-5xl xl:max-w-[65%] mx-auto pt-10 pb-16 overflow-hidden text-black">
       <div>
         {title && <h1 className="text-3xl text-center mb-14 md:text-[40px] lg2:text-5xl xl:text-6xl font-bold">{title}</h1>}
 
@@ -103,15 +103,15 @@ const EmpowerNextGeneration: React.FC = () => {
             alt={mainImage?.alt || mainImage?.title}
             width={1000}
             height={1000}
-            className="rounded-3xl w-full h-[50vh] lg:h-full object-cover"
+            className="rounded-3xl lg:w-full h-[50vh] lg:h-[500px]  object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-3xl"></div>
-          <div className="absolute mx-6 lg:mx-12 top-[120px] lg:top-[270px] left-0 w-full h-full flex justify-center flex-col">
-            <h1 className="text-white lg:text-[40px] text-[21px] text-start font-bold me-8 lg:me-28">{mainImage?.title}</h1>
+          <div className="absolute inset-0 flex flex-col justify-end mx-6 lg:mx-12 pb-6 lg:pb-12">
+            <h1 className="text-white lg:text-[40px] w-xl text-[21px] text-start font-bold me-8 lg:me-28">{mainImage?.title}</h1>
 
-            <div className="flex items-center justify-between me-8 lg:me-28 mt-2">
-              <p className="text-white lg:text-[20px] text-[14px] max-w-2/3">{mainImage?.description}</p>
-              <button aria-label="Read More" onClick={() => openCard(0)} className="text-sm lg:text-base bg-white text-black px-4 py-2 rounded-full hover:bg-gray-200 transition">Read More</button>
+            <div className="flex items-center justify-between  gap-6 lg:me-28 mt-2">
+              <p className="text-white lg:text-[20px] text-[14px] w-xl">{mainImage?.description}</p>
+              <button aria-label="Read More" onClick={() => openCard(0)} className="text-sm lg:text-base bg-white text-black px-2 py-2 w-60 rounded-full hover:bg-gray-200 transition">Read More</button>
             </div>
           </div>
         </div>
@@ -129,9 +129,17 @@ const EmpowerNextGeneration: React.FC = () => {
                   className="rounded-3xl w-full h-[45vh] lg:h-[60vh] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-3xl"></div>
-                <div className="absolute  top-[120px] lg:top-[150px] xl:top-[220px]  w-full h-full flex justify-center flex-col">
-                  <h1 className="text-white text-[21px] font-bold text-center">{amenity?.title}</h1>
-                 <button aria-label="Read More" onClick={() => openCard(index)} className="text-white border rounded-full py-2 mx-12 mt-6 cursor-pointer">Read More</button>
+                <div className="absolute inset-0 flex flex-col justify-end items-center pb-6">
+                  <h1 className="text-white text-[21px]  font-bold text-center">
+                    {amenity?.title}
+                  </h1>
+                  <button
+                    aria-label="Read More"
+                    onClick={() => openCard(index)}
+                    className="text-white border rounded-full py-2 px-21 mt-6 cursor-pointer"
+                  >
+                    Read More
+                  </button>
                 </div>
               </div>
             </div>

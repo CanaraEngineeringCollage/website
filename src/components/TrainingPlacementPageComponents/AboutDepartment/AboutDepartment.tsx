@@ -3,10 +3,11 @@ import { HiDownload } from "react-icons/hi";
 
 const AboutDepartment = () => {
   return (
-    <section className="md:pt-10 md:pb-2 pb-20  max-w-7xl xl:max-w-[75%] mx-auto lg:px-32">
+    <section className=" md:pb-2 pb-20  max-w-7xl xl:max-w-[75%] mx-auto lg:px-32">
       <div className="">
         <div className="flex justify-between items-center pb-5 lg:pb-10">
-          <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-black ">About the Department</h1>
+          <h1 className="text-3xl md:text-[40px] lg2:text-[46.5px] xl:text-6xl max-w-2xl  font-bold text-[#1D1D1F] ">About the Training &
+            Placements Department</h1>
           <a
             href="/brochures/Placement Brochure Design.pdf"
             download

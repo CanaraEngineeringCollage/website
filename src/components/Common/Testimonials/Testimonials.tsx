@@ -142,21 +142,21 @@ export function Testimonials({ className }: TestimonialsProps) {
   const topTestimonials = testimonials.slice(0, middleIndex);
   const bottomTestimonials = testimonials.slice(middleIndex);
   return (
-    <div className={cn("w-full  mx-auto px-4 overflow-hidden ", className)}>
+    <div className={cn("w-full  mx-auto px-4 py-19 overflow-hidden ", className)}>
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-[#1D1D1F]  mb-4">What Past Alumni Say</h2>
-        <p className="text-[14px] md:text-xl text-textGray max-w-3xl mx-auto">
+        <h2 className="text-3xl md:text-[40px] lg2:text-[45.75px] xl:text-6xl font-bold text-[#1D1D1F]  mb-4">Hear from Our Alumni</h2>
+        <p className="text-[14px] md:text-[23.25px] text-[#6E6E73] max-w-3xl mx-auto">
           Insights & experiences from our graduates on how Canara Engineering College shaped & prepared them for their future
         </p>
       </div>
       {/* Top Half */}
-      <div className="flex flex-col gap-7">
+      <div className="flex flex-col gap-7 ">
 
       <div className="hidden md:block">
         {renderTestimonials(topTestimonials)} {/* Scrolls left */}
       </div>
 
-      <div className="hidden md:block">
+      <div className="block">
         {renderTestimonials(bottomTestimonials, true)} {/* Scrolls right */}
       </div>
       </div>

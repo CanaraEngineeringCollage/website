@@ -172,7 +172,7 @@ export default function LegacyExcellance() {
             >
               {data.map((item, index) => (
                 <SwiperSlide key={item.id}>
-                  <div className="relative lg:h-[800px] rounded-3xl">
+                  <div className="relative lg:h-[500px] rounded-3xl">
                     <Image src={item.imageSrc} alt={item.title} width={700} height={700} className="w-full object-cover h-[100%] rounded-3xl" />
 
                     {/* Text Overlay */}

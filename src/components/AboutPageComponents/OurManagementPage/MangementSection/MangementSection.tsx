@@ -31,8 +31,8 @@ const HeroSection = () => {
 
   return (
     <section>
-      <div className="px-4 sm:px-10 md:px-16 lg:px-20 py-12 sm:py-16 md:py-20">
-        <h1 className=" text-[#1D1D1F] text-[39px] lg:text-[54px] font-bold mb-8 sm:mb-10 md:mb-12">Our Management</h1>
+      <div className="px-4 sm:px-10 md:px-16 lg:px-24  py-12 sm:py-16 md:py-20">
+        <h1 className=" text-[#1D1D1F] text-[39px] lg:text-[54px] font-bold mb-8 sm:mb-10 md:mb-32">Our Management</h1>
         <div className="grid grid-cols-1 md:grid-cols-12 ">
           <div className="md:col-span-3 text-[20px]">
             {headings.map((heading, index) => (
@@ -47,7 +47,7 @@ const HeroSection = () => {
           </div>
           <div className="md:col-span-1"></div>
           <div className="md:col-span-8">
-            <h1 className="text-textGray font-bold text-[20px] pb-6 sm:pb-8 md:pb-10">Canara High School Association {selectedHeading}</h1>
+            <h1 className="text-textGray font-bold text-[20px] pb-6 sm:pb-8 md:pb-8">Canara High School Association {selectedHeading}</h1>
             {/* Mobile layout: title and name in the same line */}
             {selectedHeading === "Organisational Structure" ? (
               <div>
@@ -61,7 +61,7 @@ const HeroSection = () => {
               </div>
             ) : selectedHeading === "Canara Institutes" ? (
               <div className="overflow-x-auto">
-                <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px] ">
                   <thead>
                     <tr className="bg-[#F3F8FC] text-[#2884CA]">
                       <th className="py-3 md:px-4 px-1 border-b">Sl.No</th>
@@ -86,27 +86,27 @@ const HeroSection = () => {
               </div>
             ) : (
               <>
-                <div className="block sm:hidden">
+                <div className="block sm:hidden ">
                   {(data[selectedHeading] as ManagementItem[]).map((item, index) => (
                     <div
                       key={index}
-                      className={`flex justify-between gap-2 pb-3 mb-3 ${index < (data[selectedHeading] as ManagementItem[]).length - 1 ? "border-b-2 border-border" : ""}`}
+                      className={`flex justify-between gap-2 pb-3 mb-3  ${index < (data[selectedHeading] as ManagementItem[]).length - 1 ? "border-b-2 border-border " : ""}`}
                     >
-                      <h1 className="text-[16px] text-textGray font-bold">{item.title}</h1>
+                      <h1 className="text-[16px]  text-textGray font-bold">{item.title}</h1>
                       <h1 className="text-[16px] text-textGray">{item.name}</h1>
                     </div>
                   ))}
                 </div>
                 {/* Desktop layout: original two-column layout */}
                 <div className="hidden sm:grid sm:grid-cols-12">
-                  <div className="text-[17px] col-span-4 text-textGray">
+                  <div className="text-[17px] col-span-4 text-[#86868B]">
                     {(data[selectedHeading] as ManagementItem[]).map((item, index) => (
-                      <h1 key={index} className={`pb-3 mb-3 ${index < (data[selectedHeading] as ManagementItem[]).length - 1 ? "border-b-2 border-border" : ""}`}>
+                      <h1 key={index} className={`pb-3 mb-3 font-bold text-[17px] ${index < (data[selectedHeading] as ManagementItem[]).length - 1 ? "border-b-2  border-border" : ""}`}>
                         {item.title}
                       </h1>
                     ))}
                   </div>
-                  <div className="text-[17px] col-span-8  text-textGray">
+                  <div className="text-[17px] col-span-8  text-[#86868B]">
                     {(data[selectedHeading] as ManagementItem[]).map((item, index) => (
                       <h1 key={index} className={`pb-3 mb-3 ${index < (data[selectedHeading] as ManagementItem[]).length - 1 ? "border-b-2 border-border" : ""}`}>
                         {item.name}

@@ -28,14 +28,21 @@ const AmenitiesCard: React.FC<AmenitiesCardProps> = ({ title, amenities, mainIma
             alt={mainImage?.alt || mainImage?.title}
             width={1000}
             height={1000}
-            className="rounded-3xl w-full h-[50vh] lg:h-full object-cover"
+            className="rounded-3xl w-full h-[50vh] lg:h-[500px] object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-3xl"></div>
-          <div className="absolute mx-6 lg:mx-12 top-[120px] lg:top-[200px] left-0 w-full h-full flex justify-center flex-col">
-          <p className="text-textGray  lg:text-[20px] text-[14px] me-8 lg:me-28">{mainImage?.date}</p>
-            <h1 className="text-white lg:text-[40px] text-[21px] text-start font-bold me-8 lg:me-28">{mainImage?.title}</h1>
-            <p className="text-white lg:text-[20px] text-[14px] me-8 lg:me-28">{mainImage?.description}</p>
+          <div className="absolute inset-0 mx-6 lg:mx-12 flex flex-col justify-end pb-8">
+            <p className="text-textGray lg:text-[20px] text-[14px] me-8 lg:me-28">
+              {mainImage?.date}
+            </p>
+            <h1 className="text-white lg:text-[40px] text-[21px] text-start font-bold me-8 lg:me-28 mt-2">
+              {mainImage?.title}
+            </h1>
+            <p className="text-white lg:text-[20px] text-[14px] me-4 lg:me-28 mt-2">
+              {mainImage?.description}
+            </p>
           </div>
+
         </div>
 
         {/* Grid of Amenities Cards */}
@@ -51,9 +58,13 @@ const AmenitiesCard: React.FC<AmenitiesCardProps> = ({ title, amenities, mainIma
                   className="rounded-3xl w-full h-[45vh] lg:h-[50vh] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-3xl"></div>
-                <div className="absolute mx-6 top-[120px] lg:top-[100px] xl:top left-0 w-full h-full flex justify-center flex-col">
-                  <h1 className="text-white text-[21px] text-justify font-bold">{amenity?.title}</h1>
-                  <p className="text-white text-[14px] me-10">{amenity?.description}</p>
+                <div className="absolute inset-0 mx-6 flex flex-col justify-end pb-8">
+                  <h1 className="text-white text-[21px] text-justify font-bold">
+                    {amenity?.title}
+                  </h1>
+                  <p className="text-white text-[14px] me-10 mt-2">
+                    {amenity?.description}
+                  </p>
                 </div>
               </div>
             </div>

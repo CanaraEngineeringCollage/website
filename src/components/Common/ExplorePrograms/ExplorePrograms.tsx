@@ -21,8 +21,8 @@ export default function ExplorePrograms() {
   const cards = programData.map((card, index) => <Card key={card.title} card={card} index={index} />);
 
   return (
-    <div className="w-full h-full  text-black ">
-      <h2 className="max-w-7xl xl:max-w-[75%]   mx-auto text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-[#1D1D1F]">Explore our programs</h2>
+    <div className="w-full  h-full  text-black ">
+      <h2 className="max-w-7xl ps-6  lg:ps-32 xl:max-w-[75%] ms-3 lg:ms-0  mx-auto text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-[#1D1D1F]">Explore our programs</h2>
       <Carousel items={cards} />
     </div>
   );
@@ -33,11 +33,11 @@ const programData = [
   {
     category: "Bachelors of Engineering in",
     title: "Computer Science and Engineering",
-    src: "/engineeringProgrammImages/cse.webp", // use your real images or external links
+    src: "/engineeringProgrammImages/cse1.webp", // use your real images or external links
     content: (
       <CardContent
         description={{
-          src: "/engineeringProgrammImages/cse.webp",
+          src: "/engineeringProgrammImages/cse1.webp",
           subtitle1: "Overview of the Department",
           subDescription1:
             "Established in 2001, the Computer Science and Engineering (CSE) Department offers the Bachelor of Engineering (BE) degree in Computer Science & Engineering (CS&E). The department is supported by a team of highly qualified, dedicated, and experienced faculty members who are deeply involved in teaching, research, and product development. The department actively promotes co-curricular/extracurricular activities and publishes technical magazine and newsletter, serving as a platform for students and faculty to showcase innovative ideas, programming expertise, and insights on cutting edge technologies in computing and technology.",
@@ -54,11 +54,11 @@ const programData = [
   {
     category: "Bachelors of Engineering in",
     title: "Artificial Intelligence and Machine Learning",
-    src: "/engineeringProgrammImages/aiml.webp",
+    src: "/engineeringProgrammImages/aiml1.webp",
     content: (
       <CardContent
         description={{
-          src: "/engineeringProgrammImages/aiml.webp",
+          src: "/engineeringProgrammImages/aiml1.webp",
           subtitle1: "Overview of the Department ",
           subDescription1:
             "The Department of Artificial Intelligence and Machine Learning (AIML), established in 2021, offers a Bachelor of Engineering (BE) program focused on cutting-edge technologies in AI and ML. With a vision to become a leading learning center in AI and ML education, the department aims to produce skilled engineers who can address industry and societal challenges. The curriculum emphasizes core areas like machine learning, data science, computer vision, and programming, supported by skill enhancement programs, research initiatives, and industry collaborations. Graduates are well-prepared for diverse career opportunities in sectors such as healthcare, finance, logistics, and more, driven by the rapid growth of the global AI market",
@@ -75,12 +75,12 @@ const programData = [
   {
     category: "Bachelors of Engineering in",
     title: "Electronics and Communication Engineering",
-    src: "/engineeringProgrammImages/ece.webp",
+    src: "/engineeringProgrammImages/ece1.webp",
 
     content: (
       <CardContent
         description={{
-          src: "/engineeringProgrammImages/ece.webp",
+          src: "/engineeringProgrammImages/ece1.webp",
           subtitle1: "Overview of the Department",
           subDescription1:
             "The Department was established in 2001 and has experienced faculties focused on innovation in cutting-edge electronics and communication technologies. We provide Students with a strong foundation in both theoretical and practical aspects. Our faculties are dedicated to the overall development of students ",
@@ -97,12 +97,12 @@ const programData = [
   {
     category: "Bachelors of Engineering in",
     title: "Computer Science and Design",
-    src: "/engineeringProgrammImages/csd.webp",
+    src: "/engineeringProgrammImages/csd1.webp",
 
     content: (
       <CardContent
         description={{
-          src: "/engineeringProgrammImages/csd.webp",
+          src: "/engineeringProgrammImages/csd1.webp",
           subtitle1: "Overview of the Department",
           subDescription1:
             "How is Computer Science and Design at Canara Engineering College different from other Computer Science programmes. Along with fundamentals of Computer Science, students are taught to incorporate design thinking. It is an interdisciplinary field that is an amalgamation of computer science and design principles that involves study of software development, human computer interaction and user experience design.",
@@ -119,12 +119,12 @@ const programData = [
   {
     category: "Bachelors of Engineering in",
     title: "Information Science and Engineering",
-    src: "/engineeringProgrammImages/ise.webp",
+    src: "/engineeringProgrammImages/ise1.webp",
 
     content: (
       <CardContent
         description={{
-          src: "/engineeringProgrammImages/ise.webp",
+          src: "/engineeringProgrammImages/ise1.webp",
           subtitle1: "Overview of the Department",
           subDescription1:
             "The Department of Information Science and Engineering at Canara Engineering College offers a comprehensive curriculum focused on computer science, software engineering, and information technology. It is equipped with modern labs and infrastructure to support hands-on learning and research. The department also emphasizes industry collaboration and provides opportunities for internships and career development.",
@@ -141,12 +141,12 @@ const programData = [
   {
     category: "Bachelors of Engineering in",
     title: "Computer Science and Business System",
-    src: "/engineeringProgrammImages/css.webp",
+    src: "/engineeringProgrammImages/css1.webp",
 
     content: (
       <CardContent
         description={{
-          src: "/engineeringProgrammImages/css.webp",
+          src: "/engineeringProgrammImages/css1.webp",
           subtitle1: "Overview of the Department",
           subDescription1:
             "The Department of Computer Science & Business System (CSBS) bridges technology and business, equipping students with industry-relevant technical and managerial skills. With a focus on innovation, entrepreneurship, and hands-on learning, the department nurtures future-ready professionals through industry interaction and research.",
