@@ -45,7 +45,7 @@ const TopRecruiters: React.FC = () => {
           {renderLogos(row1)}
 
           {/* Row 2 - scroll right */}
-          {renderLogos(row2, true,80)}
+          {renderLogos(row2, true,110)}
 
           {/* Row 3 - scroll left */}
           {renderLogos(row3)}

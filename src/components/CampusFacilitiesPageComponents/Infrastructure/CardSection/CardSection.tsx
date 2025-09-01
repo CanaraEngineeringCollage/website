@@ -74,7 +74,7 @@ function CardContent({ description }: CardContentProps) {
       <div className="p-4 lg:p-0 lg:px-20 space-y-10 text-left text-sm text-[#1D1D1F] bg-white">
         {/* Top Section */}
         <div>
-          {description.date && <p className="text-[16px] font-bold text-[#88888a] mb-5">{description.date}</p>}
+          {/* {description.date && <p className="text-[16px] font-bold text-[#88888a] mb-5">{description.date}</p>} */}
 
           {description.topTitle && <h3 className="text-[31px] lg:text-[46px] leading-[1.1] lg:max-w-[70%] mb-5 font-bold">{description.topTitle}</h3>}
 

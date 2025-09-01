@@ -29,7 +29,7 @@ interface ContactFormModalProps {
   maxWidth?: string;
 }
 
-const ContactFormModal: React.FC<ContactFormModalProps> = ({ isOpen, onClose, className = "", maxWidth = "max-w-7xl" }) => {
+const ContactFormModal: React.FC<ContactFormModalProps> = ({ isOpen, onClose, className = "", maxWidth = "max-w-5xl" }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [formData, setFormData] = useState({ fullName: "", email: "", phone: "", comments: "" });
   const [errors, setErrors] = useState({ fullName: "", email: "", phone: "", comments: "" });
@@ -136,7 +136,7 @@ const ContactFormModal: React.FC<ContactFormModalProps> = ({ isOpen, onClose, cl
               <h2 className="text-2xl sm:text-3xl lg:text-[46px] font-bold text-[#2884CA] text-center">
                 Ready to Shape Your Future?
               </h2>
-              <h2 className="text-2xl sm:text-3xl lg:text-[46px] font-bold text-black mb-4 text-center">
+              <h2 className="text-2xl sm:text-3xl lg:px-32 lg:text-[46px] font-bold text-black mb-4 text-center">
                 Book Your Counselling Session Today!
               </h2>
               <p className="text-gray-600 text-base sm:text-lg md:text-xl text-center max-w-3xl mx-auto">

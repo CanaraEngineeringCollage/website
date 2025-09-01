@@ -29,7 +29,7 @@ interface FormModalProps {
   maxWidth?: string;
 }
 
-const FormModal: React.FC<FormModalProps> = ({ isOpen, onClose, className = "", maxWidth = "max-w-7xl" }) => {
+const FormModal: React.FC<FormModalProps> = ({ isOpen, onClose, className = "", maxWidth = "max-w-5xl" }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [formData, setFormData] = useState({
     fullName: "",
@@ -220,10 +220,10 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onClose, className = "", 
               <IconX className="h-6 w-6 text-white" />
             </motion.button>
             {/* Form Content */}
-            <motion.div variants={contentVariants} className="p-4 px-32 py-16">
+            <motion.div variants={contentVariants} className="p-4 px-32 pt-24 pb-20">
               <h2 className="text-[46px] font-bold text-[#2884CA] text-center">Reconnect. Relive. Give Back.</h2>
               <h2 className="text-[46px] font-bold text-black mb-4 text-center">Join Our Alumni Network Today!</h2>
-              <p className="text-textGray text-[20px] text-center px-52">
+              <p className="text-textGray text-[20px] text-center px-32">
                 Submit the form to stay connected & receive exclusive alumni updates, events, & opportunities!
               </p>
 

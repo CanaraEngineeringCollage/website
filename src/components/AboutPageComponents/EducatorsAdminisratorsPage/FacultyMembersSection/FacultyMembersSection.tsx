@@ -121,9 +121,7 @@ const FacultyMembersSection = () => {
                 <div
                 onClick={() => {setSelectedMember(item); setIsModalOpen(true);}}
                   key={item.id}
-                  className={`relative w-full max-w-[280px] sm:max-w-[300px] md:max-w-[309px] h-[400px] sm:h-[430px] md:h-[400px] xl:h-[500px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center py-4 sm:py-6 shadow-md ${
-                    shouldCenterLast ? "sm:col-span-2 sm: justify-self-center" : ""
-                  }`}
+                  className={`relative w-full max-w-[280px] sm:max-w-[300px] md:max-w-[309px] h-[400px] sm:h-[430px] md:h-[400px] xl:h-[500px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center py-4 sm:py-6 shadow-md `}
                 >
                   <Image
                     src={item.image}
@@ -133,14 +131,15 @@ const FacultyMembersSection = () => {
                     className=" w-[80%] sm:w-[85%] md:w-full object-contain"
                   />
                   <div className="absolute bottom-0 left-0 w-full h-48 sm:h-52 md:h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
-                  <div className="absolute z-50 top-[75%] sm:top-[78%] md:top-[80%] left-4 sm:left-5 md:left-6">
-                    <h2 className="text-base sm:text-lg md:text-lg font-bold">{item.name}</h2>
-                  <p>{item.position}</p>
-                      <p className="text-xs cursor-pointer font-bold sm:text-sm md:text-sm flex items-center">
-                        View Profile
-                        <MdKeyboardArrowRight className="ml-1 text-xl" />
-                      </p>
-                  </div>
+              <div className="absolute z-50  left-0 px-3 bottom-4">
+  <h2 className="text-base sm:text-lg md:text-lg font-bold">{item.name}</h2>
+  <p>{item.position}</p>
+  <p className="text-xs cursor-pointer font-bold sm:text-sm md:text-sm flex items-center">
+    View Profile
+    <MdKeyboardArrowRight className="ml-1 text-xl" />
+  </p>
+</div>
+
                 </div>
               );
             })}

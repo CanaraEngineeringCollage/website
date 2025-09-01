@@ -30,7 +30,7 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
     if (swiperRef.current) {
       if (isPlay) {
         swiperRef.current.autoplay.stop();
-        setProgress(0); // Reset progress when pausing
+        // do NOT reset progress here, let it freeze
       } else {
         swiperRef.current.autoplay.start();
       }
@@ -39,9 +39,11 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
   };
 
   // Handle Swiper's autoplay time left to sync progress
-  const handleAutoplayTimeLeft = (_swiper: SwiperType, _time: number, progress: number) => {
-    // Progress is a value from 0 to 1; convert to 0-100 for the circle
-    setProgress((1 - progress) * 100);
+  const handleAutoplayTimeLeft = (_swiper: SwiperType, time: number, _progress: number) => {
+    // Calculate progress as % elapsed
+    const elapsed = autoplayDelay - time;
+    const percent = (elapsed / autoplayDelay) * 100;
+    setProgress(percent);
   };
 
   return (
@@ -98,7 +100,7 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
             />
             {/* Play/Pause Icon */}
             <foreignObject x="9" y="8" width="32" height="32">
-              <button  className="w-full h-full cursor-pointer flex items-center justify-center" aria-label={isPlay ? "Pause" : "Play"}>
+              <button className="w-full h-full cursor-pointer flex items-center justify-center" aria-label={isPlay ? "Pause" : "Play"}>
                 {isPlay ? <Pause /> : <Play />}
               </button>
             </foreignObject>
@@ -106,14 +108,15 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
         </div>
         {/* Navigation Buttons */}
         <div className="flex gap-2">
-          <button 
-          aria-label="Previous Slide"
+          <button
+            aria-label="Previous Slide"
             onClick={() => swiperRef.current?.slidePrev()}
             className="relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
           >
             <MdKeyboardArrowLeft />
           </button>
-          <button aria-label="Next Slide"
+          <button
+            aria-label="Next Slide"
             onClick={() => swiperRef.current?.slideNext()}
             className="relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
           >

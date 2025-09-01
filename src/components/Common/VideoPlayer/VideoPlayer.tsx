@@ -14,15 +14,7 @@ interface VideoPlayerProps {
   startTime?: number; // in seconds
 }
 
-const VideoPlayer: React.FC<VideoPlayerProps> = ({
-  youtubeUrl,
-  videoUrl,
-  title,
-  subTitle,
-  thumbnail,
-  titleClassname,
-  startTime,
-}) => {
+const VideoPlayer: React.FC<VideoPlayerProps> = ({ youtubeUrl, videoUrl, title, subTitle, thumbnail, titleClassname, startTime }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   console.log(youtubeUrl);
 
@@ -64,37 +56,19 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
     return <div className="text-red-500">Invalid YouTube URL or ID</div>;
   }
 
-  const thumbnailUrl =
-    thumbnail || `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+  const thumbnailUrl = thumbnail || `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
   console.log(thumbnailUrl, "tt");
-
-
 
   return (
     <div className="overflow-hidden  max-w-5xl mx-auto xl:max-w-[65%] rounded-4xl px-6 md:px-0 py-">
       <div className="mx-auto text-center text-white mb-10">
         {title && (
-          <h2
-            className={cn(
-              titleClassname,
-              "text-3xl md:text-[40px] max-w-4xl mx-auto lg2:text-5xl xl:text-6xl font-bold mb-5"
-            )}
-          >
-            {title}
-          </h2>
+          <h2 className={cn(titleClassname, "text-3xl md:text-[40px] max-w-4xl mx-auto lg2:text-5xl xl:text-6xl font-bold mb-5")}>{title}</h2>
         )}
-        {subTitle && (
-          <p className="font-medium md:text-2xl text-base text-white/60 max-w-4xl mx-auto">
-            {subTitle}
-          </p>
-        )}
+        {subTitle && <p className="font-medium md:text-2xl text-base text-white/60 max-w-4xl mx-auto">{subTitle}</p>}
       </div>
 
-      <div
-        className={cn(
-          "relative w-full lg:max-h-[600px] mx-auto aspect-video rounded-4xl overflow-hidden"
-        )}
-      >
+      <div className={cn("relative w-full lg:max-h-[600px] mx-auto aspect-video rounded-4xl overflow-hidden")}>
         <AnimatePresence>
           {!isPlaying && (
             <motion.div
@@ -117,14 +91,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
               {/* Play button */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-[50px] h-[50px] lg:w-[90px] lg:h-[90px] bg-black/40 rounded-full flex items-center justify-center">
-                  <svg
-                    className="w-[15px] lg:w-full"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 48 59"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                  <svg className="w-[15px] lg:w-full" width="30" height="30" viewBox="0 0 48 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M0.799316 56.4523C0.799316 58.019 2.51897 58.9774 3.85138 58.1533L46.8836 31.537C48.1445 30.7571 48.1483 28.9244 46.8906 28.1394L3.8583 1.28007C2.52616 0.448593 0.799316 1.40637 0.799316 2.9767V56.4523Z"
                       fill="white"
@@ -139,8 +106,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
         {isPlaying && (
           <motion.iframe
             key="video"
-            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1${startTime ? `&start=${startTime}` : ""
-              }`}
+            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&rel=0${startTime ? `&start=${startTime}` : ""}`}
             title="YouTube video player"
             allow="autoplay; encrypted-media"
             allowFullScreen

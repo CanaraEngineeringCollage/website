@@ -12,7 +12,7 @@ export default function EnterpreneurshipMission() {
   <div className="flex flex-col gap-8 lg:gap-12">
     {/* Objectives */}
     <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 md:p-10 lg:px-12">
-  <h2 className="text-3xl lg:text-5xl text-center lg:text-start font-bold text-[#1D1D1F] mb-16">
+  <h2 className="text-3xl lg:text-5xl text-center lg:text-start font-bold text-[#1D1D1F] mb-10">
     Our Objectives
   </h2>
   <ul className="space-y-6 sm:space-y-8">
@@ -54,7 +54,7 @@ export default function EnterpreneurshipMission() {
 
     {/* Mission */}
     <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 md:p-10">
-      <h2 className="text-3xl lg:text-5xl text-center lg:text-start font-bold text-[#1D1D1F] mb-16">
+      <h2 className="text-3xl lg:text-5xl text-center lg:text-start font-bold text-[#1D1D1F] mb-8">
         Our Mission
       </h2>
       <p className="text-[#afafb3] text-sm sm:text-base leading-relaxed">

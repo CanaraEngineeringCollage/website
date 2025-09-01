@@ -37,8 +37,8 @@ const academics = [
   { data: "Academic Calendar", links: "https://www.canaraengineering.in/download/calender.pdf" },
   // { data: "Examinations & Timetables", links: "/academics/examination-records" },
   { data: "Circulars", links: "https://vtu.ac.in/en/#1554889506437-64c3b5d5-d21e" },
-  { data: "Marks & Attendance", links: "/academics/examination-records" },
-  { data: "Learning Resources", links: "/academics/learning-hub" },
+  { data: "Marks & Attendance", links: "https://www.canaraengineering.in/s_attd" },
+  { data: "Learning Resources", links: "https://digital.canaraengineering.in/" },
   { data: "Scholarships", links: "https://www.canaraengineering.in/download/scholarship_2020.pdf" },
 ];
 
@@ -96,7 +96,7 @@ const Footer: FC = () => {
             // { label: "Timetables", href: "/academics/examination-records" },
             // { label: "Circulars", href: "/about" },
             // { label: "Marks & Attendance", href: "/our-founder" },
-            { label: "Resources", href: "/academics/learning-hub" },
+            { label: "Resources", href: "https://digital.canaraengineering.in/" },
             { label: "Infrastructure", href: "/campus-facilities/infrastructuret" },
             { label: "Hostel Life", href: "/campus-facilities/hostel-life" },
             { label: "Student Life & Engagement", href: "/campus-facilities/studentlife-engagement" },
@@ -107,8 +107,8 @@ const Footer: FC = () => {
             { label: "Admissions", href: "/admission" },
             { label: "Training & Placements", href: "/training-placements" },
             // { label: "Examination Timetables", href: "tt" },
-            { label: "Marks & Attendance", href: "marks" },
-            { label: "Circulars", href: "circulars" },
+            // { label: "Marks & Attendance", href: "marks" },
+            { label: "Circulars", href: "/academics/examination-records?tab=circulars",tab:"circulars" },
             { label: "Media", href: "/media" },
 
           ]}

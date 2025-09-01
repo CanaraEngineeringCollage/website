@@ -115,7 +115,7 @@ const campusBeats = [
 const learningHub = [
   {
     title: "Resources",
-    link: "/academics/learning-hub",
+    link: "https://digital.canaraengineering.in/",
   },
   {
     title: "Research",
@@ -171,7 +171,7 @@ const examination = [
   },
   {
     title: "Marks & Attendance",
-    link: "/academics/examination-records?tab=marks",
+    link: "https://www.canaraengineering.in/s_attd",
   },
 ];
 export {

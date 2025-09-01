@@ -5,11 +5,11 @@ import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 
 const FormSection: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<string>("Marks");
+  const [activeTab, setActiveTab] = useState<string>("Circulars");
   const [activeHeader, setActiveHeader] = useState<string>("");
   const router = useRouter();
   const data: { key: string; label: string }[] = [
-    { key: "marks", label: "Marks & Attendance" },
+    // { key: "marks", label: "Marks & Attendance" },
     { key: "circulars", label: "Circulars" },
     // { key: "tt", label: "Examination Timetables" },
   ];
@@ -83,10 +83,10 @@ const FormSection: React.FC = () => {
           {activeHeader === "Circulars" && (
             <div className="md:col-span-8 text-[#959cb4]">
               <h1 className="text-[20px] font-bold text-textGray mb-2">VTU Circular</h1>
-              <div className="flex items-center">
-                <div className="flex items-center gap-2 mt-2 hover:text-blue-600">
-                  <HiLink className="text-textGray hover:text-blue-600 " />
-                  <a href="https://vtu.ac.in/en/#1554889506437-64c3b5d5-d21e" target="_blank">
+              <div className="flex items-center group-hover:text-[#2884CA]">
+                <div className="flex items-center gap-2 mt-2 group ">
+                  <HiLink className="text-textGray group-hover:text-[#2884CA] " />
+                  <a href="https://vtu.ac.in/en/#1554889506437-64c3b5d5-d21e" target="_blank" className="group-hover:text-[#2884CA]">
                     Open VTU Circulars
                   </a>
                 </div>
