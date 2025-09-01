@@ -40,14 +40,16 @@ const page = () => {
   return (
     <>
       <HeroSection />
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+      <section className="px-6 md:px-12 lg:px-16 xl:px-0 lg:mt-0 -mt-5">
         <HowToApply />
       </section>
-  <DepartmentFaculty
+<section className="lg:mt-0 -mt-15">
+    <DepartmentFaculty
   heading="Meet Our Admissions Team"
   description="Our admissions team is here to guide you through every step of the enrollment process, ensuring a smooth and welcoming journey into our institution."
 />
-      <section className="pb-5 ">
+</section>
+      <section className="pb-5 lg:mt-0 -mt-10"> 
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           youtubeUrl="61dDoLO9ohc"

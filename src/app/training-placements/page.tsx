@@ -22,17 +22,17 @@ const page = () => {
   return (
     <>
       <HeroSection />
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+      <section className="px-6 md:px-12 lg:px-16 xl:px-0 |">
         <AboutDepartment />
       </section>
-      <section className="pb-10">
+      <section className="pb-10 lg:mt-0 -mt-12">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           youtubeUrl="r6MXt_aTeS0"
           thumbnail="/youtubeThumbnails/placementsThumb.webp"
         />
       </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+      <section className="px-6 md:px-12 lg:px-16 xl:px-0 lg:mt-0 -mt-12">
        <DepartmentFaculty
   heading="Meet Our Placement Team"
   description="Our dedicated placement team works tirelessly to connect students with top companies, guiding them towards successful careers and brighter futures."
@@ -41,7 +41,7 @@ const page = () => {
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <TopRecruiters />
       </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0 ">
+      <section className="px-6 md:px-12 lg:px-16 xl:px-0  lg:mt-0 -mt-12 ">
         <HighlightsSection />
       </section>
       <section className="px-6  pt-20  md:px-12 lg:pl-16 lg:px-0 bg-[#e5e5ea]  xl:px-0">

@@ -243,7 +243,7 @@ export default function LegacyExcellance() {
                 </svg>
               </div>
 
-              <div className=" flex gap-2 z-10">
+              <div className=" flex gap-2 z-10 me-14">
                 <button
                   aria-label="Previous Slide"
                   className="swiper-button-prev-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"

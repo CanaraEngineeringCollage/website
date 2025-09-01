@@ -42,14 +42,14 @@ export default function AboutCec() {
       <section className="px-6 md:px-0 xl:px-0 ">
         <AboutCanara />
       </section>
-      <section className="py-10">
+      <section className="py-10 lg:mt-0 -mt-3">
         <VideoPlayer
           videoUrl="BEVUuWkR7LU"
           youtubeUrl="BEVUuWkR7LU"
           thumbnail="/youtubeThumbnails/Principal-Thumbnail.png"
         />
       </section>
-      <section>
+      <section className="lg:mt-0 -mt-5">
         <MissionVision />
       </section>
       <section className="bg-[#071D2C] px-6 md:px-0 xl:px-0">
@@ -58,7 +58,7 @@ export default function AboutCec() {
       {/* <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <AdminTeamSection />
       </section> */}
-      <section className="pt-24">
+      <section className="">
         <NextStepSection />
       </section>
       {/* <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">

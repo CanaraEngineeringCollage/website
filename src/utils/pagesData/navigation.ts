@@ -36,14 +36,16 @@ const administration = [
     title: "Educators & Administrators",
     link: "/about/educators-administrators",
   },
-  { href: "/about/distinctive-practices", 
-    title: "Distinctive & Practices" 
+  { 
+     title: "Distinctive & Practices", 
+    link: "/about/distinctive-practices", 
+   
   },
 ];
 const accreditations = [
   {
     title: "Mandatory Disclosure",
-    link: "/key-functionaries",
+    link: "/about/mandatory-disclosure",
   },
 ];
 const studentSupport = [

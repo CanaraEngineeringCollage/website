@@ -55,7 +55,7 @@ const FacultyMembersSection = () => {
 
   return (
     <section className="px-4 sm:px-6 md:px-10 lg:px-20 py-8 sm:py-10 md:py-16 lg:py-20">
-      <h1 className="text-[54px] font-bold text-[#1D1D1F] leading-tight mb-10 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-10">
+      <h1 className="lg:text-[54px] text-[46px] font-bold text-[#1D1D1F] leading-tight mb-10 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-10 ">
         Educators &<br />
         Administrators
       </h1>

@@ -43,10 +43,10 @@ export default function Home() {
       <section className="px-6 md:px-12 lg:px-36 xl:px-20 py-12">
         <FutureCampusText />
       </section>
-      <section className="  lg:px-0 xl:px-0  py-12 ">
+      <section className="  lg:px-0 xl:px-0  py-2 ">
         <ExplorePrograms />
       </section>
-      <section className="bg-[#144A72] my-12 py-20">
+      <section className="bg-[#144A72] mt-6 lg:my-20 py-20">
         <VideoPlayer
           subTitle="Explore the campus with a virtual tour & discover one among the best colleges in the region."
           title="Experience the Campus"
@@ -55,13 +55,13 @@ export default function Home() {
           thumbnail="/youtubeThumbnails/Campus Tour-Thumbnail@300x.webp"
         />
       </section>
-      <section className="px-6  md:px-12 lg:px-26 xl:px-0 py-12">
+      <section className="px-6  md:px-12 lg:px-26 xl:px-0 py-1 mt-[-2rem]">
         <EmpoweringFutures />
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0 ">
         <TopRecruiters />
       </section>
-      <section className="py-12">
+      <section className="">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           // videoUrl="z-Axfq0HfZOLspAj"
@@ -69,13 +69,13 @@ export default function Home() {
           thumbnail="/youtubeThumbnails/Homepage-Thumbnail@300x.webp"
         />
       </section>
-      <section className="px-0 bg-white pt-5 pb-10">
+      <section className="px-0 bg-white pt-5 pb-10 lg:mt-0 -mt-3">
         <Testimonials />
       </section>
-      <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0 py-0">
+      <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0 py-0 md:mt-0 -mt-6">
         <HotOfThePress />
       </section>
-      <section className="bg-[#E5E5EA]">
+      <section className="bg-[#E5E5EA] lg:mt-0 -mt-12">
         <FooterCard />
       </section>
     </>

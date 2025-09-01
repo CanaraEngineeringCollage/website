@@ -211,7 +211,7 @@ export default function DistinctiveCarousel() {
 
             {/* Navigation Buttons */}
 
-            <div className="flex justify-center lg:justify-end items-center mt-12 lg:me-12">
+            <div className="flex justify-end me-6 lg:justify-end items-center mt-12 lg:me-12">
             
 
               <div className=" flex gap-2 z-10">

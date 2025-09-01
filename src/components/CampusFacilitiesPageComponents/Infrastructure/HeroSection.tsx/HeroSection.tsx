@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import bg1 from "../../../../../public/aboutPageImages/campusLegacy/campus.jpg";
+import bg1 from "../../../../../public/aboutPageImages/campusLegacy/campus-colored-new.webp";
 
 const HeroSection = () => {
   return (

@@ -36,7 +36,7 @@ const page = () => {
       <section>
         <HeroSection />
       </section>
-      <section>
+      <section className="lg:mt-0 -mt-26">
         <CardSection />
       </section>
     

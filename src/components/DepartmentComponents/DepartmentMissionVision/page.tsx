@@ -21,7 +21,7 @@ const DepartmentMissionVision: React.FC<DepartmentMissionVisionProps> = ({
       <div className="max-w-7xl xl:max-w-[75%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-20">
         {/* Mission Card */}
         <div className="bg-white rounded-2xl shadow p-10 lg:p-18 space-y-6">
-          <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-10">Our Mission</h2>
+          <h2 className="text-3xl text-center lg:text-5xl font-bold text-gray-900 mb-10">Our Mission</h2>
 
           <div className="grid grid-rows-3 gap-6 h-full pb-16">
             {/* Item 1 */}

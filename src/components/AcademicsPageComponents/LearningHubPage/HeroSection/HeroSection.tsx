@@ -13,16 +13,16 @@ const HeroSection = () => {
       className="object-cover object-top md:object-center w-full h-full"
     />
 
-    {/* Top Gradient */}
-    <div className="absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-black/60 to-transparent z-10" />
+    {/* right Gradient */}
+    <div className="absolute top-0 right-0 w-[50%] h-full bg-gradient-to-l from-black/60 to-transparent z-10" />
 
     {/* Bottom Gradient */}
     <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[600px] bg-gradient-to-t from-white via-transparent to-transparent z-[10]" />
 
     {/* Heading */}
     <div className="absolute flex justify-center lg:justify-end items-center top-1/2 -translate-y-1/2 w-full px-6 sm:px-10 lg:px-14 z-10">
-      <h1 className="leading-[1.2] text-[34px] sm:text-[32px] md:text-[40px] lg:text-[77px] font-bold text-white text-center lg:text-end max-w-xl sm:max-w-2xl lg:max-w-3xl">
-        Welcomes to the Digital Learning Resources
+      <h1 className="leading-[1.2] text-[34px] sm:text-[32px] md:text-[40px] lg:text-[77px] font-bold text-white text-center lg:text-end lg:mx-10">
+        Welcomes to their <br /> Digital Learning <br /> Resources
       </h1>
     </div>
 
