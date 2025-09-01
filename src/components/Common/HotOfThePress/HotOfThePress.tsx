@@ -67,13 +67,13 @@ const HotOfThePress = () => {
               <div className="p-8 text-center">
                 <p className="text-textGray text-[17px] mb-1">{item.date}</p>
                 <h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">{item.title}</h3>
-                <button
+                <Link href="/media"> <button
                   
                   aria-label="Read More about Hot of the Press"
                   className="text-[#2997FF] inline-flex text-[17px] items-center hover:underline font-medium text-sm"
                 >
                   Read More <MdKeyboardArrowRight className="ml-1 " />
-                </button>
+                </button></Link> 
               </div>
             </div>
           </SwiperSlide>
@@ -99,9 +99,9 @@ const HotOfThePress = () => {
         </div>
       </div>
       <div className="md:hidden  mt-12 flex ">
-        <button aria-label="Explore More Campus Stories" className="text-black mx-auto cursor-pointer font-bold bg-[#c3d5ed] px-5 py-2 rounded-3xl">
+       <Link href="/media"> <button aria-label="Explore More Campus Stories" className="text-black mx-auto cursor-pointer font-bold bg-[#c3d5ed] px-5 py-2 rounded-3xl">
           Explore More Campus Stories
-        </button>
+        </button></Link>
       </div>
     </section>
   );

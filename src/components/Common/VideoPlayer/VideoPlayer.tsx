@@ -92,7 +92,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
       <div
         className={cn(
-          "relative w-full lg:max-h-[500px] mx-auto aspect-video rounded-4xl overflow-hidden"
+          "relative w-full lg:max-h-[600px] mx-auto aspect-video rounded-4xl overflow-hidden"
         )}
       >
         <AnimatePresence>
@@ -116,11 +116,11 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
               />
               {/* Play button */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-[50px] h-[50px] lg:w-[160px] lg:h-[160px] bg-black/40 rounded-full flex items-center justify-center">
+                <div className="w-[50px] h-[50px] lg:w-[90px] lg:h-[90px] bg-black/40 rounded-full flex items-center justify-center">
                   <svg
                     className="w-[15px] lg:w-full"
-                    width="48"
-                    height="59"
+                    width="30"
+                    height="30"
                     viewBox="0 0 48 59"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"

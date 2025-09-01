@@ -4,15 +4,19 @@ import bgImage from "../../../../public/physicalEducationPageImages/bgImage-2.pn
 
 const HeroSection = () => {
   return (
- <section className="relative w-full h-[65vh] lg:h-[70vh] flex flex-col justify-center items-center text-center px-4 overflow-hidden">
+ <section className="relative w-full h-[65vh] lg:h-[100vh] flex flex-col justify-center items-center text-center  overflow-hidden">
   {/* Background Image + Gradients */}
-  <div className="absolute inset-0 z-0">
+
+  <div className="pt-44">
     <Image 
       src={bgImage} 
       alt="Background 1" 
       className="object-cover lg:object-right object-center w-full h-[80vh] md:h-full" 
       priority 
     />
+  </div>
+  <div className="absolute inset-0 z-0">
+    
 
     {/* Top Gradient */}
     <div className="absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-black/60 to-transparent z-10" />

@@ -25,7 +25,7 @@ const HeroSection = () => {
     Entrepreneurship Development Cell
   </h3>
 
-  <h2 className="text-[23px] sm:text-[28px] md:text-[40px] lg:text-[77px] min-w-xs md:min-w-4xl sm:max-w-2xl md:max-w-4xl font-extrabold tracking-tight leading-tight sm:leading-snug md:leading-10 lg:leading-[1.1] text-white">
+  <h2 className="text-[23px] sm:text-[28px] md:text-[40px] lg:text-[77px] min-w-xs md:min-w-4xl sm:max-w-2xl md:max-w-4xl font-bold tracking-tight leading-tight sm:leading-snug md:leading-10 lg:leading-[1.1] text-white">
     Empowering Future Entrepreneurs
   </h2>
 </div>

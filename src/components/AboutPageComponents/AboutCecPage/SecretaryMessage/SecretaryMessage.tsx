@@ -7,7 +7,7 @@ const SecretaryMessage = () => {
    <section className="w-full bg-[#051B2C]">
   {/* ✅ Container with equal padding left/right */}
   <div className=" py-16  md:py-20 lg:py-24">
-    <div className="grid grid-cols-1 w-[70%] overflow-hidden mx-auto lg:grid-cols-12  items-center">
+    <div className="grid grid-cols-1 w-[73%] overflow-hidden mx-auto lg:grid-cols-12  items-center">
 
 
       <div className=" lg:hidden block">

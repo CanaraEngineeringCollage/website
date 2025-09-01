@@ -148,7 +148,7 @@ export default function DistinctiveCarousel() {
 
     const images = [
   "/DistinctivePractiesImages/CHC.jpg",
-  "/DistinctivePractiesImages/plastic.jpg",
+  "/DistinctivePractiesImages/plastic.png",
   "/DistinctivePractiesImages/solar.jpg",
 ];
 

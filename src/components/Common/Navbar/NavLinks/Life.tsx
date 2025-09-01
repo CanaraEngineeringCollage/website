@@ -93,9 +93,9 @@ export default function Life() {
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Campus Beats</span>
                 <ul className="list-none text-gray-500 leading-10">
-                <Link href="/events">
+                {/* <Link href="/events">
                   <li className={`${pathname.includes("/events") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Calendar of Events</li>
-                </Link>
+                </Link> */}
                 <Link href="/alumni">
                 
                   <li className={`${pathname.includes("/alumni") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Alumni</li>

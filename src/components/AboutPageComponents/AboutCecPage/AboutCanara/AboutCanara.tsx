@@ -98,18 +98,20 @@ export default function AboutCanara() {
       </div>
 
       {/* Toggle button */}
+      <div className="text-center">
       <button
         aria-label={showMore ? "Read Less" : "Learn More"}
         onClick={() => setShowMore(!showMore)}
-        className="pt-8 inline-flex items-center cursor-pointer text-[#0066CC] font-medium"
+        className="pt-8 inline-flex items-center  cursor-pointer text-[#0066CC] font-medium"
       >
-        {showMore ? "Read Less" : "Learn More"}
+        {showMore ? "Read Less" : "Read More"}
         {showMore ? (
           <MdKeyboardArrowUp className="text-xl text-[#0066CC]" />
         ) : (
           <MdKeyboardArrowDown className="text-xl text-[#0066CC]" />
         )}
       </button>
+      </div>
     </div>
   );
 }

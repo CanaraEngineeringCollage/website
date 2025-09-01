@@ -12,15 +12,18 @@ const Messages = ({ data }) => {
   return (
     <div className="lg2:px-24 mx-5 text-[#86868B] text-[17px]">
       <div className="flex gap-2">
-        <img src={data[0]?.image} alt={data?.name} className="w-48  object-cover rounded-lg shadow" />
         <div>
-          <p className=" md:text-lg  text-[14px] leading-7 text-justify text-textGray">{firstPart}</p>
+          <p className=" md:text-lg  text-[14px] leading-7 text-justify text-textGray">{ data[0]?.descrtiption}</p>
           {/* <div className="mt-2 font-semibold text-[#1D1D1F]">{data[0]?.name}</div>
            */}
         </div>
       </div>
-      <div className="md:text-lg  text-[14px] leading-7 text-justify text-textGray">
-        {remainingPart}
+      <div className="md:text-lg mt-6  text-[14px] leading-7 text-justify text-textGray">
+      
+
+        <div>
+           <img src={data[0]?.image} alt={data?.name} className="w-48  object-cover rounded-lg shadow" />
+        </div>
         {data[0].points && (
           <ul className="my-6 space-y-1 md:text-lg text-[14px] leading-7 text-textGray">
             {data[0].points.map((point, i) => (

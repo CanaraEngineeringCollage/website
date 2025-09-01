@@ -44,10 +44,10 @@ const page = () => {
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <HolisticStudent />
       </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+      {/* <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <YourSkills />
-      </section>
-      <section className="px-6 -mt-10 md:px-12 pb-20 lg:px-16 xl:px-0">
+      </section> */}
+      <section className=" -mt-10  pt-16 pb-20 lg:px-16 xl:px-0 px-6 md:px-12 ">
         <VideoPlayer videoUrl="NhwFJ89AJ2k" youtubeUrl="NhwFJ89AJ2k" />
       </section>
       <section className="bg-[#e5e5ea] ">

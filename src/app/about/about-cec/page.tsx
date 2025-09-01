@@ -39,14 +39,14 @@ export default function AboutCec() {
   return (
     <>
       <HeroSection />
-      <section className="px-6 md:px-0 xl:px-0 bg-white">
+      <section className="px-6 md:px-0 xl:px-0 ">
         <AboutCanara />
       </section>
       <section className="py-10">
         <VideoPlayer
           videoUrl="BEVUuWkR7LU"
           youtubeUrl="BEVUuWkR7LU"
-          thumbnail=""
+          thumbnail="/youtubeThumbnails/Principal-Thumbnail.png"
         />
       </section>
       <section>
@@ -58,7 +58,7 @@ export default function AboutCec() {
       {/* <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <AdminTeamSection />
       </section> */}
-      <section>
+      <section className="pt-24">
         <NextStepSection />
       </section>
       {/* <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">

@@ -22,10 +22,10 @@ const HeroSection = () => {
         {/* Top gradient for overlay effect */}
 
         {/* Bottom gradient for mobile */}
-        <div className="absolute bottom-0 left-0 right-0 h-[200px] md:h-0 bg-gradient-to-t from-white via-white/70 to-transparent z-10 md:hidden" />
+        <div className="absolute bottom-0 left-0 right-0 h-[200px] md:h-0 bg-gradient-to-t from-[#fbfcfe] via-[#fbfcfe]/70 to-transparent z-10 md:hidden" />
 
         {/* Bottom gradient for desktop */}
-        <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[270px] bg-gradient-to-t from-white via-white/10 to-transparent  hidden md:block" />
+        <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[270px] bg-gradient-to-t from-[#fbfcfe] via-[#fbfcfe]/10 to-transparent  hidden md:block" />
 
         {/* Additional subtle bottom fade */}
         {/* <div className="absolute bottom-0 left-0 right-0 h-1/2 lg:h-1/4 bg-gradient-to-b from-transparent via-white/30 to-white z-10" /> */}

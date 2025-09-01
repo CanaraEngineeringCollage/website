@@ -9,15 +9,18 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ imageUrl, departmentName,wdith="" }) => {
   return (
-    <section className="relative w-full h-[60vh] md:h-[70vh] flex flex-col justify-center items-center text-center px-4 overflow-hidden">
+    <section className="relative w-full h-[60vh] md:h-[70vh] flex flex-col justify-center items-center text-center  overflow-hidden">
+     <div className="pt-32 w-full">
+    <Image
+      src={imageUrl}
+      alt="Background 1"
+      width={1920} // required
+      height={1080} // required
+      className="object-cover pt-48 w-full"
+    />
+  </div>
       <div className="absolute inset-0 z-0">
-        <Image
-          src={imageUrl}
-          alt="Background 1"
-          className="object-cover w-full h-[80vh] md:h-full"
-          priority
-        fill
-        />
+        
 
         {/* Top Gradient */}
         <div className="absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-black/40 to-transparent z-10" />

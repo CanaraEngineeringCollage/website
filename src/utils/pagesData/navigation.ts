@@ -100,10 +100,10 @@ const curriculum = [
 ];
 
 const campusBeats = [
-  {
-    title: "Calendar of Events",
-    link: "/events",
-  },
+  // {
+  //   title: "Calendar of Events",
+  //   link: "/events",
+  // },
   {
     title: "Alumni",
     link: "/alumni",

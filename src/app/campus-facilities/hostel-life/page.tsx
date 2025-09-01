@@ -51,7 +51,7 @@ const page = () => {
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           youtubeUrl="https://youtu.be/m0znTqrPg1k?si=axPi_tWGFHTHxZNl"
-          thumbnail=""
+          thumbnail="/youtubeThumbnails/iseThumb.webp"
           startTime={165} // Start at 30 seconds
         />
       </section>

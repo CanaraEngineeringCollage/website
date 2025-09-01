@@ -53,7 +53,7 @@ const facilities = [
 const stayConnected = [
   { data: "Alumni", links: "/alumni" },
   { data: "Media", links: "/media" },
-  { data: "Calendar of Events", links: "/events" },
+  // { data: "Calendar of Events", links: "/events" },
   // { data: "Careers", links: "#" },
 ];
 
@@ -102,13 +102,15 @@ const Footer: FC = () => {
             { label: "Student Life & Engagement", href: "/campus-facilities/studentlife-engagement" },
             { label: "Entrepreneurship Cell", href: "/entrepreneurship-cell" },
             { label: "Physical Education", href: "/physical-education" },
-            { label: "Calendar of Events", href: "/events" },
+            // { label: "Calendar of Events", href: "/events" },
             { label: "Alumni", href: "/alumni" },
             { label: "Admissions", href: "/admission" },
             { label: "Training & Placements", href: "/training-placements" },
             { label: "Examination Timetables", href: "tt" },
             { label: "Marks & Attendance", href: "marks" },
             { label: "Circulars", href: "circulars" },
+            { label: "Media", href: "/media" },
+
           ]}
         /></Suspense>
 

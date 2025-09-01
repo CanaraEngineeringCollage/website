@@ -33,7 +33,7 @@ const HeroSection = () => {
   
   ];
 
-  const backgroundImages = [bg3,bg2, bg1, bg1];
+  const backgroundImages = [bg3,bg2,];
 
   return (
     <section className="relative w-full h-[90vh] md:h-[120vh]  flex flex-col justify-center items-center text-center px-4 overflow-hidden">
