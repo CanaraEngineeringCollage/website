@@ -85,14 +85,32 @@ const ContactFormModal: React.FC<ContactFormModalProps> = ({ isOpen, onClose, cl
     return !Object.values(newErrors).some((error) => error !== "");
   };
 
-  const handleSubmit = () => {
-    if (validateForm()) {
+const handleSubmit = async () => {
+  if (validateForm()) {
+    try {
+      const res = await fetch("https://canaraapi.megamind.studio/counselling", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) throw new Error("Failed to submit form");
+
+      // Reset form only if API call succeeds
       setFormData({ fullName: "", email: "", phone: "", comments: "" });
       setTouched({ fullName: false, email: false, phone: false, comments: false });
       setErrors({ fullName: "", email: "", phone: "", comments: "" });
+
       onClose(false);
+    } catch (error) {
+      console.error("Error submitting counselling form:", error);
+      alert("Something went wrong. Please try again later.");
     }
-  };
+  }
+};
+
 
   useOutsideClick(containerRef, () => { if (isOpen) onClose(false); });
 

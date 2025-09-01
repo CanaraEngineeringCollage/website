@@ -46,7 +46,11 @@ interface CouncilMember {
 interface DepartmentSectionProps {
   faculties: CouncilMember[];
 }
-
+const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
+  const binary = buffer.data.reduce((acc, byte) => acc + String.fromCharCode(byte), "");
+  const base64 = btoa(binary);
+  return `data:image/jpeg;base64,${base64}`;
+};
 export default function DepartmentFacultySection({ faculties }: DepartmentSectionProps) {
   const [data, setData] = useState<CouncilMember[]>([]);
   const [startIndex, setStartIndex] = useState(0);
@@ -130,14 +134,14 @@ export default function DepartmentFacultySection({ faculties }: DepartmentSectio
               className={`relative cursor-pointer w-full max-w-[309px] h-[480px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center  shadow-md`}
             >
               <Image
-                src={member.image}
+                src={bufferToBase64(member?.avatar)}
                 alt={member.name}
                 width={300}
                 height={300}
                 className=" w-full object-contain"
               />
 
-              <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
+              <div className="absolute bottom-0 left-0 w-full h-60 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
               <div className="absolute z-50 top-[79%] left-6">
                 <h2 className="text-[20px] font-bold">{member.name}</h2>
                 <p className="text-[17px]">
@@ -177,7 +181,7 @@ export default function DepartmentFacultySection({ faculties }: DepartmentSectio
             >
               <Image
                 onClick={() => router.push(`/user-details/${member.id}`)}
-                src={member.image}
+                src={bufferToBase64(member?.avatar)}
                 alt={member.name}
                 width={300}
                 height={300}
