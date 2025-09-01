@@ -11,7 +11,7 @@ const FormSection: React.FC = () => {
   const data: { key: string; label: string }[] = [
     { key: "marks", label: "Marks & Attendance" },
     { key: "circulars", label: "Circulars" },
-    { key: "tt", label: "Examination Timetables" },
+    // { key: "tt", label: "Examination Timetables" },
   ];
   const searchParams = useSearchParams();
   const parmasActive = searchParams.get("tab");

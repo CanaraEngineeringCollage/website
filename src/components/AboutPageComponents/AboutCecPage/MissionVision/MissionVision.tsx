@@ -16,7 +16,7 @@ export default function MissionVision() {
             <div className="flex gap-10 flex-col lg:flex-row text-center lg:text-start items-center">
               <Image src={visionImage1} alt="bookImage" className="max-w-[50px] my-auto" />
               <div>
-                <h3 className=" text-xl text-textGray font-extrabold">Ethical & Industry-Ready Learning</h3>
+                <h3 className=" text-xl text-textGray font-bold">Ethical & Industry-Ready Learning</h3>
                 <p className="text-textGray">
                   Provide the right environment to develop quality education for all, irrespective of caste, creed or religion to produce future
                   leaders.
@@ -28,7 +28,7 @@ export default function MissionVision() {
             <div className="flex gap-10 flex-col lg:flex-row text-center lg:text-start items-center">
               <Image src={visionImage2} alt="ideaIcon" className="max-w-[50px] my-auto" />
               <div>
-                <h3 className="text-xl text-textGray font-extrabold">Innovation Excellence</h3>
+                <h3 className="text-xl text-textGray font-bold">Innovation Excellence</h3>
                 <p className="text-textGray">Create opportunities for pursuit of knowledge and all round development.</p>
               </div>
             </div>
@@ -37,7 +37,7 @@ export default function MissionVision() {
             <div className="flex gap-10 flex-col lg:flex-row text-center lg:text-start items-center">
               <Image src={visionImage3} alt="valueIcon" className="max-w-[50px] my-auto" />
               <div>
-                <h3 className="text-xl text-textGray font-extrabold">Instilling Core Values</h3>
+                <h3 className="text-xl text-textGray font-bold">Instilling Core Values</h3>
                 <p className="text-textGray">Impart value education to students to build sense of integrity, honesty and ethics.</p>
               </div>
             </div>

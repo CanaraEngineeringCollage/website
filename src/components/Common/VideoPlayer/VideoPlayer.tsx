@@ -71,7 +71,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
 
   return (
-    <div className="overflow-hidden max-w-5xl mx-auto xl:max-w-[65%] rounded-4xl px-6 md:px-0 py-">
+    <div className="overflow-hidden  max-w-5xl mx-auto xl:max-w-[65%] rounded-4xl px-6 md:px-0 py-">
       <div className="mx-auto text-center text-white mb-10">
         {title && (
           <h2

@@ -161,10 +161,10 @@ const innovation = [
 ];
 
 const examination = [
-  {
-    title: "Examination Timetables",
-    link: "/academics/examination-records?tab=tt",
-  },
+  // {
+  //   title: "Examination Timetables",
+  //   link: "/academics/examination-records?tab=tt",
+  // },
   {
     title: "Circulars",
     link: "/academics/examination-records?tab=circulars",

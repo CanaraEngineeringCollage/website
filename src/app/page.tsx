@@ -55,13 +55,13 @@ export default function Home() {
           thumbnail="/youtubeThumbnails/Campus Tour-Thumbnail@300x.webp"
         />
       </section>
-      <section className="px-6  md:px-12 lg:px-26 xl:px-0 py-1 mt-[-2rem]">
+      <section className="px-6  md:px-12 lg:px-26 xl:px-0 py-1 mb-10 ">
         <EmpoweringFutures />
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0 ">
         <TopRecruiters />
       </section>
-      <section className="">
+      <section className=" py-[4rem]">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           // videoUrl="z-Axfq0HfZOLspAj"

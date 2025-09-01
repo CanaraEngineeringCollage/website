@@ -29,7 +29,8 @@ const page = () => {
       </section>
       <section className="">
         {/* <IdeasText /> */}
-<EnterpreneurshipMission/>      </section>
+        <EnterpreneurshipMission />
+      </section>
       <section>
         <Activities />
       </section>

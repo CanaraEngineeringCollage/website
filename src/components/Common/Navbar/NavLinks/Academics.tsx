@@ -109,9 +109,9 @@ export default function Academics() {
                   <Link href="/academics/examination-records?tab=circulars">
                     <li className={`${tab === "circulars" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary cursor-pointer`}>Circulars</li>
                   </Link>
-                  <Link href="/academics/examination-records?tab=tt">
+                  {/* <Link href="/academics/examination-records?tab=tt">
                     <li className={`${tab === "tt" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary cursor-pointer`}>Timetables</li>
-                  </Link>
+                  </Link> */}
                 </ul>
               </div>
             </div>

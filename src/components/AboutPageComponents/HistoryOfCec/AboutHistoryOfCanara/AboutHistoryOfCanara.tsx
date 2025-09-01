@@ -1,5 +1,8 @@
 import React from "react";
 import image1 from "../../../../../public/aboutPageImages/campusLegacy/historyimage.png";
+import image2 from "../../../../../public/aboutPageImages/campusLegacy/History Image-2.webp";
+
+
 import Image from "next/image";
 
 const AboutHistoryCanara = () => {
@@ -47,7 +50,7 @@ const AboutHistoryCanara = () => {
       {/* Image 1 */}
       <div className="overflow-hidden w-full rounded-3xl my-7">
         <Image
-          src={image1}
+          src={image2}
           alt="historyimage"
           className="object-cover w-full h-[50vh] sm:h-[60vh] lg:h-[70vh]"
         />
