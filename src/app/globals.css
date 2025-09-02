@@ -37,10 +37,6 @@ lite-youtube {
   max-width: none;
 }
 
- .card-1154 {
-      @apply max-w-[380px]; /* or 400px depending on how wide you want */
- }
-
 /* Option 3: If you want a specific width instead */
 lite-youtube {
   max-width: 100% !important; /* or any specific value you want */
