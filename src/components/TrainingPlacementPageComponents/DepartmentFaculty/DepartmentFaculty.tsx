@@ -15,7 +15,17 @@ interface CouncilMember {
   roles: { title: string; organization: string }[];
 }
 
+
+const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
+  const binary = buffer.data.reduce((acc, byte) => acc + String.fromCharCode(byte), "");
+  const base64 = btoa(binary);
+  return `data:image/jpeg;base64,${base64}`;
+};
 export default function DepartmentFaculty({heading,description,facultyData}:{heading:string,description:string,facultyData:any}) {
+
+console.log("facl",facultyData);
+
+  
   const [data, setData] = useState<CouncilMember[]>([]);
   const [startIndex, setStartIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -52,7 +62,7 @@ export default function DepartmentFaculty({heading,description,facultyData}:{hea
           <div className="flex items-center justify-between gap-4">
             {heading!="Meet Our Admissions Team"&&<Link href="/about/educators-administrators"><button
               aria-label="Meet more of our Faculty"
-              className="bg-[#d0e2f8] text-black text-block  px-6 py-2 rounded-full text-[17px] font-medium "
+              className="bg-[#d0e2f8] text-black text-block  px-6 py-3 rounded-full text-[14px] font-medium "
             >
               Meet more of our Faculty
             </button></Link>}
@@ -78,16 +88,16 @@ export default function DepartmentFaculty({heading,description,facultyData}:{hea
         </div>
 
         <div className="grid grid-cols-1 w-full sm:grid-cols-2 gap-6">
-          {visibleMembers.map((member, index) => (
+          {(visibleMembers || []).map((member, index) => (
             <div
               key={index}
-              className={`relative cursor-pointer w-full max-w-[309px] h-[480px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center  shadow-md`}
+              className={`relative cursor-pointer w-full max-w-[309px] h-[450px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center  shadow-md`}
             >
               <Image
                   onClick={() => {
                     setSelectedMember(member), setIsModalOpen(true);
                   }}
-                src={member.image}
+                src={bufferToBase64(member.avatar)}
                 alt={member.name}
                 width={300}
                 height={300}
