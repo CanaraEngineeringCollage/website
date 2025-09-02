@@ -15,7 +15,7 @@ interface CouncilMember {
   roles: { title: string; organization: string }[];
 }
 
-export default function DepartmentFaculty({heading,description}:{heading:string,description:string}) {
+export default function DepartmentFaculty({heading,description,facultyData}:{heading:string,description:string,facultyData:any}) {
   const [data, setData] = useState<CouncilMember[]>([]);
   const [startIndex, setStartIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -25,8 +25,8 @@ export default function DepartmentFaculty({heading,description}:{heading:string,
     setData(governingCounsilData);
   }, []);
 
-  const visibleMembers = data.slice(startIndex, startIndex + 2);
-  const visibleMembersMobile = data.slice(startIndex, startIndex + 1);
+  const visibleMembers = facultyData.slice(startIndex, startIndex + 2);
+  const visibleMembersMobile = facultyData.slice(startIndex, startIndex + 1);
   const handleNext = () => {
     if (startIndex + 1 < data.length) {
       setStartIndex(startIndex + 2);
