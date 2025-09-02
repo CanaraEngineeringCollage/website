@@ -52,7 +52,7 @@ const FacultyMembersSection: React.FC = ({ facultyData }) => {
         {/* Sidebar */}
         <div className="md:col-span-5">
           <div className="w-full sm:w-[80%] mx-auto md:mx-0">
-            <div className="border-b-2 border-border pb-4 sm:pb-5">
+            <div className=" pb-4 sm:pb-5">
               <h1
                 className={`text-[20px] cursor-pointer ${selectedCategory === "faculty" ? "font-bold text-[#2884CA]" : "text-textGray"}`}
                 onClick={() => {
