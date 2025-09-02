@@ -34,7 +34,6 @@ const FacultyMembersSection: React.FC = ({ facultyData }) => {
     "Computer Science & Design",
     "Computer Science & Business System",
     "Artificial Intelligence & Machine Learning",
-    "Science & Humanities",
   ];
 
   // Filter data based on category and department
