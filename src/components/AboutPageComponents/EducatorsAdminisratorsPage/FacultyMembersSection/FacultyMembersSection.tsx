@@ -76,7 +76,7 @@ const FacultyMembersSection: React.FC = ({ facultyData }) => {
                 </ul>
               )}
             </div>
-            <div className="border-b-2 border-border py-4 sm:py-5">
+            {/* <div className="border-b-2 border-border py-4 sm:py-5">
               <h1
                 className={`text-[20px] cursor-pointer ${selectedCategory === "admin" ? "font-bold text-[#2884CA]" : "text-textGray"}`}
                 onClick={() => {
@@ -86,8 +86,8 @@ const FacultyMembersSection: React.FC = ({ facultyData }) => {
               >
                 Administrative Staff
               </h1>
-            </div>
-            <div className="py-4 sm:py-5 border-border border-b-2">
+            </div> */}
+            {/* <div className="py-4 sm:py-5 border-border border-b-2">
               <h1
                 className={`text-[20px] cursor-pointer ${selectedCategory === "general" ? "font-bold text-[#2884CA]" : "text-textGray"}`}
                 onClick={() => {
@@ -97,7 +97,7 @@ const FacultyMembersSection: React.FC = ({ facultyData }) => {
               >
                 General Staff
               </h1>
-            </div>
+            </div> */}
           </div>
         </div>
 
