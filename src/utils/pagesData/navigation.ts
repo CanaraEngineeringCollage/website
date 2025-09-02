@@ -132,6 +132,10 @@ const campusFacilities = [
     title: "Hostel Life",
     link: "/campus-facilities/hostel-life",
   },
+    {
+    title: "Student Life & Engagement",
+    link: "/campus-facilities/studentlife-engagement",
+  },
 ];
 
 const studentLife = [

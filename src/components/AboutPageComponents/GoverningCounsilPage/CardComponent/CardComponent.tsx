@@ -42,31 +42,41 @@ const ProfileCard = ({ datam, title }: { datam: GoverningCouncilMember; title: s
           console.log(item.roles.length);
 
           return (
-            <div
-              key={index}
-              className={`relative cursor-pointer w-full max-w-[309px] h-[450px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center  shadow-md ${
-                shouldCenterLast ? "md:col-start-2 xl:col-start-auto" : ""
-              }`}
-            >
-              <Image src={item.image} alt={item.name} width={300} height={300} className=" w-full object-contain" />
-              <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
-              <div className="absolute z-10 top-[75%] left-6">
-                <h2 className="text-[20px] font-bold">{item.name}</h2>
-                <p className="text-[17px]">
-                  {item.roles.map((role, idx) => (
-                    <span key={idx}>
-                      {role.title}
-                      {item.roles.length > 1 &&role.organization&& ","} <span className="font-semibold">{role.organization}</span>
-                      {idx < item.roles.length - 1 && <br />}
-                    </span>
-                  ))}
-                </p>
-                {/* <p onClick={() => openModal(item)} className="text-xs font-bold sm:text-sm md:text-sm flex items-center">
-                  View Profile
-                  <MdKeyboardArrowRight className="ml-1 text-xl" />
-                </p> */}
-              </div>
-            </div>
+        <div
+  key={index}
+  className={`relative cursor-pointer w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md ${
+    shouldCenterLast ? "md:col-start-2 xl:col-start-auto" : ""
+  }`}
+>
+  {/* Image fills card completely */}
+  <Image
+    src={item.image}
+    alt={item.name}
+    fill
+    className="object-cover" // removed padding to avoid gap
+  />
+
+  {/* Responsive gradient */}
+  <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
+
+  {/* Content */}
+  <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full">
+    <h2 className="text-base sm:text-lg md:text-xl font-bold leading-tight ">
+      {item.name}
+    </h2>
+    <p className="text-xs sm:text-sm md:text-base leading-snug break-words">
+      {item.roles.map((role, idx) => (
+        <span key={idx}>
+          {role.title}
+          {item.roles.length > 1 && role.organization && ","}{" "}
+          <span className="font-semibold">{role.organization}</span>
+          {idx < item.roles.length - 1 && <br />}
+        </span>
+      ))}
+    </p>
+  </div>
+</div>
+
           );
         })}
       </div>
