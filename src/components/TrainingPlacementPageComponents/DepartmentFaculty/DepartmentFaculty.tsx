@@ -138,7 +138,7 @@ export default function DepartmentFaculty({heading,description}:{heading:string,
           {visibleMembersMobile.map((member, index) => (
             <div
               key={index}
-              className={`relative cursor-pointer w-full ms-5 max-w-[309px] h-[480px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center  shadow-md`}
+              className={`relative cursor-pointer w-full  max-w-[309px] h-[480px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center  shadow-md`}
             >
               <Image
                onClick={() => {
