@@ -36,14 +36,16 @@ const administration = [
     title: "Educators & Administrators",
     link: "/about/educators-administrators",
   },
-  { href: "/about/distinctive-practices", 
-    title: "Distinctive & Practices" 
+  { 
+     title: "Distinctive & Practices", 
+    link: "/about/distinctive-practices", 
+   
   },
 ];
 const accreditations = [
   {
     title: "Mandatory Disclosure",
-    link: "/key-functionaries",
+    link: "/about/mandatory-disclosure",
   },
 ];
 const studentSupport = [
@@ -113,7 +115,7 @@ const campusBeats = [
 const learningHub = [
   {
     title: "Resources",
-    link: "/academics/learning-hub",
+    link: "https://digital.canaraengineering.in/",
   },
   {
     title: "Research",
@@ -159,17 +161,17 @@ const innovation = [
 ];
 
 const examination = [
-  {
-    title: "Examination Timetables",
-    link: "/academics/examination-records?tab=tt",
-  },
+  // {
+  //   title: "Examination Timetables",
+  //   link: "/academics/examination-records?tab=tt",
+  // },
   {
     title: "Circulars",
     link: "/academics/examination-records?tab=circulars",
   },
   {
     title: "Marks & Attendance",
-    link: "/academics/examination-records?tab=marks",
+    link: "https://www.canaraengineering.in/s_attd",
   },
 ];
 export {

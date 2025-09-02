@@ -47,7 +47,7 @@ const MandatoryDisclosure = () => {
                           <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
                           <td className="py-3 md:px-4 px-1 border-b">
                             {item.links?.[0]?.href && (
-                              <a href={item.links[0].href} target="_blank"  className="text-blue-600 hover:underline">
+                              <a href={item.links[0].href} target="_blank"  className="text-[#2884CA] hover:underline">
                                 {item.links[0].text || "Download"}
                               </a>
                             )}
@@ -77,7 +77,7 @@ const MandatoryDisclosure = () => {
                           <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
                           <td className="py-3 md:px-4 px-1 border-b">
                             {item.links?.[0]?.href && (
-                              <a href={item.links[0].href} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                              <a href={item.links[0].href} target="_blank" rel="noopener noreferrer" className="text-[#2884CA] hover:underline">
                                 {item.links[0].text || "Download"}
                               </a>
                             )}
@@ -107,7 +107,7 @@ const MandatoryDisclosure = () => {
                           <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
                           <td className="py-3 md:px-4 px-1 border-b">
                             {item.links?.[0]?.href && (
-                              <a href={item.links[0].href} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                              <a href={item.links[0].href} target="_blank" rel="noopener noreferrer" className="text-[#2884CA] hover:underline">
                                 View {item.links[0].text || "Download"}
                               </a>
                             )}
@@ -137,7 +137,7 @@ const MandatoryDisclosure = () => {
                           <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
                           <td className="py-3 md:px-4 px-1 border-b">
                             {item.links?.[0]?.href && (
-                              <a href={item.links[0].href} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                              <a href={item.links[0].href} target="_blank" rel="noopener noreferrer" className="text-[#2884CA] hover:underline">
                                 View {item.links[0].text || "Download"}
                               </a>
                             )}
@@ -167,7 +167,7 @@ const MandatoryDisclosure = () => {
                           <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
                           <td className="py-3 md:px-4 px-1 border-b">
                             {item.links?.[0]?.href && (
-                              <a href={item.links[0].href} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                              <a href={item.links[0].href} target="_blank" rel="noopener noreferrer" className="text-[#2884CA] hover:underline">
                                 View UGC Declaration
                               </a>
                             )}
@@ -197,7 +197,7 @@ const MandatoryDisclosure = () => {
                           <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
                           <td className="py-3 md:px-4 px-1 border-b">
                             {item.links?.[0]?.href && (
-                              <a href={item.links[0].href} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                              <a href={item.links[0].href} target="_blank" rel="noopener noreferrer" className="text-[#2884CA] hover:underline">
                                 View Policy
                               </a>
                             )}
@@ -227,7 +227,7 @@ const MandatoryDisclosure = () => {
                           <td className="py-3 md:px-4 px-1 border-b">{item.year}</td>
                           <td className="py-3 md:px-4 px-1 border-b">
                             {item.links?.[0]?.href && (
-                              <a href={item.links[0].href} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                              <a href={item.links[0].href} target="_blank" rel="noopener noreferrer" className="text-[#2884CA] hover:underline">
                                 View UG Fees
                               </a>
                             )}
@@ -257,7 +257,7 @@ const MandatoryDisclosure = () => {
                           <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
                           <td className="py-3 md:px-4 px-1 border-b">
                             {item.links?.[0]?.href && (
-                              <a href={item.links[0].href} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                              <a href={item.links[0].href} target="_blank" rel="noopener noreferrer" className="text-[#2884CA] hover:underline">
                                 {item.links[0].text || "Download"}
                               </a>
                             )}
@@ -833,28 +833,28 @@ const MandatoryDisclosure = () => {
                     <li className="flex gap-2 items-start text-textGray">
                       <span className="font-medium">•</span>
                       Lower Income for SC students –{" "}
-                      <a href="https://sw.kar.nic.in" className="text-blue-600 underline" target="_blank">
+                      <a href="https://sw.kar.nic.in" className="text-[#2884CA] underline" target="_blank">
                         https://sw.kar.nic.in
                       </a>
                     </li>
                     <li className="flex gap-2 items-start text-textGray">
                       <span className="font-medium">•</span>
                       Lower Income ST students, MHRD, and Beedi Scholarship –{" "}
-                      <a href="https://scholarships.gov.in" className="text-blue-600 underline" target="_blank">
+                      <a href="https://scholarships.gov.in" className="text-[#2884CA] underline" target="_blank">
                         https://scholarships.gov.in
                       </a>
                     </li>
                     <li className="flex gap-2 items-start text-textGray">
                       <span className="font-medium">•</span>
                       Higher Income SC & ST students –{" "}
-                      <a href="http://dte.kar.nic.in" className="text-blue-600 underline" target="_blank">
+                      <a href="http://dte.kar.nic.in" className="text-[#2884CA] underline" target="_blank">
                         http://dte.kar.nic.in
                       </a>
                     </li>
                     <li className="flex gap-2 items-start text-textGray">
                       <span className="font-medium">•</span>
                       OBC Scholarship –{" "}
-                      <a href="https://karepass.cgg.gov.in" className="text-blue-600 underline" target="_blank">
+                      <a href="https://karepass.cgg.gov.in" className="text-[#2884CA] underline" target="_blank">
                         https://karepass.cgg.gov.in
                       </a>
                     </li>
@@ -925,7 +925,7 @@ const MandatoryDisclosure = () => {
                   </ul>
 
                   <div className="mt-4">
-                    <Link href="/about/mandatory-disclosure/sc-st-grievance" className="text-blue-600 underline md:text-lg  text-[14px] leading-7 ">
+                    <Link href="/about/mandatory-disclosure/sc-st-grievance" className="text-[#2884CA] underline md:text-lg  text-[14px] leading-7 ">
                       Click Here to Submit Online Grievance
                     </Link>
                    
@@ -1009,7 +1009,7 @@ const MandatoryDisclosure = () => {
 
                   <p className="md:text-lg  text-[14px] leading-7 text-textGray ">
                     Canara Engineering College operates the
-                    <a href="https://www.canaraengineering.in/" target="_blank" className="text-blue-600 underline ml-1">
+                    <a href="https://www.canaraengineering.in/" target="_blank" className="text-[#2884CA] underline ml-1">
                       https://www.canaraengineering.in/
                     </a>{" "}
                     website, which provides the SERVICE.
@@ -1027,7 +1027,7 @@ const MandatoryDisclosure = () => {
 
                   <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at
-                    <a href="https://www.canaraengineering.in/" target="_blank" className="text-blue-600 underline ml-1">
+                    <a href="https://www.canaraengineering.in/" target="_blank" className="text-[#2884CA] underline ml-1">
                       https://www.canaraengineering.in/
                     </a>
                     , unless otherwise defined in this Privacy Policy.
@@ -1116,7 +1116,7 @@ const MandatoryDisclosure = () => {
 
                   <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     Canara Engineering College operates the
-                    <a href="https://www.canaraengineering.in/" target="_blank" className="text-blue-600 underline ml-1">
+                    <a href="https://www.canaraengineering.in/" target="_blank" className="text-[#2884CA] underline ml-1">
                       https://www.canaraengineering.in/
                     </a>{" "}
                     website, which provides the SERVICE.
@@ -1134,7 +1134,7 @@ const MandatoryDisclosure = () => {
 
                   <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at
-                    <a href="https://www.canaraengineering.in/" target="_blank" className="text-blue-600 underline ml-1">
+                    <a href="https://www.canaraengineering.in/" target="_blank" className="text-[#2884CA] underline ml-1">
                       https://www.canaraengineering.in/
                     </a>
                     , unless otherwise defined in this Privacy Policy.
@@ -1226,10 +1226,10 @@ const MandatoryDisclosure = () => {
                       {item?.links?.map((link, i) =>
                         link?.href ? (
 
-                          <li key={i} className="flex group items-center gap-2 text-[17px] text-textGray hover:text-blue-600 cursor-pointer">
-                            <Link href={link.href} target="_blank" className="flex items-center gap-2 hover:text-blue-600">
-                              <HiLink className="text-textGray group-hover:text-blue-600 mt-2" />
-                              <span className="text-textGray group-hover:text-blue-600 text-[16px] pt-2 leading-7">{link.text}</span>
+                          <li key={i} className="flex group items-center gap-2 text-[17px] text-textGray hover:text-[#2884CA] cursor-pointer">
+                            <Link href={link.href} target="_blank" className="flex items-center gap-2 hover:text-[#2884CA]">
+                              <HiLink className="text-textGray group-hover:text-[#2884CA] mt-2" />
+                              <span className="text-textGray group-hover:text-[#2884CA] text-[16px] pt-2 leading-7">{link.text}</span>
                             </Link>
                           </li>
                         ) : null
@@ -1246,7 +1246,7 @@ const MandatoryDisclosure = () => {
                     <ul className="space-y-1">
                       {item?.links?.map((link, i) =>
                         link?.href ? (
-                          <li key={i} className="flex items-center gap-2 text-[17px] text-textGray hover:text-blue-600 cursor-pointer">
+                          <li key={i} className="flex items-center gap-2 text-[17px] text-textGray hover:text-[#2884CA] cursor-pointer">
                             <iframe src={link.href} className="w-[100%] h-[70vh]" />
                           </li>
                         ) : null

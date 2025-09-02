@@ -48,8 +48,9 @@ const page = () => {
         <YourSkills />
       </section> */}
       <section className=" -mt-10  pt-16 pb-20 lg:px-16 xl:px-0 px-6 md:px-12 ">
-        <VideoPlayer videoUrl="NhwFJ89AJ2k" youtubeUrl="NhwFJ89AJ2k" />
+        <VideoPlayer thumbnail="/youtubeThumbnails/Akrathi Aftermovie - Thumbail@300x.webp" youtubeUrl="oHWMDPeP1Ew" />
       </section>
+   
       <section className="bg-[#e5e5ea] ">
         <FooterCard />
       </section>

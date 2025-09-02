@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import bgImage from "../../../../../public/studentWelfarePage/hero.png";
+import bgImage from "../../../../../public/studentWelfarePage/heroImage.webp";
 
 const HeroSection = () => {
   return (

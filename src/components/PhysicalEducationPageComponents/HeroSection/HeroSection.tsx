@@ -4,22 +4,22 @@ import bgImage from "../../../../public/physicalEducationPageImages/bgImage-2.pn
 
 const HeroSection = () => {
   return (
- <section className="relative w-full h-[65vh] lg:h-[100vh] flex flex-col justify-center items-center text-center  overflow-hidden">
+ <section className="relative w-full h-[50vh] lg:h-[100vh] flex flex-col justify-start items-start text-center  overflow-hidden">
   {/* Background Image + Gradients */}
 
-  <div className="pt-44">
+  <div className="absolute inset-0 z-0">
     <Image 
       src={bgImage} 
       alt="Background 1" 
-      className="object-cover lg:object-right object-center w-full h-[80vh] md:h-full" 
+      className="object-cover object-[center_30%] w-full h-full" 
       priority 
     />
   </div>
-  <div className="absolute inset-0 z-0">
+  <div className="absolute inset-0 z-10">
     
 
     {/* Top Gradient */}
-    <div className="absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-black/60 to-transparent z-10" />
+    {/* <div className="absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-black/60 to-transparent z-10" /> */}
 
     {/* Mobile Bottom Gradient */}
     <div className="absolute bottom-0 left-0 right-0 h-[400px] md:h-[1000px] bg-gradient-to-t from-[#fcfdff] via-transparent to-transparent z-[10] md:hidden" />
@@ -37,7 +37,7 @@ const HeroSection = () => {
       top-1/2 -translate-y-1/2 
       text-center md:text-center lg2:text-right
       left-1/2 md:left-1/2 lg2:left-auto
-      -translate-x-1/2 md:-translate-x-1/2 lg2:translate-x-62
+      -translate-x-1/2 md:-translate-x-1/2 lg2:translate-x-82
       w-full lg2:w-5xl
     "
   >

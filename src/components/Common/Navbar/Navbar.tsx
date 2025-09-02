@@ -49,17 +49,27 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
           <div className="hidden md:flex items-center justify-between w-full container-padding max-w-[90%] mx-auto">
             <div className="flex items-center justify-center space-x-6">
               <Link
-                href={"mailto:sahyadri@sahyadri.edu.in"}
+                href={"mailto:canarait@gmail.com"}
                 className="text-[0.7rem] xl:text-[0.875rem]  text-white/50 font-poppins hover:text-white transition-colors ease-in-out duration-300"
               >
                 Email: canarait@gmail.com
               </Link>
+              <div className="flex gap-1">
+                <p className="text-[0.7rem] xl:text-[0.875rem] text-white/50 font-poppins  transition-colors ease-in-out duration-300">Phone:</p>
               <Link
                 href={"tel:+918792727001"}
                 className="text-[0.7rem] xl:text-[0.875rem] text-white/50 font-poppins hover:text-white transition-colors ease-in-out duration-300"
               >
-                Phone:+ 91 8792727001/8904737001
+              + 91 8792727001 
               </Link>
+              <span className="text-[0.7rem] xl:text-[0.875rem] text-white/50 font-poppins hover:text-white transition-colors ease-in-out duration-300">/</span>
+               <Link
+                href={"tel:+918904737001"}
+                className="text-[0.7rem] xl:text-[0.875rem] text-white/50 font-poppins hover:text-white transition-colors ease-in-out duration-300"
+              >
+              8904737001
+              </Link>
+              </div>
               <Link
                 href={"#"}
                 className="text-[0.7rem] xl:text-[0.875rem] text-white/50 font-poppins hover:text-white transition-colors ease-in-out duration-300"

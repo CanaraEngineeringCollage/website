@@ -34,7 +34,11 @@ interface FacultyModalProps {
   onClose: (isOpen: boolean) => void;
   facultyData: CouncilMember | null;
 }
-
+const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
+  const binary = buffer.data.reduce((acc, byte) => acc + String.fromCharCode(byte), "");
+  const base64 = btoa(binary);
+  return `data:image/jpeg;base64,${base64}`;
+};
 export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyModalProps) {
   if (!facultyData) return null;
 
@@ -42,6 +46,7 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
     <AnimatePresence>
       {isOpen && (
         <Dialog as="div" className="relative z-50" open={isOpen} onClose={onClose}>
+          
           <div className="fixed inset-0 z-40">
             <motion.div className="absolute inset-0 backdrop-blur-sm" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} />
           </div>
@@ -62,7 +67,7 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                 <div className=" gap-6 flex-col lg:flex-row flex items-center">
                   <div className="flex-shrink-0">
                     <div className="rounded-lg overflow-hidden w-60 h-80 bg-sky-400">
-                      <Image width={100} height={100} src={facultyData.image} alt="Faculty profile" className="w-full h-full object-cover" />
+                      <Image width={100} height={100} src={bufferToBase64(facultyData.avatar)} alt="Faculty profile" className="w-full h-full object-cover" />
                     </div>
                   </div>
 
@@ -74,7 +79,7 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                       </div>
                       <div className="flex gap-2">
                         <span className="font-bold ">Designation:</span>
-                        <span>{facultyData.desiganation}</span>
+                        <span>{facultyData.designation}</span>
                       </div>
                       {facultyData.department && (
                         <div className="flex gap-2">
@@ -130,7 +135,7 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                         <thead>
                           <tr className="bg-gray-50 text-gray-700">
                             <th className="px-6 py-3 text-left font-semibold">Degree</th>
-                            <th className="px-6 py-3 text-left font-semibold">Name Of Degree</th>
+                            {/* <th className="px-6 py-3 text-left font-semibold">Name Of Degree</th> */}
                             <th className="px-6 py-3 text-left font-semibold">Passing Year</th>
                             <th className="px-6 py-3 text-left font-semibold">College/University</th>
                             <th className="px-6 py-3 text-left font-semibold">Area of Specialization</th>
@@ -140,10 +145,10 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                           {facultyData?.qualifications?.map((qual, index) => (
                             <tr key={index} className="border-t border-gray-200 last:rounded-b-xl">
                               <td className="px-6 py-4">{qual.degree}</td>
-                              <td className="px-6 py-4">{qual.degreeName}</td>
+                              {/* <td className="px-6 py-4">{qual.degreeName}</td> */}
                               <td className="px-6 py-4">{qual.passingYear}</td>
                               <td className="px-6 py-4">{qual.college}</td>
-                              <td className="px-6 py-4">{qual.specializedArea}</td>
+                              <td className="px-6 py-4">{qual.specialization}</td>
                             </tr>
                           ))}
                         </tbody>

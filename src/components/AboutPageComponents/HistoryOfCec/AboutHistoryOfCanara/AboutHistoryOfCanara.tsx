@@ -1,5 +1,8 @@
 import React from "react";
 import image1 from "../../../../../public/aboutPageImages/campusLegacy/historyimage.png";
+import image2 from "../../../../../public/aboutPageImages/campusLegacy/History Image-2.webp";
+
+
 import Image from "next/image";
 
 const AboutHistoryCanara = () => {
@@ -47,7 +50,7 @@ const AboutHistoryCanara = () => {
       {/* Image 1 */}
       <div className="overflow-hidden w-full rounded-3xl my-7">
         <Image
-          src={image1}
+          src={image2}
           alt="historyimage"
           className="object-cover w-full h-[50vh] sm:h-[60vh] lg:h-[70vh]"
         />
@@ -107,13 +110,13 @@ const AboutHistoryCanara = () => {
 
       {/* Roadmap Heading */}
       <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl text-[#1D1D1F] font-bold ">
-        Canara Engineering College Road Map
+        Canara Engineering College Future Road Map
       </h1>
 
       {/* Roadmap Intro */}
       <p className="lg:text-xl md:text-lg text-[14px] pb-5 pt-8 xl:pt-12 leading-7 text-textGray text-justify">
-        In an attempt to impart holistic education, to make "Canara Engineering
-        College" a role model in higher education and the most preferred choice of
+        In an attempt to impart holistic education, to make Canara Engineering
+        College a role model in higher education and the most preferred choice of
         students, staff, parents, society and industry in the near future; the
         following few proposals or action plans are projected, for 2 to 3 years down
         the lane:

@@ -103,15 +103,15 @@ export default function Academics() {
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Examinations & Records</span>
                 <ul className="list-none text-gray-500 leading-10  ">
-                  <Link href="/academics/examination-records?tab=marks">
+                  <Link href="https://www.canaraengineering.in/s_attd" target="_blank"> 
                     <li className={`${tab === "marks" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary cursor-pointer`}>Marks & Attendance</li>
                   </Link>
                   <Link href="/academics/examination-records?tab=circulars">
                     <li className={`${tab === "circulars" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary cursor-pointer`}>Circulars</li>
                   </Link>
-                  <Link href="/academics/examination-records?tab=tt">
+                  {/* <Link href="/academics/examination-records?tab=tt">
                     <li className={`${tab === "tt" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary cursor-pointer`}>Timetables</li>
-                  </Link>
+                  </Link> */}
                 </ul>
               </div>
             </div>
@@ -124,7 +124,7 @@ export default function Academics() {
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Learning Hub</span>
                 <ul className="list-none text-gray-500 leading-10 cursor-pointer">
-                  <Link href="/academics/learning-hub">
+                  <Link href="https://digital.canaraengineering.in/" target="_blank">
                     <li
                       className={`${pathname.includes("/academics/learning-hub") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
                     >

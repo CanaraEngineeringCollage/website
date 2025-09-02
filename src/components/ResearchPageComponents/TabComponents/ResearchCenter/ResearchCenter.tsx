@@ -202,7 +202,7 @@ const ResearchCenter = () => {
           </ol>
         </div>
         <div>
-          <h2 className="text-xl font-semibold mb-2">Dept. of Electronics & Communications</h2>
+          <h2 className="text-[24px] text-[#1d1d1f] font-bold mb-2">Dept. of Electronics & Communications</h2>
           <h2 className="text-lg font-bold mb-4">Domain of Research</h2>
           <ul className="list-disc ml-5 text-lg">
             {domainResearch.map((item, index) => (

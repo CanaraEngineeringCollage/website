@@ -60,13 +60,13 @@ const HeroSection = () => {
                 priority
               />
             
-               <div className="absolute bottom-0 left-0 right-0 h-[400px] md:h-[500px] bg-gradient-to-t from-[#f5f5f7] via-white/85  to-transparent z-[10] block md:hidden" />
-               <div className="absolute bottom-0 left-0 right-0 h-[300px] md:h-[200px] bg-gradient-to-t from-[#fcfdff] via-white/85 to-transparent z-[10] hidden md:block" />
+               <div className="absolute bottom-0 left-0 right-0 h-[400px] md:h-[500px] bg-gradient-to-t from-[#f5f5f7] via-white/85  to-transparent z-[10] block md:hidden pointer-events-none" />
+               <div className="absolute bottom-0 left-0 right-0 h-[300px] md:h-[200px] bg-gradient-to-t from-[#fcfdff] via-white/85 to-transparent z-[10] hidden md:block pointer-events-none" />
             </SwiperSlide>
           ))}
         </Swiper>
 
-        <div className="absolute bottom-0 left-0 right-0 h-2/4 lg:h-2/4 bg-gradient-to-b from-transparent to-white opacity-2000"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-2/4 lg:h-2/4 bg-gradient-to-b from-transparent to-white opacity-2000 pointer-events-none"></div>
       </div>
 
       {/* Main Content */}
@@ -80,7 +80,7 @@ const HeroSection = () => {
       </div>
 
       {/* Logos Carousel */}
-      <div className="absolute bottom-4 md:bottom-3 shadow-sm bg-[#f5f5f7] py-5 lg:bg-[#f5f5f7] rounded-xl  md:p-4 xl:max-w-[90%] md:max-w-[90%] lg:max-5-7xl z-10">
+      <div className="absolute bottom-4 md:bottom-3 shadow-sm bg-[#f5f5f7] py-5 lg:bg-[#f5f5f7] rounded-xl  md:p-4 xl:max-w-[90%] md:max-w-[90%] lg:max-5-7xl z-20 w-full">
         <Swiper
           modules={[Pagination, Autoplay]}
           slidesPerView={1}
@@ -91,7 +91,15 @@ const HeroSection = () => {
           }}
           loop={true}
           breakpoints={{
+            640: {
+              slidesPerView: 5,
+              spaceBetween: 16,
+            },
             768: {
+              slidesPerView: 5,
+              spaceBetween: 24,
+            },
+            1024: {
               slidesPerView: 5,
               spaceBetween: 30,
             },
@@ -99,7 +107,7 @@ const HeroSection = () => {
         >
           {logos.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white shadow-sm rounded-2xl mx-auto w-[80%] lg:w-[100%] flex flex-col items-center justify-center min-h-[150px]">
+              <div className="bg-white shadow-sm rounded-2xl w-full flex flex-col items-center justify-center min-h-[150px]">
                 <div className="mb-4">
                   <Image src={item.src} alt={item.label} width={60} height={60} />
                 </div>

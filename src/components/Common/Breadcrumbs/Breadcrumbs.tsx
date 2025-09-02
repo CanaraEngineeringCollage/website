@@ -9,6 +9,7 @@ import { HiChevronRight } from "react-icons/hi";
 interface BreadcrumbItem {
   label: string;
   href: string;
+  tab?:string
 }
 
 interface BreadcrumbsProps {
@@ -22,7 +23,7 @@ const Breadcrumbs: FC<BreadcrumbsProps> = ({ items }) => {
   const tab = searchParams.get("tab");
 
   useEffect(() => {
-    setActiveItem(items.find((item) => (tab ? item.href === tab : item.href === currentPath)) || null);
+    setActiveItem(items.find((item) => (tab ? item.tab === tab : item.href === currentPath)) || null);
   }, [items, currentPath, tab]);
 
   return (

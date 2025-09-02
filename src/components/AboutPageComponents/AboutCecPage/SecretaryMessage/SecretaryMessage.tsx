@@ -32,7 +32,7 @@ const SecretaryMessage = () => {
       {/* Text Section */}
       <div className="col-span-7">
         <h1 className="text-3xl text-center lg:text-start  md:text-[40px] lg:text-5xl xl:text-6xl font-bold leading-snug lg:leading-[1.1] text-white mb-6 ">
-          Message from the Honorary Secretary
+          Message from the <br /> Honorary Secretary
         </h1>
         <p className="text-base md:text-[17px] text-[#c5c6c7] leading-relaxed  lg:text-start text-center ">
           Canara&rsquo;s 126-year legacy is built on adaptability, innovation &amp; progress. 

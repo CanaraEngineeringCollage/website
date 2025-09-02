@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import bg1 from "../../../../../public/aboutPageImages/campusLegacy/campus-black-and-white.png";
+import bg1 from "../../../../../public/aboutPageImages/campusLegacy/History Image.webp";
 
 import "swiper/css";
 import "swiper/css/pagination";

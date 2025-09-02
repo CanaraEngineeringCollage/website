@@ -12,7 +12,7 @@ export default function EnterpreneurshipMission() {
   <div className="flex flex-col gap-8 lg:gap-12">
     {/* Objectives */}
     <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 md:p-10 lg:px-12">
-  <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[46px] text-black font-semibold mb-6 text-center lg:text-start">
+  <h2 className="text-3xl lg:text-5xl text-center lg:text-start font-bold text-[#1D1D1F] mb-10">
     Our Objectives
   </h2>
   <ul className="space-y-6 sm:space-y-8">
@@ -54,7 +54,7 @@ export default function EnterpreneurshipMission() {
 
     {/* Mission */}
     <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 md:p-10">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[46px] text-black font-semibold mb-6 text-center lg:text-start">
+      <h2 className="text-3xl lg:text-5xl text-center lg:text-start font-bold text-[#1D1D1F] mb-8">
         Our Mission
       </h2>
       <p className="text-[#afafb3] text-sm sm:text-base leading-relaxed">
@@ -73,7 +73,7 @@ export default function EnterpreneurshipMission() {
       alt="vision"
       className="w-40 sm:w-60 md:w-72 lg:w-[344px] h-auto mb-6"
     />
-    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[46px] text-black font-semibold mb-4">
+    <h2 className="text-3xl lg:text-5xl text-center lg:text-start font-bold text-[#1D1D1F] mb-4">
       Our Vision
     </h2>
     <p className="text-[#949499] text-sm sm:text-base leading-relaxed">

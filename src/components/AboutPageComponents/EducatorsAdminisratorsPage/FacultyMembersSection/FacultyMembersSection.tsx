@@ -1,9 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import councilData from "../../../../utils/councilMembers/councilMembers.json"; // Import JSON data
-import Link from "next/link";
 import FacultyModal from "@/components/DepartmentComponents/FacultyModal/FacultyModal";
 
 interface CouncilMember {
@@ -16,33 +14,21 @@ interface CouncilMember {
   position?: string;
 }
 
-interface CouncilData {
-  faculty: CouncilMember[];
-  admin: CouncilMember[];
-  general: CouncilMember[];
-}
 
-const FacultyMembersSection = () => {
+const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
+  const binary = buffer.data.reduce((acc, byte) => acc + String.fromCharCode(byte), "");
+  const base64 = btoa(binary);
+  return `data:image/jpeg;base64,${base64}`;
+};
+const FacultyMembersSection: React.FC = ({ facultyData }) => {
+
+  console.log(facultyData);
+  
   const [selectedCategory, setSelectedCategory] = useState<string>("faculty");
   const [selectedDepartment, setSelectedDepartment] = useState<string>("Computer Science & Engineering");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedMember, setSelectedMember] = useState<CouncilMember | null>(null);
 
-  // Use imported JSON data
-  const data: CouncilData = councilData;
-
-  // Combine all data for filtering
-  const allData = [...data.faculty, ...data.admin, ...data.general];
-
-  // Filter data based on category and department
-  let filteredData: CouncilMember[] = [];
-  if (selectedCategory === "faculty") {
-    filteredData = allData.filter((item) => item.category === "faculty" && item.department === selectedDepartment);
-  } else {
-    filteredData = allData.filter((item) => item.category === selectedCategory);
-  }
-
-  // List of departments
   const departments = [
     "Computer Science & Engineering",
     "Information Science & Engineering",
@@ -53,18 +39,26 @@ const FacultyMembersSection = () => {
     "Science & Humanities",
   ];
 
+  // Filter data based on category and department
+  const filteredData =
+    selectedCategory === "faculty"
+      ? facultyData.filter((item) => item.department === selectedDepartment)
+      : facultyData.filter((item) => item.department === selectedDepartment);
+
+
   return (
     <section className="px-4 sm:px-6 md:px-10 lg:px-20 py-8 sm:py-10 md:py-16 lg:py-20">
-      <h1 className="text-[54px] font-bold text-[#1D1D1F] leading-tight mb-10 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-10">
+      <h1 className="lg:text-[54px] text-[46px] font-bold text-[#1D1D1F] leading-tight mb-10 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-10">
         Educators &<br />
         Administrators
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
-        <div className="md:col-span-5 ">
+        {/* Sidebar */}
+        <div className="md:col-span-5">
           <div className="w-full sm:w-[80%] mx-auto md:mx-0">
             <div className="border-b-2 border-border pb-4 sm:pb-5">
               <h1
-                className={`text-[20px]  cursor-pointer ${selectedCategory === "faculty" ? "font-bold text-[#2884CA]" : "text-textGray"}`}
+                className={`text-[20px] cursor-pointer ${selectedCategory === "faculty" ? "font-bold text-[#2884CA]" : "text-textGray"}`}
                 onClick={() => {
                   setSelectedCategory("faculty");
                   setSelectedDepartment("Computer Science & Engineering");
@@ -110,44 +104,35 @@ const FacultyMembersSection = () => {
             </div>
           </div>
         </div>
+
+        {/* Cards */}
         <div className="md:col-span-7 text-sm sm:text-base md:text-lg">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg2:grid-cols-3 xl:grid-cols-3 xl:grid-c gap-4 sm:gap-6 md:gap-8 justify-items-center">
-            {filteredData.map((item, index) => {
-              const isLastCard = index === filteredData.length - 1;
-              const remainder = filteredData.length % 2;
-              const shouldCenterLast = remainder === 1 && isLastCard;
-
-              return (
-                <div
-                onClick={() => {setSelectedMember(item); setIsModalOpen(true);}}
-                  key={item.id}
-                  className={`relative w-full max-w-[280px] sm:max-w-[300px] md:max-w-[309px] h-[400px] sm:h-[430px] md:h-[400px] xl:h-[500px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center py-4 sm:py-6 shadow-md ${
-                    shouldCenterLast ? "sm:col-span-2 sm: justify-self-center" : ""
-                  }`}
-                >
-                  <Image
-                    src={item.image}
-                    alt={item.name}
-                    width={260}
-                    height={260}
-                    className=" w-[80%] sm:w-[85%] md:w-full object-contain"
-                  />
-                  <div className="absolute bottom-0 left-0 w-full h-48 sm:h-52 md:h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
-                  <div className="absolute z-50 top-[75%] sm:top-[78%] md:top-[80%] left-4 sm:left-5 md:left-6">
-                    <h2 className="text-base sm:text-lg md:text-lg font-bold">{item.name}</h2>
-                  <p>{item.position}</p>
-                      <p className="text-xs cursor-pointer font-bold sm:text-sm md:text-sm flex items-center">
-                        View Profile
-                        <MdKeyboardArrowRight className="ml-1 text-xl" />
-                      </p>
-                  </div>
+            {filteredData.map((item) => (
+              <div
+                key={item.id}
+                onClick={() => {
+                  setSelectedMember(item);
+                  setIsModalOpen(true);
+                }}
+  className="relative w-full max-w-[280px] sm:max-w-[300px] md:max-w-[309px] h-[400px] sm:h-[430px] md:h-[400px] xl:h-[500px] rounded-xl overflow-hidden bg-[#6DC0EB]/10 text-white flex flex-col items-center  shadow-md cursor-pointer"
+              >
+                <Image src={bufferToBase64(item.avatar)} alt={item.name} width={260} height={260} className=" md:w-full object-contain" />
+               <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
+                <div className="absolute z-50 left-0 px-3 bottom-4">
+                  <h2 className="text-base  font-bold">{item.name}</h2>
+                  <p className="text-sm">{item.designation}</p>
+                  <p className="text-xs cursor-pointer font-bold sm:text-sm md:text-sm flex items-center">
+                    View Profile
+                    <MdKeyboardArrowRight className="ml-1 text-xl" />
+                  </p>
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
         </div>
       </div>
-        <FacultyModal isOpen={isModalOpen} onClose={setIsModalOpen} facultyData={selectedMember} />
+      <FacultyModal isOpen={isModalOpen} onClose={setIsModalOpen} facultyData={selectedMember} />
     </section>
   );
 };

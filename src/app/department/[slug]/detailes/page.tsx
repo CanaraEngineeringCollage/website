@@ -4,6 +4,7 @@ import departments from "@/lib/departments.json";
 import { notFound } from "next/navigation";
 
 
+
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const department = departments.find((dept) => dept.slug === params.slug);
 
@@ -42,12 +43,44 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     },
   };
 }
-const page = () => {
+
+interface Qualification {
+  degree: string;
+  passingYear: number;
+  collegeOrUniversity: string; // This property
+  areaOfSpecialization: string; // This property
+}
+interface Faculty {
+  name: string;
+  image: string;
+  category: string;
+  desiganation: string;
+  department: string;
+  joiningDate: string;
+  experience: string;
+  employmentType: string;
+  qualifications: Qualification[];
+}
+const Page = async ({ params }: { params: { slug: string } }) => {
+  const department = departments.find((dept) => dept.slug === params.slug);
+  if (!department) return notFound();
+
+  let facultyDataFetched: Faculty[] = [];
+  try {
+    const res = await fetch("https://canaraapi.megamind.studio/faculty");
+    if (!res.ok) throw new Error("Failed to fetch faculty data");
+    const data: Faculty[] = await res.json();
+
+    facultyDataFetched = data.filter(f => f.department === department.name).slice(0,10);
+  } catch (error) {
+    console.error("Error fetching faculty data:", error);
+  }
+
   return (
     <section>
-      <DepartmentDetailes />
+      <DepartmentDetailes faculties={facultyDataFetched} />
     </section>
   );
 };
 
-export default page;
+export default Page;

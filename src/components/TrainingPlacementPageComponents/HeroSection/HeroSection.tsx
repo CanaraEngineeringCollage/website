@@ -15,7 +15,7 @@ const HeroSection = () => {
         {/* Mobile Gradient */}
 
         {/* Desktop Gradient */}
-        <div className="absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-black/60 to-transparent z-10" />
+      
         <div className="absolute bottom-0 left-0 right-0 h-[200px] md:h-[50%] bg-gradient-to-t from-[#fbfcfe] via-[#fbfcfe]/85 via-50% to-transparent z-[10] " />
         <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[80%] bg-gradient-to-t from-[#fbfcfe] via-transparent to-transparent z-[10] hidden md:block" />
       </div>

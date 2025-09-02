@@ -21,7 +21,7 @@ const IframLinks = ({title,link}:{title?:string;link?:string}) => {return(
 
 
 const ResearchPageSection = () => {
-const titles = ["Home", "Research Center", "Publications", "Grants", "Activities", "IPR/Patents", "R&D Cell", "IPR Cell", "IRINS Profile"];
+const titles = ["Home", "Research Center", "Publications", "Grants","IPR/Patents", "R&D Cell", "IPR Cell", "IRINS Profile"];
 
   const [selectedIndex, setSelectedIndex] = useState(0); // use index instead of title string
 
@@ -64,10 +64,10 @@ const titles = ["Home", "Research Center", "Publications", "Grants", "Activities
               {selectedIndex === 1 && <ResearchCenter />}
               {selectedIndex === 2 && <Publications />}
               {selectedIndex === 3 && <Grants />}
-              {selectedIndex === 4 && <Activities />}
-              {selectedIndex === 5 && <Patents />}
-              {selectedIndex === 6 && <IframLinks link="https://canaraengineering.in/download/R&D%20Cell.pdf" title="R&D Cell"/>}
-              {selectedIndex === 7 && <IframLinks link="https://canaraengineering.in/download/IPR%20Cell.pdf" title="IPR Cell"/>}
+              {/* {selectedIndex === 4 && <Activities />} */}
+              {selectedIndex === 4 && <Patents />}
+              {selectedIndex === 5 && <IframLinks link="https://canaraengineering.in/download/R&D%20Cell.pdf" title="R&D Cell"/>}
+              {selectedIndex === 6 && <IframLinks link="https://canaraengineering.in/download/IPR%20Cell.pdf" title="IPR Cell"/>}
             </div>
           </div>
         </div>

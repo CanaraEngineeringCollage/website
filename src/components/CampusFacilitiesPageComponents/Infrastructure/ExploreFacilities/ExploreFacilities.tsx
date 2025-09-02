@@ -193,7 +193,7 @@ const ExploreFacilities = () => {
             </h1>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg2:grid-cols-3  ">
+        <div className="grid grid-cols-1  md:grid-cols-2 lg2:grid-cols-3  ">
           {pressData?.map((item, index) => {
             const total = pressData.length;
             const isLast = index === total - 1;
@@ -205,7 +205,7 @@ const ExploreFacilities = () => {
               <motion.button
                 key={index}
                 onClick={() => openCard(index)}
-                className={`max-w-sm min-h-[55vh] md:min-h-[45vh] lg:min-h-[65vh] xl:min-h-[50vh]  rounded-3xl overflow-hidden
+                className={`max-w-sm min-h-[55vh] md:min-h-[45vh] lg:min-h-[65vh] xl:min-h-[50vh] mb-8 lg:mb-0  rounded-3xl overflow-hidden
           ${isLastSingleLg ? "lg:col-span-3 lg:justify-self-center" : ""}`}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}

@@ -1,3 +1,4 @@
+import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 import React from "react";
 import { HiDownload } from "react-icons/hi";
 
@@ -16,9 +17,17 @@ const LifeAtHostels = () => {
             Download Hostel Rulebook <HiDownload className="text-[24px] font-extrabold" />
           </a>
         </div>
-        <p className="text-textGray text-justify  text-[20px] pb-10">
+        <p className="text-textGray text-justify  text-[20px] ">
         Our hostels are located inside the campus, surrounded by greenery and a peaceful, quiet atmosphere that makes it easy to focus on studies while still enjoying college life. They accommodate over 850+ students, creating a safe, friendly environment where you can make lifelong friends. You’ll have access to indoor sports facilities, a well-equipped gym, on-site laundry services, and regular medical visits in collaboration with Father Muller’s Medical Hospital. We also ensure 24/7 security so parents can feel reassured, and our dedicated wardens and assistant wardens are always on-site to support and guide students whenever needed.
         </p>
+          <section className="pt-8 pb-16">
+        <VideoPlayer
+          videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
+          youtubeUrl="https://youtu.be/m0znTqrPg1k?si=axPi_tWGFHTHxZNl"
+          thumbnail="/youtubeThumbnails/iseThumb.webp"
+          startTime={165} // Start at 30 seconds
+        />
+      </section>
         <p className="text-textGray  text-[20px]">
          Life in the hostel at CEC is a balance of academics, fitness, and fun all in a setting that’s amidst nature, calm, and away from the city’s rush. We’re confident you’ll enjoy your time here and create wonderful memories over the next four years.
         </p>

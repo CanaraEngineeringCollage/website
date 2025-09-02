@@ -103,8 +103,27 @@ export default async function DepartmentPage({ params }: { params: { slug: strin
   console.log(department.faculties);
 
   // Filter council data as needed
-  const facultyData = councilData.faculty.filter((faculty) => faculty.department === department.name) as CouncilMember[];
+  // const facultyData = councilData.faculty.filter((faculty) => faculty.department === department.name) as CouncilMember[];
   
+  let facultyDataFetched: Faculty[] = [];
+  try {
+    const res = await fetch("https://canaraapi.megamind.studio/faculty");
+    if (!res.ok) throw new Error("Failed to fetch faculty data");
+    const data: Faculty[] = await res.json();
+
+    // Filter faculty for the current department
+    facultyDataFetched = data.filter((faculty) => faculty.department === department.name).slice(0,10);
+  } catch (error) {
+    console.error("Error fetching faculty data:", error);
+  }
+
+
+
+console.log(facultyDataFetched,"fff");
+
+ 
+  
+
 
   return (
     <>
@@ -127,13 +146,13 @@ export default async function DepartmentPage({ params }: { params: { slug: strin
           ourVision={department.ourVision}
         />
       </section>
-      <section className="bg-[#071D2C] px-6 md:px-0 lg:px-0 xl:px-0">
+      <section className="bg-[#071D2C] px-6 md:px-0 lg:px-0 xl:px-0 md:mt-0 mt-8">
         <DepartmentHeadMessage depatmentHead={department.depatmentHead} />
       </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
-        <DepartmentFacultySection faculties={department.faculties} />
+      <section className="px-6 md:px-12 lg:px-16 xl:px-0 lg:mt-0 -mt-10">
+        <DepartmentFacultySection faculties={facultyDataFetched} />
       </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+      <section className="px-6 md:px-12 lg:px-16 xl:px-0 lg:mt-0 -mt-12">
         <IdeasToImpact />
       </section>
       <section>

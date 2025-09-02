@@ -29,7 +29,8 @@ const page = () => {
       </section>
       <section className="">
         {/* <IdeasText /> */}
-<EnterpreneurshipMission/>      </section>
+        <EnterpreneurshipMission />
+      </section>
       <section>
         <Activities />
       </section>
@@ -37,7 +38,7 @@ const page = () => {
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           youtubeUrl="rk5KixNpftM"
-          thumbnail=""
+          thumbnail=" youtubeThumbnails/Entrepreneurship-Thumbnail.webp"
         />
       </section>
       <section className="px-6 md:px-12 lg:pl-16 lg:px-0 xl:px-0">

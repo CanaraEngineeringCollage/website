@@ -46,7 +46,7 @@ const DistinctivePracties = () => {
     <>
 
       <DistinctiveHeroBaner />
-      <div className="w-full flex flex-col items-center px-4 sm:px-6 md:px-12 py-12 bg-white overflow-hidden">
+      <div className="w-full flex flex-col items-center px-4 sm:px-6 md:px-12 pb-12 bg-white overflow-hidden">
         {/* Title */}
         <h2 className="text-[#1D1D1F] text-2xl sm:text-3xl md:text-[54.14px] font-bold text-center mb-3">
           Distinctive Practices
@@ -97,7 +97,7 @@ const DistinctivePracties = () => {
             <h3 className="text-lg sm:text-2xl md:text-[36px] font-bold mb-6 text-[#1D1D1F]">
               Faculty Centric Practices
             </h3>
-            <ul className="list-square list-inside space-y-3 text-[#86868B] text-sm sm:text-base md:text-[17px] leading-relaxed">
+            <ul className="list-disc  space-y-3 text-[#86868B] text-sm sm:text-base md:text-[17px] leading-relaxed">
               <li>Financial support for faculty for publishing papers in national and international journals and conferences.</li>
               <li>Sponsorship for faculty and staff to attend Conferences, Seminars, Workshops, FDPs, Industrial Trainings, and NPTEL courses.</li>
               <li>Research allowance for those who have completed/pursuing Ph.D.</li>
@@ -114,7 +114,7 @@ const DistinctivePracties = () => {
             <h3 className="text-lg sm:text-2xl md:text-[36px] font-bold mb-6 text-[#1D1D1F]">
               Student Centric Practices
             </h3>
-            <ul className="list-square list-inside space-y-3 text-[#86868B] text-sm sm:text-base md:text-[17px] leading-relaxed">
+            <ul className="list-disc  space-y-3 text-[#86868B] text-sm sm:text-base md:text-[17px] leading-relaxed">
               <li>Recognition and awarding students for their extraordinary performance in academics, co-curricular and extra-curricular activities.</li>
               <li>Management scholarship to the needy and eligible students.</li>
               <li>Sponsoring students to attend intercollegiate co-curricular and extra-curricular activities.</li>

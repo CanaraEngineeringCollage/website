@@ -29,7 +29,7 @@ interface DepartmentHeadMessageProps {
           </div>
         </div>
          <div className="col-span-7">
-          <h1 className="text-3xl text-center lg:text-start my-10 md:text-[40px] leading-[1.1] lg2:text-5xl  font-bold"> Message from the Department&rsquo;s Head</h1>
+          <h1 className="text-3xl text-center lg:text-start my-10 md:text-[40px] leading-[1.2] lg2:text-5xl  font-bold"> Message from the Department&rsquo;s Head</h1>
           <p className="text-[17px] text-[#76838b] text-start ">
             {depatmentHead.messageFromtheDepartmentHead}
           </p>

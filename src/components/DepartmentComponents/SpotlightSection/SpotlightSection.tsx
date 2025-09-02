@@ -13,7 +13,7 @@ export default function SpotlightSection() {
       }}
     >
       {/* Top Section */}
-      <div className="max-w-7xl xl:max-w-[75%] mx-auto px-4 lg:px-18 text-center py-16 md:py-10 mt-12">
+      <div className="max-w-7xl xl:max-w-[75%] mx-auto px-4 lg:px-18 text-center py-16 md:py-10 lg:mt-12 ">
         <h2 className="text-3xl md:text-[40px] leading-[1.1] lg2:text-5xl font-bold mb-4 lg:mb-8 xl:mb-8 ">In the Spotlight</h2>
       <p className="text-lg lg:text-[20.34px] mb-12 text-[#FFFFFFB2]">Honoring Our Toppers for Their Dedication & Excellence!</p>
 

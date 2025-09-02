@@ -25,7 +25,11 @@ interface FacultyMember {
   employmentType: string;
   qualifications: Qualification[];
 }
-
+const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
+  const binary = buffer.data.reduce((acc, byte) => acc + String.fromCharCode(byte), "");
+  const base64 = btoa(binary);
+  return `data:image/jpeg;base64,${base64}`;
+};
 const Faculty = ({ datam }: { datam: FacultyMember[] }) => {
   const [data, setData] = useState<FacultyMember[]>([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -62,11 +66,11 @@ const Faculty = ({ datam }: { datam: FacultyMember[] }) => {
                 shouldCenterLast ? "md:col-start-2 xl:col-start-auto" : ""
               }`}
             >
-              <Image src={item.image} alt={item.name} width={200} height={200} className="w-full object-contain" />
+              <Image src={bufferToBase64(item.avatar)} alt={item.name} width={200} height={200} className="w-full object-contain" />
               <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
-              <div className="absolute z-10 top-[75%] left-6">
+              <div className="absolute z-50 left-0 px-3 bottom-4">
                 <h2 className="text-[20px] font-bold">{item.name}</h2>
-                <p className="text-[17px]">{item.desiganation}, <span className="font-semibold">{item.department}</span></p>
+                <p className="text-[17px]">{item.designation}, <span className="font-semibold">{item.department}</span></p>
                 
                 <p onClick={() => openModal(item)} className="text-xs font-bold sm:text-sm md:text-sm flex items-center">
                   View Profile

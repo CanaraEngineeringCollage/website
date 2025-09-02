@@ -46,7 +46,7 @@ const AmenitiesCard: React.FC<AmenitiesCardProps> = ({ title, amenities, mainIma
         </div>
 
         {/* Grid of Amenities Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mt-16">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mt-16">
           {amenities?.map((amenity, index) => (
             <div key={index} className="col-span-4">
               <div className="relative">
@@ -69,7 +69,7 @@ const AmenitiesCard: React.FC<AmenitiesCardProps> = ({ title, amenities, mainIma
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

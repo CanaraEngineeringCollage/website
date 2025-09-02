@@ -226,6 +226,7 @@ export default function EmpoweringFutures() {
           {/* Carousel Dots */}
           <CarouselDots total={stats.length} active={activeIndex} onDotClick={setActiveIndex} className="mt-6" />
         </div>
+        
         <button
           aria-label="Learn More"
           onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" })}

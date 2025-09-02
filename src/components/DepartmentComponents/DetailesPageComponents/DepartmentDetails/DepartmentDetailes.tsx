@@ -18,7 +18,46 @@ import Events from "../DepartmentDetailesTab/Events/Events";
 import Gallery from "../DepartmentDetailesTab/Gallery/Gallery";
 import Magazines from "../DepartmentDetailesTab/Magazines/Magazines";
 
-const DepartmentDetailes = () => {
+interface Qualification {
+  degree: string;
+  passingYear: number;
+  collegeOrUniversity: string;
+  areaOfSpecialization: string;
+}
+interface Faculty {
+  name: string;
+  image: string;
+  category: string;
+  desiganation: string;
+  department: string;
+  joiningDate: string;
+  experience: string;
+  employmentType: string;
+  qualifications: Qualification[];
+}
+// Interface for council member
+interface CouncilMember {
+  id: number;
+  name: string;
+  image: string;
+  designation: string;
+  category: string;
+  department: string;
+  joiningDate?: string; // Make this optional
+  experience?: string; // Make this optional
+  employmentType?: string; // Make this optional
+  qualifications: Qualification[];
+  faculties?: Faculty[];
+  
+}
+
+
+// Props interface for the component
+interface DepartmentSectionProps {
+  faculties: CouncilMember[];
+}
+
+const DepartmentDetailes = ({ faculties }: DepartmentSectionProps) => {
   const { slug } = useParams();
 
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
@@ -71,7 +110,7 @@ const DepartmentDetailes = () => {
             {selectedSection === "Department Profile" && <DepartmentProfile keyPoints={department?.keyPractices} data={department?.description} />}
             {selectedSection === "Organisation Structure" && department?.organisation && <Organaisation data={department?.organisation}/>}
             {selectedSection === "Head of Department" && <Hod data={department?.depatmentHead} />}
-            {selectedSection === "Faculty & Staff" && <Faculty datam={department?.faculties}/>}
+            {selectedSection === "Faculty & Staff" && <Faculty datam={faculties}/>}
             {selectedSection === "Academic Programs" && department?.academicsProgram && <Academic data={department.academicsProgram} />}
             {selectedSection === "PEO & PO-PSO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
             {selectedSection === "Course Outcomes (CO)" && <CourseOutCome />}

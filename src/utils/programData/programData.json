@@ -3,7 +3,7 @@
     "category": "Library at CEC",
     "title": "Learning Tech, Leading Change",
     "src": "/campusFacilitiesPageImages/4.webp",
-    "style": "lg:top-[250]  lg:left-[600] ",
+    "style": "lg:top-[170]  lg:left-[350] ",
     "textalign":" text-end max-w-2xl ",
     "description": {
       "src": "/campusFacilitiesPageImages/4.webp",
@@ -61,7 +61,7 @@
     "category": "",
     "title": "Research Labs",
     "src": "/campusFacilitiesPageImages/3.jpg",
-    "style": "lg:top-[100] lg:left-[600]",
+    "style": "lg:top-[100] lg:left-[380]",
 
     "description": {
       "src": "/campusFacilitiesPageImages/3.jpg",
