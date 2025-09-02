@@ -34,9 +34,9 @@ function NavbarItems() {
       >
         <button aria-label="Alumni Portal" className="bg-none text-primary border-primary border-[1px] px-7 py-2.5 cursor-pointer rounded-[30px]">Register as Alumni</button>
       </div>
-      {/* <div onClick={()=>setOpen(true)} className="pt-[8px] font-poppins text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
+      <div  className="pt-[8px] font-poppins text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
         <button aria-label="Give to Canara" className="bg-primary text-white px-7 py-2.5 cursor-pointer rounded-[30px]">Give to Canara</button>
-      </div> */}
+      </div>
     </div>
     <FormModal isOpen={open} onClose={setOpen} /></>
   );
