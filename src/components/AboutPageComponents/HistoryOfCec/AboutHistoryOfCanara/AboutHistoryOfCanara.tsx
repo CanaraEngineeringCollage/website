@@ -109,7 +109,7 @@ const AboutHistoryCanara = () => {
       </p>
 
       {/* Roadmap Heading */}
-      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl text-[#1D1D1F] font-bold ">
+      <h1 className="text-3xl md:text-[40px] leading-[1.2] lg2:text-5xl xl:text-6xl text-[#1D1D1F] font-bold ">
         Canara Engineering College Future Road Map
       </h1>
 

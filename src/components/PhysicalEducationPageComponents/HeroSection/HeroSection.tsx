@@ -29,24 +29,22 @@ const HeroSection = () => {
   </div>
 
   {/* Text Block */}
+  <div className="w-full h-full">
   <div
     className="
       absolute 
       z-10 
-      px-6 sm:px-10 lg:px-[6rem] 
-      top-1/2 -translate-y-1/2 
-      text-center md:text-center lg2:text-right
-      left-1/2 md:left-1/2 lg2:left-auto
-      -translate-x-1/2 md:-translate-x-1/2 lg2:translate-x-82
-      w-full lg2:w-5xl
+      lg:pe-10 xl:pe-20
+      flex flex-col justify-center items-end inset-0 
     "
   >
     <h3 className="text-[#F5F5F7]/60 text-[19px] md:text-[25px] lg:text-[31px] leading-5">
       Department of Physical Education
     </h3>
-    <h2 className="text-[28px] sm:text-[32px] md:text-[40px] lg:text-[77px] xl:text-[77px] leading-tight tracking-tighter font-bold text-white max-w-4xl mx-auto lg2:mx-0">
+    <h2 className="text-[28px] sm:text-[32px] max-w-4xl text-end md:text-[40px] lg:text-[77px] xl:text-[77px] leading-tight tracking-tighter font-bold text-white  mx-auto lg2:mx-0">
       Unleashing Potential Through Fitness
     </h2>
+  </div>
   </div>
 
   {/* Extra gradient for mobile */}

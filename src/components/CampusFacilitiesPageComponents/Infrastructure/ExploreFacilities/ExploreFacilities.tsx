@@ -212,8 +212,8 @@ const ExploreFacilities = () => {
               >
                 <div className="h-60 overflow-hidden cursor-pointer">
                   <Image
-                    width={200}
-                    height={200}
+                    width={1000}
+                    height={1000}
                     src={item.image}
                     alt={item.title}
                     className="w-full h-full object-cover !rounded-t-2xl cursor-pointer"

@@ -23,7 +23,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ imageUrl, departmentName,wdit
         
 
         {/* Top Gradient */}
-        <div className="absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-black/40 to-transparent z-10" />
+      
 
         {/* Bottom Gradient - Mobile */}
         <div className="absolute bottom-0 left-0 right-0 h-[150px] bg-gradient-to-t from-[#fbfcfe] via-white/85 to-transparent z-[10] md:hidden" />

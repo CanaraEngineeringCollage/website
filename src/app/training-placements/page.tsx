@@ -18,7 +18,59 @@ export const metadata = {
   },
 };
 
-const page = () => {
+
+interface Qualification {
+  degree: string;
+  passingYear: number;
+  collegeOrUniversity: string; // This property
+  areaOfSpecialization: string; // This property
+}
+interface Faculty {
+  name: string;
+  image: string;
+  category: string;
+  desiganation: string;
+  department: string;
+  joiningDate: string;
+  experience: string;
+  employmentType: string;
+  qualifications: Qualification[];
+}
+
+// Interface for council member
+interface CouncilMember {
+  id: number;
+  name: string;
+  image: string;
+  designation: string;
+  category: string;
+  department: string;
+  joiningDate?: string; // Make this optional
+  experience?: string; // Make this optional
+  employmentType?: string; // Make this optional
+  qualifications: Qualification[]; // Ensure qualifications include the right data
+  faculties?: Faculty[]; // Optional property for faculties
+
+}
+
+const page =async () => {
+
+  let facultyDataFetched: Faculty[] = [];
+  try {
+    const res = await fetch("https://canaraapi.megamind.studio/faculty");
+    if (!res.ok) throw new Error("Failed to fetch faculty data");
+    const data: Faculty[] = await res.json();
+console.log(data,"dd");
+
+    // Filter faculty for the current department
+    facultyDataFetched = data?.filter((faculty) => faculty.department === "Placement Team").slice(0,10);
+  } catch (error) {
+    console.error("Error fetching faculty data:", error);
+  }
+
+
+
+console.log(facultyDataFetched,"fff");
   return (
     <>
       <HeroSection />
@@ -33,10 +85,16 @@ const page = () => {
         />
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0 lg:mt-0 -mt-12">
+
        <DepartmentFaculty
+  facultyData={facultyDataFetched.map(faculty => ({
+    ...faculty,
+    roles: [{ title: faculty.desiganation, organization: "" }] // map designation to roles
+  }))}
   heading="Meet Our Placement Team"
-  description="Our dedicated placement team works tirelessly to connect students with top companies, guiding them towards successful careers and brighter futures."
+  description="Our dedicated placement team works tirelessly..."
 />
+
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <TopRecruiters />

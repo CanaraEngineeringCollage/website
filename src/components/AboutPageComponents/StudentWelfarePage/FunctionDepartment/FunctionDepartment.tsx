@@ -20,6 +20,7 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
   const [isPlay, setIsPlay] = useState(true);
   const [progress, setProgress] = useState(0);
   const autoplayDelay = 3000; // Swiper autoplay delay in ms
+  const CIRCUMFERENCE = 138; // 2πr, where r=22
 
   useEffect(() => {
     setData(functionDeprtmentData);
@@ -30,25 +31,24 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
     if (swiperRef.current) {
       if (isPlay) {
         swiperRef.current.autoplay.stop();
-        // do NOT reset progress here, let it freeze
       } else {
         swiperRef.current.autoplay.start();
+        setProgress(0); // reset when resuming
       }
       setIsPlay(!isPlay);
     }
   };
 
-  // Handle Swiper's autoplay time left to sync progress
-  const handleAutoplayTimeLeft = (_swiper: SwiperType, time: number, _progress: number) => {
-    // Calculate progress as % elapsed
+  // Sync progress with autoplay
+  const handleAutoplayTimeLeft = (_swiper: SwiperType, time: number) => {
     const elapsed = autoplayDelay - time;
-    const percent = (elapsed / autoplayDelay) * 100;
+    const percent = Math.min((elapsed / autoplayDelay) * 100, 100);
     setProgress(percent);
   };
 
   return (
     <section className="lg:ml-16  py-24 xl:py-36 xl:ml-60">
-      {title && <h1 className="text-3xl md:text-[40px] text-center lg2:text-5xl  font-bold text-[#1D1D1F] pb-6 xl:pb-22">{title}</h1>}
+      {title && <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl leading-[1.2] font-bold text-center text-[#1D1D1F] pb-6 xl:pb-22">{title}</h1>}
       <Swiper
         modules={[Autoplay]}
         autoplay={{ delay: autoplayDelay, disableOnInteraction: false }}
@@ -64,7 +64,8 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
         }}
-        onAutoplayTimeLeft={handleAutoplayTimeLeft} // Sync progress with autoplay
+        onSlideChange={() => setProgress(0)} // reset each slide
+        onAutoplayTimeLeft={handleAutoplayTimeLeft}
       >
         {data?.map((item, index) => (
           <SwiperSlide key={index}>
@@ -92,8 +93,8 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
               stroke="#E8E8ED"
               strokeWidth="2"
               fill="none"
-              strokeDasharray={138}
-              strokeDashoffset={(1 - progress / 100) * 138}
+              strokeDasharray={CIRCUMFERENCE}
+              strokeDashoffset={((100 - progress) / 100) * CIRCUMFERENCE}
               strokeLinecap="round"
               className="transition-all duration-100"
               transform="rotate(-90 25 25)"

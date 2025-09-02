@@ -25,25 +25,8 @@ const FormSection: React.FC = () => {
   return (
     <section className="px-4 sm:px-10 md:px-16 lg:px-20 py-12 sm:py-16 xl:py-36 md:py-20 text-[#1D1D1F]">
       <div>
-        <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-[#1D1D1F] text-center md:text-left">Examinations & Records</h1>
+        <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-[#1D1D1F] text-center md:text-left">Circulars</h1>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-20 mt-14">
-          <div className="md:col-span-4 ">
-            <div>
-              {data.map((item, index) => (
-                <Link href={`/academics/examination-records?tab=${item.key}`} key={item.key}>
-                  <div key={index} className={`flex justify-between pb-3 mb-3 ${index < data.length - 1 ? "border-b-2 border-border" : ""}`}>
-                    <h1
-                      className={`text-[20px] ${activeHeader === item.label ? "text-[#2884CA] font-bold" : "text-textGray"} cursor-pointer`}
-                      onClick={() => setActiveHeader(item.label)}
-                    >
-                      {item.label}
-                    </h1>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
-
           {activeHeader === "Marks & Attendance" && (
             <div className="md:col-span-8">
               <div className="flex flex-row justify-center sm:gap-10 gap-4 items-center mb-10">
@@ -66,11 +49,7 @@ const FormSection: React.FC = () => {
                 <input type="text" placeholder="Enter Your Student USN" className="border-b-2 outline-none w-full border-border pb-2 text-textGray" />
               )}
               {activeTab === "Attendance" && (
-                <input
-                  type="text"
-                  placeholder="Enter Your Student USN"
-                  className="border-b-2 outline-none w-full border-border pb-2 text-textGray"
-                />
+                <input type="text" placeholder="Enter Your Student USN" className="border-b-2 outline-none w-full border-border pb-2 text-textGray" />
               )}
 
               <div className="flex justify-center items-center mt-10">

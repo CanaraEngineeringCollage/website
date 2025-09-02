@@ -82,7 +82,7 @@ export const Carousel = ({ items }: CarouselProps) => {
     setIsOpen(true); // Keep the card open when navigating to the next card
   };
 
-  const layoutClasses = "flex flex-col gap-20 max-w-5xl xl:max-w-[75%] mx-auto";
+  const layoutClasses = "flex flex-col gap-20 max-w-5xl xl:max-w-[55%] mx-auto";
 
   return (
     <CarouselContext.Provider
