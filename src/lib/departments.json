@@ -1,8 +1,8 @@
 [
   {
     "name": "Computer Science & Engineering",
-    "ytUrl":"rv0KerNW4QE",
-    "thumbnail":"/youtubeThumbnails/cseThumb.webp",
+    "ytUrl": "rv0KerNW4QE",
+    "thumbnail": "/youtubeThumbnails/cseThumb.webp",
     "bannerUrl": "/departmentImages/dept.webp",
     "slug": "computer-science-engineering",
     "departmentAboutDescription": "Established in 2001, the Department of Computer Science & Engineering offers a robust undergraduate program (B.E. in CSE) and previously offered M.Tech from 2011 to 2021. The department boasts a team of experienced and research-oriented faculty actively engaged in teaching, product development, and publishing in reputed journals and conferences.Regular training sessions, expert talks, and industry interactions help bridge academia and industry. Students are groomed for career success through placement training, technical workshops, and self-learning initiatives like IIT Bombay’s Spoken Tutorial. Active student clubs, annual magazines, and NSS activities promote leadership, innovation, and social responsibility.",
@@ -16,7 +16,7 @@
       "messageFromtheDepartmentHead": "It gives me pride and pleasure to introduce the department and its Web pages. I hope you will browse our OBE (Outcome Based Education) driven teaching-learning process, student achievements and activities. Our primary goal is to provide quality technical education in Computer Science and Engineering enriched with values. The process of learning is extremely important in life and it plays a crucial role in developing one's intellectual capability, besides career. We follow outcome based teaching-learning process that bridges the theory - practice gap while remaining grounded in the core of computer science and engineering. Nowadays the technology is changing rapidly, especially in the field of computing. To face this challenge, we equip our students for problem-solving and expose them to the state-of-the-art in computer science and information technology. We also work hard to help students to improve their verbal and written communication abilities, analytical thinking, and soft skills so that they may flourish in the corporate world. We believe that, our students who are clear and thorough in computer fundamentals coupled with practical experience can adapt to rapid changes in technology or software industry easily. The department has produced hundreds of competent professionals and has established a name for itself in the region. Thanks to the efforts of our Management, affiliating University (VTU), faculty, alumni, parents and the students.",
       "name": "Karthik Pai B H",
       "position": "Professor & HoD",
-      "imageUrl": "/departmentImages/departmentHeads/computer-science.png"
+      "imageUrl": "/departmentImages/departmentHeads/computer-science.webp"
     },
     "placement": {
       "placementPercentage": "30%",
@@ -141,7 +141,13 @@
           "categories": [
             {
               "title": "Hardware Facilities:",
-              "items": ["Desktop Computers", "Network Switch", "Centralised UPS", "Projector", "Printer"]
+              "items": [
+                "Desktop Computers",
+                "Network Switch",
+                "Centralised UPS",
+                "Projector",
+                "Printer"
+              ]
             },
             {
               "title": "Software Facilities:",
@@ -207,7 +213,9 @@
           "title": "DAC: Departmental Advisory Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Expert from Academia",
@@ -219,23 +227,53 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "DQAC: Departmental Quality Assurance Committe",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "SIX Senior Faculty Members", "Programme Coordinator"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "SIX Senior Faculty Members",
+                "Programme Coordinator"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Members", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Members",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Budget/Purchase Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Programme Coordinator",
@@ -245,17 +283,47 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Project Assessment Committee (DPAC)",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "Programme Coordinator", "Seminar Coordinator", "Research Coordinator", "Project Coordinator"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "Programme Coordinator",
+                "Seminar Coordinator",
+                "Research Coordinator",
+                "Project Coordinator"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -331,10 +399,30 @@
         "table": [
           {
             "title": [],
-            "firstColumn": ["Alok Ranjan", "Saritha Suvarna", "Namitha A Amdalli", "Sowmya K"],
-            "secondColumn": ["Verdine Noronha", "Shatananda Bhat P", "Kishor Shivathaya S", "Aruna Kumari G K"],
-            "thirdColumn": ["Annapurna M", "Kavya A M", "Sukshma Shetty", "Tara B B"],
-            "fourthColumn": ["Babitha Ganesh Kulal", "Saritha M", "Janardhana Bhat K", "Sushma"]
+            "firstColumn": [
+              "Alok Ranjan",
+              "Saritha Suvarna",
+              "Namitha A Amdalli",
+              "Sowmya K"
+            ],
+            "secondColumn": [
+              "Verdine Noronha",
+              "Shatananda Bhat P",
+              "Kishor Shivathaya S",
+              "Aruna Kumari G K"
+            ],
+            "thirdColumn": [
+              "Annapurna M",
+              "Kavya A M",
+              "Sukshma Shetty",
+              "Tara B B"
+            ],
+            "fourthColumn": [
+              "Babitha Ganesh Kulal",
+              "Saritha M",
+              "Janardhana Bhat K",
+              "Sushma"
+            ]
           }
         ]
       },
@@ -345,7 +433,12 @@
         "table": [
           {
             "slNo": "true",
-            "title": ["Product", "Year", "Team Members", "Team Leader"],
+            "title": [
+              "Product",
+              "Year",
+              "Team Members",
+              "Team Leader"
+            ],
             "firstColumn": [
               "Institue Managment System for 15 Educational Institutions",
               "Placement Department Automation System 2.0",
@@ -362,7 +455,22 @@
               "VTU Result Extractor",
               "Library Visit Monitoring System"
             ],
-            "secondColumn": ["2022", "2022", "2023", "2023", "2023", "2023", "2023", "2023", "2024", "2024", "2024", "2024", "2024", "2025"],
+            "secondColumn": [
+              "2022",
+              "2022",
+              "2023",
+              "2023",
+              "2023",
+              "2023",
+              "2023",
+              "2023",
+              "2024",
+              "2024",
+              "2024",
+              "2024",
+              "2024",
+              "2025"
+            ],
             "thirdColumn": [
               "Shatananda Bhat P",
               "Shatananda Bhat P",
@@ -1301,12 +1409,11 @@
   },
   {
     "name": "Information Science & Engineering",
-    "ytUrl":"m0znTqrPg1k",
-        "thumbnail":"/youtubeThumbnails/iseThumb.webp",
-
+    "ytUrl": "m0znTqrPg1k",
+    "thumbnail": "/youtubeThumbnails/iseThumb.webp",
     "slug": "information-science-engineering",
     "bannerUrl": "/departmentImages/1.webp",
-    "departmentAboutDescription":"The Department of Information Science & Engineering is committed to shaping future-ready professionals through strong academic practices and industry-aligned training. With well-equipped labs and experienced faculty, the department emphasizes holistic development through seminars, workshops, industry visits, and add-on courses in emerging technologies.Student growth is further supported through motivational talks, placement and career guidance, and active alumni interaction. The department also encourages participation in co-curricular activities under the CiPix association and promotes social responsibility through outreach programs. A consistent academic track record and continuous faculty upskilling ensure excellence in all aspects.",
+    "departmentAboutDescription": "The Department of Information Science & Engineering is committed to shaping future-ready professionals through strong academic practices and industry-aligned training. With well-equipped labs and experienced faculty, the department emphasizes holistic development through seminars, workshops, industry visits, and add-on courses in emerging technologies.Student growth is further supported through motivational talks, placement and career guidance, and active alumni interaction. The department also encourages participation in co-curricular activities under the CiPix association and promotes social responsibility through outreach programs. A consistent academic track record and continuous faculty upskilling ensure excellence in all aspects.",
     "description": "The role of IT has evolved from supporting business to transforming them. In order to sustain in this transformation, one has to identify the market needs, introduce excellent academic processes and bench mark the outcomes as per the defined standard. The Information Science and Engineering Department focuses on all-round development encourages a vibrant interest in academic as well as in extra curricular activities. The Department has fully equipped laboratories and well qualified and experienced staff. The Department regularly arranges seminars, workshops from Industry Experts for students as well as staff and also organizes industry visits for students. The Department offers add-on courses to cope up with the latest trends in technology. The track record of result is excellent. Department organizes motivational talk, placement guidance, workshop & carrier guidance through prominent alumni. The faculty frequently attend the staff development program (FDP/Seminar) in Offline /Online mode to update themselves in a technological change. Departments encourage the students to participates in the extra-curricular activities under student association CiPix. Students also participates in various social outreach programs (SOP) to enhance their leadership skills, teamwork communication and awareness on a protection of environment and social responsibilities.",
     "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
     "ethicalLearning": "Impart technical skills in the field of Information Science & Engineering.",
@@ -1384,27 +1491,37 @@
       "allFacilities": [
         {
           "title": "Advance Computing Laboratory",
-          "points": ["This lab is utilized by the 2nd year ISE students for Java & Advanced Java experiments."],
+          "points": [
+            "This lab is utilized by the 2nd year ISE students for Java & Advanced Java experiments."
+          ],
           "imageUrl": "https://www.canaraengineering.in/departments/is/facilities/Advance%20Computing%20Lab(ISEL03)_400.jpg"
         },
         {
           "title": "Algorithm Laboratory",
-          "points": ["This lab is utilized by the 2nd year ISE students to conduct lab programs related to Data structures and Algorithms."],
+          "points": [
+            "This lab is utilized by the 2nd year ISE students to conduct lab programs related to Data structures and Algorithms."
+          ],
           "imageUrl": "https://www.canaraengineering.in/departments/is/facilities/Algorithm%20Lab(ISEL02)_400.jpg"
         },
         {
           "title": "Machine Learning/Data Processing & Visualization Laboratory",
-          "points": ["This lab is utilized by 3rd year ISE students for laboratories such as Machine Learning, Python and Data Visualization Lab."],
+          "points": [
+            "This lab is utilized by 3rd year ISE students for laboratories such as Machine Learning, Python and Data Visualization Lab."
+          ],
           "imageUrl": "https://www.canaraengineering.in/departments/is/facilities/Project%20Lab(ISEL04)_400.jpg"
         },
         {
           "title": "Project Laboratory",
-          "points": ["This lab is utilized by the 3rd and 4th year students for developing mini-projects and major project."],
+          "points": [
+            "This lab is utilized by the 3rd and 4th year students for developing mini-projects and major project."
+          ],
           "imageUrl": "https://www.canaraengineering.in/departments/is/facilities/Project%20Lab(ISEL04)_400.jpg"
         },
         {
           "title": "Code Nest Laboratory",
-          "points": ["This lab is utilized by 2nd and 3rd year ISE students for Latex Lab and Devops Labs."],
+          "points": [
+            "This lab is utilized by 2nd and 3rd year ISE students for Latex Lab and Devops Labs."
+          ],
           "imageUrl": "https://www.canaraengineering.in/departments/is/facilities/CodeNest%20Lab(ISEL05)_400.jpg"
         },
         {
@@ -1471,9 +1588,17 @@
     "publications": [
       {
         "title": "Staff Publications",
-        "imageUrl": ["https://www.canaraengineering.in/departments/is/citation.jpg", "https://www.canaraengineering.in/departments/is/INDEXED.jpg"]
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/citation.jpg",
+          "https://www.canaraengineering.in/departments/is/INDEXED.jpg"
+        ]
       },
-      { "title": "Student Publications", "imageUrl": ["https://www.canaraengineering.in/departments/is/student%20publication.jpg"] }
+      {
+        "title": "Student Publications",
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/student%20publication.jpg"
+        ]
+      }
     ],
     "studentAcheivemtents": [
       {
@@ -1504,7 +1629,6 @@
           "points": []
         }
       ],
-
       "annualIntake": ""
     },
     "organisation": {
@@ -1515,7 +1639,9 @@
           "title": "DAC: Departmental Advisory Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Expert from Academia",
@@ -1527,23 +1653,53 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "DQAC: Departmental Quality Assurance Committe",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "SIX Senior Faculty Members", "Programme Coordinator"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "SIX Senior Faculty Members",
+                "Programme Coordinator"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Members", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Members",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Budget/Purchase Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Programme Coordinator",
@@ -1553,17 +1709,47 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Project Assessment Committee (DPAC)",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "Programme Coordinator", "Seminar Coordinator", "Research Coordinator", "Project Coordinator"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "Programme Coordinator",
+                "Seminar Coordinator",
+                "Research Coordinator",
+                "Project Coordinator"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1639,10 +1825,30 @@
         "table": [
           {
             "title": [],
-            "firstColumn": ["Alok Ranjan", "Saritha Suvarna", "Namitha A Amdalli", "Sowmya K"],
-            "secondColumn": ["Verdine Noronha", "Shatananda Bhat P", "Kishor Shivathaya S", "Aruna Kumari G K"],
-            "thirdColumn": ["Annapurna M", "Kavya A M", "Sukshma Shetty", "Tara B B"],
-            "fourthColumn": ["Babitha Ganesh Kulal", "Saritha M", "Janardhana Bhat K", "Sushma"]
+            "firstColumn": [
+              "Alok Ranjan",
+              "Saritha Suvarna",
+              "Namitha A Amdalli",
+              "Sowmya K"
+            ],
+            "secondColumn": [
+              "Verdine Noronha",
+              "Shatananda Bhat P",
+              "Kishor Shivathaya S",
+              "Aruna Kumari G K"
+            ],
+            "thirdColumn": [
+              "Annapurna M",
+              "Kavya A M",
+              "Sukshma Shetty",
+              "Tara B B"
+            ],
+            "fourthColumn": [
+              "Babitha Ganesh Kulal",
+              "Saritha M",
+              "Janardhana Bhat K",
+              "Sushma"
+            ]
           }
         ]
       },
@@ -1653,7 +1859,12 @@
         "table": [
           {
             "slNo": "true",
-            "title": ["Product", "Year", "Team Members", "Team Leader"],
+            "title": [
+              "Product",
+              "Year",
+              "Team Members",
+              "Team Leader"
+            ],
             "firstColumn": [
               "Institue Managment System for 15 Educational Institutions",
               "Placement Department Automation System 2.0",
@@ -1670,7 +1881,22 @@
               "VTU Result Extractor",
               "Library Visit Monitoring System"
             ],
-            "secondColumn": ["2022", "2022", "2023", "2023", "2023", "2023", "2023", "2023", "2024", "2024", "2024", "2024", "2024", "2025"],
+            "secondColumn": [
+              "2022",
+              "2022",
+              "2023",
+              "2023",
+              "2023",
+              "2023",
+              "2023",
+              "2023",
+              "2024",
+              "2024",
+              "2024",
+              "2024",
+              "2024",
+              "2025"
+            ],
             "thirdColumn": [
               "Shatananda Bhat P",
               "Shatananda Bhat P",
@@ -2597,16 +2823,14 @@
       }
     ]
   },
-
   {
     "name": "Electronics & Communication Engineering",
-    "ytUrl":"6d1ZJODiDbU",
-            "thumbnail":"/youtubeThumbnails/eceThumb.webp",
-
-    "width":"max-w-6xl",
+    "ytUrl": "6d1ZJODiDbU",
+    "thumbnail": "/youtubeThumbnails/eceThumb.webp",
+    "width": "max-w-6xl",
     "slug": "electronics-communication-engineering",
     "bannerUrl": "/departmentImages/2.webp",
-    "departmentAboutDescription":"The Department of ECE at Canara Engineering College offers a dynamic curriculum covering electronics, communication, and signal processing, with applications in industries, medical systems, and more. With experienced faculty, modern labs, and industry-relevant tools, the department ensures strong academic foundations and hands-on exposure.Students benefit from technical workshops, expert talks, internships, and industrial visits. The department also maintains strong alumni ties to enrich curriculum development and career guidance. Committed to quality education, we foster innovation, research, and all-round professional growth.",
+    "departmentAboutDescription": "The Department of ECE at Canara Engineering College offers a dynamic curriculum covering electronics, communication, and signal processing, with applications in industries, medical systems, and more. With experienced faculty, modern labs, and industry-relevant tools, the department ensures strong academic foundations and hands-on exposure.Students benefit from technical workshops, expert talks, internships, and industrial visits. The department also maintains strong alumni ties to enrich curriculum development and career guidance. Committed to quality education, we foster innovation, research, and all-round professional growth.",
     "description": "Electronics and Communication Engineering (ECE) is a dynamic field which encompasses the acquisition, communication, manipulation, and analysis of Information/Signals. This discipline spans a wide range of applications from everyday electronics to complex systems used in industries, medical devices, and beyond. EC has experienced rapid technological growth, and its impact is evident across numerous domains of engineering.The comprehensive curriculum of ECE provides students with abundant career opportunities, not only in Electronics and Communication but also in allied fields such as Instrumentation, Computer Engineering, Aeronautics, Mechatronics, and Biomedical Engineering. Our faculty members are highly experienced and dedicated to guiding students toward successful careers, advanced studies, and research activities. They have contributed significantly to international journals and attended numerous professional development workshops.The Department of ECE at Canara Engineering College is committed in providing state-of-the-art infrastructure with cutting-edge equipment and software tools, supported by dedicated technical staff. The department has well-equipped laboratories, including those for research and industrial projects, and maintains a close interaction with alumni to continuously enhance our curriculum and technical activities. We conduct numerous core technical workshops, expert lectures, industrial visits, and internship programs to keep our students updated with industry needs and trends.Our commitment is to provide quality education through innovative teaching and learning processes, modern facilities, and a supportive academic environment.",
     "keyPractices": [
       {
@@ -2636,7 +2860,7 @@
       "messageFromtheDepartmentHead": "Welcome to the department of Electronics & Communication Engineering at Canara Engineering College. The Department was established in the year 2001 with the aim of providing leadership in the field of Electronics & Communication Engineering. This department has been accredited twice at 2015 and 2019 by National Board of accreditation.Our mission is to develop innovative teaching and learning pedagogies to help the students to conquer new frontiers. Students are trained to work in multidisciplinary teams and motivates both co-curricular and extracurricular activities, for the overall development of its students. The department encourages the students to actively carry out their projects across various areas of Electronics and Communication and to develop their technical and research skills by attending various workshops, conferences, competitions, etc. We have a team of well qualified, experienced, and committed staff members. The Department of ECE has a unique blend of quality conscious staff members with a strong sense of ethical and professional responsibility.The department has excellent lab facilities which are being upgraded from time to time with cutting edge technology tools. Equal importance is given to both hardware and software labs. The department organizes several technical and nontechnical events to prepare the students to fit into industries. The department has several MOU with industries with their help, several activities are conducted for the overall department of students as well as faculty. Our alumni are the backbone of our department. They help the students for the placements and in upgradation of their technical knowledge.Department brings Newsletter Dhwani twice in a year. All the lectures of the subjects are available on college YouTube channel.",
       "name": "Dr.Raghavendra M Shetty K",
       "position": "Head of the Department",
-      "imageUrl": "https://www.canaraengineering.in/departments/faculty/Raghavendra.jpg"
+      "imageUrl": "/departmentImages/departmentHeads/Electronics&CommunicationEngineering.webp"
     },
     "placement": {
       "placementPercentage": "30%",
@@ -2755,14 +2979,28 @@
           "title": "Software Lab I-VLSI Lab/Computer Networks Lab",
           "desc": "This laboratory is utilized by the 4th year students for VLSI Lab and 3rd year students for Computer Networks lab.Electric software enables to design analog VSLI circuits and layouts and simulate them. Xilinx IDE enables to simulate digital VLSI designs.NCTUNS is used to simulate computer networks using switch and hub for TCP and UDP protocols for different bandwidths and error rates. Shortest routing protocols are executed using C compiler",
           "methodes": "Major tools",
-          "points": ["35 Pentium Core PCs", "48 port Ethernet Switch", "Centralised UPS", "Xilinx software", "Electric software", "NCTUNS software"],
+          "points": [
+            "35 Pentium Core PCs",
+            "48 port Ethernet Switch",
+            "Centralised UPS",
+            "Xilinx software",
+            "Electric software",
+            "NCTUNS software"
+          ],
           "imageUrl": "sshttps://www.canaraengineering.in/departments/is/facilities/Project%20Lab(ISEL04)_400.jpg"
         },
         {
           "title": "Software Lab II-DSP Lab/Embedded Controller Lab",
           "desc": "This laboratory is equipped with MATLAB software, Code Composer Studiowhere students learn to execute signal processing programs in the 5th semester. In the Embedded Controller Lab, the students of 6th semester interface STM32F100RB microcontroller with various peripherals.",
           "methodes": "List of major tools",
-          "points": ["MATLAB 6.5", "KeilUVision 4", "CCS Full version software", "STM32F100RB kits", "Interfacing Kits", "TMS DSP Processor kits"],
+          "points": [
+            "MATLAB 6.5",
+            "KeilUVision 4",
+            "CCS Full version software",
+            "STM32F100RB kits",
+            "Interfacing Kits",
+            "TMS DSP Processor kits"
+          ],
           "imageUrl": "sshttps://www.canaraengineering.in/departments/is/facilities/Project%20Lab(ISEL04)_400.jpg"
         },
         {
@@ -2826,9 +3064,17 @@
     "publications": [
       {
         "title": "Staff Publications",
-        "imageUrl": ["https://www.canaraengineering.in/departments/is/citation.jpg", "https://www.canaraengineering.in/departments/is/INDEXED.jpg"]
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/citation.jpg",
+          "https://www.canaraengineering.in/departments/is/INDEXED.jpg"
+        ]
       },
-      { "title": "Student Publications", "imageUrl": ["https://www.canaraengineering.in/departments/is/student%20publication.jpg"] }
+      {
+        "title": "Student Publications",
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/student%20publication.jpg"
+        ]
+      }
     ],
     "studentAcheivemtents": [
       {
@@ -2886,7 +3132,6 @@
           "points": []
         }
       ],
-
       "annualIntake": ""
     },
     "organisation": {
@@ -2908,32 +3153,67 @@
             "fourthColumn": []
           }
         ],
-        "th": ["Domain", "Faculty", "Research Holders"],
+        "th": [
+          "Domain",
+          "Faculty",
+          "Research Holders"
+        ],
         "moreDetailesTable": [
           {
             "domain": "Applied Electronics",
-            "faculty": ["Mrs. Jayashree K", "Mr. Sandeep Prabhu M"],
-            "researchScholars": ["Mrs. Tara B B", "Mr. Divyesh Divakar", "Mr. Anantha Krishna Kamath"]
+            "faculty": [
+              "Mrs. Jayashree K",
+              "Mr. Sandeep Prabhu M"
+            ],
+            "researchScholars": [
+              "Mrs. Tara B B",
+              "Mr. Divyesh Divakar",
+              "Mr. Anantha Krishna Kamath"
+            ]
           },
           {
             "domain": "Communication System",
-            "faculty": ["Mr. Vinay H S", "Mrs. Rajitha A A", "Mr. Sreerama Samartha J G"],
-            "researchScholars": ["Research Scholars"]
+            "faculty": [
+              "Mr. Vinay H S",
+              "Mrs. Rajitha A A",
+              "Mr. Sreerama Samartha J G"
+            ],
+            "researchScholars": [
+              "Research Scholars"
+            ]
           },
           {
             "domain": "VLSI and Embedded System",
-            "faculty": ["Dr. Dayananda G K"],
-            "researchScholars": ["Mr. Mohan A R"]
+            "faculty": [
+              "Dr. Dayananda G K"
+            ],
+            "researchScholars": [
+              "Mr. Mohan A R"
+            ]
           },
           {
             "domain": "Signal Processing and Computer Programming",
-            "faculty": ["Dr. Ganesh V. Bhat"],
-            "researchScholars": ["Mr. Padmahasa M", "Mr. Vayusutha M"]
+            "faculty": [
+              "Dr. Ganesh V. Bhat"
+            ],
+            "researchScholars": [
+              "Mr. Padmahasa M",
+              "Mr. Vayusutha M"
+            ]
           },
           {
             "domain": "Artificial Intelligence & Machine Learning",
-            "faculty": ["Mr. Manjunatha I R", "Mr. Sujit Satish Pai", "Mrs. Savitha Acharya", "Mrs. Akshatha G Baliga", "Dr. Raghavendra M Shetty K"],
-            "researchScholars": ["Mrs. Suchitra N Shenoy", "Mr. Ajeya B"]
+            "faculty": [
+              "Mr. Manjunatha I R",
+              "Mr. Sujit Satish Pai",
+              "Mrs. Savitha Acharya",
+              "Mrs. Akshatha G Baliga",
+              "Dr. Raghavendra M Shetty K"
+            ],
+            "researchScholars": [
+              "Mrs. Suchitra N Shenoy",
+              "Mr. Ajeya B"
+            ]
           }
         ]
       },
@@ -2950,43 +3230,90 @@
             "fourthColumn": []
           }
         ],
-        "th": ["Year", "Project Title", "Guide", "Team Members"],
+        "th": [
+          "Year",
+          "Project Title",
+          "Guide",
+          "Team Members"
+        ],
         "moreDetailesTable": [
           {
             "year": "2022-23",
             "domain": "MULTI CONTROLLED ELECTRIC WHEEL CHAIR",
-            "faculty": ["Ms. Savitha Acharya"],
-            "researchScholars": ["4CB19EC021 Dheeraj Shenoy", "4CB19EC002 Aghan Jain", "4CB19EC023 Harsvaradhan", "4CB19EC034 K S Muhammad Sawad"]
+            "faculty": [
+              "Ms. Savitha Acharya"
+            ],
+            "researchScholars": [
+              "4CB19EC021 Dheeraj Shenoy",
+              "4CB19EC002 Aghan Jain",
+              "4CB19EC023 Harsvaradhan",
+              "4CB19EC034 K S Muhammad Sawad"
+            ]
           },
           {
             "year": "2023-24",
             "domain": "AUTOMATIC RUBBER MILK MIXING MACHINE BY DETERMINING THE DRY RUBBER CONTENT OF LATEX",
-            "faculty": ["Mr. Vinay H S"],
-            "researchScholars": ["4CB20EC008 Ashish Kotian", "4CB21EC402 NaviKarthik", "4CB21EC400 Abhishek Gatty", "4CB20EC042 Sanketh Rao"]
+            "faculty": [
+              "Mr. Vinay H S"
+            ],
+            "researchScholars": [
+              "4CB20EC008 Ashish Kotian",
+              "4CB21EC402 NaviKarthik",
+              "4CB21EC400 Abhishek Gatty",
+              "4CB20EC042 Sanketh Rao"
+            ]
           },
           {
             "year": "2023-24",
             "domain": "ADVAYA VAHANA",
-            "faculty": ["Ms. Jayashree K"],
-            "researchScholars": ["4CB20EC032 Pruthviraj S Uppar", "4CB20EC034 Rachan A R", "4CB20EC043 Sahana", "4CB20EC051 Shrilakshmi G Hegde"]
+            "faculty": [
+              "Ms. Jayashree K"
+            ],
+            "researchScholars": [
+              "4CB20EC032 Pruthviraj S Uppar",
+              "4CB20EC034 Rachan A R",
+              "4CB20EC043 Sahana",
+              "4CB20EC051 Shrilakshmi G Hegde"
+            ]
           },
           {
             "year": "2023-24",
             "domain": "LOW-COST MYOELECTRIC PROSTHETIC ARM",
-            "faculty": ["Dr. Dayananda G K"],
-            "researchScholars": ["4CB20EC004 Aditya P", "4CB20EC006 Amel Rayaz Bailur", "4CB20EC022 Nisha Shetty", "4CB20EC047 Sameer M Hegde"]
+            "faculty": [
+              "Dr. Dayananda G K"
+            ],
+            "researchScholars": [
+              "4CB20EC004 Aditya P",
+              "4CB20EC006 Amel Rayaz Bailur",
+              "4CB20EC022 Nisha Shetty",
+              "4CB20EC047 Sameer M Hegde"
+            ]
           },
           {
             "year": "2023-24",
             "domain": "VENDING MACHINE USING UPI",
-            "faculty": ["Ms. Rajitha A A"],
-            "researchScholars": ["4CB20EC002 Abhijith A", "4CB20EC009 Ashwin K S", "4CB20EC016 Krithik S K", "4CB20EC019 Manoj Hegde"]
+            "faculty": [
+              "Ms. Rajitha A A"
+            ],
+            "researchScholars": [
+              "4CB20EC002 Abhijith A",
+              "4CB20EC009 Ashwin K S",
+              "4CB20EC016 Krithik S K",
+              "4CB20EC019 Manoj Hegde"
+            ]
           },
           {
             "year": "2024-25",
             "domain": "DESIGN AND IMPLEMENTATION OF HELICAL ANTENNA FOR AIRCRAFT COMMUNICATION",
-            "faculty": ["Mr. Sreerama Samartha J G"],
-            "researchScholars": ["4CB21EC001 Aishwarya H S", "4CB21EC054 Spandana", "4CB21EC020 Lata Keshav Naik", "4CB21EC053 Sonali S"]
+            "faculty": [
+              "Mr. Sreerama Samartha J G"
+            ],
+            "researchScholars": [
+              "4CB21EC001 Aishwarya H S",
+              "4CB21EC054 Spandana",
+              "4CB21EC020 Lata Keshav Naik",
+              "4CB21EC053 Sonali S"
+            ]
           }
         ]
       },
@@ -3039,9 +3366,21 @@
         "table": [
           {
             "title": [],
-            "firstColumn": ["Ms. savitha Acharya", "Mr. Sreerama Samarta J G", "Mr. Vinay H S"],
-            "secondColumn": ["Ms.Jayasree K", "Mr. Sandeep Prabhu M", "Mr. Manjunath I R"],
-            "thirdColumn": ["Ms. Akshatha G Baliga", "Ms.Rajitha A A", "Mr. Sujith S Pai"],
+            "firstColumn": [
+              "Ms. savitha Acharya",
+              "Mr. Sreerama Samarta J G",
+              "Mr. Vinay H S"
+            ],
+            "secondColumn": [
+              "Ms.Jayasree K",
+              "Mr. Sandeep Prabhu M",
+              "Mr. Manjunath I R"
+            ],
+            "thirdColumn": [
+              "Ms. Akshatha G Baliga",
+              "Ms.Rajitha A A",
+              "Mr. Sujith S Pai"
+            ],
             "fourthColumn": []
           }
         ]
@@ -3943,8 +4282,8 @@
   },
   {
     "name": "Computer Science & Design",
-    "ytUrl":"RzRByOfY7LA",
-    "thumbnail":"/youtubeThumbnails/csdThumb.webp",
+    "ytUrl": "RzRByOfY7LA",
+    "thumbnail": "/youtubeThumbnails/csdThumb.webp",
     "slug": "computer-science-design",
     "bannerUrl": "/departmentImages/5.webp",
     "departmentAboutDescription": "Established in 2021, the Department of Computer Science & Design (CS&D) offers a unique blend of computing and design. Supported by experienced faculty, the department focuses on academics, research, and product development. Faculty contributions are regularly published in reputed international journals and conferences.The department emphasizes holistic student development through expert talks, industry interactions, and hands-on training. Regular FDPs, technical skill development programs, and self-learning initiatives like IIT Bombay’s Spoken Tutorials and ICT Academy certifications are integral to the learning process.With strong placement support, a growing industry interface, and a bi-annual newsletter to showcase innovation, the department is committed to shaping career-ready professionals. NSS activities further enhance student leadership, communication, and social responsibility.",
@@ -3958,7 +4297,7 @@
       "messageFromtheDepartmentHead": "The Department Computer Science and Design (CSD) aims to produce adaptable software developers who are experienced with emerging media technologies and design approaches as well as knowledgeable in computing approaches, tools, and technologies. Students who complete this degree are well-prepared for a wide range of employment in fields like entertainment, the arts, games, digital analytics, mobile application development, web/product design, cyber security, multimedia, and other interactive industries all over the world. The department is committed to giving students a best education and a promising future, which is supported by its upper edge teaching staff, excellent facilities, and Training & Placement Cell. We strongly promote innovation in research, education, and service to the profession, the local community, and industry. As we take the department of Computer Science & Design to new heights, I cordially invite you to join us in our endeavours. A successful academic career is my final wish for all the students and faculty.",
       "name": "Dr.Praahas Amin",
       "position": "Head of the Department",
-      "imageUrl": "https://www.canaraengineering.in/departments/faculty/0120230001.jpg"
+      "imageUrl": "/departmentImages/departmentHeads/ComputerScienceDesign.webp"
     },
     "placement": {
       "placementPercentage": "30%",
@@ -4092,9 +4431,17 @@
     "publications": [
       {
         "title": "Staff Publications",
-        "imageUrl": ["https://www.canaraengineering.in/departments/is/citation.jpg", "https://www.canaraengineering.in/departments/is/INDEXED.jpg"]
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/citation.jpg",
+          "https://www.canaraengineering.in/departments/is/INDEXED.jpg"
+        ]
       },
-      { "title": "Student Publications", "imageUrl": ["https://www.canaraengineering.in/departments/is/student%20publication.jpg"] }
+      {
+        "title": "Student Publications",
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/student%20publication.jpg"
+        ]
+      }
     ],
     "studentAcheivemtents": [
       {
@@ -4118,7 +4465,6 @@
         "Game Design"
       ],
       "academicAdditionalSkills": [],
-
       "annualIntake": "60"
     },
     "organisation": {
@@ -4129,7 +4475,9 @@
           "title": "DAC: Departmental Advisory Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Expert from Academia",
@@ -4141,23 +4489,53 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "DQAC: Departmental Quality Assurance Committe",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "SIX Senior Faculty Members", "Programme Coordinator"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "SIX Senior Faculty Members",
+                "Programme Coordinator"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Members", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Members",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Budget/Purchase Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Programme Coordinator",
@@ -4167,24 +4545,59 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Project Assessment Committee (DPAC)",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "Programme Coordinator", "Seminar Coordinator", "Research Coordinator", "Project Coordinator"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "Programme Coordinator",
+                "Seminar Coordinator",
+                "Research Coordinator",
+                "Project Coordinator"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         }
       ]
     },
     "research": [
       {
         "heading": "Research Areas",
-        "points": ["Machine Learning", "Biomedical Signal Processing", "Data Science and Big Data Analytics", "Computer Vision & Deep Learning"],
+        "points": [
+          "Machine Learning",
+          "Biomedical Signal Processing",
+          "Data Science and Big Data Analytics",
+          "Computer Vision & Deep Learning"
+        ],
         "imageUrl": "",
         "table": [
           {
@@ -4216,7 +4629,11 @@
       },
       {
         "heading": "",
-        "points": ["Mr. Anantha Krishna Kamath", "Mrs. Pooja N S", "Mr. Ravishankara K"],
+        "points": [
+          "Mr. Anantha Krishna Kamath",
+          "Mrs. Pooja N S",
+          "Mr. Ravishankara K"
+        ],
         "imageUrl": "",
         "table": [
           {
@@ -5115,11 +5532,11 @@
   },
   {
     "name": "Computer Science & Business System",
-    "ytUrl":"7sAPnoYfGI4",
-    "thumbnail":"/youtubeThumbnails/csbThumb.webp",
+    "ytUrl": "7sAPnoYfGI4",
+    "thumbnail": "/youtubeThumbnails/csbThumb.webp",
     "slug": "computer-science-business-system",
     "bannerUrl": "/departmentImages/3.webp",
-    "departmentAboutDescription":"Greetings from the department of Computer Science and Business Systems (CSBS). The Department of Computer Science and Business System (CSBS) aims to meet the growing demand for engineering talent with technological skills. This innovative program provides a well-rounded education that blends technical skills in Computer Science with a strong foundation in the Humanities, Management, and Business Strategies. Students will gain practical experience in emerging technologies like Analytics, Machine Learning, Cloud Computing, and IoT, preparing them for successful careers in today's tech-driven world.The Department provides students with a top-quality education that equips them for a bright future. Our commitment is supported by our exceptional teaching staff, state-of-the-art facilities, and dedicated Training & Placement Cell. We strongly encourage innovation in research, education, and community engagement. In this regard, it gives me immense pleasure to invite you all to be part of the Department of Computer Science and Business System to take it to greater heights.",
+    "departmentAboutDescription": "Greetings from the department of Computer Science and Business Systems (CSBS). The Department of Computer Science and Business System (CSBS) aims to meet the growing demand for engineering talent with technological skills. This innovative program provides a well-rounded education that blends technical skills in Computer Science with a strong foundation in the Humanities, Management, and Business Strategies. Students will gain practical experience in emerging technologies like Analytics, Machine Learning, Cloud Computing, and IoT, preparing them for successful careers in today's tech-driven world.The Department provides students with a top-quality education that equips them for a bright future. Our commitment is supported by our exceptional teaching staff, state-of-the-art facilities, and dedicated Training & Placement Cell. We strongly encourage innovation in research, education, and community engagement. In this regard, it gives me immense pleasure to invite you all to be part of the Department of Computer Science and Business System to take it to greater heights.",
     "description": "Greetings from the department of Computer Science and Business Systems (CSBS). The Department of Computer Science and Business System (CSBS) aims to meet the growing demand for engineering talent with technological skills. This innovative program provides a well-rounded education that blends technical skills in Computer Science with a strong foundation in the Humanities, Management, and Business Strategies. Students will gain practical experience in emerging technologies like Analytics, Machine Learning, Cloud Computing, and IoT, preparing them for successful careers in today's tech-driven world.The Department provides students with a top-quality education that equips them for a bright future. Our commitment is supported by our exceptional teaching staff, state-of-the-art facilities, and dedicated Training & Placement Cell. We strongly encourage innovation in research, education, and community engagement. In this regard, it gives me immense pleasure to invite you all to be part of the Department of Computer Science and Business System to take it to greater heights.",
     "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
     "ethicalLearning": "To provide a learning environment endowed with competence and expertise in Computer Science and Business System education.",
@@ -5130,7 +5547,7 @@
       "messageFromtheDepartmentHead": "I’m proud to introduce the department and its web pages. Explore our Outcome-Based Education (OBE) approach, student achievements, and activities. Our goal is to deliver quality technical education in Computer Science & Engineering, grounded in core principles and enriched with values. We bridge the theory-practice gap, equipping students with problem-solving skills and exposure to cutting-edge technologies. Alongside technical skills, we focus on enhancing communication, analytical thinking, and soft skills for success in the corporate world. With a strong foundation in computer fundamentals and hands-on experience, our students are prepared to thrive in the ever-evolving tech landscape.",
       "name": "Dr. Rajgopal K. T",
       "position": "Professor & HoD",
-      "imageUrl": "https://www.canaraengineering.in/departments/faculty/0120130016.jpg"
+      "imageUrl": "/departmentImages/ComputerScience&BusinessSystem.webp"
     },
     "placement": {
       "placementPercentage": "30%",
@@ -5233,7 +5650,13 @@
           "categories": [
             {
               "title": "Hardware Facilities:",
-              "items": ["Desktop Computers", "Network Switch", "Centralised UPS", "Projector", "Printer"]
+              "items": [
+                "Desktop Computers",
+                "Network Switch",
+                "Centralised UPS",
+                "Projector",
+                "Printer"
+              ]
             },
             {
               "title": "Software Facilities:",
@@ -5267,9 +5690,17 @@
     "publications": [
       {
         "title": "Staff Publications",
-        "imageUrl": ["https://www.canaraengineering.in/departments/is/citation.jpg", "https://www.canaraengineering.in/departments/is/INDEXED.jpg"]
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/citation.jpg",
+          "https://www.canaraengineering.in/departments/is/INDEXED.jpg"
+        ]
       },
-      { "title": "Student Publications", "imageUrl": ["https://www.canaraengineering.in/departments/is/student%20publication.jpg"] }
+      {
+        "title": "Student Publications",
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/student%20publication.jpg"
+        ]
+      }
     ],
     "studentAcheivemtents": [
       {
@@ -5300,7 +5731,6 @@
         "Business Skill Development Courses"
       ],
       "academicAdditionalSkills": [],
-
       "annualIntake": "60"
     },
     "organisation": {
@@ -5311,7 +5741,9 @@
           "title": "DAC: Departmental Advisory Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Expert from Academia",
@@ -5323,23 +5755,53 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "DQAC: Departmental Quality Assurance Committe",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "SIX Senior Faculty Members", "Programme Coordinator"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "SIX Senior Faculty Members",
+                "Programme Coordinator"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Members", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Members",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Budget/Purchase Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Programme Coordinator",
@@ -5349,24 +5811,58 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Project Assessment Committee (DPAC)",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "Programme Coordinator", "Seminar Coordinator", "Research Coordinator", "Project Coordinator"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "Programme Coordinator",
+                "Seminar Coordinator",
+                "Research Coordinator",
+                "Project Coordinator"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         }
       ]
     },
     "research": [
       {
         "heading": "Research Areas",
-        "points": ["Artificial Intelligence", "Nanotechnology", "Cryptography"],
+        "points": [
+          "Artificial Intelligence",
+          "Nanotechnology",
+          "Cryptography"
+        ],
         "imageUrl": "",
         "table": [
           {
@@ -5398,7 +5894,13 @@
       },
       {
         "heading": "Faculty Pursuing Doctoral Studies",
-        "points": ["Pavithra H B", "Yathish K", "Vinod Kumar B", "Ramesh E", "Yojana Kiran kumar"],
+        "points": [
+          "Pavithra H B",
+          "Yathish K",
+          "Vinod Kumar B",
+          "Ramesh E",
+          "Yojana Kiran kumar"
+        ],
         "imageUrl": "",
         "table": [
           {
@@ -6298,10 +6800,10 @@
   {
     "name": "Artificial Intelligence & Machine Learning",
     "slug": "artificial-intelligence-machine-learning",
-    "ytUrl":"h9M-zIKXv_E",
-    "thumbnail":"/youtubeThumbnails/aimlThumb.webp",
+    "ytUrl": "h9M-zIKXv_E",
+    "thumbnail": "/youtubeThumbnails/aimlThumb.webp",
     "bannerUrl": "/departmentImages/4.webp",
-    "departmentAboutDescription":"Established in 2021, the Department of AIML offers a B.E. program focused on cutting-edge technologies driving today’s digital transformation. With applications across healthcare, robotics, finance, and more, the curriculum equips students with strong foundations in AI, ML, data science, computer vision, and programming.The department emphasizes industry readiness through technical training, soft skills development, and self-paced certifications via platforms like SWAYAM, Coursera, and edX. Faculty and students are actively involved in research and continuous upskilling. Extracurricular and club activities further support holistic growth and strong placement outcomes.",
+    "departmentAboutDescription": "Established in 2021, the Department of AIML offers a B.E. program focused on cutting-edge technologies driving today’s digital transformation. With applications across healthcare, robotics, finance, and more, the curriculum equips students with strong foundations in AI, ML, data science, computer vision, and programming.The department emphasizes industry readiness through technical training, soft skills development, and self-paced certifications via platforms like SWAYAM, Coursera, and edX. Faculty and students are actively involved in research and continuous upskilling. Extracurricular and club activities further support holistic growth and strong placement outcomes.",
     "description": "The department was established in 2021 to offer an undergraduate degree program, the Bachelor of Engineering (BE) in Artificial Intelligence and Machine Learning (AIML). AIML is at the forefront of computer science, expanding rapidly into sectors such as healthcare, security, entertainment, education, autonomous transportation, robotics, space exploration, speech processing, and stock trading, among others. The pervasive influence of artificial intelligence has profoundly impacted our lives.AI aims to emulate human intelligence, imparting cognitive abilities to robots. Machine learning (ML), a subset of AI, enables machines to learn autonomously. The emergence of AI and ML has generated numerous career opportunities and is a pivotal driver of digital transformation, creating a high demand for skilled engineers proficient in these technologies. Graduates of this program possess a highly valuable degree, opening doors to employment across various industries. The curriculum emphasizes core competencies in mathematics, network architectures, computer vision, Computer programming, communication networks, machine learning, Artificial Intelligence, and Data Science equipping students to develop intelligent applications that address societal and national needs.The department actively conducts skill enhancement training programs for both faculty and students, fostering technological advancements and disseminating research findings. It offers soft skills training, technical skill development activities, and encourages self-learning through certification courses available on prominent online platforms (SWAYAM-NPTEL, Coursera, Udemy, edX), as well as extracurricular engagements facilitated by various clubs, aimed at enhancing placement opportunities and fostering overall personality development.",
     "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
     "ethicalLearning": "To impart skill-based (Artificial Intelligence and Machine Learning) education through a competent teaching-learning process.",
@@ -6312,7 +6814,7 @@
       "messageFromtheDepartmentHead": "Greetings from the department of Artificial Intelligence and Machine Learning(AI&ML).It gives me immense pleasure to introduce the department and its Web pages. With the rapid growth of the technology development in the world, the artificial intelligent systems are becoming a part of life. Therefore, the main goal of the Artificial Intelligence and Machine Learning (AIML) department is to give high-quality technical education in the field of Artificial Intelligence and Machine Learning. The development of intellectual skills that support the growth of career advancement depends on lifelong learning. To improve students' abilities and understanding in the field of computer science and its cutting-edge technologies, we adopt an outcome-based teaching and learning process (AI&ML). Nowadays, with the rapid growth of internet usage from large scale industries to small scale industries and from urban to rural areas due to availability of internet with high-speed broadband, the users have adopted internet as a part of life. With the use of the internet and advanced technologies, the society is consequently facing numerous challenges. The department focuses on these issues, helps students and staff members comprehend them, and inspires them to develop technology solutions to deal with these challenges. We encourage and support the students and staff members of department in research, innovations and entrepreneurship activities to provide technological solutions to the relevant challenges of society. And we are confident that our students, who have a solid understanding of computer basics and real-world experience, will be able to quickly adjust to changes in technology or the software business. In this regard, it gives me immense pleasure to invite you all to be part of Artificial Intelligence and Machine Learning Department to take it to the greater hights.One machine can do the work of fifty ordinary men. No machine can do the work of one extraordinary man. - Elbert Hubbard (Author). Therefore, become an extraordinary man and I wish you all the best and have great academic careers.",
       "name": "Dr. Basappa B Kodada",
       "position": "Head of the Department",
-      "imageUrl": "https://www.canaraengineering.in/departments/faculty/0120220016.jpg"
+      "imageUrl": "/departmentImages/departmentHeads/aiml.webp"
     },
     "placement": {
       "placementPercentage": "30%",
@@ -6382,7 +6884,9 @@
           "title": "DAC: Departmental Advisory Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Expert from Academia",
@@ -6394,13 +6898,28 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member Secretary", "Member", "Member", "Member"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member Secretary",
+                "Member",
+                "Member",
+                "Member"
+              ]
+            }
+          ]
         },
         {
           "title": "DQAC: Departmental Quality Assurance Committe",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Accreditation (NBA/NAAC)/Program Coordinator",
@@ -6412,27 +6931,78 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member Secretary", "Member", "Member", "Member", "Member", "Spl. Invitee(s)"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member Secretary",
+                "Member",
+                "Member",
+                "Member",
+                "Member",
+                "Spl. Invitee(s)"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Budget/Purchase Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "Senior Faculty Member", "Accreditation Coordinator", "R&D Coordinator", "Faculty Member"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "Senior Faculty Member",
+                "Accreditation Coordinator",
+                "R&D Coordinator",
+                "Faculty Member"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member Secretary", "Member", "Member", "Member"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member Secretary",
+                "Member",
+                "Member",
+                "Member"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Project Assessment Committee (DPAC)",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "Project Coordinator", "Senior Faculty Member", "Guide", "R&D Coordinator or Domain Expert(s)"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "Project Coordinator",
+                "Senior Faculty Member",
+                "Guide",
+                "R&D Coordinator or Domain Expert(s)"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Coordinator", "Member", "Member", "Spl. Invitee(s)"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Coordinator",
+                "Member",
+                "Member",
+                "Spl. Invitee(s)"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6467,7 +7037,11 @@
         "imageUrl": "https://www.canaraengineering.in/departments/ai/labpics/FacultyAchievements.JPG",
         "table": [
           {
-            "title": ["Faculty Name", "Research Domain", "University"],
+            "title": [
+              "Faculty Name",
+              "Research Domain",
+              "University"
+            ],
             "firstColumn": [],
             "secondColumn": [],
             "thirdColumn": [],
@@ -6483,7 +7057,11 @@
         "imageUrl": "",
         "table": [
           {
-            "title": ["Faculty Name", "Research Domain", "University"],
+            "title": [
+              "Faculty Name",
+              "Research Domain",
+              "University"
+            ],
             "firstColumn": [
               "Kanmani",
               "Siju V Soman",
@@ -6571,7 +7149,6 @@
           "points": [],
           "imageUrl": "https://www.canaraengineering.in/departments/ai/labpics/DLAIL04.png"
         },
-
         {
           "title": "",
           "desc": "Project Laboratory (AIL05): The Project Laboratory (AIL05) provides dedicated workspaces for students to collaborate and work on their projects while utilizing the available computing resources. This lab fosters innovation by offering a conducive environment for designing, developing, and testing various academic and research-based projects.",
@@ -6615,11 +7192,17 @@
           "tableHeading": [
             {
               "title": "Items",
-              "data": ["Number of Book Titles available", "Number of Volumes available"]
+              "data": [
+                "Number of Book Titles available",
+                "Number of Volumes available"
+              ]
             },
             {
               "title": "Count",
-              "data": ["48", "71"]
+              "data": [
+                "48",
+                "71"
+              ]
             }
           ]
         }
@@ -6628,9 +7211,17 @@
     "publications": [
       {
         "title": "Staff Publications",
-        "imageUrl": ["https://www.canaraengineering.in/departments/is/citation.jpg", "https://www.canaraengineering.in/departments/is/INDEXED.jpg"]
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/citation.jpg",
+          "https://www.canaraengineering.in/departments/is/INDEXED.jpg"
+        ]
       },
-      { "title": "Student Publications", "imageUrl": ["https://www.canaraengineering.in/departments/is/student%20publication.jpg"] }
+      {
+        "title": "Student Publications",
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/student%20publication.jpg"
+        ]
+      }
     ],
     "studentAcheivemtents": [
       {
@@ -6689,7 +7280,6 @@
             "In the final year, students participate in utilizing the skill set earned during II, III Year programs to solve real-world problems. In addition to this, the students will be involved in industry internships, placement training, and project work. These programs provide students with valuable practical experience, exposure to real-world projects, and the opportunity to apply their skills in professional careers. This hands-on experience greatly enhances their employability and prepares them for industry roles."
           ]
         },
-
         {
           "title": "Soft Skill Development Courses",
           "desc": "",
@@ -6721,7 +7311,6 @@
           "points": []
         }
       ],
-
       "annualIntake": "120"
     },
     "faculties": [
@@ -7600,7 +8189,7 @@
       "messageFromtheDepartmentHead": "I am elated to introduce to you, the Basic Science and Humanities Department of Canara Engineering College which lays the foundation in the world of technology for future engineers. The department of Basic Science and Humanities nurtures students with a positive attitude to achieve excellence and aims to impart quality education.The department imparts knowledge and foundation for various disciplines like Mathematics, Physics, Chemistry, and English for all the branches of engineering, with excellent infrastructure and laboratories provided with the latest equipment. We have well-qualified and dedicated faculty who are the backbone of this department.Faculty members while mentoring the students in academics and overall development, lay the foundation of basic concepts and act as a catalyst to boost their talents. We are a step ahead in providing soft skills training for first-year BE students thereby modeling their innate traits and acquiring new prowess at the beginning of their academic journey. We also play an immense role in upskilling the students and assisting them during their placements. The department is proud of its accomplishments and is thriving to do much more in years to come.We wish all success to our students and wish them all the best !!!",
       "name": "Dr. N. Satheesh Kumar",
       "position": "H.O.D- Science & Humanities",
-      "imageUrl": "https://www.canaraengineering.in/departments/faculty/0120120004.jpg"
+      "imageUrl": "/departmentImages/departmentHeads/science&humanities.webp"
     },
     "placement": {
       "placementPercentage": "30%",
@@ -7701,9 +8290,17 @@
     "publications": [
       {
         "title": "Staff Publications",
-        "imageUrl": ["https://www.canaraengineering.in/departments/is/citation.jpg", "https://www.canaraengineering.in/departments/is/INDEXED.jpg"]
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/citation.jpg",
+          "https://www.canaraengineering.in/departments/is/INDEXED.jpg"
+        ]
       },
-      { "title": "Student Publications", "imageUrl": ["https://www.canaraengineering.in/departments/is/student%20publication.jpg"] }
+      {
+        "title": "Student Publications",
+        "imageUrl": [
+          "https://www.canaraengineering.in/departments/is/student%20publication.jpg"
+        ]
+      }
     ],
     "studentAcheivemtents": [
       {
@@ -7730,7 +8327,10 @@
     "academicsProgram": {
       "title": "Academic Details",
       "des": "The Physics Department comprises a team of dynamic and highly experienced faculty members dedicated to teaching Engineering Physics to B.E. first-year students across all branches. The department offers the following courses:",
-      "points": ["Engineering Physics", "Engineering Physics Lab"],
+      "points": [
+        "Engineering Physics",
+        "Engineering Physics Lab"
+      ],
       "academicAdditionalSkills": [
         {
           "title": "",
@@ -7760,7 +8360,9 @@
           "title": "DAC: Departmental Advisory Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Expert from Academia",
@@ -7772,23 +8374,53 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "DQAC: Departmental Quality Assurance Committe",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "SIX Senior Faculty Members", "Programme Coordinator"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "SIX Senior Faculty Members",
+                "Programme Coordinator"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Members", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Members",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Budget/Purchase Committee",
           "firstColumn": [
             {
-              "title": ["Composition"],
+              "title": [
+                "Composition"
+              ],
               "data": [
                 "Head of the Department",
                 "Programme Coordinator",
@@ -7798,17 +8430,47 @@
               ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         },
         {
           "title": "Departmental Project Assessment Committee (DPAC)",
           "firstColumn": [
             {
-              "title": ["Composition"],
-              "data": ["Head of the Department", "Programme Coordinator", "Seminar Coordinator", "Research Coordinator", "Project Coordinator"]
+              "title": [
+                "Composition"
+              ],
+              "data": [
+                "Head of the Department",
+                "Programme Coordinator",
+                "Seminar Coordinator",
+                "Research Coordinator",
+                "Project Coordinator"
+              ]
             }
           ],
-          "secondColumn": [{ "title": [], "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"] }]
+          "secondColumn": [
+            {
+              "title": [],
+              "data": [
+                "Chairman",
+                "Member",
+                "Member",
+                "Member",
+                "Member Secretary"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -7854,7 +8516,13 @@
       },
       {
         "heading": "Faculty Pursuing Doctoral Studies",
-        "points": ["Mr. Prashantha Somayaji", "Mr. Padmanabha Kamath", "Ms. Rajashree", "Mr. Satish Hegde H", "Mr. Ganesh Kamath M"],
+        "points": [
+          "Mr. Prashantha Somayaji",
+          "Mr. Padmanabha Kamath",
+          "Ms. Rajashree",
+          "Mr. Satish Hegde H",
+          "Mr. Ganesh Kamath M"
+        ],
         "imageUrl": "",
         "table": [
           {

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Karthik Pai B H",
-    "image": "/departmentImages/departmentHeads/computer-science.png",
+    "image": "/departmentImages/departmentHeads/computer-science.webp",
     "category": "Prospective",
     "roles": [
       { "title": "Computer Science", "organization": "" }
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "name": "Dr.Raghavendra M Shetty K",
-    "image": "https://www.canaraengineering.in/departments/faculty/Raghavendra.jpg",
+    "image": "/departmentImages/departmentHeads/Electronics&CommunicationEngineering.webp",
     "category": "Parents",
 "roles": [
       { "title": "Electronics & Communication Engineering", "organization": "" }
@@ -28,7 +28,7 @@
   {
     "id": 4,
     "name": "Dr.Praahas Amin",
-    "image": "https://www.canaraengineering.in/departments/faculty/0120230001.jpg",
+    "image": "/departmentImages/departmentHeads/ComputerScienceDesign.webp",
     "category": "Alumni",
     "roles": [
       { "title": "Computer Science & Design", "organization": "" }
@@ -37,7 +37,7 @@
   {
     "id": 5,
     "name": "Dr. Rajgopal K. T",
-    "image": "https://www.canaraengineering.in/departments/faculty/0120130016.jpg",
+    "image": "/departmentImages/departmentHeads/ComputerScience&BusinessSystem.webp",
     "category": "Governing",
    "roles": [
       { "title": "Computer Science & Business System", "organization": "" }
@@ -46,7 +46,7 @@
   {
     "id": 6,
     "name": "Dr. Basappa B Kodada",
-    "image": "https://www.canaraengineering.in/departments/faculty/0120220016.jpg",
+    "image": "/departmentImages/departmentHeads/aiml.webp",
     "category": "Prospective",
    "roles": [
       { "title": "Artificial Intelligence & Machine Learning", "organization": "" }
@@ -55,7 +55,7 @@
   {
     "id": 7,
     "name": "Dr. N. Satheesh Kumar",
-    "image": "https://www.canaraengineering.in/departments/faculty/0120120004.jpg",
+    "image": "/departmentImages/departmentHeads/science&humanities.webp",
     "category": "Prospective",
    "roles": [
       { "title": "Science & Humanities", "organization": "" }
