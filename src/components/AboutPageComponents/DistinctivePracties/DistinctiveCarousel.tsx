@@ -154,7 +154,7 @@ export default function DistinctiveCarousel() {
 
 
   return (
-    <section className="  mx-auto  py-12 overflow-hidden  flex justify-center items-center lg:h-[100vh]">
+    <section className="  mx-auto  py-12 overflow-hidden  flex justify-center items-center ">
       <div className="grid grid-cols-1 gap-8 lg2:gap-16 ">
         {/* Left Side - Swiper */}
         <div className="relative w-full">
@@ -185,7 +185,7 @@ export default function DistinctiveCarousel() {
       centeredSlides: true,
     },
     1024: {
-      slidesPerView: 3,
+      slidesPerView: 3.2,
       spaceBetween: 24,
       centeredSlides: true,
     },

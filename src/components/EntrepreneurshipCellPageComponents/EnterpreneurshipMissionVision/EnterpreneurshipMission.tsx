@@ -27,7 +27,7 @@ export default function EnterpreneurshipMission() {
       </p>
     </li>
 
-    <li className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 sm:gap-10 lg:gap-16">
+    <li className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 sm:gap-10 lg:gap-12">
       <img
         src="/aboutPageImages/MissionVision/visionImage2.webp"
         alt="icon"
@@ -38,7 +38,7 @@ export default function EnterpreneurshipMission() {
       </p>
     </li>
 
-    <li className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 sm:gap-10 lg:gap-16">
+    <li className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 sm:gap-10 lg:gap-12">
       <img
         src="/aboutPageImages/MissionVision/visionImage3.webp"
         alt="icon"

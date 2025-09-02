@@ -128,7 +128,7 @@ const handleSubmit = async () => {
   return (
     <AnimatePresence>
       {isOpen && (
-        <motion.div className="fixed inset-0 h-screen z-50 overflow-auto" initial="hidden" animate="visible" exit="exit">
+        <motion.div className="fixed inset-0 h-screen z-[9999999999999999] overflow-auto" initial="hidden" animate="visible" exit="exit">
           {/* Backdrop */}
           <motion.div variants={backdropVariants} className="bg-black/80 backdrop-blur-lg h-full w-full fixed inset-0" onClick={() => onClose(false)} />
           
@@ -150,7 +150,7 @@ const handleSubmit = async () => {
             </motion.button>
 
             {/* Form Content */}
-            <motion.div variants={contentVariants} className="p-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-12 sm:py-12 lg:py-16">
+            <motion.div variants={contentVariants} className="p-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-12 sm:py-12 lg:pt-24 lg:pb-20 xl:pt-32 xl:pb-28">
               <h2 className="text-2xl sm:text-3xl lg:text-[46px] font-bold text-[#2884CA] text-center">
                 Ready to Shape Your Future?
               </h2>

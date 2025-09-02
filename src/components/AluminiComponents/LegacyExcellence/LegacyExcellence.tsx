@@ -163,8 +163,8 @@ export default function LegacyExcellance() {
 
                     {/* Text Overlay */}
                     <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6 lg2:p-16 rounded-b-3xl">
-                      <h2 className="text-white text-lg lg:text-[40px] font-bold mt-1">{item.title}</h2>
-                      <p className="text-white  mt-2 text-sm lg:text-lg max-w-2/3">{item.description}</p>
+                      <h2 className="text-white text-lg leading-[1.2] lg:text-[40px] font-bold mt-1">{item.title}</h2>
+                      {/* <p className="text-white  mt-2 text-sm lg:text-lg max-w-2/3">{item.description}</p> */}
                       <button
                         aria-label="Learn More"
                         onClick={() => openModal(item, index)}

@@ -5,9 +5,10 @@ const AboutDepartment = () => {
   return (
     <section className=" md:pb-2 pb-20  max-w-7xl xl:max-w-[75%] mx-auto lg:px-32">
       <div className="">
-        <div className="flex justify-between items-center pb-5 lg:pb-10">
-          <h1 className="text-3xl md:text-[40px] lg2:text-[46.5px] xl:text-6xl max-w-2xl  font-bold text-[#1D1D1F] ">About the Training &
+        <div className="flex justify-between  pb-5 lg:pb-10">
+          <h1 className="text-3xl md:text-[40px] lg2:text-[46.5px] xl:text-6xl leading-[1.2] max-w-2xl xl:max-w-3xl  font-bold text-[#1D1D1F] ">About the Training &
             Placements Department</h1>
+            <div>
           <a
             href="/brochures/Placement Brochure Design.pdf"
             download
@@ -16,6 +17,7 @@ const AboutDepartment = () => {
           >
             Download Brochure <HiDownload className="text-[24px] font-extrabold" />
           </a>
+          </div>
         </div>
         <p className="text-textGray  text-[20px] pb-5">
           Canara Engineering College has carved a niche for itself in the competitive domain. We have been successful in maintaining our high

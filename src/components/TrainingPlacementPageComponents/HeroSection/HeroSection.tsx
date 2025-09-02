@@ -16,8 +16,8 @@ const HeroSection = () => {
 
         {/* Desktop Gradient */}
       
-        <div className="absolute bottom-0 left-0 right-0 h-[200px] md:h-[50%] bg-gradient-to-t from-[#fbfcfe] via-[#fbfcfe]/85 via-50% to-transparent z-[10] " />
-        <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[80%] bg-gradient-to-t from-[#fbfcfe] via-transparent to-transparent z-[10] hidden md:block" />
+        <div className="absolute bottom-0 left-0 right-0 h-[200px] md:h-[30%] bg-gradient-to-t from-[#fbfcfe] via-[#fbfcfe]/85 via-50% to-transparent z-[10] " />
+        <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[25%] bg-gradient-to-t from-[#fbfcfe] via-transparent to-transparent z-[10] hidden md:block" />
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 h-[250px] bg-gradient-to-t from-[#fbfcfe] via-[#fbfcfe]/85 to-transparent z-[10] md:hidden" />

@@ -43,6 +43,19 @@ const page = () => {
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <LifeAtHostels />
       </section>
+      <section className="pt-8 lg:pt-0 w-full pb-10 lg:pb-5">
+        <VideoPlayer
+          videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
+          youtubeUrl="https://youtu.be/m0znTqrPg1k?si=axPi_tWGFHTHxZNl"
+          thumbnail="/youtubeThumbnails/iseThumb.webp"
+          startTime={165} // Start at 30 seconds
+        />
+      </section>
+      <section className="md:pt-10 pt-6 xl:py-10 pb-2  max-w-7xl xl:max-w-[75%] mx-auto lg:px-32">
+      <p className="text-textGray  text-[20px]">
+         Life in the hostel at CEC is a balance of academics, fitness, and fun all in a setting that’s amidst nature, calm, and away from the city’s rush. We’re confident you’ll enjoy your time here and create wonderful memories over the next four years.
+        </p>
+        </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0 lg:my-0 -mt-6">
         <AmenitiesSection />
       </section>

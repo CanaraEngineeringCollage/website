@@ -14,16 +14,14 @@ interface CouncilMember {
   position?: string;
 }
 
-
 const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
   const binary = buffer.data.reduce((acc, byte) => acc + String.fromCharCode(byte), "");
   const base64 = btoa(binary);
   return `data:image/jpeg;base64,${base64}`;
 };
 const FacultyMembersSection: React.FC = ({ facultyData }) => {
-
   console.log(facultyData);
-  
+
   const [selectedCategory, setSelectedCategory] = useState<string>("faculty");
   const [selectedDepartment, setSelectedDepartment] = useState<string>("Computer Science & Engineering");
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -44,7 +42,6 @@ const FacultyMembersSection: React.FC = ({ facultyData }) => {
     selectedCategory === "faculty"
       ? facultyData.filter((item) => item.department === selectedDepartment)
       : facultyData.filter((item) => item.department === selectedDepartment);
-
 
   return (
     <section className="px-4 sm:px-6 md:px-10 lg:px-20 py-8 sm:py-10 md:py-16 lg:py-20">
@@ -115,10 +112,10 @@ const FacultyMembersSection: React.FC = ({ facultyData }) => {
                   setSelectedMember(item);
                   setIsModalOpen(true);
                 }}
-  className="relative w-full max-w-[280px] sm:max-w-[300px] md:max-w-[309px] h-[400px] sm:h-[430px] md:h-[400px] xl:h-[500px] rounded-xl overflow-hidden bg-[#6DC0EB]/10 text-white flex flex-col items-center  shadow-md cursor-pointer"
+                className="relative w-full max-w-[280px] sm:max-w-[300px] md:max-w-[309px] h-[400px] sm:h-[430px] md:h-[350px] xl:h-[450px] rounded-xl overflow-hidden bg-[#6DC0EB]/10 text-white flex flex-col items-center  shadow-md cursor-pointer"
               >
                 <Image src={bufferToBase64(item.avatar)} alt={item.name} width={260} height={260} className=" md:w-full object-contain" />
-               <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
+                <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
                 <div className="absolute z-50 left-0 px-3 bottom-4">
                   <h2 className="text-base  font-bold">{item.name}</h2>
                   <p className="text-sm">{item.designation}</p>
