@@ -5,6 +5,7 @@ import React from 'react'
 const YourSkills = () => {
   return (
     <AmenitiesCard
+    style='text-center'
     title={data.title}
     amenities={data.amenities}
     mainImage={data.mainImage}

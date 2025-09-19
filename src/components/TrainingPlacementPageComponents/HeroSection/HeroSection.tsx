@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section className="relative w-full h-[90vh] md:h-[120vh]  flex flex-col justify-center items-center text-center  overflow-hidden">
       
-      <div className="pt-32">
+      <div className="lg:pt-32 md:pt-1">
          <Image src={bgImage} alt="Background 1" className="object-cover w-full h-[80vh] md:h-full" priority />
       </div>
       <div className="absolute inset-0 z-0">

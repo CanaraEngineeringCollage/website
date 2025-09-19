@@ -72,7 +72,8 @@ const Footer: FC = () => {
   return (
     <footer className="bg-[#e5e5ea] text-gray-700 text-sm pt-10">
       {/* Desktop Version */}
-      <div className="lg:max-w-7xl  xl:mx-auto xl:max-w-[75%]  mx-auto lg:block hidden">
+      <div className="container  mx-auto  lg:px-16 lg2:px-4">
+          <div className="lg:max-w-7xl md:max-w-6xl  xl:mx-auto xl:max-w-[75%]  mx-auto lg:block hidden">
           <Suspense fallback={null}> <Breadcrumbs
           items={[
             { label: "", href: "" },
@@ -115,7 +116,8 @@ const Footer: FC = () => {
         /></Suspense>
 
         <hr className="text-gray-300 pb-3.5" />
-        <div className="grid grid-cols-2 md:grid-cols-5  border-b border-gray-300 pb-10">
+        <div className="mx-auto">
+              <div className="grid grid-cols-2 md:grid-cols-5  border-b border-gray-300 pb-10">
           <div>
             <h3 className="font-semibold mt-5 mb-2">Quick Links</h3>
             <FooterList data={quickLinks} />
@@ -137,6 +139,8 @@ const Footer: FC = () => {
             <FooterList data={stayConnected} />
           </div>
         </div>
+        </div>
+    
 
         <div className="flex items-center justify-between space-x-10 my-8">
           <div className="flex gap-5">
@@ -176,6 +180,8 @@ const Footer: FC = () => {
           </div>
         </div>
       </div>
+      </div>
+    
 
       {/* Mobile Version */}
       <div className="lg:hidden px-6">

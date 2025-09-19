@@ -16,7 +16,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ imageUrl, departmentName,wdit
       alt="Background 1"
       width={1920} // required
       height={1080} // required
-      className="object-cover -mt-38  w-full"
+      className="object-cover lg2:-mt-38 lg:-mt-38 md:mt-0 mt-0  w-full"
     />
   </div>
       <div className="absolute inset-0 z-0">

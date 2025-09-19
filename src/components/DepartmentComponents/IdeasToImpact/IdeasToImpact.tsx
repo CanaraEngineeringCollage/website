@@ -191,7 +191,7 @@ export default function IdeasToImpact() {
           </div>
         </div> */}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-[#1D1D1F] mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 text-[#1D1D1F] mt-10">
           {/* Placement and Job Offers */}
           <div className="bg-white rounded-2xl flex flex-col ">
             <div className="flex justify-center items-center">

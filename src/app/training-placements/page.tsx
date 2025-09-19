@@ -70,11 +70,10 @@ console.log(data,"dd");
 
 
 
-console.log(facultyDataFetched,"fff");
   return (
     <>
       <HeroSection />
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0 |">
+      <section className="px-6 md:px-12 lg:px-16 xl:px-0 mb-9 |">
         <AboutDepartment />
       </section>
       <section className="pb-10 lg:mt-0 -mt-12">

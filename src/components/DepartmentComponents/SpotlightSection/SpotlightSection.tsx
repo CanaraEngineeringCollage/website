@@ -18,7 +18,7 @@ export default function SpotlightSection() {
       <p className="text-lg lg:text-[20.34px] mb-12 text-[#FFFFFFB2]">Honoring Our Toppers for Their Dedication & Excellence!</p>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-[50px] xl:gap-16 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-[50px] xl:gap-16 mb-20">
           {[1, 2, 3].map((item) => (
             <div key={item} className=" text-white rounded-2xl px-8 py-4 flex flex-row items-center border-white border-[1px]">
               <div>

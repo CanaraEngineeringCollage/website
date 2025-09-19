@@ -48,8 +48,8 @@ const Hod: React.FC<HodProps> = ({ data }) => {
 <img
           src={data?.imageUrl}
           alt={data?.name}
-          className="w-48 object-cover rounded-lg shadow flex-shrink-0"
-          style={{ height: imageHeight }}
+          className="w-auto lg2:h-[360px] lg:h-[300px] h-[260px]  rounded-lg shadow "
+          // style={{ height: imageHeight }}
         />
       <div className="mt-2 font-semibold text-[#1D1D1F]">{data?.name}</div>
       <div className="text-sm text-gray-500">{data?.position}</div>

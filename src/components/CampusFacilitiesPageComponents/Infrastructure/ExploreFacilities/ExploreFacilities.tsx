@@ -193,7 +193,7 @@ const ExploreFacilities = () => {
             </h1>
           </div>
         </div>
-        <div className="grid grid-cols-1  md:grid-cols-2 lg2:grid-cols-3  ">
+        <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3  justify-center ">
           {pressData?.map((item, index) => {
             const total = pressData.length;
             const isLast = index === total - 1;
@@ -205,12 +205,12 @@ const ExploreFacilities = () => {
               <motion.button
                 key={index}
                 onClick={() => openCard(index)}
-                className={`max-w-sm min-h-[55vh] md:min-h-[45vh] lg:min-h-[65vh] xl:min-h-[50vh] mb-8 lg:mb-0  rounded-3xl overflow-hidden
+                className={`max-w-xs min-h-[55vh] md:min-h-[45vh] lg:min-h-[65vh] xl:min-h-[50vh] mb-8 lg:mb-0  rounded-3xl overflow-hidden
           ${isLastSingleLg ? "lg:col-span-3 lg:justify-self-center" : ""}`}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <div className="h-60 overflow-hidden cursor-pointer">
+                <div className="h-60 overflow-hidden cursor-pointer ">
                   <Image
                     width={1000}
                     height={1000}
@@ -219,7 +219,7 @@ const ExploreFacilities = () => {
                     className="w-full h-full object-cover !rounded-t-2xl cursor-pointer"
                   />
                 </div>
-                <div className="p-8 text-center bg-white rounded-b-2xl">
+                <div className="p-8 text-center bg-white rounded-b-2xl ">
                   <h2 className="text-[27px] font-bold text-black mb-2 line-clamp-2">{item.title}</h2>
                   <span className="text-[#2997FF] inline-flex text-[17px] items-center hover:underline font-medium text-sm">
                     Read More <MdKeyboardArrowRight className="ml-1" />

@@ -34,14 +34,14 @@ const HeroSection = () => {
     className="
       absolute 
       z-10 
-      lg:pe-10 xl:pe-20
+      lg:pe-10  pe-3 xl:pe-20
       flex flex-col justify-center items-end inset-0 
     "
   >
-    <h3 className="text-[#F5F5F7]/60 text-[19px] md:text-[25px] lg:text-[31px] leading-5">
+    <h3 className="text-[#F5F5F7]/60 max-w-4xl text-[19px] md:text-[25px] lg:text-[31px] leading-5">
       Department of Physical Education
     </h3>
-    <h2 className="text-[28px] sm:text-[32px] max-w-4xl text-end md:text-[40px] lg:text-[77px] xl:text-[77px] leading-tight tracking-tighter font-bold text-white  mx-auto lg2:mx-0">
+    <h2 className="text-[28px] sm:text-[32px] max-w-4xl  text-end md:text-[48px] lg:text-[77px] xl:text-[77px] leading-tight tracking-tighter font-bold text-white   lg2:mx-0">
       Unleashing Potential Through Fitness
     </h2>
   </div>

@@ -21,11 +21,11 @@ const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
   const base64 = btoa(binary);
   return `data:image/jpeg;base64,${base64}`;
 };
-export default function DepartmentFaculty({heading,description,facultyData}:{heading:string,description:string,facultyData:any}) {
+export default function DepartmentFaculty({ heading, description, facultyData }: { heading: string, description: string, facultyData: any }) {
 
-console.log("facl",facultyData);
+  console.log("facl", facultyData);
 
-  
+
   const [data, setData] = useState<CouncilMember[]>([]);
   const [startIndex, setStartIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -56,11 +56,11 @@ console.log("facl",facultyData);
           <div>
             <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-gray-900 leading-[1.1]">{heading}</h2>
             <p className="text-gray-700 text-lg mt-6">
-             {description}
+              {description}
             </p>
           </div>
           <div className="flex items-center justify-between gap-4">
-            {heading!="Meet Our Admissions Team"&&<Link href="/about/educators-administrators"><button
+            {heading != "Meet Our Admissions Team" && <Link href="/about/educators-administrators"><button
               aria-label="Meet more of our Faculty"
               className="bg-[#d0e2f8] text-black text-block  px-6 py-3 rounded-full text-[14px] font-medium "
             >
@@ -91,22 +91,29 @@ console.log("facl",facultyData);
           {(visibleMembers || []).map((member, index) => (
             <div
               key={index}
-              className={`relative cursor-pointer w-full max-w-[309px] h-[450px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center  shadow-md`}
+              className="relative cursor-pointer w-full max-w-[309px] lg2:h-[450px] lg:h-[350px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md"
             >
+              {/* Image fills card completely */}
               <Image
-                  onClick={() => {
-                    setSelectedMember(member), setIsModalOpen(true);
-                  }}
+                onClick={() => {
+                  setSelectedMember(member);
+                  setIsModalOpen(true);
+                }}
                 src={bufferToBase64(member.avatar)}
                 alt={member.name}
-                width={300}
-                height={300}
-                className="  w-full object-contain"
+                fill
+                className="object-cover" // ensures no gaps, same as first design
               />
-              <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
-              <div className="absolute z-50 bottom-5 left-0 px-5">
-                <h2 className="text-[20px] font-bold">{member.name}</h2>
-                <p className="text-[17px]">
+
+              {/* Responsive gradient */}
+              <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
+
+              {/* Content */}
+              <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full">
+                <h2 className="text-base sm:text-lg md:text-xl font-bold leading-tight">
+                  {member.name}
+                </h2>
+                <p className="text-xs sm:text-sm md:text-base leading-snug break-words">
                   {member.roles.map((role, idx) => (
                     <span key={idx}>
                       {role.title}
@@ -121,15 +128,17 @@ console.log("facl",facultyData);
                 </p>
                 <p
                   onClick={() => {
-                    setSelectedMember(member), setIsModalOpen(true);
+                    setSelectedMember(member);
+                    setIsModalOpen(true);
                   }}
-                  className="text-xs font-bold sm:text-sm md:text-sm flex items-center"
+                  className="text-xs sm:text-sm md:text-base font-bold flex items-center mt-1"
                 >
                   View Profile
-                  <MdKeyboardArrowRight className="ml-1 text-xl" />
+                  <MdKeyboardArrowRight className="ml-1 text-lg md:text-xl" />
                 </p>
               </div>
             </div>
+
           ))}
         </div>
       </div>
@@ -144,27 +153,33 @@ console.log("facl",facultyData);
           </div>
         </div>
 
-        <div className="grid grid-cols-1 w-full gap-6">
+        <div className="flex justify-center w-full">
           {visibleMembersMobile.map((member, index) => (
             <div
               key={index}
-              className={`relative cursor-pointer w-full  max-w-[309px] h-[480px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center  shadow-md`}
+              className="relative cursor-pointer w-full max-w-[309px] h-[270px] md:h-[420px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md"
             >
+              {/* Image fills card completely */}
               <Image
-               onClick={() => {
-                setSelectedMember(member), setIsModalOpen(true);
-              }}
-                src={member.image}
+                onClick={() => {
+                  setSelectedMember(member);
+                  setIsModalOpen(true);
+                }}
+                src={bufferToBase64(member.avatar)}
                 alt={member.name}
-                width={300}
-                height={300}
-                className="  w-full object-contain"
+                fill
+                className="object-cover"
               />
 
-              <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
-              <div className="absolute z-50 top-[75%] left-6">
-                <h2 className="text-[20px] font-bold">{member.name}</h2>
-                <p className="text-[17px]">
+              {/* Gradient overlay */}
+              <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
+
+              {/* Content */}
+              <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full text-start">
+                <h2 className="text-[10px] sm:text-lg md:text-xl font-bold leading-tight">
+                  {member.name}
+                </h2>
+                <p className="text-xs sm:text-sm md:text-base leading-snug break-words ">
                   {member.roles.map((role, idx) => (
                     <span key={idx}>
                       {role.title}
@@ -179,12 +194,13 @@ console.log("facl",facultyData);
                 </p>
                 <p
                   onClick={() => {
-                    setSelectedMember(member), setIsModalOpen(true);
+                    setSelectedMember(member);
+                    setIsModalOpen(true);
                   }}
-                  className="text-xs font-bold sm:text-sm md:text-sm flex items-center"
+                  className="text-[10px] sm:text-sm md:text-base font-bold flex items-center justify-start mt-1 " 
                 >
                   View Profile
-                  <MdKeyboardArrowRight className="ml-1 text-xl" />
+                  <MdKeyboardArrowRight className="ml-1 text-sm md:text-xl" />
                 </p>
               </div>
             </div>
@@ -195,7 +211,7 @@ console.log("facl",facultyData);
             aria-label="Meet more of our Admin Team"
             className="bg-blue-100 text-black text-block px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition"
           >
-                  Meet more of our Faculty
+            Meet more of our Faculty
           </button></Link>
           <div className="flex items-center gap-2">
             <button

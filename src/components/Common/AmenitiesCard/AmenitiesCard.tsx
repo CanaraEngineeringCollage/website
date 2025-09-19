@@ -1,3 +1,4 @@
+import { style } from "framer-motion/client";
 import Image from "next/image";
 import React from "react";
 
@@ -8,19 +9,21 @@ interface Amenity {
   description: string;
   date?: string;
   alt?: string; // Optional alt text for accessibility
+  style?:string;
 }
 
 interface AmenitiesCardProps {
   amenities?: Amenity[];
   mainImage: Amenity;
   title?: string; // For the main larger image at the top
+  style?:string;
 }
 
 const AmenitiesCard: React.FC<AmenitiesCardProps> = ({ title, amenities, mainImage }) => {
   return (
     <section className="max-w-5xl xl:max-w-[75%] mx-auto py-20 overflow-hidden text-[#1D1D1F]">
       <div>
-        {title && <h1 className="text-3xl text-center mb-14 md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold">{title}</h1>}
+        {title && <h1 className={`text-3xl  ${style} mb-14 md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold`}>{title}</h1>}
         {/* Main Image Section */}
         <div className="relative">
           <Image
@@ -38,7 +41,7 @@ const AmenitiesCard: React.FC<AmenitiesCardProps> = ({ title, amenities, mainIma
             <h1 className="text-white lg:text-[40px] text-[21px] text-start font-bold me-8 lg:me-28 mt-2">
               {mainImage?.title}
             </h1>
-            <p className="text-white lg:text-[20px] text-[14px] me-4 lg:me-28 mt-2">
+            <p className="text-white lg:text-[20px] text-[12px] me-4 lg:me-28 mt-2">
               {mainImage?.description}
             </p>
           </div>

@@ -13,7 +13,7 @@ const   AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepar
   console.log(slug);
 
   return (
-    <section className="md:py-10 text-[#1D1D1F] xl:py-20 pb-10 max-w-7xl xl:max-w-[75%] mx-auto lg:px-32 ">
+    <section className="md:py-10 text-[#1D1D1F] xl:py-20 pb-10 max-w-7xl xl:max-w-[75%] mx-auto lg:px-32 px-1 md:px-7 ">
       <div>
         <div className="flex justify-between  mb-5 lg:mb-10">
           <div className="lg:w-[75%] ">
@@ -25,7 +25,7 @@ const   AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepar
             </Link>
           </div>
         </div>
-        <p className="text-textGray text-justify text-[20px]">{aboutTheDepartment}</p>
+        <p className="text-textGray  text-justify text-[20px]">{aboutTheDepartment}</p>
       </div>
       <div className="flex justify-center mt-10 lg:hidden">
        <Link href={`/department/${slug}/detailes`}>

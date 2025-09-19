@@ -103,7 +103,7 @@ const FacultyMembersSection: React.FC = ({ facultyData }) => {
 
         {/* Cards */}
         <div className="md:col-span-7 text-sm sm:text-base md:text-lg">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg2:grid-cols-3 xl:grid-cols-3 xl:grid-c gap-4 sm:gap-6 md:gap-8 justify-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg2:grid-cols-3 xl:grid-cols-3 gap-4 sm:gap-6 md:gap-8 justify-items-center">
             {filteredData.map((item) => (
               <div
                 key={item.id}
@@ -111,22 +111,37 @@ const FacultyMembersSection: React.FC = ({ facultyData }) => {
                   setSelectedMember(item);
                   setIsModalOpen(true);
                 }}
-                className="relative w-full max-w-[280px] sm:max-w-[300px] md:max-w-[309px] h-[400px] sm:h-[430px] md:h-[350px] xl:h-[450px] rounded-xl overflow-hidden bg-[#6DC0EB]/10 text-white flex flex-col items-center  shadow-md cursor-pointer"
+                className="relative cursor-pointer w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md"
               >
-                <Image src={bufferToBase64(item.avatar)} alt={item.name} width={260} height={260} className=" md:w-full object-contain" />
-                <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
-                <div className="absolute z-50 left-0 px-3 bottom-4">
-                  <h2 className="text-base  font-bold">{item.name}</h2>
-                  <p className="text-sm">{item.designation}</p>
-                  <p className="text-xs cursor-pointer font-bold sm:text-sm md:text-sm flex items-center">
+                {/* Image fills card completely */}
+                <Image
+                  src={bufferToBase64(item.avatar)}
+                  alt={item.name}
+                  fill
+                  className="object-cover"
+                />
+
+                {/* Responsive gradient */}
+                <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
+
+                {/* Content */}
+                <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full">
+                  <h2 className="text-base sm:text-lg md:text-sm lg:text-sm lg2:text-lg xl:text-2xl font-bold leading-tight">
+                    {item.name}
+                  </h2>
+                  <p className="text-xs ssm:text-lg md:text-sm lg:text-sm lg2:text-lg xl:text-2xl leading-snug break-words">
+                    {item.designation}
+                  </p>
+                  <p className="text-xs sm:text-lg md:text-sm lg:text-sm lg2:text-lg xl:text-2xl font-bold flex items-center mt-1">
                     View Profile
-                    <MdKeyboardArrowRight className="ml-1 text-xl" />
+                    <MdKeyboardArrowRight className="ml-1 text-lg" />
                   </p>
                 </div>
               </div>
             ))}
           </div>
         </div>
+
       </div>
       <FacultyModal isOpen={isModalOpen} onClose={setIsModalOpen} facultyData={selectedMember} />
     </section>
