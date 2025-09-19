@@ -1,27 +1,25 @@
 import React from "react";
 
-const admissionYears = [
-  "2014-2015",
-  "2015-2016",
-  "2016-2017",
-  "2017-2018",
-  "2018-2019",
-  "2019-2020",
-  "2020-2021",
-  "2021-2022",
-  "2022-2023",
-  "2023-2024",
-  "2024-2025",
-  "2025-2026",
-];
+
+
+const generateAdmissionYears = (startYear = 2014) => {
+  const currentYear = new Date().getFullYear();
+  const years = [];
+
+  for (let year = startYear; year <= currentYear + 1; year++) {
+    years.push(`${year}-${year + 1}`);
+  }
+
+  return years;
+};
 
 const semesters = ["I Semester", "II Semester", "III Semester", "IV Semester", "V Semester", "VI Semester", "VII Semester", "VIII Semester"];
-
+ const admissionYears = generateAdmissionYears(2014); // dynamic years
 const CourseOutCome = () => {
   return (
-    <div className="lg2:px-24 mx-5 text-[#86868B] text-[17px]">
+    <div className="lg2:px-24  text-[#86868B] text-[17px]">
       <h2 className="text-xl mb-5 font-bold">Course Outcomes(CO)</h2>
-      <div className="flex  justify-between">
+      <div className="flex flex-col  gap-5 md:flex-row md:gap-0  md:justify-between">
         <select className="border outline-none p-2 rounded pe-20">
           <option value="">Select Admission Year</option>
           {admissionYears.map((year, index) => (

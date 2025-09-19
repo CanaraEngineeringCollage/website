@@ -82,7 +82,7 @@ const ProfileCard = ({ datam, title }: { datam: GoverningCouncilMember; title: s
       </div>
 
       {/* Faculty Modal */}
-      <FacultyModal isOpen={isModalOpen} onClose={closeModal} facultyData={selectedMember} />
+     
     </section>
   );
 };

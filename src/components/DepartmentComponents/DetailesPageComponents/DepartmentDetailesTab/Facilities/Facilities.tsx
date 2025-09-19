@@ -30,7 +30,7 @@ const Facilities: React.FC<FacilitiesProps> = ({ data }) => {
   console.log(data);
 
   return (
-    <div className="lg2:px-24 mx-5 text-[#86868B] text-[17px] space-y-8">
+    <div className=" text-[#86868B] text-[17px] space-y-8">
       <div>
         <h1 className="text-[20px] mb-2 font-bold">Facilities</h1>
         <p className="md:text-lg  text-[14px] leading-7  text-textGray">{data.description}</p>
@@ -50,13 +50,13 @@ const Facilities: React.FC<FacilitiesProps> = ({ data }) => {
               </ul>
             )}
             {facility?.imageUrl && (
-              <Image loading="lazy" src={facility.imageUrl} width={500} height={500} alt={facility.title} className="mt-10" />
+              <Image loading="lazy" src={facility.imageUrl} width={500} height={500} alt={facility.title} className="mt-10 rounded" />
             )}
              {facility?.imageUrl2 && (
-              <Image loading="lazy"  src={facility.imageUrl2} width={500} height={500} alt={facility.title} className="mt-10" />
+              <Image loading="lazy"  src={facility.imageUrl2} width={500} height={500} alt={facility.title} className="mt-10 rounded" />
             )}
              {facility?.imageUrl3 && (
-              <Image loading="lazy"  src={facility.imageUrl3} width={500} height={500} alt={facility.title} className="mt-10" />
+              <Image loading="lazy"  src={facility.imageUrl3} width={500} height={500} alt={facility.title} className="mt-10 rounded" />
             )}
 
             {facility.categories && (
@@ -77,14 +77,15 @@ const Facilities: React.FC<FacilitiesProps> = ({ data }) => {
             {/* Render table if facility.tableHeading exists */}
             {Array.isArray((facility as any).tableHeading) && (
               <div className="overflow-x-auto mt-4">
-              <table className="min-w-full border border-gray-300">
-                <thead>
-                <tr>
-                  <th className="px-4 py-2 border-b border-gray-300 bg-gray-100 text-left font-semibold">Sl. No.</th>
+                 <div className="rounded overflow-hidden border border-gray-200 w-full">
+              <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+               <thead className="bg-[#F3F8FC] text-[#2884CA]">
+                <tr >
+                  <th className="py-3 md:px-4 px-1 border-b">Sl. No.</th>
                   {(facility as any).tableHeading.map((col: any, colIdx: number) => (
                   <th
                     key={colIdx}
-                    className="px-4 py-2 border-b border-gray-300 bg-gray-100 text-left font-semibold"
+                    className="py-3 md:px-4 px-1 border-b"
                   >
                     {col.title}
                   </th>
@@ -94,11 +95,11 @@ const Facilities: React.FC<FacilitiesProps> = ({ data }) => {
                 <tbody>
                 {(facility as any).tableHeading[0]?.data.map((_: any, rowIdx: number) => (
                   <tr key={rowIdx}>
-                  <td className="px-4 py-2 border-b border-gray-200">{rowIdx + 1}</td>
+                  <td className="py-3 md:px-4 px-1 border-b">{rowIdx + 1}</td>
                   {(facility as any).tableHeading.map((col: any, colIdx: number) => (
                     <td
                     key={colIdx}
-                    className="px-4 py-2 border-b border-gray-200"
+                    className="py-3 md:px-4 px-1 border-b"
                     >
                     {col.title?.toLowerCase().includes("link") ? (
                       <a
@@ -119,6 +120,7 @@ const Facilities: React.FC<FacilitiesProps> = ({ data }) => {
                 </tbody>
               </table>
               </div>
+                 </div>
             )}
             </div>
         ))}

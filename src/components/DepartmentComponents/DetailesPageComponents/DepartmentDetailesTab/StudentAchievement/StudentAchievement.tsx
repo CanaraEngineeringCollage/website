@@ -23,6 +23,7 @@ const StudentAchievement: React.FC<StudentAchievementProps> = ({ data }) => {
             width={600}
             height={400}
             style={{ maxWidth: '100%', height: 'auto' }}
+            className='rounded'
           />
           <p className='mt-5'>{item.desc}</p>
         </div>

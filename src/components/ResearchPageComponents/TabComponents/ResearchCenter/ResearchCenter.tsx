@@ -132,6 +132,7 @@ const ResearchCenter = () => {
         <div>
           <h1 className="text-xl font-bold  text-textGray mb-2">Research Facility</h1>
           <div className="overflow-x-auto">
+             <div className="rounded overflow-hidden border border-gray-200 w-full">
             <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
               <thead>
                 <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -153,6 +154,7 @@ const ResearchCenter = () => {
               </tbody>
             </table>
           </div>
+          </div>
         </div>
         <div>
           <h1 className="text-xl font-bold  text-textGray mb-2">Research Guides & Research Scholars</h1>
@@ -163,6 +165,7 @@ const ResearchCenter = () => {
         </div>
         <div className="overflow-x-auto">
           <h1 className="text-xl font-bold  text-textGray mb-2">Research Facility</h1>
+           <div className="rounded overflow-hidden border border-gray-200 w-full">
           <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
             <thead>
               <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -182,6 +185,7 @@ const ResearchCenter = () => {
               </tr>
             </tbody>
           </table>
+          </div>
         </div>
 
         <div className="">
@@ -213,6 +217,7 @@ const ResearchCenter = () => {
         <div>
           <h1 className="text-xl font-bold  text-textGray mb-2">Research Facility</h1>
           <div className="overflow-x-auto">
+             <div className="rounded overflow-hidden border border-gray-200 w-full">
             <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
               <thead>
                 <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -233,6 +238,7 @@ const ResearchCenter = () => {
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
         </div>
          <div className="">

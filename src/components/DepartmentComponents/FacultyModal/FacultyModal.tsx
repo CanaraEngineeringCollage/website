@@ -51,19 +51,25 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
             <motion.div className="absolute inset-0 backdrop-blur-sm" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} />
           </div>
 
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+          <div className="fixed inset-0 z-50 flex items-center justify-center  p-4">
             <motion.div
               initial={{ opacity: 0, y: 50, scale: 0.95 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 50, scale: 0.95 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="relative w-full max-w-7xl bg-[#F5F5F7] rounded-xl shadow-lg overflow-auto h-[90vh] p-6 lg:py-32 lg:pl-32"
+              className="relative w-full max-w-7xl bg-[#F5F5F7] rounded-xl shadow-lg overflow-auto h-[90vh] p-6   "
             >
               <Dialog.Panel>
-                <button aria-label="Close Modal" onClick={() => onClose(false)} className="absolute cursor-pointer top-4 right-4">
-                  <X className="w-6 h-6 text-black " />
-                </button>
-
+             <div className="sticky top-0 z-50 flex justify-end  py-2">
+    <button
+      aria-label="Close Modal"
+      onClick={() => onClose(false)}
+      className=" rounded-full bg-[#b1b1b1] flex items-center justify-center w-8 h-8 hover:scale-110 transition"
+    >
+      <X className="w-6 h-6 text-white" />
+    </button>
+  </div>
+  <div className="py-20 lg:px-20">
                 <div className=" gap-6 flex-col lg:flex-row flex items-center">
                   <div className="flex-shrink-0">
                     <div className="rounded-lg overflow-hidden w-60 h-80 bg-sky-400">
@@ -71,7 +77,7 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                     </div>
                   </div>
 
-                  <div className=" space-y-2 justify-center text-xl text-black flex items-center">
+                  <div className=" space-y-2 justify-center text-xl text-[#1D1D1F] flex items-center">
                     <div className="grid grid-cols-1 gap-6">
                       <div className="flex gap-2">
                         <span className="font-bold">Name:</span>
@@ -128,27 +134,27 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                 </div>
 
                 {facultyData?.qualifications && (
-                  <div className="mt-10 lg:mt-24 text-black">
-                    <h3 className="text-xl font-semibold mb-4 text-center">Qualifications</h3>
-                    <div className="overflow-x-auto">
-                      <table className="w-full table-auto border-collapse rounded-xl overflow-hidden shadow-sm">
-                        <thead>
-                          <tr className="bg-gray-50 text-gray-700">
-                            <th className="px-6 py-3 text-left font-semibold">Degree</th>
+                  <div className="mt-10 lg:mt-24 text-[#1D1D1F]">
+                    <h3 className="text-[36px] font-semibold mb-4 text-center">Qualifications</h3>
+                    <div className="overflow-x-auto border border-[#D9D9D9] rounded">
+                      <table className="w-full table-auto border border-[#D9D9D9] border-collapse  overflow-hidden shadow-sm">
+                        <thead className="border-b">
+                          <tr className=" border-b border-[#D9D9D9] text-gray-700">
+                            <th className="px-6 py-3 border-r border-[#D9D9D9] text-left font-semibold">Degree</th>
                             {/* <th className="px-6 py-3 text-left font-semibold">Name Of Degree</th> */}
-                            <th className="px-6 py-3 text-left font-semibold">Passing Year</th>
-                            <th className="px-6 py-3 text-left font-semibold">College/University</th>
-                            <th className="px-6 py-3 text-left font-semibold">Area of Specialization</th>
+                            <th className="px-6 py-3 border-r border-[#D9D9D9] text-left font-semibold">Passing Year</th>
+                            <th className="px-6 py-3 border-r border-[#D9D9D9] text-left font-semibold">College/University</th>
+                            <th className="px-6 py-3 border-r border-[#D9D9D9] text-left font-semibold">Area of Specialization</th>
                           </tr>
                         </thead>
                         <tbody className=" text-gray-700">
                           {facultyData?.qualifications?.map((qual, index) => (
-                            <tr key={index} className="border-t border-gray-200 last:rounded-b-xl">
-                              <td className="px-6 py-4">{qual.degree}</td>
+                            <tr key={index} className=" last:rounded-b-xl">
+                              <td className="px-6 border-r border-[#D9D9D9] py-4">{qual.degree}</td>
                               {/* <td className="px-6 py-4">{qual.degreeName}</td> */}
-                              <td className="px-6 py-4">{qual.passingYear}</td>
-                              <td className="px-6 py-4">{qual.college}</td>
-                              <td className="px-6 py-4">{qual.specialization}</td>
+                              <td className="px-6 border-r border-[#D9D9D9] py-4">{qual.passingYear}</td>
+                              <td className="px-6 border-r border-[#D9D9D9]  py-4">{qual.college}</td>
+                              <td className="px-6 border-r border-[#D9D9D9] py-4">{qual.specialization}</td>
                             </tr>
                           ))}
                         </tbody>
@@ -156,6 +162,7 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                     </div>
                   </div>
                 )}
+                </div>
               </Dialog.Panel>
             </motion.div>
           </div>

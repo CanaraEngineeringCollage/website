@@ -37,17 +37,19 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
 
   const visibleMembers = facultyData.slice(startIndex, startIndex + 2);
   const visibleMembersMobile = facultyData.slice(startIndex, startIndex + 1);
+
   const handleNext = () => {
-    if (startIndex + 1 < data.length) {
+    if (startIndex + 2 < facultyData.length) {
       setStartIndex(startIndex + 2);
     }
   };
 
   const handlePrev = () => {
-    if (startIndex - 1 >= 0) {
+    if (startIndex - 2 >= 0) {
       setStartIndex(startIndex - 2);
     }
   };
+
 
   return (
     <section className="py-16 px-6 md:px-12 max-w-7xl mx-auto mt-20 lg:mt-20 mb-16  xl:max-w-[75%] bg-[#F5F5F7] rounded-3xl">
@@ -78,7 +80,7 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
               <button
                 aria-label="Next Faculty Member"
                 onClick={handleNext}
-                disabled={startIndex + 2 >= data.length}
+                disabled={startIndex + 2 >= facultyData.length}
                 className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full  text-[#616164]  transition disabled:opacity-30"
               >
                 <MdKeyboardArrowRight size={32} />
@@ -87,7 +89,7 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
           </div>
         </div>
 
-        <div className="grid grid-cols-1 w-full sm:grid-cols-2 gap-6">
+        <div className="flex w-full sm:grid-cols-2 gap-6">
           {(visibleMembers || []).map((member, index) => (
             <div
               key={index}
@@ -225,7 +227,7 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
             <button
               aria-label="Next Faculty Member"
               onClick={handleNext}
-              disabled={startIndex + 2 >= data.length}
+              disabled={startIndex + 2 >= facultyData.length}
               className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full  text-[#616164]  transition disabled:opacity-30"
             >
               <MdKeyboardArrowRight size={24} />

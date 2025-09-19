@@ -31,7 +31,7 @@ type ResearchProps = {
 
 const Research: React.FC<ResearchProps> = ({ data }) => {
   return (
-    <div className="lg2:px-10 mx-5 text-[#86868B] text-[17px]">
+    <div className=" text-[#86868B] text-[17px]">
       {data.map((section, idx) => {
         // Only render section if there is relevant data (heading, points, image, or tables)
         const hasData =
@@ -66,7 +66,7 @@ const Research: React.FC<ResearchProps> = ({ data }) => {
               <img
                 src={section.imageUrl}
                 alt={section.heading || 'Image'}
-                className="my-4 max-w-full"
+                className="my-4 max-w-full rounded"
               />
             )}
 
@@ -91,6 +91,7 @@ const Research: React.FC<ResearchProps> = ({ data }) => {
                 const showHeader = Array.isArray(table.title) && table.title.length > 0;
 
                 return (
+                   <div className="rounded overflow-hidden border border-gray-200 w-full">
                   <table key={tIdx} className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     {showHeader && (
                       <thead>
@@ -124,10 +125,12 @@ const Research: React.FC<ResearchProps> = ({ data }) => {
                       ))}
                     </tbody>
                   </table>
+                  </div>
                 );
               })}
 
             {section.moreDetailesTable && section.moreDetailesTable.length > 0 && (
+               <div className="rounded overflow-hidden border border-gray-200 w-full">
               <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]" >
                 <thead>
                   <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -147,6 +150,7 @@ const Research: React.FC<ResearchProps> = ({ data }) => {
                   ))}
                 </tbody>
               </table>
+              </div>
             )}
           </div>
         );

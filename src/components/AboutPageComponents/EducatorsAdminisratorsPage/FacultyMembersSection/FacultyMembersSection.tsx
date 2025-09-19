@@ -3,6 +3,13 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import FacultyModal from "@/components/DepartmentComponents/FacultyModal/FacultyModal";
+import { adminStaff, generalStaff } from "@/utils/staffs/staff";
+
+
+
+
+
+
 
 interface CouncilMember {
   id: number;
@@ -40,7 +47,7 @@ const FacultyMembersSection: React.FC = ({ facultyData }) => {
   const filteredData =
     selectedCategory === "faculty"
       ? facultyData.filter((item) => item.department === selectedDepartment)
-      : facultyData.filter((item) => item.department === selectedDepartment);
+      : selectedCategory === "admin"?adminStaff:generalStaff;
 
   return (
     <section className="px-4 sm:px-6 md:px-10 lg:px-20 py-8 sm:py-10 md:py-16 lg:py-20">
@@ -51,6 +58,8 @@ const FacultyMembersSection: React.FC = ({ facultyData }) => {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
         {/* Sidebar */}
         <div className="md:col-span-5">
+   
+    <div className="sticky top-20 h-fit">
           <div className="w-full sm:w-[80%] mx-auto md:mx-0">
             <div className="border-b-2 border-border pb-4 sm:pb-5">
               <h1
@@ -100,11 +109,42 @@ const FacultyMembersSection: React.FC = ({ facultyData }) => {
             </div>
           </div>
         </div>
+        </div>
 
         {/* Cards */}
-        <div className="md:col-span-7 text-sm sm:text-base md:text-lg">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg2:grid-cols-3 xl:grid-cols-3 gap-4 sm:gap-6 md:gap-8 justify-items-center">
-            {filteredData.map((item) => (
+        <div className="md:col-span-7 text-sm sm:text-base h-[90vh] scrollable overflow-y-auto  pr-2 md:text-lg">
+          <div className="">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg2:grid-cols-3 xl:grid-cols-3 gap-4 sm:gap-6 md:gap-3 justify-items-center">
+            {selectedCategory != "faculty"&&filteredData.map((item) => (
+              <div
+                key={item.id}
+               
+                className="relative c w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md"
+              >
+                {/* Image fills card completely */}
+                <Image
+                  src={item.image}
+                  alt={item.image}
+                 fill
+                  className="object-cover"
+                />
+
+                {/* Responsive gradient */}
+                   <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
+
+                {/* Content */}
+                <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full">
+                  <h2 className="text-base sm:text-lg md:text-sm lg:text-sm lg2:text-lg xl:text-2xl font-bold leading-tight">
+                    {item.name}
+                  </h2>
+                 {item.designation&& <p className="text-xs sm:text-lg md:text-sm lg:text-sm lg2:text-lg xl:text-2xl leading-snug break-words">
+                    {item.designation}
+                  </p>}
+                  
+                </div>
+              </div>
+            ))}
+               { selectedCategory === "faculty"&&filteredData.map((item) => (
               <div
                 key={item.id}
                 onClick={() => {
@@ -141,7 +181,7 @@ const FacultyMembersSection: React.FC = ({ facultyData }) => {
             ))}
           </div>
         </div>
-
+</div>
       </div>
       <FacultyModal isOpen={isModalOpen} onClose={setIsModalOpen} facultyData={selectedMember} />
     </section>

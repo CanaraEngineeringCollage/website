@@ -93,7 +93,7 @@ function EventContent({ description }: { description: EventDescriptionProps }) {
         loading="lazy"
         width={1000}
         height={700}
-        className="object-cover overflow-hidden rounded-t-2xl w-full lg:h-[700px] h-[400px] mb-10"
+        className="object-cover overflow-hidden rounded-t-2xl w-full lg:h-[500px] h-[400px] mb-10"
       />
       <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
         <div>
@@ -257,7 +257,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ title, description, campu
               <motion.div
                 variants={cardVariants}
                 ref={containerRef}
-                className="max-w-6xl mx-auto bg-white h-fit z-[60] my-10 pb-10 rounded-3xl font-sans relative shadow-2xl"
+                className="max-w-4xl mx-auto bg-white h-fit z-[60] my-10 pb-10 rounded-3xl font-sans relative shadow-2xl"
               >
                 <motion.button
                   variants={contentVariants}

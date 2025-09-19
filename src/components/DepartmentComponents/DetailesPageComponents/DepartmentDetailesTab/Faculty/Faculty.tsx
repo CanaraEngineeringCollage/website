@@ -61,6 +61,7 @@ const Faculty = ({ datam }: { datam: FacultyMember[] }) => {
 
           return (
             <div
+            onClick={() => openModal(item)}
               key={index}
               className={`relative cursor-pointer w-full max-w-[280px] lg:h-[430px] md:h-[260px] h-[400px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md ${shouldCenterLast ? "md:col-start-2 xl:col-start-auto" : ""
                 }`}
@@ -80,8 +81,9 @@ const Faculty = ({ datam }: { datam: FacultyMember[] }) => {
               <div className="absolute z-20 left-0 px-3 bottom-4 w-full">
                 <h2 className="lg2:text-[20px] lg:text-[18px] md:text-[11px] text-[20px] font-bold">{item.name}</h2>
                 <p className="lg2:text-[20px] lg:text-[18px] md:text-[11px] text-[20px]">
-                  {item.designation},{" "}
-                  <span className="font-semibold">{item.department}</span>
+                  {item.designation}
+                  {/* ,{" "}
+                  <span className="font-semibold">{item.department}</span> */}
                 </p>
 
                 <p

@@ -29,6 +29,7 @@ const ModelTable: React.FC<ModelTableProps> = ({ title, headers, rows }) => {
       </h1>
 
       <div className="overflow-x-auto">
+         <div className="rounded overflow-hidden border border-gray-200 w-full">
         <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
           <thead className="bg-[#F3F8FC] text-[#2884CA]">
             <tr>
@@ -58,6 +59,7 @@ const ModelTable: React.FC<ModelTableProps> = ({ title, headers, rows }) => {
             ))}
           </tbody>
         </table>
+        </div>
       </div>
 
       {/* Show button only if rows > 6 */}

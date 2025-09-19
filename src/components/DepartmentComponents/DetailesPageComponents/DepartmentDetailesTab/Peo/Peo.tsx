@@ -14,7 +14,7 @@ const Peo = ({ data,deptName }:{data:PeoProps;deptName:string}) => {
   console.log("PEO Data:", data);
   
   return (
-    <div className='lg2:px-24 mx-5'>
+    <div className=''>
       {data?.programEducation&&<h1 className="text-[20px] font-bold text-[#86868B] mb-3">Program Educational Objectives (PEO)</h1>}
       {data?.programEducation&&<ul className="list-disc pl-5 md:text-lg  text-[14px] leading-7 pt-2 text-textGray">
         {data?.programEducation?.map((item, index) => (

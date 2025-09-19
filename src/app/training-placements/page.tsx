@@ -91,7 +91,7 @@ console.log(data,"dd");
     roles: [{ title: faculty.desiganation, organization: "" }] // map designation to roles
   }))}
   heading="Meet Our Placement Team"
-  description="Our dedicated placement team works tirelessly..."
+  description="Our dedicated placement team works tirelessly to connect students with top companies, guiding them towards successful careers and brighter futures."
 />
 
       </section>

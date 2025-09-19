@@ -59,6 +59,7 @@ const Activities = () => {
       <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl leading-[1.2]  text-start font-bold text-[#1D1D1F]">Entrepreneurship Cell Activities</h1>
     <div className="overflow-x-auto pt-4 pb-10  ">
   <div className="rounded-xl overflow-hidden">
+     <div className="rounded overflow-hidden border border-gray-200 w-full">
     <table className="w-full text-left text-[13px] md:text-[15px]">
       <thead className="bg-[#F3F8FC] text-[#2884CA]">
         <tr>
@@ -81,6 +82,7 @@ const Activities = () => {
         ))}
       </tbody>
     </table>
+    </div>
   </div>
 </div>
 

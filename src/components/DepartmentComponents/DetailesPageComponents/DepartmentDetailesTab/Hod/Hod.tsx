@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useEffect, useRef, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
@@ -32,7 +33,7 @@ const Hod: React.FC<HodProps> = ({ data }) => {
   }, [firstPart, isLargeScreen]);
 
   return (
-    <div className="lg:px-24 mx-5 text-[#86868B] text-[17px]">
+    <div className=" text-[#86868B] text-[17px]">
       <div className="flex flex-col md:flex-row gap-6">
         
         <div className="flex-1 flex flex-col justify-start">
@@ -45,10 +46,12 @@ const Hod: React.FC<HodProps> = ({ data }) => {
         </div>
       </div>
       <div className='mt-10'>
-<img
+<Image
           src={data?.imageUrl}
           alt={data?.name}
-          className="w-auto lg2:h-[360px] lg:h-[300px] h-[260px]  rounded-lg shadow "
+          width={1000}
+          height={1000}
+          className="h-[300px] w-auto  rounded-lg shadow "
           // style={{ height: imageHeight }}
         />
       <div className="mt-2 font-semibold text-[#1D1D1F]">{data?.name}</div>
