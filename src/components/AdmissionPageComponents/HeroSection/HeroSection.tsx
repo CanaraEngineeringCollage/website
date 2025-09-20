@@ -17,7 +17,7 @@ const HeroSection = () => {
       />
 
       {/* Text Content */}
-      <div className="relative z-10 max-w-[850px] px-6 md:px-20 top-[20%] md:top-[25%]">
+      <div className="relative z-10 max-w-[850px] px-6 md:px-20 top-[5%] lg:top-[25%]">
         <h2 className="text-white text-[28px] md:text-[45px] lg:text-[76px] font-bold leading-[1.1]">
           Where Learning <br /> Meets Innovation
         </h2>

@@ -21,13 +21,14 @@ const MandatoryDisclosure = () => {
                 key={index}
                 onClick={() => setSelectedIndex(index)}
                 className={`border-b-2  pb-3 mb-3 border-border cursor-pointer ${
-                  selectedIndex === index ? "text-[#2884CA] font-bold text-[18px]" : "text-textGray font-[500] text-[20px]"
+                  selectedIndex === index ? "text-[#2884CA] font-bold text-[20px]" : "text-textGray font-[500] text-[20px]"
                 }`}
               >
                 {section.title}
               </h1>
             ))}
           </div>
+          
           </div>
             <div className="col-span-1"></div>
           <div className="col-span-8 mt-5  md:h-[140vh] scrollable overflow-y-auto  pr-2 lg:mt-0">

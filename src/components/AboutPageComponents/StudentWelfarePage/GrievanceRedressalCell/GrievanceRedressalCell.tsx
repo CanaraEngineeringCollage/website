@@ -202,7 +202,7 @@ const GrievanceRedressalCell = () => {
                   {"href" in item && item.href && (
                     <iframe
                       src={`${item.href}#toolbar=0&navpanes=0&view=FitH`}
-                      className="w-full h-[100vh] mt-7"
+                      className="w-full  md:h-[100vh] mt-7"
                       title={item.title || `Document-${i}`}
                     ></iframe>
                   )}

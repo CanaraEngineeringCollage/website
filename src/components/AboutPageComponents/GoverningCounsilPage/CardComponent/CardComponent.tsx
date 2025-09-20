@@ -31,8 +31,8 @@ const ProfileCard = ({ datam, title }: { datam: GoverningCouncilMember; title: s
   }, []);
 
   return (
-    <section className="pb-20 px-4 sm:px-8 md:px-16 lg:px-64 xl:px-64">
-      <h1 className="text-[#1D1D1F] text-[40px] lg:text-[54px] mb-10 mt-10 md:mb-20 font-bold text-center">{title}</h1>
+    <section className="pb-20 max-w-5xl xl:max-w-[65%] mx-auto px-5">
+      <h1 className="text-[#1D1D1F] leading-[1.3] text-[40px] lg:text-[54px] mb-10 mt-10 md:mb-20 font-bold text-center">{title}</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-8 justify-items-center">
         {data.map((item, index) => {
@@ -44,7 +44,7 @@ const ProfileCard = ({ datam, title }: { datam: GoverningCouncilMember; title: s
           return (
         <div
   key={index}
-  className={`relative cursor-pointer w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md ${
+  className={`relative  w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md ${
     shouldCenterLast ? "md:col-start-2 xl:col-start-auto" : ""
   }`}
 >

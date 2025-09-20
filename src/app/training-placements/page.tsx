@@ -101,7 +101,7 @@ console.log(data,"dd");
       <section className="px-6 md:px-12 lg:px-16 xl:px-0  lg:mt-0 -mt-12 ">
         <HighlightsSection />
       </section>
-      <section className="px-6  pt-20  md:px-12 lg:pl-16 lg:px-0 bg-[#e5e5ea]  xl:px-0">
+      <section className="px-6  pt-14 lg:pt-20  md:px-12 lg:pl-16 lg:px-0 bg-[#e5e5ea]  xl:px-0">
         <ExploreFacilities />
       </section>
     </>

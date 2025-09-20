@@ -35,10 +35,10 @@ const HeroSection = () => {
       absolute 
       z-10 
       lg:pe-10  pe-3 xl:pe-20
-      flex flex-col justify-center items-end inset-0 
+      flex flex-col mt-10 lg:mt-0 lg:justify-center items-end inset-0 
     "
   >
-    <h3 className="text-[#F5F5F7]/60 max-w-4xl text-[19px] md:text-[25px] lg:text-[31px] leading-5">
+    <h3 className="text-[#F5F5F7]/60 max-w-4xl text-[19px] md:text-[25px] lg:text-[31px] ">
       Department of Physical Education
     </h3>
     <h2 className="text-[28px] sm:text-[32px] max-w-4xl  text-end md:text-[48px] lg:text-[77px] xl:text-[77px] leading-tight tracking-tighter font-bold text-white   lg2:mx-0">

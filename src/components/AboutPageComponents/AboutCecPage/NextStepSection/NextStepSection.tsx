@@ -26,7 +26,7 @@ export default function NextStepSection() {
             Book a one-on-one <span className="text-white">counseling session</span> & get all your questions answered about admissions programs & your future opportunities.
           </p>
 
-          <button aria-label="Book Your Counseling Session Today" onClick={()=>{setIsOpen(true)}} className="mt-5 bg-white text-[#2884CA] font-bold px-8 py-3 rounded-full  hover:bg-white/90 transition-colors">
+          <button aria-label="Book Your Counseling Session Today" onClick={()=>{setIsOpen(true)}} className="mt-5 bg-white text-[#2884CA] font-bold px-4 lg:px-8 py-3 rounded-full  hover:bg-white/90 transition-colors">
             Book Your Counseling Session Today
           </button>
         </div>

@@ -168,7 +168,7 @@ export default function DepartmentFacultySection({ faculties }: DepartmentSectio
       <div className="max-w-7xl mx-auto flex flex-col items-center justify-between gap-10 lg:hidden">
         <div className="max-w-xl space-y-44">
           <div className="text-center">
-            <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-gray-900 leading-tight">
+            <h2 className="text-3xl lg:text-4xl mb-3 md:text-4xl font-bold text-gray-900 leading-tight">
               Get to Know Our <br />
               <span className="">Department’s Faculty</span>
             </h2>
@@ -217,9 +217,9 @@ export default function DepartmentFacultySection({ faculties }: DepartmentSectio
         </div>
 
         <div className="flex items-center gap-4">
-          <button className="bg-blue-100 text-black text-block px-6 py-2  text-sm font-medium hover:bg-blue-700 transition">
+          <Link href="/about/educators-administrators"> <button className="bg-blue-100 rounded text-black text-block px-6 py-2  text-sm font-medium hover:bg-blue-700 transition">
             Meet more of Our Faculty
-          </button>
+          </button></Link>
           <div className="flex items-center gap-2">
             <button aria-label="Previous Slide"
               onClick={handlePrev}

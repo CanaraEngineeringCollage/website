@@ -166,7 +166,7 @@ export default function DistinctiveCarousel() {
                 nextEl: ".swiper-button-next-custom",
                 prevEl: ".swiper-button-prev-custom",
               }}
-              autoplay={{ delay: 3000 }}
+              autoplay={{ delay: 2000 }}
 
               loop={true}
               centeredSlides={true}
@@ -177,7 +177,7 @@ export default function DistinctiveCarousel() {
                 320: {
                   slidesPerView: 1,
                   spaceBetween: 16,
-                  centeredSlides: true,
+                 
                 },
                 768: {
                   slidesPerView: 1,
@@ -223,14 +223,14 @@ export default function DistinctiveCarousel() {
                 <button
                   aria-label="Previous Slide"
                   className="swiper-button-prev-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
-                  onClick={toggleCarousel}
+                 
                 >
                   <MdKeyboardArrowLeft />
                 </button>
                 <button
                   aria-label="Next Slide"
                   className="swiper-button-next-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
-                  onClick={toggleCarousel}
+ 
                 >
                   <MdKeyboardArrowRight />
                 </button>
