@@ -38,7 +38,7 @@ interface CouncilMember {
   employmentType?: string; // Make this optional
   qualifications: Qualification[];
   faculties?: Faculty[];
-  
+
 }
 
 
@@ -102,9 +102,9 @@ export default function DepartmentFacultySection({ faculties }: DepartmentSectio
             </p>
           </div>
           <div className="flex items-center gap-4">
-            <Link href="/about/educators-administrators"><button 
-            aria-label="Meet more of our Faculty"
-            className="bg-blue-100 text-black rounded-full text-block px-6 py-2  text-sm font-medium hover:bg-blue-200 transition">
+            <Link href="/about/educators-administrators"><button
+              aria-label="Meet more of our Faculty"
+              className="bg-blue-100 text-black rounded-full text-block px-6 py-2  text-sm font-medium hover:bg-blue-200 transition">
               Meet more of our Faculty
             </button></Link>
             <div className="flex items-center gap-2">
@@ -126,42 +126,49 @@ export default function DepartmentFacultySection({ faculties }: DepartmentSectio
           </div>
         </div>
 
-        <div className="grid grid-cols-1 w-full sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 w-full md:grid-cols-2 sm:grid-cols-2 gap-6">
           {visibleMembers?.map((member, index) => (
             <div
               key={index}
               onClick={() => openModal(member)}
-              className={`relative cursor-pointer w-full max-w-[309px] h-[480px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center  shadow-md`}
+              className="relative cursor-pointer w-full max-w-[309px] aspect-[2/3] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md"
             >
+              {/* Image fills card completely */}
               <Image
                 src={bufferToBase64(member?.avatar)}
                 alt={member.name}
-                width={300}
-                height={300}
-                className=" w-full object-contain"
+                fill
+                className="object-cover"
               />
 
-              <div className="absolute bottom-0 left-0 w-full h-60 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
-              <div className="absolute z-50 top-[79%] left-6">
-                <h2 className="text-[20px] font-bold">{member.name}</h2>
-                <p className="text-[17px]">
+              {/* Responsive gradient */}
+              <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
+
+              {/* Content */}
+              <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full">
+                <h2 className="text-base sm:text-lg md:text-xl font-bold leading-tight">
+                  {member.name}
+                </h2>
+                <p className="text-xs sm:text-sm md:text-base leading-snug break-words">
                   <span>{member.designation}</span>
                 </p>
 
-                <p className="text-xs font-bold sm:text-sm md:text-sm flex items-center">
+                <p className="text-xs sm:text-sm md:text-base font-bold flex items-center mt-1">
                   View Profile
-                  <MdKeyboardArrowRight className="ml-1 text-xl" />
+                  <MdKeyboardArrowRight className="ml-1 text-lg md:text-xl" />
                 </p>
               </div>
             </div>
+
           ))}
         </div>
+
       </div>
 
       <div className="max-w-7xl mx-auto flex flex-col items-center justify-between gap-10 lg:hidden">
-        <div className="max-w-md space-y-44">
-          <div>
-            <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-gray-900 leading-tight">
+        <div className="max-w-xl space-y-44">
+          <div className="text-center">
+            <h2 className="text-3xl lg:text-4xl mb-3 md:text-4xl font-bold text-gray-900 leading-tight">
               Get to Know Our <br />
               <span className="">Department’s Faculty</span>
             </h2>
@@ -175,38 +182,44 @@ export default function DepartmentFacultySection({ faculties }: DepartmentSectio
         <div className="grid grid-cols-1 w-full gap-6">
           {visibleMembersMobile.map((member, index) => (
             <div
-              key={index}
-              onClick={() => openModal(member)}
-              className={`relative cursor-pointer w-full max-w-[309px] h-[480px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center  shadow-md`}
-            >
-              <Image
-                onClick={() => router.push(`/user-details/${member.id}`)}
-                src={bufferToBase64(member?.avatar)}
-                alt={member.name}
-                width={300}
-                height={300}
-                className=" w-full object-contain"
-              />
+  key={index}
+  onClick={() => openModal(member)}
+  className="relative cursor-pointer w-full h-[360px] md:h-[480px] md:w-2/3 rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md md:ml-23"
+>
+  {/* Image fills card completely */}
+  <Image
+    onClick={() => router.push(`/user-details/${member.id}`)}
+    src={bufferToBase64(member?.avatar)}
+    alt={member.name}
+    fill
+    className="object-cover"
+  />
 
-              <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
-              <div className="absolute z-50 top-[75%] left-6">
-                <h2 className="text-[20px] font-bold">{member.name}</h2>
-                <p className="text-[17px]">
-                  <span>{member.designation}</span>
-                </p>
-                <p className="text-xs font-bold sm:text-sm md:text-sm flex items-center">
-                  View Profile
-                  <MdKeyboardArrowRight className="ml-1 text-xl" />
-                </p>
-              </div>
-            </div>
+  {/* Responsive gradient */}
+  <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
+
+  {/* Content - anchored to bottom */}
+  <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full">
+    <h2 className="text-base sm:text-lg md:text-xl font-bold leading-tight">
+      {member.name}
+    </h2>
+    <p className="text-xs sm:text-sm md:text-base leading-snug break-words">
+      <span>{member.designation}</span>
+    </p>
+    <p className="text-xs sm:text-sm md:text-base font-bold flex items-center mt-1">
+      View Profile
+      <MdKeyboardArrowRight className="ml-1 text-lg md:text-xl" />
+    </p>
+  </div>
+</div>
+
           ))}
         </div>
 
         <div className="flex items-center gap-4">
-          <button className="bg-blue-100 text-black text-block px-6 py-2  text-sm font-medium hover:bg-blue-700 transition">
+          <Link href="/about/educators-administrators"> <button className="bg-blue-100 rounded text-black text-block px-6 py-2  text-sm font-medium hover:bg-blue-700 transition">
             Meet more of Our Faculty
-          </button>
+          </button></Link>
           <div className="flex items-center gap-2">
             <button aria-label="Previous Slide"
               onClick={handlePrev}

@@ -6,6 +6,7 @@ import data from "../../../../utils/amenitiesSectionData/amenitiesData.json";
 const AmenitiesSection = () => {
   return (
     <AmenitiesCard
+    style='text-start'
       title={data.title}
       amenities={data.amenities}
       mainImage={data.mainImage}

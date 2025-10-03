@@ -3,7 +3,7 @@ import { HiDownload } from "react-icons/hi";
 
 const AboutDepartment = () => {
   return (
-    <section className=" md:pb-2 pb-20  max-w-7xl xl:max-w-[75%] mx-auto lg:px-32">
+    <section className=" pb-5 md:pb-2   max-w-7xl xl:max-w-[75%] mx-auto lg:px-32">
       <div className="">
         <div className="flex justify-between  pb-5 lg:pb-10">
           <h1 className="text-3xl md:text-[40px] lg2:text-[46.5px] xl:text-6xl leading-[1.2] max-w-2xl xl:max-w-3xl  font-bold text-[#1D1D1F] ">About the Training &
@@ -44,7 +44,7 @@ const AboutDepartment = () => {
         href="/brochures/Placement Brochure Design.pdf"
         download
         aria-label="Download Brochure"
-        className="text-[#2884CA] lg:hidden mt-10 font-bold text-[17px] bg-[#d9ebff] px-6 py-2 cursor-pointer rounded-3xl inline-flex gap-3"
+        className="text-[#2884CA] lg:hidden mt-2 font-bold text-[17px] bg-[#d9ebff] px-6 py-2 cursor-pointer rounded-3xl inline-flex gap-3"
       >
         Download Brochure <HiDownload className="text-[24px] font-extrabold" />
       </a>

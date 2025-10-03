@@ -193,6 +193,7 @@ const data = [
 const Patents = () => {
   return (
 <div className="overflow-x-auto">
+   <div className="rounded overflow-hidden border border-gray-200 w-full">
   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
     <thead>
       <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -225,6 +226,7 @@ const Patents = () => {
       ))}
     </tbody>
   </table>
+  </div>
 </div>
 
 

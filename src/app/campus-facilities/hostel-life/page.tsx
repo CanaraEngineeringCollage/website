@@ -51,7 +51,7 @@ const page = () => {
           startTime={165} // Start at 30 seconds
         />
       </section>
-      <section className="md:pt-10 pt-6 xl:py-10 pb-2  max-w-7xl xl:max-w-[75%] mx-auto lg:px-32">
+      <section className="md:pt-10 pt-6 xl:py-10 pb-2 px-7   max-w-7xl xl:max-w-[75%] mx-auto lg:px-32">
       <p className="text-textGray  text-[20px]">
          Life in the hostel at CEC is a balance of academics, fitness, and fun all in a setting that’s amidst nature, calm, and away from the city’s rush. We’re confident you’ll enjoy your time here and create wonderful memories over the next four years.
         </p>

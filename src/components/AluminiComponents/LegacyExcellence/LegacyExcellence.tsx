@@ -54,7 +54,7 @@ function CardContent({ description }: { description: Amenity }) {
         loading="lazy"
         width={1000}
         height={700}
-        className="object-cover overflow-hidden rounded-t-2xl w-full lg:h-[700px] h-[400px] mb-10"
+        className="object-cover overflow-hidden rounded-t-2xl w-full lg:h-[500px] h-[400px] mb-10"
       />
       <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
         <div>
@@ -149,7 +149,16 @@ export default function LegacyExcellance() {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isPlaying]);
+useEffect(() => {
+    if (isModalOpen) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "auto";
 
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape" && isModalOpen) closeModal();
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isModalOpen, closeModal]);
   return (
     <section className="max-w-7xl xl:max-w-[75%]   mx-auto  py-8">
       <div className="grid grid-cols-1  lg:grid-cols-2 gap-8 lg2:gap-10 items-start">
@@ -191,7 +200,7 @@ export default function LegacyExcellance() {
             <motion.div variants={backdropVariants} className="bg-black/80 backdrop-blur-lg h-full w-full fixed inset-0" onClick={closeModal} />
             <motion.div
               variants={cardVariants}
-              className="max-w-6xl mx-auto bg-white h-fit z-[60] my-10 pb-10 rounded-3xl font-sans relative shadow-2xl"
+              className="max-w-4xl mx-auto bg-white h-fit z-[60] my-10 pb-10 rounded-3xl font-sans relative shadow-2xl"
             >
               <motion.button
                 variants={contentVariants}

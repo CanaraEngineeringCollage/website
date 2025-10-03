@@ -13,26 +13,31 @@ const MandatoryDisclosure = () => {
       <div className="lg2:mx-24 mx-5">
         <h1 className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold pb-1 lg:pb-10">Mandatory Disclosure</h1>
         <div className="grid grid-cols-1  md:grid-cols-12 mt-10">
+            
           <div className="col-span-3  self-start ">
+            <div className="sticky top-20 h-fit">
             {disclosureData?.map((section, index) => (
               <h1
                 key={index}
                 onClick={() => setSelectedIndex(index)}
                 className={`border-b-2  pb-3 mb-3 border-border cursor-pointer ${
-                  selectedIndex === index ? "text-[#2884CA] font-bold text-[18px]" : "text-textGray font-[500] text-[20px]"
+                  selectedIndex === index ? "text-[#2884CA] font-bold text-[20px]" : "text-textGray font-[500] text-[20px]"
                 }`}
               >
                 {section.title}
               </h1>
             ))}
           </div>
+          
+          </div>
             <div className="col-span-1"></div>
-          <div className="col-span-8 mt-5 lg:mt-0">
+          <div className="col-span-8 mt-5  md:h-[140vh] scrollable overflow-y-auto  pr-2 lg:mt-0">
             {selectedIndex === 4 ? (
               <>
                 <div className="overflow-x-hidden">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">List of UGC 2(f) Status</h2>
-                  <table className="w-[85%] text-left border border-gray-200 text-[13px] md:text-[15px]">
+                   <div className="rounded overflow-hidden border border-gray-200 w-[85%]">
+                  <table className="w-full text-left text-[13px] md:text-[15px]">
                     <thead className="bg-gray-100">
                       <tr className="bg-[#F3F8FC] text-[#2884CA]">
                         <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
@@ -56,12 +61,14 @@ const MandatoryDisclosure = () => {
                       ))}
                     </tbody>
                   </table>
+                  </div>
                 </div>
               </>
             ) : selectedIndex === 5 ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">Audit Report</h2>
+                       <div className="rounded overflow-hidden border border-gray-200 w-full">
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead >
                       <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -86,12 +93,14 @@ const MandatoryDisclosure = () => {
                       ))}
                     </tbody>
                   </table>
+                  </div>
                 </div>
               </>
             ):selectedIndex === 2 ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">AICTE Approval</h2>
+                    <div className="rounded overflow-hidden border border-gray-200 w-full">
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead >
                       <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -116,12 +125,14 @@ const MandatoryDisclosure = () => {
                       ))}
                     </tbody>
                   </table>
+                  </div>
                 </div>
               </>
             ):selectedIndex === 3 ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">VTU Affiliation</h2>
+                    <div className="rounded overflow-hidden border border-gray-200 w-full">
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead >
                       <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -146,12 +157,14 @@ const MandatoryDisclosure = () => {
                       ))}
                     </tbody>
                   </table>
+                  </div>
                 </div>
               </>
             ):selectedIndex === 13 ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">UGC Declaration</h2>
+                    <div className="rounded overflow-hidden border border-gray-200 w-full">
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead >
                       <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -176,12 +189,14 @@ const MandatoryDisclosure = () => {
                       ))}
                     </tbody>
                   </table>
+                  </div>
                 </div>
               </>
             ):selectedIndex === 14 ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">Fee Refund Policy</h2>
+                   <div className="rounded overflow-hidden border border-gray-200 w-full">
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead >
                       <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -206,12 +221,14 @@ const MandatoryDisclosure = () => {
                       ))}
                     </tbody>
                   </table>
+                  </div>
                 </div>
               </>
             ):selectedIndex === 8 ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">Fees to be Paid</h2>
+                   <div className="rounded overflow-hidden border border-gray-200 w-full">
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead >
                       <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -236,12 +253,14 @@ const MandatoryDisclosure = () => {
                       ))}
                     </tbody>
                   </table>
+                  </div>
                 </div>
               </>
             ) : selectedIndex === 6 ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">GC Meeting</h2>
+                  <div className="rounded overflow-hidden border border-gray-200 w-full">
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead >
                       <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -266,6 +285,7 @@ const MandatoryDisclosure = () => {
                       ))}
                     </tbody>
                   </table>
+                  </div>
                 </div>
               </>
             ) : selectedIndex === 9 ? (
@@ -359,6 +379,7 @@ const MandatoryDisclosure = () => {
                 <h2 className="text-lg font-bold text-textGray mt-2 mb-2">Review Committee:</h2> */}
                 <div className="overflow-x-auto">
                   <h2 className="text-xl font-bold mb-4 mt-8 text-textGray">ANTI RAGGING COMMITTEE (2024-25)</h2>
+                   <div className="rounded overflow-hidden border border-gray-200 w-full">
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead>
                       <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -515,9 +536,11 @@ const MandatoryDisclosure = () => {
                       </tr>
                     </tbody>
                   </table>
+                  </div>
                 </div>
                 <div className="overflow-x-auto mt-10">
                   <h2 className="text-xl font-bold mb-4 text-textGray">Anti-Ragging Cell (2024–25)</h2>
+                   <div className="rounded overflow-hidden border border-gray-200 w-full">
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead className="bg-[#F3F8FC] text-[#2884CA]">
                       <tr>
@@ -549,9 +572,11 @@ const MandatoryDisclosure = () => {
                       </tr>
                     </tbody>
                   </table>
+                  </div>
                 </div>
                 <div className="overflow-x-auto mt-10">
                   <h2 className="text-xl font-bold mb-4 text-textGray">Flying Squad 1 (2024–25)</h2>
+                   <div className="rounded overflow-hidden border border-gray-200 w-full">
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead className="bg-[#F3F8FC] text-[#2884CA]">
                       <tr>
@@ -624,9 +649,11 @@ const MandatoryDisclosure = () => {
                       </tr>
                     </tbody>
                   </table>
+                  </div>
                 </div>
                 <div className="overflow-x-auto mt-10">
                   <h2 className="text-xl font-bold mb-4 text-textGray">Flying Squad 2 (2024–25)</h2>
+                   <div className="rounded overflow-hidden border border-gray-200 w-full">
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead className="bg-[#F3F8FC] text-[#2884CA]">
                       <tr>
@@ -705,6 +732,7 @@ const MandatoryDisclosure = () => {
                       </tr>
                     </tbody>
                   </table>
+                  </div>
                 </div>
               </>
             ) : selectedIndex === 10 ? (
@@ -746,6 +774,7 @@ const MandatoryDisclosure = () => {
                   </p>
                   <div className="overflow-x-auto mt-5">
                     <h2 className="text-xl font-bold mb-4 text-textGray">Internal Committee (IC) 2024–25</h2>
+                     <div className="rounded overflow-hidden border border-gray-200 w-full">
                     <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                       <thead className="bg-[#F3F8FC] text-[#2884CA]">
                         <tr>
@@ -818,6 +847,7 @@ const MandatoryDisclosure = () => {
                         </tr>
                       </tbody>
                     </table>
+                    </div>
                   </div>
                 </div>
               </>
@@ -933,6 +963,7 @@ const MandatoryDisclosure = () => {
 
                   <div className="overflow-x-auto mt-5">
                     <h2 className="text-xl font-bold mb-4 text-textGray">Committee List – SC/ST</h2>
+                     <div className="rounded overflow-hidden border border-gray-200 w-full">
                     <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                       <thead className="bg-[#F3F8FC] text-[#2884CA]">
                         <tr>
@@ -965,10 +996,12 @@ const MandatoryDisclosure = () => {
                         ))}
                       </tbody>
                     </table>
+                    </div>
                   </div>
 
                   <div className="overflow-x-auto mt-10">
                     <h2 className="text-xl font-bold mb-4 text-textGray">Number of SC/ST/OBC Students Receiving Scholarship</h2>
+                    <div className="rounded overflow-hidden border border-gray-200 w-full">
                     <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                       <thead className="bg-[#F3F8FC] text-[#2884CA]">
                         <tr>
@@ -999,6 +1032,7 @@ const MandatoryDisclosure = () => {
                         ))}
                       </tbody>
                     </table>
+                    </div>
                   </div>
                 </div>
               </>

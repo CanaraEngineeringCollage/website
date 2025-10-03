@@ -19,7 +19,7 @@ interface Organaisation {
 
 const Organaisation = ({ data }: { data: Organaisation }) => {
   return (
-    <div className="lg2:px-24 mx-5 text-[#86868B] text-[17px]">
+    <div className=" text-[#86868B] text-[17px]">
     { data.title&& <h2 className="text-2xl font-bold mb-4">{data.title}</h2>}
       <img
         src={data.imageUrl}
@@ -33,6 +33,7 @@ const Organaisation = ({ data }: { data: Organaisation }) => {
       <h3 className="text-xl font-semibold mb-3">{table.title}</h3>
     )}
     <div className="overflow-x-auto">
+      <div className="rounded overflow-hidden border border-gray-200 w-full">
       <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
         <tbody className="bg-[#F3F8FC] text-[#2884CA]">
           {table.firstColumn.map((firstCol, colIdx) => {
@@ -72,6 +73,7 @@ const Organaisation = ({ data }: { data: Organaisation }) => {
           })}
         </tbody>
       </table>
+      </div>
     </div>
   </div>
 ))}

@@ -42,41 +42,37 @@ const Advisory = ({ datam }) => {
 
           return (
             <div
-              key={index}
-              className={`relative cursor-pointer w-full max-w-[280px] h-[430px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md `}
-            >
-              <Image
-                src={item.image}
-                alt={item.name}
-                width={500}
-                height={500}
-                className="w-full  object-cover h-[350px] rounded-t-xl"
-              />
-              <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
-              <div className="absolute z-10 top-[75%] left-4">
-                <div className="pe-2">
-                <h2 className="text-[20px] font-bold ">{item.name}</h2>
-                <p className="text-[17px]">{item.title}</p>
-                <p
-                  onClick={() => openModal(item)}
-                  className="text-xs font-bold sm:text-sm md:text-sm flex items-center"
-                >
-                  View Profile
-                  <MdKeyboardArrowRight className="ml-1 text-xl" />
-                </p>
-              </div>
-              </div>
-            </div>
+                          key={item.id}
+                         
+                          className="relative c w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md"
+                        >
+                          {/* Image fills card completely */}
+                          <Image
+                            src={item.image}
+                            alt={item.image}
+                           fill
+                            className="object-cover"
+                          />
+          
+                          {/* Responsive gradient */}
+                             <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
+          
+                          {/* Content */}
+                          <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full">
+                            <h2 className="text-base sm:text-lg md:text-sm lg:text-sm lg2:text-lg xl:text-2xl font-bold leading-tight">
+                              {item.name}
+                            </h2>
+                           {item.title&& <p className="text-xs sm:text-lg md:text-sm lg:text-sm lg2:text-lg xl:text-2xl leading-snug break-words">
+                              {item.title}
+                            </p>}
+                            
+                          </div>
+                        </div>
           );
         })}
       </div>
 
-      {/* Faculty Modal */}
-      <FacultyModal
-        isOpen={isModalOpen}
-        onClose={closeModal}
-        facultyData={selectedMember}
-      />
+    
     </section>
   );
 };

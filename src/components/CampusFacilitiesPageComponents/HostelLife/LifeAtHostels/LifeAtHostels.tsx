@@ -9,7 +9,7 @@ const LifeAtHostels = () => {
         <div className="flex justify-between items-center pb-5 lg:pb-10">
           <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-[#1D1D1F] ">Life at CEC Hostels</h1>
           <a
-            href="https://drive.google.com/uc?export=download&id=1dSk9BXF68175ikakeHivmiNrI1DO2QsU"
+             href="/campusFacilitiesPageImages/hostelLifePageImages/Hostel Rule book.pdf" download
            
             aria-label="Download Hostel Rulebook"
             className="text-[#2884CA] hidden font-bold text-[17px] bg-[#d9ebff] px-6 py-2 cursor-pointer rounded-3xl lg:inline-flex gap-3"
@@ -23,12 +23,13 @@ const LifeAtHostels = () => {
           
         
       </div>
-      <button
+      <a
+       href="/campusFacilitiesPageImages/hostelLifePageImages/Hostel Rule book.pdf" download
         aria-label="Download Hostel Rulebook"
         className="text-[#2884CA] lg:hidden mt-10 font-bold text-[17px] bg-[#d9ebff] px-6 py-2 cursor-pointer rounded-3xl inline-flex gap-3 justify-center w-full"
       >
         Download Hostel Rulebook <HiDownload className="text-[24px] font-extrabold" />
-      </button>
+      </a>
     </section>
   );
 };

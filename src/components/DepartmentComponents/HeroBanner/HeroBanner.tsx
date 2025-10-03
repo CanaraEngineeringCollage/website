@@ -9,14 +9,14 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ imageUrl, departmentName,wdith="" }) => {
   return (
-    <section className="relative w-full h-[48vh] md:h-[70vh] flex flex-col  text-center  overflow-hidden">
+    <section className="relative w-full h-full lg:h-[70vh] flex flex-col  text-center mb-5 md:mb-0  overflow-hidden">
      <div className=" w-full">
     <Image
       src={imageUrl}
       alt="Background 1"
       width={1920} // required
       height={1080} // required
-      className="object-cover -mt-38  w-full"
+      className="object-cover lg2:-mt-38 lg:-mt-38 md:mt-0 mt-0  w-full"
     />
   </div>
       <div className="absolute inset-0 z-0">
@@ -26,7 +26,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ imageUrl, departmentName,wdit
       
 
         {/* Bottom Gradient - Mobile */}
-        <div className="absolute bottom-0 left-0 right-0 h-[150px] bg-gradient-to-t from-[#fbfcfe] via-white/85 to-transparent z-[10] md:hidden" />
+        <div className="absolute bottom-0 left-0 right-0 h-[100px] bg-gradient-to-t from-[#fbfcfe] via-white/60 to-transparent z-[10] md:hidden" />
 
         {/* Bottom Gradient - Desktop */}
         <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[500px] bg-gradient-to-t from-[#fbfcfe] via-transparent to-transparent z-[10] hidden md:block" />

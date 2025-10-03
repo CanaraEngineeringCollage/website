@@ -90,6 +90,7 @@ const DepartmentDetailes = ({ faculties }: DepartmentSectionProps) => {
         <h2 className="text-[30px] lg:w-[50%]  lg:text-[54px] font-bold leading-[1.1] pb-1 lg:pb-10 text-black">{department?.name}</h2>
         <div className={`grid grid-cols-1 gap-3  md:grid-cols-12 mt-10`}>
           <div className="col-span-3">
+            <div className="sticky top-20 h-fit">
             {departmentMenuItems?.map((section, index) => (
               <h1
                 key={index}
@@ -104,9 +105,10 @@ const DepartmentDetailes = ({ faculties }: DepartmentSectionProps) => {
                 {section}
               </h1>
             ))}
+            </div>
           </div>
           <div className="col-span-1"></div>
-          <div className="col-span-8">
+          <div className="col-span-8 md:h-[130vh] scrollable overflow-y-auto  pr-2">
             {selectedSection === "Department Profile" && <DepartmentProfile keyPoints={department?.keyPractices} data={department?.description} />}
             {selectedSection === "Organisation Structure" && department?.organisation && <Organaisation data={department?.organisation}/>}
             {selectedSection === "Head of Department" && <Hod data={department?.depatmentHead} />}

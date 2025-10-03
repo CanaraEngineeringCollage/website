@@ -202,7 +202,7 @@ const GrievanceRedressalCell = () => {
                   {"href" in item && item.href && (
                     <iframe
                       src={`${item.href}#toolbar=0&navpanes=0&view=FitH`}
-                      className="w-full h-[100vh] mt-7"
+                      className="w-full  md:h-[100vh] mt-7"
                       title={item.title || `Document-${i}`}
                     ></iframe>
                   )}
@@ -210,6 +210,7 @@ const GrievanceRedressalCell = () => {
                   {/* Table */}
                   {"type" in item && item.type === "table" && (
                     <div className="overflow-x-auto mt-7">
+                       <div className="rounded overflow-hidden border border-gray-200 w-full">
                       <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                         <thead className="bg-[#F3F8FC] text-[#2884CA]">
                           <tr>
@@ -232,6 +233,7 @@ const GrievanceRedressalCell = () => {
                           ))}
                         </tbody>
                       </table>
+                    </div>
                     </div>
                   )}
                 </div>

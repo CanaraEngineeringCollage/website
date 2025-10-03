@@ -61,24 +61,41 @@ const Faculty = ({ datam }: { datam: FacultyMember[] }) => {
 
           return (
             <div
+            onClick={() => openModal(item)}
               key={index}
-              className={`relative cursor-pointer w-full max-w-[280px] h-[430px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md ${
-                shouldCenterLast ? "md:col-start-2 xl:col-start-auto" : ""
-              }`}
+              className={`relative cursor-pointer w-full max-w-[280px] lg:h-[430px] md:h-[260px] h-[400px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md ${shouldCenterLast ? "md:col-start-2 xl:col-start-auto" : ""
+                }`}
             >
-              <Image src={bufferToBase64(item.avatar)} alt={item.name} width={200} height={200} className="w-full object-contain" />
-              <div className="absolute bottom-0 left-0 w-full h-56 bg-[linear-gradient(to_top,#6DC0EB_40%,transparent)] z-10"></div>
-              <div className="absolute z-50 left-0 px-3 bottom-4">
-                <h2 className="text-[20px] font-bold">{item.name}</h2>
-                <p className="text-[17px]">{item.designation}, <span className="font-semibold">{item.department}</span></p>
-                
-                <p onClick={() => openModal(item)} className="text-xs font-bold sm:text-sm md:text-sm flex items-center">
+              {/* Image fills card completely */}
+              <Image
+                src={bufferToBase64(item.avatar)}
+                alt={item.name}
+                fill
+                className="object-cover"
+              />
+
+              {/* Responsive gradient (same as first design) */}
+              <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
+
+              {/* Content */}
+              <div className="absolute z-20 left-0 px-3 bottom-4 w-full">
+                <h2 className="lg2:text-[20px] lg:text-[18px] md:text-[11px] text-[20px] font-bold">{item.name}</h2>
+                <p className="lg2:text-[20px] lg:text-[18px] md:text-[11px] text-[20px]">
+                  {item.designation}
+                  {/* ,{" "}
+                  <span className="font-semibold">{item.department}</span> */}
+                </p>
+
+                <p
+                  onClick={() => openModal(item)}
+                  className=" font-bold lg2:text-[20px] lg:text-[18px] md:text-[11px] text-[20px] flex items-center"
+                >
                   View Profile
                   <MdKeyboardArrowRight className="ml-1 text-xl" />
-                </p> 
-               
+                </p>
               </div>
             </div>
+
           );
         })}
       </div>

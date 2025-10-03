@@ -5,6 +5,7 @@ import React from 'react'
 const NetworkEvent = () => {
   return (
     <AmenitiesCard
+    style='text-center'
     title={data.title}
     mainImage={data.mainImage}
   />

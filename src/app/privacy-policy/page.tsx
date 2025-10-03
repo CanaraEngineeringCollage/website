@@ -14,7 +14,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+    <section >
       <PrivacySection />
     </section>
   );

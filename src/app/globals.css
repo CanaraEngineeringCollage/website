@@ -194,3 +194,27 @@ lite-youtube {
   position: relative;
   width: 100%;
 }
+
+
+.scrollable::-webkit-scrollbar {
+  width: 12px;               /* vertical scrollbar width */
+  height: 8px;               /* horizontal scrollbar height (if any) */
+}
+.scrollable::-webkit-scrollbar-track {
+  background: #e6f2ff;       /* track color (light blue/whitish) */
+  border-radius: 10px;
+}
+.scrollable::-webkit-scrollbar-thumb {
+  background-color: #2884CA; /* thumb color (blue) */
+  border-radius: 10px;
+  border: 3px solid #e6f2ff; /* creates a padding effect around thumb */
+}
+.scrollable::-webkit-scrollbar-thumb:hover {
+  background-color: #1f6fa0; /* darker on hover */
+}
+
+/* Firefox */
+.scrollable {
+  scrollbar-width: thin;                 /* "auto" | "thin" | "none" */
+  scrollbar-color: #6faddc #e6f2ff;     /* thumb color then track color */
+}

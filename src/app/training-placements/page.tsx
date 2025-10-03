@@ -70,11 +70,10 @@ console.log(data,"dd");
 
 
 
-console.log(facultyDataFetched,"fff");
   return (
     <>
       <HeroSection />
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0 |">
+      <section className="px-6 md:px-12 lg:px-16 xl:px-0 mb-9 |">
         <AboutDepartment />
       </section>
       <section className="pb-10 lg:mt-0 -mt-12">
@@ -92,7 +91,7 @@ console.log(facultyDataFetched,"fff");
     roles: [{ title: faculty.desiganation, organization: "" }] // map designation to roles
   }))}
   heading="Meet Our Placement Team"
-  description="Our dedicated placement team works tirelessly..."
+  description="Our dedicated placement team works tirelessly to connect students with top companies, guiding them towards successful careers and brighter futures."
 />
 
       </section>
@@ -102,7 +101,7 @@ console.log(facultyDataFetched,"fff");
       <section className="px-6 md:px-12 lg:px-16 xl:px-0  lg:mt-0 -mt-12 ">
         <HighlightsSection />
       </section>
-      <section className="px-6  pt-20  md:px-12 lg:pl-16 lg:px-0 bg-[#e5e5ea]  xl:px-0">
+      <section className="px-6  pt-14 lg:pt-20  md:px-12 lg:pl-16 lg:px-0 bg-[#e5e5ea]  xl:px-0">
         <ExploreFacilities />
       </section>
     </>

@@ -16,7 +16,7 @@ type MagazinesProps = {
 
 const Magazines: React.FC<MagazinesProps> = ({ data }) => {
     return (
-        <div className="lg2:px-24 mx-5 text-[#86868B] text-[17px]">
+        <div className=" text-[#86868B] text-[17px]">
             {data.map((section, idx) => (
                 <div key={idx} className="mb-8">
                     {section.title && (

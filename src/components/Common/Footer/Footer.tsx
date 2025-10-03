@@ -70,9 +70,10 @@ const Footer: FC = () => {
   const [stayConnectedIsOpen, setStayConnectedIsOpen] = useState<boolean>(false);
 
   return (
-    <footer className="bg-[#e5e5ea] text-gray-700 text-sm pt-10">
+    <footer className="bg-[#e5e5ea] text-gray-700 lg:px-8  text-sm pt-10">
       {/* Desktop Version */}
-      <div className="lg:max-w-7xl  xl:mx-auto xl:max-w-[75%]  mx-auto lg:block hidden">
+     
+          <div className="lg:max-w-7xl md:max-w-6xl   xl:mx-auto xl:max-w-[75%]  mx-auto lg:block hidden">
           <Suspense fallback={null}> <Breadcrumbs
           items={[
             { label: "", href: "" },
@@ -86,13 +87,28 @@ const Footer: FC = () => {
             { label: "SWO Department", href: "/about/student-welfare-department" },
             { label: "Academic Overview", href: "/academics/academic-overview" },
             { label: "Programs", href: "/academics/programs" },
-            { label: "Computer Science & Engineering", href: "/department/computer-science-engineering" },
-            { label: "Artificial Intelligence & Machine Learning", href: "/department/artificial-intelligence-machine-learning" },
-            { label: "Information Science & Engineering", href: "/department/information-science-engineering" },
-            { label: "Electronics & Communication Engineering", href: "/department/electronics-communication-engineering" },
-            { label: "Computer Science & Business System", href: "/department/computer-science-business-system" },
-            { label: "Computer Science & Design", href: "/department/computer-science-design" },
+            { label: "Computer Science & Engineering", href: "/department/computer-science-engineering/detailes" },
+                  { label: "Computer Science & Engineering", href: "/department/computer-science-engineering" },
+            { label: "Artificial Intelligence & Machine Learning", href: "/department/artificial-intelligence-machine-learning/detailes" },
+                        { label: "Artificial Intelligence & Machine Learning", href: "/department/artificial-intelligence-machine-learning" },
+            { label: "Information Science & Engineering", href: "/department/information-science-engineering/detailes" },
+              { label: "Information Science & Engineering", href: "/department/information-science-engineering" },
+            { label: "Electronics & Communication Engineering", href: "/department/electronics-communication-engineering/detailes" },
+                 { label: "Electronics & Communication Engineering", href: "/department/electronics-communication-engineering" },
+            { label: "Computer Science & Business System", href: "/department/computer-science-business-system/detailes" },
+                { label: "Computer Science & Business System", href: "/department/computer-science-business-system" },
+            { label: "Computer Science & Design", href: "/department/computer-science-design/detailes" },
+                   { label: "Computer Science & Design", href: "/department/computer-science-design" },
             { label: "Science & Humanities", href: "/department/science-humanities" },
+            { label: "Distinctive Practices", href: "/about/distinctive-practices" },
+            { label: "Key Functionaries & HODs", href: "/about/key-functionaries-and-hods" },
+            { label: "Glimpses of CEC", href: "/about/glimpses-of-cec" },
+            { label: "Educators & Administrators", href: "/about/educators-administrators" },
+             { label: "Research", href: "/academics/research" },
+             { label: "About Alumni", href: "/alumni/about-alumni" },
+                { label: "Infrastructure", href: "/campus-facilities/infrastructure" },
+                  { label: "Privacy Policy", href: "/privacy-policy" },
+                   { label: "Grievance Redressal", href: "/about/mandatory-disclosure/sc-st-grievance" },
             // { label: "Timetables", href: "/academics/examination-records" },
             // { label: "Circulars", href: "/about" },
             // { label: "Marks & Attendance", href: "/our-founder" },
@@ -115,7 +131,8 @@ const Footer: FC = () => {
         /></Suspense>
 
         <hr className="text-gray-300 pb-3.5" />
-        <div className="grid grid-cols-2 md:grid-cols-5  border-b border-gray-300 pb-10">
+        <div className="mx-auto">
+              <div className="grid grid-cols-2 md:grid-cols-5  border-b border-gray-300 pb-10">
           <div>
             <h3 className="font-semibold mt-5 mb-2">Quick Links</h3>
             <FooterList data={quickLinks} />
@@ -137,6 +154,8 @@ const Footer: FC = () => {
             <FooterList data={stayConnected} />
           </div>
         </div>
+        </div>
+    
 
         <div className="flex items-center justify-between space-x-10 my-8">
           <div className="flex gap-5">
@@ -176,6 +195,8 @@ const Footer: FC = () => {
           </div>
         </div>
       </div>
+  
+    
 
       {/* Mobile Version */}
       <div className="lg:hidden px-6">

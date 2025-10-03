@@ -16,7 +16,7 @@ interface AcademicProps {
 
 const Academic = ({ data }: { data?: AcademicProps }) => {
   return (
-    <div className="lg2:px-24 mx-5 text-[#86868B] text-[17px]">
+    <div className=" text-[#86868B] text-[17px]">
       {data?.title && <h1 className="text-[20px] font-bold text-[#86868B] mb-4">{data.title}</h1>}
       <p className="mb-4 md:text-lg  text-[14px] leading-7  text-textGray">{data?.des}</p>
       {data?.points && (

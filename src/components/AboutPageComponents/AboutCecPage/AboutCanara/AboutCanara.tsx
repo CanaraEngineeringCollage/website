@@ -16,7 +16,9 @@ export default function AboutCanara() {
       </h1>
 
       {/* Always visible paragraphs */}
-      <p className="lg:text-xl md:text-lg text-[14px] text-justify leading-7 pt-16 text-textGray">
+    <div className="px-1 md:px-6 lg:px-8 lg2:px-1">
+
+        <p className="lg:text-xl md:text-lg text-[14px] text-justify leading-7 pt-16 text-textGray">
         Canara Engineering College(CEC), established in the year 2001 as a new
         millennium project of Canara High School Association, in the sprawling
         campus of 26 acres of pristine natural beauty at Benjanapadavu,
@@ -96,6 +98,7 @@ export default function AboutCanara() {
           campus, in full swing
         </p>
       </div>
+    </div>
 
       {/* Toggle button */}
       <div className="text-center">

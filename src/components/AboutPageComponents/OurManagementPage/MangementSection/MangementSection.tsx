@@ -46,7 +46,7 @@ const HeroSection = () => {
             ))}
           </div>
           <div className="md:col-span-1"></div>
-          <div className="md:col-span-8">
+          <div className="md:col-span-8 mt-5 md:mt-0">
             <h1 className="text-textGray font-bold text-[20px] pb-6 sm:pb-8 md:pb-8">Canara High School Association {selectedHeading}</h1>
             {/* Mobile layout: title and name in the same line */}
             {selectedHeading === "Organisational Structure" ? (
@@ -61,6 +61,7 @@ const HeroSection = () => {
               </div>
             ) : selectedHeading === "Canara Institutes" ? (
               <div className="overflow-x-auto">
+                <div className="rounded overflow-hidden border border-gray-200 w-full">
                 <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px] ">
                   <thead>
                     <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -84,9 +85,10 @@ const HeroSection = () => {
                   </tbody>
                 </table>
               </div>
+                </div>
             ) : (
               <>
-                <div className="block sm:hidden ">
+                <div className="block sm:hidden   ">
                   {(data[selectedHeading] as ManagementItem[]).map((item, index) => (
                     <div
                       key={index}

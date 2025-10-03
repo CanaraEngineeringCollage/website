@@ -11,7 +11,7 @@
   {
     "id": 2,
     "name": "Dr. H Manoj T Gadiyar",
-    "image": "https://www.canaraengineering.in/departments/faculty/0120230024.jpg",
+    "image": "/departmentImages/departmentHeads/Information Science and Engg.webp",
     "category": "Current",
     "roles": [
       { "title": "Information Science & Engineering", "organization": "" }
@@ -50,15 +50,6 @@
     "category": "Prospective",
    "roles": [
       { "title": "Artificial Intelligence & Machine Learning", "organization": "" }
-    ]
-  },
-  {
-    "id": 7,
-    "name": "Dr. N. Satheesh Kumar",
-    "image": "/departmentImages/departmentHeads/science&humanities.webp",
-    "category": "Prospective",
-   "roles": [
-      { "title": "Science & Humanities", "organization": "" }
     ]
   }
 ]
