@@ -319,7 +319,7 @@ const MandatoryDisclosure = () => {
                   Depending upon the nature and gravity of the offence as established by the Anti-Ragging Committee of the Institution, the possible
                   punishments for those found guilty of ragging at the institutional level shall be any one or any combination of the following:
                 </p>
-                <ul className="space-y-2 list-disc pl-5 md:text-lg  text-[14px] leading-7  text-textGray mt-6">
+                <ul className="space-y-2 list-decimal pl-5 md:text-lg  text-[14px] leading-7  text-textGray mt-6">
                   <li>Suspension from attending classes and academic privileges.</li>
                   <li>Withholding / withdrawing scholarship / fellowship and other benefits.</li>
                   <li>Debarring from appearing in any test / examination or other evaluation process.</li>
@@ -338,14 +338,14 @@ const MandatoryDisclosure = () => {
                   </li>
                 </ul>
                 <h2 className="text-lg font-bold text-textGray mt-6 mb-2">Objectives:</h2>
-                <ul className="space-y-2 list-disc pl-5 md:text-lg  text-[14px] leading-7  text-textGray  ">
+                <ul className="space-y-2 list-decimal pl-5 md:text-lg  text-[14px] leading-7  text-textGray  ">
                   <li>To preserve a culture of ragging-free environment in the college campus by prohibiting it as per law.</li>
                   <li>Preventing its occurrence by following provisions of regulations provided as per law.</li>
                   <li>Design strategies and action plan for curbing the menace of ragging in the college.</li>
                   <li>Punishing those who indulge in ragging as per provisions of the law in force.</li>
                 </ul>
                 <h2 className="text-lg font-bold text-textGray mt-6 mb-2">Outcomes:</h2>
-                <ul className="space-y-2 list-disc pl-5 md:text-lg  text-[14px] leading-7  text-textGray  ">
+                <ul className="space-y-2 list-decimal pl-5 md:text-lg  text-[14px] leading-7  text-textGray  ">
                   <li>Have preserved a ragging free campus with no incidents of ragging been reported so far, in the college and hostel premises.</li>
                 </ul>
                 <h2 className="text-lg font-bold text-textGray mt-6 mb-2">Anti Ragging Committee Organisation Chart</h2>
@@ -353,7 +353,7 @@ const MandatoryDisclosure = () => {
                   <Image alt="ragging" fill src="/mandatory/ragging-commite/antiraggingCommitte.jpg" />
                 </div>
                 <h2 className="text-lg font-bold text-textGray mt-2 mb-2">Process:</h2>
-                <ul className="space-y-2 list-disc pl-5 md:text-lg  text-[14px] leading-7  text-textGray">
+                <ul className="space-y-2 list-decimal pl-5 md:text-lg  text-[14px] leading-7  text-textGray">
                   <li>Anti-Ragging Committee is constituted at the beginning of every Academic Year.</li>
                   <li>Anti-Ragging Squads are formed every year.</li>
                   <li>List of Committee and Squad is displayed on the College notice boards.</li>
@@ -1097,7 +1097,7 @@ const MandatoryDisclosure = () => {
                   <p className="md:text-lg  text-[14px] leading-7 text-textGray ">
                     We may employ third-party companies and individuals due to the following reasons:
                   </p>
-                  <ul className="list-disc md:text-lg  text-[14px] leading-7  text-textGray">
+                  <ul className="list-decimal md:text-lg  text-[14px] leading-7  text-textGray">
                     <li>To facilitate our Service</li>
                     <li>To provide the Service on our behalf</li>
                     <li>To perform Service-related services</li>
@@ -1204,7 +1204,7 @@ const MandatoryDisclosure = () => {
                   <p className="md:text-lg  text-[14px] leading-7  text-textGray">
                     We may employ third-party companies and individuals due to the following reasons:
                   </p>
-                  <ul className="list-disc  text-textGray text-[14px] pt-2 leading-7 space-y-1">
+                  <ul className="list-decimal  text-textGray text-[14px] pt-2 leading-7 space-y-1">
                     <li>To facilitate our Service</li>
                     <li>To provide the Service on our behalf</li>
                     <li>To perform Service-related services</li>

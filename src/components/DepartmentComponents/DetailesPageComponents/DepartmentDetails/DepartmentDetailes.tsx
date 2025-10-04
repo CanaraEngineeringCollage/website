@@ -68,13 +68,13 @@ const DepartmentDetailes = ({ faculties }: DepartmentSectionProps) => {
   const departmentMenuItems = [
   "Department Profile",
   "Organisation Structure",
-  "Head of Department",
+  "Head of the Department",
   "Faculty & Staff",
-  "Academic Programs",
+  "Academic Programmes",
   "PEO & PO-PSO",
   "Course Outcomes (CO)",
   "Facilities",
-  "Student Achievement",
+  "Student Achievements",
   ...(department?.name !== "Information Science & Engineering" ? ["Research & Product Development"] : []),
   ...(department?.name === "Information Science & Engineering" ? ["Publications"] : []),
   "Magazines & Newsletters",
@@ -111,13 +111,13 @@ const DepartmentDetailes = ({ faculties }: DepartmentSectionProps) => {
           <div className="col-span-8 md:h-[130vh] scrollable overflow-y-auto  pr-2">
             {selectedSection === "Department Profile" && <DepartmentProfile keyPoints={department?.keyPractices} data={department?.description} />}
             {selectedSection === "Organisation Structure" && department?.organisation && <Organaisation data={department?.organisation}/>}
-            {selectedSection === "Head of Department" && <Hod data={department?.depatmentHead} />}
+            {selectedSection === "Head of the Department" && <Hod data={department?.depatmentHead} />}
             {selectedSection === "Faculty & Staff" && <Faculty datam={faculties}/>}
-            {selectedSection === "Academic Programs" && department?.academicsProgram && <Academic data={department.academicsProgram} />}
+            {selectedSection === "Academic Programmes" && department?.academicsProgram && <Academic data={department.academicsProgram} />}
             {selectedSection === "PEO & PO-PSO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
             {selectedSection === "Course Outcomes (CO)" && <CourseOutCome />}
             {selectedSection === "Facilities" && department?.facilities && <Facilities data={department?.facilities} />}
-            {selectedSection === "Student Achievement" && department?.studentAcheivemtents && (
+            {selectedSection === "Student Achievements" && department?.studentAcheivemtents && (
               <StudentAchievement data={department?.studentAcheivemtents} />
             )}
             {selectedSection === "Research & Product Development" && department?.research && <Research data={department?.research}/>}

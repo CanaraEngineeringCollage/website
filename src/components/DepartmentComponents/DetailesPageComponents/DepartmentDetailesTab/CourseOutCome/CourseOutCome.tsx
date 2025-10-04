@@ -39,7 +39,7 @@ const CourseOutCome = () => {
         </select>
       </div>
       <div className="flex justify-center mt-10">
-        <button className="flex bg-[#2884CA] px-5 py-2 rounded-full text-white justify-center">Fetch Detailes</button>
+        <button  className="flex bg-[#2884CA] px-5 py-2 rounded-full text-white justify-center">Fetch Details</button>
       </div>
     </div>
   );

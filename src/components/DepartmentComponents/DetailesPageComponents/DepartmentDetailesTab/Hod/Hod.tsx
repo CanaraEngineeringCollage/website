@@ -34,18 +34,8 @@ const Hod: React.FC<HodProps> = ({ data }) => {
 
   return (
     <div className=" text-[#86868B] text-[17px]">
-      <div className="flex flex-col md:flex-row gap-6">
-        
-        <div className="flex-1 flex flex-col justify-start">
-          <p
-            ref={paragraphRef}
-            className="text-[14px] md:text-lg leading-7 text-justify text-textGray"
-          >
-            {data?.messageFromtheDepartmentHead}
-          </p>
-        </div>
-      </div>
-      <div className='mt-10'>
+      <div className="flex flex-col md:flex-col gap-6">
+            <div className='mt-10'>
 <Image
           src={data?.imageUrl}
           alt={data?.name}
@@ -57,6 +47,17 @@ const Hod: React.FC<HodProps> = ({ data }) => {
       <div className="mt-2 font-semibold text-[#1D1D1F]">{data?.name}</div>
       <div className="text-sm text-gray-500">{data?.position}</div>
       </div>
+        
+        <div className="flex-1 flex flex-col justify-start">
+          <p
+            ref={paragraphRef}
+            className="text-[14px] md:text-lg leading-7 text-justify text-textGray"
+          >
+            {data?.messageFromtheDepartmentHead}
+          </p>
+        </div>
+      </div>
+  
     </div>
   );
 };
