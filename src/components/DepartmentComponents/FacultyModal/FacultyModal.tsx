@@ -69,7 +69,7 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
       <X className="w-6 h-6 text-white" />
     </button>
   </div>
-  <div className="py-20 lg:px-20">
+  <div className="py-10 lg:px-20">
                 <div className=" gap-6 flex-col lg:flex-row flex items-center">
                   <div className="flex-shrink-0">
                     <div className="rounded-lg overflow-hidden w-60 h-80 bg-sky-400">

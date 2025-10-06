@@ -53,21 +53,9 @@ interface CouncilMember {
 
 }
 
-const page =async () => {
+const page = () => {
 
-  let facultyDataFetched: Faculty[] = [];
-  try {
-    const res = await fetch("https://canaraapi.megamind.studio/faculty");
-    if (!res.ok) throw new Error("Failed to fetch faculty data");
-    const data: Faculty[] = await res.json();
-console.log(data,"dd");
-
-    // Filter faculty for the current department
-    facultyDataFetched = data?.filter((faculty) => faculty.department === "Placement Team").slice(0,10);
-  } catch (error) {
-    console.error("Error fetching faculty data:", error);
-  }
-
+ 
 
 
   return (
@@ -86,10 +74,7 @@ console.log(data,"dd");
       <section className="px-6 md:px-12 lg:px-16 xl:px-0 lg:mt-0 -mt-12">
 
        <DepartmentFaculty
-  facultyData={facultyDataFetched.map(faculty => ({
-    ...faculty,
-    roles: [{ title: faculty.desiganation, organization: "" }] // map designation to roles
-  }))}
+  
   heading="Meet Our Placement Team"
   description="Our dedicated placement team works tirelessly to connect students with top companies, guiding them towards successful careers and brighter futures."
 />

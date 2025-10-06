@@ -109,18 +109,19 @@ const Research: React.FC<ResearchProps> = ({ data }) => {
                           {showSlNo && (
                             <td className="py-3 md:px-4 px-1 border-b">{rowIdx + 1}</td>
                           )}
-                          {table.firstColumn[rowIdx] && (
-                            <td className="py-3 md:px-4 px-1 border-b">{table.firstColumn[rowIdx]}</td>
-                          )}
-                          {table.secondColumn[rowIdx] && (
-                            <td className="py-3 md:px-4 px-1 border-b">{table.secondColumn[rowIdx]}</td>
-                          )}
-                          {table.thirdColumn[rowIdx] && (
-                            <td className="py-3 md:px-4 px-1 border-b">{table.thirdColumn[rowIdx]}</td>
-                          )}
-                          {table.fourthColumn[rowIdx] && (
-                            <td className="py-3 md:px-4 px-1 border-b">{table.fourthColumn[rowIdx]}</td>
-                          )}
+                     <td className="py-3 md:px-4 px-1 border-b">
+  {table.firstColumn[rowIdx] ?? ""}
+</td>
+<td className="py-3 md:px-4 px-1 border-b">
+  {table.secondColumn[rowIdx] ?? ""}
+</td>
+<td className="py-3 md:px-4 px-1 border-b">
+  {table.thirdColumn[rowIdx] ?? ""}
+</td>
+<td className="py-3 md:px-4 px-1 border-b">
+  {table.fourthColumn[rowIdx] ?? ""}
+</td>
+
                         </tr>
                       ))}
                     </tbody>

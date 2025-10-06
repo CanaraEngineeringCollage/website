@@ -21,9 +21,8 @@ const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
   const base64 = btoa(binary);
   return `data:image/jpeg;base64,${base64}`;
 };
-export default function DepartmentFaculty({ heading, description, facultyData }: { heading: string, description: string, facultyData: any }) {
+export default function DepartmentFaculty({ heading, description,  }: { heading: string, description: string }) {
 
-  console.log("facl", facultyData);
 
 
   const [data, setData] = useState<CouncilMember[]>([]);
@@ -31,15 +30,49 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [selectedMember, setSelectedMember] = useState<CouncilMember | null>(null);
   const router = useRouter();
+
+
+
+
+
+const [facultyData, setFacultyData] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    setData(governingCounsilData);
+    const fetchFacultyData = async () => {
+      try {
+        setLoading(true);
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/faculty`);
+        if (!res.ok) throw new Error("Failed to fetch faculty data");
+
+        const data: any[] = await res.json();
+        const placementTeam = data
+          .filter((faculty) => faculty.department === "Placement Team")
+          .slice(0, 10);
+
+        setFacultyData(placementTeam);
+      } catch (error) {
+        console.error("Error fetching faculty data:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchFacultyData();
   }, []);
 
-  const visibleMembers = facultyData.slice(startIndex, startIndex + 2);
-  const visibleMembersMobile = facultyData.slice(startIndex, startIndex + 1);
+  useEffect(() => {
+    setData(facultyData);
+  }, [facultyData]);
+
+ 
+  
+
+  const visibleMembers = data?.slice(startIndex, startIndex + 2);
+  const visibleMembersMobile = data?.slice(startIndex, startIndex + 1);
 
   const handleNext = () => {
-    if (startIndex + 2 < facultyData.length) {
+    if (startIndex + 2 < data.length) {
       setStartIndex(startIndex + 2);
     }
   };
@@ -80,7 +113,7 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
               <button
                 aria-label="Next Faculty Member"
                 onClick={handleNext}
-                disabled={startIndex + 2 >= facultyData.length}
+                disabled={startIndex + 2 >= data.length}
                 className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full  text-[#616164]  transition disabled:opacity-30"
               >
                 <MdKeyboardArrowRight size={32} />
@@ -90,17 +123,18 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
         </div>
 
         <div className="flex w-full sm:grid-cols-2 gap-6">
-          {(visibleMembers || []).map((member, index) => (
+          {(visibleMembers || [])?.map((member, index) => (
             <div
+              onClick={() => {
+                    setSelectedMember(member);
+                    setIsModalOpen(true);
+                  }}
               key={index}
               className="relative cursor-pointer w-full max-w-[309px] lg2:h-[450px] lg:h-[350px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md"
             >
               {/* Image fills card completely */}
               <Image
-                onClick={() => {
-                  setSelectedMember(member);
-                  setIsModalOpen(true);
-                }}
+               
                 src={bufferToBase64(member.avatar)}
                 alt={member.name}
                 fill
@@ -116,7 +150,7 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
                   {member.name}
                 </h2>
                 <p className="text-xs sm:text-sm md:text-base leading-snug break-words">
-                  {member.roles.map((role, idx) => (
+                  {member.roles&&member.roles.map((role, idx) => (
                     <span key={idx}>
                       {role.title}
                       {role.organization && (
@@ -129,10 +163,7 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
                   ))}
                 </p>
                 <p
-                  onClick={() => {
-                    setSelectedMember(member);
-                    setIsModalOpen(true);
-                  }}
+                
                   className="text-xs sm:text-sm md:text-base font-bold flex items-center mt-1"
                 >
                   View Profile
@@ -156,17 +187,18 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
         </div>
 
         <div className="flex justify-center w-full">
-          {visibleMembersMobile.map((member, index) => (
+          {visibleMembersMobile?.map((member, index) => (
             <div
+              onClick={() => {
+                    setSelectedMember(member);
+                    setIsModalOpen(true);
+                  }}
               key={index}
               className="relative cursor-pointer w-full max-w-[309px] h-[270px] md:h-[420px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md"
             >
               {/* Image fills card completely */}
               <Image
-                onClick={() => {
-                  setSelectedMember(member);
-                  setIsModalOpen(true);
-                }}
+             
                 src={bufferToBase64(member.avatar)}
                 alt={member.name}
                 fill
@@ -182,7 +214,7 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
                   {member.name}
                 </h2>
                 <p className="text-xs sm:text-sm md:text-base leading-snug break-words ">
-                  {member.roles.map((role, idx) => (
+                  {member?.roles?.map((role, idx) => (
                     <span key={idx}>
                       {role.title}
                       {role.organization && (
@@ -195,10 +227,7 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
                   ))}
                 </p>
                 <p
-                  onClick={() => {
-                    setSelectedMember(member);
-                    setIsModalOpen(true);
-                  }}
+                
                   className="text-[10px] sm:text-sm md:text-base font-bold flex items-center justify-start mt-1 " 
                 >
                   View Profile
@@ -227,7 +256,7 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
             <button
               aria-label="Next Faculty Member"
               onClick={handleNext}
-              disabled={startIndex + 2 >= facultyData.length}
+              disabled={startIndex + 2 >= data.length}
               className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full  text-[#616164]  transition disabled:opacity-30"
             >
               <MdKeyboardArrowRight size={24} />

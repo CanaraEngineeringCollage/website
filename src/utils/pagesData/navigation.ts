@@ -54,7 +54,7 @@ const studentSupport = [
     link: "/about/grievance-redressal-cell",
   },
   {
-    title: "SWO Department",
+    title: "Student Welfare Department",
     link: "/about/student-welfare-department",
   },
 ];

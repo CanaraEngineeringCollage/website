@@ -7,6 +7,8 @@ import React from "react";
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import data from "../../../utils/functionDepartmentData/functionDepartmentData.json";
 import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
+import MissionAndVision from "@/components/AboutPageComponents/StudentWelfarePage/MissionAndVision/MissionAndVision";
+import Facilities from "@/components/AboutPageComponents/StudentWelfarePage/Facilities/Facilities";
 
 export const metadata = {
   title: "Student Welfare Department | Canara College",
@@ -44,7 +46,12 @@ const page = () => {
       <section className="px-6 md:px-0 xl:px-0">
         <AboutTheDepartment />
       </section>
-
+      <section>
+      <MissionAndVision/>
+      </section>
+      <section>
+        <Facilities/>
+      </section>
       <section className=" lg:mt-0 -mt-2">
         <VideoPlayer youtubeUrl="NhwFJ89AJ2k" thumbnail="/youtubeThumbnails/Akrathi Aftermovie-Thumbail copy 3@300x.webp" />
       </section>

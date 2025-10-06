@@ -4,8 +4,10 @@ import React from "react";
 import { useParams } from "next/navigation";
 
 interface AboutTheDepartmentProps {
-  aboutTheDepartment: string;
+  aboutTheDepartment: string[];
   departmentName:string
+  
+
 }
 
 const   AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepartment,departmentName }) => {
@@ -25,11 +27,16 @@ const   AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepar
             </Link>
           </div>
         </div>
-        <p className="text-textGray text-justify text-[20px]">{aboutTheDepartment}</p>
+           {aboutTheDepartment?.map((paragraph, index) => (
+          <p key={index} className="text-textGray text-justify text-[20px] mb-4">
+            {paragraph}
+          </p>
+        ))}
+      
       </div>
       <div className="flex justify-center mt-10 lg:hidden">
        <Link href={`/department/${slug}/detailes`}>
-              <button className="bg-[#007AFF26] rounded-4xl px-6 py-2.5">Learn More</button>
+              <button className="bg-[#007AFF26] rounded-4xl px-6 py-2.5">More About the Department</button>
             </Link>
             </div>
     </section>

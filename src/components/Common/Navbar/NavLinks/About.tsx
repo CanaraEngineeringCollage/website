@@ -137,7 +137,7 @@ export default function About() {
                         pathname.includes("/about/student-welfare-department") ? `text-primary font-bold` : "text-gray-500"
                       } hover:text-primary `}
                     >
-                      SWO Department
+                      Student Welfare Department
                     </li>
                   </Link>
                 </ul>

@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutTheDepartment = () => {
   return (
-    <section className="md:pt-10 pb-10 md:pb-20 xl:pt-20 pt-7  max-w-7xl  xl:max-w-[75%] mx-auto text-[#1D1D1F] ">
+    <section className="md:pt-10 pb-10 md:pb-0 xl:pt-20 pt-7  max-w-7xl  xl:max-w-[75%] mx-auto text-[#1D1D1F] ">
       <div className=" px-1 md:px-9 lg:px-10 lg2:px-1">
         <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-[#1D1D1F] pb-6 ">About the Department</h1>
         <p className="text-textGray text-justify text-[20px] ">

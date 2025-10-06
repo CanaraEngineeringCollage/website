@@ -5,7 +5,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import FacultyModal from "@/components/DepartmentComponents/FacultyModal/FacultyModal";
 import { adminStaff, generalStaff } from "@/utils/staffs/staff";
 
-
+import { useSearchParams } from "next/navigation";
 
 
 
@@ -26,13 +26,39 @@ const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
   const base64 = btoa(binary);
   return `data:image/jpeg;base64,${base64}`;
 };
-const FacultyMembersSection: React.FC = ({ facultyData }) => {
-  console.log(facultyData);
+const FacultyMembersSection: React.FC = () => {
+
 
   const [selectedCategory, setSelectedCategory] = useState<string>("faculty");
-  const [selectedDepartment, setSelectedDepartment] = useState<string>("Computer Science & Engineering");
+  const searchParams = useSearchParams();
+const departmentFromQuery = searchParams.get("department");
+
+const [selectedDepartment, setSelectedDepartment] = useState<string>(
+  departmentFromQuery || "Computer Science & Engineering"
+);
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedMember, setSelectedMember] = useState<CouncilMember | null>(null);
+
+
+const [facultyData, setFacultyData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchFaculty() {
+      try {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/faculty`);
+        const data = await res.json();
+        setFacultyData(data);
+      } catch (err) {
+        console.error("Error fetching faculty:", err);
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchFaculty();
+  }, []);
+
 
   const departments = [
     "Computer Science & Engineering",
@@ -48,6 +74,14 @@ const FacultyMembersSection: React.FC = ({ facultyData }) => {
     selectedCategory === "faculty"
       ? facultyData.filter((item) => item.department === selectedDepartment)
       : selectedCategory === "admin"?adminStaff:generalStaff;
+
+
+      useEffect(() => {
+  if (departmentFromQuery) {
+    setSelectedDepartment(departmentFromQuery);
+  }
+}, [departmentFromQuery]);
+
 
   return (
     <section className="px-4 sm:px-6 md:px-10 lg:px-20 py-8 sm:py-10 md:py-16 lg:py-20">

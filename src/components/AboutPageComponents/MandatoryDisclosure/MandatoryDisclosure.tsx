@@ -319,7 +319,7 @@ const MandatoryDisclosure = () => {
                   Depending upon the nature and gravity of the offence as established by the Anti-Ragging Committee of the Institution, the possible
                   punishments for those found guilty of ragging at the institutional level shall be any one or any combination of the following:
                 </p>
-                <ul className="space-y-2 list-decimal pl-5 md:text-lg  text-[14px] leading-7  text-textGray mt-6">
+                <ul className="space-y-2 list-decimal pl-8 md:text-lg  text-[14px] leading-7  text-textGray mt-6">
                   <li>Suspension from attending classes and academic privileges.</li>
                   <li>Withholding / withdrawing scholarship / fellowship and other benefits.</li>
                   <li>Debarring from appearing in any test / examination or other evaluation process.</li>
@@ -338,14 +338,14 @@ const MandatoryDisclosure = () => {
                   </li>
                 </ul>
                 <h2 className="text-lg font-bold text-textGray mt-6 mb-2">Objectives:</h2>
-                <ul className="space-y-2 list-decimal pl-5 md:text-lg  text-[14px] leading-7  text-textGray  ">
+                <ul className="space-y-2 list-decimal pl-8 md:text-lg  text-[14px] leading-7  text-textGray  ">
                   <li>To preserve a culture of ragging-free environment in the college campus by prohibiting it as per law.</li>
                   <li>Preventing its occurrence by following provisions of regulations provided as per law.</li>
                   <li>Design strategies and action plan for curbing the menace of ragging in the college.</li>
                   <li>Punishing those who indulge in ragging as per provisions of the law in force.</li>
                 </ul>
                 <h2 className="text-lg font-bold text-textGray mt-6 mb-2">Outcomes:</h2>
-                <ul className="space-y-2 list-decimal pl-5 md:text-lg  text-[14px] leading-7  text-textGray  ">
+                <ul className="space-y-2 list-disc pl-5 md:text-lg  text-[14px] leading-7  text-textGray  ">
                   <li>Have preserved a ragging free campus with no incidents of ragging been reported so far, in the college and hostel premises.</li>
                 </ul>
                 <h2 className="text-lg font-bold text-textGray mt-6 mb-2">Anti Ragging Committee Organisation Chart</h2>
@@ -740,29 +740,29 @@ const MandatoryDisclosure = () => {
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">Internal Committee</h2>
                   <h2 className="text-lg font-bold text-textGray mb-2">Objectives:</h2>
-                  <ul className="space-y-1  md:text-lg  text-[14px] leading-7  text-textGray" >
-                    <li className="flex gap-2 items-start text-textGray">
+                  <ul className="space-y-1  pl-6   md:text-lg list-disc   text-[14px] leading-7  text-textGray" >
+                    <li className=" items-start text-textGray">
                       To handle and resolve complaints related to harassment and discrimination against women effectively.
                     </li>
-                    <li className="flex gap-2 items-start text-textGray">
+                    <li className=" items-start text-textGray">
                       To raise awareness about women's rights, gender equality, and the prevention of harassment through educational initiatives and
                       campaigns.
                     </li>
-                    <li className="flex gap-2 items-start text-textGray">
+                    <li className=" items-start text-textGray">
                       To offer support, guidance, and counseling to women who have experienced harassment or discrimination, ensuring their well-being
                       and empowerment.
                     </li>
                   </ul>{" "}
                   <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Outcomes:</h2>
-                  <ul className="space-y-1  md:text-lg  text-[14px] leading-7  text-textGray">
-                    <li className="flex gap-2 items-start text-textGray">
+                  <ul className="space-y-1  pl-6   md:text-lg list-disc  text-[14px] leading-7  text-textGray">
+                    <li className="items-start text-textGray">
                       The resolution of complaints ensures a fair and just outcome for all parties involved.
                     </li>
-                    <li className="flex gap-2 items-start text-textGray">
+                    <li className=" items-start text-textGray">
                       Their efforts lead to increased awareness and prevention of harassment and discrimination, fostering a more informed and
                       proactive community.
                     </li>
-                    <li className="flex gap-2 items-start text-textGray">
+                    <li className=" items-start text-textGray">
                       These committees also contribute to the empowerment of women by providing them with support, resources, and guidance, creating a
                       safer and more inclusive environment.
                     </li>

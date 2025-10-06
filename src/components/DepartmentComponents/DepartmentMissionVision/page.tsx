@@ -28,7 +28,7 @@ const DepartmentMissionVision: React.FC<DepartmentMissionVisionProps> = ({
             <div className="flex gap-10 flex-col lg:flex-row text-center lg:text-start items-center">
               <Image src={visionImage1} alt="bookImage" className="max-w-[50px] my-auto" />
               <div>
-                <h3 className=" text-xl text-textGray font-bold">Ethical & Industry-Ready Learning</h3>
+                <h3 className=" text-xl text-textGray font-bold">Industry-Ready Learning</h3>
                 <p className="text-textGray text-[17px]">{ethicalLearning}</p>
               </div>
             </div>

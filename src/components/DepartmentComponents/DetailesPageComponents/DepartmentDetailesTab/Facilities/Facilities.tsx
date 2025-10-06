@@ -33,17 +33,42 @@ const Facilities: React.FC<FacilitiesProps> = ({ data }) => {
     <div className=" text-[#86868B] text-[17px] space-y-8">
       <div>
         <h1 className="text-[20px] mb-2 font-bold">Facilities</h1>
-        <p className="md:text-lg  text-[14px] leading-7  text-textGray">{data.description}</p>
+        <p className="md:text-lg text-justify text-[14px] leading-7 text-textGray">
+  {data.description.split(/(Laboratory)/g).map((part, index) => 
+    part === "Laboratory" ? (
+      <span key={index} className="font-bold">{part}</span>
+    ) : (
+      part
+    )
+  )}
+</p>
+
       </div>
       <div className="space-y-6">
         
         {data.allFacilities.map((facility, idx) => (
             <div key={idx} className="pb-4">
             <h3 className="text-xl font-bold  text-textGray mb-2">{facility.title}</h3>
-            {facility.desc && <p className="mb-2 md:text-lg  text-[14px] leading-7  text-textGray">{facility.desc}</p>}
+            {facility.desc &&<p className="mb-2 md:text-lg text-justify text-[14px] leading-7 text-textGray">
+  {(() => {
+    const splitIndex = facility.desc.indexOf(':'); // find the first colon
+    if (splitIndex !== -1) {
+      const title = facility.desc.slice(0, splitIndex + 1); // include colon
+      const rest = facility.desc.slice(splitIndex + 1); // the rest of the text
+      return (
+        <>
+          <span className="font-bold">{title}</span>{rest}
+        </>
+      );
+    }
+    // If no colon found, just render normally
+    return facility.desc;
+  })()}
+</p>
+}
             {facility.methodes && <p className="mb-2 md:text-lg  text-[14px] leading-7  text-textGray">{facility.methodes}</p>}
             {facility.points && (
-              <ul className="list-disc ml-6 space-y-1 md:text-lg  text-[14px] leading-7  text-textGray">
+              <ul className="list-disc ml-6 space-y-1 md:text-lg text-justify  text-[14px] leading-7  text-textGray">
               {facility.points.map((point, i) => (
                 <li key={i}>{point}</li>
               ))}
@@ -63,7 +88,7 @@ const Facilities: React.FC<FacilitiesProps> = ({ data }) => {
               <div className="mt-2 space-y-2">
               {facility.categories.map((cat, j) => (
                 <div key={j}>
-                <div className=" text-lg font-[600] mb-1">{cat.title}</div>
+                <div className=" text-lg font-[600] text-justify mb-1">{cat.title}</div>
                 <ul className="list-disc font-medium ml-6 space-y-1 text-lg">
                   {cat.items.map((item, k) => (
                   <li key={k}>{item}</li>

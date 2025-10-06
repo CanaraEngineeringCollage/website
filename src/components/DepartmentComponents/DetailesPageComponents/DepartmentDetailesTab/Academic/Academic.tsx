@@ -31,9 +31,9 @@ const Academic = ({ data }: { data?: AcademicProps }) => {
           {data?.academicAdditionalSkills.map((item, index) => (
             <div key={index}>
               <h1 className="text-[20px]  font-bold text-[#86868B] mt-4 mb-2 ">{item.title}</h1>
-              {item.desc && <p className=" text-justify">{item.desc}</p>}
+              {item.desc && <p className="text-[20px] text-justify">{item.desc}</p>}
               {item.points && (
-                <ul className="list-disc pl-5 mb-4 md:text-lg  text-[14px] leading-7  text-textGray">
+                <ul className="list-disc pl-5 mb-4 md:text-lg text-justify  text-[14px] leading-7  text-textGray">
                   {item.points.map((item) => (
                     <li className=" mb-2" key={item}>{item}</li>
                   ))}
@@ -44,7 +44,7 @@ const Academic = ({ data }: { data?: AcademicProps }) => {
           ))}
         </div>
       )}
-      {data?.annualIntake && <p className="font-semibold">Annual Intake: {data?.annualIntake}</p>}
+      {data?.annualIntake && <p className="font-semibold text-[20px]">Annual Intake: {data?.annualIntake}</p>}
     </div>
   );
 };

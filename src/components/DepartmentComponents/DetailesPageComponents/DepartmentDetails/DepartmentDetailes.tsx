@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import grievanceRedressalCell from "../../../../utils/grievanceData/grievanceData.json";
 import { useParams } from "next/navigation";
 import departments from "@/lib/departments.json";
@@ -54,15 +54,33 @@ interface CouncilMember {
 
 // Props interface for the component
 interface DepartmentSectionProps {
-  faculties: CouncilMember[];
+  departmentName: string;
 }
 
-const DepartmentDetailes = ({ faculties }: DepartmentSectionProps) => {
+const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   const { slug } = useParams();
 
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [selectedSection, setSelectedSection] = useState<string>("Department Profile");
- 
+  
+   const [facultyData, setFacultyData] = useState<Faculty[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchFaculty() {
+      try {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/faculty`);
+        const data: Faculty[] = await res.json();
+        const filtered = data.filter((f) => f.department === departmentName);
+        setFacultyData(filtered);
+      } catch (err) {
+        console.error("Error fetching faculty data:", err);
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchFaculty();
+  }, [departmentName]);
   
   const department = departments.find((dept) => dept.slug === slug);
   const departmentMenuItems = [
@@ -112,7 +130,7 @@ const DepartmentDetailes = ({ faculties }: DepartmentSectionProps) => {
             {selectedSection === "Department Profile" && <DepartmentProfile keyPoints={department?.keyPractices} data={department?.description} />}
             {selectedSection === "Organisation Structure" && department?.organisation && <Organaisation data={department?.organisation}/>}
             {selectedSection === "Head of the Department" && <Hod data={department?.depatmentHead} />}
-            {selectedSection === "Faculty & Staff" && <Faculty datam={faculties}/>}
+            {selectedSection === "Faculty & Staff" && <Faculty datam={facultyData}/>}
             {selectedSection === "Academic Programmes" && department?.academicsProgram && <Academic data={department.academicsProgram} />}
             {selectedSection === "PEO & PO-PSO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
             {selectedSection === "Course Outcomes (CO)" && <CourseOutCome />}

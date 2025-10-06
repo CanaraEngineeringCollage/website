@@ -95,31 +95,21 @@ export async function generateStaticParams() {
   return departments.map((dept) => ({ slug: dept.slug }));
 }
 
-export default async function DepartmentPage({ params }: { params: { slug: string } }) {
+export default  function DepartmentPage({ params }: { params: { slug: string } }) {
   const department = departments?.find((dept) => dept?.slug === params?.slug);
 
 
   if (!department) return notFound();
-  console.log(department.faculties);
+ 
 
   // Filter council data as needed
   // const facultyData = councilData.faculty.filter((faculty) => faculty.department === department.name) as CouncilMember[];
   
-  let facultyDataFetched: Faculty[] = [];
-  try {
-    const res = await fetch("https://canaraapi.megamind.studio/faculty");
-    if (!res.ok) throw new Error("Failed to fetch faculty data");
-    const data: Faculty[] = await res.json();
-
-    // Filter faculty for the current department
-    facultyDataFetched = data.filter((faculty) => faculty.department === department.name).slice(0,10);
-  } catch (error) {
-    console.error("Error fetching faculty data:", error);
-  }
+  
 
 
 
-console.log(facultyDataFetched,"fff");
+
 
  
   
@@ -129,7 +119,7 @@ console.log(facultyDataFetched,"fff");
     <>
       <HeroSection departmentName={department.name} wdith={department.width} imageUrl={department.bannerUrl} />
       <section className="px-6 md:px-0 xl:px-0">
-        <AboutTheDepartment departmentName={department.name} aboutTheDepartment={department.departmentAboutDescription} />
+        <AboutTheDepartment departmentName={department.name} aboutTheDepartment={department.departmentAboutDescriptionArray}  />
       </section>
       <section className="">
         <VideoPlayer
@@ -150,7 +140,7 @@ console.log(facultyDataFetched,"fff");
         <DepartmentHeadMessage depatmentHead={department.depatmentHead} />
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0 lg:mt-0 -mt-10">
-        <DepartmentFacultySection faculties={facultyDataFetched} />
+        <DepartmentFacultySection  departmentName={department.name} />
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0 lg:mt-0 -mt-12">
         <IdeasToImpact />

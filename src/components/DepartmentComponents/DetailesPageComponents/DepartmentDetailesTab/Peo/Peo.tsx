@@ -16,7 +16,7 @@ const Peo = ({ data,deptName }:{data:PeoProps;deptName:string}) => {
   return (
     <div className=''>
       {data?.programEducation&&<h1 className="text-[20px] font-bold text-[#86868B] mb-3">Program Educational Objectives (PEO)</h1>}
-      {data?.programEducation&&<ul className="list-disc pl-5 md:text-lg  text-[14px] leading-7 pt-2 text-textGray">
+      {data?.programEducation&&<ul className="list-decimal pl-5 md:text-lg  text-[14px] leading-7 pt-2 text-textGray">
         {data?.programEducation?.map((item, index) => (
           <li key={index} className="mb-2">{item}</li>
         ))}
@@ -43,10 +43,22 @@ const Peo = ({ data,deptName }:{data:PeoProps;deptName:string}) => {
       </ul>
 
     {data?.programSpecific&& <h1 className="text-[20px] font-bold mt-5 mb-2 text-[#86868B]">Program Specific Outcomes (PSO)</h1>}
-      {data?.programSpecific&&<ul className="list-disc pl-5 md:text-lg  text-[14px] leading-7  text-textGray">
-        {data?.programSpecific?.map((item, index) => (
-          <li key={index} className="mb-2">{item}</li>
-        ))}
+      {data?.programSpecific&&<ul className="list-decimal pl-5 md:text-lg  text-[14px] leading-7  text-textGray">
+      {data?.programSpecific?.map((item, index) => {
+          const colonIndex = item.indexOf(':');
+          if (colonIndex !== -1) {
+        const beforeColon = item.slice(0, colonIndex);
+        const afterColon = item.slice(colonIndex + 1);
+        return (
+          <li key={index} className="mb-2">
+            <span className="font-bold">{beforeColon}:</span>
+            {afterColon}
+          </li>
+        );
+          }
+          return <li key={index} className="mb-2">{item}</li>
+         
+        })}
       </ul>}
       
     </div>
