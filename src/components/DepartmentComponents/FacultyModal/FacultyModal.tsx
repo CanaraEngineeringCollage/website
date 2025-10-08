@@ -95,8 +95,12 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                       )}
                       {facultyData.joiningDate && (
                         <div className="flex gap-2">
-                          <span className="font-bold ">Joining Date:</span>
-                          <span>{facultyData.joiningDate}</span>
+                   <span className="font-bold">Joining Date:</span>
+  <span>
+    {facultyData.joiningDate
+      ? new Date(facultyData.joiningDate).toLocaleDateString("en-GB")
+      : "N/A"}
+  </span>
                         </div>
                       )}
                       {facultyData.experience && (

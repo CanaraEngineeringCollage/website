@@ -93,7 +93,7 @@ const DepartmentSection = () => {
             <h1 className="text-2xl sm:text-3xl md:text-[28px] lg:text-[40px]  text-center lg:text-start lg2:text-[36px] xl:text-6xl font-bold text-[#1D1D1F]">
               Goals
             </h1>
-            <p className="text-sm sm:text-base md:text-sm lg:text-[17px] leading-6 sm:leading-7 pt-4 sm:pt-5 pb-6 sm:pb-8 text-[#86868B]">
+            <p className="text-sm sm:text-base md:text-sm lg:text-[17px] leading-6 sm:leading-7 pt-4 sm:pt-5 pb-6 sm:pb-8 text-textGray">
               The Aim of organized physical education, sports and games activities is
               to create an environment that stimulates selected movement experiences
               resulting in desirable responses that contribute to the optimal
@@ -102,7 +102,7 @@ const DepartmentSection = () => {
               activities, the Sports and Games Committee is formed with the following
               objectives:
             </p>
-            <ul className="list-square ml-4 sm:ml-5 text-sm sm:text-base md:text-sm lg:text-lg leading-6 sm:leading-7 text-[#86868B] space-y-2">
+            <ul className="list-square ml-4 sm:ml-5 text-sm sm:text-base md:text-sm lg:text-lg leading-6 sm:leading-7 text-textGray space-y-2">
               {objectives.map((objective, index) => (
                 <li key={index}>{objective}</li>
               ))}
@@ -114,7 +114,7 @@ const DepartmentSection = () => {
             <h1 className="text-2xl sm:text-3xl md:text-[28px] lg:text-[40px] lg2:text-[36px] xl:text-6xl font-bold text-[#1D1D1F] text-center lg:text-start">
               Responsibilities
             </h1>
-            <ul className="list-square ml-4 sm:ml-5 text-sm sm:text-base md:text-sm  lg:text-[17px] leading-6 sm:leading-7 text-[#86868B] space-y-2 pt-4 sm:pt-5">
+            <ul className="list-square ml-4 sm:ml-5 text-sm sm:text-base md:text-sm  lg:text-[17px] leading-6 sm:leading-7 text-textGray space-y-2 pt-4 sm:pt-5">
               {duty.map((responsibility, index) => (
                 <li key={index}>{responsibility}</li>
               ))}

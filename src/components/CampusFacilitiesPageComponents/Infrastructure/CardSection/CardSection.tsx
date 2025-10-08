@@ -74,18 +74,18 @@ function CardContent({ description }: CardContentProps) {
       <div className="p-4 lg:p-0 lg:px-20 space-y-10 text-left text-sm text-[#1D1D1F] bg-white">
         {/* Top Section */}
         <div>
-          {/* {description.date && <p className="text-[16px] font-bold text-[#88888a] mb-5">{description.date}</p>} */}
+          {/* {description.date && <p className="text-[16px] font-bold text-textGray mb-5">{description.date}</p>} */}
 
           {description.topTitle && <h3 className="text-[31px] lg:text-[46px] leading-[1.1] lg:max-w-[70%] mb-5 font-bold">{description.topTitle}</h3>}
 
-          {description.topDescription && <p className="text-xl text-[#88888a]">{description.topDescription}</p>}
+          {description.topDescription && <p className="text-xl text-textGray">{description.topDescription}</p>}
         </div>
 
         {/* Middle Section 1 */}
         <div>
           <h3 className="text-[32px] mb-6 font-bold ">{description.middleTitle}</h3>
-          <h4 className="text-[22px] text-[#88888a] mb-3 font-bold">{description.middleSubTitle}</h4>
-          <p className="text-xl text-[#88888a]">{description.middleDescription}</p>
+          <h4 className="text-[22px] text-textGray mb-3 font-bold">{description.middleSubTitle}</h4>
+          <p className="text-xl text-textGray">{description.middleDescription}</p>
         </div>
         {/* {description.image1 && (
           <Image
@@ -99,13 +99,13 @@ function CardContent({ description }: CardContentProps) {
 
         {/* Middle Section 2 */}
         <div>
-          <h3 className="text-[22px] text-[#88888a] mb-3 font-bold">{description.middleTitle2}</h3>
+          <h3 className="text-[22px] text-textGray mb-3 font-bold">{description.middleTitle2}</h3>
           <p className="text-xl text-textGray">{description.middleDescription2}</p>
         </div>
 
         {/* Middle Section 3 */}
         <div>
-          <h3 className="text-[22px] text-[#88888a] mb-3  font-bold">{description.middleTitle3}</h3>
+          <h3 className="text-[22px] text-textGray mb-3  font-bold">{description.middleTitle3}</h3>
           <ul>
             {description.middleDescription3.map((item, index) => (
               <li key={index} className="text-xl text-textGray">
@@ -127,7 +127,7 @@ function CardContent({ description }: CardContentProps) {
         {/* Middle Section 4 */}
         {/* Middle Section */}
         <div>
-          {description.middleTitle4 && <h3 className="text-[22px] text-[#88888a] mb-2 font-bold">{description.middleTitle4}</h3>}
+          {description.middleTitle4 && <h3 className="text-[22px] text-textGray mb-2 font-bold">{description.middleTitle4}</h3>}
           <ul>
             {description.middleDescription4.map((item, index) => (
               <li key={index} className="text-xl text-textGray">

@@ -8,7 +8,7 @@ const Publications = ({data}:{data:Publication[]}) => {
   console.log(data);
   
   return (
-  <div className=" text-[#86868B] text-[17px]">
+  <div className=" text-textGray text-[17px]">
     {data?.map((pub) => (
       <div key={pub.title} className="mb-8">
         <h2 className="font-bold text-xl mb-3 ">{pub.title}</h2>

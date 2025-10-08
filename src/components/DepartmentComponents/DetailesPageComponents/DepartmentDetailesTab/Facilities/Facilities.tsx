@@ -30,7 +30,7 @@ const Facilities: React.FC<FacilitiesProps> = ({ data }) => {
   console.log(data);
 
   return (
-    <div className=" text-[#86868B] text-[17px] space-y-8">
+    <div className=" text-textGray text-[17px] space-y-8">
       <div>
         <h1 className="text-[20px] mb-2 font-bold">Facilities</h1>
         <p className="md:text-lg text-justify text-[14px] leading-7 text-textGray">

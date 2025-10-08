@@ -117,10 +117,11 @@ export default  function DepartmentPage({ params }: { params: { slug: string } }
 
   return (
     <>
-      <HeroSection departmentName={department.name} wdith={department.width} imageUrl={department.bannerUrl} />
       <section className="px-6 md:px-0 xl:px-0">
-        <AboutTheDepartment departmentName={department.name} aboutTheDepartment={department.departmentAboutDescriptionArray}  />
+        <AboutTheDepartment departmentName={department.name} aboutTheDepartment={department.departmentAboutDescriptionArray} wdith={department.width} imageUrl={department.bannerUrl}    />
       </section>
+      {/* <HeroSection departmentName={department.name} /> */}
+    
       <section className="">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
@@ -128,23 +129,22 @@ export default  function DepartmentPage({ params }: { params: { slug: string } }
           thumbnail={department?.thumbnail}
         />
       </section>
-      <section className="pt-10 lg:mb-20 lg:pt-20">
+    { department.ethicalLearning&& <section className="pt-10 lg:mb-20 lg:pt-20">
         <DepartmentMissionVision
           ethicalLearning={department.ethicalLearning}
-          holisticGrowthResearch={department.holisticGrowthResearch}
-          innovationExcellence={department.innovationExcellence}
+        
           ourVision={department.ourVision}
         />
-      </section>
+      </section>}
       <section className="bg-[#071D2C] px-6 md:px-0 lg:px-0 xl:px-0 md:mt-0 mt-8">
         <DepartmentHeadMessage depatmentHead={department.depatmentHead} />
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0 lg:mt-0 -mt-10">
         <DepartmentFacultySection  departmentName={department.name} />
       </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0 lg:mt-0 -mt-12">
-        <IdeasToImpact />
-      </section>
+     {department.ideas&& <section className="px-6 md:px-12 lg:px-16 xl:px-0 lg:mt-0 -mt-12">
+        <IdeasToImpact ideasData={department.ideas} />
+      </section>}
       <section>
         <SpotlightSection />
       </section>

@@ -95,11 +95,11 @@ const [facultyData, setFacultyData] = useState<any[]>([]);
             </p>
           </div>
           <div className="flex items-center justify-between gap-4">
-            {heading != "Meet Our Admissions Team" && <Link href="/about/educators-administrators"><button
-              aria-label="Meet more of our Faculty"
+            {heading != "Meet Our Admissions Team" && <Link href="/about/educators-administrators?category=placement"><button
+              aria-label="Meet the Team"
               className="bg-[#d0e2f8] text-black text-block  px-6 py-3 rounded-full text-[14px] font-medium "
             >
-              Meet more of our Faculty
+              Meet the Team
             </button></Link>}
             <div className="flex items-center gap-3">
               <button
@@ -238,11 +238,11 @@ const [facultyData, setFacultyData] = useState<any[]>([]);
           ))}
         </div>
         <div className="flex flex-col items-center gap-10">
-          <Link href="/about/educators-administrators"> <button
+          <Link href="/about/educators-administrators?category=placement"> <button
             aria-label="Meet more of our Admin Team"
             className="bg-blue-100 text-black text-block px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition"
           >
-            Meet more of our Faculty
+            Meet the Team
           </button></Link>
           <div className="flex items-center gap-2">
             <button

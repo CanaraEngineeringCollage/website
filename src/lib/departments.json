@@ -9,16 +9,149 @@
     "departmentAboutDescriptionArray": ["Established in 2001, the Department of Computer Science & Engineering offers a robust undergraduate program (B.E. in CSE) and previously offered M.Tech from 2011 to 2021. The department boasts a team of experienced and research-oriented faculty actively engaged in teaching, product development, and publishing in reputed journals and conferences.Regular training sessions, expert talks, and industry interactions help bridge academia and industry. Students are groomed for career success through placement training, technical workshops, and self-learning initiatives like IIT Bombay’s Spoken Tutorial. Active student clubs, annual magazines, and NSS activities promote leadership, innovation, and social responsibility."],
     "description": ["The department, established in 2001, offers a BE in Computer Science & Engineering and previously offered an MTech program (2011–2021). Its dedicated and experienced faculty are actively involved in teaching, research, and product development, with numerous publications in reputed international journals and conferences (IEEE/ACM/Springer). The department regularly organizes training programs for faculty, technical staff, and students, and participates in staff development programs to stay updated with technological advancements. Emphasizing students’ all-round development, the department conducts industry interactions, expert sessions, soft skills and technical training, and self-learning initiatives (Spoken Tutorials by IIT Bombay). Campus placements continue to grow with multinational recruiters. Extracurricular activities are promoted through the students’ association and NSS, and the department publishes an annual technical magazine and newsletter to showcase innovative ideas and current trends in computingSWO department "],
     "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
-    "ethicalLearning": "Provide a value-based learning environment enriched with ethics, honesty and integrity that equips students to cater to the needs of society and industry.",
-    "innovationExcellence": "Augment the knowledge of students towards cutting-edge technologies and state-of-the-art tools of Computer Science & Engineering.",
-    "holisticGrowthResearch": "Create opportunities for all-round development of students through co-curricular and extra-curricular activities.",
+    "ethicalLearning": ["Provide a value-based learning environment enriched with ethics, honesty and integrity that equips students to cater to the needs of society and industry.","Augment the knowledge of students towards cutting-edge technologies and state-of-the-art tools of Computer Science & Engineering.","Create opportunities for all-round development of students through co-curricular and extra-curricular activities.","Promote research, innovation and development activities in the field of Computer Science among staff and students without any bias."],
     "ourVision": "To be recognized as a center of knowledge dissemination in Computer Science and Engineering by imparting value-added education to transform budding minds into competent computer professionals.",
     "depatmentHead": {
       "messageFromtheDepartmentHead": "It gives me pride and pleasure to introduce the department and its Web pages. I hope you will browse our OBE (Outcome Based Education) driven teaching-learning process, student achievements and activities. Our primary goal is to provide quality technical education in Computer Science and Engineering enriched with values. The process of learning is extremely important in life and it plays a crucial role in developing one's intellectual capability, besides career. We follow outcome based teaching-learning process that bridges the theory - practice gap while remaining grounded in the core of computer science and engineering. Nowadays the technology is changing rapidly, especially in the field of computing. To face this challenge, we equip our students for problem-solving and expose them to the state-of-the-art in computer science and information technology. We also work hard to help students to improve their verbal and written communication abilities, analytical thinking, and soft skills so that they may flourish in the corporate world. We believe that, our students who are clear and thorough in computer fundamentals coupled with practical experience can adapt to rapid changes in technology or software industry easily. The department has produced hundreds of competent professionals and has established a name for itself in the region. Thanks to the efforts of our Management, affiliating University (VTU), faculty, alumni, parents and the students.",
-      "name": "Dr.Karthik Pai B H",
+      "name": "Dr. Karthik Pai B H",
       "position": "Professor & HoD",
       "imageUrl": "/departmentImages/departmentHeads/computer-science.webp"
     },
+"gallery":[
+  {
+    "image": "/departmentImages/gallery/cs/1.jpeg"
+  },
+  {
+    "image": "/departmentImages/gallery/cs/2.jpg"
+  },
+  {
+    "image": "/departmentImages/gallery/cs/3.jpg"
+  },
+  {
+    "image": "/departmentImages/gallery/cs/4.jpg"
+  },
+  {
+    "image": "/departmentImages/gallery/cs/5.jpeg"
+  },
+  {
+    "image": "/departmentImages/gallery/cs/6.jpg"
+  },
+   {
+    "image": "/departmentImages/gallery/cs/8.jpg"
+  },
+  {
+    "image": "/departmentImages/gallery/cs/9.jpg"
+  },
+  {
+    "image": "/departmentImages/gallery/cs/10.png"
+  },
+  {
+    "image": "/departmentImages/gallery/cs/11.jpg"
+  },
+  {
+    "image": "/departmentImages/gallery/cs/12.jpg"
+  },
+  {
+    "image": "/departmentImages/gallery/cs/13.jpg"
+  },
+   {
+    "image": "/departmentImages/gallery/cs/14.jpeg"
+  },
+  {
+    "image": "/departmentImages/gallery/cs/15.jpg"
+  },
+  {
+    "image": "/departmentImages/gallery/cs/16.jpg"
+  },
+  {
+    "image": "/departmentImages/gallery/cs/17.jpg"
+  },
+  {
+    "image": "/departmentImages/gallery/cs/18.jpeg"
+  },
+  {
+    "image": "/departmentImages/gallery/cs/19.jpeg"
+  },
+   {
+    "image": "/departmentImages/gallery/cs/21.jpeg"
+  },
+  {
+    "image": "/departmentImages/gallery/cs/22.jpg"
+  },
+  {
+    "image": "/departmentImages/gallery/cs/23.jpg"
+  },
+  {
+    "image": "/departmentImages/gallery/cs/24.png"
+  },
+  {
+    "image": "/departmentImages/gallery/cs/25.png"
+  }
+],
+
+    "events":[
+  {
+    "id": 1,
+    "title": "Data Dive: The SQL Bootcamp Series",
+    "date": "03-09-2025",
+    "image": "",
+    "description": "The sessions were conducted on the following dates:03/09/2025,17/09/2025, and 24/09/2025 from 2:00-4:00 PM in their respective classrooms for 5th semester CSE students. The topics covered were: Design of database, Need of entity relationships, Types of keys & their usage with examples, Cardinality ratio, Creation of library database, SQL queries for managing and retrieving data, Aggregate functions with examples. Dr. Rakshith M D coordinated the event. About 95 students attended the session."
+  },
+  {
+    "id": 2,
+    "title": "TechFest 2025: CodeStorm Challenge",
+    "date": "15-10-2025",
+    "image": "",
+    "description": "A national-level hackathon featuring 200+ participants. Students developed AI-driven applications and IoT prototypes. Organized by the Department of Computer Science and Engineering."
+  },
+  {
+    "id": 3,
+    "title": "AI Seminar: Trends in Machine Learning",
+    "date": "20-11-2025",
+    "image": "",
+    "description": "A guest lecture on modern machine learning frameworks and data ethics. Conducted by Dr. Rakshith M D with 150 attendees across multiple departments."
+  }
+],
+   
+  "ideas":{
+  "placements": [
+    {
+      "percentage": "30%",
+      "title": "Placements & Job Offers",
+      "description": "Higher Number of Students securing Employment/Entrepreneurship",
+      "chartData": [
+        { "year": "2024-25", "total": 100, "placed": 40, "offers": 20 },
+        { "year": "2023-24", "total": 90, "placed": 38, "offers": 18 },
+        { "year": "2022-23", "total": 120, "placed": 70, "offers": 30 }
+      ]
+    }
+  ],
+  "passOutRates": [
+    { "year": "2021-22", "value": 97.52 },
+    { "year": "2019-20", "value": 98.4 },
+    { "year": "2018-19", "value": 99.21 }
+  ],
+  "awards": [
+    {
+      "image": "/departmentImages/IdeaImpact/awards.png",
+      "title": "Awards won in Technical Fest",
+      "subtitle": "During the Academic Year 2023-24"
+    },
+    {
+      "image": "/departmentImages/IdeaImpact/awards.png",
+      "title": "Hackathon Achievements",
+      "subtitle": "National Level Winners 2022-23"
+    },
+    {
+      "image": "/departmentImages/IdeaImpact/awards.png",
+      "title": "Innovative Projects Recognition",
+      "subtitle": "For Excellence in Tech Innovations"
+    }
+  ],
+  "passoutTotlas":"97"
+},
+
+
     "placement": {
       "placementPercentage": "30%",
       "2024-25": {
@@ -1421,8 +1554,12 @@
     "departmentAboutDescription2":"Student development is further strengthened by motivational sessions, placement and career guidance, and active alumni engagement. Students are encouraged to participate in curricular, co-curricular and extra-curricular activities, while outreach initiatives instill a sense of social responsibility. With a strong academic track record and a culture of continuous faculty upskilling, the department ensures excellence in education, innovation, and professional development.",
     "description": ["The Department of Information Science &amp; Engineering is committed to comprehensive student development, fostering enthusiasm for both academic and extracurricular activities. With fully equipped laboratories and a team of highly qualified and experienced faculty members, the department provides an environment conducive to innovation and learning.","Regular seminars, workshops, and expert lectures by industry professionals, along with industry visits, expose students and faculty to the latest trends and practices. To keep pace with evolving technologies, the department also offers specialized add-on courses. A consistent record of academic excellence reflects the department’s dedication to quality education.","Beyond academics, the department organizes motivational talks, placement training, and career guidance programs with active contributions from distinguished alumni. Faculty members continually enhance their knowledge by participating in Faculty Development Programs (FDPs) and seminars in both online and offline modes, ensuring they remain aligned with technological advancements.","Students are encouraged to actively engage in extracurricular activities through the technical/cultural clubs, as well as contribute to society through Social Outreach Programs (SOPs). These initiatives nurture leadership, teamwork, communication, environmental awareness, and a sense of social responsibility."],
     "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
-    "ethicalLearning": "Impart technical skills in the field of Information Science & Engineering.",
-    "innovationExcellence": "Train and transform students to become technological thinkers and facilitate a quality venture which meets the industrial and societal needs.",
+"ethicalLearning" : [
+    "Impart technical skills in the field of Information Science & Engineering.",
+    "Train and transform students to become technological thinkers and facilitate a quality venture which meets the industrial and societal needs.",
+    "Encourage students to become well-rounded in their professional competencies."
+  ],
+      "innovationExcellence": "Train and transform students to become technological thinkers and facilitate a quality venture which meets the industrial and societal needs.",
     "holisticGrowthResearch": "Encourage students to become well-rounded in their professional competencies.",
     "ourVision": "The Department of Information Science and Engineering strives to be a centre of learning in the field of Information Technology to produce globally competent engineers catering to the needs of the industry and society.",
     "depatmentHead": {
@@ -1431,6 +1568,92 @@
       "position": "Professor & HOD",
       "imageUrl": "/departmentImages/departmentHeads/Information Science and Engg.webp"
     },
+  "gallery": [
+  { "image": "/departmentImages/gallery/it/1.jpeg" },
+  { "image": "/departmentImages/gallery/it/2.jpg" },
+  { "image": "/departmentImages/gallery/it/3.jpg" },
+  { "image": "/departmentImages/gallery/it/4.jpg" },
+  { "image": "/departmentImages/gallery/it/5.jpg" },
+  { "image": "/departmentImages/gallery/it/7.jpg" },
+  { "image": "/departmentImages/gallery/it/8.jpg" },
+  { "image": "/departmentImages/gallery/it/9.png" },
+  { "image": "/departmentImages/gallery/it/11.jpeg" },
+  { "image": "/departmentImages/gallery/it/12.jpg" },
+  { "image": "/departmentImages/gallery/it/13.png" },
+  { "image": "/departmentImages/gallery/it/14.jpg" },
+  { "image": "/departmentImages/gallery/it/15.jpg" },
+  { "image": "/departmentImages/gallery/it/16.jpeg" },
+  { "image": "/departmentImages/gallery/it/17.png" },
+  { "image": "/departmentImages/gallery/it/18.jpg" },
+  { "image": "/departmentImages/gallery/it/19.png" },
+  { "image": "/departmentImages/gallery/it/20.jpg" },
+  { "image": "/departmentImages/gallery/it/21.jpg" },
+  { "image": "/departmentImages/gallery/it/22.jpg" },
+  { "image": "/departmentImages/gallery/it/23.png" },
+  { "image": "/departmentImages/gallery/it/24.png" },
+  { "image": "/departmentImages/gallery/it/25.jpg" }
+],
+
+    "events":[
+  {
+    "id": 1,
+    "title": "Data Dive: The SQL Bootcamp Series",
+    "date": "03-09-2025",
+    "image": "",
+    "description": "A hands-on SQL bootcamp for 5th-semester CSE students, focusing on relational database design, key concepts, and SQL queries. The sessions covered database creation, ER modeling, and advanced SQL queries."
+  },
+  {
+    "id": 2,
+    "title": "TechFest 2025: CodeStorm Challenge",
+    "date": "15-10-2025",
+    "image": "",
+    "description": "A national-level hackathon featuring 200+ participants. Students developed AI-driven applications and IoT prototypes. Organized by the Department of Computer Science and Engineering."
+  },
+  {
+    "id": 3,
+    "title": "AI Seminar: Trends in Machine Learning",
+    "date": "20-11-2025",
+    "image": "",
+    "description": "A guest lecture on modern machine learning frameworks and data ethics. Conducted by Dr. Rakshith M D with 150 attendees across multiple departments."
+  }
+],
+   "ideas":{
+  "placements": [
+    {
+      "percentage": "30%",
+      "title": "Placements & Job Offers",
+      "description": "Higher Number of Students securing Employment/Entrepreneurship",
+      "chartData": [
+        { "year": "2024-25", "total": 66, "placed": 47, "offers": 64 },
+        { "year": "2023-24", "total": 61, "placed": 44, "offers": 64 },
+        { "year": "2022-23", "total": 54, "placed": 40, "offers": 96 }
+      ]
+    }
+  ],
+  "passOutRates": [
+    { "year": "2024-25", "value": 100 },
+    { "year": "2023-24", "value": 100 },
+    { "year": "2022-23", "value": 100 }
+  ],
+  "awards": [
+    {
+      "image": "/departmentImages/IdeaImpact/awards.png",
+      "title": "Awards won in Technical Events",
+      "subtitle": "During the Academic Year 2023-24"
+    },
+    {
+      "image": "/departmentImages/IdeaImpact/awards.png",
+      "title": "Hackathon Achievements",
+      "subtitle": "National Level Winners 2022-23"
+    },
+    {
+      "image": "/departmentImages/IdeaImpact/awards.png",
+      "title": "Innovative Projects Recognition",
+      "subtitle": "For Excellence in Tech Innovations"
+    }
+  ],
+  "passoutTotlas":"97"
+},
     "placement": {
       "placementPercentage": "30%",
       "2024-25": {
@@ -2859,16 +3082,68 @@
       }
     ],
     "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
-    "ethicalLearning": "Create conducive environment for overall development of students.",
-    "innovationExcellence": "To enhance student knowledge in cutting-edge technologies & state-of-the-art tools in Computer Science & Engineering, fostering technical excellence & innovation.",
+     "ethicalLearning": [
+    "Create conducive environment for overall development of students.",
+    "Mission 2: Equip the students with technical skills to bridge the gap between academia and industry"
+  ],
+    "innovationExcellence": "Mission 2: Equip the students with technical skills to bridge the gap between academia and industry",
     "holisticGrowthResearch": "",
     "ourVision": "The Department of Electronics and Communication Engineering strives to be a centre of repute by imparting quality education to produce globally competent graduates with human values.",
     "depatmentHead": {
-      "messageFromtheDepartmentHead": "Welcome to the department of Electronics & Communication Engineering at Canara Engineering College. The Department was established in the year 2001 with the aim of providing leadership in the field of Electronics & Communication Engineering. This department has been accredited twice at 2015 and 2019 by National Board of accreditation.Our mission is to develop innovative teaching and learning pedagogies to help the students to conquer new frontiers. Students are trained to work in multidisciplinary teams and motivates both co-curricular and extracurricular activities, for the overall development of its students. The department encourages the students to actively carry out their projects across various areas of Electronics and Communication and to develop their technical and research skills by attending various workshops, conferences, competitions, etc. We have a team of well qualified, experienced, and committed staff members. The Department of ECE has a unique blend of quality conscious staff members with a strong sense of ethical and professional responsibility.The department has excellent lab facilities which are being upgraded from time to time with cutting edge technology tools. Equal importance is given to both hardware and software labs. The department organizes several technical and nontechnical events to prepare the students to fit into industries. The department has several MOU with industries with their help, several activities are conducted for the overall department of students as well as faculty. Our alumni are the backbone of our department. They help the students for the placements and in upgradation of their technical knowledge.Department brings Newsletter Dhwani twice in a year. All the lectures of the subjects are available on college YouTube channel.",
-      "name": "Dr.Raghavendra M Shetty K",
+      "messageFromtheDepartmentHead": "Welcome to the department of Electronics & Communication Engineering at Canara Engineering College. The Department was established in the year 2001 with the aim of providing leadership in the field of Electronics & Communication Engineering. This department has been accredited thrice at 2015 ,2019 and 2025 by National Board of accreditation. Our mission is to develop innovative teaching and learning pedagogies to help the students to conquer new frontiers. Students are trained to work in multidisciplinary teams and motivates both co-curricular and extracurricular activities, for the overall development of its students. The department encourages the students to actively carry out their projects across various areas of Electronics and Communication and to develop their technical and research skills by attending various workshops, conferences, competitions, etc. We have a team of well qualified, experienced, and committed staff members. The Department of ECE has a unique blend of quality conscious staff members with a strong sense of ethical and professional responsibility.The department has excellent lab facilities which are being upgraded from time to time with cutting edge technology tools. Equal importance is given to both hardware and software labs. The department organizes several technical and nontechnical events to prepare the students to fit into industries. The department has several MOU with industries with their help, several activities are conducted for the overall department of students as well as faculty. Our alumni are the backbone of our department. They help the students for the placements and in upgradation of their technical knowledge.Department brings Newsletter Dhwani twice in a year. All the lectures of the subjects are available on college YouTube channel.",
+      "name": "Dr. Raghavendra M Shetty K",
       "position": "Head of the Department",
       "imageUrl": "/departmentImages/departmentHeads/Electronics&CommunicationEngineering.webp"
     },
+ "gallery": [
+  { "image": "/departmentImages/gallery/eee/1.jpg" },
+  { "image": "/departmentImages/gallery/eee/2.jpg" },
+  { "image": "/departmentImages/gallery/eee/3.jpeg" },
+  { "image": "/departmentImages/gallery/eee/4.jpg" },
+  { "image": "/departmentImages/gallery/eee/5.jpg" },
+  { "image": "/departmentImages/gallery/eee/7.jpg" },
+  { "image": "/departmentImages/gallery/eee/9.jpg" },
+  { "image": "/departmentImages/gallery/eee/10.jpg" },
+  { "image": "/departmentImages/gallery/eee/12.jpeg" },
+  { "image": "/departmentImages/gallery/eee/13.jpg" },
+  { "image": "/departmentImages/gallery/eee/14.jpg" },
+  { "image": "/departmentImages/gallery/eee/15.jpg" },
+  { "image": "/departmentImages/gallery/eee/16.jpg" },
+  { "image": "/departmentImages/gallery/eee/17.jpg" },
+  { "image": "/departmentImages/gallery/eee/18.jpg" },
+  { "image": "/departmentImages/gallery/eee/19.jpg" },
+  { "image": "/departmentImages/gallery/eee/20.jpg" },
+  { "image": "/departmentImages/gallery/eee/21.jpeg" },
+  { "image": "/departmentImages/gallery/eee/22.jpg" },
+  { "image": "/departmentImages/gallery/eee/23.jpg" },
+  { "image": "/departmentImages/gallery/eee/24.jpeg" },
+  { "image": "/departmentImages/gallery/eee/25.jpeg" },
+   { "image": "/departmentImages/gallery/eee/26.jpg" }
+],
+    "events":[
+  {
+    "id": 1,
+    "title": "Data Dive: The SQL Bootcamp Series",
+    "date": "03-09-2025",
+    "image": "",
+    "description": "A hands-on SQL bootcamp for 5th-semester CSE students, focusing on relational database design, key concepts, and SQL queries. The sessions covered database creation, ER modeling, and advanced SQL queries."
+  },
+  {
+    "id": 2,
+    "title": "TechFest 2025: CodeStorm Challenge",
+    "date": "15-10-2025",
+    "image": "",
+    "description": "A national-level hackathon featuring 200+ participants. Students developed AI-driven applications and IoT prototypes. Organized by the Department of Computer Science and Engineering."
+  },
+  {
+    "id": 3,
+    "title": "AI Seminar: Trends in Machine Learning",
+    "date": "20-11-2025",
+    "image": "",
+    "description": "A guest lecture on modern machine learning frameworks and data ethics. Conducted by Dr. Rakshith M D with 150 attendees across multiple departments."
+  }
+],
+   
     "placement": {
       "placementPercentage": "30%",
       "2024-25": {
@@ -2980,7 +3255,7 @@
             "Stellaris Based Development Setup",
             "VIRTEX-6 FPGA Based Development Setup"
           ],
-          "imageUrl": "sshttps://www.canaraengineering.in/departments/is/facilities/Project%20Lab(ISEL04)_400.jpg"
+          "imageUrl": ""
         },
         {
           "title": "Software Lab I-VLSI Lab/Computer Networks Lab",
@@ -2994,7 +3269,7 @@
             "Electric software",
             "NCTUNS software"
           ],
-          "imageUrl": "sshttps://www.canaraengineering.in/departments/is/facilities/Project%20Lab(ISEL04)_400.jpg"
+          "imageUrl": ""
         },
         {
           "title": "Software Lab II-DSP Lab/Embedded Controller Lab",
@@ -3008,7 +3283,7 @@
             "Interfacing Kits",
             "TMS DSP Processor kits"
           ],
-          "imageUrl": "sshttps://www.canaraengineering.in/departments/is/facilities/Project%20Lab(ISEL04)_400.jpg"
+          "imageUrl": ""
         },
         {
           "title": "Software Lab III-Microprocessor Lab/HDL Controller Lab",
@@ -3025,7 +3300,7 @@
             "Interfacing Kits",
             "100Mbps Internet"
           ],
-          "imageUrl": "sshttps://www.canaraengineering.in/departments/is/facilities/CodeNest%20Lab(ISEL05)_400.jpg"
+          "imageUrl": ""
         },
         {
           "title": "Research/Project Lab",
@@ -3046,7 +3321,7 @@
             "Class rooms are spacious with comfortable seating arrangements.",
             "All the class rooms are equipped with LCD projectors."
           ],
-          "imageUrl": "sshttps://www.canaraengineering.in/departments/is/facilities/CodeNest%20Lab(ISEL05)_400.jpg"
+          "imageUrl": ""
         },
         {
           "title": "Seminar Hall",
@@ -3057,14 +3332,14 @@
             "Seminar hall is used for conducting short term courses, guest lecturers, FDP etc.",
             "Seminar hall is well ventilated and illuminated."
           ],
-          "imageUrl": "sshttps://www.canaraengineering.in/departments/is/facilities/CodeNest%20Lab(ISEL05)_400.jpg"
+          "imageUrl": ""
         },
         {
           "title": "Tutorial Room",
           "desc": "Department has a tutorial room with a seating capacity of 20 students with LCD projector for conducting tutorial classes.",
           "methodes": "",
           "points": [],
-          "imageUrl": "sshttps://www.canaraengineering.in/departments/is/facilities/CodeNest%20Lab(ISEL05)_400.jpg"
+          "imageUrl": ""
         }
       ]
     },
@@ -4298,16 +4573,131 @@
 
     "description": ["The department was started in the year 2021 to offer under graduate degree programme i.e. Bachelor of Engineering (BE) in Computer Science & Design (CS&D). The department has dedicated, qualified and experienced faculty members to guide the students in academics. The faculty members are actively involved in teaching, product development and research. The faculty members have published number of researchpapers/articles in referred International journals and reputed International conferences which are archived at IEEE, Springer-Nature and other renowned digital libraries. The faculty frequently attends staff development programmes (SDP/FDP/Seminar) to update themselves in technological advancements and conferences to present research findings.The department aims at building the students’ career by placing special emphasis on all-round development through continuous interaction with Industry. Interactive sessions with experts from academia, research laboratories and industry are constantly held so as to enable students to gain knowledge on diverse and emerging fields. The campus placement has been scaling higher and higher peaks right from its inception with multinational companies recruiting students in large numbers. To increase the opportunity of placements to students, the department conducts soft skills training programmes, technical skill development activities and initiatives on self-learning (Spoken Tutorial programmes by IIT Bombay, and Certification Courses by ICT Academy). The department brings out Bi-Annual newsletter which provides an opportunity for the students and staff to publish innovative ideas, programming tips and articles on current trends in computing and technology. The National Service Scheme (NSS) wing frequently conducts various programmes to strengthen leadership skills, teamwork, and communication; and awareness on protection of environment and social responsibilities."],
     "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
-    "ethicalLearning": "Provide the environment to become industry ready Professionals, Researchers and Entrepreneurs by offering emerging courses.",
+   "ethicalLearning": [
+    "Provide the environment to become industry ready Professionals, Researchers and Entrepreneurs by offering emerging courses.",
+    "Imparting experiential learning to gain proficiency in contemporary software and design tools to meet the current demands of the industries.",
+    "Develop teamwork and problem-solving abilities, foster lifelong learning and instill sense of ethical and societal responsibility among students."
+  ],
     "innovationExcellence": "Imparting experiential learning to gain proficiency in contemporary software and design tools to meet the current demands of the industries.",
     "holisticGrowthResearch": "Develop teamwork and problem-solving abilities, foster lifelong learning and instill sense of ethical and societal responsibility among students.",
     "ourVision": "To be a globally competent center in Computer Science and Design committed to produce a pool of knowledgeable engineers to extend solutions for the mankind in the field of software and design.",
     "depatmentHead": {
       "messageFromtheDepartmentHead": "The Department Computer Science and Design (CSD) aims to produce adaptable software developers who are experienced with emerging media technologies and design approaches as well as knowledgeable in computing approaches, tools, and technologies. Students who complete this degree are well-prepared for a wide range of employment in fields like entertainment, the arts, games, digital analytics, mobile application development, web/product design, cyber security, multimedia, and other interactive industries all over the world. The department is committed to giving students a best education and a promising future, which is supported by its upper edge teaching staff, excellent facilities, and Training & Placement Cell. We strongly promote innovation in research, education, and service to the profession, the local community, and industry. As we take the department of Computer Science & Design to new heights, I cordially invite you to join us in our endeavours. A successful academic career is my final wish for all the students and faculty.",
-      "name": "Dr.Praahas Amin",
+      "name": "Dr. Praahas Amin",
       "position": "Head of the Department",
       "imageUrl": "/departmentImages/departmentHeads/ComputerScienceDesign.webp"
     },
+    "gallery":[
+  { "image": "/departmentImages/gallery/csd/1.png" },
+  { "image": "/departmentImages/gallery/csd/2.jpg" },
+  { "image": "/departmentImages/gallery/csd/3.jpg" },
+  { "image": "/departmentImages/gallery/csd/4.jpg" },
+  { "image": "/departmentImages/gallery/csd/5.png" },
+  { "image": "/departmentImages/gallery/csd/6.jpg" },
+  { "image": "/departmentImages/gallery/csd/7.png" },
+  { "image": "/departmentImages/gallery/csd/8.jpg" },
+  { "image": "/departmentImages/gallery/csd/9.jpg" },
+  { "image": "/departmentImages/gallery/csd/11.jpg" },
+  { "image": "/departmentImages/gallery/csd/12.jpg" },
+  { "image": "/departmentImages/gallery/csd/13.jpeg" },
+  { "image": "/departmentImages/gallery/csd/14.jpg" },
+  { "image": "/departmentImages/gallery/csd/15.jpeg" },
+  { "image": "/departmentImages/gallery/csd/16.jpg" },
+  { "image": "/departmentImages/gallery/csd/17.jpeg" },
+  { "image": "/departmentImages/gallery/csd/18.jpg" },
+  { "image": "/departmentImages/gallery/csd/19.png" },
+  { "image": "/departmentImages/gallery/csd/20.jpg" },
+  { "image": "/departmentImages/gallery/csd/21.png" },
+  { "image": "/departmentImages/gallery/csd/22.jpg" },
+  { "image": "/departmentImages/gallery/csd/23.jpg" },
+  { "image": "/departmentImages/gallery/csd/24.jpeg" },
+  { "image": "/departmentImages/gallery/csd/25.jpg" },
+  { "image": "/departmentImages/gallery/csd/26.jpg" },
+  { "image": "/departmentImages/gallery/csd/27.jpg" },
+  { "image": "/departmentImages/gallery/csd/28.jpg" },
+  { "image": "/departmentImages/gallery/csd/29.jpg" },
+  { "image": "/departmentImages/gallery/csd/30.png" },
+  { "image": "/departmentImages/gallery/csd/31.jpg" },
+  { "image": "/departmentImages/gallery/csd/32.jpeg" },
+  { "image": "/departmentImages/gallery/csd/33.jpg" },
+  { "image": "/departmentImages/gallery/csd/34.jpg" },
+  { "image": "/departmentImages/gallery/csd/35.jpg" },
+  { "image": "/departmentImages/gallery/csd/36.jpg" },
+  { "image": "/departmentImages/gallery/csd/38.jpg" },
+  { "image": "/departmentImages/gallery/csd/39.jpg" },
+  { "image": "/departmentImages/gallery/csd/40.jpg" },
+  { "image": "/departmentImages/gallery/csd/41.png" },
+  { "image": "/departmentImages/gallery/csd/42.jpg" },
+  { "image": "/departmentImages/gallery/csd/43.png" },
+  { "image": "/departmentImages/gallery/csd/44.jpg" },
+    { "image": "/departmentImages/gallery/csd/45.jpg" },
+  { "image": "/departmentImages/gallery/csd/46.jpg" },
+  { "image": "/departmentImages/gallery/csd/47.jpg" },
+  { "image": "/departmentImages/gallery/csd/48.jpg" },
+  { "image": "/departmentImages/gallery/csd/49.jpeg" },
+   { "image": "/departmentImages/gallery/csd/50.png" },
+  { "image": "/departmentImages/gallery/csd/51.jpeg" }
+],
+
+    "events":[
+  {
+    "id": 1,
+    "title": "Data Dive: The SQL Bootcamp Series",
+    "date": "03-09-2025",
+    "image": "",
+    "description": "A hands-on SQL bootcamp for 5th-semester CSE students, focusing on relational database design, key concepts, and SQL queries. The sessions covered database creation, ER modeling, and advanced SQL queries."
+  },
+  {
+    "id": 2,
+    "title": "TechFest 2025: CodeStorm Challenge",
+    "date": "15-10-2025",
+    "image": "",
+    "description": "A national-level hackathon featuring 200+ participants. Students developed AI-driven applications and IoT prototypes. Organized by the Department of Computer Science and Engineering."
+  },
+  {
+    "id": 3,
+    "title": "AI Seminar: Trends in Machine Learning",
+    "date": "20-11-2025",
+    "image": "",
+    "description": "A guest lecture on modern machine learning frameworks and data ethics. Conducted by Dr. Rakshith M D with 150 attendees across multiple departments."
+  }
+],
+"ideas":{
+  "placements": [
+    {
+      "percentage": "30%",
+      "title": "Placements & Job Offers",
+      "description": "Higher Number of Students securing Employment/Entrepreneurship",
+      "chartData": [
+        { "year": "2024-25", "total": 100, "placed": 40, "offers": 20 },
+        { "year": "2023-24", "total": 90, "placed": 38, "offers": 18 },
+        { "year": "2022-23", "total": 120, "placed": 70, "offers": 30 }
+      ]
+    }
+  ],
+  "passOutRates": [
+    { "year": "2021-22", "value": 97.52 },
+    { "year": "2019-20", "value": 98.4 },
+    { "year": "2018-19", "value": 99.21 }
+  ],
+  "awards": [
+    {
+      "image": "/departmentImages/IdeaImpact/awards.png",
+      "title": "Awards won in Technical Fest",
+      "subtitle": "During the Academic Year 2023-24"
+    },
+    {
+      "image": "/departmentImages/IdeaImpact/awards.png",
+      "title": "Hackathon Achievements",
+      "subtitle": "National Level Winners 2022-23"
+    },
+    {
+      "image": "/departmentImages/IdeaImpact/awards.png",
+      "title": "Innovative Projects Recognition",
+      "subtitle": "For Excellence in Tech Innovations"
+    }
+  ]
+},
     "placement": {
       "placementPercentage": "30%",
       "2024-25": {
@@ -5550,7 +5940,11 @@
 
     "description": ["Greetings from the department of Computer Science and Business Systems (CSBS). The Department of Computer Science and Business System (CSBS) aims to meet the growing demand for engineering talent with technological skills. This innovative program provides a well-rounded education that blends technical skills in Computer Science with a strong foundation in the Humanities, Management, and Business Strategies. Students will gain practical experience in emerging technologies like Analytics, Machine Learning, Cloud Computing, and IoT, preparing them for successful careers in today's tech-driven world.The Department provides students with a top-quality education that equips them for a bright future. Our commitment is supported by our exceptional teaching staff, state-of-the-art facilities, and dedicated Training & Placement Cell. We strongly encourage innovation in research, education, and community engagement. In this regard, it gives me immense pleasure to invite you all to be part of the Department of Computer Science and Business System to take it to greater heights."],
     "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
-    "ethicalLearning": "To provide a learning environment endowed with competence and expertise in Computer Science and Business System education.",
+    "ethicalLearning": [
+    "To provide a learning environment endowed with competence and expertise in Computer Science and Business System education.",
+    "To promote a culture of entrepreneurship and innovation among students by disseminating knowledge and best practices in the domain.",
+    "To create opportunities for all-round development of students through co-curricular activities and extra-curricular activities and foster lifelong learning."
+  ],
     "innovationExcellence": "To promote a culture of entrepreneurship and innovation among students by disseminating knowledge and best practices in the domain",
     "holisticGrowthResearch": "To create opportunities for all-round development of students through co-curricular activities and extra-curricular activities and foster lifelong learning.",
     "ourVision": "To be recognized as a centre of excellence in Computer Science and Business System producing a pool of engineers through advanced knowledge and innovation in analysis, computation and solution of real time problems of mankind.",
@@ -5560,6 +5954,110 @@
       "position": "Professor & HoD",
       "imageUrl": "/departmentImages/departmentHeads/ComputerScience&BusinessSystem.webp"
     },
+    "gallery":[
+  { "image": "/departmentImages/gallery/csb/1.jpg" },
+  { "image": "/departmentImages/gallery/csb/2.jpg" },
+  { "image": "/departmentImages/gallery/csb/3.jpeg" },
+  { "image": "/departmentImages/gallery/csb/4.jpeg" },
+  { "image": "/departmentImages/gallery/csb/5.png" },
+  { "image": "/departmentImages/gallery/csb/6.png" },
+  { "image": "/departmentImages/gallery/csb/7.png" },
+  { "image": "/departmentImages/gallery/csb/8.jpg" },
+  { "image": "/departmentImages/gallery/csb/9.png" },
+  { "image": "/departmentImages/gallery/csb/10.png" },
+  { "image": "/departmentImages/gallery/csb/11.jpeg" },
+  { "image": "/departmentImages/gallery/csb/12.jpg" },
+  { "image": "/departmentImages/gallery/csb/13.jpeg" },
+  { "image": "/departmentImages/gallery/csb/14.jpg" },
+  { "image": "/departmentImages/gallery/csb/15.jpg" },
+  { "image": "/departmentImages/gallery/csb/16.jpg" },
+  { "image": "/departmentImages/gallery/csb/17.jpg" },
+  { "image": "/departmentImages/gallery/csb/18.jpg" },
+  { "image": "/departmentImages/gallery/csb/19.png" },
+  { "image": "/departmentImages/gallery/csb/20.jpg" },
+  { "image": "/departmentImages/gallery/csb/21.jpg" },
+  { "image": "/departmentImages/gallery/csb/22.jpeg" },
+
+  { "image": "/departmentImages/gallery/csb/24.jpeg" },
+  { "image": "/departmentImages/gallery/csb/25.jpg" },
+  { "image": "/departmentImages/gallery/csb/26.jpg" },
+  { "image": "/departmentImages/gallery/csb/27.jpg" },
+  { "image": "/departmentImages/gallery/csb/28.jpg" },
+  { "image": "/departmentImages/gallery/csb/29.jpeg" },
+  { "image": "/departmentImages/gallery/csb/30.jpeg" },
+  { "image": "/departmentImages/gallery/csb/32.jpg" },
+  { "image": "/departmentImages/gallery/csb/33.jpeg" },
+  { "image": "/departmentImages/gallery/csb/34.jpg" },
+  { "image": "/departmentImages/gallery/csb/36.jpg" },
+  { "image": "/departmentImages/gallery/csb/37.jpg" },
+  { "image": "/departmentImages/gallery/csb/38.jpg" },
+  { "image": "/departmentImages/gallery/csb/39.jpeg" },
+  { "image": "/departmentImages/gallery/csb/40.jpg" },
+  { "image": "/departmentImages/gallery/csb/41.jpg" },
+  { "image": "/departmentImages/gallery/csb/42.jpg" },
+  { "image": "/departmentImages/gallery/csb/43.png" },
+  { "image": "/departmentImages/gallery/csb/44.jpg" }
+],
+    "events":[
+  {
+    "id": 1,
+    "title": "Data Dive: The SQL Bootcamp Series",
+    "date": "03-09-2025",
+    "image": "",
+    "description": "A hands-on SQL bootcamp for 5th-semester CSE students, focusing on relational database design, key concepts, and SQL queries. The sessions covered database creation, ER modeling, and advanced SQL queries."
+  },
+  {
+    "id": 2,
+    "title": "TechFest 2025: CodeStorm Challenge",
+    "date": "15-10-2025",
+    "image": "",
+    "description": "A national-level hackathon featuring 200+ participants. Students developed AI-driven applications and IoT prototypes. Organized by the Department of Computer Science and Engineering."
+  },
+  {
+    "id": 3,
+    "title": "AI Seminar: Trends in Machine Learning",
+    "date": "20-11-2025",
+    "image": "",
+    "description": "A guest lecture on modern machine learning frameworks and data ethics. Conducted by Dr. Rakshith M D with 150 attendees across multiple departments."
+  }
+],
+   "ideas":{
+  "placements": [
+    {
+      "percentage": "30%",
+      "title": "Placements & Job Offers",
+      "description": "Higher Number of Students securing Employment/Entrepreneurship",
+      "chartData": [
+        { "year": "2024-25", "total": 100, "placed": 40, "offers": 20 },
+        { "year": "2023-24", "total": 90, "placed": 38, "offers": 18 },
+        { "year": "2022-23", "total": 120, "placed": 70, "offers": 30 }
+      ]
+    }
+  ],
+  "passOutRates": [
+    { "year": "2021-22", "value": 97.52 },
+    { "year": "2019-20", "value": 98.4 },
+    { "year": "2018-19", "value": 99.21 }
+  ],
+  "awards": [
+    {
+      "image": "/departmentImages/IdeaImpact/awards.png",
+      "title": "Awards won in Technical Fest",
+      "subtitle": "During the Academic Year 2023-24"
+    },
+    {
+      "image": "/departmentImages/IdeaImpact/awards.png",
+      "title": "Hackathon Achievements",
+      "subtitle": "National Level Winners 2022-23"
+    },
+    {
+      "image": "/departmentImages/IdeaImpact/awards.png",
+      "title": "Innovative Projects Recognition",
+      "subtitle": "For Excellence in Tech Innovations"
+    }
+  ],
+  "passoutTotlas":"97"
+},
     "placement": {
       "placementPercentage": "30%",
       "2024-25": {
@@ -6817,18 +7315,177 @@
     "departmentAboutDescription": "Established in 2021, the Department of AIML offers a B.E. program focused on cutting-edge technologies driving today’s digital transformation. With applications across healthcare, robotics, finance, and more, the curriculum equips students with strong foundations in AI, ML, data science, computer vision, and programming.The department emphasizes industry readiness through technical training, soft skills development, and self-paced certifications via platforms like SWAYAM, Coursera, and edX. Faculty and students are actively involved in research and continuous upskilling. Extracurricular and club activities further support holistic growth and strong placement outcomes.",
         "departmentAboutDescriptionArray": ["Established in 2021, the Department of AIML offers a B.E. program focused on cutting-edge technologies driving today’s digital transformation. With applications across healthcare, robotics, finance, and more, the curriculum equips students with strong foundations in AI, ML, data science, computer vision, and programming.The department emphasizes industry readiness through technical training, soft skills development, and self-paced certifications via platforms like SWAYAM, Coursera, and edX. Faculty and students are actively involved in research and continuous upskilling. Extracurricular and club activities further support holistic growth and strong placement outcomes."],
 
-    "description": ["The department was established in 2021 to offer an undergraduate degree program, the Bachelor of Engineering (BE) in Artificial Intelligence and Machine Learning (AIML). AIML is at the forefront of computer science, expanding rapidly into sectors such as healthcare, security, entertainment, education, autonomous transportation, robotics, space exploration, speech processing, and stock trading, among others. The pervasive influence of artificial intelligence has profoundly impacted our lives.AI aims to emulate human intelligence, imparting cognitive abilities to robots. Machine learning (ML), a subset of AI, enables machines to learn autonomously. The emergence of AI and ML has generated numerous career opportunities and is a pivotal driver of digital transformation, creating a high demand for skilled engineers proficient in these technologies. Graduates of this program possess a highly valuable degree, opening doors to employment across various industries. The curriculum emphasizes core competencies in mathematics, network architectures, computer vision, Computer programming, communication networks, machine learning, Artificial Intelligence, and Data Science equipping students to develop intelligent applications that address societal and national needs.The department actively conducts skill enhancement training programs for both faculty and students, fostering technological advancements and disseminating research findings. It offers soft skills training, technical skill development activities, and encourages self-learning through certification courses available on prominent online platforms (SWAYAM-NPTEL, Coursera, Udemy, edX), as well as extracurricular engagements facilitated by various clubs, aimed at enhancing placement opportunities and fostering overall personality development."],
+    "description": [
+  "The department was established in 2021 to offer an undergraduate degree program, the Bachelor of Engineering (BE) in Artificial Intelligence and Machine Learning (AIML). AIML is at the forefront of computer science, expanding rapidly into sectors such as healthcare, security, entertainment, education, autonomous transportation, robotics, space exploration, speech processing, and stock trading, among others. The pervasive influence of artificial intelligence has profoundly impacted our lives.",
+  "AI aims to emulate human intelligence, imparting cognitive abilities to robots. Machine learning (ML), a subset of AI, enables machines to learn autonomously. The emergence of AI and ML has generated numerous career opportunities and is a pivotal driver of digital transformation, creating a high demand for skilled engineers proficient in these technologies. Graduates of this program possess a highly valuable degree, opening doors to employment across various industries.",
+  "The curriculum emphasizes core competencies in mathematics, network architectures, computer vision, computer programming, communication networks, machine learning, artificial intelligence, and data science, equipping students to develop intelligent applications that address societal and national needs.",
+  "The department actively conducts skill enhancement training programs for both faculty and students, fostering technological advancements and disseminating research findings. It offers soft skills training, technical skill development activities, and encourages self-learning through certification courses available on prominent online platforms (SWAYAM-NPTEL, Coursera, Udemy, edX), as well as extracurricular engagements facilitated by various clubs, aimed at enhancing placement opportunities and fostering overall personality development."
+],
     "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
-    "ethicalLearning": "To impart skill-based (Artificial Intelligence and Machine Learning) education through a competent teaching-learning process.",
-    "innovationExcellence": "To establish a Research, Innovation and Start-up ecosystem that provides solutions for technological challenges of industry, society and the nation.",
-    "holisticGrowthResearch": "To set-up an industry-institute interface for overall development of students through practical internship and team work activities.",
-    "ourVision": "To be identified as a Learning Centre in the domain of Artificial Intelligence and Machine Learning education that delivers competent and professional engineers to meet the needs of Industry, Society and the Nation.",
+    "ethicalLearning": [
+    "To impart skill-based (Artificial Intelligence and Machine Learning) education through a competent teaching-learning process.",
+    "To establish a Research, Innovation and Start-up ecosystem that provides solutions for technological challenges of industry, society and the nation.",
+    "To set-up an industry-institute interface for overall development of students through practical internship and teamwork activities."
+  ],
+  "ourVision": "To be identified as a Learning Centre in the domain of Artificial Intelligence and Machine Learning education that delivers competent and professional engineers to meet the needs of Industry, Society and the Nation.",
     "depatmentHead": {
       "messageFromtheDepartmentHead": "Greetings from the department of Artificial Intelligence and Machine Learning(AI&ML).It gives me immense pleasure to introduce the department and its Web pages. With the rapid growth of the technology development in the world, the artificial intelligent systems are becoming a part of life. Therefore, the main goal of the Artificial Intelligence and Machine Learning (AIML) department is to give high-quality technical education in the field of Artificial Intelligence and Machine Learning. The development of intellectual skills that support the growth of career advancement depends on lifelong learning. To improve students' abilities and understanding in the field of computer science and its cutting-edge technologies, we adopt an outcome-based teaching and learning process (AI&ML). Nowadays, with the rapid growth of internet usage from large scale industries to small scale industries and from urban to rural areas due to availability of internet with high-speed broadband, the users have adopted internet as a part of life. With the use of the internet and advanced technologies, the society is consequently facing numerous challenges. The department focuses on these issues, helps students and staff members comprehend them, and inspires them to develop technology solutions to deal with these challenges. We encourage and support the students and staff members of department in research, innovations and entrepreneurship activities to provide technological solutions to the relevant challenges of society. We are confident that our students, who have a solid understanding of computer basics and real-world experience, will be able to quickly adjust to changes in technology or the software business. In this regard, it gives me immense pleasure to invite you all to be part of Artificial Intelligence and Machine Learning Department to take it to the greater hights.One machine can do the work of fifty ordinary men. No machine can do the work of one extraordinary man. - Elbert Hubbard (Author). Therefore, become an extraordinary man and I wish you all the best and have great academic careers.",
       "name": "Dr. Basappa B Kodada",
       "position": "Head of the Department",
       "imageUrl": "/departmentImages/departmentHeads/aiml.webp"
     },
+"careerProspects":[
+  {
+  "title": "Career Prospects and Market Opportunities",
+  "marketOverview": "The global Artificial Intelligence market is projected to grow from USD 58.3 billion in 2021 to USD 309.6 billion by 2026, with a Compound Annual Growth Rate (CAGR) of 39.7% during this period. This rapid expansion is impacting all sectors of hardware and software services. Virtually every industry is affected by Artificial Intelligence (AI), creating thousands of job opportunities for qualified engineers specializing in AI and Machine Learning (ML).",
+  "careerOpportunities": "A degree in Artificial Intelligence and Machine Learning can lead to diverse career opportunities across industries such as manufacturing, logistics, aviation, healthcare, and finance. It offers enhanced employment prospects for individuals with strong foundational knowledge in data structures, robust problem-solving skills, and proficiency in essential concepts like data mining, deep learning, neural networks, predictive modelling, and popular data science tools such as R, Python, and NumPy.",
+  "roles": [
+    "Data Analyst",
+    "Data Science Specialist",
+    "Business Analyst",
+    "Data Engineer",
+    "Data Scientist",
+    "AI/ML Engineer",
+    "Business Intelligence Engineer",
+    "Research Scientist",
+    "Software Engineer",
+    "System Analyst"
+  ],
+  "roleDescription": "These roles require hands-on experience and proficiency in applying AI and ML techniques to solve complex problems, driving innovation and efficiency across various domains."
+}
+
+],
+ "gallery":[
+  { "image": "/departmentImages/gallery/ai/1.jpg" },
+  { "image": "/departmentImages/gallery/ai/2.jpg" },
+  { "image": "/departmentImages/gallery/ai/3.jpeg" },
+  { "image": "/departmentImages/gallery/ai/4.jpeg" },
+  { "image": "/departmentImages/gallery/ai/5.jpg" },
+  { "image": "/departmentImages/gallery/ai/6.png" },
+  { "image": "/departmentImages/gallery/ai/7.png" },
+  { "image": "/departmentImages/gallery/ai/8.jpg" },
+  { "image": "/departmentImages/gallery/ai/9.jpg" },
+  { "image": "/departmentImages/gallery/ai/10.jpg" },
+  { "image": "/departmentImages/gallery/ai/11.jpeg" },
+  { "image": "/departmentImages/gallery/ai/12.jpg" },
+  { "image": "/departmentImages/gallery/ai/13.jpg" },
+  { "image": "/departmentImages/gallery/ai/14.jpg" },
+  { "image": "/departmentImages/gallery/ai/15.jpg" },
+  { "image": "/departmentImages/gallery/ai/16.jpg" },
+  { "image": "/departmentImages/gallery/ai/17.jpeg" },
+  { "image": "/departmentImages/gallery/ai/18.jpg" },
+  { "image": "/departmentImages/gallery/ai/20.jpeg" },
+  { "image": "/departmentImages/gallery/ai/21.jpg" },
+  { "image": "/departmentImages/gallery/ai/22.jpg" },
+  { "image": "/departmentImages/gallery/ai/23.jpg" },
+  { "image": "/departmentImages/gallery/ai/24.jpg" },
+  { "image": "/departmentImages/gallery/ai/25.jpg" },
+  { "image": "/departmentImages/gallery/ai/26.jpg" },
+  { "image": "/departmentImages/gallery/ai/27.jpg" },
+  { "image": "/departmentImages/gallery/ai/28.jpg" },
+  { "image": "/departmentImages/gallery/ai/29.png" },
+  { "image": "/departmentImages/gallery/ai/30.jpg" },
+  { "image": "/departmentImages/gallery/ai/31.jpg" },
+  { "image": "/departmentImages/gallery/ai/33.jpg" },
+  { "image": "/departmentImages/gallery/ai/34.jpg" },
+  { "image": "/departmentImages/gallery/ai/35.jpg" },
+  { "image": "/departmentImages/gallery/ai/36.jpeg" },
+  { "image": "/departmentImages/gallery/ai/38.jpg" },
+  { "image": "/departmentImages/gallery/ai/39.jpg" },
+  { "image": "/departmentImages/gallery/ai/40.jpg" },
+  { "image": "/departmentImages/gallery/ai/42.jpg" },
+  { "image": "/departmentImages/gallery/ai/43.jpg" },
+  { "image": "/departmentImages/gallery/ai/44.png" },
+  { "image": "/departmentImages/gallery/ai/45.jpg" },
+
+
+   { "image": "/departmentImages/gallery/ai/46.png" },
+  { "image": "/departmentImages/gallery/ai/48.jpg" },
+  { "image": "/departmentImages/gallery/ai/49.jpg" },
+  { "image": "/departmentImages/gallery/ai/50.jpg" },
+  { "image": "/departmentImages/gallery/ai/51.jpg" },
+  { "image": "/departmentImages/gallery/ai/52.jpg" },
+  { "image": "/departmentImages/gallery/ai/53.jpg" },
+  { "image": "/departmentImages/gallery/ai/54.jpg" },
+  { "image": "/departmentImages/gallery/ai/55.jpg" },
+  { "image": "/departmentImages/gallery/ai/56.jpg" },
+  { "image": "/departmentImages/gallery/ai/57.jpg" },
+    { "image": "/departmentImages/gallery/ai/58.jpg" },
+  { "image": "/departmentImages/gallery/ai/60.jpg" },
+  { "image": "/departmentImages/gallery/ai/61.png" },
+  { "image": "/departmentImages/gallery/ai/63.jpg" },
+  { "image": "/departmentImages/gallery/ai/63.jpg" },
+  { "image": "/departmentImages/gallery/ai/66.jpeg" },
+
+
+    { "image": "/departmentImages/gallery/ai/67.jpeg" },
+  { "image": "/departmentImages/gallery/ai/68.png" },
+  { "image": "/departmentImages/gallery/ai/69.jpg" },
+  { "image": "/departmentImages/gallery/ai/70.jpeg" },
+  { "image": "/departmentImages/gallery/ai/71.png" },
+   { "image": "/departmentImages/gallery/ai/72.png" }
+],
+"events":[
+  {
+    "id": 1,
+    "title": "Data Dive: The SQL Bootcamp Series",
+    "date": "03-09-2025",
+    "image": "",
+    "description": "A hands-on SQL bootcamp for 5th-semester CSE students, focusing on relational database design, key concepts, and SQL queries. The sessions covered database creation, ER modeling, and advanced SQL queries."
+  },
+  {
+    "id": 2,
+    "title": "TechFest 2025: CodeStorm Challenge",
+    "date": "15-10-2025",
+    "image": "",
+    "description": "A national-level hackathon featuring 200+ participants. Students developed AI-driven applications and IoT prototypes. Organized by the Department of Computer Science and Engineering."
+  },
+  {
+    "id": 3,
+    "title": "AI Seminar: Trends in Machine Learning",
+    "date": "20-11-2025",
+    "image": "",
+    "description": "A guest lecture on modern machine learning frameworks and data ethics. Conducted by Dr. Rakshith M D with 150 attendees across multiple departments."
+  }
+],
+
+  "ideas":{
+  "placements": [
+    {
+      "percentage": "30%",
+      "title": "Placements & Job Offers",
+      "description": "Higher Number of Students securing Employment/Entrepreneurship",
+      "chartData": [
+        { "year": "2024-25", "total": 100, "placed": 40, "offers": 20 },
+        { "year": "2023-24", "total": 90, "placed": 38, "offers": 18 },
+        { "year": "2022-23", "total": 120, "placed": 70, "offers": 30 }
+      ]
+    }
+  ],
+  "passOutRates": [
+    { "year": "2021-22", "value": 97.52 },
+    { "year": "2019-20", "value": 98.4 },
+    { "year": "2018-19", "value": 99.21 }
+  ],
+  "awards": [
+    {
+      "image": "/departmentImages/IdeaImpact/awards.png",
+      "title": "Awards won in Technical Fest",
+      "subtitle": "During the Academic Year 2023-24"
+    },
+    {
+      "image": "/departmentImages/IdeaImpact/awards.png",
+      "title": "Hackathon Achievements",
+      "subtitle": "National Level Winners 2022-23"
+    },
+    {
+      "image": "/departmentImages/IdeaImpact/awards.png",
+      "title": "Innovative Projects Recognition",
+      "subtitle": "For Excellence in Tech Innovations"
+    }
+  ],
+  "passoutTotlas":"97"
+},
     "placement": {
       "placementPercentage": "30%",
       "2024-25": {
@@ -8196,7 +8853,6 @@
         "departmentAboutDescriptionArray": ["The Department of Science &Humanities comprises Chemistry, Physics, Mathematics & English .The department is highly focused on imparting quality education to meet the global challenges of modern Science and Technology. The department provides foundation for Engineering students to attain excellence in core competencies with high level of motivation, positive attitude, technical competent, ethical value and pedestal knowledge to face the global challenges to become world class engineers and scientists. The department has well qualified, experienced and dedicated faculty members, who are blend of knowledge and experience.Engineering Chemistry laboratory & Engineering Physics laboratory are well equipped with major equipments and caters to the needs of the students. As added gem to the crown, the Department of Science and Humanities has one VTU recognized research centre under Department of Chemistry."],
 
     "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
-    "ethicalLearning": "To cultivate a value-based learning environment that upholds ethics, honesty & integrity, preparing students to meet the evolving needs of society & industry.",
     "innovationExcellence": "To enhance student knowledge in cutting-edge technologies & state-of-the-art tools in Computer Science & Engineering, fostering technical excellence & innovation.",
     "holisticGrowthResearch": "To promote holistic development through co-curricular & extra-curricular activities while encouraging unbiased research, innovation & advancement in the field.",
     "ourVision": "To be recognized as a center of knowledge dissemination in Computer Science and Engineering by imparting value-added education to transform budding minds into competent computer professionals.",
@@ -8206,6 +8862,80 @@
       "position": "H.O.D- Science & Humanities",
       "imageUrl": "/departmentImages/departmentHeads/science&humanities.webp"
     },
+    "gallery":[
+    { "image": "/departmentImages/gallery/hy/1.jpeg" },
+  { "image": "/departmentImages/gallery/hy/2.jpg" },
+  { "image": "/departmentImages/gallery/hy/3.png" },
+  { "image": "/departmentImages/gallery/hy/4.png" },
+  { "image": "/departmentImages/gallery/hy/5.jpg" },
+  { "image": "/departmentImages/gallery/hy/6.png" },
+  { "image": "/departmentImages/gallery/hy/7.jpg" },
+  { "image": "/departmentImages/gallery/hy/10.png" },
+  { "image": "/departmentImages/gallery/hy/11.jpg" },
+  { "image": "/departmentImages/gallery/hy/13.jpeg" },
+  { "image": "/departmentImages/gallery/hy/14.jpg" }
+],
+
+    "events":[
+  {
+    "id": 1,
+    "title": "Data Dive: The SQL Bootcamp Series",
+    "date": "03-09-2025",
+    "image": "",
+    "description": "A hands-on SQL bootcamp for 5th-semester CSE students, focusing on relational database design, key concepts, and SQL queries. The sessions covered database creation, ER modeling, and advanced SQL queries."
+  },
+  {
+    "id": 2,
+    "title": "TechFest 2025: CodeStorm Challenge",
+    "date": "15-10-2025",
+    "image": "",
+    "description": "A national-level hackathon featuring 200+ participants. Students developed AI-driven applications and IoT prototypes. Organized by the Department of Computer Science and Engineering."
+  },
+  {
+    "id": 3,
+    "title": "AI Seminar: Trends in Machine Learning",
+    "date": "20-11-2025",
+    "image": "",
+    "description": "A guest lecture on modern machine learning frameworks and data ethics. Conducted by Dr. Rakshith M D with 150 attendees across multiple departments."
+  }
+],
+ "ideas":{
+  "placements": [
+    {
+      "percentage": "30%",
+      "title": "Placements & Job Offers",
+      "description": "Higher Number of Students securing Employment/Entrepreneurship",
+      "chartData": [
+        { "year": "2024-25", "total": 100, "placed": 40, "offers": 20 },
+        { "year": "2023-24", "total": 90, "placed": 38, "offers": 18 },
+        { "year": "2022-23", "total": 120, "placed": 70, "offers": 30 }
+      ]
+    }
+  ],
+  "passOutRates": [
+    { "year": "2021-22", "value": 97.52 },
+    { "year": "2019-20", "value": 98.4 },
+    { "year": "2018-19", "value": 99.21 }
+  ],
+  "awards": [
+    {
+      "image": "/departmentImages/IdeaImpact/awards.png",
+      "title": "Awards won in Technical Fest",
+      "subtitle": "During the Academic Year 2023-24"
+    },
+    {
+      "image": "/departmentImages/IdeaImpact/awards.png",
+      "title": "Hackathon Achievements",
+      "subtitle": "National Level Winners 2022-23"
+    },
+    {
+      "image": "/departmentImages/IdeaImpact/awards.png",
+      "title": "Innovative Projects Recognition",
+      "subtitle": "For Excellence in Tech Innovations"
+    }
+  ],
+  "passoutTotlas":"97"
+},
     "placement": {
       "placementPercentage": "30%",
       "2024-25": {

@@ -1,4 +1,13 @@
 [
+    {
+    "id": 1,
+    "name": "Dr. Nagesh H R",
+    "image": "/principal.jpeg",
+    "category": "Prospective",
+    "roles": [
+      { "title": "Principal", "organization": "" }
+    ]
+  },
   {
     "id": 1,
     "name": "Karthik Pai B H",
@@ -50,6 +59,15 @@
     "category": "Prospective",
    "roles": [
       { "title": "Artificial Intelligence & Machine Learning", "organization": "" }
+    ]
+  },
+       {
+    "id": 7,
+    "name": "Dr. N. Satheesh Kumar",
+    "image": "/departmentImages/departmentHeads/science&humanities.webp",
+    "category": "Prospective",
+   "roles": [
+      { "title": "Science & Humanities", "organization": "" }
     ]
   }
 ]

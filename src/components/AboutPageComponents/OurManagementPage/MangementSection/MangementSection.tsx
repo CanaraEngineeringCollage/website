@@ -95,20 +95,20 @@ const HeroSection = () => {
                       className={`flex justify-between gap-2 pb-3 mb-3  ${index < (data[selectedHeading] as ManagementItem[]).length - 1 ? "border-b-2 border-border " : ""}`}
                     >
                       <h1 className="text-[16px]  text-textGray font-bold">{item.title}</h1>
-                      <h1 className="text-[16px] text-textGray">{item.name}</h1>
+                      <h1 className="text-[16px] text-textGray ">{item.name}</h1>
                     </div>
                   ))}
                 </div>
                 {/* Desktop layout: original two-column layout */}
                 <div className="hidden sm:grid sm:grid-cols-12">
-                  <div className="text-[17px] col-span-4 text-[#86868B]">
+                  <div className="text-[17px] col-span-4 text-textGray">
                     {(data[selectedHeading] as ManagementItem[]).map((item, index) => (
                       <h1 key={index} className={`pb-3 mb-3 font-bold text-[17px] ${index < (data[selectedHeading] as ManagementItem[]).length - 1 ? "border-b-2  border-border" : ""}`}>
                         {item.title}
                       </h1>
                     ))}
                   </div>
-                  <div className="text-[17px] col-span-8  text-[#86868B]">
+                  <div className="text-[17px] col-span-8  text-textGray ">
                     {(data[selectedHeading] as ManagementItem[]).map((item, index) => (
                       <h1 key={index} className={`pb-3 mb-3 ${index < (data[selectedHeading] as ManagementItem[]).length - 1 ? "border-b-2 border-border" : ""}`}>
                         {item.name}

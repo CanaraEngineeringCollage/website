@@ -84,10 +84,10 @@ const departments = [
     title: "Artificial Intelligence & Machine Learning",
     link: "/department/artificial-intelligence-machine-learning",
   },
-  // {
-  //   title: "Science & Humanities",
-  //   link: "/department/science-humanities",
-  // },
+  {
+    title: "Science & Humanities",
+    link: "/department/science-humanities",
+  },
 ];
 
 const curriculum = [

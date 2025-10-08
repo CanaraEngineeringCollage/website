@@ -31,7 +31,7 @@ type ResearchProps = {
 
 const Research: React.FC<ResearchProps> = ({ data }) => {
   return (
-    <div className=" text-[#86868B] text-[17px]">
+    <div className=" text-textGray text-[17px]">
       {data.map((section, idx) => {
         // Only render section if there is relevant data (heading, points, image, or tables)
         const hasData =

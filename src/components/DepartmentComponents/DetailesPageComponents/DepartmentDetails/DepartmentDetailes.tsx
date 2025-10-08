@@ -17,6 +17,7 @@ import Publications from "../DepartmentDetailesTab/Publications/Publications";
 import Events from "../DepartmentDetailesTab/Events/Events";
 import Gallery from "../DepartmentDetailesTab/Gallery/Gallery";
 import Magazines from "../DepartmentDetailesTab/Magazines/Magazines";
+import CareerProspects from "../CareerProspects/CareerProspects";
 
 interface Qualification {
   degree: string;
@@ -85,6 +86,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   const department = departments.find((dept) => dept.slug === slug);
   const departmentMenuItems = [
   "Department Profile",
+    ...(department?.name === "Artificial Intelligence & Machine Learning" ? ["Career Prospects"] : []),
   "Organisation Structure",
   "Head of the Department",
   "Faculty & Staff",
@@ -92,7 +94,6 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   "PEO & PO-PSO",
   "Course Outcomes (CO)",
   "Facilities",
-  "Student Achievements",
   ...(department?.name !== "Information Science & Engineering" ? ["Research & Product Development"] : []),
   ...(department?.name === "Information Science & Engineering" ? ["Publications"] : []),
   "Magazines & Newsletters",
@@ -141,8 +142,10 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
             {selectedSection === "Research & Product Development" && department?.research && <Research data={department?.research}/>}
             {selectedSection === "Publications" && department?.publications &&<Publications data={department?.publications}/>}
             {selectedSection === "Magazines & Newsletters" && department?.magazines && <Magazines data={department?.magazines}/>}
-            {selectedSection === "Events" && <Events />}
-            {selectedSection === "Gallery" && <Gallery />}
+            {selectedSection === "Events" && <Events events={department?.events}/>}
+            {selectedSection === "Gallery" && <Gallery data={department?.gallery}/>}
+            {selectedSection === "Career Prospects" && <CareerProspects data={department?.careerProspects[0]}/>}
+
           </div>
         </div>
       </div>

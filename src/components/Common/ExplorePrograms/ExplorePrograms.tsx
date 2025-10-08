@@ -68,9 +68,9 @@ const programData = [
           subtitle2: "Overview of programme",
           subDescription2:
             "The Department of Artificial Intelligence and Machine Learning (AIML) stands out for its comprehensive and structured approach to skill enrichment and. enhancement programs. It offers and execute a unique SEA like skill foundational, skill advancement, and skill utilization programs, ensuring students gain hands- on experience in AI, ML, IoT, and web & mobile application development. The department also encourage the students for self-learning through various platforms like NPTEL and Coursera, preparing students for real-world challenges. By integrating industry internships, placement training, and project work, the department ensures students are industry-ready, enhancing their employability and competitiveness in the job market.",
-          // subtitle3: "Course Outcomes",
-          // subDescription3:
-          //   "The unique initiatives of the Department of Artificial Intelligence and Machine Learning (AIML), our students will be industry-ready equipped with strong technical expertise, practical problem-solving skills, and essential soft skills. The SEA efforts ensure graduates are competitive in the job market and capable of contributing effectively to the evolving demands of the AI and ML industry.",
+          subtitle3: "Course Outcomes",
+          subDescription3:
+            "The unique initiatives of the Department of Artificial Intelligence and Machine Learning (AIML), our students will be industry-ready equipped with strong technical expertise, practical problem-solving skills, and essential soft skills. The SEA efforts ensure graduates are competitive in the job market and capable of contributing effectively to the evolving demands of the AI and ML industry.",
         
           }}
       />
@@ -90,10 +90,10 @@ const programData = [
             "The Department was established in 2001 and has experienced faculties focused on innovation in cutting-edge electronics and communication technologies. We provide Students with a strong foundation in both theoretical and practical aspects. Our faculties are dedicated to the overall development of students ",
           subtitle2: "Overview of programme",
           subDescription2:
-            "The program covers core areas like analog/digital circuits, signal processing, and communication systems. Students gain hands-on experience through labs and projects. The curriculum is supported with outcome-based add-on courses to meet industry requirements. The program is accredited twice by NBA.",
-          // subtitle3: "Course Outcomes",
-          // subDescription3:
-          //   "Graduates are equipped to solve real-world engineering problems. They demonstrate strong technical and communication skills. Students graduate with industry-ready skills.",
+            "The program covers core areas like analog/digital circuits, signal processing, and communication systems. It also integrates advanced topics such as VLSI design, embedded systems, and Internet of Things (IoT) technologies. Students gain hands-on experience through labs and projects spanning circuit design, system integration, and IoT application development. The curriculum is further strengthened with outcome-based add-on courses to align with evolving industry requirements and emerging technological trends.",
+          subtitle3: "Course Outcomes",
+          subDescription3:
+            "Graduates will be proficient in designing and implementing analog/digital circuits, communication systems, VLSI, embedded systems, and IoT applications, equipped with practical skills, modern tools, and effective communication to solve real- world engineering problems and adapt to evolving technologies.",
        
           }}
       />
@@ -114,9 +114,9 @@ const programData = [
           subtitle2: "Overview of programme",
           subDescription2:
             "CSD students learn to build functional software that is visually appealing and easy to use. They learn to apply design principles to software development with emphasis on usability and accessibility. Students learn about new media technologies and applications. ",
-          // subtitle3: "Course Outcomes",
-          // subDescription3:
-          //   "Students of Computer Science and Design will be able to create innovative solutions in areas including animation, AI, Game Development and Virtual Reality. They will be able to apply core computer science concepts and the diverse programming paradigms in the real world. They will be able to apply system design principles to design plan and implement software projects. They will be equipped with design language and its elements and principles. They will be able to demonstrate design skills and knowledge through a design portfolio",
+          subtitle3: "Course Outcomes",
+          subDescription3:
+            "Students of Computer Science and Design will be able to create innovative solutions in areas including animation, AI, Game Development and Virtual Reality. They will be able to apply core computer science concepts and the diverse programming paradigms in the real world. They will be able to apply system design principles to design plan and implement software projects. They will be equipped with design language and its elements and principles. They will be able to demonstrate design skills and knowledge through a design portfolio",
         
           }}
       />
@@ -137,9 +137,9 @@ const programData = [
           subtitle2: "Overview of programme",
           subDescription2:
             "ISE offers state-of-the-art labs with the latest technologies to foster innovation and research. The department also emphasizes holistic development with a blend of technical skills, soft skills, and entrepreneurship.The Department of Information Science and Engineering focuses on the study and application of computer science, software development, and information technology to solve real-world problems.",
-          // subtitle3: "Course Outcomes",
-          // subDescription3:
-          //   "Graduates from the Information Science and Engineering Department are expected to possess strong technical skills in software development, data analysis, and system design. They will be equipped to solve complex engineering problems, contribute to research, and thrive in dynamic industries through innovative solutions and critical thinking.",
+          subtitle3: "Course Outcomes",
+          subDescription3:
+            "Graduates from the Information Science and Engineering Department are expected to possess strong technical skills in software development, data analysis, and system design. They will be equipped to solve complex engineering problems, contribute to research, and thrive in dynamic industries through innovative solutions and critical thinking.",
        
           }}
       />
@@ -160,9 +160,9 @@ const programData = [
           subtitle2: "Overview of programme",
           subDescription2:
             "The Bachelor of Engineering in CSBS integrates computing with business strategy, emphasizing emerging technologies, data analytics, and software development. The program prepares students for diverse roles as IT professionals, researchers, and entrepreneurs, addressing industry and societal challenges.",
-          // subtitle3: "Course Outcomes",
-          // subDescription3:
-          //   "Graduates will apply AI, data analytics, and business intelligence to develop innovative IT solutions. With strong problem-solving, ethical values, and entrepreneurial skills, they will drive technological advancements and industry growth.",
+          subtitle3: "Course Outcomes",
+          subDescription3:
+            "Graduates will apply AI, data analytics, and business intelligence to develop innovative IT solutions. With strong problem-solving, ethical values, and entrepreneurial skills, they will drive technological advancements and industry growth.",
        
           }}
       />
@@ -185,10 +185,10 @@ function CardContent({ description }: CardContentProps) {
           <h3 className="text-2xl mb-2 font-semibold">{description.subtitle2}</h3>
           <p className="text-lg   text-textGray">{description.subDescription2}</p>
         </div>
-        {/* <div>
+        {description.subtitle3 && description.subDescription3 && <div>
           <h3 className="text-2xl mb-2 font-semibold">{description.subtitle3}</h3>
           <p className="text-lg  text-textGray">{description.subDescription3}</p>
-        </div> */}
+        </div>}
       </div>
     </div>
   );

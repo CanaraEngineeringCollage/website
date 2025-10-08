@@ -17,7 +17,7 @@ const semesters = ["I Semester", "II Semester", "III Semester", "IV Semester", "
  const admissionYears = generateAdmissionYears(2014); // dynamic years
 const CourseOutCome = () => {
   return (
-    <div className="lg2:px-24  text-[#86868B] text-[17px]">
+    <div className="lg2:px-24  text-textGray text-[17px]">
       <h2 className="text-xl mb-5 font-bold">Course Outcomes(CO)</h2>
       <div className="flex flex-col  gap-5 md:flex-row md:gap-0  md:justify-between">
         <select className="border outline-none p-2 rounded pe-20">

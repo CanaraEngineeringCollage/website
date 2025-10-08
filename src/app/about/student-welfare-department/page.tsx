@@ -49,7 +49,7 @@ const page = () => {
       <section>
       <MissionAndVision/>
       </section>
-      <section>
+      <section className="px-6">
         <Facilities/>
       </section>
       <section className=" lg:mt-0 -mt-2">

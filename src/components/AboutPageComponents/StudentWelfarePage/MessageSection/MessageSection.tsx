@@ -11,12 +11,12 @@ const MessageSection = () => {
               <Image src="/studentWelfarePage/message.png" alt="Sri Ammembal Subba Rao Pai" fill className="object-cover bg-[#6dc0eb]" />
             </div>
             <p className="mt-4 text-center text-[27px] font-bold text-white">Dr. Priya V. Frank</p>
-            <p className="text-[17px] text-[#76838b]">Dean - Student Welfare</p>
+            <p className="text-[17px] text-white">Dean - Student Welfare</p>
           </div>
         </div>
         <div className="">
           <h1 className="text-3xl text-start lg:leading-[1.2] my-10 md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold">Message from the Student Welfare Officer</h1>
-          <p className="text-[17px] text-[#76838b] text-start">
+          <p className="text-[17px] text-white text-start">
             The Student Welfare Department (SWD) is dedicated to ensuring your well-being and fostering an environment that supports your academic and
             personal growth. We oversee various welfare activities on campus that play a significant role in shaping your future. More than just a
             support system, SWD serves as a platform for you to voice your opinions and contribute to the institution’s growth. As the Dean of Student
@@ -31,7 +31,7 @@ const MessageSection = () => {
               <Image src="/studentWelfarePage/message.png" alt="Sri Ammembal Subba Rao Pai" fill className="object-cover bg-[#6dc0eb]" />
             </div>
             <p className="mt-4 text-center text-[27px] font-bold text-white">Dr. Priya V. Frank</p>
-            <p className="text-[17px] text-[#76838b]">Dean - Student Welfare</p>
+            <p className="text-[17px] text-white">Dean - Student Welfare</p>
           </div>
         </div>
       </div>

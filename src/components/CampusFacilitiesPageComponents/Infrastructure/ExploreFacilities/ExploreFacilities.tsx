@@ -271,7 +271,7 @@ const ExploreFacilities = () => {
                 </motion.div>
                 <motion.div variants={contentVariants} className="p-4 lg:px-20 mt-10">
                   <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">NextUp</h1>
-                  <h1 onClick={goToNextCard} className="text-[#2997FF] inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]">
+                  <h1 onClick={goToNextCard} className="text-[#539dd5] inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]">
                     {pressData[(currentIndex + 1) % pressData.length]?.title || "First Card"}
                     <MdKeyboardArrowRightIcon className="ml-1 mt-1 text-[20px] md:text-[25px]" />
                   </h1>

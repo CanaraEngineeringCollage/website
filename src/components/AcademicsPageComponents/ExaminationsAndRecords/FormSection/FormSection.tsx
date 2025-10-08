@@ -60,7 +60,7 @@ const FormSection: React.FC = () => {
             </div>
           )}
           {activeHeader === "Circulars" && (
-            <div className="md:col-span-8 text-[#959cb4]">
+            <div className="md:col-span-8 text-textGray">
               <h1 className="text-[20px] font-bold text-textGray mb-2">VTU Circular</h1>
               <div className="flex items-center group-hover:text-[#2884CA]">
                 <div className="flex items-center gap-2 mt-2 group ">

@@ -61,7 +61,7 @@ const page = () => {
   return (
     <>
       <HeroSection />
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0 mb-9 |">
+      <section className="px-6 md:px-12 lg:px-16 xl:px-0 mb-9 mt-5 lg:mt-10">
         <AboutDepartment />
       </section>
       <section className="pb-10 lg:mt-0 -mt-12">

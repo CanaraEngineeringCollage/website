@@ -1,39 +1,101 @@
 [
   {
-    "title": "NBA Acrreditation status of Programs",
-    "data": [
+    "title": "Accreditations and Certifications",
+    "nba": [
       {
-        "title": "Status Program",
-        "links": [{ "text": "View Status Program", "href": "https://www.canaraengineering.in/download/disclosure/NBA_Accreditation.pdf" }]
-      },
+        "title": "NBA certificate 2025",
+        "links": [{ "text": "View NBA certificate", "href": "https://www.canaraengineering.in/download/disclosure/NBA_Accreditation.pdf" }]
+      }
+    ],
+    "naac": {
+    "iqac": [
       {
-        "title": "NAAC AQAR",
-        "links": [{ "text": "View YEARLY STATUS REPORT - 2023-2024", "href": "https://canaraengineering.in/AQAR_23-24%20uploaded_16-01-25.pdf" }]
+        "title": "IQAC Report 2025",
+        "links": [
+          {
+            "text": "View IQAC Report 2025",
+            "href": "https://drive.google.com/file/d/1O5ibc4TUDdq_ZMDshdyc-umjfepFcadK"
+          }
+        ]
       },
       {
         "title": "IQAC Report 2024",
-        "links": [{ "text": "View IQAC REPORT 2024", "href": "https://canaraengineering.in/IQAC report 2024.pdf" }]
+        "links": [
+          {
+            "text": "View IQAC Report 2024",
+            "href": "https://canaraengineering.in/IQAC report 2024.pdf"
+          }
+        ]
       },
       {
         "title": "IQAC Report 2023",
-        "links": [{ "text": "IQAC Report 2023", "href": "https://canaraengineering.in/IQAC report_2023.pdf" }]
+        "links": [
+          {
+            "text": "IQAC Report 2023",
+            "href": "https://canaraengineering.in/IQAC report_2023.pdf"
+          }
+        ]
       },
       {
         "title": "IQAC Report 2022",
-        "links": [{ "text": "Academic Calendar Odd Semester", "href": "https://canaraengineering.in/IQAC report 2022.pdf" }]
+        "links": [
+          {
+            "text": "Academic Calendar Odd Semester",
+            "href": "https://canaraengineering.in/IQAC report 2022.pdf"
+          }
+        ]
+      }
+    ],
+    "nac": [
+      {
+        "title": "NAAC AQAR",
+        "links": [
+          {
+            "text": "View YEARLY STATUS Report - 2023-2024",
+            "href": "https://canaraengineering.in/AQAR_23-24%20uploaded_16-01-25.pdf"
+          }
+        ]
       },
       {
         "title": "NAAC Certificate",
-        "links": [{ "text": "View NAAC Certificate", "href": "https://canaraengineering.in/NAAC CERTIFICATE.pdf" }]
+        "links": [
+          {
+            "text": "View NAAC Certificate",
+            "href": "https://canaraengineering.in/NAAC CERTIFICATE.pdf"
+          }
+        ]
       },
       {
         "title": "NAAC Grade Card",
-        "links": [{ "text": "View NAAC Grade Card", "href": "https://canaraengineering.in/Institutional_Grade_Sheet.pdf" }]
+        "links": [
+          {
+            "text": "View NAAC Grade Card",
+            "href": "https://canaraengineering.in/Institutional_Grade_Sheet.pdf"
+          }
+        ]
       },
       {
         "title": "NAAC SSR",
-        "links": [{ "text": "View NAAC SSR", "href": "https://canaraengineering.in/SSR.pdf" }]
+        "links": [
+          {
+            "text": "View NAAC SSR",
+            "href": "https://canaraengineering.in/SSR.pdf"
+          }
+        ]
       }
+    ]
+  },
+    "iso": [
+       {
+        "title": "ISO 9001:2015",
+        "links": [{ "text": "View ISO 9001:2015", "href": "" }]
+      },
+      
+      {
+        "title": "ISO 21001:2018",
+        "links": [{ "text": "View ISO 21001:2018", "href": "" }]
+      }
+     
     ]
   },
 
@@ -42,35 +104,35 @@
      "data": [
       {
         "title": "Year 2024-2025",
-        "links": [{ "text": "View REPORT - 2024-2025", "href": "https://www.canaraengineering.in/download/NIRF/submitted%20data_NIRF_24-25.pdf" }]
+        "links": [{ "text": "View Report - 2024-2025", "href": "https://www.canaraengineering.in/download/NIRF/submitted%20data_NIRF_24-25.pdf" }]
       },
       {
         "title": "Year 2023-2024",
-        "links": [{ "text": "View REPORT - 2023-2024", "href": "https://www.canaraengineering.in/download/NIRF/NIRF%20sumbitted%20report_2024_CEC_IR-E-C-1323.pdf" }]
+        "links": [{ "text": "View Report - 2023-2024", "href": "https://www.canaraengineering.in/download/NIRF/NIRF%20sumbitted%20report_2024_CEC_IR-E-C-1323.pdf" }]
       },
       {
         "title": "Year 2022-2023",
-        "links": [{ "text": "View REPORT - 2022-2023", "href": "https://www.canaraengineering.in/download/NIRF/All%20Report-MHRD,%20National%20Institutional%20Ranking%20Framework%20(NIRF).pdf" }]
+        "links": [{ "text": "View Report - 2022-2023", "href": "https://www.canaraengineering.in/download/NIRF/All%20Report-MHRD,%20National%20Institutional%20Ranking%20Framework%20(NIRF).pdf" }]
       },
       {
         "title": "Year 2021-2022",
-        "links": [{ "text": "View REPORT - 2021-2022", "href": "https://www.canaraengineering.in/download/NIRF/completed%20data_NIRF_2022.pdf" }]
+        "links": [{ "text": "View Report - 2021-2022", "href": "https://www.canaraengineering.in/download/NIRF/completed%20data_NIRF_2022.pdf" }]
       },
       {
         "title": "Year 2020-2021",
-        "links": [{ "text": "View REPORT - 2020-2021", "href": "https://www.canaraengineering.in/download/NIRF/Canara%20Engineering%20College%202021.pdf" }]
+        "links": [{ "text": "View Report - 2020-2021", "href": "https://www.canaraengineering.in/download/NIRF/Canara%20Engineering%20College%202021.pdf" }]
       },
       {
         "title": "Year 2019-2020",
-        "links": [{ "text": "View REPORT - 2019-2020", "href": "https://www.canaraengineering.in/download/NIRF/Canara%20Engineering%20College23_12_2019_17_50_31.pdf" }]
+        "links": [{ "text": "View Report - 2019-2020", "href": "https://www.canaraengineering.in/download/NIRF/Canara%20Engineering%20College23_12_2019_17_50_31.pdf" }]
       },
       {
         "title": "Year 2018-2019",
-        "links": [{ "text": "View REPORT - 2018-2019", "href": "https://www.canaraengineering.in/download/NIRF/Canara%20Engineering%20College20190219-.pdf" }]
+        "links": [{ "text": "View Report - 2018-2019", "href": "https://www.canaraengineering.in/download/NIRF/Canara%20Engineering%20College20190219-.pdf" }]
       },
       {
         "title": "Year 2017-2018",
-        "links": [{ "text": "View REPORT - 2017-2018", "href": "https://canaraengineering.in/SSR.pdf" }]
+        "links": [{ "text": "View Report - 2017-2018", "href": "https://canaraengineering.in/SSR.pdf" }]
       }
     ]
   },

@@ -53,6 +53,7 @@ const facilities = [
 const stayConnected = [
   { data: "Alumni", links: "/alumni" },
   { data: "Media", links: "/media" },
+  { data: "Careers", links: "/careers" },
   // { data: "Calendar of Events", links: "/events" },
   // { data: "Careers", links: "#" },
 ];
@@ -109,6 +110,8 @@ const Footer: FC = () => {
                 { label: "Infrastructure", href: "/campus-facilities/infrastructure" },
                   { label: "Privacy Policy", href: "/privacy-policy" },
                    { label: "Grievance Redressal", href: "/about/mandatory-disclosure/sc-st-grievance" },
+                    { label: "Careers", href: "/careers" },
+
             // { label: "Timetables", href: "/academics/examination-records" },
             // { label: "Circulars", href: "/about" },
             // { label: "Marks & Attendance", href: "/our-founder" },
