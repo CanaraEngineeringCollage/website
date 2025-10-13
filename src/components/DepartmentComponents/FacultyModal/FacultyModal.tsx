@@ -166,6 +166,86 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                     </div>
                   </div>
                 )}
+    {facultyData?.patents|| facultyData?.bookChapters &&<h3 className="text-[36px] text-[#1D1D1F] font-semibold mb-4 text-center">Acheivements</h3>}
+{facultyData?.patents && facultyData.patents.length > 0 && (
+  <div className="mt-10 lg:mt-24 text-[#1D1D1F]">
+    <h3 className="text-[36px] font-semibold mb-4 text-center">Patent Details</h3>
+    <ul className="list-disc list-inside space-y-2 max-w-3xl mx-auto">
+      {facultyData.patents.map((patent, index) => (
+        <li key={index} className="text-lg">
+          {patent}
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
+
+{facultyData?.bookChapters
+ && facultyData.bookChapters
+.length > 0 && (
+  <div className="mt-10 lg:mt-24 text-[#1D1D1F]">
+    <h3 className="text-[36px] font-semibold mb-4 text-center">Book Chapter Published</h3>
+    <ul className="list-disc list-inside space-y-2 max-w-3xl mx-auto">
+      {facultyData.bookChapters
+.map((patent, index) => (
+        <li key={index} className="text-lg">
+          {patent}
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
+
+
+
+
+  {facultyData?.certifications.length>0 && <h3 className="text-[36px] text-[#1D1D1F] font-semibold mb-4 text-center">Career Advancement</h3>}
+{facultyData?.certifications && facultyData.certifications.length > 0 && (
+  <div className="mt-10 lg:mt-24 text-[#1D1D1F]">
+    <h3 className="text-[36px] font-semibold mb-4 text-center">Certification Details</h3>
+    <ul className="list-disc list-inside space-y-2 max-w-3xl mx-auto">
+      {facultyData.certifications.map((patent, index) => (
+        <li key={index} className="text-lg">
+          {patent}
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
+
+
+{facultyData?.internationalJournalPublications|| facultyData?.internationalConferencePublications &&<h3 className="text-[36px] text-[#1D1D1F] font-semibold mb-4 text-center">Publications</h3>}
+{facultyData?.internationalJournalPublications && facultyData.internationalJournalPublications.length > 0 && (
+  <div className="mt-10 lg:mt-24 text-[#1D1D1F]">
+    <h3 className="text-[36px] font-semibold mb-4 text-center">International Journal</h3>
+    <ul className="list-disc list-inside space-y-2 max-w-3xl mx-auto">
+      {facultyData.internationalJournalPublications.map((patent, index) => (
+        <li key={index} className="text-lg">
+          {patent}
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
+
+{facultyData?.internationalConferencePublications
+ && facultyData.internationalConferencePublications
+.length > 0 && (
+  <div className="mt-10 lg:mt-24 text-[#1D1D1F]">
+    <h3 className="text-[36px] font-semibold mb-4 text-center">International Conference</h3>
+    <ul className="list-disc list-inside space-y-2 max-w-3xl mx-auto">
+      {facultyData.internationalConferencePublications
+.map((patent, index) => (
+        <li key={index} className="text-lg">
+          {patent}
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
+
+
+
                 </div>
               </Dialog.Panel>
             </motion.div>

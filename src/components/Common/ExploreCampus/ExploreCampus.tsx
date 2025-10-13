@@ -1,50 +1,33 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useRef, useEffect, createContext } from "react";
-import { MdKeyboardArrowRight, MdKeyboardArrowRight as MdKeyboardArrowRightIcon } from "react-icons/md";
+import { MdKeyboardArrowRight } from "react-icons/md";
 import { IconX } from "@tabler/icons-react";
 import { AnimatePresence, motion } from "framer-motion";
-import { useOutsideClick } from "@/hooks/use-outside-click"; // Ensure this hook exists
+import { useOutsideClick } from "@/hooks/use-outside-click"; 
+import { parse } from "node-html-parser";
 
-// Define the shape of an event with extended fields for modal
 interface CampusEvent {
   id: number;
   category: string;
-  date: string;
-  title: string;
-  description: string;
-  image: string;
-  // Extended fields for modal (adjust based on actual data)
-  topTitle?: string;
-  topDescription?: string;
-  middleTitle?: string;
-  middleSubTitle?: string;
-  middleDescription?: string;
-  middleTitle2?: string;
-  middleDescription2?: string;
+  eventDate: string;
+  content: string;
 }
 
-// Define the props for the component
 interface ExploreCampusProps {
-  campusEvents: CampusEvent[];
+  campusEvents?: CampusEvent[];
   title?: string;
   description?: string;
 }
 
-// Modal content props (similar to DescriptionProps in ExploreFacilities)
 type EventDescriptionProps = {
   src: string;
   date: string;
   topTitle: string;
   topDescription: string;
-  middleTitle: string;
-  middleSubTitle: string;
-  middleDescription: string;
-  middleTitle2: string;
-  middleDescription2: string;
+  remainingHTML: string;
 };
 
-// Carousel Context for modal control
 interface CarouselContextType {
   onCardClose: (index: number) => void;
   currentIndex: number;
@@ -65,67 +48,100 @@ export const CarouselContext = createContext<CarouselContextType>({
   isOpen: false,
 });
 
-// Animation variants (same as ExploreFacilities)
 const cardVariants = {
-  hidden: { opacity: 0, scale: 0.8, y: 100, transition: { duration: 0.3, ease: "easeIn" } },
-  visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.4, ease: "easeOut", type: "spring", damping: 20, stiffness: 100 } },
-  exit: { opacity: 0, scale: 0.9, y: 50, transition: { duration: 0.25, ease: "easeIn" } },
+  hidden: { opacity: 0, scale: 0.8, y: 100, transition: { duration: 0.3 } },
+  visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.4, type: "spring", damping: 20, stiffness: 100 } },
+  exit: { opacity: 0, scale: 0.9, y: 50, transition: { duration: 0.25 } },
 };
 
 const backdropVariants = {
   hidden: { opacity: 0, backdropFilter: "blur(0px)" },
-  visible: { opacity: 1, backdropFilter: "blur(8px)", transition: { duration: 0.3, ease: "easeOut" } },
-  exit: { opacity: 0, backdropFilter: "blur(0px)", transition: { duration: 0.2, ease: "easeIn" } },
+  visible: { opacity: 1, backdropFilter: "blur(8px)", transition: { duration: 0.3 } },
+  exit: { opacity: 0, backdropFilter: "blur(0px)", transition: { duration: 0.2 } },
 };
 
 const contentVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.1, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.1 } },
 };
 
-// Modal content component (adapted from CardContent in ExploreFacilities)
+// Parse HTML
+const parseEventContent = (html: string) => {
+  const root = parse(html);
+  const firstHeadingEl = root.querySelector("h1,h2,h3,h4,h5,h6");
+  const topTitle = firstHeadingEl?.text?.trim() || "";
+  if (firstHeadingEl) firstHeadingEl.remove();
+  const firstParagraphEl = root.querySelector("p");
+  const topDescription = firstParagraphEl?.text?.trim() || "";
+  if (firstParagraphEl) firstParagraphEl.remove();
+  const firstImageEl = root.querySelector("img");
+  const src = firstImageEl?.getAttribute("src") || "";
+  if (firstImageEl) firstImageEl.remove();
+
+  let remainingHTML = root.toString()
+    .replace(/\n|\r/g, "")
+    .replace(/>\s+</g, "><")
+    .replace(/<[^/>]+>\s*<\/[^>]+>/g, "")
+    .trim();
+
+  return { src, topTitle, topDescription, remainingHTML };
+};
+
 function EventContent({ description }: { description: EventDescriptionProps }) {
   return (
     <div>
-      <Image
-        src={description.src}
-        alt="Event Image"
-        loading="lazy"
-        width={1000}
-        height={700}
-        className="object-cover overflow-hidden rounded-t-2xl w-full lg:h-[500px] h-[400px] mb-10"
-      />
+      {description.src && (
+        <Image
+          src={description.src}
+          alt={description.topTitle}
+          loading="lazy"
+          width={1000}
+          height={700}
+          className="object-cover overflow-hidden rounded-t-2xl w-full lg:h-[500px] h-[400px] mb-10"
+        />
+      )}
       <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
         <div>
           <p className="text-[17px] text-textGray uppercase font-bold mb-4">{description.date}</p>
           <h3 className="text-[31px] lg:text-[46px] leading-[1.1] lg:max-w-[70%] mb-5 font-bold">{description.topTitle}</h3>
           <p className="text-xl text-textGray">{description.topDescription}</p>
         </div>
-        <div>
-          <h4 className="text-2xl font-bold mb-2">{description.middleTitle}</h4>
-          <p className="text-lg text-textGray">{description.middleSubTitle}</p>
-          <p className="text-textGray">{description.middleDescription}</p>
-        </div>
-        <div>
-          <h4 className="text-2xl font-bold mb-2">{description.middleTitle2}</h4>
-          <p className="text-textGray">{description.middleDescription2}</p>
-        </div>
+        <div className="bg-white -mt-10" dangerouslySetInnerHTML={{ __html: description.remainingHTML }} />
       </div>
     </div>
   );
 }
 
-const ExploreCampus: React.FC<ExploreCampusProps> = ({ title, description, campusEvents }) => {
+const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEvents = [], title, description }) => {
+  const [campusEvents, setCampusEvents] = useState<CampusEvent[]>(initialEvents);
   const categories: string[] = ["All", "Sports", "Fest", "Academics", "Cultural Events", "Technical Events", "Exams", "CSR", "Alumni"];
   const [activeCategory, setActiveCategory] = useState<string>("All");
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showAll, setShowAll] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Filter events based on active category
-  const filteredEvents = activeCategory === "All" ? campusEvents : campusEvents.filter((event) => event.category === activeCategory);
+  const fetchBuzz = async () => {
+    try {
+      const res = await fetch("https://testapi.megamind.studio/buzz");
+      if (!res.ok) throw new Error("Failed to fetch buzz");
+      const data = await res.json();
+      setCampusEvents(data);
+    } catch (err) {
+      console.error(err);
+    }
+  };
 
-  // Modal control functions
+  useEffect(() => {
+    fetchBuzz();
+  }, []);
+
+  // Sort by date descending
+  const sortedEvents = [...campusEvents].sort((a, b) => new Date(b.eventDate).getTime() - new Date(a.eventDate).getTime());
+
+  const filteredEvents = sortedEvents.filter(event => activeCategory === "All" ? true : event.category === activeCategory);
+  const eventsToShow = showAll ? filteredEvents : filteredEvents.slice(0, 5);
+
   const handleCardClose = (index: number) => {
     setCurrentIndex(index);
     setIsOpen(false);
@@ -136,47 +152,22 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ title, description, campu
     setIsOpen(true);
   };
 
-  const closeCard = () => {
-    setIsOpen(false);
-  };
+  const closeCard = () => setIsOpen(false);
 
-  const goToNextCard = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % filteredEvents.length);
-    setIsOpen(true);
-  };
+  const goToNextCard = () => setCurrentIndex((prev) => (filteredEvents.length ? (prev + 1) % filteredEvents.length : 0));
 
-  // Handle body overflow and Escape key
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape" && isOpen) {
-        closeCard();
-      }
-    };
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
+    const handleKeyDown = (event: KeyboardEvent) => event.key === "Escape" && isOpen && closeCard();
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isOpen]);
 
-  // Handle outside click to close modal
-  useOutsideClick(containerRef, () => {
-    if (isOpen) closeCard();
-  });
+  useOutsideClick(containerRef, () => isOpen && closeCard());
 
-  // Map CampusEvent to EventDescriptionProps for modal
   const getEventDescription = (event: CampusEvent): EventDescriptionProps => ({
-    src: event.image,
-    date: event.date,
-    topTitle: event.title,
-    topDescription: event.description || "Explore the details of this campus event.",
-    middleTitle: "Event Overview",
-    middleSubTitle: event.category,
-    middleDescription: "Detailed description of the event's purpose and activities.", // Placeholder
-    middleTitle2: "Highlights",
-    middleDescription2: "Key highlights and what to expect from this event.", // Placeholder
+    ...parseEventContent(event.content),
+    date: event.eventDate,
   });
 
   return (
@@ -198,15 +189,15 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ title, description, campu
             <p className="text-center">{description}</p>
           </div>
         )}
+
+        {/* Category Filters */}
         <div className="flex justify-between items-center pb-5 lg:pb-10 flex-wrap gap-2">
-          <button
-          aria-label="Clear All Filters" 
-          className="border text-lg font-bold px-3 py-1 rounded-4xl cursor-pointer" onClick={() => setActiveCategory("All")}>
+          <button className="border text-lg font-bold px-3 py-1 rounded-4xl cursor-pointer" onClick={() => setActiveCategory("All")}>
             Clear All Filters
           </button>
           {categories.map((category, index) => (
             <h3
-              onClick={() => setActiveCategory(category)}
+              onClick={() => { setActiveCategory(category); setShowAll(false); }}
               className={`cursor-pointer ${category === activeCategory ? "text-black font-bold" : "text-textGray"} text-[18px]`}
               key={index}
             >
@@ -215,43 +206,58 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ title, description, campu
           ))}
         </div>
 
+        {/* Event Cards */}
         <div className="flex flex-col gap-8">
-          {filteredEvents.map((event, index) => (
-            <div onClick={() => openCard(index)} key={event.id} className="flex cursor-pointer flex-col md:flex-row items-center gap-6 bg-white rounded-2xl shadow-md">
-              <div className="flex-shrink-0 w-full md:w-[40%]">
-                <Image
-                  src={event.image}
-                  alt={event.title}
-                  width={1000}
-                  height={1000}
-                  className="rounded-l-2xl object-cover w-full h-[40vh] lg:h-[50vh]"
-                />
-              </div>
-              <div className="flex flex-col justify-center w-full md:w-1/2 p-6 lg:p-10">
-                <p className="text-[17px] text-textGray uppercase font-bold mb-4">{event.date}</p>
-                <h2 className="text-[31px] leading-[1.1] font-bold text-[#1D1D1F] mb-2">{event.title}</h2>
-                <p className="text-textGray leading-[1.3] text-[21px] mb-4">{event.description}</p>
-                <motion.button
-                  onClick={() => openCard(index)}
-                  className="text-[#2997FF] inline-flex text-[21px] items-center font-medium text-sm"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Read More <MdKeyboardArrowRight className="ml-1" />
-                </motion.button>
-              </div>
-            </div>
-          ))}
+          {eventsToShow.length > 0 ? (
+            eventsToShow.map((event, index) => {
+              const { src, topTitle, topDescription } = parseEventContent(event.content);
+              return (
+                <div key={event.id} onClick={() => openCard(index)} className="flex cursor-pointer flex-col md:flex-row items-center gap-6 bg-white rounded-2xl shadow-md">
+                  <div className="flex-shrink-0 w-full md:w-[40%]">
+                    <Image
+                      src={src || event.content}
+                      alt={topTitle || event.category}
+                      width={1000}
+                      height={1000}
+                      className="rounded-l-2xl object-cover w-full h-[40vh] lg:h-[50vh]"
+                    />
+                  </div>
+                  <div className="flex flex-col justify-center w-full md:w-1/2 p-6 lg:p-10">
+                    <p className="text-[17px] text-textGray uppercase font-bold mb-4">{new Date(event.eventDate).toLocaleDateString("en-GB")}</p>
+                    <h2 className="text-[31px] leading-[1.1] font-bold text-[#1D1D1F] mb-2">{topTitle}</h2>
+                    <p className="text-textGray leading-[1.3] text-[21px] mb-4">{topDescription}</p>
+                    <motion.button
+                      onClick={() => openCard(index)}
+                      className="text-[#2997FF] inline-flex text-[21px] items-center font-medium text-sm"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      Read More <MdKeyboardArrowRight className="ml-1" />
+                    </motion.button>
+                  </div>
+                </div>
+              );
+            })
+          ) : (
+            <p className="text-center text-textGray text-[18px] py-10">There are no events in this category.</p>
+          )}
         </div>
-        <div className="flex justify-center mt-10">
-          <button 
-          aria-label="Explore More Campus Stories"
-          className="bg-[#eff1f6] text-black px-5 py-2 cursor-pointer rounded-3xl">Explore More Campus Stories</button>
-        </div>
+
+        {/* Show More Button */}
+        {!showAll && filteredEvents.length > 5 && (
+          <div className="flex justify-center mt-10">
+            <button
+              className="bg-[#eff1f6] text-black px-5 py-2 cursor-pointer rounded-3xl"
+              onClick={() => setShowAll(true)}
+            >
+              Explore More Campus Stories
+            </button>
+          </div>
+        )}
 
         {/* Modal */}
         <AnimatePresence>
-          {isOpen && (
+          {isOpen && filteredEvents.length > 0 && (
             <motion.div className="fixed inset-0 h-screen z-50 overflow-auto" initial="hidden" animate="visible" exit="exit">
               <motion.div variants={backdropVariants} className="bg-black/80 backdrop-blur-lg h-full w-full fixed inset-0" onClick={closeCard} />
               <motion.div
@@ -268,7 +274,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ title, description, campu
                 >
                   <IconX className="h-6 w-6 text-white" />
                 </motion.button>
-                <motion.div variants={contentVariants}>
+                <motion.div variants={contentVariants} className="!overflow-hidden">
                   <EventContent description={getEventDescription(filteredEvents[currentIndex])} />
                 </motion.div>
                 <motion.div variants={contentVariants} className="p-4 lg:px-20 mt-10">
@@ -277,8 +283,8 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ title, description, campu
                     onClick={goToNextCard}
                     className="text-[#2997FF] inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]"
                   >
-                    {filteredEvents[(currentIndex + 1) % filteredEvents.length]?.title || "First Event"}
-                    <MdKeyboardArrowRightIcon className="ml-1 mt-1 text-[20px] md:text-[25px]" />
+                    {parseEventContent(filteredEvents[(currentIndex + 1) % filteredEvents.length].content).topTitle || "First Event"}
+                    <MdKeyboardArrowRight className="ml-1 mt-1 text-[20px] md:text-[25px]" />
                   </h1>
                 </motion.div>
               </motion.div>

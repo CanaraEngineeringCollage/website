@@ -60,12 +60,39 @@ interface DepartmentSectionProps {
 
 const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   const { slug } = useParams();
+    const [events, setEvents] = useState<Event[]>([]);
 
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [selectedSection, setSelectedSection] = useState<string>("Department Profile");
   
    const [facultyData, setFacultyData] = useState<Faculty[]>([]);
   const [loading, setLoading] = useState(true);
+
+
+  const fetchEvents = async () => {
+      try {
+        setLoading(true);
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/events`);
+        if (!response.ok) throw new Error("Failed to fetch events");
+  
+        const data = await response.json();
+        const filtered = data.filter((event: any) => event.category === departmentName);
+        const sorted = filtered.sort(
+          (a: any, b: any) => new Date(b.date).getTime() - new Date(a.date).getTime()
+        );
+        setEvents(sorted);
+      } catch (err: any) {
+     
+        console.error(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+  
+    useEffect(() => {
+      fetchEvents();
+    }, []);
+  
 
   useEffect(() => {
     async function fetchFaculty() {
@@ -134,7 +161,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
             {selectedSection === "Faculty & Staff" && <Faculty datam={facultyData}/>}
             {selectedSection === "Academic Programmes" && department?.academicsProgram && <Academic data={department.academicsProgram} />}
             {selectedSection === "PEO & PO-PSO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
-            {selectedSection === "Course Outcomes (CO)" && <CourseOutCome />}
+            {selectedSection === "Course Outcomes (CO)" && <CourseOutCome staticData={department?.courseOutcome} />}
             {selectedSection === "Facilities" && department?.facilities && <Facilities data={department?.facilities} />}
             {selectedSection === "Student Achievements" && department?.studentAcheivemtents && (
               <StudentAchievement data={department?.studentAcheivemtents} />
@@ -142,7 +169,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
             {selectedSection === "Research & Product Development" && department?.research && <Research data={department?.research}/>}
             {selectedSection === "Publications" && department?.publications &&<Publications data={department?.publications}/>}
             {selectedSection === "Magazines & Newsletters" && department?.magazines && <Magazines data={department?.magazines}/>}
-            {selectedSection === "Events" && <Events events={department?.events}/>}
+            {selectedSection === "Events" && <Events events={events} departmentName={departmentName} />}
             {selectedSection === "Gallery" && <Gallery data={department?.gallery}/>}
             {selectedSection === "Career Prospects" && <CareerProspects data={department?.careerProspects[0]}/>}
 

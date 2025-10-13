@@ -8,8 +8,21 @@
       { "title": "Principal", "organization": "" }
     ]
   },
-  {
+    {
     "id": 1,
+    "name": "Dr._Priya_Vineetha",
+    "image": "/Dr._Priya_Vineetha_Frank__Professor_&_Dean_(SWO).webp",
+    "category": "Prospective",
+    "roles": [
+      { "title": "Dean - Student Welfare", "organization": "" }
+    ]
+  },
+
+
+
+  
+  {
+    "id": 11,
     "name": "Karthik Pai B H",
     "image": "/departmentImages/departmentHeads/computer-science.webp",
     "category": "Prospective",

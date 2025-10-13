@@ -17,6 +17,176 @@
       "position": "Professor & HoD",
       "imageUrl": "/departmentImages/departmentHeads/computer-science.webp"
     },
+
+"courseOutcome":{
+
+  "2024-2025": [
+    {
+      "id": 1,
+      "subject": "MATHEMATICS FOR CSE STREAM – I (BMATS101)",
+      "semester": "I",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Apply the knowledge of calculus to solve problems related to polar curves and determine the bentness of a curve using Python."
+        },
+        {
+          "no": "CO2",
+          "description": "Outline the notion of partial differentiation to calculate rate of change of multivariate functions and solve problems using Python."
+        },
+        {
+          "no": "CO3",
+          "description": "Analyze linear and nonlinear ordinary differential equations and demonstrate using Python."
+        },
+        {
+          "no": "CO4",
+          "description": "Apply modular arithmetic to computer algorithms and demonstrate using Python."
+        },
+        {
+          "no": "CO5",
+          "description": "Solve systems of linear equations using matrix theory, compute eigenvalues and eigenvectors using Python."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "II",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "III",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "IV",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "V",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "VI",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "VII",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "VIII",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    }
+  ]
+
+
+},
+
+
 "gallery":[
   {
     "image": "/departmentImages/gallery/cs/1.jpeg"
@@ -1593,6 +1763,173 @@
   { "image": "/departmentImages/gallery/it/24.png" },
   { "image": "/departmentImages/gallery/it/25.jpg" }
 ],
+"courseOutcome":{
+
+  "2024-2025": [
+    {
+      "id": 1,
+      "subject": "MATHEMATICS FOR CSE STREAM – I (BMATS101)",
+      "semester": "I",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Apply the knowledge of calculus to solve problems related to polar curves and determine the bentness of a curve using Python."
+        },
+        {
+          "no": "CO2",
+          "description": "Outline the notion of partial differentiation to calculate rate of change of multivariate functions and solve problems using Python."
+        },
+        {
+          "no": "CO3",
+          "description": "Analyze linear and nonlinear ordinary differential equations and demonstrate using Python."
+        },
+        {
+          "no": "CO4",
+          "description": "Apply modular arithmetic to computer algorithms and demonstrate using Python."
+        },
+        {
+          "no": "CO5",
+          "description": "Solve systems of linear equations using matrix theory, compute eigenvalues and eigenvectors using Python."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "II",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "III",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "IV",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "V",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "VI",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "VII",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "VIII",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    }
+  ]
+
+
+},
 
     "events":[
   {
@@ -3120,6 +3457,173 @@
   { "image": "/departmentImages/gallery/eee/25.jpeg" },
    { "image": "/departmentImages/gallery/eee/26.jpg" }
 ],
+"courseOutcome":{
+
+  "2024-2025": [
+    {
+      "id": 1,
+      "subject": "MATHEMATICS FOR CSE STREAM – I (BMATS101)",
+      "semester": "I",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Apply the knowledge of calculus to solve problems related to polar curves and determine the bentness of a curve using Python."
+        },
+        {
+          "no": "CO2",
+          "description": "Outline the notion of partial differentiation to calculate rate of change of multivariate functions and solve problems using Python."
+        },
+        {
+          "no": "CO3",
+          "description": "Analyze linear and nonlinear ordinary differential equations and demonstrate using Python."
+        },
+        {
+          "no": "CO4",
+          "description": "Apply modular arithmetic to computer algorithms and demonstrate using Python."
+        },
+        {
+          "no": "CO5",
+          "description": "Solve systems of linear equations using matrix theory, compute eigenvalues and eigenvectors using Python."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "II",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "III",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "IV",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "V",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "VI",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "VII",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "VIII",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    }
+  ]
+
+
+},
     "events":[
   {
     "id": 1,
@@ -4638,6 +5142,173 @@
    { "image": "/departmentImages/gallery/csd/50.png" },
   { "image": "/departmentImages/gallery/csd/51.jpeg" }
 ],
+"courseOutcome":{
+
+  "2024-2025": [
+    {
+      "id": 1,
+      "subject": "MATHEMATICS FOR CSE STREAM – I (BMATS101)",
+      "semester": "I",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Apply the knowledge of calculus to solve problems related to polar curves and determine the bentness of a curve using Python."
+        },
+        {
+          "no": "CO2",
+          "description": "Outline the notion of partial differentiation to calculate rate of change of multivariate functions and solve problems using Python."
+        },
+        {
+          "no": "CO3",
+          "description": "Analyze linear and nonlinear ordinary differential equations and demonstrate using Python."
+        },
+        {
+          "no": "CO4",
+          "description": "Apply modular arithmetic to computer algorithms and demonstrate using Python."
+        },
+        {
+          "no": "CO5",
+          "description": "Solve systems of linear equations using matrix theory, compute eigenvalues and eigenvectors using Python."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "II",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "III",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "IV",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "V",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "VI",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "VII",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "VIII",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    }
+  ]
+
+
+},
 
     "events":[
   {
@@ -5998,6 +6669,173 @@
   { "image": "/departmentImages/gallery/csb/43.png" },
   { "image": "/departmentImages/gallery/csb/44.jpg" }
 ],
+"courseOutcome":{
+
+  "2024-2025": [
+    {
+      "id": 1,
+      "subject": "MATHEMATICS FOR CSE STREAM – I (BMATS101)",
+      "semester": "I",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Apply the knowledge of calculus to solve problems related to polar curves and determine the bentness of a curve using Python."
+        },
+        {
+          "no": "CO2",
+          "description": "Outline the notion of partial differentiation to calculate rate of change of multivariate functions and solve problems using Python."
+        },
+        {
+          "no": "CO3",
+          "description": "Analyze linear and nonlinear ordinary differential equations and demonstrate using Python."
+        },
+        {
+          "no": "CO4",
+          "description": "Apply modular arithmetic to computer algorithms and demonstrate using Python."
+        },
+        {
+          "no": "CO5",
+          "description": "Solve systems of linear equations using matrix theory, compute eigenvalues and eigenvectors using Python."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "II",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "III",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "IV",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "V",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "VI",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "VII",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "VIII",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    }
+  ]
+
+
+},
     "events":[
   {
     "id": 1,
@@ -7425,6 +8263,173 @@
   { "image": "/departmentImages/gallery/ai/71.png" },
    { "image": "/departmentImages/gallery/ai/72.png" }
 ],
+"courseOutcome":{
+
+  "2024-2025": [
+    {
+      "id": 1,
+      "subject": "MATHEMATICS FOR CSE STREAM – I (BMATS101)",
+      "semester": "I",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Apply the knowledge of calculus to solve problems related to polar curves and determine the bentness of a curve using Python."
+        },
+        {
+          "no": "CO2",
+          "description": "Outline the notion of partial differentiation to calculate rate of change of multivariate functions and solve problems using Python."
+        },
+        {
+          "no": "CO3",
+          "description": "Analyze linear and nonlinear ordinary differential equations and demonstrate using Python."
+        },
+        {
+          "no": "CO4",
+          "description": "Apply modular arithmetic to computer algorithms and demonstrate using Python."
+        },
+        {
+          "no": "CO5",
+          "description": "Solve systems of linear equations using matrix theory, compute eigenvalues and eigenvectors using Python."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "II",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "III",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "IV",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "V",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "VI",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "VII",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "VIII",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    }
+  ]
+
+
+},
 "events":[
   {
     "id": 1,
@@ -8875,7 +9880,173 @@
   { "image": "/departmentImages/gallery/hy/13.jpeg" },
   { "image": "/departmentImages/gallery/hy/14.jpg" }
 ],
+"courseOutcome":{
 
+  "2024-2025": [
+    {
+      "id": 1,
+      "subject": "MATHEMATICS FOR CSE STREAM – I (BMATS101)",
+      "semester": "I",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Apply the knowledge of calculus to solve problems related to polar curves and determine the bentness of a curve using Python."
+        },
+        {
+          "no": "CO2",
+          "description": "Outline the notion of partial differentiation to calculate rate of change of multivariate functions and solve problems using Python."
+        },
+        {
+          "no": "CO3",
+          "description": "Analyze linear and nonlinear ordinary differential equations and demonstrate using Python."
+        },
+        {
+          "no": "CO4",
+          "description": "Apply modular arithmetic to computer algorithms and demonstrate using Python."
+        },
+        {
+          "no": "CO5",
+          "description": "Solve systems of linear equations using matrix theory, compute eigenvalues and eigenvectors using Python."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "II",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "III",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "IV",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "V",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "VI",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "VII",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    },
+       {
+      "id": 2,
+      "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+      "semester": "VIII",
+      "co": [
+        {
+          "no": "CO1",
+          "description": "Understand atomic and molecular structures."
+        },
+        {
+          "no": "CO2",
+          "description": "Explain chemical bonding and reaction kinetics."
+        },
+        {
+          "no": "CO3",
+          "description": "Apply chemical principles to engineering materials."
+        }
+      ]
+    }
+  ]
+
+
+},
     "events":[
   {
     "id": 1,

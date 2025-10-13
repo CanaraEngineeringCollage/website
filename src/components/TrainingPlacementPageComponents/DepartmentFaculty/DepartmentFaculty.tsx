@@ -38,28 +38,37 @@ export default function DepartmentFaculty({ heading, description,  }: { heading:
 const [facultyData, setFacultyData] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchFacultyData = async () => {
-      try {
-        setLoading(true);
-        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/faculty`);
-        if (!res.ok) throw new Error("Failed to fetch faculty data");
+ useEffect(() => {
+  const fetchFacultyData = async () => {
+    try {
+      setLoading(true);
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/faculty`);
+      if (!res.ok) throw new Error("Failed to fetch faculty data");
 
-        const data: any[] = await res.json();
-        const placementTeam = data
-          .filter((faculty) => faculty.department === "Placement Team")
-          .slice(0, 10);
+      const data: any[] = await res.json();
 
-        setFacultyData(placementTeam);
-      } catch (error) {
-        console.error("Error fetching faculty data:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
+      // Filter placement team
+      const placementTeam = data
+        .filter((faculty) => faculty.department === "Placement Team")
+        .sort((a, b) => {
+          if (a.priority && b.priority) return a.priority - b.priority;
+          if (a.priority && !b.priority) return -1;
+          if (!a.priority && b.priority) return 1;
+          return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime();
+        })
+        .slice(0, 10); // take first 10 after sorting
 
-    fetchFacultyData();
-  }, []);
+      setFacultyData(placementTeam);
+    } catch (error) {
+      console.error("Error fetching faculty data:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  fetchFacultyData();
+}, []);
+
 
   useEffect(() => {
     setData(facultyData);
@@ -122,7 +131,7 @@ const [facultyData, setFacultyData] = useState<any[]>([]);
           </div>
         </div>
 
-        <div className="flex w-full sm:grid-cols-2 gap-6">
+        <div className="flex w-full justify-center sm:grid-cols-2 gap-6">
           {(visibleMembers || [])?.map((member, index) => (
             <div
               onClick={() => {

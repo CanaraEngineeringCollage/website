@@ -40,6 +40,18 @@ const Gallery = ({ data }: { data: GalleryItem[] }) => {
     }
   };
 
+
+  React.useEffect(() => {
+    if (selectedIndex !== null) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "auto";
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape" && selectedIndex !== null) closeModal();
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedIndex]);
+
   return (
     <section className="max-w-6xl mx-auto py-12 px-4 text-[#1D1D1F]">
       {/* 🔹 Gallery Grid */}
