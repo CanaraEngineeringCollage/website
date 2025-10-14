@@ -10,6 +10,7 @@ import { IconX } from "@tabler/icons-react";
 import { parse } from "node-html-parser";
 import Image from "next/image";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+import Link from "next/link";
 
 interface CampusEvent {
   id: number;
@@ -119,7 +120,7 @@ const HotOfThePressCarousel = () => {
 
   const fetchEvents = async () => {
     try {
-      const res = await fetch("https://testapi.megamind.studio/buzz");
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz`);
       if (!res.ok) throw new Error("Failed to fetch buzz");
       const data: CampusEvent[] = await res.json();
       setEvents(data);
@@ -162,6 +163,17 @@ const HotOfThePressCarousel = () => {
         <h1 className="text-3xl text-[#1D1D1F] md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-semibold font-sans md:pb-6 tracking-[0.13px]">
           Highlights
         </h1>
+
+         <div className="hidden md:block">
+          <Link href="/media">
+          <button
+            aria-label="Explore More Campus Stories"
+            className="text-black cursor-pointer font-semibold font-sans bg-[#c3d5ed] px-5 py-2 rounded-3xl mr-12"
+          >
+            Explore More Campus Stories
+          </button>
+          </Link>
+        </div>
       </div>
 
       <Swiper
@@ -246,6 +258,12 @@ const HotOfThePressCarousel = () => {
             </button>
           </div>
         </div>
+      </div>
+
+        <div className="md:hidden  mt-5 flex justify-center ">
+       <Link href="/media"> <button aria-label="Explore More Campus Stories" className="text-black mx-auto cursor-pointer font-bold bg-[#c3d5ed] px-5 py-2 rounded-3xl">
+          Explore More Campus Stories
+        </button></Link>
       </div>
 
       {/* Modal */}

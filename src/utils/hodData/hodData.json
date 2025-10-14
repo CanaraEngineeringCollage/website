@@ -10,7 +10,7 @@
   },
     {
     "id": 1,
-    "name": "Dr._Priya_Vineetha",
+    "name": "Dr. Priya_Vineetha",
     "image": "/Dr._Priya_Vineetha_Frank__Professor_&_Dean_(SWO).webp",
     "category": "Prospective",
     "roles": [
@@ -23,7 +23,7 @@
   
   {
     "id": 11,
-    "name": "Karthik Pai B H",
+    "name": "Dr. Karthik Pai B H",
     "image": "/departmentImages/departmentHeads/computer-science.webp",
     "category": "Prospective",
     "roles": [
@@ -49,7 +49,7 @@
     ]  },
   {
     "id": 4,
-    "name": "Dr.Praahas Amin",
+    "name": "Dr. Praahas Amin",
     "image": "/departmentImages/departmentHeads/ComputerScienceDesign.webp",
     "category": "Alumni",
     "roles": [

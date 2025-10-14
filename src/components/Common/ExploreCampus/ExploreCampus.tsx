@@ -102,8 +102,8 @@ function EventContent({ description }: { description: EventDescriptionProps }) {
       )}
       <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
         <div>
-          <p className="text-[17px] text-textGray uppercase font-bold mb-4">{description.date}</p>
-          <h3 className="text-[31px] lg:text-[46px] leading-[1.1] lg:max-w-[70%] mb-5 font-bold">{description.topTitle}</h3>
+          <p className="text-[17px] text-textGray uppercase font-bold mb-4">{new Date(description.date).toLocaleDateString("en-GB")}</p>
+          <h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">{description.topTitle}</h3>
           <p className="text-xl text-textGray">{description.topDescription}</p>
         </div>
         <div className="bg-white -mt-10" dangerouslySetInnerHTML={{ __html: description.remainingHTML }} />
@@ -123,7 +123,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEven
 
   const fetchBuzz = async () => {
     try {
-      const res = await fetch("https://testapi.megamind.studio/buzz");
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz`);
       if (!res.ok) throw new Error("Failed to fetch buzz");
       const data = await res.json();
       setCampusEvents(data);
@@ -224,6 +224,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEven
                   </div>
                   <div className="flex flex-col justify-center w-full md:w-1/2 p-6 lg:p-10">
                     <p className="text-[17px] text-textGray uppercase font-bold mb-4">{new Date(event.eventDate).toLocaleDateString("en-GB")}</p>
+                    <p className="text-textGray text-[17px] mb-3">{event.eventName}</p>
                     <h2 className="text-[31px] leading-[1.1] font-bold text-[#1D1D1F] mb-2">{topTitle}</h2>
                     <p className="text-textGray leading-[1.3] text-[21px] mb-4">{topDescription}</p>
                     <motion.button
