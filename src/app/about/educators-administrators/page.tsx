@@ -1,6 +1,6 @@
 import FacultyMembersSection from "@/components/AboutPageComponents/EducatorsAdminisratorsPage/FacultyMembersSection/FacultyMembersSection";
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
-import React from "react";
+import React, { Suspense } from "react";
 
 export const metadata = {
   title: "Educators & Administrators | Canara College Faculty and Leadership",
@@ -38,7 +38,7 @@ const Page =  () => {
   return (
     <>
       {/* Pass fetched data as prop */}
-      <FacultyMembersSection  />
+      <Suspense fallback={null}> <FacultyMembersSection  /></Suspense>
       <section className="bg-[#E5E5EA]">
         <FooterCard />
       </section>
