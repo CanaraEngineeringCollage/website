@@ -95,6 +95,8 @@ const Footer: FC = () => {
             { label: "Information Science & Engineering", href: "/department/information-science-engineering/detailes" },
               { label: "Information Science & Engineering", href: "/department/information-science-engineering" },
             { label: "Electronics & Communication Engineering", href: "/department/electronics-communication-engineering/detailes" },
+            { label: "Science & Humanities", href: "/department/science-humanities/detailes" },
+            { label: "Science & Humanities", href: "/department/science-humanities" },
                  { label: "Electronics & Communication Engineering", href: "/department/electronics-communication-engineering" },
             { label: "Computer Science & Business System", href: "/department/computer-science-business-system/detailes" },
                 { label: "Computer Science & Business System", href: "/department/computer-science-business-system" },

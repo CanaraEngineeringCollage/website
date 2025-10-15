@@ -118,9 +118,10 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   "Head of the Department",
   "Faculty & Staff",
   "Academic Programmes",
-  "PEO & PO-PSO",
+  (department?.name==="Science & Humanities"?"PO":"PEO & PO-PSO"),
   "Course Outcomes (CO)",
   "Facilities",
+  "Student Achievements",
   ...(department?.name !== "Information Science & Engineering" ? ["Research & Product Development"] : []),
   ...(department?.name === "Information Science & Engineering" ? ["Publications"] : []),
   "Magazines & Newsletters",
@@ -160,7 +161,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
             {selectedSection === "Head of the Department" && <Hod data={department?.depatmentHead} />}
             {selectedSection === "Faculty & Staff" && <Faculty datam={facultyData}/>}
             {selectedSection === "Academic Programmes" && department?.academicsProgram && <Academic data={department.academicsProgram} />}
-            {selectedSection === "PEO & PO-PSO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
+            {selectedSection === "PEO & PO-PSO" || selectedSection === "PO"&& department?.peo && <Peo data={department.peo} deptName={department?.name} />}
             {selectedSection === "Course Outcomes (CO)" && <CourseOutCome staticData={department?.courseOutcome} />}
             {selectedSection === "Facilities" && department?.facilities && <Facilities data={department?.facilities} />}
             {selectedSection === "Student Achievements" && department?.studentAcheivemtents && (

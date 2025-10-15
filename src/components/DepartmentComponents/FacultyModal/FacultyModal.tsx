@@ -94,7 +94,7 @@ export default function FacultyModal({
             >
               <Dialog.Panel>
                 {/* Close Button */}
-                <div className="sticky top-0 z-50 flex justify-end py-2 bg-[#F5F5F7]">
+                <div className="sticky top-0 z-50 flex justify-end py-2 ">
                   <button
                     aria-label="Close Modal"
                     onClick={() => onClose(false)}

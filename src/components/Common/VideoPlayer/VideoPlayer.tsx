@@ -53,7 +53,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ youtubeUrl, videoUrl, title, 
   const videoId = useMemo(() => extractVideoId(youtubeUrl), [youtubeUrl]);
 
   if (!videoId) {
-    return <div className="text-red-500">Invalid YouTube URL or ID</div>;
+    return null;
   }
 
   const thumbnailUrl = thumbnail || `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;

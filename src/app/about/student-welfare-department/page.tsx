@@ -9,6 +9,7 @@ import data from "../../../utils/functionDepartmentData/functionDepartmentData.j
 import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 import MissionAndVision from "@/components/AboutPageComponents/StudentWelfarePage/MissionAndVision/MissionAndVision";
 import Facilities from "@/components/AboutPageComponents/StudentWelfarePage/Facilities/Facilities";
+import EventsSection from "@/components/AboutPageComponents/StudentWelfarePage/EventsSection/EventsSection";
 
 export const metadata = {
   title: "Student Welfare Department | Canara College",
@@ -60,6 +61,9 @@ const page = () => {
       </section>
       <section className="bg-[#071D2C] px-6 md:px-12 lg:px-16 xl:px-0">
         <MessageSection />
+      </section>
+<section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">
+      <EventsSection/>
       </section>
       {/* <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">
         <HotOfThePress />
