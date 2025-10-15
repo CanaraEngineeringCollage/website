@@ -100,9 +100,13 @@ const Footer: FC = () => {
                  { label: "Electronics & Communication Engineering", href: "/department/electronics-communication-engineering" },
             { label: "Computer Science & Business System", href: "/department/computer-science-business-system/detailes" },
                 { label: "Computer Science & Business System", href: "/department/computer-science-business-system" },
-            { label: "Computer Science & Design", href: "/department/computer-science-design/detailes" },
-                   { label: "Computer Science & Design", href: "/department/computer-science-design" },
-            { label: "Science & Humanities", href: "/department/science-humanities" },
+            { label: "Computer Science & Design", href: "/department/computer-science-design" },
+                   { label: "Computer Science & Design", href: "/department/computer-science-design/detailes" },
+
+
+    { label: "Mechanical Engineering", href: "/department/mechanical-engineering" },
+                   { label: "Mechanical Engineering", href: "/department/mechanical-engineering/detailes" },
+
             { label: "Distinctive Practices", href: "/about/distinctive-practices" },
             { label: "Key Functionaries & HODs", href: "/about/key-functionaries-and-hods" },
             { label: "Glimpses of CEC", href: "/about/glimpses-of-cec" },

@@ -60,7 +60,7 @@ const HighlightsSection = () => {
     },
     {
       id: 3,
-      img: "/trainingPlacementPageImages/verifone.png",
+      img: "/trainingPlacementPageImages/verifone1.png",
       title: "Verifone",
       company: "",
     },

@@ -16,6 +16,7 @@ const Peo = ({ data,deptName }:{data:PeoProps;deptName:string}) => {
   return (
     <div className=''>
       {data?.programEducation&&<h1 className="text-[20px] font-bold text-textGray mb-3">Program Educational Objectives (PEO)</h1>}
+     {data?.programEducation&& deptName === "Mechanical Engineering"&&<h3 className='mb-3 md:text-lg  text-[14px] leading-7  text-textGray'>Graduates of Mechanical Engineering program will:</h3>}
       {data?.programEducation&&<ul className="list-decimal pl-5 md:text-lg  text-[14px] leading-7 pt-2 text-textGray">
         {data?.programEducation?.map((item, index) => (
           <li key={index} className="mb-2">{item}</li>
@@ -23,7 +24,7 @@ const Peo = ({ data,deptName }:{data:PeoProps;deptName:string}) => {
       </ul>}
 
       <h1 className="text-[20px] font-bold mt-5 mb-2 text-textGray">Program Outcomes (PO)</h1>
-      <h3 className='mb-3 md:text-lg  text-[14px] leading-7  text-textGray'>Engineering graduates in <span className='font-bold'>{`${deptName}`}</span> will be able to:</h3>
+      {deptName !== "Mechanical Engineering" ? <h3 className='mb-3 md:text-lg  text-[14px] leading-7  text-textGray'>Engineering graduates in <span className='font-bold'>{`${deptName}`}</span> will be able to:</h3>:<h3 className='mb-3 md:text-lg  text-[14px] leading-7  text-textGray'>Engineering graduates will be able to:</h3>}
       <ul className="list-disc pl-5 md:text-lg  text-[14px] leading-7  text-textGray">
         {data?.programOutComes?.map((item, index) => {
           const colonIndex = item.indexOf(':');

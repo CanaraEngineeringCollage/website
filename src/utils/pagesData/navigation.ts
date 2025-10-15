@@ -84,6 +84,10 @@ const departments = [
     title: "Artificial Intelligence & Machine Learning",
     link: "/department/artificial-intelligence-machine-learning",
   },
+   {
+    title: "Mechanical Engineering",
+    link: "/department/mechanical-engineering",
+  },
   {
     title: "Science & Humanities",
     link: "/department/science-humanities",

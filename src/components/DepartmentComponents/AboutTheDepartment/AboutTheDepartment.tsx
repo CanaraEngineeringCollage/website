@@ -18,7 +18,7 @@ const   AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepar
   console.log(slug);
 
   return (
-    <section className="md:py-10 text-[#1D1D1F] xl:py-20 pb-10 max-w-7xl xl:max-w-[75%] mx-auto   ">
+    <section className=" text-[#1D1D1F] pb-10  max-w-7xl xl:max-w-[75%] mx-auto   ">
       <div>
         <div className="flex justify-between  mb-5 lg:mb-10">
           <div className="lg:w-[75%] ">

@@ -168,6 +168,29 @@ const programData = [
       />
     ),
   },
+  {
+    category: "Bachelor of Engineering in",
+    title: "Mechanical Engineering",
+    src: "/engineeringProgrammImages/mech.png",
+
+    content: (
+      <CardContent
+        description={{
+          src: "/engineeringProgrammImages/css1.webp",
+          subtitle1: "Overview of the Department",
+          subDescription1:
+            "The Department of Mechanical Engineering is dedicated to shaping skilled engineers who blend innovation with practical knowledge. The department emphasizes core mechanical principles, design thinking, and sustainable engineering practices. Through modern laboratories, research initiatives, and industry collaborations, it prepares students to meet the challenges of evolving technologies and global engineering demands.",
+          subtitle2: "Overview of programme",
+          subDescription2:
+            "The Bachelor of Engineering in Mechanical Engineering provides a strong foundation in mechanics, thermodynamics, manufacturing, and design. The program integrates theoretical understanding with real-world applications through projects, internships, and industry exposure. Students gain the technical expertise and analytical skills required to design, develop, and optimize mechanical systems across diverse sectors.",
+          subtitle3: "Course Outcomes",
+          subDescription3:
+            "Graduates will be capable of applying mechanical engineering principles to solve complex engineering problems. They will demonstrate proficiency in modern tools, sustainable design, and innovative thinking. With strong ethical values, leadership qualities, and a commitment to lifelong learning, they will contribute effectively to industrial development and technological progress.",
+       
+          }}
+      />
+    ),
+  },
 ];
 
 // Reusable card content (can be empty or a "+" button, etc.)

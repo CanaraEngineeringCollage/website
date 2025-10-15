@@ -18,7 +18,20 @@ const Academic = ({ data }: { data?: AcademicProps }) => {
   return (
     <div className=" text-textGray text-[17px]">
       {data?.title && <h1 className="text-[20px] font-bold text-textGray mb-4">{data.title}</h1>}
-      <p className="mb-4 md:text-lg text-justify  text-[14px] leading-7  text-textGray">{data?.des}</p>
+{Array.isArray(data?.des) ? (
+  data.des.map((paragraph, index) => (
+    <p
+      key={index}
+      className="mb-4 md:text-lg text-justify text-[14px] leading-7 text-textGray"
+    >
+      {paragraph}
+    </p>
+  ))
+) : (
+  <p className="mb-4 md:text-lg text-justify text-[14px] leading-7 text-textGray">
+    {data?.des}
+  </p>
+)}
       {data?.points && (
         <ul className="list-disc pl-5 mb-4  md:text-lg  text-[14px] leading-7  text-textGray">
           {data?.points?.map((point, index) => (

@@ -9,6 +9,7 @@ interface FacilityCategory {
 interface Facility {
   title: string;
   points?: string[];
+  majorPoint?:string[];
   categories?: FacilityCategory[];
   desc?: string;
   methodes?: string;
@@ -24,9 +25,10 @@ interface FacilitiesProps {
     allFacilities: Facility[];
     // Optional image URL for the facilities section
   };
+  deptName?:string
 }
 
-const Facilities: React.FC<FacilitiesProps> = ({ data }) => {
+const Facilities: React.FC<FacilitiesProps> = ({ data,deptName }) => {
   console.log(data);
 
   return (
@@ -66,6 +68,18 @@ const Facilities: React.FC<FacilitiesProps> = ({ data }) => {
   })()}
 </p>
 }
+
+
+    {facility.majorPoint && (
+      <>
+      {facility.majorDesc&&<p className="md:text-lg mb-1 text-justify text-[14px] leading-7 text-textGray">{facility.majorDesc}</p>}
+    {facility.majorDesc2&&  <p className="md:text-lg mb-1 text-justify text-[14px] leading-7 text-textGray">{facility.majorDesc2}</p>}
+              <ul className="list-disc ml-6 space-y-1 md:text-lg text-justify  text-[14px] leading-7  text-textGray">
+              {facility.majorPoint.map((point, i) => (
+                <li key={i}>{point}</li>
+              ))}
+              </ul>
+            </>)}
             {facility.methodes && <p className="mb-2 md:text-lg  text-[14px] leading-7  text-textGray">{facility.methodes}</p>}
             {facility.points && (
               <ul className="list-disc ml-6 space-y-1 md:text-lg text-justify  text-[14px] leading-7  text-textGray">

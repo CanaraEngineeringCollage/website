@@ -122,14 +122,14 @@ export default  function DepartmentPage({ params }: { params: { slug: string } }
       </section>
       {/* <HeroSection departmentName={department.name} /> */}
     
-      <section className="">
+    {department?.ytUrl&&  <section className="pb-10 md:pb-10   lg:pb-20">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           youtubeUrl={department?.ytUrl}
           thumbnail={department?.thumbnail}
         />
-      </section>
-    { department.ethicalLearning&& <section className="pt-10 lg:mb-20 lg:pt-20">
+      </section>}
+    { department.ethicalLearning&& <section className=" lg:mb-20 ">
         <DepartmentMissionVision
           ethicalLearning={department.ethicalLearning}
         

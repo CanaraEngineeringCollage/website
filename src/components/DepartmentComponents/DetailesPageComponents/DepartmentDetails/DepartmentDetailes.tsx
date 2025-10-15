@@ -114,16 +114,16 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   const departmentMenuItems = [
   "Department Profile",
     ...(department?.name === "Artificial Intelligence & Machine Learning" ? ["Career Prospects"] : []),
-  "Organisation Structure",
+   ...(department?.name!=="Mechanical Engineering"?["Organisation Structure"]:[]),
   "Head of the Department",
   "Faculty & Staff",
   "Academic Programmes",
-  (department?.name==="Science & Humanities"?"PO":"PEO & PO-PSO"),
+  ...(department?.name==="Science & Humanities"?["PO"]:["PEO & PO-PSO"]),
   "Course Outcomes (CO)",
   "Facilities",
   "Student Achievements",
   ...(department?.name !== "Information Science & Engineering" ? ["Research & Product Development"] : []),
-  ...(department?.name === "Information Science & Engineering" ? ["Publications"] : []),
+  ...(department?.name === "Information Science & Engineering" || department?.name === "Mechanical Engineering"? ["Publications"] : []),
   "Magazines & Newsletters",
   "Events",
   "Gallery",
@@ -161,13 +161,14 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
             {selectedSection === "Head of the Department" && <Hod data={department?.depatmentHead} />}
             {selectedSection === "Faculty & Staff" && <Faculty datam={facultyData}/>}
             {selectedSection === "Academic Programmes" && department?.academicsProgram && <Academic data={department.academicsProgram} />}
-            {selectedSection === "PEO & PO-PSO" || selectedSection === "PO"&& department?.peo && <Peo data={department.peo} deptName={department?.name} />}
+            {selectedSection === "PO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
+            {selectedSection === "PEO & PO-PSO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
             {selectedSection === "Course Outcomes (CO)" && <CourseOutCome staticData={department?.courseOutcome} />}
-            {selectedSection === "Facilities" && department?.facilities && <Facilities data={department?.facilities} />}
+            {selectedSection === "Facilities" && department?.facilities && <Facilities deptName={department?.name} data={department?.facilities} />}
             {selectedSection === "Student Achievements" && department?.studentAcheivemtents && (
               <StudentAchievement data={department?.studentAcheivemtents} />
             )}
-            {selectedSection === "Research & Product Development" && department?.research && <Research data={department?.research}/>}
+            {selectedSection === "Research & Product Development" && department?.research && <Research deptName={department?.name} data={department?.research}/>}
             {selectedSection === "Publications" && department?.publications &&<Publications data={department?.publications}/>}
             {selectedSection === "Magazines & Newsletters" && department?.magazines && <Magazines data={department?.magazines}/>}
             {selectedSection === "Events" && <Events events={events} departmentName={departmentName} />}
