@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const FacultyRecruitment = () => {
   return (
-    <section className="md:py-10 text-[#1D1D1F] xl:py-20 pb-10 max-w-7xl xl:max-w-[75%] mx-auto">
+    <section className="py-10 px-5 text-[#1D1D1F] xl:py-20 pb-10 max-w-7xl xl:max-w-[75%] mx-auto">
       <div className=" space-y-8">
         {/* Title */}
         <h1 className="text-3xl md:w-[90%] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold leading-[1.2] text-[#1D1D1F]">

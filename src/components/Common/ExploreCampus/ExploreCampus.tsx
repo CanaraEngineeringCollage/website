@@ -193,7 +193,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEven
         {/* Category Filters */}
      <div className="pb-5 lg:pb-10">
   {/* Mobile Dropdown */}
-  <div className="flex justify-between items-center gap-2 md:hidden">
+  <div className="flex lg:hidden justify-between items-center gap-2 md:hidden">
     <button
       className="border text-lg font-bold px-3 py-1 rounded-4xl cursor-pointer"
       onClick={() => setActiveCategory("All")}
@@ -206,7 +206,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEven
       onChange={(e) => { setActiveCategory(e.target.value); setShowAll(false); }}
       className="border rounded-xl px-3 py-2 text-base text-gray-700 focus:outline-none"
     >
-      <option value="All">All</option>
+   
       {categories.map((category, index) => (
         <option key={index} value={category}>
           {category}
@@ -216,7 +216,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEven
   </div>
 
   {/* Desktop View */}
-    <div className="flex justify-between items-center pb-5 lg:pb-10 flex-wrap gap-2">
+    <div className="hidden lg:flex justify-between items-center pb-5 lg:pb-10 flex-wrap gap-2">
           <button className="border text-lg font-bold px-3 py-1 rounded-4xl cursor-pointer" onClick={() => setActiveCategory("All")}>
             Clear All Filters
           </button>

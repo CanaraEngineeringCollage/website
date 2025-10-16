@@ -59,8 +59,17 @@ const page = () => {
       <section className="px-6 md:px-12 -mt-5 md:-mt-0 lg:pl-16 lg:px-0 xl:px-0">
         <FunctionDepartment title="Functions of the Department" functionDeprtmentData={data} />
       </section>
-      <section className="bg-[#071D2C] px-6 md:px-12 lg:px-16 xl:px-0">
-        <MessageSection />
+   <section className="bg-[#071D2C] px-6 md:px-0 lg:px-0 xl:px-0 md:mt-0 mt-8">
+        <MessageSection
+  officer={{
+    name: "Dr. Priya V. Frank",
+    position: "Dean - Student Welfare",
+    imageUrl: "/Dr._Priya_Vineetha_Frank__Professor_&_Dean_(SWO).webp",
+    message:
+      "The Student Welfare Department (SWD) is dedicated to ensuring your well-being and fostering an environment that supports your academic and personal growth. We oversee various welfare activities on campus that play a significant role in shaping your future. More than just a support system, SWD serves as a platform for you to voice your opinions and contribute to the institution’s growth. As the Dean of Student Welfare, I consider it a privilege to support you during these crucial years of development. Our approach is entirely student-centric, focusing on your needs and providing opportunities for holistic growth. We aim to nurture leadership qualities, confidence, and a well-rounded personality through various initiatives.",
+  }}
+/>
+
       </section>
 <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">
       <EventsSection/>

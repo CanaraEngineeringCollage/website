@@ -21,7 +21,7 @@ const FunctionDepartment = ({
   title: string;
   functionDeprtmentData: DataItem[];
 }) => {
-  const [data, setData] = useState<DataItem[]>(functionDeprtmentData);
+ 
   const swiperRef = useRef<SwiperType | null>(null);
   const [isPlay, setIsPlay] = useState(true);
   const [progress, setProgress] = useState(0);
@@ -30,9 +30,7 @@ const FunctionDepartment = ({
   const CIRCUMFERENCE = 138; // 2πr, where r=22
   const progressRef = useRef(0); // local ref for smooth progress
 
-  useEffect(() => {
-    setData(functionDeprtmentData);
-  }, [functionDeprtmentData]);
+ 
 
   // Handle play/pause toggle
   const togglePlayPause = () => {
@@ -88,7 +86,7 @@ const FunctionDepartment = ({
         onSlideChange={onSlideChange}
         onAutoplayTimeLeft={handleAutoplayTimeLeft}
       >
-        {data?.map((item, index) => (
+        {functionDeprtmentData?.map((item, index) => (
           <SwiperSlide key={index}>
             <div className="max-w-sm h-[25vh] lg:h-[30vh] p-6 bg-[#ffffff] rounded-2xl">
               <div className="mb-4">

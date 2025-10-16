@@ -23,9 +23,9 @@ const Facilities = () => {
         Facilities
       </h1>
 
-      <ul className="space-y-2 list-disc pl-6 text-textGray text-justify text-[20px] leading-relaxed">
+      <ul className="space-y-2 list-disc pl-6 text-textGray text-justify text-sm lg:text-[20px] leading-relaxed">
         {facilities.map((item, index) => (
-          <li key={index} className="leading-8">
+          <li key={index} className="md:leading-8">
             {item}
           </li>
         ))}

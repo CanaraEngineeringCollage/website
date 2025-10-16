@@ -294,7 +294,7 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
             }}
           >
             {" "}
-            <button className="bg-blue-100 rounded text-black text-block px-6 py-2  text-sm font-medium hover:bg-blue-700 transition">
+            <button className="bg-blue-100 rounded-full text-black text-block px-6 py-2  text-sm font-medium hover:bg-blue-700 transition">
               Meet more of Our Faculty
             </button>
           </Link>
