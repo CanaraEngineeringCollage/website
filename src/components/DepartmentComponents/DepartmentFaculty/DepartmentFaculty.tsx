@@ -58,37 +58,33 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
   const [facultyData, setFacultyData] = useState<CouncilMember[]>([]);
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    async function fetchFaculty() {
-      try {
-        setLoading(true);
-        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/faculty`);
-        const data: CouncilMember[] = await res.json();
+ useEffect(() => {
+  async function fetchFaculty() {
+    setLoading(true);
+    try {
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent(departmentName)}`
+      );
+      const data: CouncilMember[] = await res.json();
 
-        const filtered = data
-  ?.filter((f) => f.department === departmentName)
-  .sort((a, b) => {
-    // Both have priority
-    if (a.priority && b.priority) return a.priority - b.priority;
-    // Only a has priority
-    if (a.priority && !b.priority) return -1;
-    // Only b has priority
-    if (!a.priority && b.priority) return 1;
-    // Neither has priority → sort by createdAt
-    return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime();
-  })
-  .slice(0, 10);
+      const sortedData = data.sort((a, b) => {
+        if (a.priority && b.priority) return a.priority - b.priority;
+        if (a.priority && !b.priority) return -1;
+        if (!a.priority && b.priority) return 1;
+        return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime();
+      });
 
-        setFacultyData(filtered);
-        setLoading(false);
-      } catch (err) {
-        console.error("Error fetching faculty:", err);
-      } finally {
-        setLoading(false);
-      }
+      setFacultyData(sortedData.slice(0, 10)); // top 10
+    } catch (err) {
+      console.error("Error fetching faculty:", err);
+    } finally {
+      setLoading(false);
     }
-    fetchFaculty();
-  }, [departmentName]);
+  }
+
+  fetchFaculty();
+}, [departmentName]);
+
 
   useEffect(() => {
     setData(facultyData);

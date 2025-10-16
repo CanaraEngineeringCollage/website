@@ -54,14 +54,16 @@ const FacultyCard: React.FC<{ member: CouncilMember; onClick?: () => void }> = (
 );
 
 const FacultyMembersSection: React.FC = () => {
-  const searchParams = useSearchParams();
+ const searchParams = useSearchParams();
   const departmentFromQuery = searchParams.get("department");
   const categoryFromQuery = searchParams.get("category");
 
   const [selectedDepartment, setSelectedDepartment] = useState<string>(
     departmentFromQuery || "Computer Science & Engineering"
   );
-  const [selectedCategory, setSelectedCategory] = useState<string>(categoryFromQuery || "faculty");
+  const [selectedCategory, setSelectedCategory] = useState<string>(
+    categoryFromQuery || "faculty"
+  );
   const [facultyData, setFacultyData] = useState<CouncilMember[]>([]);
   const [loading, setLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -75,58 +77,64 @@ const FacultyMembersSection: React.FC = () => {
     "Computer Science & Business System",
     "Artificial Intelligence & Machine Learning",
     "Mechanical Engineering",
-    "Science & Humanities"
-
+    "Science & Humanities",
   ];
 
+  // ✅ Fetch only the selected department
   useEffect(() => {
-    async function fetchFaculty() {
-       setLoading(true);
-      try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/faculty`);
-        const data = await res.json();
-        setFacultyData(data);
-      } catch (err) {
-        console.error("Error fetching faculty:", err);
-      } finally {
-        setLoading(false);
-      }
+  async function fetchFaculty() {
+    try {
+      setLoading(true);
+      const url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent(
+        selectedDepartment
+      )}`;
+      const res = await fetch(url); // normal fetch is enough
+      const data = await res.json();
+      setFacultyData(data);
+    } catch (err) {
+      console.error("Error fetching faculty:", err);
+    } finally {
+      setLoading(false);
     }
-    fetchFaculty();
-  }, []);
+  }
 
+  fetchFaculty();
+}, [selectedDepartment]);
+
+
+  // ✅ Update department when query changes (if user navigates)
   useEffect(() => {
     if (departmentFromQuery) setSelectedDepartment(departmentFromQuery);
   }, [departmentFromQuery]);
 
-  // Filter data based on category and department
-const filteredData =
-  selectedCategory === "faculty"
-    ? facultyData
-        .filter((item) => item.department === selectedDepartment)
-        .sort((a, b) => {
-          // Both have priority
-          if (a.priority && b.priority) return a.priority - b.priority;
-          // Only a has priority
-          if (a.priority && !b.priority) return -1;
-          // Only b has priority
-          if (!a.priority && b.priority) return 1;
-          // Neither has priority → sort by createdAt
-          return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime();
-        })
-    : selectedCategory === "placement"
-    ? facultyData
-        .filter((item) => item.department === "Placement Team")
-        .sort((a, b) => {
-          if (a.priority && b.priority) return a.priority - b.priority;
-          if (a.priority && !b.priority) return -1;
-          if (!a.priority && b.priority) return 1;
-          return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime();
-        })
-    : selectedCategory === "admin"
-    ? adminStaff
-    : generalStaff;
-
+  // ✅ Sorting and category filtering logic
+  const filteredData =
+    selectedCategory === "faculty"
+      ? facultyData
+          .sort((a, b) => {
+            if (a.priority && b.priority) return a.priority - b.priority;
+            if (a.priority && !b.priority) return -1;
+            if (!a.priority && b.priority) return 1;
+            return (
+              new Date(a.createdAt).getTime() -
+              new Date(b.createdAt).getTime()
+            );
+          })
+      : selectedCategory === "placement"
+      ? facultyData
+          .filter((item) => item.department === "Placement Team")
+          .sort((a, b) => {
+            if (a.priority && b.priority) return a.priority - b.priority;
+            if (a.priority && !b.priority) return -1;
+            if (!a.priority && b.priority) return 1;
+            return (
+              new Date(a.createdAt).getTime() -
+              new Date(b.createdAt).getTime()
+            );
+          })
+      : selectedCategory === "admin"
+      ? adminStaff
+      : generalStaff;
 
 
       

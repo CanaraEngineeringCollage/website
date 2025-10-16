@@ -70,21 +70,24 @@ const Faculty = ({  deptName}: {  deptName: string}) => {
   
 
 useEffect(() => {
-    async function fetchFaculty() {
-      try {
-        setLoading(true);
-        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/faculty`);
-        const data: FacultyMember[] = await res.json();
-        const filtered = data.filter((f) => f.department === deptName);
-        setData(filtered);
-      } catch (err) {
-        console.error("Error fetching faculty data:", err);
-      } finally {
-        setLoading(false);
-      }
+  async function fetchFaculty() {
+    try {
+      setLoading(true);
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent(deptName)}`
+      );
+      const data: FacultyMember[] = await res.json();
+      setData(data);
+    } catch (err) {
+      console.error("Error fetching faculty data:", err);
+    } finally {
+      setLoading(false);
     }
-    fetchFaculty();
-  }, [deptName]);
+  }
+
+  fetchFaculty();
+}, [deptName]);
+
 
 
   // Separate teaching vs technical staff
