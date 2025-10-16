@@ -59,6 +59,7 @@ const [facultyData, setFacultyData] = useState<any[]>([]);
         .slice(0, 10); // take first 10 after sorting
 
       setFacultyData(placementTeam);
+      setLoading(false)
     } catch (error) {
       console.error("Error fetching faculty data:", error);
     } finally {
@@ -132,7 +133,23 @@ const [facultyData, setFacultyData] = useState<any[]>([]);
         </div>
 
         <div className="flex w-full justify-center sm:grid-cols-2 gap-6">
-          {(visibleMembers || [])?.map((member, index) => (
+           {loading
+    ? // 🌟 Skeleton Loading (when fetching faculty data)
+      Array.from({ length: 2 }).map((_, index) => (
+        <div
+          key={index}
+          className="relative w-full max-w-[309px] aspect-[2/3] rounded-xl overflow-hidden bg-gray-200 animate-pulse flex flex-col items-center shadow-md"
+        >
+          {/* Image skeleton */}
+        <div className="absolute inset-0 bg-[#6DC0EB]/40" />
+    <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB]/70 via-[#6DC0EB]/40 to-transparent" />
+    <div className="absolute bottom-4 left-0 w-full px-3 space-y-2">
+      <div className="h-5 bg-white/50 rounded w-3/4"></div>
+      <div className="h-4 bg-white/30 rounded w-1/3"></div>
+    </div>
+        </div>
+      ))
+    :(visibleMembers || [])?.map((member, index) => (
             <div
               onClick={() => {
                     setSelectedMember(member);
@@ -196,7 +213,27 @@ const [facultyData, setFacultyData] = useState<any[]>([]);
         </div>
 
         <div className="flex justify-center w-full">
-          {visibleMembersMobile?.map((member, index) => (
+                  {loading
+    ? // 🌟 Skeleton Loading (when fetching faculty data)
+      Array.from({ length: 1 }).map((_, index) => (
+          <div
+          key={index}
+          className="relative cursor-pointer w-full max-w-[309px] h-[270px] md:h-[420px] rounded-xl overflow-hidden bg-[#6DC0EB]/40 animate-pulse flex flex-col items-center shadow-md"
+        >
+          {/* Image skeleton */}
+          <div className="absolute inset-0 bg-[#6DC0EB]/50" />
+
+          {/* Gradient area to mimic card footer */}
+          <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB]/80 via-[#6DC0EB]/50 to-transparent" />
+
+          {/* Text placeholders */}
+          <div className="absolute bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full space-y-2 z-10">
+            <div className="h-5 bg-white/60 rounded w-3/4"></div>
+            <div className="h-4 bg-white/40 rounded w-1/3"></div>
+          </div>
+        </div>
+      ))
+    : visibleMembersMobile?.map((member, index) => (
             <div
               onClick={() => {
                     setSelectedMember(member);
@@ -277,3 +314,5 @@ const [facultyData, setFacultyData] = useState<any[]>([]);
     </section>
   );
 }
+
+

@@ -176,7 +176,7 @@ const programData = [
     content: (
       <CardContent
         description={{
-          src: "/engineeringProgrammImages/css1.webp",
+          src: "/engineeringProgrammImages/mech.png",
           subtitle1: "Overview of the Department",
           subDescription1:
             "The Department of Mechanical Engineering is dedicated to shaping skilled engineers who blend innovation with practical knowledge. The department emphasizes core mechanical principles, design thinking, and sustainable engineering practices. Through modern laboratories, research initiatives, and industry collaborations, it prepares students to meet the challenges of evolving technologies and global engineering demands.",

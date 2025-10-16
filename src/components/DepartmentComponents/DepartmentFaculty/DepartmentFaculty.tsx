@@ -53,6 +53,7 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
   const [data, setData] = useState<CouncilMember[]>([]);
   const [startIndex, setStartIndex] = useState(0);
   const router = useRouter();
+  
 
   const [facultyData, setFacultyData] = useState<CouncilMember[]>([]);
   const [loading, setLoading] = useState(false);
@@ -79,6 +80,7 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
   .slice(0, 10);
 
         setFacultyData(filtered);
+        setLoading(false);
       } catch (err) {
         console.error("Error fetching faculty:", err);
       } finally {
@@ -169,7 +171,25 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
         </div>
 
         <div className="grid grid-cols-1 w-full md:grid-cols-2 sm:grid-cols-2 gap-6">
-          {visibleMembers?.map((member, index) => (
+          {loading
+    ? // 🌟 Skeleton Loading (when fetching faculty data)
+      Array.from({ length: 2 }).map((_, index) => (
+        <div
+          key={index}
+          className="relative w-full max-w-[309px] aspect-[2/3] rounded-xl overflow-hidden bg-gray-200 animate-pulse flex flex-col items-center shadow-md"
+        >
+          {/* Image skeleton */}
+        <div className="absolute inset-0 bg-[#6DC0EB]/40" />
+    <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB]/70 via-[#6DC0EB]/40 to-transparent" />
+    <div className="absolute bottom-4 left-0 w-full px-3 space-y-2">
+      <div className="h-5 bg-white/50 rounded w-3/4"></div>
+      <div className="h-4 bg-white/40 rounded w-1/2"></div>
+      <div className="h-4 bg-white/30 rounded w-1/3"></div>
+    </div>
+        </div>
+      ))
+    : // 🌟 Actual Cards (once loaded)
+          visibleMembers?.map((member, index) => (
             <div
               key={index}
               onClick={() => openModal(member)}
@@ -213,7 +233,30 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
         </div>
 
         <div className="grid grid-cols-1 w-full gap-6">
-          {visibleMembersMobile.map((member, index) => (
+
+            {loading
+    ? // 🌟 Skeleton Loading (when fetching faculty data)
+      Array.from({ length: 1 }).map((_, index) => (
+          <div
+          key={index}
+          className="relative cursor-pointer w-full h-[360px] md:h-[480px] md:w-2/3 rounded-xl overflow-hidden bg-[#6DC0EB]/40 animate-pulse flex flex-col items-center shadow-md"
+        >
+          {/* Image skeleton */}
+          <div className="absolute inset-0 bg-[#6DC0EB]/50" />
+
+          {/* Gradient area to mimic card footer */}
+          <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB]/80 via-[#6DC0EB]/50 to-transparent" />
+
+          {/* Text placeholders */}
+          <div className="absolute bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full space-y-2 z-10">
+            <div className="h-5 bg-white/60 rounded w-3/4"></div>
+            <div className="h-4 bg-white/50 rounded w-1/2"></div>
+            <div className="h-4 bg-white/40 rounded w-1/3"></div>
+          </div>
+        </div>
+      ))
+    : 
+          visibleMembersMobile.map((member, index) => (
             <div
               key={index}
               onClick={() => openModal(member)}
@@ -246,7 +289,7 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
           ))}
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex flex-col items-center gap-7">
           <Link
             href={{
               pathname: "/about/educators-administrators",
@@ -282,3 +325,18 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
     </section>
   );
 }
+
+
+
+// Skeleton placeholder for loading state
+const SkeletonCard: React.FC = () => (
+  <div className="relative w-full max-w-[309px] aspect-[2/3] rounded-xl overflow-hidden bg-[#6DC0EB]/40 animate-pulse shadow-md">
+    <div className="absolute inset-0 bg-[#6DC0EB]/50" />
+    <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB]/60 via-[#6DC0EB]/40 to-transparent" />
+    <div className="absolute bottom-4 left-0 w-full px-4 space-y-2">
+      <div className="h-5 bg-white/50 rounded w-3/4"></div>
+      <div className="h-4 bg-white/40 rounded w-1/2"></div>
+      <div className="h-4 bg-white/30 rounded w-1/3"></div>
+    </div>
+  </div>
+);

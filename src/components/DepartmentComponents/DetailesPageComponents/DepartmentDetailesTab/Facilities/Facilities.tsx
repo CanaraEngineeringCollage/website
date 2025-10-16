@@ -50,7 +50,9 @@ const Facilities: React.FC<FacilitiesProps> = ({ data,deptName }) => {
         
         {data.allFacilities.map((facility, idx) => (
             <div key={idx} className="pb-4">
+              {facility.title2&&<h3 className="text-[22px] font-bold  text-textGray mb-2">{facility.title2}</h3>}
             <h3 className="text-xl font-bold  text-textGray mb-2">{facility.title}</h3>
+          
             {facility.desc &&<p className="mb-2 md:text-lg text-justify text-[14px] leading-7 text-textGray">
   {(() => {
     const splitIndex = facility.desc.indexOf(':'); // find the first colon
@@ -88,6 +90,7 @@ const Facilities: React.FC<FacilitiesProps> = ({ data,deptName }) => {
               ))}
               </ul>
             )}
+            <div className={`${deptName==="Artificial Intelligence & Machine Learning"?"flex flex-col lg2:flex-row flex-wrap  gap-2":""}`}>
             {facility?.imageUrl && (
               <Image loading="lazy" src={facility.imageUrl} width={500} height={500} alt={facility.title} className="mt-10 rounded" />
             )}
@@ -97,6 +100,7 @@ const Facilities: React.FC<FacilitiesProps> = ({ data,deptName }) => {
              {facility?.imageUrl3 && (
               <Image loading="lazy"  src={facility.imageUrl3} width={500} height={500} alt={facility.title} className="mt-10 rounded" />
             )}
+            </div>
 
             {facility.categories && (
               <div className="mt-2 space-y-2">

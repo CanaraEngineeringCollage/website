@@ -27,15 +27,33 @@ interface FacultyMember {
   qualifications: Qualification[];
 }
 
+
+// Skeleton card shown while loading
+const SkeletonCard: React.FC = () => (
+  <div className="relative w-full max-w-[280px] lg:h-[430px] md:h-[260px] h-[400px] rounded-xl overflow-hidden bg-[#6DC0EB]/50 animate-pulse shadow-md">
+    <div className="absolute inset-0 bg-[#6DC0EB]/40" />
+    <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB]/70 via-[#6DC0EB]/40 to-transparent" />
+    <div className="absolute bottom-4 left-0 w-full px-3 space-y-2">
+      <div className="h-5 bg-white/50 rounded w-3/4"></div>
+      <div className="h-4 bg-white/40 rounded w-1/2"></div>
+      <div className="h-4 bg-white/30 rounded w-1/3"></div>
+    </div>
+  </div>
+);
+
+
 const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
   const binary = buffer.data.reduce((acc, byte) => acc + String.fromCharCode(byte), "");
   const base64 = btoa(binary);
   return `data:image/jpeg;base64,${base64}`;
 };
 
-const Faculty = ({ datam }: { datam: FacultyMember[] }) => {
+const Faculty = ({  deptName}: {  deptName: string}) => {
   const [data, setData] = useState<FacultyMember[]>([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+
   const [selectedMember, setSelectedMember] = useState<FacultyMember | null>(null);
 
   const openModal = (member: FacultyMember) => {
@@ -48,9 +66,26 @@ const Faculty = ({ datam }: { datam: FacultyMember[] }) => {
     setSelectedMember(null);
   };
 
-  useEffect(() => {
-    setData(datam || []);
-  }, [datam]);
+
+  
+
+useEffect(() => {
+    async function fetchFaculty() {
+      try {
+        setLoading(true);
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/faculty`);
+        const data: FacultyMember[] = await res.json();
+        const filtered = data.filter((f) => f.department === deptName);
+        setData(filtered);
+      } catch (err) {
+        console.error("Error fetching faculty data:", err);
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchFaculty();
+  }, [deptName]);
+
 
   // Separate teaching vs technical staff
 const sortByPriorityAndDate = (arr: FacultyMember[]) =>
@@ -104,6 +139,16 @@ const technicalStaff = sortByPriorityAndDate(data.filter((item) => item.type ===
 
   return (
     <section className="pb-20">
+
+       {loading ? (
+      // Skeleton loading grid
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-4 xl:justify-items-center">
+        {Array.from({ length: 8 }).map((_, i) => (
+          <SkeletonCard key={i} />
+        ))}
+      </div>
+    ) : (
+      <>
       {/* Teaching Staff */}
       {teachingStaff.length > 0 && (
         <>
@@ -129,6 +174,9 @@ const technicalStaff = sortByPriorityAndDate(data.filter((item) => item.type ===
       )}
 
       <FacultyModal isOpen={isModalOpen} onClose={closeModal} facultyData={selectedMember} />
+            </>
+    )}
+
     </section>
   );
 };

@@ -154,7 +154,7 @@ const EventsSection = () => {
               return (
                 <SwiperSlide key={event.id}>
                   <div
-                    className="max-w-sm min-h-[55vh] md:min-h-[45vh] bg-white lg:min-h-[65vh] xl:min-h-auto rounded-3xl overflow-hidden cursor-pointer"
+                    className="max-w-sm min-h-[55vh] md:min-h-[45vh] bg-white lg:min-h-[65vh]  xl:min-h-[50vh] rounded-3xl overflow-hidden cursor-pointer"
                     onClick={() => openModal(event)}
                   >
                     <div className="h-60 overflow-hidden">

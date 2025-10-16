@@ -2308,14 +2308,15 @@
     "thumbnail": "/youtubeThumbnails/iseThumb.webp",
     "slug": "information-science-engineering",
     "bannerUrl": "/departmentImages/1.webp",
-    "departmentAboutDescription": "The Department of Information Science &amp; Engineering is dedicated to nurturing future-ready professionals through robust academic practices and industry-focused training. Equipped with modern laboratories and guided by experienced faculty, the department places equal emphasis on holistic growth through seminars, workshops, industry visits, and specialized courses in emerging technologies.",
+    "departmentAboutDescription": "The Department of Information Science & Engineering is dedicated to nurturing future-ready professionals through robust academic practices and industry-focused training. Equipped with modern laboratories and guided by experienced faculty, the department places equal emphasis on holistic growth through seminars, workshops, industry visits, and specialized courses in emerging technologies.",
     "departmentAboutDescriptionArray": [
-      "The Department of Information Science &amp; Engineering is dedicated to nurturing future-ready professionals through robust academic practices and industry-focused training. Equipped with modern laboratories and guided by experienced faculty, the department places equal emphasis on holistic growth through seminars, workshops, industry visits, and specialized courses in emerging technologies."
+      "The Department of Information Science & Engineering is dedicated to nurturing future-ready professionals through robust academic practices and industry-focused training. Equipped with modern laboratories and guided by experienced faculty, the department places equal emphasis on holistic growth through seminars, workshops, industry visits, and specialized courses in emerging technologies.",
+      "Student development is further strengthened by motivational sessions, placement and career guidance, and active alumni engagement. Students are encouraged to participate in curricular, co-curricular and extra-curricular activities, while outreach initiatives instill a sense of social responsibility. With a strong academic track record and a culture of continuous faculty upskilling, the department ensures excellence in education, innovation, and professional development."
     ],
 
     "departmentAboutDescription2": "Student development is further strengthened by motivational sessions, placement and career guidance, and active alumni engagement. Students are encouraged to participate in curricular, co-curricular and extra-curricular activities, while outreach initiatives instill a sense of social responsibility. With a strong academic track record and a culture of continuous faculty upskilling, the department ensures excellence in education, innovation, and professional development.",
     "description": [
-      "The Department of Information Science &amp; Engineering is committed to comprehensive student development, fostering enthusiasm for both academic and extracurricular activities. With fully equipped laboratories and a team of highly qualified and experienced faculty members, the department provides an environment conducive to innovation and learning.",
+      "The Department of Information Science & Engineering is committed to comprehensive student development, fostering enthusiasm for both academic and extracurricular activities. With fully equipped laboratories and a team of highly qualified and experienced faculty members, the department provides an environment conducive to innovation and learning.",
       "Regular seminars, workshops, and expert lectures by industry professionals, along with industry visits, expose students and faculty to the latest trends and practices. To keep pace with evolving technologies, the department also offers specialized add-on courses. A consistent record of academic excellence reflects the department’s dedication to quality education.",
       "Beyond academics, the department organizes motivational talks, placement training, and career guidance programs with active contributions from distinguished alumni. Faculty members continually enhance their knowledge by participating in Faculty Development Programs (FDPs) and seminars in both online and offline modes, ensuring they remain aligned with technological advancements.",
       "Students are encouraged to actively engage in extracurricular activities through the technical/cultural clubs, as well as contribute to society through Social Outreach Programs (SOPs). These initiatives nurture leadership, teamwork, communication, environmental awareness, and a sense of social responsibility."
@@ -8606,7 +8607,8 @@
     "ethicalLearning": [
       "To provide a learning environment endowed with competence and expertise in Computer Science and Business System education.",
       "To promote a culture of entrepreneurship and innovation among students by disseminating knowledge and best practices in the domain.",
-      "To create opportunities for all-round development of students through co-curricular activities and extra-curricular activities and foster lifelong learning."
+      "To create opportunities for all-round development of students through co-curricular activities and extra-curricular activities and foster lifelong learning.",
+      "To impart value-based learning among students enriched with ethics to address the needs of society and industry."
     ],
     "innovationExcellence": "To promote a culture of entrepreneurship and innovation among students by disseminating knowledge and best practices in the domain",
     "holisticGrowthResearch": "To create opportunities for all-round development of students through co-curricular activities and extra-curricular activities and foster lifelong learning.",
@@ -11905,7 +11907,9 @@
           "points": [],
           "imageUrl": "https://www.canaraengineering.in/departments/ai/labpics/ISLAIL06.jpg"
         },
+        
         {
+          "title2":"TUTORIAL AND CLASSROOMS",
           "title": "CLASS ROOMS",
           "desc": "Project Laboratory (AIL05): The Project Laboratory (AIL05) provides dedicated workspaces for students to collaborate and work on their projects while utilizing the available computing resources. This lab fosters innovation by offering a conducive environment for designing, developing, and testing various academic and research-based projects.",
           "methodes": "",

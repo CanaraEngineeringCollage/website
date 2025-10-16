@@ -81,6 +81,7 @@ const FacultyMembersSection: React.FC = () => {
 
   useEffect(() => {
     async function fetchFaculty() {
+       setLoading(true);
       try {
         const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/faculty`);
         const data = await res.json();
@@ -128,7 +129,6 @@ const filteredData =
 
 
 
-      console.log(filteredData,"ffff");
       
 
   return (
@@ -186,6 +186,17 @@ const filteredData =
 
         {/* Cards */}
         <div className="md:col-span-7 text-sm sm:text-base h-[90vh] scrollable  overflow-y-auto pr-2 md:text-lg">
+
+
+          {loading ? (
+    // Skeleton loading grid
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg2:grid-cols-3 xl:grid-cols-3 gap-4 sm:gap-6 md:gap-3 justify-items-center">
+      {Array.from({ length: 6 }).map((_, i) => (
+        <SkeletonCard key={i} />
+      ))}
+    </div>
+  ) : (
+    <>
           {selectedCategory === "faculty" && (
             <>
               {/* Teaching Staff */}
@@ -260,6 +271,8 @@ const filteredData =
               ))}
             </div>
           )}
+          </>
+          )}
         </div>
       </div>
 
@@ -269,3 +282,17 @@ const filteredData =
 };
 
 export default FacultyMembersSection;
+
+
+// Skeleton placeholder card (for loading state)
+const SkeletonCard: React.FC = () => (
+  <div className="relative w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-gray-200 animate-pulse">
+ <div className="absolute inset-0 bg-[#6DC0EB]/40" />
+    <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB]/70 via-[#6DC0EB]/40 to-transparent" />
+    <div className="absolute bottom-4 left-0 w-full px-3 space-y-2">
+      <div className="h-5 bg-white/50 rounded w-3/4"></div>
+      <div className="h-4 bg-white/40 rounded w-1/2"></div>
+      <div className="h-4 bg-white/30 rounded w-1/3"></div>
+    </div>
+  </div>
+);
