@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "image": "/trainingPlacementPageImages/exploreFacilities/Soft Skills & Aptitude Training.jpg",
+    "image": "/trainingPlacementPageImages/exploreFacilities/softSkill.webp",
     "title": "Soft Skills & Aptitude Training",
     "desc": "We provide structured training sessions that focus on communication, logical reasoning, group discussions, and personal interviews. These sessions are designed to help students approach recruitment processes with clarity and confidence. Beyond interview preparation, the training also sharpens critical thinking, teamwork, and problem-solving abilities, ensuring students are ready for both campus placements and their professional careers.",
     "link": "#"
   },
   {
     "id": 2,
-    "image": "/trainingPlacementPageImages/exploreFacilities/Industry-Oriented Technical Training.webp",
+    "image": "/trainingPlacementPageImages/exploreFacilities/industry.webp",
     "title": "Industry-Oriented Technical Training",
     "desc": "We organize workshops, coding bootcamps, and domain-specific certification programs in areas such as AI/ML, Data Analytics, Cybersecurity, and Core Engineering. Conducted in collaboration with industry experts, these programs align academic learning with evolving industry requirements, ensuring students graduate with practical, job-ready skills.",
     "link": "#"
@@ -22,7 +22,7 @@
   },
   {
     "id": 4,
-    "image": "/trainingPlacementPageImages/exploreFacilities/MoUs & Industry Collaborations.webp",
+    "image": "/trainingPlacementPageImages/exploreFacilities/mous.webp",
     "title": "MoUs & Industry Collaborations",
 
     "desc": "We have established strategic partnerships and MoUs with leading organizations to bring industry closer to the classroom. These collaborations provide students with exclusive training programs, enhanced placement opportunities, expert guest lectures, and valuable curriculum inputs ensuring alignment with current and emerging industry trends ",
@@ -30,7 +30,7 @@
   },
   {
     "id": 5,
-    "image": "/trainingPlacementPageImages/exploreFacilities/Alumni Interaction & Mentorship Programs.webp",
+    "image": "/trainingPlacementPageImages/exploreFacilities/alumni.webp",
     "title": "Alumni Interaction & Mentorship Programs",
     "desc": "Regular interactions with our alumni, now working in leading organizations worldwide, provide students with practical insights into industry expectations, interview preparation, career planning, and workplace culture. These mentorship programs create a strong support network that inspires students and guides them toward successful careers.",
     "link": "#"
@@ -59,7 +59,7 @@
   },
   {
     "id": 9,
-    "image": "/trainingPlacementPageImages/exploreFacilities/Industry Talks & Leadership Connects.webp",
+    "image": "/trainingPlacementPageImages/exploreFacilities/industryTalk.webp",
     "title": "Industry Talks & Leadership Connects",
     "desc": "We host interactive sessions with industry leaders, hiring managers, and startup founders to provide students with insights into hiring trends, emerging skills, and workplace innovation. These sessions help students understand recruiter expectations and stay ahead in a rapidly evolving industry landscape.",
     "link": "#"

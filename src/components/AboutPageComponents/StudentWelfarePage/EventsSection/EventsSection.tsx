@@ -44,29 +44,36 @@ const EventsSection = () => {
   const [events, setEvents] = useState<CampusEvent[]>([]);
   const [selectedEvent, setSelectedEvent] = useState<CampusEvent | null>(null);
   const modalRef = useRef<HTMLDivElement>(null);
-  const [isLoaded, setIsLoaded] = useState(false); // becomes true after fetch
+  const [isLoaded, setIsLoaded] = useState(false);
 
   const fetchEvents = async () => {
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/events`);
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/events?category=${encodeURIComponent(
+          "Student Welfare Department"
+        )}&all=true`
+      );
       if (!res.ok) throw new Error("Failed to fetch events");
-      const data: CampusEvent[] = await res.json();
-      setEvents(data || []);
+
+      const data = await res.json();
+      const eventsList: CampusEvent[] = data?.data || [];
+
+      // Sort by date descending
+      const sorted = eventsList.sort(
+        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+      );
+
+      setEvents(sorted);
       setIsLoaded(true);
     } catch (err) {
       console.error(err);
-      setIsLoaded(true); // still set true so UI doesn't hang; you might show fallback
+      setIsLoaded(true);
     }
   };
 
   useEffect(() => {
     fetchEvents();
   }, []);
-
-  // sort by date descending
-  const sortedEvents = [...events].sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
 
   const openModal = (event: CampusEvent) => setSelectedEvent(event);
   const closeModal = () => setSelectedEvent(null);
@@ -81,21 +88,13 @@ const EventsSection = () => {
 
   useOutsideClick(modalRef, () => selectedEvent && closeModal());
 
-  // When events change (i.e., after fetch), ensure Swiper updates and autoplay starts
+  // Swiper update when events change
   useEffect(() => {
     if (!swiperRef.current) return;
-
-    // Update slides, re-calc loop/clones etc.
     try {
       swiperRef.current.update();
-      if (swiperRef.current.autoplay) {
-        // some environments need explicit restart
-        swiperRef.current.autoplay.start();
-      }
-    } catch (e) {
-      // ignore if swiper not ready yet
-      // console.warn("Swiper update/start failed:", e);
-    }
+      swiperRef.current.autoplay?.start();
+    } catch (e) {}
   }, [events.length]);
 
   return (
@@ -106,8 +105,7 @@ const EventsSection = () => {
         </h1>
       </div>
 
-      {/* Render Swiper only after we've loaded data to avoid init-before-slides problem */}
-      {isLoaded && sortedEvents.filter(e => e.category === "Student Welfare Department").length > 0 ? (
+      {isLoaded && events.length > 0 ? (
         <Swiper
           modules={[Autoplay, Navigation]}
           autoplay={{ delay: 3000, disableOnInteraction: false, pauseOnMouseEnter: false }}
@@ -118,7 +116,7 @@ const EventsSection = () => {
             nextEl: ".swiper-button-next-custom",
             prevEl: ".swiper-button-prev-custom",
           }}
-          observer={true} // observe DOM changes
+          observer={true}
           observeParents={true}
           breakpoints={{
             640: { slidesPerView: 1, spaceBetween: 20 },
@@ -129,16 +127,10 @@ const EventsSection = () => {
           className="mySwiper"
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
-            // ensure autoplay starts after initialization
             try {
               swiper.autoplay?.start();
-              // extra safety: small delay for environments where immediate start fails
-              setTimeout(() => {
-                swiper.autoplay?.start();
-              }, 200);
-            } catch (e) {
-              // swallow
-            }
+              setTimeout(() => swiper.autoplay?.start(), 200);
+            } catch (e) {}
           }}
           onInit={(swiper) => {
             try {
@@ -146,50 +138,46 @@ const EventsSection = () => {
             } catch (e) {}
           }}
         >
-          {sortedEvents
-            .filter((event) => event.category === "Student Welfare Department")
-            .map((event) => {
-              const imageSrc = bufferToBase64(event.image);
-
-              return (
-                <SwiperSlide key={event.id}>
-                  <div
-                    className="max-w-sm min-h-[55vh] md:min-h-[45vh] bg-white lg:min-h-[65vh]  xl:min-h-[50vh] rounded-3xl overflow-hidden cursor-pointer"
-                    onClick={() => openModal(event)}
-                  >
-                    <div className="h-60 overflow-hidden">
-                      <Image
-                        width={400}
-                        height={400}
-                        src={imageSrc || "/placeholder.jpg"}
-                        alt={event.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="p-8 text-center">
-                      <div className="flex justify-center items-center space-x-3">
-                        <p className="text-textGray text-[17px] mb-1">
-                          {new Date(event.date).toLocaleDateString("en-GB", {
-                            day: "numeric",
-                            month: "short",
-                            year: "numeric",
-                          })}
-                        </p>
-                      </div>
-                      <h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">
-                        {event.title}
-                      </h3>
-                      <button className="text-[#2997FF] inline-flex text-[17px] items-center hover:underline font-medium text-sm">
-                        Read More <MdKeyboardArrowRight className="ml-1" />
-                      </button>
-                    </div>
+          {events.map((event) => {
+            const imageSrc = bufferToBase64(event.image);
+            return (
+              <SwiperSlide key={event.id}>
+                <div
+                  className="max-w-sm min-h-[55vh] md:min-h-[45vh] bg-white lg:min-h-[65vh] xl:min-h-[50vh] rounded-3xl overflow-hidden cursor-pointer"
+                  onClick={() => openModal(event)}
+                >
+                  <div className="h-60 overflow-hidden">
+                    <Image
+                      width={400}
+                      height={400}
+                      src={imageSrc || "/placeholder.jpg"}
+                      alt={event.title}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                </SwiperSlide>
-              );
-            })}
+                  <div className="p-8 text-center">
+                    <div className="flex justify-center items-center space-x-3">
+                      <p className="text-textGray text-[17px] mb-1">
+                        {new Date(event.date).toLocaleDateString("en-GB", {
+                          day: "numeric",
+                          month: "short",
+                          year: "numeric",
+                        })}
+                      </p>
+                    </div>
+                    <h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">
+                      {event.title}
+                    </h3>
+                    <button className="text-[#2997FF] inline-flex text-[17px] items-center hover:underline font-medium text-sm">
+                      Read More <MdKeyboardArrowRight className="ml-1" />
+                    </button>
+                  </div>
+                </div>
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       ) : (
-        // optional skeleton / fallback UI while fetching or no events
         <div className="text-center py-10 text-textGray">No events to display.</div>
       )}
 

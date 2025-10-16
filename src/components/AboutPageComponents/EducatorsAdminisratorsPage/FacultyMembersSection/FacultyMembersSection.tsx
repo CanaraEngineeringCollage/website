@@ -81,14 +81,25 @@ const FacultyMembersSection: React.FC = () => {
   ];
 
   // ✅ Fetch only the selected department
-  useEffect(() => {
+useEffect(() => {
   async function fetchFaculty() {
     try {
       setLoading(true);
-      const url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent(
-        selectedDepartment
-      )}`;
-      const res = await fetch(url); // normal fetch is enough
+      let url = "";
+
+      if (selectedCategory === "placement") {
+        // ✅ Fetch placement team data separately
+        url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=Placement%20Team&all=true`;
+      } else if (selectedCategory === "faculty") {
+        url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent(
+          selectedDepartment
+        )}&all=true`;
+      } else {
+        setFacultyData([]); // for admin/general categories (local data)
+        return;
+      }
+
+      const res = await fetch(url);
       const data = await res.json();
       setFacultyData(data);
     } catch (err) {
@@ -99,7 +110,8 @@ const FacultyMembersSection: React.FC = () => {
   }
 
   fetchFaculty();
-}, [selectedDepartment]);
+}, [selectedDepartment, selectedCategory, categoryFromQuery]);
+
 
 
   // ✅ Update department when query changes (if user navigates)

@@ -38,18 +38,19 @@ export default function DepartmentFaculty({ heading, description,  }: { heading:
 const [facultyData, setFacultyData] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
- useEffect(() => {
+useEffect(() => {
   const fetchFacultyData = async () => {
     try {
       setLoading(true);
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/faculty`);
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent("Placement Team")}&all=true`
+      ); // ✅ Filter by department in URL
       if (!res.ok) throw new Error("Failed to fetch faculty data");
 
-      const data: any[] = await res.json();
+      const data: any[] = await res.json(); // ✅ Array of Placement Team faculties
 
-      // Filter placement team
+      // Sort (no need to filter)
       const placementTeam = data
-        .filter((faculty) => faculty.department === "Placement Team")
         .sort((a, b) => {
           if (a.priority && b.priority) return a.priority - b.priority;
           if (a.priority && !b.priority) return -1;
@@ -59,7 +60,6 @@ const [facultyData, setFacultyData] = useState<any[]>([]);
         .slice(0, 10); // take first 10 after sorting
 
       setFacultyData(placementTeam);
-      setLoading(false)
     } catch (error) {
       console.error("Error fetching faculty data:", error);
     } finally {
@@ -69,7 +69,6 @@ const [facultyData, setFacultyData] = useState<any[]>([]);
 
   fetchFacultyData();
 }, []);
-
 
   useEffect(() => {
     setData(facultyData);

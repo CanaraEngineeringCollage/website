@@ -69,29 +69,38 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   const [loading, setLoading] = useState(true);
 
 
-  const fetchEvents = async () => {
-      try {
-        setLoading(true);
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/events`);
-        if (!response.ok) throw new Error("Failed to fetch events");
-  
-        const data = await response.json();
-        const filtered = data.filter((event: any) => event.category === departmentName);
-        const sorted = filtered.sort(
-          (a: any, b: any) => new Date(b.date).getTime() - new Date(a.date).getTime()
-        );
-        setEvents(sorted);
-      } catch (err: any) {
-     
-        console.error(err);
-      } finally {
-        setLoading(false);
-      }
-    };
-  
-    useEffect(() => {
-      fetchEvents();
-    }, []);
+ const fetchEvents = async () => {
+  try {
+    setLoading(true);
+
+    // Use the 'all=true' param to fetch all events for the category
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_API_URL}/events?category=${encodeURIComponent(
+        departmentName
+      )}&all=true`
+    );
+
+    if (!response.ok) throw new Error("Failed to fetch events");
+
+    const data = await response.json();
+
+    // Sort by date descending
+    const sorted = data.data.sort(
+      (a: any, b: any) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    );
+
+    setEvents(sorted);
+  } catch (err: any) {
+    console.error(err);
+  } finally {
+    setLoading(false);
+  }
+};
+
+useEffect(() => {
+  fetchEvents();
+}, [departmentName]);
+
   
 
   

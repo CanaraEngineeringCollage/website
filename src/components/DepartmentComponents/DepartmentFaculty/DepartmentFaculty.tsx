@@ -62,9 +62,10 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
   async function fetchFaculty() {
     setLoading(true);
     try {
-      const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent(departmentName)}`
-      );
+      const url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent(
+        departmentName
+      )}&all=true`; // ✅ Add all=true to fetch all faculties
+      const res = await fetch(url);
       const data: CouncilMember[] = await res.json();
 
       const sortedData = data.sort((a, b) => {

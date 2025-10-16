@@ -73,9 +73,10 @@ useEffect(() => {
   async function fetchFaculty() {
     try {
       setLoading(true);
-      const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent(deptName)}`
-      );
+     const url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent(
+        deptName
+      )}&all=true`; // ✅ Add all=true to fetch all faculties
+      const res = await fetch(url);
       const data: FacultyMember[] = await res.json();
       setData(data);
     } catch (err) {
