@@ -24,7 +24,7 @@ const objectives = [
 
 const Home = () => {
   return (
-    <div className=" text-textGray mx-5 text-[17px]">
+    <div className=" text-textGray  text-[17px]">
       <h1 className="text-[24px] text-[#1d1d1f] font-bold mb-2">Research and Development</h1>
       <div className="space-y-5">
         <p className="md:text-lg  text-[14px] leading-7  text-textGray">

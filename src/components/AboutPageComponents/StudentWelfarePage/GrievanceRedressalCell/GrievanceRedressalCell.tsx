@@ -207,7 +207,7 @@ const GrievanceRedressalCell = () => {
                   {/* Table */}
                   {"type" in item && item.type === "table" && (
                     <div className="overflow-x-auto mt-7">
-                       <div className="rounded overflow-hidden border border-gray-200 w-full">
+                       <div className="rounded overflow-x-auto border border-gray-200 w-full">
                       <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                         <thead className="bg-[#F3F8FC] text-[#2884CA]">
                           <tr>

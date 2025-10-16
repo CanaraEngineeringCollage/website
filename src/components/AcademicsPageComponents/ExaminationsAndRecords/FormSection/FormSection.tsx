@@ -25,8 +25,8 @@ const FormSection: React.FC = () => {
   return (
     <section className="px-4 sm:px-10 md:px-16 lg:px-20 py-12 sm:py-16 xl:py-36 md:py-20 text-[#1D1D1F]">
       <div>
-        <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-[#1D1D1F] text-center md:text-left">Circulars</h1>
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-20 mt-14">
+        <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-[#1D1D1F]  md:text-left">Circulars</h1>
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-20 mt-10 md:mt-14">
           {activeHeader === "Marks & Attendance" && (
             <div className="md:col-span-8">
               <div className="flex flex-row justify-center sm:gap-10 gap-4 items-center mb-10">

@@ -14,14 +14,7 @@ interface DataItem {
   icon: string;
 }
 
-const FunctionDepartment = ({
-  title,
-  functionDeprtmentData,
-}: {
-  title: string;
-  functionDeprtmentData: DataItem[];
-}) => {
- 
+const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; functionDeprtmentData: DataItem[] }) => {
   const swiperRef = useRef<SwiperType | null>(null);
   const [isPlay, setIsPlay] = useState(true);
   const [progress, setProgress] = useState(0);
@@ -29,8 +22,6 @@ const FunctionDepartment = ({
   const autoplayDelay = 3000; // Swiper autoplay delay in ms
   const CIRCUMFERENCE = 138; // 2πr, where r=22
   const progressRef = useRef(0); // local ref for smooth progress
-
- 
 
   // Handle play/pause toggle
   const togglePlayPause = () => {
@@ -63,9 +54,7 @@ const FunctionDepartment = ({
   return (
     <section className="lg:ml-16 py-24 xl:py-36 xl:ml-60">
       {title && (
-        <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl leading-[1.2] font-bold text-center text-[#1D1D1F] pb-6 xl:pb-22">
-          {title}
-        </h1>
+        <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl leading-[1.2] font-bold text-center text-[#1D1D1F] pb-6 xl:pb-22">{title}</h1>
       )}
 
       <Swiper
@@ -82,6 +71,18 @@ const FunctionDepartment = ({
         className="mySwiper"
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
+          // Ensure autoplay starts immediately when Swiper is ready
+          try {
+            if (swiper?.autoplay && !swiper.autoplay.running) {
+              swiper.autoplay.start();
+              setIsPlay(true);
+              progressRef.current = 0;
+              setProgress(0);
+            }
+          } catch (e) {
+            // ignore if autoplay API isn't available yet
+            // console.warn('Autoplay start failed', e);
+          }
         }}
         onSlideChange={onSlideChange}
         onAutoplayTimeLeft={handleAutoplayTimeLeft}
@@ -121,10 +122,7 @@ const FunctionDepartment = ({
             />
             {/* Play/Pause Icon */}
             <foreignObject x="9" y="8" width="32" height="32">
-              <button
-                className="w-full h-full cursor-pointer flex items-center justify-center"
-                aria-label={isPlay ? "Pause" : "Play"}
-              >
+              <button className="w-full h-full cursor-pointer flex items-center justify-center" aria-label={isPlay ? "Pause" : "Play"}>
                 {isPlay ? <Pause /> : <Play />}
               </button>
             </foreignObject>

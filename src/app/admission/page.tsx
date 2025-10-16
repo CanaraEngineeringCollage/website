@@ -56,7 +56,7 @@ const page = () => {
           thumbnail="/youtubeThumbnails/admissionThumb.webp"
         />
       </section>
-      <section className="pl-6 md:pl-0 lg:pl-0 py-20 xl:px-0">
+      <section className=" md:pl-0 lg:pl-0 py-20 xl:px-0">
         <ExplorePrograms />
       </section>
       {/* <section className="px-6 md:px-12 lg:px-16 xl:px-0">
