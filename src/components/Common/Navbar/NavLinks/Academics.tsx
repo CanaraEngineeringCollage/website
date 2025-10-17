@@ -137,11 +137,11 @@ export default function Academics() {
                     </li>
                   </Link>
 
-                    <Link href="/academics/research-development-consultancy">
+                    {/* <Link href="/academics/research-development-consultancy">
                     <li className={`${pathname.includes("/academics/research-development-consultancy") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>
                       Research &amp; Development and Consultancy Cell
                     </li>
-                  </Link>
+                  </Link> */}
                 </ul>
               </div>
             </div>
