@@ -17,7 +17,7 @@ export default function Academics() {
   return (
     <Menu open={isMenuOpen} handler={setIsMenuOpen} offset={{ mainAxis: 20 }} placement="bottom" allowHover={true}>
       <MenuHandler>
-        <Typography as="div" variant="small" className="text-sm xl:text-base">
+        <Typography as="div" variant="small" className="text-base xl:text-base">
           <ListItem
             placeholder={"Life At Canara"} // ✅ Added placeholder for better UX
             role="button" // ✅ Added role for accessibility: required for aria-* to be valid
@@ -133,7 +133,13 @@ export default function Academics() {
                   </Link>
                   <Link href="/academics/research">
                     <li className={`${pathname.includes("/academics/research") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>
-                      Research
+                      Research at CEC
+                    </li>
+                  </Link>
+
+                    <Link href="/academics/research-development-consultancy">
+                    <li className={`${pathname.includes("/academics/research-development-consultancy") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>
+                      Research &amp; Development and Consultancy Cell
                     </li>
                   </Link>
                 </ul>

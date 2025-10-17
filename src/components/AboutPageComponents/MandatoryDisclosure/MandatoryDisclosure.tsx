@@ -377,169 +377,55 @@ const MandatoryDisclosure = () => {
                 </div>
                 {/* <h2 className="text-lg font-bold text-textGray mt-6 mb-2">ANTI RAGGING COMMITTEE (2024-25)</h2>
                 <h2 className="text-lg font-bold text-textGray mt-2 mb-2">Review Committee:</h2> */}
-                <div className="overflow-x-auto">
-                  <h2 className="text-xl font-bold mb-4 mt-8 text-textGray">ANTI RAGGING COMMITTEE (2024-25)</h2>
-                   <div className="rounded overflow-hidden border border-gray-200 w-full">
-                  <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
-                    <thead>
-                      <tr className="bg-[#F3F8FC] text-[#2884CA]">
-                        <th className="py-3 md:px-4 px-1 border-b">Name</th>
-                        <th className="py-3 md:px-4 px-1 border-b">Designation</th>
-                        <th className="py-3 md:px-4 px-1 border-b">Department</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-textGray">
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Dr. Nagesh H R</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Chairman</td>
-                        <td className="py-3 md:px-4 px-1 border-b">CSE</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Dr. Priya V Frank</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Nodal Officer</td>
-                        <td className="py-3 md:px-4 px-1 border-b">SW</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Dr. Demian Antony D' Mello</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">CSE</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Dr. N Venkatesh</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Mech</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Dr. Udaya Kumar K. Shenoy</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">CSE</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Dr. Raghavendra M. Shetty K</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">ECE</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Dr. H. Manoj T. Gadiyar</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">ISE</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Dr. Prahaas Amin</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">CSD</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Dr. Basappa B. Kodada</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">AIML</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mrs. Ashwini K.G.</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">CSBS</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Dr. N. Satheesha Kumar</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">BSH</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Gowrish Nagvekar</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Hostel – Chief Warden</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Ms. Prathibha M</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">CSE</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mrs. Jacintha Alfred Lobo</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">WARDEN</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Shabarish Kumar B V</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">WARDEN</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Ms. Meera P.</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">WARDEN</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mrs. Usha</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">WARDEN</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Prashanth Kamath, AO</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">AO</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Hareesha A</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">PD</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">PSI, Bantwal Rural Police Station, Bantwal</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Police Dept.</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Roopesh Baliga - 4CB23CS128</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">CSE</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Ms. Vaidehi V Pai - 4CB23CS180</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">CSE</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Ms. Prapthi Y Poojari - 4CB22EC029</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">ECE</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Sudeer Nayak - 4CB23IS111</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">ISE</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Sangamesh - 4CB21ME008</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">MECH</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Ms. Deeksha Divakar - 4CB21AI010</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">AIML</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Ankur A Prabhu – 4CB23CG006</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">CSD</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Nikshep M P - 4CB21CB030</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">CSBS</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Rohil S Salian (I year)</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">ISE</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  </div>
-                </div>
+              <div className="overflow-x-auto">
+  <h2 className="text-xl font-bold mb-4 mt-8 text-textGray">ANTI RAGGING COMMITTEE (2025-26)</h2>
+  <div className="rounded overflow-hidden border border-gray-200 w-full">
+    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+      <thead>
+        <tr className="bg-[#F3F8FC] text-[#2884CA]">
+          <th className="py-3 md:px-4 px-1 border-b">Name</th>
+          <th className="py-3 md:px-4 px-1 border-b">Designation</th>
+          <th className="py-3 md:px-4 px-1 border-b">Department</th>
+        </tr>
+      </thead>
+      <tbody className="text-textGray">
+        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Nagesh H.R.</td><td className="py-3 md:px-4 px-1 border-b">Chairman</td><td className="py-3 md:px-4 px-1 border-b">CSE</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Priya V Frank</td><td className="py-3 md:px-4 px-1 border-b">Nodal Officer</td><td className="py-3 md:px-4 px-1 border-b">SW</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Demian Antony D’Mello</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">CSE</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Niranjan Rai</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">MECH</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Karthik Pai B H</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">CSE</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Raghavendra M. Shetty K</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">ECE</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. H. Manoj T. Gadiyar</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">ISE</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Praahas Amin</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">CSD</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Basappa B. Kodada</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">AIML</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Rajgopal K T</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">CSBS</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. N. Satheesha Kumara</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">S&amp;H</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Gowrish Nagvekar</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">Hostel – Chief Warden</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Ms. Prathibha M</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">AIML</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mrs. Jacintha Alfred Lobo</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">WARDEN</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Shabarish Kumar B V</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">WARDEN</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Manoj Kumar</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">WARDEN</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Ms. Meera P.</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">WARDEN</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mrs. Usha</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">WARDEN</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. M Prashanth Kamath</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">AO</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Hareesha A</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">PD</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">PSI, Bantwal Rural Police Station, Bantwal</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">Police Dept.</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Roopesh Baliga - 4CB23CS128</td><td className="py-3 md:px-4 px-1 border-b">Student Member</td><td className="py-3 md:px-4 px-1 border-b">CSE</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Ms. Vaidehi V Pai - 4CB23CS180</td><td className="py-3 md:px-4 px-1 border-b">Student Member</td><td className="py-3 md:px-4 px-1 border-b">CSE</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Ms. Prapthi Y Poojari - 4CB22EC029</td><td className="py-3 md:px-4 px-1 border-b">Student Member</td><td className="py-3 md:px-4 px-1 border-b">ECE</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Sudeer Nayak - 4CB23IS111</td><td className="py-3 md:px-4 px-1 border-b">Student Member</td><td className="py-3 md:px-4 px-1 border-b">ISE</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Abhishek S Naik - 4CB22AI003</td><td className="py-3 md:px-4 px-1 border-b">Student Member</td><td className="py-3 md:px-4 px-1 border-b">AIML</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Ankur A Prabhu - 4CB23CG006</td><td className="py-3 md:px-4 px-1 border-b">Student Member</td><td className="py-3 md:px-4 px-1 border-b">CSD</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. H Balaji Nayak - 4CB23CB021</td><td className="py-3 md:px-4 px-1 border-b">Student Member</td><td className="py-3 md:px-4 px-1 border-b">CSBS</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Rohil S Salian - 4CB24CB040</td><td className="py-3 md:px-4 px-1 border-b">Student Member</td><td className="py-3 md:px-4 px-1 border-b">CSBS</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Ms. Dithwi R Shetty - I year</td><td className="py-3 md:px-4 px-1 border-b">Student Member</td><td className="py-3 md:px-4 px-1 border-b">AIML</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
                 <div className="overflow-x-auto mt-10">
-                  <h2 className="text-xl font-bold mb-4 text-textGray">Anti-Ragging Cell (2024–25)</h2>
+                  <h2 className="text-xl font-bold mb-4 text-textGray">Anti-Ragging Cell (2025–26)</h2>
                    <div className="rounded overflow-hidden border border-gray-200 w-full">
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead className="bg-[#F3F8FC] text-[#2884CA]">
@@ -553,187 +439,84 @@ const MandatoryDisclosure = () => {
                       <tr>
                         <td className="py-3 md:px-4 px-1 border-b">Dr. N. Satheesha Kumar</td>
                         <td className="py-3 md:px-4 px-1 border-b">Coordinator</td>
-                        <td className="py-3 md:px-4 px-1 border-b">BSH</td>
+                        <td className="py-3 md:px-4 px-1 border-b">S&amp;H</td>
                       </tr>
                       <tr>
                         <td className="py-3 md:px-4 px-1 border-b">Mr. Guruprsad Upadhya</td>
                         <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">BSH</td>
+                        <td className="py-3 md:px-4 px-1 border-b">S&amp;H</td>
                       </tr>
                       <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Satish Hegde</td>
+                        <td className="py-3 md:px-4 px-1 border-b">Mr. Satish Hegde H</td>
                         <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">BSH</td>
+                        <td className="py-3 md:px-4 px-1 border-b">S&amp;H</td>
                       </tr>
                       <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Prashanth Somayaji</td>
+                        <td className="py-3 md:px-4 px-1 border-b">Mr. Prashantha Somayaji K</td>
                         <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">BSH</td>
+                        <td className="py-3 md:px-4 px-1 border-b">S&amp;H</td>
                       </tr>
                     </tbody>
                   </table>
                   </div>
                 </div>
-                <div className="overflow-x-auto mt-10">
-                  <h2 className="text-xl font-bold mb-4 text-textGray">Flying Squad 1 (2024–25)</h2>
-                   <div className="rounded overflow-hidden border border-gray-200 w-full">
-                  <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
-                    <thead className="bg-[#F3F8FC] text-[#2884CA]">
-                      <tr>
-                        <th className="py-3 md:px-4 px-1 border-b">Name</th>
-                        <th className="py-3 md:px-4 px-1 border-b">Designation</th>
-                        <th className="py-3 md:px-4 px-1 border-b">Department</th>
-                        <th className="py-3 md:px-4 px-1 border-b">Contact Number</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-textGray">
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Satish S Nadig</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">BSH</td>
-                        <td className="py-3 md:px-4 px-1 border-b">9945605716</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Ms. Geethalaksmi</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">ISE</td>
-                        <td className="py-3 md:px-4 px-1 border-b">9902331333</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Sandeep Prabhu</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">ECE</td>
-                        <td className="py-3 md:px-4 px-1 border-b">9901197904</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Sandesh Kamath</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">ME</td>
-                        <td className="py-3 md:px-4 px-1 border-b">8105658572</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mrs. Yashaswini K L</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">CSBS</td>
-                        <td className="py-3 md:px-4 px-1 border-b">7760824340</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Dr. Sunil Kumar B. L.</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">CSE</td>
-                        <td className="py-3 md:px-4 px-1 border-b">9901723992</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Ananth Krishna Kamath</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">CSD</td>
-                        <td className="py-3 md:px-4 px-1 border-b">8095171377</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Ms. Kanmani</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">AIML</td>
-                        <td className="py-3 md:px-4 px-1 border-b">8762925854</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mrs. Jacintha Alfred Lobo</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Warden</td>
-                        <td className="py-3 md:px-4 px-1 border-b">7338500283</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Ms. Meera P.</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Warden</td>
-                        <td className="py-3 md:px-4 px-1 border-b">9483441367</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  </div>
-                </div>
-                <div className="overflow-x-auto mt-10">
-                  <h2 className="text-xl font-bold mb-4 text-textGray">Flying Squad 2 (2024–25)</h2>
-                   <div className="rounded overflow-hidden border border-gray-200 w-full">
-                  <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
-                    <thead className="bg-[#F3F8FC] text-[#2884CA]">
-                      <tr>
-                        <th className="py-3 md:px-4 px-1 border-b">Name</th>
-                        <th className="py-3 md:px-4 px-1 border-b">Designation</th>
-                        <th className="py-3 md:px-4 px-1 border-b">Department</th>
-                        <th className="py-3 md:px-4 px-1 border-b">Contact Number</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-textGray">
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Ms. Ashwini V R</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">BSH</td>
-                        <td className="py-3 md:px-4 px-1 border-b">8904555370</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Dr. Narayan Ram Naik</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">ISE</td>
-                        <td className="py-3 md:px-4 px-1 border-b">9741142469</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Vinay H S</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">ECE</td>
-                        <td className="py-3 md:px-4 px-1 border-b">9480026957</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Shreenath Salian</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">ME</td>
-                        <td className="py-3 md:px-4 px-1 border-b">9964380967</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Ms. Pavithra H B</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">CSBS</td>
-                        <td className="py-3 md:px-4 px-1 border-b">8884928744</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Rajgopal K T</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">CSE</td>
-                        <td className="py-3 md:px-4 px-1 border-b">9739367679</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Ms. Pooja N S</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">CSD</td>
-                        <td className="py-3 md:px-4 px-1 border-b">9663769021</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Siju V. Soman</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">AIML</td>
-                        <td className="py-3 md:px-4 px-1 border-b">9164332645</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Shabarish</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Warden</td>
-                        <td className="py-3 md:px-4 px-1 border-b">9901871973</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mrs. Usha</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Warden</td>
-                        <td className="py-3 md:px-4 px-1 border-b">8095932413</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Hareesh</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">PD</td>
-                        <td className="py-3 md:px-4 px-1 border-b">9980206552</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  </div>
-                </div>
+              <div className="overflow-x-auto mt-10">
+  <h2 className="text-xl font-bold mb-4 text-textGray">Flying Squad 1 (2025–26)</h2>
+  <div className="rounded overflow-hidden border border-gray-200 w-full">
+    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+      <thead className="bg-[#F3F8FC] text-[#2884CA]">
+        <tr>
+          <th className="py-3 md:px-4 px-1 border-b">Name</th>
+          <th className="py-3 md:px-4 px-1 border-b">Designation</th>
+          <th className="py-3 md:px-4 px-1 border-b">Department</th>
+        </tr>
+      </thead>
+      <tbody className="text-textGray">
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Sathish S Nadig</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">CSBS</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mrs. Sadhana B</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">ISE</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Sandesh Kamath</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">AIML</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Ramesh E</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">CSBS</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Sunil Kumar B L</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">CSE</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Nischaykumar Hegde</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">CSD</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mrs. Archana S</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">AIML</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Sandeep S</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">S&amp;H</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mrs. Jacintha Alfred Lobo</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">Warden</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Ms. Meera P</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">Warden</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Manoj Kumar</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">Warden</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+              <div className="overflow-x-auto mt-10">
+  <h2 className="text-xl font-bold mb-4 text-textGray">Flying Squad 2 (2025–26)</h2>
+  <div className="rounded overflow-hidden border border-gray-200 w-full">
+    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+      <thead className="bg-[#F3F8FC] text-[#2884CA]">
+        <tr>
+          <th className="py-3 md:px-4 px-1 border-b">Name</th>
+          <th className="py-3 md:px-4 px-1 border-b">Designation</th>
+          <th className="py-3 md:px-4 px-1 border-b">Department</th>
+        </tr>
+      </thead>
+      <tbody className="text-textGray">
+        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Prameela Kolake</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">S&amp;H</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Ms. Meghashree</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">S&amp;H</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Ms. Navyashree Shetty B</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">S&amp;H</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Ramesh S Nayak</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">ISE</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Vinay H S</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">ECE</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mrs. Pooja Kini</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">CSBS</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Adithya M</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">CSE</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mrs. Sourabha S Rai</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">CSD</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Siju V. Soman</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">AIML</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Shabarish Kumar</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">WARDEN</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mrs. Usha</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">WARDEN</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Hareesh</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">PD</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
               </>
             ) : selectedIndex === 10 ? (
               <>
@@ -773,82 +556,32 @@ const MandatoryDisclosure = () => {
                     parents and any other stake holders.
                   </p>
                   <div className="overflow-x-auto mt-5">
-                    <h2 className="text-xl font-bold mb-4 text-textGray">Internal Committee (IC) 2024–25</h2>
-                     <div className="rounded overflow-hidden border border-gray-200 w-full">
-                    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
-                      <thead className="bg-[#F3F8FC] text-[#2884CA]">
-                        <tr>
-                          <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
-                          <th className="py-3 md:px-4 px-1 border-b">Name</th>
-                          <th className="py-3 md:px-4 px-1 border-b">Designation</th>
-                          <th className="py-3 md:px-4 px-1 border-b">Department</th>
-                        </tr>
-                      </thead>
-                      <tbody className="text-textGray">
-                        <tr>
-                          <td className="py-3 md:px-4 px-1 border-b">1.</td>
-                          <td className="py-3 md:px-4 px-1 border-b">Dr. Priya V. Frank</td>
-                          <td className="py-3 md:px-4 px-1 border-b">Chair Person</td>
-                          <td className="py-3 md:px-4 px-1 border-b">BS&H</td>
-                        </tr>
-                        <tr>
-                          <td className="py-3 md:px-4 px-1 border-b">2.</td>
-                          <td className="py-3 md:px-4 px-1 border-b">Dr. Pavithra D S</td>
-                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                          <td className="py-3 md:px-4 px-1 border-b">CSE</td>
-                        </tr>
-                        <tr>
-                          <td className="py-3 md:px-4 px-1 border-b">3.</td>
-                          <td className="py-3 md:px-4 px-1 border-b">Ms. Vidyalakshmi P.B.</td>
-                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                          <td className="py-3 md:px-4 px-1 border-b">BS&H</td>
-                        </tr>
-                        <tr>
-                          <td className="py-3 md:px-4 px-1 border-b">4.</td>
-                          <td className="py-3 md:px-4 px-1 border-b">Mrs. Vinoda Baliga</td>
-                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                          <td className="py-3 md:px-4 px-1 border-b">BS&H</td>
-                        </tr>
-                        <tr>
-                          <td className="py-3 md:px-4 px-1 border-b">5.</td>
-                          <td className="py-3 md:px-4 px-1 border-b">Mrs. Lavina Monteiro</td>
-                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                          <td className="py-3 md:px-4 px-1 border-b">ADMIN</td>
-                        </tr>
-                        <tr>
-                          <td className="py-3 md:px-4 px-1 border-b">6.</td>
-                          <td className="py-3 md:px-4 px-1 border-b">Ms. Sandhya</td>
-                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                          <td className="py-3 md:px-4 px-1 border-b">BS&H - Counsellor</td>
-                        </tr>
-                        <tr>
-                          <td className="py-3 md:px-4 px-1 border-b">7.</td>
-                          <td className="py-3 md:px-4 px-1 border-b">Mrs. Archana Baliga, Secretary, Samvit Education Trust</td>
-                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                          <td className="py-3 md:px-4 px-1 border-b">NGO</td>
-                        </tr>
-                        <tr>
-                          <td className="py-3 md:px-4 px-1 border-b">8.</td>
-                          <td className="py-3 md:px-4 px-1 border-b">Ms. Sivali Rao – 4CB21CS109</td>
-                          <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
-                          <td className="py-3 md:px-4 px-1 border-b">CSE</td>
-                        </tr>
-                        <tr>
-                          <td className="py-3 md:px-4 px-1 border-b">9.</td>
-                          <td className="py-3 md:px-4 px-1 border-b">Ms. Sanjana Mahale – 4CB23AI087</td>
-                          <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
-                          <td className="py-3 md:px-4 px-1 border-b">AIML</td>
-                        </tr>
-                        <tr>
-                          <td className="py-3 md:px-4 px-1 border-b">10.</td>
-                          <td className="py-3 md:px-4 px-1 border-b">Ms. Moolya Praveeksha Narayan – 4CB23CS094</td>
-                          <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
-                          <td className="py-3 md:px-4 px-1 border-b">CSE</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    </div>
-                  </div>
+  <h2 className="text-xl font-bold mb-4 text-textGray">Internal Committee (IC) 2025–26</h2>
+  <div className="rounded overflow-hidden border border-gray-200 w-full">
+    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+      <thead className="bg-[#F3F8FC] text-[#2884CA]">
+        <tr>
+          <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
+          <th className="py-3 md:px-4 px-1 border-b">Name</th>
+          <th className="py-3 md:px-4 px-1 border-b">Designation</th>
+          <th className="py-3 md:px-4 px-1 border-b">Department</th>
+        </tr>
+      </thead>
+      <tbody className="text-textGray">
+        <tr><td className="py-3 md:px-4 px-1 border-b">1.</td><td className="py-3 md:px-4 px-1 border-b">Dr. Priya V. Frank</td><td className="py-3 md:px-4 px-1 border-b">Chair Person</td><td className="py-3 md:px-4 px-1 border-b">S&amp;H</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">2.</td><td className="py-3 md:px-4 px-1 border-b">Dr. Prameela Kolake</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">S&amp;H</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">3.</td><td className="py-3 md:px-4 px-1 border-b">Mrs. Vidyalakshmi P B</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">S&amp;H</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">4.</td><td className="py-3 md:px-4 px-1 border-b">Mrs. Vinoda Baliga</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">S&amp;H</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">5.</td><td className="py-3 md:px-4 px-1 border-b">Mrs. Lavina Monteiro</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">ADMIN</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">6.</td><td className="py-3 md:px-4 px-1 border-b">Ms. Sandhya</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">S&amp;H / Counselor</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">7.</td><td className="py-3 md:px-4 px-1 border-b">Mrs. Archana Baliga, Secretary, Samvit Education Trust</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">NGO</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">8.</td><td className="py-3 md:px-4 px-1 border-b">Ms. Sanjana Mahale – 4CB23AI087</td><td className="py-3 md:px-4 px-1 border-b">Student Member</td><td className="py-3 md:px-4 px-1 border-b">AIML</td></tr>
+        <tr><td className="py-3 md:px-4 px-1 border-b">9.</td><td className="py-3 md:px-4 px-1 border-b">Ms. Moolya Praveeksha Narayan – 4CB23CS094</td><td className="py-3 md:px-4 px-1 border-b">Student Member</td><td className="py-3 md:px-4 px-1 border-b">CSE</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
                 </div>
               </>
             ) : selectedIndex === 11 ? (

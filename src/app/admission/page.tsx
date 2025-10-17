@@ -8,6 +8,7 @@ import { Testimonials } from "@/components/Common/Testimonials/Testimonials";
 import React from "react";
 import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 import DepartmentFaculty from "@/components/TrainingPlacementPageComponents/DepartmentFaculty/DepartmentFaculty";
+import AdmissionProcedureText from "@/components/AdmissionPageComponents/AdmissionProcedureText/AdmissionProcedureText";
 
 export const metadata = {
   title: "Admissions | Canara College",
@@ -40,8 +41,14 @@ const page = () => {
   return (
     <>
       <HeroSection />
+
+     
       <section className="px-6 md:px-12 lg:px-16 xl:px-0 lg:mt-0 -mt-5">
         <HowToApply />
+      </section>
+
+       <section>
+        <AdmissionProcedureText/>
       </section>
 {/* <section className="lg:mt-0 -mt-15">
     <DepartmentFaculty

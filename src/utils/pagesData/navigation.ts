@@ -122,7 +122,7 @@ const learningHub = [
     link: "https://digital.canaraengineering.in/",
   },
   {
-    title: "Research",
+    title: "Research at CEC",
     link: "/academics/research",
   },
 ];

@@ -24,7 +24,7 @@ const pathname = usePathname()
       </div>
       <div
         id="admission"
-        className="cursor-pointer opacity-80  gap-2 text-[#2884CA] pt-[8px]  text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
+        className="cursor-pointer opacity-80  gap-2 text-[#2884CA] pt-[8px]  text-base xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
       >
         <Link href={"/admission"} className={`font-poppins ${(pathname==="/admission")?'border-b-2 border-[#005580] text-[#005580]':" text-[#2884CA]"} py-1.5 `}>
           Admissions
@@ -38,7 +38,7 @@ const pathname = usePathname()
       </div>
       <Link
         id="placement"
-        className="pt-[8px] opacity-80 text-[#2884CA]   font-poppins text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
+        className="pt-[8px] opacity-80 text-[#2884CA]   font-poppins text-base xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
         href={"/training-placements"}
       >
        <p className={`font-poppins ${pathname==="/training-placements"?'border-b-2 border-[#005580] text-[#005580]':" text-[#2884CA]"} py-1.5 `}> Training & Placements</p>
@@ -46,7 +46,7 @@ const pathname = usePathname()
       </Link>
       <div
         id="apply"
-        className="pt-[8px] pl-2 font-poppins text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
+        className="pt-[8px] pl-2 font-poppins text-base xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
       >
         <button 
         aria-label="Apply Now Button"

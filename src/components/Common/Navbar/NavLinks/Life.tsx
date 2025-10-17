@@ -14,7 +14,7 @@ export default function Life() {
   return (
     <Menu open={isMenuOpen} handler={setIsMenuOpen} offset={{ mainAxis: 20 }} placement="bottom" allowHover={true}>
       <MenuHandler>
-        <Typography color="inherit" as="div" variant="small" className="text-sm xl:text-base">
+        <Typography color="inherit" as="div" variant="small" className="text-base xl:text-base">
           <ListItem
           placeholder={"Life At Canara"} // ✅ Added placeholder for better UX
           role="button" // ✅ Added role for accessibility: required for aria-* to be valid
