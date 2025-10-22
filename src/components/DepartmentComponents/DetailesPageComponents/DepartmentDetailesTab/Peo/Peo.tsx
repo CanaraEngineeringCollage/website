@@ -11,7 +11,6 @@ interface PeoProps {
 
 
 const Peo = ({ data,deptName }:{data:PeoProps;deptName:string}) => {
-  console.log("PEO Data:", data);
   
   return (
     <div className=''>

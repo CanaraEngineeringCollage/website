@@ -5,7 +5,6 @@ type Publication = {
   imageUrl: string[];
 };
 const Publications = ({data}:{data:Publication[]}) => {
-  console.log(data);
   
   return (
   <div className=" text-textGray text-[17px]">

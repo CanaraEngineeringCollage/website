@@ -15,7 +15,6 @@ interface AboutTheDepartmentProps {
 
 const   AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepartment,departmentName,imageUrl,wdith="" }) => {
   const { slug } = useParams();
-  console.log(slug);
 
   return (
     <section className="pt-5 md:pt-10 text-[#1D1D1F] xl:pt-20 pb-10 max-w-7xl xl:max-w-[75%] mx-auto   ">

@@ -5,7 +5,6 @@ import FacultyModal from "@/components/DepartmentComponents/FacultyModal/Faculty
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 const Advisory = ({ datam }) => {
-  console.log(datam, "advisory data");
   
   const [members, setMembers] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -26,7 +25,6 @@ const Advisory = ({ datam }) => {
     setMembers(datam);
   }, [datam]);
 
-  console.log(datam,"mm");
   
 
   return (

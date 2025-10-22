@@ -29,7 +29,6 @@ interface FacilitiesProps {
 }
 
 const Facilities: React.FC<FacilitiesProps> = ({ data,deptName }) => {
-  console.log(data);
 
   return (
     <div className=" text-textGray text-[17px] space-y-8">

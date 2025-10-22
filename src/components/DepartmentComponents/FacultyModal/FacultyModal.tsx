@@ -62,7 +62,6 @@ export default function FacultyModal({
   if (!facultyData) return null;
 
 
-  console.log(facultyData,"fff");
   
   return (
     <AnimatePresence>
