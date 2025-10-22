@@ -61,7 +61,7 @@ const titles = ["Home", "Research Center", "Publications", "Grants","IPR/Patents
             </div>
             </div>
             <div className="col-span-1"></div>
-            <div className={`col-span-8 ${selectedIndex != 2 && "h-[90vh]"} scrollable overflow-y-auto pr-2`}>
+            <div className={`col-span-8 ${selectedIndex != 2 && "max-h-[50vh] md:max-h-[90vh]"} scrollable overflow-y-auto pr-2`}>
               {selectedIndex === 0 && <Home />}
               {selectedIndex === 1 && <ResearchCenter />}
               {selectedIndex === 2 && <Publications />}

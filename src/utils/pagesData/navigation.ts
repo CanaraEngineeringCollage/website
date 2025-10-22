@@ -115,6 +115,10 @@ const campusBeats = [
     link: "/alumni",
   },
   {
+    title: "About Alumni",
+    link: "/alumni/about-alumni",
+  },
+  {
     title: "Student Achievements",
     link: "/media",
   },

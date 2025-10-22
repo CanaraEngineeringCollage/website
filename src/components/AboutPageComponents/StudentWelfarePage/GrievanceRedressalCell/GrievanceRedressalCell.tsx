@@ -29,7 +29,7 @@ const GrievanceRedressalCell = () => {
           <div className="col-span-1"></div>
           {/* Content */}
           {selectedIndex === 6 ? (
-            <div className="col-span-8">
+            <div className="col-span-8 max-h-[40vh]  md:max-h-[100vh] scrollable overflow-y-auto  pr-2">
               <div className="flex flex-row justify-center sm:gap-10 gap-4 items-center mb-10">
                <Link href="https://www.canaraengineering.in/Grievance" target="_blank"> <button
                   aria-label="New Grievance"
@@ -173,7 +173,7 @@ const GrievanceRedressalCell = () => {
               </div> */}
             </div>
           ) : (
-            <div className="col-span-8">
+            <div className="col-span-8 max-h-[40vh]  md:max-h-[100vh] scrollable overflow-y-auto  pr-2">
               {grievanceRedressalCell[selectedIndex]?.data?.map((item, i) => (
                 <div key={i} className="">
                   {/* Title */}

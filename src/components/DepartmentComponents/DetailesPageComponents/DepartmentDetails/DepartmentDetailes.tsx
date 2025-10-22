@@ -150,7 +150,7 @@ useEffect(() => {
             </div>
           </div>
           <div className="col-span-1"></div>
-          <div className="col-span-8 md:h-[130vh] scrollable overflow-y-auto  pr-2">
+          <div className="col-span-8 max-h-[50vh] md:max-h-[130vh] scrollable overflow-y-auto  pr-2">
             {selectedSection === "Department Profile" && <DepartmentProfile keyPoints={department?.keyPractices} data={department?.description} />}
             {selectedSection === "Organisation Structure" && department?.organisation && <Organaisation data={department?.organisation}/>}
             {selectedSection === "Head of the Department" && <Hod data={department?.depatmentHead} />}

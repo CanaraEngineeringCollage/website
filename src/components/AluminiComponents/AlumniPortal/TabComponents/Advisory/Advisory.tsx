@@ -30,7 +30,7 @@ const Advisory = ({ datam }) => {
   
 
   return (
-    <section className="pb-20">
+    <section className="lg:pb-20">
       
 <div className="grid grid-cols-1 pb-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-4 xl:justify-items-center">
 
