@@ -103,30 +103,11 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
       <div className="flex justify-between items-center mt-9 me-8 gap-4">
         {/* Play/Pause Button with Progress Circle */}
         <div className="relative lg:pe-5 md:pb-0 md:pe-3 lg:pb-0 cursor-pointer" onClick={togglePlayPause}>
-          <svg width="50" height="50" viewBox="0 0 50 50">
-            {/* Background Circle */}
-            <circle cx="25" cy="25" r="22" stroke="#ffff" strokeWidth="2" fill="none" opacity="0.3" />
-            {/* Progress Circle */}
-            <circle
-              cx="25"
-              cy="25"
-              r="22"
-              stroke="#E8E8ED"
-              strokeWidth="2"
-              fill="none"
-              strokeDasharray={CIRCUMFERENCE}
-              strokeDashoffset={((100 - progress) / 100) * CIRCUMFERENCE}
-              strokeLinecap="round"
-              className="transition-all duration-100"
-              transform="rotate(-90 25 25)"
-            />
-            {/* Play/Pause Icon */}
-            <foreignObject x="9" y="8" width="32" height="32">
+        
+           
               <button className="w-full h-full cursor-pointer flex items-center justify-center" aria-label={isPlay ? "Pause" : "Play"}>
                 {isPlay ? <Pause /> : <Play />}
               </button>
-            </foreignObject>
-          </svg>
         </div>
 
         {/* Navigation Buttons */}
