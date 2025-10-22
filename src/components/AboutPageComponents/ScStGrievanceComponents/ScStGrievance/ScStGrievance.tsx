@@ -9,7 +9,7 @@ const ScStGrievance = () => {
   return (
     <div className="text-[#1D1D1F] ">
       <div className="max-w-2xl mx-auto p-6   flex justify-between">
-        <Link href={"https://www.canaraengineering.in/Grievance"} target="_blank"><button
+        <Link href={"https://www.canaraengineering.in/SCSTGrievance"} target="_blank"><button
           // onClick={() => setSelected("New Grievance")}
           className={` ${selected === "New Grievance" ? "bg-[#539dd5] text-white" : "text-[#539dd5]"} rounded-full border-1  py-3 px-5 lg:px-20`}
         >
