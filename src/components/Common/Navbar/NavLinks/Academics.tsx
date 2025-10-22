@@ -74,75 +74,130 @@ export default function Academics() {
             </div> */}
 
             {/* Column 2 */}
-            <div className="flex lg:col-span-5  lg:gap-2 xl:gap-4 pr-4 border-r border-gray-300 ">
-              <div className="flex lg:ml-3 xl:ml-0 items-start">
-                <Book />
-              </div>
-              <div className="flex flex-col gap-2">
-                <span className="font-bold text-lg">Departments</span>
-                <ul className="list-none text-gray-500 ">
-                  {departments.map((dept, index) => (
-                    <li key={index} className="leading-10 ">
-                      <Link
-                        href={dept.link}
-                        className={`${pathname.includes(dept.link) ? "text-primary cursor-pointer font-bold" : "text-gray-500"} hover:text-primary`}
-                      >
-                        {dept.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+{/* Column 2 — Departments */}
+<div className="flex lg:col-span-4 lg:gap-2 xl:gap-4 pr-4 border-r border-gray-300">
+  <div className="flex lg:ml-3 xl:ml-0 items-start">
+    <Book />
+  </div>
 
-            {/* Column 3 */}
-            <div className="flex lg:col-span-4  gap-4 pr-4 border-r border-gray-300 ">
-              <div className="flex lg:ml-3 xl:ml-0 items-start">
-                <Examination />
-              </div>
-              <div className="flex flex-col gap-2">
-                <span className="font-bold text-lg">Examinations & Records</span>
-                <ul className="list-none text-gray-500 leading-10  ">
-                  <Link href="https://www.canaraengineering.in/s_attd" target="_blank"> 
-                    <li className={`${tab === "marks" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary cursor-pointer`}>Marks & Attendance</li>
-                  </Link>
-                  <Link href="/academics/examination-records?tab=circulars">
-                    <li className={`${tab === "circulars" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary cursor-pointer`}>Circulars</li>
-                  </Link>
-                  {/* <Link href="/academics/examination-records?tab=tt">
-                    <li className={`${tab === "tt" ? `text-primary font-bold` : "text-gray-500"} hover:text-primary cursor-pointer`}>Timetables</li>
-                  </Link> */}
-                </ul>
-              </div>
-            </div>
+  <div className="flex flex-col gap-2">
+    <span className="font-bold text-lg">Departments</span>
+    <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
+      {departments.map((dept, index) => (
+        <li key={index}>
+          <Link
+            href={dept.link}
+            className={`${
+              pathname.includes(dept.link)
+                ? "text-primary font-bold"
+                : "text-gray-500"
+            } hover:text-primary`}
+          >
+            {dept.title}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
+
+{/* Column 3 — Examinations & Records */}
+<div className="flex lg:col-span-4 gap-4 pr-4 border-r border-gray-300">
+  <div className="flex lg:ml-3 xl:ml-0 items-start">
+    <Examination />
+  </div>
+
+  <div className="flex flex-col gap-2">
+    <span className="font-bold text-lg">Examinations & Records</span>
+    <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
+      <li>
+        <Link
+          href="https://www.canaraengineering.in/s_attd"
+          target="_blank"
+          className={`${
+            tab === "marks" ? "text-primary font-bold" : "text-gray-500"
+          } hover:text-primary`}
+        >
+          Marks & Attendance
+        </Link>
+      </li>
+
+      <li>
+        <Link
+          href="/academics/examination-records?tab=circulars"
+          className={`${
+            tab === "circulars" ? "text-primary font-bold" : "text-gray-500"
+          } hover:text-primary`}
+        >
+          Circulars
+        </Link>
+      </li>
+
+      {/* Uncomment if you add Timetables later */}
+      {/* <li>
+        <Link
+          href="/academics/examination-records?tab=tt"
+          className={`${
+            tab === "tt" ? "text-primary font-bold" : "text-gray-500"
+          } hover:text-primary`}
+        >
+          Timetables
+        </Link>
+      </li> */}
+    </ul>
+  </div>
+</div>
+
 
             {/* Column 4 */}
-            <div className="flex lg:col-span-3  gap-4 hover:border-none">
+            <div className="flex lg:col-span-4  gap-4 hover:border-none">
               <div className="flex lg:ml-3 xl:ml-0 items-start">
                 <Learning />
               </div>
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Learning Hub</span>
-                <ul className="list-none text-gray-500 leading-10 cursor-pointer">
-                  <Link href="https://digital.canaraengineering.in/" target="_blank">
-                    <li
-                      className={`${pathname.includes("/academics/learning-hub") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
-                    >
-                      Resources
-                    </li>
-                  </Link>
-                  <Link href="/academics/research">
-                    <li className={`${pathname.includes("/academics/research") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>
-                      Research at CEC
-                    </li>
-                  </Link>
+          <ul className="list-none text-gray-500 leading-normal space-y-4 my-2 cursor-pointer">
+  <li>
+    <Link
+      href="https://digital.canaraengineering.in/"
+      target="_blank"
+      className={`${
+        pathname.includes("/academics/learning-hub")
+          ? "text-primary font-bold"
+          : "text-gray-500"
+      } hover:text-primary`}
+    >
+      Resources
+    </Link>
+  </li>
 
-                    {/* <Link href="/academics/research-development-consultancy">
-                    <li className={`${pathname.includes("/academics/research-development-consultancy") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>
-                      Research &amp; Development and Consultancy Cell
-                    </li>
-                  </Link> */}
-                </ul>
+  <li>
+    <Link
+      href="/academics/research"
+      className={`${
+        pathname==="/academics/research"
+          ? "text-primary font-bold"
+          : "text-gray-500"
+      } hover:text-primary`}
+    >
+      Research at CEC
+    </Link>
+  </li>
+
+  <li>
+    <Link
+      href="/academics/research-development-consultancy"
+      className={`${
+        pathname.includes("/academics/research-development-consultancy")
+          ? "text-primary font-bold"
+          : "text-gray-500"
+      } hover:text-primary`}
+    >
+      Research &amp; Development and Consultancy Cell
+    </Link>
+  </li>
+</ul>
+
               </div>
             </div>
           </div>

@@ -80,6 +80,17 @@ const FacultyMembersSection: React.FC = () => {
     "Science & Humanities",
   ];
 
+
+useEffect(() => {
+  // Scroll to top when component mounts or when category/department changes
+  const scrollContainer = document.querySelector(".scrollable");
+  if (scrollContainer) scrollContainer.scrollTo({ top: 0, behavior: "instant" });
+
+  // Also scroll the window to top (for safety)
+  window.scrollTo({ top: 0, behavior: "instant" });
+}, [selectedDepartment, selectedCategory]);
+
+
   // ✅ Fetch only the selected department
 useEffect(() => {
   async function fetchFaculty() {

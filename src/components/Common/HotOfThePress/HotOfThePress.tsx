@@ -117,6 +117,7 @@ const HotOfThePressCarousel = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   const fetchEvents = async () => {
     try {
@@ -124,8 +125,10 @@ const HotOfThePressCarousel = () => {
       if (!res.ok) throw new Error("Failed to fetch buzz");
       const data: CampusEvent[] = await res.json();
       setEvents(data);
+      setIsLoaded(true);
     } catch (err) {
       console.error(err);
+      setIsLoaded(true);
     }
   };
 
@@ -176,7 +179,7 @@ const HotOfThePressCarousel = () => {
         </div>
       </div>
 
-      <Swiper
+       {isLoaded && events.length > 0 ? (<Swiper
         modules={[Autoplay, Navigation]}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         spaceBetween={20}
@@ -238,6 +241,9 @@ const HotOfThePressCarousel = () => {
           );
         })}
       </Swiper>
+      ) : (
+        <div className="text-center py-10 text-textGray">No events to display.</div>
+      )}
 
       {/* Swiper Navigation */}
        <div className="lg:flex lg:justify-between md:pb-14 pb-10">

@@ -4,24 +4,26 @@ import bgImage from "../../../../public/trainingPlacementPageImages/placementHer
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full  lg:h-[120vh]  flex flex-col justify-center items-center text-center  overflow-hidden">
-      
-      <div className="lg:pt-32 md:pt-1">
-         <Image src={bgImage} alt="Background 1" className="object-cover w-full h-full md:h-full" priority />
+    <section className="relative w-full overflow-hidden flex flex-col justify-center items-center text-center">
+      {/* Background image */}
+      <div className="relative w-full aspect-[4/3] lg:aspect-auto lg:h-[80vh]">
+        <Image
+          src={bgImage}
+          alt="Placement Hero Background"
+          fill
+          priority
+          className="object-cover object-[center_25%]"
+        />
       </div>
+
+      {/* Smooth gradient overlay */}
       <div className="absolute inset-0 z-0">
-       
+        {/* Mobile gradient */}
+        <div className="absolute bottom-0 left-0 right-0 h-[100px] bg-gradient-to-t from-[#fbfcfe] via-[#fbfcfe]/70 to-transparent z-[10] md:hidden" />
 
-        {/* Mobile Gradient */}
-
-        {/* Desktop Gradient */}
-      
-      <div className="absolute bottom-0 left-0 right-0 h-[70px] bg-gradient-to-t from-[#fbfcfe] via-[#fbfcfe]/85 to-transparent z-[10] md:hidden" />
-    
-        <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[25%] bg-gradient-to-t from-[#fbfcfe] via-transparent to-transparent z-[10] hidden md:block" />
+        {/* Desktop gradient */}
+        <div className="absolute bottom-0 left-0 right-0 h-[400px] md:h-[230px] bg-gradient-to-t from-[#fbfcfe] via-[#fbfcfe]/60 to-transparent z-[10] hidden md:block" />
       </div>
-
-     
     </section>
   );
 };

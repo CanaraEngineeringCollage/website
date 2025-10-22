@@ -158,7 +158,7 @@ useEffect(() => {
             {selectedSection === "Academic Programmes" && department?.academicsProgram && <Academic data={department.academicsProgram} />}
             {selectedSection === "PO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
             {selectedSection === "PEO & PO-PSO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
-            {selectedSection === "Course Outcomes (CO)" && <CourseOutCome staticData={department?.courseOutcome} />}
+            {selectedSection === "Course Outcomes (CO)" && <CourseOutCome  deptName={department?.name} staticData={department?.courseOutcome} />}
             {selectedSection === "Facilities" && department?.facilities && <Facilities deptName={department?.name} data={department?.facilities} />}
             {selectedSection === "Student Achievements" && department?.studentAcheivemtents && (
               <StudentAchievement data={department?.studentAcheivemtents} />

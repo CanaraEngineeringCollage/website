@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import FacultyModal from "../FacultyModal/FacultyModal";
 import Link from "next/link";
 // Interface for qualifications
@@ -91,20 +91,38 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
     setData(facultyData);
   }, [facultyData]);
 
-  const visibleMembers = data.slice(startIndex, startIndex + 2);
-  const visibleMembersMobile = data.slice(startIndex, startIndex + 1);
+ const [isMobile, setIsMobile] = useState(false);
 
-  const handleNext = () => {
-    if (startIndex + 2 < data.length) {
-      setStartIndex(startIndex + 2);
-    }
+useEffect(() => {
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 768); // md breakpoint
   };
+  handleResize();
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
 
-  const handlePrev = () => {
-    if (startIndex - 2 >= 0) {
-      setStartIndex(startIndex - 2);
-    }
-  };
+// Show different number of cards based on screen size
+const visibleMembers = isMobile
+  ? data?.slice(startIndex, startIndex + 1)
+  : data?.slice(startIndex, startIndex + 2);
+
+// Handle next / previous navigation
+const handleNext = () => {
+  const step = isMobile ? 1 : 2;
+  if (startIndex + step < data.length) {
+    setStartIndex(startIndex + step);
+  }
+};
+
+const handlePrev = () => {
+  const step = isMobile ? 1 : 2;
+  if (startIndex - step >= 0) {
+    setStartIndex(startIndex - step);
+  }
+};
+
+
   // inside DepartmentFacultySection
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedMember, setSelectedMember] = useState<CouncilMember | null>(null);
@@ -132,7 +150,7 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
               excellence.
             </p>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center justify-between gap-4">
             <Link
               href={{
                 pathname: "/about/educators-administrators",
@@ -146,24 +164,24 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
                 Meet more of our Faculty
               </button>
             </Link>
-            <div className="flex items-center gap-2">
-              <button
-                aria-label="Previous Slide"
-                onClick={handlePrev}
-                disabled={startIndex === 0}
-                className="w-8 h-8 flex rounded-full items-center justify-center  border border-[#0071E3] text-gray-600 hover:bg-gray-200 transition disabled:opacity-30"
-              >
-                <ChevronLeft size={16} />
-              </button>
-              <button
-                aria-label="Next Slide"
-                onClick={handleNext}
-                disabled={startIndex + 2 >= data.length}
-                className="w-8 h-8 flex items-center justify-center rounded-full  bg-[#0071E3] text-white hover:bg-blue-700 transition disabled:opacity-30"
-              >
-                <ChevronRight size={16} />
-              </button>
-            </div>
+           <div className="flex items-center gap-3">
+                       <button
+                         aria-label="Previous Faculty Member"
+                         onClick={handlePrev}
+                         disabled={startIndex === 0}
+                         className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full   text-[#616164] hover:bg-gray-200 transition disabled:opacity-30"
+                       >
+                         <MdKeyboardArrowLeft size={32} />
+                       </button>
+                       <button
+                         aria-label="Next Faculty Member"
+                         onClick={handleNext}
+                         disabled={startIndex + 2 >= data.length}
+                         className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full  text-[#616164]  transition disabled:opacity-30"
+                       >
+                         <MdKeyboardArrowRight size={32} />
+                       </button>
+                     </div>
           </div>
         </div>
 
@@ -253,7 +271,7 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
         </div>
       ))
     : 
-          visibleMembersMobile.map((member, index) => (
+          visibleMembers.map((member, index) => (
             <div
               key={index}
               onClick={() => openModal(member)}
@@ -298,22 +316,22 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
               Meet more of Our Faculty
             </button>
           </Link>
-          <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2">
             <button
-              aria-label="Previous Slide"
+              aria-label="Previous Faculty Member"
               onClick={handlePrev}
               disabled={startIndex === 0}
-              className="w-8 h-8 flex rounded-full items-center justify-center  border border-[#0071E3] text-gray-600 hover:bg-gray-200 transition disabled:opacity-30"
+              className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full   text-[#616164] hover:bg-gray-200 transition disabled:opacity-30"
             >
-              <ChevronLeft size={16} />
+              <MdKeyboardArrowLeft size={24} />
             </button>
             <button
-              aria-label="Next Slide"
+              aria-label="Next Faculty Member"
               onClick={handleNext}
-              disabled={startIndex + 2 >= data.length}
-              className="w-8 h-8 flex items-center rounded-full justify-center  bg-[#0071E3] text-white hover:bg-blue-700 transition disabled:opacity-30"
+              disabled={startIndex + 1 >= data.length}
+              className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full  text-[#616164]  transition disabled:opacity-30"
             >
-              <ChevronRight size={16} />
+              <MdKeyboardArrowRight size={24} />
             </button>
           </div>
         </div>

@@ -25,13 +25,19 @@ const semesters = [
 // ✅ Static course data for multiple years
 
 
-const admissionYears = generateAdmissionYears();
 
-const CourseOutCome = ({staticData}:{staticData:any}) => {
+const CourseOutCome = ({staticData,deptName}:{staticData:any;deptName:string }) => {
   const [selectedYear, setSelectedYear] = useState("");
   const [selectedSem, setSelectedSem] = useState("");
   const [filteredCourses, setFilteredCourses] = useState<any[]>([]);
   const [selectedCourse, setSelectedCourse] = useState<any | null>(null);
+
+
+const admissionYears =
+    deptName === "Mechanical Engineering"
+      ? ["2020-21"]
+      : generateAdmissionYears();
+
 
   const handleFetch = () => {
     const yearCourses = staticData[selectedYear] || [];
@@ -85,7 +91,7 @@ const CourseOutCome = ({staticData}:{staticData:any}) => {
       </div>
 
       {/* Table Display */}
-      {filteredCourses.length > 0 && (
+      {filteredCourses.length > 0 ? (
         <div className="mt-10 overflow-x-auto">
           <table className="min-w-full border border-gray-300 text-sm text-left">
             <thead className="bg-gray-200">
@@ -115,7 +121,13 @@ const CourseOutCome = ({staticData}:{staticData:any}) => {
             </tbody>
           </table>
         </div>
-      )}
+      ):
+      (filteredCourses.length===0 && selectedYear && selectedSem) ? (
+    <div className="mt-5 ">
+      <p className="">No Data Found </p>
+    </div>
+      ): null
+      }
 
       {/* Simple Custom Modal */}
      {selectedCourse && (

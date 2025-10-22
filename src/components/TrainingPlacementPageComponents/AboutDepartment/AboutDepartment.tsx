@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { HiDownload } from "react-icons/hi";
 
@@ -5,8 +6,8 @@ const AboutDepartment = () => {
   return (
     <section className=" pb-5 md:pb-2   max-w-7xl xl:max-w-[75%] mx-auto lg:px-32">
       <div className="">
-        <div className="flex justify-between  pb-5 lg:pb-10">
-          <h1 className="text-3xl md:text-[40px] lg2:text-[46.5px] xl:text-6xl leading-[1.2] max-w-2xl xl:max-w-3xl  font-bold text-[#1D1D1F] ">Training &amp; Placement at 
+        <div className="flex justify-between items-center  pb-5 lg:pb-10">
+          <h1 className="text-3xl md:text-[40px] lg2:text-[46.5px] xl:text-6xl leading-[1.2] max-w-2xl xl:max-w-4xl  font-bold text-[#1D1D1F] ">Training &amp; Placement at 
             Canara Engineering College</h1>
             <div>
           <a
@@ -57,7 +58,20 @@ the T&amp;P Department ensures that our students graduate as industry-ready prof
 after year, this effort translates into exceptional placement outcomes and the continuation of a
 proud legacy of success.
         </p>
+
       </div>
+
+   <div>
+          <Link
+            href="https://www.canaraengineering.in/placements_portal.php"
+            target="_blank"
+            aria-label="Download Brochure"
+            className="text-[#2884CA] hidden  font-bold text-[17px] bg-[#d9ebff] px-6 py-2 cursor-pointer rounded-3xl lg:inline-flex gap-3"
+          >
+            Placement Portal
+          </Link>
+          </div>
+<div className="flex justify-center lg:hidden">
       <a
         href="/brochures/Placement Brochure Design.pdf"
         download
@@ -66,6 +80,7 @@ proud legacy of success.
       >
         Download Brochure <HiDownload className="text-[24px] font-extrabold" />
       </a>
+      </div>
     </section>
   );
 };

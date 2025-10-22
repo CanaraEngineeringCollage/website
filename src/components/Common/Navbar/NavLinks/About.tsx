@@ -48,101 +48,140 @@ export default function About() {
         <div className="w-full  max-w-screen-2xl bg-white z-100 shadow-md rounded-xl flex justify-center gap-8 p-8 border-none outline-none">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mx-16 w-full">
             {/* Column 1 */}
-            <div className="flex gap-4 pr-4 border-r border-gray-300">
-              <div className="flex items-start">
-                <College />
-              </div>
-              <div className="flex flex-col gap-2">
-                <span className="font-bold text-lg ">Campus Legacy</span>
-                <ul className="list-none text-gray-500 leading-10">
-                  <Link href="/about/about-cec">
-                    <li className={`${pathname.includes("/about/about-cec") ? `text-primary font-bold` : " text-gray-500"} hover:text-primary`}>
-                      About the CEC Campus
-                    </li>
-                  </Link>
-                  <Link href="/about/history-of-cec">
-                    <li className={`${pathname.includes("/about/history-of-cec") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>
-                      History of CEC
-                    </li>
-                  </Link>
-                  <Link href="/about/glimpses-of-cec">
-                    <li className={`${pathname.includes("/about/glimpses-of-cec") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>
-                     Glimpses of CEC
-                    </li>
-                  </Link>
-                </ul>
-              </div>
-            </div>
+    {/* Column 1 — Campus Legacy */}
+<div className="flex gap-4 pr-4 border-r border-gray-300">
+  <div className="flex items-start">
+    <College />
+  </div>
+  <div className="flex flex-col gap-2">
+    <span className="font-bold text-lg">Campus Legacy</span>
+    <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
+      <li>
+        <Link
+          href="/about/about-cec"
+          className={`${
+            pathname.includes("/about/about-cec")
+              ? "text-primary font-bold"
+              : "text-gray-500"
+          } hover:text-primary`}
+        >
+          About the CEC Campus
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="/about/history-of-cec"
+          className={`${
+            pathname.includes("/about/history-of-cec")
+              ? "text-primary font-bold"
+              : "text-gray-500"
+          } hover:text-primary`}
+        >
+          History of CEC
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="/about/glimpses-of-cec"
+          className={`${
+            pathname.includes("/about/glimpses-of-cec")
+              ? "text-primary font-bold"
+              : "text-gray-500"
+          } hover:text-primary`}
+        >
+          Glimpses of CEC
+        </Link>
+      </li>
+    </ul>
+  </div>
+</div>
 
-            {/* Column 2 */}
-            <div className="flex gap-4 pr-4 border-r border-gray-300">
-              <div className="flex items-start">
-                <Employees />
-              </div>
-              <div className="flex flex-col gap-2">
-                <span className="font-bold text-lg">Leadership & Administration</span>
-                <ul className="list-none text-gray-500 leading-10">
-                  {LeadearShiplinks.map(({ href, label }) => (
-                    <li key={href} className={pathname.includes(href) ? "text-primary font-bold" : "text-gray-500"}>
-                      <Link href={href} className="hover:text-primary">
-                        {label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+{/* Column 2 — Leadership & Administration */}
+<div className="flex gap-4 pr-4 border-r border-gray-300">
+  <div className="flex items-start">
+    <Employees />
+  </div>
+  <div className="flex flex-col gap-2">
+    <span className="font-bold text-lg">Leadership & Administration</span>
+    <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
+      {LeadearShiplinks.map(({ href, label }) => (
+        <li key={href}>
+          <Link
+            href={href}
+            className={`${
+              pathname.includes(href)
+                ? "text-primary font-bold"
+                : "text-gray-500"
+            } hover:text-primary`}
+          >
+            {label}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
 
-            {/* Column 3 */}
-            <div className="flex gap-4 pr-4 border-r border-gray-300">
-              <div className="flex items-start">
-                <Certicficate />
-              </div>
-              <div className="flex flex-col gap-2">
-                <span className="font-bold text-lg">Accreditations & Compliance</span>
-                <ul className="list-none text-gray-500 leading-10">
-                  <Link href="/about/mandatory-disclosure">
-                    <li
-                      className={`${
-                        pathname.includes("/about/mandatory-disclosure") ? `text-primary font-bold` : "text-gray-500"
-                      } hover:text-primary `}
-                    >
-                      Mandatory Disclosure
-                    </li>
-                  </Link>
-                </ul>
-              </div>
-            </div>
+{/* Column 3 — Accreditations & Compliance */}
+<div className="flex gap-4 pr-4 border-r border-gray-300">
+  <div className="flex items-start">
+    <Certicficate />
+  </div>
+  <div className="flex flex-col gap-2">
+    <span className="font-bold text-lg">Accreditations & Compliance</span>
+    <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
+      <li>
+        <Link
+          href="/about/mandatory-disclosure"
+          className={`${
+            pathname.includes("/about/mandatory-disclosure")
+              ? "text-primary font-bold"
+              : "text-gray-500"
+          } hover:text-primary`}
+        >
+          Mandatory Disclosure
+        </Link>
+      </li>
+    </ul>
+  </div>
+</div>
 
-            {/* Column 4 */}
-            <div className="flex gap-4 ">
-              <div className="flex items-start">
-                <HandShake />
-              </div>
-              <div className="flex flex-col gap-2">
-                <span className="font-bold text-lg">Student Support & Welfare</span>
-                <ul className="list-none text-gray-500 leading-10">
-                  <Link href="/about/grievance-redressal-cell">
-                    <li
-                      className={`${
-                        pathname.includes("/about/grievance-redressal-cell") ? `text-primary font-bold` : "text-gray-500"
-                      } hover:text-primary `}
-                    >
-                      Grievance Redressal Cell
-                    </li>
-                  </Link>
-                  <Link href="/about/student-welfare-department">
-                    <li
-                      className={`${
-                        pathname.includes("/about/student-welfare-department") ? `text-primary font-bold` : "text-gray-500"
-                      } hover:text-primary `}
-                    >
-                      Student Welfare Department
-                    </li>
-                  </Link>
-                </ul>
-              </div>
-            </div>
+{/* Column 4 — Student Support & Welfare */}
+<div className="flex gap-4">
+  <div className="flex items-start">
+    <HandShake />
+  </div>
+  <div className="flex flex-col gap-2">
+    <span className="font-bold text-lg">Student Support & Welfare</span>
+    <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
+      <li>
+        <Link
+          href="/about/grievance-redressal-cell"
+          className={`${
+            pathname.includes("/about/grievance-redressal-cell")
+              ? "text-primary font-bold"
+              : "text-gray-500"
+          } hover:text-primary`}
+        >
+          Grievance Redressal Cell
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="/about/student-welfare-department"
+          className={`${
+            pathname.includes("/about/student-welfare-department")
+              ? "text-primary font-bold"
+              : "text-gray-500"
+          } hover:text-primary`}
+        >
+          Student Welfare Department
+        </Link>
+      </li>
+    </ul>
+  </div>
+</div>
+
           </div>
         </div>
       </MenuList>

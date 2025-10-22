@@ -65,6 +65,75 @@ const contentVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.1 } },
 };
 
+
+
+
+const dummyStudentAchievements: CampusEvent[] = [
+  {
+    id: 1,
+    category: "Student Achievement",
+    eventDate: "", // can be empty or remove if not used
+    content: `
+      <p>Awarded the prestigious B.E. (Honours) degree by VTU, Belagavi for outstanding performance and commitment to advanced learning through the successful completion of six online courses in Java, Python, Al, ML, IoT, and Cloud Computing, they earned 18 additional credits.</p>
+      <img src="/mediaPageImages/B.E. (Honours. Degree).jpeg" alt="John Doe Achievement" />
+    `,
+  },
+  {
+    id: 2,
+    category: "Student Achievement",
+    eventDate: "",
+    content: `
+      <p>Nikitha Ganapathi Bhat, VTU 2024-25 First Rank with Gold Medal, Dept.of CSBS.</p>
+      <img src="/mediaPageImages/Nikitha Ganapathi Bhat.jpeg" alt="Jane Smith Achievement" />
+    `,
+  },
+  {
+    id: 3,
+    category: "Student Achievement",
+    eventDate: "",
+    content: `
+      <p>CEC celebrates 10 VTU Ranks! Congratulations to our proud achievers!</p>
+      <img src="/mediaPageImages/VTU - Rank Holders.jpeg" />
+    `,
+  },
+   {
+    id: 4,
+    category: "Student Achievement",
+    eventDate: "",
+    content: `
+      <p>UiPath Student Developer Champion Vaidehi V Pai, IV Semester CSE.</p>
+      <img src="/mediaPageImages/Ui path Student Developer.jpeg" alt="Team CEC Robotics" />
+    `,
+  },
+   {
+    id: 5,
+    category: "Student Achievement",
+    eventDate: "",
+    content: `
+      <p>Six students from our Institution have been awarded the prestigious IEEE Women in Engineering (WIE) scholarship 2024-25, funded by Quest Global and facilitated by IEEE India Philanthrophy (IIP)</p>
+      <img src="/mediaPageImages/IEEE - WIE Scholarship 2024-25.jpeg" />
+    `,
+  },
+  {
+    id: 6,
+    category: "Student Achievement",
+    eventDate: "",
+    content: `
+      <p>Mr. Krishna Pallan (ISE 3rd Year), Mr. Mukesh, and Mr. Ashlesh (AIML 3rd Year) secured 3rd Prize in The Lazarus Missions, a 96-hour ML. Hackathon hosted by IEEE NITIK Surathkal (March 1-5, 2025).</p>
+      <img src="/mediaPageImages/Hackathon.jpeg" />
+    `,
+  },
+  {
+    id: 7,
+    category: "Student Achievement",
+    eventDate: "",
+    content: `
+      <p>Ms. Pavitra Bhat K. II year ISE, secured 2nd place (silver medal) in high jump and Ms. Jayalakhmi, 1st year CSD secured Bronze Medal in High Jump in VTU State level Athletic meet held at JNNCE Shimoga on 15 March 2025.</p>
+      <img src="/mediaPageImages/VTU state level.jpeg" />
+    `,
+  },
+];
+
 // Parse HTML
 const parseEventContent = (html: string) => {
   const root = parse(html);
@@ -102,11 +171,11 @@ function EventContent({ description }: { description: EventDescriptionProps }) {
       )}
       <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
         <div>
-          <p className="text-[17px] text-textGray uppercase font-bold mb-4">{new Date(description.date).toLocaleDateString("en-GB")}</p>
-          <h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">{description.topTitle}</h3>
-          <p className="text-xl text-textGray">{description.topDescription}</p>
+         {description.date&& <p className="text-[17px] text-textGray uppercase font-bold mb-4">{new Date(description.date).toLocaleDateString("en-GB")}</p>}
+          {description.topTitle&&<h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">{description.topTitle}</h3>}
+          {description.topDescription&&<p className="text-xl text-textGray">{description.topDescription}</p>}
         </div>
-        <div className="bg-white -mt-10" dangerouslySetInnerHTML={{ __html: description.remainingHTML }} />
+        <div className="bg-white -mt-20" dangerouslySetInnerHTML={{ __html: description.remainingHTML }} />
       </div>
     </div>
   );
@@ -114,8 +183,10 @@ function EventContent({ description }: { description: EventDescriptionProps }) {
 
 const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEvents = [], title, description }) => {
   const [campusEvents, setCampusEvents] = useState<CampusEvent[]>(initialEvents);
-  const categories: string[] = ["All", "Sports", "Fest", "Academics", "Cultural Events", "Technical Events", "Exams", "CSR", "Alumni"];
-  const [activeCategory, setActiveCategory] = useState<string>("All");
+const categories: string[] = Array.from(
+  new Set(campusEvents.map(event => event.category))
+);
+  const [activeCategory, setActiveCategory] = useState<string>("Student Achievement");
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showAll, setShowAll] = useState(false);
@@ -126,7 +197,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEven
       const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz`);
       if (!res.ok) throw new Error("Failed to fetch buzz");
       const data = await res.json();
-      setCampusEvents(data);
+     setCampusEvents(prev => [...dummyStudentAchievements, ...data]);
     } catch (err) {
       console.error(err);
     }
@@ -194,12 +265,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEven
      <div className="pb-5 lg:pb-10">
   {/* Mobile Dropdown */}
   <div className="flex lg:hidden justify-between items-center gap-2 md:hidden">
-    <button
-      className="border text-lg font-bold px-3 py-1 rounded-4xl cursor-pointer"
-      onClick={() => setActiveCategory("All")}
-    >
-      Clear All Filters
-    </button>
+
 
     <select
       value={activeCategory}
@@ -217,9 +283,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEven
 
   {/* Desktop View */}
     <div className="hidden lg:flex justify-between items-center pb-5 lg:pb-10 flex-wrap gap-2">
-          <button className="border text-lg font-bold px-3 py-1 rounded-4xl cursor-pointer" onClick={() => setActiveCategory("All")}>
-            Clear All Filters
-          </button>
+         
           {categories.map((category, index) => (
             <h3
               onClick={() => { setActiveCategory(category); setShowAll(false); }}
@@ -250,10 +314,10 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEven
                     />
                   </div>
                   <div className="flex flex-col justify-center w-full md:w-1/2 p-6 lg:p-10">
-                    <p className="text-[17px] text-textGray uppercase font-bold mb-4">{new Date(event.eventDate).toLocaleDateString("en-GB")}</p>
-                    <p className="text-textGray text-[17px] mb-3">{event.eventName}</p>
-                    <h2 className="text-[31px] leading-[1.1] font-bold text-[#1D1D1F] mb-2">{topTitle}</h2>
-                    <p className="text-textGray leading-[1.3] text-[21px] mb-4">{topDescription}</p>
+                    {event.eventDate&&<p className="text-[17px] text-textGray uppercase font-bold mb-4">{new Date(event.eventDate).toLocaleDateString("en-GB")}</p>}
+                    {event.eventName&&<p className="text-textGray text-[17px] mb-3">{event.eventName}</p>}
+                    {topTitle&&<h2 className="text-[31px] leading-[1.1] font-bold text-[#1D1D1F] mb-2">{topTitle}</h2>}
+                    {topDescription&&<p className="text-textGray leading-[1.3] line-clamp-3 text-[21px] mb-4">{topDescription}</p>}
                     <motion.button
                       onClick={() => openCard(index)}
                       className="text-[#2997FF] inline-flex text-[21px] items-center font-medium text-sm"

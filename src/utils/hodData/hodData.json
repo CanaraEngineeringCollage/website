@@ -74,6 +74,19 @@
       { "title": "Artificial Intelligence & Machine Learning", "organization": "" }
     ]
   },
+
+   {
+    "id": 9,
+    "name": "Dr. N. Venkatesh",
+    "image": "/departmentImages/departmentHeads/mechHod.jpg",
+    "category": "Prospective",
+   "roles": [
+      { "title": "Mechanical Engineering", "organization": "" }
+    ]
+  },
+
+
+  
        {
     "id": 7,
     "name": "Dr. N. Satheesh Kumar",

@@ -77,20 +77,36 @@ useEffect(() => {
  
   
 
-  const visibleMembers = data?.slice(startIndex, startIndex + 2);
-  const visibleMembersMobile = data?.slice(startIndex, startIndex + 1);
+const [isMobile, setIsMobile] = useState(false);
 
-  const handleNext = () => {
-    if (startIndex + 2 < data.length) {
-      setStartIndex(startIndex + 2);
-    }
+useEffect(() => {
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 768); // md breakpoint
   };
+  handleResize();
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
 
-  const handlePrev = () => {
-    if (startIndex - 2 >= 0) {
-      setStartIndex(startIndex - 2);
-    }
-  };
+// Show different number of cards based on screen size
+const visibleMembers = isMobile
+  ? data?.slice(startIndex, startIndex + 1)
+  : data?.slice(startIndex, startIndex + 2);
+
+// Handle next / previous navigation
+const handleNext = () => {
+  const step = isMobile ? 1 : 2;
+  if (startIndex + step < data.length) {
+    setStartIndex(startIndex + step);
+  }
+};
+
+const handlePrev = () => {
+  const step = isMobile ? 1 : 2;
+  if (startIndex - step >= 0) {
+    setStartIndex(startIndex - step);
+  }
+};
 
 
   return (
@@ -232,7 +248,7 @@ useEffect(() => {
           </div>
         </div>
       ))
-    : visibleMembersMobile?.map((member, index) => (
+    : visibleMembers?.map((member, index) => (
             <div
               onClick={() => {
                     setSelectedMember(member);
@@ -301,7 +317,7 @@ useEffect(() => {
             <button
               aria-label="Next Faculty Member"
               onClick={handleNext}
-              disabled={startIndex + 2 >= data.length}
+              disabled={startIndex + 1 >= data.length}
               className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full  text-[#616164]  transition disabled:opacity-30"
             >
               <MdKeyboardArrowRight size={24} />

@@ -88,12 +88,12 @@
     "iso": [
        {
         "title": "ISO 9001:2015",
-        "links": [{ "text": "View ISO 9001:2015", "href": "" }]
+        "links": [{ "text": "View ISO 9001:2015", "href": "https://canaraengineering.in/ISO2015.pdf" }]
       },
       
       {
         "title": "ISO 21001:2018",
-        "links": [{ "text": "View ISO 21001:2018", "href": "" }]
+        "links": [{ "text": "View ISO 21001:2018", "href": "https://canaraengineering.in/ISO2018.pdf" }]
       }
      
     ]

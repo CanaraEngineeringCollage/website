@@ -114,6 +114,19 @@ const campusBeats = [
     title: "Alumni",
     link: "/alumni",
   },
+  {
+    title: "Student Achievements",
+    link: "/media",
+  },
+   {
+    title: "Hostel Out Pass",
+    link: "https://www.canaraengineering.in/s_hostelpass",
+  },
+   {
+    title: "Student Information",
+    link: "https://www.canaraengineering.in/s-info",
+  },
+
 ];
 
 const learningHub = [
@@ -124,6 +137,10 @@ const learningHub = [
   {
     title: "Research at CEC",
     link: "/academics/research",
+  },
+   {
+    title: "Research & Development and Consultancy Cell",
+    link: "/academics/research-development-consultancy",
   },
 ];
 
@@ -139,6 +156,10 @@ const campusFacilities = [
     {
     title: "Student Life & Engagement",
     link: "/campus-facilities/studentlife-engagement",
+  },
+    {
+    title: "Placement Portal",
+    link: "https://www.canaraengineering.in/placements_portal.php",
   },
 ];
 

@@ -273,8 +273,6 @@
           ]
         },
 
-       
-
         {
           "id": 2,
           "subject": "MATHEMATICS FOR CSE STREAM – II(BMATS201)",
@@ -547,7 +545,6 @@
           ]
         },
 
-       
         {
           "id": 2,
           "subject": "MATHEMATICS FOR COMPUTER SCIENCE(BCS301)",
@@ -795,8 +792,6 @@
             }
           ]
         }
-
-      
       ]
     },
 
@@ -1058,13 +1053,7 @@
           "categories": [
             {
               "title": "Hardware Facilities:",
-              "items": [
-                "Desktop Computers",
-                "Network Switch",
-                "Centralised UPS",
-                "Projector",
-                "Printer"
-              ]
+              "items": ["Desktop Computers", "Network Switch", "Centralised UPS", "Projector", "Printer"]
             },
             {
               "title": "Software Facilities:",
@@ -1145,15 +1134,7 @@
           "secondColumn": [
             {
               "title": [],
-              "data": [
-                "Chairman",
-                "Member",
-                "Member",
-                "Member",
-                "Member",
-                "Member",
-                "Member Secretary"
-              ]
+              "data": ["Chairman", "Member", "Member", "Member", "Member", "Member", "Member Secretary"]
             }
           ]
         },
@@ -1162,11 +1143,7 @@
           "firstColumn": [
             {
               "title": ["Composition"],
-              "data": [
-                "Head of the Department",
-                "SIX Senior Faculty Members",
-                "Programme Coordinator"
-              ]
+              "data": ["Head of the Department", "SIX Senior Faculty Members", "Programme Coordinator"]
             }
           ],
           "secondColumn": [
@@ -1193,13 +1170,7 @@
           "secondColumn": [
             {
               "title": [],
-              "data": [
-                "Chairman",
-                "Member",
-                "Member",
-                "Member",
-                "Member Secretary"
-              ]
+              "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"]
             }
           ]
         },
@@ -1208,25 +1179,13 @@
           "firstColumn": [
             {
               "title": ["Composition"],
-              "data": [
-                "Head of the Department",
-                "Programme Coordinator",
-                "Seminar Coordinator",
-                "Research Coordinator",
-                "Project Coordinator"
-              ]
+              "data": ["Head of the Department", "Programme Coordinator", "Seminar Coordinator", "Research Coordinator", "Project Coordinator"]
             }
           ],
           "secondColumn": [
             {
               "title": [],
-              "data": [
-                "Chairman",
-                "Member",
-                "Member",
-                "Member",
-                "Member Secretary"
-              ]
+              "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"]
             }
           ]
         }
@@ -1305,24 +1264,9 @@
           {
             "title": [],
             "firstColumn": ["Alok Ranjan", "Saritha Suvarna", "", "Sowmya K"],
-            "secondColumn": [
-              "Verdine Noronha",
-              "Shatananda Bhat P",
-              "Kishor Shivathaya S",
-              "Aruna Kumari G K"
-            ],
-            "thirdColumn": [
-              "Annapurna M",
-              "Kavya A M",
-              "Sukshma Shetty",
-              "Tara B B"
-            ],
-            "fourthColumn": [
-              "Babitha Ganesh Kulal",
-              "Saritha M",
-              "Janardhana Bhat K",
-              "Sushma"
-            ]
+            "secondColumn": ["Verdine Noronha", "Shatananda Bhat P", "Kishor Shivathaya S", "Aruna Kumari G K"],
+            "thirdColumn": ["Annapurna M", "Kavya A M", "Sukshma Shetty", "Tara B B"],
+            "fourthColumn": ["Babitha Ganesh Kulal", "Saritha M", "Janardhana Bhat K", "Sushma"]
           }
         ]
       },
@@ -1350,22 +1294,7 @@
               "VTU Result Extractor",
               "Library Visit Monitoring System"
             ],
-            "secondColumn": [
-              "2022",
-              "2022",
-              "2023",
-              "2023",
-              "2023",
-              "2023",
-              "2023",
-              "2023",
-              "2024",
-              "2024",
-              "2024",
-              "2024",
-              "2024",
-              "2025"
-            ],
+            "secondColumn": ["2022", "2022", "2023", "2023", "2023", "2023", "2023", "2023", "2024", "2024", "2024", "2024", "2024", "2025"],
             "thirdColumn": [
               "Shatananda Bhat P",
               "Shatananda Bhat P",
@@ -2608,7 +2537,6 @@
           ]
         },
 
-
         {
           "id": 2,
           "subject": "MATHEMATICS FOR CSE STREAM – II(BMATS201)",
@@ -2955,37 +2883,27 @@
       "allFacilities": [
         {
           "title": "Advance Computing Laboratory",
-          "points": [
-            "This lab is utilized by the 2nd year ISE students for Java & Advanced Java experiments."
-          ],
+          "points": ["This lab is utilized by the 2nd year ISE students for Java & Advanced Java experiments."],
           "imageUrl": "https://www.canaraengineering.in/departments/is/facilities/Advance%20Computing%20Lab(ISEL03)_400.jpg"
         },
         {
           "title": "Algorithm Laboratory",
-          "points": [
-            "This lab is utilized by the 2nd year ISE students to conduct lab programs related to Data structures and Algorithms."
-          ],
+          "points": ["This lab is utilized by the 2nd year ISE students to conduct lab programs related to Data structures and Algorithms."],
           "imageUrl": "https://www.canaraengineering.in/departments/is/facilities/Algorithm%20Lab(ISEL02)_400.jpg"
         },
         {
           "title": "Machine Learning/Data Processing & Visualization Laboratory",
-          "points": [
-            "This lab is utilized by 3rd year ISE students for laboratories such as Machine Learning, Python and Data Visualization Lab."
-          ],
+          "points": ["This lab is utilized by 3rd year ISE students for laboratories such as Machine Learning, Python and Data Visualization Lab."],
           "imageUrl": "https://www.canaraengineering.in/departments/is/facilities/Project%20Lab(ISEL04)_400.jpg"
         },
         {
           "title": "Project Laboratory",
-          "points": [
-            "This lab is utilized by the 3rd and 4th year students for developing mini-projects and major project."
-          ],
+          "points": ["This lab is utilized by the 3rd and 4th year students for developing mini-projects and major project."],
           "imageUrl": "https://www.canaraengineering.in/departments/is/facilities/Project%20Lab(ISEL04)_400.jpg"
         },
         {
           "title": "Code Nest Laboratory",
-          "points": [
-            "This lab is utilized by 2nd and 3rd year ISE students for Latex Lab and Devops Labs."
-          ],
+          "points": ["This lab is utilized by 2nd and 3rd year ISE students for Latex Lab and Devops Labs."],
           "imageUrl": "https://www.canaraengineering.in/departments/is/facilities/CodeNest%20Lab(ISEL05)_400.jpg"
         },
         {
@@ -3052,16 +2970,11 @@
     "publications": [
       {
         "title": "Staff Publications",
-        "imageUrl": [
-          "https://www.canaraengineering.in/departments/is/citation.jpg",
-          "https://www.canaraengineering.in/departments/is/INDEXED.jpg"
-        ]
+        "imageUrl": ["https://www.canaraengineering.in/departments/is/citation.jpg", "https://www.canaraengineering.in/departments/is/INDEXED.jpg"]
       },
       {
         "title": "Student Publications",
-        "imageUrl": [
-          "https://www.canaraengineering.in/departments/is/student%20publication.jpg"
-        ]
+        "imageUrl": ["https://www.canaraengineering.in/departments/is/student%20publication.jpg"]
       }
     ],
     "studentAcheivemtents": [
@@ -3118,15 +3031,7 @@
           "secondColumn": [
             {
               "title": [],
-              "data": [
-                "Chairman",
-                "Member",
-                "Member",
-                "Member",
-                "Member",
-                "Member",
-                "Member Secretary"
-              ]
+              "data": ["Chairman", "Member", "Member", "Member", "Member", "Member", "Member Secretary"]
             }
           ]
         },
@@ -3135,11 +3040,7 @@
           "firstColumn": [
             {
               "title": ["Composition"],
-              "data": [
-                "Head of the Department",
-                "SIX Senior Faculty Members",
-                "Programme Coordinator"
-              ]
+              "data": ["Head of the Department", "SIX Senior Faculty Members", "Programme Coordinator"]
             }
           ],
           "secondColumn": [
@@ -3166,13 +3067,7 @@
           "secondColumn": [
             {
               "title": [],
-              "data": [
-                "Chairman",
-                "Member",
-                "Member",
-                "Member",
-                "Member Secretary"
-              ]
+              "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"]
             }
           ]
         },
@@ -3181,25 +3076,13 @@
           "firstColumn": [
             {
               "title": ["Composition"],
-              "data": [
-                "Head of the Department",
-                "Programme Coordinator",
-                "Seminar Coordinator",
-                "Research Coordinator",
-                "Project Coordinator"
-              ]
+              "data": ["Head of the Department", "Programme Coordinator", "Seminar Coordinator", "Research Coordinator", "Project Coordinator"]
             }
           ],
           "secondColumn": [
             {
               "title": [],
-              "data": [
-                "Chairman",
-                "Member",
-                "Member",
-                "Member",
-                "Member Secretary"
-              ]
+              "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"]
             }
           ]
         }
@@ -3277,30 +3160,10 @@
         "table": [
           {
             "title": [],
-            "firstColumn": [
-              "Alok Ranjan",
-              "Saritha Suvarna",
-              "Namitha A Amdalli",
-              "Sowmya K"
-            ],
-            "secondColumn": [
-              "Verdine Noronha",
-              "Shatananda Bhat P",
-              "Kishor Shivathaya S",
-              "Aruna Kumari G K"
-            ],
-            "thirdColumn": [
-              "Annapurna M",
-              "Kavya A M",
-              "Sukshma Shetty",
-              "Tara B B"
-            ],
-            "fourthColumn": [
-              "Babitha Ganesh Kulal",
-              "Saritha M",
-              "Janardhana Bhat K",
-              "Sushma"
-            ]
+            "firstColumn": ["Alok Ranjan", "Saritha Suvarna", "Namitha A Amdalli", "Sowmya K"],
+            "secondColumn": ["Verdine Noronha", "Shatananda Bhat P", "Kishor Shivathaya S", "Aruna Kumari G K"],
+            "thirdColumn": ["Annapurna M", "Kavya A M", "Sukshma Shetty", "Tara B B"],
+            "fourthColumn": ["Babitha Ganesh Kulal", "Saritha M", "Janardhana Bhat K", "Sushma"]
           }
         ]
       },
@@ -3328,22 +3191,7 @@
               "VTU Result Extractor",
               "Library Visit Monitoring System"
             ],
-            "secondColumn": [
-              "2022",
-              "2022",
-              "2023",
-              "2023",
-              "2023",
-              "2023",
-              "2023",
-              "2023",
-              "2024",
-              "2024",
-              "2024",
-              "2024",
-              "2024",
-              "2025"
-            ],
+            "secondColumn": ["2022", "2022", "2023", "2023", "2023", "2023", "2023", "2023", "2024", "2024", "2024", "2024", "2024", "2025"],
             "thirdColumn": [
               "Shatananda Bhat P",
               "Shatananda Bhat P",
@@ -5038,8 +4886,6 @@
             }
           ]
         }
-
-        
       ]
     },
     "events": [
@@ -5183,28 +5029,14 @@
           "title": "Software Lab I-VLSI Lab/Computer Networks Lab",
           "desc": "This laboratory is utilized by the 4th year students for VLSI Lab and 3rd year students for Computer Networks lab.Electric software enables to design analog VSLI circuits and layouts and simulate them. Xilinx IDE enables to simulate digital VLSI designs.NCTUNS is used to simulate computer networks using switch and hub for TCP and UDP protocols for different bandwidths and error rates. Shortest routing protocols are executed using C compiler",
           "methodes": "Major tools",
-          "points": [
-            "35 Pentium Core PCs",
-            "48 port Ethernet Switch",
-            "Centralised UPS",
-            "Xilinx software",
-            "Electric software",
-            "NCTUNS software"
-          ],
+          "points": ["35 Pentium Core PCs", "48 port Ethernet Switch", "Centralised UPS", "Xilinx software", "Electric software", "NCTUNS software"],
           "imageUrl": ""
         },
         {
           "title": "Software Lab II-DSP Lab/Embedded Controller Lab",
           "desc": "This laboratory is equipped with MATLAB software, Code Composer Studiowhere students learn to execute signal processing programs in the 5th semester. In the Embedded Controller Lab, the students of 6th semester interface STM32F100RB microcontroller with various peripherals.",
           "methodes": "List of major tools",
-          "points": [
-            "MATLAB 6.5",
-            "KeilUVision 4",
-            "CCS Full version software",
-            "STM32F100RB kits",
-            "Interfacing Kits",
-            "TMS DSP Processor kits"
-          ],
+          "points": ["MATLAB 6.5", "KeilUVision 4", "CCS Full version software", "STM32F100RB kits", "Interfacing Kits", "TMS DSP Processor kits"],
           "imageUrl": ""
         },
         {
@@ -5268,16 +5100,11 @@
     "publications": [
       {
         "title": "Staff Publications",
-        "imageUrl": [
-          "https://www.canaraengineering.in/departments/is/citation.jpg",
-          "https://www.canaraengineering.in/departments/is/INDEXED.jpg"
-        ]
+        "imageUrl": ["https://www.canaraengineering.in/departments/is/citation.jpg", "https://www.canaraengineering.in/departments/is/INDEXED.jpg"]
       },
       {
         "title": "Student Publications",
-        "imageUrl": [
-          "https://www.canaraengineering.in/departments/is/student%20publication.jpg"
-        ]
+        "imageUrl": ["https://www.canaraengineering.in/departments/is/student%20publication.jpg"]
       }
     ],
     "studentAcheivemtents": [
@@ -5362,19 +5189,11 @@
           {
             "domain": "Applied Electronics",
             "faculty": ["Mrs. Jayashree K", "Mr. Sandeep Prabhu M"],
-            "researchScholars": [
-              "Mrs. Tara B B",
-              "Mr. Divyesh Divakar",
-              "Mr. Anantha Krishna Kamath"
-            ]
+            "researchScholars": ["Mrs. Tara B B", "Mr. Divyesh Divakar", "Mr. Anantha Krishna Kamath"]
           },
           {
             "domain": "Communication System",
-            "faculty": [
-              "Mr. Vinay H S",
-              "Mrs. Rajitha A A",
-              "Mr. Sreerama Samartha J G"
-            ],
+            "faculty": ["Mr. Vinay H S", "Mrs. Rajitha A A", "Mr. Sreerama Samartha J G"],
             "researchScholars": ["Research Scholars"]
           },
           {
@@ -5389,13 +5208,7 @@
           },
           {
             "domain": "Artificial Intelligence & Machine Learning",
-            "faculty": [
-              "Mr. Manjunatha I R",
-              "Mr. Sujit Satish Pai",
-              "Mrs. Savitha Acharya",
-              "Mrs. Akshatha G Baliga",
-              "Dr. Raghavendra M Shetty K"
-            ],
+            "faculty": ["Mr. Manjunatha I R", "Mr. Sujit Satish Pai", "Mrs. Savitha Acharya", "Mrs. Akshatha G Baliga", "Dr. Raghavendra M Shetty K"],
             "researchScholars": ["Mrs. Suchitra N Shenoy", "Mr. Ajeya B"]
           }
         ]
@@ -5419,67 +5232,37 @@
             "year": "2022-23",
             "domain": "MULTI CONTROLLED ELECTRIC WHEEL CHAIR",
             "faculty": ["Ms. Savitha Acharya"],
-            "researchScholars": [
-              "4CB19EC021 Dheeraj Shenoy",
-              "4CB19EC002 Aghan Jain",
-              "4CB19EC023 Harsvaradhan",
-              "4CB19EC034 K S Muhammad Sawad"
-            ]
+            "researchScholars": ["4CB19EC021 Dheeraj Shenoy", "4CB19EC002 Aghan Jain", "4CB19EC023 Harsvaradhan", "4CB19EC034 K S Muhammad Sawad"]
           },
           {
             "year": "2023-24",
             "domain": "AUTOMATIC RUBBER MILK MIXING MACHINE BY DETERMINING THE DRY RUBBER CONTENT OF LATEX",
             "faculty": ["Mr. Vinay H S"],
-            "researchScholars": [
-              "4CB20EC008 Ashish Kotian",
-              "4CB21EC402 NaviKarthik",
-              "4CB21EC400 Abhishek Gatty",
-              "4CB20EC042 Sanketh Rao"
-            ]
+            "researchScholars": ["4CB20EC008 Ashish Kotian", "4CB21EC402 NaviKarthik", "4CB21EC400 Abhishek Gatty", "4CB20EC042 Sanketh Rao"]
           },
           {
             "year": "2023-24",
             "domain": "ADVAYA VAHANA",
             "faculty": ["Ms. Jayashree K"],
-            "researchScholars": [
-              "4CB20EC032 Pruthviraj S Uppar",
-              "4CB20EC034 Rachan A R",
-              "4CB20EC043 Sahana",
-              "4CB20EC051 Shrilakshmi G Hegde"
-            ]
+            "researchScholars": ["4CB20EC032 Pruthviraj S Uppar", "4CB20EC034 Rachan A R", "4CB20EC043 Sahana", "4CB20EC051 Shrilakshmi G Hegde"]
           },
           {
             "year": "2023-24",
             "domain": "LOW-COST MYOELECTRIC PROSTHETIC ARM",
             "faculty": ["Dr. Dayananda G K"],
-            "researchScholars": [
-              "4CB20EC004 Aditya P",
-              "4CB20EC006 Amel Rayaz Bailur",
-              "4CB20EC022 Nisha Shetty",
-              "4CB20EC047 Sameer M Hegde"
-            ]
+            "researchScholars": ["4CB20EC004 Aditya P", "4CB20EC006 Amel Rayaz Bailur", "4CB20EC022 Nisha Shetty", "4CB20EC047 Sameer M Hegde"]
           },
           {
             "year": "2023-24",
             "domain": "VENDING MACHINE USING UPI",
             "faculty": ["Ms. Rajitha A A"],
-            "researchScholars": [
-              "4CB20EC002 Abhijith A",
-              "4CB20EC009 Ashwin K S",
-              "4CB20EC016 Krithik S K",
-              "4CB20EC019 Manoj Hegde"
-            ]
+            "researchScholars": ["4CB20EC002 Abhijith A", "4CB20EC009 Ashwin K S", "4CB20EC016 Krithik S K", "4CB20EC019 Manoj Hegde"]
           },
           {
             "year": "2024-25",
             "domain": "DESIGN AND IMPLEMENTATION OF HELICAL ANTENNA FOR AIRCRAFT COMMUNICATION",
             "faculty": ["Mr. Sreerama Samartha J G"],
-            "researchScholars": [
-              "4CB21EC001 Aishwarya H S",
-              "4CB21EC054 Spandana",
-              "4CB21EC020 Lata Keshav Naik",
-              "4CB21EC053 Sonali S"
-            ]
+            "researchScholars": ["4CB21EC001 Aishwarya H S", "4CB21EC054 Spandana", "4CB21EC020 Lata Keshav Naik", "4CB21EC053 Sonali S"]
           }
         ]
       },
@@ -5532,21 +5315,9 @@
         "table": [
           {
             "title": [],
-            "firstColumn": [
-              "Ms. savitha Acharya",
-              "Mr. Sreerama Samarta J G",
-              "Mr. Vinay H S"
-            ],
-            "secondColumn": [
-              "Ms.Jayasree K",
-              "Mr. Sandeep Prabhu M",
-              "Mr. Manjunath I R"
-            ],
-            "thirdColumn": [
-              "Ms. Akshatha G Baliga",
-              "Ms.Rajitha A A",
-              "Mr. Sujith S Pai"
-            ],
+            "firstColumn": ["Ms. savitha Acharya", "Mr. Sreerama Samarta J G", "Mr. Vinay H S"],
+            "secondColumn": ["Ms.Jayasree K", "Mr. Sandeep Prabhu M", "Mr. Manjunath I R"],
+            "thirdColumn": ["Ms. Akshatha G Baliga", "Ms.Rajitha A A", "Mr. Sujith S Pai"],
             "fourthColumn": []
           }
         ]
@@ -7303,8 +7074,6 @@
             }
           ]
         }
-
-        
       ]
     },
 
@@ -7366,7 +7135,7 @@
           "subtitle": "For Excellence in Tech Innovations"
         }
       ],
-       "passoutTotlas": "95"
+      "passoutTotlas": "95"
     },
     "placement": {
       "placementPercentage": "30%",
@@ -7500,16 +7269,11 @@
     "publications": [
       {
         "title": "Staff Publications",
-        "imageUrl": [
-          "https://www.canaraengineering.in/departments/is/citation.jpg",
-          "https://www.canaraengineering.in/departments/is/INDEXED.jpg"
-        ]
+        "imageUrl": ["https://www.canaraengineering.in/departments/is/citation.jpg", "https://www.canaraengineering.in/departments/is/INDEXED.jpg"]
       },
       {
         "title": "Student Publications",
-        "imageUrl": [
-          "https://www.canaraengineering.in/departments/is/student%20publication.jpg"
-        ]
+        "imageUrl": ["https://www.canaraengineering.in/departments/is/student%20publication.jpg"]
       }
     ],
     "studentAcheivemtents": [
@@ -7559,15 +7323,7 @@
           "secondColumn": [
             {
               "title": [],
-              "data": [
-                "Chairman",
-                "Member",
-                "Member",
-                "Member",
-                "Member",
-                "Member",
-                "Member Secretary"
-              ]
+              "data": ["Chairman", "Member", "Member", "Member", "Member", "Member", "Member Secretary"]
             }
           ]
         },
@@ -7576,11 +7332,7 @@
           "firstColumn": [
             {
               "title": ["Composition"],
-              "data": [
-                "Head of the Department",
-                "SIX Senior Faculty Members",
-                "Programme Coordinator"
-              ]
+              "data": ["Head of the Department", "SIX Senior Faculty Members", "Programme Coordinator"]
             }
           ],
           "secondColumn": [
@@ -7607,13 +7359,7 @@
           "secondColumn": [
             {
               "title": [],
-              "data": [
-                "Chairman",
-                "Member",
-                "Member",
-                "Member",
-                "Member Secretary"
-              ]
+              "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"]
             }
           ]
         },
@@ -7622,25 +7368,13 @@
           "firstColumn": [
             {
               "title": ["Composition"],
-              "data": [
-                "Head of the Department",
-                "Programme Coordinator",
-                "Seminar Coordinator",
-                "Research Coordinator",
-                "Project Coordinator"
-              ]
+              "data": ["Head of the Department", "Programme Coordinator", "Seminar Coordinator", "Research Coordinator", "Project Coordinator"]
             }
           ],
           "secondColumn": [
             {
               "title": [],
-              "data": [
-                "Chairman",
-                "Member",
-                "Member",
-                "Member",
-                "Member Secretary"
-              ]
+              "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"]
             }
           ]
         }
@@ -7649,12 +7383,7 @@
     "research": [
       {
         "heading": "Research Areas",
-        "points": [
-          "Machine Learning",
-          "Biomedical Signal Processing",
-          "Data Science and Big Data Analytics",
-          "Computer Vision & Deep Learning"
-        ],
+        "points": ["Machine Learning", "Biomedical Signal Processing", "Data Science and Big Data Analytics", "Computer Vision & Deep Learning"],
         "imageUrl": "",
         "table": [
           {
@@ -7686,11 +7415,7 @@
       },
       {
         "heading": "",
-        "points": [
-          "Mr. Anantha Krishna Kamath",
-          "Mrs. Pooja N S",
-          "Mr. Ravishankara K"
-        ],
+        "points": ["Mr. Anantha Krishna Kamath", "Mrs. Pooja N S", "Mr. Ravishankara K"],
         "imageUrl": "",
         "table": [
           {
@@ -9531,13 +9256,7 @@
           "categories": [
             {
               "title": "Hardware Facilities:",
-              "items": [
-                "Desktop Computers",
-                "Network Switch",
-                "Centralised UPS",
-                "Projector",
-                "Printer"
-              ]
+              "items": ["Desktop Computers", "Network Switch", "Centralised UPS", "Projector", "Printer"]
             },
             {
               "title": "Software Facilities:",
@@ -9571,16 +9290,11 @@
     "publications": [
       {
         "title": "Staff Publications",
-        "imageUrl": [
-          "https://www.canaraengineering.in/departments/is/citation.jpg",
-          "https://www.canaraengineering.in/departments/is/INDEXED.jpg"
-        ]
+        "imageUrl": ["https://www.canaraengineering.in/departments/is/citation.jpg", "https://www.canaraengineering.in/departments/is/INDEXED.jpg"]
       },
       {
         "title": "Student Publications",
-        "imageUrl": [
-          "https://www.canaraengineering.in/departments/is/student%20publication.jpg"
-        ]
+        "imageUrl": ["https://www.canaraengineering.in/departments/is/student%20publication.jpg"]
       }
     ],
     "studentAcheivemtents": [
@@ -9637,15 +9351,7 @@
           "secondColumn": [
             {
               "title": [],
-              "data": [
-                "Chairman",
-                "Member",
-                "Member",
-                "Member",
-                "Member",
-                "Member",
-                "Member Secretary"
-              ]
+              "data": ["Chairman", "Member", "Member", "Member", "Member", "Member", "Member Secretary"]
             }
           ]
         },
@@ -9654,11 +9360,7 @@
           "firstColumn": [
             {
               "title": ["Composition"],
-              "data": [
-                "Head of the Department",
-                "SIX Senior Faculty Members",
-                "Programme Coordinator"
-              ]
+              "data": ["Head of the Department", "SIX Senior Faculty Members", "Programme Coordinator"]
             }
           ],
           "secondColumn": [
@@ -9685,13 +9387,7 @@
           "secondColumn": [
             {
               "title": [],
-              "data": [
-                "Chairman",
-                "Member",
-                "Member",
-                "Member",
-                "Member Secretary"
-              ]
+              "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"]
             }
           ]
         },
@@ -9700,25 +9396,13 @@
           "firstColumn": [
             {
               "title": ["Composition"],
-              "data": [
-                "Head of the Department",
-                "Programme Coordinator",
-                "Seminar Coordinator",
-                "Research Coordinator",
-                "Project Coordinator"
-              ]
+              "data": ["Head of the Department", "Programme Coordinator", "Seminar Coordinator", "Research Coordinator", "Project Coordinator"]
             }
           ],
           "secondColumn": [
             {
               "title": [],
-              "data": [
-                "Chairman",
-                "Member",
-                "Member",
-                "Member",
-                "Member Secretary"
-              ]
+              "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"]
             }
           ]
         }
@@ -9759,13 +9443,7 @@
       },
       {
         "heading": "Faculty Pursuing Doctoral Studies",
-        "points": [
-          "Pavithra H B",
-          "Yathish K",
-          "Vinod Kumar B",
-          "Ramesh E",
-          "Yojana Kiran kumar"
-        ],
+        "points": ["Pavithra H B", "Yathish K", "Vinod Kumar B", "Ramesh E", "Yojana Kiran kumar"],
         "imageUrl": "",
         "table": [
           {
@@ -11006,7 +10684,6 @@
           ]
         },
 
-
         {
           "id": 2,
           "subject": "MATHEMATICS FOR CSE STREAM – II (BMATS201)",
@@ -11256,8 +10933,6 @@
           ]
         },
 
-     
-
         {
           "id": 2,
           "subject": "MATHEMATICS FOR COMPUTER SCIENCE(BCS301)",
@@ -11362,7 +11037,7 @@
             }
           ]
         },
-       
+
         {
           "id": 2,
           "subject": "SOCIAL CONNECT AND RESPONSIBILITY(BSCK307)",
@@ -11487,32 +11162,32 @@
         },
 
         {
-  "id": 2,
-  "subject": "PROJECT MANAGEMENT WITH GIT (BCSL358C)",
-  "semester": "III",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "Use The Basic Commands Related To Git Repository."
-    },
-    {
-      "no": "CO2",
-      "description": "Create And Manage The Branches."
-    },
-    {
-      "no": "CO3",
-      "description": "Apply Commands Related To Collaboration And Remote Repositories."
-    },
-    {
-      "no": "CO4",
-      "description": "Use The Commands Related To Git Tags, Releases And Advanced Git Operations."
-    },
-    {
-      "no": "CO5",
-      "description": "Analyse And Change The Git History."
-    }
-  ]
-}
+          "id": 2,
+          "subject": "PROJECT MANAGEMENT WITH GIT (BCSL358C)",
+          "semester": "III",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Use The Basic Commands Related To Git Repository."
+            },
+            {
+              "no": "CO2",
+              "description": "Create And Manage The Branches."
+            },
+            {
+              "no": "CO3",
+              "description": "Apply Commands Related To Collaboration And Remote Repositories."
+            },
+            {
+              "no": "CO4",
+              "description": "Use The Commands Related To Git Tags, Releases And Advanced Git Operations."
+            },
+            {
+              "no": "CO5",
+              "description": "Analyse And Change The Git History."
+            }
+          ]
+        }
       ]
     },
     "events": [
@@ -11659,15 +11334,7 @@
           "secondColumn": [
             {
               "title": [],
-              "data": [
-                "Chairman",
-                "Member",
-                "Member",
-                "Member Secretary",
-                "Member",
-                "Member",
-                "Member"
-              ]
+              "data": ["Chairman", "Member", "Member", "Member Secretary", "Member", "Member", "Member"]
             }
           ]
         },
@@ -11690,15 +11357,7 @@
           "secondColumn": [
             {
               "title": [],
-              "data": [
-                "Chairman",
-                "Member Secretary",
-                "Member",
-                "Member",
-                "Member",
-                "Member",
-                "Spl. Invitee(s)"
-              ]
+              "data": ["Chairman", "Member Secretary", "Member", "Member", "Member", "Member", "Spl. Invitee(s)"]
             }
           ]
         },
@@ -11707,25 +11366,13 @@
           "firstColumn": [
             {
               "title": ["Composition"],
-              "data": [
-                "Head of the Department",
-                "Senior Faculty Member",
-                "Accreditation Coordinator",
-                "R&D Coordinator",
-                "Faculty Member"
-              ]
+              "data": ["Head of the Department", "Senior Faculty Member", "Accreditation Coordinator", "R&D Coordinator", "Faculty Member"]
             }
           ],
           "secondColumn": [
             {
               "title": [],
-              "data": [
-                "Chairman",
-                "Member Secretary",
-                "Member",
-                "Member",
-                "Member"
-              ]
+              "data": ["Chairman", "Member Secretary", "Member", "Member", "Member"]
             }
           ]
         },
@@ -11734,25 +11381,13 @@
           "firstColumn": [
             {
               "title": ["Composition"],
-              "data": [
-                "Head of the Department",
-                "Project Coordinator",
-                "Senior Faculty Member",
-                "Guide",
-                "R&D Coordinator or Domain Expert(s)"
-              ]
+              "data": ["Head of the Department", "Project Coordinator", "Senior Faculty Member", "Guide", "R&D Coordinator or Domain Expert(s)"]
             }
           ],
           "secondColumn": [
             {
               "title": [],
-              "data": [
-                "Chairman",
-                "Coordinator",
-                "Member",
-                "Member",
-                "Spl. Invitee(s)"
-              ]
+              "data": ["Chairman", "Coordinator", "Member", "Member", "Spl. Invitee(s)"]
             }
           ]
         }
@@ -11907,9 +11542,9 @@
           "points": [],
           "imageUrl": "https://www.canaraengineering.in/departments/ai/labpics/ISLAIL06.jpg"
         },
-        
+
         {
-          "title2":"TUTORIAL AND CLASSROOMS",
+          "title2": "TUTORIAL AND CLASSROOMS",
           "title": "CLASS ROOMS",
           "desc": "Project Laboratory (AIL05): The Project Laboratory (AIL05) provides dedicated workspaces for students to collaborate and work on their projects while utilizing the available computing resources. This lab fosters innovation by offering a conducive environment for designing, developing, and testing various academic and research-based projects.",
           "methodes": "",
@@ -11938,10 +11573,7 @@
           "tableHeading": [
             {
               "title": "Items",
-              "data": [
-                "Number of Book Titles available",
-                "Number of Volumes available"
-              ]
+              "data": ["Number of Book Titles available", "Number of Volumes available"]
             },
             {
               "title": "Count",
@@ -11954,16 +11586,11 @@
     "publications": [
       {
         "title": "Staff Publications",
-        "imageUrl": [
-          "https://www.canaraengineering.in/departments/is/citation.jpg",
-          "https://www.canaraengineering.in/departments/is/INDEXED.jpg"
-        ]
+        "imageUrl": ["https://www.canaraengineering.in/departments/is/citation.jpg", "https://www.canaraengineering.in/departments/is/INDEXED.jpg"]
       },
       {
         "title": "Student Publications",
-        "imageUrl": [
-          "https://www.canaraengineering.in/departments/is/student%20publication.jpg"
-        ]
+        "imageUrl": ["https://www.canaraengineering.in/departments/is/student%20publication.jpg"]
       }
     ],
     "studentAcheivemtents": [
@@ -12954,660 +12581,646 @@
     ],
     "courseOutcome": {
       "2024-2025": [
-      {
-  "id": 1,
-  "subject": "MATHEMATICS FOR CSE STREAM – I (BMATS101)",
- "semester": "I",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "After Completion Of The Course, The Students Will Be Able To:Apply The Knowledge Of Calculus To Solve Problems Related To Polar Curves And Its Applications In Determining The Bentness Of A Curve And Demonstrate Using Python."
-    },
-    {
-      "no": "CO2",
-      "description": "Outline The Notion Of Partial Differentiation To Calculate Rate Of Change Of Multivariate Functions And Solve Problems Related To Composite Functions, Jacobian And Demonstrate Using Python."
-    },
-    {
-      "no": "CO3",
-      "description": "Analyze The Solution Of Linear And Nonlinear Ordinary Differential Equations And Demonstrate The Same Using Python."
-    },
-    {
-      "no": "CO4",
-      "description": "Get Acquainted And To Apply Modular Arithmetic To Computer Algorithms And Demonstrate Using Python."
-    },
-    {
-      "no": "CO5",
-      "description": "Solve The System Of Linear Equations Using Matrix Theory And Compute Eigenvalues And Eigenvectors And Demonstrate Using Python."
-    }
-  ]
-},
-         {
-  "id": 1,
-  "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
-  "semester": "I",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "Explain The Applications Of Sensors And Batteries."
-    },
-    {
-      "no": "CO2",
-      "description": "Explain The Methods Of Engineering Processes Which Are Involved In Memory Devices And Display Systems."
-    },
-    {
-      "no": "CO3",
-      "description": "Solve Problems Related To Corrosion In Engineering Applications."
-    },
-    {
-      "no": "CO4",
-      "description": "Explain The Concepts Of Polymers And Green Fuels."
-    },
-    {
-      "no": "CO5",
-      "description": "Explain Various E-waste And Their Consequence On Environment."
-    }
-  ]
-},
-
-         {
-  "id": 1,
-  "subject": "COMPUTER AIDED ENGINEERING DRAWING (BCEDK103)",
-  "semester": "I",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "Demonstrate The Geometrical Objects With Definite Shape And Dimensions."
-    },
-    {
-      "no": "CO2",
-      "description": "Construct The Shape And Size Of Geometrical Objects Through FV, TV And SVS."
-    },
-    {
-      "no": "CO3",
-      "description": "Develop The Lateral Surfaces Of The Geometrical Objects."
-    },
-    {
-      "no": "CO4",
-      "description": "Construct The Isometric View From Conventional Views Using CAD Software."
-    },
-    {
-      "no": "CO5",
-      "description": "Classify The Interdisciplinary Engineering Components Or Systems Through Its Graphical Representation."
-    }
-  ]
-},
-{
-  "id": 1,
-  "subject": "COMMUNICATIVE ENGLISH (BENGK106)",
-  "semester": "I",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "Understand And Apply The Fundamentals Of Communication Skills In Their Communication Skills."
-    },
-    {
-      "no": "CO2",
-      "description": "Identify The Nuances Of Phonetics, Intonation And Enhance Pronunciation Skills."
-    },
-    {
-      "no": "CO3",
-      "description": "To Impart Basic English Grammar And Essentials Of Language Skills As Per Present Requirement."
-    },
-    {
-      "no": "CO4",
-      "description": "Understand And Use All Types Of English Vocabulary And Language Proficiency."
-    },
-    {
-      "no": "CO5",
-      "description": "Adopt The Techniques Of Information Transfer Through Presentation."
-    }
-  ]
-},
-
-
-     {
-  "id": 1,
-  "subject": "BALAKE KANNADA (BKBKK107)",
-  "semester": "I",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "To Create the Awareness Regarding The Necessity Of Learning Local Language For Comfortable And Healthy Life."
-    },
-    {
-      "no": "CO2",
-      "description": "To Enable Learners To Listen And Understand The Kannada Language Properly."
-    },
-    {
-      "no": "CO3",
-      "description": "To Speak, Read And Write Kannada Language As Per Requirement."
-    },
-    {
-      "no": "CO4",
-      "description": "To Train The Learners For Correct And Polite Conservation."
-    },
-    {
-      "no": "CO5",
-      "description": "To Know About Karnataka State And Its Language, Literature And General Information About This State."
-    }
-  ]
-},
-
-{
-  "id": 1,
-  "subject": "SAMSKRUTIKA KANNADA (BKSKK107)",
-  "semester": "I",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "Creates Awareness On Kannada Language, Literature & Culture."
-    },
-    {
-      "no": "CO2",
-      "description": "Study Of Ancient & Modern Poetry Symbolically, Motivates To Read More & Gain Knowledge."
-    },
-    {
-      "no": "CO3",
-      "description": "Creates Awareness And Interest Among Students For Culture & Literature."
-    },
-    {
-      "no": "CO4",
-      "description": "Makes To Understand Technical Personalities & Their Achievements And Creates Interest To Know More About Other Personalities Of Karnataka."
-    },
-    {
-      "no": "CO5",
-      "description": "Introduces Cultural, Folk And Travel Diaries."
-    }
-  ]
-},
-
-       {
-  "id": 1,
-  "subject": "INTRODUCTION TO CIVIL ENGINEERING (BESCK104A)",
-  "semester": "I",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "Explain The Various Disciplines Of Civil Engineering."
-    },
-    {
-      "no": "CO2",
-      "description": "Explain The Infrastructure Requirement For Sustainable Development."
-    },
-    {
-      "no": "CO3",
-      "description": "Apply And Find The Resultant And Equilibrium Of Force Systems."
-    },
-    {
-      "no": "CO4",
-      "description": "Find The Centroid Of Plane And Built-up Sections."
-    },
-    {
-      "no": "CO5",
-      "description": "Find The Moment Of Inertia Of Plane And Built-up Sections."
-    }
-  ]
-},
+        {
+          "id": 1,
+          "subject": "MATHEMATICS FOR CSE STREAM – I (BMATS101)",
+          "semester": "I",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "After Completion Of The Course, The Students Will Be Able To:Apply The Knowledge Of Calculus To Solve Problems Related To Polar Curves And Its Applications In Determining The Bentness Of A Curve And Demonstrate Using Python."
+            },
+            {
+              "no": "CO2",
+              "description": "Outline The Notion Of Partial Differentiation To Calculate Rate Of Change Of Multivariate Functions And Solve Problems Related To Composite Functions, Jacobian And Demonstrate Using Python."
+            },
+            {
+              "no": "CO3",
+              "description": "Analyze The Solution Of Linear And Nonlinear Ordinary Differential Equations And Demonstrate The Same Using Python."
+            },
+            {
+              "no": "CO4",
+              "description": "Get Acquainted And To Apply Modular Arithmetic To Computer Algorithms And Demonstrate Using Python."
+            },
+            {
+              "no": "CO5",
+              "description": "Solve The System Of Linear Equations Using Matrix Theory And Compute Eigenvalues And Eigenvectors And Demonstrate Using Python."
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "subject": "CHEMISTRY FOR CSE STREAM (BCHES102)",
+          "semester": "I",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Explain The Applications Of Sensors And Batteries."
+            },
+            {
+              "no": "CO2",
+              "description": "Explain The Methods Of Engineering Processes Which Are Involved In Memory Devices And Display Systems."
+            },
+            {
+              "no": "CO3",
+              "description": "Solve Problems Related To Corrosion In Engineering Applications."
+            },
+            {
+              "no": "CO4",
+              "description": "Explain The Concepts Of Polymers And Green Fuels."
+            },
+            {
+              "no": "CO5",
+              "description": "Explain Various E-waste And Their Consequence On Environment."
+            }
+          ]
+        },
 
         {
-  "id": 1,
-  "subject": "INNOVATION AND DESIGN THINKING (BIDTK158)",
-  "semester": "I",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "After Completion Of The Course, The Students Will Be Able To Find Various Design Process Procedures."
-    },
-    {
-      "no": "CO2",
-      "description": "Label And Select Design Ideas Through Different Techniques."
-    },
-    {
-      "no": "CO3",
-      "description": "Relate The Significance Of Reverse Engineering To Understand Products."
-    },
-    {
-      "no": "CO4",
-      "description": "Choose Technical Drawing For Design Ideas."
-    },
-    {
-      "no": "CO5",
-      "description": "Apply Design Thinking By Taking Case Studies."
-    }
-  ]
-},
-{
-  "id": 1,
-  "subject": "INTRODUCTION TO WEB PROGRAMMING (BPLCK105A)",
-  "semester": "I",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "Explain The Historical Context And Justification For HTML Over XHTML."
-    },
-    {
-      "no": "CO2",
-      "description": "Explain Simple Web Page Segments With HTML5 Semantic Markup Tags."
-    },
-    {
-      "no": "CO3",
-      "description": "Outline The Importance Of CSS To Improve A Web Page Presentation."
-    },
-    {
-      "no": "CO4",
-      "description": "Illustrate The HTML Tables Using Various CSS Attributes."
-    },
-    {
-      "no": "CO5",
-      "description": "Demonstrate The Basic Concepts Of JavaScript For Web Design."
-    }
-  ]
-},
-
-        
-
-        
-     {
-  "id": 2,
-  "subject": "MATHEMATICS FOR CSE STREAM – II (BMATS201)",
-  "semester": "II",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "Apply The Concept Of Change Of Order Of Integration And Variables To Evaluate Multiple Integrals And Their Usage In Computing Area And Volume And Demonstrate Using Python."
-    },
-    {
-      "no": "CO2",
-      "description": "Apply The Concept Of Vector Calculus To Analyze Solenoidal And Irrotational Vector Fields In Orthogonal Curvilinear Coordinates And Demonstrate Using Python."
-    },
-    {
-      "no": "CO3",
-      "description": "Demonstrate The Idea Of Linear Dependence And Independence Of Sets In The Vector Space, And Linear Transformation And Demonstrate Using Python."
-    },
-    {
-      "no": "CO4",
-      "description": "Apply The Knowledge Of Numerical Methods In Analysing The Discrete Data And Solving The Physical And Engineering Problems And Demonstrate Using Python."
-    },
-    {
-      "no": "CO5",
-      "description": "Solve First Order Ordinary Differential Equations Arising In Engineering Problems And Demonstrate Using Python."
-    }
-  ]
-},
-{
-  "id": 2,
-  "subject": "PHYSICS FOR CSE STREAM (BPHYS202)",
-  "semester": "II",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "Apply The Principles Of Lasers And Optical Fibers In Measuring Parameters By Conducting The Experiments."
-    },
-    {
-      "no": "CO2",
-      "description": "Apply The Basic Principles Of Quantum Mechanics In The Quantized Energies Of The System And Conduct Relevant Experiments."
-    },
-    {
-      "no": "CO3",
-      "description": "Apply The Basic Concepts Of Quantum Computing In Developing Quantum Gates."
-    },
-    {
-      "no": "CO4",
-      "description": "Summarize The Principles Of Electrical Properties Of Materials, Superconductivity And Analyze Through Experiments."
-    },
-    {
-      "no": "CO5",
-      "description": "Illustrate The Application Of Physics In Design And Data Analysis Using Animation Principles."
-    }
-  ]
-},
-
-
-   {
-  "id": 2,
-  "subject": "PRINCIPLES OF PROGRAMMING USING C (BPOPS203)",
-  "semester": "II",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "Explain The Basic Architecture And Functionalities Of A Computer And Also Recognize The Hardware Parts."
-    },
-    {
-      "no": "CO2",
-      "description": "Apply Programming Constructs Of C Language To Solve Simple Computational Problems."
-    },
-    {
-      "no": "CO3",
-      "description": "Develop Programs To Solve Computational Problems Using Arrays And Functions."
-    },
-    {
-      "no": "CO4",
-      "description": "Make Use Of Strings And Pointers To Solve Computational Problems."
-    },
-    {
-      "no": "CO5",
-      "description": "Apply Concept Of Structures, Union And Enumerated Data Types In Implementing Solutions To Problems."
-    }
-  ]
-},
-
-{
-  "id": 2,
-  "subject": "PROFESSIONAL WRITING SKILLS IN ENGLISH (BPWSK206)",
-  "semester": "II",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "Recognize And Identify The Common Errors In Writing And Speaking."
-    },
-    {
-      "no": "CO2",
-      "description": "Tell The Technical Writing And Presentation Skills For Employment."
-    },
-    {
-      "no": "CO3",
-      "description": "Define Reading And Writing Skills For Technical Proposals."
-    },
-    {
-      "no": "CO4",
-      "description": "Recognize The Importance Of Listening And Other Communication Skills To Demonstrate Them At Workplace."
-    },
-    {
-      "no": "CO5",
-      "description": "Show The Techniques Of Information Transfer Through Presentation In Different Level."
-    }
-  ]
-},
-
-
-   {
-  "id": 2,
-  "subject": "INDIAN CONSTITUTION (BICOK207)",
-  "semester": "II",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "Recall The Basic Structure Of Indian Constitution."
-    },
-    {
-      "no": "CO2",
-      "description": "List The Salient Features Of Constitution, Their Fundamental Rights And Preamble."
-    },
-    {
-      "no": "CO3",
-      "description": "Tell About DPSPs, Fundamental Duties, Union Executive- President, Prime Minister And Council Of Ministers."
-    },
-    {
-      "no": "CO4",
-      "description": "Recall The Parliamentary System & Judicial System Of India."
-    },
-    {
-      "no": "CO5",
-      "description": "List The State Executive, Electoral Process In India. Remember The Amendments And Emergency Provisions, Other Important Provisions Given By The Constitution."
-    }
-  ]
-},
-    {
-  "id": 2,
-  "subject": "BMATS201",
-  "semester": "II",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "Apply The Concept Of Change Of Order Of Integration And Variables To Evaluate Multiple Integrals And Their Usage In Computing Area And Volume And Demonstrate Using Python."
-    },
-    {
-      "no": "CO2",
-      "description": "Apply The Concept Of Vector Calculus To Analyze Solenoidal And Irrotational Vector Fields In Orthogonal Curvilinear Coordinates And Demonstrate Using Python."
-    },
-    {
-      "no": "CO3",
-      "description": "Demonstrate The Idea Of Linear Dependence And Independence Of Sets In The Vector Space, And Linear Transformation And Demonstrate Using Python."
-    },
-    {
-      "no": "CO4",
-      "description": "Apply The Knowledge Of Numerical Methods In Analysing The Discrete Data And Solving The Physical And Engineering Problems And Demonstrate Using Python."
-    },
-    {
-      "no": "CO5",
-      "description": "Solve First Order Ordinary Differential Equations Arising In Engineering Problems And Demonstrate Using Python."
-    }
-  ]
-},
-
-   {
-  "id": 2,
-  "subject": "INTRODUCTION TO MECHANICAL ENGINEERING (BESCK204D)",
-  "semester": "II",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "Explain An Overview Of New Trends And Technologies In Manufacturing Industry, Energy And Relevant Sectors Its Impact On Society And Environment."
-    },
-    {
-      "no": "CO2",
-      "description": "Outline The Machine Tool Operations And Advanced Manufacturing Processes."
-    },
-    {
-      "no": "CO3",
-      "description": "Explain The Working Principle Of IC Engines And Need Of Future Mobility Vehicles For Environmental Sustainability."
-    },
-    {
-      "no": "CO4",
-      "description": "Outline The Properties Of Common Engineering Materials And Metal Joining Processes."
-    },
-    {
-      "no": "CO5",
-      "description": "Explain The Basic Concepts Of Advanced Trends And Technology Pertaining To Automation, Robotics And IoT."
-    }
-  ]
-},
-
-
-
-
-  {
-  "id": 2,
-  "subject": "SCIENTIFIC FOUNDATION HEALTH (BSFHK258)",
-  "semester": "II",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "Tell About Health And Wellness (and Its Beliefs) & Its Balance For Positive Mindset."
-    },
-    {
-      "no": "CO2",
-      "description": "List The Healthy Lifestyles For Good Health For Their Better Future."
-    },
-    {
-      "no": "CO3",
-      "description": "Define The Healthy And Caring Relationships To Meet The Requirements Of Good/Social/Positive Life."
-    },
-    {
-      "no": "CO4",
-      "description": "Tell About Avoiding Risks And Harmful Habits In Their Campus And Outside The Campus For Their Bright Future."
-    },
-    {
-      "no": "CO5",
-      "description": "Tell About How To Prevent Against Harmful Diseases For Good Health Through Positive Mindset."
-    }
-  ]
-},
-
-
-{
-  "id": 2,
-  "subject": "INTRODUCTION TO INTERNET OF THINGS (BETCK205H)",
-  "semester": "II",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "The Students Will Be Able To Explain The Evolution Of IoT, IoT Networking Components."
-    },
-    {
-      "no": "CO2",
-      "description": "The Students Will Be Able To Classify Various Sensing Devices And Actuator Types."
-    },
-    {
-      "no": "CO3",
-      "description": "The Students Will Be Able To Explain The Significant Technologies Of Processing In IoT."
-    },
-    {
-      "no": "CO4",
-      "description": "The Students Will Be Able To Explain Computing Methods And Associated Case Studies."
-    },
-    {
-      "no": "CO5",
-      "description": "The Students Will Be Able To Outline Application Of IoT Technologies For Different Sectors Using Case Studies."
-    }
-  ]
-},
-
-
-
-
-
- {
-  "id": 2,
-  "subject": "MATHEMATICS FOR COMPUTER SCIENCE (BCS301)",
-  "semester": "III",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "Explain The Basic Concepts Of Probability, Random Variables, Probability Distribution And Apply Suitable Probability Distribution Models For The Given Scenario."
-    },
-    {
-      "no": "CO2",
-      "description": "Apply The Notion Of A Discrete-time Markov Chain And N-step Transition Probabilities To Solve The Given Problem."
-    },
-    {
-      "no": "CO3",
-      "description": "Use Statistical Methodology And Tools In The Engineering Problem-solving Process."
-    },
-    {
-      "no": "CO4",
-      "description": "Compute The Confidence Intervals For The Mean Of The Population."
-    },
-    {
-      "no": "CO5",
-      "description": "Apply The Anova Test Related To Engineering Problems."
-    }
-  ]
-},
-
-{
-  "id": 2,
-  "subject": "DIGITAL DESIGN & COMPUTER ORGANIZATION (BCS302)",
-  "semester": "III",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "Apply The K–map Techniques To Simplify Various Boolean Expressions."
-    },
-    {
-      "no": "CO2",
-      "description": "Solve Different Types Of Combinational And Sequential Circuits Along With Verilog Programs."
-    },
-    {
-      "no": "CO3",
-      "description": "Describe The Fundamentals Of Machine Instructions, Addressing Modes And Processor Performance."
-    },
-    {
-      "no": "CO4",
-      "description": "Explain The Approaches Involved In Achieving Communication Between Processor And I/O Devices."
-    },
-    {
-      "no": "CO5",
-      "description": "Illustrate Internal Organization Of Memory And Impact Of Cache/Pipelining On Processor Performance."
-    }
-  ]
-},
+          "id": 1,
+          "subject": "COMPUTER AIDED ENGINEERING DRAWING (BCEDK103)",
+          "semester": "I",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Demonstrate The Geometrical Objects With Definite Shape And Dimensions."
+            },
+            {
+              "no": "CO2",
+              "description": "Construct The Shape And Size Of Geometrical Objects Through FV, TV And SVS."
+            },
+            {
+              "no": "CO3",
+              "description": "Develop The Lateral Surfaces Of The Geometrical Objects."
+            },
+            {
+              "no": "CO4",
+              "description": "Construct The Isometric View From Conventional Views Using CAD Software."
+            },
+            {
+              "no": "CO5",
+              "description": "Classify The Interdisciplinary Engineering Components Or Systems Through Its Graphical Representation."
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "subject": "COMMUNICATIVE ENGLISH (BENGK106)",
+          "semester": "I",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Understand And Apply The Fundamentals Of Communication Skills In Their Communication Skills."
+            },
+            {
+              "no": "CO2",
+              "description": "Identify The Nuances Of Phonetics, Intonation And Enhance Pronunciation Skills."
+            },
+            {
+              "no": "CO3",
+              "description": "To Impart Basic English Grammar And Essentials Of Language Skills As Per Present Requirement."
+            },
+            {
+              "no": "CO4",
+              "description": "Understand And Use All Types Of English Vocabulary And Language Proficiency."
+            },
+            {
+              "no": "CO5",
+              "description": "Adopt The Techniques Of Information Transfer Through Presentation."
+            }
+          ]
+        },
 
         {
-  "id": 2,
-  "subject": "OPERATING SYSTEMS (BCS303)",
-  "semester": "III",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "Explain The Structure And Functionality Of Operating System."
-    },
-    {
-      "no": "CO2",
-      "description": "Apply Appropriate CPU Scheduling Algorithms For The Given Problem."
-    },
-    {
-      "no": "CO3",
-      "description": "Analyze The Various Techniques For Process Synchronization And Deadlock Handling."
-    },
-    {
-      "no": "CO4",
-      "description": "Apply The Various Techniques For Memory Management."
-    },
-    {
-      "no": "CO5",
-      "description": "Illustrate The Concept Of File Management Strategies And Protection Mechanisms."
-    }
-  ]
-},
-
+          "id": 1,
+          "subject": "BALAKE KANNADA (BKBKK107)",
+          "semester": "I",
+          "co": [
             {
-  "id": 2,
-  "subject": "DATA STRUCTURES AND APPLICATIONS (BCS304)",
-  "semester": "III",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "Explain Different Data Structures And Their Applications."
-    },
-    {
-      "no": "CO2",
-      "description": "Apply Arrays, Stacks And Queue Data Structures To Solve The Given Problems."
-    },
-    {
-      "no": "CO3",
-      "description": "Use The Concept Of Linked List In Problem Solving."
-    },
-    {
-      "no": "CO4",
-      "description": "Develop Solutions Using Trees And Graphs To Model The Real-world Problem."
-    },
-    {
-      "no": "CO5",
-      "description": "Explain The Advanced Data Structures Concepts Such As Hashing Techniques And Optimal Binary Search Trees."
-    }
-  ]
-},
-
-           {
-  "id": 2,
-  "subject": "DATA STRUCTURES LAB (BCSL305)",
-  "semester": "III",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "Analyze Various Linear And Non-linear Data Structures."
-    },
-    {
-      "no": "CO2",
-      "description": "Demonstrate The Working Nature Of Different Types Of Data Structures And Their Applications."
-    },
-    {
-      "no": "CO3",
-      "description": "Use Appropriate Searching Algorithms For The Given Scenario."
-    },
-    {
-      "no": "CO4",
-      "description": "Apply The Appropriate Data Structure For Solving Real World Problems."
-    },
-    {
-      "no": "CO5",
-      "description": "Use Programming Tools To Solve Real World Problems."
-    }
-  ]
-},
-
+              "no": "CO1",
+              "description": "To Create the Awareness Regarding The Necessity Of Learning Local Language For Comfortable And Healthy Life."
+            },
             {
+              "no": "CO2",
+              "description": "To Enable Learners To Listen And Understand The Kannada Language Properly."
+            },
+            {
+              "no": "CO3",
+              "description": "To Speak, Read And Write Kannada Language As Per Requirement."
+            },
+            {
+              "no": "CO4",
+              "description": "To Train The Learners For Correct And Polite Conservation."
+            },
+            {
+              "no": "CO5",
+              "description": "To Know About Karnataka State And Its Language, Literature And General Information About This State."
+            }
+          ]
+        },
+
+        {
+          "id": 1,
+          "subject": "SAMSKRUTIKA KANNADA (BKSKK107)",
+          "semester": "I",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Creates Awareness On Kannada Language, Literature & Culture."
+            },
+            {
+              "no": "CO2",
+              "description": "Study Of Ancient & Modern Poetry Symbolically, Motivates To Read More & Gain Knowledge."
+            },
+            {
+              "no": "CO3",
+              "description": "Creates Awareness And Interest Among Students For Culture & Literature."
+            },
+            {
+              "no": "CO4",
+              "description": "Makes To Understand Technical Personalities & Their Achievements And Creates Interest To Know More About Other Personalities Of Karnataka."
+            },
+            {
+              "no": "CO5",
+              "description": "Introduces Cultural, Folk And Travel Diaries."
+            }
+          ]
+        },
+
+        {
+          "id": 1,
+          "subject": "INTRODUCTION TO CIVIL ENGINEERING (BESCK104A)",
+          "semester": "I",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Explain The Various Disciplines Of Civil Engineering."
+            },
+            {
+              "no": "CO2",
+              "description": "Explain The Infrastructure Requirement For Sustainable Development."
+            },
+            {
+              "no": "CO3",
+              "description": "Apply And Find The Resultant And Equilibrium Of Force Systems."
+            },
+            {
+              "no": "CO4",
+              "description": "Find The Centroid Of Plane And Built-up Sections."
+            },
+            {
+              "no": "CO5",
+              "description": "Find The Moment Of Inertia Of Plane And Built-up Sections."
+            }
+          ]
+        },
+
+        {
+          "id": 1,
+          "subject": "INNOVATION AND DESIGN THINKING (BIDTK158)",
+          "semester": "I",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "After Completion Of The Course, The Students Will Be Able To Find Various Design Process Procedures."
+            },
+            {
+              "no": "CO2",
+              "description": "Label And Select Design Ideas Through Different Techniques."
+            },
+            {
+              "no": "CO3",
+              "description": "Relate The Significance Of Reverse Engineering To Understand Products."
+            },
+            {
+              "no": "CO4",
+              "description": "Choose Technical Drawing For Design Ideas."
+            },
+            {
+              "no": "CO5",
+              "description": "Apply Design Thinking By Taking Case Studies."
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "subject": "INTRODUCTION TO WEB PROGRAMMING (BPLCK105A)",
+          "semester": "I",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Explain The Historical Context And Justification For HTML Over XHTML."
+            },
+            {
+              "no": "CO2",
+              "description": "Explain Simple Web Page Segments With HTML5 Semantic Markup Tags."
+            },
+            {
+              "no": "CO3",
+              "description": "Outline The Importance Of CSS To Improve A Web Page Presentation."
+            },
+            {
+              "no": "CO4",
+              "description": "Illustrate The HTML Tables Using Various CSS Attributes."
+            },
+            {
+              "no": "CO5",
+              "description": "Demonstrate The Basic Concepts Of JavaScript For Web Design."
+            }
+          ]
+        },
+
+        {
+          "id": 2,
+          "subject": "MATHEMATICS FOR CSE STREAM – II (BMATS201)",
+          "semester": "II",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Apply The Concept Of Change Of Order Of Integration And Variables To Evaluate Multiple Integrals And Their Usage In Computing Area And Volume And Demonstrate Using Python."
+            },
+            {
+              "no": "CO2",
+              "description": "Apply The Concept Of Vector Calculus To Analyze Solenoidal And Irrotational Vector Fields In Orthogonal Curvilinear Coordinates And Demonstrate Using Python."
+            },
+            {
+              "no": "CO3",
+              "description": "Demonstrate The Idea Of Linear Dependence And Independence Of Sets In The Vector Space, And Linear Transformation And Demonstrate Using Python."
+            },
+            {
+              "no": "CO4",
+              "description": "Apply The Knowledge Of Numerical Methods In Analysing The Discrete Data And Solving The Physical And Engineering Problems And Demonstrate Using Python."
+            },
+            {
+              "no": "CO5",
+              "description": "Solve First Order Ordinary Differential Equations Arising In Engineering Problems And Demonstrate Using Python."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "subject": "PHYSICS FOR CSE STREAM (BPHYS202)",
+          "semester": "II",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Apply The Principles Of Lasers And Optical Fibers In Measuring Parameters By Conducting The Experiments."
+            },
+            {
+              "no": "CO2",
+              "description": "Apply The Basic Principles Of Quantum Mechanics In The Quantized Energies Of The System And Conduct Relevant Experiments."
+            },
+            {
+              "no": "CO3",
+              "description": "Apply The Basic Concepts Of Quantum Computing In Developing Quantum Gates."
+            },
+            {
+              "no": "CO4",
+              "description": "Summarize The Principles Of Electrical Properties Of Materials, Superconductivity And Analyze Through Experiments."
+            },
+            {
+              "no": "CO5",
+              "description": "Illustrate The Application Of Physics In Design And Data Analysis Using Animation Principles."
+            }
+          ]
+        },
+
+        {
+          "id": 2,
+          "subject": "PRINCIPLES OF PROGRAMMING USING C (BPOPS203)",
+          "semester": "II",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Explain The Basic Architecture And Functionalities Of A Computer And Also Recognize The Hardware Parts."
+            },
+            {
+              "no": "CO2",
+              "description": "Apply Programming Constructs Of C Language To Solve Simple Computational Problems."
+            },
+            {
+              "no": "CO3",
+              "description": "Develop Programs To Solve Computational Problems Using Arrays And Functions."
+            },
+            {
+              "no": "CO4",
+              "description": "Make Use Of Strings And Pointers To Solve Computational Problems."
+            },
+            {
+              "no": "CO5",
+              "description": "Apply Concept Of Structures, Union And Enumerated Data Types In Implementing Solutions To Problems."
+            }
+          ]
+        },
+
+        {
+          "id": 2,
+          "subject": "PROFESSIONAL WRITING SKILLS IN ENGLISH (BPWSK206)",
+          "semester": "II",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Recognize And Identify The Common Errors In Writing And Speaking."
+            },
+            {
+              "no": "CO2",
+              "description": "Tell The Technical Writing And Presentation Skills For Employment."
+            },
+            {
+              "no": "CO3",
+              "description": "Define Reading And Writing Skills For Technical Proposals."
+            },
+            {
+              "no": "CO4",
+              "description": "Recognize The Importance Of Listening And Other Communication Skills To Demonstrate Them At Workplace."
+            },
+            {
+              "no": "CO5",
+              "description": "Show The Techniques Of Information Transfer Through Presentation In Different Level."
+            }
+          ]
+        },
+
+        {
+          "id": 2,
+          "subject": "INDIAN CONSTITUTION (BICOK207)",
+          "semester": "II",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Recall The Basic Structure Of Indian Constitution."
+            },
+            {
+              "no": "CO2",
+              "description": "List The Salient Features Of Constitution, Their Fundamental Rights And Preamble."
+            },
+            {
+              "no": "CO3",
+              "description": "Tell About DPSPs, Fundamental Duties, Union Executive- President, Prime Minister And Council Of Ministers."
+            },
+            {
+              "no": "CO4",
+              "description": "Recall The Parliamentary System & Judicial System Of India."
+            },
+            {
+              "no": "CO5",
+              "description": "List The State Executive, Electoral Process In India. Remember The Amendments And Emergency Provisions, Other Important Provisions Given By The Constitution."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "subject": "BMATS201",
+          "semester": "II",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Apply The Concept Of Change Of Order Of Integration And Variables To Evaluate Multiple Integrals And Their Usage In Computing Area And Volume And Demonstrate Using Python."
+            },
+            {
+              "no": "CO2",
+              "description": "Apply The Concept Of Vector Calculus To Analyze Solenoidal And Irrotational Vector Fields In Orthogonal Curvilinear Coordinates And Demonstrate Using Python."
+            },
+            {
+              "no": "CO3",
+              "description": "Demonstrate The Idea Of Linear Dependence And Independence Of Sets In The Vector Space, And Linear Transformation And Demonstrate Using Python."
+            },
+            {
+              "no": "CO4",
+              "description": "Apply The Knowledge Of Numerical Methods In Analysing The Discrete Data And Solving The Physical And Engineering Problems And Demonstrate Using Python."
+            },
+            {
+              "no": "CO5",
+              "description": "Solve First Order Ordinary Differential Equations Arising In Engineering Problems And Demonstrate Using Python."
+            }
+          ]
+        },
+
+        {
+          "id": 2,
+          "subject": "INTRODUCTION TO MECHANICAL ENGINEERING (BESCK204D)",
+          "semester": "II",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Explain An Overview Of New Trends And Technologies In Manufacturing Industry, Energy And Relevant Sectors Its Impact On Society And Environment."
+            },
+            {
+              "no": "CO2",
+              "description": "Outline The Machine Tool Operations And Advanced Manufacturing Processes."
+            },
+            {
+              "no": "CO3",
+              "description": "Explain The Working Principle Of IC Engines And Need Of Future Mobility Vehicles For Environmental Sustainability."
+            },
+            {
+              "no": "CO4",
+              "description": "Outline The Properties Of Common Engineering Materials And Metal Joining Processes."
+            },
+            {
+              "no": "CO5",
+              "description": "Explain The Basic Concepts Of Advanced Trends And Technology Pertaining To Automation, Robotics And IoT."
+            }
+          ]
+        },
+
+        {
+          "id": 2,
+          "subject": "SCIENTIFIC FOUNDATION HEALTH (BSFHK258)",
+          "semester": "II",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Tell About Health And Wellness (and Its Beliefs) & Its Balance For Positive Mindset."
+            },
+            {
+              "no": "CO2",
+              "description": "List The Healthy Lifestyles For Good Health For Their Better Future."
+            },
+            {
+              "no": "CO3",
+              "description": "Define The Healthy And Caring Relationships To Meet The Requirements Of Good/Social/Positive Life."
+            },
+            {
+              "no": "CO4",
+              "description": "Tell About Avoiding Risks And Harmful Habits In Their Campus And Outside The Campus For Their Bright Future."
+            },
+            {
+              "no": "CO5",
+              "description": "Tell About How To Prevent Against Harmful Diseases For Good Health Through Positive Mindset."
+            }
+          ]
+        },
+
+        {
+          "id": 2,
+          "subject": "INTRODUCTION TO INTERNET OF THINGS (BETCK205H)",
+          "semester": "II",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "The Students Will Be Able To Explain The Evolution Of IoT, IoT Networking Components."
+            },
+            {
+              "no": "CO2",
+              "description": "The Students Will Be Able To Classify Various Sensing Devices And Actuator Types."
+            },
+            {
+              "no": "CO3",
+              "description": "The Students Will Be Able To Explain The Significant Technologies Of Processing In IoT."
+            },
+            {
+              "no": "CO4",
+              "description": "The Students Will Be Able To Explain Computing Methods And Associated Case Studies."
+            },
+            {
+              "no": "CO5",
+              "description": "The Students Will Be Able To Outline Application Of IoT Technologies For Different Sectors Using Case Studies."
+            }
+          ]
+        },
+
+        {
+          "id": 2,
+          "subject": "MATHEMATICS FOR COMPUTER SCIENCE (BCS301)",
+          "semester": "III",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Explain The Basic Concepts Of Probability, Random Variables, Probability Distribution And Apply Suitable Probability Distribution Models For The Given Scenario."
+            },
+            {
+              "no": "CO2",
+              "description": "Apply The Notion Of A Discrete-time Markov Chain And N-step Transition Probabilities To Solve The Given Problem."
+            },
+            {
+              "no": "CO3",
+              "description": "Use Statistical Methodology And Tools In The Engineering Problem-solving Process."
+            },
+            {
+              "no": "CO4",
+              "description": "Compute The Confidence Intervals For The Mean Of The Population."
+            },
+            {
+              "no": "CO5",
+              "description": "Apply The Anova Test Related To Engineering Problems."
+            }
+          ]
+        },
+
+        {
+          "id": 2,
+          "subject": "DIGITAL DESIGN & COMPUTER ORGANIZATION (BCS302)",
+          "semester": "III",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Apply The K–map Techniques To Simplify Various Boolean Expressions."
+            },
+            {
+              "no": "CO2",
+              "description": "Solve Different Types Of Combinational And Sequential Circuits Along With Verilog Programs."
+            },
+            {
+              "no": "CO3",
+              "description": "Describe The Fundamentals Of Machine Instructions, Addressing Modes And Processor Performance."
+            },
+            {
+              "no": "CO4",
+              "description": "Explain The Approaches Involved In Achieving Communication Between Processor And I/O Devices."
+            },
+            {
+              "no": "CO5",
+              "description": "Illustrate Internal Organization Of Memory And Impact Of Cache/Pipelining On Processor Performance."
+            }
+          ]
+        },
+
+        {
+          "id": 2,
+          "subject": "OPERATING SYSTEMS (BCS303)",
+          "semester": "III",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Explain The Structure And Functionality Of Operating System."
+            },
+            {
+              "no": "CO2",
+              "description": "Apply Appropriate CPU Scheduling Algorithms For The Given Problem."
+            },
+            {
+              "no": "CO3",
+              "description": "Analyze The Various Techniques For Process Synchronization And Deadlock Handling."
+            },
+            {
+              "no": "CO4",
+              "description": "Apply The Various Techniques For Memory Management."
+            },
+            {
+              "no": "CO5",
+              "description": "Illustrate The Concept Of File Management Strategies And Protection Mechanisms."
+            }
+          ]
+        },
+
+        {
+          "id": 2,
+          "subject": "DATA STRUCTURES AND APPLICATIONS (BCS304)",
+          "semester": "III",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Explain Different Data Structures And Their Applications."
+            },
+            {
+              "no": "CO2",
+              "description": "Apply Arrays, Stacks And Queue Data Structures To Solve The Given Problems."
+            },
+            {
+              "no": "CO3",
+              "description": "Use The Concept Of Linked List In Problem Solving."
+            },
+            {
+              "no": "CO4",
+              "description": "Develop Solutions Using Trees And Graphs To Model The Real-world Problem."
+            },
+            {
+              "no": "CO5",
+              "description": "Explain The Advanced Data Structures Concepts Such As Hashing Techniques And Optimal Binary Search Trees."
+            }
+          ]
+        },
+
+        {
+          "id": 2,
+          "subject": "DATA STRUCTURES LAB (BCSL305)",
+          "semester": "III",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Analyze Various Linear And Non-linear Data Structures."
+            },
+            {
+              "no": "CO2",
+              "description": "Demonstrate The Working Nature Of Different Types Of Data Structures And Their Applications."
+            },
+            {
+              "no": "CO3",
+              "description": "Use Appropriate Searching Algorithms For The Given Scenario."
+            },
+            {
+              "no": "CO4",
+              "description": "Apply The Appropriate Data Structure For Solving Real World Problems."
+            },
+            {
+              "no": "CO5",
+              "description": "Use Programming Tools To Solve Real World Problems."
+            }
+          ]
+        },
+
+        {
           "id": 2,
           "subject": "Social Connect and Responsibility(BSCK307)",
           "semester": "III",
@@ -13626,35 +13239,35 @@
             }
           ]
         },
-           {
-  "id": 2,
-  "subject": "NATIONAL SERVICE SCHEME (BNSK359)",
-  "semester": "III",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "Understand The Importance Of His / Her Responsibilities Towards Society."
-    },
-    {
-      "no": "CO2",
-      "description": "Analyse The Environmental And Societal Problems/Issues And Design Solutions For The Same."
-    },
-    {
-      "no": "CO3",
-      "description": "Evaluate The Existing Systems And Propose Practical Solutions For Sustainable Development."
-    },
-    {
-      "no": "CO4",
-      "description": "Implement Government Or Self-driven Projects Effectively In The Field."
-    },
-    {
-      "no": "CO5",
-      "description": "Develop Capacity To Meet Emergencies And Natural Disasters & Practice National Integration And Social Harmony."
-    }
-  ]
-},
-
+        {
+          "id": 2,
+          "subject": "NATIONAL SERVICE SCHEME (BNSK359)",
+          "semester": "III",
+          "co": [
             {
+              "no": "CO1",
+              "description": "Understand The Importance Of His / Her Responsibilities Towards Society."
+            },
+            {
+              "no": "CO2",
+              "description": "Analyse The Environmental And Societal Problems/Issues And Design Solutions For The Same."
+            },
+            {
+              "no": "CO3",
+              "description": "Evaluate The Existing Systems And Propose Practical Solutions For Sustainable Development."
+            },
+            {
+              "no": "CO4",
+              "description": "Implement Government Or Self-driven Projects Effectively In The Field."
+            },
+            {
+              "no": "CO5",
+              "description": "Develop Capacity To Meet Emergencies And Natural Disasters & Practice National Integration And Social Harmony."
+            }
+          ]
+        },
+
+        {
           "id": 2,
           "subject": "YOGA(BYOK359)",
           "semester": "III",
@@ -13673,35 +13286,35 @@
             }
           ]
         },
-          {
-  "id": 2,
-  "subject": "PHYSICAL EDUCATION (BPEK359)",
-  "semester": "III",
-  "co": [
-    {
-      "no": "CO1",
-      "description": "Understand The Fundamental Concepts And Skills Of Physical Education, Health, Nutrition And Fitness."
-    },
-    {
-      "no": "CO2",
-      "description": "Familiarize With Health Related Exercises, Sports For Overall Growth And Development."
-    },
-    {
-      "no": "CO3",
-      "description": "Create A Foundation For The Professionals In Physical Education And Sports."
-    },
-    {
-      "no": "CO4",
-      "description": "Participate In Competitions At Regional, State, National, And International Levels."
-    },
-    {
-      "no": "CO5",
-      "description": "Create Consciousness Among Students On Health, Fitness And Wellness In Developing And Maintaining A Healthy Lifestyle."
-    }
-  ]
-},
-
+        {
+          "id": 2,
+          "subject": "PHYSICAL EDUCATION (BPEK359)",
+          "semester": "III",
+          "co": [
             {
+              "no": "CO1",
+              "description": "Understand The Fundamental Concepts And Skills Of Physical Education, Health, Nutrition And Fitness."
+            },
+            {
+              "no": "CO2",
+              "description": "Familiarize With Health Related Exercises, Sports For Overall Growth And Development."
+            },
+            {
+              "no": "CO3",
+              "description": "Create A Foundation For The Professionals In Physical Education And Sports."
+            },
+            {
+              "no": "CO4",
+              "description": "Participate In Competitions At Regional, State, National, And International Levels."
+            },
+            {
+              "no": "CO5",
+              "description": "Create Consciousness Among Students On Health, Fitness And Wellness In Developing And Maintaining A Healthy Lifestyle."
+            }
+          ]
+        },
+
+        {
           "id": 2,
           "subject": "OBJECT ORIENTED PROGRAMMING WITH JAVA(BCS306A)",
           "semester": "III",
@@ -13720,7 +13333,7 @@
             }
           ]
         },
-            {
+        {
           "id": 2,
           "subject": "R PROGRAMMING(BCS358B)",
           "semester": "III",
@@ -13900,16 +13513,11 @@
     "publications": [
       {
         "title": "Staff Publications",
-        "imageUrl": [
-          "https://www.canaraengineering.in/departments/is/citation.jpg",
-          "https://www.canaraengineering.in/departments/is/INDEXED.jpg"
-        ]
+        "imageUrl": ["https://www.canaraengineering.in/departments/is/citation.jpg", "https://www.canaraengineering.in/departments/is/INDEXED.jpg"]
       },
       {
         "title": "Student Publications",
-        "imageUrl": [
-          "https://www.canaraengineering.in/departments/is/student%20publication.jpg"
-        ]
+        "imageUrl": ["https://www.canaraengineering.in/departments/is/student%20publication.jpg"]
       }
     ],
     "studentAcheivemtents": [
@@ -13982,15 +13590,7 @@
           "secondColumn": [
             {
               "title": [],
-              "data": [
-                "Chairman",
-                "Member",
-                "Member",
-                "Member",
-                "Member",
-                "Member",
-                "Member Secretary"
-              ]
+              "data": ["Chairman", "Member", "Member", "Member", "Member", "Member", "Member Secretary"]
             }
           ]
         },
@@ -13999,11 +13599,7 @@
           "firstColumn": [
             {
               "title": ["Composition"],
-              "data": [
-                "Head of the Department",
-                "SIX Senior Faculty Members",
-                "Programme Coordinator"
-              ]
+              "data": ["Head of the Department", "SIX Senior Faculty Members", "Programme Coordinator"]
             }
           ],
           "secondColumn": [
@@ -14030,13 +13626,7 @@
           "secondColumn": [
             {
               "title": [],
-              "data": [
-                "Chairman",
-                "Member",
-                "Member",
-                "Member",
-                "Member Secretary"
-              ]
+              "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"]
             }
           ]
         },
@@ -14045,25 +13635,13 @@
           "firstColumn": [
             {
               "title": ["Composition"],
-              "data": [
-                "Head of the Department",
-                "Programme Coordinator",
-                "Seminar Coordinator",
-                "Research Coordinator",
-                "Project Coordinator"
-              ]
+              "data": ["Head of the Department", "Programme Coordinator", "Seminar Coordinator", "Research Coordinator", "Project Coordinator"]
             }
           ],
           "secondColumn": [
             {
               "title": [],
-              "data": [
-                "Chairman",
-                "Member",
-                "Member",
-                "Member",
-                "Member Secretary"
-              ]
+              "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"]
             }
           ]
         }
@@ -14111,13 +13689,7 @@
       },
       {
         "heading": "Faculty Pursuing Doctoral Studies",
-        "points": [
-          "Mr. Prashantha Somayaji",
-          "Mr. Padmanabha Kamath",
-          "Ms. Rajashree",
-          "Mr. Satish Hegde H",
-          "Mr. Ganesh Kamath M"
-        ],
+        "points": ["Mr. Prashantha Somayaji", "Mr. Padmanabha Kamath", "Ms. Rajashree", "Mr. Satish Hegde H", "Mr. Ganesh Kamath M"],
         "imageUrl": "",
         "table": [
           {
@@ -15034,27 +14606,1731 @@
       "messageFromtheDepartmentHead": "Mechanical Engineering Department is one of the most active and most happening Departments in CEC. It is one of the very few departments around Mangalore that has the Industrial CNC Machining centres. A team of 02 Professors, and 15 Assistant Professors are working with passion and dedication to ensure career oriented Total Quality Education. To meet such a feat the Department has introduced additional labs on Advanced Material testing, CNC operation, Dissection lab, Bio diesel Processing lab, Computer Aided Modelling Lab (On AutoCAD, SolidWorks and Creo Software) with an objective to provide the practical exposure to students. The Department organizes many Workshops, Webinars and Faculty Development Programmes in variety of domains for the benefit of Students and Faculty. The Department has MoU with MNCs who visit the department to impart career-oriented training. We are totally focussed on Outcome based education (OBE) via Industrial Internships and Product development centres. Exclusive work is being carried out on Electric vehicles in association of Electrical Department. A research work with a DST funding of 30 Lakhs is under progress in the field of Plastic recycling. These are new fields where the Department is working to make students Industry ready",
       "name": "Dr. N. Venkatesh",
       "position": "Professor & HoD",
-      "imageUrl": ""
+      "imageUrl": "/departmentImages/departmentHeads/mechHod.jpg"
     },
 
     "courseOutcome": {
-      "2024-2025": [
-        
+      "2020-21": [
+        {
+          "id": 1,
+          "subject": "CALCULUS AND LINEAR ALGEBRA (18MAT11)",
+          "semester": "I",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Apply the knowledge of calculus to solve problems related to polar curves and its applications in determining the bentness of a curve."
+            },
+            {
+              "no": "CO2",
+              "description": "Learn the notion of partial differentiation to calculate rates of change of multivariate functions and solve problems related to composite functions and Jacobians."
+            },
+            {
+              "no": "CO3",
+              "description": "Apply the concept of change of order of integration and variables to evaluate multiple integrals and their usage in computing the area and volumes."
+            },
+            {
+              "no": "CO4",
+              "description": "Solve first order linear/nonlinear differential equations analytically using standard methods."
+            },
+            {
+              "no": "CO5",
+              "description": "Make use of matrix theory for solving system of linear equations and compute eigenvalues and eigenvectors required for matrix diagonalization process."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "subject": "ENGINEERING CHEMISTRY (18CHE12)",
+          "semester": "I",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Use of free energy in equilibria, rationalize bulk properties and processes using thermodynamic considerations, electrochemical energy systems."
+            },
+            {
+              "no": "CO2",
+              "description": "Understand the causes and effects of corrosion of metals and methods for controlling corrosion. Modify surface properties of metals to develop resistance to corrosion, wear, tear, and impact through electroplating and electroless plating."
+            },
+            {
+              "no": "CO3",
+              "description": "Explain the production and consumption of energy for industrialization and improved living standards. Understand electrochemical and concentration cells, classical and modern batteries, and fuel cells. Discuss the utilization of solar energy for various applications."
+            },
+            {
+              "no": "CO4",
+              "description": "Understand environmental pollution, waste management, and water chemistry."
+            },
+            {
+              "no": "CO5",
+              "description": "Explain different techniques of instrumental methods of analysis and understand the fundamental principles of nanomaterials."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "subject": "C PROGRAMMING FOR PROBLEM SOLVING (18CPS13)",
+          "semester": "I",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Explain computer hardware, flowchart/algorithm, and C language fundamentals."
+            },
+            {
+              "no": "CO2",
+              "description": "Construct programming solutions using input/output operations, conditional branching, and loops."
+            },
+            {
+              "no": "CO3",
+              "description": "Explain and write programs using arrays and strings."
+            },
+            {
+              "no": "CO4",
+              "description": "Explain and write programs using functions."
+            },
+            {
+              "no": "CO5",
+              "description": "Define, describe, and explain pointers and structures."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "subject": "BASIC ELECTRONICS (18ELN14)",
+          "semester": "I",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Describe the working of diodes and their applications in rectifiers, filters, and regulator circuits."
+            },
+            {
+              "no": "CO2",
+              "description": "Describe the working and characteristics of FET and SCR devices."
+            },
+            {
+              "no": "CO3",
+              "description": "Describe the working of operational amplifiers through simple circuits like amplifiers (inverting and non-inverting), comparators, adders, integrators, and differentiators."
+            },
+            {
+              "no": "CO4",
+              "description": "Describe the working of bipolar junction transistors and their biasing methods to design amplifiers. Understand the concept of oscillations and the working of oscillator circuits."
+            },
+            {
+              "no": "CO5",
+              "description": "Describe different number systems and their conversions, construct simple combinational and sequential logic circuits using flip-flops, and understand the basic principles of communication systems and mobile phones."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "subject": "ELEMENTS OF MECHANICAL ENGINEERING (18ME15)",
+          "semester": "I",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Identify different sources of energy and their conversion processes."
+            },
+            {
+              "no": "CO2",
+              "description": "Explain the working principles of hydraulic turbines, pumps, internal combustion engines, and refrigeration systems."
+            },
+            {
+              "no": "CO3",
+              "description": "Recognize various metal joining processes and power transmission elements."
+            },
+            {
+              "no": "CO4",
+              "description": "Understand the properties of common engineering materials and their applications."
+            },
+            {
+              "no": "CO5",
+              "description": "Discuss the working of conventional machine tools, machining processes, tools, and accessories, and describe advanced manufacturing systems."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "subject": "ENGINEERING CHEMISTRY LABORATORY (18CHEL16)",
+          "semester": "I",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Conduct scheduled experiments to gain knowledge of handling different types of instruments for material analysis and perform various titrations for material estimation. (Conducting experiments)"
+            },
+            {
+              "no": "CO2",
+              "description": "Perform calculations based on experimental data and draw valid conclusions. (Result analysis)"
+            },
+            {
+              "no": "CO3",
+              "description": "Explain the theoretical aspects involved in conducting different experiments of the Engineering Chemistry Lab. (Viva voce)"
+            },
+            {
+              "no": "CO4",
+              "description": "Record experimental procedures and results systematically. (Record writing)"
+            },
+            {
+              "no": "CO5",
+              "description": "Conduct any given experiment in the Engineering Chemistry Lab and communicate the results effectively. (Internal assessment)"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "subject": "C PROGRAMMING LABORATORY (18CPL17)",
+          "semester": "I",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Identify the computer hardware and programming environment. Develop and execute programs by understanding the concepts of the C programming language."
+            },
+            {
+              "no": "CO2",
+              "description": "Analyze and present experimental results for given inputs."
+            },
+            {
+              "no": "CO3",
+              "description": "Explain the theoretical aspects involved in conducting different experiments of the Computer Programming Laboratory."
+            },
+            {
+              "no": "CO4",
+              "description": "Document the computer architecture, experimental process, and results along with corresponding flowcharts and algorithms."
+            },
+            {
+              "no": "CO5",
+              "description": "Perform assigned experiments in the Computer Programming Laboratory and communicate the results effectively."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "subject": "TECHNICAL ENGLISH-I (18EGH18)",
+          "semester": "I",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Impart basic knowledge of English grammar and improve communication skills."
+            },
+            {
+              "no": "CO2",
+              "description": "Enhance English vocabulary and language proficiency."
+            },
+            {
+              "no": "CO3",
+              "description": "Identify and correct common errors in spoken and written communication."
+            },
+            {
+              "no": "CO4",
+              "description": "Understand para-language and its influence on effective communication."
+            },
+            {
+              "no": "CO5",
+              "description": "Understand and apply verbal and non-verbal communication techniques."
+            }
+          ]
+        },
+
+        {
+          "id": 10,
+          "subject": "ADVANCED CALCULUS AND NUMERICAL METHODS(18MAT21)",
+          "semester": "II",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Illustrate the applications of multivariate calculus to understand solenoidal and irrotational vectors, and demonstrate the interdependence of line, surface, and volume integrals."
+            },
+            {
+              "no": "CO2",
+              "description": "Demonstrate various physical models using higher-order differential equations and solve such linear ordinary differential equations."
+            },
+            {
+              "no": "CO3",
+              "description": "Construct and solve partial differential equations using exact methods or the method of separation of variables."
+            },
+            {
+              "no": "CO4",
+              "description": "Explain the applications of infinite series and obtain series solutions of ordinary differential equations."
+            },
+            {
+              "no": "CO5",
+              "description": "Apply numerical methods to model and analyze various physical and engineering phenomena."
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "subject": "ENGINEERING PHYSICS(18PHY22)",
+          "semester": "II",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Understand various types of oscillations and their implications, and the role of shock waves in different fields."
+            },
+            {
+              "no": "CO2",
+              "description": "Recognize elastic properties of materials for engineering applications."
+            },
+            {
+              "no": "CO3",
+              "description": "Understand the interrelation between varying electric and magnetic fields, the transverse nature of electromagnetic waves, and their role in optical fiber communication."
+            },
+            {
+              "no": "CO4",
+              "description": "Compute eigenvalues, eigenfunctions, and momentum of atomic and subatomic particles using the time-independent 1D Schrödinger wave equation. Understand the background, construction, working, and applications of lasers in different fields."
+            },
+            {
+              "no": "CO5",
+              "description": "Understand various electrical and thermal properties of materials such as conductors, semiconductors, and dielectrics using different theoretical models."
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "subject": "BASIC ELECTRICAL ENGINEERING (18ELE23)",
+          "semester": "II",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Understand and analyze DC and AC electric circuits."
+            },
+            {
+              "no": "CO2",
+              "description": "Acquire knowledge of fundamentals of AC circuits, behavior of R-L-C combinations, and three-phase balanced circuits."
+            },
+            {
+              "no": "CO3",
+              "description": "Understand the principle of operation and construction of single-phase transformers, electrical wiring, circuit protection devices, and earthing."
+            },
+            {
+              "no": "CO4",
+              "description": "Study the principle of operation and construction of DC machines."
+            },
+            {
+              "no": "CO5",
+              "description": "Study the principle of operation and construction of three-phase synchronous generators and three-phase induction motors."
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "subject": "ELEMENTS OF CIVIL ENGINEERING AND MECHANICS(18CIV24)",
+          "semester": "II",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Mention the applications of various fields of civil engineering."
+            },
+            {
+              "no": "CO2",
+              "description": "Compute the resultant of various force systems under different loads."
+            },
+            {
+              "no": "CO3",
+              "description": "Understand moments, forces acting on a rigid body, and the concept of friction."
+            },
+            {
+              "no": "CO4",
+              "description": "Locate the centroid and moment of inertia of irregular figures."
+            },
+            {
+              "no": "CO5",
+              "description": "Express and analyze bodies under motion."
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "subject": "ENGINEERING GRAPHICS(18EGDL25)",
+          "semester": "II",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Prepare engineering drawings as per BIS conventions mentioned in the relevant codes."
+            },
+            {
+              "no": "CO2",
+              "description": "Produce computer-generated drawings using CAD software."
+            },
+            {
+              "no": "CO3",
+              "description": "Use the knowledge of orthographic projections to represent engineering information/concepts and present the same in the form of drawings."
+            },
+            {
+              "no": "CO4",
+              "description": "Develop isometric drawings of simple objects by interpreting the orthographic projections of those objects."
+            },
+            {
+              "no": "CO5",
+              "description": "Convert pictorial and isometric views of simple objects to orthographic views."
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "subject": "ENGINEERING PHYSICS LABORATORY(18PHYL26)",
+          "semester": "II",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Conduct scheduled experiments to learn experimental setup and record readings using measuring instruments to understand the concepts of engineering physics."
+            },
+            {
+              "no": "CO2",
+              "description": "Analyze and interpret experimental data and results."
+            },
+            {
+              "no": "CO3",
+              "description": "Explain the theoretical aspects involved in conducting different experiments of the Engineering Physics Laboratory."
+            },
+            {
+              "no": "CO4",
+              "description": "Record experimental procedures and results systematically."
+            },
+            {
+              "no": "CO5",
+              "description": "Conduct any given experiment in the Engineering Physics Laboratory and communicate results effectively."
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "subject": "BASIC ELECTRICAL ENGINEERING LABORATORY(18ELEL27)",
+          "semester": "II",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Conduct, execute, and identify scheduled experiments of AC and DC circuits of Basic Electrical Engineering."
+            },
+            {
+              "no": "CO2",
+              "description": "Analyze and interpret experimental data and results."
+            },
+            {
+              "no": "CO3",
+              "description": "Explain the theoretical aspects used in different experiments of the Basic Electrical Engineering Laboratory."
+            },
+            {
+              "no": "CO4",
+              "description": "Record the experimental procedures and results systematically."
+            },
+            {
+              "no": "CO5",
+              "description": "Conduct any given experiment in the Basic Electrical Engineering Laboratory and communicate results effectively."
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "subject": "TECHNICAL ENGLISH-II(18EGH28)",
+          "semester": "II",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Identify common errors in spoken and written communication."
+            },
+            {
+              "no": "CO2",
+              "description": "Get familiarized with English vocabulary and improve language proficiency."
+            },
+            {
+              "no": "CO3",
+              "description": "Develop writing skills and understand employment and workplace communication."
+            },
+            {
+              "no": "CO4",
+              "description": "Enhance technical communication skills, including technical reading and writing practices."
+            },
+            {
+              "no": "CO5",
+              "description": "Perform well in campus recruitment, engineering, and other competitive examinations."
+            }
+          ]
+        },
+
+        {
+          "id": 18,
+          "subject": "TRANSFORM CALCULUS, FOURIER SERIES AND NUMERICAL TECHNIQUES(18MAT31)",
+          "semester": "III",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Use Laplace Transform and Inverse Laplace Transform to solve differential and integral equations arising in network analysis, control systems, and other fields of engineering."
+            },
+            {
+              "no": "CO2",
+              "description": "Demonstrate Fourier series to study the behavior of periodic functions and their applications in system communications, digital signal processing, and field theory."
+            },
+            {
+              "no": "CO3",
+              "description": "Use Fourier Transform and Z-transform to illustrate discrete and continuous functions arising in wave and heat propagation, signals, and systems."
+            },
+            {
+              "no": "CO4",
+              "description": "Solve first-order ordinary differential equations arising in engineering problems using single-step and multistep numerical methods."
+            },
+            {
+              "no": "CO5",
+              "description": "Solve second-order ordinary differential equations arising in engineering problems using single-step and multistep numerical methods, determine extremals of functionals using calculus of variations, and solve problems arising in dynamics of rigid bodies."
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "subject": "ADDITIONAL MATHEMATICS - I(18MATDIP31)",
+          "semester": "III",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Apply concepts of complex numbers and vector algebra to analyze problems arising in related areas."
+            },
+            {
+              "no": "CO2",
+              "description": "Use derivatives and partial derivatives to calculate the rate of change of multivariate functions."
+            },
+            {
+              "no": "CO3",
+              "description": "Analyze position, velocity, and acceleration in two and three dimensions of vector-valued functions."
+            },
+            {
+              "no": "CO4",
+              "description": "Learn techniques of integration, including the evaluation of double and triple integrals."
+            },
+            {
+              "no": "CO5",
+              "description": "Identify and solve first-order ordinary differential equations."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "MECHANICS OF MATERIALS(18ME32)",
+          "semester": "III",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Determine stresses, strains, and their relationships in various bars, and understand the relationship between elastic constants and Poisson’s ratio."
+            },
+            {
+              "no": "CO2",
+              "description": "Determine plane stress, principal stress, maximum shear stress, and their orientations using analytical methods and Mohr’s Circle; understand stress distribution in thick and thin cylinders."
+            },
+            {
+              "no": "CO3",
+              "description": "Draw shear force diagrams (SFD) and bending moment diagrams (BMD) for different loads on various types of beams; determine shear stress and bending stresses for different cross-sections."
+            },
+            {
+              "no": "CO4",
+              "description": "Understand different theories of failure and torsional moments."
+            },
+            {
+              "no": "CO5",
+              "description": "Understand concepts of buckling of columns and strain energy."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "BASIC THERMODYNAMICS(18ME33)",
+          "semester": "III",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Explain thermodynamic systems, properties, Zeroth Law of Thermodynamics, temperature scales, and energy interactions."
+            },
+            {
+              "no": "CO2",
+              "description": "Understand different types of work, displacement work for various processes, and heat. Understand the basics of the first and second laws of thermodynamics, steady flow energy equation and its applications, and the concept of refrigeration and heat pumps."
+            },
+            {
+              "no": "CO3",
+              "description": "Understand the second law of thermodynamics, concepts of refrigeration and heat pumps, the concept of entropy, changes of entropy of the system and universe, and the principle of increase of entropy."
+            },
+            {
+              "no": "CO4",
+              "description": "Explain availability and unavailable energy, relation between increase in unavailable energy and entropy, maximum work, irreversibility, second law efficiency, and water as a pure substance with property diagrams and measurement of dryness fraction."
+            },
+            {
+              "no": "CO5",
+              "description": "Study ideal gases and psychrometric properties, and calculate thermodynamic properties of real gases at all ranges of pressure and temperature using modified equations of state including Van der Waals, Redlich-Kwong, and Beattie-Bridgeman equations."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "MATERIAL SCIENCE(18ME34)",
+          "semester": "III",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Understand the mechanical properties of metals and their alloys."
+            },
+            {
+              "no": "CO2",
+              "description": "Analyze various modes of failure and understand the microstructures of ferrous and nonferrous materials."
+            },
+            {
+              "no": "CO3",
+              "description": "Describe the processes of heat treatment for various alloys."
+            },
+            {
+              "no": "CO4",
+              "description": "Acquire knowledge of composite materials, their production processes, and applications."
+            },
+            {
+              "no": "CO5",
+              "description": "Understand the properties and potentialities of various materials available and the procedures for material selection."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "CONSTITUTION OF INDIA, PROFESSIONAL ETHICS AND CYBER LAW(18CPC39)",
+          "semester": "III",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Understand the fundamental political codes, structure, procedures, powers, and duties of Indian government institutions, fundamental rights, directive principles, and the duties of citizens."
+            },
+            {
+              "no": "CO2",
+              "description": "Gain literacy and understanding of the constitutional election process."
+            },
+            {
+              "no": "CO3",
+              "description": "Develop constitutional legal literacy and understand the functioning of the Indian judicial system."
+            },
+            {
+              "no": "CO4",
+              "description": "Understand engineering ethics and responsibilities; identify individual roles and ethical responsibilities towards society."
+            },
+            {
+              "no": "CO5",
+              "description": "Learn about cybercrimes and cyber laws to ensure cyber safety measures."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "METAL CASTING AND WELDING(18ME35B)",
+          "semester": "III",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Describe the casting process and prepare different types of cast products. Acquire knowledge on pattern, core, gating, riser system, and use jolt, squeeze, and sand slinger moulding machines."
+            },
+            {
+              "no": "CO2",
+              "description": "Compare gas-fired pit, resistance, coreless, electrical, and cupola metal furnaces. Compare gravity, pressure die, centrifugal, squeeze, slush, and continuous metal mold castings."
+            },
+            {
+              "no": "CO3",
+              "description": "Understand the solidification process and casting of non-ferrous metals."
+            },
+            {
+              "no": "CO4",
+              "description": "Describe the metal arc, TIG, MIG, submerged, and atomic hydrogen welding processes used in manufacturing."
+            },
+            {
+              "no": "CO5",
+              "description": "Describe methods for quality assurance of components made by casting and joining processes."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "MECHANICAL MEASUREMENTS AND METROLOGY(18ME36B)",
+          "semester": "III",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Understand the concepts of standards of measurements, and the principle of operation and calibration of an instrument."
+            },
+            {
+              "no": "CO2",
+              "description": "Understand various methodologies for measuring different dimensions and the concepts of limits, fits, and tolerances."
+            },
+            {
+              "no": "CO3",
+              "description": "Understand various sensors, transducers, and their applications."
+            },
+            {
+              "no": "CO4",
+              "description": "Understand different devices used to measure force, weight, torque, pressure, and flow."
+            },
+            {
+              "no": "CO5",
+              "description": "Understand different devices used to measure temperature, strain, and related parameters."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "MECHANICAL MEASUREMENTS AND METROLOGY LAB(18MEL37B)",
+          "semester": "III",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Conduct scheduled experiments to calibrate and demonstrate usage of different gauges and measuring instruments to understand the concepts of mechanical measurements."
+            },
+            {
+              "no": "CO2",
+              "description": "Analyze and interpret experimental data and results."
+            },
+            {
+              "no": "CO3",
+              "description": "Explain the theoretical aspects used in conducting different experiments of the Mechanical Measurement Laboratory."
+            },
+            {
+              "no": "CO4",
+              "description": "Record experimental procedures and results systematically."
+            },
+            {
+              "no": "CO5",
+              "description": "Conduct any given experiment in the Mechanical Measurement Laboratory and communicate results effectively."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "FOUNDRY,FORGING AND WELDING LAB(18MEL38B)",
+          "semester": "III",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Introduce students to foundry, forging, and welding tools and their applications."
+            },
+            {
+              "no": "CO2",
+              "description": "Demonstrate to students models of foundry using the tools."
+            },
+            {
+              "no": "CO3",
+              "description": "Demonstrate to students models of forging using the tools."
+            },
+            {
+              "no": "CO4",
+              "description": "Demonstrate to students models of welding using the tools."
+            },
+            {
+              "no": "CO5",
+              "description": "Introduce students to different sand tests to understand their properties."
+            }
+          ]
+        },
+
+        {
+          "id": 18,
+          "subject": "COMPLEX ANALYSIS, PROBABILITY AND STATISTICAL METHODS(18MAT41)",
+          "semester": "IV",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Use the concepts of analytic functions and complex potentials to solve problems arising in electromagnetic field theory."
+            },
+            {
+              "no": "CO2",
+              "description": "Utilize conformal transformations and complex integrals arising in aerofoil theory, fluid flow visualization, and image processing."
+            },
+            {
+              "no": "CO3",
+              "description": "Apply discrete and continuous probability distributions in analyzing probability models arising in engineering fields."
+            },
+            {
+              "no": "CO4",
+              "description": "Use correlation and regression analysis to fit a suitable mathematical model for statistical data."
+            },
+            {
+              "no": "CO5",
+              "description": "Construct joint probability distributions and demonstrate the validity of hypothesis testing."
+            }
+          ]
+        },
+
+        {
+          "id": 18,
+          "subject": "ADDITIONAL MATHEMATICS-II(18MATDIP41)",
+          "semester": "IV",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Solve systems of linear equations using matrix algebra."
+            },
+            {
+              "no": "CO2",
+              "description": "Apply knowledge of numerical methods in modeling and solving engineering problems."
+            },
+            {
+              "no": "CO3",
+              "description": "Use analytical methods to solve higher-order differential equations."
+            },
+            {
+              "no": "CO4",
+              "description": "Classify partial differential equations and solve them by exact methods."
+            },
+            {
+              "no": "CO5",
+              "description": "Apply elementary probability theory and solve related problems."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "APPLIED THERMODYNAMICS(18ME42)",
+          "semester": "IV",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Apply thermodynamic concepts to analyze the performance of gas power cycles and understand combustion of fuels and performance of IC engines."
+            },
+            {
+              "no": "CO2",
+              "description": "Apply thermodynamic concepts to analyze the performance of vapor power cycles."
+            },
+            {
+              "no": "CO3",
+              "description": "Understand the principles and applications of refrigeration systems."
+            },
+            {
+              "no": "CO4",
+              "description": "Apply thermodynamic concepts to determine performance parameters of refrigeration and air-conditioning systems."
+            },
+            {
+              "no": "CO5",
+              "description": "Understand the working principle of air compressors and steam nozzles, their applications, relevance of air, and identify methods for performance improvement."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "FLUID MECHANICS(18ME43)",
+          "semester": "IV",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Identify and calculate the key fluid properties used in the analysis of fluid behavior."
+            },
+            {
+              "no": "CO2",
+              "description": "Understand and apply the principles of pressure, buoyancy, and flotation."
+            },
+            {
+              "no": "CO3",
+              "description": "Apply knowledge of fluid statics, kinematics, and dynamics to address problems in mechanical and chemical engineering."
+            },
+            {
+              "no": "CO4",
+              "description": "Understand and apply the principles of fluid kinematics and dynamics."
+            },
+            {
+              "no": "CO5",
+              "description": "Understand the concept of boundary layer in fluid flow and apply dimensional analysis to form dimensionless numbers in terms of input-output variables, along with the basic concept of compressible flow and CFD."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "KINEMATICS OF MACHINES(18ME44)",
+          "semester": "IV",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Gain knowledge of mechanisms and their motion, and understand the inversions of four-bar mechanisms."
+            },
+            {
+              "no": "CO2",
+              "description": "Analyze the velocity and acceleration of links and joints of mechanisms using graphical methods."
+            },
+            {
+              "no": "CO3",
+              "description": "Analyze the velocity and acceleration of links and joints of mechanisms using analytical methods."
+            },
+            {
+              "no": "CO4",
+              "description": "Perform analysis of cam-follower motion for motion specifications."
+            },
+            {
+              "no": "CO5",
+              "description": "Understand the working of spur gears and analyze the gear trains' speed ratio and torque."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "AADALITHA KANNADA(18KAK49)",
+          "semester": "IV",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Introduce creative Kannada along with cultural Kannada and literature, culture, state, and language."
+            },
+            {
+              "no": "CO2",
+              "description": "Understand matters of technical science related in Kannada."
+            },
+            {
+              "no": "CO3",
+              "description": "Study Kannada language, common Kannada, and administrative Kannada words."
+            },
+            {
+              "no": "CO4",
+              "description": "NA"
+            },
+            {
+              "no": "CO5",
+              "description": "NA"
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "METAL CUTTING AND FORMING(18ME45A)",
+          "semester": "IV",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Discuss different cutting tool materials, tool nomenclature, and surface finish."
+            },
+            {
+              "no": "CO2",
+              "description": "Explain the construction and specifications of various machine tools."
+            },
+            {
+              "no": "CO3",
+              "description": "Apply mechanics of machining processes to evaluate machining time, analyze tool wear mechanisms and equations to enhance tool life and minimize machining cost."
+            },
+            {
+              "no": "CO4",
+              "description": "Understand the concepts of different metal forming processes."
+            },
+            {
+              "no": "CO5",
+              "description": "Apply the concepts of design of sheet metal dies to design different dies for simple sheet metal components."
+            }
+          ]
+        },
+
+        {
+          "id": 18,
+          "subject": "MANAGEMENT AND ECONOMICS(18ME51)",
+          "semester": "V",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Understand needs, functions, roles, scope, and evolution of management."
+            },
+            {
+              "no": "CO2",
+              "description": "Understand and discuss the importance and purpose of different functions of management."
+            },
+            {
+              "no": "CO3",
+              "description": "Understand various interest rate methods and select the best economic model from available alternatives."
+            },
+            {
+              "no": "CO4",
+              "description": "Estimate various depreciation values of commodities."
+            },
+            {
+              "no": "CO5",
+              "description": "Prepare cost estimation reports effectively."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "DESIGN OF MACHINE ELEMENTS I(18ME52)",
+          "semester": "V",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Students Will Be Able To Understand The Basics Of Stresses Developed In Different Types Of Loading, Static Loading, Stress Concentration"
+            },
+            {
+              "no": "CO2",
+              "description": "Students Will Be Able To Understand Design Concepts, Dynamic Loading Like Impact Loading, Inertia, The Concepts Of Factor Of Safety, Design For Fatigue"
+            },
+            {
+              "no": "CO3",
+              "description": "Students Will Be Able To Design The Mechanical Components Like Shafts, Keys And Couplings"
+            },
+            {
+              "no": "CO4",
+              "description": "Students Will Be Able To Design The Mechanical Components Like Riveted Brackets/joints And Welded Joints"
+            },
+            {
+              "no": "CO5",
+              "description": "Students Will Be Able To Design The Mechanical Components Like Knuckle/cotter Joints, Fasteners And Power Screw For Different Operating Conditions And Applications Like Screw Jack Etc"
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "DYNAMICS OF MACHINES(18ME53)",
+          "semester": "V",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Students Will Gain The Knowledge Of Static And Dynamic Equilibrium Conditions Of Mechanisms Subjected Forces And Couple, With And Without Friction."
+            },
+            {
+              "no": "CO2",
+              "description": "Students Will Be Able To Analyse The Balancing Of Rotating And Reciprocating Masses."
+            },
+            {
+              "no": "CO3",
+              "description": "Students Will Understand The Principles Of Governors And Gyroscopes."
+            },
+            {
+              "no": "CO4",
+              "description": "Students Will Understand Vibrations Characteristics Of Single Degree Of Freedom Systems Subjected To Undamped Free Vibration"
+            },
+            {
+              "no": "CO5",
+              "description": "Students Will Learn To Characterise The Single Degree Freedom Systems Subjected To Damped Free And Forced Vibrations"
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "TURBO MACHINES(18ME54)",
+          "semester": "V",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Apply the knowledge of mathematics, science, and engineering fundamentals to identify, formulate, and analyze fluid flow through turbo machines."
+            },
+            {
+              "no": "CO2",
+              "description": "Apply the knowledge of science and engineering fundamentals to identify, formulate, design, and analyze the parameters of power-generating and power-absorbing turbo machines."
+            },
+            {
+              "no": "CO3",
+              "description": "Draw and analyze the velocity diagram of different types of steam turbines."
+            },
+            {
+              "no": "CO4",
+              "description": "Design and analyze the velocity diagram of different types of hydraulic turbines."
+            },
+            {
+              "no": "CO5",
+              "description": "Draw and analyze the velocity diagram of different types of pumps and compressors."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "FLUID POWER ENGINEERING(18ME55)",
+          "semester": "V",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Identify and analyze the functional requirements of a fluid power transmission system for a given application."
+            },
+            {
+              "no": "CO2",
+              "description": "Visualize how a hydraulic or pneumatic circuit will work to accomplish the function."
+            },
+            {
+              "no": "CO3",
+              "description": "Design an appropriate hydraulic or pneumatic circuit, or combination circuit like electro-hydraulics or electro-pneumatics, for a given application."
+            },
+            {
+              "no": "CO4",
+              "description": "Select and size the different components of the circuit."
+            },
+            {
+              "no": "CO5",
+              "description": "Develop a comprehensive circuit diagram by integrating the components selected for the given application."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "OPERATIONS MANAGEMENT(18ME56)",
+          "semester": "V",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Understand the concept and scope of operations management in a business context."
+            },
+            {
+              "no": "CO2",
+              "description": "Understand the importance of forecasting methods in operations management."
+            },
+            {
+              "no": "CO3",
+              "description": "Understand the role of capacity management in organizations."
+            },
+            {
+              "no": "CO4",
+              "description": "Understand the importance of inventory management and materials requirement planning in organizations."
+            },
+            {
+              "no": "CO5",
+              "description": "Understand the basic introductory concepts of supply chain management."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "FLUID MECHANICS/MACHINES LAB(18MEL57)",
+          "semester": "V",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Perform experiments to determine the coefficient of discharge of flow measuring devices."
+            },
+            {
+              "no": "CO2",
+              "description": "Conduct experiments on hydraulic turbines and pumps to draw characteristics."
+            },
+            {
+              "no": "CO3",
+              "description": "Test basic performance parameters of hydraulic turbines and pumps and apply the knowledge in real-life situations."
+            },
+            {
+              "no": "CO4",
+              "description": "Determine the energy flow pattern through hydraulic turbines and pumps."
+            },
+            {
+              "no": "CO5",
+              "description": "Exhibit competency towards preventive maintenance of hydraulic machines."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "ENERGY CONVERSION LAB(18MEL58)",
+          "semester": "V",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Perform Experiments To Determine The Properties Of Fuels And Oils."
+            },
+            {
+              "no": "CO2",
+              "description": "Conduct Experiments On Engines And Draw Characteristic Curves."
+            },
+            {
+              "no": "CO3",
+              "description": "Test Basic Performance Parameters If I C Engine And Implement The Knowledge In Industry."
+            },
+            {
+              "no": "CO4",
+              "description": "Identify Exhaust Emissions, Factors Affecting Them And Report The Remedies."
+            },
+            {
+              "no": "CO5",
+              "description": "Determine The Energy Flow Pattern Through The I C Engine. Exhibit His Competency Towards Preventive Maintenance Of I C Engines."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "ENVIRONMENTAL STUDIES(18CIV59)",
+          "semester": "V",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Understand The Principles Of Ecology And Environmental Issues That Apply To Air, Land, And Water Issues On A Global Scale"
+            },
+            {
+              "no": "CO2",
+              "description": "Develop Critical Thinking And/or Observation Skills, And Apply Them To The Analysis Of A Problem Or Question Related To The Environment."
+            },
+            {
+              "no": "CO3",
+              "description": "Demonstrate Ecology Knowledge Of A Complex Relationship Between Biotic And Abiotic Components."
+            },
+            {
+              "no": "CO4",
+              "description": "Apply Their Ecological Knowledge To Illustrate And Graph A Problem"
+            },
+            {
+              "no": "CO5",
+              "description": "Able To Describe The Realities That Managers Face When Dealing With Complex Issues."
+            }
+          ]
+        },
+
+        {
+          "id": 18,
+          "subject": "NON-TRADITIONAL MACHINING(18ME641)",
+          "semester": "VI",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Understand The Compare Traditional And Non-traditional Machining Process And Recognize The Need For Non- Traditional Machining Process."
+            },
+            {
+              "no": "CO2",
+              "description": "Understand The Constructional Features, Performance Parameters, Process Characteristics, Applications, Advantages And Limitations Of Usm, Ajm And Wjm."
+            },
+            {
+              "no": "CO3",
+              "description": "Identify The Need Of Chemical And Electro-chemical Machining Process Along With The Constructional Features, Process Parameters, Process Characteristics, Applications, Advantages And Limitations."
+            },
+            {
+              "no": "CO4",
+              "description": "Understand The Constructional Feature Of The Equipment, Process Parameters, Process Characteristics, Applications, Advantages And Limitations Edm & Pam."
+            },
+            {
+              "no": "CO5",
+              "description": "Understand The Lbm Equipment, Lbm Parameters, And Characteristics. Ebm Equipment And Mechanism Of Metal Removal, Applications, Advantages And Limitations Lbm & Ebm."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "PROGRAMMING IN JAVA(18CS653)",
+          "semester": "VI",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Explain The Object-oriented Concepts And Java."
+            },
+            {
+              "no": "CO2",
+              "description": "Develop Computer Programs To Solve Real World Problems In Java."
+            },
+            {
+              "no": "CO3",
+              "description": "Develop Java Programs Using Object Oriented Concepts."
+            },
+            {
+              "no": "CO4",
+              "description": "Develop Java Program By Importing Of Packages And Exception Handling Mechanism."
+            },
+            {
+              "no": "CO5",
+              "description": "Design And Explain The Operations Of Different String Handling Functions In Java Programming."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "FINITE ELEMENT METHODS(18ME61)",
+          "semester": "VI",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Understand The Concepts Behind Formulation Methods In Fem."
+            },
+            {
+              "no": "CO2",
+              "description": "Identify The Application And Characteristics Of Fea Element Such As Bars, Beams, Plane And Iso-parametric Elements"
+            },
+            {
+              "no": "CO3",
+              "description": "Develop Element Characteristic Equation And Generation Of Global Equation"
+            },
+            {
+              "no": "CO4",
+              "description": "Able To Apply Suitable Boundary Conditions To A Global Equation For Bars, Trusses, Beams, Circular Shafts, Heat Transfer, Fluid Flow."
+            },
+            {
+              "no": "CO5",
+              "description": "Able To Solve Axi-symmetric And Dynamic Problems For Displacements, Stress And Strains Induced"
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "DESIGN OF MACHINE ELEMENTS II(18ME62)",
+          "semester": "VI",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Students Will Be Able To Design The Mechanical Components Like Belts, Ropes, Springs For Different Applications"
+            },
+            {
+              "no": "CO2",
+              "description": "Students Will Be Able To Design The Mechanical Components: Spur Gears And Helical Gears For Different Applications"
+            },
+            {
+              "no": "CO3",
+              "description": "Students Will Be Able To Design The Mechanical Components: Bevel Gears And Worm Gears For Different Applications"
+            },
+            {
+              "no": "CO4",
+              "description": "Students Will Be Able To Design The Mechanical Components Like Clutches And Brakes For Different Applications"
+            },
+            {
+              "no": "CO5",
+              "description": "Students Will Be Able To Know The Concepts Of Lubrication And Bearings, Design Hydrodynamic Bearings And Select Antifriction Bearings For Different Applications"
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "HEAT TRANSFER(18ME63)",
+          "semester": "VI",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "To Understand The Modes Of Heat Transfer And Apply The Basic Laws To Formulate Engineering Systems."
+            },
+            {
+              "no": "CO2",
+              "description": "To Understand And Apply The Basic Laws Of Heat Transfer To Extended Surface, Composite Material And Unsteady State Heat Transfer Problems."
+            },
+            {
+              "no": "CO3",
+              "description": "To Understand And Apply The Basic Laws Of Heat Transfer To Extended Surface, Composite Material And Unsteady State Heat Transfer Problems."
+            },
+            {
+              "no": "CO4",
+              "description": "To Analyze Heat Transfer Due To Free And Forced Convective Heat Transfer."
+            },
+            {
+              "no": "CO5",
+              "description": "To Understand The Design And Performance Analysis Of Heat Exchangers And Their Practical Applications, Condensation And Boiling Phenomena."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "COMPUTER AIDED MODELLING AND ANALYSIS LAB(18MEL66)",
+          "semester": "VI",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Able To Classify And Use The Modern Tools To Formulate The Problem, Create Geometry, Discretize, Apply Boundary Conditions"
+            },
+            {
+              "no": "CO2",
+              "description": "Able To Solve Problems Of Bars, Truss, Beams, And Plate To Find Stresses With Different-loading Conditions"
+            },
+            {
+              "no": "CO3",
+              "description": "Able To Demonstrate The Ability To Obtain Deflection Of Beams Subjected To Point, Uniformly Distributed And Varying Loads And Use The Available Results To Draw Shear Force And Bending Moment Diagrams"
+            },
+            {
+              "no": "CO4",
+              "description": "Able To Analyze And Solve 1d And 2d Heat Transfer Conduction And Convection Problems With Different Boundary Conditions"
+            },
+            {
+              "no": "CO5",
+              "description": "Able To Carry Out Dynamic Analysis And Finding Natural Frequencies Of Beams, Plates, And Bars For Various Boundary Conditions And Also Carry Out Dynamic Analysis With Forcing Functions"
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "HEAT TRANSFER LAB(18MEL67)",
+          "semester": "VI",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Determine The Thermal Conductivity Of A Metal Rod And Overall Heat Transfer Coefficient Of Composite"
+            },
+            {
+              "no": "CO2",
+              "description": "Determine Convective Heat Transfer Coefficient For Free And Forced Convection And Correlate With"
+            },
+            {
+              "no": "CO3",
+              "description": "Evaluate Temperature Distribution Characteristics Of Steady And Transient Heat Conduction Through Solid"
+            },
+            {
+              "no": "CO4",
+              "description": "Determine Surface Emissivity Of A Test Plate And Stefan Boltzmann Constant"
+            },
+            {
+              "no": "CO5",
+              "description": "Estimate Performance Of A Refrigerator And Effectiveness Of A Fin And Double Pipe Heat"
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "MINI-PROJECT(18MEMP68)",
+          "semester": "VI",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Carry Out Literature Review, Formulate/ Define Objectives And Methodologies To Be Followed To Successful Completion The Mini Projects In Stipulated Time"
+            },
+            {
+              "no": "CO2",
+              "description": "Able To Design A Systems, Components And Experiments For The Mini Project Using Modern Tools"
+            },
+            {
+              "no": "CO3",
+              "description": "Able To Develop Prototype Models/ Carry Out Fabrication/experimentation And Analyze The Data"
+            },
+            {
+              "no": "CO4",
+              "description": "Demonstrate Engineering And Management Skills, Communicate Effectively, As An Individual And Team For The Successful Completion Of Mini Project"
+            },
+            {
+              "no": "CO5",
+              "description": "Able To Demonstrate Social And Economic Responsibilities By Adapting Legal, Cultural And Ethical Principles For Lifelong Learning"
+            }
+          ]
+        },
+
+        {
+          "id": 18,
+          "subject": "TOTAL QUALITY MANAGEMENT(18ME734)",
+          "semester": "VII",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Explain The Various Approaches Of Tqm"
+            },
+            {
+              "no": "CO2",
+              "description": "Infer The Customer Perception Of Quality"
+            },
+            {
+              "no": "CO3",
+              "description": "Analyze Customer Needs And Perceptions To Design Feedback Systems."
+            },
+            {
+              "no": "CO4",
+              "description": "Apply Statistical Tools For Continuous Improvement Of Systems"
+            },
+            {
+              "no": "CO5",
+              "description": "Apply The Tools And Technique For Effective Implementation Of Tqm."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "MECHATRONICS(18ME744)",
+          "semester": "VII",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "To Know The Knowledge Of Mechatronics And Its Applications"
+            },
+            {
+              "no": "CO2",
+              "description": "To Have The Knowledge Of Signal Conditioning And Motor Drives"
+            },
+            {
+              "no": "CO3",
+              "description": "To Have The Knowledge Of Data Representation"
+            },
+            {
+              "no": "CO4",
+              "description": "To Have The Knowledge Of Mechanical Actuators"
+            },
+            {
+              "no": "CO5",
+              "description": "To Have The Knowledge Of Plc Systems"
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "PYTHON APPLICATION PROGRAMMING(18CS752)",
+          "semester": "VII",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Demonstrate Sound Knowledge Of Python Syntax And Semantics With Fluency In Use Of Python Flow Control Statements And Functions"
+            },
+            {
+              "no": "CO2",
+              "description": "Design Solutions For Solving Computational Problems In Handling Strings And File Systems."
+            },
+            {
+              "no": "CO3",
+              "description": "Handle And Manipulate Data Using Core Python Data Structures Like Lists, Dictionaries And Regular Expressions."
+            },
+            {
+              "no": "CO4",
+              "description": "Interpret And Apply The Concepts Of Object-oriented Programming As Used In Python."
+            },
+            {
+              "no": "CO5",
+              "description": "Understand The Use Of Python In Providing Solutions In Applications Related To Network Programming, Web Services And Databases"
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "CONTROL ENGINEERING(18ME71)",
+          "semester": "VII",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Recognize Control Systems And Its Types, Control Actions Of Various Controllers."
+            },
+            {
+              "no": "CO2",
+              "description": "Determine The System Governing Equations For Electrical, Thermal, Mechanical, Liquid Level Systems And Calculate The Gain Of The System Using Block Diagram And Signal Flow Graphs."
+            },
+            {
+              "no": "CO3",
+              "description": "Illustrate The Response Of 1st And 2nd Order Systems."
+            },
+            {
+              "no": "CO4",
+              "description": "Determine The Stability Of Transfer Functions In Complex Domain And Frequency Domain."
+            },
+            {
+              "no": "CO5",
+              "description": "Employ State Equations To Study The Controllability And Observability."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "COMPUTER AIDED DESIGN AND MANUFACTURING(18ME72)",
+          "semester": "VII",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Define Automation, CIM, CAD, CAM And Explain The Differences Between These Concepts. Solve Simple Problems Of Transformations Of Entities On Computer Screen."
+            },
+            {
+              "no": "CO2",
+              "description": "Explain The Basics Of Automated Manufacturing Industries Through Mathematical Models And Analyze Different Types Of Automated Flow Lines."
+            },
+            {
+              "no": "CO3",
+              "description": "Analyse The Automated Flow Lines To Reduce Time And Enhance Productivity."
+            },
+            {
+              "no": "CO4",
+              "description": "Explain The Use Of Different Computer Applications In Manufacturing, And Able To Prepare Part Programs For Simple Jobs On CNC Machine Tools And Robot Programming."
+            },
+            {
+              "no": "CO5",
+              "description": "Visualize And Appreciate The Modern Trends In Manufacturing Like Additive Manufacturing, Industry 4.0 And Applications Of Internet Of Things Leading To Smart Manufacturing."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "COMPUTER INTEGRATED MANUFACTURING LAB(18MEL76)",
+          "semester": "VII",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "The Student Will Obtain Basic Knowledge Of CIM, And Its Requirement In The Present Scenario Through Practice Sessions."
+            },
+            {
+              "no": "CO2",
+              "description": "Knowledge About The Method Of Writing The Program Using G And M Codes."
+            },
+            {
+              "no": "CO3",
+              "description": "Use Of CAM Package (CADEM) To Generate The Part Using Program As Well As Simulate The Part To Gain Hands On Experience That Would Help Them To Work At Industries."
+            },
+            {
+              "no": "CO4",
+              "description": "The Student Will Be Able To Understand Relative Subjects Like Robot Programming, Hydraulic And Pneumatic Systems, Flexible Manufacturing System And ASRS Through Demonstration."
+            },
+            {
+              "no": "CO5",
+              "description": "Students Will Be Able To Understand The Working Of A CNC Machine, Which Would Help The Students For Their Future."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "DESIGN LAB(18MEL77)",
+          "semester": "VII",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "To Understand The Natural Frequency, Logarithmic Decrement, Damping Ratio And Damping."
+            },
+            {
+              "no": "CO2",
+              "description": "To Understand The Balancing Of Rotating Masses."
+            },
+            {
+              "no": "CO3",
+              "description": "To Understand The Concept Of The Critical Speed Of A Rotating Shaft."
+            },
+            {
+              "no": "CO4",
+              "description": "To Understand The Concept Of Stress Concentration Using Photo Elasticity."
+            },
+            {
+              "no": "CO5",
+              "description": "To Understand The Equilibrium Speed, Sensitiveness, Power And Effort Of Governor."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "PROJECT WORK PHASE - 1(18MEP78)",
+          "semester": "VII",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "To Understand The Natural Frequency, Logarithmic Decrement, Damping Ratio And Damping."
+            },
+            {
+              "no": "CO2",
+              "description": "To Understand The Balancing Of Rotating Masses."
+            },
+            {
+              "no": "CO3",
+              "description": "To Understand The Concept Of The Critical Speed Of A Rotating Shaft."
+            },
+            {
+              "no": "CO4",
+              "description": "To Understand The Concept Of Stress Concentration Using Photo Elasticity."
+            },
+            {
+              "no": "CO5",
+              "description": "To Understand The Equilibrium Speed, Sensitiveness, Power And Effort Of Governor."
+            }
+          ]
+        },
+
+        {
+          "id": 18,
+          "subject": "NON DESTRUCTIVE TESTING AND EVALUATION(18ME823)",
+          "semester": "VIII",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Classify Various Non-destructive Testing Methods. Check Different Metals And Alloys By Visual Inspection Method."
+            },
+            {
+              "no": "CO2",
+              "description": "Explain And Perform Non-destructive Tests Like: Liquid Penetrant Test, Magnetic Particle Test, Identify Defects Using Relevant NDT Methods. Differentiate Various Defect Types And Select The Appropriate NDT Methods For Better Evaluation. Document The Testing And Evaluation Of The Results."
+            },
+            {
+              "no": "CO3",
+              "description": "Explain And Perform Non-destructive Tests Like Thermography And Eddy Current Test: Identify Defects Using Relevant NDT Methods. Differentiate Various Defect Types And Select The Appropriate NDT Methods For Better Evaluation. Document The Testing And Evaluation Of The Results."
+            },
+            {
+              "no": "CO4",
+              "description": "Explain And Perform Non-destructive Tests Like Ultrasonic Test: Identify Defects Using Relevant NDT Methods. Differentiate Various Defect Types And Select The Appropriate NDT Methods For Better Evaluation. Document The Testing And Evaluation Of The Results."
+            },
+            {
+              "no": "CO5",
+              "description": "Explain And Perform Non-destructive Tests Like Radiography Tests: Identify Defects Using Relevant NDT Methods. Differentiate Various Defect Types And Select The Appropriate NDT Methods For Better Evaluation. Document The Testing And Evaluation Of The Results."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "ENERGY ENGINEERING(18ME81)",
+          "semester": "VIII",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Understand The Construction And Working Of Steam Generators And Their Accessories."
+            },
+            {
+              "no": "CO2",
+              "description": "Identify Renewable Energy Sources Such As Solar And Biomass Energies And Their Utilization."
+            },
+            {
+              "no": "CO3",
+              "description": "Understand Principles Of Energy Conversion From Alternate Sources Such As Wind, Geothermal And Tidal Energy."
+            },
+            {
+              "no": "CO4",
+              "description": "Understand Principles Of Energy Conversion From Alternate Sources Like Hydro And Geothermal Energy."
+            },
+            {
+              "no": "CO5",
+              "description": "Understand Principles Of Energy Conversion Using Nuclear Energy And Its Hazardous Effects And Disposal Methods."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "PROJECT PHASE-II(18MEP83)",
+          "semester": "VIII",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "To Design A System, Components And Experiments For The Project Using Modern Tools."
+            },
+            {
+              "no": "CO2",
+              "description": "To Utilize The Theoretical Knowledge Gained To Successfully Complete The Projects In Stipulated Time."
+            },
+            {
+              "no": "CO3",
+              "description": "To Demonstrate The Contextual Engineering Knowledge To Provide Sustainable Solution To Needs Of The Society."
+            },
+            {
+              "no": "CO4",
+              "description": "To Demonstrate Engineering And Management Skills, Communicate Effectively, As An Individual And As A Team Member After The Successful Completion Of Project."
+            },
+            {
+              "no": "CO5",
+              "description": "To Demonstrate Social And Economic Responsibilities By Adapting Legal, Cultural And Ethical Principles For Lifelong Learning."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "TECHNICAL SEMINAR(18MES84)",
+          "semester": "VIII",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Apply Principles Of Ethical Leadership, Collaborative Engagement, Socially Responsible Behaviour."
+            },
+            {
+              "no": "CO2",
+              "description": "Using Modern Tools To Examine Real World Issues."
+            },
+            {
+              "no": "CO3",
+              "description": "Able To Develop, Attain And Disseminate Knowledge Through Independent Learning And Collaborative Study."
+            },
+            {
+              "no": "CO4",
+              "description": "Able To Communicate Effectively."
+            },
+            {
+              "no": "CO5",
+              "description": "Exposed To Latest Development In The Field Of Engineering And Technology."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "subject": "INTERNSHIP(18MEI85)",
+          "semester": "VIII",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Identify The Gap Between Curriculum And Industry Regarding Societal, And Engineering Practices And Prepare Themselves For A Better Career."
+            },
+            {
+              "no": "CO2",
+              "description": "Comprehend The Need Of Lifelong Learning Via Sustainable Development."
+            },
+            {
+              "no": "CO3",
+              "description": "Follow Effective Communication, Decision Making, Leadership And Other Managerial Skills Necessary For Their Future."
+            },
+            {
+              "no": "CO4",
+              "description": "Work In A Multi-disciplinary Environment Facing All Constraints During The Progress Of An Assigned Work."
+            },
+            {
+              "no": "CO5",
+              "description": "Develop The Individual Responsibility And Follow Ethical Standards Of The Industries."
+            }
+          ]
+        }
       ]
     },
 
-    "gallery": [
-      
-    ],
+    "gallery": [],
 
-
-"publications": [
+    "publications": [
       {
         "title": "FACULTY PUBLICATIONS",
-        "imageUrl": [
-          "https://www.canaraengineering.in/departments/me/Faculty%20Publication%20Details.png"
-        ]
-      }],
+        "imageUrl": ["https://www.canaraengineering.in/departments/me/Faculty%20Publication%20Details.png"]
+      }
+    ],
 
     "events": [
       {
@@ -15183,59 +16459,39 @@
       "allFacilities": [
         {
           "title": "Basic Workshop",
-          "points": [
-            
-          ],
-          "majorDesc":"In this lab students study about various tools, fitting work, sheet metal work and welding.",
-          "majorDesc2":"Major Facilities/Equipments:",
-          "majorPoint":["Bench Vice",
-            "Leg Vice",
-            "Arc welding machine",
-            "Fitting tools",
-            "Sheet metal tools",
-            "Welding tools."]
+          "points": [],
+          "majorDesc": "In this lab students study about various tools, fitting work, sheet metal work and welding.",
+          "majorDesc2": "Major Facilities/Equipments:",
+          "majorPoint": ["Bench Vice", "Leg Vice", "Arc welding machine", "Fitting tools", "Sheet metal tools", "Welding tools."]
         },
         {
           "title": "Computer Aided Engineering Drawing Lab",
-          "points": [
-            "This lab with high end computers and drafting package is devoted for training first year students in computer aided drafting."
-          ],
+          "points": ["This lab with high end computers and drafting package is devoted for training first year students in computer aided drafting."],
           "imageUrl": "https://www.canaraengineering.in/departments/me/lab/CAED%20Lab.png"
         },
         {
           "title": "Computer Aided Machine Drawing Lab",
-          "points": [
-          ],
-           "majorDesc":"In this lab students study about 2-D and 3-D Drawings of fasteners like bolt and nut, couplings, Keys and joints, rivets, thread forms and 3-D assembly drawings of different Machine Elements.",
-          "majorDesc2":"Major Facilities/Equipments:",
-          "majorPoint":["81 computers with high end configurations",
-            "Installed Solid Edge Software."],
+          "points": [],
+          "majorDesc": "In this lab students study about 2-D and 3-D Drawings of fasteners like bolt and nut, couplings, Keys and joints, rivets, thread forms and 3-D assembly drawings of different Machine Elements.",
+          "majorDesc2": "Major Facilities/Equipments:",
+          "majorPoint": ["81 computers with high end configurations", "Installed Solid Edge Software."],
           "imageUrl": "https://www.canaraengineering.in/departments/me/lab/CNC%20machine%20Lab.png"
         },
         {
           "title": "Machine Shop",
-          "points": [
-      
-          ],
-          "majorDesc":"In this lab students study about various machining operations using Lathe, drilling, milling, shaping, grinding machines.",
-          "majorDesc2":"Major Facilities/Equipments:",
-          "majorPoint":["Lathes",
-            "Milling machines",
-            "Drilling machines",
-            "Grinding machines",
-            "shaping machine",
-            "CNC Lathes."
-          ],
+          "points": [],
+          "majorDesc": "In this lab students study about various machining operations using Lathe, drilling, milling, shaping, grinding machines.",
+          "majorDesc2": "Major Facilities/Equipments:",
+          "majorPoint": ["Lathes", "Milling machines", "Drilling machines", "Grinding machines", "shaping machine", "CNC Lathes."],
           "imageUrl": "https://www.canaraengineering.in/departments/me/lab/Machine%20Shop.png"
         },
         {
           "title": "Foundry and Forging Lab",
-          "points": [
-           
-          ],
-          "majorDesc":"In this lab students study about various foundry and forging process, measurement of various parameters of foundry sand etc.",
-          "majorDesc2":"Major Facilities/Equipments:",
-          "majorPoint":["Permeability tester",
+          "points": [],
+          "majorDesc": "In this lab students study about various foundry and forging process, measurement of various parameters of foundry sand etc.",
+          "majorDesc2": "Major Facilities/Equipments:",
+          "majorPoint": [
+            "Permeability tester",
             "Sand siever",
             "Drilling machines",
             "Moisture content testing machine",
@@ -15248,12 +16504,11 @@
         },
         {
           "title": "Metallography and Material Testing Lab",
-          "points": [
-          
-          ],
-          "majorDesc":"In this lab students study about various properties of metals using testing equipments like Universal Testing Machine, Hardness Testing Machines, Wear Testing Machine, Impact Testing Machine, Metallographic Studies etc.",
-          "majorDesc2":"Major Facilities/Equipments:",
-          "majorPoint":["Brinell",
+          "points": [],
+          "majorDesc": "In this lab students study about various properties of metals using testing equipments like Universal Testing Machine, Hardness Testing Machines, Wear Testing Machine, Impact Testing Machine, Metallographic Studies etc.",
+          "majorDesc2": "Major Facilities/Equipments:",
+          "majorPoint": [
+            "Brinell",
             "Vicker",
             "Rockwell Hardness Tester",
             "Impact Tester",
@@ -15265,14 +16520,13 @@
           ],
           "imageUrl": "https://www.canaraengineering.in/departments/me/lab/Material%20Testing%20Lab.png"
         },
-         {
+        {
           "title": "Mechanical Measurements and Metrology Lab",
-          "points": [
-          
-          ],
-          "majorDesc":"This lab covers study of various measuring methods, equipments and tools used in Industries.",
-          "majorDesc2":"Major Facilities/Equipments:",
-          "majorPoint":["Accelerometer",
+          "points": [],
+          "majorDesc": "This lab covers study of various measuring methods, equipments and tools used in Industries.",
+          "majorDesc2": "Major Facilities/Equipments:",
+          "majorPoint": [
+            "Accelerometer",
             "Calibration of Thermocouple",
             "Oscillator",
             "Indicator",
@@ -15286,14 +16540,13 @@
           "imageUrl": "https://www.canaraengineering.in/departments/me/lab/MMM%20Lab.png"
         },
 
-   {
+        {
           "title": "Fluid Mechanics and Machinery Lab",
-          "points": [
-          
-          ],
-          "majorDesc":"This lab covers the study of various performance characteristics, measurements of flow using various methods and instruments.",
-          "majorDesc2":"Major Facilities/Equipments:",
-          "majorPoint":["Francis Turbine Test Rig",
+          "points": [],
+          "majorDesc": "This lab covers the study of various performance characteristics, measurements of flow using various methods and instruments.",
+          "majorDesc2": "Major Facilities/Equipments:",
+          "majorPoint": [
+            "Francis Turbine Test Rig",
             "Kaplan Turbine Test Rig",
             "Pelton Wheel Test Rig",
             "Gear Pump Test Rig",
@@ -15307,15 +16560,13 @@
           "imageUrl": "https://www.canaraengineering.in/departments/me/lab/FM%20Lab.png"
         },
 
-
         {
           "title": "Energy Conversion Engineering Lab",
-          "points": [
-          
-          ],
-          "majorDesc":"This lab deals with the study of various performance characteristics of Internal Combustion Engines like 2 stroke, 4 stroke petrol, diesel engines, analysis and other tests related to energy conversion engineering.",
-          "majorDesc2":"Major Facilities/Equipments:",
-          "majorPoint":["Bomb Calorimeter/Boys Calorimeter, Orsat Apparatus",
+          "points": [],
+          "majorDesc": "This lab deals with the study of various performance characteristics of Internal Combustion Engines like 2 stroke, 4 stroke petrol, diesel engines, analysis and other tests related to energy conversion engineering.",
+          "majorDesc2": "Major Facilities/Equipments:",
+          "majorPoint": [
+            "Bomb Calorimeter/Boys Calorimeter, Orsat Apparatus",
             "Cloud and Pour Point Apparatus",
             "Abel Pensky Flash and Fire Point Apparatus",
             "Pensky Martin Flash and Fire Point Apparatus",
@@ -15328,15 +16579,13 @@
           "imageUrl": "https://www.canaraengineering.in/departments/me/lab/energy%20Lab.png"
         },
 
-
-         {
+        {
           "title": "Heat and Mass Transfer Lab",
-          "points": [
-          
-          ],
-          "majorDesc":"This lab deals with the study of various performance characteristics of Heat and Mass Transfer equipments like Air Conditioner, Refrigeration, Heat flow analysis etc.",
-          "majorDesc2":"Major Facilities/Equipments:",
-          "majorPoint":["Forced Convection Apparatus, Pin-fin Apparatus",
+          "points": [],
+          "majorDesc": "This lab deals with the study of various performance characteristics of Heat and Mass Transfer equipments like Air Conditioner, Refrigeration, Heat flow analysis etc.",
+          "majorDesc2": "Major Facilities/Equipments:",
+          "majorPoint": [
+            "Forced Convection Apparatus, Pin-fin Apparatus",
             "Free or Natural Convection Apparatus",
             "Parallel flow and Counter flow Heat Exchangers",
             "Thermal Conductivity Apparatus",
@@ -15348,15 +16597,13 @@
           "imageUrl": "https://www.canaraengineering.in/departments/me/lab/HT%20Lab.png"
         },
 
-
-         {
+        {
           "title": "Design Lab",
-          "points": [
-          
-          ],
-          "majorDesc":"This lab deals with the study of various design aspects like Vibration, Balancing, Whirling of Shaft, Bearings, Gyroscopic Systems, Physical Stress Analysis Methods etc.",
-          "majorDesc2":"Major Facilities/Equipments:",
-          "majorPoint":["Gyroscopic Set up, Journal Bearing Test Rig",
+          "points": [],
+          "majorDesc": "This lab deals with the study of various design aspects like Vibration, Balancing, Whirling of Shaft, Bearings, Gyroscopic Systems, Physical Stress Analysis Methods etc.",
+          "majorDesc2": "Major Facilities/Equipments:",
+          "majorPoint": [
+            "Gyroscopic Set up, Journal Bearing Test Rig",
             "Equipment for studying Whirling of Shaft",
             "Static and Dynamic Balancing Machine",
             "Porter and Hartnell Governor",
@@ -15366,36 +16613,28 @@
           "imageUrl": "https://www.canaraengineering.in/departments/me/lab/Design%20%20Lab.png"
         },
 
-          {
+        {
           "title": "Computer Aided Modeling and Analysis Lab",
-          "points": [
-          
-          ],
-          "majorDesc":"In this lab students are taught how to do Finite Element Analysis for any structural members which are exposed to different types of load like, Axial, Transverse & inclined Load, Temperature in the material, Stress analysis and Vibration analysis.",
-          "majorDesc2":"Major Facilities/Equipments:",
-          "majorPoint":["35 Computers with Ansys V12 software installed."
-          ]
+          "points": [],
+          "majorDesc": "In this lab students are taught how to do Finite Element Analysis for any structural members which are exposed to different types of load like, Axial, Transverse & inclined Load, Temperature in the material, Stress analysis and Vibration analysis.",
+          "majorDesc2": "Major Facilities/Equipments:",
+          "majorPoint": ["35 Computers with Ansys V12 software installed."]
         },
 
         {
           "title": "Computer Integrated Manufacturing Lab:",
-          "points": [
-          
-          ],
-          "majorDesc":"In this lab students learn about how to write CNC part programming of turning, drilling and milling operations and to do Simulation. Using CAM software to create model and do sequence of machining operation and generate CNC part program.",
-          "majorDesc2":"Major Facilities/Equipments:",
-          "majorPoint":["G35 Computers with EdgeCAM and CADEM softwares installed."
-          ]
+          "points": [],
+          "majorDesc": "In this lab students learn about how to write CNC part programming of turning, drilling and milling operations and to do Simulation. Using CAM software to create model and do sequence of machining operation and generate CNC part program.",
+          "majorDesc2": "Major Facilities/Equipments:",
+          "majorPoint": ["G35 Computers with EdgeCAM and CADEM softwares installed."]
         },
 
-        
-         {
+        {
           "title": "Dissection lab",
-          "points": [
-          
-          ],
-          "majorDesc2":"The Department has also initiated Dissection lab of which the main objectives are:",
-          "majorPoint":["Implement ‘Technical Training Programme’, a proprietary teaching and education programme in Engineering and Technology",
+          "points": [],
+          "majorDesc2": "The Department has also initiated Dissection lab of which the main objectives are:",
+          "majorPoint": [
+            "Implement ‘Technical Training Programme’, a proprietary teaching and education programme in Engineering and Technology",
             "Provide training and education to students and faculty members of Institutes and Engineering Colleges.",
             "Hands-on practical sessions on the most scientific way of repair, maintenance and servicing of vehicles",
             "Create research facilities",
@@ -15404,24 +16643,24 @@
           "imageUrl": "https://www.canaraengineering.in/departments/me/lab/Di-section%20Lab.png"
         },
 
-
-           {
+        {
           "title": "CNC Hands-on Lab",
-          "points": [
-          
-          ],
-          "majorDesc":"In this lab in addition to regular curriculum the students will learn to write program and execute the same on machines for several turning operations like plain, step, groove, contour turning, external thread cutting and drilling in CNC Turning Center. Similarly face milling, slot milling, end milling, pocket milling and contour milling operations inCNC Vertical Machining Center.",
-          "majorDesc2":"Major Facilities/Equipments:",
-          "majorPoint":["CNC Turning center – Jobber Junior (ACE Designers Ltd.)",
-            "CNC Vertical Machining Center – VM 300 (TAL Manufacturing Solution Ltd.)"]
+          "points": [],
+          "majorDesc": "In this lab in addition to regular curriculum the students will learn to write program and execute the same on machines for several turning operations like plain, step, groove, contour turning, external thread cutting and drilling in CNC Turning Center. Similarly face milling, slot milling, end milling, pocket milling and contour milling operations inCNC Vertical Machining Center.",
+          "majorDesc2": "Major Facilities/Equipments:",
+          "majorPoint": [
+            "CNC Turning center – Jobber Junior (ACE Designers Ltd.)",
+            "CNC Vertical Machining Center – VM 300 (TAL Manufacturing Solution Ltd.)"
+          ]
         },
 
-           {
+        {
           "title": "Advanced Materials Lab",
           "points": [
-          "Material Science is one of the prime importance field in mechanical engineering. Microstructure and hardness are important properties which govern the behaviour of materials. The current laboratory syllabus is designed to improve the technical skill of students in material microstructure and micro-Vicker's hardness study."
+            "Material Science is one of the prime importance field in mechanical engineering. Microstructure and hardness are important properties which govern the behaviour of materials. The current laboratory syllabus is designed to improve the technical skill of students in material microstructure and micro-Vicker's hardness study."
           ]
-        }]
+        }
+      ]
     },
     "studentAcheivemtents": [
       {
@@ -15434,10 +16673,12 @@
       }
     ],
     "academicsProgram": {
-      "des": ["The Department of Mechanical Engineering offers 4 years B.E course.","This programme offers the students with the theory and practical courses in the areas of Engineering Design, Thermodynamics, Material Science, Manufacturing Engineering, Engineering Management and others. The Department offers the students with many elective subjects. The Department is backed by a number of state of the art Laboratories such as Computer Aided Engineering Drawing Lab, Computer Aided Machine Drawing Lab, Computer Aided Modeling & Analysis Lab and Computer Integrated Manufacturing Lab, well established basic laboratories such as Basic Workshop Practice, Design Lab, Material Testing Lab, Foundry & Forging Lab, Machine Shop, Mechanical Measurements & Metrology Lab, Heat Transfer Lab, Energy Conversion Lab with full fledged facilities.","The Department is committed to impart quality education to students and encourages the students to undergo Internships and offers Industrial Visits to make the students industry ready. In order to meet these requirements and orient the students, the department has initiated additional labs like Dissection Lab, CNC lab and Advanced Materials lab.Bio diesel Processing lab, Computer Aided Modelling Lab (On AutoCAD, SolidWorks and Creo Software), PLC and Automation Lab are offered to students. Further the Department also organises In-House Symposium to boost the confidence and communication skills in students. For the benefit of Students and Faculty, the Department organises many Workshops, Webinars in association with reputed Industries like Machenn Innovations etc. The industrial visits are organised from I year to promote interaction with industries. The Department has initiated 'Innovate', the National conference for the benefit of students. The students are provided with training for better placement opportunities in core mechanical industries."],
-      "points": [
-        
+      "des": [
+        "The Department of Mechanical Engineering offers 4 years B.E course.",
+        "This programme offers the students with the theory and practical courses in the areas of Engineering Design, Thermodynamics, Material Science, Manufacturing Engineering, Engineering Management and others. The Department offers the students with many elective subjects. The Department is backed by a number of state of the art Laboratories such as Computer Aided Engineering Drawing Lab, Computer Aided Machine Drawing Lab, Computer Aided Modeling & Analysis Lab and Computer Integrated Manufacturing Lab, well established basic laboratories such as Basic Workshop Practice, Design Lab, Material Testing Lab, Foundry & Forging Lab, Machine Shop, Mechanical Measurements & Metrology Lab, Heat Transfer Lab, Energy Conversion Lab with full fledged facilities.",
+        "The Department is committed to impart quality education to students and encourages the students to undergo Internships and offers Industrial Visits to make the students industry ready. In order to meet these requirements and orient the students, the department has initiated additional labs like Dissection Lab, CNC lab and Advanced Materials lab.Bio diesel Processing lab, Computer Aided Modelling Lab (On AutoCAD, SolidWorks and Creo Software), PLC and Automation Lab are offered to students. Further the Department also organises In-House Symposium to boost the confidence and communication skills in students. For the benefit of Students and Faculty, the Department organises many Workshops, Webinars in association with reputed Industries like Machenn Innovations etc. The industrial visits are organised from I year to promote interaction with industries. The Department has initiated 'Innovate', the National conference for the benefit of students. The students are provided with training for better placement opportunities in core mechanical industries."
       ],
+      "points": [],
       "annualIntake": 30
     },
     "organisation": {
@@ -15463,15 +16704,7 @@
           "secondColumn": [
             {
               "title": [],
-              "data": [
-                "Chairman",
-                "Member",
-                "Member",
-                "Member",
-                "Member",
-                "Member",
-                "Member Secretary"
-              ]
+              "data": ["Chairman", "Member", "Member", "Member", "Member", "Member", "Member Secretary"]
             }
           ]
         },
@@ -15480,11 +16713,7 @@
           "firstColumn": [
             {
               "title": ["Composition"],
-              "data": [
-                "Head of the Department",
-                "SIX Senior Faculty Members",
-                "Programme Coordinator"
-              ]
+              "data": ["Head of the Department", "SIX Senior Faculty Members", "Programme Coordinator"]
             }
           ],
           "secondColumn": [
@@ -15511,13 +16740,7 @@
           "secondColumn": [
             {
               "title": [],
-              "data": [
-                "Chairman",
-                "Member",
-                "Member",
-                "Member",
-                "Member Secretary"
-              ]
+              "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"]
             }
           ]
         },
@@ -15526,37 +16749,24 @@
           "firstColumn": [
             {
               "title": ["Composition"],
-              "data": [
-                "Head of the Department",
-                "Programme Coordinator",
-                "Seminar Coordinator",
-                "Research Coordinator",
-                "Project Coordinator"
-              ]
+              "data": ["Head of the Department", "Programme Coordinator", "Seminar Coordinator", "Research Coordinator", "Project Coordinator"]
             }
           ],
           "secondColumn": [
             {
               "title": [],
-              "data": [
-                "Chairman",
-                "Member",
-                "Member",
-                "Member",
-                "Member Secretary"
-              ]
+              "data": ["Chairman", "Member", "Member", "Member", "Member Secretary"]
             }
           ]
         }
       ]
     },
     "research": [
-    
       {
         "heading": "Department of Science & Technology (DST) Technology Development & Transfer (TDT) Division",
         "points": [],
         "imageUrl": "",
-       "table": [
+        "table": [
           {
             "slNo": "",
             "title": [],
@@ -15605,10 +16815,6 @@
               "https://www.canaraengineering.in/departments/me/Mech%20Mirror%20Aug%202018.jpg",
               "https://www.canaraengineering.in/departments/me/NewsLetter%20July%202017.png",
               "https://www.canaraengineering.in/departments/me/NewsLetter%202017%20Jan.png"
-
-
-
-
             ],
             "linkUrl": [
               "https://www.canaraengineering.in/departments/me/mech%20mirror%20(1)_2.pdf",
@@ -15625,12 +16831,6 @@
               "https://www.canaraengineering.in/departments/me/MECH%20MIRROR%20July%202017.pdf",
 
               "https://www.canaraengineering.in/departments/me/MECH%20MIRROR%20%20JAN%202017.pdf"
-
-
-
-
-
-
             ]
           }
         ]
