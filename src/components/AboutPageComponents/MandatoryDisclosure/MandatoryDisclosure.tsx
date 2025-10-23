@@ -338,14 +338,14 @@ const MandatoryDisclosure = () => {
                   </li>
                 </ul>
                 <h2 className="text-lg font-bold text-textGray mt-6 mb-2">Objectives:</h2>
-                <ul className="space-y-2 list-decimal pl-8 md:text-lg  text-[14px] leading-7  text-textGray  ">
+                <ul className="space-y-2 list-disc pl-8 md:text-lg  text-[14px] leading-7  text-textGray  ">
                   <li>To preserve a culture of ragging-free environment in the college campus by prohibiting it as per law.</li>
                   <li>Preventing its occurrence by following provisions of regulations provided as per law.</li>
                   <li>Design strategies and action plan for curbing the menace of ragging in the college.</li>
                   <li>Punishing those who indulge in ragging as per provisions of the law in force.</li>
                 </ul>
                 <h2 className="text-lg font-bold text-textGray mt-6 mb-2">Outcomes:</h2>
-                <ul className="space-y-2 list-disc pl-5 md:text-lg  text-[14px] leading-7  text-textGray  ">
+                <ul className="space-y-2 list-disc pl-8 md:text-lg  text-[14px] leading-7  text-textGray  ">
                   <li>Have preserved a ragging free campus with no incidents of ragging been reported so far, in the college and hostel premises.</li>
                 </ul>
                 <h2 className="text-lg font-bold text-textGray mt-6 mb-2">Anti Ragging Committee Organisation Chart</h2>
