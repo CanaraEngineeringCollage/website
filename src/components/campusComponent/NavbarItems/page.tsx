@@ -17,7 +17,7 @@ function NavbarItems() {
         id="admission"
         className="cursor-pointer opacity-80  gap-2 text-[#2884CA] pt-[8px]  text-base xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
       >
-        <Link href={"/alumni/about-alumni"} className={`font-poppins ${(pathname==="/alumni/about-alumni")?'border-b-2 border-[#005580] text-[#005580]':" text-[#2884CA]"} py-1.5 `}>
+        <Link href={"/alumni/about-alumni"} className={`font-poppins ${(pathname==="/alumni/about-alumni")?'border-b-2 border-[#005580] text-[#005580]':" text-[#2884CA]"} hover:text-[#005580] py-1.5 `}>
           About
         </Link>  
       </div>

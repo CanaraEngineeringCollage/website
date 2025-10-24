@@ -47,7 +47,6 @@ const ResearchPolicies = () => (
       <li>Research exchange programs</li>
       <li>Publication & Authorship guidelines</li>
     </ul>
-    <IframLinks link="https://canaraengineering.in/download/Research_Policy.pdf" title="Download Full Research Policy PDF" />
   </div>
 );
 
@@ -344,7 +343,7 @@ const DepartmentHighlights = () => (
       Design, Robotics, Control & Automation.
     </p>
     <p>
-      <strong>Research Guides:</strong> Dr. Ganesh V Bhat, Dr. Raghavendra Shetty
+      <strong>Research Guides:</strong> Dr. Ganesh V Bhat
     </p>
     <p>
       <strong>Student Research & Achievements:</strong>

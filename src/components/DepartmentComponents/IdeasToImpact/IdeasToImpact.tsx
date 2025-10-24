@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import { CarouselDots } from "../CarouselDots/CarouselDots";
+
 type IdeasData = {
   placements: {
     percentage: string;
@@ -16,6 +16,7 @@ type IdeasData = {
       placed: number;
       offers: number;
     }[];
+    
   }[];
 
   passOutRates: {
@@ -29,17 +30,38 @@ type IdeasData = {
     subtitle: string;
   }[];
 
-  passoutTotlas:{
-    value:string;
-  }
+ 
+
+  csdData: {
+    slNo: number;
+    enrollment: string;
+    name: string;
+    event: string;
+    institution: string;
+    date: string;
+    prize: string;
+  }[];
 };
 
+type TableHeader = {
+  key: string;
+  label: string;
+};
 
+type TableRow = {
+  [key: string]: string | number | string[];
+};
 
+interface IdeasToImpactProps {
+  ideasData: IdeasData;
+  tableHeaders: TableHeader[];
+  tableRows: TableRow[];
+}
 
-export default function IdeasToImpact({ideasData}: IdeasData) {
+export default function IdeasToImpact({ ideasData, tableHeaders, tableRows }: IdeasToImpactProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [activePlacement, setActivePlacement] = useState(0);
+  const [showTable, setShowTable] = useState(false);
 
   const placements = ideasData.placements;
   const awards = ideasData.awards;
@@ -61,118 +83,18 @@ export default function IdeasToImpact({ideasData}: IdeasData) {
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 text-[#1D1D1F] mt-10">
-          {/* Placements */}
-          <div className="bg-white rounded-2xl flex flex-col">
-            <motion.div
-              key={activePlacement}
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.4 }}
-              className="w-full"
-            >
-              <div className="bg-white p-6 rounded-2xl">
-                <h3 className="text-4xl font-[900] mb-2 text-left lg:text-[60px]">
-                  {placements[activePlacement].percentage}
-                </h3>
-                <p className="text-left text-2xl">{placements[activePlacement].title}</p>
-                <p className="text-[16px] max-w-md text-left">
-                  {placements[activePlacement].description}
-                </p>
-
-                <ResponsiveContainer width="100%" height={400}>
-                  <BarChart
-                    data={placements[activePlacement].chartData}
-                    margin={{ top: 20, right: 20, left: 20, bottom: 20 }}
-                    barSize={90}
-                    barCategoryGap="20%"
-                  >
-                    <defs>
-                      <linearGradient id="placedGradient" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stopColor="#268CD8" />
-                        <stop offset="100%" stopColor="#144A72" />
-                      </linearGradient>
-                    </defs>
-                    <XAxis dataKey="year" />
-                    <YAxis hide />
-                    <Tooltip />
-                    <Bar dataKey="placed" stackId="a" fill="url(#placedGradient)" />
-                    <Bar dataKey="offers" stackId="a" fill="#6DC0EB" />
-                    <Bar dataKey="total" stackId="a" radius={[10, 10, 0, 0]} fill="#fff" stroke="#D9D9D9" />
-                  </BarChart>
-                </ResponsiveContainer>
-
-                <div className="flex justify-center gap-6 mt-6 text-sm text-gray-600">
-                  <div className="flex items-center gap-2">
-                    <div className="w-4 h-4 rounded border border-gray-300 bg-white"></div>
-                    Total Students
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-4 h-4 rounded bg-gradient-to-b from-[#268CD8] to-[#144A72]"></div>
-                    Students Placed
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-4 h-4 rounded bg-[#6DC0EB]"></div>
-                    Offers Received
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            
-          </div>
-
-          {/* Examination Pass Rate & Awards */}
-          <div>
-            {/* Examination Pass Out Rate */}
-            <div className="bg-white rounded-2xl mb-6 p-6">
-              <div className="grid md:grid-cols-2 items-center gap-6">
-                <div className="relative w-full h-52 md:h-full">
-                  <h3 className="text-4xl font-[900] mb-2 text-left lg:text-[60px]">{ideasData.passoutTotlas}+</h3>
-                  <p className="text-left text-2xl">Examination Pass Out Rate</p>
-                  <p className="text-[16px] max-w-md text-left">
-                    Over the Past Three Academic Years
-                  </p>
-                </div>
-
-                <div className="flex items-end justify-between w-full md:gap-4 gap-2 px-12 md:px-0">
-                  {passOutRates.map((item, index) => (
-                    <div key={index} className="flex flex-col items-center justify-end h-full">
-                      <span className="mb-2 text-sm font-semibold text-primary">
-                        {item.value}%
-                      </span>
-                      <div className="relative xl:w-20 lg:w-16 md:w-14 w-10 h-80 bg-gray-200 rounded-t overflow-hidden flex items-end">
-                        <motion.div
-                          initial={{ height: 0 }}
-                          whileInView={{ height: `${item.value}%` }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 0.6, delay: index * 0.2 }}
-                          className="w-full absolute bottom-0 flex items-end justify-center"
-                          style={{
-                            background: "linear-gradient(to top, #2884CA, #6DC0EB)"
-                          }}
-                        >
-                          <span className="text-xs font-medium text-white pb-1">
-                            {item.year}
-                          </span>
-                        </motion.div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Technical Fest Awards */}
-            <div className="bg-white rounded-2xl flex flex-col">
+          {/* Awards Card */}
+          <div className="flex flex-col h-full">
+            <div className="bg-white rounded-2xl flex flex-col flex-1">
               <motion.div
                 key={activeIndex}
                 initial={{ opacity: 0, x: 30 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.4 }}
-                className="w-full"
+                className="w-full flex-1"
               >
-                <div className="bg-white p-6 rounded-2xl mb-6">
-                  <div className="grid grid-cols-2 items-center gap-6">
+                <div className="bg-white p-6 rounded-2xl mb-6 h-full">
+                  <div className="grid grid-cols-2 items-center gap-6 h-full">
                     <div className="relative w-full h-48">
                       <Image
                         src={awards[activeIndex].image}
@@ -193,15 +115,134 @@ export default function IdeasToImpact({ideasData}: IdeasData) {
                 </div>
               </motion.div>
 
-              <CarouselDots
-                total={awards.length}
-                active={activeIndex}
-                onDotClick={setActiveIndex}
-                className="mt-6"
-              />
+              <div className="flex justify-between items-center px-6">
+                <CarouselDots
+                  total={awards.length}
+                  active={activeIndex}
+                  onDotClick={setActiveIndex}
+                  className="mt-6"
+                />
+              { tableHeaders&& tableRows &&<button
+                  onClick={() => setShowTable(!showTable)}
+                  className="text-primary font-semibold mt-6"
+                >
+                  {showTable ? "Hide Details" : "See More"}
+                </button>}
+              </div>
+            </div>
+          </div>
+
+              {showTable && (
+          <div className="rounded overflow-x-auto hide-scrollbar lg:hidden mt-4 text-[#1D1D1F]  border border-gray-200 w-full">
+            <table className="w-full text-left text-[13px] md:text-[15px]">
+              <thead className="bg-[#F3F8FC] text-[#2884CA]">
+                <tr>
+                  {tableHeaders.map((header) => (
+                    <th key={header.key} className="py-3 md:px-4 px-1 border-b">
+                      {header.label}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {tableRows.map((row, idx) => (
+                  <tr key={idx} className="">
+                    {tableHeaders.map((header) => {
+                      const cell = row[header.key];
+                      return (
+                        <td key={header.key} className="py-3 md:px-4 px-1 border-b ">
+                          {Array.isArray(cell)
+                            ? cell.map((item, i) => <div key={i}>{item}</div>)
+                            : cell}
+                        </td>
+                      );
+                    })}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+
+          {/* Examination Pass Rate Card */}
+          <div className="flex flex-col h-full">
+            <div className="bg-white rounded-2xl p-6 flex-1">
+              <div className="grid md:grid-cols-2 items-center gap-6 h-full">
+                <div className="relative w-full h-52 md:h-full">
+                  <h3 className="text-4xl font-[900] mb-2 text-left lg:text-[60px]">
+                    {ideasData.passoutTotlas}
+                  </h3>
+                  <p className="text-left text-2xl">Examination Pass Out Rate</p>
+                  <p className="text-[16px] max-w-md text-left">
+                    Over the Past Three Academic Years
+                  </p>
+                </div>
+
+                <div className="flex items-end justify-between w-full md:gap-4 gap-2 px-12 md:px-0">
+                  {passOutRates.map((item, index) => (
+                    <div
+                      key={index}
+                      className="flex flex-col items-center justify-end h-full"
+                    >
+                      <span className="mb-2 text-sm font-semibold text-primary">
+                        {item.value}%
+                      </span>
+                      <div className="relative xl:w-20 lg:w-16 md:w-14 w-10 h-80 bg-gray-200 rounded-t overflow-hidden flex items-end">
+                        <motion.div
+                          initial={{ height: 0 }}
+                          whileInView={{ height: `${item.value}%` }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.6, delay: index * 0.2 }}
+                          className="w-full absolute bottom-0 flex items-end justify-center"
+                          style={{
+                            background: "linear-gradient(to top, #2884CA, #6DC0EB)",
+                          }}
+                        >
+                          <span className="text-xs font-medium text-white pb-1">
+                            {item.year}
+                          </span>
+                        </motion.div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
+        {/* Dynamic Table */}
+        {showTable && (
+           <div className="rounded overflow-hidden hidden text-[#1D1D1F] mt-10 lg:block border border-gray-200 w-full">
+            <table className="w-full text-left text-[13px] md:text-[15px]">
+              <thead className="bg-[#F3F8FC] text-[#2884CA]">
+                <tr>
+                  {tableHeaders.map((header) => (
+                    <th key={header.key} className="py-3  md:px-4 px-1 border-b">
+                      {header.label}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {tableRows.map((row, idx) => (
+                  <tr key={idx} className="">
+                    {tableHeaders.map((header) => {
+                      const cell = row[header.key];
+                      return (
+                        <td key={header.key} className="py-3 md:px-4 px-1 border-b ">
+                          {Array.isArray(cell)
+                            ? cell.map((item, i) => <div key={i}>{item}</div>)
+                            : cell}
+                        </td>
+                      );
+                    })}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </div>
     </section>
   );

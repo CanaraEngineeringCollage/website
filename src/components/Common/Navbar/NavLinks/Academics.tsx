@@ -29,7 +29,7 @@ export default function Academics() {
               isMenuOpen ? "opacity-100" : "opacity-80"
             } gap-2 py-2 pr-4 text-webGreen1 transition-colors ease-in-out duration-300 hover:text-webGreen1
             bg-transparent   font-semibold hover:bg-transparent ${
-              pathname.includes("academics") || pathname.includes("/department") ? `border-[#005580] border-b-2 text-[#005580]` : " text-[#2884CA]"
+              pathname.includes("academics") || pathname.includes("/department") ? `border-[#005580] border-b-2 text-[#005580]` : " text-[#2884CA] hover:text-[#005580]"
             } shadow-none rounded-none outline-none focus:ring-0 focus:outline-none`}
             selected={isMenuOpen || isMobileMenuOpen}
             onClick={() => setIsMobileMenuOpen((cur) => !cur)}

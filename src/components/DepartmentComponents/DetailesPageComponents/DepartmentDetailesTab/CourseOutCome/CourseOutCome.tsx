@@ -31,6 +31,7 @@ const CourseOutCome = ({staticData,deptName}:{staticData:any;deptName:string }) 
   const [selectedSem, setSelectedSem] = useState("");
   const [filteredCourses, setFilteredCourses] = useState<any[]>([]);
   const [selectedCourse, setSelectedCourse] = useState<any | null>(null);
+  const [hasFetched, setHasFetched] = useState(false);
 
 
 const admissionYears =
@@ -45,6 +46,7 @@ const admissionYears =
       (course) => `${course.semester} Semester` === selectedSem || course.semester === selectedSem.replace(" Semester", "")
     );
     setFilteredCourses(semesterCourses);
+    setHasFetched(true);
   };
 
   return (
@@ -122,7 +124,7 @@ const admissionYears =
           </table>
         </div>
       ):
-      (filteredCourses.length===0 && selectedYear && selectedSem) ? (
+      hasFetched  ? (
     <div className="mt-5 ">
       <p className="">No Data Found </p>
     </div>

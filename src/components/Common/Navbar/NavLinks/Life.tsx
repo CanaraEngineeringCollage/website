@@ -28,7 +28,7 @@ export default function Life() {
             rounded-none shadow-none ${
               pathname.includes("/campus-facilities") || pathname.includes("/entrepreneurship-cell") || pathname.includes("/physical-education")
                 ? `border-[#005580] border-b-2 text-[#005580]`
-                : " text-[#2884CA]"
+                : " text-[#2884CA] hover:text-[#005580]"
             } text-[#2884CA] outline-none focus:ring-0 focus:outline-none`}
             selected={isMenuOpen || isMobileMenuOpen}
             onClick={() => setIsMobileMenuOpen((cur) => !cur)}

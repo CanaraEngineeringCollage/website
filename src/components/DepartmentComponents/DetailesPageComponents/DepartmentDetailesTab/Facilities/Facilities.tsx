@@ -34,15 +34,16 @@ const Facilities: React.FC<FacilitiesProps> = ({ data,deptName }) => {
     <div className=" text-textGray text-[17px] space-y-8">
       <div>
         <h1 className="text-[20px] mb-2 font-bold">Facilities</h1>
-        <p className="md:text-lg text-justify text-[14px] leading-7 text-textGray">
-  {data.description.split(/(Laboratory)/g).map((part, index) => 
-    part === "Laboratory" ? (
+   <p className="md:text-lg text-justify text-[14px] leading-7 text-textGray">
+  {data.description.split(/(Data Structures and Algorithm Laboratory|Machine Learning Laboratory)/g).map((part, index) =>
+    part === "Data Structures and Algorithm Laboratory" || part === "Machine Learning Laboratory" ? (
       <span key={index} className="font-bold">{part}</span>
     ) : (
       part
     )
   )}
 </p>
+
 
       </div>
       <div className="space-y-6">
@@ -91,13 +92,13 @@ const Facilities: React.FC<FacilitiesProps> = ({ data,deptName }) => {
             )}
             <div className={`${deptName==="Artificial Intelligence & Machine Learning"?"flex flex-col lg2:flex-row flex-wrap  gap-2":""}`}>
             {facility?.imageUrl && (
-              <Image loading="lazy" src={facility.imageUrl} width={500} height={500} alt={facility.title} className="mt-10 rounded" />
+              <Image loading="lazy" src={facility.imageUrl} width={500} height={500} alt={facility.title} className="mt-5 rounded" />
             )}
              {facility?.imageUrl2 && (
-              <Image loading="lazy"  src={facility.imageUrl2} width={500} height={500} alt={facility.title} className="mt-10 rounded" />
+              <Image loading="lazy"  src={facility.imageUrl2} width={500} height={500} alt={facility.title} className="mt-5 rounded" />
             )}
              {facility?.imageUrl3 && (
-              <Image loading="lazy"  src={facility.imageUrl3} width={500} height={500} alt={facility.title} className="mt-10 rounded" />
+              <Image loading="lazy"  src={facility.imageUrl3} width={500} height={500} alt={facility.title} className="mt-5 rounded" />
             )}
             </div>
 
