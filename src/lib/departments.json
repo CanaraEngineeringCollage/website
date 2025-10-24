@@ -11015,7 +11015,7 @@
 
  ],
 
- "2021-22":[
+ "2021-2022":[
 
   {
     "id": 66,
@@ -11570,7 +11570,1216 @@
       "description": "Make use of graph traversal methods and hashing functions in solving real-world problems."
     }
   ]
+},
+{
+  "id": 86,
+  "subject": "Analog and Digital Electronics (21CS33)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Construct and demonstrate the applications of analog and converter circuits using transistors, op-amps, timer IC and regulator IC."
+    },
+    {
+      "no": "CO2",
+      "description": "Apply Karnaugh Map and Quine-McCluskey methods to simplify digital circuits."
+    },
+    {
+      "no": "CO3",
+      "description": "Demonstrate the working of combinational circuits and their corresponding delay and hazards."
+    },
+    {
+      "no": "CO4",
+      "description": "Develop simple VHDL programs for combinational and sequential logic circuits and explain various types of flip-flops."
+    },
+    {
+      "no": "CO5",
+      "description": "Design counters and develop sequential circuit applications using flip-flops and registers."
+    }
+  ]
+},
+{
+  "id": 87,
+  "subject": "Computer Organization and Architecture (21CS34)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Explain the organization and architecture of computer systems with machine instructions and programs."
+    },
+    {
+      "no": "CO2",
+      "description": "Demonstrate different ways of input/output devices communication."
+    },
+    {
+      "no": "CO3",
+      "description": "Demonstrate the functions of different types of memory devices."
+    },
+    {
+      "no": "CO4",
+      "description": "Apply simple arithmetic and logical operations by ALU for various real-time applications on digital data."
+    },
+    {
+      "no": "CO5",
+      "description": "Demonstrate the functions of the basic processing unit, parallel processing, and pipelining."
+    }
+  ]
 }
+,
+{
+  "id": 88,
+  "subject": "Object Oriented Programming with JAVA Laboratory (21CSL35)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Show how to use Eclipse/NetBeans IDE to design, develop, and debug Java projects."
+    },
+    {
+      "no": "CO2",
+      "description": "Demonstrate the necessity for Object Oriented Programming paradigm over structured programming and become familiar with the fundamental concepts in OOP."
+    },
+    {
+      "no": "CO3",
+      "description": "Demonstrate the ability to design and develop Java programs, analyze and interpret object-oriented data, and document results."
+    },
+    {
+      "no": "CO4",
+      "description": "Apply the concepts of multiprogramming, exception/event handling, and abstraction to develop robust programs."
+    },
+    {
+      "no": "CO5",
+      "description": "Develop user-friendly applications using file I/O and GUI concepts."
+    }
+  ]
+},
+{
+  "id": 89,
+  "subject": "Social Connect and Responsibility (21UH36)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand social responsibility."
+    },
+    {
+      "no": "CO2",
+      "description": "Practice sustainability."
+    },
+    {
+      "no": "CO3",
+      "description": "Practice creativity."
+    },
+    {
+      "no": "CO4",
+      "description": "Showcase planning skills."
+    },
+    {
+      "no": "CO5",
+      "description": "Showcase organizational skills."
+    }
+  ]
+},
+{
+  "id": 90,
+  "subject": "Constitution of India and Professional Ethics (21CIP37)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To know the fundamental political codes, structure, procedures, powers, and duties of Indian government institutions."
+    },
+    {
+      "no": "CO2",
+      "description": "To know the fundamental rights, directive principles, and the duties of citizens."
+    },
+    {
+      "no": "CO3",
+      "description": "To have literacy and understanding of the constitutional election process."
+    },
+    {
+      "no": "CO4",
+      "description": "To have constitutional legal literacy and understand the functioning of the Indian judicial system."
+    },
+    {
+      "no": "CO5",
+      "description": "Understand engineering ethics and their responsibilities; identify individual roles and ethical responsibilities towards society."
+    }
+  ]
+},
+{
+  "id": 91,
+  "subject": "Ability Enhancement Course - III (21CSL381)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Know the basics of computers and prepare documents, spreadsheets, make small presentations with audio, video, and graphs, and be acquainted with the internet."
+    },
+    {
+      "no": "CO2",
+      "description": "Create, edit, save, and print documents with lists, tables, header, footer, graphics, spellchecker, mail merge, and grammar checker."
+    },
+    {
+      "no": "CO3",
+      "description": "Attain knowledge about spreadsheets with formulas, macros, spell checker, etc."
+    },
+    {
+      "no": "CO4",
+      "description": "Demonstrate the ability to apply application software in an office environment."
+    },
+    {
+      "no": "CO5",
+      "description": "Use Google Suite for office data management tasks."
+    }
+  ]
+},
+
+
+
+
+
+
+
+{
+  "id": 92,
+  "subject": "Mathematical Foundations for Computing (21CS41)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Apply the concepts of logic for effective computation and relating problems in the engineering domain."
+    },
+    {
+      "no": "CO2",
+      "description": "Analyze the concepts of functions and relations in various fields of engineering. Comprehend the concepts of graph theory for various applications of computational sciences."
+    },
+    {
+      "no": "CO3",
+      "description": "Make use of correlation and regression analysis to fit a suitable mathematical model for statistical data."
+    },
+    {
+      "no": "CO4",
+      "description": "Apply discrete and continuous probability distributions in analyzing probability models arising in the engineering field."
+    },
+    {
+      "no": "CO5",
+      "description": "Construct joint probability distributions and demonstrate the validity of hypothesis testing."
+    }
+  ]
+},
+
+{
+  "id": 93,
+  "subject": "Design and Analysis of Algorithms (21CS42)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Apply analytical techniques, including asymptotic notations, to evaluate the performance of algorithms. Emphasize conducting mathematical analyses to determine the complexity of brute force algorithms."
+    },
+    {
+      "no": "CO2",
+      "description": "Apply divide and conquer approaches and decrease and conquer approaches in solving problems."
+    },
+    {
+      "no": "CO3",
+      "description": "Utilize suitable algorithmic design techniques such as the greedy method and transform and conquer approaches to solve given problems."
+    },
+    {
+      "no": "CO4",
+      "description": "Apply dynamic programming approaches to solve problems."
+    },
+    {
+      "no": "CO5",
+      "description": "Apply backtracking, branch and bound methods to describe P, NP, and NP-complete problems."
+    }
+  ]
+},
+{
+  "id": 94,
+  "subject": "Microcontroller and Embedded Systems (21CS43)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Demonstrate the fundamentals of ARM processor architecture with program module, and explain attributes of an embedded system."
+    },
+    {
+      "no": "CO2",
+      "description": "Understand the ARM instruction set and C compilers to develop programs for the ARM controller."
+    },
+    {
+      "no": "CO3",
+      "description": "Develop simple embedded programs using ARM assembly and C programming."
+    },
+    {
+      "no": "CO4",
+      "description": "Illustrate the components of an embedded system and make use of interfacing concepts to construct different embedded systems using C programming."
+    },
+    {
+      "no": "CO5",
+      "description": "Understand the real-time operating system and demonstrate the applications of IoT using Arduino and Raspberry Pi."
+    }
+  ]
+},
+{
+  "id": 95,
+  "subject": "Operating Systems (21CS44)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Identify the structure of an operating system and its scheduling mechanism."
+    },
+    {
+      "no": "CO2",
+      "description": "Make use of scheduling algorithms to demonstrate the allocation of resources for a process."
+    },
+    {
+      "no": "CO3",
+      "description": "Identify root causes of deadlock and provide solutions for deadlock elimination."
+    },
+    {
+      "no": "CO4",
+      "description": "Apply memory management techniques and illustrate implementation of the file system in an operating system."
+    },
+    {
+      "no": "CO5",
+      "description": "Explain secondary storage structures and Linux operating system as a case study."
+    }
+  ]
+},
+{
+  "id": 96,
+  "subject": "Biology For Engineers (21BE45)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Explain the basic biological concepts via relevant industrial applications and case studies."
+    },
+    {
+      "no": "CO2",
+      "description": "Compare the human organ system and biological trends to engineering systems."
+    },
+    {
+      "no": "CO3",
+      "description": "Compare the human organ system and biological trends to engineering systems."
+    },
+    {
+      "no": "CO4",
+      "description": "Explain mechanisms developed inspired by biology."
+    },
+    {
+      "no": "CO5",
+      "description": "Explain the latest trends in the bioengineering field."
+    }
+  ]
+},
+{
+  "id": 97,
+  "subject": "Python Programming Laboratory (21CSL46)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Demonstrate proficiency in handling loops and creation of functions."
+    },
+    {
+      "no": "CO2",
+      "description": "Identify methods to create and manipulate lists, tuples, and dictionaries."
+    },
+    {
+      "no": "CO3",
+      "description": "Discover commonly used operations involving regular expressions and the file system."
+    },
+    {
+      "no": "CO4",
+      "description": "Interpret the concepts of object-oriented programming as used in Python."
+    },
+    {
+      "no": "CO5",
+      "description": "Determine the need for scraping websites and working with PDF, JSON, and other file formats."
+    }
+  ]
+},
+{
+  "id": 98,
+  "subject": "Samskrutika Kannada (21KSK47)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Create awareness on Kannada language, literature, and culture."
+    },
+    {
+      "no": "CO2",
+      "description": "Study ancient and modern poetry symbolically, motivating to read more and gain knowledge."
+    },
+    {
+      "no": "CO3",
+      "description": "Create awareness and interest among students for culture and literature."
+    },
+    {
+      "no": "CO4",
+      "description": "Understand technical personalities and their achievements and create interest to know more about other personalities of Karnataka."
+    },
+    {
+      "no": "CO5",
+      "description": "Introduce cultural, folk, and travel diaries."
+    }
+  ]
+}
+,
+
+{
+  "id": 99,
+  "subject": "Universal Human Values (21UH49)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Holistic vision of life and socially responsible behavior."
+    },
+    {
+      "no": "CO2",
+      "description": "Environmentally responsible work."
+    },
+    {
+      "no": "CO3",
+      "description": "Ethical human conduct."
+    },
+    {
+      "no": "CO4",
+      "description": "Having competence and capabilities for maintaining health and hygiene."
+    },
+    {
+      "no": "CO5",
+      "description": "Appreciation and aspiration for excellence (merit) and gratitude for all."
+    }
+  ]
+}
+,
+
+{
+  "id": 100,
+  "subject": "Inter/Intra Institutional Internship (21INT49)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Demonstrate effective communication and teamwork skills in an engineering professional career."
+    },
+    {
+      "no": "CO2",
+      "description": "Make use of IT tools and techniques to generate scientific documentation and reports."
+    },
+    {
+      "no": "CO3",
+      "description": "Apply critical and creative thinking to identify societal problems and propose innovative engineering solutions."
+    }
+  ]
+},
+{
+  "id": 101,
+  "subject": "Balake Kannada (21KBK47)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Non-Kannada students will be able to understand Kannada."
+    },
+    {
+      "no": "CO2",
+      "description": "Non-Kannada students will be able to speak Kannada."
+    },
+    {
+      "no": "CO3",
+      "description": "Non-Kannada students will be able to read Kannada."
+    },
+    {
+      "no": "CO4",
+      "description": "Non-Kannada students will be able to write Kannada."
+    },
+    {
+      "no": "CO5",
+      "description": "Non-Kannada students will be able to communicate in Kannada."
+    }
+  ]
+}
+,
+
+{
+  "id": 102,
+  "subject": "Web Programming (21CSL481)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Explain the fundamentals of web and concepts of HTML."
+    },
+    {
+      "no": "CO2",
+      "description": "Construct web pages using the concepts of HTML and XHTML."
+    },
+    {
+      "no": "CO3",
+      "description": "Make use of CSS to style dynamic documents."
+    },
+    {
+      "no": "CO4",
+      "description": "Apply different concepts of JavaScript to construct dynamic documents."
+    },
+    {
+      "no": "CO5",
+      "description": "Develop client-side applications using HTML, CSS, and JavaScript."
+    }
+  ]
+},
+
+
+
+
+
+
+{
+  "id": 103,
+  "subject": "Automata Theory and Compiler Design (21CS51)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Acquire a fundamental understanding of the core concepts in the theory of computation."
+    },
+    {
+      "no": "CO2",
+      "description": "Make use of recognition of tokens to design lexical analyzers."
+    },
+    {
+      "no": "CO3",
+      "description": "Apply the concept of CFG to design top-down parser computing models."
+    },
+    {
+      "no": "CO4",
+      "description": "Acquire the fundamentals of push-down automata to design bottom-up parse computing models."
+    },
+    {
+      "no": "CO5",
+      "description": "Design computation models (Turing machines) for problems in automata theory and adapt such models in the field of compilers."
+    }
+  ]
+},
+{
+  "id": 104,
+  "subject": "Computer Networks (21CS52)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Learn the basic needs of communication systems."
+    },
+    {
+      "no": "CO2",
+      "description": "Interpret the communication challenges and their solutions."
+    },
+    {
+      "no": "CO3",
+      "description": "Identify and organize the communication system network components."
+    },
+    {
+      "no": "CO4",
+      "description": "Design communication networks for user requirements."
+    },
+    {
+      "no": "CO5",
+      "description": "Understand the principles of network applications and how they function."
+    }
+  ]
+}
+,
+{
+  "id": 105,
+  "subject": "Database Management Systems (21CS53)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Apply fundamental concepts in databases, including the three-schema architecture and conceptual data modeling using entity-relationship diagrams."
+    },
+    {
+      "no": "CO2",
+      "description": "Apply relational algebra to map conceptual designs into logical designs and demonstrate effective handling of constraints, relational model concepts, and operations."
+    },
+    {
+      "no": "CO3",
+      "description": "Develop skills in SQL by applying constraints, queries, triggers, views, and stored procedures within the context of application development."
+    },
+    {
+      "no": "CO4",
+      "description": "Apply normalization algorithms to optimize relational database application design."
+    },
+    {
+      "no": "CO5",
+      "description": "Build simple database systems relating the concept of transaction, concurrency control, and recovery in databases."
+    }
+  ]
+}
+,
+{
+  "id": 106,
+  "subject": "Database Management Systems Laboratory with Mini Project (21CSL55)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Apply the fundamental concepts of databases to construct ER diagrams and relational schema."
+    },
+    {
+      "no": "CO2",
+      "description": "Construct and manipulate the database using SQL."
+    },
+    {
+      "no": "CO3",
+      "description": "Demonstrate the working of different concepts of DBMS."
+    },
+    {
+      "no": "CO4",
+      "description": "Apply normalization techniques for development of database applications for realistic problems."
+    },
+    {
+      "no": "CO5",
+      "description": "Implement, analyze, and evaluate the project developed for an application."
+    }
+  ]
+},
+
+{
+  "id": 107,
+  "subject": "Research Methodology & Intellectual Property Rights (21RMI56)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To know the meaning of engineering research."
+    },
+    {
+      "no": "CO2",
+      "description": "To know the procedure of literature review and technical reading."
+    },
+    {
+      "no": "CO3",
+      "description": "To know the fundamentals of patent laws and drafting procedure."
+    },
+    {
+      "no": "CO4",
+      "description": "Understanding copyright laws and subject matters of copyrights and designs."
+    },
+    {
+      "no": "CO5",
+      "description": "Understanding the basic principles of design rights."
+    }
+  ]
+},
+{
+  "id": 108,
+  "subject": "Environmental Studies (21CIV57)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand the principles of ecology and environmental issues that apply to air, land, and water issues on a global scale."
+    },
+    {
+      "no": "CO2",
+      "description": "Develop critical thinking and/or observation skills related to alternate energy sources, and apply them to the analysis of a problem or questions related to the environment."
+    },
+    {
+      "no": "CO3",
+      "description": "Demonstrate knowledge of different types of environmental pollution and their influence on the ecosystem."
+    },
+    {
+      "no": "CO4",
+      "description": "Apply ecological knowledge to illustrate and graph a problem and describe the realities that managers face when dealing with complex issues."
+    },
+    {
+      "no": "CO5",
+      "description": "Understand GIS and remote sensing technologies for better assessment of the environment."
+    }
+  ]
+}
+,
+{
+  "id": 109,
+  "subject": "Angular JS (21CSL581)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Develop AngularJS programs using basic features."
+    },
+    {
+      "no": "CO2",
+      "description": "Develop dynamic web applications using AngularJS modules."
+    },
+    {
+      "no": "CO3",
+      "description": "Make use of form validations and controls for interactive applications."
+    },
+    {
+      "no": "CO4",
+      "description": "Apply the concepts of expressions, data bindings, and filters in developing AngularJS programs."
+    },
+    {
+      "no": "CO5",
+      "description": "Make use of modern tools to develop web applications."
+    }
+  ]
+},
+
+
+
+
+
+
+
+
+
+{
+  "id": 111,
+  "subject": "Advanced JAVA Programming (21CS642)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand the fundamental concepts of enumerations and annotations."
+    },
+    {
+      "no": "CO2",
+      "description": "Apply the concepts of generic classes in Java programs."
+    },
+    {
+      "no": "CO3",
+      "description": "Demonstrate the concepts of string operations in Java."
+    },
+    {
+      "no": "CO4",
+      "description": "Develop web-based applications using Java Servlets and JSP."
+    },
+    {
+      "no": "CO5",
+      "description": "Illustrate database interaction and transaction processing in Java."
+    }
+  ]
+},
+{
+  "id": 112,
+  "subject": "Renewable Energy Resources (21EE652)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Outline the causes of energy scarcity and its solutions, energy resources, and availability of renewable energy."
+    },
+    {
+      "no": "CO2",
+      "description": "Classify types of solar collectors, their configurations, solar cell systems, their characteristics, and applications."
+    },
+    {
+      "no": "CO3",
+      "description": "Explain generation of energy from hydrogen, wind, geothermal systems, solid waste, and agricultural refuse."
+    },
+    {
+      "no": "CO4",
+      "description": "Outline the production of energy from biomass, biogas, and tidal energy resources."
+    },
+    {
+      "no": "CO5",
+      "description": "Summarize sea wave energy and ocean thermal energy."
+    }
+  ]
+},
+
+{
+  "id": 113,
+  "subject": "Software Engineering and Project Management (21CS61)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand the activities involved in software engineering and analyze the role of various process models."
+    },
+    {
+      "no": "CO2",
+      "description": "Explain the necessity of knowing the requirements, then analyze and design the software."
+    },
+    {
+      "no": "CO3",
+      "description": "Understand the agile development methods used in developing software."
+    },
+    {
+      "no": "CO4",
+      "description": "Illustrate the role of project planning and management in software development."
+    },
+    {
+      "no": "CO5",
+      "description": "Understand the importance of quality management methods in software engineering."
+    }
+  ]
+},
+{
+  "id": 114,
+  "subject": "Data Science and its Applications (21AD62)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Identify and demonstrate data using visualization tools."
+    },
+    {
+      "no": "CO2",
+      "description": "Make use of statistical hypothesis tests to choose the properties of data, curate, and manipulate data."
+    },
+    {
+      "no": "CO3",
+      "description": "Utilize the skills of machine learning algorithms and techniques to develop models."
+    },
+    {
+      "no": "CO4",
+      "description": "Demonstrate the construction of decision trees and data partitioning using clustering."
+    },
+    {
+      "no": "CO5",
+      "description": "Experiment with social network analysis and make use of natural language processing skills to develop data-driven applications."
+    }
+  ]
+}
+,
+{
+  "id": 115,
+  "subject": "Machine Learning (21AI63)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand the concepts of machine learning and concept learning."
+    },
+    {
+      "no": "CO2",
+      "description": "Illustrate various classification algorithms for real-world datasets."
+    },
+    {
+      "no": "CO3",
+      "description": "Apply various training models like regression and support vector machines to solve real-time problems."
+    },
+    {
+      "no": "CO4",
+      "description": "Apply decision tree approaches for decision-making, ensemble learning, and random forest to improve predictive performance and robustness."
+    },
+    {
+      "no": "CO5",
+      "description": "Apply Bayesian methods for decision-making, inference, and optimization in various machine learning and data-driven applications."
+    }
+  ]
+},
+{
+  "id": 116,
+  "subject": "Machine Learning Laboratory (21AIL66)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Analyze the fundamental principles underlying concept learning algorithms, focusing on the Find-S algorithm and the Candidate Elimination algorithm."
+    },
+    {
+      "no": "CO2",
+      "description": "Apply supervised learning methods, including decision trees and artificial neural networks (ANN), to develop predictive models."
+    },
+    {
+      "no": "CO3",
+      "description": "Apply concepts and models such as the Naive Bayes classifier and Bayesian belief networks to solve both classification and regression tasks."
+    },
+    {
+      "no": "CO4",
+      "description": "Apply unsupervised learning techniques like K-means clustering and hierarchical clustering to make predictions and analyze classification results using the K-nearest neighbors (KNN) algorithm."
+    },
+    {
+      "no": "CO5",
+      "description": "Apply the concepts of regression and classification algorithm techniques such as non-parametric locally weighted regression and support vector machines."
+    }
+  ]
+},
+{
+  "id": 117,
+  "subject": "Mini Project (21AIMP67)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Work effectively in teams to design and implement software systems, and effectively manage conflicts, optimize resources, and meet deadlines."
+    },
+    {
+      "no": "CO2",
+      "description": "Develop solutions for the framed problem statement."
+    },
+    {
+      "no": "CO3",
+      "description": "Design and implement the software and evaluate the solution to meet project objectives."
+    },
+    {
+      "no": "CO4",
+      "description": "Test and analyze the modules of the planned project."
+    },
+    {
+      "no": "CO5",
+      "description": "Demonstrate the ability to write clear system documentation, user documentation, and reports."
+    }
+  ]
+},
+
+{
+  "id": 118,
+  "subject": "Innovation/Entrepreneurship/Societal Internship (21INT68)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Relate the hypothesis and basic knowledge acquired and apply them to real-world scenarios."
+    },
+    {
+      "no": "CO2",
+      "description": "Identify societal challenges and develop solutions to alleviate these social problems through immersion, design, and technology."
+    },
+    {
+      "no": "CO3",
+      "description": "Demonstrate evidence of increased content knowledge gained through practical experience."
+    },
+    {
+      "no": "CO4",
+      "description": "Demonstrate professional values by satisfying requirements and code of conduct of industrial practices."
+    },
+    {
+      "no": "CO5",
+      "description": "Develop individual responsibility and skills important for time management, discipline, self-learning, and effective communication."
+    }
+  ]
+},
+
+
+
+
+
+
+
+
+
+{
+  "id": 119,
+  "subject": "Full Stack Development (21AI733)",
+  "semester": "VII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Demonstrate web applications using Django web framework."
+    },
+    {
+      "no": "CO2",
+      "description": "Develop web applications using Django’s template system and model."
+    },
+    {
+      "no": "CO3",
+      "description": "Build full stack web applications using admin interface and forms."
+    },
+    {
+      "no": "CO4",
+      "description": "Utilize Django framework libraries to handle content generation and data security."
+    },
+    {
+      "no": "CO5",
+      "description": "Develop responsive web applications with Django, integrating jQuery and AJAX."
+    }
+  ]
+},
+{
+  "id": 120,
+  "subject": "Robotic Process Automation Design and Development (21CS744)",
+  "semester": "VII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand the basic concepts of RPA."
+    },
+    {
+      "no": "CO2",
+      "description": "Describe various components and platforms of RPA."
+    },
+    {
+      "no": "CO3",
+      "description": "Describe the different types of variables, control flow, and data manipulation techniques."
+    },
+    {
+      "no": "CO4",
+      "description": "Understand various control techniques and OCR in RPA."
+    },
+    {
+      "no": "CO5",
+      "description": "Describe various types and strategies to handle exceptions."
+    }
+  ]
+},
+{
+  "id": 121,
+  "subject": "Non-Traditional Machining (21ME751)",
+  "semester": "VII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Compare traditional and non-traditional machining processes and recognize the need for non-traditional machining processes."
+    },
+    {
+      "no": "CO2",
+      "description": "Understand the constructional features, performance parameters, process characteristics, applications, advantages, and limitations of USM, AJM, and WJM."
+    },
+    {
+      "no": "CO3",
+      "description": "Identify the need for chemical and electro-chemical machining processes along with their constructional features, process parameters, process characteristics, applications, advantages, and limitations."
+    },
+    {
+      "no": "CO4",
+      "description": "Understand the constructional features of the equipment, process parameters, process characteristics, applications, advantages, and limitations of EDM and PAM."
+    },
+    {
+      "no": "CO5",
+      "description": "Understand the LBM equipment, LBM parameters, and characteristics; EBM equipment and mechanism of metal removal, applications, advantages, and limitations of LBM and EBM."
+    }
+  ]
+},
+{
+  "id": 122,
+  "subject": "Advanced AI and ML (21AI71)",
+  "semester": "VII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand the principles of intelligent agents and their role in problem-solving scenarios such as game playing."
+    },
+    {
+      "no": "CO2",
+      "description": "Apply probabilistic reasoning techniques to manage uncertainty in decision-making processes."
+    },
+    {
+      "no": "CO3",
+      "description": "Analyze neural networks and genetic algorithms by identifying their components and mechanisms for machine learning applications."
+    },
+    {
+      "no": "CO4",
+      "description": "Apply recommender systems and text analytics techniques to solve practical machine learning problems."
+    },
+    {
+      "no": "CO5",
+      "description": "Apply clustering and instance-based learning algorithms to classify and analyze real-world data."
+    }
+  ]
+},
+{
+  "id": 123,
+  "subject": "Cloud Computing (21CS72)",
+  "semester": "VII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand and analyze various cloud computing platforms and service providers."
+    },
+    {
+      "no": "CO2",
+      "description": "Illustrate various virtualization concepts."
+    },
+    {
+      "no": "CO3",
+      "description": "Identify the architecture, infrastructure, and delivery models of cloud computing."
+    },
+    {
+      "no": "CO4",
+      "description": "Understand the security aspects of cloud computing."
+    },
+    {
+      "no": "CO5",
+      "description": "Define platforms for development of cloud applications."
+    }
+  ]
+}
+,
+{
+  "id": 124,
+  "subject": "Technical Seminar (21AI81)",
+  "semester": "VIII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Engage in activities of reading from various disciplines and conduct study to address broad issues in real life beyond their major subject."
+    },
+    {
+      "no": "CO2",
+      "description": "Cultivate critical thinking, encourage research, analysis, and discussion, and foster the ability to accept critiques from peers and superiors."
+    },
+    {
+      "no": "CO3",
+      "description": "Compose text independently around a subject of their choice, thereby developing drafting skills."
+    },
+    {
+      "no": "CO4",
+      "description": "Explore a topic rigorously, enhancing research, writing, logical reasoning, and presentation skills."
+    },
+    {
+      "no": "CO5",
+      "description": "Promote independent learning by refining, adapting, and constructing arguments for professional presentation and critical review by peers and faculty."
+    }
+  ]
+},
+{
+  "id": 125,
+  "subject": "Research Internship/Industry Internship (21INT82)",
+  "semester": "VIII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Students gain hands-on experience with tools, technologies, and processes relevant to their engineering discipline."
+    },
+    {
+      "no": "CO2",
+      "description": "Internships make students more attractive to potential employers by providing practical experience and industry exposure."
+    },
+    {
+      "no": "CO3",
+      "description": "Students learn to identify, analyze, and solve engineering challenges faced by industries."
+    },
+    {
+      "no": "CO4",
+      "description": "Internships help students build confidence in their abilities and prepare them for the transition from academia to the professional world."
+    },
+    {
+      "no": "CO5",
+      "description": "Students gain insights into various career paths, helping them make informed decisions about their future roles and specializations."
+    }
+  ]
+},
+{
+  "id": 126,
+  "subject": "Yoga (21YO83)",
+  "semester": "VIII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand the aim and objectives of Yoga, prayer with meaning, definitions, and importance."
+    },
+    {
+      "no": "CO2",
+      "description": "Understand and follow the rules during yogic practices."
+    },
+    {
+      "no": "CO3",
+      "description": "Perform Suryanamaskar with prayer, knowing its importance and benefits."
+    },
+    {
+      "no": "CO4",
+      "description": "Perform different types of asanas in various forms, knowing their name, technique, precautionary measures, and benefits."
+    },
+    {
+      "no": "CO5",
+      "description": "Perform Kapalabhati and Pranayama, knowing their name, technique, precautionary measures, and benefits."
+    }
+  ]
+},
+{
+  "id": 127,
+  "subject": "National Service Scheme (21NS83)",
+  "semester": "VIII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand the importance of his/her responsibilities towards society."
+    },
+    {
+      "no": "CO2",
+      "description": "Analyze the environmental and societal problems/issues and design solutions for the same."
+    },
+    {
+      "no": "CO3",
+      "description": "Evaluate the existing system and propose practical solutions for sustainable development."
+    },
+    {
+      "no": "CO4",
+      "description": "Illustrate the government schemes offered for the community in the field of health, education, agriculture, etc."
+    },
+    {
+      "no": "CO5",
+      "description": "Survey the needs of the societies collaborating with government bodies, NGOs, and local authorities."
+    }
+  ]
+},
+{
+  "id": 128,
+  "subject": "Physical Education (21PE83)",
+  "semester": "VIII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand the fundamental concepts and skills of physical education and fitness."
+    },
+    {
+      "no": "CO2",
+      "description": "Familiarization with athletics for overall growth and development."
+    },
+    {
+      "no": "CO3",
+      "description": "Understand professionalism in physical education and sports."
+    },
+    {
+      "no": "CO4",
+      "description": "Familiarization with group events like football, kabaddi, cricket, and badminton, etc."
+    },
+    {
+      "no": "CO5",
+      "description": "Participate in competitions at regional, state, national, or international levels."
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
