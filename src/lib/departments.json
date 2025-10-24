@@ -7929,7 +7929,14 @@
               "https://www.canaraengineering.in/departments/ai/newsletters/2024-V3-ISSUE1.pdf",
               "https://www.canaraengineering.in/departments/ai/newsletters/2023-V2-ISSUE2-1.pdf",
               "https://www.canaraengineering.in/departments/ai/newsletters/2023-V2-ISSUE1-1.pdf"
-            ]
+            ],
+           "title": [
+  "DARPANA V3 ISSUE 2 - 2024",
+  "DARPANA V3 ISSUE 1 - 2024",
+  "DARPANA V2 ISSUE 2 - 2023",
+  "DARPANA V2 ISSUE 1 - 2023"
+]
+
           }
         ]
       }
@@ -7948,8 +7955,8 @@
           "title": "",
           "desc": "Machine Learning Laboratory (AIL02): The Machine Learning Laboratory is dedicated to providing students with practical experience in developing and applying machine learning algorithms. The lab is equipped with powerful computing resources and software tools for tasks such as data pre-processing, model training, and evaluation. Students can work on real-world datasets and projects to gain insights into machine learning techniques, experiment with different algorithms, and evaluate their performance. Academic Labs: Python Programming, Machine Learning.",
           "methodes": "",
-          "points": [],
-          "imageUrl": "https://www.canaraengineering.in/departments/ai/labpics/AIL02.jpeg"
+          "points": []
+          
         },
         {
           "title": "",

@@ -86,15 +86,16 @@
     ]
   },
     "iso": [
+        {
+        "title": "ISO 21001:2018",
+        "links": [{ "text": "View ISO 21001:2018", "href": "/mandatory/iso/ISO New certificate- 1 21001 EOMS.pdf" }]
+      },
        {
         "title": "ISO 9001:2015",
-        "links": [{ "text": "View ISO 9001:2015", "href": "https://canaraengineering.in/ISO2015.pdf" }]
-      },
-      
-      {
-        "title": "ISO 21001:2018",
-        "links": [{ "text": "View ISO 21001:2018", "href": "https://canaraengineering.in/ISO2018.pdf" }]
+        "links": [{ "text": "View ISO 9001:2015", "href": "/mandatory/iso/ISO New certificate -I 9001 QMS.pdf" }]
       }
+      
+     
      
     ]
   },
