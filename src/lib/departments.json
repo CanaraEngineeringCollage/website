@@ -14899,7 +14899,7 @@
 },
 
     "courseOutcome": {
-      "2020-21": [
+      "2020-2021": [
         {
           "id": 1,
           "subject": "CALCULUS AND LINEAR ALGEBRA (18MAT11)",
@@ -16609,6 +16609,3476 @@
             }
           ]
         }
+      ],
+
+      "2019-2020":[
+        {
+  "id": 1,
+  "subject": "Calculus and Linear Algebra (18MAT11)",
+  "semester": "I",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "On Completion Of This Course, Students Are Able To: Apply The Knowledge Of Calculus To Solve Problems Related To Polar Curves And Its Applications In Determining The Bentness Of A Curve."
+    },
+    {
+      "no": "CO2",
+      "description": "Learn The Notion Of Partial Differentiation To Calculate Rates Of Change Of Multivariate Functions And Solve Problems Related To Composite Functions And Jacobians"
+    },
+    {
+      "no": "CO3",
+      "description": "Apply The Concept Of Change Of Order Of Integration And Variables To Evaluate Multiple Integrals And Their Usage In Computing The Area And Volumes."
+    },
+    {
+      "no": "CO4",
+      "description": "Solve First Order Linear/nonlinear Differential Equation Analytically Using Standard Methods"
+    },
+    {
+      "no": "CO5",
+      "description": "Make Use Of Matrix Theory For Solving System Of Linear Equations And Compute Eigenvalues And Eigenvectors Required For Matrix Diagonalization Process."
+    }
+  ]
+},
+{
+  "id": 2,
+  "subject": "ENGINEERING CHEMISTRY (18CHE12)",
+  "semester": "I",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Use Of Free Energy In Equilibria, Rationalize Bulk Properties And Processes Using Thermodynamic Considerations, Electrochemical Energy Systems."
+    },
+    {
+      "no": "CO2",
+      "description": "Causes And Effects Of Corrosion Of Metals And Control Of Corrosion, Modification Of Surface Properties Of Metals To Develop Resistance To Corrosion, Wear, Tear, Impact Etc. By Electroplating And Electroless Plating."
+    },
+    {
+      "no": "CO3",
+      "description": "Production And Consumption Of Energy For Industrialization Of Country And Living Standards Of People. Electrochemical And Concentration Cells, Classical Modern Batteries And Fuel Cells, Utilization Of Solar Energy For Different Useful Forms Of Energy."
+    },
+    {
+      "no": "CO4",
+      "description": "Environmental Pollution, Waste Management And Water Chemistry."
+    },
+    {
+      "no": "CO5",
+      "description": "Different Techniques Of Instrumental Methods Of Analysis, Fundamental Principles Of Nano Materials."
+    }
+  ]
+},
+{
+  "id": 3,
+  "subject": "C PROGRAMMING FOR PROBLEM SOLVING (18CPS13)",
+  "semester": "I",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Explain The Computer Hardware And Software Concepts Of Computer And Fundamentals Of ‘c’ Language"
+    },
+    {
+      "no": "CO2",
+      "description": "Construct Programming Solution Using I/o Operations Conditional Branching And Loops Statements"
+    },
+    {
+      "no": "CO3",
+      "description": "Explain And Write Programs Using Arrays And Strings"
+    },
+    {
+      "no": "CO4",
+      "description": "Explain And Write Programs Using Functions"
+    },
+    {
+      "no": "CO5",
+      "description": "Define, describe, And Explain A Pointers, Structures"
+    }
+  ]
+},
+{
+  "id": 4,
+  "subject": "BASIC ELECTRONICS (18ELN14)",
+  "semester": "I",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Students Will Be Able To Describe The Working Of Diode And Its Applications In Rectifiers, Filters And Regulator Circuits."
+    },
+    {
+      "no": "CO2",
+      "description": "Students Will Be Able To Describe The Working Of Fet And Scr And Its Characteristics."
+    },
+    {
+      "no": "CO3",
+      "description": "Students Will Be Able To Describe Working Of Op-amps Through Simple Circuits Like Amplifiers (inverting And Non Inverting), Comparators, Adders, Integrators And Differentiators."
+    },
+    {
+      "no": "CO4",
+      "description": "Students Will Be Able To Describe The Working Of Bipolar Junction Transistor And Its Biasing Methods To Design Amplifiers. Also Understand The Working Of Oscillation Using Oscillator Circuits."
+    },
+    {
+      "no": "CO5",
+      "description": "Students Will Be Able To Describe The Different Number System And Their Conversions And Construct Simple Combinational And Sequential Logic Circuits Using Flip-flops. And Also Understand The Basic Principle Of Communication System And Mobile Phones."
+    }
+  ]
+},
+{
+  "id": 5,
+  "subject": "ELEMENTS OF MECHANICAL ENGINEERING (18ME15)",
+  "semester": "I",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Identify Different Sources Of Energy And Their Conversion Process."
+    },
+    {
+      "no": "CO2",
+      "description": "Explain The Working Principle Of Hydraulic Turbines, Pumps, Ic Engines And Refrigeration."
+    },
+    {
+      "no": "CO3",
+      "description": "Recognize Various Metal Joining Processes And Power Transmission Elements."
+    },
+    {
+      "no": "CO4",
+      "description": "Understand The Properties Of Common Engineering Materials And Their Applications In Engineering Industry."
+    },
+    {
+      "no": "CO5",
+      "description": "Discuss The Working Of Conventional Machine Tools, Machining Processes, Tools And Accessories And Describe The Advanced Manufacturing Systems"
+    }
+  ]
+},
+{
+  "id": 6,
+  "subject": "ENGINEERING CHEMISTRY LABORATORY (18CHEL16)",
+  "semester": "I",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Conduct Scheduled Experiments To Provide Knowledge Of Handling Different Types Of Instruments For Analysis Of Materials And Carrying Out Different Types Of Titrations For Estimation Of Materials. (conducting Experiments)"
+    },
+    {
+      "no": "CO2",
+      "description": "Calculation Of Experimental Data And Conclusion. (result Analysis)"
+    },
+    {
+      "no": "CO3",
+      "description": "Express The Theoretical Aspects Used In Conducting Different Experiments Of Engineering Chemistry Lab (viva Voce)"
+    },
+    {
+      "no": "CO4",
+      "description": "Record Experimental Process And Results. (record Writing)"
+    },
+    {
+      "no": "CO5",
+      "description": "Conduct Any Given Experiment In Engineering Chemistry Lab And Communicate Results Effectively (internal Assessment)"
+    }
+  ]
+},
+
+{
+  "id": 7,
+  "subject": "C PROGRAMMING LABORATORY (18CPL17)",
+  "semester": "I",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Identify The Computer Hardware And Programming Environment. Develop And Execute Programs By Understanding The Concepts Of C Programming Language."
+    },
+    {
+      "no": "CO2",
+      "description": "Analyse And Present Experimental Results For Given Input."
+    },
+    {
+      "no": "CO3",
+      "description": "Express The Theoretical Aspects Used In Conducting Different Experiments Of Computer Programming Laboratory."
+    },
+    {
+      "no": "CO4",
+      "description": "Record The Architecture Of Computer And Programs Experimental Process With Results Obtained Along With Flowcharts And Algorithms."
+    },
+    {
+      "no": "CO5",
+      "description": "Conduct Allotted Experiment In Computer Programming Laboratory And Communicate Results Effectively."
+    }
+  ]
+},
+{
+  "id": 8,
+  "subject": "TECHNICAL ENGLISH-I (18EGH18)",
+  "semester": "I",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Students Will Be Able To Identify The Nuances Of Phonetics And Flawless Pronunciation"
+    },
+    {
+      "no": "CO2",
+      "description": "Implement English Vocabulary At Command And Language Proficiency"
+    },
+    {
+      "no": "CO3",
+      "description": "Identify Common Errors In Spoken And Written Communication"
+    },
+    {
+      "no": "CO4",
+      "description": "Enables To Understand And Improve Non Verbal Communication"
+    },
+    {
+      "no": "CO5",
+      "description": "Perform Well In Campus Recruitment And Other Exams"
+    }
+  ]
+},
+
+
+
+
+
+
+{
+  "id": 1,
+  "subject": "ADVANCED CALCULUS AND NUMERICAL METHODS (18MAT21)",
+  "semester": "II",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Illustrate The Applications Of Multivariate Calculus To Understand The Solenoidal And Irrotational Vectors And Also Exhibit The Inter Dependence Of Line, Surface And Volume Integrals."
+    },
+    {
+      "no": "CO2",
+      "description": "Demonstrate Various Physical Models Through Higher Order Differential Equations And Solve Such Linear Ordinary Differential Equations."
+    },
+    {
+      "no": "CO3",
+      "description": "Construct A Variety Of Partial Differential Equations And Solution By Exact Methods/method Of Separation Of Variables"
+    },
+    {
+      "no": "CO4",
+      "description": "Explain The Applications Of Infinite Series And Obtain Series Solution Of Ordinary Differential Equations."
+    },
+    {
+      "no": "CO5",
+      "description": "Apply The Knowledge Of Numerical Methods In The Modeling Of Various Physical And Engineering Phenomena"
+    }
+  ]
+},
+{
+  "id": 2,
+  "subject": "ENGINEERING PHYSICS (18PHY22)",
+  "semester": "II",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand Various Types Of Oscillations And Their Implications, Role Of Shock Waves In Various Fields"
+    },
+    {
+      "no": "CO2",
+      "description": "Recognize Elastic Properties Of Materials For Engineering Applications"
+    },
+    {
+      "no": "CO3",
+      "description": "Realize Interrelation Between Varying Electric And Magnetic Fields, Transverse Nature Of Emw And Their Role In Optical Fiber Communication"
+    },
+    {
+      "no": "CO4",
+      "description": "Compute Eigen Values, Eigen Functions, Momentum Of Atomic And Subatomic Particles Using Time Independent 1-d Schrodinger Wave Equation. Background Of Laser, Construction, Working, Applications In Different Fields"
+    },
+    {
+      "no": "CO5",
+      "description": "Understand Various Electrical And Thermal Properties Of Materials Like Conductors, Semiconductors And Dielectrics Using Different Theoretical Models"
+    }
+  ]
+},
+{
+  "id": 3,
+  "subject": "BASIC ELECTRICAL ENGINEERING (18ELE23)",
+  "semester": "II",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Understand And Analyse D.c A.c Electric Circuits"
+    },
+    {
+      "no": "CO2",
+      "description": "Aquire The Knowledge Of Fundamental Of A.c.circuits And Behaviour Of R-l-c- Combination And Three Phase Balanced Circuits"
+    },
+    {
+      "no": "CO3",
+      "description": "To Understand The Principle Of Operation And Construction Of Single Phase Transformers And The Concept Of Elecrical Wiring Circuit Protecting Devices And Earthing"
+    },
+    {
+      "no": "CO4",
+      "description": "Principle Of Opeartion And Construction Of D.c.machines"
+    },
+    {
+      "no": "CO5",
+      "description": "To Study The Principle Of Opeartion And Construction Of Three Phase Synchronous Generator And Three Phase Induction Motors"
+    }
+  ]
+},
+{
+  "id": 4,
+  "subject": "ELEMENTS OF CIVIL ENGINEERING AND MECHANICS (18CIV24)",
+  "semester": "II",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Mention The Applications Of Various Fields Of Civil Engineering"
+    },
+    {
+      "no": "CO2",
+      "description": "Compute The Resultant Of Various Force System Under Various Loads"
+    },
+    {
+      "no": "CO3",
+      "description": "Understand Moments, Forces Acting Of Rigid Body And The Concept Of Friction"
+    },
+    {
+      "no": "CO4",
+      "description": "Locate The Centroid And Moment Of Inertia Of Irregular Figures"
+    },
+    {
+      "no": "CO5",
+      "description": "Express And Analyse The Bodies Under Motion"
+    }
+  ]
+},
+{
+  "id": 5,
+  "subject": "ENGINEERING PHYSICS LABORATORY (18PHYL26)",
+  "semester": "II",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Conduct Scheduled Experiments To Learn Experimental Setup And Ecording The Readings Using Measuring Instruments To Understand The Concept Of Engineering Physics"
+    },
+    {
+      "no": "CO2",
+      "description": "Analyse And Interpret Experimental Data And Results."
+    },
+    {
+      "no": "CO3",
+      "description": "Express The Theoretical Aspects Used In Conducting Different Experiments Of Engineering Physics Lab"
+    },
+    {
+      "no": "CO4",
+      "description": "Record Experimental Process And Results."
+    },
+    {
+      "no": "CO5",
+      "description": "Conduct Any Given Experiment In Engineering Physics Laboratory And Communicate Results Effectively"
+    }
+  ]
+},
+{
+  "id": 6,
+  "subject": "ENGINEERING GRAPHICS (18EGDL25)",
+  "semester": "II",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Prepare Engineering Drawings As Per Bis Conventions Mentioned In The Relevant Codes."
+    },
+    {
+      "no": "CO2",
+      "description": "Produce Computer Generated Drawings Using Cad Software."
+    },
+    {
+      "no": "CO3",
+      "description": "Use The Knowledge Of Orthographic Projections To Represent Engineering Information / Concepts And Present The Same In The Form Of Drawings."
+    },
+    {
+      "no": "CO4",
+      "description": "Develop Isometric Drawings Of Simple Objects Reading The Orthographic Projections Of Those Objects."
+    },
+    {
+      "no": "CO5",
+      "description": "Convert Pictorial And Isometric Views Of Simple Objects To Orthographic Views."
+    }
+  ]
+},
+
+{
+  "id": 7,
+  "subject": "BASIC ELECTRICAL ENGINEERING LABORATORY (18ELEL27)",
+  "semester": "II",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Conduct/execute/identify Scheduled Experiments Of A.c & D.c Circuits Of Basic Electrical Engineering"
+    },
+    {
+      "no": "CO2",
+      "description": "Analyse & Interpret The Experimental Data And Results."
+    },
+    {
+      "no": "CO3",
+      "description": "Express The Theoretical Aspects Used In Different Experiments Of Basic Electrical Engineering."
+    },
+    {
+      "no": "CO4",
+      "description": "Record The Experimental Process & Results."
+    },
+    {
+      "no": "CO5",
+      "description": "Conduct Any Given Experiment In Basic Electrical Engineering Laboratory And Communicate Results Effectively"
+    }
+  ]
+},
+{
+  "id": 8,
+  "subject": "TECHNICAL ENGLISH-II (18EGH28)",
+  "semester": "II",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Understand The Importance Of Communication"
+    },
+    {
+      "no": "CO2",
+      "description": "Learn The Accent And Phonetics To Improve The Communication Skills."
+    },
+    {
+      "no": "CO3",
+      "description": "To Learn About The Intonation, Stress In English Language"
+    },
+    {
+      "no": "CO4",
+      "description": "Understand And Practice The Speaking Skills."
+    },
+    {
+      "no": "CO5",
+      "description": "Perform Well In Interviews With Communication Skills."
+    }
+  ]
+},
+
+
+
+
+
+
+
+{
+  "id": 1,
+  "subject": "Transform calculus, fourier series and Numerical techniques (18MAT31)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Use Laplace Transform And Inverse Laplace Transform In Solving Differential/ Integral Equation Arising In Network Analysis, Control Systems And Other Fields Of Engineering."
+    },
+    {
+      "no": "CO2",
+      "description": "Demonstrate Fourier Series To Study The Behaviour Of Periodic Functions And Their Applications In System Communications, Digital Signal Processing And Field Theory."
+    },
+    {
+      "no": "CO3",
+      "description": "Make Use Of Fourier Transform And Z-transform To Illustrate Discrete/continuous Function Arising In Wave And Heat Propagation, Signals And Systems."
+    },
+    {
+      "no": "CO4",
+      "description": "Solve First Order Ordinary Differential Equations Arising In Engineering Problems Using Single Step And Multistep Numerical Methods."
+    },
+    {
+      "no": "CO5",
+      "description": "Solve Second Order Ordinary Differential Equations Arising In Engineering Problems Using Single Step And Multistep Numerical Methods. Determine The Extremals Of Functionals Using Calculus Of Variations And Solve Problems Arising In Dynamics Of Rigid Body."
+    }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Mechanics of Materials (18ME32)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Determine Stresses, Strains And Their Relations In Various Bars. Understanding The Relationship Between Elastic Constants And Poisson’s Ratio."
+    },
+    {
+      "no": "CO2",
+      "description": "Determine Plane Stress, Principal Stress, Maximum Shear Stress And Their Orientations Using Analytical Method And Mohr’s Circle, And Also Stress Distribution In Thick And Thin Cylinders."
+    },
+    {
+      "no": "CO3",
+      "description": "Draw Sfd And Bmd For Different Loads On Different Types Of Beams. Determine Shear Stress And Bending Stresses For Various Cross Sections In Beams."
+    },
+    {
+      "no": "CO4",
+      "description": "To Understand Different Theories Of Failure And Torsional Moments"
+    },
+    {
+      "no": "CO5",
+      "description": "To Expose The Students To Concepts Of Buckling Of Columns And Strain Energy."
+    }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Basic Thermodynamics (18ME33)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Explain Thermodynamic Systems, Properties, Zeroth Law Of Thermodynamics, Temperature Scales And Energy Interactions."
+    },
+    {
+      "no": "CO2",
+      "description": "Understand Different Types Of Work, Displacement Work For Various Processes. Understand Heat. Understand The Basics Of First And Second Law Of Thermodynamics. Steady Flow Energy Equation And Its Applications. Concept Of Refrigeration And Heat Pump."
+    },
+    {
+      "no": "CO3",
+      "description": "Understand The Second Law Of Thermodynamics. Concept Of Refrigeration And Heat Pump. Understand The Concept Of Entropy From Second Law Of Thermodynamics, Change Of Entropy Of The System And Universe. Principle Of Increase Of Entropy."
+    },
+    {
+      "no": "CO4",
+      "description": "Availability, Unavailable Energy, Relation Between Increase In Unavailable Energy And Increase In Entropy. Maximum Work, Irreversibility, Second Law Efficiency. Water As Pure Substance, Property Diagrams, Measurement Of Dryness Fraction."
+    },
+    {
+      "no": "CO5",
+      "description": "Study Of Ideal Gases. Psychrometric Properties. Calculate Thermodynamics Properties Of Real Gases At All Ranges Of Pressure, Temperatures Using Modified Equation Of State Including Vander Waals Equation, Redlich Wong Equation And Beattie-Bridgeman Equation."
+    }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Material Science (18ME34)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand The Mechanical Properties Of Metals And Their Alloys."
+    },
+    {
+      "no": "CO2",
+      "description": "Analyze The Various Modes Of Failure And Understand The Microstructures Of Ferrous And Nonferrous Materials."
+    },
+    {
+      "no": "CO3",
+      "description": "Describe The Processes Of Heat Treatment Of Various Alloys."
+    },
+    {
+      "no": "CO4",
+      "description": "Acquire The Knowledge Of Composite Materials And Their Production Process As Well As Applications."
+    },
+    {
+      "no": "CO5",
+      "description": "Understand The Properties And Potentialities Of Various Materials Available And Material Selection Procedures."
+    }
+  ]
+},
+
+{
+  "id": 5,
+  "subject": "Constitution of India, Professional Ethics and Cyber Law (18CPC39)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Know The Fundamental Political Codes, Structure, Procedures, Powers, And Duties Of Indian Government Institutions, Fundamental Rights, Directive Principles, And The Duties Of Citizens"
+    },
+    {
+      "no": "CO2",
+      "description": "To Have Literacy And Understanding Of The Constitutional Election Process"
+    },
+    {
+      "no": "CO3",
+      "description": "To Have Constitutional Legal Literacy And Understand The Functioning Of The Indian Judicial System"
+    },
+    {
+      "no": "CO4",
+      "description": "Understand Engineering Ethics And Their Responsibilities; Identify Their Individual Roles And Ethical Responsibilities Towards Society."
+    },
+    {
+      "no": "CO5",
+      "description": "Know About The Cybercrimes And Cyber Laws For Cyber Safety Measures."
+    }
+  ]
+},
+{
+  "id": 6,
+  "subject": "Metal Casting and Welding (18ME35B)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Students Will Be Able To Define And Compare Different Manufacturing Process And Also To Illustrate The Casting Technology."
+    },
+    {
+      "no": "CO2",
+      "description": "Students Will Gain Abreast Knowledge On Different Types Of Sand, Pattern, Pattern Allowances And Other Various Casting Tools, Equipments."
+    },
+    {
+      "no": "CO3",
+      "description": "Students Will Be Able To Explain Metal Melting And Casting Technology And Equipments Used For It."
+    },
+    {
+      "no": "CO4",
+      "description": "Students Will Be Able To Demonstrate The Permanent Metal Joining Process Such As Welding, Brazing And Soldering"
+    },
+    {
+      "no": "CO5",
+      "description": "Students Will Be Able To Apply Engineering Knowledge For Ndt And Metallurgical Inspection Of Welded Metal Joints"
+    }
+  ]
+},
+{
+  "id": 7,
+  "subject": "Mechanical Measurements and Metrology (18ME36B)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Students Will Be Able Define And Explain The Fundamental Concepts Of Metrology And Use Of Various Standards"
+    },
+    {
+      "no": "CO2",
+      "description": "Students Will Be Able To Demonstrate Systems Of Limits, Fits, Tolerances, Gauging And Interchangeability"
+    },
+    {
+      "no": "CO3",
+      "description": "Students Will Be Able To Illustrate The Working Principles Of Various Comparators And Measuring Devices For Physical Quantities Such As Angle, Gear And Screw Thread Parameters"
+    },
+    {
+      "no": "CO4",
+      "description": "Students Will Gain Knowledge To Define And Explain Measurement Concepts With Generalized Measurement System As Well As Working Of Components Used In It."
+    },
+    {
+      "no": "CO5",
+      "description": "Students Will Be Able To Demonstrate The Working Of Force, Torque, Pressure, Temperature And Strain Measuring Devices"
+    }
+  ]
+},
+{
+  "id": 8,
+  "subject": "Mechanical Measurements and Metrology Laboratory (18MEL37B)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Conduct Scheduled Experiments To Calibrate And Demonstrate Usage Of Different Gauges And Measuring Instruments To Understand The Concept Of Mechanical Measurements."
+    },
+    {
+      "no": "CO2",
+      "description": "Analyse And Interpret Experimental Data And Results."
+    },
+    {
+      "no": "CO3",
+      "description": "Express The Theoretical Aspects Used In Conducting Different Experiments Of Mechanical Measurement."
+    },
+    {
+      "no": "CO4",
+      "description": "Record Experimental Process And Results."
+    },
+    {
+      "no": "CO5",
+      "description": "Conduct Any Given Experiment In Mechanical Measurement Laboratory And Communicate Results Effectively."
+    }
+  ]
+},
+{
+  "id": 9,
+  "subject": "Foundry, Forging and Welding Laboratory (18MEL38B)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Introduce Students To Foundry, Forging And Welding Tools And Their Applications."
+    },
+    {
+      "no": "CO2",
+      "description": "To Demonstrate To Students, Models Of Foundry, Using Tools."
+    },
+    {
+      "no": "CO3",
+      "description": "To Demonstrate To Students, Models Of Forging, Using Tools."
+    },
+    {
+      "no": "CO4",
+      "description": "To Demonstrate To Students, Models Of Welding, Using Tools."
+    },
+    {
+      "no": "CO5",
+      "description": "To Introduce Students To Different Sand Tests To Understand Properties."
+    }
+  ]
+},
+
+
+
+
+
+
+
+{
+  "id": 1,
+  "subject": "Applied Thermodynamics (18ME42)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Students Will Have A Working Knowledge Of Performance Of Air Standard Cycles And The Phenomenon Of Combustion In Si And Ci Engines."
+    },
+    {
+      "no": "CO2",
+      "description": "Students Will Have An Understanding Of Evaluation Of The Performance Of Gas Power Cycles And Their Various Engineering Applications."
+    },
+    {
+      "no": "CO3",
+      "description": "Students Will Have An Understanding Of Evaluation Of The Performance Of Vapour Power Cycles And Their Various Engineering Applications."
+    },
+    {
+      "no": "CO4",
+      "description": "Students Will Be Able To Determine Performance Parameters Of Refrigeration And Air-conditioning Systems."
+    },
+    {
+      "no": "CO5",
+      "description": "Students Will Be Able To Evaluate The Performance Parameters Of Reciprocating Air Compressor As A Function Of Receiver Pressure. Also Study Steam Nozzles."
+    }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Kinematics of Machines (18ME44)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Students Will Be Familiar With Terminologies, Definitions And Common Mechanisms Used In Machines And Ability To Understand The Inversions And To Calculate Mobility, Count Rigid Links And Types Of Joints Within Mechanisms"
+    },
+    {
+      "no": "CO2",
+      "description": "Students Will Be Able To Calculate Velocity And Accelerations Of Links Using Graphical Method."
+    },
+    {
+      "no": "CO3",
+      "description": "Students Will Be Able To Calculate Velocity And Accelerations Of Links Using Analytical Method."
+    },
+    {
+      "no": "CO4",
+      "description": "Students Will Be Familiar With Different Gear Terminologies And Gear Train Analysis"
+    },
+    {
+      "no": "CO5",
+      "description": "Students Will Be Able To Design/plot The Profile Of Cams Using Graphical Method And Computing The Velocity And Acceleration."
+    }
+  ]
+},
+
+{
+  "id": 4,
+  "subject": "Aadalitha Kannada (18KAK49)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Read And Understand The Simple Words In Kannada Language"
+    },
+    {
+      "no": "CO2",
+      "description": "To Learn Vyavaharika Kannada (Kannada For Communication)"
+    },
+    {
+      "no": "CO3",
+      "description": "Will Create Some Interest On Kannada Language And Literature"
+    }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Vyavaharika Kannada (18KVK49)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Read And Understand The Simple Words In Kannada Language"
+    },
+    {
+      "no": "CO2",
+      "description": "To Learn Vyavaharika Kannada (Kannada For Communication)"
+    },
+    {
+      "no": "CO3",
+      "description": "Will Create Some Interest On Kannada Language And Literature"
+    }
+  ]
+},
+
+{
+  "id": 6,
+  "subject": "Computer Aided Machine Drawing (18ME46A)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Acquire The Knowledge Of Cad Software And Its Features."
+    },
+    {
+      "no": "CO2",
+      "description": "To Familiarize The Students With Indian Standards On Drawing Practices."
+    },
+    {
+      "no": "CO3",
+      "description": "To Impart Knowledge Of Thread Forms, Fasteners, Keys, Joints And Couplings."
+    },
+    {
+      "no": "CO4",
+      "description": "To Make The Students Understand And Interpret Drawings Of Machine Components Leading To Preparation Of Assembly Drawings Manually And Using Cad Packages"
+    },
+    {
+      "no": "CO5",
+      "description": "To Acquire The Knowledge Of Limits, Tolerance And Fits And Indicate Them On Machine Drawings."
+    }
+  ]
+},
+{
+  "id": 7,
+  "subject": "Material Testing Laboratory (18MEL47A)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Acquire Experimentation Skills In The Field Of Material Testing."
+    },
+    {
+      "no": "CO2",
+      "description": "Develop Theoretical Understanding Of The Mechanical Properties Of Materials By Performing Experiments"
+    },
+    {
+      "no": "CO3",
+      "description": "Apply The Knowledge To Analyse A Material Failure And Determine The Failure Inducing Agent/s."
+    },
+    {
+      "no": "CO4",
+      "description": "Apply The Knowledge Of Testing Methods In Related Areas."
+    },
+    {
+      "no": "CO5",
+      "description": "Understand How To Improve Structure/behaviour Of Materials For Various Industrial Applications."
+    }
+  ]
+},
+{
+  "id": 8,
+  "subject": "Workshop and Machine Shop Practice (18MEL48A)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Guide Students To Use Fitting Tools To Perform Fitting Operations."
+    },
+    {
+      "no": "CO2",
+      "description": "To Provide An Insight To Different Machine Tools, Accessories And Attachments."
+    },
+    {
+      "no": "CO3",
+      "description": "To Train Students Into Fitting And Machining Operations To Enrich Their Practical Skills."
+    },
+    {
+      "no": "CO4",
+      "description": "To Inculcate Team Qualities And Expose Students To Shop Floor Activities."
+    },
+    {
+      "no": "CO5",
+      "description": "To Educate Students About Ethical, Environmental And Safety Standards."
+    }
+  ]
+},
+
+
+
+{
+  "id": 1,
+  "subject": "Management and Economics (18ME51)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand Needs, Functions, Roles, Scope And Evolution Of Management."
+    },
+    {
+      "no": "CO2",
+      "description": "Understand And Discuss Importance, Purpose Of Different Functions Of Management."
+    },
+    {
+      "no": "CO3",
+      "description": "Understand Various Interest Rate Methods And Select The Best Economic Model From Various Available Alternatives"
+    },
+    {
+      "no": "CO4",
+      "description": "Understand The Concepts Of Err, Irr, Marr"
+    },
+    {
+      "no": "CO5",
+      "description": "Estimate Various Depreciation Values Of Commodities And Understand The Different Estimation And Cost Elements."
+    }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Design of Machine Elements I (18ME52)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Students Will Be Able To Describe The Design Process, Choose Materials And Are Conversant With The Codes And Standards In Design And Computing Stresses Developed In Different Types Of Loading."
+    },
+    {
+      "no": "CO2",
+      "description": "Students Will Be Able To Understand And Apply Design Concepts, Theories Of Failures, Factor Of Safety, Stress Concentration Factor, Impact And Fatigue."
+    },
+    {
+      "no": "CO3",
+      "description": "Students Will Be Able To Design Shafts, Joints, Couplings And Keys"
+    },
+    {
+      "no": "CO4",
+      "description": "Students Will Be Able To Design Riveted Brackets/joints And Welded Joints"
+    },
+    {
+      "no": "CO5",
+      "description": "Students Will Be Able To Design Threaded Fasteners And Power Screws"
+    }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Dynamics of Machines (18ME53)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Analyse The Mechanisms For Static And Dynamic Equilibrium."
+    },
+    {
+      "no": "CO2",
+      "description": "Carry Out The Balancing Of Rotating And Reciprocating Masses."
+    },
+    {
+      "no": "CO3",
+      "description": "Analyse Different Types Of Governors Used In Real Life Situation And Analyse The Gyroscopic Effects On Disks, Airplanes, Stability Of Ships, Two And Four Wheelers"
+    },
+    {
+      "no": "CO4",
+      "description": "Understand The Free And Forced Vibration Phenomenon"
+    },
+    {
+      "no": "CO5",
+      "description": "Determine The Natural Frequency, Force And Motion Transmitted In Vibrating Systems"
+    }
+  ]
+},
+
+{
+  "id": 4,
+  "subject": "Turbo Machines (18ME54)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Apply The Knowledge Of Mathematics, Science And Engineering Fundamentals To Identify Formulate And Analyze The Fluid Flow Through Turbo Machine."
+    },
+    {
+      "no": "CO2",
+      "description": "Apply The Knowledge Of Science And Engineering Fundamentals To Identify, Formulate, Design And Analyze The Parameters Of Power Generating And Power Absorbing Turbo Machine"
+    },
+    {
+      "no": "CO3",
+      "description": "Draw And Analyze The Velocity Diagram Of Different Types Of Steam Turbine"
+    },
+    {
+      "no": "CO4",
+      "description": "Design And Analyze The Velocity Diagram Of The Different Types Of Hydraulic Turbine"
+    },
+    {
+      "no": "CO5",
+      "description": "Draw And Analyze The Velocity Diagram Of The Different Types Of Pumps And Compressors"
+    }
+  ]
+},
+
+{
+  "id": 5,
+  "subject": "Fluid Power Engineering (18ME55)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Identify And Analyse The Functional Requirements Of A Fluid Power Transmission System For A Given Application."
+    },
+    {
+      "no": "CO2",
+      "description": "Visualize How A Hydraulic/pneumatic Circuit Will Work To Accomplish The Function."
+    },
+    {
+      "no": "CO3",
+      "description": "Design An Appropriate Hydraulic Or Pneumatic Circuit Or Combination Circuit Like Electro-hydraulics, Electro-pneumatics For A Given Application."
+    },
+    {
+      "no": "CO4",
+      "description": "Select And Size The Different Components Of The Circuit."
+    },
+    {
+      "no": "CO5",
+      "description": "Develop A Comprehensive Circuit Diagram By Integrating The Components Selected For The Given Application."
+    }
+  ]
+},
+{
+  "id": 6,
+  "subject": "Energy Conversion Lab (18MEL58)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Conduct Scheduled Experiments"
+    },
+    {
+      "no": "CO2",
+      "description": "Calculation Upon The Experiment Data And Conclusion"
+    },
+    {
+      "no": "CO3",
+      "description": "Express The Theoretical Aspects Used In Conducting Different Experiments"
+    },
+    {
+      "no": "CO4",
+      "description": "Record The Experimental Procedure And Results"
+    },
+    {
+      "no": "CO5",
+      "description": "Conduct Any Given Experiment And Communicate Results Effectively"
+    }
+  ]
+},
+{
+  "id": 7,
+  "subject": "Environmental Studies (18CIV59)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand The Principles Of Ecology And Environmental Issues That Apply To Air, Land, And Water Issues On A Global Scale"
+    },
+    {
+      "no": "CO2",
+      "description": "Develop Critical Thinking And/or Observation Skills Related To Alternate Energy Sources, And Apply Them To The Analysis Of A Problem Or Questions Related To The Environment"
+    },
+    {
+      "no": "CO3",
+      "description": "Demonstrate The Knowledge Of Different Types Of Environmental Pollution And Their Influence On Ecosystem"
+    },
+    {
+      "no": "CO4",
+      "description": "Apply Their Ecological Knowledge To Illustrate And Graph A Problem And Describe The Realities That Managers Face When Dealing With Complex Issues"
+    },
+    {
+      "no": "CO5",
+      "description": "Understanding Gis And Remote Sensing Technologies For The Better Assessment Of Environment"
+    }
+  ]
+},
+{
+  "id": 8,
+  "subject": "Operations Management (18ME56)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Get Acquainted With Basic Aspects Of Operations Management Like Functions, Production Systems, Productivity And Decision Making."
+    },
+    {
+      "no": "CO2",
+      "description": "To Get Acquainted With Forecasting Methods And Apply Them In Decision Making."
+    },
+    {
+      "no": "CO3",
+      "description": "To Understand Capacity And Location Planning And Techniques To Apply Them In Decision Making."
+    },
+    {
+      "no": "CO4",
+      "description": "To Understand Aggregate Planning And Master Scheduling In Operations Management."
+    },
+    {
+      "no": "CO5",
+      "description": "To Understand Materials Requirement Planning , Purchasing And Supply Chain Management."
+    }
+  ]
+},
+{
+  "id": 9,
+  "subject": "Fluid Mechanics/Machines Lab (18MEL57)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Perform Experiments To Determine The Coefficient Of Discharge Of Flow Measuring Devices."
+    },
+    {
+      "no": "CO2",
+      "description": "Conduct Experiments On Hydraulic Turbines And Pumps To Draw Characteristics."
+    },
+    {
+      "no": "CO3",
+      "description": "Test Basic Performance Parameters Of Hydraulic Turbines And Pumps And Execute The Knowledge In Real Life Situations."
+    },
+    {
+      "no": "CO4",
+      "description": "Determine The Energy Flow Pattern Through The Hydraulic Turbines And Pumps"
+    },
+    {
+      "no": "CO5",
+      "description": "Exhibit His Competency Towards Preventive Maintenance Of Hydraulic Machines"
+    }
+  ]
+},
+
+
+
+
+
+{
+  "id": 1,
+  "subject": "Non-Traditional Machining (18ME641)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand The Compare Traditional And Non-traditional Machining Process And Recognize The Need For Non- Traditional Machining Process."
+    },
+    {
+      "no": "CO2",
+      "description": "Understand The Constructional Features, Performance Parameters, Process Characteristics, Applications, Advantages And Limitations Of Usm, Ajm And Wjm"
+    },
+    {
+      "no": "CO3",
+      "description": "Identify The Need Of Chemical And Electro-chemical Machining Process Along With The Constructional Features, Process Parameters, Process Characteristics, Applications, Advantages And Limitations."
+    },
+    {
+      "no": "CO4",
+      "description": "Understand The Constructional Feature Of The Equipment, Process Parameters, Process Characteristics, Applications, Advantages And Limitations Edm & Pam."
+    },
+    {
+      "no": "CO5",
+      "description": "Understand The Lbm Equipment, Lbm Parameters, And Characteristics. Ebm Equipment And Mechanism Of Metal Removal, Applications, Advantages And Limitations Lbm & Ebm."
+    }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Programming in JAVA (18CS653)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Explain The Object-oriented Concepts And Java."
+    },
+    {
+      "no": "CO2",
+      "description": "Develop Computer Programs To Solve Real World Problems In Java."
+    },
+    {
+      "no": "CO3",
+      "description": "Develop Java Programs Using Object Oriented Concepts."
+    },
+    {
+      "no": "CO4",
+      "description": "Develop Java Program By Importing Of Packages And Exception Handling Mechanism."
+    },
+    {
+      "no": "CO5",
+      "description": "Design And Explain The Operations Of Different String Handling Functions In Java Programming."
+    }
+  ]
+},
+
+{
+  "id": 3,
+  "subject": "Finite Element Methods (18ME61)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand The Concepts Behind Formulation Methods In Fem"
+    },
+    {
+      "no": "CO2",
+      "description": "Identify The Application And Characteristics Of Fea Element Such As Bars, Beams, Plane And Iso-parametric Elements"
+    },
+    {
+      "no": "CO3",
+      "description": "Develop Element Characteristic Equation And Generation Of Global Equation"
+    },
+    {
+      "no": "CO4",
+      "description": "Able To Apply Suitable Boundary Conditions To A Global Equation For Bars, Trusses, Beams, Circular Shafts, Heat Transfer, Fluid Flow"
+    },
+    {
+      "no": "CO5",
+      "description": "Able To Solve Axi Symmetric And Dynamic Problems For Displacements, Stress And Strains Induced"
+    }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Design of Machine Elements II (18ME62)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Students Will Be Able To Design The Mechanical Components Like Belts, Ropes, Springs For Different Applications"
+    },
+    {
+      "no": "CO2",
+      "description": "Students Will Be Able To Design The Mechanical Components: Spur Gears And Helical Gears For Different Applications"
+    },
+    {
+      "no": "CO3",
+      "description": "Students Will Be Able To Design The Mechanical Components: Bevel Gears And Worm Gears For Different Applications"
+    },
+    {
+      "no": "CO4",
+      "description": "Students Will Be Able To Design The Mechanical Components Like Clutches And Brakes For Different Applications"
+    },
+    {
+      "no": "CO5",
+      "description": "Students Will Be Able To Know The Concepts Of Lubrication And Bearings, Design Hydrodynamic Bearings And Select Antifriction Bearings For Different Applications"
+    }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Heat Transfer (18ME63)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Students Will Able To Analyze The Basic Modes Of Heat Transfer, Formulate, Derive And Compute Temperature Distribution In Steady-state Conduction Problems With And Without Heat Generation And Constant And Variable Thermal Conductivity"
+    },
+    {
+      "no": "CO2",
+      "description": "Students Will Able To Understand And Interpret Heat Transfer Through Extended Surfaces And Formulate And Analyze The Data For Unsteady State Heat Conduction"
+    },
+    {
+      "no": "CO3",
+      "description": "Students Will Able To Explain The Principles Of Radiation Heat Transfer And Identify, Formulate And Analyze The Numerical Solution For Heat Conduction And Fluid Flow Problems"
+    },
+    {
+      "no": "CO4",
+      "description": "Students Will Able To Analyze Use The Engineering Correlations For Analyzing And Solving The Heat Convection Problems."
+    },
+    {
+      "no": "CO5",
+      "description": "Students Will Able To Analyze The Different Types Of Heat Exchangers And Heat Transfer With Phase Change"
+    }
+  ]
+},
+{
+  "id": 6,
+  "subject": "Computer Aided Modelling and Analysis Lab (18MEL66)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Able To Classify And Use The Modern Tools To Formulate The Problem, Create Geometry, Discretize, Apply Boundary Conditions."
+    },
+    {
+      "no": "CO2",
+      "description": "Able To Solve Problems Of Bars, Truss, Beams, And Plate To Find Stresses With Different-loading Conditions."
+    },
+    {
+      "no": "CO3",
+      "description": "Able To Demonstrate The Ability To Obtain Deflection Of Beams Subjected To Point, Uniformly Distributed And Varying Loads And Use The Available Results To Draw Shear Force And Bending Moment Diagrams"
+    },
+    {
+      "no": "CO4",
+      "description": "Able To Analyze And Solve 1d And 2d Heat Transfer Conduction And Convection Problems With Different Boundary Conditions"
+    },
+    {
+      "no": "CO5",
+      "description": "Able To Carry Out Dynamic Analysis And Finding Natural Frequencies Of Beams, Plates, And Bars For Various Boundary Conditions And Also Carry Out Dynamic Analysis With Forcing Functions"
+    }
+  ]
+},
+{
+  "id": 7,
+  "subject": "Heat Transfer Lab (18MEL67)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Determine The Thermal Conductivity Of A Metal Rod And Overall Heat Transfer Coefficient Of Composite Slabs."
+    },
+    {
+      "no": "CO2",
+      "description": "Determine Convective Heat Transfer Coefficient For Free And Forced Convection And Correlate With Theoretical Values."
+    },
+    {
+      "no": "CO3",
+      "description": "Evaluate Temperature Distribution Characteristics Of Steady And Transient Heat Conduction Through Solid Cylinder Experimentally."
+    },
+    {
+      "no": "CO4",
+      "description": "Determine Surface Emissivity Of A Test Plate And Stefan Boltzmann Constant"
+    },
+    {
+      "no": "CO5",
+      "description": "Estimate Performance Of A Refrigerator And Effectiveness Of A Fin And Double Pipe Heat Exchanger"
+    }
+  ]
+},
+{
+  "id": 8,
+  "subject": "Mini-project (18MEMP68)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Carry Out Literature Review, Formulate/ Define Objectives And Methodologies To Be Followed To Successful Completion The Mini Projects In Stipulated Time"
+    },
+    {
+      "no": "CO2",
+      "description": "Able To Design A Systems, Components And Experiments For The Mini Project Using Modern Tools"
+    },
+    {
+      "no": "CO3",
+      "description": "Able To Develop Prototype Models/ Carry Out Fabrication/experimentation And Analyze The Data"
+    },
+    {
+      "no": "CO4",
+      "description": "Demonstrate Engineering And Management Skills, Communicate Effectively, As An Individual And Team For The Successful Completion Of Mini Project"
+    },
+    {
+      "no": "CO5",
+      "description": "Able To Demonstrate Social And Economic Responsibilities By Adapting Legal, Cultural And Ethical Principles For Lifelong Learning"
+    }
+  ]
+},
+
+
+
+
+{
+  "id": 1,
+  "subject": "Total Quality Management (18ME734)",
+  "semester": "VII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Explain The Various Approaches Of Tqm"
+    },
+    {
+      "no": "CO2",
+      "description": "Infer The Customer Perception Of Quality"
+    },
+    {
+      "no": "CO3",
+      "description": "Understand Customer Needs And Perceptions To Design Feedback Systems."
+    },
+    {
+      "no": "CO4",
+      "description": "Apply Statistical Tools For Continuous Improvement Of Systems"
+    },
+    {
+      "no": "CO5",
+      "description": "Apply The Tools And Technique For Effective Implementation Of Tqm."
+    }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Mechatronics (18ME744)",
+  "semester": "VII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand The Evolution And Development Of Mechatronics As A Discipline. Substantiate The Need For Interdisciplinary Study In Technology Education And To Comprehend The Design Aspects Of Mechatronics Circuits Using Different Sensors And Transducers."
+    },
+    {
+      "no": "CO2",
+      "description": "Understand The Applications Of Microprocessors And Micro-controller In Various Systems And To Know The Functions Of Each Element To Identify And Formulate A Mechatronic Product."
+    },
+    {
+      "no": "CO3",
+      "description": "Demonstrate The Integration Philosophy In View Of Mechatronics Technology And Gain Knowledge In Plc For Industrial Application."
+    },
+    {
+      "no": "CO4",
+      "description": "Understand The Actuation Mechanism In Mechanical And Electrical System For Product Development In Mechatronics."
+    },
+    {
+      "no": "CO5",
+      "description": "Understand The Working Principle Of Hydraulic And Pneumatic System And Application Of Engineering Knowledge In Design And Development Of Hydraulic And Pneumatic Circuit."
+    }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Python Application Programming (18CS752)",
+  "semester": "VII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Examine Python Flow Control And Functions And Write Simple Python Programs."
+    },
+    {
+      "no": "CO2",
+      "description": "Demonstrate Proficiency In Handling Strings And File Systems."
+    },
+    {
+      "no": "CO3",
+      "description": "Create, Run And Manipulate Python Programs Using Core Data Structures Like Lists, Dictionaries And Use Regular Expressions."
+    },
+    {
+      "no": "CO4",
+      "description": "Interpret And Demonstrate Concepts Of Object-oriented Programming In Python."
+    },
+    {
+      "no": "CO5",
+      "description": "Implement Exemplary Applications Related To Network Programming, Web Services And Databases In Python."
+    }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Control Engineering (18ME71)",
+  "semester": "VII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Recongnise Control Systems And Its Types, Control Actions Of Various Controllers."
+    },
+    {
+      "no": "CO2",
+      "description": "Determine The System Governing Equations For Electrical, Thermal, Mechanical, Liquid Level systems And Calculate The Gain Of The System Using Block Diagram And Signal Flow Graphs."
+    },
+    {
+      "no": "CO3",
+      "description": "Illustrate The Response Of 1st And 2nd Order Systems."
+    },
+    {
+      "no": "CO4",
+      "description": "Determine The Stability Of Transfer Functions In Complex Domain And Frequency Domain."
+    },
+    {
+      "no": "CO5",
+      "description": "Employ State Equations To Study The Controllability And Observability."
+    }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Computer Aided Design and Manufacturing (18ME72)",
+  "semester": "VII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Define Automation, Cim, Cad, Cam And Explain The Differences Between These Concepts. Explain The Basics Of Automated Manufacturing Industries Through Mathematical Models And Analyze Different Types Of Automated Flow Lines."
+    },
+    {
+      "no": "CO2",
+      "description": "Solve Simple Problems Of Transformations Of Entities On Computer Screen And Understand Manufacturing Planning And Control Systems."
+    },
+    {
+      "no": "CO3",
+      "description": "Analyse The Automated Flow Lines To Reduce Time And Enhance Productivity."
+    },
+    {
+      "no": "CO4",
+      "description": "Explain The Use Of Different Computer Applications In Manufacturing, And Able To Prepare Part Programs For Simple Jobs On Cnc Machine Tools And Robot Programming."
+    },
+    {
+      "no": "CO5",
+      "description": "Visualize And Understand The Modern Trends In Manufacturing Like Additive Manufacturing, Industry 4.0 And Applications Of Internet Of Things Leading To Smart Manufacturing."
+    }
+  ]
+}
+,
+{
+  "id": 6,
+  "subject": "Computer Integrated Manufacturing Lab (18MEL76)",
+  "semester": "VII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Generate Cnc Lathe Part Program For Turning, Facing, Chamfering, Grooving, Step Turning, Taper Turning, Circular Interpolation And Use Of Canned Cycles."
+    },
+    {
+      "no": "CO2",
+      "description": "Generate Cnc Mill Part Programming For Point To Point Motions, Line Motions, Circular Interpolation, Contour Motion, Pocket Milling- Circular, Rectangular, Mirror Commands Etc. Use Canned Cycles For Drilling Related Operation With Boring And Tapping."
+    },
+    {
+      "no": "CO3",
+      "description": "Simulate Tool Path For Different Machining Operations Of Small Components Using Cnc Lathe & Cnc Milling Machine."
+    },
+    {
+      "no": "CO4",
+      "description": "Use High End Cam Packages For Machining Complex Parts; Use State Of Art Cutting Tools And Related Cutting Parameters; Optimize Cycle Time."
+    },
+    {
+      "no": "CO5",
+      "description": "Understand & Write Programs For Robot Control; Understand The Operating Principles Of Hydraulics, Pneumatics And Electro Pneumatic Systems. Apply This Knowledge To Automate & Improve Efficiency Of Manufacturing."
+    }
+  ]
+}
+,
+{
+  "id": 7,
+  "subject": "Design Lab (18MEL77)",
+  "semester": "VII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "At The End Of The Course, The Student Will Be Able To Compute The Natural Frequency Of The Free And Forced Vibration Of Single-degree Freedom Systems And The Critical Speed Of Shafts."
+    },
+    {
+      "no": "CO2",
+      "description": "The Student Will Be Able To Carry Out The & Determine To Balance Of Rotating Masses."
+    },
+    {
+      "no": "CO3",
+      "description": "The Student Will Be Able To Analyse The Governor's Characteristics."
+    },
+    {
+      "no": "CO4",
+      "description": "Determine Stresses In Disk, Beams, And Hook Using Photoelastic Bench."
+    },
+    {
+      "no": "CO5",
+      "description": "Determination Of Pressure Distribution In Journal Bearing."
+    }
+  ]
+}
+,
+{
+  "id": 8,
+  "subject": "Project Work Phase - 1 (18MEP78)",
+  "semester": "VII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Design A System, Components And Experiments For The Project Using Modern Tools."
+    },
+    {
+      "no": "CO2",
+      "description": "To Utilize The Theoretical Knowledge Gained To Successfully Complete The Projects In Stipulated Time."
+    },
+    {
+      "no": "CO3",
+      "description": "To Demonstrate The Contextual Engineering Knowledge To Provide Sustainable Solution To Needs Of The Society."
+    },
+    {
+      "no": "CO4",
+      "description": "To Demonstrate Engineering And Management Skills, Communicate Effectively, As An Individual And As A Team Member After The Successful Completion Of Project."
+    },
+    {
+      "no": "CO5",
+      "description": "To Demonstrate Social And Economic Responsibilities By Adapting Legal, Cultural And Ethical Principles For Lifelong Learning."
+    }
+  ]
+}
+,
+
+
+
+{
+  "id": 1,
+  "subject": "Non-Destructive Testing and Evaluation (18ME823)",
+  "semester": "VIII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Classify Various Non-destructive Testing Methods. Check Different Metals And Alloys By Visual Inspection Method."
+    },
+    {
+      "no": "CO2",
+      "description": "Explain And Perform Non-destructive Tests Like: Liquid Penetrant Test, Magnetic Particle Test, Identify Defects Using Relevant Ndt Methods. Differentiate Various Defect Types And Select The Appropriate Ndt Methods For Better Evaluation. Document The Testing And Evaluation Of The Results."
+    },
+    {
+      "no": "CO3",
+      "description": "Explain And Perform Non-destructive Tests Like Thermography And Eddy Current Test: Identify Defects Using Relevant Ndt Methods. Differentiate Various Defect Types And Select The Appropriate Ndt Methods For Better Evaluation. Document The Testing And Evaluation Of The Results."
+    },
+    {
+      "no": "CO4",
+      "description": "Explain And Perform Non-destructive Tests Like Ultrasonic Test: Identify Defects Using Relevant Ndt Methods. Differentiate Various Defect Types And Select The Appropriate Ndt Methods For Better Evaluation. Document The Testing And Evaluation Of The Results."
+    },
+    {
+      "no": "CO5",
+      "description": "Explain And Perform Non-destructive Tests Like Radiography Tests: Identify Defects Using Relevant Ndt Methods. Differentiate Various Defect Types And Select The Appropriate Ndt Methods For Better Evaluation. Document The Testing And Evaluation Of The Results."
+    }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Energy Engineering (18ME81)",
+  "semester": "VIII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand The Construction And Working Of Steam Generators And Their Accessories."
+    },
+    {
+      "no": "CO2",
+      "description": "Identify Renewable Energy Sources Such As Solar And Biomass Energies And Their Utilization."
+    },
+    {
+      "no": "CO3",
+      "description": "Understand Principles Of Energy Conversion From Alternate Sources Such As Wind, Geothermal And Tidal Energy."
+    },
+    {
+      "no": "CO4",
+      "description": "Understand Principles Of Energy Conversion From Alternate Sources Like Hydro And Geothermal Energy."
+    },
+    {
+      "no": "CO5",
+      "description": "Understand Principles Of Energy Conversion Using Nuclear Energy And Its Hazardous Effects And Disposal Methods."
+    }
+  ]
+},
+
+{
+  "id": 3,
+  "subject": "Project Work Phase - 2 (18MEP83)",
+  "semester": "VIII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Design A System, Components And Experiments For The Project Using Modern Tools."
+    },
+    {
+      "no": "CO2",
+      "description": "To Utilize The Theorical Knowledge Gained To Successfully Complete The Projects In Stipulated Time."
+    },
+    {
+      "no": "CO3",
+      "description": "To Demonstrate The Contextual Engineering Knowledge To Provide Sustainable Solution To Needs Of The Society."
+    },
+    {
+      "no": "CO4",
+      "description": "To Demonstrate Engineering And Management Skills, Communicate Effectively, As An Individual And As A Team Member After The Successful Completion Of Project."
+    },
+    {
+      "no": "CO5",
+      "description": "To Demonstrate Social And Economic Responsibilities By Adapting Legal, Cultural And Ethical Principles For Lifelong Learning."
+    }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Technical Seminar (18MES84)",
+  "semester": "VIII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Apply Principles Of Ethical Leadership, Collaborative Engagement, Socially Responsible Behaviour."
+    },
+    {
+      "no": "CO2",
+      "description": "Using Modern Tools To Examine Real World Issues."
+    },
+    {
+      "no": "CO3",
+      "description": "Able To Develop, Attain And Disseminate Knowledge Through Independent Learning And Collaborative Study."
+    },
+    {
+      "no": "CO4",
+      "description": "Able To Communicate Effectively."
+    },
+    {
+      "no": "CO5",
+      "description": "Exposed To Latest Development In The Field Of Engineering And Technology."
+    }
+  ]
+},
+
+{
+  "id": 5,
+  "subject": "Internship (18MEI85)",
+  "semester": "VIII",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Identify The Gap Between Curriculum And Industry Regarding Societal, And Engineering Practices And Prepare Themselves For A Better Career."
+    },
+    {
+      "no": "CO2",
+      "description": "Comprehend The Need Of Learning Via Sustainable Development."
+    },
+    {
+      "no": "CO3",
+      "description": "Follow Effective Communication, Decision Making, Leadership And Other Managerial Skills Necessary For Their Future."
+    },
+    {
+      "no": "CO4",
+      "description": "Work In A Multi-disciplinary Environment Facing All Constraints During The Progress Of An Assigned Work."
+    },
+    {
+      "no": "CO5",
+      "description": "Develop The Individual Responsibility And Follow Ethical Standards Of The Industries."
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ],
+      "2018-2019":[
+ 
+       {
+  "id": 1,
+  "subject": "Calculus and Linear Algebra (18MAT11)",
+  "semester": "I",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Apply The Knowledge Of Calculus To Solve Problems Related To Polar Curves & Its Applications In Determining The Bendness Of A Curve"
+    },
+    {
+      "no": "CO2",
+      "description": "Learn The Notion Of Partial Differentiation To Calculate Rates Of Change Of Multivariate Functions & Solve Problems Related To Composite Functions & Jacobians"
+    },
+    {
+      "no": "CO3",
+      "description": "Apply The Concept Of Change Of Order Of Integration & Variables To Evaluate Multiple Integrals & Theirusuage In Computing The Area & Volumes"
+    },
+    {
+      "no": "CO4",
+      "description": "Solve First Order Linear/nonlinear Differential Equations Analytically Using Standard Methods"
+    },
+    {
+      "no": "CO5",
+      "description": "Make Use Of Matrix Theory For Solving System Of Linear Quations& Compute Eigen Values & Eigen Vectors Required For Matrix Diagonalisation Process"
+    }
+  ]
+},
+{
+  "id": 2,
+  "subject": "ENGINEERING CHEMISTRY (18CHE12)",
+  "semester": "I",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Use Of Free Energy In Equilibria, Rationalize Bulk Properties And Processes Using Thermodynamic Considerations, Electrochemical Energy Systems."
+    },
+    {
+      "no": "CO2",
+      "description": "Causes & Effects Of Corrosion Of Metals And Control Of Corossion.modification Of Surface Properties Of Metals To Develop Resistance To Corrosion, Wear, Tear, Impact Etc.by Electroplating And Electroless Plating."
+    },
+    {
+      "no": "CO3",
+      "description": "Production & Consumption Of Energy For Industrialization Of Country And Living Standards Of People. Electrochemical And Concentration Cells.classical, Modern Batteries And Fuel Cells. Utilization Of Solar Energy For Different Useful Forms Of Energy."
+    },
+    {
+      "no": "CO4",
+      "description": "Environmental Pollution, Waste Management And Water Chemistry."
+    },
+    {
+      "no": "CO5",
+      "description": "Different Techniques Of Instrumental Methods Of Analysis.fundamental Principles Of Nanomaterials."
+    }
+  ]
+},
+{
+  "id": 3,
+  "subject": "C PROGRAMMING FOR PROBLEM SOLVING (18CPS13)",
+  "semester": "I",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Explain Computer Hardware Flowchart/algorithm And C Language Fundamentals"
+    },
+    {
+      "no": "CO2",
+      "description": "Construct Programming Solution Using I/o Operations,conditional Branching And Loops"
+    },
+    {
+      "no": "CO3",
+      "description": "Explain And Write Programs Using Arrays And Strings"
+    },
+    {
+      "no": "CO4",
+      "description": "Explain And Write Programs Using Functions"
+    },
+    {
+      "no": "CO5",
+      "description": "Define,describe And Explain Pointers, Structures"
+    }
+  ]
+},
+
+{
+  "id": 4,
+  "subject": "BASIC ELECTRONICS (18ELN14)",
+  "semester": "I",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Describe The Working Of Diode And Its Applications In Rectifiers, Filters And Regulator Circuits."
+    },
+    {
+      "no": "CO2",
+      "description": "Describe The Working Of Fet And Scr And Its Characteristics."
+    },
+    {
+      "no": "CO3",
+      "description": "Describe Working Of Op-amps Through Simple Circuits Like Amplifiers (inverting And Non Inverting), Comparators, Adders, Integrator And Differentiator."
+    },
+    {
+      "no": "CO4",
+      "description": "Describe The Working Of Bipolar Junction Transistor And Its Biasing Methods To Design Amplifier. Also Understand The Working Of Oscillation Using Oscillator Circuits"
+    },
+    {
+      "no": "CO5",
+      "description": "Describe The Different Number System And Their Conversions And Construct Simple Combinational And Sequential Logic Circuits Using Flip-flops. And Also Understand The Basic Principle Of Communication System And Mobile Phones"
+    }
+  ]
+},
+
+{
+  "id": 5,
+  "subject": "ELEMENTS OF MECHANICAL ENGINEERING (18ME15)",
+  "semester": "I",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Identify Different Sources Of Energy And Their Conversion Process."
+    },
+    {
+      "no": "CO2",
+      "description": "Explain The Working Principle Of Hydraulic Turbines, Pumps, Ic Engines And Refrigeration"
+    },
+    {
+      "no": "CO3",
+      "description": "Recognize Various Metal Joining Processes And Power Transmission Elements"
+    },
+    {
+      "no": "CO4",
+      "description": "Understand The Properties Of Common Engineering Materials And Their Applications In Engineering Industry"
+    },
+    {
+      "no": "CO5",
+      "description": "Discuss The Working Of Conventional Machine Tools , Machining Processes, Tools And Accessories And Describe The Advanced Manufacturing Systems"
+    }
+  ]
+},
+{
+  "id": 6,
+  "subject": "ENGINEERING CHEMISTRY LABORATORY (18CHEL16)",
+  "semester": "I",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Conduct Scheduled Experiments To Provide Knowledge Of Handling Different Types Of Instruments For Analysis Of Materials And Carrying Out Different Types Of Titrations For Estimation Of Materials. (conducting Experiments)."
+    },
+    {
+      "no": "CO2",
+      "description": "Calculation Of Experimental Data And Conclusion. (result Analysis)"
+    },
+    {
+      "no": "CO3",
+      "description": "Express The Theoretical Aspects Used In Conducting Different Experiments Of Engineering Chemistry Lab (viva Voce)"
+    },
+    {
+      "no": "CO4",
+      "description": "Record Experimental Process And Results. (record Writing)"
+    },
+    {
+      "no": "CO5",
+      "description": "Conduct Any Given Experiment In Engineering Chemistry Lab And Communicate Results Effectively (internal Assessment)."
+    }
+  ]
+},
+{
+  "id": 7,
+  "subject": "C PROGRAMMING LABORATORY (18CPL17)",
+  "semester": "I",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Identify The Computer Hardware And Programming Enviornment. Develop And Execute Programs By Understanding The Concepts Of C Programming Language."
+    },
+    {
+      "no": "CO2",
+      "description": "Analyse And Present Experimental Results For Given Input."
+    },
+    {
+      "no": "CO3",
+      "description": "Express The Theoretical Aspects Used In Conducting Different Experiments Of Computer Programming Laboratory."
+    },
+    {
+      "no": "CO4",
+      "description": "Record The Architecture Of Computer And Programs Experimental Process With Results Obtained Along With Flowcharts And Algorithms."
+    },
+    {
+      "no": "CO5",
+      "description": "Conduct Allotted Experiment In Computer Programming Laboratory And Communicate Results Effectively."
+    }
+  ]
+},
+{
+  "id": 8,
+  "subject": "TECHNICAL ENGLISH-I (18EGH18)",
+  "semester": "I",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Students Will Be Able To Identify The Nuances Of Phonetics And Flawless Pronunciation"
+    },
+    {
+      "no": "CO2",
+      "description": "Implement English Vocabulary At Command And Language Proficiency"
+    },
+    {
+      "no": "CO3",
+      "description": "Identify Common Errors In Spoken And Written Communication"
+    },
+    {
+      "no": "CO4",
+      "description": "Enables To Understand And Improve Non Verbal Communication"
+    },
+    {
+      "no": "CO5",
+      "description": "Perform Well In Campus Recruitment And Other Exams"
+    }
+  ]
+},
+
+
+
+
+
+{
+  "id": 1,
+  "subject": "ADVANCED CALCULUS AND NUMERICAL METHODS(18MAT21)",
+  "semester": "II",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Illustrate The Applications Of Multivariate Calculus To Understand The Solenoidal And Irrotational Vectors And Also Exhibit The Inter Dependence Of Line, Surface And Volume Integrals."
+    },
+    {
+      "no": "CO2",
+      "description": "Demonstrate Various Physical Models Through Higher Order Differential Equations And Solve Such Linear Ordinary Differential Equations"
+    },
+    {
+      "no": "CO3",
+      "description": "Construct A Variety Of Partial Differential Equations And Solution By Exact Methods/method Of Separation Of Variables."
+    },
+    {
+      "no": "CO4",
+      "description": "Explain The Applications Of Infinite Series And Obtain Series Solution Of Ordinary Differential Equations"
+    },
+    {
+      "no": "CO5",
+      "description": "Apply The Knowledge Of Numerical Methods In The Modeling Of Various Physical And Engineering Phenomena."
+    }
+  ]
+},
+{
+  "id": 2,
+  "subject": "ENGINEERING PHYSICS(18PHY22)",
+  "semester": "II",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand Various Types Of Oscillations And Their Implications, Role Of Shock Waves In Various Fields"
+    },
+    {
+      "no": "CO2",
+      "description": "Recognize Elastic Properties Of Materials For Engineering Applications"
+    },
+    {
+      "no": "CO3",
+      "description": "Realize Interrelation Between Varying Electric And Magnetic Fields, Transverse Nature Of Emw And Their Role In Optical Fiber Communication"
+    },
+    {
+      "no": "CO4",
+      "description": "Compute Eigen Values, Eigen Functions, Momentum Of Atomic And Subatomic Particles Using Time Independent 1-d Schrodinger Wave Equation. Background Of Laser, Construction, ,working , Applications In Different Fields"
+    },
+    {
+      "no": "CO5",
+      "description": "Understand Various Electrical And Thermal Properties Of Materials Like Conductors, Semiconductors And Dielectrics Using Different Theoretical Models."
+    }
+  ]
+},
+{
+  "id": 3,
+  "subject": "BASIC ELECTRICAL ENGINEERING(18ELE23)",
+  "semester": "II",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Understand And Analyse D.c And A.c Electric Circuits"
+    },
+    {
+      "no": "CO2",
+      "description": "Acquire The Knowledge Of • Fundamental Of A.c Circuits And Behavior Of R-l-c Combination • Three Phase Balanced Circuits."
+    },
+    {
+      "no": "CO3",
+      "description": "To Understand • The Principle Of Operation And Construction Of Single Phase Transformers • The Concept Of Electrical Wiring Circuit Protecting Devices And Earthing."
+    },
+    {
+      "no": "CO4",
+      "description": "To Study The Principle Of Operation And Construction Of D.c Machines"
+    },
+    {
+      "no": "CO5",
+      "description": "To Study The Principle Of Operation And Construction Of • Three Phase Synchronous Generator • Three Phase Induction Motors."
+    }
+  ]
+},
+{
+  "id": 4,
+  "subject": "ELEMENTS OF CIVIL ENGINEERING AND MECHANICS(18CIV24)",
+  "semester": "II",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Know Basics Of Civil Engineering, Its Scope Of Stud Y"
+    },
+    {
+      "no": "CO2",
+      "description": "Comprehend The Action Of Forces, Moments And Other Loads On Systems Of Rigid Bodies"
+    },
+    {
+      "no": "CO3",
+      "description": "Compute The Support Reactions For Beams And The Trusses"
+    },
+    {
+      "no": "CO4",
+      "description": "Locate The Centroid And Compute The Moment Of Inert Ia Of Regular Cross- Sections"
+    },
+    {
+      "no": "CO5",
+      "description": "Study Of Kinematics Of The Bodies"
+    }
+  ]
+},
+{
+  "id": 5,
+  "subject": "ENGINEERING GRAPHICS(18EGDL25)",
+  "semester": "II",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Prepare Engineering Drawings As Per Bis Conventions Mentioned In The Relavent Codes"
+    },
+    {
+      "no": "CO2",
+      "description": "Produce Computer Generated Drawings Using Cad Software"
+    },
+    {
+      "no": "CO3",
+      "description": "Use The Knowledge Of Orthographic Projections To Represent Engineering Information/concepts And Present The Same In The Form Of Drawings"
+    },
+    {
+      "no": "CO4",
+      "description": "Develop Isometric Drawings Of Simple Objects Reading The Orthographic Projections Of Those Objects"
+    },
+    {
+      "no": "CO5",
+      "description": "Convert Pictorial And Isometric Views Of Simple Objects To Orthographic Views"
+    }
+  ]
+},
+{
+  "id": 6,
+  "subject": "ENGINEERING PHYSICS LABORATORY(18PHYL26)",
+  "semester": "II",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Conduct Scheduled Experiments To Learn Experimental Setup And Recording The Readings Using Measuring Instruments To Understand The Concept Of Engineering Physics"
+    },
+    {
+      "no": "CO2",
+      "description": "Analyse And Interpret Experimental Data And Results."
+    },
+    {
+      "no": "CO3",
+      "description": "Express The Theoretical Aspects Used In Conducting Different Experiments Of Engineering Physics Lab"
+    },
+    {
+      "no": "CO4",
+      "description": "Record Experimental Process And Results."
+    },
+    {
+      "no": "CO5",
+      "description": "Conduct Any Given Experiment In Engineering Physics Laboratory And Communicate Results Effectively"
+    }
+  ]
+},
+{
+  "id": 7,
+  "subject": "BASIC ELECTRICAL ENGINEERING LABORATORY(18ELEL27)",
+  "semester": "II",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Conduct/execute/identify Scheduled Experiments Of Ac And Dc Circuitsof Basic Electrical Engineering"
+    },
+    {
+      "no": "CO2",
+      "description": "Analyse And Interpret The Experimental Data And Results"
+    },
+    {
+      "no": "CO3",
+      "description": "Express The Theoretical Aspects Used In Different Experiments Of Basic Electrical Engineering"
+    },
+    {
+      "no": "CO4",
+      "description": "Record The Experimental Process And Results."
+    },
+    {
+      "no": "CO5",
+      "description": "Conduct Any Given Experiment In Basic Electrical Engineering Laboratory And Communicate Results Effectively"
+    }
+  ]
+},
+{
+  "id": 8,
+  "subject": "TECHNICAL ENGLISH-II(18EGH28)",
+  "semester": "II",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Identify Common Errors In Spoken And Written Communication"
+    },
+    {
+      "no": "CO2",
+      "description": "Get Familiarized With English Vocabulary And Language Proficiency"
+    },
+    {
+      "no": "CO3",
+      "description": "Improve Nature And Style Of Sensible Writing And Acquire Employment And Workplace Communication Skills"
+    },
+    {
+      "no": "CO4",
+      "description": "Improve Their Technical Communication Skills Through Technical Reading And Writing Practices"
+    },
+    {
+      "no": "CO5",
+      "description": "Perform Well In Campus Recruitment, Engineering And All Other General Competitive Examinations"
+    }
+  ]
+},
+
+
+
+
+
+{
+  "id": 1,
+  "subject": "Mathematics-III(18MAT31)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Use Laplace Transform And Inverse Laplace Transform In Solving Differential/ Integral Equation Arising In Network Analysis, Control Systems And Other Fields Of Engineering."
+    },
+    {
+      "no": "CO2",
+      "description": "Demonstrate Fourier Series To Study The Behaviour Of Periodic Functions And Their Applications In System Communications, Digital Signal Processing And Field Theory."
+    },
+    {
+      "no": "CO3",
+      "description": "Make Use Of Fourier Transform And Z-transform To Illustrate Discrete/continuous Function Arising In Wave And Heat Propagation, Signals And Systems."
+    },
+    {
+      "no": "CO4",
+      "description": "Solve First Order Ordinary Differential Equations Arising In Engineering Problems Using Single Step And Multistep Numerical Methods."
+    },
+    {
+      "no": "CO5",
+      "description": "Solve Second Order Ordinary Differential Equations Arising In Engineering Problems Using Single Step And Multistep Numerical Methods Determine The Extremals Of Functionals Using Calculus Of Variations And Solve Problems Arising In Dynamics Of Rigi"
+    }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Mechanics of Materials(18ME32)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Determine Stresses, Strains And Their Relations In Varies Bars. Understanding The Relationship Between Elastic Constants And Poisson’s Ratio."
+    },
+    {
+      "no": "CO2",
+      "description": "Determine Plane Stress, Principal Stress, Maximum Shear Stress And Their Orientations Using. Analytical Method And Mohr’s Circle, And Also Stress Distribution In Thick And Thin Cylinders."
+    },
+    {
+      "no": "CO3",
+      "description": "Draw Sfd And Bmd For Different Loads On Different Types Of Beams. Determine Shear Stress And Bending Stresses For Varies Cross Sections In Beams."
+    },
+    {
+      "no": "CO4",
+      "description": "To Understand Different Theories Of Failure And Torsional Moments"
+    },
+    {
+      "no": "CO5",
+      "description": "To Expose The Students To Concepts Of Buckling Of Columns And Strain Energy."
+    }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Basic Thermodynamics(18ME33)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Explain Thermodynamic Systems, Properties, Zeroth Law Of Thermodynamics, Temperature Scales And Energy Interactions."
+    },
+    {
+      "no": "CO2",
+      "description": "Understand Different Types Of Work, Displacement Work For Various Processes. Understand Heat. Understand The Basics Of First And Second Law Of Thermodynamics. Steady Flow Energy Equation And Its Applications. Concept Of Refrigeration And Heat Pump."
+    },
+    {
+      "no": "CO3",
+      "description": "Understand The Second Law Of Thermodynamics. Concept Of Refrigeration And Heat Pump Understand The Concept Of Entropy From Second Law Of Thermodynamics, Change Of Entropy Of The System And Universe. Principle Of Increase Of Entropy."
+    },
+    {
+      "no": "CO4",
+      "description": "Availability, Unavailable Energy, Relation Between Increase In Unavailable Energy And Increase In Entropy. Maximum Work, Irreversibility, Second Law Efficiency. Water As Pure Substance, Property Diagrams, Measurement Of Dryness Fraction."
+    },
+    {
+      "no": "CO5",
+      "description": "Study Of Ideal Gases. Psychrometric Properties. Calculate Thermodynamics Properties Of Real Gases At All Ranges Of Pressure, Temperatures Using Modified Equation Of State Including Vander Waals Equation, Redlich Wong Equation And Beattie-bridgeman Equatio"
+    }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Material Science(18ME34)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Describe The Mechanical Properties Of Metals, Their Alloys And Various Modes Of Failure."
+    },
+    {
+      "no": "CO2",
+      "description": "Understand The Microstructures Of Ferrous And Non-ferrous Materials To Mechanical Properties."
+    },
+    {
+      "no": "CO3",
+      "description": "Explain The Processes Of Heat Treatment Of Various Alloys."
+    },
+    {
+      "no": "CO4",
+      "description": "Understand The Properties And Potentialities Of Various Materials Available And Material Selection Procedures."
+    },
+    {
+      "no": "CO5",
+      "description": "Know About Composite Materials And Their Processing As Well As Applications."
+    }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Constitution of India, Professional Ethics and Cyber Law(18CPC39)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Have General Knowledge And Legal Literacy About Indian Constitution And There By It Helps To Take Up Competitive Examinations & To Manage / Face Complex Societal Issues In Society"
+    },
+    {
+      "no": "CO2",
+      "description": "Understand State And Central Policies (union And State Executive), Fundamental Rights And Their Duties."
+    },
+    {
+      "no": "CO3",
+      "description": "Understand Electoral Process, Amendments And Special Provisions In Constitution."
+    },
+    {
+      "no": "CO4",
+      "description": "Understand Powers And Functions Of Municipalities, Panchayats And Co-operative Societies, With Human Rights And Nhrc."
+    },
+    {
+      "no": "CO5",
+      "description": "Understand Engineering & Professional Ethics And Responsibilities Of Engineers."
+    }
+  ]
+},
+{
+  "id": 6,
+  "subject": "Metal cutting and forming(18ME35A)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "The Students Gain The Knowledge Pertainng To Relatve Motion And Mechanics Required For Various Machine Toopls."
+    },
+    {
+      "no": "CO2",
+      "description": "Students Will Get Introduce To Different Machine Tool To Produce Componets Having Different Shapes And Sizes."
+    },
+    {
+      "no": "CO3",
+      "description": "The Studets Will To Develop The Knowledge On Mechanics Of Machining Process And Effect Of Various Parameters On Machining"
+    },
+    {
+      "no": "CO4",
+      "description": "To Acquaint With The Basic Knowledge On Fundamentals Of Metal Forming Processes"
+    },
+    {
+      "no": "CO5",
+      "description": "To Study Various Metal Forming Processes."
+    }
+  ]
+},
+{
+  "id": 7,
+  "subject": "Computer Aided Machine Drawing(18ME36A)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Acquire The Knowledge Of Cad Software And Its Features."
+    },
+    {
+      "no": "CO2",
+      "description": "To Familiarize The Students With Indian Standards On Drawing Practices."
+    },
+    {
+      "no": "CO3",
+      "description": "To Impart Knowledge Of Thread Forms, Fasteners, Keys, Joints And Couplings."
+    },
+    {
+      "no": "CO4",
+      "description": "To Make The Students Understand And Interpret Drawings Of Machine Components Leading To Preparation Of Assembly Drawings Manually And Using Cad Packages"
+    },
+    {
+      "no": "CO5",
+      "description": "To Acquire The Knowledge Of Limits, Tolerance And Fits And Indicate Them On Machine Drawings."
+    }
+  ]
+},
+{
+  "id": 8,
+  "subject": "Material Testing lab(18MEL37A)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Conduct Scheduled Experiments."
+    },
+    {
+      "no": "CO2",
+      "description": "Calculation Upon The Experiment Data And Conclusion."
+    },
+    {
+      "no": "CO3",
+      "description": "Express The Theoretical Aspects Used In Conducting Different Experiments."
+    },
+    {
+      "no": "CO4",
+      "description": "Record The Experimental Procedure And Results."
+    },
+    {
+      "no": "CO5",
+      "description": "Conduct Any Given Experiment And Communicate Results Effectively."
+    }
+  ]
+},
+{
+  "id": 9,
+  "subject": "Workshop and Machine Shop Practice(18MEL38A)",
+  "semester": "III",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Conduction Of Experiments/necessary Initial Calculations"
+    },
+    {
+      "no": "CO2",
+      "description": "Calculation Of Experimental Data, Analysis Of Results And Conclusions"
+    },
+    {
+      "no": "CO3",
+      "description": "Viva Voce"
+    },
+    {
+      "no": "CO4",
+      "description": "Lab Record"
+    },
+    {
+      "no": "CO5",
+      "description": "Lab Internal Assessment"
+    }
+  ]
+},
+
+
+
+
+
+
+{
+  "id": 1,
+  "subject": "Complex Analysis, Probability And Statistical Methods(18MAT41)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Use The Concepts Of Analytic Function And Complex Potentials To Solve The Problems Arising In Electromagnetic Field Theory."
+    },
+    {
+      "no": "CO2",
+      "description": "Utilize Conformal Transformation And Complex Integral Arising In Aerofoil Theory, Fluid Flow Visualization And Image Processing."
+    },
+    {
+      "no": "CO3",
+      "description": "Apply Discrete And Continuous Probability Distributions In Analyzing The Probability Models Arising In Engineering Field."
+    },
+    {
+      "no": "CO4",
+      "description": "Make Use Of The Correlation And Regression Analysis To Fit A Suitable Mathematical Model For The Statistical Data."
+    },
+    {
+      "no": "CO5",
+      "description": "Construct Joint Probability Distributions And Demonstrate The Validity Of Testing The Hypothesis. Markov Chains In Attempting Engineering Problems For Feasible Random Events."
+    }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Applied Thermodynamics(18ME42)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Students Will Have A Working Knowledge Of Performance Of Air Standard Cycles And The Phenomenon Of Combustion In Si And Ci Engines."
+    },
+    {
+      "no": "CO2",
+      "description": "Students Will Have An Understanding Of Evaluation Of The Performance Of Gas Power Cycles And Their Various Engineering Applications"
+    },
+    {
+      "no": "CO3",
+      "description": "Students Will Have An Understanding Of Evaluation Of The Performance Of Vapour Power Cycles And Their Various Engineering Applications"
+    },
+    {
+      "no": "CO4",
+      "description": "Students Will Be Able To Determine Performance Parameters Of Refrigeration And Air-conditioning Systems."
+    },
+    {
+      "no": "CO5",
+      "description": "Students Will Be Able To Evaluate The Performance Parameters Of Reciprocating Air Compressor As A Function Of Receiver Pressure. Also Study Steam Nozzles."
+    }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Fluid Mechanics(18ME43)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Identify And Calculate The Key Fluid Properties Used In The Analysis Of Fluid Behaviour."
+    },
+    {
+      "no": "CO2",
+      "description": "Understand And Apply The Principles Of Pressure, Buoyancy And Floatation"
+    },
+    {
+      "no": "CO3",
+      "description": "Apply The Knowledge Of Fluid Statics, Kinematics And Dynamics While Addressing Problems Of Mechanical And Chemical Engineering."
+    },
+    {
+      "no": "CO4",
+      "description": "Understand And Apply The Principles Of Fluid Kinematics And Dynamics"
+    },
+    {
+      "no": "CO5",
+      "description": "Understand The Concept Of Boundary Layer In Fluid Flow And Apply Dimensional Analysis To Form Dimensionless Numbers In Terms Of Input Output Variables And Understand The Basic Concept Of Compressible Flow And Cfd"
+    }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Kinematics of Machines(18ME44)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Familiar With Terminologies, Definitions And Common Mechanisms Used In Machines And Ability To Understand The Inversions And To Calculate Mobility, Count Rigid Links And Types Of Joints Within Mechanisms"
+    },
+    {
+      "no": "CO2",
+      "description": "Calculate Velocity And Accelerations Of Links Using Graphical Method."
+    },
+    {
+      "no": "CO3",
+      "description": "Calculate Velocity And Accelerations Of Links Using Analytical Method."
+    },
+    {
+      "no": "CO4",
+      "description": "Familiar With Different Gear Terminologies And Gear Train Analysis"
+    },
+    {
+      "no": "CO5",
+      "description": "Design/plot The Profile Of Cams Using Graphical Method And Computing The Velocity And Acceleration."
+    }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Vyavaharika Kannada(18KVK49)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Read And Understand The Simple Words In Kannada Language"
+    },
+    {
+      "no": "CO2",
+      "description": "To Learn Vyavaharika Kannada(kannada For Communication)"
+    },
+    {
+      "no": "CO3",
+      "description": "Will Create Some Interest On Kannada Language And Literature"
+    }
+  ]
+},
+{
+  "id": 6,
+  "subject": "Aadalitha Kannada(18KAK49)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Read And Understand The Simple Words In Kannada Language"
+    },
+    {
+      "no": "CO2",
+      "description": "To Learn Vyavaharika Kannada(kannada For Communication"
+    },
+    {
+      "no": "CO3",
+      "description": "Will Create Some Interest On Kannada Language And Literature"
+    },
+    {
+      "no": "CO4",
+      "description": ""
+    }
+  ]
+},
+{
+  "id": 7,
+  "subject": "Mechanical Measurements and Metrology(18ME46B)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Students Will Be Able Define And Explain The Fundamental Concepts Of Metrology And Use Of Various Standards"
+    },
+    {
+      "no": "CO2",
+      "description": "Students Will Be Able To Demonstrate Systems Of Limits, Fits, Tolerances, Gauging And Interchangeability"
+    },
+    {
+      "no": "CO3",
+      "description": "Students Will Be Able To Illustrate The Working Principles Of Various Comparators And Measuring Devices For Physical Quantities Such As Angle, Gear And Screw Thread Parameters"
+    },
+    {
+      "no": "CO4",
+      "description": "Students Will Gain Knowledge To Define And Explain Measurement Concepts With Generalized Measurement System As Well As Working Of Components Used In It."
+    },
+    {
+      "no": "CO5",
+      "description": "Students Will Be Able To Demonstrate The Working Of Force, Torque, Pressure, Temperature And Strain Measuring Devices"
+    }
+  ]
+},
+{
+  "id": 8,
+  "subject": "Mechanical Measurements and Metrology Lab(18MEL47B)",
+  "semester": "IV",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Conduct Scheduled Experiments To Calibrate And Demonstrate Usage Of Different Gauges And Measuring Instruments To Understand The Concept Of Mechanical Measurements."
+    },
+    {
+      "no": "CO2",
+      "description": "Analyse And Interpret Experimental Data And Results."
+    },
+    {
+      "no": "CO3",
+      "description": "Express The Theoretical Aspects Used In Conducting Different Experiments Of Mechanical Measurement."
+    },
+    {
+      "no": "CO4",
+      "description": "Record Experimental Process And Results."
+    },
+    {
+      "no": "CO5",
+      "description": "Conduct Any Given Experiment In Mechanical Measurement Laboratory And Communicate Results Effectively."
+    }
+  ]
+},
+
+
+
+
+
+{
+  "id": 1,
+  "subject": "Management and Economics(18ME51)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand Needs, Functions, Roles, Scope And Evolution Of Management With Special Emphasis On Importance, Purpose Of Planning Also Analyse Its Types"
+    },
+    {
+      "no": "CO2",
+      "description": "Explain Decision Making, Organizing, Staffing, Directing And Controlling From Industry's Point Of View."
+    },
+    {
+      "no": "CO3",
+      "description": "Understand Engineering Economics Demand Supply And Its Importance In Economics Decision Making And Problem Solving."
+    },
+    {
+      "no": "CO4",
+      "description": "Calculate Present Worth, Annual Worth And Irr For Different Alternatives In Economic Decision Making."
+    },
+    {
+      "no": "CO5",
+      "description": "Understand The Procedure Involved In Estimation Of Cost For A Simple Component, Product Costing And Depreciation, Its Methods."
+    }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Design of Machine Elements I(18ME52)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Students Will Be Able To Describe The Design Process, Choose Materials And Are Conversant With The Codes And Standards In Design And Computing Stresses Developed In Different Types Of Loading"
+    },
+    {
+      "no": "CO2",
+      "description": "Students Will Be Able To Understand And Apply Design Concepts, Factor Of Safety, Stress Concentration Factor, Impact And Fatigue"
+    },
+    {
+      "no": "CO3",
+      "description": "Students Will Be Able To Design Shafts, Joints, Couplings And Keys."
+    },
+    {
+      "no": "CO4",
+      "description": "Students Will Be Able To Design Riveted Brackets/joints And Welded Joints"
+    },
+    {
+      "no": "CO5",
+      "description": "Students Will Be Able To Design Temporary Joint -threaded Fasteners And Power Screws"
+    }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Dynamics of Machines(18ME53)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Gain The Knowledge Static And Dynamic Equilibrium Conditions Of Mechanisms Subjected Forces And Couple, With And Without Friction."
+    },
+    {
+      "no": "CO2",
+      "description": "Analyze The Mechanisms For Static And Dynamic Equilibrium."
+    },
+    {
+      "no": "CO3",
+      "description": "To Understand The Balancing Principles Of Rotating And Reciprocating Masses, Governors And Gyroscopes."
+    },
+    {
+      "no": "CO4",
+      "description": "Analyze The Balancing Of Rotating And Reciprocating Masses, Governors And Gyroscopes."
+    },
+    {
+      "no": "CO5",
+      "description": "To Understand Vibrations Characteristics Of Single Degree Of Freedom Systems. Characterize The Single Degree Freedom Systems Subjected To Free And Forced Vibrations With And Without Damping."
+    }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Turbo Machines(18ME54)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Apply The Knowledge Of Mathematics, Science And Engineering Fundamentals To Identify Formulate And Analyze The Fluid Flow Through Turbo Machine."
+    },
+    {
+      "no": "CO2",
+      "description": "Apply The Knowledge Of Science And Engineering Fundamentals To Identify, Formulate, Design And Analyze The Parameters Of Power Generating And Power Absorbing Turbo Machine"
+    },
+    {
+      "no": "CO3",
+      "description": "Draw And Analyse The Velocity Diagram Of Different Types Of Steam Turbine"
+    },
+    {
+      "no": "CO4",
+      "description": "Design And Analyse The Velocity Diagram Of The Different Types Of Hydraulic Turbine"
+    },
+    {
+      "no": "CO5",
+      "description": "Draw And Analyse The Velocity Diagram Of The Different Types Of Pumps And Compressors"
+    }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Fluid Power Engineering(18ME55)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Provide An Insight Into The Capabilities Of Hydraulic And Pneumatic Fluid Power."
+    },
+    {
+      "no": "CO2",
+      "description": "To Understand Concepts And Relationships Surrounding Force, Pressure, Energy And Power In Fluid Power Systems."
+    },
+    {
+      "no": "CO3",
+      "description": "To Examine Concepts Cantering On Sources Of Hydraulic Power, Rotary And Linear Actuators, Distribution Systems, Hydraulic Flow In Pipes, And Control Components In Fluid Power Systems."
+    },
+    {
+      "no": "CO4",
+      "description": "Exposure To Build And Interpret Hydraulic And Pneumatic Circuits Related To Industrial Applications"
+    },
+    {
+      "no": "CO5",
+      "description": "To Familiarize With Logic Controls And Trouble Shooting"
+    }
+  ]
+},
+{
+  "id": 6,
+  "subject": "Operations Management(18ME56)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Get Acquainted With Basic Aspects Of Operations Management Like Functions, Production Systems, Productivity And Decision Making."
+    },
+    {
+      "no": "CO2",
+      "description": "To Get Acquainted With Forecasting Methods And Apply Them In Decision Making."
+    },
+    {
+      "no": "CO3",
+      "description": "To Understand Capacity And Location Planning And Techniques To Apply Them In Decision Making."
+    },
+    {
+      "no": "CO4",
+      "description": "To Understand Aggregate Planning And Master Scheduling In Operations Management."
+    },
+    {
+      "no": "CO5",
+      "description": "To Understand Materials Requirement Planning , Purchasing And Supply Chain Management."
+    }
+  ]
+},
+{
+  "id": 7,
+  "subject": "Fluid Mechanics/Machines lab(18MEL57)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Perform Experiments To Determine The Coefficient Of Discharge Of Flow Measuring Devices."
+    },
+    {
+      "no": "CO2",
+      "description": "Conduct Experiments On Hydraulic Turbines And Pumps To Draw Characteristics."
+    },
+    {
+      "no": "CO3",
+      "description": "Test Basic Performance Parameters Of Hydraulic Turbines And Pumps And Execute The Knowledge In Real Life Situations."
+    },
+    {
+      "no": "CO4",
+      "description": "Determine The Energy Flow Pattern Through The Hydraulic Turbines And Pumps"
+    },
+    {
+      "no": "CO5",
+      "description": "Exhibit His Competency Towards Preventive Maintenance Of Hydraulic Machines"
+    }
+  ]
+},
+{
+  "id": 8,
+  "subject": "Energy Conversion Lab(18MEL58)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Tto Conduct Scheduled Experiments"
+    },
+    {
+      "no": "CO2",
+      "description": "Calculation Upon The Experiment Data And Conclusion."
+    },
+    {
+      "no": "CO3",
+      "description": "Express The Theoretical Aspects Used In Conducting Different Experiments."
+    },
+    {
+      "no": "CO4",
+      "description": "Record The Experimental Procedure And Results."
+    },
+    {
+      "no": "CO5",
+      "description": "Tconduct Any Given Experiment And Communicate Results Effectively"
+    }
+  ]
+},
+{
+  "id": 9,
+  "subject": "Environmental Studies(18CIV59)",
+  "semester": "V",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand The Principles Of Ecology And Environmental Issues That Apply To Air, Land, And Water Issues On A Global Scale,"
+    },
+    {
+      "no": "CO2",
+      "description": "Develop Critical Thinking And/or Observation Skills, And Apply Them To The Analysis Of A Problem Or Question Related To The Environment."
+    },
+    {
+      "no": "CO3",
+      "description": "Demonstrate Ecology Knowledge Of A Complex Relationship Between Biotic And Abiotic Components."
+    },
+    {
+      "no": "CO4",
+      "description": "Apply Their Ecological Knowledge To Illustrate And Graph A Problem"
+    },
+    {
+      "no": "CO5",
+      "description": "Describe The Realities That Managers Face When Dealing With Complex Issues Of Pollution Control"
+    }
+  ]
+},
+
+
+
+
+
+
+{
+  "id": 1,
+  "subject": "Non-Traditional Machining(18ME641)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Understand The Concept Of Non-traditional Machining, Compare Traditional And Non-traditional Machining Process And Recognize The Need Of Non-traditional Machining."
+    },
+    {
+      "no": "CO2",
+      "description": "To Understand Constructional Features, Process Parameters And Process Characteristics Of Mechanical Energy Utilization Processes."
+    },
+    {
+      "no": "CO3",
+      "description": "To Understand Constructional Features, Process Parameters And Process Characteristics Of Chemical Energy And Electro-chemical Energy Utilization Processes."
+    },
+    {
+      "no": "CO4",
+      "description": "To Understand Constructional Features, Process Parameters And Process Characteristics Of Thermal Energy E Utilization Processes."
+    },
+    {
+      "no": "CO5",
+      "description": "To Understand Constructional Features, Process Parameters And Process Characteristics Of Electro-thermal Energy Processes."
+    }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Programming in JAVA(18CS653)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Learn Fundamental Features Of Object Oriented Language And Java"
+    },
+    {
+      "no": "CO2",
+      "description": "Set Up Java Jdk Environment To Create, Debug And Run Simple Java Programs"
+    },
+    {
+      "no": "CO3",
+      "description": "Learn Object Oriented Concepts Using Programming Examples"
+    },
+    {
+      "no": "CO4",
+      "description": "Study The Concepts Of Importing Of Packages And Exception Handling Mechanism"
+    },
+    {
+      "no": "CO5",
+      "description": "Discuss The String Handling Examples With Object Oriented Concepts"
+    }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Finite Element Methods(18ME61)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand The Concepts Behind Formulation Methods In Fem"
+    },
+    {
+      "no": "CO2",
+      "description": "Identify The Application And Characteristics Of Fea Elements Such As Bars, Beams, Plane And Iso-parametric Elements"
+    },
+    {
+      "no": "CO3",
+      "description": "Develop Element Characteristic Equation And Generation Of Global Equation"
+    },
+    {
+      "no": "CO4",
+      "description": "Able To Apply Suitable Boundary Conditions To A Global Equation For Bars, Trusses, Beams, Circular Shafts, Heat Transfer, Fluid Flow"
+    },
+    {
+      "no": "CO5",
+      "description": "Able To Solve Axi Symmetric And Dynamic Problems For Displacements, Stress And Strains Induced"
+    }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Finite Element Analysis(17ME61)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Understand The Concepts Behind Formulation Methods In Fem"
+    },
+    {
+      "no": "CO2",
+      "description": "Identify The Application And Characteristics Of Fea Elements Such As Bars, Beams, Plane And Isoparametric Elements"
+    },
+    {
+      "no": "CO3",
+      "description": "Develop Element Characteristic Equation And Generation Of Global Equation"
+    },
+    {
+      "no": "CO4",
+      "description": "Able To Apply Suitable Boundary Conditions To A Global Equation For Bars, Trusses, Beams, Circular Shafts, Heat Transfer, Fluid Flow"
+    },
+    {
+      "no": "CO5",
+      "description": "Able To Solve Axi Symmetric And Dynamic Problems For Displacements, Stress And Strains Induced"
+    }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Design of Machine Elements II(18ME62)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Students Will Be Able To Design The Mechanical Components Like Belts, Ropes, Springs For Different Applications"
+    },
+    {
+      "no": "CO2",
+      "description": "Students Will Be Able To Design The Mechanical Components: Spur Gears And Helical Gears For Different Applications"
+    },
+    {
+      "no": "CO3",
+      "description": "Students Will Be Able To Design The Mechanical Components: Bevel Gears And Worm Gears For Different Applications"
+    },
+    {
+      "no": "CO4",
+      "description": "Students Will Be Able To Design The Mechanical Components Like Clutches And Brakes For Different Applications"
+    },
+    {
+      "no": "CO5",
+      "description": "Students Will Be Able To Know The Concepts Of Lubrication And Bearings, Design Hydrodynamic Bearings And Select Antifriction Bearings For Different Applications"
+    }
+  ]
+},
+{
+  "id": 6,
+  "subject": "Heat Transfer(18ME63)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Students Will Able To Analyze The Basic Modes Of Heat Transfer, Formulate, Derive And Compute Temperature Distribution In Steady-state Conduction Problems With And Without Heat Generation And Constant And Variable Thermal Conductivity."
+    },
+    {
+      "no": "CO2",
+      "description": "Students Will Able To Understand And Interpret Heat Transfer Through Extended Surfaces And Formulate And Analyze The Data For Unsteady State Heat Conduction"
+    },
+    {
+      "no": "CO3",
+      "description": "Students Will Able To Explain The Principles Of Radiation Heat Transfer And Identify, Formulate And Analyze The Numerical Solution For Heat Conduction And Fluid Flow Problems."
+    },
+    {
+      "no": "CO4",
+      "description": "Students Will Able To Analyze Use The Engineering Correlations For Analyzing And Solving The Heat Convection Problems."
+    },
+    {
+      "no": "CO5",
+      "description": "Students Will Able To Analyze The Different Types Of Heat Exchangers And Heat Transfer With Phase Change"
+    }
+  ]
+},
+{
+  "id": 7,
+  "subject": "Total Quality Management(17ME664)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Students Obtain A Fundamental Knowledge Of Quality, Total Quality And Total Quality Management (tqm) And Its Development."
+    },
+    {
+      "no": "CO2",
+      "description": "Students Are Able To Identify Various Characteristics Of Tqm Leadership."
+    },
+    {
+      "no": "CO3",
+      "description": "Students Are Able To Describe Customer Satisfaction And Customer Involvement."
+    },
+    {
+      "no": "CO4",
+      "description": "Students Understand The Concept Of Continuous Process Improvement And Statistical Process Improvement, Use Different Qc Tools For Process Improvement."
+    },
+    {
+      "no": "CO5",
+      "description": "Enable The Students To Understand Various Tools And Techniques Used In Tqm And Are Able To Use Them For Different Practical Applications In Their Personal As Well As Professional Life."
+    }
+  ]
+},
+{
+  "id": 8,
+  "subject": "Heat Transfer Lab(18MEL67)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "Conduct Experiments To Determine The Thermal Conductivity Of A Metal Rod, Convective Heat Transfer Coefficient For Free And Forced Convection, Effective Thermal Resistance In Composite Slabs And Efficiency In Pin-fin Surface Emissivity Of A Test Plate."
+    },
+    {
+      "no": "CO2",
+      "description": "Analyze And Interpret Experimental Data And Results, Draw Characteristic Curves."
+    },
+    {
+      "no": "CO3",
+      "description": "Express The Theoretical Aspects Used In Conducting Different Experiments."
+    },
+    {
+      "no": "CO4",
+      "description": "Record Experimental Process And Results."
+    },
+    {
+      "no": "CO5",
+      "description": "Communicate Results Of Experiments Effectively."
+    }
+  ]
+},
+{
+  "id": 9,
+  "subject": "Mini-project(18MEMP68)",
+  "semester": "VI",
+  "co": [
+    {
+      "no": "CO1",
+      "description": "To Design A System, Components And Experiments For The Project Using Modern Tools."
+    },
+    {
+      "no": "CO2",
+      "description": "To Utilize The Theorical Knowledge Gained To Successfully Complete The Projects In Stipulated Time."
+    },
+    {
+      "no": "CO3",
+      "description": "To Demonstrate The Contextual Engineering Knowledge To Provide Sustainable Solution To Needs Of The Society"
+    },
+    {
+      "no": "CO4",
+      "description": "To Demonstrate Engineering And Management Skills, Communicate Effectively, As An Individual And As A Team Member After The Successful Completion Of Project."
+    },
+    {
+      "no": "CO5",
+      "description": "To Demonstrate Social And Economic Responsibilities By Adapting Legal, Cultural And Ethical Principles For Lifelong Learning."
+    }
+  ]
+},
+
+
+
+
+
+
+
+  {
+    "id": 1,
+    "subject": "Total Quality Management(18ME734)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Explain The Various Approaches Of Tqm" },
+      { "no": "CO2", "description": "Infer The Customer Perception Of Quality" },
+      { "no": "CO3", "description": "Analyze Customer Needs And Perceptions To Design Feedback Systems." },
+      { "no": "CO4", "description": "Apply Statistical Tools For Continuous Improvement Of Systems" },
+      { "no": "CO5", "description": "Apply The Tools And Technique For Effective Implementation Of Tqm." }
+    ]
+  },
+  {
+    "id": 2,
+    "subject": "Tribology(17ME742)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Understand The Fundamentals Of Tribology And Associated Parameters." },
+      { "no": "CO2", "description": "Apply Concepts Of Tribology For The Performance Analysis And Design Of Components Experiencing Relative Motion." },
+      { "no": "CO3", "description": "Analyse The Requirements And Design Hydrodynamic Journal And Plane Slider Bearings For A Given Application." },
+      { "no": "CO4", "description": "Select Proper Bearing Materials And Lubricants For A Given Tribological Application." },
+      { "no": "CO5", "description": "Apply The Principles Of Surface Engineering For Different Applications Of Tribology." }
+    ]
+  },
+  {
+    "id": 3,
+    "subject": "Mechatronics(18ME744)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Understand The Evolution And Development Of Mechatronics As A Discipline. Substantiate The Need For Interdisciplinary Study In Technology Education And To Comprehend The Design Aspects Of Mechatronics Circuits Using Different Sensors And Transducers." },
+      { "no": "CO2", "description": "To Apply The Knowledge Of Signal Conditioning And Processing For Effective Communication Of Mechatronic Devices Including Electro Mechanical Drives." },
+      { "no": "CO3", "description": "Understand The Applications Of Microprocessors And Microcontroller In Various Systems And To Know The Functions Of Each Element To Identify And Formulate A Mechatronic Product." },
+      { "no": "CO4", "description": "Illustration Of Principle And Structure Of Plc For Industrial Application And Various Allied Circuits." },
+      { "no": "CO5", "description": "Understand The Knowledge Of Computer Integrated Manufacturing For Its Application In Industry And Interdisciplinary Fields." }
+    ]
+  },
+  {
+    "id": 4,
+    "subject": "Electrical Energy Conservation and Auditing(18EE754)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Analyze About Energy Scenario Nationwide And Worldwide , Also Outline Energy Conservation Act And Its Features." },
+      { "no": "CO2", "description": "Discuss Load Management Techniques And Energy Efficiency." },
+      { "no": "CO3", "description": "Understand The Need Of Energy Audit And Energy Audit Methodology." },
+      { "no": "CO4", "description": "Understand Various Pillars Of Electricity Market Design." },
+      { "no": "CO5", "description": "Conduct Energy Audit Of Electrical Systems And Buildings. Show An Understanding Of Demand Side Management And Energy Conservation" }
+    ]
+  },
+  {
+    "id": 5,
+    "subject": "Energy Engineering(17ME71)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Apply The Knowledge Of Working And Design The Equipments And Effective Utilization Of Fuels And Handling Of Waste Products To Reduce Their Impact On Environment By Practicing Ethical Working And Design Practices In A Steam Power Plant." },
+      { "no": "CO2", "description": "Apply The Knowledge Of Water Resources , Proper Utilization, By Conducting Literature Studies On Rainfall â€“ Runoff, Working And Maintenance Of Various Systems Of Hydro Power Plants & Diesel Power Plants" },
+      { "no": "CO3", "description": "Apply The Knowledge Of Science And Engineering Fundamentals Of Energy Extraction, Conversion And Design Systems/ Components Of Renewable Sources Like Solar Energy And Analyze The Working Of Solar Pv And Thermal Systems For Sustainable Growth Of Energy Fo" },
+      { "no": "CO4", "description": "Apply The Knowledge Of Science And Engineering Fundamentals Of Energy Extraction And Conversion Of Renewable Sources Like Wind And Tidal, Ocean For Sustainable Growth Of Energy For Current And Future Societal Demand By Adapting Ethical Engineering Practi" },
+      { "no": "CO5", "description": "Apply The Knowledge To Identify And Explain The Concepts And Applications Of Green Energy And Zero Energy." }
+    ]
+  },
+  {
+    "id": 6,
+    "subject": "Control Engineering(18ME71)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Identify The Type Of Control And Control Actions And Develop Mathematical Model Of The Physical Systems." },
+      { "no": "CO2", "description": "Estimate The Response And Error In Response Of First Order And Second Order Systems Subjected To Standard Input Signals." },
+      { "no": "CO3", "description": "Represent The Complex Physical System Using Block Diagram And Signal Flow Graph And Obtain Transfer Function." },
+      { "no": "CO4", "description": "Analyse A Linear Feedback Control System For Stability Using Hurwitz Criterion, Routh's Criterion And Root Locus Technique In Complex Domain." },
+      { "no": "CO5", "description": "Analyse The Stability Of Linear Feedback Control System In Frequency Domain Using Polar Plots, Nyquist And Bode Plots." }
+    ]
+  },
+  {
+    "id": 7,
+    "subject": "Fluid Power Systems(17ME72)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Identify And Analyse The Functional Requirements Of A Fluid Power Transmission System For A Given Application." },
+      { "no": "CO2", "description": "Visualize How A Hydraulic/pneumatic Circuit Will Work To Accomplish The Function." },
+      { "no": "CO3", "description": "Design An Appropriate Hydraulic Or Pneumatic Circuit Or Combination Circuit Like Electro-hydraulics, Electro-pneumatics For A Given Application." },
+      { "no": "CO4", "description": "Select And Size The Different Components Of The Circuit." },
+      { "no": "CO5", "description": "Develop A Comprehensive Circuit Diagram By Integrating The Components Selected For The Given Application." }
+    ]
+  },
+  {
+    "id": 8,
+    "subject": "Computer Aided Design and Manufacturing(18ME72)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Define Automation, Cim, Cad, Cam And Explain The Differences Between These Concepts. Solve Simple Problems Of Transformations Of Entities On Computer Screen" },
+      { "no": "CO2", "description": "Explain The Basics Of Automated Manufacturing Industries Through Mathematical Models And Analyze Different Types Of Automated Flow Lines." },
+      { "no": "CO3", "description": "Explain The Basics Of Automated Manufacturing Industries Through Mathematical Models And Analyze Different Types Of Automated Flow Lines." },
+      { "no": "CO4", "description": "Explain The Use Of Different Computer Applications In Manufacturing, And Able To Prepare Part Programs Forsimple Jobs On Cnc Machine Tools And Robot Programming." },
+      { "no": "CO5", "description": "Visualize And Appreciate The Modern Trends In Manufacturing Like Additive Manufacturing, Industry 4.0 And Applications Of Internet Of Things Leading To Smart Manufacturing." }
+    ]
+  },
+  {
+    "id": 9,
+    "subject": "Control Engineering(17ME73)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Recongnise Control Systems And Its Types, Control Actions Of Various Controllers." },
+      { "no": "CO2", "description": "Determine The System Governing Equations For Electrical, Thermal, Mechanical, Liquid Level Systems And Calculate The Gain Of The System Using Block Diagram And Signal Flow Graphs." },
+      { "no": "CO3", "description": "Illustrate The Response Of 1st And 2nd Order Systems." },
+      { "no": "CO4", "description": "Determine The Stability Of Transfer Functions In Complex Domain And Frequency Domain." },
+      { "no": "CO5", "description": "Employ State Equations To Study The Controllability And Observability." }
+    ]
+  },
+  {
+    "id": 10,
+    "subject": "Design Lab(17MEL76)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Compute The Natural Frequency Of The Free And Forced Vibration Of Single Degree Freedom Systems, Critical Speed Of Shafts." },
+      { "no": "CO2", "description": "Carry Out The Balancing Of Rotating And Reciprocating Masses." },
+      { "no": "CO3", "description": "Analyse The Governor Characteristics" },
+      { "no": "CO4", "description": "Understand The Free And Forced Vibration Phenomenon" },
+      { "no": "CO5", "description": "Determination Of Pressure Distribution In Journal Bearing" }
+    ]
+  },
+  {
+    "id": 11,
+    "subject": "Computer Integrated Manufacturing Lab(18MEL76)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Generate Cnc Lathe Part Program For Turning, Facing, Chamfering, Grooving, Step Turning, Taper Turning, Circular Interpolation Etc" },
+      { "no": "CO2", "description": "Generate Cnc Mill Part Programming For Point To Point Motions, Line Motions, Circular Interpolation, Contour Motion, Pocket Milling- Circular, Rectangular, Mirror Commands Etc." },
+      { "no": "CO3", "description": "Use Canned Cycles For Drilling, Peck Drilling, Boring, Tapping, Turning, Facing, Taper Turning Thread Cutting Etc." },
+      { "no": "CO4", "description": "Simulate Tool Path For Different Machining Operations Of Small Components Using Cnc Lathe & Cnc Milling Machine. Use High End Cam Packages For Machining Complex Parts; Use State Of Art Cutting Tools And Related Cutting Parameters; Optimize Cycle Time," },
+      { "no": "CO5", "description": "Simulate Tool Path For Different Machining Operations Of Small Components Using Cnc Lathe & Cnc Milling Machine. Use High End Cam Packages For Machining Complex Parts; Use State Of Art Cutting Tools And Related Cutting Parameters; Optimize Cycle Time," }
+    ]
+  },
+  {
+    "id": 12,
+    "subject": "CIM Lab(17MEL77)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Simulate Tool Path For Different Machining Operations Of Small Components Using Cnc Lathe & Cnc Milling Machine. Use High End Cam Packages For Machining Complex Parts; Use State Of Art Cutting Tools And Related Cutting Parameters; Optimize Cycle Time," },
+      { "no": "CO2", "description": "Simulate Tool Path For Different Machining Operations Of Small Components Using Cnc Lathe & Cnc Milling Machine. Use High End Cam Packages For Machining Complex Parts; Use State Of Art Cutting Tools And Related Cutting Parameters; Optimize Cycle Time," },
+      { "no": "CO3", "description": "Use Canned Cycles For Drilling, Peck Drilling, Boring, Tapping, Turning, Facing, Taper Turning Thread Cutting Etc." },
+      { "no": "CO4", "description": "Use Canned Cycles For Drilling, Peck Drilling, Boring, Tapping, Turning, Facing, Taper Turning Thread Cutting Etc." },
+      { "no": "CO5", "description": "Use Canned Cycles For Drilling, Peck Drilling, Boring, Tapping, Turning, Facing, Taper Turning Thread Cutting Etc." }
+    ]
+  },
+  {
+    "id": 13,
+    "subject": "Design Lab(18MEL77)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Compute The Natural Frequency Of The Free And Forced Vibration Of Single Degree Freedom Systems, Critical Speed Of Shafts." },
+      { "no": "CO2", "description": "Carry Out The Balancing Of Rotating And Reciprocating Masses." },
+      { "no": "CO3", "description": "Analyse The Governor Characteristics" },
+      { "no": "CO4", "description": "Determine Stresses In Disk, Beams, Plates And Hook Using Photo Elastic Bench." },
+      { "no": "CO5", "description": "Determination Of Pressure Distribution In Journal Bearing" }
+    ]
+  },
+  {
+    "id": 14,
+    "subject": "Project Phase – I(17MEP78)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "To Design A System, Components And Experiments For The Project Using Modern Tools." },
+      { "no": "CO2", "description": "To Utilize The Theorical Knowledge Gained To Successfully Complete The Projects In Stipulated Time." },
+      { "no": "CO3", "description": "To Demonstrate The Contextual Engineering Knowledge To Provide Sustainable Solution To Needs Of The Society" },
+      { "no": "CO4", "description": "To Demonstrate Engineering And Management Skills, Communicate Effectively, As An Individual And As A Team Member After The Successful Completion Of Project." },
+      { "no": "CO5", "description": "To Demonstrate Social And Economic Responsibilities By Adapting Legal, Cultural And Ethical Principles For Lifelong Learning." }
+    ]
+  },
+  {
+    "id": 15,
+    "subject": "Project Work Phase - 1(18MEP78)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "To Design A System, Components And Experiments For The Project Using Modern Tools." },
+      { "no": "CO2", "description": "To Utilize The Theorical Knowledge Gained To Successfully Complete The Projects In Stipulated Time." },
+      { "no": "CO3", "description": "To Demonstrate The Contextual Engineering Knowledge To Provide Sustainable Solution To Needs Of The Society" },
+      { "no": "CO4", "description": "To Demonstrate Engineering And Management Skills, Communicate Effectively, As An Individual And As A Team Member After The Successful Completion Of Project." },
+      { "no": "CO5", "description": "To Demonstrate Social And Economic Responsibilities By Adapting Legal, Cultural And Ethical Principles For Lifelong Learning." }
+    ]
+  },
+
+  {
+  "id": 16,
+  "subject": "Mechatronics(17ME754)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Understand The Evolution And Development Of Mechatronics As A Discipline. Substantiate The Need For Interdisciplinary Study In Technology Education And To Comprehend The Design Aspects Of Mechatronics Circuits Using Different Sensors And Transducers." },
+    { "no": "CO2", "description": "Understand The Applications Of Microprocessors And Microcontroller In Various Systems And To Know The Functions Of Each Element To Identify And Formulate A Mechatronic Product." },
+    { "no": "CO3", "description": "Demonstrate The Integration Philosophy In View Of Mechatronics Technology And Gain Knowledge In Plc For Industrial Application" },
+    { "no": "CO4", "description": "Understand The Actuation Mechanism In Mechanical And Electrical System For Product Development In Mechatronics" },
+    { "no": "CO5", "description": "Understand The Working Principle Of Hydraulic And Pneumatic System And Application Of Engineering Knowledge In Design And Development Of Hydraulic And Pneumatic Circuit." }
+  ]
+},
+
+
+
+
+
+
+{
+  "id": 1,
+  "subject": "Non-Destructive Testing and Evaluation(18ME823)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Classify Various Non-destructive Testing Methods. Document The Testing And Evaluation Of The Results." },
+    { "no": "CO2", "description": "Check Different Metals And Alloys By Visual Inspection Method." },
+    { "no": "CO3", "description": "Explain And Perform Non-destructive Tests Like: Liquid Penetrant Test, Magnetic Particle Test, Ultrasonic Test, X- Ray And Gamma Ray Radiography, Leak Test, Eddy Current Test." },
+    { "no": "CO4", "description": "Identify Defects Using Relevant Ndt Methods." },
+    { "no": "CO5", "description": "Differentiate Various Defect Types And Select The Appropriate Ndt Methods For Better Evaluation." }
+  ]
+},
+
+{
+  "id": 2,
+  "subject": "Project Work Phase - 2(18MEP83)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Carry Out Literature Review, Formulate/ Define Objectives And Methodologies To Be Followed To Successful Completion The Projects In Stipulated Time" },
+    { "no": "CO2", "description": "Able To Design A Systems, Components And Experiments For The Project Using Modern Tools" },
+    { "no": "CO3", "description": "Able To Develop Prototype Models/ Carry Out Fabrication/experimentation And Analyze The Data" },
+    { "no": "CO4", "description": "Demonstrate Engineering And Management Skills, Communicate Effectively, As An Individual And Team For The Successful Completion Of Project" },
+    { "no": "CO5", "description": "Able To Demonstrate Social And Economic Responsibilities By Adapting Legal, Cultural And Ethical Principles For Lifelong Learning" }
+  ]
+},
+
+{
+  "id": 3,
+  "subject": "Product life cycle management(17ME835)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Explain The Various Strategies Of Plm And Product Data Management" },
+    { "no": "CO2", "description": "Describe Decomposition Of Product Design And Model Simulation" },
+    { "no": "CO3", "description": "Apply The Concept Of New Product Development And Its Structuring." },
+    { "no": "CO4", "description": "Analyze The Technological Forecasting And The Tools In The Innovation." },
+    { "no": "CO5", "description": "Apply The Virtual Product Development And Model Analysis" }
+  ]
+},
+
+{
+  "id": 4,
+  "subject": "Operations Research(17ME81)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Understand The Meaning, Definitions, Scope, Need, Phases And Techniques Of Operations Research And Solutions By Graphical Method" },
+    { "no": "CO2", "description": "Formulate As L.p.p And Derive Optimal Solutions To Linear Programming Problems By Simplex Method, Big-m Method And Dual Simplex Method." },
+    { "no": "CO3", "description": "Formulate As Transportation And Assignment Problems And Derive Optimum Solutions For Transportation, Assignment And Travelling Salesman Problems." },
+    { "no": "CO4", "description": "Solve Waiting Line Problems For M/m/1 And M/m/k Queuing Models And Construct Network Diagrams And Determine Critical Path, Floats For Deterministic And Pert Networks Including Crashing Of Networks." },
+    { "no": "CO5", "description": "Determine Minimum Processing Times For Sequencing Of N Jobs-2 Machines, N Jobs-3machines,n Jobs-m Machines And 2 Jobs-n Machines Using Johnson’s Algorithm And Solve Problems On Game Theory For Pure And Mixed Strategy Under Competitive Environment." }
+  ]
+},
+
+{
+  "id": 5,
+  "subject": "Energy Engineering(18ME81)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Understand The Construction And Working Of Steam Generators And Their Accessories." },
+    { "no": "CO2", "description": "Identify Renewable Energy Sources Like Solar And Biomass And Their Utilization." },
+    { "no": "CO3", "description": "Understand Principles Of Energy Conversion From Alternate Sources Including Wind, Geothermal And Tidal." },
+    { "no": "CO4", "description": "Understand Principles Of Energy Conversion From Alternate Sources Including Ocean And Hydel" },
+    { "no": "CO5", "description": "Understand Principles Of Energy Conversion From Alternate Sources Including Nuclear." }
+  ]
+},
+
+{
+  "id": 6,
+  "subject": "Additive Manufacturing(17ME82)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Understand The Different Process Of Additive Manufacturing And Its Applications." },
+    { "no": "CO2", "description": "Understand The Different System Devices, Drives And Actuation System Used In Am." },
+    { "no": "CO3", "description": "Understand Various Process Of Am Using Polymer And Powder Metallurgy." },
+    { "no": "CO4", "description": "Understand The Nano-materials Manufacturing And Characterization Techniques." },
+    { "no": "CO5", "description": "Students Will Be Able To Describe The Various Nc, Cnc Machine Programming And Automation Techniques." }
+  ]
+},
+
+{
+  "id": 7,
+  "subject": "Internship / Professional Practice(17ME84)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Identify The Gap Between Curriculum And Industry Regarding Societal, And Engineering Practices And Prepare Themselves For A Better Career." },
+    { "no": "CO2", "description": "Comprehend The Need Of Lifelong Learning Via Sustainable Development." },
+    { "no": "CO3", "description": "Follow Effective Communication, Decision Making, Leadership And Other Managerial Skills Necessary For Their Future." },
+    { "no": "CO4", "description": "Work In A Multi-disciplinary Environment Facing All Constraints During The Progress Of An Assigned Work." },
+    { "no": "CO5", "description": "Develop The Individual Responsibility And Follow Ethical Standards Of The Industries" }
+  ]
+},
+
+{
+  "id": 8,
+  "subject": "Technical Seminar (18MES84)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Apply Principles Of Ethical Leadership, Collaborative Engagement, Socially Responsible Behaviour." },
+    { "no": "CO2", "description": "Using Modern Tools To Examine Real World Issues" },
+    { "no": "CO3", "description": "Able To Develop, Attain And Disseminate Knowledge Through Independent Learning And Collaborative Study." },
+    { "no": "CO4", "description": "Able To Communicate Effectively." },
+    { "no": "CO5", "description": "Exposed To Latest Development In The Field Of Engineering And Technology." }
+  ]
+},
+
+{
+  "id": 9,
+  "subject": "Project Phase – II(17ME85)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Carry Out Literature Review, Formulate/ Define Objectives And Methodologies To Be Followed To Successful Completion The Projects In Stipulated Time" },
+    { "no": "CO2", "description": "Able To Design A Systems, Components And Experiments For The Project Using Modern Tools" },
+    { "no": "CO3", "description": "Able To Develop Prototype Models/ Carry Out Fabrication/experimentation And Analyze The Data" },
+    { "no": "CO4", "description": "Demonstrate Engineering And Management Skills, Communicate Effectively, As An Individual And Team For The Successful Completion Of Project" },
+    { "no": "CO5", "description": "Able To Demonstrate Social And Economic Responsibilities By Adapting Legal, Cultural And Ethical Principles For Lifelong Learning" }
+  ]
+},
+
+{
+  "id": 10,
+  "subject": "Internship (18MEI85)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Identify The Gap Between Curriculum And Industry Regarding Societal, And Engineering Practices And Prepare Themselves For A Better Career." },
+    { "no": "CO2", "description": "Comprehend The Need Of Lifelong Learning Via Sustainable Development." },
+    { "no": "CO3", "description": "Follow Effective Communication, Decision Making, Leadership And Other Managerial Skills Necessary For Their Future." },
+    { "no": "CO4", "description": "Work In A Multi-disciplinary Environment Facing All Constraints During The Progress Of An Assigned Work." },
+    { "no": "CO5", "description": "Develop The Individual Responsibility And Follow Ethical Standards Of The Industries" }
+  ]
+},
+
+{
+  "id": 11,
+  "subject": "Seminar(17MES86)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Able To Apply Principles Of Ethical Leadership, Collaborative Engagement, Socially Responsible Behaviour." },
+    { "no": "CO2", "description": "Learn About Modern Tools To Examine Real Life Issues." },
+    { "no": "CO3", "description": "Able To Develop, Attain And Disseminate Knowledge Through Independent Learning." },
+    { "no": "CO4", "description": "Able To Communicate Effectively." },
+    { "no": "CO5", "description": "Exposed To Latest Development In The Field Of Engineering And Technology." }
+  ]
+}
+
+
       ]
     },
 
