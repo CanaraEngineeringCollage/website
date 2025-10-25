@@ -37,7 +37,7 @@ const CourseOutCome = ({staticData,deptName}:{staticData:any;deptName:string }) 
 const admissionYears =
     deptName === "Mechanical Engineering"
       ? generateAdmissionYears(2014,2020): deptName === "Artificial Intelligence & Machine Learning"?generateAdmissionYears(2021,2024):
-     deptName === "Computer Science & Business System"?generateAdmissionYears(2021,2023) : generateAdmissionYears();
+     deptName === "Computer Science & Business System"?generateAdmissionYears(2021,2023) : generateAdmissionYears(2014,2024);
 
 
   const handleFetch = () => {
