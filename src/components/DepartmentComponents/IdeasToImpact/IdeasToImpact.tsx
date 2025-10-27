@@ -16,7 +16,6 @@ type IdeasData = {
       placed: number;
       offers: number;
     }[];
-    
   }[];
 
   passOutRates: {
@@ -29,8 +28,6 @@ type IdeasData = {
     title: string;
     subtitle: string;
   }[];
-
- 
 
   csdData: {
     slNo: number;
@@ -54,14 +51,68 @@ type TableRow = {
 
 interface IdeasToImpactProps {
   ideasData: IdeasData;
-  tableHeaders: TableHeader[];
-  tableRows: TableRow[];
+  tableHeaders?: TableHeader[];
+  tableRows?: TableRow[];
+  awardsTable2?: { headers: TableHeader[]; rows: TableRow[] };
+  awardsTable3?: { headers: TableHeader[]; rows: TableRow[] };
 }
 
-export default function IdeasToImpact({ ideasData, tableHeaders, tableRows }: IdeasToImpactProps) {
+function AwardsTable({
+  headers,
+  rows,
+  show,
+}: {
+  headers: TableHeader[];
+  rows: TableRow[];
+  show: boolean;
+}) {
+  if (!show) return null;
+
+  return (
+    <div className="rounded overflow-hidden border border-gray-200 w-full mt-10 text-[#1D1D1F]">
+      <table className="w-full text-left text-[13px] md:text-[15px]">
+        <thead className="bg-[#F3F8FC] text-[#2884CA]">
+          <tr>
+            {headers.map((header) => (
+              <th key={header.key} className="py-3 md:px-4 px-1 border-b">
+                {header.label}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row, idx) => (
+            <tr key={idx}>
+              {headers.map((header) => {
+                const cell = row[header.key];
+                return (
+                  <td key={header.key} className="py-3 md:px-4 px-1 border-b">
+                    {Array.isArray(cell)
+                      ? cell.map((item, i) => <div key={i}>{item}</div>)
+                      : cell}
+                  </td>
+                );
+              })}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export default function IdeasToImpact({
+  ideasData,
+  tableHeaders,
+  tableRows,
+  awardsTable2,
+  awardsTable3,
+}: IdeasToImpactProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [activePlacement, setActivePlacement] = useState(0);
-  const [showTable, setShowTable] = useState(false);
+  const [showMainTable, setShowMainTable] = useState(false);
+  const [showTable2, setShowTable2] = useState(false);
+  const [showTable3, setShowTable3] = useState(false);
 
   const placements = ideasData.placements;
   const awards = ideasData.awards;
@@ -83,6 +134,7 @@ export default function IdeasToImpact({ ideasData, tableHeaders, tableRows }: Id
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 text-[#1D1D1F] mt-10">
+
           {/* Awards Card */}
           <div className="flex flex-col h-full">
             <div className="bg-white rounded-2xl flex flex-col flex-1">
@@ -122,49 +174,21 @@ export default function IdeasToImpact({ ideasData, tableHeaders, tableRows }: Id
                   onDotClick={setActiveIndex}
                   className="mt-6"
                 />
-              { tableHeaders&& tableRows &&<button
-                  onClick={() => setShowTable(!showTable)}
-                  className="text-primary font-semibold mt-6"
-                >
-                  {showTable ? "Hide Details" : "See More"}
-                </button>}
+
+                {/* Main Table Toggle */}
+                {tableHeaders && tableRows && (
+                  <button
+                    onClick={() => setShowMainTable(!showMainTable)}
+                    className="text-primary font-semibold mt-6"
+                  >
+                    {showMainTable ? "Hide Details" : "See More"}
+                  </button>
+                )}
               </div>
             </div>
           </div>
 
-              {showTable && (
-          <div className="rounded overflow-x-auto hide-scrollbar lg:hidden mt-4 text-[#1D1D1F]  border border-gray-200 w-full">
-            <table className="w-full text-left text-[13px] md:text-[15px]">
-              <thead className="bg-[#F3F8FC] text-[#2884CA]">
-                <tr>
-                  {tableHeaders.map((header) => (
-                    <th key={header.key} className="py-3 md:px-4 px-1 border-b">
-                      {header.label}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {tableRows.map((row, idx) => (
-                  <tr key={idx} className="">
-                    {tableHeaders.map((header) => {
-                      const cell = row[header.key];
-                      return (
-                        <td key={header.key} className="py-3 md:px-4 px-1 border-b ">
-                          {Array.isArray(cell)
-                            ? cell.map((item, i) => <div key={i}>{item}</div>)
-                            : cell}
-                        </td>
-                      );
-                    })}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        )}
-
-          {/* Examination Pass Rate Card */}
+          {/* Pass Out Rate Card */}
           <div className="flex flex-col h-full">
             <div className="bg-white rounded-2xl p-6 flex-1">
               <div className="grid md:grid-cols-2 items-center gap-6 h-full">
@@ -195,7 +219,8 @@ export default function IdeasToImpact({ ideasData, tableHeaders, tableRows }: Id
                           transition={{ duration: 0.6, delay: index * 0.2 }}
                           className="w-full absolute bottom-0 flex items-end justify-center"
                           style={{
-                            background: "linear-gradient(to top, #2884CA, #6DC0EB)",
+                            background:
+                              "linear-gradient(to top, #2884CA, #6DC0EB)",
                           }}
                         >
                           <span className="text-xs font-medium text-white pb-1">
@@ -211,37 +236,45 @@ export default function IdeasToImpact({ ideasData, tableHeaders, tableRows }: Id
           </div>
         </div>
 
-        {/* Dynamic Table */}
-        {showTable && (
-           <div className="rounded overflow-hidden hidden text-[#1D1D1F] mt-10 lg:block border border-gray-200 w-full">
-            <table className="w-full text-left text-[13px] md:text-[15px]">
-              <thead className="bg-[#F3F8FC] text-[#2884CA]">
-                <tr>
-                  {tableHeaders.map((header) => (
-                    <th key={header.key} className="py-3  md:px-4 px-1 border-b">
-                      {header.label}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {tableRows.map((row, idx) => (
-                  <tr key={idx} className="">
-                    {tableHeaders.map((header) => {
-                      const cell = row[header.key];
-                      return (
-                        <td key={header.key} className="py-3 md:px-4 px-1 border-b ">
-                          {Array.isArray(cell)
-                            ? cell.map((item, i) => <div key={i}>{item}</div>)
-                            : cell}
-                        </td>
-                      );
-                    })}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+        {/* Main Awards Table */}
+        {tableHeaders && tableRows && (
+          <AwardsTable headers={tableHeaders} rows={tableRows} show={showMainTable} />
+        )}
+
+        {/* Awards Table 2 */}
+        {awardsTable2 &&showMainTable && (
+          <>
+            <button
+              onClick={() => setShowTable2(!showTable2)}
+              className="text-primary font-semibold mt-6"
+            >
+              {showTable2 ? "Hide Details" : "See More"}
+            </button>
+
+            <AwardsTable
+              headers={awardsTable2.headers}
+              rows={awardsTable2.rows}
+              show={showTable2}
+            />
+          </>
+        )}
+
+        {/* Awards Table 3 */}
+        {awardsTable3&& showMainTable &&showTable2 && (
+          <>
+            <button
+              onClick={() => setShowTable3(!showTable3)}
+              className="text-primary font-semibold mt-6"
+            >
+              {showTable3 ? "Hide Details" : "See More"}
+            </button>
+
+            <AwardsTable
+              headers={awardsTable3.headers}
+              rows={awardsTable3.rows}
+              show={showTable3}
+            />
+          </>
         )}
       </div>
     </section>
