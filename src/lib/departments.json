@@ -37976,13 +37976,1468 @@
       { "no": "CO4", "description": "Illustrate the HTML tables using various CSS attributes." },
       { "no": "CO5", "description": "Demonstrate the basic concepts of JavaScript for web design." }
     ]
-  }
+  },
 
 
+{
+  "id": 1,
+  "subject": "MATHEMATICS FOR CSE STREAM - II (BMATS201)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Apply the concept of change of order of integration and variables to evaluate multiple integrals and their usage in computing area and volume, and demonstrate using Python." },
+    { "no": "CO2", "description": "Understand the applications of vector calculus to solenoidal and irrotational vectors, orthogonal curvilinear coordinates, and demonstrate using Python." },
+    { "no": "CO3", "description": "Demonstrate the idea of linear dependence and independence of sets in the vector space, and linear transformation, and demonstrate using Python." },
+    { "no": "CO4", "description": "Apply the knowledge of numerical methods in analyzing discrete data and solving physical and engineering problems, and demonstrate using Python." },
+    { "no": "CO5", "description": "Solve first-order ordinary differential equations arising in engineering problems and demonstrate using Python." }
+  ]
+},
+{
+  "id": 2,
+  "subject": "PHYSICS FOR CSE STREAM (BPHYS202)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Apply the principles of lasers and optical fibers in measuring parameters by conducting experiments." },
+    { "no": "CO2", "description": "Apply the basic principles of quantum mechanics in the quantized energies of the system and conduct relevant experiments." },
+    { "no": "CO3", "description": "Apply the basic concepts of quantum computing in developing quantum gates." },
+    { "no": "CO4", "description": "Summarize the principles of electrical properties of materials, superconductivity, and analyze them through experiments." },
+    { "no": "CO5", "description": "Illustrate the application of physics in design and data analysis using animation principles." }
+  ]
+},
+{
+  "id": 3,
+  "subject": "PRINCIPLES OF PROGRAMMING USING C (BPOPS203)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Explain the basic architecture and functionalities of a computer and recognize hardware components." },
+    { "no": "CO2", "description": "Apply programming constructs of C language to solve simple computational problems." },
+    { "no": "CO3", "description": "Develop programs to solve computational problems using arrays and functions." },
+    { "no": "CO4", "description": "Make use of strings and pointers to solve computational problems." },
+    { "no": "CO5", "description": "Apply concepts of structures, unions, and enumerated data types in implementing problem-solving solutions." }
+  ]
+},
+{
+  "id": 4,
+  "subject": "PROFESSIONAL WRITING SKILLS IN ENGLISH (BPWSK206)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Understand and identify common errors in writing and speaking." },
+    { "no": "CO2", "description": "Achieve better technical writing and presentation skills." },
+    { "no": "CO3", "description": "Read technical proposals effectively and write good technical reports." },
+    { "no": "CO4", "description": "Acquire employment and workplace communication skills." },
+    { "no": "CO5", "description": "Learn techniques of information transfer through presentations at different levels." }
+  ]
+},
+{
+  "id": 5,
+  "subject": "INDIAN CONSTITUTION (BICOK207)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Know about the basic structure of the Indian Constitution." },
+    { "no": "CO2", "description": "Understand the Fundamental Rights (FRs), Directive Principles of State Policy (DPSPs), and Fundamental Duties (FDs) of the Constitution." },
+    { "no": "CO3", "description": "Understand the Union Government, political structure, codes, and procedures." },
+    { "no": "CO4", "description": "Understand the State Executive and election system of India and important provisions of the Constitution." },
+    { "no": "CO5", "description": "Learn the amendments, emergency provisions, and other significant provisions of the Constitution." }
+  ]
+},
+{
+  "id": 6,
+  "subject": "INTRODUCTION TO MECHANICAL ENGINEERING (BESCK204D)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Explain new trends and technologies in manufacturing, energy, and relevant sectors and their impact on society and the environment." },
+    { "no": "CO2", "description": "Outline machine tool operations and advanced manufacturing processes." },
+    { "no": "CO3", "description": "Explain the working principles of IC engines and the need for future mobility vehicles for environmental sustainability." },
+    { "no": "CO4", "description": "Outline properties of common engineering materials and metal joining processes." },
+    { "no": "CO5", "description": "Explain basic concepts of advanced trends and technologies related to automation, robotics, and IoT." }
+  ]
+},
+{
+  "id": 7,
+  "subject": "SCIENTIFIC FOUNDATIONS OF HEALTH (BSFHK258)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Explain health and wellness concepts and their balance for a positive mindset." },
+    { "no": "CO2", "description": "List healthy lifestyles for good health and a better future." },
+    { "no": "CO3", "description": "Define healthy and caring relationships to promote positive social life." },
+    { "no": "CO4", "description": "Describe how to avoid risks and harmful habits within and outside campus for a bright future." },
+    { "no": "CO5", "description": "Explain preventive measures against harmful diseases for good health through a positive mindset." }
+  ]
+},
+{
+  "id": 8,
+  "subject": "INTRODUCTION TO INTERNET OF THINGS (BETCK205H)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Explain the evolution of IoT and its networking components." },
+    { "no": "CO2", "description": "Classify various sensing devices and actuator types." },
+    { "no": "CO3", "description": "Explain significant processing technologies used in IoT." },
+    { "no": "CO4", "description": "Explain cloud computing methods and associated case studies." },
+    { "no": "CO5", "description": "Outline applications of IoT technologies in various sectors using case studies." }
+  ]
+},
+{
+  "id": 1,
+  "subject": "Mathematics for Computer Science (BCS301)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Explain the basic concepts of probability, random variables, probability distribution and apply suitable probability distribution models for the given scenario." },
+    { "no": "CO2", "description": "Apply the notion of a discrete-time Markov chain and n-step transition probabilities to solve the given problem." },
+    { "no": "CO3", "description": "Use statistical methodology and tools in the engineering problem-solving process." },
+    { "no": "CO4", "description": "Compute the confidence intervals for the mean of the population." },
+    { "no": "CO5", "description": "Apply the ANOVA test related to engineering problems." }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Digital Design and Computer Organisation (BCS302)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Apply the K-map techniques to simplify various Boolean expressions and implement using logic gates." },
+    { "no": "CO2", "description": "Design different types of combinational and sequential circuits along with Verilog programs." },
+    { "no": "CO3", "description": "Describe the fundamentals of machine instructions, addressing modes, and processor performance." },
+    { "no": "CO4", "description": "Explain the approaches involved in achieving communication between processor and I/O devices." },
+    { "no": "CO5", "description": "Analyse internal organization of memory and impact of cache/pipelining on processor performance." }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Operating Systems (BCS303)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Explain the structure and functionality of operating systems." },
+    { "no": "CO2", "description": "Apply appropriate CPU scheduling algorithms for the given problem." },
+    { "no": "CO3", "description": "Analyze the various techniques for process synchronization and deadlock handling." },
+    { "no": "CO4", "description": "Apply the various techniques for memory management." },
+    { "no": "CO5", "description": "Illustrate the concept of file management strategies and protection mechanisms." }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Data Structures and Application (BCS304)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Explain different data structures and their applications." },
+    { "no": "CO2", "description": "Apply arrays, stacks and queue data structures to solve the given problems." },
+    { "no": "CO3", "description": "Use the concept of linked lists in problem solving." },
+    { "no": "CO4", "description": "Develop solutions using trees and graphs to model real-world problems." },
+    { "no": "CO5", "description": "Explain advanced data structures concepts such as hashing techniques and optimal binary search trees." }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Data Structures Lab (BCSL305)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Analyze various linear and non-linear data structures." },
+    { "no": "CO2", "description": "Demonstrate the working nature of different types of data structures and their applications." },
+    { "no": "CO3", "description": "Use appropriate searching algorithms for the given scenario." },
+    { "no": "CO4", "description": "Apply the appropriate data structure for solving real world problems." },
+    { "no": "CO5", "description": "Use programming tools to solve real world problems." }
+  ]
+},
+{
+  "id": 6,
+  "subject": "Social Connect and Responsibility (BSCK307)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Communicate and connect to the surroundings and create a responsible connection with society." },
+    { "no": "CO2", "description": "Involve in the community in general in which they work." },
+    { "no": "CO3", "description": "Notice the needs and problems of the community and involve them in problem-solving." },
+    { "no": "CO4", "description": "Develop a sense of social and civic responsibility and utilize their knowledge in finding practical solutions to community problems." },
+    { "no": "CO5", "description": "Develop competence required for group-living, sharing of responsibilities, and gain leadership and democratic attitudes." }
+  ]
+},
+{
+  "id": 7,
+  "subject": "National Service Scheme (BNSK359)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Understand the importance of responsibilities towards society." },
+    { "no": "CO2", "description": "Analyse environmental and societal problems/issues and design solutions for the same." },
+    { "no": "CO3", "description": "Evaluate existing systems and propose practical solutions for sustainable development." },
+    { "no": "CO4", "description": "Implement government or self-driven projects effectively in the field." },
+    { "no": "CO5", "description": "Develop capacity to meet emergencies and natural disasters and practice national integration and social harmony." }
+  ]
+},
+{
+  "id": 8,
+  "subject": "Physical Education (BPEK359)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Understand the fundamental concepts and skills of physical education, health, nutrition, and fitness." },
+    { "no": "CO2", "description": "Familiarize with health-related exercises and sports for overall growth and development." },
+    { "no": "CO3", "description": "Create a foundation for professionals in physical education and sports." },
+    { "no": "CO4", "description": "Participate in competitions at regional, state, national, and international levels." },
+    { "no": "CO5", "description": "Create awareness about health, fitness, and wellness for maintaining a healthy lifestyle." }
+  ]
+},
+{
+  "id": 9,
+  "subject": "Yoga (BYOK359)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Understand the aim and objectives of yoga, prayers with meaning, definitions, and importance." },
+    { "no": "CO2", "description": "Understand and follow the rules during yogic practices." },
+    { "no": "CO3", "description": "Perform Suryanamaskar with prayer knowing its importance and benefits." },
+    { "no": "CO4", "description": "Perform different types of asanas in various forms knowing their name, technique, precautions, and benefits." },
+    { "no": "CO5", "description": "Perform Kapalabhati and Pranayama knowing their name, technique, precautions, and benefits." }
+  ]
+},
+{
+  "id": 10,
+  "subject": "Object Oriented Programming with JAVA (BCS306A)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Demonstrate proficiency in writing simple programs involving branching and looping structures." },
+    { "no": "CO2", "description": "Design a class involving data members and methods for the given scenario." },
+    { "no": "CO3", "description": "Apply the concepts of inheritance and interfaces in solving real-world problems." },
+    { "no": "CO4", "description": "Use the concepts of packages and exception handling in solving complex problems." },
+    { "no": "CO5", "description": "Apply concepts of multithreading, autoboxing, and enumerations in program development." }
+  ]
+},
+{
+  "id": 11,
+  "subject": "R Programming (BCS358B)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Explore and understand the R and R Studio interactive environment." },
+    { "no": "CO2", "description": "Understand different data structures and data types in R." },
+    { "no": "CO3", "description": "Learn and practice programming techniques using R programming." },
+    { "no": "CO4", "description": "Import data into R from various data sources and generate visualizations." },
+    { "no": "CO5", "description": "Draw insights from datasets using data analytics techniques." }
+  ]
+},
+
+
+{
+  "id": 1,
+  "subject": "Analysis & Design of Algorithms (BCS401)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Apply asymptotic notational methods to analyze the performance of algorithms in terms of time complexity." },
+    { "no": "CO2", "description": "Utilize divide & conquer and decrease & conquer approaches to solve computational problems." },
+    { "no": "CO3", "description": "Make use of transform & conquer and space-time tradeoff approaches to solve real-world or complex computational problems." },
+    { "no": "CO4", "description": "Use dynamic programming, greedy, and input enhancement methods to solve graph and string-based computational problems." },
+    { "no": "CO5", "description": "Understand various classes (P, NP, and NP-complete) and apply backtracking, branch & bound, and approximation methods to solve real-world problems." }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Microcontrollers (BCS402)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Explain the ARM architectural features and instructions." },
+    { "no": "CO2", "description": "Develop programs using the ARM instruction set for an ARM microcontroller." },
+    { "no": "CO3", "description": "Explain C-compiler optimizations and portability issues in ARM microcontrollers." },
+    { "no": "CO4", "description": "Apply the concepts of exceptions and interrupt handling mechanisms in developing applications." },
+    { "no": "CO5", "description": "Demonstrate the role of cache management and firmware in microcontrollers." }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Database Management Systems (BCS403)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Explain the basic elements of a relational database management system and outline entity relationships for the given scenario." },
+    { "no": "CO2", "description": "Apply relational algebra concepts and operations for real-world scenarios." },
+    { "no": "CO3", "description": "Analyze various SQL statements for database manipulations and normalization forms for given applications." },
+    { "no": "CO4", "description": "Apply advanced SQL concepts on real-time applications and explain basic transaction concepts." },
+    { "no": "CO5", "description": "Understand concurrency control in databases and concepts related to NoSQL databases." }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Analysis & Design of Algorithms Lab (BCSL404)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Develop programs to solve computational problems using suitable algorithm design strategies." },
+    { "no": "CO2", "description": "Compare algorithm design strategies by developing equivalent programs and analyzing running times." },
+    { "no": "CO3", "description": "Make use of suitable integrated development tools to develop programs." },
+    { "no": "CO4", "description": "Choose appropriate algorithm design techniques to develop solutions for computational and complex problems." },
+    { "no": "CO5", "description": "Demonstrate and present program development, execution, and running time results with inferences." }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Biology for Computer Engineers (BBOC407)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Explain basic biological concepts via relevant industrial applications and case studies." },
+    { "no": "CO2", "description": "Explain principles of design and development and identify provisions for novel bioengineering projects." },
+    { "no": "CO3", "description": "Compare human organ systems and bio designs to engineering systems." },
+    { "no": "CO4", "description": "Explain materials and mechanisms developed inspired by nature." },
+    { "no": "CO5", "description": "Identify and explore innovative biobased solutions for socially relevant problems." }
+  ]
+},
+{
+  "id": 6,
+  "subject": "Universal Human Values Course (BUHK408)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Become more responsible in life and handle problems with sustainable solutions while keeping human relationships in mind." },
+    { "no": "CO2", "description": "Develop better critical ability." },
+    { "no": "CO3", "description": "Become sensitive to commitments towards human values, relationships, and society." },
+    { "no": "CO4", "description": "Apply learned human values and principles to day-to-day life situations." },
+    { "no": "CO5", "description": "Appreciate and aspire for excellence (merit) and gratitude in life." }
+  ]
+},
+{
+  "id": 7,
+  "subject": "National Service Scheme (BNSK459)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Express the importance of individual responsibilities towards society." },
+    { "no": "CO2", "description": "Analyze environmental and societal problems and design sustainable solutions." },
+    { "no": "CO3", "description": "Evaluate existing systems and propose practical solutions for sustainable development." },
+    { "no": "CO4", "description": "Illustrate government schemes for community welfare in fields like health, education, and agriculture." },
+    { "no": "CO5", "description": "Survey the needs of society in collaboration with government bodies, NGOs, and local authorities." }
+  ]
+},
+{
+  "id": 8,
+  "subject": "Physical Education (BPEK459)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Outline ethics and moral values in sports and athletics." },
+    { "no": "CO2", "description": "Demonstrate and perform in selected sports or athletics of the student’s choice." },
+    { "no": "CO3", "description": "Describe the roles and responsibilities of sports organizations." },
+    { "no": "CO4", "description": "Recognize the roles and responsibilities of sports and games administration." },
+    { "no": "CO5", "description": "Identify and participate in sports activities." }
+  ]
+},
+{
+  "id": 9,
+  "subject": "Yoga (BYOK459)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Understand the aim and objectives of yoga, prayer meanings, definitions, and importance." },
+    { "no": "CO2", "description": "Understand and follow the rules during yogic practices." },
+    { "no": "CO3", "description": "Perform Suryanamaskar with prayer, knowing its importance and benefits." },
+    { "no": "CO4", "description": "Perform different types of asanas with knowledge of names, techniques, and precautions." },
+    { "no": "CO5", "description": "Perform Kapalabhati, Pranayama, and Kriyas with understanding of technique, usefulness, and benefits." }
+  ]
+},
+{
+  "id": 10,
+  "subject": "Graph Theory (BCS405B)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Explain the fundamental concepts, properties, and representation of graphs." },
+    { "no": "CO2", "description": "Solve problems involving characterization and operations on graphs." },
+    { "no": "CO3", "description": "Apply concepts of trees and graph connectivity to solve real-world problems." },
+    { "no": "CO4", "description": "Apply the concepts of planar graphs and graph representations to solve problems." },
+    { "no": "CO5", "description": "Use concepts of matching and coloring of graphs to solve real-world problems." }
+  ]
+},
+{
+  "id": 11,
+  "subject": "Technical Writing Using LaTeX (BCSL456D)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Apply basic LaTeX commands to develop simple documents." },
+    { "no": "CO2", "description": "Develop LaTeX scripts to present tables and figures in documents." },
+    { "no": "CO3", "description": "Illustrate LaTeX scripts to present theorems and mathematical equations." },
+    { "no": "CO4", "description": "Develop programs to generate complete reports with citations and bibliography." },
+    { "no": "CO5", "description": "Illustrate the use of TikZ and algorithm libraries to design graphics and algorithms." }
+  ]
+},
+
+
+{
+  "id": 1,
+  "subject": "Software Engineering & Project Management (BCS501)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Understand the activities involved in software engineering and analyze the role of various process models." },
+    { "no": "CO2", "description": "Explain the necessity of knowing the requirements, then analyze and design the software." },
+    { "no": "CO3", "description": "Understand the agile development methods used in developing software." },
+    { "no": "CO4", "description": "Illustrate the role of project management and project evaluation during software development." },
+    { "no": "CO5", "description": "Understand the importance of quality management methods and software project estimation in software engineering." }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Computer Networks (BCS502)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Explain the fundamentals of computer networks." },
+    { "no": "CO2", "description": "Apply the concepts of computer networks to demonstrate the working of various layers and protocols in a communication network." },
+    { "no": "CO3", "description": "Analyze the principles of protocol layering in modern communication systems." },
+    { "no": "CO4", "description": "Demonstrate various routing protocols and their services using tools such as Cisco Packet Tracer." },
+    { "no": "CO5", "description": "Explain the principles of network applications." }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Theory of Computation (BCS503)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Apply the fundamentals of automata theory to construct DFA, NFA, and epsilon-NFA." },
+    { "no": "CO2", "description": "Make use of regular expressions to prove the properties of regular languages." },
+    { "no": "CO3", "description": "Develop context-free grammars (CFGs) and pushdown automata (PDAs) to model and recognize formal languages." },
+    { "no": "CO4", "description": "Simplify grammars by applying normal forms for CFGs and use the pumping lemma to identify non-context-free languages." },
+    { "no": "CO5", "description": "Construct Turing Machines to solve computational problems." }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Environmental Studies & E-Waste Management (BCS508)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Understand the principles of ecology and environmental issues that apply to air, land, and water on a global scale." },
+    { "no": "CO2", "description": "Compare water resource issues and energy options, including their availability, quality, and environmental impacts." },
+    { "no": "CO3", "description": "Demonstrate the knowledge of different types of environmental pollution and their influence on ecosystems." },
+    { "no": "CO4", "description": "Summarize effective solid and biomedical waste management practices, incorporating knowledge of waste types, sources, functional elements, and relevant environmental legislation." },
+    { "no": "CO5", "description": "Explain the impacts of e-waste on human health and the environment, and effective management practices and regulations for e-waste handling." }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Research Methodology & IPR (BRMK557)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Explain the fundamentals of engineering research and the need for research ethics." },
+    { "no": "CO2", "description": "Demonstrate the ability to conduct effective literature reviews and technical reading from different databases." },
+    { "no": "CO3", "description": "Outline the need for patent laws and patent drafting procedures." },
+    { "no": "CO4", "description": "Explain copyright laws and the process of registration for copyrights and trademarks." },
+    { "no": "CO5", "description": "Outline the laws and rules governing industrial design and geographical indications." }
+  ]
+},
+{
+  "id": 6,
+  "subject": "Artificial Intelligence (BCS515B)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Explain the architecture and components of intelligent agents, including their interaction with the AI environment." },
+    { "no": "CO2", "description": "Apply problem-solving agents and various search strategies to solve a given problem." },
+    { "no": "CO3", "description": "Illustrate logical reasoning and knowledge representation using propositional and first-order logic." },
+    { "no": "CO4", "description": "Demonstrate proficiency in representing knowledge and solving problems using first-order logic." },
+    { "no": "CO5", "description": "Describe classical planning in the context of AI, including goals, constraints, and applications in problem-solving." }
+  ]
+},
+{
+  "id": 7,
+  "subject": "Mini Project (BCS586)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Work effectively in teams to design and implement software systems, manage conflicts, optimize resources, and meet deadlines." },
+    { "no": "CO2", "description": "Develop solutions for the framed problem statement." },
+    { "no": "CO3", "description": "Design and implement software and evaluate the solution to meet project objectives." },
+    { "no": "CO4", "description": "Test and analyze the modules of the planned project." },
+    { "no": "CO5", "description": "Demonstrate the ability to write clear system documentation, user documentation, and reports." }
+  ]
+}
 
 
   
+      ],
+
+      "2022-2023":[
+        {
+  "id": 1,
+  "subject": "Mathematics for CSE Stream-I (BMATS101)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Apply the knowledge of calculus to solve problems related to polar curves and its applications in determining the bentness of a curve and demonstrate using Python." },
+    { "no": "CO2", "description": "Outline the notion of partial differentiation to calculate rate of change of multivariate functions and solve problems related to composite functions, Jacobian and demonstrate using Python." },
+    { "no": "CO3", "description": "Analyze the solution of linear and nonlinear ordinary differential equations and demonstrate the same using Python." },
+    { "no": "CO4", "description": "Get acquainted and apply modular arithmetic to computer algorithms and demonstrate the same using Python." },
+    { "no": "CO5", "description": "Solve the system of linear equations using matrix theory and compute eigenvalues and eigenvectors and demonstrate using Python." }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Chemistry for CSE Stream (BCHES102)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Explain the applications of sensors and batteries." },
+    { "no": "CO2", "description": "Explain the methods of engineering processes involved in memory devices and display systems." },
+    { "no": "CO3", "description": "Solve problems related to corrosion in engineering applications." },
+    { "no": "CO4", "description": "Explain the concepts of polymers and green fuels." },
+    { "no": "CO5", "description": "Explain various e-waste and their consequences on the environment." }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Computer Aided Engineering Drawing (BCEDK103)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Demonstrate geometrical objects with definite shape and dimensions." },
+    { "no": "CO2", "description": "Construct the shape and size of geometrical objects through FV, TV and SVs." },
+    { "no": "CO3", "description": "Develop the lateral surfaces of the geometrical objects." },
+    { "no": "CO4", "description": "Construct the isometric view from conventional views using CAD software." },
+    { "no": "CO5", "description": "Classify interdisciplinary engineering components or systems through graphical representation." }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Communicative English (BENGK106)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Define and relate the fundamentals of communication skills in their communication skills." },
+    { "no": "CO2", "description": "Tell the nuances of phonetics, intonation and enhance pronunciation skills." },
+    { "no": "CO3", "description": "Recall basic English grammar and essentials of language skills as per present requirement." },
+    { "no": "CO4", "description": "Relate and recall all types of English vocabulary and language proficiency." },
+    { "no": "CO5", "description": "Choose the techniques of information transfer through presentation." }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Balake Kannada (22KBK17)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Create awareness regarding the necessity of learning the local language for a comfortable and healthy life." },
+    { "no": "CO2", "description": "Enable learners to listen and understand the Kannada language properly." },
+    { "no": "CO3", "description": "Speak, read and write Kannada language as per requirement." },
+    { "no": "CO4", "description": "Train learners for correct and polite conversation." },
+    { "no": "CO5", "description": "Know about Karnataka state, its language, literature, and general information about this state." }
+  ]
+},
+{
+  "id": 6,
+  "subject": "Introduction to Civil Engineering (BESCK104A)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Explain the various disciplines of civil engineering." },
+    { "no": "CO2", "description": "Explain the infrastructure requirements for sustainable development." },
+    { "no": "CO3", "description": "Apply and find the resultant and equilibrium of force systems." },
+    { "no": "CO4", "description": "Find the centroid of plane and built-up sections." },
+    { "no": "CO5", "description": "Find the moment of inertia of plane and built-up sections." }
+  ]
+},
+{
+  "id": 7,
+  "subject": "Innovation and Design Thinking (BIDTK158)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Find various design process procedures." },
+    { "no": "CO2", "description": "Label and select design ideas through different techniques." },
+    { "no": "CO3", "description": "Relate the significance of reverse engineering to understand products." },
+    { "no": "CO4", "description": "Choose technical drawing for design ideas." },
+    { "no": "CO5", "description": "Apply design thinking by taking case studies." }
+  ]
+},
+{
+  "id": 8,
+  "subject": "Introduction to Web Programming (BPLCK105A)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Explain the historical context and justification for HTML over XHTML." },
+    { "no": "CO2", "description": "Explain simple web page segments with HTML5 semantic markup tags." },
+    { "no": "CO3", "description": "Outline the importance of CSS to improve a web page presentation." },
+    { "no": "CO4", "description": "Illustrate HTML tables using various CSS attributes." },
+    { "no": "CO5", "description": "Demonstrate the basic concepts of JavaScript for web design." }
+  ]
+},
+
+
+{
+  "id": 1,
+  "subject": "Mathematics for CSE Stream – II (BMATS201)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Apply the concept of change of order of integration and variables to evaluate multiple integrals and their usage in computing area and volume and demonstrate using Python." },
+    { "no": "CO2", "description": "Understand the applications of vector calculus referring to solenoidal and irrotational vectors, orthogonal curvilinear coordinates and demonstrate using Python." },
+    { "no": "CO3", "description": "Demonstrate the idea of linear dependence and independence of sets in the vector space, and linear transformation and demonstrate using Python." },
+    { "no": "CO4", "description": "Apply the knowledge of numerical methods in analysing the discrete data and solving physical and engineering problems and demonstrate using Python." },
+    { "no": "CO5", "description": "Solve first order ordinary differential equations arising in engineering problems and demonstrate using Python." }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Physics for CSE Stream (BPHYS202)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Apply the principles of lasers and optical fibers in measuring parameters by conducting experiments." },
+    { "no": "CO2", "description": "Apply the basic principles of quantum mechanics in the quantized energies of the system and conduct relevant experiments." },
+    { "no": "CO3", "description": "Apply the basic concepts of quantum computing in developing quantum gates." },
+    { "no": "CO4", "description": "Summarize the principles of electrical properties of materials, superconductivity and analyze them through experiments." },
+    { "no": "CO5", "description": "Illustrate the application of physics in design and data analysis using animation principles." }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Principles of Programming Using C (BPOPS203)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Explain the basic architecture and functionalities of a computer and recognize its hardware parts." },
+    { "no": "CO2", "description": "Apply programming constructs of C language to solve simple computational problems." },
+    { "no": "CO3", "description": "Develop programs to solve computational problems using arrays and functions." },
+    { "no": "CO4", "description": "Make use of strings and pointers to solve computational problems." },
+    { "no": "CO5", "description": "Apply concepts of structures, union and enumerated data types in implementing solutions to problems." }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Professional Writing Skills in English (BPWSK206)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Identify the common errors in writing and speaking English." },
+    { "no": "CO2", "description": "Achieve better technical writing and presentation skills for employment." },
+    { "no": "CO3", "description": "Read technical proposals properly and learn to write good technical reports." },
+    { "no": "CO4", "description": "Acquire employment and workplace communication skills." },
+    { "no": "CO5", "description": "Learn techniques of information transfer through presentations at different levels." }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Indian Constitution (BICOK207)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Recall the basic structure of the Indian Constitution." },
+    { "no": "CO2", "description": "List the salient features of the Constitution, including fundamental rights and the Preamble." },
+    { "no": "CO3", "description": "Explain the Directive Principles of State Policy, fundamental duties, and the Union Executive including the President, Prime Minister and Council of Ministers." },
+    { "no": "CO4", "description": "Recall the parliamentary system and judicial system of India." },
+    { "no": "CO5", "description": "List the state executive, electoral process in India, amendments, emergency provisions, and other important provisions of the Constitution." }
+  ]
+},
+{
+  "id": 6,
+  "subject": "Introduction to Mechanical Engineering (BESCK204D)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Explain an overview of new trends and technologies in the manufacturing industry, energy, and relevant sectors, and their impact on society and environment." },
+    { "no": "CO2", "description": "Outline machine tool operations and advanced manufacturing processes." },
+    { "no": "CO3", "description": "Explain the working principle of IC engines and the need for future mobility vehicles for environmental sustainability." },
+    { "no": "CO4", "description": "Outline the properties of common engineering materials and metal joining processes." },
+    { "no": "CO5", "description": "Explain the basic concepts of advanced trends and technology pertaining to automation, robotics and IoT." }
+  ]
+},
+{
+  "id": 7,
+  "subject": "Scientific Foundation Health (BSFHK258)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Explain health and wellness and their balance for a positive mindset." },
+    { "no": "CO2", "description": "List healthy lifestyles for good health and a better future." },
+    { "no": "CO3", "description": "Define healthy and caring relationships to meet the requirements of a good, social, and positive life." },
+    { "no": "CO4", "description": "Explain how to avoid risks and harmful habits inside and outside the campus for a bright future." },
+    { "no": "CO5", "description": "Describe how to prevent harmful diseases and maintain good health through a positive mindset." }
+  ]
+},
+{
+  "id": 8,
+  "subject": "Introduction to Internet of Things (BETCK205H)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Explain the evolution of IoT and IoT networking components." },
+    { "no": "CO2", "description": "Classify various sensing devices and actuator types." },
+    { "no": "CO3", "description": "Explain the significant processing technologies used in IoT." },
+    { "no": "CO4", "description": "Explain computing methods and associated case studies." },
+    { "no": "CO5", "description": "Outline the application of IoT technologies for different sectors using case studies." }
+  ]
+},
+
+{
+  "id": 1,
+  "subject": "Mathematics for Computer Science (BCS301)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Explain the basic concepts of probability, random variables, probability distribution and apply suitable probability distribution models for the given scenario." },
+    { "no": "CO2", "description": "Apply the notion of a discrete-time Markov chain and n-step transition probabilities to solve the given problem." },
+    { "no": "CO3", "description": "Use statistical methodology and tools in the engineering problem-solving process." },
+    { "no": "CO4", "description": "Compute the confidence intervals for the mean of the population." },
+    { "no": "CO5", "description": "Apply the ANOVA test related to engineering problems." }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Digital Design and Computer Organization (BCS302)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Apply the K-map techniques to simplify various Boolean expressions and implement using logic gates." },
+    { "no": "CO2", "description": "Design different types of combinational and sequential circuits along with Verilog programs." },
+    { "no": "CO3", "description": "Describe the fundamentals of machine instructions, addressing modes and processor performance." },
+    { "no": "CO4", "description": "Explain the approaches involved in achieving communication between processor and I/O devices." },
+    { "no": "CO5", "description": "Analyze the internal organization of memory and the impact of cache/pipelining on processor performance." }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Operating Systems (BCS303)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Explain the structure and functionality of an operating system." },
+    { "no": "CO2", "description": "Apply appropriate CPU scheduling algorithms for the given problem." },
+    { "no": "CO3", "description": "Analyze various techniques for process synchronization and deadlock handling." },
+    { "no": "CO4", "description": "Apply various techniques for memory management." },
+    { "no": "CO5", "description": "Illustrate the concept of file management strategies and protection mechanisms." }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Data Structures and Applications (BCS304)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Explain different data structures and their applications." },
+    { "no": "CO2", "description": "Apply arrays, stacks and queue data structures to solve given problems." },
+    { "no": "CO3", "description": "Use the concept of linked lists in problem solving." },
+    { "no": "CO4", "description": "Develop solutions using trees and graphs to model real-world problems." },
+    { "no": "CO5", "description": "Explain advanced data structure concepts such as hashing techniques and optimal binary search trees." }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Data Structures Laboratory (BCSL305)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Analyze various linear and non-linear data structures." },
+    { "no": "CO2", "description": "Demonstrate the working nature of different types of data structures and their applications." },
+    { "no": "CO3", "description": "Use appropriate searching algorithms for the given scenario." },
+    { "no": "CO4", "description": "Apply the appropriate data structure for solving real-world problems." },
+    { "no": "CO5", "description": "Use programming tools to solve real-world problems." }
+  ]
+},
+{
+  "id": 6,
+  "subject": "Social Connect and Responsibility (BSCK307)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Communicate with the surrounding and create a responsible connection with society." },
+    { "no": "CO2", "description": "Involve in the community in general in which they work." },
+    { "no": "CO3", "description": "Notice the needs and problems of the community and involve in problem-solving." },
+    { "no": "CO4", "description": "Develop a sense of social and civic responsibility and utilize knowledge in finding practical solutions to individual and community problems." },
+    { "no": "CO5", "description": "Develop competence required for group living and sharing responsibilities, gain skills in mobilizing community participation, and acquire leadership qualities and democratic attitudes." }
+  ]
+},
+{
+  "id": 7,
+  "subject": "National Service Scheme (NSS) (BNSK359)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Understand the importance of individual responsibilities towards society." },
+    { "no": "CO2", "description": "Analyze environmental and societal problems/issues and design solutions for them." },
+    { "no": "CO3", "description": "Evaluate existing systems and propose practical solutions for sustainable development." },
+    { "no": "CO4", "description": "Implement government or self-driven projects effectively in the field." },
+    { "no": "CO5", "description": "Develop capacity to meet emergencies and natural disasters and practice national integration and social harmony." }
+  ]
+},
+{
+  "id": 8,
+  "subject": "Yoga (BYOK359)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Understand the aim and objectives of yoga, prayer with meaning, definitions and importance." },
+    { "no": "CO2", "description": "Understand and follow the rules during yogic practices." },
+    { "no": "CO3", "description": "Perform Suryanamaskar with prayer, knowing its importance and benefits." },
+    { "no": "CO4", "description": "Perform different types of asanas in various forms, knowing their names, techniques, precautionary measures and benefits." },
+    { "no": "CO5", "description": "Perform Kapalabhati, Pranayama and Kriyas, knowing their techniques, usefulness, precautionary measures and benefits." }
+  ]
+},
+{
+  "id": 9,
+  "subject": "Physical Education (PE) (Sports and Athletics) (BPEK359)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Outline the fundamental concepts and skills of physical education." },
+    { "no": "CO2", "description": "Recognize health-related exercises and sports for overall growth and development." },
+    { "no": "CO3", "description": "Summarize and create a foundation for professionals in physical education and sports." },
+    { "no": "CO4", "description": "Identify and participate in competitions at regional, state, national, and international levels." },
+    { "no": "CO5", "description": "Demonstrate and create awareness among students on health, fitness and wellness in developing and maintaining a healthy lifestyle." }
+  ]
+},
+{
+  "id": 10,
+  "subject": "Object Oriented Programming with JAVA (BCS306A)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Demonstrate proficiency in writing simple programs involving branching and looping structures." },
+    { "no": "CO2", "description": "Design a class involving data members and methods for the given scenario." },
+    { "no": "CO3", "description": "Apply the concepts of inheritance and interfaces in solving real-world problems." },
+    { "no": "CO4", "description": "Use the concept of packages and exception handling in solving complex problems." },
+    { "no": "CO5", "description": "Apply concepts of multithreading, autoboxing and enumerations in program development." }
+  ]
+},
+{
+  "id": 11,
+  "subject": "R Programming (BCS358B)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Use R and the R Studio interactive environment." },
+    { "no": "CO2", "description": "Explain the fundamental syntax of R, data types, expressions and the usage of the R Studio IDE." },
+    { "no": "CO3", "description": "Develop programs in R with programming constructs such as conditionals, looping and functions." },
+    { "no": "CO4", "description": "Apply the list and data frame structures in R programming." },
+    { "no": "CO5", "description": "Utilize visualization packages and file handlers for data analysis." }
+  ]
+},
+
+{
+  "id": 1,
+  "subject": "Analysis & Design of Algorithms (BCS401)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Apply asymptotic notational methods to analyze the performance of algorithms in terms of time complexity." },
+    { "no": "CO2", "description": "Utilize divide & conquer and decrease & conquer approaches to solve computational problems." },
+    { "no": "CO3", "description": "Make use of transform & conquer and space-time tradeoff approaches to solve real-world or complex computational problems." },
+    { "no": "CO4", "description": "Use dynamic programming, greedy, and input enhancement methods to solve graph and string-based computational problems." },
+    { "no": "CO5", "description": "Understand various classes (P, NP, and NP-complete) and apply backtracking, branch & bound, and approximation methods to solve real-world problems." }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Microcontrollers (BCS402)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Explain the ARM architectural features and instructions." },
+    { "no": "CO2", "description": "Develop programs using the ARM instruction set for an ARM microcontroller." },
+    { "no": "CO3", "description": "Explain C-compiler optimizations and portability issues in ARM microcontrollers." },
+    { "no": "CO4", "description": "Apply the concepts of exceptions and interrupt handling mechanisms in developing applications." },
+    { "no": "CO5", "description": "Demonstrate the role of cache management and firmware in microcontrollers." }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Database Management Systems (BCS403)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Explain the basic elements of a relational database management system and outline entity relationship for the given scenario." },
+    { "no": "CO2", "description": "Apply relational algebra concepts and operations for real-world scenarios." },
+    { "no": "CO3", "description": "Analyze various SQL statements for database manipulations and normalization forms for given applications." },
+    { "no": "CO4", "description": "Apply advanced SQL concepts on real-time applications and explain basic transaction concepts." },
+    { "no": "CO5", "description": "Understand concurrency control in databases and concepts related to NoSQL databases." }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Analysis & Design of Algorithms Lab (BCSL404)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Develop programs to solve computational problems using suitable algorithm design strategies." },
+    { "no": "CO2", "description": "Compare algorithm design strategies by developing equivalent programs and observing running times for analysis." },
+    { "no": "CO3", "description": "Make use of suitable integrated development tools to develop programs." },
+    { "no": "CO4", "description": "Choose appropriate algorithm design techniques to develop solutions to computational and complex problems." },
+    { "no": "CO5", "description": "Demonstrate and present the development of programs, their execution and running times, and record the results/inferences." }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Biology for Computer Engineers (BBOC407)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Explain basic biological concepts via relevant industrial applications and case studies." },
+    { "no": "CO2", "description": "Explain the principles of design and development and identify provisions for novel bioengineering projects." },
+    { "no": "CO3", "description": "Compare the human organ system and bio designs to engineering systems." },
+    { "no": "CO4", "description": "Explain materials and mechanisms developed inspired by nature." },
+    { "no": "CO5", "description": "Identify and explore innovative bio-based solutions for socially relevant problems." }
+  ]
+},
+{
+  "id": 6,
+  "subject": "Universal Human Values Course (BUHK408)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Become more responsible in life and in handling problems with sustainable solutions, while keeping human relationships and human nature in mind." },
+    { "no": "CO2", "description": "Have better critical ability." },
+    { "no": "CO3", "description": "Become sensitive to their commitment towards human values, human relationships, and human society." },
+    { "no": "CO4", "description": "Apply what they have learnt to their own self in different day-to-day settings in real life, at least a beginning would be made in this direction." },
+    { "no": "CO5", "description": "Appreciate and aspire for excellence (merit) and gratitude for all." }
+  ]
+},
+{
+  "id": 7,
+  "subject": "Yoga (BYOK459)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Understand the aim and objectives of yoga, prayer with meaning, definitions and importance." },
+    { "no": "CO2", "description": "Understand and follow the rules during yogic practices." },
+    { "no": "CO3", "description": "Perform Suryanamaskar with prayer, knowing the importance and benefits." },
+    { "no": "CO4", "description": "Perform different types of asanas in various forms, knowing their name, technique, precautionary measures and benefits." },
+    { "no": "CO5", "description": "Perform Kapalabhati, Pranayama and Kriyas, knowing their name, technique, usefulness, precautionary measures and benefits." }
+  ]
+},
+{
+  "id": 8,
+  "subject": "National Service Scheme (BNSK459)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Understand the importance of responsibilities towards society." },
+    { "no": "CO2", "description": "Analyze environmental and societal problems/issues and design solutions for the same." },
+    { "no": "CO3", "description": "Evaluate existing systems and propose practical solutions for sustainable development." },
+    { "no": "CO4", "description": "Implement government or self-driven projects effectively in the field." },
+    { "no": "CO5", "description": "Develop capacity to meet emergencies and natural disasters and practice national integration and social harmony." }
+  ]
+},
+{
+  "id": 9,
+  "subject": "Physical Education (BPEK459)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Understand the ethics and moral values in sports and athletics." },
+    { "no": "CO2", "description": "Perform in selected sports or athletics of student's choice." },
+    { "no": "CO3", "description": "Understand the roles and responsibilities of organization." },
+    { "no": "CO4", "description": "Understand the roles and responsibilities of administering sports and games." },
+    { "no": "CO5", "description": "Participate in sports competitions." }
+  ]
+},
+{
+  "id": 10,
+  "subject": "Graph Theory (BCS405B)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Explain the fundamental concepts of properties and representation of graphs." },
+    { "no": "CO2", "description": "Solve problems involving characterization and operations on graphs." },
+    { "no": "CO3", "description": "Apply concepts of trees and graph connectivity to solve real-world problems." },
+    { "no": "CO4", "description": "Apply the concepts of planar graphs and graph representations to solve problems." },
+    { "no": "CO5", "description": "Use the concepts of matching and coloring of graphs to solve real-world problems." }
+  ]
+},
+{
+  "id": 11,
+  "subject": "Technical Writing using LATEX (BCSL456D)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Apply basic LaTeX commands to develop simple documents." },
+    { "no": "CO2", "description": "Develop LaTeX scripts to present tables and figures in the document." },
+    { "no": "CO3", "description": "Illustrate LaTeX scripts to present theorems and mathematical equations in the document." },
+    { "no": "CO4", "description": "Develop programs to generate complete reports with citations and a bibliography." },
+    { "no": "CO5", "description": "Illustrate the use of TikZ and algorithm libraries to design graphics and algorithms in the document." }
+  ]
+},
+
+{
+  "id": 1,
+  "subject": "Software Engineering and Project Management (BCS501)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Differentiate process models to judge which process model has to be adopted for the given scenarios." },
+    { "no": "CO2", "description": "Derive both functional and nonfunctional requirements from the case study." },
+    { "no": "CO3", "description": "Analyze the importance of various software testing methods and agile methodology." },
+    { "no": "CO4", "description": "Illustrate the role of project planning and quality management in software development." },
+    { "no": "CO5", "description": "Identify appropriate techniques to enhance software quality." }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Computer Networks (BCS502)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Explain the fundamentals of computer networks." },
+    { "no": "CO2", "description": "Apply the concepts of computer networks to demonstrate the working of various layers and protocols in communication networks." },
+    { "no": "CO3", "description": "Analyze the principles of protocol layering in modern communication systems." },
+    { "no": "CO4", "description": "Demonstrate various routing protocols and their services using tools such as Cisco Packet Tracer." },
+    { "no": "CO5", "description": "Explain the principles of network applications." }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Theory of Computation (BCS503)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Apply the fundamentals of automata theory to construct DFA, NFA, and ε-NFA." },
+    { "no": "CO2", "description": "Make use of regular expressions to prove the properties of regular languages." },
+    { "no": "CO3", "description": "Develop context-free grammars (CFGs) and pushdown automata (PDAs) to model and recognize formal languages." },
+    { "no": "CO4", "description": "Simplify grammars by applying normal forms for CFGs and make use of the pumping lemma to identify non-context-free languages." },
+    { "no": "CO5", "description": "Construct Turing machines to solve computational problems." }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Web Technology Lab (BCSL504)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Design experiments for the given problem using HTML, JavaScript, and CSS." },
+    { "no": "CO2", "description": "Develop solutions for the given real-world problem using jQuery." },
+    { "no": "CO3", "description": "Develop solutions for the given real-world problem using AJAX." },
+    { "no": "CO4", "description": "Develop solutions for the given real-world problem using PHP." },
+    { "no": "CO5", "description": "Analyze the results and produce substantial written documentation." }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Environmental Studies and E-waste Management (BCS508)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Understand the principles of ecology and environmental issues that apply to air, land, and water issues on a global scale." },
+    { "no": "CO2", "description": "Compare water resource issues and energy options, including their availability, quality, and environmental impacts." },
+    { "no": "CO3", "description": "Demonstrate knowledge of different types of environmental pollution and their influence on ecosystems." },
+    { "no": "CO4", "description": "Summarize effective solid and biomedical waste management practices, incorporating knowledge of waste types, sources, functional elements, and relevant environmental legislation." },
+    { "no": "CO5", "description": "Explain the impacts of e-waste on human health and the environment, and effective management practices and regulations for e-waste handling." }
+  ]
+},
+{
+  "id": 6,
+  "subject": "Research Methodology and IPR (BRMK557)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Know the meaning of engineering research." },
+    { "no": "CO2", "description": "Understand the procedure of literature review and technical reading." },
+    { "no": "CO3", "description": "Understand the fundamentals of patent laws and drafting procedures." },
+    { "no": "CO4", "description": "Understand copyright laws and subject matters of copyrights and designs." },
+    { "no": "CO5", "description": "Understand the basic principles of design rights." }
+  ]
+},
+{
+  "id": 7,
+  "subject": "Physical Education (BPEK559)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Understand the fundamental concepts and skills of physical education, health, food, nutrition, and general fitness." },
+    { "no": "CO2", "description": "Familiarize with health-related exercises and sports for overall growth and development." },
+    { "no": "CO3", "description": "Create a foundation for professionals in physical education and sports." },
+    { "no": "CO4", "description": "Participate in competitions at regional, state, national, or international levels." },
+    { "no": "CO5", "description": "Understand and practice specific games and athletic throwing events." }
+  ]
+},
+{
+  "id": 8,
+  "subject": "Yoga (BYOK559)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Understand the aim and objectives of yoga, prayer with meaning, definitions and importance." },
+    { "no": "CO2", "description": "Understand and follow the rules during yogic practices." },
+    { "no": "CO3", "description": "Perform Suryanamaskar with prayer, knowing the importance and benefits." },
+    { "no": "CO4", "description": "Perform different types of asanas in various forms, knowing their name, technique, precautionary measures, and benefits." },
+    { "no": "CO5", "description": "Perform Kapalabhati, Pranayama, and Kriyas, knowing their name, technique, usefulness, precautionary measures, and benefits." }
+  ]
+},
+{
+  "id": 9,
+  "subject": "National Service Scheme (BNSK559)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Understand the importance of responsibilities towards society." },
+    { "no": "CO2", "description": "Analyze environmental and societal problems/issues and design solutions for the same." },
+    { "no": "CO3", "description": "Evaluate existing systems and propose practical solutions for sustainable development." },
+    { "no": "CO4", "description": "Implement government or self-driven projects effectively in the field." },
+    { "no": "CO5", "description": "Develop capacity to meet emergencies and natural disasters and practice national integration and social harmony." }
+  ]
+},
+{
+  "id": 10,
+  "subject": "Artificial Intelligence (BCS515B)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Explain the architecture and components of intelligent systems including their interaction with the AI environment." },
+    { "no": "CO2", "description": "Apply problem-solving agents and various search strategies to solve a given problem." },
+    { "no": "CO3", "description": "Illustrate logical reasoning and knowledge representation using propositional and first-order logic." },
+    { "no": "CO4", "description": "Demonstrate proficiency in representing knowledge and solving problems using first-order logic." },
+    { "no": "CO5", "description": "Describe classical planning in the context of artificial intelligence, including its goals, constraints, and applications in problem-solving." }
+  ]
+},
+{
+  "id": 11,
+  "subject": "Mini Project (BCS586)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Work effectively in teams to design and implement software systems, and effectively manage conflicts, optimize resources, and meet deadlines." },
+    { "no": "CO2", "description": "Develop solutions for the framed problem statement." },
+    { "no": "CO3", "description": "Design and implement software and evaluate the solution to meet project objectives." },
+    { "no": "CO4", "description": "Test and analyze the modules of the planned project." },
+    { "no": "CO5", "description": "Demonstrate the ability to write clear system documentation, user documentation, and reports." }
+  ]
+},
+
+
+
+{
+  "id": 1,
+  "subject": "Cloud Computing (BCS601)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Describe various cloud computing platforms and service providers." },
+    { "no": "CO2", "description": "Illustrate the significance of various types of virtualization." },
+    { "no": "CO3", "description": "Identify the architecture, delivery models, and industrial platforms for cloud computing-based applications." },
+    { "no": "CO4", "description": "Analyze the role of security aspects in cloud computing." },
+    { "no": "CO5", "description": "Demonstrate cloud applications in various fields using suitable cloud platforms." }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Machine Learning (BCS602)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Describe the machine learning techniques, their types, and data analysis framework." },
+    { "no": "CO2", "description": "Apply mathematical concepts for feature engineering and perform dimensionality reduction to enhance model performance." },
+    { "no": "CO3", "description": "Develop similarity-based learning models and regression models for solving classification and prediction tasks." },
+    { "no": "CO4", "description": "Build probabilistic learning models and design neural network models using perceptron and multilayer architectures." },
+    { "no": "CO5", "description": "Utilize clustering algorithms to identify patterns in data and implement reinforcement learning techniques." }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Machine Learning Lab (BSCL606)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Apply exploratory data analysis techniques, including histograms, box plots, correlation matrices, and dimensionality reduction, to interpret patterns in datasets." },
+    { "no": "CO2", "description": "Demonstrate machine learning algorithms, including Find-S, K-Nearest Neighbors, and Locally Weighted Regression, for classification and regression tasks." },
+    { "no": "CO3", "description": "Develop regression and classification models using linear regression, polynomial regression, and decision trees for a given dataset." },
+    { "no": "CO4", "description": "Build Bayesian models for probabilistic learning using the Naïve Bayes classifier on the Olivetti Face dataset and examine its accuracy on test data." },
+    { "no": "CO5", "description": "Apply K-means clustering on the Wisconsin Breast Cancer dataset to group data and visualize the clustering results." }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Blockchain Technology (BCS613A)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Explain the blockchain terminologies with its applications." },
+    { "no": "CO2", "description": "Illustrate the working principles of blockchain and the smart contract lifecycle." },
+    { "no": "CO3", "description": "Demonstrate the principles and methodologies used in Bitcoin." },
+    { "no": "CO4", "description": "Develop Ethereum network, wallets, nodes, smart contracts, and DApps." },
+    { "no": "CO5", "description": "Make use of Hyperledger in blockchain-based application architecture." }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Technologies of Renewable Energy Sources (BEE654B)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Outline the causes of energy scarcity and its solution, energy resources, and availability of renewable energy." },
+    { "no": "CO2", "description": "Classify types of solar collectors, their configurations, solar cell systems, their characteristics, and applications." },
+    { "no": "CO3", "description": "Explain generation of energy from hydrogen, wind, geothermal systems, solid waste, and agricultural refuse." },
+    { "no": "CO4", "description": "Outline the production of energy from biomass, biogas, and tidal energy resources." },
+    { "no": "CO5", "description": "Summarize sea wave energy and ocean thermal energy." }
+  ]
+},
+{
+  "id": 6,
+  "subject": "Physical Education (BPEK658)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Understand the postural deformities and stress management in sports and athletics." },
+    { "no": "CO2", "description": "Participate in competitions at regional, state, national, and international levels." },
+    { "no": "CO3", "description": "Understand and practice specific games and athletic jumping events." },
+    { "no": "CO4", "description": "Understand and practice aerobics." },
+    { "no": "CO5", "description": "Develop physical fitness and endurance through systematic training and conditioning programs." }
+  ]
+},
+{
+  "id": 7,
+  "subject": "Yoga (BYOK658)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Explain the aim and objectives of yoga, prayers with meaning, definitions, and importance." },
+    { "no": "CO2", "description": "Explain and follow the rules during yogic practices." },
+    { "no": "CO3", "description": "Show Suryanamaskar with prayer, knowing the importance and benefits." },
+    { "no": "CO4", "description": "Show different types of asanas in various forms, knowing their name, technique, precautionary measures, and benefits." },
+    { "no": "CO5", "description": "Perform Kapalabhati and Pranayama, knowing their name, technique, precautionary measures, and benefits." }
+  ]
+},
+{
+  "id": 8,
+  "subject": "National Service Scheme (BNSK658)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Express the importance of responsibilities towards society." },
+    { "no": "CO2", "description": "Analyze environmental and societal problems/issues and design solutions for the same." },
+    { "no": "CO3", "description": "Evaluate existing systems and propose practical solutions for sustainable development." },
+    { "no": "CO4", "description": "Illustrate government schemes offered for the community in the fields of health, education, and agriculture." },
+    { "no": "CO5", "description": "Survey the needs of societies by collaborating with government bodies, NGOs, and local authorities." }
+  ]
+},
+{
+  "id": 9,
+  "subject": "DevOps (BCSL657D)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Demonstrate different actions performed through version control tools like Git." },
+    { "no": "CO2", "description": "Perform continuous integration, testing, and deployment using Jenkins by building and automating test cases with Maven and Gradle." },
+    { "no": "CO3", "description": "Experiment with configuration management using Ansible." },
+    { "no": "CO4", "description": "Demonstrate cloud-based DevOps tools using Azure DevOps." },
+    { "no": "CO5", "description": "Build and deploy a complete DevOps pipeline, integrating tools like Jenkins, Maven/Gradle, Ansible, and Azure DevOps, while understanding best practices in DevOps workflows." }
+  ]
+},
+{
+  "id": 10,
+  "subject": "Project Phase-I (BCS685)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Evaluate the state of the art in the given domain and clearly define the objectives and problem statement for a given real-world scenario." },
+    { "no": "CO2", "description": "Choose suitable design methodology for a given problem statement with objectives, outcomes, and document the synopsis for the given project." },
+    { "no": "CO3", "description": "Design the solution for the framed problem statement by working effectively in teams for implementing software systems, managing conflicts, optimizing resources, and meeting deadlines." },
+    { "no": "CO4", "description": "Develop and evaluate the modules’ solutions to meet the planned project objectives." },
+    { "no": "CO5", "description": "Build the solution documentation for dissemination of newly generated knowledge or product." }
+  ]
+},
+
+{
+  "id": 1,
+  "subject": "Internet of Things (BCS701)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Explain the fundamental concepts of the Internet of Things (IoT)." },
+    { "no": "CO2", "description": "Compare Internet of Things (IoT) communication and system management techniques." },
+    { "no": "CO3", "description": "Apply the concepts of Python programming for different IoT applications." },
+    { "no": "CO4", "description": "Develop applications using Python programming with Raspberry Pi." },
+    { "no": "CO5", "description": "Interpret different data analytics frameworks for IoT." }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Parallel Computing (BCS702)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Explain the need for parallel programming." },
+    { "no": "CO2", "description": "Demonstrate parallelism in MIMD systems." },
+    { "no": "CO3", "description": "Apply MPI library to parallelize the code to solve the given problem." },
+    { "no": "CO4", "description": "Apply OpenMP pragma and directives to parallelize the code to solve the given problem." },
+    { "no": "CO5", "description": "Design a CUDA program for the given problem." }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Cryptography & Network Security (BCS703)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Explain the basic concepts of cryptography and security aspects." },
+    { "no": "CO2", "description": "Apply different cryptographic algorithms for different applications." },
+    { "no": "CO3", "description": "Analyze different methods for authentication and access control." },
+    { "no": "CO4", "description": "Describe key management, key distribution, and certificates." },
+    { "no": "CO5", "description": "Explain about electronic mail and IP security." }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Big Data Analytics (BCS714D)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Illustrate big data concepts, tools, and applications." },
+    { "no": "CO2", "description": "Develop programs using the Hadoop framework." },
+    { "no": "CO3", "description": "Apply query-building skills in MongoDB to solve real-world data management using collections, documents, and pipelines." },
+    { "no": "CO4", "description": "Use a Hadoop cluster to deploy MapReduce jobs, Pig, Hive, and Spark programs." },
+    { "no": "CO5", "description": "Interpret the given dataset to identify deep insights." }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Introduction to Non-Traditional Machining (BME755A)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Explain NTM, compare traditional and non-traditional machining processes, and recognize the need for non-traditional machining processes." },
+    { "no": "CO2", "description": "Explain the constructional features, performance parameters, process characteristics, applications, advantages, and limitations of USM, AJM, and WJM." },
+    { "no": "CO3", "description": "Identify the need for chemical and electro-chemical machining processes along with their constructional features, process parameters, process characteristics, applications, advantages, and limitations." },
+    { "no": "CO4", "description": "Outline the constructional features of the equipment, process parameters, process characteristics, applications, advantages, and limitations of EDM and PAM." },
+    { "no": "CO5", "description": "Explain the LBM equipment, LBM parameters and characteristics, EBM equipment and mechanism of metal removal, applications, advantages, and limitations of LBM and EBM." }
+  ]
+}
+
+      ],
+
+      "2021-2022":[
+
+        {
+  "id": 1,
+  "subject": "Calculus & Differential Equations (21MAT11)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Apply the knowledge of calculus to solve problems related to polar curves and its applications in determining the bentness of a curve." },
+    { "no": "CO2", "description": "Learn the notion of partial differentiation to calculate rate of change of multivariate functions and solve problems related to composite functions and Jacobian." },
+    { "no": "CO3", "description": "Solve first-order linear/nonlinear ordinary differential equations analytically using standard methods." },
+    { "no": "CO4", "description": "Demonstrate various models through higher order differential equations and solve such linear ordinary differential equations." },
+    { "no": "CO5", "description": "Test the consistency of a system of linear equations and solve them by direct and iterative methods." }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Engineering Chemistry (21CHE12)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Impart the basic knowledge of chemistry and its principles involved in electrochemistry, energy storage devices and its commercial applications." },
+    { "no": "CO2", "description": "Understand the basic principles of corrosion and its prevention, metal finishing and its technological importance." },
+    { "no": "CO3", "description": "Master the knowledge of synthesis, properties and utilization of engineering materials like polymers and nanomaterials." },
+    { "no": "CO4", "description": "Apply the knowledge of green chemistry principles for production of chemical compounds and understand the concepts of alternative energy sources." },
+    { "no": "CO5", "description": "Understand the basic concepts of water chemistry and theory, basic principle and applications of volumetric analysis and analytical instruments." }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Problem Solving through Programming (21PSP13)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Explain the basic architecture and functionalities of a computer and also recognize the hardware parts." },
+    { "no": "CO2", "description": "Construct programming solutions to solve real-world problems." },
+    { "no": "CO3", "description": "Explore user-defined data structures like arrays in implementing solutions to problems like searching and sorting." },
+    { "no": "CO4", "description": "Design and develop solutions to problems using modular programming constructs using functions." },
+    { "no": "CO5", "description": "Explore user-defined data structures like structures, unions, and pointers in implementing solutions." }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Basic Electronics & Communication Engineering (21ELN14)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Describe the concepts of electronic circuits encompassing power supplies, amplifiers and oscillators." },
+    { "no": "CO2", "description": "Present the basics of digital logic engineering including data representation, circuits and the microcontroller system with associated sensors and actuators." },
+    { "no": "CO3", "description": "Discuss the characteristics and technological advances of embedded systems." },
+    { "no": "CO4", "description": "Relate to the fundamentals of communication engineering spanning from the frequency spectrum to the various circuits involved including antennas." },
+    { "no": "CO5", "description": "Explain the different modes of communications from wired to wireless and the computing involved." }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Elements of Mechanical Engineering (21EME15)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Acquire a basic understanding of the role of mechanical engineering in the industry and society, the formation of steam and its industrial application, and renewable energy resources and hydraulics." },
+    { "no": "CO2", "description": "Acquire knowledge of various engineering materials and metal joining techniques and gain essential experience with heat transfer devices." },
+    { "no": "CO3", "description": "Acquire knowledge on automobile technology in transport applications and basics of refrigeration and air-conditioning." },
+    { "no": "CO4", "description": "Acquire essential experience on basic power transmission systems, including mechanical linkages." },
+    { "no": "CO5", "description": "Acquire knowledge of basic concepts on manufacturing principles and machine tools and their advancements." }
+  ]
+},
+{
+  "id": 6,
+  "subject": "Engineering Chemistry Laboratory (21CHEL16)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Determine the pKa and coefficient of viscosity of a given organic liquid." },
+    { "no": "CO2", "description": "Estimate the amount of substance present in the given solution using potentiometer, conductometric, and colorimetric methods." },
+    { "no": "CO3", "description": "Determine the total hardness and chemical oxygen demand in the given solution by volumetric analysis method." },
+    { "no": "CO4", "description": "Estimate the percentage of nickel, copper, and iron in the given analyte solution by titration method." },
+    { "no": "CO5", "description": "Demonstrate flame photometric estimation of sodium and potassium and the synthesis of nanomaterials by precipitation method." }
+  ]
+},
+{
+  "id": 7,
+  "subject": "Computer Programming Laboratory (21CPL17)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Define the problem statement and identify the need for computer programming." },
+    { "no": "CO2", "description": "Make use of a C compiler and an IDE for programming, identify and correct syntax and logical errors." },
+    { "no": "CO3", "description": "Develop an algorithm, a flowchart, and then write programs to solve the problem." },
+    { "no": "CO4", "description": "Demonstrate use of functions, recursive functions, arrays, strings, structures and pointers in problem solving." },
+    { "no": "CO5", "description": "Document the inference and observations made from the implementation." }
+  ]
+},
+{
+  "id": 8,
+  "subject": "Communicative English (21EGH18)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Know about fundamentals of communicative English and communication skills in general." },
+    { "no": "CO2", "description": "Identify the nuances of phonetics, intonation and enhance pronunciation skills for better communication skills." },
+    { "no": "CO3", "description": "Impart basic English grammar and essentials of important language skills." },
+    { "no": "CO4", "description": "Enhance English vocabulary and language proficiency for better communication skills." },
+    { "no": "CO5", "description": "Learn about techniques of information transfer through presentation." }
+  ]
+},
+{
+  "id": 9,
+  "subject": "Innovation and Design Thinking (21IDT19)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Appreciate various design process procedures." },
+    { "no": "CO2", "description": "Generate and develop design ideas through different techniques." },
+    { "no": "CO3", "description": "Identify the significance of reverse engineering to understand products." },
+    { "no": "CO4", "description": "Draw technical drawings for design ideas." },
+    { "no": "CO5", "description": "Implement design thinking by taking a case study." }
+  ]
+},
+
+{
+  "id": 1,
+  "subject": "Advanced Calculus and Numerical Methods (21MAT21)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Apply the concept of change of order of integration and change of variables to evaluate multiple integrals and their usage in computing the area and volume." },
+    { "no": "CO2", "description": "Illustrate the applications of multivariate calculus to understand the solenoidal and irrotational vectors and also exhibit the interdependence of line, surface and volume integrals." },
+    { "no": "CO3", "description": "Formulate physical problems to partial differential equations and obtain solutions for standard practical PDEs." },
+    { "no": "CO4", "description": "Apply the knowledge of numerical methods in modeling of various physical and engineering phenomena." },
+    { "no": "CO5", "description": "Solve first-order ordinary differential equations arising in engineering problems." }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Engineering Physics (21PHY22)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Interpret the types of mechanical vibrations and their applications, and the role of shock waves in various fields." },
+    { "no": "CO2", "description": "Demonstrate the quantization of energy for microscopic systems." },
+    { "no": "CO3", "description": "Apply laser and optical fibers in optoelectronic systems." },
+    { "no": "CO4", "description": "Illustrate merits of quantum free electron theory and applications of Hall effect." },
+    { "no": "CO5", "description": "Analyze the importance of XRD and electron microscopy in nanomaterial characterization." }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Basic Electrical Engineering (21ELE23)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Analyze basic DC circuits and understand the basic concepts of single-phase alternating current and voltage." },
+    { "no": "CO2", "description": "Analyze single-phase AC circuits on various loads and understand three-phase AC circuits." },
+    { "no": "CO3", "description": "Understand the working principles and performance of DC machines and transformers." },
+    { "no": "CO4", "description": "Understand the working principles and performance of three-phase induction motors and three-phase synchronous generators." },
+    { "no": "CO5", "description": "Understand wiring methods, electricity billing, and the working principles of circuit protective devices and personal safety measures." }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Elements of Civil Engineering and Mechanics (21CIV24)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Understand the various fields of civil engineering." },
+    { "no": "CO2", "description": "Compute the resultant of a force system and resolution of a force." },
+    { "no": "CO3", "description": "Locate the centroid and compute the moment of inertia of regular and built-up sections." },
+    { "no": "CO4", "description": "Comprehend the action of forces, moments, and other types of loads on rigid bodies and compute the reactive forces and analyze beams and trusses." },
+    { "no": "CO5", "description": "Analyze the bodies in motion by kinetics and kinematics." }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Engineering Visualization (21EVNL25)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Understand and visualize the objects with definite shape and dimensions." },
+    { "no": "CO2", "description": "Analyze the shape and size of objects through different views." },
+    { "no": "CO3", "description": "Develop the lateral surfaces of the object." },
+    { "no": "CO4", "description": "Create a 3D view using CAD software." },
+    { "no": "CO5", "description": "Identify the interdisciplinary engineering components or systems through their graphical representation." }
+  ]
+},
+{
+  "id": 6,
+  "subject": "Engineering Physics Laboratory (21PHYL26)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Understand the measuring techniques." },
+    { "no": "CO2", "description": "Operate different instruments and be capable of analyzing the experimental results." },
+    { "no": "CO3", "description": "Construct the circuits and perform their analysis." },
+    { "no": "CO4", "description": "Understand the theoretical aspects found in experimental physics." },
+    { "no": "CO5", "description": "Develop basic communication skills through group work in performing laboratory experiments and interpreting results." }
+  ]
+},
+{
+  "id": 7,
+  "subject": "Basic Electrical Engineering Laboratory (21ELEL27)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Verify KCL and KVL laws and the maximum power transfer theorem for DC circuits." },
+    { "no": "CO2", "description": "Compare power factors of different types of lamps and measure the impedance of a given electrical circuit." },
+    { "no": "CO3", "description": "Verify the relationship of voltages and currents in a 3-phase AC circuit and find the power consumed by the 3-phase load." },
+    { "no": "CO4", "description": "Determine the efficiency of a single-phase transformer and analyze two-way and three-way control of lamps." },
+    { "no": "CO5", "description": "Understand the effects of open and short circuits in simple circuits and interpret the suitability of earth resistance measured." }
+  ]
+},
+{
+  "id": 8,
+  "subject": "Professional Writing Skills in English (21EGH28)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Understand and identify common errors in writing and speaking." },
+    { "no": "CO2", "description": "Achieve better technical writing and presentation skills." },
+    { "no": "CO3", "description": "Read technical proposals properly and learn to write good technical reports." },
+    { "no": "CO4", "description": "Acquire employment and workplace communication skills." },
+    { "no": "CO5", "description": "Learn about techniques of information transfer through presentation at different levels." }
+  ]
+},
+{
+  "id": 9,
+  "subject": "Scientific Foundations of Health (21SFH29)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Understand health and wellness, and acquire good health and balance for a positive mindset." },
+    { "no": "CO2", "description": "Inculcate and develop healthy lifestyle habits for good health." },
+    { "no": "CO3", "description": "Create healthy and caring relationships to meet the requirements of modern global work environments." },
+    { "no": "CO4", "description": "Adopt innovative and positive methods to avoid risks from harmful habits on and off campus." },
+    { "no": "CO5", "description": "Positively fight against harmful diseases and maintain good health through a positive mindset." }
+  ]
+}
+
+
+
       ]
+
+      
 
       
     },
