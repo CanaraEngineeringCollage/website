@@ -25688,7 +25688,2039 @@
             }
           ]
         }
+      ],
+      "2015-2016":[
+        {
+  "id": 1,
+  "subject": "Engineering Maths-I (15MAT11)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "To Find The Nth Derivatives Of Product Of Two Functions, And Polar Curves. Taylor’s And Maclaurin’s Series." },
+    { "no": "CO2", "description": "Use Partial Derivatives To Calculate Rates Of Change Of Multivariate Functions." },
+    { "no": "CO3", "description": "Analyze Position, Velocity, And Acceleration In Two Or Three Dimensions Using The Calculus Of Vector Valued Functions." },
+    { "no": "CO4", "description": "Recognize And Solve First-order Ordinary Differential Equations, Model Simple Electrical Circuits, Projectile Motion And Newton’s Law Of Cooling." },
+    { "no": "CO5", "description": "Use Matrices, Determinants And Techniques For Solving Systems Of Linear Equations In The Different Areas Of Linear Algebra." }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Engineering Physics (15PHY12)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "To Gain Knowledge About Modern Physics And Quantum Mechanics And Develop Problem Solving Skills." },
+    { "no": "CO2", "description": "To Understand Material Properties And Their Applications And Use In Engineering Applications." },
+    { "no": "CO3", "description": "To Learn Basic Principles Of Lasers And Optical Fibers And Its Applications To Develop Skills In The Engineering Applications." },
+    { "no": "CO4", "description": "To Understand Crystal Structure And Applications To Boost The Technical Skills And Its Applications." },
+    { "no": "CO5", "description": "To Understand Shock Waves Concept And Its Applications And Basic Concept Of Nano Technology To Get An Exposure To Latest Emerging Technology To The Students." }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Basic Electrical Engg. (15ELE15)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Students Will Be Able To Understand A) Electrical Circuit Concepts B) Electromagnetism And Electromagnetic Induction." },
+    { "no": "CO2", "description": "Students Will Be Able To Understand The Concepts Of Induction A) DC Machine B) Construction And Working Principle Of Wattmeter And Energy Meter." },
+    { "no": "CO3", "description": "Students Will Be Able To Understand The Concepts Of A) Single Phase AC Circuits B) Domestic Wiring." },
+    { "no": "CO4", "description": "Students Will Be Able To Understand The Concepts Of A) Concept Of Three Phase Circuit Construction B) Working Of Three Phase Synchronous Generator." },
+    { "no": "CO5", "description": "Students Will Be Able To Understand The Concepts Of A) Single Phase Transformer B) Three Phase Induction Motor." }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Engg. Physics Lab (15PHYL17)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Conduct Scheduled Experiments To Learn Experimental Setup And Recording The Readings Using Measuring Instruments To Understand The Concept Of Engineering Physics." },
+    { "no": "CO2", "description": "Analyse And Interpret Experimental Data And Results." },
+    { "no": "CO3", "description": "Express The Theoretical Aspects Used In Conducting Different Experiments Of Engineering Physics Lab." },
+    { "no": "CO4", "description": "Record Experimental Process And Results." },
+    { "no": "CO5", "description": "Conduct Any Given Experiment In Engineering Physics Laboratory And Communicate Results Effectively." }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Constitution of India, Professional Ethics and Human Rights (15CPH18)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Have General Knowledge And Legal Literacy About Indian Constitution And Thereby It Helps To Take Up Competitive Examinations And To Manage / Face Complex Societal Issues In Society." },
+    { "no": "CO2", "description": "Understand State And Central Policies (Union And State Executive), Fundamental Rights And Their Duties." },
+    { "no": "CO3", "description": "Understand Electoral Process, Amendments And Special Provisions In Constitution." },
+    { "no": "CO4", "description": "Understand Powers And Functions Of Municipalities, Panchayats And Co-operative Societies, With Human Rights And NHRC." },
+    { "no": "CO5", "description": "Understand Engineering And Professional Ethics And Responsibilities Of Engineers." }
+  ]
+},
+{
+  "id": 1,
+  "subject": "Engineering Maths - II (15MAT21)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Use Ordinary Differential Equations To Model Engineering Phenomena Such As Electrical Circuits, Forced Oscillation Of Mass Spring And Elementary Heat Transfer. Able To Solve Nonlinear Differential Equations." },
+    { "no": "CO2", "description": "Use Partial Differential Equations To Model Problems In Fluid Mechanics, Electromagnetic Theory And Heat Transfer." },
+    { "no": "CO3", "description": "Evaluate Double And Triple Integrals To Find Area, Volume, Mass And Moment Of Inertia Of Plane And Solid Region." },
+    { "no": "CO4", "description": "Use Beta And Gamma Functions To Solve Double And Triple Integrals." },
+    { "no": "CO5", "description": "Use Laplace Transforms To Determine General Or Complete Solutions To Linear Ordinary Differential Equations." }
+  ]
+},
+{
+  "id": 1,
+  "subject": "Engineering Mathematics III (15MAT31)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Know The Use Of Periodic Signals And Fourier Series To Analyze Circuits And System Communications." },
+    { "no": "CO2", "description": "Explain The General Linear System Theory For Continuous-time Signals And Digital Signal Processing Using The Fourier Transform And Z-transform." },
+    { "no": "CO3", "description": "Employ Appropriate Numerical Methods To Solve Algebraic And Transcendental Equations, Find The Lines Of Regressions, Correlation Coefficient Between Any Two Variables." },
+    { "no": "CO4", "description": "Find The Interpolating Polynomial For The Given Set Of Data, Evaluate The Integral Numerically." },
+    { "no": "CO5", "description": "Apply Green's Theorem, Divergence Theorem And Stokes' Theorem In Various Applications In The Field Of Electromagnetic And Gravitational Fields And Fluid Flow Problems." }
+  ]
+},
+
+{
+  "id": 2,
+  "subject": "Analog and Digital Electronics (15CS32)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Explain And Write The Characteristics Of JFET, MOSFET And Opamp." },
+    { "no": "CO2", "description": "Explain And Apply Various Simplification Techniques To Simplify Combinational Logic Circuits." },
+    { "no": "CO3", "description": "Explain And Construct Various Data Processing Circuits And Flip Flops." },
+    { "no": "CO4", "description": "Explain And Develop Synchronous/Asynchronous Sequential Circuits." },
+    { "no": "CO5", "description": "Explain And Develop Counters And Converters." }
+  ]
+},
+
+{
+  "id": 3,
+  "subject": "Data Structures and Applications (15CS33)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Acquire Knowledge Of Various Types Of Data Structures, Sorting And Searching Operations On Arrays." },
+    { "no": "CO2", "description": "Handle Operations Like Searching, Insertion, Deletion, Traversing Mechanism Etc. On Data Structures Like Stack And Queues." },
+    { "no": "CO3", "description": "State And Apply The Basic Knowledge Of Linked List To Solve Real World Problems." },
+    { "no": "CO4", "description": "Handle Operations Like Searching, Insertion, Deletion, Traversing Mechanism Etc. On Data Structures Like Trees." },
+    { "no": "CO5", "description": "Explain The Basic Graph Algorithms And Their Analyses. Employ Graphs And Sorting And Searching Operations, To Model Engineering Problems, When Appropriate." }
+  ]
+},
+
+{
+  "id": 4,
+  "subject": "Computer Organization (15CS34)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Write The Structure Of Different Functional Parts Of A Digital Computer System, Analyse The Performance Of The Computer And Concepts Of Machine Programming." },
+    { "no": "CO2", "description": "Explain I/O Organization And Device Handling." },
+    { "no": "CO3", "description": "Explain The Memory Types And Organization." },
+    { "no": "CO4", "description": "Explain And Write Circuit/Algorithm For Arithmetic Unit." },
+    { "no": "CO5", "description": "Explain Processing Unit And Its Role And The Structure Of Embedded And Other Computer Systems." }
+  ]
+},
+
+{
+  "id": 5,
+  "subject": "Discrete Mathematical Structures (15CS36)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Interpret The Correctness Of An Argument Using Propositional, Predicate Logic And Truth Tables Using Knowledge Of Mathematics." },
+    { "no": "CO2", "description": "Demonstrate The Concepts Of Counting Techniques And Combinatorics In The Context Of Discrete Probability." },
+    { "no": "CO3", "description": "Apply The Concepts Of Relations And Functions To Solve Mathematical Problems." },
+    { "no": "CO4", "description": "Apply The Principles Of Inclusion, Exclusion And The Concepts Of Recurrence Relations To Solve Mathematical Problems." },
+    { "no": "CO5", "description": "Demonstrate The Concepts Of Graphs And Tree Structures." }
+  ]
+},
+
+{
+  "id": 6,
+  "subject": "Unix and Shell Programming (15CS35)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "State The Basic Architecture Of Unix Operating System With Basic Commands." },
+    { "no": "CO2", "description": "Explain And Apply Unix File Operations And Organize Directory Structure With Security." },
+    { "no": "CO3", "description": "Use Vi Editors With Different Commands And Pattern Matching Features Of Shell." },
+    { "no": "CO4", "description": "Explain Some Unix Shell Commands And Write Simple Shell Programs." },
+    { "no": "CO5", "description": "Explain Process Creation With Some Basic Process Commands And Write Simple Programs Using Perl Script." }
+  ]
+},
+
+{
+  "id": 7,
+  "subject": "Analog and Digital Electronics Laboratory (15CSL37)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Conduct Experiments To Know The Working Of Analog And Digital Electronic Components And Demonstrate Its Working." },
+    { "no": "CO2", "description": "Troubleshoot Simple Analog & Digital Electronic Circuits And Tabulate Experimental Data And Conclusions." },
+    { "no": "CO3", "description": "Express The Theoretical Aspects Used In Conducting Different Experiments Of Analog & Digital Electronics." },
+    { "no": "CO4", "description": "Record Experimental Process And Results." },
+    { "no": "CO5", "description": "Conduct Any Given Experiment In Analog & Digital Electronics Laboratory And Communicate Results Effectively." }
+  ]
+},
+
+{
+  "id": 8,
+  "subject": "Data Structures Laboratory (15CSL38)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Conduct Scheduled Experiments To Design And Develop The Programs In C To Understand The Different Concepts Of Data Structures." },
+    { "no": "CO2", "description": "Analyze The Output Based On The Given Input Data." },
+    { "no": "CO3", "description": "Express The Theoretical Aspects Used In Conducting Different Experiments Of Data Structures And Applications." },
+    { "no": "CO4", "description": "Record Experimental Process And Results." },
+    { "no": "CO5", "description": "Conduct Any Given Experiment In Data Structures Laboratory And Communicate Results Effectively." }
+  ]
+},
+{
+  "id": 1,
+  "subject": "Engineering Mathematics - IV (15MAT41)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Use Appropriate Single Step And Multi-step Numerical Methods To Solve First Order Ordinary Differential Equations." },
+    { "no": "CO2", "description": "Solve Second Order Ordinary Differential Equations Arising In Flow Data Design Problems, Employ Bessel's Functions And Legendre's Polynomials For Tackling Problems Arising In Continuum Mechanics, Hydrodynamics And Heat Conduction." },
+    { "no": "CO3", "description": "Explain The Idea Of Analyticity, Potential Fields, Residues And Poles Of Complex Potentials In Field Theory And Electromagnetic Theory." },
+    { "no": "CO4", "description": "Describe Random Variables And Probability Distributions Using Rigorous Statistical Methods To Analyze Problems Associated With Optimization Of Digital Circuits, Information, Coding Theory And Stability Analysis Of Systems." },
+    { "no": "CO5", "description": "Solve Problems Of Population Using Sampling Theory, Test Of Hypothesis, Problems Of Stochastic Processes, Markov Chains In Attempting Engineering Problems For Feasible Random Events." }
+  ]
+},
+
+{
+  "id": 2,
+  "subject": "Software Engineering (15CS42)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Demonstrate The Various Software Process Models And Identify The Functional And Non Functional Requirements Of The Software." },
+    { "no": "CO2", "description": "Design And Implement Various Software Using UML Diagrams." },
+    { "no": "CO3", "description": "Apply Various Testing Mechanisms And Update The Existing Software Based On Current Needs." },
+    { "no": "CO4", "description": "Make Use Of Techniques, Skills, And Modern Engineering Tools Necessary For Project Planning And To Measure The Quality Of Software." },
+    { "no": "CO5", "description": "Apply Agile Methods To Develop The Software." }
+  ]
+},
+
+{
+  "id": 3,
+  "subject": "Design and Analysis of Algorithms (15CS43)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Compare The Efficiency Of Algorithms Using Asymptotic Complexity." },
+    { "no": "CO2", "description": "Apply The Complexity Of Certain Divide And Conquer And Decrease And Conquer Algorithms." },
+    { "no": "CO3", "description": "Apply The Complexity Of Certain Greedy Algorithms." },
+    { "no": "CO4", "description": "Apply The Complexity Of Certain Dynamic Programming Algorithms." },
+    { "no": "CO5", "description": "Explain The Problem Classes, Backtracking And Branch And Bound Techniques To Deal With Some Hard Problems." }
+  ]
+},
+
+{
+  "id": 4,
+  "subject": "Microprocessors and Microcontrollers (15CS44)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Explain The Architecture Of Microprocessor And Write Simple Assembly Language Programs." },
+    { "no": "CO2", "description": "Write Application Based Programs Using 8086 Instruction Set." },
+    { "no": "CO3", "description": "Perform Various Operations (Arithmetic & String) And Interface Memory And Various Input Output Devices." },
+    { "no": "CO4", "description": "Explain The Architecture Of ARM And Differentiate Microprocessor, Microcontroller And Multi-core Processor." },
+    { "no": "CO5", "description": "Write Programs Using ARM Instruction Set." }
+  ]
+},
+
+{
+  "id": 5,
+  "subject": "Object Oriented Concepts (15CS45)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Explain Object Oriented Programming Concepts And Write Programs In C++." },
+    { "no": "CO2", "description": "Explain And Write Programs Using Primitive Language Constructs In Java." },
+    { "no": "CO3", "description": "Explain Object Oriented Programming Concepts And Write Object Oriented Programs In Java." },
+    { "no": "CO4", "description": "Explain Event Handling And Multithreading With Suitable Programs In Java." },
+    { "no": "CO5", "description": "Develop Simple Interactive Java Programs Using Applets And Swings." }
+  ]
+},
+
+{
+  "id": 6,
+  "subject": "Data Communication (15CS46)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Illustrate Basic Computer Network Technology And Identify The Different Types Of Network Topologies And Protocols." },
+    { "no": "CO2", "description": "Illustrate Physical Layer Of The Computer Network." },
+    { "no": "CO3", "description": "Demonstrate Error Detection/Correction Techniques And Illustrate Data Link Layer Of Computer Networks." },
+    { "no": "CO4", "description": "Explain Different Types Of Network Devices And Their Functions Within A Network." },
+    { "no": "CO5", "description": "Demonstrate The Skills Of Subnetting And Routing Mechanisms." }
+  ]
+},
+
+{
+  "id": 7,
+  "subject": "Design and Analysis of Algorithm Laboratory (15CSL47)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Conduct Experiments Using NetBeans, And Execute The Algorithms." },
+    { "no": "CO2", "description": "Tabulate Experimental Data And Draw Conclusions." },
+    { "no": "CO3", "description": "Express The Theoretical Aspects Used In Conducting Different Experiments Pertaining To Various Algorithms Used In Programming." },
+    { "no": "CO4", "description": "Record Experimental Process And Results." },
+    { "no": "CO5", "description": "Conduct Any Given Experiment In Design And Analysis Of Algorithms Laboratory And Communicate Results Effectively." }
+  ]
+},
+
+{
+  "id": 8,
+  "subject": "Microprocessors Laboratory (15CSL48)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Develop And Test Programs On Arithmetic/Logical Operations Using ARM7TDMI/LPC2148." },
+    { "no": "CO2", "description": "Tabulate Experimental Data And Conclusions." },
+    { "no": "CO3", "description": "Express The Theoretical Aspects Used In Conducting Different Experiments Of Microprocessor And Microcontroller." },
+    { "no": "CO4", "description": "Record Experimental Process And Results." },
+    { "no": "CO5", "description": "Conduct Any Given Experiment In Microprocessor And Microcontroller Laboratory And Communicate Results Effectively." }
+  ]
+},
+{
+  "id": 1,
+  "subject": "Management and Entrepreneurship for IT Industry (15CS51)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Explain The Principles Of Management, Planning, Staffing And Organization." },
+    { "no": "CO2", "description": "Discuss On Directing, Controlling And Their Importance." },
+    { "no": "CO3", "description": "Explain About Entrepreneurship And Entrepreneurship Related Activities." },
+    { "no": "CO4", "description": "Write A Business Plan And About Enterprise Resource Planning." },
+    { "no": "CO5", "description": "Describe About Setting Up SSI Units, Type Of Support Provided By The Different Government Bodies/Industries And Importance Of IPR." }
+  ]
+},
+
+{
+  "id": 2,
+  "subject": "Computer Networks (15CS52)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Apply Principles Of Application Layer Protocols." },
+    { "no": "CO2", "description": "Summarize Transport Layer Services And Infer UDP And TCP Protocols." },
+    { "no": "CO3", "description": "Define Routers, IP And Routing Algorithms In Network Layer." },
+    { "no": "CO4", "description": "Demonstrate The Wireless And Mobile Networks With IEEE 802.11 Standard." },
+    { "no": "CO5", "description": "Illustrate Multimedia Networking And Network Management Techniques." }
+  ]
+},
+
+{
+  "id": 3,
+  "subject": "Advanced JAVA and J2EE (15CS553)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Implement The Advanced Java Concepts Like Enumerations, Auto Boxing And Annotation For Developing Modular And Efficient Programs." },
+    { "no": "CO2", "description": "Identify The Usage Of Collections And Its Framework For Programming." },
+    { "no": "CO3", "description": "Distinguish The Operations Of Different String Handling Functions In Java Programming." },
+    { "no": "CO4", "description": "Develop Java Server Pages Based Web Application." },
+    { "no": "CO5", "description": "Build Database Access To Manage The Information Using JDBC API." }
+  ]
+},
+
+{
+  "id": 4,
+  "subject": "Automata Theory and Computability (15CS54)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Write Fundamental Core Concepts In Automata Theory And Theory Of Computation." },
+    { "no": "CO2", "description": "Design And Translate Between Different Models Of Computation." },
+    { "no": "CO3", "description": "Design Grammars And Push Down Automata For Different Language Classes And Become Knowledgeable About Restricted Models Of Computation (Regular, Context Free) And Their Relative Powers." },
+    { "no": "CO4", "description": "Construct Turing Machine And Develop Skills In Formal Reasoning And Reduction Of A Problem To A Formal Model, With Emphasis On Semantic Precision And Conciseness." },
+    { "no": "CO5", "description": "Classify A Problem With Respect To Different Models Of Computation." }
+  ]
+},
+
+{
+  "id": 5,
+  "subject": "Computer Network Laboratory (15CSL57)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Implement Protocols Of TCP/IP Network Model And Write TCL Script To Simulate Performance Of Various Network Topologies." },
+    { "no": "CO2", "description": "Calculate Packet Drops, Analyze Performance, Debug And Document Results Of Program Output." },
+    { "no": "CO3", "description": "Express The Theoretical Aspects Used For Writing Algorithms And Programs Of Computer Networks." },
+    { "no": "CO4", "description": "Record Simulation Results And Write Programs And Outputs." },
+    { "no": "CO5", "description": "Conduct Any Given Simulation Experiment And Implement Protocols In Computer Networks And Communicate Results Effectively." }
+  ]
+},
+
+{
+  "id": 6,
+  "subject": "DBMS Laboratory with Mini Project (15CSL58)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Conduct Scheduled Experiments To Design And Implement A Database For A Given Problem And Enforce Integrity Constraints Using DDL And DML Commands." },
+    { "no": "CO2", "description": "Analyze And Interpret Experimental Data And Results." },
+    { "no": "CO3", "description": "Express The Theoretical Aspects Used In Conducting Different Experiments Of DBMS Laboratory With Mini Project." },
+    { "no": "CO4", "description": "Record Experimental Process And Results." },
+    { "no": "CO5", "description": "Conduct Any Given Experiment In DBMS Laboratory And Communicate Results Effectively." }
+  ]
+},
+
+{
+  "id": 7,
+  "subject": "Dot Net Framework for Application Development (15CS564)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Build Applications On Visual Studio .NET Platform By Understanding The Syntax And Semantics Of C#." },
+    { "no": "CO2", "description": "Demonstrate Object Oriented Programming Concepts In C# Programming Language." },
+    { "no": "CO3", "description": "Design Custom Interfaces For Applications And Leverage Available Built-in Interfaces In Building Complex Applications." },
+    { "no": "CO4", "description": "Illustrate The Use Of Generics And Collections In C#." },
+    { "no": "CO5", "description": "Compose Queries To Query In-memory Data And Define Own Operator Behaviour." }
+  ]
+},
+{
+  "id": 1,
+  "subject": "Cryptography, Network Security and Cyber Law (15CS61)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Understand The Mathematical Background For Cryptography And Basics Of Cryptography." },
+    { "no": "CO2", "description": "Familiarize With Cryptography And Very Essential Algorithms." },
+    { "no": "CO3", "description": "Illustrate Key Management Issues And Solutions." },
+    { "no": "CO4", "description": "Explain The Concepts Of Network And Cyber Security." },
+    { "no": "CO5", "description": "Introduce Cyber Law And Ethics To Be Followed." }
+  ]
+},
+
+{
+  "id": 2,
+  "subject": "Data Mining and Data Warehousing (15CS651)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Define The Fundamental Concepts And Architecture Of Data Warehousing." },
+    { "no": "CO2", "description": "Describe The Challenges In Data Mining And Implement Data Warehouse." },
+    { "no": "CO3", "description": "Demonstrate Association Rules For A Given Data Pattern." },
+    { "no": "CO4", "description": "Apply The Various Methods Of Classifiers On Real World Data." },
+    { "no": "CO5", "description": "Apply The Techniques Of Clustering On Data Set." }
+  ]
+},
+
+{
+  "id": 3,
+  "subject": "Computer Graphics and Visualization (15CS62)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Design And Implement Algorithms For 2D Graphics Primitives And Attributes." },
+    { "no": "CO2", "description": "Illustrate Geometric Transformations On 2D Objects." },
+    { "no": "CO3", "description": "Illustrate Geometric Transformations On 3D Objects And Apply Concepts Of Color And Illumination Models." },
+    { "no": "CO4", "description": "Apply Concepts Of Clipping And Visible Surface Detection In 2D And 3D Viewing." },
+    { "no": "CO5", "description": "Decide Suitable Hardware And Software For Developing Graphics Packages Using OpenGL." }
+  ]
+},
+
+{
+  "id": 4,
+  "subject": "System Software and Compiler Design (15CS63)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Explain Architecture Of SIC, SIC/XE And System Software Such As Assemblers And Macro-processors." },
+    { "no": "CO2", "description": "Explain System Software Such As Loaders And Linkers." },
+    { "no": "CO3", "description": "Explain Representation, Recognition Of Tokens And Develop Lexical Analyzers." },
+    { "no": "CO4", "description": "Explain Role Of Parsers And Develop Classes Of Parsers." },
+    { "no": "CO5", "description": "Apply Syntax Directed Translation And Develop Code Generators." }
+  ]
+},
+
+{
+  "id": 5,
+  "subject": "Python Application Programming (15CS664)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Examine Python Flow Control And Functions And Write Simple Python Programs." },
+    { "no": "CO2", "description": "Demonstrate Proficiency In Handling Strings And File Systems." },
+    { "no": "CO3", "description": "Create, Run And Manipulate Python Programs Using Core Data Structures Like Lists, Dictionaries And Use Regular Expressions." },
+    { "no": "CO4", "description": "Interpret And Demonstrate Concepts Of Object-oriented Programming In Python." },
+    { "no": "CO5", "description": "Implement Exemplary Applications Related To Network Programming, Web Services And Databases In Python." }
+  ]
+},
+
+{
+  "id": 6,
+  "subject": "Operating Systems (15CS64)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Define The Operating System Concepts And Types Of Operating System." },
+    { "no": "CO2", "description": "Apply Suitable Techniques For Management Of Different Resources." },
+    { "no": "CO3", "description": "Illustrate Deadlock And Memory Management Techniques." },
+    { "no": "CO4", "description": "Apply Virtual Memory Management And File System Management Techniques." },
+    { "no": "CO5", "description": "Demonstrate Concepts Of Operating System In Platform Of Usage Through Case Studies." }
+  ]
+},
+
+{
+  "id": 7,
+  "subject": "System Software and Operating System Laboratory (15CSL67)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Conduct Experiments To Know The Working Of Lexers, Parsers Of Compiler Design And Algorithms On Management, Scheduling, Allocation And Communication Used In Operating System." },
+    { "no": "CO2", "description": "Tabulation Of Experimental Data And Conclusion." },
+    { "no": "CO3", "description": "Express The Theoretical Aspects Used In Conducting Different Experiments Of System Software And Operating System Laboratory." },
+    { "no": "CO4", "description": "Record Experimental Process And Results." },
+    { "no": "CO5", "description": "Conduct Any Given Experiment In System Software And Operating System Laboratory And Communicate Results Effectively." }
+  ]
+},
+
+{
+  "id": 8,
+  "subject": "Computer Graphics Laboratory with Mini Project (15CSL68)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Develop C/C++ Programs Using OpenGL And Maintain A Record Of The Same In The Observation Books." },
+    { "no": "CO2", "description": "Develop Programs By Applying Computer Graphics Concepts, Debug The Same And Also Develop A Mini-project Using The Learnt Concepts." },
+    { "no": "CO3", "description": "Explain The Theoretical Aspects Used In Conducting Different Experiments And Mini Projects In Viva-voce." },
+    { "no": "CO4", "description": "Illustrate Experimental Results In The Record Book And Submit The Mini-project Report." },
+    { "no": "CO5", "description": "Implement Any Given Program In Computer Graphics Laboratory, Demonstrate Mini-project And Communicate Results Effectively." }
+  ]
+},
+
+{
+  "id": 1,
+  "subject": "Cloud Computing and its Applications (15CS742)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Explain Cloud Computing, Virtualization And Classify Services Of Cloud Computing." },
+    { "no": "CO2", "description": "Illustrate Architecture And Programming In Cloud." },
+    { "no": "CO3", "description": "Analyze Parallel Computation With Threads." },
+    { "no": "CO4", "description": "Analyze Data-intensive Computing And Programming." },
+    { "no": "CO5", "description": "Illustrate The Platforms For Development Of Cloud Applications And List The Application." }
+  ]
+},
+
+{
+  "id": 2,
+  "subject": "Storage Area Networks (15CS754)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Illustrate Storage Systems." },
+    { "no": "CO2", "description": "Illustrate The Storage Networking Technologies." },
+    { "no": "CO3", "description": "Explain Backup, Archive And Replication." },
+    { "no": "CO4", "description": "Summarize The Cloud Computing Characteristics And Benefits." },
+    { "no": "CO5", "description": "Illustrate The Security And Management Of Storage Infrastructure." }
+  ]
+},
+
+{
+  "id": 3,
+  "subject": "Web Technology and its Applications (15CS71)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Apply HTML And CSS Syntax And Semantics To Design Web Pages." },
+    { "no": "CO2", "description": "Design Tables And Forms Using HTML And CSS For Web Pages." },
+    { "no": "CO3", "description": "Develop Client-side Scripts Using JavaScript And Server-side Scripts Using PHP To Generate Dynamic Web Content." },
+    { "no": "CO4", "description": "Apply Object Oriented Principles For Web Application Development With PHP." },
+    { "no": "CO5", "description": "Apply The Concepts Of JQuery, Backbone, XML, JSON And Web Services For Web Application Development." }
+  ]
+},
+
+{
+  "id": 4,
+  "subject": "Advanced Computer Architectures (15CS72)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Explain The Parallel Computer Model." },
+    { "no": "CO2", "description": "Explain The Technology Of Processor And Memory Hierarchy." },
+    { "no": "CO3", "description": "Analyze The Pipeline And Super Scalar Processing." },
+    { "no": "CO4", "description": "Analyze Cache Coherence And Synchronization." },
+    { "no": "CO5", "description": "Illustrate Parallel Programming Concepts." }
+  ]
+},
+
+{
+  "id": 5,
+  "subject": "Machine Learning (15CS73)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Choose The Learning Techniques And Investigate Concept Learning." },
+    { "no": "CO2", "description": "Identify The Characteristics Of Decision Tree And Solve Problems Associated With It." },
+    { "no": "CO3", "description": "Apply Effectively Neural Networks For Appropriate Applications." },
+    { "no": "CO4", "description": "Apply Bayesian Techniques And Derive Effectively Learning Rules." },
+    { "no": "CO5", "description": "Evaluate Hypothesis And Investigate Instance Based Learning And Reinforced Learning." }
+  ]
+},
+
+{
+  "id": 6,
+  "subject": "Machine Learning Laboratory (15CSL76)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Conduct Scheduled Experiments To Design And Develop The Programs In Python To Understand The Different Concepts Of Machine Learning." },
+    { "no": "CO2", "description": "Analyze The Output Based On The Given Input Data." },
+    { "no": "CO3", "description": "Express The Theoretical Aspects Used In Conducting Different Experiments Of Machine Learning." },
+    { "no": "CO4", "description": "Record Experimental Process And Results." },
+    { "no": "CO5", "description": "Conduct Any Given Experiment In Machine Learning Laboratory And Communicate Results Effectively." }
+  ]
+},
+
+{
+  "id": 7,
+  "subject": "Web Technology Laboratory with Mini Project (15CSL77)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Develop Scripts Using JavaScript/PHP And Maintain A Record Of The Same In The Observation Books." },
+    { "no": "CO2", "description": "Develop Scripts By Applying Web Programming Concepts, Debug The Same And Also Develop A Mini-project Using The Learnt Concepts." },
+    { "no": "CO3", "description": "Explain The Theoretical Aspects Used In Conducting Different Experiments And Mini Projects In Viva-voce." },
+    { "no": "CO4", "description": "Illustrate Experimental Results In The Record Book And Submit The Mini-project Report." },
+    { "no": "CO5", "description": "Implement Any Given Program In Web Technology Laboratory, Demonstrate Mini-project And Communicate Results Effectively." }
+  ]
+},
+
+{
+  "id": 8,
+  "subject": "Project Phase I and Seminar (15CSP78)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Review The State Of Art In The Given Domain." },
+    { "no": "CO2", "description": "Define Clearly Objectives & Problem Statement Given Real World Scenario." },
+    { "no": "CO3", "description": "Able To Choose Suitable Design Methodology For A Given Problem Statement With Objective And Outcome." },
+    { "no": "CO4", "description": "Document The Synopsis For The Given Project." },
+    { "no": "CO5", "description": "Deliver The Seminar On The Preliminary Study On The Project." }
+  ]
+},
+
+{
+  "id": 1,
+  "subject": "System Modeling and Simulation (15CS834)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Illustrate The Role Of Important Elements Of Simulation And Modeling Based On Statistical Procedure." },
+    { "no": "CO2", "description": "Explain Analysis And Design Of Models Using Random Number Variants." },
+    { "no": "CO3", "description": "Illustrate The Modeling Techniques For Event Systems." },
+    { "no": "CO4", "description": "Explain Analysis And Design Of Models Using Discrete-events Simulation." },
+    { "no": "CO5", "description": "Illustrate The Concepts Of Verification, Calibration, And Validation Of Models." }
+  ]
+},
+
+{
+  "id": 2,
+  "subject": "Internet of Things and Applications (15CS81)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Interpret The Impact And Challenges Posed By IoT Networks Leading To New Architectural Models." },
+    { "no": "CO2", "description": "Compare And Contrast The Deployment Of Smart Objects And The Technologies To Connect Them To Network." },
+    { "no": "CO3", "description": "Appraise The Role Of IoT Protocols For Efficient Network Communication." },
+    { "no": "CO4", "description": "Elaborate The Need For Data Analytics And Security In IoT." },
+    { "no": "CO5", "description": "Illustrate Different Sensor Technologies For Sensing Real World Entities And Identify The Applications Of IoT In Industry." }
+  ]
+},
+
+{
+  "id": 3,
+  "subject": "Big Data Analytics (15CS82)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Demonstrate The Working Of HDFS And MapReduce Framework And Execute MapReduce Programs." },
+    { "no": "CO2", "description": "Apply The Hadoop Related Tools For Big Data Analytics And Perform Basic Hadoop Administration." },
+    { "no": "CO3", "description": "Examine The Role Of Business Intelligence, Data Warehousing And Visualization In Decision Making." },
+    { "no": "CO4", "description": "Determine The Importance Of Core Data Mining Techniques For Data Analytics." },
+    { "no": "CO5", "description": "Compare And Contrast Different Text Mining Techniques." }
+  ]
+},
+
+{
+  "id": 4,
+  "subject": "Internship / Professional Practice (15CS84)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Apply Best Of Their Knowledge And Skills In Computer Science To Explore, Analyse A Real-world Problem, Identify, Develop A Potential Solution Using Creativity And Innovation, Evaluate And Analyse The Outcomes And Impact Of This Solution." },
+    { "no": "CO2", "description": "Communicate Effectively And Work Productively In A Multi-disciplinary Team By Taking Initiative And Sound Judgement To Achieve Defined Workplace Objectives." },
+    { "no": "CO3", "description": "Demonstrate An Understanding Of Lifelong Learning Processes, And Clarification Of Their Personal And Professional Goals, Through Critical Reflection On Their Internship Experience." },
+    { "no": "CO4", "description": "Apply Effective Formal Written Communication Skills." },
+    { "no": "CO5", "description": "" }
+  ]
+},
+
+{
+  "id": 5,
+  "subject": "Project Work Phase II (15CSP85)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Work Effectively In Teams In Designing And Implementing Software Systems And Effectively Manage Conflicts, Optimize Resources And Meet Deadlines." },
+    { "no": "CO2", "description": "Develop Solutions For Framed Problem Statement." },
+    { "no": "CO3", "description": "Design And Implement The Software And Evaluate The Solution To Meet Project Objectives." },
+    { "no": "CO4", "description": "Test And Analyze The Modules Of Planned Project." },
+    { "no": "CO5", "description": "Demonstrate The Ability To Write Clear System Documentation, User Documentation And Reports." }
+  ]
+},
+
+{
+  "id": 6,
+  "subject": "Seminar (15CSS86)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Explain The Current And Real World Technologies." },
+    { "no": "CO2", "description": "Distinguish And Integrate Differing Forms Of Knowledge And Academic Disciplinary Approaches." },
+    { "no": "CO3", "description": "Improve Oral And Written Communication Skills." },
+    { "no": "CO4", "description": "Explore An Appreciation Of The Self In Relation To Its Larger Diverse Social And Academic Contexts." },
+    { "no": "CO5", "description": "Apply Principles Of Ethics And Respect In Interaction With Others." }
+  ]
+}
+
+      ],
+      "2016-2017":[
+
+        {
+  "id": 1,
+  "subject": "Engineering Maths-I (15MAT11)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Find The Nth Derivatives Of Product Of Two Functions, And Polar Curves. Taylor’s And Maclaurin’s Series." },
+    { "no": "CO2", "description": "Use Partial Derivatives To Calculate Rates Of Change Of Multivariate Functions." },
+    { "no": "CO3", "description": "Analyze Position, Velocity, And Acceleration In Two Or Three Dimensions Using The Calculus Of Vector Valued Functions." },
+    { "no": "CO4", "description": "Recognize And Solve First-order Ordinary Differential Equations, Model Simple Electrical Circuits, Projectile Motion And Newton’s Law Of Cooling." },
+    { "no": "CO5", "description": "Use Matrices, Determinants And Techniques For Solving Systems Of Linear Equations In Different Areas Of Linear Algebra." }
+  ]
+},
+
+{
+  "id": 2,
+  "subject": "Engineering Physics (15PHY12)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Gain Knowledge About Modern Physics And Quantum Mechanics And Develop Problem Solving Skills." },
+    { "no": "CO2", "description": "Understand Material Properties And Their Applications In Engineering." },
+    { "no": "CO3", "description": "Learn Basic Principles Of Lasers And Optical Fibers And Their Applications To Develop Skills In Engineering." },
+    { "no": "CO4", "description": "Understand Crystal Structure And Its Applications To Enhance Technical Skills." },
+    { "no": "CO5", "description": "Understand Shock Waves Concepts, Applications, And Basics Of Nanotechnology To Gain Exposure To Emerging Technologies." }
+  ]
+},
+
+{
+  "id": 3,
+  "subject": "Basic Electrical Engineering (15ELE15)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Understand Electrical Circuit Concepts, Electromagnetism, And Electromagnetic Induction." },
+    { "no": "CO2", "description": "Understand The Concepts Of DC Machines, Construction And Working Principle Of Wattmeter And Energy Meter." },
+    { "no": "CO3", "description": "Understand The Concepts Of Single Phase AC Circuits And Domestic Wiring." },
+    { "no": "CO4", "description": "Understand The Concepts Of Three Phase Circuit Construction And Working Of Three Phase Synchronous Generator." },
+    { "no": "CO5", "description": "Understand The Concepts Of Single Phase Transformer And Three Phase Induction Motor." }
+  ]
+},
+
+{
+  "id": 4,
+  "subject": "Engineering Physics Laboratory (15PHYL17)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Conduct Scheduled Experiments To Learn Experimental Setup And Record Readings Using Measuring Instruments To Understand Engineering Physics Concepts." },
+    { "no": "CO2", "description": "Analyse And Interpret Experimental Data And Results." },
+    { "no": "CO3", "description": "Express The Theoretical Aspects Used In Conducting Different Experiments Of Engineering Physics Laboratory." },
+    { "no": "CO4", "description": "Record Experimental Process And Results." },
+    { "no": "CO5", "description": "Conduct Any Given Experiment In Engineering Physics Laboratory And Communicate Results Effectively." }
+  ]
+},
+
+{
+  "id": 5,
+  "subject": "Constitution of India, Professional Ethics and Human Rights (15CPH18)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Have General Knowledge And Legal Literacy About Indian Constitution To Help Manage Complex Societal Issues And Prepare For Competitive Examinations." },
+    { "no": "CO2", "description": "Understand State And Central Policies, Fundamental Rights And Duties." },
+    { "no": "CO3", "description": "Understand Electoral Process, Amendments, And Special Provisions In The Constitution." },
+    { "no": "CO4", "description": "Understand Powers And Functions Of Municipalities, Panchayats, Co-operative Societies, Along With Human Rights And NHRC." },
+    { "no": "CO5", "description": "Understand Engineering And Professional Ethics And Responsibilities Of Engineers." }
+  ]
+},
+{
+  "id": 1,
+  "subject": "Engineering Mathematics - II (15MAT21)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Use Ordinary Differential Equations To Model Engineering Phenomena Such As Electrical Circuits, Forced Oscillation Of Mass Spring, And Elementary Heat Transfer. Able To Solve Nonlinear Differential Equations." },
+    { "no": "CO2", "description": "Use Partial Differential Equations To Model Problems In Fluid Mechanics, Electromagnetic Theory, And Heat Transfer." },
+    { "no": "CO3", "description": "Evaluate Double And Triple Integrals To Find Area, Volume, Mass, And Moment Of Inertia Of Plane And Solid Regions." },
+    { "no": "CO4", "description": "Use Beta And Gamma Functions To Solve Double And Triple Integrals." },
+    { "no": "CO5", "description": "Use Laplace Transforms To Determine General Or Complete Solutions To Linear Ordinary Differential Equations." }
+  ]
+},
+
+{
+  "id": 2,
+  "subject": "Basic Electronics (15ELN25)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Understand The Working Of Diodes And Their Applications In Rectifiers, Filter, And Regulator Circuits." },
+    { "no": "CO2", "description": "Understand The Working Of Bipolar Junction Transistors And Their Biasing Methods To Design Amplifiers." },
+    { "no": "CO3", "description": "Design Simple Circuits Like Amplifiers (Inverting And Non-Inverting), Comparators, Adders, Integrators, And Differentiators Using Operational Amplifiers." },
+    { "no": "CO4", "description": "Understand The Different Building Blocks In Digital Electronics And Their Implementation At The Logic Level." },
+    { "no": "CO5", "description": "Understand The Functioning Of A Communication System, Different Modulation Technologies, And Principles Of Various Transducers." }
+  ]
+},
+
+{
+  "id": 3,
+  "subject": "Engineering Chemistry Laboratory (15CHEL27)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Conduct Scheduled Experiments To Learn Handling Different Types Of Instruments For Analysis Of Materials And Performing Various Titrations For Material Estimation." },
+    { "no": "CO2", "description": "Calculate Experimental Data And Draw Conclusions." },
+    { "no": "CO3", "description": "Explain The Theoretical Aspects Used In Conducting Different Experiments In The Engineering Chemistry Laboratory." },
+    { "no": "CO4", "description": "Record Experimental Procedures And Results Accurately." },
+    { "no": "CO5", "description": "Conduct Any Given Experiment In Engineering Chemistry Laboratory And Communicate Results Effectively." }
+  ]
+},
+{
+  "id": 1,
+  "subject": "Analog and Digital Electronics (15CS32)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Explain And Write The Characteristics Of JFET, MOSFET, And Operational Amplifier." },
+    { "no": "CO2", "description": "Explain And Apply Various Simplification Techniques To Simplify Combinational Logic Circuits." },
+    { "no": "CO3", "description": "Explain And Implement Various Data Processing Circuits And Flip-Flops." },
+    { "no": "CO4", "description": "Explain And Design Synchronous And Asynchronous Sequential Circuits." },
+    { "no": "CO5", "description": "Explain And Design Counters And Converters." }
+  ]
+},
+
+{
+  "id": 2,
+  "subject": "Data Structures and Applications (15CS33)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Acquire Knowledge Of Various Types Of Data Structures, Sorting, And Searching Operations On Arrays." },
+    { "no": "CO2", "description": "Handle Operations Like Searching, Insertion, Deletion, And Traversing On Data Structures Like Stacks And Queues." },
+    { "no": "CO3", "description": "Apply The Basic Knowledge Of Linked Lists To Solve Real-World Problems." },
+    { "no": "CO4", "description": "Handle Operations Like Searching, Insertion, Deletion, And Traversing On Data Structures Like Trees." },
+    { "no": "CO5", "description": "Explain Basic Graph Algorithms And Their Analyses. Employ Graphs, Sorting, And Searching Operations To Model Engineering Problems When Appropriate." }
+  ]
+},
+
+{
+  "id": 3,
+  "subject": "Computer Organization (15CS34)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Describe The Structure Of Different Functional Parts Of A Digital Computer System, Analyze Performance, And Understand Machine Programming Concepts." },
+    { "no": "CO2", "description": "Explain Input/Output Organization And Device Handling." },
+    { "no": "CO3", "description": "Explain Memory Types And Their Organization." },
+    { "no": "CO4", "description": "Explain And Write Circuits Or Algorithms For Arithmetic Units." },
+    { "no": "CO5", "description": "Explain The Processing Unit, Its Role, And The Structure Of Embedded And Other Computer Systems." }
+  ]
+},
+
+{
+  "id": 4,
+  "subject": "Unix and Shell Programming (15CS35)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "State The Basic Architecture Of The UNIX Operating System And Basic Commands." },
+    { "no": "CO2", "description": "Explain And Apply UNIX File Operations And Organize Directory Structures With Security." },
+    { "no": "CO3", "description": "Use VI Editors With Different Commands And Pattern Matching Features Of The Shell." },
+    { "no": "CO4", "description": "Explain Common UNIX Shell Commands And Write Simple Shell Programs." },
+    { "no": "CO5", "description": "Explain Process Creation, Use Basic Process Commands, And Write Simple Programs Using Perl Scripts." }
+  ]
+},
+
+{
+  "id": 5,
+  "subject": "Discrete Mathematical Structures (15CS36)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Verify The Correctness Of An Argument Using Propositional And Predicate Logic With Truth Tables." },
+    { "no": "CO2", "description": "Demonstrate The Ability To Solve Problems Using Counting Techniques And Combinatorics In The Context Of Discrete Probability." },
+    { "no": "CO3", "description": "Solve Problems Involving Relations And Functions." },
+    { "no": "CO4", "description": "Construct Proofs Using Direct Proof, Proof By Contraposition, Proof By Contradiction, Proof By Cases, And Mathematical Induction." },
+    { "no": "CO5", "description": "Explain The Concepts Of Graphs And Tree Structures." }
+  ]
+},
+
+{
+  "id": 6,
+  "subject": "Analog and Digital Electronics Laboratory (15CSL37)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Conduct Experiments To Understand The Working Of Analog And Digital Electronic Components And Demonstrate Their Functioning." },
+    { "no": "CO2", "description": "Troubleshoot Simple Analog And Digital Electronic Circuits, Tabulate Experimental Data, And Draw Conclusions." },
+    { "no": "CO3", "description": "Explain The Theoretical Aspects Used In Conducting Different Experiments Of Analog And Digital Electronics." },
+    { "no": "CO4", "description": "Record Experimental Procedures And Results Accurately." },
+    { "no": "CO5", "description": "Conduct Any Given Experiment In Analog And Digital Electronics Laboratory And Communicate Results Effectively." }
+  ]
+},
+
+{
+  "id": 7,
+  "subject": "Data Structures Laboratory (15CSL38)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Conduct Scheduled Experiments To Design And Develop Programs In C To Understand Different Concepts Of Data Structures." },
+    { "no": "CO2", "description": "Analyze The Output Based On Given Input Data." },
+    { "no": "CO3", "description": "Explain The Theoretical Aspects Used In Conducting Different Experiments On Data Structures And Applications." },
+    { "no": "CO4", "description": "Record Experimental Processes And Results Systematically." },
+    { "no": "CO5", "description": "Conduct Any Given Experiment In The Data Structures Laboratory And Communicate Results Effectively." }
+  ]
+},
+
+{
+  "id": 1,
+  "subject": "Engineering Mathematics - IV (15MAT41)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Use Appropriate Single Step And Multi-step Numerical Methods To Solve First Order Ordinary Differential Equations." },
+    { "no": "CO2", "description": "Solve Second Order Ordinary Differential Equations Arising In Flow Data Design Problems, Employ Bessel's Functions And Legendre's Polynomials For Tackling Problems Arising In Continuum Mechanics, Hydrodynamics And Heat Conduction." },
+    { "no": "CO3", "description": "Explain The Idea Of Analyticity, Potential Fields, Residues And Poles Of Complex Potentials In Field Theory And Electromagnetic Theory." },
+    { "no": "CO4", "description": "Describe Random Variables And Probability Distributions Using Rigorous Statistical Methods To Analyze Problems Associated With Optimization Of Digital Circuits, Information, Coding Theory And Stability Analysis Of Systems." },
+    { "no": "CO5", "description": "Solve Problems Of Population Using Sampling Theory, Test Of Hypothesis, Problems Of Stochastic Processes, Markov Chains In Attempting Engineering Problems For Feasible Random Events." }
+  ]
+},
+
+{
+  "id": 2,
+  "subject": "Software Engineering (15CS42)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Demonstrate The Various Software Process Models And Identify The Functional And Non Functional Requirements Of The Software." },
+    { "no": "CO2", "description": "Design And Implement Various Software Using UML Diagrams." },
+    { "no": "CO3", "description": "Apply The Various Testing Mechanisms And Update The Existing Software Based On Current Needs." },
+    { "no": "CO4", "description": "Make Use Of Techniques, Skills, And Modern Engineering Tools Necessary For Project Planning And To Measure Software Quality." },
+    { "no": "CO5", "description": "Apply Agile Methods To Develop Software." }
+  ]
+},
+
+{
+  "id": 3,
+  "subject": "Design and Analysis of Algorithms (15CS43)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Compare The Efficiency Of Algorithms Using Asymptotic Complexity." },
+    { "no": "CO2", "description": "Apply The Complexity Of Certain Divide And Conquer And Decrease And Conquer Algorithms." },
+    { "no": "CO3", "description": "Apply The Complexity Of Certain Greedy Algorithms." },
+    { "no": "CO4", "description": "Apply The Complexity Of Certain Dynamic Programming Algorithms." },
+    { "no": "CO5", "description": "Explain Problem Classes, Backtracking, And Branch And Bound Techniques To Deal With Hard Problems." }
+  ]
+},
+
+{
+  "id": 4,
+  "subject": "Microprocessors and Microcontrollers (15CS44)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Explain The Architecture Of Microprocessor And Write Simple Assembly Language Programs." },
+    { "no": "CO2", "description": "Write Application-Based Programs Using 8086 Instruction Set." },
+    { "no": "CO3", "description": "Perform Various Arithmetic And String Operations And Interface Memory And Various Input/Output Devices." },
+    { "no": "CO4", "description": "Explain The Architecture Of ARM And Differentiate Between Microprocessor, Microcontroller, And Multi-core Processor." },
+    { "no": "CO5", "description": "Write Programs Using ARM Instruction Set." }
+  ]
+},
+
+{
+  "id": 5,
+  "subject": "Object Oriented Concepts (15CS45)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Explain Object Oriented Programming Concepts And Write Programs In C++." },
+    { "no": "CO2", "description": "Explain And Write Programs Using Primitive Language Constructs In Java." },
+    { "no": "CO3", "description": "Explain Object Oriented Programming Concepts And Write Object Oriented Programs In Java." },
+    { "no": "CO4", "description": "Explain Event Handling And Multithreading With Suitable Programs In Java." },
+    { "no": "CO5", "description": "Develop Simple Interactive Java Programs Using Applets And Swings." }
+  ]
+},
+
+{
+  "id": 6,
+  "subject": "Data Communication (15CS46)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Illustrate Basic Computer Network Technology And Identify Different Types Of Network Topologies And Protocols." },
+    { "no": "CO2", "description": "Illustrate The Physical Layer Of Computer Networks." },
+    { "no": "CO3", "description": "Demonstrate Error Detection And Correction Techniques And Illustrate The Data Link Layer Of Computer Networks." },
+    { "no": "CO4", "description": "Explain Different Types Of Network Devices And Their Functions Within A Network." },
+    { "no": "CO5", "description": "Demonstrate The Skills Of Subnetting And Routing Mechanisms." }
+  ]
+},
+
+{
+  "id": 7,
+  "subject": "Design and Analysis of Algorithm Laboratory (15CSL47)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Conduct Experiments Using NetBeans And Execute Algorithms." },
+    { "no": "CO2", "description": "Tabulate Experimental Data And Draw Conclusions." },
+    { "no": "CO3", "description": "Express Theoretical Aspects Used In Conducting Different Experiments Pertaining To Various Algorithms In Programming." },
+    { "no": "CO4", "description": "Record Experimental Processes And Results." },
+    { "no": "CO5", "description": "Conduct Any Given Experiment In Design And Analysis Of Algorithms Laboratory And Communicate Results Effectively." }
+  ]
+},
+
+{
+  "id": 8,
+  "subject": "Microprocessors Laboratory (15CSL48)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Develop And Test Programs On Arithmetic And Logical Operations Using ARM7TDMI/LPC2148." },
+    { "no": "CO2", "description": "Tabulate Experimental Data And Draw Conclusions." },
+    { "no": "CO3", "description": "Express The Theoretical Aspects Used In Conducting Different Experiments Of Microprocessors And Microcontrollers." },
+    { "no": "CO4", "description": "Record Experimental Processes And Results." },
+    { "no": "CO5", "description": "Conduct Any Given Experiment In Microprocessor And Microcontroller Laboratory And Communicate Results Effectively." }
+  ]
+},
+
+{
+  "id": 9,
+  "subject": "Management and Entrepreneurship for IT Industry (15CS51)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Explain The Principles Of Management, Planning, Staffing And Organization." },
+    { "no": "CO2", "description": "Discuss Directing, Controlling And Their Importance." },
+    { "no": "CO3", "description": "Explain Entrepreneurship And Entrepreneurship Related Activities." },
+    { "no": "CO4", "description": "Write A Business Plan And Explain Enterprise Resource Planning." },
+    { "no": "CO5", "description": "Describe Setting Up Of SSI Units, Types Of Support Provided By Different Government Bodies And Importance Of IPR." }
+  ]
+},
+
+{
+  "id": 10,
+  "subject": "Computer Networks (15CS52)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Apply Principles Of Application Layer Protocols." },
+    { "no": "CO2", "description": "Summarize Transport Layer Services And Infer UDP And TCP Protocols." },
+    { "no": "CO3", "description": "Define Routers, IP, And Routing Algorithms In The Network Layer." },
+    { "no": "CO4", "description": "Demonstrate Wireless And Mobile Networks Using IEEE 802.11 Standard." },
+    { "no": "CO5", "description": "Illustrate Multimedia Networking And Network Management Techniques." }
+  ]
+},
+
+{
+  "id": 11,
+  "subject": "Automata Theory and Computability (15CS54)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Explain Fundamental Concepts In Automata Theory And Theory Of Computation." },
+    { "no": "CO2", "description": "Design And Translate Between Different Models Of Computation." },
+    { "no": "CO3", "description": "Design Grammars And Pushdown Automata For Different Language Classes And Understand Restricted Models Of Computation (Regular, Context-Free) And Their Powers." },
+    { "no": "CO4", "description": "Construct Turing Machines And Develop Skills In Formal Reasoning And Reduction Of A Problem To A Formal Model With Emphasis On Semantic Precision." },
+    { "no": "CO5", "description": "Classify Problems With Respect To Different Models Of Computation." }
+  ]
+},
+
+{
+  "id": 12,
+  "subject": "Advanced JAVA and J2EE (15CS553)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Implement Advanced Java Concepts Like Enumerations, Auto Boxing And Annotation For Developing Modular And Efficient Programs." },
+    { "no": "CO2", "description": "Identify The Usage Of Collections And Its Framework For Programming." },
+    { "no": "CO3", "description": "Distinguish Operations Of Different String Handling Functions In Java Programming." },
+    { "no": "CO4", "description": "Develop Java Server Pages (JSP) Based Web Applications." },
+    { "no": "CO5", "description": "Build Database Access Applications To Manage Information Using JDBC API." }
+  ]
+},
+
+{
+  "id": 13,
+  "subject": "Dot Net Framework for Application Development (15CS564)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Build Applications On Visual Studio .NET Platform By Understanding The Syntax And Semantics Of C#." },
+    { "no": "CO2", "description": "Demonstrate Object Oriented Programming Concepts In C# Programming Language." },
+    { "no": "CO3", "description": "Design Custom Interfaces For Applications And Leverage Built-in Interfaces To Build Complex Applications." },
+    { "no": "CO4", "description": "Illustrate The Use Of Generics And Collections In C#." },
+    { "no": "CO5", "description": "Compose Queries To Query In-memory Data And Define Custom Operator Behaviour." }
+  ]
+},
+
+{
+  "id": 14,
+  "subject": "Computer Network Laboratory (15CSL57)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Implement Protocols Of TCP/IP Network Model And Write TCL Scripts To Simulate Performance Of Various Network Topologies." },
+    { "no": "CO2", "description": "Calculate Packet Drops, Analyze Performance, Debug And Document Results Of Program Output." },
+    { "no": "CO3", "description": "Explain Theoretical Aspects Used For Writing Algorithms And Programs Of Computer Networks." },
+    { "no": "CO4", "description": "Record Simulation Results And Program Outputs." },
+    { "no": "CO5", "description": "Conduct Given Simulation Experiments And Implement Protocols In Computer Networks And Communicate Results Effectively." }
+  ]
+},
+
+{
+  "id": 15,
+  "subject": "DBMS Laboratory with Mini Project (15CSL58)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Conduct Experiments To Design And Implement A Database For A Given Problem And Enforce Integrity Constraints Using DDL And DML Commands." },
+    { "no": "CO2", "description": "Analyze And Interpret Experimental Data And Results." },
+    { "no": "CO3", "description": "Explain Theoretical Aspects Used In Conducting Different Experiments Of DBMS Laboratory With Mini Project." },
+    { "no": "CO4", "description": "Record Experimental Process And Results." },
+    { "no": "CO5", "description": "Conduct Any Given Experiment In DBMS Laboratory And Communicate Results Effectively." }
+  ]
+},
+
+
+{
+  "id": 16,
+  "subject": "Cryptography, Network Security and Cyber Law (15CS61)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Understand The Mathematical Background For Cryptography And Basics Of Cryptography." },
+    { "no": "CO2", "description": "Familiarize With Cryptography And Essential Algorithms." },
+    { "no": "CO3", "description": "Illustrate Key Management Issues And Their Solutions." },
+    { "no": "CO4", "description": "Explain The Concepts Of Network And Cyber Security." },
+    { "no": "CO5", "description": "Introduce Cyber Law And The Ethics To Be Followed." }
+  ]
+},
+
+{
+  "id": 17,
+  "subject": "Computer Graphics and Visualization (15CS62)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Design And Implement Algorithms For 2D Graphics Primitives And Attributes." },
+    { "no": "CO2", "description": "Illustrate Geometric Transformations On 2D Objects." },
+    { "no": "CO3", "description": "Illustrate Geometric Transformations On 3D Objects And Apply Concepts Of Color And Illumination Models." },
+    { "no": "CO4", "description": "Apply Concepts Of Clipping And Visible Surface Detection In 2D And 3D Viewing." },
+    { "no": "CO5", "description": "Decide Suitable Hardware And Software For Developing Graphics Packages Using OpenGL." }
+  ]
+},
+
+{
+  "id": 18,
+  "subject": "System Software and Compiler Design (15CS63)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Explain The Architecture Of SIC, SIC/XE And System Software Such As Assemblers And Macro-processors." },
+    { "no": "CO2", "description": "Explain System Software Such As Loaders And Linkers." },
+    { "no": "CO3", "description": "Explain Representation And Recognition Of Tokens And Develop Lexical Analyzers." },
+    { "no": "CO4", "description": "Explain The Role Of Parsers And Develop Classes Of Parsers." },
+    { "no": "CO5", "description": "Apply Syntax Directed Translation And Develop Code Generators." }
+  ]
+},
+
+{
+  "id": 19,
+  "subject": "Operating Systems (15CS64)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Define Operating System Concepts And Types Of Operating Systems." },
+    { "no": "CO2", "description": "Apply Suitable Techniques For Management Of Different Resources." },
+    { "no": "CO3", "description": "Illustrate Deadlock And Memory Management Techniques." },
+    { "no": "CO4", "description": "Apply Virtual Memory And File System Management Techniques." },
+    { "no": "CO5", "description": "Demonstrate Concepts Of Operating Systems Through Case Studies." }
+  ]
+},
+
+{
+  "id": 20,
+  "subject": "Data Mining and Data Warehousing (15CS651)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Define Fundamental Concepts And Architecture Of Data Warehousing." },
+    { "no": "CO2", "description": "Describe The Challenges In Data Mining And Implement A Data Warehouse." },
+    { "no": "CO3", "description": "Demonstrate Association Rules For A Given Data Pattern." },
+    { "no": "CO4", "description": "Apply Various Classifier Methods On Real-world Data." },
+    { "no": "CO5", "description": "Apply Clustering Techniques On Data Sets." }
+  ]
+},
+
+{
+  "id": 21,
+  "subject": "Python Application Programming (15CS664)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Examine Python Flow Control And Functions And Write Simple Python Programs." },
+    { "no": "CO2", "description": "Demonstrate Proficiency In Handling Strings And File Systems." },
+    { "no": "CO3", "description": "Create, Run And Manipulate Python Programs Using Core Data Structures Like Lists, Dictionaries And Use Regular Expressions." },
+    { "no": "CO4", "description": "Interpret And Demonstrate Concepts Of Object-oriented Programming In Python." },
+    { "no": "CO5", "description": "Implement Applications Related To Network Programming, Web Services And Databases In Python." }
+  ]
+},
+
+{
+  "id": 22,
+  "subject": "System Software and Operating System Laboratory (15CSL67)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Conduct Experiments To Understand The Working Of Lexers, Parsers Of Compiler Design And Algorithms Related To Management, Scheduling, Allocation And Communication In Operating Systems." },
+    { "no": "CO2", "description": "Tabulate Experimental Data And Draw Conclusions." },
+    { "no": "CO3", "description": "Explain Theoretical Aspects Used In Conducting Experiments In System Software And Operating System Laboratory." },
+    { "no": "CO4", "description": "Record Experimental Process And Results." },
+    { "no": "CO5", "description": "Conduct Experiments In System Software And Operating System Laboratory And Communicate Results Effectively." }
+  ]
+},
+
+{
+  "id": 23,
+  "subject": "Computer Graphics Laboratory with Mini Project (15CSL68)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Develop C/C++ Programs Using OpenGL And Maintain Proper Documentation In Observation Books." },
+    { "no": "CO2", "description": "Develop And Debug Programs By Applying Computer Graphics Concepts And Create A Mini-project Using Learned Concepts." },
+    { "no": "CO3", "description": "Explain Theoretical Aspects Used In Conducting Experiments And Mini Projects During Viva Voce." },
+    { "no": "CO4", "description": "Illustrate Experimental Results In Record Books And Prepare Mini-project Reports." },
+    { "no": "CO5", "description": "Implement Given Programs In Computer Graphics Laboratory, Demonstrate Mini-projects And Communicate Results Effectively." }
+  ]
+},
+
+{
+  "id": 1,
+  "subject": "Web Technology and its Applications (15CS71)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Apply HTML And CSS Syntax And Semantics To Design Web Pages." },
+    { "no": "CO2", "description": "Design Tables And Forms Using HTML And CSS For Web Pages." },
+    { "no": "CO3", "description": "Develop Client-side Scripts Using JavaScript And Server-side Scripts Using PHP To Generate Dynamic Web Content." },
+    { "no": "CO4", "description": "Apply Object Oriented Principles For Web Application Development With PHP." },
+    { "no": "CO5", "description": "Apply The Concepts Of jQuery, Backbone, XML, JSON And Web Services For Web Application Development." }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Advanced Computer Architectures (15CS72)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Explain The Parallel Computer Model." },
+    { "no": "CO2", "description": "Explain The Technology Of Processor And Memory Hierarchy." },
+    { "no": "CO3", "description": "Analyze The Pipeline And Super Scalar Processing." },
+    { "no": "CO4", "description": "Analyze Cache Coherence And Synchronization." },
+    { "no": "CO5", "description": "Illustrate Parallel Programming Concepts." }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Machine Learning (15CS73)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Choose The Learning Techniques And Investigate Concept Learning." },
+    { "no": "CO2", "description": "Identify The Characteristics Of Decision Tree And Solve Problems Associated With It." },
+    { "no": "CO3", "description": "Apply Effectively Neural Networks For Appropriate Applications." },
+    { "no": "CO4", "description": "Apply Bayesian Techniques And Derive Effectively Learning Rules." },
+    { "no": "CO5", "description": "Evaluate Hypothesis And Investigate Instance-based Learning And Reinforced Learning." }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Cloud Computing and its Applications (15CS742)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Explain Cloud Computing, Virtualization And Classify The Services Of Cloud Computing." },
+    { "no": "CO2", "description": "Illustrate The Architecture And Programming In Cloud." },
+    { "no": "CO3", "description": "Analyze Parallel Computation Using Threads." },
+    { "no": "CO4", "description": "Analyze Data-intensive Computing And Programming." },
+    { "no": "CO5", "description": "Illustrate The Platforms For Development Of Cloud Applications And List Their Applications." }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Storage Area Networks (15CS754)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Illustrate Storage Systems." },
+    { "no": "CO2", "description": "Illustrate The Storage Networking Technologies." },
+    { "no": "CO3", "description": "Explain Backup, Archive And Replication." },
+    { "no": "CO4", "description": "Summarize The Cloud Computing Characteristics And Benefits." },
+    { "no": "CO5", "description": "Illustrate The Security And Management Of Storage Infrastructure." }
+  ]
+},
+{
+  "id": 6,
+  "subject": "Machine Learning Laboratory (15CSL76)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Conduct Scheduled Experiments To Design And Develop The Programs In Python To Understand The Different Concepts Of Machine Learning." },
+    { "no": "CO2", "description": "Analyze The Output Based On The Given Input Data." },
+    { "no": "CO3", "description": "Express The Theoretical Aspects Used In Conducting Different Experiments Of Machine Learning." },
+    { "no": "CO4", "description": "Record Experimental Process And Results." },
+    { "no": "CO5", "description": "Conduct Any Given Experiment In Machine Learning Laboratory And Communicate Results Effectively." }
+  ]
+},
+{
+  "id": 7,
+  "subject": "Web Technology Laboratory with Mini Project (15CSL77)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Develop Scripts Using JavaScript/PHP And Maintain A Record Of The Same In The Observation Books." },
+    { "no": "CO2", "description": "Develop Scripts By Applying Web Programming Concepts, Debug The Same And Also Develop A Mini-project Using The Learnt Concepts." },
+    { "no": "CO3", "description": "Explain The Theoretical Aspects Used In Conducting Different Experiments And Mini Projects In Viva-voce." },
+    { "no": "CO4", "description": "Illustrate Experimental Results In The Record Book And Submit The Mini-project Report." },
+    { "no": "CO5", "description": "Implement Any Given Program In Web Technology Laboratory, Demonstrate Mini-project And Communicate Results Effectively." }
+  ]
+},
+
+{
+  "id": 1,
+  "subject": "Internet of Things and Applications (15CS81)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Interpret The Impact And Challenges Posed By IoT Networks Leading To New Architectural Models." },
+    { "no": "CO2", "description": "Compare And Contrast The Deployment Of Smart Objects And The Technologies To Connect Them To The Network." },
+    { "no": "CO3", "description": "Appraise The Role Of IoT Protocols For Efficient Network Communication." },
+    { "no": "CO4", "description": "Elaborate The Need For Data Analytics And Security In IoT." },
+    { "no": "CO5", "description": "Illustrate Different Sensor Technologies For Sensing Real World Entities And Identify The Applications Of IoT In Industry." }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Big Data Analytics (15CS82)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Demonstrate The Working Of HDFS And MapReduce Framework And Execute MapReduce Programs." },
+    { "no": "CO2", "description": "Apply The Hadoop Related Tools For Big Data Analytics And Perform Basic Hadoop Administration." },
+    { "no": "CO3", "description": "Examine The Role Of Business Intelligence, Data Warehousing And Visualization In Decision Making." },
+    { "no": "CO4", "description": "Determine The Importance Of Core Data Mining Techniques For Data Analytics." },
+    { "no": "CO5", "description": "Compare And Contrast Different Text Mining Techniques." }
+  ]
+},
+{
+  "id": 3,
+  "subject": "System Modeling and Simulation (15CS834)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Illustrate The Role Of Important Elements Of Simulation And Modeling Based On Statistical Procedures." },
+    { "no": "CO2", "description": "Explain Analysis And Design Of Models Using Random Number Variants." },
+    { "no": "CO3", "description": "Illustrate The Modeling Techniques For Event Systems." },
+    { "no": "CO4", "description": "Explain Analysis And Design Of Models Using Discrete-events Simulation." },
+    { "no": "CO5", "description": "Illustrate The Concepts Of Verification, Calibration, And Validation Of Models." }
+  ]
+},
+{
+  "id": 4,
+  "subject": "System Modeling and Simulation (17CS834)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Explain The System Concepts And Apply Functional Modelling Methods To Model The Activities Of A Static System." },
+    { "no": "CO2", "description": "Illustrate The Behaviour Of Dynamic Systems And Create An Analogous Model For A Dynamic System." },
+    { "no": "CO3", "description": "Apply Various Random Number Variates Generated To Develop Simulation Models." },
+    { "no": "CO4", "description": "Classify The Collected Data Into Various Distributions And Estimate The Parameters." },
+    { "no": "CO5", "description": "Explain The Process Of Verification And Validation Of The Simulation Model." }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Internet of Things and Applications (17CS81)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "CO1" },
+    { "no": "CO2", "description": "CO2" },
+    { "no": "CO3", "description": "CO3" },
+    { "no": "CO4", "description": "CO4" },
+    { "no": "CO5", "description": "CO5" }
+  ]
+},
+{
+  "id": 6,
+  "subject": "Internship / Professional Practice (15CS84)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Apply Best Of Their Knowledge And Skills In Computer Science To Explore, Analyse A Real-world Problem, Identify, Develop A Potential Solution Using Creativity And Innovation, Evaluate And Analyse The Outcomes And Impact Of This Solution." },
+    { "no": "CO2", "description": "Communicate Effectively And Work Productively In A Multi-disciplinary Team By Taking Initiative And Sound Judgement To Achieve Defined Workplace Objectives." },
+    { "no": "CO3", "description": "Demonstrate An Understanding Of Lifelong Learning Processes, And Clarify Their Personal And Professional Goals, Through Critical Reflection On Their Internship Experience." },
+    { "no": "CO4", "description": "Apply Effective Formal Written Communication Skills." },
+    { "no": "CO5", "description": "" }
+  ]
+},
+{
+  "id": 7,
+  "subject": "Project Work Phase II (15CSP85)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Work Effectively In Teams In Designing And Implementing Software Systems And Effectively Manage Conflicts, Optimize Resources And Meet Deadlines." },
+    { "no": "CO2", "description": "Develop Solutions For The Framed Problem Statement." },
+    { "no": "CO3", "description": "Design And Implement The Software And Evaluate The Solution To Meet Project Objectives." },
+    { "no": "CO4", "description": "Test And Analyze The Modules Of The Planned Project." },
+    { "no": "CO5", "description": "Demonstrate The Ability To Write Clear System Documentation, User Documentation, And Reports." }
+  ]
+},
+{
+  "id": 8,
+  "subject": "Seminar (15CSS86)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Explain The Current And Real World Technologies." },
+    { "no": "CO2", "description": "Distinguish And Integrate Differing Forms Of Knowledge And Academic Disciplinary Approaches." },
+    { "no": "CO3", "description": "Improve Oral And Written Communication Skills." },
+    { "no": "CO4", "description": "Explore An Appreciation Of The Self In Relation To Its Larger Diverse Social And Academic Contexts." },
+    { "no": "CO5", "description": "Apply Principles Of Ethics And Respect In Interaction With Others." }
+  ]
+}
+
+
+
+
+
+      ],
+      "2017-2018":[
+
+      {
+  "id": 1,
+  "subject": "Engineering Mathematics-I (17MAT11)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "On Completion Of This Course, Students Are Able To Find The Nth Derivatives Of Product Of Two Functions, And Polar Curves And Radius Of Curvature Of Curves." },
+    { "no": "CO2", "description": "Find Taylor’s And Maclaurin’s Series, Use Partial Derivatives To Find Jacobians, Total Derivatives." },
+    { "no": "CO3", "description": "Analyze Position, Velocity, And Acceleration In Two Or Three Dimensions Using The Calculus Of Vector Valued Functions, Find Gradient, Divergence, Curl." },
+    { "no": "CO4", "description": "Evaluate ∫sinⁿx dx, ∫cosⁿx dx, ∫sinᵐxcosⁿx dx With Standard Limits (0 To π/2). Recognize And Solve First-order Ordinary Differential Equations, Orthogonal Trajectories And Newton’s Law Of Cooling." },
+    { "no": "CO5", "description": "Use Matrices, Determinants And Techniques For Solving Systems Of Linear Equations In Different Areas Of Linear Algebra. Find Largest Eigenvalues And Corresponding Eigenvector Of A Square Matrix Using Power Method." }
+  ]
+},
+{
+  "id": 2,
+  "subject": "Engineering Physics (17PHY12)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Gain Knowledge About Modern Physics And Quantum Mechanics And Develop Problem Solving Skills." },
+    { "no": "CO2", "description": "Understand Material Properties And Their Applications In Engineering Fields." },
+    { "no": "CO3", "description": "Learn Basic Principles Of Lasers And Optical Fibers And Their Applications To Develop Skills In Engineering Applications." },
+    { "no": "CO4", "description": "Understand Crystal Structure And Its Applications To Boost Technical Skills." },
+    { "no": "CO5", "description": "Understand The Concept Of Shock Waves And Nano Technology To Gain Exposure To Emerging Technologies." }
+  ]
+},
+{
+  "id": 3,
+  "subject": "Elements of Civil Engineering (17CIV13)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Learn Basics Of Civil Engineering Concepts And Infrastructure Development." },
+    { "no": "CO2", "description": "Solve Problems Involving Forces And Loads." },
+    { "no": "CO3", "description": "Solve Problems Involving Moments And Loads." },
+    { "no": "CO4", "description": "Solve Problems Involving Centroid." },
+    { "no": "CO5", "description": "Solve Problems Involving Moment Of Inertia." }
+  ]
+},
+{
+  "id": 4,
+  "subject": "Elements of Mechanical Engineering (17EME14)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Understand Various Energy Sources And Their Conversion, Formation Of Steam, And Boilers." },
+    { "no": "CO2", "description": "Explain Prime Movers Such As Turbines And IC Engines." },
+    { "no": "CO3", "description": "Demonstrate Metal Removal Processes Using Lathe, Drilling, Milling And Understand Robotics And Automation." },
+    { "no": "CO4", "description": "Understand The Application And Usage Of Various Engineering Materials And Different Material Joining Processes Such As Welding, Soldering And Brazing." },
+    { "no": "CO5", "description": "Explain Refrigeration And Air-conditioning Systems." }
+  ]
+},
+{
+  "id": 5,
+  "subject": "Basic Electrical Engineering (17ELE15)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Predict The Behaviour Of Electrical And Magnetic Circuits." },
+    { "no": "CO2", "description": "Select The Type Of Generator Or Motor Required For A Particular Application." },
+    { "no": "CO3", "description": "Understand The Requirement Of Transformers In Transmission And Distribution Of Electrical Power And Other Applications." },
+    { "no": "CO4", "description": "Practice Electrical Safety Rules And Standards." },
+    { "no": "CO5", "description": "Function Effectively On Multi-disciplinary Teams." }
+  ]
+},
+{
+  "id": 6,
+  "subject": "Workshop Practice (17WSL16)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Conduct Scheduled Experiments To Demonstrate The Usage Of Different Tools And Equipment And Perform Calculations To Complete The Model." },
+    { "no": "CO2", "description": "Demonstrate And Produce Different Types Of Fitting, Sheet Metal, And Welding Models." },
+    { "no": "CO3", "description": "Explain Theoretical Aspects Of Workshop Exercises In Engineering Practice." },
+    { "no": "CO4", "description": "Record Experimental Process And Results." },
+    { "no": "CO5", "description": "Conduct Any Given Experiment In Workshop Practice Laboratory And Communicate Results Effectively." }
+  ]
+},
+{
+  "id": 7,
+  "subject": "Engineering Physics Laboratory (17PHYL17)",
+  "semester": "I",
+  "co": [
+    { "no": "CO1", "description": "Conduct Scheduled Experiments To Learn Experimental Setup And Record Readings Using Measuring Instruments To Understand Concepts Of Engineering Physics." },
+    { "no": "CO2", "description": "Analyze And Interpret Experimental Data And Results." },
+    { "no": "CO3", "description": "Explain Theoretical Aspects Used In Conducting Different Experiments Of Engineering Physics Laboratory." },
+    { "no": "CO4", "description": "Record Experimental Process And Results." },
+    { "no": "CO5", "description": "Conduct Any Given Experiment In Engineering Physics Laboratory And Communicate Results Effectively." }
+  ]
+},
+{
+  "id": 8,
+  "subject": "Engineering Mathematics - II (17MAT21)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Use Ordinary Differential Equations To Model Engineering Phenomena Such As Electrical Circuits, Forced Oscillation Of Mass Spring And Elementary Heat Transfer." },
+    { "no": "CO2", "description": "Use Partial Differential Equations To Model Problems In Fluid Mechanics, Electromagnetic Theory And Heat Transfer." },
+    { "no": "CO3", "description": "Evaluate Double And Triple Integrals To Find Area, Volume, Mass And Moment Of Inertia Of Plane And Solid Regions." },
+    { "no": "CO4", "description": "Use Beta And Gamma Functions To Solve Double And Triple Integrals." },
+    { "no": "CO5", "description": "Use Laplace Transforms To Determine General Or Complete Solutions To Linear Ordinary Differential Equations." }
+  ]
+},
+{
+  "id": 9,
+  "subject": "Engineering Chemistry (17CHE22)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Explain Types Of Electrodes, Electrochemical And Concentration Cells, Classical And Modern Batteries, And Fuel Cells." },
+    { "no": "CO2", "description": "Describe Causes And Effects Of Corrosion Of Metals, Methods To Control Corrosion, And Techniques Of Electroplating And Electroless Plating." },
+    { "no": "CO3", "description": "Explain Production And Consumption Of Energy For Industrialization And Living Standards, And The Utilization Of Solar Energy For Various Applications." },
+    { "no": "CO4", "description": "Explain Replacement Of Conventional Materials By Polymers For Various Applications." },
+    { "no": "CO5", "description": "Explain Boiler Troubles, Sewage Treatment, Desalination Of Sea Water, And Synthesis, Properties, And Applications Of Nanomaterials." }
+  ]
+},
+{
+  "id": 10,
+  "subject": "Programming in C & Data Structures (17PCD23)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Write Pseudo Code And Explain C Language Fundamentals." },
+    { "no": "CO2", "description": "Explain And Write Programs Using Primitive Language Constructs." },
+    { "no": "CO3", "description": "Explain The Concepts Of Arrays, Strings, And Functions And Write Programs Using Them." },
+    { "no": "CO4", "description": "Explain And Write Programs Using Structures And Files." },
+    { "no": "CO5", "description": "Explain The Concepts Of Data Structures And Design Flowcharts Using Appropriate Tools." }
+  ]
+},
+{
+  "id": 11,
+  "subject": "Computer Aided Engineering Drawing (17CED24)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Prepare Engineering Drawings As Per BIS Conventions Mentioned In Relevant Codes." },
+    { "no": "CO2", "description": "Produce Computer Generated Drawings Using CAD Software." },
+    { "no": "CO3", "description": "Use Knowledge Of Orthographic Projections To Represent Engineering Concepts In Drawings." },
+    { "no": "CO4", "description": "Develop Isometric Drawings Of Simple Objects From Their Orthographic Projections." },
+    { "no": "CO5", "description": "Convert Pictorial And Isometric Views Of Simple Objects Into Orthographic Views." }
+  ]
+},
+{
+  "id": 12,
+  "subject": "Basic Electronics (17ELN25)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Understand The Working Of Diodes And Their Applications In Rectifiers, Filters, And Regulator Circuits." },
+    { "no": "CO2", "description": "Understand The Working Of Bipolar Junction Transistors And Their Biasing Methods For Amplifier Design." },
+    { "no": "CO3", "description": "Design Simple Circuits Like Amplifiers (Inverting And Non-Inverting), Comparators, Adders, Integrators, And Differentiators Using Op-Amps." },
+    { "no": "CO4", "description": "Understand The Different Building Blocks In Digital Electronics And Their Implementation At The Logic Level." },
+    { "no": "CO5", "description": "Understand The Functioning Of Communication Systems, Modulation Techniques, And The Principles Of Different Transducers." }
+  ]
+},
+{
+  "id": 13,
+  "subject": "Computer Programming Laboratory (17CPL26)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Identify Computer Accessories And Conduct Experiments To Demonstrate Program Execution Using C Programming Concepts." },
+    { "no": "CO2", "description": "Analyze And Present Experimental Results For Given Inputs." },
+    { "no": "CO3", "description": "Explain Theoretical Aspects Used In Conducting Different Experiments In The Computer Programming Laboratory." },
+    { "no": "CO4", "description": "Record Computer Architecture, Program Processes, Results, Flowcharts, And Algorithms." },
+    { "no": "CO5", "description": "Conduct Assigned Experiments In The Computer Programming Laboratory And Communicate Results Effectively." }
+  ]
+},
+{
+  "id": 14,
+  "subject": "Engineering Chemistry Laboratory (17CHEL27)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Conduct Experiments To Learn Handling Of Instruments And Perform Titrations For Estimation Of Materials." },
+    { "no": "CO2", "description": "Calculate Experimental Data And Derive Conclusions." },
+    { "no": "CO3", "description": "Explain Theoretical Aspects Used In Conducting Experiments Of The Engineering Chemistry Laboratory." },
+    { "no": "CO4", "description": "Record Experimental Processes And Results." },
+    { "no": "CO5", "description": "Conduct Any Given Experiment In The Engineering Chemistry Laboratory And Communicate Results Effectively." }
+  ]
+},
+{
+  "id": 15,
+  "subject": "Environmental Studies (17CIV28)",
+  "semester": "II",
+  "co": [
+    { "no": "CO1", "description": "Understand The Principles Of Ecology And Environmental Issues Related To Air, Land, And Water On A Global Scale." },
+    { "no": "CO2", "description": "Develop Critical Thinking And Observation Skills, And Apply Them To Analyze Environmental Problems." },
+    { "no": "CO3", "description": "Demonstrate Knowledge Of Ecological Relationships Between Biotic And Abiotic Components." },
+    { "no": "CO4", "description": "Apply Ecological Knowledge To Illustrate And Graph Environmental Problems." },
+    { "no": "CO5", "description": "Describe The Real-world Challenges Managers Face When Dealing With Complex Environmental Issues." }
+  ]
+},
+{
+  "id": 16,
+  "subject": "Engineering Mathematics - III (17MAT31)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Know The Use Of Periodic Signals And Fourier Series To Analyze Circuits And Systems." },
+    { "no": "CO2", "description": "Explain The General Linear System Theory For Continuous-Time Signals And Digital Signals." },
+    { "no": "CO3", "description": "Employ Appropriate Numerical Methods To Solve Algebraic And Transcendental Equations." },
+    { "no": "CO4", "description": "Apply Green’s Theorem, Divergence Theorem, And Stokes’ Theorem In Various Applications." },
+    { "no": "CO5", "description": "Determine The Extremals Of Functionals And Solve Simple Problems Of The Calculus Of Variations." }
+  ]
+},
+{
+  "id": 17,
+  "subject": "Analog and Digital Electronics (17CS32)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Explain And Write The Characteristics Of JFET, MOSFET, And Op-Amp." },
+    { "no": "CO2", "description": "Explain And Apply Various Simplification Techniques To Simplify Combinational Logic Circuits." },
+    { "no": "CO3", "description": "Explain And Construct Various Data Processing Circuits And Flip-Flops." },
+    { "no": "CO4", "description": "Explain And Develop Synchronous And Asynchronous Sequential Circuits." },
+    { "no": "CO5", "description": "Explain And Develop Counters And Converters." }
+  ]
+},
+{
+  "id": 18,
+  "subject": "Data Structures and Applications (17CS33)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Explain Various Types Of Data Structures, Sorting, And Searching Operations On Arrays." },
+    { "no": "CO2", "description": "Develop Programs For Operations Like Searching, Insertion, Deletion, And Traversing Mechanisms On Stacks And Queues." },
+    { "no": "CO3", "description": "Apply The Basic Knowledge Of Linked Lists To Solve Real-World Problems." },
+    { "no": "CO4", "description": "Develop Programs For Operations Like Searching, Insertion, Deletion, And Traversing Mechanisms On Trees." },
+    { "no": "CO5", "description": "Explain Basic Graph Algorithms And Their Analyses, Employ Graphs And Sorting/Searching Operations To Model Engineering Problems." }
+  ]
+},
+{
+  "id": 19,
+  "subject": "Computer Organization (17CS34)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Understand The Basic Structure And Operation Of A Digital Computer." },
+    { "no": "CO2", "description": "Understand The Operation Of System Bus And The Handling Of I/O Devices." },
+    { "no": "CO3", "description": "Gain Knowledge On The Design Of The Arithmetic Logic Unit Of A Digital Computer." },
+    { "no": "CO4", "description": "Understand The Hierarchical Memory System Including Cache And Virtual Memory." },
+    { "no": "CO5", "description": "Understand The Design Of The Processing Unit And The Concepts Of Embedded Systems." }
+  ]
+},
+{
+  "id": 20,
+  "subject": "Unix and Shell Programming (17CS35)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Explain The Basic Architecture Of The Unix Operating System And Its Basic Commands." },
+    { "no": "CO2", "description": "Explain And Apply Unix File Operations And Organize Directory Structures With Security." },
+    { "no": "CO3", "description": "Demonstrate Vi Editor Commands And Pattern Matching Features Of The Shell." },
+    { "no": "CO4", "description": "Explain Unix Shell Commands And Write Simple Shell Programs." },
+    { "no": "CO5", "description": "Explain Process Creation With Basic Process Commands And Write Simple Programs Using Perl Scripts." }
+  ]
+},
+{
+  "id": 21,
+  "subject": "Discrete Mathematical Structures (17CS36)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Analyze The Correctness Of An Argument Using Propositional And Predicate Logic And Truth Tables." },
+    { "no": "CO2", "description": "Demonstrate The Ability To Solve Problems Using Counting Techniques And Combinatorics In The Context Of Discrete Probability." },
+    { "no": "CO3", "description": "Solve Problems Involving Relations And Functions." },
+    { "no": "CO4", "description": "Solve Problems Involving Recurrence Relations And The Principle Of Inclusion And Exclusion." },
+    { "no": "CO5", "description": "Explain Graph And Tree Structures." }
+  ]
+},
+{
+  "id": 22,
+  "subject": "Analog and Digital Electronics Laboratory (17CSL37)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Conduct Experiments To Understand The Working Of Analog And Digital Electronic Components And Demonstrate Their Functioning." },
+    { "no": "CO2", "description": "Troubleshoot Simple Analog And Digital Electronic Circuits, Tabulate Experimental Data, And Draw Conclusions." },
+    { "no": "CO3", "description": "Explain Theoretical Aspects Used In Conducting Different Experiments Of Analog And Digital Electronics." },
+    { "no": "CO4", "description": "Record Experimental Processes And Results." },
+    { "no": "CO5", "description": "Conduct Any Given Experiment In The Analog And Digital Electronics Laboratory And Communicate Results Effectively." }
+  ]
+},
+{
+  "id": 23,
+  "subject": "Data Structures Laboratory (17CSL38)",
+  "semester": "III",
+  "co": [
+    { "no": "CO1", "description": "Conduct Experiments To Design And Develop Programs In C To Understand Concepts Of Data Structures." },
+    { "no": "CO2", "description": "Analyze Outputs Based On Given Input Data." },
+    { "no": "CO3", "description": "Explain Theoretical Aspects Used In Conducting Different Experiments Of Data Structures And Applications." },
+    { "no": "CO4", "description": "Record Experimental Processes And Results." },
+    { "no": "CO5", "description": "Conduct Any Given Experiment In The Data Structures Laboratory And Communicate Results Effectively." }
+  ]
+},
+
+
+{
+  "id": 24,
+  "subject": "Engineering Mathematics-IV (17MAT41)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Solve First Order Ordinary Differential Equations Arising In Flow Problems Using Single Step And Multistep Numerical Methods." },
+    { "no": "CO2", "description": "Solve Second Order Ordinary Differential Equations Arising In Flow Data Design Problems And Employ Bessel’s Functions And Legendre’s Polynomials For Problems In Quantum Mechanics And Heat Conduction." },
+    { "no": "CO3", "description": "Explain Analytic Functions, Residues, Poles Of Complex Potentials, And Describe Conformal And Bilinear Transformations Arising In Field Theory And Signal Processing." },
+    { "no": "CO4", "description": "Develop Probability Distributions Of Discrete, Continuous Random Variables And Joint Probability Distributions Occurring In Digital Signal Processing, Information Theory, And Design Engineering." },
+    { "no": "CO5", "description": "Demonstrate Testing Of Hypothesis Of Sampling Distributions And Illustrate Examples Of Markov Chains Related To Discrete Parameter Stochastic Processes." }
+  ]
+},
+{
+  "id": 25,
+  "subject": "Object Oriented Concepts (17CS42)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Explain Object Oriented Programming Concepts And Write Programs In C++." },
+    { "no": "CO2", "description": "Explain And Write Programs Using Primitive Language Constructs In Java." },
+    { "no": "CO3", "description": "Explain Object Oriented Programming Concepts And Write Programs In Java." },
+    { "no": "CO4", "description": "Explain Event Handling And Multithreading In Java." },
+    { "no": "CO5", "description": "Develop Simple Interactive Programs Using Applets And Swings." }
+  ]
+},
+{
+  "id": 26,
+  "subject": "Design and Analysis of Algorithms (17CS43)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Compare The Efficiency Of Algorithms Using Asymptotic Complexity." },
+    { "no": "CO2", "description": "Apply Complexity Analysis To Divide And Conquer And Decrease And Conquer Algorithms." },
+    { "no": "CO3", "description": "Apply Complexity Analysis To Greedy Algorithms." },
+    { "no": "CO4", "description": "Apply Complexity Analysis To Dynamic Programming Algorithms." },
+    { "no": "CO5", "description": "Explain Problem Classes, Backtracking, And Branch And Bound Techniques To Deal With Hard Problems." }
+  ]
+},
+{
+  "id": 27,
+  "subject": "Microprocessors and Microcontrollers (17CS44)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Explain The Architecture Of Microprocessors And Write Simple Assembly Language Programs." },
+    { "no": "CO2", "description": "Write Application-Based Programs Using The 8086 Instruction Set." },
+    { "no": "CO3", "description": "Perform Arithmetic, String Operations, And Interface Memory And I/O Devices." },
+    { "no": "CO4", "description": "Explain The Architecture Of ARM And Differentiate Between Microprocessors, Microcontrollers, And Multi-Core Processors." },
+    { "no": "CO5", "description": "Write Programs Using The ARM Instruction Set." }
+  ]
+},
+{
+  "id": 28,
+  "subject": "Software Engineering (17CS45)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Demonstrate Various Software Process Models And Identify Functional And Non-Functional Requirements Of Software." },
+    { "no": "CO2", "description": "Design And Implement Software Using UML Diagrams." },
+    { "no": "CO3", "description": "Apply Testing Mechanisms And Update Existing Software Based On Current Needs." },
+    { "no": "CO4", "description": "Use Techniques, Skills, And Modern Engineering Tools Necessary For Project Planning And Measuring Software Quality." },
+    { "no": "CO5", "description": "Apply Agile Methods To Develop Software." }
+  ]
+},
+{
+  "id": 29,
+  "subject": "Data Communication (17CS46)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Illustrate Basic Computer Network Technologies And Identify Different Types Of Network Topologies And Protocols." },
+    { "no": "CO2", "description": "Explain The Physical Layer Of Computer Networks." },
+    { "no": "CO3", "description": "Demonstrate Error Detection And Correction Techniques And Illustrate The Data Link Layer Of The TCP/IP Model." },
+    { "no": "CO4", "description": "Explain Different Types Of Network Devices And Their Functions Within A Network." },
+    { "no": "CO5", "description": "Demonstrate Skills In Subnetting And Routing Mechanisms." }
+  ]
+},
+{
+  "id": 30,
+  "subject": "Design and Analysis of Algorithm Laboratory (17CSL47)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Conduct Experiments By Implementing Algorithms And Executing Programs Using NetBeans." },
+    { "no": "CO2", "description": "Tabulate Experimental Data And Draw Conclusions." },
+    { "no": "CO3", "description": "Explain Theoretical Aspects Related To Various Algorithms Used In Programming." },
+    { "no": "CO4", "description": "Record Experimental Processes And Results." },
+    { "no": "CO5", "description": "Conduct Experiments In The Design And Analysis Of Algorithms Laboratory And Communicate Results Effectively." }
+  ]
+},
+{
+  "id": 31,
+  "subject": "Microprocessors Laboratory (17CSL48)",
+  "semester": "IV",
+  "co": [
+    { "no": "CO1", "description": "Conduct Experiments To Understand The Architecture And Instruction Sets Of 8086 And ARM7, And Demonstrate The Interfacing Of Various Hardware Components." },
+    { "no": "CO2", "description": "Tabulate Experimental Data And Draw Conclusions." },
+    { "no": "CO3", "description": "Explain Theoretical Aspects Related To Experiments Of Microprocessors And Microcontrollers." },
+    { "no": "CO4", "description": "Record Experimental Processes And Results." },
+    { "no": "CO5", "description": "Conduct Experiments In The Microprocessors And Microcontrollers Laboratory And Communicate Results Effectively." }
+  ]
+},
+
+
+
+{
+  "id": 32,
+  "subject": "Management and Entrepreneurship for IT Industry (17CS51)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Explain The Principles Of Management, Planning, Organizing, And Staffing For Better Functioning Of An Organization." },
+    { "no": "CO2", "description": "Explain Directing, Motivating, And Controlling Techniques To Design Solutions For Achieving Organizational Objectives." },
+    { "no": "CO3", "description": "Explain The Characteristics And Roles Of Entrepreneurs In The Economic Development Of The Country." },
+    { "no": "CO4", "description": "Explain The Significance And Guidelines Of The Planning Commission For Formulating Business Plans And The Importance Of Enterprise Resource Planning." },
+    { "no": "CO5", "description": "Explain The Role Of MSEs/SSIs, The Type Of Support Provided By Different Government Bodies And Industries For Promoting MSEs/SSIs, And The Importance Of IPR." }
+  ]
+},
+{
+  "id": 33,
+  "subject": "Computer Networks (17CS52)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Explain The Principles Of Application Layer Protocols And Services." },
+    { "no": "CO2", "description": "Explain Transport Layer Services And Mechanisms For Reliable Data Transmission Over Networks." },
+    { "no": "CO3", "description": "Explain Routers, IP, And Routing Algorithms In The Network Layer And Illustrate Routing Algorithms Using Suitable Network Structures." },
+    { "no": "CO4", "description": "Explain Wireless And Mobile Networks Covering IEEE 802.11 Standards And The Principles Of Mobility In Cellular Networks." },
+    { "no": "CO5", "description": "Explain Multimedia Networking, Network Management Techniques, And Illustrate Packet Scheduling Mechanisms." }
+  ]
+},
+{
+  "id": 34,
+  "subject": "Advanced Java and J2EE (17CS553)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Demonstrate The Fundamental Concepts Of Enumerations, Autoboxing, And Annotations And Develop Modular Programs." },
+    { "no": "CO2", "description": "Demonstrate The Usage Of Collections And Frameworks In Java Programming." },
+    { "no": "CO3", "description": "Demonstrate The Operations Of Different String Handling Functions In Developing Java Programs." },
+    { "no": "CO4", "description": "Develop Simple Web Applications Using Servlets And JSP." },
+    { "no": "CO5", "description": "Develop Database Connectivity Applications And Manage Information Using The JDBC API." }
+  ]
+},
+{
+  "id": 35,
+  "subject": "Automata Theory and Computability (17CS54)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Explain Fundamental Core Concepts In Automata Theory And Construct Different Models Of FSM." },
+    { "no": "CO2", "description": "Construct Regular Expressions And Regular Grammars For Regular Languages And Identify Whether A Language Is Regular Or Not." },
+    { "no": "CO3", "description": "Design Grammars And Pushdown Automata For Different Language Classes And Understand The Relative Power Of Regular And Context-Free Models Of Computation." },
+    { "no": "CO4", "description": "Construct Turing Machines And Develop Skills In Formal Reasoning And Problem Reduction With Emphasis On Semantic Precision." },
+    { "no": "CO5", "description": "Classify Problems With Respect To Different Models Of Computation." }
+  ]
+},
+{
+  "id": 36,
+  "subject": "Computer Network Laboratory (17CSL57)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Apply The Fundamental Concepts Of Computer Networks To Simulate And Implement Programs." },
+    { "no": "CO2", "description": "Choose Appropriate Network Topologies And Algorithms To Solve Problems." },
+    { "no": "CO3", "description": "Use NS2 Or Java Compiler To Simulate And Implement Basic Networking Concepts." },
+    { "no": "CO4", "description": "Develop Solutions Using Network Models And Algorithms." },
+    { "no": "CO5", "description": "Summarize And Document Design Activities, Implementation Procedures, And Result Interpretations In The Form Of Graphs Or Tables." }
+  ]
+},
+{
+  "id": 37,
+  "subject": "DBMS Laboratory with Mini Project (17CSL58)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Apply The Fundamentals Of Databases To Construct ER Diagrams And Relational Schemas." },
+    { "no": "CO2", "description": "Choose Appropriate SQL Statements To Create, Retrieve, And Maintain Relational Databases." },
+    { "no": "CO3", "description": "Use MariaDB Tools To Execute SQL Statements." },
+    { "no": "CO4", "description": "Develop Simple Database Applications For Real-World Problems Using Modern Tools." },
+    { "no": "CO5", "description": "Summarize And Document Design Activities, Implementation Procedures, And Query Results." }
+  ]
+},
+{
+  "id": 38,
+  "subject": "Dot Net Framework for Application Development (17CS564)",
+  "semester": "V",
+  "co": [
+    { "no": "CO1", "description": "Build Console Applications On The Visual Studio .NET Platform By Understanding The Syntax And Semantics Of C#." },
+    { "no": "CO2", "description": "Explain And Develop Programs Using Object-Oriented Programming Concepts In C#." },
+    { "no": "CO3", "description": "Explain The Concepts Of Inheritance In C#, Develop Custom Interfaces, And Use Built-In Interfaces To Build Complex Applications." },
+    { "no": "CO4", "description": "Apply Properties To Access Fields, Explain Indexers, And Illustrate The Use Of Generics And Collections In C#." },
+    { "no": "CO5", "description": "Define Delegates And Event Handlers, Construct Queries For In-Memory Data, And Define Custom Operator Behavior." }
+  ]
+},
+
+{
+  "id": 39,
+  "subject": "Data Mining and Data Warehousing (17CS651)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Explain The Fundamental Concepts And Architecture Of Data Warehousing." },
+    { "no": "CO2", "description": "Explain The Challenges In Data Mining And Implement Data Warehouses." },
+    { "no": "CO3", "description": "Demonstrate Association Rules Such As Apriori For A Given Data Pattern." },
+    { "no": "CO4", "description": "Apply Various Methods Of Classifiers Such As Bayesian Classifiers On Real-World Data." },
+    { "no": "CO5", "description": "Apply Clustering Techniques Such As K-Means On A Given Data Set." }
+  ]
+},
+{
+  "id": 40,
+  "subject": "Cryptography, Network Security and Cyber Law (17CS61)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Explain The Mathematical Background And Basics Of Cryptography." },
+    { "no": "CO2", "description": "Apply Cryptographic Algorithms To Solve Problems Using Acquired Knowledge, Facts, And Techniques." },
+    { "no": "CO3", "description": "Illustrate The Need For Cryptography In Various Applications." },
+    { "no": "CO4", "description": "Explain The Concepts Of Network Security And Cyber Security." },
+    { "no": "CO5", "description": "Explain Cyber Laws And Ethics." }
+  ]
+},
+{
+  "id": 41,
+  "subject": "Computer Graphics and Visualization (17CS62)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Design And Implement Algorithms For 2D Graphics Primitives And Attributes." },
+    { "no": "CO2", "description": "Illustrate Geometric Transformations On 2D Objects." },
+    { "no": "CO3", "description": "Illustrate Geometric Transformations On 3D Objects And Apply Concepts Of Colour And Illumination Models." },
+    { "no": "CO4", "description": "Apply Concepts Of Clipping And Visible Surface Detection In 2D And 3D Viewing." },
+    { "no": "CO5", "description": "Select Suitable Hardware And Software For Developing Graphics Packages Using OpenGL." }
+  ]
+},
+{
+  "id": 42,
+  "subject": "System Software and Compiler Design (17CS63)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Explain The Architecture Of SIC, SIC/XE, And System Software Such As Assemblers And Macro Processors." },
+    { "no": "CO2", "description": "Explain System Software Components Such As Loaders And Linkers." },
+    { "no": "CO3", "description": "Explain Representation And Recognition Of Tokens And Develop Lexical Analyzers." },
+    { "no": "CO4", "description": "Explain The Role Of Parsers And Develop Various Classes Of Parsers." },
+    { "no": "CO5", "description": "Apply Syntax Directed Translation And Develop Code Generators." }
+  ]
+},
+{
+  "id": 43,
+  "subject": "Python Application Programming (17CS664)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Examine Primitives, Flow Control, And Functions In Python, And Write Python Programs." },
+    { "no": "CO2", "description": "Demonstrate Proficiency In Handling Strings And Files." },
+    { "no": "CO3", "description": "Create, Run, And Manipulate Python Programs Using Core Data Structures Such As Lists And Dictionaries, And Use Regular Expressions For Pattern Extraction." },
+    { "no": "CO4", "description": "Interpret And Demonstrate Concepts Of Object-Oriented Programming In Python." },
+    { "no": "CO5", "description": "Implement Applications Related To Network Programming, Web Services, And Databases Using Python." }
+  ]
+},
+{
+  "id": 44,
+  "subject": "Operating Systems (17CS64)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Explain The Concepts And Types Of Operating Systems." },
+    { "no": "CO2", "description": "Apply Suitable Techniques For The Management Of Different System Resources." },
+    { "no": "CO3", "description": "Demonstrate Deadlock And Memory Management Techniques." },
+    { "no": "CO4", "description": "Explain Virtual Memory Management And File System Management Techniques." },
+    { "no": "CO5", "description": "Demonstrate Concepts Of Operating Systems In Practical Scenarios Through Case Studies." }
+  ]
+},
+{
+  "id": 45,
+  "subject": "System Software and Operating System Laboratory (17CSL67)",
+  "semester": "VI",
+  "co": [
+    { "no": "CO1", "description": "Conduct Experiments To Understand The Working Of Lexers, Parsers, And Algorithms Used In Management, Scheduling, Allocation, And Communication In Operating Systems." },
+    { "no": "CO2", "description": "Tabulate Experimental Data And Draw Conclusions." },
+    { "no": "CO3", "description": "Explain The Theoretical Aspects Used In Conducting Different Experiments Related To System Software And Operating Systems." },
+    { "no": "CO4", "description": "Record Experimental Processes And Results." },
+    { "no": "CO5", "description": "Conduct Any Given Experiment In The System Software And Operating System Laboratory And Communicate Results Effectively." }
+  ]
+},
+
+
+{
+  "id": 46,
+  "subject": "Cloud Computing and its Applications (17CS742)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Explain Cloud Computing, Virtualization And Classify Services Of Cloud Computing." },
+    { "no": "CO2", "description": "Illustrate Architecture And Programming In Cloud." },
+    { "no": "CO3", "description": "Analyse Parallel Computation With Threads." },
+    { "no": "CO4", "description": "Analyse Data-Intensive Computing And Programming." },
+    { "no": "CO5", "description": "Illustrate The Platforms For Development Of Cloud Applications And List The Applications." }
+  ]
+},
+{
+  "id": 47,
+  "subject": "Storage Area Networks (17CS754)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Illustrate Storage Systems." },
+    { "no": "CO2", "description": "Illustrate Storage Networking Technologies." },
+    { "no": "CO3", "description": "Explain Backup, Archive, And Replication Mechanisms." },
+    { "no": "CO4", "description": "Summarize Cloud Computing Characteristics And Benefits." },
+    { "no": "CO5", "description": "Illustrate The Security And Management Of Storage Infrastructure." }
+  ]
+},
+{
+  "id": 48,
+  "subject": "Web Technology and its Applications (17CS71)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Apply HTML And CSS Syntax And Semantics To Design Web Pages." },
+    { "no": "CO2", "description": "Design Tables And Forms Using HTML And CSS For Web Pages." },
+    { "no": "CO3", "description": "Develop Client-Side Scripts Using JavaScript And Server-Side Scripts Using PHP To Generate Dynamic Web Content." },
+    { "no": "CO4", "description": "Apply Object-Oriented Principles For Web Application Development Using PHP." },
+    { "no": "CO5", "description": "Apply The Concepts Of jQuery, Backbone, XML, JSON, And Web Services For Web Application Development." }
+  ]
+},
+{
+  "id": 49,
+  "subject": "Advanced Computer Architectures (17CS72)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Learn The Principles Of Program And Network Properties." },
+    { "no": "CO2", "description": "Understand Hardware Technologies." },
+    { "no": "CO3", "description": "Understand The Concepts Of Pipelining And Superscalar Techniques." },
+    { "no": "CO4", "description": "Summarize Cache Coherence And Synchronization Mechanisms." },
+    { "no": "CO5", "description": "Compare The Working Of Various Parallel Computer Models And Their Performance Issues." }
+  ]
+},
+{
+  "id": 50,
+  "subject": "Machine Learning (17CS73)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Choose Suitable Learning Techniques And Investigate Concept Learning." },
+    { "no": "CO2", "description": "Identify The Characteristics Of Decision Trees And Solve Problems Associated With Them." },
+    { "no": "CO3", "description": "Apply Neural Networks Effectively For Appropriate Applications." },
+    { "no": "CO4", "description": "Apply Bayesian Techniques And Derive Learning Rules Effectively." },
+    { "no": "CO5", "description": "Evaluate Hypotheses And Investigate Instance-Based And Reinforcement Learning." }
+  ]
+},
+{
+  "id": 51,
+  "subject": "Machine Learning Laboratory (17CSL76)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Understand The Implementation Procedures For Machine Learning Algorithms." },
+    { "no": "CO2", "description": "Design Java/Python Programs For Various Learning Algorithms." },
+    { "no": "CO3", "description": "Apply Appropriate Datasets To Machine Learning Algorithms." },
+    { "no": "CO4", "description": "Identify And Apply Machine Learning Algorithms To Solve Real-World Problems." },
+    { "no": "CO5", "description": "Interpret The Results Obtained From The Algorithms." }
+  ]
+},
+{
+  "id": 52,
+  "subject": "Web Technology Laboratory with Mini Project (17CSL77)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Identify And Explain The Problem Statement Using Knowledge Of Web Technology." },
+    { "no": "CO2", "description": "Design Solutions That Include HTML, JavaScript, CSS, And/Or PHP Modules For The Given Problem." },
+    { "no": "CO3", "description": "Develop The Designed Solution Using Generic Web Service Tools (LAMP) By Applying Fundamental Knowledge Of Web Technology And Programming, And Document The Solution." },
+    { "no": "CO4", "description": "Present And Justify The Result, Write Effective Reports, And Document With Ethical Practices." },
+    { "no": "CO5", "description": "Design And Develop A Web Application For A Selected Problem, Demonstrate The Solution Effectively, And Prepare Reports Following Ethical And Engineering Practices." }
+  ]
+},
+{
+  "id": 53,
+  "subject": "Project Work Phase–I and Seminar (17CSP78)",
+  "semester": "VII",
+  "co": [
+    { "no": "CO1", "description": "Review The State Of The Art In The Given Domain." },
+    { "no": "CO2", "description": "Define Objectives And Problem Statements Based On Real-World Scenarios And Expected Outcomes." },
+    { "no": "CO3", "description": "Choose A Suitable Design Methodology For The Given Problem Statement And Objectives." },
+    { "no": "CO4", "description": "Document The Synopsis Of The Project." },
+    { "no": "CO5", "description": "Deliver A Seminar On The Preliminary Study Of The Project." }
+  ]
+},
+
+{
+  "id": 54,
+  "subject": "Storage Area Networks (18CS822)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Identify Key Challenges In Managing Information And Detail The Storage System Environment." },
+    { "no": "CO2", "description": "Analyze Different Storage Networking Technologies For The Effective Maintenance And Protection Of Data." },
+    { "no": "CO3", "description": "Explain Components And The Implementation Of NAS." },
+    { "no": "CO4", "description": "Explain The Process Of Backup And Recovery To Ensure Information Availability For Vital Business Operations." },
+    { "no": "CO5", "description": "Illustrate The Storage Infrastructure And Management Activities And The Process Of Replication To Ensure Business Continuity." }
+  ]
+},
+{
+  "id": 55,
+  "subject": "Internet of Things (18CS81)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Interpret The Impact And Challenges Posed By IoT Networks Leading To New Architectural Models." },
+    { "no": "CO2", "description": "Compare And Contrast The Deployment Of Smart Objects And The Technologies To Connect Them To The Network." },
+    { "no": "CO3", "description": "Appraise The Role Of IoT Protocols For Efficient Network Communication." },
+    { "no": "CO4", "description": "Elaborate The Need For Data Analytics And Security In IoT." },
+    { "no": "CO5", "description": "Illustrate Different Sensor Technologies For Sensing Real World Entities And Identify The Applications Of IoT In Industry." }
+  ]
+},
+{
+  "id": 56,
+  "subject": "Project Work Phase–II (18CSP83)",
+  "semester": "VIII",
+  "co": [
+    { "no": "CO1", "description": "Work Effectively In Teams To Design And Implement Software Systems, Manage Conflicts, Optimize Resources, And Meet Deadlines." },
+    { "no": "CO2", "description": "Develop Solutions For The Framed Problem Statement." },
+    { "no": "CO3", "description": "Design And Implement The Software And Evaluate The Solution To Meet Project Objectives." },
+    { "no": "CO4", "description": "Test And Analyze The Modules Of The Planned Project." },
+    { "no": "CO5", "description": "Demonstrate The Ability To Write Clear System Documentation, User Documentation, And Reports." }
+  ]
+}
+
+
       ]
+
+
+
+
+
+
+
+
     },
 
     "events": [
