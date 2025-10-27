@@ -56,12 +56,12 @@ function CardContent({ description }: { description: Amenity }) {
         height={700}
         className="object-cover overflow-hidden rounded-t-2xl w-full lg:h-[500px] h-[400px] mb-10"
       />
-      <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
+    { description.title&& <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
         <div>
           <h3 className="text-[31px] lg:text-[46px] leading-[1.1] lg:max-w-[70%] mb-5 font-bold">{description.title}</h3>
           <p className="text-xl text-textGray">{description.description}</p>
         </div>
-      </div>
+      </div>}
     </div>
   );
 }
@@ -216,8 +216,8 @@ useEffect(() => {
               </motion.div>
               <motion.div variants={contentVariants} className="p-4 lg:px-20 mt-10">
                 <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">NextUp</h1>
-                <h1 onClick={goToNextCard} className="text-[#2997FF] inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]">
-                  {data[(currentIndex + 1) % data.length]?.title || "First Card"}
+                <h1 onClick={goToNextCard} className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]">
+                  {data[(currentIndex + 1) % data.length]?.title || "Next"}
                   <MdKeyboardArrowRight className="ml-1 mt-1 text-[20px] md:text-[25px]" />
                 </h1>
               </motion.div>
