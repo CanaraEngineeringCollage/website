@@ -17826,7 +17826,7 @@
       { "image": "/departmentImages/gallery/eee/25.jpeg" },
       { "image": "/departmentImages/gallery/eee/26.jpg" }
     ],
-     "courseOutcome": {
+  "courseOutcome": {
       "2024-2025": [
         {
           "id": 1,
@@ -22505,6 +22505,607 @@
       {"no": "CO2", "description": "Develop analytical, critical thinking, and socio-economic skills for sustainable development."},
       {"no": "CO3", "description": "Analyze overall impact of specific issues and develop environmental management plans."}
     ]
+  },
+  {
+    "subject": "Engineering Mathematics II (17MAT21)",
+    "semester": "II",
+    "co": [
+      { "no": "CO1", "description": "Use ordinary differential equations to model engineering phenomena such as electrical circuits, forced oscillation of mass-spring systems, and elementary heat transfer." },
+      { "no": "CO2", "description": "Use partial differential equations to model problems in fluid mechanics, electromagnetic theory, and heat transfer." },
+      { "no": "CO3", "description": "Evaluate double and triple integrals to find area, volume, mass, and moment of inertia of plane and solid regions." },
+      { "no": "CO4", "description": "Use Beta and Gamma functions to solve double and triple integrals." },
+      { "no": "CO5", "description": "Use Laplace transforms to determine general or complete solutions to linear ordinary differential equations." }
+    ]
+  },
+  {
+    "subject": "Engineering Physics (17PHY22)",
+    "semester": "II",
+    "co": [
+      { "no": "CO1", "description": "Gain knowledge about modern physics and quantum mechanics and develop problem-solving skills." },
+      { "no": "CO2", "description": "Understand material properties and their applications in engineering." },
+      { "no": "CO3", "description": "Learn basic principles of lasers and optical fibers and their applications to develop engineering skills." },
+      { "no": "CO4", "description": "Understand crystal structure and its applications to boost technical skills." },
+      { "no": "CO5", "description": "Understand the concept of shock waves and nanotechnology to gain exposure to emerging technologies." }
+    ]
+  },
+  {
+    "subject": "Elements of Civil Engineering (17CIV23)",
+    "semester": "II",
+    "co": [
+      { "no": "CO1", "description": "Understand the basics of civil engineering, its scope, and knowledge about roads, bridges, and dams." },
+      { "no": "CO2", "description": "Comprehend the action of forces, moments, and other loads on systems of rigid bodies." },
+      { "no": "CO3", "description": "Compute reactive forces and effects developed as a result of external loads." },
+      { "no": "CO4", "description": "Locate the centroid and compute the moment of inertia of regular cross-sections." },
+      { "no": "CO5", "description": "Express the relationship between motion of bodies and prepare to pursue studies in allied mechanics courses." }
+    ]
+  },
+  {
+    "subject": "Elements of Mechanical Engineering (17EME24)",
+    "semester": "II",
+    "co": [
+      { "no": "CO1", "description": "Understand various energy sources and their conversion, formation of steam, and working of boilers." },
+      { "no": "CO2", "description": "Understand the operation of prime movers such as turbines and internal combustion engines." },
+      { "no": "CO3", "description": "Understand metal removal processes using lathe, drilling, milling, robotics, and automation." },
+      { "no": "CO4", "description": "Apply and use various engineering materials and understand material joining processes such as welding, soldering, and brazing." },
+      { "no": "CO5", "description": "Understand the working of refrigeration and air-conditioning systems." }
+    ]
+  },
+  {
+    "subject": "Basic Electrical Engineering (17ELE25)",
+    "semester": "II",
+    "co": [
+      { "no": "CO1", "description": "Predict the behavior of electrical and magnetic circuits." },
+      { "no": "CO2", "description": "Select the type of generator or motor required for specific applications." },
+      { "no": "CO3", "description": "Understand the requirement of transformers in transmission and distribution of electrical power and other applications." },
+      { "no": "CO4", "description": "Practice electrical safety rules and standards." },
+      { "no": "CO5", "description": "Work effectively in multidisciplinary teams." }
+    ]
+  },
+  {
+    "subject": "Workshop Practice (17WSL26)",
+    "semester": "II",
+    "co": [
+      { "no": "CO1", "description": "Conduct experiments using various tools and equipment to understand workshop concepts and perform necessary calculations for models." },
+      { "no": "CO2", "description": "Demonstrate and produce different types of fitting, sheet metal, and welding models." },
+      { "no": "CO3", "description": "Explain theoretical aspects of workshop exercises in engineering practice." },
+      { "no": "CO4", "description": "Record experimental processes and results." },
+      { "no": "CO5", "description": "Conduct experiments in the workshop and communicate results effectively." }
+    ]
+  },
+  {
+    "subject": "Engineering Physics Lab (17PHYL27)",
+    "semester": "II",
+    "co": [
+      { "no": "CO1", "description": "Conduct experiments, learn setup, and record readings using measuring instruments to understand engineering physics concepts." },
+      { "no": "CO2", "description": "Analyze and interpret experimental data and results." },
+      { "no": "CO3", "description": "Explain theoretical aspects used in conducting different experiments of engineering physics." },
+      { "no": "CO4", "description": "Record experimental processes and results." },
+      { "no": "CO5", "description": "Conduct any given experiment in the engineering physics laboratory and communicate results effectively." }
+    ]
+  },{
+    "subject": "Engineering Mathematics - III (17MAT31)",
+    "semester": "III",
+    "co": [
+      { "no": "CO1", "description": "Know the use of periodic signals and Fourier series to analyze circuits and system communications." },
+      { "no": "CO2", "description": "Explain the general linear system theory for continuous-time signals and digital signal processing using the Fourier Transform and Z-transform." },
+      { "no": "CO3", "description": "Employ appropriate numerical methods to solve algebraic and transcendental equations." },
+      { "no": "CO4", "description": "Apply Green's theorem, Divergence theorem and Stokes' theorem in various applications in the field of electromagnetic and gravitational fields and fluid flow problems." },
+      { "no": "CO5", "description": "Determine the extremals of functionals and solve simple problems of the calculus of variations." }
+    ]
+  },
+  {
+    "subject": "Electronic Instrumentation (17EC32)",
+    "semester": "III",
+    "co": [
+      { "no": "CO1", "description": "Define and describe accuracy and precision, types of errors. Describe the operation of ammeters, voltmeters, multimeters and develop circuits for multirange ammeters and voltmeters." },
+      { "no": "CO2", "description": "Describe functional concepts and operation of various analog and digital measuring instruments." },
+      { "no": "CO3", "description": "Describe functional concepts and operation of oscilloscope and signal generators." },
+      { "no": "CO4", "description": "Explain functioning of various types of analog instruments and analyse the performance of AC, DC bridges. Interpret performance characteristics of analog and digital measuring instruments." },
+      { "no": "CO5", "description": "Recognize and describe significance and working of different types of transducers." }
+    ]
+  },
+  {
+    "subject": "Analog Electronics (17EC33)",
+    "semester": "III",
+    "co": [
+      { "no": "CO1", "description": "Design BJT-based amplifier." },
+      { "no": "CO2", "description": "Explain constructional details of FET and analyze frequency response of BJT amplifier." },
+      { "no": "CO3", "description": "Design FET-based amplifier and analyze FET amplifier based on frequency response." },
+      { "no": "CO4", "description": "Design power amplifier based on needs and build oscillators." },
+      { "no": "CO5", "description": "Design power supply." }
+    ]
+  },
+  {
+    "subject": "Digital Electronics (17EC34)",
+    "semester": "III",
+    "co": [
+      { "no": "CO1", "description": "Understand and analyze the performance of simplification techniques using Karnaugh maps and Quine–McCluskey techniques." },
+      { "no": "CO2", "description": "Understand operation of decoders, encoders, multiplexers, adders, and subtractors and design Boolean expressions using decoders and multiplexers." },
+      { "no": "CO3", "description": "Understand the working of latches and flip-flops." },
+      { "no": "CO4", "description": "Design registers and counters using flip-flops." },
+      { "no": "CO5", "description": "Design and develop Mealy and Moore sequential circuit models." }
+    ]
+  },
+  {
+    "subject": "Network Analysis (17EC35)",
+    "semester": "III",
+    "co": [
+      { "no": "CO1", "description": "Reduce the network using source transformation, star-to-delta transformation, and electric circuit laws." },
+      { "no": "CO2", "description": "Apply network theorems to reduce circuit complexities and to arrive at feasible solutions." },
+      { "no": "CO3", "description": "Predict transient behavior of first and second order circuits and apply Laplace transformation to solve electrical circuits." },
+      { "no": "CO4", "description": "Analyze series and parallel resonant circuits." },
+      { "no": "CO5", "description": "Determine and apply various two-port network parameters in evaluating the response of electric circuits." }
+    ]
+  },
+  {
+    "subject": "Engineering Electromagnetics (17EC36)",
+    "semester": "III",
+    "co": [
+      { "no": "CO1", "description": "Evaluate problems on electric field due to point, linear, and volume charges by applying conventional methods or Gauss law." },
+      { "no": "CO2", "description": "Determine potential and energy with respect to point charge and capacitance using Laplace equation." },
+      { "no": "CO3", "description": "Calculate magnetic field, force, and potential energy with respect to magnetic materials." },
+      { "no": "CO4", "description": "Apply Maxwell’s equations for time-varying fields and EM waves in free space and conductors." },
+      { "no": "CO5", "description": "Evaluate power associated with EM waves using Poynting theorem." }
+    ]
+  },
+  {
+    "subject": "Analog Electronics Lab (17ECL37)",
+    "semester": "III",
+    "co": [
+      { "no": "CO1", "description": "Able to conduct experiments using discrete components." },
+      { "no": "CO2", "description": "Able to design, analyze, and interpret experimental data and results." },
+      { "no": "CO3", "description": "Able to express theoretical aspects used in conducting different experiments." },
+      { "no": "CO4", "description": "Able to record experimental process and results." },
+      { "no": "CO5", "description": "Able to communicate results of experiments effectively." }
+    ]
+  },
+  {
+    "subject": "Digital Electronics Lab (17ECL38)",
+    "semester": "III",
+    "co": [
+      { "no": "CO1", "description": "Able to conduct experiments using ICs." },
+      { "no": "CO2", "description": "Able to design, analyze, and interpret experimental data and results." },
+      { "no": "CO3", "description": "Able to express theoretical aspects used in conducting different experiments." },
+      { "no": "CO4", "description": "Able to record experimental process and results." },
+      { "no": "CO5", "description": "Able to conduct any experiment and communicate results of experiments effectively." }
+    ]
+  },
+  {
+    "subject": "Constitution of India, Professional Ethics and Human Rights (17CPH39)",
+    "semester": "III",
+    "co": [
+      { "no": "CO1", "description": "Have general knowledge and legal literacy about the Indian Constitution, helping to take up competitive examinations and face complex societal issues." },
+      { "no": "CO2", "description": "Understand state and central policies (Union and State Executive), fundamental rights, and their duties." },
+      { "no": "CO3", "description": "Understand electoral process, amendments, and special provisions in the Constitution." },
+      { "no": "CO4", "description": "Understand powers and functions of municipalities, panchayats, and co-operative societies, with human rights and NHRC." },
+      { "no": "CO5", "description": "Understand engineering and professional ethics and responsibilities of engineers." }
+    ]
+  },
+  {
+    "subject": "Engineering Mathematics-IV (17MAT41)",
+    "semester": "IV",
+    "co": [
+      { "no": "CO1", "description": "Use appropriate single step and multi-step numerical methods to solve first order ordinary differential equations." },
+      { "no": "CO2", "description": "Solve second order ordinary differential equations arising in flow data design problems, illustrate problems of potential theory, quantum mechanics and heat conduction by employing notions and properties of Bessel’s functions and Legendre’s polynomials." },
+      { "no": "CO3", "description": "Explain the concepts of analytic functions, residues, poles of complex potentials and describe conformal and bilinear transformation arising in field theory and signal processing." },
+      { "no": "CO4", "description": "Develop probability distribution of discrete, continuous random variables and joint probability distribution occurring in digital signal processing, information theory and design engineering." },
+      { "no": "CO5", "description": "Demonstrate testing of hypothesis of sampling distributions and illustrate examples of Markov chains related to discrete parameter stochastic process." }
+    ]
+  },
+  {
+    "subject": "Signals and Systems (17EC42)",
+    "semester": "IV",
+    "co": [
+      { "no": "CO1", "description": "Classify the signals as continuous/discrete, periodic/aperiodic, even/odd, energy/power and deterministic/random signals, and determine the linearity, causality, time-invariance and stability properties of continuous and discrete time systems." },
+      { "no": "CO2", "description": "Compute the response of a continuous and discrete LTI system using convolution integral and convolution sum." },
+      { "no": "CO3", "description": "Determine system properties in terms of impulse and step response, and determine the spectral characteristics of continuous and discrete time signal using Fourier analysis for periodic signals." },
+      { "no": "CO4", "description": "Determine the spectral characteristics of continuous and discrete time signals using Fourier analysis for non-periodic signals." },
+      { "no": "CO5", "description": "Compute Z-transforms, inverse Z-transforms and transfer functions of complex LTI systems, and apply concepts of signals and systems using modern tools." }
+    ]
+  },
+  {
+    "subject": "Control Systems (17EC43)",
+    "semester": "IV",
+    "co": [
+      { "no": "CO1", "description": "Develop the mathematical model of mechanical and electrical systems and derive transfer functions using block diagram reduction techniques and signal flow graph method." },
+      { "no": "CO2", "description": "Determine the time domain specifications for first and second order systems." },
+      { "no": "CO3", "description": "Determine the stability of a system in the time domain using Routh-Hurwitz criterion and root-locus technique." },
+      { "no": "CO4", "description": "Determine the stability of a system in the frequency domain using Nyquist and Bode plots." },
+      { "no": "CO5", "description": "Develop a control system model in continuous time domain using state variable techniques." }
+    ]
+  },
+  {
+    "subject": "Principles of Communication Systems (17EC44)",
+    "semester": "IV",
+    "co": [
+      { "no": "CO1", "description": "Determine the performance of AM, SSB, DSBSC, and VSB analog modulation schemes in time and frequency domains." },
+      { "no": "CO2", "description": "Determine the performance of angle modulation and generation and detection of angle modulation using PLL." },
+      { "no": "CO3", "description": "Understand the characteristics of noise and characterize analog signals in time domain as random processes." },
+      { "no": "CO4", "description": "Characterize the influence of channel on receiver model, AM receiver, and DSBSC receiver." },
+      { "no": "CO5", "description": "Understand the characteristics of sampling theorem, pulse amplitude modulation, pulse position modulation, and pulse code modulation systems." }
+    ]
+  },
+  {
+    "subject": "Linear Integrated Circuits (17EC45)",
+    "semester": "IV",
+    "co": [
+      { "no": "CO1", "description": "Explain Op-Amp circuit and parameters including CMRR, PSRR, input & output impedance, and slew rate." },
+      { "no": "CO2", "description": "Design Op-Amp based inverting, non-inverting, summing & difference amplifiers, and AC amplifiers including voltage follower." },
+      { "no": "CO3", "description": "Design circuits of Op-Amp based voltage/current sources & sinks, current, instrumentation and precision amplifiers." },
+      { "no": "CO4", "description": "Design circuits of Op-Amp based linear and non-linear circuits including limiting, clamping, sample & hold, differentiator/integrator circuits, peak detectors, oscillators, multiplier and divider." },
+      { "no": "CO5", "description": "Explain applications of linear ICs in PLL, phase detector, VCO, DAC, ADC, and timer. Design first & second order low pass, high pass, band pass, band stop filters, and voltage regulators." }
+    ]
+  },
+  {
+    "subject": "Microprocessor (17EC46)",
+    "semester": "IV",
+    "co": [
+      { "no": "CO1", "description": "Explain the evolution of microprocessors, different architectures, and timing diagrams of 8086." },
+      { "no": "CO2", "description": "Explain 8086 instruction set and write 8086 assembly level programs using the 8086 instruction set." },
+      { "no": "CO3", "description": "Write 8086 stack and interrupt programming." },
+      { "no": "CO4", "description": "Interface 8086 to static memory chips and basic input-output peripherals using 8255." },
+      { "no": "CO5", "description": "Use INT 21 DOS interrupt function calls to handle keyboard and display." }
+    ]
+  },
+  {
+    "subject": "Microprocessor Lab (17ECL47)",
+    "semester": "IV",
+    "co": [
+      { "no": "CO1", "description": "Write and execute 8086 assembly level programs using the 8086 instruction set." },
+      { "no": "CO2", "description": "Analyze and interpret experimental data and results of 8086 assembly level programs." },
+      { "no": "CO3", "description": "Explain the instructions and theoretical aspects used in 8086 assembly level programs." },
+      { "no": "CO4", "description": "Record experimental process and results of 8086 assembly level programs." },
+      { "no": "CO5", "description": "Communicate results of 8086 assembly level programs effectively." }
+    ]
+  },
+  {
+    "subject": "Linear ICs and Communication Lab (17ECL48)",
+    "semester": "IV",
+    "co": [
+      { "no": "CO1", "description": "Conduct experiments using discrete components." },
+      { "no": "CO2", "description": "Design, analyze, and interpret experimental data and results." },
+      { "no": "CO3", "description": "Express theoretical aspects used in conducting different experiments." },
+      { "no": "CO4", "description": "Record experimental process and results." },
+      { "no": "CO5", "description": "Communicate results of experiments effectively." }
+    ]
+  },
+  {
+    "subject": "Kannada Kali (17KK49)",
+    "semester": "IV",
+    "co": [
+      { "no": "CO1", "description": "Read and understand simple words in Kannada language." },
+      { "no": "CO2", "description": "Learn Vyavaharika Kannada (Kannada for communication)." },
+      { "no": "CO3", "description": "Create interest in Kannada language and literature." }
+    ]
+  },
+  {
+    "subject": "Kannada Manasu (17KM49)",
+    "semester": "IV",
+    "co": [
+      { "no": "CO1", "description": "Read and understand simple words in Kannada language." },
+      { "no": "CO2", "description": "Learn Vyavaharika Kannada (Kannada for communication)." },
+      { "no": "CO3", "description": "Create interest in Kannada language and literature." }
+    ]
+  },
+   {
+    "subject": "Management and Entrepreneurship Development (17ES51)",
+    "semester": "V",
+    "co": [
+      { "no": "CO1", "description": "Familiarity with the basic principles and fundamentals of management." },
+      { "no": "CO2", "description": "A fair idea about planning, organizing, staffing and directing the activities in an organization." },
+      { "no": "CO3", "description": "Ability to recognize and appreciate the importance of entrepreneurship." },
+      { "no": "CO4", "description": "Students shall be able to have a rough idea about setting up SSI units." },
+      { "no": "CO5", "description": "Familiarity with project management and project design." }
+    ]
+  },
+  {
+    "subject": "Digital Signal Processing (17EC52)",
+    "semester": "V",
+    "co": [
+      { "no": "CO1", "description": "Analyze need for frequency domain sampling and reconstruction of discrete time signal. Transform signal in time domain to frequency domain using DFT and frequency domain to time domain using IDFT. Appreciate basic properties of DFT." },
+      { "no": "CO2", "description": "Appreciate advanced properties of DFT, perform linear filtering (overlap add and overlap save), and analyze need for efficient computation of DFT." },
+      { "no": "CO3", "description": "Derive and use Radix-2 FFT algorithm (decimation-in-time and decimation-in-frequency) for the computation of DFT and IDFT." },
+      { "no": "CO4", "description": "Realize IIR systems in direct form, cascade form and parallel form structures. Design of digital IIR filters." },
+      { "no": "CO5", "description": "Realize FIR systems in direct form, linear phase, frequency sampling structure, lattice structure. Design FIR filters using window technique." }
+    ]
+  },
+  {
+    "subject": "Verilog HDL (17EC53)",
+    "semester": "V",
+    "co": [
+      { "no": "CO1", "description": "Students will be able to describe the different design methodology in HDL and the components required for Verilog module and simulation." },
+      { "no": "CO2", "description": "Students will be able to define the different logic set values and data types used in Verilog." },
+      { "no": "CO3", "description": "Students will be able to write the Verilog description using gate and dataflow (RTL) abstraction level." },
+      { "no": "CO4", "description": "Students will be able to write the Verilog description using the behavioral abstraction level." },
+      { "no": "CO5", "description": "Students will be able to write the VHDL description of a digital circuit using entity and architecture." }
+    ]
+  },
+  {
+    "subject": "Information Theory & Coding (17EC54)",
+    "semester": "V",
+    "co": [
+      { "no": "CO1", "description": "Explain concept of dependent & independent source, measure of information, entropy, rate of information and order of a source." },
+      { "no": "CO2", "description": "Represent the information using Shannon encoding, Shannon Fano, prefix and Huffman encoding algorithms." },
+      { "no": "CO3", "description": "Model the continuous and discrete communication channels using input, output and joint probabilities." },
+      { "no": "CO4", "description": "Determine a codeword comprising of the check bits computed using linear block codes, cyclic codes & convolutional codes." },
+      { "no": "CO5", "description": "Design the encoding and decoding circuits for linear block codes, cyclic codes, convolutional codes, BCH and Golay codes." }
+    ]
+  },
+  {
+    "subject": "MSP430 Microcontroller (17EC555)",
+    "semester": "V",
+    "co": [
+      { "no": "CO1", "description": "Understand the architectural features and instruction set of 16-bit microcontroller MSP430." },
+      { "no": "CO2", "description": "Develop programs using the various instructions of MSP430 for different applications." },
+      { "no": "CO3", "description": "Understand the functions of the various peripherals which are interfaced with MSP430 microcontroller." },
+      { "no": "CO4", "description": "Describe the power saving modes in MSP430." },
+      { "no": "CO5", "description": "Explain the low power applications using MSP430 microcontroller." }
+    ]
+  },
+  {
+    "subject": "DSP Lab (17ECL57)",
+    "semester": "V",
+    "co": [
+      { "no": "CO1", "description": "Able to conduct DSP experiments using MATLAB." },
+      { "no": "CO2", "description": "Able to design, analyze and interpret experimental data and results." },
+      { "no": "CO3", "description": "Able to express theoretical aspects of DSP." },
+      { "no": "CO4", "description": "Able to record experimental process and results." },
+      { "no": "CO5", "description": "Able to communicate results of experiments effectively." }
+    ]
+  },
+  {
+    "subject": "HDL Lab (17ECL58)",
+    "semester": "V",
+    "co": [
+      { "no": "CO1", "description": "Students will be able to write and execute HDL programs." },
+      { "no": "CO2", "description": "Students will be able to analyze and interpret experimental data and results of HDL programs." },
+      { "no": "CO3", "description": "Students will be able to express the theoretical aspects used in HDL programming." },
+      { "no": "CO4", "description": "Students will be able to record experimental process and results of HDL programs." },
+      { "no": "CO5", "description": "Students will be able to communicate results of HDL programs effectively." }
+    ]
+  },
+  {
+    "subject": "Object Oriented Programming Using C++ (17EC562)",
+    "semester": "V",
+    "co": [
+      { "no": "CO1", "description": "Should be able to use various data types and flow controlling features effectively while writing programs." },
+      { "no": "CO2", "description": "Write user defined functions with a good programming technique and use library functions." },
+      { "no": "CO3", "description": "Should be able to use constructor, destructor and operator overloading and control instructions." },
+      { "no": "CO4", "description": "Write programs using object oriented concepts like inheritance, polymorphism and virtual functions." },
+      { "no": "CO5", "description": "Write programs using streams to access files." }
+    ]
+  },
+  {
+    "subject": "Digital Communication (17EC61)",
+    "semester": "VI",
+    "co": [
+      { "no": "CO1", "description": "Familiarize with complex representation of bandpass signals and signaling techniques." },
+      { "no": "CO2", "description": "Understand the concept of signal detection and estimation theory and are able to design the receivers." },
+      { "no": "CO3", "description": "Familiarize with different digital modulation techniques and their probability of error." },
+      { "no": "CO4", "description": "Able to compute performance issues and parameters for symbol processing and recovery in ideal and corrupted channel conditions." },
+      { "no": "CO5", "description": "Familiar with spread spectrum and different communication techniques." }
+    ]
+  },
+  {
+    "subject": "ARM Microcontroller & Embedded Systems (17EC62)",
+    "semester": "VI",
+    "co": [
+      { "no": "CO1", "description": "Knowledge of architectural features and instructions of 32-bit microcontroller ARM Cortex M3." },
+      { "no": "CO2", "description": "Programming skill of ARM Cortex M3 for different applications." },
+      { "no": "CO3", "description": "Basic hardware components and their selection method based on the characteristics and attributes of an embedded system." },
+      { "no": "CO4", "description": "Knowledge to develop the hardware/software co-design and firmware design approaches." },
+      { "no": "CO5", "description": "Knowledge to use real-time operating system for embedded system applications." }
+    ]
+  },
+  {
+    "subject": "VLSI Design (17EC63)",
+    "semester": "VI",
+    "co": [
+      { "no": "CO1", "description": "Demonstrate understanding of MOS transistor theory, CMOS fabrication flow and technology scaling." },
+      { "no": "CO2", "description": "Draw the basic gates using the stick and layout diagrams with the knowledge of physical design aspects." },
+      { "no": "CO3", "description": "Analyze CMOS subsystems and architectural issues with the design constraints." },
+      { "no": "CO4", "description": "Demonstrate knowledge of FPGA based system design." },
+      { "no": "CO5", "description": "Interpret memory elements with timing considerations, testing and testability issues in VLSI design." }
+    ]
+  },
+  {
+    "subject": "Computer Communication Networks (17EC64)",
+    "semester": "VI",
+    "co": [
+      { "no": "CO1", "description": "Understand basics of networking through ISO, OSI and data link protocols." },
+      { "no": "CO2", "description": "Understand MAC, data and physical layer and wired LAN technologies." },
+      { "no": "CO3", "description": "Understand wireless LAN technologies, network connectors and basics of internet layer." },
+      { "no": "CO4", "description": "Understand working and implementation of network layer protocols." },
+      { "no": "CO5", "description": "Understand reliable and error-free communication through transport layer protocols." }
+    ]
+  },
+  {
+    "subject": "Digital Switching Systems (17EC654)",
+    "semester": "VI",
+    "co": [
+      { "no": "CO1", "description": "Describe the basics of telecommunication networks and digital transmission of data." },
+      { "no": "CO2", "description": "Describe the electromechanical switching systems and its comparison with the digital switching." },
+      { "no": "CO3", "description": "Determine the telecommunication traffic and its measurements." },
+      { "no": "CO4", "description": "Define the technologies associated with the data switching operations." },
+      { "no": "CO5", "description": "Describe the software aspects of switching systems and its maintenance." }
+    ]
+  },
+  {
+    "subject": "Embedded Controller Lab (17ECL67)",
+    "semester": "VI",
+    "co": [
+      { "no": "CO1", "description": "Conduction of experiment." },
+      { "no": "CO2", "description": "Observation and calculation." },
+      { "no": "CO3", "description": "Viva." },
+      { "no": "CO4", "description": "Record." },
+      { "no": "CO5", "description": "Lab internal test." }
+    ]
+  },
+  {
+    "subject": "Computer Networks Lab (17ECL68)",
+    "semester": "VI",
+    "co": [
+      { "no": "CO1", "description": "Able to simulate network using NCTUns and write C programs for different networking concepts." },
+      { "no": "CO2", "description": "Able to program, analyze and interpret experimental data and results." },
+      { "no": "CO3", "description": "Able to express the theoretical aspects used in programming different experiments." },
+      { "no": "CO4", "description": "Able to record experimental process and results." },
+      { "no": "CO5", "description": "Able to communicate results of experiments effectively." }
+    ]
+  },
+  {
+    "subject": "Microwave and Antennas (17EC71)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Describe the use and advantages of microwave transmission." },
+      { "no": "CO2", "description": "Analyze various parameters related to microwave transmission lines and waveguides." },
+      { "no": "CO3", "description": "Identify microwave devices for several applications and study antenna basics." },
+      { "no": "CO4", "description": "Analyze various antenna parameters necessary for building an RF system." },
+      { "no": "CO5", "description": "Recommend various antenna configurations according to the applications." }
+    ]
+  },
+  {
+    "subject": "Digital Image Processing (17EC72)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Understand the fundamentals of digital image formation, representation, and relationships between pixels." },
+      { "no": "CO2", "description": "Understand spatial domain and frequency domain enhancement and filtering techniques." },
+      { "no": "CO3", "description": "Interpret and analyze degradations and perform restoration of a digital image using various image transforms and inverse transforms." },
+      { "no": "CO4", "description": "Understand the basics of color image representation, wavelets, and morphological image processing." },
+      { "no": "CO5", "description": "Understand various methods of segmentation and image representation and description." }
+    ]
+  },
+  {
+    "subject": "Power Electronics (17EC73)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Gain knowledge about fabrication details and control characteristics of power devices like thyristors, power MOSFET, power BJT, IGBT, and power converters." },
+      { "no": "CO2", "description": "Analyze the operation of SCR and design of firing and commutation circuits." },
+      { "no": "CO3", "description": "Design controlled rectifiers and AC voltage controllers for R and RL loads." },
+      { "no": "CO4", "description": "Design DC to DC converters for R and RL loads." },
+      { "no": "CO5", "description": "Design DC to AC converters." }
+    ]
+  },
+  {
+    "subject": "Cryptography (17EC744)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Solve and relate mathematical concepts behind cryptographic algorithms." },
+      { "no": "CO2", "description": "Explain basic concepts and algorithms of cryptography, including encryption and decryption." },
+      { "no": "CO3", "description": "Relate the concept of pseudorandom number generators and stream ciphers." },
+      { "no": "CO4", "description": "Learn the basics of asymmetric ciphers and principles of public key cryptosystems." },
+      { "no": "CO5", "description": "Explain algorithms used for security applications and internet protocols." }
+    ]
+  },
+  {
+    "subject": "DSP Algorithms and Architecture (17EC751)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Comprehend knowledge and concepts of digital signal processing techniques." },
+      { "no": "CO2", "description": "Apply DSP computational building blocks to achieve speed in DSP architecture or processor." },
+      { "no": "CO3", "description": "Apply knowledge of various types of addressing modes, interrupts, peripherals, and pipelining structure of TMS320C54xx processor." },
+      { "no": "CO4", "description": "Develop basic DSP algorithms using DSP processors." },
+      { "no": "CO5", "description": "Discuss synchronous serial interface and multichannel buffered serial port (MCBSP) of DSP device and demonstrate programming of codec interfacing." }
+    ]
+  },
+  {
+    "subject": "Advanced Communication Lab (17ECL76)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Conduct experiments using discrete components, OFC kit, Klystron test bench, and MATLAB." },
+      { "no": "CO2", "description": "Design, analyze, and interpret experimental data and results." },
+      { "no": "CO3", "description": "Express theoretical aspects used in conducting different experiments." },
+      { "no": "CO4", "description": "Record experimental process and results." },
+      { "no": "CO5", "description": "Communicate results of experiments effectively." }
+    ]
+  },
+  {
+    "subject": "VLSI Lab (17ECL77)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Conduct experiments on digital and analog designs." },
+      { "no": "CO2", "description": "Design, analyze, and interpret experimental data and results." },
+      { "no": "CO3", "description": "Express theoretical aspects used in conducting different experiments." },
+      { "no": "CO4", "description": "Record experimental process and results." },
+      { "no": "CO5", "description": "Communicate results of experiments effectively." }
+    ]
+  },
+  {
+    "subject": "Project Work Phase–I and Seminar (17ECP78)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Design a system, components, and experiments for the project using modern tools." },
+      { "no": "CO2", "description": "Utilize theoretical knowledge to successfully complete projects within the stipulated time." },
+      { "no": "CO3", "description": "Demonstrate contextual engineering knowledge to provide sustainable solutions to societal needs." },
+      { "no": "CO4", "description": "Demonstrate engineering and management skills, and communicate effectively as an individual and team member after project completion." },
+      { "no": "CO5", "description": "Demonstrate social and economic responsibility by adapting legal, cultural, and ethical principles for lifelong learning." }
+    ]
+  },
+
+  {
+    "subject": "Network and Cyber Security (17EC835)",
+    "semester": "VIII",
+    "co": [
+      { "no": "CO1", "description": "Explain network security protocols." },
+      { "no": "CO2", "description": "Understand the basic concepts of cyber security." },
+      { "no": "CO3", "description": "Discuss the cyber security problems." },
+      { "no": "CO4", "description": "Explain enterprise security framework." },
+      { "no": "CO5", "description": "Apply concepts of cyber security framework in computer system administration." }
+    ]
+  },
+  {
+    "subject": "Wireless Cellular and LTE 4G Broadband (17EC81)",
+    "semester": "VIII",
+    "co": [
+      { "no": "CO1", "description": "Understand key enablers for LTE features and wireless fundamentals." },
+      { "no": "CO2", "description": "Understand the overview and channel structure of LTE and downlink transport channel processing." },
+      { "no": "CO3", "description": "Understand the concepts of multicarrier modulation, OFDMA, SC-FDMA, and multiple antenna transmission and reception." },
+      { "no": "CO4", "description": "Understand uplink channel transport processing and physical layer procedures." },
+      { "no": "CO5", "description": "Understand radio resource management and mobility management." }
+    ]
+  },
+  {
+    "subject": "Fiber Optics & Network (17EC82)",
+    "semester": "VIII",
+    "co": [
+      { "no": "CO1", "description": "Understand the working of optical fiber with different modes of signal propagation." },
+      { "no": "CO2", "description": "Understand the transmission characteristics and losses in optical fiber communication and working principle of optical connectors." },
+      { "no": "CO3", "description": "Understand the constructional features and characteristics of optical sources and detectors, and working principles of receivers." },
+      { "no": "CO4", "description": "Understand the multiplexing concepts in optical communication systems and the working principle of optical amplifiers." },
+      { "no": "CO5", "description": "Understand the networking aspects of optical fiber and describe various standards associated with it." }
+    ]
+  },
+  {
+    "subject": "Internship/Professional Practice (17EC84)",
+    "semester": "VIII",
+    "co": [
+      { "no": "CO1", "description": "Identify the gap between curriculum and industry regarding societal and engineering practices and prepare for a better career." },
+      { "no": "CO2", "description": "Comprehend the need for lifelong learning via sustainable development." },
+      { "no": "CO3", "description": "Follow effective communication, decision-making, leadership, and other managerial skills necessary for the future." },
+      { "no": "CO4", "description": "Work in a multi-disciplinary environment facing all constraints during the progress of assigned work." },
+      { "no": "CO5", "description": "Develop individual responsibility and follow ethical standards of the industries." }
+    ]
+  },
+  {
+    "subject": "Project Work (17ECP85)",
+    "semester": "VIII",
+    "co": [
+      { "no": "CO1", "description": "Design a system, components, and experiments for the project using modern tools." },
+      { "no": "CO2", "description": "Utilize theoretical knowledge gained to successfully complete the projects in stipulated time." },
+      { "no": "CO3", "description": "Demonstrate contextual engineering knowledge to provide sustainable solutions to societal needs." },
+      { "no": "CO4", "description": "Demonstrate engineering and management skills, communicate effectively as an individual and team member after project completion." },
+      { "no": "CO5", "description": "Demonstrate social and economic responsibilities by adapting legal, cultural, and ethical principles for lifelong learning." }
+    ]
+  },
+  {
+    "subject": "Seminar (17ECS86)",
+    "semester": "VIII",
+    "co": [
+      { "no": "CO1", "description": "Apply principles of ethical learning, socially responsible behavior, and respect for diversity in an interdependent world." },
+      { "no": "CO2", "description": "Use modern tools to examine real-world issues, explore creative avenues, and make consequential discussions." },
+      { "no": "CO3", "description": "Develop, attain, and disseminate knowledge via self-learning initiative and collaborative study." },
+      { "no": "CO4", "description": "Do presentations and communicate effectively using modern tools." },
+      { "no": "CO5", "description": "Be exposed to the latest developments in the field of engineering and technology." }
+    ]
   }
 
 
@@ -22512,7 +23113,1213 @@
 
 
 
-      ] 
+      ] ,
+      "2016-2017":[
+{
+    "subject": "Engineering Maths-I (15MAT11)",
+    "semester": "I",
+    "co": [
+      { "no": "CO1", "description": "Find the nth derivatives of product of two functions, and polar curves. Study Taylor’s and Maclaurin’s series." },
+      { "no": "CO2", "description": "Use partial derivatives to calculate rates of change of multivariate functions." },
+      { "no": "CO3", "description": "Analyze position, velocity, and acceleration in two or three dimensions using the calculus of vector valued functions." },
+      { "no": "CO4", "description": "Recognize and solve first-order ordinary differential equations; model simple electrical circuits, projectile motion and Newton’s law of cooling." },
+      { "no": "CO5", "description": "Use matrices, determinants and techniques for solving systems of linear equations in different areas of linear algebra." }
+    ]
+  },
+  {
+    "subject": "Programming in C & Data Structures (15PCD13)",
+    "semester": "I",
+    "co": [
+      { "no": "CO1", "description": "Gain knowledge on various parts of a computer." },
+      { "no": "CO2", "description": "Able to draw flowcharts and write algorithms." },
+      { "no": "CO3", "description": "Design and develop C problem-solving skills." },
+      { "no": "CO4", "description": "Design and develop modular programming skills." },
+      { "no": "CO5", "description": "Trace and debug a program." }
+    ]
+  },
+  {
+    "subject": "Basic Electronics (15ELN15)",
+    "semester": "I",
+    "co": [
+      { "no": "CO1", "description": "Understand the working of diode and its applications in rectifiers, filter and regulator circuits." },
+      { "no": "CO2", "description": "Understand the working of bipolar junction transistor and its biasing methods to design amplifier." },
+      { "no": "CO3", "description": "Design simple circuits like amplifiers (inverting and non-inverting), comparators, adders, integrator and differentiator using op-amps." },
+      { "no": "CO4", "description": "Understand the different building blocks in digital electronics and its implementation at logic level." },
+      { "no": "CO5", "description": "Understand the functioning of a communication system, different modulation technologies, and principles of different transducers." }
+    ]
+  },
+  {
+    "subject": "Engg. Chemistry Lab (15CHEL17)",
+    "semester": "I",
+    "co": [
+      { "no": "CO1", "description": "Conduct scheduled experiments to provide knowledge of handling different types of instruments for analysis of materials and carrying out different types of titrations for estimation of materials." },
+      { "no": "CO2", "description": "Calculation of experimental data and conclusion (result analysis)." },
+      { "no": "CO3", "description": "Express the theoretical aspects used in conducting different experiments of Engineering Chemistry Lab (viva voce)." },
+      { "no": "CO4", "description": "Record experimental process and results (record writing)." },
+      { "no": "CO5", "description": "Conduct any given experiment in Engineering Chemistry Lab and communicate results effectively (internal assessment)." }
+    ]
+  },
+  {
+    "subject": "Engineering Maths - II (15MAT21)",
+    "semester": "II",
+    "co": [
+      { "no": "CO1", "description": "Use ordinary differential equations to model engineering phenomena such as electrical circuits, forced oscillation of mass-spring and elementary heat transfer. Able to solve nonlinear differential equations." },
+      { "no": "CO2", "description": "Use partial differential equations to model problems in fluid mechanics, electromagnetic theory and heat transfer." },
+      { "no": "CO3", "description": "Evaluate double and triple integrals to find area, volume, mass and moment of inertia of plane and solid regions." },
+      { "no": "CO4", "description": "Use Beta and Gamma functions to solve double and triple integrals." },
+      { "no": "CO5", "description": "Use Laplace transforms to determine general or complete solutions to linear ODEs." }
+    ]
+  },
+  {
+    "subject": "Engineering Physics (15PHY22)",
+    "semester": "II",
+    "co": [
+      { "no": "CO1", "description": "Gain knowledge about modern physics and quantum mechanics and develop problem-solving skills." },
+      { "no": "CO2", "description": "Understand material properties and their applications in engineering." },
+      { "no": "CO3", "description": "Learn basic principles of lasers and optical fibers and their applications to develop engineering skills." },
+      { "no": "CO4", "description": "Understand crystal structure and its applications to boost technical skills." },
+      { "no": "CO5", "description": "Understand shock wave concepts and their applications and basic concepts of nanotechnology to get exposure to emerging technologies." }
+    ]
+  },
+  {
+    "subject": "Basic Electrical Engg. (15ELE25)",
+    "semester": "II",
+    "co": [
+      { "no": "CO1", "description": "Understand electrical circuit concepts, electromagnetism, and electromagnetic induction." },
+      { "no": "CO2", "description": "Understand induction concepts, DC machine, construction and working principle of wattmeter and energy meter." },
+      { "no": "CO3", "description": "Understand single-phase AC circuits and domestic wiring." },
+      { "no": "CO4", "description": "Understand three-phase circuit construction and working of three-phase synchronous generator." },
+      { "no": "CO5", "description": "Understand single-phase transformer and three-phase induction motor concepts." }
+    ]
+  },
+  {
+    "subject": "Engg. Physics Lab (15PHYL27)",
+    "semester": "II",
+    "co": [
+      { "no": "CO1", "description": "Conduct scheduled experiments to learn experimental setup and record readings using measuring instruments to understand engineering physics concepts." },
+      { "no": "CO2", "description": "Analyze and interpret experimental data and results." },
+      { "no": "CO3", "description": "Express theoretical aspects used in conducting different experiments of Engineering Physics Lab." },
+      { "no": "CO4", "description": "Record experimental process and results." },
+      { "no": "CO5", "description": "Conduct any given experiment in Engineering Physics Lab and communicate results effectively." }
+    ]
+  },
+  {
+    "subject": "Constitution of India (15CPH28)",
+    "semester": "II",
+    "co": [
+      { "no": "CO1", "description": "Have general knowledge and legal literacy about Indian Constitution, helping to take up competitive examinations and manage complex societal issues." },
+      { "no": "CO2", "description": "Understand state and central policies (Union and State Executive), fundamental rights, and their duties." },
+      { "no": "CO3", "description": "Understand electoral process, amendments, and special provisions in the Constitution." },
+      { "no": "CO4", "description": "Understand powers and functions of municipalities, panchayats, and co-operative societies, with human rights and NHRC." },
+      { "no": "CO5", "description": "Understand engineering and professional ethics and responsibilities of engineers." }
+    ]
+  },
+  {
+    "subject": "Engineering Mathematics III (15MAT31)",
+    "semester": "III",
+    "co": [
+      { "no": "CO1", "description": "Use periodic signals and Fourier series to analyze circuits and system communications." },
+      { "no": "CO2", "description": "Explain general linear system theory for continuous-time signals and digital signal processing using the Fourier transform and Z-transform." },
+      { "no": "CO3", "description": "Employ appropriate numerical methods to solve algebraic and transcendental equations, find lines of regressions, and correlation coefficient between any two variables." },
+      { "no": "CO4", "description": "Find interpolating polynomial for a given set of data and evaluate the integral numerically." },
+      { "no": "CO5", "description": "Apply Green's theorem, Divergence theorem, and Stokes' theorem in applications in electromagnetic and gravitational fields and fluid flow problems; determine extremals of functionals and solve simple problems." }
+    ]
+  },
+  {
+    "subject": "Analog Electronics (15EC32)",
+    "semester": "III",
+    "co": [
+      { "no": "CO1", "description": "Understand constructional details of EMOSFET, DMOSFET, JFET and their characteristics." },
+      { "no": "CO2", "description": "Perform DC and AC analysis on FET and BJT based amplifiers." },
+      { "no": "CO3", "description": "Analyze BJT and FET amplifiers based on frequency response and design based on lower cut-off frequency requirements." },
+      { "no": "CO4", "description": "Study and design various classes of power amplifiers and evaluate harmonic distortion." },
+      { "no": "CO5", "description": "Study series and shunt regulators and build oscillators." }
+    ]
+  },
+  {
+    "subject": "Digital Electronics (15EC33)",
+    "semester": "III",
+    "co": [
+      { "no": "CO1", "description": "Acquire knowledge of combinational logic and analyze performance of simplification techniques using Karnaugh maps and Quine-McCluskey techniques." },
+      { "no": "CO2", "description": "Understand operation of decoders, encoders, multiplexers, adders, and subtractors and design Boolean expressions using decoders and multiplexers." },
+      { "no": "CO3", "description": "Acquire knowledge on working of latches and flip-flops." },
+      { "no": "CO4", "description": "Design registers and counters using flip-flops." },
+      { "no": "CO5", "description": "Design and develop Mealy and Moore model sequential circuits." }
+    ]
+  },
+  {
+    "subject": "Network Analysis (15EC34)",
+    "semester": "III",
+    "co": [
+      { "no": "CO1", "description": "Reduce networks using source transformation, star-delta transformation, and electric circuit laws." },
+      { "no": "CO2", "description": "Apply network theorems to reduce circuit complexities and find feasible solutions." },
+      { "no": "CO3", "description": "Predict transient behavior of first and second-order circuits and apply Laplace transformation to solve electrical circuits." },
+      { "no": "CO4", "description": "Analyze series and parallel resonant circuits." },
+      { "no": "CO5", "description": "Determine and apply various two-port network parameters to evaluate circuit responses." }
+    ]
+  },
+  {
+    "subject": "Electronic Instrumentation (15EC35)",
+    "semester": "III",
+    "co": [
+      { "no": "CO1", "description": "Identify differences between accuracy and precision, and understand functioning of various analog instruments." },
+      { "no": "CO2", "description": "Understand digital voltmeters, frequency meters, tachometers, pH meters, and microprocessor-based instrumentation." },
+      { "no": "CO3", "description": "Understand functioning of various oscilloscopes and signal generators." },
+      { "no": "CO4", "description": "Analyze performance of AC/DC bridges and interpret characteristics of analog and digital measuring instruments." },
+      { "no": "CO5", "description": "Understand concepts of different types of transducers and their applications." }
+    ]
+  },
+  {
+    "subject": "Engineering Electromagnetics (15EC36)",
+    "semester": "III",
+    "co": [
+      { "no": "CO1", "description": "Apply knowledge of basic concepts to solve complex problems in electric fields." },
+      { "no": "CO2", "description": "Interpret gradient, divergence, and curl operators and solve problems on electric and steady magnetic fields." },
+      { "no": "CO3", "description": "Analyze Poisson’s and Laplace equations, uniqueness theorem, and interpret Maxwell’s equations in point and integral form." },
+      { "no": "CO4", "description": "Acquire knowledge of basic electric and magnetic fields and solve problems on capacitance and inductance of simple practical systems." },
+      { "no": "CO5", "description": "Analyze and interpret time-varying fields, Maxwell’s equations, and wave propagation in free space and dielectrics." }
+    ]
+  },
+  {
+    "subject": "Analog Electronics Lab (15ECL37)",
+    "semester": "III",
+    "co": [
+      { "no": "CO1", "description": "Use instruments required to conduct experiments in analog electronics." },
+      { "no": "CO2", "description": "Design, analyze, and interpret experimental data and results." },
+      { "no": "CO3", "description": "Express theoretical aspects used in conducting experiments." },
+      { "no": "CO4", "description": "Record experimental process and results." },
+      { "no": "CO5", "description": "Communicate results of experiments effectively." }
+    ]
+  },
+  {
+    "subject": "Digital Electronics Lab (15ECL38)",
+    "semester": "III",
+    "co": [
+      { "no": "CO1", "description": "Conduct experiments using ICs." },
+      { "no": "CO2", "description": "Design, analyze, and interpret experimental data and results." },
+      { "no": "CO3", "description": "Express theoretical aspects used in conducting experiments." },
+      { "no": "CO4", "description": "Record experimental process and results." },
+      { "no": "CO5", "description": "Conduct any experiment and communicate results effectively." }
+    ]
+  },
+   {
+    "subject": "Engineering Mathematics IV (15MAT41)",
+    "semester": "IV",
+    "co": [
+      { "no": "CO1", "description": "Use appropriate single-step and multi-step numerical methods to solve first-order ordinary differential equations." },
+      { "no": "CO2", "description": "Solve second-order ordinary differential equations arising in flow and design problems; employ Bessel's functions and Legendre's polynomials for problems in continuum mechanics, hydrodynamics, and heat conduction." },
+      { "no": "CO3", "description": "Explain analyticity, potential fields, residues, and poles of complex potentials in field theory and electromagnetic theory." },
+      { "no": "CO4", "description": "Describe random variables and probability distributions using rigorous statistical methods to analyze problems in digital circuits, information theory, coding, and system stability." },
+      { "no": "CO5", "description": "Solve problems using sampling theory, hypothesis testing, stochastic processes, and Markov chains for engineering applications involving random events." }
+    ]
+  },
+  {
+    "subject": "Microprocessor (15EC42)",
+    "semester": "IV",
+    "co": [
+      { "no": "CO1", "description": "Familiarize with basic architecture of 8086 microprocessor." },
+      { "no": "CO2", "description": "Program the 8086 microprocessor using assembly language." },
+      { "no": "CO3", "description": "Use macros and procedures in 8086 programs." },
+      { "no": "CO4", "description": "Understand interfacing of 16-bit microprocessor with memory and peripheral chips for system design." },
+      { "no": "CO5", "description": "Understand the architecture of 8088, 8087 coprocessor, and other CPU architectures." }
+    ]
+  },
+  {
+    "subject": "Control Systems (15EC43)",
+    "semester": "IV",
+    "co": [
+      { "no": "CO1", "description": "Develop mathematical models of mechanical and electrical systems and determine transfer functions." },
+      { "no": "CO2", "description": "Quantitatively describe transient response for first- and second-order systems." },
+      { "no": "CO3", "description": "Determine system stability using Routh-Hurwitz criteria and root locus technique." },
+      { "no": "CO4", "description": "Determine system stability in frequency domain using Nyquist and Bode plots." },
+      { "no": "CO5", "description": "Model control systems in continuous and discrete time using state variable techniques." }
+    ]
+  },
+  {
+    "subject": "Signals and Systems (15EC44)",
+    "semester": "IV",
+    "co": [
+      { "no": "CO1", "description": "Classify signals and analyze system properties." },
+      { "no": "CO2", "description": "Analyze LTI systems using convolution sum and integral." },
+      { "no": "CO3", "description": "Visualize systems in terms of impulse response and understand basics of DTFS and CTFS." },
+      { "no": "CO4", "description": "Understand Fourier representation of non-periodic signals." },
+      { "no": "CO5", "description": "Analyze signals and systems in the Z-domain." }
+    ]
+  },
+  {
+    "subject": "Principles of Communication Systems (15EC45)",
+    "semester": "IV",
+    "co": [
+      { "no": "CO1", "description": "Determine performance of analog modulation schemes in time and frequency domains." },
+      { "no": "CO2", "description": "Determine performance of systems for generation and detection of modulated analog signals." },
+      { "no": "CO3", "description": "Characterize analog signals in time domain as random processes and in frequency domain using Fourier Transform." },
+      { "no": "CO4", "description": "Characterize channel influence on analog modulated signals and determine performance of analog communication systems." },
+      { "no": "CO5", "description": "Understand characteristics of pulse amplitude, pulse position, and code modulation systems." }
+    ]
+  },
+  {
+    "subject": "Linear Integrated Circuits (15EC46)",
+    "semester": "IV",
+    "co": [
+      { "no": "CO1", "description": "Explain op-amp circuits and parameters including CMRR, PSRR, input/output impedances, and slew rate; design inverting, non-inverting, summing, and difference amplifiers." },
+      { "no": "CO2", "description": "Design op-amp AC amplifiers including voltage follower, inverting/non-inverting, and difference amplifiers; develop circuits for voltage/current sources and sinks, instrumentation and precision rectifiers." },
+      { "no": "CO3", "description": "Develop op-amp-based linear and nonlinear circuits including clamping, sample-and-hold, differentiator/integrator, peak detectors, oscillators, and multiplier/divider circuits." },
+      { "no": "CO4", "description": "Design first- and second-order low-pass, high-pass, band-pass, and band-stop filters and voltage regulators." },
+      { "no": "CO5", "description": "Explain applications of linear ICs in phase detectors, VCO, DAC, ADC, and 555 timer." }
+    ]
+  },
+  {
+    "subject": "Microprocessor Lab (15ECL47)",
+    "semester": "IV",
+    "co": [
+      { "no": "CO1", "description": "Write programs using 8086." },
+      { "no": "CO2", "description": "Program, analyze, and interpret experimental data and results." },
+      { "no": "CO3", "description": "Express theoretical aspects used in programming different experiments." },
+      { "no": "CO4", "description": "Record experimental process and results." },
+      { "no": "CO5", "description": "Communicate results of experiments effectively." }
+    ]
+  },
+  {
+    "subject": "Linear ICs and Communication Lab (15ECL48)",
+    "semester": "IV",
+    "co": [
+      { "no": "CO1", "description": "Write circuits and design communication experiments using op-amp and transistor." },
+      { "no": "CO2", "description": "Design circuits, analyze, and interpret experimental data and results." },
+      { "no": "CO3", "description": "Express theoretical aspects used in experiments." },
+      { "no": "CO4", "description": "Record experimental process and results." },
+      { "no": "CO5", "description": "Communicate results effectively." }
+    ]
+  },
+   {
+    "subject": "Management and Entrepreneurship (15ES51)",
+    "semester": "V",
+    "co": [
+      { "no": "CO1", "description": "Familiarity with the basic principles and fundamentals of management." },
+      { "no": "CO2", "description": "Understand planning, organizing, staffing, and directing activities in an organization." },
+      { "no": "CO3", "description": "Recognize and appreciate the importance of entrepreneurship." },
+      { "no": "CO4", "description": "Understand the basics of setting up SSI (Small Scale Industry) units." },
+      { "no": "CO5", "description": "Familiarity with project management and project design." }
+    ]
+  },
+  {
+    "subject": "Digital Signal Processing (15EC52)",
+    "semester": "V",
+    "co": [
+      { "no": "CO1", "description": "Use DFT to convert signals from time domain to frequency domain." },
+      { "no": "CO2", "description": "Apply DFT properties to solve numerical problems and implement overlap-add and overlap-save methods for linear filtering." },
+      { "no": "CO3", "description": "Apply FFT algorithms to compute DFT and IDFT." },
+      { "no": "CO4", "description": "Realize and design FIR filters using direct form, linear phase, and lattice structures." },
+      { "no": "CO5", "description": "Realize and design IIR filters using direct form, cascade, and parallel structures." }
+    ]
+  },
+  {
+    "subject": "Verilog HDL (15EC53)",
+    "semester": "V",
+    "co": [
+      { "no": "CO1", "description": "Understand different levels of abstraction in a module and the components required for Verilog simulation." },
+      { "no": "CO2", "description": "Understand different logic set values and data types in Verilog." },
+      { "no": "CO3", "description": "Write Verilog descriptions from logic diagrams and data flow between registers." },
+      { "no": "CO4", "description": "Write Verilog descriptions based on circuit behavior." },
+      { "no": "CO5", "description": "Write VHDL descriptions of digital circuits using entity and architecture." }
+    ]
+  },
+  {
+    "subject": "Information Theory & Coding (15EC54)",
+    "semester": "V",
+    "co": [
+      { "no": "CO1", "description": "Understand ideas of entropy and information content." },
+      { "no": "CO2", "description": "Understand different types of source coding techniques and algorithms." },
+      { "no": "CO3", "description": "Understand different types of channels and calculate capacity and mutual information." },
+      { "no": "CO4", "description": "Understand generation and detection of various error-correcting codes and formulate basic equations of linear block codes." },
+      { "no": "CO5", "description": "Detect and correct errors by designing encoders and decoders." }
+    ]
+  },
+  {
+    "subject": "MSP430 Microcontroller (15EC555)",
+    "semester": "V",
+    "co": [
+      { "no": "CO1", "description": "Understand architectural features and instruction set of 16-bit MSP430 microcontroller." },
+      { "no": "CO2", "description": "Write basic assembly codes for different applications." },
+      { "no": "CO3", "description": "Understand functions of peripherals interfaced with MSP430." },
+      { "no": "CO4", "description": "Understand power-saving modes in MSP430." },
+      { "no": "CO5", "description": "Work on low-power applications using MSP430." }
+    ]
+  },
+  {
+    "subject": "DSP Lab (15ECL57)",
+    "semester": "V",
+    "co": [
+      { "no": "CO1", "description": "Write MATLAB programs for DSP concepts." },
+      { "no": "CO2", "description": "Correlate MATLAB program results with theoretical calculations." },
+      { "no": "CO3", "description": "Express theoretical aspects of DSP." },
+      { "no": "CO4", "description": "Identify and record obtained results." },
+      { "no": "CO5", "description": "Independently implement MATLAB programs for DSP concepts." }
+    ]
+  },
+  {
+    "subject": "HDL Lab (15ECL58)",
+    "semester": "V",
+    "co": [
+      { "no": "CO1", "description": "Conduct experiments using HDLs." },
+      { "no": "CO2", "description": "Design, analyze, and interpret experimental data and results." },
+      { "no": "CO3", "description": "Express theoretical aspects used in experiments." },
+      { "no": "CO4", "description": "Record experimental process and results." },
+      { "no": "CO5", "description": "Communicate results of experiments effectively." }
+    ]
+  },
+  {
+    "subject": "Object Oriented Programming Using C++ (15EC562)",
+    "semester": "V",
+    "co": [
+      { "no": "CO1", "description": "Use various data types and flow control effectively while writing programs." },
+      { "no": "CO2", "description": "Write user-defined functions and use library functions effectively." },
+      { "no": "CO3", "description": "Use constructors, destructors, operator overloading, and control instructions." },
+      { "no": "CO4", "description": "Write programs using object-oriented concepts like inheritance, polymorphism, and virtual functions." },
+      { "no": "CO5", "description": "Write programs using streams to access files." }
+    ]
+  },
+   {
+    "subject": "DSS (15EC654)",
+    "semester": "VI",
+    "co": [
+      { "no": "CO1", "description": "Understand the developments in basic architecture of telecommunication system." },
+      { "no": "CO2", "description": "Describe electromechanical switching systems and compare them with digital switching." },
+      { "no": "CO3", "description": "Determine telecommunication traffic and its measurements." },
+      { "no": "CO4", "description": "Define technologies associated with data switching operations." },
+      { "no": "CO5", "description": "Describe software aspects of switching systems and their maintenance." }
+    ]
+  },
+  {
+    "subject": "Digital Communication (15EC61)",
+    "semester": "VI",
+    "co": [
+      { "no": "CO1", "description": "Familiarize with complex representation of bandpass signals and signaling techniques." },
+      { "no": "CO2", "description": "Design receivers using signal detection and estimation theory." },
+      { "no": "CO3", "description": "Design different digital modulation techniques and estimate their probability of error." },
+      { "no": "CO4", "description": "Compute performance issues and parameters for symbol processing and recovery in ideal and corrupted channel conditions." },
+      { "no": "CO5", "description": "Implement spread spectrum and various communication techniques." }
+    ]
+  },
+  {
+    "subject": "VLSI Design (15EC63)",
+    "semester": "VI",
+    "co": [
+      { "no": "CO1", "description": "Describe MOSFET characteristics and fabrication process." },
+      { "no": "CO2", "description": "Describe layout design procedures, rules, and MOS scaling concepts in VLSI." },
+      { "no": "CO3", "description": "Analyze capacitance effects and delays associated with wiring, input, and output." },
+      { "no": "CO4", "description": "Design CMOS subsystems and describe architectural testability issues in VLSI design." },
+      { "no": "CO5", "description": "Demonstrate knowledge of FPGA-based system design." }
+    ]
+  },
+  {
+    "subject": "Digital System Design using Verilog (15EC663)",
+    "semester": "VI",
+    "co": [
+      { "no": "CO1", "description": "Design digital and embedded systems including combinational and sequential circuits." },
+      { "no": "CO2", "description": "Design different types of memories." },
+      { "no": "CO3", "description": "Design basic concepts of implementation fabrics." },
+      { "no": "CO4", "description": "Design and describe I/O interfacing." },
+      { "no": "CO5", "description": "Understand the concept of design methodology." }
+    ]
+  },
+  {
+    "subject": "Python Application Programming (15CS664)",
+    "semester": "VI",
+    "co": [
+      { "no": "CO1", "description": "Examine primitives, flow control, and functions in Python and write programs." },
+      { "no": "CO2", "description": "Demonstrate proficiency in handling strings and files." },
+      { "no": "CO3", "description": "Create, run, and manipulate Python programs using core data structures like lists and dictionaries and use regular expressions." },
+      { "no": "CO4", "description": "Interpret and demonstrate object-oriented programming concepts in Python." },
+      { "no": "CO5", "description": "Implement applications related to network programming, web services, and databases in Python." }
+    ]
+  },
+  {
+    "subject": "Embedded Controller Lab (15ECL67)",
+    "semester": "VI",
+    "co": [
+      { "no": "CO1", "description": "Write programs in Embedded C to interface ARM Cortex M3 microcontroller with various peripherals." },
+      { "no": "CO2", "description": "Program, analyze, and interpret experimental data and results." },
+      { "no": "CO3", "description": "Express theoretical aspects used in programming experiments." },
+      { "no": "CO4", "description": "Record experimental process and results." },
+      { "no": "CO5", "description": "Communicate results of experiments effectively." }
+    ]
+  },
+  {
+    "subject": "Computer Networks Lab (15ECL68)",
+    "semester": "VI",
+    "co": [
+      { "no": "CO1", "description": "Simulate networks using NCTUns and write C programs for different networking concepts." },
+      { "no": "CO2", "description": "Program, analyze, and interpret experimental data and results." },
+      { "no": "CO3", "description": "Express theoretical aspects used in programming experiments." },
+      { "no": "CO4", "description": "Record experimental process and results." },
+      { "no": "CO5", "description": "Communicate results of experiments effectively." }
+    ]
+  },
+
+ {
+    "subject": "Cryptography (15EC744)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Solve and relate mathematical concepts behind the cryptographic algorithms." },
+      { "no": "CO2", "description": "Explain basic concepts and algorithms of cryptography, including encryption/decryption." },
+      { "no": "CO3", "description": "Relate the concept of pseudorandom number generators and stream ciphers." },
+      { "no": "CO4", "description": "Learn the basics of asymmetric ciphers and principles of public key cryptosystems." },
+      { "no": "CO5", "description": "Explain the algorithms used for security applications and Internet protocols." }
+    ]
+  },
+  {
+    "subject": "DSP Algorithms and Architecture (15EC751)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Comprehend the knowledge and concepts of digital signal processing techniques." },
+      { "no": "CO2", "description": "Apply the knowledge of DSP computational building blocks to achieve speed in DSP architecture or processor." },
+      { "no": "CO3", "description": "Apply knowledge of various types of addressing modes, interrupts, peripherals and pipelining structure of TMS320C54xx processor." },
+      { "no": "CO4", "description": "Develop basic DSP algorithms using DSP processors." },
+      { "no": "CO5", "description": "Discuss synchronous serial interface and multichannel buffered serial port (McBSP) of DSP device and demonstrate programming of codec interfacing." }
+    ]
+  },
+  {
+    "subject": "Microwave and Antennas (15EC71)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Describe the use and advantages of microwave transmission." },
+      { "no": "CO2", "description": "Analyze various parameters related to microwave transmission lines and waveguides." },
+      { "no": "CO3", "description": "Identify microwave devices for several applications and study antenna basics." },
+      { "no": "CO4", "description": "Analyze various antenna parameters necessary for building an RF system." },
+      { "no": "CO5", "description": "Recommend various antenna configurations according to the applications." }
+    ]
+  },
+  {
+    "subject": "Digital Image Processing (15EC72)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Understand the fundamentals of digital image formation, representation and relationship between pixels." },
+      { "no": "CO2", "description": "Understand spatial domain and frequency domain enhancement and filtering techniques." },
+      { "no": "CO3", "description": "Interpret and analyze degradations and perform restoration of a digital image using various image transforms and inverse transforms." },
+      { "no": "CO4", "description": "Understand the basics of color image representation, wavelets and morphological image processing." },
+      { "no": "CO5", "description": "Understand various methods of segmentation and image representation and description." }
+    ]
+  },
+  {
+    "subject": "Power Electronics (15EC73)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Knowledge about the fabrication details and control characteristics of power devices like thyristors, power MOSFET, power BJT and IGBT and power converters." },
+      { "no": "CO2", "description": "Knowledge about the analysis of operation of SCR and design of firing and commutation circuits." },
+      { "no": "CO3", "description": "Skill to design controlled rectifiers and AC voltage controllers for R and RL load." },
+      { "no": "CO4", "description": "Skill to design DC to DC converters for R and RL load." },
+      { "no": "CO5", "description": "Skill to design DC to AC converters." }
+    ]
+  },
+  {
+    "subject": "Advanced Communication Lab (15ECL76)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Conduct experiments using discrete components, OFC kit, Klystron test bench and Matlab." },
+      { "no": "CO2", "description": "Design, analyze and interpret experimental data and results." },
+      { "no": "CO3", "description": "Express the theoretical aspects used in conducting different experiments." },
+      { "no": "CO4", "description": "Record experimental process and results." },
+      { "no": "CO5", "description": "Communicate results of experiments effectively." }
+    ]
+  },
+  {
+    "subject": "VLSI Lab (15ECL77)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Conduct experiments on digital and analog designs." },
+      { "no": "CO2", "description": "Design, analyze and interpret experimental data and results." },
+      { "no": "CO3", "description": "Express the theoretical aspects used in conducting different experiments." },
+      { "no": "CO4", "description": "Record experimental process and results." },
+      { "no": "CO5", "description": "Communicate results effectively." }
+    ]
+  },
+  {
+    "subject": "Project Work Phase I and Project Work Seminar (15ECP78)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Design a system, components and experiments for the project using modern tools." },
+      { "no": "CO2", "description": "Utilize theoretical knowledge to successfully complete the projects in stipulated time." },
+      { "no": "CO3", "description": "Demonstrate contextual engineering knowledge to provide sustainable solution to needs of the society." },
+      { "no": "CO4", "description": "Demonstrate engineering and management skills, communicate effectively as an individual and as a team member after project completion." },
+      { "no": "CO5", "description": "Demonstrate social and economic responsibilities by adapting legal, cultural and ethical principles for lifelong learning." }
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+    {
+    "subject": "Network and Cyber Security (15EC835)",
+    "semester": "VIII",
+    "co": [
+      { "no": "CO1", "description": "Understand the basic concepts in Transport Layer Security." },
+      { "no": "CO2", "description": "Understand the confidentiality and authentication services in email." },
+      { "no": "CO3", "description": "Explain IP security policies." },
+      { "no": "CO4", "description": "Discuss different cyber security problems and solutions." },
+      { "no": "CO5", "description": "Explain enterprise security framework and apply cyber security framework in computer system administration." }
+    ]
+  },
+  {
+    "subject": "Wireless Cellular and LTE 4G Broadband (15EC81)",
+    "semester": "VIII",
+    "co": [
+      { "no": "CO1", "description": "Understand key enablers for LTE features and wireless fundamentals." },
+      { "no": "CO2", "description": "Understand the overview and channel structure of LTE and downlink transport channel processing." },
+      { "no": "CO3", "description": "Understand the concepts of multicarrier modulation, OFDMA, SC-FDMA, multiple antenna transmission and reception." },
+      { "no": "CO4", "description": "Understand the uplink channel transport processing and physical layer procedures." },
+      { "no": "CO5", "description": "Understand radio resource management and mobility management." }
+    ]
+  },
+  {
+    "subject": "Fiber Optics & Networks (15EC82)",
+    "semester": "VIII",
+    "co": [
+      { "no": "CO1", "description": "Understand the working of optical fiber with different modes of signal propagation." },
+      { "no": "CO2", "description": "Understand the transmission characteristics and losses in optical fiber communication and working principle of optical connectors." },
+      { "no": "CO3", "description": "Understand the constructional features and characteristics of optical sources and detectors, working principles of receivers." },
+      { "no": "CO4", "description": "Understand multiplexing concepts in optical communication systems and the working principle of optical amplifiers." },
+      { "no": "CO5", "description": "Understand networking aspects of optical fiber and describe various standards associated with it." }
+    ]
+  },
+  {
+    "subject": "Internship/Professional Practice (15EC84)",
+    "semester": "VIII",
+    "co": [
+      { "no": "CO1", "description": "Acquire practical experience within industry and apply classroom knowledge to professional practice." },
+      { "no": "CO2", "description": "Learn by interaction and appreciate professional practices and functions expected of a practicing professional." },
+      { "no": "CO3", "description": "Understand mandates of professional standards and communicate in a professional manner considering confidentiality." },
+      { "no": "CO4", "description": "Recognize areas for future knowledge and skill development and acquire basic knowledge of administration, marketing, finance, and economics." },
+      { "no": "CO5", "description": "Develop skills to enable lifelong learning." }
+    ]
+  },
+  {
+    "subject": "Project Work (15ECP85)",
+    "semester": "VIII",
+    "co": [
+      { "no": "CO1", "description": "Appreciate how to conduct a literature or problem survey as a team." },
+      { "no": "CO2", "description": "Identify and analyze problems and choose a methodology as a team." },
+      { "no": "CO3", "description": "Carry out the project focusing on project management and working under constraints as a team, focusing on design." },
+      { "no": "CO4", "description": "Draft a report from observations as a team." },
+      { "no": "CO5", "description": "Communicate and present ideas regarding the project in a professional manner as a team." }
+    ]
+  },
+  {
+    "subject": "Seminar (15ECS86)",
+    "semester": "VIII",
+    "co": [
+      { "no": "CO1", "description": "Topic selection and literature review." },
+      { "no": "CO2", "description": "Analysis." },
+      { "no": "CO3", "description": "Slides preparation and presentation." },
+      { "no": "CO4", "description": "Viva-voce." },
+      { "no": "CO5", "description": "Report." }
+    ]
+  }
+
+      ],
+      "2015-2016":[
+
+{
+    "subject": "Engineering Maths-I (15MAT11)",
+    "semester": "I",
+    "co": [
+      { "no": "CO1", "description": "Find the nth derivatives of product of two functions, and polar curves. Taylor’s and Maclaurin’s series." },
+      { "no": "CO2", "description": "Use partial derivatives to calculate rates of change of multivariate functions." },
+      { "no": "CO3", "description": "Analyze position, velocity, and acceleration in two or three dimensions using the calculus of vector-valued functions." },
+      { "no": "CO4", "description": "Recognize and solve first-order ordinary differential equations, model simple electrical circuits, projectile motion, and Newton’s law of cooling." },
+      { "no": "CO5", "description": "Use matrices, determinants and techniques for solving systems of linear equations in different areas of linear algebra." }
+    ]
+  },
+  {
+    "subject": "Engineering Chemistry (15CHE12)",
+    "semester": "I",
+    "co": [
+      { "no": "CO1", "description": "Types of electrodes, electrochemical and concentration cells. Classical & modern batteries and fuel cells." },
+      { "no": "CO2", "description": "Causes & effects of corrosion of metals and control of corrosion; modification of surface properties of metals to develop resistance to corrosion, wear, tear, impact etc., by electroplating and electroless plating." },
+      { "no": "CO3", "description": "Production & consumption of energy for industrialization of country and living standards of people; utilization of solar energy for different useful forms of energy." },
+      { "no": "CO4", "description": "Replacement of conventional materials by polymers for various applications." },
+      { "no": "CO5", "description": "Boiler troubles; sewage treatment and desalination of sea water; overview of synthesis, properties and applications of nanomaterials." }
+    ]
+  },
+  {
+    "subject": "Basic Electronics (15ELN15)",
+    "semester": "I",
+    "co": [
+      { "no": "CO1", "description": "Understand the working of diode and its applications in rectifiers, filter and regulator circuits." },
+      { "no": "CO2", "description": "Understand the working of bipolar junction transistor and its biasing methods to design amplifier." },
+      { "no": "CO3", "description": "Design simple circuits like amplifiers (inverting and non-inverting), comparators, adders, integrator and differentiator using op-amps." },
+      { "no": "CO4", "description": "Understand the different building blocks in digital electronics and its implementation at logic level." },
+      { "no": "CO5", "description": "Understand the functioning of a communication system, different modulation technologies, and principles of different transducers." }
+    ]
+  },
+  {
+    "subject": "Engg. Chemistry Lab (15CHEL17)",
+    "semester": "I",
+    "co": [
+      { "no": "CO1", "description": "Conduct scheduled experiments to provide knowledge of handling different types of instruments for analysis of materials and carrying out different types of titrations for estimation of materials." },
+      { "no": "CO2", "description": "Calculation of experimental data and conclusion." },
+      { "no": "CO3", "description": "Express the theoretical aspects used in conducting different experiments of Engineering Chemistry Lab (viva voce)." },
+      { "no": "CO4", "description": "Record experimental process and results." },
+      { "no": "CO5", "description": "Conduct any given experiment in Engineering Chemistry Lab and communicate results effectively." }
+    ]
+  },
+{
+    "subject": "Engineering Maths - II (15MAT21)",
+    "semester": "II",
+    "co": [
+      { "no": "CO1", "description": "Use ordinary differential equations to model engineering phenomena such as electrical circuits, forced oscillation of mass spring and elementary heat transfer. Able to solve nonlinear differential equations." },
+      { "no": "CO2", "description": "Use partial differential equations to model problems in fluid mechanics, electromagnetic theory and heat transfer." },
+      { "no": "CO3", "description": "Evaluate double and triple integrals to find area, volume, mass and moment of inertia of plane and solid region." },
+      { "no": "CO4", "description": "Use Beta and Gamma functions to solve double and triple integrals." },
+      { "no": "CO5", "description": "Use Laplace transforms to determine general or complete solutions to linear ODE." }
+    ]
+  },
+  {
+    "subject": "Engineering Physics (15PHY22)",
+    "semester": "II",
+    "co": [
+      { "no": "CO1", "description": "Gain knowledge about modern physics and quantum mechanics and develop problem-solving skills." },
+      { "no": "CO2", "description": "Understand material properties and their applications in engineering." },
+      { "no": "CO3", "description": "Learn basic principles of lasers and optical fibers and their applications in engineering." },
+      { "no": "CO4", "description": "Understand crystal structure and applications to boost technical skills." },
+      { "no": "CO5", "description": "Understand shock waves concept and its applications, and basic concept of nanotechnology for exposure to latest emerging technology." }
+    ]
+  },
+  {
+    "subject": "Basic Electrical Engg. (15ELE25)",
+    "semester": "II",
+    "co": [
+      { "no": "CO1", "description": "Understand electrical circuit concepts and electromagnetism and electromagnetic induction." },
+      { "no": "CO2", "description": "Understand induction concepts: DC machine, construction and working principle of wattmeter and energy meter." },
+      { "no": "CO3", "description": "Understand single phase AC circuits and domestic wiring." },
+      { "no": "CO4", "description": "Understand three-phase circuit construction and working of three-phase synchronous generator." },
+      { "no": "CO5", "description": "Understand single-phase transformer and three-phase induction motor." }
+    ]
+  },
+  {
+    "subject": "Engg. Physics Lab (15PHYL27)",
+    "semester": "II",
+    "co": [
+      { "no": "CO1", "description": "Conduct scheduled experiments to learn experimental setup and recording readings using measuring instruments to understand the concept of engineering physics." },
+      { "no": "CO2", "description": "Analyse and interpret experimental data and results." },
+      { "no": "CO3", "description": "Express the theoretical aspects used in conducting different experiments of engineering physics lab." },
+      { "no": "CO4", "description": "Record experimental process and results." },
+      { "no": "CO5", "description": "Conduct any given experiment in engineering physics laboratory and communicate results effectively." }
+    ]
+  },
+  {
+    "subject": "Constitution of India (15CPH28)",
+    "semester": "II",
+    "co": [
+      { "no": "CO1", "description": "Have general knowledge and legal literacy about Indian Constitution to manage societal issues and competitive examinations." },
+      { "no": "CO2", "description": "Understand state and central policies, fundamental rights and duties." },
+      { "no": "CO3", "description": "Understand electoral process, amendments and special provisions in the Constitution." },
+      { "no": "CO4", "description": "Understand powers and functions of municipalities, panchayats, co-operative societies, human rights and NHRC." },
+      { "no": "CO5", "description": "Understand engineering and professional ethics and responsibilities of engineers." }
+    ]
+  },
+  {
+    "subject": "Engineering Mathematics III (15MAT31)",
+    "semester": "III",
+    "co": [
+      { "no": "CO1", "description": "Know the use of periodic signals and Fourier series to analyze circuits and system communications." },
+      { "no": "CO2", "description": "Explain the general linear system theory for continuous-time signals and digital signal processing using the Fourier transform and Z-transform." },
+      { "no": "CO3", "description": "Employ appropriate numerical methods to solve algebraic and transcendental equations, find lines of regressions, correlation coefficient between any two variables." },
+      { "no": "CO4", "description": "Find the interpolating polynomial for a given set of data, evaluate the integral numerically." },
+      { "no": "CO5", "description": "Apply Green's Theorem, Divergence Theorem, and Stokes' Theorem in applications in electromagnetic, gravitational fields, and fluid flow problems. Determine the extremals of functionals and solve simple problems of calculus of variations." }
+    ]
+  },
+  {
+    "subject": "Digital Electronics Lab (15ECL38)",
+    "semester": "III",
+    "co": [
+      { "no": "CO1", "description": "Conduct experiments using ICs." },
+      { "no": "CO2", "description": "Design, analyze, and interpret experimental data and results." },
+      { "no": "CO3", "description": "Express the theoretical aspects used in conducting different experiments." },
+      { "no": "CO4", "description": "Record experimental process and results." },
+      { "no": "CO5", "description": "Conduct any experiment and communicate results effectively." }
+    ]
+  },
+  {
+    "subject": "Network Analysis (15EC34)",
+    "semester": "III",
+    "co": [
+      { "no": "CO1", "description": "Describe basic network concepts emphasizing source transformation, source shifting, mesh and nodal techniques to solve for resistance/impedance, voltage, current, and power." },
+      { "no": "CO2", "description": "Solve network problems by applying network theorems to reduce circuit complexities and arrive at feasible solutions." },
+      { "no": "CO3", "description": "Explain the behavior of networks subjected to transient conditions. Use applications of Laplace transforms to network problems." },
+      { "no": "CO4", "description": "Describe series and parallel combination of passive components as resonating circuits, related parameters, and analyze frequency response." },
+      { "no": "CO5", "description": "Study two-port network parameters like Z, Y, T, and H and their inter-relationships and applications." }
+    ]
+  },
+  {
+    "subject": "Microprocessor (15EC42)",
+    "semester": "IV",
+    "co": [
+      { "no": "CO1", "description": "Explain the architecture and programming model of microprocessors." },
+      { "no": "CO2", "description": "Explain the operation of 8086 instruction set and develop assembly level programming skills." },
+      { "no": "CO3", "description": "Write modular programs using procedures and macros." },
+      { "no": "CO4", "description": "Analyze the operation of 8086 stack and interrupt structure." },
+      { "no": "CO5", "description": "Familiar with the 8086 interface with static memory chips and input-output devices." }
+    ]
+  },
+  {
+    "subject": "Signals and Systems (15EC44)",
+    "semester": "IV",
+    "co": [
+      { "no": "CO1", "description": "Able to classify signals and analyze systems for various properties." },
+      { "no": "CO2", "description": "Able to analyze LTI systems using convolution sum and integral." },
+      { "no": "CO3", "description": "Able to visualize systems in terms of impulse response and understand basics of DTFS and CTFS." },
+      { "no": "CO4", "description": "Understand the basics of Fourier representation of non-periodic signals." },
+      { "no": "CO5", "description": "Able to analyze signals and systems in Z-domain." }
+    ]
+  },
+  {
+    "subject": "Microprocessor Lab (15ECL47)",
+    "semester": "IV",
+    "co": [
+      { "no": "CO1", "description": "Able to write and execute 8086 assembly level programs using the 8086 instruction set." },
+      { "no": "CO2", "description": "Able to analyze and interpret experimental data and results of 8086 assembly level programs." },
+      { "no": "CO3", "description": "Able to explain the instructions and theoretical aspects used in 8086 assembly level programs." },
+      { "no": "CO4", "description": "Able to record experimental process and results of 8086 assembly level programs." },
+      { "no": "CO5", "description": "Able to communicate results of 8086 assembly level programs effectively." }
+    ]
+  },
+  {
+    "subject": "Digital Signal Processing (15EC52)",
+    "semester": "V",
+    "co": [
+      { "no": "CO1", "description": "Convert time domain signal to frequency domain signal." },
+      { "no": "CO2", "description": "Knowledge of using DFT properties to solve numerical problems." },
+      { "no": "CO3", "description": "Apply FFT algorithms to find DFT and IDFT." },
+      { "no": "CO4", "description": "Design FIR and IIR filters." },
+      { "no": "CO5", "description": "Realize different filter structures (direct, lattice, cascade, parallel, etc.)." }
+    ]
+  },
+  {
+    "subject": "Verilog HDL (15EC53)",
+    "semester": "V",
+    "co": [
+      { "no": "CO1", "description": "Knows the different levels of abstraction in module and the components required for Verilog module and simulation." },
+      { "no": "CO2", "description": "Knows the different logic set values and data types used in Verilog." },
+      { "no": "CO3", "description": "Knows to write the Verilog description from logic diagram and from the data flow between registers." },
+      { "no": "CO4", "description": "Knows to write the Verilog description from the behavior of the circuit." },
+      { "no": "CO5", "description": "Knows to write the VHDL description of digital circuits using entity and architecture." }
+    ]
+  },
+  {
+    "subject": "Information Theory & Coding (15EC54)",
+    "semester": "V",
+    "co": [
+      { "no": "CO1", "description": "Able to understand the ideas of entropy and information content." },
+      { "no": "CO2", "description": "Able to understand different types of source coding techniques and algorithms." },
+      { "no": "CO3", "description": "Able to understand different types of channels and calculate their capacity and mutual information." },
+      { "no": "CO4", "description": "Able to understand methods of generating and detecting different types of error-correcting codes and formulate the basic equation of linear block codes." },
+      { "no": "CO5", "description": "Able to detect and correct errors by designing types of encoder and decoder algorithms." }
+    ]
+  },
+  {
+    "subject": "DSP Lab (15ECL57)",
+    "semester": "V",
+    "co": [
+      { "no": "CO1", "description": "Able to conduct DSP experiments using MATLAB." },
+      { "no": "CO2", "description": "Able to design, analyze and interpret experimental data and results." },
+      { "no": "CO3", "description": "Able to express the theoretical aspects used in conducting different experiments." },
+      { "no": "CO4", "description": "Able to record experimental process and results." },
+      { "no": "CO5", "description": "Able to communicate results of experiments effectively." }
+    ]
+  },
+  {
+    "subject": "HDL Lab (15ECL58)",
+    "semester": "V",
+    "co": [
+      { "no": "CO1", "description": "Able to conduct experiments using HDLs." },
+      { "no": "CO2", "description": "Able to design, analyze and interpret experimental data and results." },
+      { "no": "CO3", "description": "Able to express the theoretical aspects used in conducting different experiments." },
+      { "no": "CO4", "description": "Able to record experimental process and results." },
+      { "no": "CO5", "description": "Able to communicate results of experiments effectively." }
+    ]
+  },
+  {
+    "subject": "Object Oriented Programming Using C++ (15EC562)",
+    "semester": "V",
+    "co": [
+      { "no": "CO1", "description": "Students are able to understand algorithmic thinking and apply it to programming using elementary C++ programs." },
+      { "no": "CO2", "description": "Students are able to use and understand library functions and write user-defined functions." },
+      { "no": "CO3", "description": "Students are able to use different operators and control instructions using C++." },
+      { "no": "CO4", "description": "Students are able to use object-oriented techniques to write functions using C++ and use the concepts of inheritance and polymorphism." },
+      { "no": "CO5", "description": "Students are able to use advanced features of OOP programming, operator overloading, and work with streams and files." }
+    ]
+  },
+  {
+    "subject": "DSS (15EC654)",
+    "semester": "VI",
+    "co": [
+      { "no": "CO1", "description": "Will be able to explain working principle of switching systems involved in telecommunication." },
+      { "no": "CO2", "description": "Will be able to explain techniques used in analog switching." },
+      { "no": "CO3", "description": "Analyze and design different traffic queuing and prepare mathematical modelling of the system." },
+      { "no": "CO4", "description": "Will be able to explain different digital switching systems involving software." },
+      { "no": "CO5", "description": "Understand the basic tips for modelling and maintenance of digital switching systems." }
+    ]
+  },
+  {
+    "subject": "Digital Communication (15EC61)",
+    "semester": "VI",
+    "co": [
+      { "no": "CO1", "description": "Familiarize with complex representation of bandpass signals and signaling techniques." },
+      { "no": "CO2", "description": "Understand the concept of signal detection and estimation theory and are able to design the receivers." },
+      { "no": "CO3", "description": "Familiarize with different digital modulation techniques and their probability of error." },
+      { "no": "CO4", "description": "Able to compute performance issues and parameters for symbol processing and recovery in ideal and corrupted channel conditions." },
+      { "no": "CO5", "description": "Familiar with spread spectrum and different communication techniques." }
+    ]
+  },
+  {
+    "subject": "VLSI Design (15EC63)",
+    "semester": "VI",
+    "co": [
+      { "no": "CO1", "description": "Familiar with MOSFET characteristics and fabrication process." },
+      { "no": "CO2", "description": "Familiar with the design procedure, rules to be followed for layout design, and the concept of MOS scaling in VLSI." },
+      { "no": "CO3", "description": "Familiar with the capacitance effects and the delays associated with wiring, input and output." },
+      { "no": "CO4", "description": "Familiar with the concepts of a leaf cell to undertake the design of subsystems and testability issues in VLSI design." },
+      { "no": "CO5", "description": "Able to demonstrate knowledge of FPGA-based system design." }
+    ]
+  },
+  {
+    "subject": "Computer Communication Networks (15EC64)",
+    "semester": "VI",
+    "co": [
+      { "no": "CO1", "description": "Understand basics of networking through ISO/OSI and data link protocols." },
+      { "no": "CO2", "description": "Understand MAC, data and physical layer, and wired LAN technologies." },
+      { "no": "CO3", "description": "Understand wireless LAN technologies, network connectors, and basics of Internet layer." },
+      { "no": "CO4", "description": "Understand working and implementation of network layer protocols." },
+      { "no": "CO5", "description": "Understanding of error-free, reliable, and secure communication through transport layer protocols." }
+    ]
+  },
+  {
+    "subject": "Embedded Controller Lab (15ECL67)",
+    "semester": "VI",
+    "co": [
+      { "no": "CO1", "description": "Able to write programs in Embedded C to interface ARM Cortex M3 microcontroller with various peripherals." },
+      { "no": "CO2", "description": "Able to program, analyze and interpret experimental data and results." },
+      { "no": "CO3", "description": "Able to express the theoretical aspects used in programming different experiments." },
+      { "no": "CO4", "description": "Able to record experimental process and results." },
+      { "no": "CO5", "description": "Able to communicate results of experiments effectively." }
+    ]
+  },
+  {
+    "subject": "Computer Networks Lab (15ECL68)",
+    "semester": "VI",
+    "co": [
+      { "no": "CO1", "description": "Able to simulate network using NCTUNS and write C programs for different networking concepts." },
+      { "no": "CO2", "description": "Able to program, analyze and interpret experimental data and results." },
+      { "no": "CO3", "description": "Able to express the theoretical aspects used in programming different experiments." },
+      { "no": "CO4", "description": "Able to record experimental process and results." },
+      { "no": "CO5", "description": "Able to communicate results of experiments effectively." }
+    ]
+  },
+
+  {
+    "subject": "Multimedia Communication (15EC741)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Understand basics of different multimedia networks and applications." },
+      { "no": "CO2", "description": "Understand different compression techniques to compress audio and video." },
+      { "no": "CO3", "description": "Describe multimedia communication across networks." },
+      { "no": "CO4", "description": "Analyse different media types to represent them in digital form." },
+      { "no": "CO5", "description": "Compress different types of text and images using different compression techniques and analyse DMS." }
+    ]
+  },
+  {
+    "subject": "DSP Algorithms and Architecture (15EC751)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Comprehend the knowledge and concepts of digital signal processing techniques." },
+      { "no": "CO2", "description": "Apply the knowledge of DSP computational building blocks to achieve speed in DSP architecture or processor." },
+      { "no": "CO3", "description": "Apply knowledge of various types of addressing modes, interrupts, peripherals and pipelining structure of TMS320C54xx processor." },
+      { "no": "CO4", "description": "Develop basic DSP algorithms using DSP processors." },
+      { "no": "CO5", "description": "Discuss about synchronous serial interface and multichannel buffered serial port (MCBSP) of DSP device and codec interfacing." }
+    ]
+  },
+  {
+    "subject": "Microwave and Antennas (15EC71)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Describe the use and advantages of microwave transmission." },
+      { "no": "CO2", "description": "Analyze various parameters related to microwave transmission lines and waveguides." },
+      { "no": "CO3", "description": "Identify microwave devices for several applications and study antenna basics." },
+      { "no": "CO4", "description": "Analyze various antenna parameters necessary for building an RF system." },
+      { "no": "CO5", "description": "Recommend various antenna configurations according to the applications." }
+    ]
+  },
+  {
+    "subject": "Digital Image Processing (15EC72)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Learner will be able to understand the fundamentals of digital image formation, representation and relationship between pixels." },
+      { "no": "CO2", "description": "A learner will gain competency in spatial domain and frequency domain enhancement and filtering techniques." },
+      { "no": "CO3", "description": "A student will gain competency to interpret and analyze degradations and perform restoration of a digital image using various image transforms and inverse transforms." },
+      { "no": "CO4", "description": "A student will be able to understand the basics of color image representation, wavelets and morphological image processing." },
+      { "no": "CO5", "description": "A student will be able to understand various methods of segmentation and image representation and description." }
+    ]
+  },
+  {
+    "subject": "Power Electronics (15EC73)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Familiarize the control characteristics of power devices like SCR, power MOSFET, power BJT and IGBT and introduction of power converters." },
+      { "no": "CO2", "description": "Familiarize the analysis of operation of SCR and design of firing and commutation circuits." },
+      { "no": "CO3", "description": "Familiarize the design of controlled rectifiers, AC voltage controllers for R and RL load." },
+      { "no": "CO4", "description": "Familiarize the design of DC to DC converters for R and RL load." },
+      { "no": "CO5", "description": "Familiarize the design of DC to AC converters." }
+    ]
+  },
+  {
+    "subject": "Advanced Communication Lab (15ECL76)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Able to conduct experiments using discrete components, OFC kit, Klystron test bench & Matlab." },
+      { "no": "CO2", "description": "Able to design, analyze and interpret experimental data and results." },
+      { "no": "CO3", "description": "Able to express the theoretical aspects used in conducting different experiments." },
+      { "no": "CO4", "description": "Able to record experimental process and results." },
+      { "no": "CO5", "description": "Able to communicate results of experiments effectively." }
+    ]
+  },
+  {
+    "subject": "VLSI Lab (15ECL77)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Able to conduct experiments on digital and analog designs." },
+      { "no": "CO2", "description": "Able to design, analyze and interpret experimental data and results." },
+      { "no": "CO3", "description": "Able to express the theoretical aspects used in conducting different experiments." },
+      { "no": "CO4", "description": "Able to record experimental process and results." },
+      { "no": "CO5", "description": "Able to communicate results of experiments effectively." }
+    ]
+  },
+  {
+    "subject": "Project Work Phase I and Project Work Seminar (15ECP78)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Students will be able to identify the project which is cost effective to complete and fulfill the basic needs of the society." },
+      { "no": "CO2", "description": "Consistent method of determining critical success factors in successful completion of a project and expense determination." },
+      { "no": "CO3", "description": "Segmentation of various budget groups." },
+      { "no": "CO4", "description": "At the end of the course, students will know frustrations of handling projects and stress associated situations with projects." },
+      { "no": "CO5", "description": "He/she will be able to perform as team member/leader to complete the given task according to time plan." }
+    ]
+  },
+  {
+    "subject": "Network and Cyber Security (15EC835)",
+    "semester": "VIII",
+    "co": [
+      { "no": "CO1", "description": "Explain network security protocols." },
+      { "no": "CO2", "description": "Understand the basic concepts of cyber security." },
+      { "no": "CO3", "description": "Discuss the cyber security problems." },
+      { "no": "CO4", "description": "Explain enterprise security framework." },
+      { "no": "CO5", "description": "Apply concept of cyber security framework in computer system administration." }
+    ]
+  },
+  {
+    "subject": "Wireless Cellular and LTE 4G Broadband (15EC81)",
+    "semester": "VIII",
+    "co": [
+      { "no": "CO1", "description": "Understand key enablers for LTE features and wireless fundamentals." },
+      { "no": "CO2", "description": "Understand the overview and channel structure of LTE and downlink transport channel processing." },
+      { "no": "CO3", "description": "Understand the concepts of multicarrier modulation, OFDMA, SC-FDMA, multiple antenna transmission and reception." },
+      { "no": "CO4", "description": "Understand the uplink channel transport processing and physical layer procedures." },
+      { "no": "CO5", "description": "Understand radio resource management and mobility management." }
+    ]
+  },
+  {
+    "subject": "Fiber Optics & Networks (15EC82)",
+    "semester": "VIII",
+    "co": [
+      { "no": "CO1", "description": "Understand the working of optical fiber with different modes of signal propagation." },
+      { "no": "CO2", "description": "Understand the transmission characteristics and losses in optical fiber communication and working principle of optical connectors." },
+      { "no": "CO3", "description": "Understand the constructional features and the characteristics of optical sources and detectors, working principles of receivers." },
+      { "no": "CO4", "description": "Understand the multiplexing concepts in optical communication system and the working principle of optical amplifiers." },
+      { "no": "CO5", "description": "Understand the networking aspects of optical fiber and describe various standards associated with it." }
+    ]
+  },
+  {
+    "subject": "Internship/Professional Practice (15EC84)",
+    "semester": "VIII",
+    "co": [
+      { "no": "CO1", "description": "Students are able to acquire practical experience with an industry in which the internship is done and apply the knowledge and skills learnt to classroom work into professional practice." },
+      { "no": "CO2", "description": "Students shall be able to learn by interaction and appreciate professional practices and function as expected of a practicing professional." },
+      { "no": "CO3", "description": "Students shall be able to understand mandates of professional standards and communicate in a professional manner giving due consideration to confidentiality clauses." },
+      { "no": "CO4", "description": "Students shall be able to recognize the areas for future knowledge and skill development and acquire the basic knowledge of administration, marketing, finance and economics." },
+      { "no": "CO5", "description": "Students shall be able to develop the skills to enable lifelong learning." }
+    ]
+  },
+  {
+    "subject": "Project Work (15ECP85)",
+    "semester": "VIII",
+    "co": [
+      { "no": "CO1", "description": "Students shall be able to appreciate how to conduct a literature survey or problem survey as a team." },
+      { "no": "CO2", "description": "Students shall be able to identify and analyze problem, choose a methodology as a team." },
+      { "no": "CO3", "description": "Students shall be able to carry out the project focusing on project management and work under constraint as a team." },
+      { "no": "CO4", "description": "Students shall be able to draft a project report as a team." },
+      { "no": "CO5", "description": "Students shall be able to communicate and present their idea regarding project in a professional manner as team." }
+    ]
+  },
+  {
+    "subject": "Seminar (15ECS86)",
+    "semester": "VIII",
+    "co": [
+      { "no": "CO1", "description": "The student shall be able to engage in exploring multiple facets and from multiple sources conducting rigorous investigations to address topics beyond their major subject." },
+      { "no": "CO2", "description": "The student shall be able to demonstrate the ability to think critically developing an orientation towards research." },
+      { "no": "CO3", "description": "The students are expected to improve their ability to draft reports undertaking composition of text in form and content independently in a professional manner, engaging in a rational investigation through original thinking." },
+      { "no": "CO4", "description": "The students shall be able to communicate their ideas to an audience professionally." },
+      { "no": "CO5", "description": "The students shall be able to learn independently, being able to refine and expand their abilities to synthesize arguments to be presented for critical review." }
+    ]
+  }
+
+
+
+
+
+      ],
+      "2014-2015":[
+  {
+    "subject": "DSP Algorithms and Architecture (10EC751)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Understand the basic DSP components that make it different and better than general-purpose processors." },
+      { "no": "CO2", "description": "Understand the features provided by various architectures in supporting common DSP tasks." },
+      { "no": "CO3", "description": "Identify the basic architectural elements and instruction set in DSP TMS320C54xx." },
+      { "no": "CO4", "description": "Understand the nuances in implementation of common DSP tasks on processors." },
+      { "no": "CO5", "description": "Give students a feel of DSP programming in TMS320C54xx." }
+    ]
+  },
+  {
+    "subject": "Image Processing (10EC763)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Interpret and analyze image formation and the role of human visual system in perception of gray and color image data." },
+      { "no": "CO2", "description": "Identify various image attributes based on relationship between pixels and understand importance of contrast enhancement." },
+      { "no": "CO3", "description": "Gain competency in spatial domain enhancement and filtering techniques." },
+      { "no": "CO4", "description": "Interpret, analyze and perform enhancement and restoration of a digital image in frequency domain using various image transforms and inverse transforms." },
+      { "no": "CO5", "description": "Understand basics of color vision, various color image models and the need for pseudo-color and full-color image processing." }
+    ]
+  },
+  {
+    "subject": "Computer Communication Networks (10EC71)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Familiar with the fundamentals of communication networks and switching techniques." },
+      { "no": "CO2", "description": "Able to design computer networking concepts in terms of wired and wireless communication." },
+      { "no": "CO3", "description": "Familiar with the OSI layers and TCP/IP model." },
+      { "no": "CO4", "description": "Able to design subnets using internet addresses and route packets through multiple networks." },
+      { "no": "CO5", "description": "Understand process-to-process delivery in transport layer and domain name system implementation in TCP/IP." }
+    ]
+  },
+  {
+    "subject": "Optical Fiber Communication (10EC72)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Familiar with the fundamentals of optical fiber communication." },
+      { "no": "CO2", "description": "Familiar with working principle of optical sources and detectors of various types and losses associated with each type." },
+      { "no": "CO3", "description": "Familiar with various fiber alignment losses, fiber connectors, splicers and couplers." },
+      { "no": "CO4", "description": "Familiar with the working of optical receivers, signal fidelity in fibers and detection schemes used." },
+      { "no": "CO5", "description": "Understand analog and digital fiber optic links, point-to-point links, noise in fiber links, WDM techniques, isolators, circulators, optical amplifiers and networks." }
+    ]
+  },
+  {
+    "subject": "Power Electronics (10EC73)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Know the control characteristics of different types of semiconductor devices." },
+      { "no": "CO2", "description": "Know the operation of controlled rectifiers and AC voltage controllers." },
+      { "no": "CO3", "description": "Know the operation of DC choppers and inverters." },
+      { "no": "CO4", "description": "Know the different commutation techniques." },
+      { "no": "CO5", "description": "Know the speed control of DC and AC motors." }
+    ]
+  },
+  {
+    "subject": "Embedded System Design (10EC74)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Understand the basic components of embedded systems." },
+      { "no": "CO2", "description": "Have sound knowledge on the design and development process of embedded systems." },
+      { "no": "CO3", "description": "Get core-level understanding of embedded system at the instruction set and register transfer level." },
+      { "no": "CO4", "description": "Get an overall view of storage elements and design memories necessary for embedded systems." },
+      { "no": "CO5", "description": "Have an overview of real-time operating systems and measures to perform performance analysis and optimization." }
+    ]
+  },
+  {
+    "subject": "VLSI Lab (10ECL77)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Write test bench code in Verilog for simulation." },
+      { "no": "CO2", "description": "Simulate digital circuits using Verilog." },
+      { "no": "CO3", "description": "Draw schematic of circuit using VLSI CAD tool." },
+      { "no": "CO4", "description": "Draw layout of circuit using VLSI CAD tool." },
+      { "no": "CO5", "description": "Design some basic amplifiers using CMOS transistors." }
+    ]
+  },
+  {
+    "subject": "Power Electronics Lab (10ECL78)",
+    "semester": "VII",
+    "co": [
+      { "no": "CO1", "description": "Conduct experiments." },
+      { "no": "CO2", "description": "Observation and calculation of results." },
+      { "no": "CO3", "description": "Understand the theoretical background of experiments." },
+      { "no": "CO4", "description": "Record experimental results." },
+      { "no": "CO5", "description": "Internal assessment." }
+    ]
+  },
+{
+    "subject": "Network Security (10EC832)",
+    "semester": "VIII",
+    "co": [
+      { "no": "CO1", "description": "Ability to define cryptography and basic principles of cryptography." },
+      { "no": "CO2", "description": "Ability to differentiate between public key and private key encryption." },
+      { "no": "CO3", "description": "Ability to define different encryption techniques." },
+      { "no": "CO4", "description": "Ability to explain security issues related to networking." },
+      { "no": "CO5", "description": "Ability to explain firewall design." }
+    ]
+  },
+  {
+    "subject": "GSM (10EC843)",
+    "semester": "VIII",
+    "co": [
+      { "no": "CO1", "description": "Familiar with the radio link features in GSM systems." },
+      { "no": "CO2", "description": "Familiar with the working principle of GSM logical channels and frame structure." },
+      { "no": "CO3", "description": "Familiar with various speech coding methods, speech code attributes, GSM messages, handover and data services." },
+      { "no": "CO4", "description": "Familiar with GSM security." },
+      { "no": "CO5", "description": "Able to understand planning and management of GSM networks." }
+    ]
+  },
+  {
+    "subject": "Wireless Communication (10EC81)",
+    "semester": "VIII",
+    "co": [
+      { "no": "CO1", "description": "Familiarize students with different cellular standards and types of wireless communication systems." },
+      { "no": "CO2", "description": "Familiar with the principle of cellular communication." },
+      { "no": "CO3", "description": "Familiar with GSM technology and CDMA technology." },
+      { "no": "CO4", "description": "Familiar with wireless modulation techniques, UWB, OFDM, path loss, and different types of diversity techniques." },
+      { "no": "CO5", "description": "Familiar with WiFi, PAN, MAN, and Bluetooth technologies." }
+    ]
+  },
+  {
+    "subject": "Seminar (10ECS86)",
+    "semester": "VIII",
+    "co": [
+      { "no": "CO1", "description": "Improve oral communication and presentation skills." },
+      { "no": "CO2", "description": "Select and integrate information from various sources, including electronic and print resources, community resources, and personally collected data to prepare the presentation." },
+      { "no": "CO3", "description": "Ask questions concerning language usage with confidence and seek effective help from reference sources." },
+      { "no": "CO4", "description": "Prepare standard documentation." }
+    ]
+  }
+
+
+
+
+      ]
     
     },
     "events": [
