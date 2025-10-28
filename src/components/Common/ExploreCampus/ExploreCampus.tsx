@@ -175,8 +175,12 @@ function EventContent({ description }: { description: EventDescriptionProps }) {
           {description.topTitle&&<h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">{description.topTitle}</h3>}
           {description.topDescription&&<p className="text-xl text-textGray">{description.topDescription}</p>}
         </div>
-        <div className="bg-white -mt-20" dangerouslySetInnerHTML={{ __html: description.remainingHTML }} />
-      </div>
+{description.remainingHTML && (
+  <div
+    className="bg-white"
+    dangerouslySetInnerHTML={{ __html: description.remainingHTML }}
+  />
+)}      </div>
     </div>
   );
 }
@@ -253,7 +257,7 @@ const categories: string[] = Array.from(
         isOpen,
       }}
     >
-      <section className="max-w-7xl xl:max-w-[75%] mx-auto text-[#1D1D1F] py-10">
+      <section className="max-w-7xl xl:max-w-[75%] mx-auto text-[#1D1D1F] py-16">
         {(title || description) && (
           <div className="text-center mb-10 lg:px-32">
             <h1 className="text-center leading-[1.1] text-[46px] mb-5 font-bold">{title}</h1>
@@ -320,7 +324,7 @@ const categories: string[] = Array.from(
                     {topDescription&&<p className="text-textGray leading-[1.3] line-clamp-3 text-[21px] mb-4">{topDescription}</p>}
                     <motion.button
                       onClick={() => openCard(index)}
-                      className="text-[#2997FF] inline-flex text-[21px] items-center font-medium text-sm"
+                      className="text-primary inline-flex text-[21px] items-center font-medium text-sm"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
@@ -369,13 +373,13 @@ const categories: string[] = Array.from(
                 <motion.div variants={contentVariants} className="!overflow-hidden">
                   <EventContent description={getEventDescription(filteredEvents[currentIndex])} />
                 </motion.div>
-                <motion.div variants={contentVariants} className="p-4 lg:px-20 mt-10">
-                  <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">Next Event</h1>
+                <motion.div variants={contentVariants} className="p-4 lg:px-20 ">
+                 <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200"> {parseEventContent(filteredEvents[(currentIndex + 1) % filteredEvents.length].content).topTitle&&"Next Event"}</h1>
                   <h1
                     onClick={goToNextCard}
-                    className="text-[#2997FF] inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]"
+                    className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]"
                   >
-                    {parseEventContent(filteredEvents[(currentIndex + 1) % filteredEvents.length].content).topTitle || "First Event"}
+                    {parseEventContent(filteredEvents[(currentIndex + 1) % filteredEvents.length].content).topTitle || "Next Event"}
                     <MdKeyboardArrowRight className="ml-1 mt-1 text-[20px] md:text-[25px]" />
                   </h1>
                 </motion.div>

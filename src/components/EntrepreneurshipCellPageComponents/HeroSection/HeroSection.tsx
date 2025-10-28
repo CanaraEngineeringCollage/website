@@ -30,7 +30,6 @@ const HeroSection = () => {
   </h2>
 </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-[100px] bg-gradient-to-t from-white via-white/85 to-transparent z-[10] md:hidden" />
     </section>
   );
 };

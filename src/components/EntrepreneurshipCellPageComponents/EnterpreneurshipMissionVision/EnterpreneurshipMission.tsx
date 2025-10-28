@@ -4,7 +4,7 @@
 
 export default function EnterpreneurshipMission() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 w-full mx-auto px-4 sm:px-6 md:px-12 lg:px-28 py-12 md:py-20 lg:py-28">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 w-full mx-auto px-4 sm:px-6 md:px-12 lg:px-28 py-12 md:py-20 lg:py-24">
   {/* Left Column */}
   <div className="flex flex-col gap-8 lg:gap-12">
     {/* Objectives */}

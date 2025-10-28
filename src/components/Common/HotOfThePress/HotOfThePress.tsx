@@ -160,6 +160,11 @@ const HotOfThePressCarousel = () => {
     date: new Date(event.eventDate).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }),
   });
 
+
+  if(events.length === 0){
+    return null
+  }
+
   return (
     <section className="lg:ml-20 xl:ml-60 md:py-0 md:pt-24 py-10">
       <div className="lg:flex lg:justify-between md:pb-14 pb-10">
@@ -232,7 +237,7 @@ const HotOfThePressCarousel = () => {
 
                   {/* <p className="text-textGray text-[17px] mb-1">{event.category}</p> */}
                   <h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">{topTitle}</h3>
-                  <button className="text-[#2997FF] inline-flex text-[17px] items-center hover:underline font-medium text-sm">
+                  <button className="text-primary inline-flex text-[17px] items-center hover:underline font-medium text-sm">
                     Read More <MdKeyboardArrowRight className="ml-1" />
                   </button>
                 </div>
@@ -298,7 +303,7 @@ const HotOfThePressCarousel = () => {
                 <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">Next Event</h1>
                 <h1
                   onClick={goToNextCard}
-                  className="text-[#2997FF] inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]"
+                  className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]"
                 >
                   {parseEventContent(sortedEvents[(currentIndex + 1) % sortedEvents.length].content).topTitle || "First Event"}
                   <MdKeyboardArrowRight className="ml-1 mt-1 text-[20px] md:text-[25px]" />

@@ -52,7 +52,7 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
   };
 
   return (
-    <section className="lg:ml-16 py-24 xl:py-36 xl:ml-60">
+    <section className="lg:ml-16 py-24 xl:py-24 xl:ml-60">
       {title && (
         <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl leading-[1.2] font-bold text-center text-[#1D1D1F] pb-6 xl:pb-22">{title}</h1>
       )}

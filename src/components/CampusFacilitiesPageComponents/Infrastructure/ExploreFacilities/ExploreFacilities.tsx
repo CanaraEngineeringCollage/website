@@ -221,7 +221,7 @@ const ExploreFacilities = () => {
                 </div>
                 <div className="p-8 text-center bg-white rounded-b-2xl ">
                   <h2 className="text-[27px] font-bold xl:px-5 text-black mb-2 line-clamp-2">{item.title}</h2>
-                  <span className="text-[#2997FF] inline-flex text-[17px] items-center hover:underline font-medium text-sm">
+                  <span className="text-primary inline-flex text-[17px] items-center hover:underline font-medium text-sm">
                     Read More <MdKeyboardArrowRight className="ml-1" />
                   </span>
                 </div>
@@ -271,7 +271,7 @@ const ExploreFacilities = () => {
                 </motion.div>
                 <motion.div variants={contentVariants} className="p-4 lg:px-20 mt-10">
                   <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">NextUp</h1>
-                  <h1 onClick={goToNextCard} className="text-[#539dd5] inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]">
+                  <h1 onClick={goToNextCard} className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]">
                     {pressData[(currentIndex + 1) % pressData.length]?.title || "First Card"}
                     <MdKeyboardArrowRightIcon className="ml-1 mt-1 text-[20px] md:text-[25px]" />
                   </h1>
