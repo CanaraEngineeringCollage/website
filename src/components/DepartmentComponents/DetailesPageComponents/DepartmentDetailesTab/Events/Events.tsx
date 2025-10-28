@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { IconX } from "@tabler/icons-react";
+import { useOutsideClick } from "@/hooks/use-outside-click";
 
 // 🔹 Modal animations
 const backdropVariants = {
@@ -38,6 +39,7 @@ const ExploreCampus = ({ departmentName,events }: { departmentName: string,event
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const modalRef = useRef<HTMLDivElement>(null);
+ 
 
   // 🔹 Fetch & Filter Events
 
@@ -56,6 +58,9 @@ const ExploreCampus = ({ departmentName,events }: { departmentName: string,event
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [selectedEvent]);
+
+
+  useOutsideClick(modalRef, () => { if (selectedEvent) closeModal() });
 
   return (
     <section className="py-10 px-4 text-[#1D1D1F]">
@@ -88,6 +93,7 @@ const ExploreCampus = ({ departmentName,events }: { departmentName: string,event
             variants={backdropVariants}
             initial="hidden"
             animate="visible"
+            
             exit="exit"
           >
             {/* Backdrop */}

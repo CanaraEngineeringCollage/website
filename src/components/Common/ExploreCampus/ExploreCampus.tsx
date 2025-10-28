@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect, createContext } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { IconX } from "@tabler/icons-react";
 import { AnimatePresence, motion } from "framer-motion";
-import { useOutsideClick } from "@/hooks/use-outside-click"; 
+import { useOutsideClick } from "@/hooks/use-outside-click";
 import { parse } from "node-html-parser";
 
 interface CampusEvent {
@@ -65,9 +65,6 @@ const contentVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.1 } },
 };
 
-
-
-
 const dummyStudentAchievements: CampusEvent[] = [
   {
     id: 1,
@@ -96,7 +93,7 @@ const dummyStudentAchievements: CampusEvent[] = [
       <img src="/mediaPageImages/VTU - Rank Holders.jpeg" />
     `,
   },
-   {
+  {
     id: 4,
     category: "Student Achievement",
     eventDate: "",
@@ -105,7 +102,7 @@ const dummyStudentAchievements: CampusEvent[] = [
       <img src="/mediaPageImages/Ui path Student Developer.jpeg" alt="Team CEC Robotics" />
     `,
   },
-   {
+  {
     id: 5,
     category: "Student Achievement",
     eventDate: "",
@@ -147,7 +144,8 @@ const parseEventContent = (html: string) => {
   const src = firstImageEl?.getAttribute("src") || "";
   if (firstImageEl) firstImageEl.remove();
 
-  let remainingHTML = root.toString()
+  let remainingHTML = root
+    .toString()
     .replace(/\n|\r/g, "")
     .replace(/>\s+</g, "><")
     .replace(/<[^/>]+>\s*<\/[^>]+>/g, "")
@@ -166,30 +164,26 @@ function EventContent({ description }: { description: EventDescriptionProps }) {
           loading="lazy"
           width={1000}
           height={700}
-          className="object-cover overflow-hidden rounded-t-2xl w-full lg:h-[500px] h-[400px] mb-10"
+          className="object-cover overflow-hidden rounded-t-2xl w-full h-full mb-10"
         />
       )}
       <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
         <div>
-         {description.date&& <p className="text-[17px] text-textGray uppercase font-bold mb-4">{new Date(description.date).toLocaleDateString("en-GB")}</p>}
-          {description.topTitle&&<h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">{description.topTitle}</h3>}
-          {description.topDescription&&<p className="text-xl text-textGray">{description.topDescription}</p>}
+          {description.date && (
+            <p className="text-[17px] text-textGray uppercase font-bold ">{new Date(description.date).toLocaleDateString("en-GB")}</p>
+          )}
+          {description.topTitle && <h3 className="text-[27px] font-semibold font-sans text-black my-3 line-clamp-2">{description.topTitle}</h3>}
+          {description.topDescription && <p className="text-xl text-textGray">{description.topDescription}</p>}
         </div>
-{description.remainingHTML && (
-  <div
-    className="bg-white"
-    dangerouslySetInnerHTML={{ __html: description.remainingHTML }}
-  />
-)}      </div>
+        {description.remainingHTML && <div className={`bg-white ${description.topDescription&&description.topTitle&&description.src&&"-mt-20"} ${description.topDescription&&"-mt-10"} ${description.topTitle&&"-mt-10"}   `} dangerouslySetInnerHTML={{ __html: description.remainingHTML }} />}{" "}
+      </div>
     </div>
   );
 }
 
 const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEvents = [], title, description }) => {
   const [campusEvents, setCampusEvents] = useState<CampusEvent[]>(initialEvents);
-const categories: string[] = Array.from(
-  new Set(campusEvents.map(event => event.category))
-);
+  const categories: string[] = Array.from(new Set(campusEvents.map((event) => event.category)));
   const [activeCategory, setActiveCategory] = useState<string>("Student Achievement");
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -201,7 +195,7 @@ const categories: string[] = Array.from(
       const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz`);
       if (!res.ok) throw new Error("Failed to fetch buzz");
       const data = await res.json();
-     setCampusEvents(prev => [...dummyStudentAchievements, ...data]);
+      setCampusEvents((prev) => [...dummyStudentAchievements, ...data]);
     } catch (err) {
       console.error(err);
     }
@@ -214,7 +208,7 @@ const categories: string[] = Array.from(
   // Sort by date descending
   const sortedEvents = [...campusEvents].sort((a, b) => new Date(b.eventDate).getTime() - new Date(a.eventDate).getTime());
 
-  const filteredEvents = sortedEvents.filter(event => activeCategory === "All" ? true : event.category === activeCategory);
+  const filteredEvents = sortedEvents.filter((event) => (activeCategory === "All" ? true : event.category === activeCategory));
   const eventsToShow = showAll ? filteredEvents : filteredEvents.slice(0, 5);
 
   const handleCardClose = (index: number) => {
@@ -266,40 +260,41 @@ const categories: string[] = Array.from(
         )}
 
         {/* Category Filters */}
-     <div className="pb-5 lg:pb-10">
-  {/* Mobile Dropdown */}
-  <div className="flex lg:hidden justify-between items-center gap-2 md:hidden">
-
-
-    <select
-      value={activeCategory}
-      onChange={(e) => { setActiveCategory(e.target.value); setShowAll(false); }}
-      className="border rounded-xl px-3 py-2 text-base text-gray-700 focus:outline-none"
-    >
-   
-      {categories.map((category, index) => (
-        <option key={index} value={category}>
-          {category}
-        </option>
-      ))}
-    </select>
-  </div>
-
-  {/* Desktop View */}
-    <div className="hidden lg:flex justify-between items-center pb-5 lg:pb-10 flex-wrap gap-2">
-         
-          {categories.map((category, index) => (
-            <h3
-              onClick={() => { setActiveCategory(category); setShowAll(false); }}
-              className={`cursor-pointer ${category === activeCategory ? "text-black font-bold" : "text-textGray"} text-[18px]`}
-              key={index}
+        <div className="pb-5 lg:pb-10">
+          {/* Mobile Dropdown */}
+          <div className="flex lg:hidden justify-between items-center gap-2 md:hidden">
+            <select
+              value={activeCategory}
+              onChange={(e) => {
+                setActiveCategory(e.target.value);
+                setShowAll(false);
+              }}
+              className="border rounded-xl px-3 py-2 text-base text-gray-700 focus:outline-none"
             >
-              {category}
-            </h3>
-          ))}
-        </div>
-</div>
+              {categories.map((category, index) => (
+                <option key={index} value={category}>
+                  {category}
+                </option>
+              ))}
+            </select>
+          </div>
 
+          {/* Desktop View */}
+          <div className="hidden lg:flex justify-between items-center pb-5 lg:pb-10 flex-wrap gap-2">
+            {categories.map((category, index) => (
+              <h3
+                onClick={() => {
+                  setActiveCategory(category);
+                  setShowAll(false);
+                }}
+                className={`cursor-pointer ${category === activeCategory ? "text-black font-bold" : "text-textGray"} text-[18px]`}
+                key={index}
+              >
+                {category}
+              </h3>
+            ))}
+          </div>
+        </div>
 
         {/* Event Cards */}
         <div className="flex flex-col gap-8">
@@ -307,7 +302,11 @@ const categories: string[] = Array.from(
             eventsToShow.map((event, index) => {
               const { src, topTitle, topDescription } = parseEventContent(event.content);
               return (
-                <div key={event.id} onClick={() => openCard(index)} className="flex cursor-pointer flex-col md:flex-row items-center gap-6 bg-white rounded-2xl shadow-md">
+                <div
+                  key={event.id}
+                  onClick={() => openCard(index)}
+                  className="flex cursor-pointer flex-col md:flex-row items-center gap-6 bg-white rounded-2xl shadow-md"
+                >
                   <div className="flex-shrink-0 w-full md:w-[40%]">
                     <Image
                       src={src || event.content}
@@ -318,10 +317,12 @@ const categories: string[] = Array.from(
                     />
                   </div>
                   <div className="flex flex-col justify-center w-full md:w-1/2 p-6 lg:p-10">
-                    {event.eventDate&&<p className="text-[17px] text-textGray uppercase font-bold mb-4">{new Date(event.eventDate).toLocaleDateString("en-GB")}</p>}
-                    {event.eventName&&<p className="text-textGray text-[17px] mb-3">{event.eventName}</p>}
-                    {topTitle&&<h2 className="text-[31px] leading-[1.1] font-bold text-[#1D1D1F] mb-2">{topTitle}</h2>}
-                    {topDescription&&<p className="text-textGray leading-[1.3] line-clamp-3 text-[21px] mb-4">{topDescription}</p>}
+                    {event.eventDate && (
+                      <p className="text-[17px] text-textGray uppercase font-bold mb-4">{new Date(event.eventDate).toLocaleDateString("en-GB")}</p>
+                    )}
+                    {event.eventName && <p className="text-textGray text-[17px] mb-3">{event.eventName}</p>}
+                    {topTitle && <h2 className="text-[31px] leading-[1.1] font-bold text-[#1D1D1F] mb-2">{topTitle}</h2>}
+                    {topDescription && <p className="text-textGray leading-[1.3] line-clamp-3 text-[21px] mb-4">{topDescription}</p>}
                     <motion.button
                       onClick={() => openCard(index)}
                       className="text-primary inline-flex text-[21px] items-center font-medium text-sm"
@@ -342,10 +343,7 @@ const categories: string[] = Array.from(
         {/* Show More Button */}
         {!showAll && filteredEvents.length > 5 && (
           <div className="flex justify-center mt-10">
-            <button
-              className="bg-[#eff1f6] text-black px-5 py-2 cursor-pointer rounded-3xl"
-              onClick={() => setShowAll(true)}
-            >
+            <button className="bg-[#eff1f6] text-black px-5 py-2 cursor-pointer rounded-3xl" onClick={() => setShowAll(true)}>
               Explore More Campus Stories
             </button>
           </div>
@@ -374,11 +372,11 @@ const categories: string[] = Array.from(
                   <EventContent description={getEventDescription(filteredEvents[currentIndex])} />
                 </motion.div>
                 <motion.div variants={contentVariants} className="p-4 lg:px-20 ">
-                 <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200"> {parseEventContent(filteredEvents[(currentIndex + 1) % filteredEvents.length].content).topTitle&&"Next Event"}</h1>
-                  <h1
-                    onClick={goToNextCard}
-                    className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]"
-                  >
+                  <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">
+                    {" "}
+                    {parseEventContent(filteredEvents[(currentIndex + 1) % filteredEvents.length].content).topTitle && "Next Event"}
+                  </h1>
+                  <h1 onClick={goToNextCard} className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]">
                     {parseEventContent(filteredEvents[(currentIndex + 1) % filteredEvents.length].content).topTitle || "Next Event"}
                     <MdKeyboardArrowRight className="ml-1 mt-1 text-[20px] md:text-[25px]" />
                   </h1>
@@ -393,3 +391,5 @@ const categories: string[] = Array.from(
 };
 
 export default ExploreCampus;
+
+
