@@ -16,7 +16,7 @@ const quickLinks = [
   { data: "VTU Website", links: "https://vtu.ac.in/" },
   { data: "AICTE Website", links: "https://www.aicte.gov.in/" },
   // { data: "AICTE Feedback Portal", links: "#" },
-  { data: "Vidya Lakshmi Portal", links: "https://www.vidyalakshmi.co.in/Students/login#studentlogin" },
+  // { data: "Vidya Lakshmi Portal", links: "https://www.vidyalakshmi.co.in/Students/login#studentlogin" },
 ];
 
 const ourCollege = [
@@ -33,7 +33,7 @@ const ourCollege = [
 const academics = [
   { data: "Admissions", links: "/admission" },
   // { data: "Courses & Programs", links: "#" },
-  { data: "Syllabus", links: "#" },
+  // { data: "Syllabus", links: "#" },
   { data: "Academic Calendar", links: "https://www.canaraengineering.in/download/calender.pdf" },
   // { data: "Examinations & Timetables", links: "/academics/examination-records" },
   { data: "Circulars", links: "https://vtu.ac.in/en/#1554889506437-64c3b5d5-d21e" },
