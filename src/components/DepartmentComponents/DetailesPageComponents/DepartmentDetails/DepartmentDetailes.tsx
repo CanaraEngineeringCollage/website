@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import grievanceRedressalCell from "../../../../utils/grievanceData/grievanceData.json";
 import { useParams } from "next/navigation";
 import departments from "@/lib/departments.json";
@@ -17,6 +17,7 @@ import Publications from "../DepartmentDetailesTab/Publications/Publications";
 import Events from "../DepartmentDetailesTab/Events/Events";
 import Gallery from "../DepartmentDetailesTab/Gallery/Gallery";
 import Magazines from "../DepartmentDetailesTab/Magazines/Magazines";
+import CareerProspects from "../CareerProspects/CareerProspects";
 
 interface Qualification {
   degree: string;
@@ -54,29 +55,70 @@ interface CouncilMember {
 
 // Props interface for the component
 interface DepartmentSectionProps {
-  faculties: CouncilMember[];
+  departmentName: string;
 }
 
-const DepartmentDetailes = ({ faculties }: DepartmentSectionProps) => {
+const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   const { slug } = useParams();
+    const [events, setEvents] = useState<Event[]>([]);
 
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [selectedSection, setSelectedSection] = useState<string>("Department Profile");
- 
+  
+   const [facultyData, setFacultyData] = useState<Faculty[]>([]);
+  const [loading, setLoading] = useState(true);
+
+
+ const fetchEvents = async () => {
+  try {
+    setLoading(true);
+
+    // Use the 'all=true' param to fetch all events for the category
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_API_URL}/events?category=${encodeURIComponent(
+        departmentName
+      )}&all=true`
+    );
+
+    if (!response.ok) throw new Error("Failed to fetch events");
+
+    const data = await response.json();
+
+    // Sort by date descending
+    const sorted = data.data.sort(
+      (a: any, b: any) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    );
+
+    setEvents(sorted);
+  } catch (err: any) {
+    console.error(err);
+  } finally {
+    setLoading(false);
+  }
+};
+
+useEffect(() => {
+  fetchEvents();
+}, [departmentName]);
+
+  
+
+  
   
   const department = departments.find((dept) => dept.slug === slug);
   const departmentMenuItems = [
   "Department Profile",
-  "Organisation Structure",
-  "Head of Department",
+    ...(department?.name === "Artificial Intelligence & Machine Learning" ? ["Career Prospects"] : []),
+   ...(department?.name!=="Mechanical Engineering"?["Organisation Structure"]:[]),
+  "Head of the Department",
   "Faculty & Staff",
-  "Academic Programs",
-  "PEO & PO-PSO",
+  "Academic Programmes",
+  ...(department?.name==="Science & Humanities"?["PO"]:["PEO & PO-PSO"]),
   "Course Outcomes (CO)",
   "Facilities",
-  "Student Achievement",
+  "Student Achievements",
   ...(department?.name !== "Information Science & Engineering" ? ["Research & Product Development"] : []),
-  ...(department?.name === "Information Science & Engineering" ? ["Publications"] : []),
+  ...(department?.name === "Information Science & Engineering" || department?.name === "Mechanical Engineering"? ["Publications"] : []),
   "Magazines & Newsletters",
   "Events",
   "Gallery",
@@ -108,23 +150,26 @@ const DepartmentDetailes = ({ faculties }: DepartmentSectionProps) => {
             </div>
           </div>
           <div className="col-span-1"></div>
-          <div className="col-span-8 md:h-[130vh] scrollable overflow-y-auto  pr-2">
+          <div className="col-span-8 max-h-[50vh] md:max-h-[130vh] scrollable overflow-y-auto  pr-2">
             {selectedSection === "Department Profile" && <DepartmentProfile keyPoints={department?.keyPractices} data={department?.description} />}
             {selectedSection === "Organisation Structure" && department?.organisation && <Organaisation data={department?.organisation}/>}
-            {selectedSection === "Head of Department" && <Hod data={department?.depatmentHead} />}
-            {selectedSection === "Faculty & Staff" && <Faculty datam={faculties}/>}
-            {selectedSection === "Academic Programs" && department?.academicsProgram && <Academic data={department.academicsProgram} />}
+            {selectedSection === "Head of the Department" && <Hod data={department?.depatmentHead} />}
+            {selectedSection === "Faculty & Staff" && <Faculty deptName={department?.name} datam={facultyData}/>}
+            {selectedSection === "Academic Programmes" && department?.academicsProgram && <Academic data={department.academicsProgram} />}
+            {selectedSection === "PO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
             {selectedSection === "PEO & PO-PSO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
-            {selectedSection === "Course Outcomes (CO)" && <CourseOutCome />}
-            {selectedSection === "Facilities" && department?.facilities && <Facilities data={department?.facilities} />}
-            {selectedSection === "Student Achievement" && department?.studentAcheivemtents && (
+            {selectedSection === "Course Outcomes (CO)" && <CourseOutCome  deptName={department?.name} staticData={department?.courseOutcome} />}
+            {selectedSection === "Facilities" && department?.facilities && <Facilities deptName={department?.name} data={department?.facilities} />}
+            {selectedSection === "Student Achievements" && department?.studentAcheivemtents && (
               <StudentAchievement data={department?.studentAcheivemtents} />
             )}
-            {selectedSection === "Research & Product Development" && department?.research && <Research data={department?.research}/>}
+            {selectedSection === "Research & Product Development" && department?.research && <Research deptName={department?.name} data={department?.research}/>}
             {selectedSection === "Publications" && department?.publications &&<Publications data={department?.publications}/>}
             {selectedSection === "Magazines & Newsletters" && department?.magazines && <Magazines data={department?.magazines}/>}
-            {selectedSection === "Events" && <Events />}
-            {selectedSection === "Gallery" && <Gallery />}
+            {selectedSection === "Events" && <Events events={events} departmentName={departmentName} />}
+            {selectedSection === "Gallery" && <Gallery data={department?.gallery}/>}
+            {selectedSection === "Career Prospects" && <CareerProspects data={department?.careerProspects[0]}/>}
+
           </div>
         </div>
       </div>

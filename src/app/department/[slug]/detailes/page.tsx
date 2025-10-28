@@ -61,24 +61,15 @@ interface Faculty {
   employmentType: string;
   qualifications: Qualification[];
 }
-const Page = async ({ params }: { params: { slug: string } }) => {
+const Page =  ({ params }: { params: { slug: string } }) => {
   const department = departments.find((dept) => dept.slug === params.slug);
   if (!department) return notFound();
 
-  let facultyDataFetched: Faculty[] = [];
-  try {
-    const res = await fetch("https://canaraapi.megamind.studio/faculty");
-    if (!res.ok) throw new Error("Failed to fetch faculty data");
-    const data: Faculty[] = await res.json();
-
-    facultyDataFetched = data.filter(f => f.department === department.name).slice(0,10);
-  } catch (error) {
-    console.error("Error fetching faculty data:", error);
-  }
+  
 
   return (
     <section>
-      <DepartmentDetailes faculties={facultyDataFetched} />
+      <DepartmentDetailes  departmentName={department.name} />
     </section>
   );
 };

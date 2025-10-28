@@ -29,9 +29,9 @@ const titles = ["Home", "Research Center", "Publications", "Grants","IPR/Patents
     <>
       <section className="py-10 xl:py-20 text-[#1D1D1F] overflow-hidden">
         <div className="lg2:mx-24 mx-5">
-          <h1 className="text-[30px] lg:text-[54px]  font-bold pb-1 lg:pb-10 text-[#1D1D1F]">Research</h1>
+          <h1 className="text-[30px] lg:text-[54px]  font-bold pb-1 lg:pb-10 text-[#1D1D1F]">Research at CEC</h1>
           <div className="grid grid-cols-1 gap-3 md:gap-0 md:grid-cols-12 mt-10">
-            <div className="col-span-3 sticky top-32 self-start mb-10 md:mb-0">
+            <div className="col-span-3 sticky top-20 md:top-32 self-start  md:mb-0">
               <div className="sticky top-20 h-fit">
               {titles?.map((title, index) => (
                 <>
@@ -61,7 +61,7 @@ const titles = ["Home", "Research Center", "Publications", "Grants","IPR/Patents
             </div>
             </div>
             <div className="col-span-1"></div>
-            <div className={`col-span-8 ${selectedIndex != 2 && "h-[90vh]"} scrollable overflow-y-auto pr-2`}>
+            <div className={`col-span-8 ${selectedIndex != 2 && "max-h-[50vh] md:max-h-[90vh]"} scrollable overflow-y-auto pr-2`}>
               {selectedIndex === 0 && <Home />}
               {selectedIndex === 1 && <ResearchCenter />}
               {selectedIndex === 2 && <Publications />}

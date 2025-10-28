@@ -60,9 +60,9 @@ const HighlightsSection = () => {
     },
     {
       id: 3,
-      img: "/trainingPlacementPageImages/verifone.png",
-      title: "Dream Offers",
-      company: "Verifone",
+      img: "/trainingPlacementPageImages/verifone1.png",
+      title: "Verifone",
+      company: "",
     },
   ];
 
@@ -85,7 +85,7 @@ const HighlightsSection = () => {
             {
               title: "30%",
               subtitle: "Higher Rate of placement",
-              description: "as compared to neighbouring Engineering colleges",
+              description: "Recognized for strong industry-academia connect leading to higher placements",
               link: true,
             },
           ].map((item, index) => (
@@ -151,7 +151,7 @@ const HighlightsSection = () => {
           <div className="flex flex-col justify-center items-center rounded-4xl p-6 bg-white mt-5 lg:mt-7">
             <h1 className=" text-[45px] lg:text-[60px] font-[900] text-black text-center">220+</h1>
             <h2 className="font-bold text-center text-[20px] text-black">Companies Visited on Campus</h2>
-            <p className="text-xl text-center">Offered to Top 5% of Student Candidates</p>
+            <p className="text-xl text-center">Consistently recruiting across all branches of engineering</p>
             {/* <p className="text-[17px] mt-3 text-[#0066CC] flex items-center">
               View Profile
               <MdKeyboardArrowRight className="ml-1 text-xl" />

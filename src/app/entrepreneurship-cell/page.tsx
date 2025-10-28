@@ -34,16 +34,16 @@ const page = () => {
       <section>
         <Activities />
       </section>
-      <section className="pb-5">
+      <section className="pb-20">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           youtubeUrl="rk5KixNpftM"
           thumbnail=" youtubeThumbnails/Entrepreneurship-Thumbnail.webp"
         />
       </section>
-      <section className="px-6 md:px-12 lg:pl-16 lg:px-0 xl:px-0">
+      {/* <section className="px-6 md:px-12 lg:pl-16 lg:px-0 xl:px-0">
         <FunctionDepartment title="Cell Objectives" functionDeprtmentData={data} />
-      </section>
+      </section> */}
       {/* <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">
         <HotOfThePress />
       </section> */}

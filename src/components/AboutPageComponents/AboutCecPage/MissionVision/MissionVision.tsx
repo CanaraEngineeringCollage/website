@@ -10,7 +10,7 @@ export default function MissionVision() {
         <div className="bg-white col-span-7 overflow-hidden rounded-2xl shadow p-10 lg:p-18 space-y-6">
           <h2 className="text-3xl lg:text-5xl text-center lg:text-start font-bold text-[#1D1D1F] mb-16">Our Mission</h2>
 
-          <div className="grid grid-rows-3 gap-2 h-full pb-16">
+       <div className="flex flex-col gap-6  items-center justify-center">
 
             {/* Item 1 */}
             <div className="flex gap-10 flex-col lg:flex-row text-center lg:text-start items-center">

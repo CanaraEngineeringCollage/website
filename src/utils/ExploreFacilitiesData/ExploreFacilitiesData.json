@@ -1,45 +1,45 @@
 [
   {
     "id": 1,
-    "image": "/trainingPlacementPageImages/exploreFacilities/Soft Skills & Aptitude Training.jpg",
+    "image": "/trainingPlacementPageImages/exploreFacilities/softSkill.webp",
     "title": "Soft Skills & Aptitude Training",
-    "desc": "We conduct regular training sessions covering communication skills, logical reasoning, group discussions, and personal interviews — all designed to help students navigate recruitment processes with confidence.",
+    "desc": "We provide structured training sessions that focus on communication, logical reasoning, group discussions, and personal interviews. These sessions are designed to help students approach recruitment processes with clarity and confidence. Beyond interview preparation, the training also sharpens critical thinking, teamwork, and problem-solving abilities, ensuring students are ready for both campus placements and their professional careers.",
     "link": "#"
   },
   {
     "id": 2,
-    "image": "/trainingPlacementPageImages/exploreFacilities/Industry-Oriented Technical Training.webp",
+    "image": "/trainingPlacementPageImages/exploreFacilities/industry.webp",
     "title": "Industry-Oriented Technical Training",
-    "desc": "Workshops, coding bootcamps, and domain-specific certification programs (AI/ML, Data Analytics, Cybersecurity, Core Engineering, etc.) are organized in collaboration with industry professionals to bridge the gap between academics and industry requirements.",
+    "desc": "We organize workshops, coding bootcamps, and domain-specific certification programs in areas such as AI/ML, Data Analytics, Cybersecurity, and Core Engineering. Conducted in collaboration with industry experts, these programs align academic learning with evolving industry requirements, ensuring students graduate with practical, job-ready skills.",
     "link": "#"
   },
   {
     "id": 3,
     "image": "/trainingPlacementPageImages/exploreFacilities/Internship & Live Project Facilitation.webp",
     "title": "Internship & Live Project Facilitation",
-    "desc": "We actively connect students to internships and live projects across various domains, helping them gain hands-on experience, apply classroom knowledge, and build a strong professional portfolio.",
+    "desc": "We connect students with internships and live projects across diverse domains, enabling them to apply classroom knowledge in real-world settings. These opportunities provide hands-on experience, industry exposure, and the chance to build a strong professional portfolio, laying the foundation for successful careers.",
     "link": "#"
   },
   {
     "id": 4,
-    "image": "/trainingPlacementPageImages/exploreFacilities/MoUs & Industry Collaborations.webp",
+    "image": "/trainingPlacementPageImages/exploreFacilities/mous.webp",
     "title": "MoUs & Industry Collaborations",
 
-    "desc": "Through strategic partnerships and MoUs with leading companies, we facilitate exclusive training programs, placement opportunities, guest lectures, and curriculum inputs to align with current industry trends.",
+    "desc": "We have established strategic partnerships and MoUs with leading organizations to bring industry closer to the classroom. These collaborations provide students with exclusive training programs, enhanced placement opportunities, expert guest lectures, and valuable curriculum inputs ensuring alignment with current and emerging industry trends ",
     "link": "#"
   },
   {
     "id": 5,
-    "image": "/trainingPlacementPageImages/exploreFacilities/Alumni Interaction & Mentorship Programs.webp",
+    "image": "/trainingPlacementPageImages/exploreFacilities/alumni.webp",
     "title": "Alumni Interaction & Mentorship Programs",
-    "desc": "Regular sessions with our alumni working at top-tier companies give students valuable insights into real-world challenges, interview experiences, career planning, and workplace expectations.",
+    "desc": "Regular interactions with our alumni, now working in leading organizations worldwide, provide students with practical insights into industry expectations, interview preparation, career planning, and workplace culture. These mentorship programs create a strong support network that inspires students and guides them toward successful careers.",
     "link": "#"
   },
   {
     "id": 6,
     "image": "/trainingPlacementPageImages/exploreFacilities/Pre-Placement & Company-Specific Training.webp",
     "title": "Pre-Placement & Company-Specific Training",
-    "desc": "We offer targeted preparation for companies like TCS, Infosys, Wipro, Accenture, and others. This includes mock aptitude tests, coding rounds, technical interviews, resume reviews, and HR-tech training.",
+    "desc": "We provide focused preparation for leading recruiters such as TCS, Infosys, Wipro, Accenture, and others. Training includes mock aptitude tests, coding assessments, technical interviews, resume building, and HR-focused sessions ensuring students are well-prepared to meet the specific requirements of each company.",
     "link": "#"
   },
   {
@@ -47,21 +47,21 @@
     "image": "/trainingPlacementPageImages/exploreFacilities/Full-Length Mock Placement Drives.webp",
     "title": "Full-Length Mock Placement Drives",
 
-    "desc": "We simulate the complete recruitment process — from aptitude tests and group discussions to technical and HR interviews — under real-time conditions to prepare students for the high-pressure environment of actual campus drives.",
+    "desc": "We replicate the entire recruitment process from aptitude tests and group discussions to technical and HR interviews under real-time conditions. This immersive experience equips students to confidently handle the high-pressure environment of actual campus placements ",
     "link": "#"
   },
   {
     "id": 8,
     "image": "/trainingPlacementPageImages/exploreFacilities/One-on-One Mock Interviews.webp",
     "title": "One-on-One Mock Interviews",
-    "desc": "Personalized mock interviews with internal and external evaluators help students fine-tune their responses, improve articulation, and gain detailed feedback on technical and behavioral performance.",
+    "desc": "Personalized sessions with internal and external evaluators help students refine their responses, enhance articulation, and receive detailed feedback on both technical and behavioral performance. These sessions build confidence and readiness for actual placement interviews.",
     "link": "#"
   },
   {
     "id": 9,
-    "image": "/trainingPlacementPageImages/exploreFacilities/Industry Talks & Leadership Connects.webp",
+    "image": "/trainingPlacementPageImages/exploreFacilities/industryTalk.webp",
     "title": "Industry Talks & Leadership Connects",
-    "desc": "We regularly invite industry leaders, hiring managers, and startup founders for interactive sessions on hiring trends, future skill requirements, and innovation — giving students a pulse on what recruiters are really looking for.",
+    "desc": "We host interactive sessions with industry leaders, hiring managers, and startup founders to provide students with insights into hiring trends, emerging skills, and workplace innovation. These sessions help students understand recruiter expectations and stay ahead in a rapidly evolving industry landscape.",
     "link": "#"
   }
 ]
