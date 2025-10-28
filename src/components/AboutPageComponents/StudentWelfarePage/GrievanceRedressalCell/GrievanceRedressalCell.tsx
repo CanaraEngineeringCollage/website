@@ -186,7 +186,7 @@ const GrievanceRedressalCell = () => {
 
                   {/* Bullet Points */}
                   {"points" in item && item.points && (
-                    <ul className="list-decimal mt-5 pl-5  md:text-lg  text-[14px] leading-7  text-textGray">
+                    <ul className="list-decimal mt-5 pl-7  md:text-lg  text-[14px] leading-7  text-textGray">
                       {item.points.map((point: string, j: number) => (
                         <li key={j} className="pb-2">
                           {point}
