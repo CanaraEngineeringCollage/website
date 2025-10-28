@@ -207,6 +207,7 @@ const Footer: FC = () => {
           </div>
         </div>
       </div>
+      
 
       {/* Mobile Version */}
       <div className="lg:hidden px-6">
