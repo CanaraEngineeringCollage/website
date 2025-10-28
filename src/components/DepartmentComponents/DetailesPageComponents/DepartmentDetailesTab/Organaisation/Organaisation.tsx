@@ -19,7 +19,7 @@ interface Organaisation {
 
 const Organaisation = ({ data }: { data: Organaisation }) => {
   return (
-    <div className=" text-[#86868B] text-[17px]">
+    <div className=" text-textGray text-[17px]">
     { data.title&& <h2 className="text-2xl font-bold mb-4">{data.title}</h2>}
       <img
         src={data.imageUrl}

@@ -103,7 +103,7 @@ export default function EmpoweringFutures() {
             <h2 className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold leading-tight">
               Empowering Futures
             </h2>
-            <p className="mt-4 text-lg text-gray-600 max-w-xl">
+            <p className="mt-4 text-lg textGray max-w-xl">
               Discover exceptional placement opportunities and industry connections that pave the way for success at Canara Engineering College.
             </p>
           </div>

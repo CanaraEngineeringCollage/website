@@ -15,38 +15,38 @@ const pathname = usePathname()
   return (
     <>
      <div className="hidden nav-items lg:flex text-secondary lg2 flex-row space-x-3  xl:space-x-6">
-      <div className="cursor-pointer  pt-[8px] text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
+      <div className="cursor-pointer   text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
         <About />
       </div>
-      <div className="cursor-pointer pt-[8px] text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
+      <div className="cursor-pointer  text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
        <Suspense fallback={null}><Academics /></Suspense>
         
       </div>
       <div
         id="admission"
-        className="cursor-pointer opacity-80  gap-2 text-[#2884CA] pt-[8px]  text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
+        className="cursor-pointer opacity-80  gap-2 text-[#2884CA]   text-base hover:text-[#005580] xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
       >
-        <Link href={"/admission"} className={`font-poppins ${(pathname==="/admission")?'border-b-2 border-[#005580] text-[#005580]':" text-[#2884CA]"} py-1.5 `}>
+        <Link href={"/admission"} className={`font-poppins ${(pathname==="/admission")?'border-b-2 border-[#005580] text-[#005580]':" text-[#2884CA] hover:text-[#005580]"} py-1.5 `}>
           Admissions
         </Link>  
       </div>
       <div
         id="life"
-        className="cursor-pointer pt-[8px] group text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
+        className="cursor-pointer  group text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
       >
         <Life />
       </div>
       <Link
         id="placement"
-        className="pt-[8px] opacity-80 text-[#2884CA]   font-poppins text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
+        className=" opacity-80 text-[#2884CA]   font-poppins text-base xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
         href={"/training-placements"}
       >
-       <p className={`font-poppins ${pathname==="/training-placements"?'border-b-2 border-[#005580] text-[#005580]':" text-[#2884CA]"} py-1.5 `}> Training & Placements</p>
+       <p className={`font-poppins ${pathname==="/training-placements"?'border-b-2 border-[#005580] text-[#005580]':" text-[#2884CA] hover:text-[#005580]"} py-1.5 `}> Training & Placements</p>
        
       </Link>
       <div
         id="apply"
-        className="pt-[8px] pl-2 font-poppins text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
+        className=" pl-2 font-poppins text-base xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
       >
         <button 
         aria-label="Apply Now Button"

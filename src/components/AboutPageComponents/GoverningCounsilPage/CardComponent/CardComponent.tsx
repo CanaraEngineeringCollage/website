@@ -39,7 +39,6 @@ const ProfileCard = ({ datam, title }: { datam: GoverningCouncilMember; title: s
           const isLastCard = index === data.length - 1;
           const remainder = data.length % 3;
           const shouldCenterLast = remainder === 1 && isLastCard;
-          console.log(item.roles.length);
 
           return (
         <div

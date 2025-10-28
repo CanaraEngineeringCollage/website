@@ -53,6 +53,7 @@ const facilities = [
 const stayConnected = [
   { data: "Alumni", links: "/alumni" },
   { data: "Media", links: "/media" },
+  { data: "Careers", links: "/careers" },
   // { data: "Calendar of Events", links: "/events" },
   // { data: "Careers", links: "#" },
 ];
@@ -94,21 +95,31 @@ const Footer: FC = () => {
             { label: "Information Science & Engineering", href: "/department/information-science-engineering/detailes" },
               { label: "Information Science & Engineering", href: "/department/information-science-engineering" },
             { label: "Electronics & Communication Engineering", href: "/department/electronics-communication-engineering/detailes" },
+            { label: "Science & Humanities", href: "/department/science-humanities/detailes" },
+            { label: "Science & Humanities", href: "/department/science-humanities" },
                  { label: "Electronics & Communication Engineering", href: "/department/electronics-communication-engineering" },
             { label: "Computer Science & Business System", href: "/department/computer-science-business-system/detailes" },
                 { label: "Computer Science & Business System", href: "/department/computer-science-business-system" },
-            { label: "Computer Science & Design", href: "/department/computer-science-design/detailes" },
-                   { label: "Computer Science & Design", href: "/department/computer-science-design" },
-            { label: "Science & Humanities", href: "/department/science-humanities" },
+            { label: "Computer Science & Design", href: "/department/computer-science-design" },
+                   { label: "Computer Science & Design", href: "/department/computer-science-design/detailes" },
+
+
+    { label: "Mechanical Engineering", href: "/department/mechanical-engineering" },
+                   { label: "Mechanical Engineering", href: "/department/mechanical-engineering/detailes" },
+
             { label: "Distinctive Practices", href: "/about/distinctive-practices" },
             { label: "Key Functionaries & HODs", href: "/about/key-functionaries-and-hods" },
             { label: "Glimpses of CEC", href: "/about/glimpses-of-cec" },
             { label: "Educators & Administrators", href: "/about/educators-administrators" },
-             { label: "Research", href: "/academics/research" },
+             { label: "Research at CEC", href: "/academics/research" },
+{ label: "Research & Development and Consultancy Cell", href: "/academics/research-development-consultancy" },
+             
              { label: "About Alumni", href: "/alumni/about-alumni" },
                 { label: "Infrastructure", href: "/campus-facilities/infrastructure" },
                   { label: "Privacy Policy", href: "/privacy-policy" },
                    { label: "Grievance Redressal", href: "/about/mandatory-disclosure/sc-st-grievance" },
+                    { label: "Careers", href: "/careers" },
+
             // { label: "Timetables", href: "/academics/examination-records" },
             // { label: "Circulars", href: "/about" },
             // { label: "Marks & Attendance", href: "/our-founder" },
@@ -245,7 +256,7 @@ const Footer: FC = () => {
         {/* Mobile Bottom Bar */}
         <div className="border-t border-gray-300 pt-4 pb-6 text-xs text-center">
           <p className="mb-2">Copyright © 2024 CEC & Canara High School Association. All rights reserved.</p>
-          <p>Privacy Policy | Terms of Use</p>
+          <Link href={'/privacy-policy'}><p>Privacy Policy | Terms of Use</p></Link>
         </div>
       </div>
     </footer>
