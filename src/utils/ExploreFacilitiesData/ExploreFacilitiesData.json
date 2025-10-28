@@ -15,7 +15,7 @@
   },
   {
     "id": 3,
-    "image": "/trainingPlacementPageImages/exploreFacilities/Internship & Live Project Facilitation.webp",
+    "image": "/trainingPlacementPageImages/exploreFacilities/internship.webp",
     "title": "Internship & Live Project Facilitation",
     "desc": "We connect students with internships and live projects across diverse domains, enabling them to apply classroom knowledge in real-world settings. These opportunities provide hands-on experience, industry exposure, and the chance to build a strong professional portfolio, laying the foundation for successful careers.",
     "link": "#"
@@ -37,14 +37,14 @@
   },
   {
     "id": 6,
-    "image": "/trainingPlacementPageImages/exploreFacilities/Pre-Placement & Company-Specific Training.webp",
+    "image": "/trainingPlacementPageImages/exploreFacilities/company.webp",
     "title": "Pre-Placement & Company-Specific Training",
     "desc": "We provide focused preparation for leading recruiters such as TCS, Infosys, Wipro, Accenture, and others. Training includes mock aptitude tests, coding assessments, technical interviews, resume building, and HR-focused sessions ensuring students are well-prepared to meet the specific requirements of each company.",
     "link": "#"
   },
   {
     "id": 7,
-    "image": "/trainingPlacementPageImages/exploreFacilities/Full-Length Mock Placement Drives.webp",
+    "image": "/trainingPlacementPageImages/exploreFacilities/full-length.webp",
     "title": "Full-Length Mock Placement Drives",
 
     "desc": "We replicate the entire recruitment process from aptitude tests and group discussions to technical and HR interviews under real-time conditions. This immersive experience equips students to confidently handle the high-pressure environment of actual campus placements ",
@@ -52,7 +52,7 @@
   },
   {
     "id": 8,
-    "image": "/trainingPlacementPageImages/exploreFacilities/One-on-One Mock Interviews.webp",
+    "image": "/trainingPlacementPageImages/exploreFacilities/one-to-one.webp",
     "title": "One-on-One Mock Interviews",
     "desc": "Personalized sessions with internal and external evaluators help students refine their responses, enhance articulation, and receive detailed feedback on both technical and behavioral performance. These sessions build confidence and readiness for actual placement interviews.",
     "link": "#"
