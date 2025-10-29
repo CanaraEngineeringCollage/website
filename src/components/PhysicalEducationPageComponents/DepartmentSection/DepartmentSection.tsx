@@ -86,7 +86,7 @@ const DepartmentSection = () => {
         emotionally, mentally and physically strong. The primary aims of physical education are varied, based on the needs of time and place. Sports
         is commonly defined as an organized, competitive and skillful physical activity requiring commitment and fair play.
       </p> */}
-      <section className="w-full bg-none py-10 sm:py-16 px-4 sm:px-6 md:px-12">
+      <section className="w-full bg-none  sm:pt-16 sm:pb-8  px-4 sm:px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 max-w-7xl mx-auto">
           {/* Goals Section */}
           <div className="bg-white py-6 sm:py-8 md:py-10 px-5 sm:px-7 md:px-9 w-full min-h-[500px] rounded-lg shadow-sm">

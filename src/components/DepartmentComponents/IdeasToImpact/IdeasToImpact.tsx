@@ -69,7 +69,7 @@ function AwardsTable({
   if (!show) return null;
 
   return (
-    <div className="rounded overflow-hidden border border-gray-200 w-full mt-10 text-[#1D1D1F]">
+    <div className="rounded overflow-x-auto lg:overflow-hidden border border-gray-200 w-full mt-10 text-[#1D1D1F]">
       <table className="w-full text-left text-[13px] md:text-[15px]">
         <thead className="bg-[#F3F8FC] text-[#2884CA]">
           <tr>
@@ -187,55 +187,7 @@ export default function IdeasToImpact({
               </div>
             </div>
           </div>
-
-          {/* Pass Out Rate Card */}
-          <div className="flex flex-col h-full">
-            <div className="bg-white rounded-2xl p-6 flex-1">
-              <div className="grid md:grid-cols-2 items-center gap-6 h-full">
-                <div className="relative w-full h-52 md:h-full">
-                  <h3 className="text-4xl font-[900] mb-2 text-left lg:text-[60px]">
-                    {ideasData.passoutTotlas}
-                  </h3>
-                  <p className="text-left text-2xl">Examination Pass Out Rate</p>
-                  <p className="text-[16px] max-w-md text-left">
-                    Over the Past Three Academic Years
-                  </p>
-                </div>
-
-                <div className="flex items-end justify-between w-full md:gap-4 gap-2 px-12 md:px-0">
-                  {passOutRates.map((item, index) => (
-                    <div
-                      key={index}
-                      className="flex flex-col items-center justify-end h-full"
-                    >
-                      <span className="mb-2 text-sm font-semibold text-primary">
-                        {item.value}%
-                      </span>
-                      <div className="relative xl:w-20 lg:w-16 md:w-14 w-10 h-80 bg-gray-200 rounded-t overflow-hidden flex items-end">
-                        <motion.div
-                          initial={{ height: 0 }}
-                          whileInView={{ height: `${item.value}%` }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 0.6, delay: index * 0.2 }}
-                          className="w-full absolute bottom-0 flex items-end justify-center"
-                          style={{
-                            background:
-                              "linear-gradient(to top, #2884CA, #6DC0EB)",
-                          }}
-                        >
-                          <span className="text-xs font-medium text-white pb-1">
-                            {item.year}
-                          </span>
-                        </motion.div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+<div className="lg:hidden ">
         {/* Main Awards Table */}
         {tableHeaders && tableRows && (
           <AwardsTable headers={tableHeaders} rows={tableRows} show={showMainTable} />
@@ -276,6 +228,96 @@ export default function IdeasToImpact({
             />
           </>
         )}
+        </div>
+          {/* Pass Out Rate Card */}
+          <div className="flex flex-col h-full">
+            <div className="bg-white rounded-2xl p-6 flex-1">
+              <div className="grid md:grid-cols-2 items-center gap-6 h-full">
+                <div className="relative w-full h-52 md:h-full">
+                  <h3 className="text-4xl font-[900] mb-2 text-left lg:text-[60px]">
+                    {ideasData.passoutTotlas}
+                  </h3>
+                  <p className="text-left text-2xl">Examination Pass Out Rate</p>
+                  <p className="text-[16px] max-w-md text-left">
+                    Over the Past Three Academic Years
+                  </p>
+                </div>
+
+                <div className="flex items-end justify-between w-full md:gap-4 gap-2 px-12 md:px-0">
+                  {passOutRates.map((item, index) => (
+                    <div
+                      key={index}
+                      className="flex flex-col items-center justify-end h-full"
+                    >
+                      <span className="mb-2 text-sm font-semibold text-primary">
+                        {item.value}%
+                      </span>
+                      <div className="relative xl:w-20 lg:w-16 md:w-14 w-16 h-80 bg-gray-200 rounded-t overflow-hidden flex items-end">
+                        <motion.div
+                          initial={{ height: 0 }}
+                          whileInView={{ height: `${item.value}%` }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.6, delay: index * 0.2 }}
+                          className="w-full absolute bottom-0 flex items-end justify-center"
+                          style={{
+                            background:
+                              "linear-gradient(to top, #2884CA, #6DC0EB)",
+                          }}
+                        >
+                          <span className="text-xs font-medium text-white pb-1">
+                            {item.year}
+                          </span>
+                        </motion.div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<div className="hidden lg:block">
+        {/* Main Awards Table */}
+        {tableHeaders && tableRows && (
+          <AwardsTable headers={tableHeaders} rows={tableRows} show={showMainTable} />
+        )}
+
+        {/* Awards Table 2 */}
+        {awardsTable2 &&showMainTable && (
+          <>
+            <button
+              onClick={() => setShowTable2(!showTable2)}
+              className="text-primary font-semibold mt-6"
+            >
+              {showTable2 ? "Hide Details" : "See More"}
+            </button>
+
+            <AwardsTable
+              headers={awardsTable2.headers}
+              rows={awardsTable2.rows}
+              show={showTable2}
+            />
+          </>
+        )}
+
+        {/* Awards Table 3 */}
+        {awardsTable3&& showMainTable &&showTable2 && (
+          <>
+            <button
+              onClick={() => setShowTable3(!showTable3)}
+              className="text-primary font-semibold mt-6"
+            >
+              {showTable3 ? "Hide Details" : "See More"}
+            </button>
+
+            <AwardsTable
+              headers={awardsTable3.headers}
+              rows={awardsTable3.rows}
+              show={showTable3}
+            />
+          </>
+        )}
+        </div>
       </div>
     </section>
   );
