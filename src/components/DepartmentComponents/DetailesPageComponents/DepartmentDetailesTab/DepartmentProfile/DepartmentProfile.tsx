@@ -30,7 +30,7 @@ const DepartmentProfile = ({ data, keyPoints, annualIntake}: { data?: string; ke
           
           </div>;
         })}
-       <p className="font-semibold text-[20px]">Annual Intake: {annualIntake}</p>
+       {annualIntake&&<p className="font-semibold text-[20px]">Annual Intake: {annualIntake}</p>}
 
     </div>
   );
