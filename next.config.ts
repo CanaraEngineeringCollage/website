@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
   productionBrowserSourceMaps: true,
 
   images: {
-    domains: ["testapi.megamind.studio", "www.canaraengineering.in","assets.unlayer.com"],
+    domains: ["testapi.megamind.studio", "www.canaraengineering.in","assets.unlayer.com","cec.edu.in"],
   },
 };
 

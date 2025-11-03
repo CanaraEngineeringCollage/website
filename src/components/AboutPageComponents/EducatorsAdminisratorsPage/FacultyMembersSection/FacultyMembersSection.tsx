@@ -1,11 +1,8 @@
-// ✅ Entire Component Code (Replace Fully)
-
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import FacultyModal from "@/components/DepartmentComponents/FacultyModal/FacultyModal";
-import { adminStaff, generalStaff } from "@/utils/staffs/staff";
 import { useSearchParams } from "next/navigation";
 
 interface CouncilMember {
@@ -30,22 +27,17 @@ const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
 const FacultyCard: React.FC<{ member: CouncilMember; onClick?: () => void }> = ({ member, onClick }) => (
   <div
     onClick={onClick}
-    className="relative cursor-pointer w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md"
+    className={`relative ${
+      onClick ? "cursor-pointer" : "cursor-default"
+    } w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md`}
   >
-    <Image
-      src={member.avatar ? bufferToBase64(member.avatar) : member.image || ""}
-      alt={member.name}
-      fill
-      className="object-cover"
-    />
+    <Image src={member.avatar ? bufferToBase64(member.avatar) : member.image || ""} alt={member.name} fill className="object-cover" />
     <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
     <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full">
-      <h2 className="text-base sm:text-lg md:text-sm lg:text-sm lg2:text-lg xl:text-2xl font-bold leading-tight">
-        {member.name}
-      </h2>
-      <p className="text-xs sm:text-lg md:text-sm lg:text-sm lg2:text-lg xl:text-2xl leading-snug break-words">
-        {member.designation}
-      </p>
+      <h2 className="text-base sm:text-lg md:text-sm lg:text-sm lg2:text-lg xl:text-2xl font-bold leading-tight">{member.name}</h2>
+      <p className="text-xs sm:text-lg md:text-sm lg:text-sm lg2:text-lg xl:text-2xl leading-snug break-words">{member.designation}</p>
+
+      {/* ✅ View profile only if onClick exists */}
       {onClick && (
         <p className="text-xs sm:text-lg md:text-sm lg:text-sm lg2:text-lg xl:text-2xl font-bold flex items-center mt-1">
           View Profile
@@ -61,12 +53,12 @@ const FacultyMembersSection: React.FC = () => {
   const departmentFromQuery = searchParams.get("department");
   const categoryFromQuery = searchParams.get("category");
 
-  const [selectedDepartment, setSelectedDepartment] = useState(
-    departmentFromQuery || "Computer Science & Engineering"
-  );
+  const [selectedDepartment, setSelectedDepartment] = useState(departmentFromQuery || "Computer Science & Engineering");
   const [selectedCategory, setSelectedCategory] = useState(categoryFromQuery || "faculty");
+
   const [facultyData, setFacultyData] = useState<CouncilMember[]>([]);
   const [loading, setLoading] = useState(true);
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedMember, setSelectedMember] = useState<CouncilMember | null>(null);
 
@@ -82,12 +74,6 @@ const FacultyMembersSection: React.FC = () => {
   ];
 
   useEffect(() => {
-    const scrollContainer = document.querySelector(".scrollable");
-    if (scrollContainer) scrollContainer.scrollTo({ top: 0, behavior: "instant" });
-    window.scrollTo({ top: 0, behavior: "instant" });
-  }, [selectedDepartment, selectedCategory]);
-
-  useEffect(() => {
     async function fetchFaculty() {
       try {
         setLoading(true);
@@ -96,40 +82,45 @@ const FacultyMembersSection: React.FC = () => {
         if (selectedCategory === "placement") {
           url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=Placement%20Team&all=true`;
         } else if (selectedCategory === "faculty") {
-          url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent(
-            selectedDepartment
-          )}&all=true`;
-        } else {
-          setFacultyData([]);
-          return;
+          url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent(selectedDepartment)}&all=true`;
+        } else if (selectedCategory === "admin") {
+          url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=Admin&all=true`;
+        } else if (selectedCategory === "general") {
+          url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=General&all=true`;
+        } else if (selectedCategory === "Library") {
+          url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=Library&all=true`;
+        } else if (selectedCategory === "Hostel") {
+          url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=Hostel&all=true`;
+        } else if (selectedCategory === "Student Welfare Department") {
+          url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=Student%20Welfare%20Department&all=true`;
+        } else if (selectedCategory === "Dean Office") {
+          url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=Dean%20Office&all=true`;
         }
+        else if (selectedCategory === "physical education") {
+          url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=Physical%20Education&all=true`;
+        }
+
+        if (!url) return;
 
         const res = await fetch(url);
         const data = await res.json();
-        setFacultyData(data);
+        setFacultyData(data || []);
       } catch (err) {
-        console.error("Error fetching faculty:", err);
+        console.error("Error fetching data:", err);
       } finally {
         setLoading(false);
       }
     }
 
     fetchFaculty();
-  }, [selectedDepartment, selectedCategory, categoryFromQuery]);
-
-  useEffect(() => {
-    if (departmentFromQuery) setSelectedDepartment(departmentFromQuery);
-  }, [departmentFromQuery]);
+  }, [selectedCategory, selectedDepartment]);
 
   const sortedFaculty = [...facultyData].sort((a, b) => {
     if (a.priority && b.priority) return a.priority - b.priority;
     return new Date(a.createdAt as string).getTime() - new Date(b.createdAt as string).getTime();
   });
 
-  const generalTeaching = sortedFaculty.filter(
-    (item) => item.type !== "Technical Staff" && !item.subDepartment
-  );
-
+  const generalTeaching = sortedFaculty.filter((item) => item.type !== "Technical Staff" && !item.subDepartment);
   const technicalStaff = sortedFaculty.filter((item) => item.type === "Technical Staff");
 
   const groupedBySubDept = sortedFaculty.reduce((acc: Record<string, CouncilMember[]>, faculty) => {
@@ -140,31 +131,20 @@ const FacultyMembersSection: React.FC = () => {
     return acc;
   }, {});
 
-  const placementData = sortedFaculty.filter((item) => item.department === "Placement Team");
-
-  const displayData =
-    selectedCategory === "admin"
-      ? adminStaff
-      : selectedCategory === "general"
-      ? generalStaff
-      : sortedFaculty;
-
   return (
     <section className="px-4 sm:px-6 md:px-10 lg:px-20 py-8 sm:py-10 md:py-16 lg:py-20">
-      <h1 className="lg:text-[54px] text-[46px] font-bold text-[#1D1D1F] leading-tight mb-10 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-10">
+      <h1 className="lg:text-[54px] text-[46px] font-bold text-[#1D1D1F] leading-tight mb-10">
         Educators & <br /> Administrators
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
         <div className="md:col-span-5">
           <div className="sticky top-20 h-fit">
             <div className="w-full sm:w-[80%] mx-auto md:mx-0">
-              {["faculty", "placement", "admin", "general"].map((cat) => (
-                <div key={cat} className="border-b-2 border-border py-4 sm:py-5">
+              {["faculty", "placement","Student Welfare Department", "Dean Office","physical education" ,"admin", "general",  "Library", "Hostel"].map((cat) => (
+                <div key={cat} className="border-b-2 border-border py-4">
                   <h1
-                    className={`text-[20px] cursor-pointer ${
-                      selectedCategory === cat ? "font-bold text-[#2884CA]" : "text-textGray"
-                    }`}
+                    className={`text-[20px] cursor-pointer ${selectedCategory === cat ? "font-bold text-[#2884CA]" : "text-textGray"}`}
                     onClick={() => {
                       setSelectedCategory(cat);
                       if (cat === "faculty") setSelectedDepartment("Computer Science & Engineering");
@@ -176,7 +156,17 @@ const FacultyMembersSection: React.FC = () => {
                       ? "Placement Staff"
                       : cat === "admin"
                       ? "Administrative Staff"
-                      : "General Staff"}
+                      : cat === "physical education"
+                      ? "Physical Education Staff"
+                      : cat === "general"
+                      ? "General Staff"
+                      : cat === "Student Welfare Department"
+                      ? "Student Welfare Department"
+                      : cat === "Dean Office"
+                      ? "Dean Office"
+                      : cat === "Library"
+                      ? "Library Staff"
+                      : "Hostel Staff"}
                   </h1>
 
                   {cat === "faculty" && selectedCategory === "faculty" && (
@@ -184,9 +174,7 @@ const FacultyMembersSection: React.FC = () => {
                       {departments.map((dept) => (
                         <li
                           key={dept}
-                          className={`cursor-pointer py-1 ${
-                            selectedDepartment === dept ? "font-bold text-[#2884CA]" : "text-textGray"
-                          }`}
+                          className={`cursor-pointer py-1 ${selectedDepartment === dept ? "font-bold text-[#2884CA]" : "text-textGray"}`}
                           onClick={() => setSelectedDepartment(dept)}
                         >
                           {dept}
@@ -209,10 +197,9 @@ const FacultyMembersSection: React.FC = () => {
             </div>
           ) : selectedCategory === "faculty" ? (
             <>
-              {/* ✅ General Teaching Staff First */}
               {generalTeaching.length > 0 && (
                 <>
-                  <h2 className="text-3xl font-semibold text-[#1D1D1F] mb-6">Teaching Staff</h2>
+                  <h2 className="text-3xl font-semibold text-[#1D1D1F] mb-6">Teaching Faculty</h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg2:grid-cols-3 gap-4 justify-items-center mb-8">
                     {generalTeaching.map((member) => (
                       <FacultyCard
@@ -228,7 +215,6 @@ const FacultyMembersSection: React.FC = () => {
                 </>
               )}
 
-              {/* ✅ Group by SubDepartment */}
               {Object.keys(groupedBySubDept).map((sub) => (
                 <div key={sub} className="mb-12">
                   <h2 className="text-3xl font-semibold text-[#1D1D1F] mb-6">{sub}</h2>
@@ -247,7 +233,6 @@ const FacultyMembersSection: React.FC = () => {
                 </div>
               ))}
 
-              {/* ✅ Technical Staff Last */}
               {technicalStaff.length > 0 && (
                 <>
                   <h2 className="text-3xl font-semibold text-[#1D1D1F] mb-6 mt-8">Technical Staff</h2>
@@ -266,23 +251,22 @@ const FacultyMembersSection: React.FC = () => {
                 </>
               )}
             </>
-          ) : selectedCategory === "placement" ? (
+          ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg2:grid-cols-3 gap-4 justify-items-center">
-              {placementData.map((item) => (
+              {/* ✅ NO onClick here → NO MODAL → NO View Profile */}
+              {sortedFaculty.map((item) => (
                 <FacultyCard
                   key={item.id}
                   member={item}
-                  onClick={() => {
-                    setSelectedMember(item);
-                    setIsModalOpen(true);
-                  }}
+                  onClick={
+                    selectedCategory === "placement"
+                      ? () => {
+                          setSelectedMember(item);
+                          setIsModalOpen(true);
+                        }
+                      : undefined
+                  }
                 />
-              ))}
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg2:grid-cols-3 gap-4 justify-items-center">
-              {displayData.map((item) => (
-                <FacultyCard key={item.id} member={item} />
               ))}
             </div>
           )}

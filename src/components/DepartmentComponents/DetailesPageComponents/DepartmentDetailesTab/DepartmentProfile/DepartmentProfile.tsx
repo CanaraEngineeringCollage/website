@@ -5,7 +5,7 @@ interface keyPoints {
   points: string[];
 }
 
-const DepartmentProfile = ({ data, keyPoints }: { data?: string; keyPoints?: keyPoints[] }) => {
+const DepartmentProfile = ({ data, keyPoints, annualIntake}: { data?: string; keyPoints?: keyPoints[]; annualIntake?: string;}) => {
   return (
     <div className="  text-textGray">
       <h1 className="text-textGray text-lg md:text-xl font-bold mb-2">About The Department</h1>
@@ -30,6 +30,8 @@ const DepartmentProfile = ({ data, keyPoints }: { data?: string; keyPoints?: key
           
           </div>;
         })}
+       <p className="font-semibold text-[20px]">Annual Intake: {annualIntake}</p>
+
     </div>
   );
 };

@@ -69,7 +69,7 @@ const AdmissionProcedureText = () => {
         </ul>
 
         <h2 className="text-2xl font-semibold mt-8 mb-3">
-          Programmes Accredited by NBA
+          Name of Programmes Accredited by NBA and Status
         </h2>
         <ul className="list-disc list-inside text-textGray leading-relaxed text-sm lg:text-[20px] space-y-2">
           <li>

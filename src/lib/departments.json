@@ -10417,7 +10417,7 @@
     "studentAcheivemtents": [
       {
         "title": "Examination Results (VIII Semester)",
-        "imageUrl": "https://www.canaraengineering.in/departments/cse/Examination%20%20Results.png"
+        "imageUrl": "https://cec.edu.in/files/studentachievments"
       },
       {
         "title": "Publications in Conferences",
@@ -10594,10 +10594,16 @@
         "table": [
           {
             "title": [],
-            "firstColumn": ["Alok Ranjan", "Saritha Suvarna", "", "Sowmya K"],
-            "secondColumn": ["Verdine Noronha", "Shatananda Bhat P", "Kishor Shivathaya S", "Aruna Kumari G K"],
-            "thirdColumn": ["Annapurna M", "Kavya A M", "Sukshma Shetty", "Tara B B"],
-            "fourthColumn": ["Babitha Ganesh Kulal", "Saritha M", "Janardhana Bhat K", "Sushma"]
+            "firstColumn": ["Alok Ranjan", "Saritha Suvarna", "Sowmya K", "Verdine Noronha", "Annapurna M", "Kavya A M", "Sukshma Shetty"],
+            "secondColumn": [
+              "Shatananda Bhat P",
+              "Kishor Shivathaya S",
+              "Aruna Kumari G K",
+              "Babitha Ganesh Kulal",
+              "Saritha M",
+              "Janardhana Bhat K",
+              "Sushma"
+            ]
           }
         ]
       },
@@ -46011,7 +46017,7 @@
     "departmentAboutDescriptionArray": [
       "Established in 2021, the Department of AIML offers a B.E. program focused on cutting-edge technologies driving today’s digital transformation. With applications across healthcare, robotics, finance, and more, the curriculum equips students with strong foundations in AI, ML, data science, computer vision, and programming.The department emphasizes industry readiness through technical training, soft skills development, and self-paced certifications via platforms like SWAYAM, Coursera, and edX. Faculty and students are actively involved in research and continuous upskilling. Extracurricular and club activities further support holistic growth and strong placement outcomes."
     ],
-
+    "annualTake": "120",
     "description": [
       "The department was established in 2021 to offer an undergraduate degree program, the Bachelor of Engineering (BE) in Artificial Intelligence and Machine Learning (AIML). AIML is at the forefront of computer science, expanding rapidly into sectors such as healthcare, security, entertainment, education, autonomous transportation, robotics, space exploration, speech processing, and stock trading, among others. The pervasive influence of artificial intelligence has profoundly impacted our lives.",
       "AI aims to emulate human intelligence, imparting cognitive abilities to robots. Machine learning (ML), a subset of AI, enables machines to learn autonomously. The emergence of AI and ML has generated numerous career opportunities and is a pivotal driver of digital transformation, creating a high demand for skilled engineers proficient in these technologies. Graduates of this program possess a highly valuable degree, opening doors to employment across various industries.",
@@ -52163,41 +52169,43 @@
         "points": [],
         "imageUrl": "",
         "table": [
-          {
-            "title": ["Faculty Name", "Research Domain", "University"],
-            "firstColumn": [
-              "Kanmani",
-              "Siju V Soman",
-              "Divyesh Divakar",
-              "Nithin Kurup U G",
-              "Deepak D",
-              "Nagaraj Gadagin",
-              "Supriya A V",
-              "Kiran Ankalakoti"
-            ],
-            "secondColumn": [
-              "Computer Vision",
-              "Internet of Things",
-              "Control Systems, Machine Learning",
-              "Internet of Things",
-              "Deep Learning",
-              "Image Processing",
-              "Quantum Computing, Machine Learning, Data Security",
-              "Computer Vision, Deep Learning"
-            ],
-            "thirdColumn": [
-              "VTU Belagavi",
-              "Kalasalingam University,TN",
-              "VTU Belagavi",
-              "VTU Belagavi",
-              "VTU Belagavi",
-              "VTU Belagavi",
-              "VTU Belagavi",
-              "VTU Belagavi"
-            ],
-            "fourthColumn": []
-          }
-        ]
+    {
+      "title": ["Faculty Name", "Research Domain", "University"],
+      "firstColumn": [
+        "Siju V Soman",
+        "Nithin Kurup U G",
+        "Deepak D",
+        "Nagaraj Gadagin",
+        "Supriya A V",
+        "Kiran Ankalakoti",
+        "Sandesh Kamath",
+        "Vinod Kumar B",
+        "Tara B B"
+      ],
+      "secondColumn": [
+        "Internet of Things",
+        "Internet of Things",
+        "Deep Learning",
+        "Image Processing",
+        "Quantum Computing, Machine Learning, Data Security",
+        "Computer Vision, Deep Learning",
+        "Mechanical Engineering (Tribology)",
+        "Induction Motor with Machine Learning",
+        "Electrical Science (Grid Connected Solar)"
+      ],
+      "thirdColumn": [
+        "Kalasalingam University, TN",
+        "VTU Belagavi",
+        "VTU Belagavi",
+        "VTU Belagavi",
+        "VTU Belagavi",
+        "VTU Belagavi",
+        "MIT Manipal",
+        "MIT Manipal",
+        "VTU Belagavi"
+      ]
+    }
+  ]
       }
     ],
     "magazines": [
@@ -52319,15 +52327,15 @@
     "studentAcheivemtents": [
       {
         "title": "University Results",
-        "imageUrl": "https://www.canaraengineering.in/departments/ai/labpics/UniversityResults.JPG"
+        "imageUrl": "https://cec.edu.in/files/academic-events"
       },
       {
         "title": "Certification Courses",
-        "imageUrl": "https://www.canaraengineering.in/departments/ai/labpics/Certification-students_2.jpeg"
+        "imageUrl": "https://cec.edu.in/files/onlinecartificates"
       },
       {
         "title": "Awards in Events",
-        "imageUrl": "https://www.canaraengineering.in/departments/ai/Awards.jpg"
+        "imageUrl": "https://cec.edu.in/files/awards"
       },
       {
         "title": "Participation in Technical Events",
@@ -52335,7 +52343,7 @@
       },
       {
         "title": "Participation in non Technical Events",
-        "imageUrl": "https://www.canaraengineering.in/departments/ai/NonTechnical-Participation.jpeg"
+        "imageUrl": "https://cec.edu.in/files/nontechevents"
       }
     ],
     "academicsProgram": {
@@ -52404,7 +52412,7 @@
           "points": []
         }
       ],
-      "annualIntake": "120"
+      "annualIntake": ""
     }
   },
   {
@@ -61998,9 +62006,9 @@
     "ourVision": "To impart state of the art quality Mechanical Engineering education and create competent professionals.",
     "depatmentHead": {
       "messageFromtheDepartmentHead": "Mechanical Engineering Department is one of the most active and most happening Departments in CEC. It is one of the very few departments around Mangalore that has the Industrial CNC Machining centres. A team of 02 Professors, and 15 Assistant Professors are working with passion and dedication to ensure career oriented Total Quality Education. To meet such a feat the Department has introduced additional labs on Advanced Material testing, CNC operation, Dissection lab, Bio diesel Processing lab, Computer Aided Modelling Lab (On AutoCAD, SolidWorks and Creo Software) with an objective to provide the practical exposure to students. The Department organizes many Workshops, Webinars and Faculty Development Programmes in variety of domains for the benefit of Students and Faculty. The Department has MoU with MNCs who visit the department to impart career-oriented training. We are totally focussed on Outcome based education (OBE) via Industrial Internships and Product development centres. Exclusive work is being carried out on Electric vehicles in association of Electrical Department. A research work with a DST funding of 30 Lakhs is under progress in the field of Plastic recycling. These are new fields where the Department is working to make students Industry ready",
-      "name": "Dr. N. Venkatesh",
+      "name": "Dr. Niranjan Rai",
       "position": "Professor & HoD",
-      "imageUrl": "/departmentImages/departmentHeads/mechHod.jpg"
+      "imageUrl": "/departmentImages/departmentHeads/mechHod.jpeg"
     },
 
     "courseOutcome": {
