@@ -13,7 +13,7 @@ export default function AboutCanara() {
 
       {/* Always visible paragraphs */}
       <div className="px-1 md:px-6 lg:px-8 lg2:px-1">
-        <p className="lg:text-xl md:text-lg text-[14px] text-justify leading-7 pt-8 md:pt-16 text-textGray">
+        <p className="lg:text-xl md:text-lg text-[14px] text-justify leading-7 pt-8 md:pt-10 text-textGray">
           Canara Engineering College (CEC), established in 2001 as a millennium project of the Canara High School Association, is a premier autonomous
           engineering institution located on a lush 26-acre campus at Benjanapadavu, Mangalore. Blending values with technology, CEC has emerged as a
           leading center for technical education in the coastal region of Karnataka.

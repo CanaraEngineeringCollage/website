@@ -127,11 +127,11 @@ const technicalStaff = sortByPriorityAndDate(data.filter((item) => item.type ===
           />
           <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
           <div className="absolute z-20 left-0 px-3 bottom-4 w-full">
-            <h2 className="lg2:text-[20px] lg:text-[18px] md:text-[11px] text-[20px] font-bold">{item.name}</h2>
-            <p className="lg2:text-[20px] lg:text-[18px] md:text-[11px] text-[20px]">{item.designation}</p>
+            <h2 className="lg2:text-[18px] lg:text-[16px] md:text-[11px] text-[18px] font-bold">{item.name}</h2>
+            <p className="lg:text-[16px]  md:text-[11px] text-[16px]">{item.designation}</p>
             <p
               onClick={() => openModal(item)}
-              className=" font-bold lg2:text-[20px] lg:text-[18px] md:text-[11px] text-[20px] flex items-center"
+              className=" font-bold lg2:text-[16px]  md:text-[11px] text-[16px] flex items-center"
             >
               View Profile
               <MdKeyboardArrowRight className="ml-1 text-xl" />
@@ -156,10 +156,10 @@ const technicalStaff = sortByPriorityAndDate(data.filter((item) => item.type ===
       {/* Teaching Staff */}
       {teachingStaff.length > 0 && (
         <>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#1D1D1F] mb-6">
+          <h2 className="text-2xl sm:text-3xl text-center md:text-start md:text-4xl font-semibold text-[#1D1D1F] mb-6">
             Teaching Faculty
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-4 xl:justify-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-4 justify-items-center">
             {renderCards(teachingStaff)}
           </div>
         </>
@@ -168,10 +168,10 @@ const technicalStaff = sortByPriorityAndDate(data.filter((item) => item.type ===
       {/* Technical Staff */}
       {technicalStaff.length > 0 && (
         <>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#1D1D1F] mb-6 mt-8">
+          <h2 className="text-2xl sm:text-3xl text-center md:text-start md:text-4xl font-semibold text-[#1D1D1F] mb-6 mt-8">
             Technical Staff
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-4 xl:justify-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-4 justify-items-center">
             {renderCards(technicalStaff)}
           </div>
         </>

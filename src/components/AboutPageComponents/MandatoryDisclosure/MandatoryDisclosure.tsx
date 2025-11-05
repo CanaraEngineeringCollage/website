@@ -1026,6 +1026,27 @@ const MandatoryDisclosure = () => {
                     </ul>
                   </div>
                 ))}
+
+                   <h2 className="text-[21px] font-bold text-textGray mb-3">AQAR</h2>
+                {disclosureData[selectedIndex]?.naac?.aqar?.map((item, idx) => (
+                  <div key={idx} className="mb-8">
+                    
+                    <h2 className="text-[18px] font-semi-bold text-textGray mb-2">{item.title}</h2>
+                    <ul className="space-y-1">
+                      {item?.links?.map((link, i) =>
+                        link?.href ? (
+
+                          <li key={i} className="flex group items-center gap-2 text-[16px] text-textGray hover:text-[#2884CA] cursor-pointer">
+                            <Link href={link.href} target="_blank" className="flex items-center gap-2 hover:text-[#2884CA]">
+                              <HiLink className="text-textGray group-hover:text-[#2884CA] mt-2" />
+                              <span className="text-textGray group-hover:text-[#2884CA] text-[16px] pt-2 leading-7">{link.text}</span>
+                            </Link>
+                          </li>
+                        ) : null
+                      )}
+                    </ul>
+                  </div>
+                ))}
                   <h2 className="text-[21px] font-bold text-textGray mb-3">NAAC</h2>
                  {disclosureData[selectedIndex]?.naac?.nac?.map((item, idx) => (
                   <div key={idx} className="mb-8">

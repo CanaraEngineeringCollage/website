@@ -61657,23 +61657,7 @@
         { "year": "2019-20", "value": 98.4 },
         { "year": "2018-19", "value": 99.21 }
       ],
-      "awards": [
-        {
-          "image": "/departmentImages/IdeaImpact/awards.png",
-          "title": "Awards won in Technical Fest",
-          "subtitle": "During the Academic Year 2023-24"
-        },
-        {
-          "image": "/departmentImages/IdeaImpact/awards.png",
-          "title": "Hackathon Achievements",
-          "subtitle": "National Level Winners 2022-23"
-        },
-        {
-          "image": "/departmentImages/IdeaImpact/awards.png",
-          "title": "Innovative Projects Recognition",
-          "subtitle": "For Excellence in Tech Innovations"
-        }
-      ],
+   
       "passoutTotlas": "98%"
     },
     "placement": {
@@ -71518,23 +71502,7 @@
         { "year": "2022-23", "value": 100 },
         { "year": "2021-22", "value": 98.2 }
       ],
-      "awards": [
-        {
-          "image": "/departmentImages/IdeaImpact/awards.png",
-          "title": "Awards won in Technical Fest",
-          "subtitle": "During the Academic Year 2023-24"
-        },
-        {
-          "image": "/departmentImages/IdeaImpact/awards.png",
-          "title": "Hackathon Achievements",
-          "subtitle": "National Level Winners 2022-23"
-        },
-        {
-          "image": "/departmentImages/IdeaImpact/awards.png",
-          "title": "Innovative Projects Recognition",
-          "subtitle": "For Excellence in Tech Innovations"
-        }
-      ],
+    
       "passoutTotlas": "99%"
     },
 

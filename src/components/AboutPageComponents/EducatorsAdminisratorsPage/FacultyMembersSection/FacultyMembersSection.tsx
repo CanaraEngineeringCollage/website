@@ -34,12 +34,12 @@ const FacultyCard: React.FC<{ member: CouncilMember; onClick?: () => void }> = (
     <Image src={member.avatar ? bufferToBase64(member.avatar) : member.image || ""} alt={member.name} fill className="object-cover" />
     <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
     <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full">
-      <h2 className="text-base sm:text-lg md:text-sm lg:text-sm lg2:text-lg xl:text-2xl font-bold leading-tight">{member.name}</h2>
-      <p className="text-xs sm:text-lg md:text-sm lg:text-sm lg2:text-lg xl:text-2xl leading-snug break-words">{member.designation}</p>
+      <h2 className="text-base sm:text-lg md:text-sm lg:text-sm lg2:text-base xl:text-xl font-bold leading-tight">{member.name}</h2>
+      <p className="text-xs sm:text-lg md:text-xs lg:text-xs lg2:text-sm xl:text-lg leading-snug break-words">{member.designation}</p>
 
       {/* ✅ View profile only if onClick exists */}
       {onClick && (
-        <p className="text-xs sm:text-lg md:text-sm lg:text-sm lg2:text-lg xl:text-2xl font-bold flex items-center mt-1">
+        <p className="text-xs sm:text-lg md:text-sm lg:text-sm lg2:text-sm xl:text-lg font-bold flex items-center mt-1">
           View Profile
           <MdKeyboardArrowRight className="ml-1 text-lg" />
         </p>
@@ -115,6 +115,11 @@ const FacultyMembersSection: React.FC = () => {
     fetchFaculty();
   }, [selectedCategory, selectedDepartment]);
 
+
+  useEffect(() => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}, [selectedCategory, selectedDepartment]);
+
   const sortedFaculty = [...facultyData].sort((a, b) => {
     if (a.priority && b.priority) return a.priority - b.priority;
     return new Date(a.createdAt as string).getTime() - new Date(b.createdAt as string).getTime();
@@ -188,7 +193,7 @@ const FacultyMembersSection: React.FC = () => {
           </div>
         </div>
 
-        <div className="md:col-span-7 h-[90vh] scrollable overflow-y-auto pr-2">
+        <div className="md:col-span-7 max-h-[70vh] lg:max-h-[130vh] scrollable overflow-y-auto pr-2">
           {loading ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg2:grid-cols-3 gap-4 justify-items-center">
               {Array.from({ length: 6 }).map((_, i) => (
@@ -199,7 +204,7 @@ const FacultyMembersSection: React.FC = () => {
             <>
               {generalTeaching.length > 0 && (
                 <>
-                  <h2 className="text-3xl font-semibold text-[#1D1D1F] mb-6">Teaching Faculty</h2>
+                  <h2 className="text-3xl font-semibold text-center md:text-start text-[#1D1D1F] mb-6">Teaching Faculty</h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg2:grid-cols-3 gap-4 justify-items-center mb-8">
                     {generalTeaching.map((member) => (
                       <FacultyCard
@@ -235,7 +240,7 @@ const FacultyMembersSection: React.FC = () => {
 
               {technicalStaff.length > 0 && (
                 <>
-                  <h2 className="text-3xl font-semibold text-[#1D1D1F] mb-6 mt-8">Technical Staff</h2>
+                  <h2 className="text-3xl font-semibold text-center md:text-start text-[#1D1D1F] mb-6 mt-10">Technical Staff</h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg2:grid-cols-3 gap-4 justify-items-center">
                     {technicalStaff.map((member) => (
                       <FacultyCard

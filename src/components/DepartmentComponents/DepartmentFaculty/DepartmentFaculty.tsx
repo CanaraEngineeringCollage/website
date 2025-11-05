@@ -161,7 +161,7 @@ const handlePrev = () => {
                 aria-label="Our faculty team"
                 className="bg-blue-100 text-black rounded-full text-block px-6 py-2  text-sm font-medium hover:bg-blue-200 transition"
               >
-                Our faculty team
+                Our Faculty Team
               </button>
             </Link>
            <div className="flex items-center gap-3">
@@ -312,8 +312,8 @@ const handlePrev = () => {
             }}
           >
             {" "}
-            <button className="bg-blue-100 rounded-full text-black text-block px-6 py-2  text-sm font-medium hover:bg-blue-700 transition">
-              Our faculty team
+            <button className="bg-blue-100 rounded-full text-black text-block px-6 py-2  text-sm font-medium hover:bg-blue-200 transition">
+              Our Faculty Team
             </button>
           </Link>
         <div className="flex items-center gap-2">

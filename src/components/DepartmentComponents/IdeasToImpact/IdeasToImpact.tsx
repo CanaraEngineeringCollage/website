@@ -118,25 +118,29 @@ export default function IdeasToImpact({
   const awards = ideasData.awards;
   const passOutRates = ideasData.passOutRates;
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % awards.length);
-      setActivePlacement((prev) => (prev + 1) % placements.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [awards.length, placements.length]);
+useEffect(() => {
+  if (!awards?.length || !placements?.length) return; // ✅ Guard clause
+
+  const interval = setInterval(() => {
+    setActiveIndex((prev) => (prev + 1) % awards.length);
+    setActivePlacement((prev) => (prev + 1) % placements.length);
+  }, 3000);
+
+  return () => clearInterval(interval);
+}, [awards?.length, placements?.length]);
+
 
   return (
     <section className="w-full">
       <div className="max-w-7xl mx-auto xl:max-w-[75%] text-center">
-        <h2 className="text-3xl lg:text-5xl font-bold text-[#1D1D1F] mb-16">
+        <h2 className="text-3xl lg:text-5xl font-bold text-[#1D1D1F] lg:mb-16">
           From Ideas to Impact
         </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 text-[#1D1D1F] mt-10">
+        <div className={`grid grid-cols-1 ${awards?"lg:grid-cols-2 mt-14":"lg:w-[70%] mx-auto mt-5"} gap-8 text-[#1D1D1F]  lg:mt-10`}>
 
           {/* Awards Card */}
-          <div className="flex flex-col h-full">
+       {  awards&& <div className="flex flex-col h-full">
             <div className="bg-white rounded-2xl flex flex-col flex-1">
               <motion.div
                 key={activeIndex}
@@ -186,7 +190,7 @@ export default function IdeasToImpact({
                 )}
               </div>
             </div>
-          </div>
+          </div>}
 <div className="lg:hidden ">
         {/* Main Awards Table */}
         {tableHeaders && tableRows && (

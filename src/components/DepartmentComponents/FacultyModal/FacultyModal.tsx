@@ -91,8 +91,8 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
 
                 {/* Profile Info */}
                 <div className="py-10 lg:px-20">
-                  <div className="flex flex-col lg:flex-row gap-6 items-center">
-                    <div className="flex-shrink-0">
+                  <div className="flex flex-col lg:flex-row gap-6 lg:items-center">
+                    <div className="flex-shrink-0 mx-auto lg:mx-0">
                       <div className="rounded-lg overflow-hidden w-60 h-80 bg-sky-400">
                         <Image
                           width={100}
@@ -185,9 +185,9 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
 
 const Info = ({ label, value }: { label: string; value?: string }) =>
   value ? (
-    <div className="flex gap-2">
-      <span className="font-bold">{label}:</span>
-      <span>{value}</span>
+    <div className="flex flex-col md:flex-row gap-2">
+      <span className="font-bold text-xl">{label}:</span>
+      <span className="text-lg lg:text-xl">{value}</span>
     </div>
   ) : null;
 

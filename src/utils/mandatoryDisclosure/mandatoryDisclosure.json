@@ -46,7 +46,7 @@
         ]
       }
     ],
-    "nac": [
+    "aqar": [
       {
         "title": "NAAC AQAR",
         "links": [
@@ -55,7 +55,8 @@
             "href": "https://canaraengineering.in/AQAR_23-24%20uploaded_16-01-25.pdf"
           }
         ]
-      },
+      }],
+    "nac": [
       {
         "title": "NAAC Certificate",
         "links": [
