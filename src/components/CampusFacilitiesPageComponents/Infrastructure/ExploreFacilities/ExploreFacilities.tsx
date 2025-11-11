@@ -220,7 +220,7 @@ const ExploreFacilities = () => {
                   />
                 </div>
                 <div className="p-8 text-center bg-white rounded-b-2xl ">
-                  <h2 className="text-[27px] font-bold xl:px-5 text-black mb-2 line-clamp-2">{item.title}</h2>
+                  <h2 className="text-[27px] font-bold xl:px-5 text-[#1D1D1F] mb-2 line-clamp-2">{item.title}</h2>
                   <span className="text-primary inline-flex text-[17px] items-center hover:underline font-medium text-sm">
                     Read More <MdKeyboardArrowRight className="ml-1" />
                   </span>

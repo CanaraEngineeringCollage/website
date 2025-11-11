@@ -114,7 +114,7 @@ const handlePrev = () => {
       <div className=" mx-auto lg:flex hidden  flex-col-reverse md:flex-row items-center justify-between gap-10">
         <div className="max-w-md space-y-44">
           <div>
-            <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-gray-900 leading-[1.1]">{heading}</h2>
+            <h2 className="text-3xl lg:text-4xl md:text-4xl text-start font-bold text-[#1D1D1F] leading-[1.1]">{heading}</h2>
             <p className="text-gray-700 text-lg mt-6">
               {description}
             </p>
