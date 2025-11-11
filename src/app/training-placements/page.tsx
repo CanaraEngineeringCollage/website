@@ -5,6 +5,7 @@ import AboutDepartment from "@/components/TrainingPlacementPageComponents/AboutD
 import DepartmentFaculty from "@/components/TrainingPlacementPageComponents/DepartmentFaculty/DepartmentFaculty";
 import HeroSection from "@/components/TrainingPlacementPageComponents/HeroSection/HeroSection";
 import HighlightsSection from "@/components/TrainingPlacementPageComponents/HighlightsSection/HighlightsSection";
+import RecruitersList from "@/components/TrainingPlacementPageComponents/RecruitersSection/RecruitersSection";
 import React from "react";
 
 export const metadata = {
@@ -85,6 +86,9 @@ const page = () => {
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0  lg:mt-0 -mt-12 ">
         <HighlightsSection />
+      </section>
+     <section className="px-6 md:px-12 lg:px-16 xl:px-0 mb-14">
+        <RecruitersList />
       </section>
       <section className="px-6  pt-14 lg:pt-20  md:px-12 lg:pl-16 lg:px-0 bg-[#e5e5ea]  xl:px-0">
         <ExploreFacilities />
