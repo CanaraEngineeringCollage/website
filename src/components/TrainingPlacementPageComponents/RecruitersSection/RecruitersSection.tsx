@@ -65,7 +65,20 @@ const RecruitersList: React.FC = () => {
       </div>
 
       {/* ✅ Mobile Dropdown */}
-      <div className="block md:hidden mb-8">
+     
+
+      {/* ✅ Table Section (merged ModelTable) */}
+      {currentBatch ? (
+        <div className="lg:pb-10" ref={tableRef}>
+          <h1 className="text-xl hidden md:block lg:text-4xl md:text-xl text-start mb-5 font-bold leading-[1.1] text-[#1D1D1F]">
+            {selectedYear} Batch Recruiters
+          </h1>
+
+             <div className=" flex md:hidden mb-5 gap-2 items-center">
+          <h1 className="text-xl lg:text-4xl md:text-xl text-start  font-bold leading-[1.1] text-[#1D1D1F]">
+            {selectedYear} Batch Recruiters
+          </h1>
+             <div className="block md:hidden ">
         <select
           value={selectedYear}
           onChange={(e) => {
@@ -83,13 +96,7 @@ const RecruitersList: React.FC = () => {
             ))}
         </select>
       </div>
-
-      {/* ✅ Table Section (merged ModelTable) */}
-      {currentBatch ? (
-        <div className="lg:pb-10" ref={tableRef}>
-          <h1 className="text-xl lg:text-4xl md:text-xl text-start mb-5 font-bold leading-[1.1] text-[#1D1D1F]">
-            {selectedYear} Batch Recruiters
-          </h1>
+          </div>
 
         <div className="overflow-x-auto">
   <div className="min-w-max rounded overflow-hidden border border-gray-200">
