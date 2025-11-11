@@ -60,9 +60,9 @@ const HighlightsSection = () => {
     },
     {
       id: 3,
-      img: "/trainingPlacementPageImages/verifone.png",
-      title: "Dream Offers",
-      company: "Verifone",
+      img: "/trainingPlacementPageImages/verifone1.png",
+      title: "Verifone",
+      company: "",
     },
   ];
 
@@ -74,8 +74,8 @@ const HighlightsSection = () => {
   };
 
   return (
-    <section className="max-w-7xl xl:max-w-[75%] mx-auto py-28 text-black">
-       <h2 className="text-3xl md:text-[40px] lg2:text-5xl  font-bold text-black text-center mb-22 ">Key Highlights</h2>
+    <section className="max-w-7xl xl:max-w-[75%] mx-auto py-16 lg:py-28 text-black">
+       <h2 className="text-3xl md:text-[40px] lg2:text-5xl  font-bold text-black text-center mb-10 lg:mb-22 ">Key Highlights</h2>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Left Column */}
         <div className="flex flex-col gap-6 px-3">
@@ -85,7 +85,7 @@ const HighlightsSection = () => {
             {
               title: "30%",
               subtitle: "Higher Rate of placement",
-              description: "as compared to neighbouring Engineering colleges",
+              description: "Recognized for strong industry-academia connect leading to higher placements",
               link: true,
             },
           ].map((item, index) => (
@@ -151,7 +151,7 @@ const HighlightsSection = () => {
           <div className="flex flex-col justify-center items-center rounded-4xl p-6 bg-white mt-5 lg:mt-7">
             <h1 className=" text-[45px] lg:text-[60px] font-[900] text-black text-center">220+</h1>
             <h2 className="font-bold text-center text-[20px] text-black">Companies Visited on Campus</h2>
-            <p className="text-xl text-center">Offered to Top 5% of Student Candidates</p>
+            <p className="text-xl text-center">Consistently recruiting across all branches of engineering</p>
             {/* <p className="text-[17px] mt-3 text-[#0066CC] flex items-center">
               View Profile
               <MdKeyboardArrowRight className="ml-1 text-xl" />

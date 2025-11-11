@@ -5,6 +5,7 @@ import AboutDepartment from "@/components/TrainingPlacementPageComponents/AboutD
 import DepartmentFaculty from "@/components/TrainingPlacementPageComponents/DepartmentFaculty/DepartmentFaculty";
 import HeroSection from "@/components/TrainingPlacementPageComponents/HeroSection/HeroSection";
 import HighlightsSection from "@/components/TrainingPlacementPageComponents/HighlightsSection/HighlightsSection";
+import RecruitersList from "@/components/TrainingPlacementPageComponents/RecruitersSection/RecruitersSection";
 import React from "react";
 
 export const metadata = {
@@ -53,27 +54,15 @@ interface CouncilMember {
 
 }
 
-const page =async () => {
+const page = () => {
 
-  let facultyDataFetched: Faculty[] = [];
-  try {
-    const res = await fetch("https://canaraapi.megamind.studio/faculty");
-    if (!res.ok) throw new Error("Failed to fetch faculty data");
-    const data: Faculty[] = await res.json();
-console.log(data,"dd");
-
-    // Filter faculty for the current department
-    facultyDataFetched = data?.filter((faculty) => faculty.department === "Placement Team").slice(0,10);
-  } catch (error) {
-    console.error("Error fetching faculty data:", error);
-  }
-
+ 
 
 
   return (
     <>
       <HeroSection />
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0 mb-9 |">
+      <section className="px-6 md:px-12 lg:px-16 xl:px-0 mb-9 mt-5 lg:mt-10">
         <AboutDepartment />
       </section>
       <section className="pb-10 lg:mt-0 -mt-12">
@@ -86,10 +75,7 @@ console.log(data,"dd");
       <section className="px-6 md:px-12 lg:px-16 xl:px-0 lg:mt-0 -mt-12">
 
        <DepartmentFaculty
-  facultyData={facultyDataFetched.map(faculty => ({
-    ...faculty,
-    roles: [{ title: faculty.desiganation, organization: "" }] // map designation to roles
-  }))}
+  
   heading="Meet Our Placement Team"
   description="Our dedicated placement team works tirelessly to connect students with top companies, guiding them towards successful careers and brighter futures."
 />
@@ -100,6 +86,9 @@ console.log(data,"dd");
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0  lg:mt-0 -mt-12 ">
         <HighlightsSection />
+      </section>
+     <section className="px-6 md:px-12 lg:px-16 xl:px-0 mb-14">
+        <RecruitersList />
       </section>
       <section className="px-6  pt-14 lg:pt-20  md:px-12 lg:pl-16 lg:px-0 bg-[#e5e5ea]  xl:px-0">
         <ExploreFacilities />

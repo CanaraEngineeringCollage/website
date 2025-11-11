@@ -3,7 +3,7 @@
     "title": "Objectives",
     "data": [
       {
-        "title": "Cell’s Objectives"
+        "title": "Cell’s Objectives" 
       },
       {
         "description": "The objective of the Students Grievance Redressal Cell is to develop a responsible and positive attitude among students in order to maintain a harmonious educational atmosphere in Canara Engineering College Campus."
@@ -81,19 +81,19 @@
     ]
   },
   {
-    "title": "Student Grievance Redressal Committee (SGRC): 2024-25",
+    "title": "Student Grievance Redressal Committee (SGRC): 2025-26",
     "data": [
       {
-        "title": "Committee Members",
+        "title": "Committee Members 2025-26",
         "type": "table",
         "headers": ["Sl. No", "Name", "Role", "Department", "Email"],
         "rows": [
           ["1", "Dr. Nagesh H R", "Chair Person", "CSE", "nageshhr@canaraengineering.in"],
-          ["2", "Dr. Priya V Frank", "Member", "BS&H", "priyafrank@gmail.com"],
-          ["3", "Dr. Nagesh Shenoy", "Member", "CSE", "h.nagesh.shenoy@gmail.com"],
-          ["4", "Mr. Narayan Naik", "Member", "ISE", "naik.mtech09@gmail.com"],
-          ["5", "Ms. Tara B B", "Member", "CSE", "tarabb05@gmail.com"],
-          ["6", "Mr. Pratham R Kamath", "Student Invitee", "ECE", "prathamkamath2003@gmail.com"],
+          ["2", "Dr. Priya V Frank", "Member", "BS&H", "priya.frank@canaraengineering.in"],
+          ["3", "Dr. H. Nagesh Shenoy", "Member", "CSE", "nagesh.shenoy@canarengineering.in"],
+          ["4", "Dr. Narayan Ram Naik", "Member", "ISE", "narayan.naik@canaraengineering.in"],
+          ["5", "Ms. Tara B B", "Member", "CSE", "tara@canaraengineering.in"],
+          ["6", "Mr. K Adithya Bhakta", "Student Invitee", "CSE", "adibhaktha07@gmail.com"],
           ["7", "Ms. K Thejaswi Nayak", "Student Invitee", "ISE", "thejaswinayak05@gmail.com"]
         ]
       }

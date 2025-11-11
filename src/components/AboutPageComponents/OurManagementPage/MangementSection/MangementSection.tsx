@@ -32,7 +32,7 @@ const HeroSection = () => {
   return (
     <section>
       <div className="px-4 sm:px-10 md:px-16 lg:px-24  py-12 sm:py-16 md:py-20">
-        <h1 className=" text-[#1D1D1F] text-[39px] lg:text-[54px] font-bold mb-8 sm:mb-10 md:mb-32">Our Management</h1>
+        <h1 className=" text-[#1D1D1F] text-[39px] lg:text-[54px] font-bold mb-8 sm:mb-10 md:mb-16">Our Management</h1>
         <div className="grid grid-cols-1 md:grid-cols-12 ">
           <div className="md:col-span-3 text-[20px]">
             {headings.map((heading, index) => (
@@ -95,20 +95,20 @@ const HeroSection = () => {
                       className={`flex justify-between gap-2 pb-3 mb-3  ${index < (data[selectedHeading] as ManagementItem[]).length - 1 ? "border-b-2 border-border " : ""}`}
                     >
                       <h1 className="text-[16px]  text-textGray font-bold">{item.title}</h1>
-                      <h1 className="text-[16px] text-textGray">{item.name}</h1>
+                      <h1 className="text-[16px] text-textGray ">{item.name}</h1>
                     </div>
                   ))}
                 </div>
                 {/* Desktop layout: original two-column layout */}
                 <div className="hidden sm:grid sm:grid-cols-12">
-                  <div className="text-[17px] col-span-4 text-[#86868B]">
+                  <div className="text-[17px] col-span-4 text-textGray">
                     {(data[selectedHeading] as ManagementItem[]).map((item, index) => (
                       <h1 key={index} className={`pb-3 mb-3 font-bold text-[17px] ${index < (data[selectedHeading] as ManagementItem[]).length - 1 ? "border-b-2  border-border" : ""}`}>
                         {item.title}
                       </h1>
                     ))}
                   </div>
-                  <div className="text-[17px] col-span-8  text-[#86868B]">
+                  <div className="text-[17px] col-span-8  text-textGray ">
                     {(data[selectedHeading] as ManagementItem[]).map((item, index) => (
                       <h1 key={index} className={`pb-3 mb-3 ${index < (data[selectedHeading] as ManagementItem[]).length - 1 ? "border-b-2 border-border" : ""}`}>
                         {item.name}

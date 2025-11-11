@@ -15,16 +15,13 @@ interface DataItem {
 }
 
 const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; functionDeprtmentData: DataItem[] }) => {
-  const [data, setData] = useState<DataItem[]>(functionDeprtmentData);
   const swiperRef = useRef<SwiperType | null>(null);
   const [isPlay, setIsPlay] = useState(true);
   const [progress, setProgress] = useState(0);
+
   const autoplayDelay = 3000; // Swiper autoplay delay in ms
   const CIRCUMFERENCE = 138; // 2πr, where r=22
-
-  useEffect(() => {
-    setData(functionDeprtmentData);
-  }, [functionDeprtmentData]);
+  const progressRef = useRef(0); // local ref for smooth progress
 
   // Handle play/pause toggle
   const togglePlayPause = () => {
@@ -33,7 +30,8 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
         swiperRef.current.autoplay.stop();
       } else {
         swiperRef.current.autoplay.start();
-        setProgress(0); // reset when resuming
+        progressRef.current = 0;
+        setProgress(0);
       }
       setIsPlay(!isPlay);
     }
@@ -43,12 +41,22 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
   const handleAutoplayTimeLeft = (_swiper: SwiperType, time: number) => {
     const elapsed = autoplayDelay - time;
     const percent = Math.min((elapsed / autoplayDelay) * 100, 100);
-    setProgress(percent);
+    progressRef.current = percent;
+    requestAnimationFrame(() => setProgress(progressRef.current));
+  };
+
+  // Reset progress on slide change
+  const onSlideChange = () => {
+    progressRef.current = 0;
+    setProgress(0);
   };
 
   return (
-    <section className="lg:ml-16  py-24 xl:py-36 xl:ml-60">
-      {title && <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl leading-[1.2] font-bold text-center text-[#1D1D1F] pb-6 xl:pb-22">{title}</h1>}
+    <section className="lg:ml-16 py-24 xl:py-24 xl:ml-60">
+      {title && (
+        <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl leading-[1.2] font-bold text-center text-[#1D1D1F] pb-6 xl:pb-22">{title}</h1>
+      )}
+
       <Swiper
         modules={[Autoplay]}
         autoplay={{ delay: autoplayDelay, disableOnInteraction: false }}
@@ -63,15 +71,27 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
         className="mySwiper"
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
+          // Ensure autoplay starts immediately when Swiper is ready
+          try {
+            if (swiper?.autoplay && !swiper.autoplay.running) {
+              swiper.autoplay.start();
+              setIsPlay(true);
+              progressRef.current = 0;
+              setProgress(0);
+            }
+          } catch (e) {
+            // ignore if autoplay API isn't available yet
+            // console.warn('Autoplay start failed', e);
+          }
         }}
-        onSlideChange={() => setProgress(0)} // reset each slide
+        onSlideChange={onSlideChange}
         onAutoplayTimeLeft={handleAutoplayTimeLeft}
       >
-        {data?.map((item, index) => (
+        {functionDeprtmentData?.map((item, index) => (
           <SwiperSlide key={index}>
             <div className="max-w-sm h-[25vh] lg:h-[30vh] p-6 bg-[#ffffff] rounded-2xl">
               <div className="mb-4">
-                <Image src={item.icon} alt="Mental Health Icon" width={30} height={30} />
+                <Image src={item.icon} alt="Icon" width={30} height={30} />
               </div>
               <h2 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h2>
               <p className="text-sm text-gray-600">{item.description}</p>
@@ -79,34 +99,17 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
           </SwiperSlide>
         ))}
       </Swiper>
+
       <div className="flex justify-between items-center mt-9 me-8 gap-4">
         {/* Play/Pause Button with Progress Circle */}
-        <div className="relative lg:pe-5  md:pb-0 md:pe-3 lg:pb-0 cursor-pointer" onClick={togglePlayPause}>
-          <svg width="50" height="50" viewBox="0 0 50 50">
-            {/* Background Circle */}
-            <circle cx="25" cy="25" r="22" stroke="#ffff" strokeWidth="2" fill="none" opacity="0.3" />
-            {/* Progress Circle */}
-            <circle
-              cx="25"
-              cy="25"
-              r="22"
-              stroke="#E8E8ED"
-              strokeWidth="2"
-              fill="none"
-              strokeDasharray={CIRCUMFERENCE}
-              strokeDashoffset={((100 - progress) / 100) * CIRCUMFERENCE}
-              strokeLinecap="round"
-              className="transition-all duration-100"
-              transform="rotate(-90 25 25)"
-            />
-            {/* Play/Pause Icon */}
-            <foreignObject x="9" y="8" width="32" height="32">
+        <div className="relative lg:pe-5 md:pb-0 md:pe-3 lg:pb-0 cursor-pointer" onClick={togglePlayPause}>
+        
+           
               <button className="w-full h-full cursor-pointer flex items-center justify-center" aria-label={isPlay ? "Pause" : "Play"}>
                 {isPlay ? <Pause /> : <Play />}
               </button>
-            </foreignObject>
-          </svg>
         </div>
+
         {/* Navigation Buttons */}
         <div className="flex gap-2">
           <button
