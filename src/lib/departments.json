@@ -52238,13 +52238,14 @@
           "desc": "Data Structure and Algorithms Laboratory (AIL01): This lab is designed to help students understand and implement various experiments of data structures and algorithms, and also Ability Enhancement Courses with practical approaches. It provides an environment for students to practice coding, analyze the efficiency of different algorithms, and solve complex problems. The laboratory is equipped with computer systems with the necessary software tools required for implementing and testing academic laboratory experiments. Academic Labs: Data Structures, DAA.",
           "methodes": "",
           "points": [],
-          "imageUrl": "https://www.canaraengineering.in/departments/ai/labpics/AIL02.jpeg"
+          "imageUrl": "https://cec.edu.in/files/lab2"
         },
         {
           "title": "",
           "desc": "Machine Learning Laboratory (AIL02): The Machine Learning Laboratory is dedicated to providing students with practical experience in developing and applying machine learning algorithms. The lab is equipped with powerful computing resources and software tools for tasks such as data pre-processing, model training, and evaluation. Students can work on real-world datasets and projects to gain insights into machine learning techniques, experiment with different algorithms, and evaluate their performance. Academic Labs: Python Programming, Machine Learning.",
           "methodes": "",
-          "points": []
+          "points": [],
+          "imageUrl":"https://cec.edu.in/files/lab1"
         },
         {
           "title": "",
