@@ -1,7 +1,29 @@
 [
-  {
+    {
     "id": 1,
-    "name": "Karthik Pai B H",
+    "name": "Dr. Nagesh H R",
+    "image": "/principal.jpeg",
+    "category": "Prospective",
+    "roles": [
+      { "title": "Principal", "organization": "" }
+    ]
+  },
+    {
+    "id": 1,
+    "name": "Dr. Priya_Vineetha",
+    "image": "/Dr._Priya_Vineetha_Frank__Professor_&_Dean_(SWO).webp",
+    "category": "Prospective",
+    "roles": [
+      { "title": "Dean - Student Welfare", "organization": "" }
+    ]
+  },
+
+
+
+  
+  {
+    "id": 11,
+    "name": "Dr. Karthik Pai B H",
     "image": "/departmentImages/departmentHeads/computer-science.webp",
     "category": "Prospective",
     "roles": [
@@ -19,7 +41,7 @@
   },
   {
     "id": 3,
-    "name": "Dr.Raghavendra M Shetty K",
+    "name": "Dr. Raghavendra M Shetty K",
     "image": "/departmentImages/departmentHeads/Electronics&CommunicationEngineering.webp",
     "category": "Parents",
 "roles": [
@@ -27,7 +49,7 @@
     ]  },
   {
     "id": 4,
-    "name": "Dr.Praahas Amin",
+    "name": "Dr. Praahas Amin",
     "image": "/departmentImages/departmentHeads/ComputerScienceDesign.webp",
     "category": "Alumni",
     "roles": [
@@ -37,7 +59,7 @@
   {
     "id": 5,
     "name": "Dr. Rajgopal K. T",
-    "image": "/departmentImages/departmentHeads/ComputerScience&BusinessSystem.webp",
+    "image": "/departmentImages/departmentHeads/csb.webp",
     "category": "Governing",
    "roles": [
       { "title": "Computer Science & Business System", "organization": "" }
@@ -50,6 +72,28 @@
     "category": "Prospective",
    "roles": [
       { "title": "Artificial Intelligence & Machine Learning", "organization": "" }
+    ]
+  },
+
+   {
+    "id": 9,
+    "name": "Dr. Niranjan Rai",
+    "image": "/departmentImages/departmentHeads/mechHod.jpeg",
+    "category": "Prospective",
+   "roles": [
+      { "title": "Mechanical Engineering", "organization": "" }
+    ]
+  },
+
+
+  
+       {
+    "id": 7,
+    "name": "Dr. N. Satheesh Kumar",
+    "image": "/departmentImages/departmentHeads/science&humanities.webp",
+    "category": "Prospective",
+   "roles": [
+      { "title": "Science & Humanities", "organization": "" }
     ]
   }
 ]

@@ -1,13 +1,10 @@
 
 
-import visionImage1 from "../../../../public/aboutPageImages/MissionVision/visionImage1.webp";
-import visionImage2 from "../../../../public/aboutPageImages/MissionVision/visionImage2.webp";
-import visionImage3 from "../../../../public/aboutPageImages/MissionVision/visionImage3.webp";
-import visionImage4 from "../../../../public/aboutPageImages/MissionVision/visionImage4.webp";
+
 
 export default function EnterpreneurshipMission() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 w-full mx-auto px-4 sm:px-6 md:px-12 lg:px-28 py-12 md:py-20 lg:py-28">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 w-full mx-auto px-4 sm:px-6 md:px-12 lg:px-28 py-12 md:py-20 lg:py-24">
   {/* Left Column */}
   <div className="flex flex-col gap-8 lg:gap-12">
     {/* Objectives */}
@@ -22,7 +19,7 @@ export default function EnterpreneurshipMission() {
         alt="icon"
         className="w-12 sm:w-[50px] md:w-[59px] h-auto"
       />
-      <p className="text-[#afafb3] text-sm sm:text-base leading-relaxed">
+      <p className="text-textGray text-sm sm:text-base leading-relaxed">
         To play a proactive and supporting role for the college, its students and the institution at large.
       </p>
     </li>
@@ -33,7 +30,7 @@ export default function EnterpreneurshipMission() {
         alt="icon"
         className="w-12 sm:w-[50px] md:w-[59px] h-auto"
       />
-      <p className="text-[#afafb3] text-sm sm:text-base leading-relaxed">
+      <p className="text-textGray text-sm sm:text-base leading-relaxed">
         To serve as a link between the Institution’s faculty, students, Management and the industries.
       </p>
     </li>
@@ -44,7 +41,7 @@ export default function EnterpreneurshipMission() {
         alt="icon"
         className="w-12 sm:w-[50px] md:w-[59px] h-auto"
       />
-      <p className="text-[#afafb3] text-sm sm:text-base leading-relaxed">
+      <p className="text-textGray text-sm sm:text-base leading-relaxed">
         To bring about an effective, cohesive and Z between the members of the alumni.
       </p>
     </li>
@@ -57,7 +54,7 @@ export default function EnterpreneurshipMission() {
       <h2 className="text-3xl lg2:text-5xl lg:text-4xl text-center lg:text-start font-bold text-[#1D1D1F] mb-8">
         Our Mission
       </h2>
-      <p className="text-[#afafb3] text-sm sm:text-base leading-relaxed">
+      <p className="text-textGray text-sm sm:text-base leading-relaxed">
         As a dynamic organization, keen and excellence of CEC and its alumni, 
         the alumni association strives to nurture a lifelong intellectual and emotional 
         relationship with a college and amongst alumni; and to provide sustainable 
@@ -76,7 +73,7 @@ export default function EnterpreneurshipMission() {
     <h2 className="text-3xl lg2:text-5xl lg:text-4xl text-center lg:text-start font-bold text-[#1D1D1F] mb-4">
       Our Vision
     </h2>
-    <p className="text-[#949499] text-sm sm:text-base leading-relaxed">
+    <p className="text-textGray text-sm sm:text-base leading-relaxed">
       Alumni Association of Canara Engineer’s vision is to develop a dedicated and dynamic 
       global alumni community whose members are committed to each other and to develop 
       connections among alumni and students to strengthen their commitment to college.

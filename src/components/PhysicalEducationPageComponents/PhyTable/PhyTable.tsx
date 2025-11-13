@@ -12,7 +12,6 @@ const ModelTable: React.FC<ModelTableProps> = ({ title, headers, rows }) => {
   const [showMore, setShowMore] = useState(false);
   const tableRef = useRef<HTMLDivElement>(null);
 
-  // Limit to first 6 rows unless expanded
   const visibleRows = showMore ? rows : rows.slice(0, 6);
 
   const handleToggle = () => {
@@ -29,36 +28,37 @@ const ModelTable: React.FC<ModelTableProps> = ({ title, headers, rows }) => {
       </h1>
 
       <div className="overflow-x-auto">
-         <div className="rounded overflow-hidden border border-gray-200 w-full">
-        <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
-          <thead className="bg-[#F3F8FC] text-[#2884CA]">
-            <tr>
-              
-              {headers.map((header, index) => (
-                <th key={index} className="py-3 md:px-4 px-1 border-b">
-                  {header}
-                </th>
-              ))}
-            </tr>
-          </thead>
-
-          <tbody
-            className={`transition-all duration-700 ease-in-out overflow-hidden ${
-              showMore ? "max-h-[5000px]" : "max-h-[600px]"
-            }`}
-          >
-            {visibleRows.map((row, rowIndex) => (
-              <tr key={rowIndex} className="text-textGray">
-                <td className="py-3 md:px-4 px-1 border-b">{rowIndex + 1}.</td>
-                {row.map((cell, cellIndex) => (
-                  <td key={cellIndex} className="py-3 md:px-4 px-1 border-b">
-                    {cell}
-                  </td>
+        <div className="rounded overflow-hidden border border-gray-200 w-full">
+          <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+            <thead className="bg-[#F3F8FC] text-[#2884CA]">
+              <tr>
+                {headers.map((header, index) => (
+                  <th key={index} className="py-3 md:px-4 px-1 border-b">
+                    {header}
+                  </th>
                 ))}
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+
+            <tbody
+              className={`transition-all duration-700 ease-in-out overflow-hidden ${
+                showMore ? "max-h-[5000px]" : "max-h-[600px]"
+              }`}
+            >
+              {visibleRows.map((row, rowIndex) => (
+                <tr key={rowIndex} className="text-textGray">
+                  <td className="py-3 md:px-4 px-1 border-b">
+                    {rowIndex + 1}.
+                  </td>
+                  {row.map((cell, cellIndex) => (
+                    <td key={cellIndex} className="py-3 md:px-4 px-1 border-b">
+                      {cell}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
 

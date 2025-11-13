@@ -7,6 +7,7 @@ import nirf from "../../../../public/svgs/heropageLogos/1.svg";
 import iso from "../../../../public/svgs/heropageLogos/6.webp";
 import nba from "../../../../public/svgs/heropageLogos/3.svg";
 import nba2 from "../../../../public/svgs/heropageLogos/4.svg";
+import iso2015 from "../../../../public/svgs/heropageLogos/7.svg";
 import affiliated from "../../../../public/svgs/heropageLogos/5.svg";
 import bg3 from "../../../../public/herosectionImages/hero3.webp";
 import bg2 from "../../../../public/herosectionImages/heroBg.webp";
@@ -20,14 +21,16 @@ import 'swiper/css/effect-fade';
 
 const HeroSection = () => {
   const logos = [
-    { label: 'NIRF Recognised', src: nirf },
+    // { label: 'NIRF Recognised', src: nirf },
     { label: 'NAAC Accredited', src: nba },
     { label: 'ISO 21001:2018', src: iso },
+    { label: 'ISO 9001:2015', src: iso2015 },
     { label: 'NBA Accredited', src: nba2 },
     { label: 'Affiliated to VTU', src: affiliated },
-    { label: 'NIRF Recognised', src: nirf },
+    // { label: 'NIRF Recognised', src: nirf },
     { label: 'NAAC Accredited', src: nba },
     { label: 'ISO 21001:2018', src: iso },
+    { label: 'ISO 9001:2015', src: iso2015 },
     { label: 'NBA Accredited', src: nba2 },
     { label: 'Affiliated to VTU', src: affiliated },
   
@@ -71,10 +74,10 @@ const HeroSection = () => {
 
       {/* Main Content */}
       <div className="absolute top-10 md:top-20 max-w-4xl mx-auto text-white px-4 z-10">
-        <h2 className="text-xl md:text-[32px] font-light text-[#F5F5F7]">
+        <h2 className=" text-2xl md:text-4xl lg:text-6xl font-bold">
           Canara Engineering College
         </h2>
-        <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold mt-2 ">
+        <h1 className="text-xl md:text-[32px] font-light text-[#F5F5F7] mt-2 ">
           Pioneering Innovation in <br /> Tech Learning
         </h1>
       </div>

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import grievanceRedressalCell from "../../../../utils/grievanceData/grievanceData.json";
 import { useParams } from "next/navigation";
 import departments from "@/lib/departments.json";
@@ -17,6 +17,7 @@ import Publications from "../DepartmentDetailesTab/Publications/Publications";
 import Events from "../DepartmentDetailesTab/Events/Events";
 import Gallery from "../DepartmentDetailesTab/Gallery/Gallery";
 import Magazines from "../DepartmentDetailesTab/Magazines/Magazines";
+import CareerProspects from "../CareerProspects/CareerProspects";
 
 interface Qualification {
   degree: string;
@@ -48,40 +49,106 @@ interface CouncilMember {
   employmentType?: string; // Make this optional
   qualifications: Qualification[];
   faculties?: Faculty[];
-  
 }
-
 
 // Props interface for the component
 interface DepartmentSectionProps {
-  faculties: CouncilMember[];
+  departmentName: string;
 }
 
-const DepartmentDetailes = ({ faculties }: DepartmentSectionProps) => {
+const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   const { slug } = useParams();
 
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [selectedSection, setSelectedSection] = useState<string>("Department Profile");
- 
+
+  const [facultyData, setFacultyData] = useState<Faculty[]>([]);
+
+  const [events, setEvents] = useState<Event[]>([]);
+  const [page, setPage] = useState(1);
+  const [limit, setLimit] = useState(10); // start with 10
+  const [hasMore, setHasMore] = useState(true);
+  const [loading, setLoading] = useState(false);
+
+  const fetchEvents = useCallback(async () => {
+    if (loading || !hasMore) return;
+    try {
+      setLoading(true);
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/events?category=${encodeURIComponent(departmentName)}&page=${page}&limit=${limit}&sortBy=date`
+      );
+      if (!response.ok) throw new Error("Failed to fetch events");
+      const data = await response.json();
+
+      if (data.data.length === 0) {
+        setHasMore(false);
+        return;
+      }
+
+      // Append new data (avoid duplicates)
+      setEvents((prev) => [...prev, ...data.data.filter((newEvent: Event) => !prev.some((e) => e.id === newEvent.id))]);
+
+      if (data.data.length < limit) {
+        setHasMore(false);
+      } else {
+        // update next batch size logic
+        if (page === 1) {
+          setLimit(10); // 2nd fetch = +10
+        } else {
+          setLimit(20); // then always +20
+        }
+        setPage((prev) => prev + 1);
+      }
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
+  }, [departmentName, page, limit, hasMore, loading]);
+
+  useEffect(() => {
+    setEvents([]);
+    setPage(1);
+    setLimit(10);
+    setHasMore(true);
+  }, [departmentName]);
+
+  useEffect(() => {
+    if (hasMore && !loading) {
+      fetchEvents();
+    }
+  }, [fetchEvents, hasMore]);
+
+  useEffect(() => {
+    if (!loading && hasMore && events.length > 0) {
+      const timer = setTimeout(() => {
+        fetchEvents();
+      }, 1000); // auto trigger next batch after 1s
+      return () => clearTimeout(timer);
+    }
+  }, [loading, hasMore, events.length, fetchEvents]);
+
   
+
+
   const department = departments.find((dept) => dept.slug === slug);
   const departmentMenuItems = [
-  "Department Profile",
-  "Organisation Structure",
-  "Head of Department",
-  "Faculty & Staff",
-  "Academic Programs",
-  "PEO & PO-PSO",
-  "Course Outcomes (CO)",
-  "Facilities",
-  "Student Achievement",
-  ...(department?.name !== "Information Science & Engineering" ? ["Research & Product Development"] : []),
-  ...(department?.name === "Information Science & Engineering" ? ["Publications"] : []),
-  "Magazines & Newsletters",
-  "Events",
-  "Gallery",
-];
-
+    "Department Profile",
+    ...(department?.name === "Artificial Intelligence & Machine Learning" ? ["Career Prospects"] : []),
+    ...(department?.name !== "Mechanical Engineering" ? ["Organisation Structure"] : []),
+    "Head of the Department",
+    "Faculty & Staff",
+    "Academic Programmes",
+    ...(department?.name === "Science & Humanities" ? ["PO"] : ["PEO & PO-PSO"]),
+    "Course Outcomes (CO)",
+    "Facilities",
+    "Student Achievements",
+    ...(department?.name !== "Information Science & Engineering" ? ["Research & Product Development"] : []),
+    ...(department?.name === "Information Science & Engineering" || department?.name === "Mechanical Engineering" ? ["Publications"] : []),
+    "Magazines & Newsletters",
+    "Events",
+    "Gallery",
+  ];
 
   return (
     <section className="py-10 xl:py-36 text-black lg2:px-24 mx-5 overflow-hidden">
@@ -91,40 +158,46 @@ const DepartmentDetailes = ({ faculties }: DepartmentSectionProps) => {
         <div className={`grid grid-cols-1 gap-3  md:grid-cols-12 mt-10`}>
           <div className="col-span-3">
             <div className="sticky top-20 h-fit">
-            {departmentMenuItems?.map((section, index) => (
-              <h1
-                key={index}
-                onClick={() => {
-                  setSelectedIndex(index);
-                  setSelectedSection(section);
-                }}
-                className={`border-b-2 text-[20px] pb-3 mb-3 border-border cursor-pointer ${
-                  selectedIndex === index ? "text-[#2884CA] font-bold" : "text-textGray font-[500]"
-                }`}
-              >
-                {section}
-              </h1>
-            ))}
+              {departmentMenuItems?.map((section, index) => (
+                <h1
+                  key={index}
+                  onClick={() => {
+                    setSelectedIndex(index);
+                    setSelectedSection(section);
+                  }}
+                  className={`border-b-2 text-[20px] pb-3 mb-3 border-border cursor-pointer ${
+                    selectedIndex === index ? "text-[#2884CA] font-bold" : "text-textGray font-[500]"
+                  }`}
+                >
+                  {section}
+                </h1>
+              ))}
             </div>
           </div>
           <div className="col-span-1"></div>
-          <div className="col-span-8 md:h-[130vh] scrollable overflow-y-auto  pr-2">
-            {selectedSection === "Department Profile" && <DepartmentProfile keyPoints={department?.keyPractices} data={department?.description} />}
-            {selectedSection === "Organisation Structure" && department?.organisation && <Organaisation data={department?.organisation}/>}
-            {selectedSection === "Head of Department" && <Hod data={department?.depatmentHead} />}
-            {selectedSection === "Faculty & Staff" && <Faculty datam={faculties}/>}
-            {selectedSection === "Academic Programs" && department?.academicsProgram && <Academic data={department.academicsProgram} />}
+          <div className="col-span-8 max-h-[70vh] md:max-h-[130vh] scrollable overflow-y-auto  pr-2">
+            {selectedSection === "Department Profile" && (
+              <DepartmentProfile annualIntake={department?.annualTake} keyPoints={department?.keyPractices} data={department?.description} />
+            )}
+            {selectedSection === "Organisation Structure" && department?.organisation && <Organaisation data={department?.organisation} />}
+            {selectedSection === "Head of the Department" && <Hod data={department?.depatmentHead} />}
+            {selectedSection === "Faculty & Staff" && <Faculty deptName={department?.name}  />}
+            {selectedSection === "Academic Programmes" && department?.academicsProgram && <Academic data={department.academicsProgram} />}
+            {selectedSection === "PO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
             {selectedSection === "PEO & PO-PSO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
-            {selectedSection === "Course Outcomes (CO)" && <CourseOutCome />}
-            {selectedSection === "Facilities" && department?.facilities && <Facilities data={department?.facilities} />}
-            {selectedSection === "Student Achievement" && department?.studentAcheivemtents && (
+            {selectedSection === "Course Outcomes (CO)" && <CourseOutCome deptName={department?.name} staticData={department?.courseOutcome} />}
+            {selectedSection === "Facilities" && department?.facilities && <Facilities deptName={department?.name} data={department?.facilities} />}
+            {selectedSection === "Student Achievements" && department?.studentAcheivemtents && (
               <StudentAchievement data={department?.studentAcheivemtents} />
             )}
-            {selectedSection === "Research & Product Development" && department?.research && <Research data={department?.research}/>}
-            {selectedSection === "Publications" && department?.publications &&<Publications data={department?.publications}/>}
-            {selectedSection === "Magazines & Newsletters" && department?.magazines && <Magazines data={department?.magazines}/>}
-            {selectedSection === "Events" && <Events />}
-            {selectedSection === "Gallery" && <Gallery />}
+            {selectedSection === "Research & Product Development" && department?.research && (
+              <Research deptName={department?.name} data={department?.research} />
+            )}
+            {selectedSection === "Publications" && department?.publications && <Publications data={department?.publications} />}
+            {selectedSection === "Magazines & Newsletters" && department?.magazines && <Magazines data={department?.magazines} />}
+            {selectedSection === "Events" && <Events events={events} departmentName={departmentName} />}
+            {selectedSection === "Gallery" && <Gallery data={department?.gallery} />}
+            {selectedSection === "Career Prospects" && <CareerProspects data={department?.careerProspects[0]} />}
           </div>
         </div>
       </div>

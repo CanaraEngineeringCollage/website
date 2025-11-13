@@ -26,7 +26,7 @@ const SecretaryMessage = () => {
         <p className="mt-4 text-center text-xl md:text-[27px] font-bold text-white">
           M. Ranganath Bhat
         </p>
-        <p className="text-xs md:text-[17px] ms-2 text-center text-[#76838b]">
+        <p className="text-xs md:text-[17px] ms-2 text-center text-white">
           Hon. Secretary-C.H.S.A & Correspondent CEC
         </p>
       </div>
@@ -37,7 +37,7 @@ const SecretaryMessage = () => {
         <h1 className="text-2xl text-center hidden lg:block lg:text-start  md:text-[40px] lg:text-5xl xl:text-6xl font-bold leading-snug lg:leading-[1.1] text-white mb-6 ">
           Message from the <br /> Honorary Secretary
         </h1>
-        <p className="text-sm md:text-[17px] text-[#c5c6c7] leading-relaxed  lg:text-start text-justify ">
+        <p className="text-sm md:text-[17px] text-white leading-relaxed  lg:text-start text-justify ">
           Canara&rsquo;s 126-year legacy is built on adaptability, innovation &amp; progress. 
           Embracing change has been our strength, preparing us to meet evolving challenges head-on. 
           The Valediction of the Post-Centennial Silver Jubilee on June 30, 2016, marked a milestone with the inauguration 
@@ -61,7 +61,7 @@ const SecretaryMessage = () => {
         <p className="mt-4 text-center text-2xl md:text-[27px] font-bold text-white">
           M. Ranganath Bhat
         </p>
-        <p className="text-sm ms-2 md:text-[17px] text-center text-[#76838b]">
+        <p className="text-sm ms-2 md:text-[17px] text-center text-white">
           Hon. Secretary-C.H.S.A & Correspondent CEC
         </p>
       </div>

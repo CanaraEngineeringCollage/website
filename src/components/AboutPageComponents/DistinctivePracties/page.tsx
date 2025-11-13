@@ -53,7 +53,7 @@ const DistinctivePracties = () => {
         </h2>
 
         {/* Subtitle */}
-        <p className="text-[#86868B] text-center max-w-4xl mb-10 text-base md:text-[20.34px]">
+        <p className="text-textGray text-center max-w-4xl mb-10 text-base md:text-[20.34px]">
           Canara Engineering College follows the following practices which are aimed at
           improving the overall services towards faculty and students.
         </p>
@@ -67,7 +67,7 @@ const DistinctivePracties = () => {
              h-auto lg:h-[216px] flex items-center justify-center text-center 
              border border-[#2884CA] transition-colors duration-300 mx-auto"
             >
-              <p className="text-[#86868B] text-base md:text-lg px-2">{item.text}</p>
+              <p className="text-textGray text-base md:text-lg px-2">{item.text}</p>
             </div>
           ))}
         </div>
@@ -81,7 +81,7 @@ const DistinctivePracties = () => {
              h-auto lg:h-[216px] flex items-center justify-center text-center 
              border border-[#2884CA] transition-colors duration-300 mx-auto"
             >
-              <p className="text-[#86868B] text-base md:text-lg px-2">{item.text}</p>
+              <p className="text-textGray text-base md:text-lg px-2">{item.text}</p>
             </div>
           ))}
         </div>
@@ -95,7 +95,7 @@ const DistinctivePracties = () => {
              h-auto lg:h-[216px] flex items-center justify-center text-center 
              border border-[#2884CA] transition-colors duration-300 mx-auto"
             >
-              <p className="text-[#86868B] text-sm sm:text-base md:text-lg px-2">{item.text}</p>
+              <p className="text-textGray text-sm sm:text-base md:text-lg px-2">{item.text}</p>
             </div>
           ))}
         </div>
@@ -112,7 +112,7 @@ const DistinctivePracties = () => {
             <h3 className="text-2xl md:text-[36px] font-bold mb-6 text-[#1D1D1F]">
               Faculty Centric Practices
             </h3>
-            <ul className="list-disc  space-y-3 text-[#86868B] text-base md:text-[17px] leading-relaxed">
+            <ul className="list-disc  space-y-3 text-textGray text-base md:text-[17px] leading-relaxed">
               <li>Financial support for faculty for publishing papers in national and international journals and conferences.</li>
               <li>Sponsorship for faculty and staff to attend Conferences, Seminars, Workshops, FDPs, Industrial Trainings, and NPTEL courses.</li>
               <li>Research allowance for those who have completed/pursuing Ph.D.</li>
@@ -129,7 +129,7 @@ const DistinctivePracties = () => {
             <h3 className="text-2xl md:text-[36px] font-bold mb-6 text-[#1D1D1F]">
               Student Centric Practices
             </h3>
-            <ul className="list-disc  space-y-3 text-[#86868B] text-base md:text-[17px] leading-relaxed">
+            <ul className="list-disc  space-y-3 text-textGray text-base md:text-[17px] leading-relaxed">
               <li>Recognition and awarding students for their extraordinary performance in academics, co-curricular and extra-curricular activities.</li>
               <li>Management scholarship to the needy and eligible students.</li>
               <li>Sponsoring students to attend intercollegiate co-curricular and extra-curricular activities.</li>

@@ -54,7 +54,7 @@ const studentSupport = [
     link: "/about/grievance-redressal-cell",
   },
   {
-    title: "SWO Department",
+    title: "Student Welfare Department",
     link: "/about/student-welfare-department",
   },
 ];
@@ -84,10 +84,14 @@ const departments = [
     title: "Artificial Intelligence & Machine Learning",
     link: "/department/artificial-intelligence-machine-learning",
   },
-  // {
-  //   title: "Science & Humanities",
-  //   link: "/department/science-humanities",
-  // },
+   {
+    title: "Mechanical Engineering",
+    link: "/department/mechanical-engineering",
+  },
+  {
+    title: "Science & Humanities",
+    link: "/department/science-humanities",
+  },
 ];
 
 const curriculum = [
@@ -110,6 +114,23 @@ const campusBeats = [
     title: "Alumni",
     link: "/alumni",
   },
+  {
+    title: "About Alumni",
+    link: "/alumni/about-alumni",
+  },
+  {
+    title: "Student Achievements",
+    link: "/media",
+  },
+   {
+    title: "Hostel Out Pass",
+    link: "https://www.canaraengineering.in/s_hostelpass",
+  },
+   {
+    title: "Student Information",
+    link: "https://www.canaraengineering.in/s-info",
+  },
+
 ];
 
 const learningHub = [
@@ -118,8 +139,12 @@ const learningHub = [
     link: "https://digital.canaraengineering.in/",
   },
   {
-    title: "Research",
+    title: "Research at CEC",
     link: "/academics/research",
+  },
+   {
+    title: "Research & Development and Consultancy Cell",
+    link: "/academics/research-development-consultancy",
   },
 ];
 
@@ -135,6 +160,10 @@ const campusFacilities = [
     {
     title: "Student Life & Engagement",
     link: "/campus-facilities/studentlife-engagement",
+  },
+    {
+    title: "Placement Portal",
+    link: "https://www.canaraengineering.in/placements_portal.php",
   },
 ];
 

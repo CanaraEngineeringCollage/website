@@ -23,7 +23,6 @@ export default function KnowYourStatus() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
     // Add form submission logic here
   };
 

@@ -32,14 +32,13 @@ const ProfileCard = ({ datam, title }: { datam: GoverningCouncilMember; title: s
 
   return (
     <section className="pb-20 max-w-5xl xl:max-w-[65%] mx-auto px-5">
-      <h1 className="text-[#1D1D1F] leading-[1.3] text-[40px] lg:text-[54px] mb-10 mt-10 md:mb-20 font-bold text-center">{title}</h1>
+      <h1 className="text-[#1D1D1F] leading-[1.3] text-[40px] lg:text-[54px] mb-10 mt-10 md:mb-16 xl:mb-20 font-bold text-center">{title}</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-8 justify-items-center">
         {data.map((item, index) => {
           const isLastCard = index === data.length - 1;
           const remainder = data.length % 3;
           const shouldCenterLast = remainder === 1 && isLastCard;
-          console.log(item.roles.length);
 
           return (
         <div
