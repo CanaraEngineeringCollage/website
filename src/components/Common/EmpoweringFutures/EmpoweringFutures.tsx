@@ -110,7 +110,7 @@ export default function EmpoweringFutures() {
           </div>
           <Link href="/training-placements">
             {" "}
-            <button aria-label="Learn More" className="bg-primary text-white font-medium px-6 py-2 rounded-full mt-4 md:mt-0">
+            <button aria-label="Learn More" className="bg-primary text-white font-medium md:mt-3.5 px-6 py-2 rounded-full mt-4 ">
               Learn More
             </button>
           </Link>{" "}
@@ -210,7 +210,7 @@ export default function EmpoweringFutures() {
           </div>
         </div>
       </section>
-      <section className="w-full md:hidden block px-1 py-24">
+      <section className="w-full md:hidden block px-1 py-14">
         {/* Mobile View */}
         <h1 className="text-3xl text-center text-black font-bold pb-4">Empowering Futures</h1>
         <p className="text-center text-textGray font-medium pb-16 text-[14px]">

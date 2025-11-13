@@ -166,8 +166,8 @@ const HotOfThePressCarousel = () => {
   }
 
   return (
-    <section className="lg:ml-20 xl:ml-60 md:py-0 md:pt-24 py-10">
-      <div className="lg:flex lg:justify-between md:pb-14 pb-10">
+    <section className="lg:ml-20 xl:ml-60 md:py-0 md:pt-16 py-10">
+      <div className="lg:flex lg:justify-between md:pb-10 pb-10">
         <h1 className="text-3xl text-[#1D1D1F] md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-semibold font-sans md:pb-6 tracking-[0.13px]">
           Highlights
         </h1>
@@ -251,7 +251,7 @@ const HotOfThePressCarousel = () => {
       )}
 
       {/* Swiper Navigation */}
-       <div className="lg:flex lg:justify-between md:pb-14 pb-10">
+       <div className="lg:flex lg:justify-between md:pb-0 pb-10">
         <div className="flex"></div>
         <div className="hidden md:block">
           <div className="flex mr-22 gap-6 mt-20">

@@ -16,7 +16,7 @@ export default function SpotlightSection({toppers}) {
 
   return (
     <div
-      className=" py-16 text-white bg-center"
+      className=" lg:py-16 text-white bg-center"
       style={{
         backgroundImage: "url(/backgroundImages/department.webp)",
       }}
@@ -31,11 +31,11 @@ export default function SpotlightSection({toppers}) {
         </p>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-[50px] xl:gap-16 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[50px] xl:gap-16 mb-20">
           {toppers.map((topper, index) => (
             <div
               key={index}
-              className="text-white rounded-2xl px-8 py-4 flex flex-row items-center border-white border-[1px]"
+              className="text-white rounded-2xl px-5 py-4 flex flex-row items-center border-white border-[1px]"
             >
            {topper.image && (
         <div className="w-24 h-24   flex-shrink-0">

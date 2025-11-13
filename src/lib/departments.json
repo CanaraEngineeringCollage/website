@@ -21470,17 +21470,20 @@
       {
         "name": "POOJA LAXMAN ACHARI",
         "batch": "2024-25",
-        "percentage": "9.03"
+        "percentage": "9.03",
+        "image": "/departmentImages/toppersImage/ec/1.webp"
       },
       {
         "name": "AISHWARYA H S",
         "batch": "2024-25",
-        "percentage": "9.01"
+        "percentage": "9.01",
+        "image": "/departmentImages/toppersImage/ec/3.webp"
       },
       {
         "name": "NISARGA B U",
         "batch": "2024-25",
-        "percentage": "8.92"
+        "percentage": "8.92",
+        "image": "/departmentImages/toppersImage/ec/2.webp"
       }
     ],
 
@@ -60775,6 +60778,110 @@
             { "no": "CO4", "description": "Document The Synopsis For The Given Project." },
             { "no": "CO5", "description": "Deliver The Seminar On The Preliminary Study On The Project." }
           ]
+        },
+        {
+          "id": 1,
+          "subject": "System Modeling and Simulation (15CS834)",
+          "semester": "VIII",
+          "co": [
+            { "no": "CO1", "description": "Illustrate The Role Of Important Elements Of Simulation And Modeling Based On Statistical Procedure." },
+            { "no": "CO2", "description": "Explain Analysis And Design Of Models Using Random Number Variants." },
+            { "no": "CO3", "description": "Illustrate The Modeling Techniques For Event Systems." },
+            { "no": "CO4", "description": "Explain Analysis And Design Of Models Using Discrete-events Simulation." },
+            { "no": "CO5", "description": "Illustrate The Concepts Of Verification, Calibration, And Validation Of Models." }
+          ]
+        },
+        {
+          "id": 2,
+          "subject": "System Modeling and Simulation (17CS834)",
+          "semester": "VIII",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Explain The System Concepts And Apply Functional Modelling Method To Model The Activities Of A Static System."
+            },
+            { "no": "CO2", "description": "Ilustrate The Behaviour Of Dynamic System And Create An Analogous Model For A Dynamic System." },
+            { "no": "CO3", "description": "Apply Various Random Number Variates Generated To Develop Simulation Model." },
+            { "no": "CO4", "description": "Classify The Collected Data Into Various Distributions And Estimate The Parameters." },
+            { "no": "CO5", "description": "Explain The Process Of Verification And Validation Of The Simulation Model." }
+          ]
+        },
+        {
+          "id": 3,
+          "subject": "Internet of Things and Applications (15CS81)",
+          "semester": "VIII",
+          "co": [
+            { "no": "CO1", "description": "Interpret The Impact And Challenges Posed By Iot Networks Leading To New Architectural Models." },
+            { "no": "CO2", "description": "Compare And Contrast The Deployment Of Smart Objects And The Technologies To Connect Them To Network." },
+            { "no": "CO3", "description": "Appraise The Role Of Iot Protocols For Efficient Network Communication." },
+            { "no": "CO4", "description": "Elaborate The Need For Data Analytics And Security In Iot." },
+            {
+              "no": "CO5",
+              "description": "Illustrate Different Sensor Technologies For Sensing Real World Entities And Identify The Applications Of Iot In Industry."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "subject": "Big Data Analytics (15CS82)",
+          "semester": "VIII",
+          "co": [
+            { "no": "CO1", "description": "Demonstrate The Working Of Hdfs And Mapreduce Framework And Execute Mapreduce Programs." },
+            { "no": "CO2", "description": "Apply The Hadoop Related Tools For Big Data Analytics And Perform Basic Hadoop Administration." },
+            { "no": "CO3", "description": "Examine The Role Of Business Intelligence, Data Warehousing And Visualization In Decision Making." },
+            { "no": "CO4", "description": "Determine The Importance Of Core Data Mining Techniques For Data Analytics." },
+            { "no": "CO5", "description": "Compare And Contrast Different Text Mining Techniques." }
+          ]
+        },
+        {
+          "id": 5,
+          "subject": "Internship / Professional Practice (15CS84)",
+          "semester": "VIII",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Apply Best Of Their Knowledge And Skills In Computer Science To Explore, Analyse A Real-world Problem. Identify, Develop A Potential Solution Using Creativity And Innovation, Evaluate And Analyse The Outcomes And Impact Of This Solution."
+            },
+            {
+              "no": "CO2",
+              "description": "Communicate Effectively And Work Productively In A Multi-disciplinary Team By Taking Initiative And Sound Judgement To Achieve Defined Workplace Objectives."
+            },
+            {
+              "no": "CO3",
+              "description": "Demonstrate An Understanding Of Lifelong Learning Processes, And Clarification Of Their Personal And Professional Goals, Through Critical Reflection On Their Internship Experience."
+            },
+            {
+              "no": "CO4",
+              "description": "Apply Effective Formal Written Communication Skills."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "subject": "Project Work Phase II (15CSP85)",
+          "semester": "VIII",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Work Effectively In Teams In Designing And Implementing Software Systems And Effectively Manage Conflicts, Optimize Resources And Meet Deadlines."
+            },
+            { "no": "CO2", "description": "Develop Solutions For Framed Problem Statement." },
+            { "no": "CO3", "description": "Design And Implement The Software And Evaluating The Solution To Meet Project Objectives." },
+            { "no": "CO4", "description": "Test And Analyze The Modules Of Planned Project." },
+            { "no": "CO5", "description": "Demonstrate The Ability To Write Clear System Documentation, User Documentation And Reports." }
+          ]
+        },
+        {
+          "id": 7,
+          "subject": "Seminar (15CSS86)",
+          "semester": "VIII",
+          "co": [
+            { "no": "CO1", "description": "Explain The Current And Real World Technologies." },
+            { "no": "CO2", "description": "Distinguish And Integrate Differing Forms Of Knowledge And Academic Disciplinary Approaches." },
+            { "no": "CO3", "description": "Improve Oral And Written Communication Skills." },
+            { "no": "CO4", "description": "Explore An Appreciation Of The Self In Relation To Its Larger Diverse Social And Academic Contexts." },
+            { "no": "CO5", "description": "Apply Principles Of Ethics And Respect In Interaction With Others." }
+          ]
         }
       ],
 
@@ -61997,6 +62104,1037 @@
     },
 
     "courseOutcome": {
+      "2021-2022": [
+        {
+          "id": 1,
+          "subject": "Calculus & Differential Equations (21MAT11)",
+          "semester": "I",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "After Successfully Completing The Course, The Student Will Be Able To Understand The Topics: Apply Knowledge Of Calculus To Solve Problems Related To Polar Curves And Its Applications In Determining The Bentness Of A Curve."
+            },
+            {
+              "no": "CO2",
+              "description": "Learn The Notion Of Partial Differentiation To Calculate The Rate Of Change Of Multivariate Functions And Solve Problems Related To Composite Functions And Jacobian."
+            },
+            { "no": "CO3", "description": "Solve First-order Linear/nonlinear Ordinary Differential Equations Analytically Using Standard Methods." },
+            {
+              "no": "CO4",
+              "description": "Demonstrate Various Physical Model Through Higher Order Differential Equations And Solve Such Linear Ordinary Differential Equations."
+            },
+            { "no": "CO5", "description": "Test The Consistency Of A System Of Linear Equations And To Solve Them By Direct And Iterative Methods." }
+          ]
+        },
+        {
+          "id": 2,
+          "subject": "Basic Electrical Engineering (21ELE13)",
+          "semester": "I",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Analyse Of Basic DC Circuits And Understand The Basic Concepts Of Single Phase Alternating Current And Voltage."
+            },
+            { "no": "CO2", "description": "Analyse Of Single Phase AC Circuits On Various Loads And Understand The Three Phase AC Circuits." },
+            { "no": "CO3", "description": "Understand The Working Principles, Performance Of DC Machines And Transformer." },
+            {
+              "no": "CO4",
+              "description": "Understand The Working Principles, Performance Of Three Phase Induction Motor And Three Phase Synchronous Generators."
+            },
+            {
+              "no": "CO5",
+              "description": "Understand The Wiring Methods, Electricity Billing, And Working Principles Of Circuit Protective Devices And Personal Safety Measures."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "subject": "Elements of Civil Engineering and Mechanics (21CIV14)",
+          "semester": "I",
+          "co": [
+            { "no": "CO1", "description": "Understand The Various Fields Of Civil Engineering." },
+            { "no": "CO2", "description": "Compute The Resultant Of A Force System And Resolution Of A Force." },
+            { "no": "CO3", "description": "Locate The Centroid And Compute The Moment Of Inertia Of Regular And Built-up Sections." },
+            {
+              "no": "CO4",
+              "description": "Comprehend The Action For Forces, Moments, And Other Types Of Loads On Rigid Bodies And Compute The Reactive Forces And Analyse Beams And Trusses."
+            },
+            { "no": "CO5", "description": "Analyse The Bodies In Motion By Kinetics And Kinematics." }
+          ]
+        },
+        {
+          "id": 4,
+          "subject": "Engineering Visualization (21EVN15)",
+          "semester": "I",
+          "co": [
+            { "no": "CO1", "description": "Understand And Visualize The Objects With Definite Shape And Dimensions." },
+            { "no": "CO2", "description": "Analyze The Shape And Size Of Objects Through Different Views." },
+            { "no": "CO3", "description": "Develop The Lateral Surfaces Of The Object." },
+            { "no": "CO4", "description": "Create A 3D View Using CAD Software." },
+            { "no": "CO5", "description": "Identify The Interdisciplinary Engineering Components Or Systems Through Its Graphical Representation." }
+          ]
+        },
+        {
+          "id": 5,
+          "subject": "Engineering Physics Laboratory (21PHYL16)",
+          "semester": "I",
+          "co": [
+            { "no": "CO1", "description": "Understand The Measuring Techniques." },
+            { "no": "CO2", "description": "Operate Different Instruments And Be Capable To Analyse The Experimental Results." },
+            { "no": "CO3", "description": "Construct The Circuits And Their Analysis." },
+            { "no": "CO4", "description": "Understand The Theoretical Aspects Found In Experimental Physics." },
+            {
+              "no": "CO5",
+              "description": "Develop Basic Communication Skills Through Working In Groups In Performing The Laboratory Experiments And By Interpreting The Results."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "subject": "Basic Electrical Engineering Laboratory (21ELEL17)",
+          "semester": "I",
+          "co": [
+            { "no": "CO1", "description": "Verify KCL And KVL Laws And Maximum Power Transfer Theorem For DC Circuits." },
+            {
+              "no": "CO2",
+              "description": "Compare Power Factors Of Different Types Of Lamps And Measure The Impedance Of A Given Electrical Circuit."
+            },
+            {
+              "no": "CO3",
+              "description": "Verify The Relationship Of Voltages And Currents In 3 Phase AC Circuit And Also Find The Power Consumed By The 3 Phase Load."
+            },
+            {
+              "no": "CO4",
+              "description": "Determine The Efficiency Of A Single Phase Transformer And Analyze Two-way And Three-way Control Of Lamps."
+            },
+            {
+              "no": "CO5",
+              "description": "Understand The Effects Of Open And Short Circuits In Simple Circuits And Interpret The Suitability Of Earth Resistance Measured."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "subject": "Communicative English (21EGH18)",
+          "semester": "I",
+          "co": [
+            { "no": "CO1", "description": "To Know About Fundamentals Of Communicative English And Communication Skills In General." },
+            {
+              "no": "CO2",
+              "description": "To Train To Identify The Nuances Of Phonetics, Intonation And Enhance Pronunciation Skills For Better Communication Skills."
+            },
+            { "no": "CO3", "description": "To Impart Basic English Grammar And Essentials Of Important Language Skills." },
+            { "no": "CO4", "description": "To Enhance With English Vocabulary And Language Proficiency For Better Communication Skills." },
+            { "no": "CO5", "description": "To Learn About Techniques Of Information Transfer Through Presentation." }
+          ]
+        },
+        {
+          "id": 8,
+          "subject": "Scientific Foundations of Health (21SFH19)",
+          "semester": "I",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "To Understand Health And Wellness (its Beliefs). To Acquire Good Health And Its Balance For Positive Mindset."
+            },
+            { "no": "CO2", "description": "To Inculcate And Develop The Healthy Lifestyle Habits For Good Health." },
+            { "no": "CO3", "description": "To Create Healthy And Caring Relationships To Meet The Requirements Of MNC And LPG World." },
+            {
+              "no": "CO4",
+              "description": "To Adopt The Innovative And Positive Methods To Avoid Risks From Harmful Habits In Their Campus And Outside The Campus."
+            },
+            { "no": "CO5", "description": "To Positively Fight Against Harmful Diseases For Good Health Through Positive Mindset." }
+          ]
+        },
+        {
+          "id": 9,
+          "subject": "Engineering Physics (21PHY12)",
+          "semester": "I",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Interpret The Types Of Mechanical Vibrations And Their Applications, The Role Of Shock Waves In Various Fields."
+            },
+            { "no": "CO2", "description": "Demonstrate The Quantization Of Energy For Microscopic System." },
+            { "no": "CO3", "description": "Apply Laser And Optical Fibers In Opto Electronic System." },
+            { "no": "CO4", "description": "Illustrate Merits Of Quantum Free Electron Theory And Applications Of Hall Effect." },
+            { "no": "CO5", "description": "Analyse The Importance Of XRD And Electron Microscopy In Nano Material Characterization." }
+          ]
+        },
+        {
+          "id": 1,
+          "subject": "Advanced Calculus and Numerical Methods (21MAT21)",
+          "semester": "II",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Apply The Concept Of Change Of Order Of Integration And Change Of Variables To Evaluate Multiple Integrals And Their Usage In Computing The Area And Volume."
+            },
+            {
+              "no": "CO2",
+              "description": "Illustrate The Applications Of Multivariate Calculus To Understand The Solenoidal And Irrotational Vectors And Also Exhibit The Inter Dependence Of Line, Surface And Volume Integrals."
+            },
+            {
+              "no": "CO3",
+              "description": "Formulate Physical Problems To Partial Differential Equations And To Obtain Solution For Standard Practical PDE’s."
+            },
+            { "no": "CO4", "description": "Apply The Knowledge Of Numerical Methods In Modelling Of Various Physical And Engineering Phenomena." },
+            { "no": "CO5", "description": "Solve First Order Ordinary Differential Equations Arising In Engineering Problems." }
+          ]
+        },
+        {
+          "id": 2,
+          "subject": "Engineering Chemistry (21CHE22)",
+          "semester": "II",
+          "co": [
+            { "no": "CO1", "description": "Discuss The Electrochemical Energy Systems Such As Electrodes And Batteries." },
+            {
+              "no": "CO2",
+              "description": "Explain The Fundamental Concepts Of Corrosion, Its Control And Surface Modification Methods Namely Electroplating And Electroless Plating."
+            },
+            {
+              "no": "CO3",
+              "description": "Enumerate The Importance, Synthesis And Applications Of Polymers. Understand Properties And Application Of Nanomaterials."
+            },
+            { "no": "CO4", "description": "Describe The Principles Of Green Chemistry, Understand Properties And Application Of Alternative Fuels." },
+            {
+              "no": "CO5",
+              "description": "Illustrate The Fundamental Principles Of Water Chemistry, Applications Of Volumetric And Analytical Instrumentation."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "subject": "Problem-Solving through Programming (21PSP23)",
+          "semester": "II",
+          "co": [
+            { "no": "CO1", "description": "Explain The Basic Architecture And Functionalities Of A Computer And Also Recognize The Hardware Parts." },
+            { "no": "CO2", "description": "Construct Programming Solutions To Solve The Real World Problem." },
+            {
+              "no": "CO3",
+              "description": "Explore User-defined Data Structures Like Arrays In Implementing Solutions To Problems Like Searching And Sorting."
+            },
+            { "no": "CO4", "description": "Design And Develop Solutions To Problems Using Modular Programming Constructs Using Functions." },
+            { "no": "CO5", "description": "Explore User-defined Data Structures Like Structures, Unions And Pointers In Implementing Solutions." }
+          ]
+        },
+        {
+          "id": 4,
+          "subject": "Basic Electronics & Communication Engineering (21ELN24)",
+          "semester": "II",
+          "co": [
+            { "no": "CO1", "description": "Describe The Concepts Of Electronic Circuits Encompassing Power Supplies, Amplifiers And Oscillators." },
+            {
+              "no": "CO2",
+              "description": "Present The Basics Of Digital Logic Engineering Including Data Representation, Circuits And The Microcontroller System With Associated Sensors And Actuators."
+            },
+            { "no": "CO3", "description": "Discuss The Characteristics And Technological Advances Of Embedded Systems." },
+            {
+              "no": "CO4",
+              "description": "Relate To The Fundamentals Of Communication Engineering Spanning From The Frequency Spectrum To The Various Circuits Involved Including Antennas."
+            },
+            { "no": "CO5", "description": "Explain The Different Modes Of Communications From Wired To Wireless And The Computing Involved." }
+          ]
+        },
+        {
+          "id": 5,
+          "subject": "Elements of Mechanical Engineering (21EME25)",
+          "semester": "II",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Acquire A Basic Understanding Of Role Of Mechanical Engineering In The Industry And Society And Acquire A Basic Understanding Of The Formation Of Steam And Its Industrial Application & Acquire A Basic Understanding Of Renewable Energy Resources And Hydraulics."
+            },
+            {
+              "no": "CO2",
+              "description": "Acquire Knowledge Of Various Engineering Materials And Metal Joining Techniques And Acquire Essential Experience With Heat Transfer Devices."
+            },
+            {
+              "no": "CO3",
+              "description": "Acquire Knowledge On Automobile Technology In Transport Application And Basics Of Refrigeration And Air-conditioning."
+            },
+            { "no": "CO4", "description": "Acquire Essential Experience On Basic Power Transmission Systems, Including Mechanical Linkages." },
+            { "no": "CO5", "description": "Acquire Knowledge Of Basic Concepts On Manufacturing Principles And Machine Tools And Their Advancement." }
+          ]
+        },
+        {
+          "id": 6,
+          "subject": "Engineering Chemistry Laboratory (21CHEL26)",
+          "semester": "II",
+          "co": [
+            { "no": "CO1", "description": "Determine The Pka And Coefficient Of Viscosity Of A Given Organic Liquid." },
+            {
+              "no": "CO2",
+              "description": "Estimate The Amount Of Substance Present In The Given Solution Using Potentiometer, Conductometric And Colorimetric Methods."
+            },
+            {
+              "no": "CO3",
+              "description": "Determine The Total Hardness And Chemical Oxygen Demand In The Given Solution By Volumetric Analysis Method."
+            },
+            { "no": "CO4", "description": "Estimate The Percentage Of Nickel, Copper And Iron In The Given Analyte Solution By Titration Method." },
+            {
+              "no": "CO5",
+              "description": "Demonstrate Flame Photometric Estimation Of Sodium & Potassium And The Synthesis Of Nanomaterials By Precipitation Method."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "subject": "Computer Programming Laboratory (21CPL27)",
+          "semester": "II",
+          "co": [
+            { "no": "CO1", "description": "Define The Problem Statement And Identify The Need For Computer Programming." },
+            {
+              "no": "CO2",
+              "description": "Make Use Of C Compiler, IDE For Programming, Identify And Correct The Syntax And Syntactic Errors In Programming."
+            },
+            { "no": "CO3", "description": "Develop Algorithm, Flowchart And Write Programs To Solve The Given Problem." },
+            {
+              "no": "CO4",
+              "description": "Demonstrate Use Of Functions, Recursive Functions, Arrays, Strings, Structures And Pointers In Problem Solving."
+            },
+            { "no": "CO5", "description": "Document The Inference And Observations Made From The Implementation." }
+          ]
+        },
+        {
+          "id": 8,
+          "subject": "Professional Writing Skills in English (21EGH28)",
+          "semester": "II",
+          "co": [
+            { "no": "CO1", "description": "To Understand And Identify The Common Errors In Writing And Speaking." },
+            { "no": "CO2", "description": "To Achieve Better Technical Writing And Presentation Skills." },
+            { "no": "CO3", "description": "To Read Technical Proposals Properly And Make Them Write Good Technical Reports." },
+            { "no": "CO4", "description": "Acquire Employment And Workplace Communication Skills." },
+            { "no": "CO5", "description": "To Learn About Techniques Of Information Transfer Through Presentation In Different Levels." }
+          ]
+        },
+        {
+          "id": 9,
+          "subject": "Innovation and Design Thinking (21IDT29)",
+          "semester": "II",
+          "co": [
+            { "no": "CO1", "description": "Appreciate Various Design Process Procedure." },
+            { "no": "CO2", "description": "Generate And Develop Design Ideas Through Different Technique." },
+            { "no": "CO3", "description": "Identify The Significance Of Reverse Engineering To Understand Products." },
+            { "no": "CO4", "description": "Draw Technical Drawing For Design Ideas." },
+            { "no": "CO5", "description": "Implement Design Thinking By Taking Case Studies." }
+          ]
+        },
+        {
+          "id": 1,
+          "subject": "Transform Calculus, Fourier Series and Numerical Techniques (21MAT31)",
+          "semester": "III",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Course Outcomes: After Successfully Completing The Course, The Students Will Be Able To Solve Ordinary Differential Equations Using Laplace Transform."
+            },
+            {
+              "no": "CO2",
+              "description": "Demonstrate The Fourier Series To Study The Behaviour Of Periodic Functions And Their Applications In System Communications, Digital Signal Processing And Field Theory."
+            },
+            {
+              "no": "CO3",
+              "description": "To Use Fourier Transforms To Analyze Problems Involving Continuous-time Signals And To Apply Z-transform Techniques To Solve Difference Equations."
+            },
+            {
+              "no": "CO4",
+              "description": "To Solve Mathematical Models Represented By Initial Or Boundary Value Problems Involving Partial Differential Equations."
+            },
+            {
+              "no": "CO5",
+              "description": "Determine The Extremals Of Functionals Using Calculus Of Variations And Solve Problems Arising In Dynamics Of Rigid Bodies And Vibrational Analysis."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "subject": "Additional Mathematics-I (21MATDIP31)",
+          "semester": "III",
+          "co": [
+            { "no": "CO1", "description": "Use Derivatives And Partial Derivatives To Calculate The Rate Of Change Of Multivariate Functions." },
+            { "no": "CO2", "description": "Apply Concepts Of Complex Numbers And Vector Algebra To Analyse The Problems Arising In A Related Area." },
+            { "no": "CO3", "description": "Analyse Position, Velocity And Acceleration In Two And Three Dimensions Of Vector-valued Functions." },
+            { "no": "CO4", "description": "Learn Techniques Of Integration Including The Evaluation Of Double And Triple Integrals." },
+            { "no": "CO5", "description": "Identify And Solve First-order Ordinary Differential Equations." }
+          ]
+        },
+        {
+          "id": 3,
+          "subject": "Metal Casting, Forming and Joining Processes (21ME32)",
+          "semester": "III",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Know About Different Manufacturing Process With Special Emphasis On Casting. Also, Understand The Significance Of Various Equipment Involved In Casting Technique."
+            },
+            { "no": "CO2", "description": "Understand The Principle Of Different Types Of Furnaces And Metal Mould Casting Processes." },
+            { "no": "CO3", "description": "Understand And Analyze Various Metal Forming Techniques. Also, Demonstrate The Forging Skill." },
+            { "no": "CO4", "description": "Demonstrate Skills And Understand The Principle Of Different Types Of Welding Processes." },
+            { "no": "CO5", "description": "Understand The Principle Of Allied Joining Processes And Advanced Welding Techniques." }
+          ]
+        },
+        {
+          "id": 4,
+          "subject": "Material Science and Engineering (21ME33)",
+          "semester": "III",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Understand The Atomic Arrangement In Crystalline Materials And Describe The Periodic Arrangement Of Atoms In Terms Of Unit Cell Parameters. Also, Identify Various Kinds Of Defects."
+            },
+            { "no": "CO2", "description": "Understand The Importance Of Phase Diagrams And The Phase Transformations." },
+            { "no": "CO3", "description": "Know Various Heat Treatment Methods For Controlling The Microstructure." },
+            { "no": "CO4", "description": "Know Various Surface Coating Technologies. Also, Understand The Basics Of Powder Metallurgy Technique." },
+            {
+              "no": "CO5",
+              "description": "Apply The Method Of Materials Selection, Material Data And Knowledge Sources For Computer-aided Selection Of Materials. Also, Correlate Between Material Properties With Component Design."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "subject": "Thermodynamics (21ME34)",
+          "semester": "III",
+          "co": [
+            { "no": "CO1", "description": "Explain The Fundamental Concepts And Principles Of Engineering Thermodynamics." },
+            { "no": "CO2", "description": "Apply The Governing Laws Of Thermodynamics For Different Engineering Applications." },
+            { "no": "CO3", "description": "Explain The Fundamental Concepts Of Gas Mixture And Principles Of Combustion Thermodynamics." },
+            { "no": "CO4", "description": "Explain And Analyze The Various Thermodynamic Processes And Pure Substances." },
+            { "no": "CO5", "description": "Analyze The Various Thermodynamic Cycles, Interpret Data, Results." }
+          ]
+        },
+        {
+          "id": 6,
+          "subject": "Machine Drawing and GD&T (21MEL35)",
+          "semester": "III",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Interpret The Machining And Surface Finish Symbols On The Component Drawings, Apply Limits And Tolerances To Assemblies And Choose Appropriate Fits For Given Assemblies."
+            },
+            { "no": "CO2", "description": "Interpret The Sectional View Of Simple Solids And Obtain The True Shapes." },
+            { "no": "CO3", "description": "Illustrate Various Machine Components Like Thread Forms, Fasteners And Keys Through Drawings." },
+            { "no": "CO4", "description": "Illustrate Various Machine Components Like Joints, Couplings And Clutches Through Drawings." },
+            { "no": "CO5", "description": "Construct The Part Or Assembly Drawings As Per The Conventions Using Modeling Software." }
+          ]
+        },
+        {
+          "id": 7,
+          "subject": "Social Connect and Responsibility (21UH36)",
+          "semester": "III",
+          "co": [
+            { "no": "CO1", "description": "Understand Social Responsibility." },
+            { "no": "CO2", "description": "Practice Sustainability." },
+            { "no": "CO3", "description": "Practice Creativity." },
+            { "no": "CO4", "description": "Showcase Planning Skills." },
+            { "no": "CO5", "description": "Showcase Organizational Skills." }
+          ]
+        },
+        {
+          "id": 8,
+          "subject": "Constitution of India and Professional Ethics (21CIP37)",
+          "semester": "III",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "To Know The Fundamental Political Codes, Structure, Procedures, Powers, And Duties Of Indian Government Institutions."
+            },
+            { "no": "CO2", "description": "To Know The Fundamental Rights, Directive Principles, And The Duties Of Citizens." },
+            { "no": "CO3", "description": "To Have Literacy And Understanding Of The Constitutional Election Process." },
+            { "no": "CO4", "description": "To Have Constitutional Legal Literacy And Understand The Functioning Of The Indian Judicial System." },
+            {
+              "no": "CO5",
+              "description": "Understand Engineering Ethics And Their Responsibilities, Identify Their Individual Roles And Ethical Responsibilities Towards Society."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "subject": "Ability Enhancement Course-III (Python Lab) (21ME381)",
+          "semester": "III",
+          "co": [
+            { "no": "CO1", "description": "To Understand The Fundamental Concepts Of Programming On Python Programming Platform." },
+            { "no": "CO2", "description": "Demonstrate The Use Of Anaconda Or Pycharm IDE To Create Python Applications." },
+            { "no": "CO3", "description": "Develop Python Programming Language To Develop Programs For Solving Real-world Problems." },
+            { "no": "CO4", "description": "Utilize Object-oriented Programming Concepts In Python." },
+            { "no": "CO5", "description": "Analyse The Working Of Various Documents Like PDF, Word File." }
+          ]
+        },
+        {
+          "id": 1,
+          "subject": "Complex Analysis, Probability and Linear Programming (21ME41)",
+          "semester": "IV",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Use The Concepts Of An Analytic Function And Complex Potentials To Solve The Problems Arising In Fluid Flow."
+            },
+            {
+              "no": "CO2",
+              "description": "Utilize Conformal Transformation And Complex Integral Arising In Aero Foil Theory, Fluid Flow Visualization And Image Processing."
+            },
+            {
+              "no": "CO3",
+              "description": "Apply Discrete And Continuous Probability Distributions In Analyzing The Probability Models Arising In The Engineering Field."
+            },
+            {
+              "no": "CO4",
+              "description": "Analyze And Solve Linear Programming Models Of Real-life Situations And Solve LPP By The Simplex Method."
+            },
+            { "no": "CO5", "description": "Learn Techniques To Solve Transportation And Assignment Problems." }
+          ]
+        },
+        {
+          "id": 2,
+          "subject": "Additional Mathematics II (21MATDIP41)",
+          "semester": "IV",
+          "co": [
+            { "no": "CO1", "description": "Test For Consistency And Solve The System Of Linear Equations." },
+            { "no": "CO2", "description": "Solve Higher Order Differential Equations." },
+            { "no": "CO3", "description": "Apply Elementary Probability Theory And Solve Related Problems." },
+            { "no": "CO4", "description": "To Interpolate/Extrapolate From The Given Data." },
+            { "no": "CO5", "description": "Apply The Knowledge Of Numerical Methods In Modelling And Solving Engineering Problems." }
+          ]
+        },
+        {
+          "id": 3,
+          "subject": "Machining Science and Jigs & Fixtures (21ME42)",
+          "semester": "IV",
+          "co": [
+            { "no": "CO1", "description": "Demonstrate The Conventional CNC Machines And Advanced Manufacturing Process Operations." },
+            { "no": "CO2", "description": "Analyze The Influence Of Various Parameters On Machine Tools' Performance." },
+            { "no": "CO3", "description": "Determine Tool Life, Cutting Force, And Economy Of The Machining Process." },
+            {
+              "no": "CO4",
+              "description": "Understand The Working Of Different Types Of Unconventional Machining Techniques And Select Them Appropriately With The Help Of Gained Knowledge."
+            },
+            { "no": "CO5", "description": "Select The Appropriate Machine Tools And Process, The Jigs, And Fixtures For Various Applications." }
+          ]
+        },
+        {
+          "id": 4,
+          "subject": "Fluid Mechanics (21ME43)",
+          "semester": "IV",
+          "co": [
+            { "no": "CO1", "description": "Understand The Basic Principles Of Fluid Mechanics And Fluid Kinematics." },
+            { "no": "CO2", "description": "Acquire Basic Knowledge Of Fluid Dynamics And Flow Measuring Instruments." },
+            { "no": "CO3", "description": "Understand The Nature Of Flow And Flow Over Bodies And The Dimensionless Analysis." },
+            { "no": "CO4", "description": "Acquire The Compressible Flow Fundamental And Basics Of CFD Packages And The Need For CFD Analysis." },
+            { "no": "CO5", "description": "Conduct Basic Experiments Of Fluid Mechanics And Understand The Experimental Uncertainties." }
+          ]
+        },
+        {
+          "id": 5,
+          "subject": "Mechanics of Materials (21ME44)",
+          "semester": "IV",
+          "co": [
+            { "no": "CO1", "description": "Understand Simple, Compound, Thermal Stresses And Strains, Their Relations." },
+            {
+              "no": "CO2",
+              "description": "Analyse The Structural Members Subjected To Different Types Of Loads For Stresses, Strains And Deformations."
+            },
+            { "no": "CO3", "description": "Analyse The Structural Members Subjected To Bending And Shear Loads And Draw The SFD And BMD." },
+            { "no": "CO4", "description": "Understand The Deflection Of Beams And Analyse The Shafts Subjected To Twisting Loads/Torsion." },
+            { "no": "CO5", "description": "Understand Concept Of Strain Energy, Buckling Of Columns And Analyse Thin And Thick Cylinders." }
+          ]
+        },
+        {
+          "id": 6,
+          "subject": "Biology For Engineers (21BE45)",
+          "semester": "IV",
+          "co": [
+            { "no": "CO1", "description": "Explain The Basic Biological Concepts Via Relevant Industrial Applications And Case Studies." },
+            { "no": "CO2", "description": "Compare The Human Organ System And Biological Trends To The Engineering System." },
+            { "no": "CO3", "description": "Compare The Human Organ System And Biological Trends To The Engineering System." },
+            { "no": "CO4", "description": "Explain The Mechanism Developed Inspired By Biology." },
+            { "no": "CO5", "description": "Explain The Latest Trends In Bioengineering Field." }
+          ]
+        },
+        {
+          "id": 7,
+          "subject": "Mechanical Measurements and Metrology Lab (21MEL46)",
+          "semester": "IV",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Conduct Scheduled Experiments To Calibrate And Demonstrate Usage Of Different Gauges And Measuring Instruments To Understand The Concept Of Mechanical Measurements."
+            },
+            { "no": "CO2", "description": "Analyze And Interpret Experimental Data And Results." },
+            { "no": "CO3", "description": "Express The Theoretical Aspects Used In Conducting Different Experiments Of Mechanical Measurement." },
+            { "no": "CO4", "description": "Record Experimental Process And Results." },
+            { "no": "CO5", "description": "Conduct Any Given Experiment In Mechanical Measurement Laboratory And Communicate Results Effectively." }
+          ]
+        },
+        {
+          "id": 8,
+          "subject": "Balake Kannada (21KBK47)",
+          "semester": "IV",
+          "co": [
+            { "no": "CO1", "description": "Non-Kannada Students Will Be Able To Understand Kannada." },
+            { "no": "CO2", "description": "Non-Kannada Students Will Be Able To Speak Kannada." },
+            { "no": "CO3", "description": "Non-Kannada Students Will Be Able To Read Kannada." },
+            { "no": "CO4", "description": "Non-Kannada Students Will Be Able To Write Kannada." },
+            { "no": "CO5", "description": "Non-Kannada Students Will Be Able To Communicate In Kannada." }
+          ]
+        },
+        {
+          "id": 9,
+          "subject": "Samskrutika Kannada (21KSK47)",
+          "semester": "IV",
+          "co": [
+            { "no": "CO1", "description": "Creates Awareness On Kannada Language, Literature & Culture." },
+            { "no": "CO2", "description": "Study Of Ancient & Modern Poetry Symbolically, Motivates To Read More & Gain Knowledge." },
+            { "no": "CO3", "description": "Creates Awareness And Interest Among Students For Culture & Literature." },
+            {
+              "no": "CO4",
+              "description": "Makes Students Understand Technical Personalities & Their Achievements And Creates Interest To Know More About Other Personalities Of Karnataka."
+            },
+            { "no": "CO5", "description": "Introduces Cultural, Folk And Travel Diaries." }
+          ]
+        },
+        {
+          "id": 10,
+          "subject": "Universal Human Values (21UH49)",
+          "semester": "IV",
+          "co": [
+            { "no": "CO1", "description": "Holistic Vision Of Life & Socially Responsible Behavior." },
+            { "no": "CO2", "description": "Environmentally Responsible Work." },
+            { "no": "CO3", "description": "Ethical Human Conduct." },
+            { "no": "CO4", "description": "Having Competence And Capabilities For Maintaining Health And Hygiene." },
+            { "no": "CO5", "description": "Appreciation And Aspiration For Excellence (Merit) And Gratitude For All." }
+          ]
+        },
+        {
+          "id": 11,
+          "subject": "Spread Sheet for Engineers (21ME481)",
+          "semester": "IV",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "To Create Different Plots And Charts And To Compute Different Functions, Conditional Functions And Make Regression Analysis."
+            },
+            {
+              "no": "CO2",
+              "description": "To Carry Out Iterative Solutions For Roots, Multiple Roots, Optimization And Non-linear Regression Analysis And To Carry Out Matrix Operations."
+            },
+            { "no": "CO3", "description": "To Understand VBA And UDF." },
+            { "no": "CO4", "description": "To Understand VBA Subroutines And Macros." },
+            { "no": "CO5", "description": "To Carry Out Numerical Integration And Solving Differential Equations Using Different Methods." }
+          ]
+        },
+        {
+          "id": 1,
+          "subject": "Theory of Machines (21ME51)",
+          "semester": "V",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "The Students Will Be Able To Have Knowledge Of Mechanisms And Their Motion And Inversions Of Mechanisms."
+            },
+            { "no": "CO2", "description": "The Students Will Be Able To Analyse The Velocity, Acceleration Of Links And Joints Of Mechanisms." },
+            { "no": "CO3", "description": "The Students Will Be Able To Analyse The Mechanisms For Static And Dynamic Equilibrium." },
+            {
+              "no": "CO4",
+              "description": "The Students Will Be Able To Carry Out The Balancing Of Rotating And Reciprocating Masses And Analyse Different Types."
+            },
+            { "no": "CO5", "description": "The Students Will Be Able To Analyse The Free And Forced Vibration." }
+          ]
+        },
+        {
+          "id": 2,
+          "subject": "Modern Mobility and Automotive Mechanics (21ME54)",
+          "semester": "V",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "To Understand The Different Chassis Design, Main Engine Components, Working Of The Cooling System, Lubrication System And Ignition System In Automobiles."
+            },
+            {
+              "no": "CO2",
+              "description": "To Understand The Working Of Different Transmission Components Like Clutch, Gear Box And Suspension System In Automobiles."
+            },
+            {
+              "no": "CO3",
+              "description": "To Understand The Working Of Steering System, Braking System And The Various Control And Safety Systems In Automobiles."
+            },
+            {
+              "no": "CO4",
+              "description": "To Understand The Effects Of Automotive Pollution, Emission Norms And Alternative Automotive Technologies."
+            },
+            { "no": "CO5", "description": "To Understand The Electric Vehicle Technology And Its Components." }
+          ]
+        },
+        {
+          "id": 3,
+          "subject": "Design Lab (21MEL55)",
+          "semester": "V",
+          "co": [
+            { "no": "CO1", "description": "To Understand The Natural Frequency, Logarithmic Decrement, Damping Ratio And Damping." },
+            { "no": "CO2", "description": "To Understand The Different Mechanisms, Cam Motions And Balancing Of Rotating Masses." },
+            { "no": "CO3", "description": "To Understand The Concept Of The Critical Speed Of A Rotating Shaft." },
+            { "no": "CO4", "description": "To Understand The Concept Of Stress Concentration Using Photo Elasticity." },
+            { "no": "CO5", "description": "To Understand The Equilibrium Speed, Sensitiveness, Power And Effort Of Governor." }
+          ]
+        },
+        {
+          "id": 4,
+          "subject": "Research Methodology & Intellectual Property Rights (21RMI56)",
+          "semester": "V",
+          "co": [
+            { "no": "CO1", "description": "To Know The Meaning Of Engineering Research." },
+            { "no": "CO2", "description": "To Know The Procedure Of Literature Review And Technical Reading." },
+            { "no": "CO3", "description": "To Know The Fundamentals Of Patent Laws And Drafting Procedure." },
+            { "no": "CO4", "description": "Understanding The Copyright Laws And Subject Matters Of Copyrights And Designs." },
+            { "no": "CO5", "description": "Understanding The Basic Principles Of Design Rights." }
+          ]
+        },
+        {
+          "id": 5,
+          "subject": "Environmental Studies (21CIV57)",
+          "semester": "V",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Understand The Principles Of Ecology And Environmental Issues That Apply To Air, Land, And Water Issues On A Global Scale."
+            },
+            {
+              "no": "CO2",
+              "description": "Develop Critical Thinking And/or Observation Skills Related To Alternate Energy Sources, And Apply Them To The Analysis Of A Problem Or Questions Related To The Environment."
+            },
+            {
+              "no": "CO3",
+              "description": "Demonstrate The Knowledge Of Different Types Of Environmental Pollution And Their Influence On Ecosystem."
+            },
+            {
+              "no": "CO4",
+              "description": "Apply Their Ecological Knowledge To Illustrate And Graph A Problem And Describe The Realities That Managers Face When Dealing With Complex Issues."
+            },
+            { "no": "CO5", "description": "Understanding GIS And Remote Sensing Technologies For The Better Assessment Of Environment." }
+          ]
+        },
+        {
+          "id": 6,
+          "subject": "Basics of MATLAB (21ME581)",
+          "semester": "V",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Able To Implement Loops, Branching, Control Instruction And Functions In MATLAB Programming Environment."
+            },
+            {
+              "no": "CO2",
+              "description": "Able To Program Curve Fitting, Numerical Differentiation And Integration, Solution Of Linear Equations In MATLAB."
+            },
+            { "no": "CO3", "description": "Solve Integration And Differentiation Problems Using MATLAB." },
+            { "no": "CO4", "description": "Solve Mechanical Engineering Problems Involving Linear And Non Linear Equations." },
+            {
+              "no": "CO5",
+              "description": "Able To Understand Implementation Of ODE Using ODE45 And Execute Solutions Of Nonlinear Equations And DFT."
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "subject": "Supply Chain Management & Introduction to SAP (21ME641)",
+          "semester": "VI",
+          "co": [
+            { "no": "CO1", "description": "Understand The Framework And Scope Of Supply Chain Management." },
+            {
+              "no": "CO2",
+              "description": "Build And Manage A Competitive Supply Chain Using Strategies, Models, Techniques And Information Technology."
+            },
+            { "no": "CO3", "description": "Plan The Demand, Inventory And Supply And Optimize Supply Chain Network." },
+            { "no": "CO4", "description": "Understand The Emerging Trends And Impact Of IT On Supply Chain." },
+            { "no": "CO5", "description": "Understand The Basics Of SAP Material Management System." }
+          ]
+        },
+        {
+          "id": 2,
+          "subject": "Production and Operations Management (21ME61)",
+          "semester": "VI",
+          "co": [
+            { "no": "CO1", "description": "Apply The Necessary Tools For Decision Making In Operations Management." },
+            { "no": "CO2", "description": "Examine Various Approaches For Forecasting The Sales Demand For An Organization." },
+            {
+              "no": "CO3",
+              "description": "List Various Capacity And Location Plans To Determine The Suitable Capacity Required For Meeting The Forecast Demand Of An Organization."
+            },
+            {
+              "no": "CO4",
+              "description": "Analyse The Aggregate Plan And Master Production Schedule For An Organization, Given Its Periodic Demand."
+            },
+            { "no": "CO5", "description": "Apply MRP, Purchasing And SCM Techniques Into Practice." }
+          ]
+        },
+        {
+          "id": 3,
+          "subject": "Heat Transfer (21ME62)",
+          "semester": "VI",
+          "co": [
+            { "no": "CO1", "description": "Solve Steady State Heat Transfer Problems In Conduction." },
+            { "no": "CO2", "description": "Solve Transient Heat Transfer Problems." },
+            { "no": "CO3", "description": "Solve Convection Heat Transfer Problems Using Correlations." },
+            { "no": "CO4", "description": "Solve Radiation Heat Transfer Problems." },
+            {
+              "no": "CO5",
+              "description": "Explain The Mechanisms Of Boiling And Condensation And Determine Performance Parameters Of Heat Exchangers."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "subject": "Machine Design (21ME63)",
+          "semester": "VI",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Understand The Basics Of Stresses Developed In Different Types Of Loading Like Static Loading, Impact Loading, Fatigue And Stress Concentration And Concept Of Theories Of Failure."
+            },
+            { "no": "CO2", "description": "Understand The Design Of Shafts Subjected To Combined Loads, Couplings And Springs." },
+            { "no": "CO3", "description": "Understand The Design Of Riveted Joints, Welded Joints And Threaded Fasteners." },
+            {
+              "no": "CO4",
+              "description": "Understand The Design Of Different Types Of Gears Like Spur, Helical, Bevel And Worm Gears And Simple Gear Boxes For Relevant Applications."
+            },
+            {
+              "no": "CO5",
+              "description": "Understand The Design Of Clutches And Brakes And Apply Design Concepts Of Hydrodynamic Bearings For Different Applications, Select Anti Friction Bearings For Different Applications Using The Manufacturers Catalogue."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "subject": "CNC Programming and 3-D Printing Lab (21MEL66)",
+          "semester": "VI",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "The Student Will Obtain Basic Knowledge Of CIM, And Its Requirement In The Present Scenario Through Practice Sessions."
+            },
+            { "no": "CO2", "description": "Knowledge About The Method Of Writing The Program Using G And M Codes." },
+            {
+              "no": "CO3",
+              "description": "Use Of CAM Package (Edge CAM) To Generate The Part Using Program As Well As Simulate The Part To Gain Hands On Experience That Would Help Them To Work At Industries."
+            },
+            {
+              "no": "CO4",
+              "description": "The Student Will Be Able To Understand Relative Subjects Like Robot Programming, Hydraulic And Pneumatic Systems, Flexible Manufacturing System And ASRS Through Demonstration."
+            },
+            {
+              "no": "CO5",
+              "description": "Students Will Be Able To Understand The Working Of A CNC Machine, Which Would Help The Students For Their Future."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "subject": "Mini Project (21MEMP67)",
+          "semester": "VI",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Work Effectively In Teams To Design And Develop Mechanical Systems, Effectively Manage Conflicts, Optimize Resources, And Meet Deadlines."
+            },
+            { "no": "CO2", "description": "Develop Solutions For The Framed Problem Statement." },
+            { "no": "CO3", "description": "Design, Implement, And Evaluate Mechanical Systems To Meet Project Objectives." },
+            { "no": "CO4", "description": "Test And Analyze The Modules Of Planned Project." },
+            { "no": "CO5", "description": "Demonstrate The Ability To Write Clear Technical Documentation, User Manuals, And Reports." }
+          ]
+        },
+        {
+          "id": 7,
+          "subject": "Innovation/Entrepreneurship/Societal Internship (21INT68)",
+          "semester": "VI",
+          "co": [
+            { "no": "CO1", "description": "Relate The Hypothesis And Basic Knowledge Acquired And Apply Them To The Real-world Scenario." },
+            {
+              "no": "CO2",
+              "description": "Identify Societal Challenges And Develop Solution To Alleviate These Social Problems Through Immersion, Design & Technology."
+            },
+            { "no": "CO3", "description": "Demonstrate The Evidence Of Increased Content Knowledge Gained Through Practical Experience." },
+            { "no": "CO4", "description": "Demonstrate Professional Values By Satisfying Requirements And Code Of Conduct Of Industrial Practices." },
+            {
+              "no": "CO5",
+              "description": "Develop Individual Responsibility And Skills Important For Time Management, Discipline, Self-learning, Effective Communication."
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "subject": "Total Quality Management (21ME732)",
+          "semester": "VII",
+          "co": [
+            { "no": "CO1", "description": "Explain The Various Approaches Of TQM." },
+            { "no": "CO2", "description": "Infer The Customer Perception Of Quality." },
+            { "no": "CO3", "description": "Analyze Customer Needs And Perceptions To Design Feedback Systems." },
+            { "no": "CO4", "description": "Apply Statistical Tools For Continuous Improvement Of Systems." },
+            { "no": "CO5", "description": "Apply The Tools And Technique For Effective Implementation Of TQM." }
+          ]
+        },
+        {
+          "id": 2,
+          "subject": "Product Design & Ergonomics (21ME744)",
+          "semester": "VII",
+          "co": [
+            { "no": "CO1", "description": "Explain The Concept Of Product Design And The Ergonomics." },
+            { "no": "CO2", "description": "Design The Various Controls And Displays By Knowing The Anthropometric Data’s." },
+            { "no": "CO3", "description": "Explain The Psychology Of Visuals Effects." },
+            { "no": "CO4", "description": "Compare The Different Colour Combinations For Optimal Design Of Engineering Equipments." },
+            { "no": "CO5", "description": "Explain The Importance Of Environmental Factors And Aesthetics In Industrial Design." }
+          ]
+        },
+        {
+          "id": 3,
+          "subject": "Programming in Python (21CS751)",
+          "semester": "VII",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Demonstrate Sound Knowledge Of Python Syntax And Semantics With Fluency In Use Of Python Flow Control Statements And Functions."
+            },
+            { "no": "CO2", "description": "Design Solutions For Solving Computational Problems In Handling Strings And File Systems." },
+            {
+              "no": "CO3",
+              "description": "Handle And Manipulate Data Using Core Python Data Structures Like Lists, Dictionaries And Regular Expressions."
+            },
+            { "no": "CO4", "description": "Interpret And Apply The Concepts Of Object-oriented Programming As Used In Python." },
+            {
+              "no": "CO5",
+              "description": "Understand The Use Of Python In Providing Solutions In Applications Related To Network Programming, Web Services And Databases."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "subject": "Automation and Robotics (21ME71)",
+          "semester": "VII",
+          "co": [
+            { "no": "CO1", "description": "To Identify Potential Areas For Automation And Justify Need For Automation." },
+            { "no": "CO2", "description": "To Select Suitable Major Control Components Required To Automate A Process Or An Activity." },
+            { "no": "CO3", "description": "To Study The Various Parts Of Robots And Fields Of Robotics." },
+            { "no": "CO4", "description": "To Study The Various Kinematics And Inverse Kinematics Of Robots." },
+            { "no": "CO5", "description": "To Study The Control Of Robots For Some Specific Applications." }
+          ]
+        },
+        {
+          "id": 5,
+          "subject": "Control Engineering (21ME72)",
+          "semester": "VII",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Identify The Type Of Control And Control Actions And Develop Mathematical Model Of The Physical Systems."
+            },
+            {
+              "no": "CO2",
+              "description": "Estimate The Response And Error In Response Of First Order And Second Order Systems Subjected To Standard Input Signals."
+            },
+            {
+              "no": "CO3",
+              "description": "Understand The Basic Representation Of The Complex Physical System Using Block Diagram And Signal Flow Graph And Obtain Transfer Function."
+            },
+            {
+              "no": "CO4",
+              "description": "Analyse A Linear Feedback Control System For Stability Using Hurwitz Criterion, Routh’s Criterion And Root Locus Technique In Complex Domain."
+            },
+            {
+              "no": "CO5",
+              "description": "Analyse The Stability Of Linear Feedback Control System In Frequency Domain Using Polar Plots, Nyquist, And Bode Plots."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "subject": "Project Work (21MEP76)",
+          "semester": "VII",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Evaluate The State Of Art In The Given Domain And Define The Objectives & Problem Statement For A Given Real World Scenario Without Ambiguity."
+            },
+            {
+              "no": "CO2",
+              "description": "Identify Suitable Design Methodology For The Chosen Problem Statement With Identified Objectives, Outcomes And Document The Synopsis For The Given Project."
+            },
+            {
+              "no": "CO3",
+              "description": "Design The Solution For Framed Problem Statement By Working Effectively In Teams For Implementing The Solution, Effectively Manage Conflicts, Optimize Resources And Meet Deadlines."
+            },
+            { "no": "CO4", "description": "Develop And Evaluate The Module Solutions To Meet The Planned Project Objectives." },
+            { "no": "CO5", "description": "Build The Solution Documentation For Dissemination Of Newly Generated Knowledge/Product." }
+          ]
+        },
+        {
+          "id": 1,
+          "subject": "Technical Seminar (21ME81)",
+          "semester": "VIII",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "The Student Shall Be Able To Engage In Exploring Multiple Facets And From Multiple Sources Conducting Rigorous Investigations To Address Topics Beyond Their Major Subject."
+            },
+            {
+              "no": "CO2",
+              "description": "The Student Shall Be Able To Demonstrate The Ability To Think Critically Developing An Orientation Towards Research."
+            },
+            {
+              "no": "CO3",
+              "description": "The Students Are Expected To Improve Their Ability To Draft Reports Undertaking Composition Of Text In Form And Content Independently In A Professional Manner, Engaging In A Rational Investigation, Through Original Thinking."
+            },
+            { "no": "CO4", "description": "The Students Shall Be Able To Communicate Their Ideas To An Audience Professionally." },
+            {
+              "no": "CO5",
+              "description": "The Students Shall Be Able To Learn Independently Being Able To Refine And Expand Their Abilities To Synthesise Arguments To Be Presented For Critical Review."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "subject": "Research Internship / Industry Internship (21INT82)",
+          "semester": "VIII",
+          "co": [
+            {
+              "no": "CO1",
+              "description": "Students Gain Hands-on Experience With Tools, Technologies, And Processes Relevant To Their Engineering Discipline."
+            },
+            {
+              "no": "CO2",
+              "description": "Internships Make Students More Attractive To Potential Employers By Providing Practical Experience And Industry Exposure."
+            },
+            { "no": "CO3", "description": "Students Learn To Identify, Analyze, And Solve Engineering Challenges Faced By Industries." },
+            {
+              "no": "CO4",
+              "description": "Internships Help Students Build Confidence In Their Abilities And Prepare Them For The Transition From Academia To The Professional World."
+            },
+            {
+              "no": "CO5",
+              "description": "Students Gain Insights Into Various Career Paths, Helping Them Make Informed Decisions About Their Future Roles And Specializations."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "subject": "National Service Scheme (21NS83)",
+          "semester": "VIII",
+          "co": [
+            { "no": "CO1", "description": "Understand The Importance Of His / Her Responsibilities Towards Society." },
+            {
+              "no": "CO2",
+              "description": "Analyze The Environmental And Societal Problems/issues And Will Be Able To Design Solutions For The Same."
+            },
+            {
+              "no": "CO3",
+              "description": "Evaluate The Existing System And To Propose Practical Solutions For The Same For Sustainable Development."
+            },
+            {
+              "no": "CO4",
+              "description": "Illustrate The Government Schemes Offered For The Community In The Field Of Health, Education, Agriculture Etc."
+            },
+            { "no": "CO5", "description": "To Survey The Needs Of The Societies Collaborating With Govt. Bodies, NGOs And Local Authorities." }
+          ]
+        }
+      ],
       "2020-2021": [
         {
           "id": 1,

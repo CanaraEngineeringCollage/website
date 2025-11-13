@@ -237,7 +237,7 @@ useEffect(() => {
           <div className="flex flex-col h-full">
             <div className="bg-white rounded-2xl p-6 flex-1">
               <div className="grid md:grid-cols-2 items-center gap-6 h-full">
-                <div className="relative w-full h-52 md:h-full">
+                <div className="relative w-full h-40 md:h-full">
                   <h3 className="text-4xl font-[900] mb-2 text-left lg:text-[60px]">
                     {ideasData.passoutTotlas}
                   </h3>

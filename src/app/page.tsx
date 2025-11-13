@@ -61,7 +61,7 @@ export default function Home() {
       <section className="px-6 md:px-12 lg:px-16 xl:px-0 ">
         <TopRecruiters />
       </section>
-      <section className=" py-[4rem]">
+      <section className=" py-14 lg:py-[4rem]">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           // videoUrl="z-Axfq0HfZOLspAj"

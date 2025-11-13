@@ -36,6 +36,14 @@ const HeroSection = () => {
   
   ];
 
+  const logosMobile=[
+      { label: 'NAAC Accredited', src: nba },
+    { label: 'ISO 21001:2018', src: iso },
+    { label: 'ISO 9001:2015', src: iso2015 },
+    { label: 'NBA Accredited', src: nba2 },
+    { label: 'Affiliated to VTU', src: affiliated }
+  ]
+
   const backgroundImages = [bg3,bg2,];
 
   return (
@@ -108,7 +116,7 @@ const HeroSection = () => {
             },
           }}
         >
-          {logos.map((item, index) => (
+          {logosMobile.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="bg-white shadow-sm rounded-2xl w-full flex flex-col items-center justify-center min-h-[150px]">
                 <div className="mb-4">

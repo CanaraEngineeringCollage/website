@@ -25,7 +25,7 @@ const   AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepar
           </div>
           <div className="hidden lg:block ">
             <Link href={`/department/${slug}/detailes`}>
-              <button className="bg-[#007AFF26] hover:bg-blue-200 rounded-4xl lg:px-4 lg:py-2.5">More About the Department</button>
+              <button className="bg-[#007AFF26] hover:bg-blue-200 rounded-4xl lg:px-4 mt-3.5 lg:py-2.5">More About the Department</button>
             </Link>
           </div>
         </div>
