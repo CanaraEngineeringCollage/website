@@ -67,7 +67,7 @@ const HeroSection = () => {
                 src={img}
                 alt={`Background ${index + 1}`}
                
-                className='object-cover w-full h-full'
+                className='object-cover -translate-y-[90px] lg:translate-y-0 w-full h-full'
                 priority
               />
             

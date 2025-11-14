@@ -8,7 +8,7 @@ const AdmissionProcedureText = () => {
           Admission Procedure
         </h1>
 
-        <p className="text-textGray text-justify leading-relaxed text-sm lg:text-[20px] mb-5">
+        <p className="text-textGray text-justify leading-relaxed text-lg lg:text-[20px] mb-5">
           The minimum qualification for admission to the B.E. program is a pass
           in the 2nd PUC or 10+2 higher secondary or equivalent qualifying
           examination with a minimum aggregate of <strong>45%</strong> in
@@ -19,14 +19,14 @@ const AdmissionProcedureText = () => {
           ST, Category 1, and OBC candidates.
         </p>
 
-        <p className="text-textGray text-justify leading-relaxed text-sm lg:text-[20px] mb-5">
+        <p className="text-textGray text-justify leading-relaxed text-lg lg:text-[20px] mb-5">
           <strong>Please Note:</strong> The relaxation in academic eligibility is
           extended only to Karnataka candidates belonging to the SC, ST, Cat-I,
           and OBC categories. The above rules also apply to candidates seeking
           admission under the Management Quota.
         </p>
 
-        <p className="text-textGray text-justify leading-relaxed text-sm lg:text-[20px] mb-5">
+        <p className="text-textGray text-justify leading-relaxed text-lg lg:text-[20px] mb-5">
           Applicants must have appeared for at least one of the following
           entrance examinations:
           <br />
@@ -38,7 +38,7 @@ const AdmissionProcedureText = () => {
         <h2 className="text-2xl font-semibold mt-8 mb-3">
           Programmes Offered
         </h2>
-        <ul className="list-disc list-inside text-textGray leading-relaxed text-sm lg:text-[20px] space-y-2">
+        <ul className="list-disc pl-4 text-textGray leading-relaxed text-lg lg:text-[20px] space-y-2">
           <li>
             BE in Computer Science and Engineering – Intake 180 (Year of
             Commencement 2001)
@@ -71,7 +71,7 @@ const AdmissionProcedureText = () => {
         <h2 className="text-2xl font-semibold mt-8 mb-3">
           Name of Programmes Accredited by NBA and Status
         </h2>
-        <ul className="list-disc list-inside text-textGray leading-relaxed text-sm lg:text-[20px] space-y-2">
+        <ul className="list-disc pl-4 text-textGray leading-relaxed text-lg lg:text-[20px] space-y-2">
           <li>
             BE in Computer Science and Engineering – 3 years (Valid up to
             30/06/2028)
@@ -89,7 +89,7 @@ const AdmissionProcedureText = () => {
         <h2 className="text-2xl font-semibold mt-8 mb-3">
           Documents Required During Finalization of Admission
         </h2>
-        <ul className="list-disc list-inside text-textGray leading-relaxed text-sm lg:text-[20px] space-y-2">
+        <ul className="list-disc pl-4 text-textGray leading-relaxed text-lg lg:text-[20px] space-y-2">
           <li>S.S.L.C. Marks Card (Original)</li>
           <li>P.U.C. Marks Card (Original)</li>
           <li>
@@ -108,7 +108,7 @@ const AdmissionProcedureText = () => {
         <h2 className="text-2xl font-semibold mt-8 mb-3">
           Documents Required During CET Admission
         </h2>
-        <ul className="list-disc list-inside text-textGray leading-relaxed text-sm lg:text-[20px] space-y-2">
+        <ul className="list-disc pl-4 text-textGray leading-relaxed text-lg lg:text-[20px] space-y-2">
           <li>CET Admission Order (Original)</li>
           <li>CET Document Verification Letter (Original)</li>
           <li>S.S.L.C. Marks Card (Original)</li>

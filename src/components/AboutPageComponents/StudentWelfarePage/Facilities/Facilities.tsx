@@ -18,12 +18,12 @@ const Facilities = () => {
   ];
 
   return (
-    <section className="md:pt-0 pb-10 md:pb-12 xl:pt-5 xl:pb-14  pt-7 max-w-7xl xl:max-w-[75%] mx-auto text-[#1D1D1F]">
+    <section className="md:pt-0 pb-10 md:pb-12 xl:pt-5 xl:pb-14 max-w-7xl xl:max-w-[75%] mx-auto text-[#1D1D1F]">
       <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-[#1D1D1F] pb-6">
         Facilities
       </h1>
 
-      <ul className="space-y-2 list-disc pl-6 text-textGray text-justify text-sm lg:text-[20px] leading-relaxed">
+      <ul className="space-y-2 list-disc pl-6 text-textGray text-justify text-lg lg:text-[20px] leading-relaxed">
         {facilities.map((item, index) => (
           <li key={index} className="md:leading-8">
             {item}

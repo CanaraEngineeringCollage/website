@@ -33,7 +33,7 @@ const stats: Stat[] = [
                 whileInView={{ height: `${item.value * 2}px` }} // proportional & smooth
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
-                className="xl:w-20 lg:w-16 md:w-14 w-10 rounded-t flex items-end justify-center"
+                className="xl:w-20 lg:w-16 md:w-14 w-14 rounded-t flex items-end justify-center"
                 style={{
                   background: "linear-gradient(to top, #2884CA, #6DC0EB)",
                 }}

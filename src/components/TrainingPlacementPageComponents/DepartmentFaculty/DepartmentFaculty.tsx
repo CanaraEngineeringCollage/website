@@ -110,7 +110,7 @@ const handlePrev = () => {
 
 
   return (
-    <section className="py-16 px-6 md:px-12 max-w-7xl mx-auto mt-20 lg:mt-20 mb-16  xl:max-w-[75%] bg-[#F5F5F7] rounded-3xl">
+    <section className="py-16 px-6 md:px-12 max-w-7xl mx-auto mt-20 lg:mt-12 mb-16 lg:mb-8  xl:max-w-[75%] bg-[#F5F5F7] rounded-3xl">
       <div className=" mx-auto lg:flex hidden  flex-col-reverse md:flex-row items-center justify-between gap-10">
         <div className="max-w-md space-y-44">
           <div>
@@ -219,10 +219,9 @@ const handlePrev = () => {
       <div className="max-w-7xl mx-auto flex flex-col items-center justify-between gap-10 lg:hidden  ">
         <div className="max-w-md space-y-44">
           <div>
-            <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-center text-gray-900 leading-tight">Get to Know Our Department’s Faculty</h2>
+            <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-center mb-5 text-gray-900 leading-tight">{heading}</h2>
             <p className="text-gray-700 text-lg text-center">
-              Our faculty members are the heart of our department, guiding & inspiring students with their expertise, dedication & passion for
-              education.
+              {description}
             </p>
           </div>
         </div>

@@ -185,7 +185,7 @@ const ExploreFacilities = () => {
         isOpen,
       }}
     >
-      <section className="max-w-7xl mx-auto xl:max-w-[75%]  pb-16">
+      <section className="max-w-7xl mx-auto xl:max-w-[75%]  pb-16 lg:pb-10">
         <div className="lg:flex lg:justify-between md:pb-5 pb-5">
           <div className="flex">
             <h1 className="text-3xl md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-[#1D1D1F] md:pb-0">

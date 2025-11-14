@@ -84,13 +84,13 @@ const page = () => {
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <TopRecruiters />
       </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0  lg:mt-0 -mt-12 ">
+      <section className="px-6 md:px-12 lg:px-16 xl:px-0  lg:mt-0 mt-2 ">
         <HighlightsSection />
       </section>
-     <section className="px-6 md:px-12 lg:px-16 xl:px-0 mb-14">
+     <section className="px-6 md:px-12 lg:px-16 xl:px-0 mb-14 lg:mb-5">
         <RecruitersList />
       </section>
-      <section className="px-6  pt-14 lg:pt-20  md:px-12 lg:pl-16 lg:px-0 bg-[#e5e5ea]  xl:px-0">
+      <section className="px-6  pt-14 lg:pt-16  md:px-12 lg:pl-16 lg:px-0 bg-[#e5e5ea]  xl:px-0">
         <ExploreFacilities />
       </section>
     </>

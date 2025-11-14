@@ -255,7 +255,7 @@ const Footer: FC = () => {
 
         {/* Mobile Bottom Bar */}
         <div className="border-t border-gray-300 pt-4 pb-6 text-xs text-center">
-          <p className="mb-2">Copyright © 2024 CEC & Canara High School Association. All rights reserved.</p>
+          <p className="mb-2">Copyright © {new Date().getFullYear()} CEC & Canara High School Association. All rights reserved.</p>
           <Link href={"/privacy-policy"}>
             <p>Privacy Policy | Terms of Use</p>
           </Link>

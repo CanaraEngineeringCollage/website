@@ -503,7 +503,7 @@ const RsdPageSection = () => {
     <section className="py-10 xl:py-20 text-[#1D1D1F] overflow-hidden">
       <div className="lg2:mx-24 mx-5">
         <h1 className="text-[30px] lg:text-[54px] font-bold pb-1 leading-[1.2] lg:pb-10 text-[#1D1D1F]">Research &amp; Development <br /> and Consultancy Cell</h1>
-        <div className="grid grid-cols-1 gap-3 md:gap-0 md:grid-cols-12 mt-10">
+        <div className="md:grid grid-cols-1 gap-3 md:gap-0 md:grid-cols-12 mt-10">
           <div className="col-span-3 sticky top-20 md:top-32 self-start md:mb-0">
             <div className="sticky top-20 h-fit">
               {titles.map((title, index) => (
@@ -520,7 +520,7 @@ const RsdPageSection = () => {
             </div>
           </div>
           <div className="col-span-1"></div>
-          <div className="col-span-8 h-[30vh] md:h-[90vh] overflow-y-auto pr-2 scrollable">
+          <div className="col-span-8 mt-3 md:mt-0 h-[30vh] md:h-[90vh] overflow-y-auto pr-2 scrollable">
             {selectedIndex === 0 && <VisionMission />}
             {selectedIndex === 1 && <ResearchPolicies />}
             {selectedIndex === 2 && <ResearchBodies />}

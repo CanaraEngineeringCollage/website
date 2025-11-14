@@ -74,7 +74,7 @@ const HighlightsSection = () => {
   };
 
   return (
-    <section className="max-w-7xl xl:max-w-[75%] mx-auto py-16 lg:py-28 text-black">
+    <section className="max-w-7xl xl:max-w-[75%] mx-auto py-16 lg:pb-20 lg:pt-24 text-black">
        <h2 className="text-3xl md:text-[40px] lg2:text-5xl  font-bold text-black text-center mb-10 lg:mb-22 ">Key Highlights</h2>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Left Column */}

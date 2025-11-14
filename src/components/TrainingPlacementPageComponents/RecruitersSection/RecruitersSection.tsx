@@ -51,7 +51,7 @@ const RecruitersList: React.FC = () => {
               key={year}
               onClick={() => {
                 setSelectedYear(year);
-                setShowMore(false);
+                
               }}
               className={`px-4 py-2 rounded-md text-sm font-medium border transition ${
                 selectedYear === year
@@ -74,9 +74,9 @@ const RecruitersList: React.FC = () => {
             {selectedYear} Batch Recruiters
           </h1>
 
-             <div className=" flex md:hidden mb-5 gap-2 items-center">
+             <div className=" flex md:hidden mb-5 gap-2 justify-between items-center">
           <h1 className="text-xl lg:text-4xl md:text-xl text-start  font-bold leading-[1.1] text-[#1D1D1F]">
-            {selectedYear} Batch Recruiters
+            {selectedYear} Batch 
           </h1>
              <div className="block md:hidden ">
         <select

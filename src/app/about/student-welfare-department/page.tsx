@@ -44,19 +44,19 @@ const page = () => {
       <section>
         <HeroSection />
       </section>
-      <section className="px-6 md:px-0 xl:px-0">
+      <section className="px-4 md:px-0 xl:px-0">
         <AboutTheDepartment />
       </section>
       <section>
       <MissionAndVision/>
       </section>
-      <section className="px-6">
+      <section className="px-4">
         <Facilities/>
       </section>
       <section className=" lg:mt-0 -mt-2">
         <VideoPlayer youtubeUrl="NhwFJ89AJ2k" thumbnail="/youtubeThumbnails/Akrathi Aftermovie-Thumbail copy 3@300x.webp" />
       </section>
-      <section className="px-6 md:px-12 -mt-5 md:-mt-0 lg:pl-16 lg:px-0 xl:px-0">
+      <section className="px-4 md:px-12 -mt-5 md:-mt-0 lg:pl-16 lg:px-0 xl:px-0">
         <FunctionDepartment title="Functions of the Department" functionDeprtmentData={data} />
       </section>
    <section className="bg-[#071D2C] px-6 md:px-0 lg:px-0 xl:px-0 md:mt-0 mt-8">
@@ -71,7 +71,7 @@ const page = () => {
 />
 
       </section>
-<section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">
+<section className="px-4 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">
       <EventsSection/>
       </section>
       {/* <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">

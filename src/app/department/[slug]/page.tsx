@@ -113,7 +113,7 @@ export default function DepartmentPage({ params }: { params: { slug: string } })
       {/* <HeroSection departmentName={department.name} /> */}
 
       {department?.ytUrl && (
-        <section className="pb-10 md:pb-10   lg:pb-20">
+        <section className="pb-10 md:pb-10   lg:pb-14">
           <VideoPlayer
             videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
             youtubeUrl={department?.ytUrl}
@@ -122,14 +122,14 @@ export default function DepartmentPage({ params }: { params: { slug: string } })
         </section>
       )}
       {department.ethicalLearning && (
-        <section className=" lg:mb-20 ">
+        <section className=" lg:mb-14 ">
           <DepartmentMissionVision ethicalLearning={department.ethicalLearning} ourVision={department.ourVision} />
         </section>
       )}
       <section className="bg-[#071D2C] px-6 md:px-0 lg:px-0 xl:px-0 md:mt-0 mt-8">
         <DepartmentHeadMessage depatmentHead={department.depatmentHead} />
       </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0 lg:mt-0 -mt-10">
+      <section className="px-6 md:px-12 lg:px-16 xl:px-0 lg:mt-0 ">
         <DepartmentFacultySection departmentName={department.name} />
       </section>
       {department.ideas && (

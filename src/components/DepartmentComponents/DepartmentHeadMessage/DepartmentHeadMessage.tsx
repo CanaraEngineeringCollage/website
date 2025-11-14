@@ -15,7 +15,7 @@ interface DepartmentHeadMessageProps {
   const DepartmentHeadMessage: React.FC<DepartmentHeadMessageProps> = ({ depatmentHead }) => {
   return (
     <section className="w-full bg-[#051B2C]">
-      <div className=" py-16  md:py-20 lg:py-24">
+      <div className=" py-16  md:py-20 lg:py-20">
           <h1 className="text-3xl lg:hidden text-center lg:text-start mb-10 md:text-[40px] leading-[1.2] lg2:text-5xl  font-bold"> Message from the Department&rsquo;s Head</h1>
     <div className="grid grid-cols-1 lg:w-[70%] overflow-hidden mx-auto lg:grid-cols-12  items-center">
 

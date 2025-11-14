@@ -123,7 +123,7 @@ const DepartmentSection = () => {
         </div>
       </section>
 
-      <div className="lg:px-32 px-5 mt-12">
+      <div className="lg:px-32 px-5 lg:mt-8 mt-12">
         <ModelTable title="Sports Committee Panel" headers={["Sl No", "Name", "Designation", "Department"]} rows={members} />
         <ModelTable title="College Sports Facilities" headers={["Sl No", "Sports", "No"]} rows={sportsFacilities} />
         <ModelTable title="Our Journey in State-Level Sports" headers={["Sl No", "Year", "Number of Events (State Level)", "Number of Participants"]} rows={participation} />

@@ -44,7 +44,7 @@ const page = () => {
       {/* <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <EmpowerNextGeneration />
       </section> */}
-      <section className="pb-6 md:pb-10 xl:pb-10">
+      <section className="pb-10 px-4 lg:px-0 md:pb-10 xl:pb-10">
         <LegacyExcellance />
       </section>
       {/* <section className="px-6 bg-[#E5E5EA] md:px-12 mt-12 lg:pl-16 lg:px-0 xl:px-0">

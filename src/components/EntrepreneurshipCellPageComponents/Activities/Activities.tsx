@@ -90,13 +90,13 @@ const Activities = () => {
       <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  text-start font-bold text-[#1D1D1F] leading-[1.2]">
         CEC Alumni Entrepreneurs
       </h1>
-      <ul className="lg:text-xl text-start list-disc ml-5 md:text-lg text-[14px] leading-7 pt-4 pb-10 text-textGray">
+      <ul className="lg:text-xl text-start list-disc ml-5 md:text-lg text-lg leading-7 pt-4 pb-10 text-textGray">
         {sampleList.map((item, index) => (
           <li className="pb-3">{item}</li>
         ))}
       </ul>
       <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  text-start font-bold text-[#1D1D1F] leading-[1.2] ">Other Achievements</h1>
-      <p className="lg:text-xl md:text-lg text-[14px] leading-7 py-10 text-textGray pt-4 pb-10">
+      <p className="lg:text-xl md:text-lg text-lg leading-7 py-10 text-textGray pt-4 pb-10">
         On 29th January, two students, Sumanth Shenoy and Aditya Pai, both members of IEEECan won the first place in Social Innovation stream in DEFI
         2017 - a Startup Event at TAPMI, Manipal, under the aegis of Manipal University Technology and Business Incubator (MUTBI), aimed at giving
         students an opportunity to pitch their venture idea and empower them through workshops and mentor-ship via association with NASSCOM and MUTBI.

@@ -163,7 +163,7 @@ export default function LegacyExcellance() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isModalOpen, closeModal]);
   return (
-    <section className="max-w-7xl xl:max-w-[75%]   mx-auto  py-8">
+    <section className="max-w-7xl xl:max-w-[75%]   mx-auto  py-8 lg:pt-3 lg:pb-10">
       <div className="grid grid-cols-1  lg:grid-cols-2 gap-8 lg2:gap-10 items-start">
         {/* Left Side - Swiper */}
 
@@ -173,7 +173,7 @@ export default function LegacyExcellance() {
 
             {/* Text Overlay */}
             <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6 lg2:p-16 rounded-b-3xl">
-              <h2 className="text-white text-lg leading-[1.2] lg:text-[40px] font-bold mt-1">{item.title}</h2>
+              <h2 className="text-white text-lg leading-[1.2] lg:text-[40px] line-clamp-1 lg:line-clamp-none  font-bold mt-1">{item.title}</h2>
               {/* <p className="text-white  mt-2 text-sm lg:text-lg max-w-2/3">{item.description}</p> */}
               <button
                 aria-label="Learn More"

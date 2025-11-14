@@ -2,10 +2,10 @@ import React from "react";
 
 const AboutTheDepartment = () => {
   return (
-    <section className="md:pt-10 pb-10 md:pb-0 xl:pt-20 pt-7  max-w-7xl  xl:max-w-[75%] mx-auto text-[#1D1D1F] ">
+    <section className="md:pt-10  md:pb-0 xl:pt-20 pt-7  max-w-7xl  xl:max-w-[75%] mx-auto text-[#1D1D1F] ">
       <div className=" px-1 md:px-9 lg:px-10 lg2:px-1">
         <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-[#1D1D1F] pb-6 ">About the Department</h1>
-        <p className="text-textGray text-justify leading-relaxed text-sm lg:text-[20px] ">
+        <p className="!text-textGray text-justify  leading-7 text-lg lg:text-[20px] ">
         The Department of Student Welfare, established at Canara Engineering College in the academic year 2010–2011 under the leadership of <strong> Dr. Priya V. Frank,</strong> is dedicated to ensuring the overall wellbeing and holistic development of students. The department strives to foster academic, personal, and social growth through counseling, leadership initiatives, extracurricular activities, and student-centered programs. Guided by its vision to prepare students for a diverse and dynamic global society, the department upholds integrity, transparency, and accountability while promoting peace, harmony, and coexistence. It is equally committed to providing a supportive platform for grievance redressal and creating a positive and inclusive learning environment that enables students to evolve into responsible and productive citizens.
         </p>
         {/* <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-[#1D1D1F] pt-14 pb-6">Vision</h1>

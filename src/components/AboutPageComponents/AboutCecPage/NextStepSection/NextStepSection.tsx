@@ -7,7 +7,7 @@ export default function NextStepSection() {
 
   const [isOpen, setIsOpen] = useState<boolean>(false)
   return (
-    <section className="relative py-24 lg:py-40 overflow-hidden bg-[#0A0A0A]">
+    <section className="relative py-20 lg:py-40 overflow-hidden bg-[#0A0A0A]">
       {/* Background gradient */}
       <div
         className="absolute inset-0 z-0"

@@ -52,7 +52,7 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
   };
 
   return (
-    <section className="lg:ml-16 py-24 xl:py-24 xl:ml-60">
+    <section className="lg:ml-16 pt-24 pb-10 lg:py-24 xl:py-24 xl:ml-60">
       {title && (
         <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl leading-[1.2] font-bold text-center text-[#1D1D1F] pb-6 xl:pb-22">{title}</h1>
       )}
@@ -88,15 +88,22 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
         onAutoplayTimeLeft={handleAutoplayTimeLeft}
       >
         {functionDeprtmentData?.map((item, index) => (
-          <SwiperSlide key={index}>
-            <div className="max-w-sm h-[25vh] lg:h-[30vh] p-6 bg-[#ffffff] rounded-2xl">
-              <div className="mb-4">
-                <Image src={item.icon} alt="Icon" width={30} height={30} />
-              </div>
-              <h2 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h2>
-              <p className="text-sm text-gray-600">{item.description}</p>
-            </div>
-          </SwiperSlide>
+        <SwiperSlide key={index} className="!h-auto">
+  <div className="h-full pt-6 pb-3 px-6 bg-white rounded-2xl flex flex-col">
+    <div className="mb-4">
+      <Image src={item.icon} alt="Icon" width={30} height={30} />
+    </div>
+
+    <h2 className="text-xl font-semibold text-gray-900 mb-2">
+      {item.title}
+    </h2>
+
+    <p className="text-sm text-gray-600 flex-grow">
+      {item.description}
+    </p>
+  </div>
+</SwiperSlide>
+
         ))}
       </Swiper>
 
