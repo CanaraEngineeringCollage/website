@@ -7,8 +7,8 @@ const AboutDepartment = () => {
     <section className=" pb-5 md:pb-2   max-w-7xl xl:max-w-[75%] mx-auto lg:px-32">
       <div className="">
         <div className="flex justify-between items-center  pb-5 lg:pb-10">
-          <h1 className="text-3xl md:text-[40px] lg2:text-[46.5px] xl:text-6xl leading-[1.2] max-w-2xl xl:max-w-4xl  font-bold text-[#1D1D1F] ">
-            Training &amp; Placement at Canara Engineering College
+          <h1 className="text-3xl md:text-[40px] lg2:text-[46.5px] xl:text-6xl leading-[1.2]  xl:max-w-4xl  font-bold text-[#1D1D1F] ">
+            Training &amp; Placement at <br className="hidden lg:block"/> Canara Engineering College
           </h1>
           <div>
             <a

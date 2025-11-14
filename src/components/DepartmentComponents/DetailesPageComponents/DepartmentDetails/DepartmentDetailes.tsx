@@ -1,6 +1,5 @@
 "use client";
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import grievanceRedressalCell from "../../../../utils/grievanceData/grievanceData.json";
 import { useParams } from "next/navigation";
 import departments from "@/lib/departments.json";
 import DepartmentProfile from "../DepartmentDetailesTab/DepartmentProfile/DepartmentProfile";

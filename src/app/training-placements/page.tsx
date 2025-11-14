@@ -65,7 +65,7 @@ const page = () => {
       <section className="px-6 md:px-12 lg:px-16 xl:px-0 mb-9 mt-5 lg:mt-10">
         <AboutDepartment />
       </section>
-      <section className="pb-10 lg:mt-0 -mt-12">
+      <section className="pb-10 lg:mt-0 -mt-8">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           youtubeUrl="r6MXt_aTeS0"

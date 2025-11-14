@@ -187,7 +187,7 @@ const handlePrev = () => {
 
               {/* Content */}
               <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full">
-                <h2 className="text-base sm:text-lg md:text-xl font-bold leading-tight">
+                <h2 className="lg2:text-[18px] lg:text-[16px] md:text-[11px] text-[18px] font-bold leading-tight">
                   {member.name}
                 </h2>
                 <p className="text-xs sm:text-sm md:text-base leading-snug break-words">
@@ -205,7 +205,7 @@ const handlePrev = () => {
                 </p>
                 <p
                 
-                  className="text-xs sm:text-sm md:text-base font-bold flex items-center mt-1"
+                  className=" lg2:text-[16px]  md:text-[11px] text-[16px] font-bold flex items-center mt-1"
                 >
                   View Profile
                   <MdKeyboardArrowRight className="ml-1 text-lg md:text-xl" />
@@ -232,7 +232,7 @@ const handlePrev = () => {
       Array.from({ length: 1 }).map((_, index) => (
           <div
           key={index}
-          className="relative cursor-pointer w-full max-w-[309px] h-[270px] md:h-[420px] rounded-xl overflow-hidden bg-[#6DC0EB]/40 animate-pulse flex flex-col items-center shadow-md"
+          className="relative cursor-pointer w-full max-w-[309px] h-[400px] md:h-[420px] rounded-xl overflow-hidden bg-[#6DC0EB]/40 animate-pulse flex flex-col items-center shadow-md"
         >
           {/* Image skeleton */}
           <div className="absolute inset-0 bg-[#6DC0EB]/50" />
@@ -254,7 +254,7 @@ const handlePrev = () => {
                     setIsModalOpen(true);
                   }}
               key={index}
-              className="relative cursor-pointer w-full max-w-[309px] h-[270px] md:h-[420px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md"
+              className="relative cursor-pointer w-full max-w-[309px] h-[400px] md:h-[420px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md"
             >
               {/* Image fills card completely */}
               <Image
@@ -270,7 +270,7 @@ const handlePrev = () => {
 
               {/* Content */}
               <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full text-start">
-                <h2 className="text-[10px] sm:text-lg md:text-xl font-bold leading-tight">
+                <h2 className="lg2:text-[18px] lg:text-[16px] md:text-[11px] text-[18px] font-bold leading-tight">
                   {member.name}
                 </h2>
                 <p className="text-xs sm:text-sm md:text-base leading-snug break-words ">
@@ -288,7 +288,7 @@ const handlePrev = () => {
                 </p>
                 <p
                 
-                  className="text-[10px] sm:text-sm md:text-base font-bold flex items-center justify-start mt-1 " 
+                  className="font-bold lg2:text-[16px]  md:text-[11px] text-[16px] font-bold flex items-center justify-start mt-1 " 
                 >
                   View Profile
                   <MdKeyboardArrowRight className="ml-1 text-sm md:text-xl" />
