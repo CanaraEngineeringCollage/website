@@ -32,7 +32,7 @@ const page = () => {
       <section>
         <DepartmentSection />
       </section>
-      <section className="pb-[70px]  pt-8 md:pt-7">
+      <section className="pb-[70px] md:px-6  pt-8 md:pt-7">
         <VideoPlayer
           title="Modern Amenities for Everyday Comfort"
           titleClassname="text-[#1D1D1F] !max-w-full"

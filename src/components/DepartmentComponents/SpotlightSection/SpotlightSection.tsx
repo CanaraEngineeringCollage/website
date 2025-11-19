@@ -18,7 +18,7 @@ export default function SpotlightSection({toppers}) {
       }}
     >
       {/* Top Section */}
-      <div className="max-w-7xl xl:max-w-[75%] mx-auto px-4 lg:px-18 text-center py-16 md:py-10 ">
+      <div className="max-w-7xl xl:max-w-[75%] mx-auto px-6 lg:px-18 text-center py-16 md:py-10 ">
         <h2 className="text-3xl md:text-[40px] leading-[1.1] lg2:text-5xl font-bold mb-4 lg:mb-8 xl:mb-8">
           In the Spotlight
         </h2>

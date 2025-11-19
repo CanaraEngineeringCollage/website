@@ -313,7 +313,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEven
                       alt={topTitle || event.category}
                       width={1000}
                       height={1000}
-                      className="rounded-l-2xl object-cover w-full h-[40vh] lg:h-[50vh]"
+                      className="rounded-l-2xl object-cover w-full h-[40vh] md:h-[30vh] lg2:h-[50vh]"
                     />
                   </div>
                   <div className="flex flex-col justify-center w-full md:w-1/2 p-6 lg:p-10">

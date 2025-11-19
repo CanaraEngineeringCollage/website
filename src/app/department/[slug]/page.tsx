@@ -102,7 +102,7 @@ export default function DepartmentPage({ params }: { params: { slug: string } })
 
   return (
     <>
-      <section className="px-6 md:px-0 xl:px-0">
+      <section className="px-6 lg:px-0 xl:px-0">
         <AboutTheDepartment
           departmentName={department.name}
           aboutTheDepartment={department.departmentAboutDescriptionArray}
@@ -113,7 +113,7 @@ export default function DepartmentPage({ params }: { params: { slug: string } })
       {/* <HeroSection departmentName={department.name} /> */}
 
       {department?.ytUrl && (
-        <section className="pb-10 md:pb-10   lg:pb-14">
+        <section className="pb-10 md:px-6 lg:px-0 md:pb-10   lg:pb-14">
           <VideoPlayer
             videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
             youtubeUrl={department?.ytUrl}
@@ -126,7 +126,7 @@ export default function DepartmentPage({ params }: { params: { slug: string } })
           <DepartmentMissionVision ethicalLearning={department.ethicalLearning} ourVision={department.ourVision} />
         </section>
       )}
-      <section className="bg-[#071D2C] px-6 md:px-0 lg:px-0 xl:px-0 md:mt-0 mt-8">
+      <section className="bg-[#071D2C] px-6 lg:px-0 lg:px-0 xl:px-0 md:mt-0 mt-8">
         <DepartmentHeadMessage depatmentHead={department.depatmentHead} />
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0 lg:mt-0 ">
@@ -143,7 +143,7 @@ export default function DepartmentPage({ params }: { params: { slug: string } })
           />
         </section>
       )}
-      {department.toppers&&<section>
+      {department.toppers&&<section >
         <SpotlightSection toppers={department.toppers} />
       </section>}
       {/* <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0 pb-8">

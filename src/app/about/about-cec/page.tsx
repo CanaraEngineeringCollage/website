@@ -41,7 +41,7 @@ export default function AboutCec() {
       <section className="px-6 md:px-0 xl:px-0 ">
         <AboutCanara />
       </section>
-      <section className="py-10 lg:py-5 lg:mt-0 -mt-3">
+      <section className="py-10 md:px-6 lg:px-0 lg:py-5 lg:mt-0 -mt-3">
         <VideoPlayer
           videoUrl="BEVUuWkR7LU"
           youtubeUrl="BEVUuWkR7LU"

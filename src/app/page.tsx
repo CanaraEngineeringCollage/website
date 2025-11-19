@@ -46,7 +46,7 @@ export default function Home() {
       <section className="  lg:px-0 xl:px-0  py-2 ">
         <ExplorePrograms />
       </section>
-      <section className="bg-[#144A72] mt-6 lg:mt-20 lg:mb-16 py-20">
+      <section className="bg-[#144A72] md:px-6 mt-6 lg:mt-20 md:mb-16 py-20">
         <VideoPlayer
           subTitle="Explore the campus with a virtual tour & discover one among the best colleges in the region."
           title="Experience the Campus"
@@ -61,7 +61,7 @@ export default function Home() {
       <section className="px-6 md:px-12 lg:px-16 xl:px-0 ">
         <TopRecruiters />
       </section>
-      <section className=" py-14 lg:pb-[4rem]">
+      <section className=" py-14 md:px-6 lg:px-0 lg:pb-[4rem]">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           // videoUrl="z-Axfq0HfZOLspAj"
