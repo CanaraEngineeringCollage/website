@@ -1,22 +1,5 @@
 [
-    {
-    "id": 1,
-    "name": "Dr. Nagesh H R",
-    "image": "/principal.jpeg",
-    "category": "Prospective",
-    "roles": [
-      { "title": "Principal", "organization": "" }
-    ]
-  },
-    {
-    "id": 1,
-    "name": "Dr. Priya_Vineetha",
-    "image": "/Dr._Priya_Vineetha_Frank__Professor_&_Dean_(SWO).webp",
-    "category": "Prospective",
-    "roles": [
-      { "title": "Dean - Student Welfare", "organization": "" }
-    ]
-  },
+ 
 
 
 
