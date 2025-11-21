@@ -19,7 +19,7 @@ export const metadata = {
     siteName: "Canara College",
     images: [
       {
-        url: "https://your-website-url.com/og-image.jpg", // update with your real OG image
+        url: "https://www.cec.edu.in/graphImage.png", // update with your real OG image
         width: 1200,
         height: 630,
         alt: "Canara College Campus",
