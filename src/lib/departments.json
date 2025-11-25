@@ -10331,7 +10331,7 @@
             "Number of Desktop: 35",
             "OS: Windows 11, Ubuntu 20"
           ],
-          "imageUrl": "https://cec.edu.in/files/Web%20Programming"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Web%20Programming"
         },
         {
           "title": "DevOps / Blockchain Lab",
@@ -10340,7 +10340,7 @@
             "Number of Desktop: 35",
             "OS: Windows 11/10, Ubuntu 20"
           ],
-          "imageUrl": "https://cec.edu.in/files/DevOps"
+          "imageUrl": "https://apiserver.cec.edu.in/files/DevOps"
         },
         {
           "title": "Data Structures / Algorithms Lab",
@@ -10349,7 +10349,7 @@
             "Number of Desktop: 36",
             "OS: Windows 10, Ubuntu 20"
           ],
-          "imageUrl": "https://cec.edu.in/files/Data%20Structures"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Data%20Structures"
         },
         {
           "title": "R Programming / LaTeX Lab",
@@ -10358,7 +10358,7 @@
             "Number of Desktop: 33",
             "OS: Windows 10, Ubuntu 20"
           ],
-          "imageUrl": "https://cec.edu.in/files/R%20Programming"
+          "imageUrl": "https://apiserver.cec.edu.in/files/R%20Programming"
         },
         {
           "title": "Database Management System / Machine Learning Lab",
@@ -10367,7 +10367,7 @@
             "Number of Desktop: 36",
             "OS: Windows 10, Ubuntu 18"
           ],
-          "imageUrl": "https://cec.edu.in/files/Database%20Management%20System%20and%20Machine%20Learning%20Lab"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Database%20Management%20System%20and%20Machine%20Learning%20Lab"
         },
         {
           "title": "Faculty Research Lab",
@@ -10377,7 +10377,7 @@
             "OS: Windows 11 Professional",
             "Software: Anaconda Navigator, VS Code"
           ],
-          "imageUrl": "https://cec.edu.in/files/Faculty%20Research%20Lab"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Faculty%20Research%20Lab"
         },
         {
           "title": "Major Facilities in Laboratory",
@@ -10410,26 +10410,26 @@
             "The library is available for both staff and students, where both can borrow books for the entire semester.",
             "Journals, publications, newsletters, GATE study materials, and books for aptitude test preparation are also maintained in the department library."
           ],
-          "imageUrl": "https://cec.edu.in/files/Department%20Library"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Department%20Library"
         }
       ]
     },
     "studentAcheivemtents": [
       {
         "title": "Examination Results (VIII Semester)",
-        "imageUrl": "https://cec.edu.in/files/studentachievments"
+        "imageUrl": "https://apiserver.cec.edu.in/files/studentachievments"
       },
       {
         "title": "Publications in Conferences",
-        "imageUrl": "https://cec.edu.in/files/Publications%20in%20Conferences%20CSE"
+        "imageUrl": "https://apiserver.cec.edu.in/files/Publications%20in%20Conferences%20CSE"
       },
       {
         "title": "Awards in Technical Events/Conferences",
-        "imageUrl": "https://cec.edu.in/files/Awards%20in%20Technical%20Events%20Conferences%20cse"
+        "imageUrl": "https://apiserver.cec.edu.in/files/Awards%20in%20Technical%20Events%20Conferences%20cse"
       },
       {
         "title": "Participation in Technical Events",
-        "imageUrl": "https://cec.edu.in/files/Participation%20in%20Technical%20Events%20CSE"
+        "imageUrl": "https://apiserver.cec.edu.in/files/Participation%20in%20Technical%20Events%20CSE"
       }
     ],
     "academicsProgram": {
@@ -10444,7 +10444,7 @@
     },
     "organisation": {
       "title": "",
-      "imageUrl": "https://cec.edu.in/files/Computer%20Science%20&%20Engineering",
+      "imageUrl": "https://apiserver.cec.edu.in/files/Computer%20Science%20&%20Engineering",
       "table": [
         {
           "title": "DAC: Departmental Advisory Committee",
@@ -10548,7 +10548,7 @@
       {
         "heading": "Publications in International Journals",
         "points": [],
-        "imageUrl": "https://cec.edu.in/files/Publications%20in%20International%20Journals%20cS",
+        "imageUrl": "https://apiserver.cec.edu.in/files/Publications%20in%20International%20Journals%20cS",
         "table": [
           {
             "title": [],
@@ -10562,7 +10562,7 @@
       {
         "heading": "Publications in International Conferences",
         "points": [],
-        "imageUrl": "https://cec.edu.in/files/Publications%20in%20International%20Conferences%20Cs",
+        "imageUrl": "https://apiserver.cec.edu.in/files/Publications%20in%20International%20Conferences%20Cs",
         "table": [
           {
             "title": [],
@@ -10576,7 +10576,7 @@
       {
         "heading": "Citations to Publications",
         "points": [],
-        "imageUrl": "https://cec.edu.in/files/Citations%20to%20Publications",
+        "imageUrl": "https://apiserver.cec.edu.in/files/Citations%20to%20Publications",
         "table": [
           {
             "title": [],
@@ -10673,10 +10673,7 @@
         "title": "Magazines",
         "data": [
           {
-            "image": [
-              "https://www.canaraengineering.in/departments/cse/newsletters/1.png",
-              "https://www.canaraengineering.in/departments/cse/newsletters/1.png"
-            ],
+            "image": ["https://apiserver.cec.edu.in/files/Magazines", "https://apiserver.cec.edu.in/files/Magazines"],
             "linkUrl": [
               "https://www.canaraengineering.in/departments/cse/newsletters/GC1.pdf",
               "https://www.canaraengineering.in/departments/cse/newsletters/GC2.pdf"
@@ -10689,11 +10686,11 @@
         "data": [
           {
             "image": [
-              "https://www.canaraengineering.in/departments/cse/newsletters/CSE_Newsletter(Jul-Dec%2024).PNG",
-              "https://www.canaraengineering.in/departments/cse/newsletters/Srushti_Newsletter(Jan-June%202024).PNG",
-              "https://www.canaraengineering.in/departments/cse/newsletters/Newsletter(July-Dec%2023).PNG",
-              "https://www.canaraengineering.in/departments/cse/newsletters/Newsletter(July-Dec%2023).PNG",
-              "https://www.canaraengineering.in/departments/cse/newsletters/Newsletter(July-Dec%2023).PNG"
+              "https://apiserver.cec.edu.in/files/Newsletters1",
+              "https://apiserver.cec.edu.in/files/Newsletters2",
+              "https://apiserver.cec.edu.in/files/Newsletters3",
+              "https://apiserver.cec.edu.in/files/Newsletters4",
+              "https://apiserver.cec.edu.in/files/Newsletters5"
             ],
             "linkUrl": [
               "https://www.canaraengineering.in/departments/cse/newsletters/Srushti-Newsletter%20July-Dec%2024.pdf",
@@ -21005,27 +21002,27 @@
         {
           "title": "Advance Computing Laboratory",
           "points": ["This lab is utilized by the 2nd year ISE students for Java & Advanced Java experiments."],
-          "imageUrl": "https://cec.edu.in/files/Advance%20Computing%20Laboratory"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Advance%20Computing%20Laboratory"
         },
         {
           "title": "Algorithm Laboratory",
           "points": ["This lab is utilized by the 2nd year ISE students to conduct lab programs related to Data structures and Algorithms."],
-          "imageUrl": "https://cec.edu.in/files/Algorithm%20Laboratory"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Algorithm%20Laboratory"
         },
         {
           "title": "Machine Learning/Data Processing & Visualization Laboratory",
           "points": ["This lab is utilized by 3rd year ISE students for laboratories such as Machine Learning, Python and Data Visualization Lab."],
-          "imageUrl": "https://cec.edu.in/files/Project%20Laboratory"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Project%20Laboratory"
         },
         {
           "title": "Project Laboratory",
           "points": ["This lab is utilized by the 3rd and 4th year students for developing mini-projects and major project."],
-          "imageUrl": "https://cec.edu.in/files/Project%20Laboratory"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Project%20Laboratory"
         },
         {
           "title": "Code Nest Laboratory",
           "points": ["This lab is utilized by 2nd and 3rd year ISE students for Latex Lab and Devops Labs."],
-          "imageUrl": "https://cec.edu.in/files/Code%20Nest%20Laboratory"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Code%20Nest%20Laboratory"
         },
         {
           "title": "Learning Materials",
@@ -21091,29 +21088,32 @@
     "publications": [
       {
         "title": "Staff Publications",
-        "imageUrl": ["https://cec.edu.in/files/Citation%20to%20faculty%20publication", "https://cec.edu.in/files/Publication%20in%20Journals"]
+        "imageUrl": [
+          "https://apiserver.cec.edu.in/files/Citation%20to%20faculty%20publication",
+          "https://apiserver.cec.edu.in/files/Publication%20in%20Journals"
+        ]
       },
       {
         "title": "Student Publications",
-        "imageUrl": ["https://cec.edu.in/files/Student%20Publications"]
+        "imageUrl": ["https://apiserver.cec.edu.in/files/Student%20Publications"]
       }
     ],
     "studentAcheivemtents": [
       {
         "title": "Student Achievements",
-        "imageUrl": "https://cec.edu.in/files/Participation%20Outside%20State"
+        "imageUrl": "https://apiserver.cec.edu.in/files/Participation%20Outside%20State"
       },
       {
         "title": "",
-        "imageUrl": "https://cec.edu.in/files/Prizes%20and%20award%20received"
+        "imageUrl": "https://apiserver.cec.edu.in/files/Prizes%20and%20award%20received"
       },
       {
         "title": "",
-        "imageUrl": "https://cec.edu.in/files/NPTEL%20Certification"
+        "imageUrl": "https://apiserver.cec.edu.in/files/NPTEL%20Certification"
       },
       {
         "title": "Result",
-        "imageUrl": "https://cec.edu.in/files/Examination%20rsult"
+        "imageUrl": "https://apiserver.cec.edu.in/files/Examination%20rsult"
       }
     ],
     "academicsProgram": {
@@ -21123,7 +21123,7 @@
       "academicAdditionalSkills": [
         {
           "title": "Academic & Additional Skills",
-          "imageUrl": "https://cec.edu.in/files/Academic%20&%20Additional%20Skills",
+          "imageUrl": "https://apiserver.cec.edu.in/files/Academic%20&%20Additional%20Skills",
           "points": []
         }
       ],
@@ -21131,7 +21131,7 @@
     },
     "organisation": {
       "title": "Organization Chart",
-      "imageUrl": "https://cec.edu.in/files/Organization%20Chart",
+      "imageUrl": "https://apiserver.cec.edu.in/files/Organization%20Chart",
       "table": [
         {
           "title": "DAC: Departmental Advisory Committee",
@@ -21355,14 +21355,14 @@
         "data": [
           {
             "image": [
-              "https://www.canaraengineering.in/departments/is/newsletter/1%20IKSHA-Newsletter%20Jul-%20Dec%202024.jpg",
-              "https://www.canaraengineering.in/departments/is/newsletter/1%20IKSHA-Newsletter%20Jan-%20June%202024.png",
-              "https://www.canaraengineering.in/departments/is/newsletter/3%20IKSHA%20-Newsletter%20July%20-%20Dec%202023.jpg",
-              "https://www.canaraengineering.in/departments/is/newsletter/4%20IKSHA-Newsletter%20Jan-June%202023.jpg",
-              "https://www.canaraengineering.in/departments/is/newsletter/5%20IKSHA-IS-V9-Aug%202022_I2.jpg",
-              "https://www.canaraengineering.in/departments/is/newsletter/6%20IKSHA-IS-V10-Sep_2022_I1.jpg",
-              "https://www.canaraengineering.in/departments/is/newsletter/7%20IKSHA-%20Newsletter%20July-Dec%202021.jpg",
-              "https://www.canaraengineering.in/departments/is/newsletter/8%20IKSHA-Newsletter%20Jan-June%202021.jpg"
+              "https://apiserver.cec.edu.in/files/Newsletterss1",
+              "https://apiserver.cec.edu.in/files/Newsletterss2",
+              "https://apiserver.cec.edu.in/files/Newsletterss3",
+              "https://apiserver.cec.edu.in/files/Newsletterss4",
+              "https://apiserver.cec.edu.in/files/Newsletterss5",
+              "https://apiserver.cec.edu.in/files/Newsletterss6",
+              "https://apiserver.cec.edu.in/files/Newsletterss7",
+              "https://apiserver.cec.edu.in/files/Newsletterss8"
             ],
             "linkUrl": [
               "https://www.canaraengineering.in/departments/is/newsletter/1%20IKSHA-Newsletter%20Jul-%20Dec%202024.pdf",
@@ -30178,7 +30178,7 @@
             "Antenna Trainer kit set",
             "OFC kits"
           ],
-          "imageUrl": "https://cec.edu.in/files/Hardware%20Lab%20I-Advanced%20Communication%20Lab"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Hardware%20Lab%20I-Advanced%20Communication%20Lab"
         },
         {
           "title": "Hardware Lab II-LIC and Communication Lab",
@@ -30192,7 +30192,7 @@
             "Various Digital Modulation Kits",
             "Power supply units."
           ],
-          "imageUrl": "https://cec.edu.in/files/Hardware%20Lab%20II-LIC%20and%20Communication%20Lab"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Hardware%20Lab%20II-LIC%20and%20Communication%20Lab"
         },
         {
           "title": "Hardware lab III-Logic Design Lab and Project Lab",
@@ -30252,9 +30252,9 @@
           "desc": "Additional laboratory facilities are created in the department to improve the quality of learning, catering to the needs of the students. This laboratory is used to conduct project and research work and to meet the requirement of beyond working hours",
           "methodes": "",
           "points": [],
-          "imageUrl": "https://cec.edu.in/files/Research%20Project%20Lab",
-          "imageUrl2": "https://cec.edu.in/files/Research%20Project%20Lab2",
-          "imageUrl3": "https://cec.edu.in/files/Research%20Project%20Lab3"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Research%20Project%20Lab",
+          "imageUrl2": "https://apiserver.cec.edu.in/files/Research%20Project%20Lab2",
+          "imageUrl3": "https://apiserver.cec.edu.in/files/Research%20Project%20Lab3"
         },
         {
           "title": "Class Room",
@@ -30301,19 +30301,19 @@
     "studentAcheivemtents": [
       {
         "title": "Examination Results (VIII Semester)",
-        "imageUrl": "https://cec.edu.in/files/Examination%20Results%20(VIII%20Semester)"
+        "imageUrl": "https://apiserver.cec.edu.in/files/Examination%20Results%20(VIII%20Semester)"
       },
       {
         "title": "Publications in Conferences",
-        "imageUrl": "https://cec.edu.in/files/Publications%20in%20Conferences"
+        "imageUrl": "https://apiserver.cec.edu.in/files/Publications%20in%20Conferences"
       },
       {
         "title": "Participation in Technical Events",
-        "imageUrl": "https://cec.edu.in/files/Participation%20in%20Technical%20Events"
+        "imageUrl": "https://apiserver.cec.edu.in/files/Participation%20in%20Technical%20Events"
       },
       {
         "title": "Publications in Conferences",
-        "imageUrl": "https://cec.edu.in/files/Publications%20in%20Conferences"
+        "imageUrl": "https://apiserver.cec.edu.in/files/Publications%20in%20Conferences"
       }
     ],
     "academicsProgram": {
@@ -30358,7 +30358,7 @@
     },
     "organisation": {
       "title": "",
-      "imageUrl": "https://cec.edu.in/files/Electronics%20&%20Communication%20Engineering",
+      "imageUrl": "https://apiserver.cec.edu.in/files/Electronics%20&%20Communication%20Engineering",
       "table": []
     },
     "research": [
@@ -30460,7 +30460,7 @@
       {
         "heading": "Publications in International Journals",
         "points": [],
-        "imageUrl": "https://cec.edu.in/files/Publications%20in%20International%20Journals",
+        "imageUrl": "https://apiserver.cec.edu.in/files/Publications%20in%20International%20Journals",
         "table": [
           {
             "title": [],
@@ -30474,7 +30474,7 @@
       {
         "heading": "Publications in International Conferences",
         "points": [],
-        "imageUrl": "https://cec.edu.in/files/Publications%20in%20International%20Conferences",
+        "imageUrl": "https://apiserver.cec.edu.in/files/Publications%20in%20International%20Conferences",
         "table": [
           {
             "title": [],
@@ -30488,7 +30488,7 @@
       {
         "heading": "PATENT",
         "points": [],
-        "imageUrl": "https://cec.edu.in/files/PATENT",
+        "imageUrl": "https://apiserver.cec.edu.in/files/PATENT",
         "table": [
           {
             "title": [],
@@ -30520,16 +30520,16 @@
         "data": [
           {
             "image": [
-              "https://www.canaraengineering.in/departments/ec/newsletter/DHWANI%20Jan2025%20Cover.png",
-              "https://www.canaraengineering.in/departments/ec/newsletter/DHWANI%20Jan2025%20Cover.png",
+              "https://apiserver.cec.edu.in/files/ec1",
+              "https://apiserver.cec.edu.in/files/ec1",
               "https://www.canaraengineering.in/departments/is/newsletter/3%20IKSHA%20-Newsletter%20July%20-%20Dec%202023.jpgaa",
-              "https://www.canaraengineering.in/departments/ec/newsletter/DHWANI%20Jan2025%20Cover.png",
-              "https://www.canaraengineering.in/departments/ec/newsletter/july%202023%20dhwani%20ece.png",
-              "https://www.canaraengineering.in/departments/ec/newsletter/feb%202023%20dhwani%20ece.png",
-              "https://www.canaraengineering.in/departments/ec/newsletter/August%202021%20front%20page.jpg",
-              "https://www.canaraengineering.in/departments/ec/newsletter/aug%202022%20dhwani%20ece.png",
-              "https://www.canaraengineering.in/departments/ec/newsletter/Jan%202019%20front%20page.jpg",
-              "https://www.canaraengineering.in/departments/ec/newsletter/August%202021%20front%20page.jpg"
+              "https://apiserver.cec.edu.in/files/ec1",
+              "https://apiserver.cec.edu.in/files/ec4",
+              "https://apiserver.cec.edu.in/files/ec5",
+              "https://apiserver.cec.edu.in/files/ec6",
+              "https://apiserver.cec.edu.in/files/ec7",
+              "https://apiserver.cec.edu.in/files/ec8",
+              "https://apiserver.cec.edu.in/files/ec9"
             ],
             "linkUrl": [
               "https://www.canaraengineering.in/departments/ec/newsletter/DHWANI%20Jan2025.pdf",
@@ -39749,7 +39749,7 @@
             "Number of PC: 35",
             "OS: Windows 11, Ubuntu 20"
           ],
-          "imageUrl": "https://cec.edu.in/files/Data%20Structures%20and%20Algorithms%20Lab"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Data%20Structures%20and%20Algorithms%20Lab"
         },
         {
           "title": "Object Oriented Design Pattern Lab",
@@ -39760,7 +39760,7 @@
             "Number of PC: 35",
             "OS: Windows 11/10, Ubuntu 20"
           ],
-          "imageUrl": "https://cec.edu.in/files/Object%20Oriented%20Design%20Pattern%20Lab"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Object%20Oriented%20Design%20Pattern%20Lab"
         },
         {
           "title": "UI/UX Lab",
@@ -39771,7 +39771,7 @@
             "Number of PC: 15",
             "OS: Windows 11, Ubuntu 20"
           ],
-          "imageUrl": "https://cec.edu.in/files/UI%20UX%20Lab"
+          "imageUrl": "https://apiserver.cec.edu.in/files/UI%20UX%20Lab"
         },
         {
           "title": "Full Stack Development Lab",
@@ -39782,7 +39782,7 @@
             "Number of PC: 33",
             "OS: Windows 11, Ubuntu 20"
           ],
-          "imageUrl": "https://cec.edu.in/files/Full%20Stack%20Development%20Lab"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Full%20Stack%20Development%20Lab"
         },
         {
           "title": "Robotic Process and Automation Lab",
@@ -39793,7 +39793,7 @@
             "Number of PC: 35",
             "OS: Windows 11, Ubuntu 18"
           ],
-          "imageUrl": "https://cec.edu.in/files/Robotic%20Process%20and%20Automation%20Lab"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Robotic%20Process%20and%20Automation%20Lab"
         },
         {
           "title": "Department Library",
@@ -39819,11 +39819,11 @@
     "studentAcheivemtents": [
       {
         "title": "Examination Results",
-        "imageUrl": "https://cec.edu.in/files/Examination%20Results"
+        "imageUrl": "https://apiserver.cec.edu.in/files/Examination%20Results"
       },
       {
         "title": "Participation in Technical Events",
-        "imageUrl": "https://cec.edu.in/files/Participation%20in%20Technical%20Events%20ECE"
+        "imageUrl": "https://apiserver.cec.edu.in/files/Participation%20in%20Technical%20Events%20ECE"
       }
     ],
     "academicsProgram": {
@@ -39842,7 +39842,7 @@
     },
     "organisation": {
       "title": "",
-      "imageUrl": "https://cec.edu.in/files/Computer%20Science%20&%20Design",
+      "imageUrl": "https://apiserver.cec.edu.in/files/Computer%20Science%20&%20Design",
       "table": [
         {
           "title": "DAC: Departmental Advisory Committee",
@@ -39940,7 +39940,7 @@
       {
         "heading": "Publications in International Conferences/Journals & Patents",
         "points": [],
-        "imageUrl": "https://cec.edu.in/files/Publications%20in%20International%20Conferences%20Journals%20&%20Patents",
+        "imageUrl": "https://apiserver.cec.edu.in/files/Publications%20in%20International%20Conferences%20Journals%20&%20Patents",
         "table": [
           {
             "title": [],
@@ -39974,11 +39974,11 @@
         "data": [
           {
             "image": [
-              "https://www.canaraengineering.in/departments/csd/newsletter/Newsletter%20image%204.png",
-              "https://www.canaraengineering.in/departments/csd/newsletter/Newsletter%20image%204.png",
-              "https://www.canaraengineering.in/departments/csd/newsletter/Newsletter%20image%202.png",
-              "https://www.canaraengineering.in/departments/csd/newsletter/Newsletter%20image%201.png",
-              "https://www.canaraengineering.in/departments/csd/newsletter/coverpage_img.png"
+              "https://apiserver.cec.edu.in/files/Newsletters1img",
+              "https://apiserver.cec.edu.in/files/Newsletters2img",
+              "https://apiserver.cec.edu.in/files/Newsletters3img",
+              "https://apiserver.cec.edu.in/files/Newsletters4img",
+              "https://apiserver.cec.edu.in/files/Newsletters5img"
             ],
             "linkUrl": [
               "https://www.canaraengineering.in/departments/csd/newsletter/BITS%20AND%20BYTES_Vol_3_Issue_1_July24_Dec_24.pdf",
@@ -45757,7 +45757,7 @@
             "Number of PC: 33",
             "OS: Windows 11, Ubuntu 20"
           ],
-          "imageUrl": "https://cec.edu.in/files/Data%20Structures%20and%20Algorithm%20Laboratory%20(CSBSL-01)"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Data%20Structures%20and%20Algorithm%20Laboratory%20(CSBSL-01)"
         },
         {
           "title": "Computer System Laboratory (CSBSL-02)",
@@ -45768,7 +45768,7 @@
             "Number of PC: 33",
             "OS: Windows 11/10, Ubuntu 20"
           ],
-          "imageUrl": "https://cec.edu.in/files/Computer%20System%20Laboratory%20(CSBSL-02)"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Computer%20System%20Laboratory%20(CSBSL-02)"
         },
         {
           "title": "Business Intelligence and Data Analytics Laboratory(CSBSL-03)",
@@ -45779,7 +45779,7 @@
             "Number of PC: 32",
             "OS: Windows 10, Ubuntu 20"
           ],
-          "imageUrl": "https://cec.edu.in/files/Business%20Intelligence%20and%20Data%20Analytics%20Laboratory(CSBSL-03)"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Business%20Intelligence%20and%20Data%20Analytics%20Laboratory(CSBSL-03)"
         },
         {
           "title": "Major Facilities in Laboratory",
@@ -45830,19 +45830,19 @@
     "studentAcheivemtents": [
       {
         "title": "University Examination Results",
-        "imageUrl": "https://cec.edu.in/files/University%20Examination%20Results"
+        "imageUrl": "https://apiserver.cec.edu.in/files/University%20Examination%20Results"
       },
       {
         "title": "Awards in Technical Events/Conferences",
-        "imageUrl": "https://cec.edu.in/files/Awards%20in%20Technical%20Events%20Conferences"
+        "imageUrl": "https://apiserver.cec.edu.in/files/Awards%20in%20Technical%20Events%20Conferences"
       },
       {
         "title": "Participation in Technical Events",
-        "imageUrl": "https://cec.edu.in/files/Participation%20in%20Technical%20Events%20CSB"
+        "imageUrl": "https://apiserver.cec.edu.in/files/Participation%20in%20Technical%20Events%20CSB"
       },
       {
         "title": "Participation in Technical Certification",
-        "imageUrl": "https://cec.edu.in/files/Participation%20in%20Technical%20Certification"
+        "imageUrl": "https://apiserver.cec.edu.in/files/Participation%20in%20Technical%20Certification"
       }
     ],
     "academicsProgram": {
@@ -45860,7 +45860,7 @@
     },
     "organisation": {
       "title": "",
-      "imageUrl": "https://cec.edu.in/files/Computer%20Science%20&%20Business%20System",
+      "imageUrl": "https://apiserver.cec.edu.in/files/Computer%20Science%20&%20Business%20System",
       "table": [
         {
           "title": "DAC: Departmental Advisory Committee",
@@ -45958,7 +45958,7 @@
       {
         "heading": "Faculty Achivements",
         "points": [],
-        "imageUrl": "https://cec.edu.in/files/Faculty%20Achivements",
+        "imageUrl": "https://apiserver.cec.edu.in/files/Faculty%20Achivements",
         "table": [
           {
             "title": [],
@@ -45992,11 +45992,11 @@
         "data": [
           {
             "image": [
-              "https://www.canaraengineering.in/departments/csb/Newsletter/Arohana(June%202024-Dec%202024).jpg",
-              "https://www.canaraengineering.in/departments/csb/Newsletter/Volume%202%20Issue%202.jpg",
-              "https://www.canaraengineering.in/departments/csb/Newsletter/Volume%202%20Issue%201.jpg",
-              "https://www.canaraengineering.in/departments/csb/Newsletter/Arohana%20issue2-1.png",
-              "https://www.canaraengineering.in/departments/csb/Newsletter/Arohana%20issue1-1.png"
+              "https://apiserver.cec.edu.in/files/Newsletters1csbimg",
+              "https://apiserver.cec.edu.in/files/Newsletters2csbimg",
+              "https://apiserver.cec.edu.in/files/Newsletters3csbimg",
+              "https://apiserver.cec.edu.in/files/Newsletters4csbimg",
+              "https://apiserver.cec.edu.in/files/Newsletters5csbimg"
             ],
             "linkUrl": [
               "https://www.canaraengineering.in/departments/csb/Newsletter/Arohana(June%202024-Dec%202024).pdf",
@@ -52046,7 +52046,7 @@
     },
     "organisation": {
       "title": "",
-      "imageUrl": "https://cec.edu.in/files/Artificial%20Intelligence%20&%20Machine%20Learning",
+      "imageUrl": "https://apiserver.cec.edu.in/files/Artificial%20Intelligence%20&%20Machine%20Learning",
       "table": [
         {
           "title": "DAC: Departmental Advisory Committee",
@@ -52154,7 +52154,7 @@
       {
         "heading": "FACULTY ACHIEVEMENTS",
         "points": [],
-        "imageUrl": "https://cec.edu.in/files/FACULTY%20ACHIEVEMENTS",
+        "imageUrl": "https://apiserver.cec.edu.in/files/FACULTY%20ACHIEVEMENTS",
         "table": [
           {
             "title": ["Faculty Name", "Research Domain", "University"],
@@ -52217,10 +52217,10 @@
         "data": [
           {
             "image": [
-              "https://cec.edu.in/files/DARPANA%20V3%20ISSUE%202%20-%202024",
-              "https://cec.edu.in/files/DARPANA%20V3%20ISSUE%201%20-%202024",
-              "https://cec.edu.in/files/DARPANA%20V2%20ISSUE%202%20-%202023",
-              "https://cec.edu.in/files/DARPANA%20V2%20ISSUE%201%20-%202023"
+              "https://apiserver.cec.edu.in/files/DARPANA%20V3%20ISSUE%202%20-%202024",
+              "https://apiserver.cec.edu.in/files/DARPANA%20V3%20ISSUE%201%20-%202024",
+              "https://apiserver.cec.edu.in/files/DARPANA%20V2%20ISSUE%202%20-%202023",
+              "https://apiserver.cec.edu.in/files/DARPANA%20V2%20ISSUE%201%20-%202023"
             ],
             "linkUrl": [
               "https://www.canaraengineering.in/departments/ai/newsletters/2024-V3-ISSUE2.pdf",
@@ -52241,42 +52241,42 @@
           "desc": "Data Structure and Algorithms Laboratory (AIL01): This lab is designed to help students understand and implement various experiments of data structures and algorithms, and also Ability Enhancement Courses with practical approaches. It provides an environment for students to practice coding, analyze the efficiency of different algorithms, and solve complex problems. The laboratory is equipped with computer systems with the necessary software tools required for implementing and testing academic laboratory experiments. Academic Labs: Data Structures, DAA.",
           "methodes": "",
           "points": [],
-          "imageUrl": "https://cec.edu.in/files/lab2"
+          "imageUrl": "https://apiserver.cec.edu.in/files/lab2"
         },
         {
           "title": "",
           "desc": "Machine Learning Laboratory (AIL02): The Machine Learning Laboratory is dedicated to providing students with practical experience in developing and applying machine learning algorithms. The lab is equipped with powerful computing resources and software tools for tasks such as data pre-processing, model training, and evaluation. Students can work on real-world datasets and projects to gain insights into machine learning techniques, experiment with different algorithms, and evaluate their performance. Academic Labs: Python Programming, Machine Learning.",
           "methodes": "",
           "points": [],
-          "imageUrl": "https://cec.edu.in/files/lab1"
+          "imageUrl": "https://apiserver.cec.edu.in/files/lab1"
         },
         {
           "title": "",
           "desc": "Data Processing and Visualization Laboratory (AIL03): The Data Processing and Visualization Laboratory is equipped with computer systems that supports to implement and run the applications of artificial intelligence and machine learning experiments. The laboratory is installed with data visualization tools to facilitate intensive data analysis and modelling tasks. With access to leading software platforms and frameworks, students can explore and implement algorithms for data preprocessing, feature extraction, statistical analysis, and machine and deep learning model development.",
           "methodes": "",
           "points": [],
-          "imageUrl": "https://cec.edu.in/files/Data%20Processing%20and%20Visualization%20Laboratory%20(AIL03)"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Data%20Processing%20and%20Visualization%20Laboratory%20(AIL03)"
         },
         {
           "title": "",
           "desc": "Deep Learning Laboratory (AIL04): The Deep Learning Laboratory (AIL04) is a dedicated facility designed to support research, innovation, and hands-on learning in deep learning and advanced artificial intelligence. This lab provides an environment for students, faculty, and researchers to explore cutting-edge techniques, including neural networks, computer vision, natural language processing, and generative AI.",
           "methodes": "",
           "points": [],
-          "imageUrl": "https://cec.edu.in/files/Deep%20Learning%20Laboratory%20(AIL04)"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Deep%20Learning%20Laboratory%20(AIL04)"
         },
         {
           "title": "",
           "desc": "Project Laboratory (AIL05): The Project Laboratory (AIL05) provides dedicated workspaces for students to collaborate and work on their projects while utilizing the available computing resources. This lab fosters innovation by offering a conducive environment for designing, developing, and testing various academic and research-based projects.",
           "methodes": "",
           "points": [],
-          "imageUrl": "https://cec.edu.in/files/Project%20Laboratory%20(AIL05)"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Project%20Laboratory%20(AIL05)"
         },
         {
           "title": "",
           "desc": "Intelligent System Laboratory (AIL06): The Intelligent System Laboratory (AIL06) is a facility designed to support advanced computing for students, faculty, and research scholars. This lab is equipped with high-performance HP Z-series workstations and provides robust computational resources for projects and experiments in Artificial Intelligence, Machine Learning, Data Science, and other high-demand fields that require high-end computing resources. This dedicated space empowers students to explore and develop complex algorithms, intelligent systems and conduct cutting-edge research, fostering innovation and academic excellence.",
           "methodes": "",
           "points": [],
-          "imageUrl": "https://cec.edu.in/files/Intelligent%20System%20Laboratory%20(AIL06)"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Intelligent%20System%20Laboratory%20(AIL06)"
         },
 
         {
@@ -52284,23 +52284,23 @@
           "title": "CLASS ROOMS",
           "methodes": "",
           "points": [],
-          "imageUrl": "https://cec.edu.in/files/CLASS%20ROOMS%201",
-          "imageUrl2": "https://cec.edu.in/files/CLASS%20ROOMS%202"
+          "imageUrl": "https://apiserver.cec.edu.in/files/CLASS%20ROOMS%201",
+          "imageUrl2": "https://apiserver.cec.edu.in/files/CLASS%20ROOMS%202"
         },
         {
           "title": "TUTORIAL ROOM",
           "desc": "Tutorial Rooms: A dedicated tutorial room is provided to offer a conducive setting for problem-solving sessions, and hands-on workshops as per the University Curriculum. The tutorial room will also help to promote interactive learning and peer-to-peer collaboration, these rooms are equipped with whiteboards, projectors to facilitate effective communication and knowledge sharing. The tutorial rooms provide a supportive environment conducive to academic fulfilment and success.",
           "methodes": "",
           "points": [],
-          "imageUrl": "https://cec.edu.in/files/TUTORIAL%20ROOM"
+          "imageUrl": "https://apiserver.cec.edu.in/files/TUTORIAL%20ROOM"
         },
         {
           "title": "STAFF ROOMS",
           "desc": "Our staffrooms serve as dedicated spaces for faculty members prepare course materials, and engage in scholarly activities. Equipped with comfortable furnishings and networked workstations, these rooms offer a conducive environment for productive discussions and interdisciplinary collaboration. Whether faculty members are conducting research, holding office hours, or mentoring students, our staffrooms provide a welcoming atmosphere to the professional growth and academic excellence.",
           "methodes": "",
           "points": [],
-          "imageUrl": "https://cec.edu.in/files/STAFF%20ROOMS",
-          "imageUrl2": "https://cec.edu.in/files/STAFF%20ROOMS2"
+          "imageUrl": "https://apiserver.cec.edu.in/files/STAFF%20ROOMS",
+          "imageUrl2": "https://apiserver.cec.edu.in/files/STAFF%20ROOMS2"
         },
         {
           "title": "Learning Materials",
@@ -52331,23 +52331,23 @@
     "studentAcheivemtents": [
       {
         "title": "University Results",
-        "imageUrl": "https://cec.edu.in/files/academic-events"
+        "imageUrl": "https://apiserver.cec.edu.in/files/academic-events"
       },
       {
         "title": "Certification Courses",
-        "imageUrl": "https://cec.edu.in/files/onlinecartificates"
+        "imageUrl": "https://apiserver.cec.edu.in/files/onlinecartificates"
       },
       {
         "title": "Awards in Events",
-        "imageUrl": "https://cec.edu.in/files/awards"
+        "imageUrl": "https://apiserver.cec.edu.in/files/awards"
       },
       {
         "title": "Participation in Technical Events",
-        "imageUrl": "https://cec.edu.in/files/Participation%20in%20Technical%20Events%20AI"
+        "imageUrl": "https://apiserver.cec.edu.in/files/Participation%20in%20Technical%20Events%20AI"
       },
       {
         "title": "Participation in non Technical Events",
-        "imageUrl": "https://cec.edu.in/files/nontechevents"
+        "imageUrl": "https://apiserver.cec.edu.in/files/nontechevents"
       }
     ],
     "academicsProgram": {
@@ -52358,7 +52358,7 @@
         {
           "title": "",
           "desc": "",
-          "imageUrl": "https://cec.edu.in/files/Advanced%20Skill%20Enhancement%20Programs",
+          "imageUrl": "https://apiserver.cec.edu.in/files/Advanced%20Skill%20Enhancement%20Programs",
           "points": []
         },
         {
@@ -61877,22 +61877,22 @@
     "studentAcheivemtents": [
       {
         "title": "University Results",
-        "imageUrl": "https://cec.edu.in/files/sh-%20University%20Results",
+        "imageUrl": "https://apiserver.cec.edu.in/files/sh-%20University%20Results",
         "desc": ""
       },
       {
         "title": "Certification Courses",
-        "imageUrl": "https://cec.edu.in/files/Certification%20Courses%20SH",
+        "imageUrl": "https://apiserver.cec.edu.in/files/Certification%20Courses%20SH",
         "desc": "Shravya V Shetty, First Semester student of CSE branch has secured First place in Weight Lifting Event at Dasara Kreeda koota"
       },
       {
         "title": "",
-        "imageUrl": "https://cec.edu.in/files/Prize",
+        "imageUrl": "https://apiserver.cec.edu.in/files/Prize",
         "desc": "Sanjana, First Semester student of ECE branch has secured Second plance in High Jump Event at Karnataka State Open athletic Meet and selected for in VTU Volleyball Team"
       },
       {
         "title": "",
-        "imageUrl": "https://cec.edu.in/files/prizesh",
+        "imageUrl": "https://apiserver.cec.edu.in/files/prizesh",
         "desc": "Maithili and Saptha Pavoor, First Semester student of ISE branch has secured First prize in Poster Making Competition held in MSNIM college in association with MRPL"
       }
     ],
@@ -61923,7 +61923,7 @@
     },
     "organisation": {
       "title": "",
-      "imageUrl": "https://cec.edu.in/files/Science%20&%20Humanities",
+      "imageUrl": "https://apiserver.cec.edu.in/files/Science%20&%20Humanities",
       "table": [
         {
           "title": "DAC: Departmental Advisory Committee",
@@ -62028,7 +62028,7 @@
       {
         "heading": "Publications in International Journals",
         "points": [],
-        "imageUrl": "https://cec.edu.in/files/Publications%20in%20International%20Journals%20SH",
+        "imageUrl": "https://apiserver.cec.edu.in/files/Publications%20in%20International%20Journals%20SH",
         "table": [
           {
             "title": [],
@@ -62062,9 +62062,9 @@
         "data": [
           {
             "image": [
-              "https://www.canaraengineering.in/departments/sm/newsletter/Front%20page.PNG",
-              "https://www.canaraengineering.in/departments/sm/newsletter/INCHARA%20Volume%209%20Issue%201.PNG",
-              "https://www.canaraengineering.in/departments/sm/newsletter/Inchara%20voulme%208%20issue%202.PNG"
+              "https://apiserver.cec.edu.in/files/hynw1",
+              "https://apiserver.cec.edu.in/files/hynw2",
+              "https://apiserver.cec.edu.in/files/h1nw3"
             ],
             "linkUrl": [
               "https://www.canaraengineering.in/departments/sm/newsletter/INCHARA.pdf",
@@ -72619,7 +72619,7 @@
     "publications": [
       {
         "title": "FACULTY PUBLICATIONS",
-        "imageUrl": ["https://cec.edu.in/files/FACULTY%20PUBLICATIONS"]
+        "imageUrl": ["https://apiserver.cec.edu.in/files/FACULTY%20PUBLICATIONS"]
       }
     ],
 
@@ -72742,7 +72742,7 @@
         {
           "title": "Computer Aided Engineering Drawing Lab",
           "points": ["This lab with high end computers and drafting package is devoted for training first year students in computer aided drafting."],
-          "imageUrl": "https://cec.edu.in/files/Computer%20Aided%20Engineering%20Drawing%20Lab"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Computer%20Aided%20Engineering%20Drawing%20Lab"
         },
         {
           "title": "Computer Aided Machine Drawing Lab",
@@ -72750,7 +72750,7 @@
           "majorDesc": "In this lab students study about 2-D and 3-D Drawings of fasteners like bolt and nut, couplings, Keys and joints, rivets, thread forms and 3-D assembly drawings of different Machine Elements.",
           "majorDesc2": "Major Facilities/Equipments:",
           "majorPoint": ["81 computers with high end configurations", "Installed Solid Edge Software."],
-          "imageUrl": "https://cec.edu.in/files/Computer%20Aided%20Machine%20Drawing%20Lab"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Computer%20Aided%20Machine%20Drawing%20Lab"
         },
         {
           "title": "Machine Shop",
@@ -72758,7 +72758,7 @@
           "majorDesc": "In this lab students study about various machining operations using Lathe, drilling, milling, shaping, grinding machines.",
           "majorDesc2": "Major Facilities/Equipments:",
           "majorPoint": ["Lathes", "Milling machines", "Drilling machines", "Grinding machines", "shaping machine", "CNC Lathes."],
-          "imageUrl": "https://cec.edu.in/files/Machine%20Shop"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Machine%20Shop"
         },
         {
           "title": "Foundry and Forging Lab",
@@ -72775,7 +72775,7 @@
             "different types of Dies",
             "Moulding boxes."
           ],
-          "imageUrl": "https://cec.edu.in/files/Foundry%20and%20Forging%20Lab"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Foundry%20and%20Forging%20Lab"
         },
         {
           "title": "Metallography and Material Testing Lab",
@@ -72793,7 +72793,7 @@
             "Microscope",
             "Heat Treatment Furnace."
           ],
-          "imageUrl": "https://cec.edu.in/files/Metallography%20and%20Material%20Testing%20Lab"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Metallography%20and%20Material%20Testing%20Lab"
         },
         {
           "title": "Mechanical Measurements and Metrology Lab",
@@ -72812,7 +72812,7 @@
             "Sine Bar/Sine Center",
             "Slip gauges."
           ],
-          "imageUrl": "https://cec.edu.in/files/Mechanical%20Measurements%20and%20Metrology%20Lab"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Mechanical%20Measurements%20and%20Metrology%20Lab"
         },
 
         {
@@ -72832,7 +72832,7 @@
             "V-Notch, Venturimeter, Orifice meter",
             "Blower, Compressor."
           ],
-          "imageUrl": "https://cec.edu.in/files/Fluid%20Mechanics%20and%20Machinery%20Lab"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Fluid%20Mechanics%20and%20Machinery%20Lab"
         },
 
         {
@@ -72851,7 +72851,7 @@
             "Diesel Engines, Variable Compression Engine",
             "Twin Cylinder Diesel Engine (Morse Test), Planimeter."
           ],
-          "imageUrl": "https://cec.edu.in/files/Energy%20Conversion%20Engineering%20Lab"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Energy%20Conversion%20Engineering%20Lab"
         },
 
         {
@@ -72869,7 +72869,7 @@
             "Vapour Compression Refrigeration Apparatus",
             "Air Conditioning Test Rig."
           ],
-          "imageUrl": "https://cec.edu.in/files/Heat%20and%20Mass%20Transfer%20Lab"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Heat%20and%20Mass%20Transfer%20Lab"
         },
 
         {
@@ -72885,7 +72885,7 @@
             "Pressure Variation Measurement Equipment",
             "Torque Measurement Equipment, Strain Rosettes."
           ],
-          "imageUrl": "https://cec.edu.in/files/Design%20Lab"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Design%20Lab"
         },
 
         {
@@ -72915,7 +72915,7 @@
             "Create research facilities",
             "Organise Student training program (STP),workshops and seminars."
           ],
-          "imageUrl": "https://cec.edu.in/files/Dissection%20lab"
+          "imageUrl": "https://apiserver.cec.edu.in/files/Dissection%20lab"
         },
 
         {
@@ -72940,11 +72940,11 @@
     "studentAcheivemtents": [
       {
         "title": "EXAMINATION RESULTS",
-        "imageUrl": "https://cec.edu.in/files/resultme"
+        "imageUrl": "https://apiserver.cec.edu.in/files/resultme"
       },
       {
         "title": "PLACEMENT STATISTICS",
-        "imageUrl": "https://cec.edu.in/files/PLACEMENT%20STATISTICS"
+        "imageUrl": "https://apiserver.cec.edu.in/files/PLACEMENT%20STATISTICS"
       }
     ],
     "academicsProgram": {
@@ -73077,19 +73077,19 @@
         "data": [
           {
             "image": [
-              "https://www.canaraengineering.in/departments/me/mech%20mirror%20vol%2013.png",
-              "https://www.canaraengineering.in/departments/me/feb%202024%20mech%20mirror.png",
-              "https://www.canaraengineering.in/departments/me/aug%202023%20mech%20mirror.png",
-              "https://www.canaraengineering.in/departments/me/feb%202023%20mech%20mirror.png",
-              "https://www.canaraengineering.in/departments/me/aug%202022%20mech%20mirror.png",
-              "https://www.canaraengineering.in/departments/me/feb%202022%20mech%20mirror.png",
-              "https://www.canaraengineering.in/departments/me/jul%202021%20mech%20mirror.png",
-              "https://www.canaraengineering.in/departments/me/me_2019.PNG",
-              "https://www.canaraengineering.in/departments/me/NewsLetter%20Jan%202018.png",
-              "https://www.canaraengineering.in/departments/me/NewsLetter%20Jan%202018.png",
-              "https://www.canaraengineering.in/departments/me/Mech%20Mirror%20Aug%202018.jpg",
-              "https://www.canaraengineering.in/departments/me/NewsLetter%20July%202017.png",
-              "https://www.canaraengineering.in/departments/me/NewsLetter%202017%20Jan.png"
+              "https://apiserver.cec.edu.in/files/Magazines1meing",
+              "https://apiserver.cec.edu.in/files/Magazines2meing",
+              "https://apiserver.cec.edu.in/files/Magazines3meing",
+              "https://apiserver.cec.edu.in/files/Magazines4meing",
+              "https://apiserver.cec.edu.in/files/Magazines5meing",
+              "https://apiserver.cec.edu.in/files/Magazines6meing",
+              "https://apiserver.cec.edu.in/files/Magazines7meing",
+              "https://apiserver.cec.edu.in/files/Magazines8meing",
+              "https://apiserver.cec.edu.in/files/Magazines9meing",
+              "https://apiserver.cec.edu.in/files/Magazines10meing",
+              "https://apiserver.cec.edu.in/files/Magazines11meing",
+              "https://apiserver.cec.edu.in/files/Magazines12meing",
+              "https://apiserver.cec.edu.in/files/Magazines13meing"
             ],
             "linkUrl": [
               "https://www.canaraengineering.in/departments/me/mech%20mirror%20(1)_2.pdf",

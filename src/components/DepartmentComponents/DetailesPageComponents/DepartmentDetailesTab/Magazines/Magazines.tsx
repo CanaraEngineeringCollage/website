@@ -35,7 +35,7 @@ const Magazines: React.FC<MagazinesProps> = ({ data }) => {
                                     >
                                         <img
                                             src={img}
-                                            alt={`Magazine ${i + 1}-${j + 1}`}
+                                            alt={``}
                                             className="w-40 h-56 object-cover rounded shadow"
                                         />
                                     </a>

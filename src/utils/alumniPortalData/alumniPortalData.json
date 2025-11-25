@@ -5,7 +5,7 @@
       {
         "title": "Alumni Association Of Canara Engineering College",
         "descrtiption": "Alumni Association of Canara Engineers got registered under the Karnataka Societies Registration Act 17, 1960. Alumni Association creates and maintains a life-long connection between the Institute and its alumni. In collaboration with an extremely dedicated volunteer board of directors, the Alumni Association works to connect alumni, support students and build an unforgettable Institute experience through diverse events, programs and services. Anyone who has completed four academic years as a student at Canara Engineering College is eligible for life membership.",
-        "image": "https://cec.edu.in/files/Alumni%20Association%20Of%20Canara%20Engineering%20College"
+        "image": "https://apiserver.cec.edu.in/files/Alumni%20Association%20Of%20Canara%20Engineering%20College"
       },
       {
         "title": "Vision  ",
@@ -58,7 +58,7 @@
     "title": "Secretary's Message",
     "data": [
       {
-        "image": "https://cec.edu.in/files/Anand%20Bhat%20B",
+        "image": "https://apiserver.cec.edu.in/files/Anand%20Bhat%20B",
         "title": "Secretary Message",
         "descrtiption": "Canara Engineering College organizes ALUMNI MEET during the month of Feb every year at CEC campus. I hope it is a great opportunity to meet your classmates and relish past memories. The college has been generating more competent students since 2001. The students of CEC are placed all over the world. The college has been changed tremendously over the years for the welfare of the society. In my perspective, to fill the gap between the academic and the industry, it is vital to maintain interaction with the alumni members. The ideas of alumni members are required to revamp the academic curriculum. It is very happy that the college is providing a platform to interact and exchange the ideas among the friends.",
         "points": [
@@ -118,7 +118,7 @@
            {
              "title": "Vice-President",
             "name": "Mr. Floyd James Sequiera",
-            "image": "https://cec.edu.in/files/Floyd%20James%20Sequiera",
+            "image": "https://apiserver.cec.edu.in/files/Floyd%20James%20Sequiera",
             "desiganation": "Equipment Engineer- Wipro GE Healthcare (X-Ray Division) No. 122, (part 1) Xray division EPIP Area Whitefield, Bengaluru, Karnataka 560066",
             "contact": "+91-7760380272",
             "email": "Floyd.sequeira@ge.com",
@@ -127,7 +127,7 @@
           {
              "title": "Vice-President",
             "name": "Mr.Lohith B",
-            "image": "https://cec.edu.in/files/Mr.Lohith%20B",
+            "image": "https://apiserver.cec.edu.in/files/Mr.Lohith%20B",
             "desiganation": "Programmer Analyst",
             "contact": "+91-9480202363",
             "email": "lohith.b@novigosolutions.com",
@@ -135,7 +135,7 @@
           },
            {
             "name": "Mr. Anand Bhat B",
-            "image": "https://cec.edu.in/files/Mr.%20Anand%20Bhat%20B",
+            "image": "https://apiserver.cec.edu.in/files/Mr.%20Anand%20Bhat%20B",
             "desiganation": "Assistant Professor",
             "contact": "9964224581",
             "email": "anandbhat.bantwal@gmail.com",
@@ -145,7 +145,7 @@
            {
                 "title": "Treasurer",
             "name": "Mr. Srinivas Shenoy P",
-            "image": "https://cec.edu.in/files/Mr.%20Srinivas%20Shenoy%20P",
+            "image": "https://apiserver.cec.edu.in/files/Mr.%20Srinivas%20Shenoy%20P",
             "desiganation": "",
             "contact": "+917259794217",
             "email": "shenoy.srinivas@gmail.com",
@@ -162,7 +162,7 @@
     "data": [
       {
         "title": "Affiliation Letters",
-        "links": [{ "text": "VTU Affiliation", "href": "https://cec.edu.in/files/Acheivements" }]
+        "links": [{ "text": "VTU Affiliation", "href": "https://apiserver.cec.edu.in/files/Acheivements" }]
       }
     ]
   }
