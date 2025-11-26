@@ -19,7 +19,6 @@ export const metadata = {
   },
 };
 
-
 interface Qualification {
   degree: string;
   passingYear: number;
@@ -51,14 +50,9 @@ interface CouncilMember {
   employmentType?: string; // Make this optional
   qualifications: Qualification[]; // Ensure qualifications include the right data
   faculties?: Faculty[]; // Optional property for faculties
-
 }
 
 const page = () => {
-
- 
-
-
   return (
     <>
       <HeroSection />
@@ -73,13 +67,10 @@ const page = () => {
         />
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0 lg:mt-0 -mt-12">
-
-       <DepartmentFaculty
-  
-  heading="Meet Our Placement Team"
-  description="Our dedicated placement team works tirelessly to connect students with top companies, guiding them towards successful careers and brighter futures."
-/>
-
+        <DepartmentFaculty
+          heading="Meet Our Placement Team"
+          description="Our dedicated placement team works tirelessly to connect students with top companies, guiding them towards successful careers and brighter futures."
+        />
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <TopRecruiters />
@@ -87,7 +78,7 @@ const page = () => {
       <section className="px-6 md:px-12 lg:px-16 xl:px-0  lg:mt-0 mt-2 ">
         <HighlightsSection />
       </section>
-     <section className="px-6 md:px-12 lg:px-16 xl:px-0 mb-14 lg:mb-5">
+      <section className="px-6 md:px-12 lg:px-16 xl:px-0 mb-14 lg:mb-5">
         <RecruitersList />
       </section>
       <section className="px-6  pt-14 lg:pt-16  md:px-12 lg:pl-16 lg:px-0 bg-[#e5e5ea]  xl:px-0">
