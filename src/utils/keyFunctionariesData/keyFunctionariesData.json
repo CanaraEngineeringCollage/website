@@ -16,6 +16,24 @@
       { "title": "Vice Principal & Dean - Academics", "organization": "" }
     ]
   },
+      {
+    "id": 53,
+    "name": "Dr. Udaya Kumar K Shenoy",
+    "image": "/udhayakumar.jpg",
+    "category": "Prospective",
+    "roles": [
+      { "title": "Dean - Research & Development", "organization": "" }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Dr. H Nagesh Shenoy",
+    "image": "/nagesh.jpg",
+    "category": "Prospective",
+    "roles": [
+      { "title": "Dean - Administration", "organization": "" }
+    ]
+  },
     {
     "id": 2,
     "name": "Dr. Priya Vineetha",
@@ -26,15 +44,7 @@
     ]
   },
 
-    {
-    "id": 53,
-    "name": "Dr. Udaya Kumar K Shenoy",
-    "image": "/udhayakumar.jpg",
-    "category": "Prospective",
-    "roles": [
-      { "title": "Dean - Research & Development", "organization": "" }
-    ]
-  },
+
     {
     "id": 23,
     "name": "Dr. Venkatesh N",
@@ -42,13 +52,5 @@
     "category": "Prospective",
     "roles": [
       { "title": "Dean - Acreditation", "organization": "" }
-    ]
-  },{
-    "id": 32,
-    "name": "Dr. H Nagesh Shenoy",
-    "image": "/nagesh.jpg",
-    "category": "Prospective",
-    "roles": [
-      { "title": "Dean - Administration", "organization": "" }
     ]
   }]
