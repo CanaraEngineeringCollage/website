@@ -1,5 +1,4 @@
-[
-    {
+[  {
     "id": 1,
     "name": "Dr. Nagesh H R",
     "image": "/principal.jpeg",
@@ -9,11 +8,47 @@
     ]
   },
     {
-    "id": 1,
-    "name": "Dr. Priya_Vineetha",
+    "id": 5,
+    "name": "Dr. Demian Antony D'Mello",
+    "image": "/antony.jpg",
+    "category": "Prospective",
+    "roles": [
+      { "title": "Vice Principal & Dean - Academics", "organization": "" }
+    ]
+  },
+    {
+    "id": 2,
+    "name": "Dr. Priya Vineetha",
     "image": "/Dr._Priya_Vineetha_Frank__Professor_&_Dean_(SWO).webp",
     "category": "Prospective",
     "roles": [
       { "title": "Dean - Student Welfare", "organization": "" }
+    ]
+  },
+
+    {
+    "id": 53,
+    "name": "Dr. Udaya Kumar K Shenoy",
+    "image": "/udhayakumar.jpg",
+    "category": "Prospective",
+    "roles": [
+      { "title": "Dean - Research & Development", "organization": "" }
+    ]
+  },
+    {
+    "id": 23,
+    "name": "Dr. Venkatesh N",
+    "image": "/venkitesh.jpg",
+    "category": "Prospective",
+    "roles": [
+      { "title": "Dean - Acreditation", "organization": "" }
+    ]
+  },{
+    "id": 32,
+    "name": "Dr. H Nagesh Shenoy",
+    "image": "/nagesh.jpg",
+    "category": "Prospective",
+    "roles": [
+      { "title": "Dean - Administration", "organization": "" }
     ]
   }]
