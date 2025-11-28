@@ -119,18 +119,20 @@ const HotOfThePressCarousel = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isLoaded, setIsLoaded] = useState(false);
 
-  const fetchEvents = async () => {
-    try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz`);
-      if (!res.ok) throw new Error("Failed to fetch buzz");
-      const data: CampusEvent[] = await res.json();
-      setEvents(data);
-      setIsLoaded(true);
-    } catch (err) {
-      console.error(err);
-      setIsLoaded(true);
-    }
-  };
+const fetchEvents = async () => {
+  try {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz?page=1&limit=10`);
+    if (!res.ok) throw new Error("Failed to fetch buzz");
+
+    const response = await res.json();
+
+    setEvents(response.data); // <-- CORRECT
+    setIsLoaded(true);
+  } catch (err) {
+    console.error(err);
+    setIsLoaded(true);
+  }
+};
 
   useEffect(() => {
     fetchEvents();

@@ -20,6 +20,8 @@ const IframLinks = ({title,link}:{title?:string;link?:string}) => {return(
 };
 
 
+import CustomSelect from "@/components/Common/CustomSelect/CustomSelect";
+
 const ResearchPageSection = () => {
 const titles = ["Home", "Research Center", "Publications", "Grants","IPR/Patents", "R&D Cell", "IPR Cell", "IRINS Profile"];
 
@@ -33,11 +35,30 @@ const titles = ["Home", "Research Center", "Publications", "Grants","IPR/Patents
           <div className="md:grid grid-cols-1 gap-3 md:gap-0 md:grid-cols-12 mt-10">
             <div className="col-span-3 sticky top-20 md:top-32 self-start  md:mb-0">
               <div className="sticky top-20 h-fit">
+              
+              {/* Mobile Dropdown */}
+              <div className="block md:hidden mb-6">
+                <CustomSelect
+                  value={titles[selectedIndex]}
+                  onChange={(e) => {
+                    if (e.target.value === "IRINS Profile") {
+                      window.open("https://canaraengineering.irins.org/", "_blank");
+                      setSelectedIndex(0);
+                      return;
+                    }
+                    const newIndex = titles.indexOf(e.target.value);
+                    if (newIndex !== -1) setSelectedIndex(newIndex);
+                  }}
+                  options={titles}
+                />
+              </div>
+
+              {/* Desktop Sidebar */}
+              <div className="hidden md:block">
               {titles?.map((title, index) => (
-                <>
+                <React.Fragment key={index}>
                   { title === "IRINS Profile" ? (
                     <h1
-                      key={index}
                       onClick={() => setSelectedIndex(0)}
                       className={`text-[20px] pb-3 mb-3 cursor-pointer ${index !== titles.length - 1 ? "border-b-2 border-border" : ""} ${
                         selectedIndex === index ? "text-[#2884CA] font-bold" : "text-textGray font-[500]"
@@ -47,7 +68,6 @@ const titles = ["Home", "Research Center", "Publications", "Grants","IPR/Patents
                     </h1>
                   ) : (
                     <h1
-                      key={index}
                       onClick={() => setSelectedIndex(index)}
                       className={`text-[20px] pb-3 mb-3 cursor-pointer ${index !== titles.length - 1 ? "border-b-2 border-border" : ""} ${
                         selectedIndex === index ? "text-[#2884CA] font-bold" : "text-textGray font-[500]"
@@ -56,8 +76,9 @@ const titles = ["Home", "Research Center", "Publications", "Grants","IPR/Patents
                       {title}
                     </h1>
                   )}
-                </>
+                </React.Fragment>
               ))}
+              </div>
             </div>
             </div>
             <div className="col-span-1"></div>

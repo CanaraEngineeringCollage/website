@@ -138,7 +138,7 @@ const handlePrev = () => {
   };
   return (
     <section className="py-16 px-6 md:px-12 max-w-7xl mx-auto my-20 xl:max-w-[75%] bg-[#F5F5F7] rounded-3xl">
-      <div className="mx-auto py-10 lg:flex hidden flex-col-reverse md:flex-row items-center justify-between gap-10">
+      <div className="mx-auto py-10 lg1:flex hidden flex-col-reverse md:flex-row items-center justify-between gap-10">
         <div className="max-w-md space-y-44">
           <div>
             <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-gray-900 leading-tight">
@@ -185,7 +185,7 @@ const handlePrev = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 w-full md:grid-cols-2 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 w-full md:grid-cols-2 sm:grid-cols-2 justify-items-end gap-6">
           {loading
     ? // 🌟 Skeleton Loading (when fetching faculty data)
       Array.from({ length: 2 }).map((_, index) => (
@@ -233,7 +233,7 @@ const handlePrev = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto flex flex-col items-center justify-between gap-10 lg:hidden">
+      <div className="max-w-7xl mx-auto flex flex-col items-center justify-between gap-10 lg1:hidden">
         <div className="max-w-xl space-y-44">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl mb-3 md:text-4xl font-bold text-gray-900 leading-tight">
@@ -247,7 +247,7 @@ const handlePrev = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 w-full gap-6">
+        <div className=" flex  w-full gap-6">
 
             {loading
     ? // 🌟 Skeleton Loading (when fetching faculty data)
@@ -275,7 +275,7 @@ const handlePrev = () => {
             <div
               key={index}
               onClick={() => openModal(member)}
-              className="relative cursor-pointer w-full h-[360px] md:h-[480px] md:w-2/3 rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md md:ml-23"
+              className="relative cursor-pointer w-full h-[360px] md:w-2/3 md:h-[480px] rounded-xl  overflow-hidden bg-[#6DC0EB] text-white flex flex-col justify-center items-center shadow-md "
             >
               {/* Image fills card completely */}
               <Image

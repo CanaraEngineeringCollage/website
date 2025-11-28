@@ -3,17 +3,36 @@ import React, { useState } from "react";
 import grievanceRedressalCell from "../../../../utils/grievanceData/grievanceData.json";
 import Link from "next/link";
 
+import CustomSelect from "@/components/Common/CustomSelect/CustomSelect";
+
 const GrievanceRedressalCell = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [activeTab, setActiveTab] = useState<string>("");
   const defaultDate = new Date().toLocaleDateString("en-GB");
 
+  const grievanceTitles = grievanceRedressalCell?.map((section) => section.title) || [];
+
   return (
     <section className="py-10 text-[#1D1D1F] lg2:px-24 mx-5 overflow-hidden">
       <div>
         <h1 className="text-3xl  md:text-[40px] lg2:text-5xl xl:text-6xl font-bold pb-1 lg:pb-10 text-[#1D1D1F]">Grievance Redressal Cell</h1>
-        <div className={`grid grid-cols-1 gap-3  md:grid-cols-12 mt-10`}>
+        <div className={`md:grid grid-cols-1 gap-3  md:grid-cols-12 mt-10`}>
           <div className="col-span-3">
+            
+            {/* Mobile Dropdown */}
+            <div className="block md:hidden mb-6">
+              <CustomSelect
+                value={grievanceRedressalCell[selectedIndex]?.title || ""}
+                onChange={(e) => {
+                  const newIndex = grievanceRedressalCell.findIndex((item) => item.title === e.target.value);
+                  if (newIndex !== -1) setSelectedIndex(newIndex);
+                }}
+                options={grievanceTitles}
+              />
+            </div>
+
+            {/* Desktop Sidebar */}
+            <div className="hidden md:block">
             {grievanceRedressalCell?.map((section, index) => (
               <h1
                 key={index}
@@ -25,6 +44,7 @@ const GrievanceRedressalCell = () => {
                 {section.title}
               </h1>
             ))}
+            </div>
           </div>
           <div className="col-span-1"></div>
           {/* Content */}

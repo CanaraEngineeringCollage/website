@@ -48,6 +48,10 @@ const FacultyCard: React.FC<{ member: CouncilMember; onClick?: () => void }> = (
   </div>
 );
 
+import CustomSelect from "@/components/Common/CustomSelect/CustomSelect";
+
+// ... existing imports
+
 const FacultyMembersSection: React.FC = () => {
   const searchParams = useSearchParams();
   const departmentFromQuery = searchParams.get("department");
@@ -72,6 +76,24 @@ const FacultyMembersSection: React.FC = () => {
     "Mechanical Engineering",
     "Science & Humanities",
   ];
+
+  const categoryMapping: { [key: string]: string } = {
+    faculty: "Faculty Members",
+    placement: "Placement Staff",
+    admin: "Administrative Staff",
+    "physical education": "Physical Education Staff",
+    general: "General Staff",
+    "Student Welfare Department": "Student Welfare Department",
+    "Dean Office": "Dean Office",
+    Library: "Library Staff",
+    Hostel: "Hostel Staff",
+  };
+
+  const reverseCategoryMapping = Object.fromEntries(
+    Object.entries(categoryMapping).map(([key, value]) => [value, key])
+  );
+
+  const categoryOptions = Object.values(categoryMapping);
 
   useEffect(() => {
     async function fetchFaculty() {
@@ -145,7 +167,30 @@ const FacultyMembersSection: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
         <div className="md:col-span-5">
           <div className="sticky top-20 h-fit">
-            <div className="w-full sm:w-[80%] mx-auto md:mx-0">
+            
+            {/* Mobile Dropdowns */}
+            <div className="block md:hidden mb-6 space-y-4">
+              <CustomSelect
+                value={categoryMapping[selectedCategory]}
+                onChange={(e) => {
+                  const newCategory = reverseCategoryMapping[e.target.value];
+                  setSelectedCategory(newCategory);
+                  if (newCategory === "faculty") setSelectedDepartment("Computer Science & Engineering");
+                }}
+                options={categoryOptions}
+              />
+              
+              {selectedCategory === "faculty" && (
+                <CustomSelect
+                  value={selectedDepartment}
+                  onChange={(e) => setSelectedDepartment(e.target.value)}
+                  options={departments}
+                />
+              )}
+            </div>
+
+            {/* Desktop Sidebar */}
+            <div className="hidden md:block w-full sm:w-[80%] mx-auto md:mx-0">
               {["faculty", "placement","Student Welfare Department", "Dean Office","physical education" ,"admin", "general",  "Library", "Hostel"].map((cat) => (
                 <div key={cat} className="border-b-2 border-border py-4">
                   <h1
@@ -155,23 +200,7 @@ const FacultyMembersSection: React.FC = () => {
                       if (cat === "faculty") setSelectedDepartment("Computer Science & Engineering");
                     }}
                   >
-                    {cat === "faculty"
-                      ? "Faculty Members"
-                      : cat === "placement"
-                      ? "Placement Staff"
-                      : cat === "admin"
-                      ? "Administrative Staff"
-                      : cat === "physical education"
-                      ? "Physical Education Staff"
-                      : cat === "general"
-                      ? "General Staff"
-                      : cat === "Student Welfare Department"
-                      ? "Student Welfare Department"
-                      : cat === "Dean Office"
-                      ? "Dean Office"
-                      : cat === "Library"
-                      ? "Library Staff"
-                      : "Hostel Staff"}
+                    {categoryMapping[cat]}
                   </h1>
 
                   {cat === "faculty" && selectedCategory === "faculty" && (

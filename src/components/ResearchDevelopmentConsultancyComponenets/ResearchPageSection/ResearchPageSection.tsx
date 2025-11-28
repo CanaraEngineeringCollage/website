@@ -486,6 +486,8 @@ const Collaborations = () => (
   </div>
 );
 
+import CustomSelect from "@/components/Common/CustomSelect/CustomSelect";
+
 const RsdPageSection = () => {
   const titles = [
     "Vision & Mission",
@@ -506,6 +508,21 @@ const RsdPageSection = () => {
         <div className="md:grid grid-cols-1 gap-3 md:gap-0 md:grid-cols-12 mt-10">
           <div className="col-span-3 sticky top-20 md:top-32 self-start md:mb-0">
             <div className="sticky top-20 h-fit">
+              
+              {/* Mobile Dropdown */}
+              <div className="block md:hidden mb-6">
+                <CustomSelect
+                  value={titles[selectedIndex]}
+                  onChange={(e) => {
+                    const newIndex = titles.indexOf(e.target.value);
+                    if (newIndex !== -1) setSelectedIndex(newIndex);
+                  }}
+                  options={titles}
+                />
+              </div>
+
+              {/* Desktop Sidebar */}
+              <div className="hidden md:block">
               {titles.map((title, index) => (
                 <h1
                   key={index}
@@ -517,6 +534,7 @@ const RsdPageSection = () => {
                   {title}
                 </h1>
               ))}
+              </div>
             </div>
           </div>
           <div className="col-span-1"></div>

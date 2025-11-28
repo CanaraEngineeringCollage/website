@@ -5,8 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { HiLink } from "react-icons/hi";
 
+import CustomSelect from "@/components/Common/CustomSelect/CustomSelect";
+
 const MandatoryDisclosure = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
+
+  const disclosureTitles = disclosureData?.map((section) => section.title) || [];
 
   return (
     <section className="py-10 xl:py-20 text-[#1D1D1F] overflow-hidden">
@@ -16,6 +20,21 @@ const MandatoryDisclosure = () => {
             
           <div className="col-span-3  self-start ">
             <div className="sticky top-20 h-fit">
+            
+            {/* Mobile Dropdown */}
+            <div className="block md:hidden mb-6">
+              <CustomSelect
+                value={disclosureData[selectedIndex]?.title || ""}
+                onChange={(e) => {
+                  const newIndex = disclosureData.findIndex((item) => item.title === e.target.value);
+                  if (newIndex !== -1) setSelectedIndex(newIndex);
+                }}
+                options={disclosureTitles}
+              />
+            </div>
+
+            {/* Desktop Sidebar */}
+            <div className="hidden md:block">
             {disclosureData?.map((section, index) => (
               <h1
                 key={index}
@@ -27,6 +46,7 @@ const MandatoryDisclosure = () => {
                 {section.title}
               </h1>
             ))}
+            </div>
           </div>
           
           </div>
@@ -34,9 +54,9 @@ const MandatoryDisclosure = () => {
           <div className="col-span-8 mt-5 max-h-[40vh]  md:max-h-[140vh] scrollable overflow-y-auto  pr-2 lg:mt-0">
             {selectedIndex === 4 ? (
               <>
-                <div className="overflow-x-hidden">
+                <div className="overflow-x-auto w-full">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">List of UGC 2(f) Status</h2>
-                   <div className="rounded overflow-hidden border border-gray-200 w-[85%]">
+                   <div className="rounded overflow-hidden border border-gray-200 ">
                   <table className="w-full text-left text-[13px] md:text-[15px]">
                     <thead className="bg-gray-100">
                       <tr className="bg-[#F3F8FC] text-[#2884CA]">

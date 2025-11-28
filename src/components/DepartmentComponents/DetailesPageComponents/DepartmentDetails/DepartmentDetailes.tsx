@@ -55,6 +55,10 @@ interface DepartmentSectionProps {
   departmentName: string;
 }
 
+import CustomSelect from "@/components/Common/CustomSelect/CustomSelect";
+
+// ... existing imports
+
 const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   const { slug } = useParams();
 
@@ -129,7 +133,6 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
 
   
 
-
   const department = departments.find((dept) => dept.slug === slug);
   const departmentMenuItems = [
     "Department Profile",
@@ -154,9 +157,28 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
       <div className="">
         <h1 className="text-[#1D1D1F] text-xl lg:text-[31px] mb-2">Department of </h1>
         <h2 className="text-[30px] lg:w-[50%]  lg:text-[54px] font-bold leading-[1.1] pb-1 lg:pb-10 text-black">{department?.name}</h2>
-        <div className={`grid grid-cols-1 gap-3  md:grid-cols-12 mt-10`}>
+        <div className={`md:grid grid-cols-1 gap-3  md:grid-cols-12 mt-10`}>
           <div className="col-span-3">
             <div className="sticky top-20 h-fit">
+              
+              {/* Mobile Dropdown */}
+              <div className="block md:hidden mb-6">
+                <CustomSelect
+                  value={selectedSection}
+                  onChange={(e) => {
+                    const newSection = e.target.value;
+                    const newIndex = departmentMenuItems.indexOf(newSection);
+                    if (newIndex !== -1) {
+                      setSelectedIndex(newIndex);
+                      setSelectedSection(newSection);
+                    }
+                  }}
+                  options={departmentMenuItems}
+                />
+              </div>
+
+              {/* Desktop Sidebar */}
+              <div className="hidden md:block">
               {departmentMenuItems?.map((section, index) => (
                 <h1
                   key={index}
@@ -171,6 +193,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
                   {section}
                 </h1>
               ))}
+              </div>
             </div>
           </div>
           <div className="col-span-1"></div>

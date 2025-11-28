@@ -12,6 +12,7 @@ interface CampusEvent {
   category: string;
   eventDate: string;
   content: string;
+  eventName?: string; // <-- added, since you use event.eventName in JSX
 }
 
 interface ExploreCampusProps {
@@ -50,13 +51,22 @@ export const CarouselContext = createContext<CarouselContextType>({
 
 const cardVariants = {
   hidden: { opacity: 0, scale: 0.8, y: 100, transition: { duration: 0.3 } },
-  visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.4, type: "spring", damping: 20, stiffness: 100 } },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: { duration: 0.4, type: "spring", damping: 20, stiffness: 100 },
+  },
   exit: { opacity: 0, scale: 0.9, y: 50, transition: { duration: 0.25 } },
 };
 
 const backdropVariants = {
   hidden: { opacity: 0, backdropFilter: "blur(0px)" },
-  visible: { opacity: 1, backdropFilter: "blur(8px)", transition: { duration: 0.3 } },
+  visible: {
+    opacity: 1,
+    backdropFilter: "blur(8px)",
+    transition: { duration: 0.3 },
+  },
   exit: { opacity: 0, backdropFilter: "blur(0px)", transition: { duration: 0.2 } },
 };
 
@@ -69,7 +79,7 @@ const dummyStudentAchievements: CampusEvent[] = [
   {
     id: 1,
     category: "Student Achievement",
-    eventDate: "", // can be empty or remove if not used
+    eventDate: "",
     content: `
       <p>Awarded the prestigious B.E. (Honours) degree by VTU, Belagavi for outstanding performance and commitment to advanced learning through the successful completion of six online courses in Java, Python, Al, ML, IoT, and Cloud Computing, they earned 18 additional credits.</p>
       <img src="/mediaPageImages/B.E. (Honours. Degree).jpeg" alt="John Doe Achievement" />
@@ -170,21 +180,46 @@ function EventContent({ description }: { description: EventDescriptionProps }) {
       <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
         <div>
           {description.date && (
-            <p className="text-[17px] text-textGray uppercase font-bold ">{new Date(description.date).toLocaleDateString("en-GB")}</p>
+            <p className="text-[17px] text-textGray uppercase font-bold ">
+              {new Date(description.date).toLocaleDateString("en-GB")}
+            </p>
           )}
-          {description.topTitle && <h3 className="text-[27px] font-semibold font-sans text-black my-3 line-clamp-2">{description.topTitle}</h3>}
-          {description.topDescription && <p className="text-xl text-textGray">{description.topDescription}</p>}
+          {description.topTitle && (
+            <h3 className="text-[27px] font-semibold font-sans text-black my-3 line-clamp-2">
+              {description.topTitle}
+            </h3>
+          )}
+          {description.topDescription && (
+            <p className="text-xl text-textGray">{description.topDescription}</p>
+          )}
         </div>
-        {description.remainingHTML && <div className={`bg-white ${description.topDescription&&description.topTitle&&description.src&&"-mt-20"} ${description.topDescription&&"-mt-10"} ${description.topTitle&&"-mt-10"}   `} dangerouslySetInnerHTML={{ __html: description.remainingHTML }} />}{" "}
+        {description.remainingHTML && (
+          <div
+            className={`bg-white ${
+              description.topDescription &&
+              description.topTitle &&
+              description.src &&
+              "-mt-20"
+            } ${description.topDescription && "-mt-10"} ${
+              description.topTitle && "-mt-10"
+            }`}
+            dangerouslySetInnerHTML={{ __html: description.remainingHTML }}
+          />
+        )}{" "}
       </div>
     </div>
   );
 }
 
-const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEvents = [], title, description }) => {
+const ExploreCampus: React.FC<ExploreCampusProps> = ({
+  campusEvents: initialEvents = [],
+  title,
+  description,
+}) => {
   const [campusEvents, setCampusEvents] = useState<CampusEvent[]>(initialEvents);
-  const categories: string[] = Array.from(new Set(campusEvents.map((event) => event.category)));
-  const [activeCategory, setActiveCategory] = useState<string>("Student Achievement");
+  const [categories, setCategories] = useState<string[]>(["Student Achievement"]);
+  const [activeCategory, setActiveCategory] =
+    useState<string>("Student Achievement");
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showAll, setShowAll] = useState(false);
@@ -192,10 +227,24 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEven
 
   const fetchBuzz = async () => {
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz`);
-      if (!res.ok) throw new Error("Failed to fetch buzz");
-      const data = await res.json();
-      setCampusEvents((prev) => [...dummyStudentAchievements, ...data]);
+      const [buzzRes, catRes] = await Promise.all([
+        fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz?page=1&limit=999`),
+        fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz/categories`),
+      ]);
+
+      if (!buzzRes.ok) throw new Error("Failed to fetch buzz");
+      if (!catRes.ok) throw new Error("Failed to fetch categories");
+
+      const buzzResponse = await buzzRes.json();
+      const categoriesResponse: string[] = await catRes.json();
+
+      // buzzResponse.data = actual array of buzz items
+      setCampusEvents([...dummyStudentAchievements, ...buzzResponse.data]);
+
+      // merge dummy category + backend categories, remove duplicates
+      setCategories((prev) =>
+        Array.from(new Set([...prev, ...categoriesResponse]))
+      );
     } catch (err) {
       console.error(err);
     }
@@ -206,9 +255,13 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEven
   }, []);
 
   // Sort by date descending
-  const sortedEvents = [...campusEvents].sort((a, b) => new Date(b.eventDate).getTime() - new Date(a.eventDate).getTime());
+  const sortedEvents = [...campusEvents].sort(
+    (a, b) => new Date(b.eventDate).getTime() - new Date(a.eventDate).getTime()
+  );
 
-  const filteredEvents = sortedEvents.filter((event) => (activeCategory === "All" ? true : event.category === activeCategory));
+  const filteredEvents = sortedEvents.filter((event) =>
+    activeCategory === "All" ? true : event.category === activeCategory
+  );
   const eventsToShow = showAll ? filteredEvents : filteredEvents.slice(0, 5);
 
   const handleCardClose = (index: number) => {
@@ -223,11 +276,15 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEven
 
   const closeCard = () => setIsOpen(false);
 
-  const goToNextCard = () => setCurrentIndex((prev) => (filteredEvents.length ? (prev + 1) % filteredEvents.length : 0));
+  const goToNextCard = () =>
+    setCurrentIndex((prev) =>
+      filteredEvents.length ? (prev + 1) % filteredEvents.length : 0
+    );
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "auto";
-    const handleKeyDown = (event: KeyboardEvent) => event.key === "Escape" && isOpen && closeCard();
+    const handleKeyDown = (event: KeyboardEvent) =>
+      event.key === "Escape" && isOpen && closeCard();
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isOpen]);
@@ -254,7 +311,9 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEven
       <section className="max-w-7xl xl:max-w-[75%] mx-auto text-[#1D1D1F] py-16">
         {(title || description) && (
           <div className="text-center mb-10 lg:px-32">
-            <h1 className="text-center leading-[1.1] text-[46px] mb-5 font-bold">{title}</h1>
+            <h1 className="text-center leading-[1.1] text-[46px] mb-5 font-bold">
+              {title}
+            </h1>
             <p className="text-center">{description}</p>
           </div>
         )}
@@ -287,7 +346,11 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEven
                   setActiveCategory(category);
                   setShowAll(false);
                 }}
-                className={`cursor-pointer ${category === activeCategory ? "text-black font-bold" : "text-textGray"} text-[18px]`}
+                className={`cursor-pointer ${
+                  category === activeCategory
+                    ? "text-black font-bold"
+                    : "text-textGray"
+                } text-[18px]`}
                 key={index}
               >
                 {category}
@@ -300,7 +363,9 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEven
         <div className="flex flex-col gap-8">
           {eventsToShow.length > 0 ? (
             eventsToShow.map((event, index) => {
-              const { src, topTitle, topDescription } = parseEventContent(event.content);
+              const { src, topTitle, topDescription } = parseEventContent(
+                event.content
+              );
               return (
                 <div
                   key={event.id}
@@ -318,11 +383,25 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEven
                   </div>
                   <div className="flex flex-col justify-center w-full md:w-1/2 p-6 lg:p-10">
                     {event.eventDate && (
-                      <p className="text-[17px] text-textGray uppercase font-bold mb-4">{new Date(event.eventDate).toLocaleDateString("en-GB")}</p>
+                      <p className="text-[17px] text-textGray uppercase font-bold mb-4">
+                        {new Date(event.eventDate).toLocaleDateString("en-GB")}
+                      </p>
                     )}
-                    {event.eventName && <p className="text-textGray text-[17px] mb-3">{event.eventName}</p>}
-                    {topTitle && <h2 className="text-[31px] leading-[1.1] font-bold text-[#1D1D1F] mb-2">{topTitle}</h2>}
-                    {topDescription && <p className="text-textGray leading-[1.3] line-clamp-3 text-[21px] mb-4">{topDescription}</p>}
+                    {event.eventName && (
+                      <p className="text-textGray text-[17px] mb-3">
+                        {event.eventName}
+                      </p>
+                    )}
+                    {topTitle && (
+                      <h2 className="text-[31px] leading-[1.1] font-bold text-[#1D1D1F] mb-2">
+                        {topTitle}
+                      </h2>
+                    )}
+                    {topDescription && (
+                      <p className="text-textGray leading-[1.3] line-clamp-3 text-[21px] mb-4">
+                        {topDescription}
+                      </p>
+                    )}
                     <motion.button
                       onClick={() => openCard(index)}
                       className="text-primary inline-flex text-[21px] items-center font-medium text-sm"
@@ -336,14 +415,19 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEven
               );
             })
           ) : (
-            <p className="text-center text-textGray text-[18px] py-10">There are no events in this category.</p>
+            <p className="text-center text-textGray text-[18px] py-10">
+              There are no events in this category.
+            </p>
           )}
         </div>
 
         {/* Show More Button */}
         {!showAll && filteredEvents.length > 5 && (
           <div className="flex justify-center mt-10">
-            <button className="bg-[#eff1f6] text-black px-5 py-2 cursor-pointer rounded-3xl" onClick={() => setShowAll(true)}>
+            <button
+              className="bg-[#eff1f6] text-black px-5 py-2 cursor-pointer rounded-3xl"
+              onClick={() => setShowAll(true)}
+            >
               Explore More Campus Stories
             </button>
           </div>
@@ -352,8 +436,17 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEven
         {/* Modal */}
         <AnimatePresence>
           {isOpen && filteredEvents.length > 0 && (
-            <motion.div className="fixed inset-0 h-screen z-50 overflow-auto" initial="hidden" animate="visible" exit="exit">
-              <motion.div variants={backdropVariants} className="bg-black/80 backdrop-blur-lg h-full w-full fixed inset-0" onClick={closeCard} />
+            <motion.div
+              className="fixed inset-0 h-screen z-50 overflow-auto"
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+            >
+              <motion.div
+                variants={backdropVariants}
+                className="bg-black/80 backdrop-blur-lg h-full w-full fixed inset-0"
+                onClick={closeCard}
+              />
               <motion.div
                 variants={cardVariants}
                 ref={containerRef}
@@ -369,15 +462,27 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEven
                   <IconX className="h-6 w-6 text-white" />
                 </motion.button>
                 <motion.div variants={contentVariants} className="!overflow-hidden">
-                  <EventContent description={getEventDescription(filteredEvents[currentIndex])} />
+                  <EventContent
+                    description={getEventDescription(
+                      filteredEvents[currentIndex]
+                    )}
+                  />
                 </motion.div>
                 <motion.div variants={contentVariants} className="p-4 lg:px-20 ">
                   <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">
-                    {" "}
-                    {parseEventContent(filteredEvents[(currentIndex + 1) % filteredEvents.length].content).topTitle && "Next Event"}
+                    {parseEventContent(
+                      filteredEvents[(currentIndex + 1) % filteredEvents.length]
+                        .content
+                    ).topTitle && "Next Event"}
                   </h1>
-                  <h1 onClick={goToNextCard} className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]">
-                    {parseEventContent(filteredEvents[(currentIndex + 1) % filteredEvents.length].content).topTitle || "Next Event"}
+                  <h1
+                    onClick={goToNextCard}
+                    className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]"
+                  >
+                    {parseEventContent(
+                      filteredEvents[(currentIndex + 1) % filteredEvents.length]
+                        .content
+                    ).topTitle || "Next Event"}
                     <MdKeyboardArrowRight className="ml-1 mt-1 text-[20px] md:text-[25px]" />
                   </h1>
                 </motion.div>
@@ -391,5 +496,3 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEven
 };
 
 export default ExploreCampus;
-
-
