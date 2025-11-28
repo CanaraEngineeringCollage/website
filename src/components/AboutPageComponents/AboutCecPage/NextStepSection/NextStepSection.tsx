@@ -7,7 +7,7 @@ export default function NextStepSection() {
 
   const [isOpen, setIsOpen] = useState<boolean>(false)
   return (
-    <section className="relative py-20 lg:py-40 overflow-hidden bg-[#0A0A0A]">
+    <section className="relative py-10 lg:py-40 overflow-hidden bg-[#0A0A0A]">
       {/* Background gradient */}
       <div
         className="absolute inset-0 z-0"
@@ -16,13 +16,13 @@ export default function NextStepSection() {
           }}
       />
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+      <div className="relative z-10 lg:max-w-4xl py-5 lg:py-0 mx-auto px-2 lg:px-6 text-center">
         <div className=" flex flex-col items-center">
-          <h2 className="max-w-lg  text-[31px] md:text-6xl font-bold text-white">
-            Ready to take the next step?
+          <h2 className="lg:max-w-lg w-full  text-[32px] md:text-6xl font-bold leading-[1.2] text-white">
+            Ready to take <br className="lg:hidden" /> the next step?
           </h2>
 
-          <p className="text-white/70 mt-7 text-xl max-w-2xl mx-auto">
+          <p className="text-white/70 mt-3  lg:mt-7 text-lg lg:text-xl max-w-2xl mx-auto">
             Book a one-on-one <span className="text-white">counseling session</span> & get all your questions answered about admissions programs & your future opportunities.
           </p>
 

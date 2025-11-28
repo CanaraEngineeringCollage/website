@@ -207,7 +207,7 @@ const HotOfThePressCarousel = () => {
           const { src, topTitle, topDescription } = parseEventContent(event.content);
           return (
             <SwiperSlide key={event.id}>
-             <div className="max-w-sm  bg-white  xl:min-h-auto   rounded-3xl overflow-hidden "
+             <div className="max-w-sm  bg-white  xl:min-h-auto  rounded-xl lg:rounded-3xl overflow-hidden "
                 onClick={() => openCard(index)}
               >
                 <div className="h-60 overflow-hidden">

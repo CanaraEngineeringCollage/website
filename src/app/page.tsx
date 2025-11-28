@@ -75,7 +75,7 @@ export default function Home() {
       <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0 py-0 md:mt-0 -mt-6">
         <HotOfThePress />
       </section>
-      <section className="bg-[#E5E5EA] lg:mt-0 -mt-12">
+      <section className="bg-[#E5E5EA] lg:mt-0 ">
         <FooterCard />
       </section>
     </>

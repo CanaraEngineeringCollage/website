@@ -66,7 +66,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ youtubeUrl, videoUrl, title, 
         {subTitle && <p className="font-medium md:text-2xl text-base text-white/60 max-w-4xl mx-auto">{subTitle}</p>}
       </div>
 
-      <div className={cn("relative w-full lg:max-h-[600px] mx-auto aspect-video rounded-4xl overflow-hidden")}>
+      <div className={cn("relative w-full lg:max-h-[600px] mx-auto aspect-video rounded-xl lg:rounded-4xl overflow-hidden")}>
         <AnimatePresence>
           {!isPlaying && (
             <motion.div

@@ -5,7 +5,7 @@ import React, { useState } from "react";
 const FooterCard = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <section className="md:pb-5 py-20">
+    <section className="md:pb-5 md:pt-20  pb-20">
       <div
         className="max-w-6xl mx-auto  md:rounded-2xl"
         style={{
@@ -13,7 +13,7 @@ const FooterCard = () => {
         }}
       >
         <div className="text-center py-13  px-5 lg:px-36">
-          <h1 className="lg:text-[47px] text-[32px]  font-bold text-white leading-[1.2] pb-2">Ready to take the next step?</h1>
+          <h1 className="lg:text-[47px] text-[32px]  font-bold text-white leading-[1.2] pb-2">Ready to take <br className="lg:hidden"/> the next step?</h1>
           <p className="lg:text-[20px] text-[16px] text-[#99c2e0] pb-4 px-2">
             Book a one-on-one <span className="text-white font-bold">counselling session</span> & get all your questions answered about admissions, programs &
             your future opportunities.

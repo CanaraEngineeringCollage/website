@@ -8,7 +8,7 @@ export default function AboutCanara() {
 
   return (
     <div className="max-w-7xl mx-auto xl:max-w-[75%] text-justify  text-black">
-      <h4 className="text-3xl text-textGray text-center pt-10 lg:pt-7 pb-6">About Canara Engineering College</h4>
+      <h4 className="text-xl text-textGray text-center pt-10 lg:pt-7 pb-6">About Canara Engineering College</h4>
       <h1 className="text-3xl text-[#1D1D1F] text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-bold">A Campus Like No other</h1>
 
       {/* Always visible paragraphs */}
@@ -20,7 +20,7 @@ export default function AboutCanara() {
         </p>
         <p className="lg:text-xl text-lg  text-justify leading-7 pt-6 text-textGray">
           The vision of our founder, Late Sri Ammembal Subba Rao Pai, was to provide *quality, affordable education* to aspiring students. Today, this
-          vision is a reality at CEC—driven by highly qualified faculty, cutting-edge infrastructure, and a vibrant learning ecosystem.
+          vision is a reality at CEC driven by highly qualified faculty, cutting-edge infrastructure, and a vibrant learning ecosystem.
         </p>
 
         <p className="lg:text-xl text-lg  text-justify leading-7 pt-6 text-textGray">
@@ -59,7 +59,7 @@ export default function AboutCanara() {
           <p className="lg:text-xl text-lg  leading-7 pt-6 text-textGray">
             Our *Training & Placement Cell* ensures career readiness through regular training in soft skills, communication, and aptitude, while the
             *Entrepreneurship Development Cell (EDC)* nurtures innovation and startups. With strong industry partnerships and academic
-            tie-ups—including Infosys, Ace Micromatic, ICT Academy, Niveus, MAHE, Q-Spiders, Ethnus, and more—CEC bridges the gap between academia and
+            tie-ups including Infosys, Ace Micromatic, ICT Academy, Niveus, MAHE, Q-Spiders, Ethnus, and more CEC bridges the gap between academia and
             industry.
           </p>
 
@@ -71,7 +71,7 @@ export default function AboutCanara() {
 
           <p className="lg:text-xl text-lg  leading-7 pt-6 text-textGray">
             CEC continues to expand its infrastructure and learning opportunities, staying in step with the demands of *Industry 4.0* and beyond. With
-            a perfect balance of tradition, innovation, and excellence, Canara Engineering College is not just an institution—it’s a launchpad for
+            a perfect balance of tradition, innovation, and excellence, Canara Engineering College is not just an institution it’s a launchpad for
             *tomorrow’s engineers, innovators, and leaders*{" "}
           </p>
         </div>

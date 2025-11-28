@@ -231,13 +231,14 @@ export default function EmpoweringFutures() {
           <CarouselDots total={stats.length} active={activeIndex} onDotClick={setActiveIndex} className="mt-6" />
         </div>
 
-        <button
+       <Link href="/training-placements"> <button
+        
           aria-label="Learn More"
-          onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" })}
           className="bg-primary text-white font-medium px-6 py-2 rounded-full mt-10 md:mt-0 w-full"
         >
           Learn More
         </button>
+        </Link>
       </section>
     </>
   );
