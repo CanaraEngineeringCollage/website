@@ -34,6 +34,7 @@ type DescriptionProps = {
 
 interface CardContentProps {
   description: DescriptionProps;
+  title: string;
 }
 
 interface CardData {
@@ -52,7 +53,7 @@ export default function CardSection() {
       key={card.id}
       card={{
         ...card,
-        content: <CardContent description={card.description} />,
+        content: <CardContent description={card.description} title={card.title} />,
       }}
       index={index}
     />
@@ -65,7 +66,7 @@ export default function CardSection() {
   );
 }
 
-function CardContent({ description }: CardContentProps) {
+function CardContent({ description, title }: CardContentProps) {
   return (
     <div>
       <Image
@@ -74,7 +75,7 @@ function CardContent({ description }: CardContentProps) {
         loading="lazy"
         width={1000}
         height={700}
-        className="object-cover overflow-hidden rounded-t-2xl w-full lg:h-[700px] h-[400px] mb-10"
+        className={`object-cover overflow-hidden rounded-t-2xl w-full lg:h-[700px] h-[400px] mb-10 ${title !== "In-Campus Hostels" ? "object-left" : "object-center"}`}
       />
 
       <div className="p-4 lg:p-0 lg:px-20 space-y-5  md:space-y-10 text-left text-sm text-[#1D1D1F] bg-white">

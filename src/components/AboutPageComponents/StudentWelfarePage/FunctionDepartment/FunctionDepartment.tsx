@@ -135,6 +135,7 @@ const FunctionDepartment = ({ title, functionDeprtmentData }: { title: string; f
           </button>
         </div>
       </div>
+  
     </section>
   );
 };

@@ -129,7 +129,7 @@ export default function DepartmentPage({ params }: { params: { slug: string } })
       <section className="bg-[#071D2C] px-6 lg:px-0 lg:px-0 xl:px-0 md:mt-0 mt-8">
         <DepartmentHeadMessage depatmentHead={department.depatmentHead} />
       </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0 lg:mt-0 ">
+      <section className="px-6 md:px-12 pb-10 lg:pb-0 lg:px-16 xl:px-0 lg:mt-0 ">
         <DepartmentFacultySection departmentName={department.name} />
       </section>
       {department.ideas && (

@@ -183,7 +183,8 @@ const HowToApply = () => {
               onAnimationComplete={() => handleComplete(stepIdx * 4)}
             >
               <div className="flex items-center">
-                <svg
+                <svg className="w-16 h-16 xs:w-28 xs:h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 lg:w-auto lg:h-auto"
+
                   width={svgSizes[stepIdx].width}
                   height={svgSizes[stepIdx].height}
                   viewBox={svgSizes[stepIdx].viewBox}

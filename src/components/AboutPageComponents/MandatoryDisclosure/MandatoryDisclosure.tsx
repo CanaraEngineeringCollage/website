@@ -286,7 +286,7 @@ const MandatoryDisclosure = () => {
                       <tr className="bg-[#F3F8FC] text-[#2884CA]">
                         <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
                         <th className="py-3 md:px-4 px-1 border-b">Description</th>
-                        <th className="py-3 md:px-4 px-1 border-b">Download</th>
+                        <th className="py-3 md:px-4 px-1 border-b">View</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -297,7 +297,7 @@ const MandatoryDisclosure = () => {
                           <td className="py-3 md:px-4 px-1 border-b">
                             {item.links?.[0]?.href && (
                               <a href={item.links[0].href} target="_blank" rel="noopener noreferrer" className="text-[#2884CA] hover:underline">
-                                {item.links[0].text || "Download"}
+                                {item.links[0].text || "View Document"}
                               </a>
                             )}
                           </td>

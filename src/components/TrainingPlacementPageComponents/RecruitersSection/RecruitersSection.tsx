@@ -37,7 +37,7 @@ const RecruitersList: React.FC = () => {
   };
 
   return (
-    <div className="max-w-7xl xl:max-w-[75%] mx-auto px-4 md:px-8  text-center">
+    <div className="max-w-7xl xl:max-w-[75%] mx-auto   text-center">
       <h1 className="text-3xl md:text-[40px] lg2:text-5xl font-bold text-[#1D1D1F] text-center mb-10">
         Batch Recruiters
       </h1>
@@ -53,7 +53,7 @@ const RecruitersList: React.FC = () => {
                 setSelectedYear(year);
                 
               }}
-              className={`px-4 py-2 rounded-md text-sm font-medium border transition ${
+              className={`px-8 py-2 rounded-md text-sm font-medium border transition ${
                 selectedYear === year
                   ? "text-white bg-primary"
                   : "bg-white text-gray-700 border-gray-300 hover:bg-[#F8FBFD]"

@@ -71,7 +71,7 @@ const page = () => {
 />
 
       </section>
-<section className="px-4 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">
+<section className="px-4 bg-[#E5E5EA] pb-12 md:pb-0  md:px-12 lg:pl-16 lg:px-0 xl:px-0">
       <EventsSection/>
       </section>
       {/* <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0">

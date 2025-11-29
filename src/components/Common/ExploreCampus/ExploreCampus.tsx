@@ -5,6 +5,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { IconX } from "@tabler/icons-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+import CustomSelect from "../CustomSelect/CustomSelect";
 import { parse } from "node-html-parser";
 
 interface CampusEvent {
@@ -314,7 +315,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({
             <h1 className="text-center leading-[1.1] text-[46px] mb-5 font-bold">
               {title}
             </h1>
-            <p className="text-center">{description}</p>
+            <p className="text-center text-[21px]">{description}</p>
           </div>
         )}
 
@@ -322,20 +323,14 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({
         <div className="pb-5 lg:pb-10">
           {/* Mobile Dropdown */}
           <div className="flex lg:hidden justify-between items-center gap-2 md:hidden">
-            <select
+            <CustomSelect
               value={activeCategory}
               onChange={(e) => {
                 setActiveCategory(e.target.value);
                 setShowAll(false);
               }}
-              className="border rounded-xl px-3 py-2 text-base text-gray-700 focus:outline-none"
-            >
-              {categories.map((category, index) => (
-                <option key={index} value={category}>
-                  {category}
-                </option>
-              ))}
-            </select>
+              options={categories}
+            />
           </div>
 
           {/* Desktop View */}
@@ -350,7 +345,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({
                   category === activeCategory
                     ? "text-black font-bold"
                     : "text-textGray"
-                } text-[18px]`}
+                } text-lg`}
                 key={index}
               >
                 {category}

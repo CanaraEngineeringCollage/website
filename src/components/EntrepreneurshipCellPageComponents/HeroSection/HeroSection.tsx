@@ -21,11 +21,11 @@ const HeroSection = () => {
  <div className="absolute top-[20%] lg:top-1/2  -translate-y-1/2 flex flex-col space-y-4 sm:space-y-6 px-1 sm:px-6 md:px-10 lg:px-[4rem] z-10 text-center lg:text-start text-white 
   left-1/2 -translate-x-1/2 lg:left-0 lg:translate-x-0">
   
-  <h3 className="text-[#F5F5F7]/70  text-[19px] min-w-xs sm:text-[22px] md:text-[25px] lg:text-[31px] leading-6 sm:leading-8 md:leading-10 lg:leading-none">
-    Entrepreneurship Development Cell
+  <h3 className="text-[#F5F5F7]/70   min-w-xs text-[22px] md:text-[25px] lg:text-[31px] leading-6 sm:leading-8 md:leading-10 lg:leading-none">
+    Entrepreneurship <br className="md:hidden"/> Development Cell
   </h3>
 
-  <h2 className="text-[23px] sm:text-[28px] md:text-[40px] lg:text-[77px] min-w-xs md:min-w-4xl sm:max-w-2xl md:max-w-4xl font-bold tracking-tight leading-tight sm:leading-snug md:leading-10 lg:leading-[1.1] text-white">
+  <h2 className="text-[28px] md:text-[40px] lg:text-[77px] min-w-xs md:min-w-4xl sm:max-w-2xl md:max-w-4xl font-bold tracking-tight leading-tight sm:leading-snug md:leading-10 lg:leading-[1.1] text-white">
     Empowering Future Entrepreneurs
   </h2>
 </div>

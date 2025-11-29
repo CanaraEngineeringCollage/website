@@ -248,7 +248,7 @@ function SubMenu({
             className="flex gap-2 items-center"
           >
             <Typography className=" text-gray-500 ">{link.title}</Typography>
-            <IoIosArrowDown className={`w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
+            {/* <IoIosArrowDown className={`w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} /> */}
           </div>
         ))}
       </div>
@@ -296,9 +296,9 @@ function MainMenu({
                 className="flex gap-2 items-center"
               >
                 <div className="flex items-center gap-2">
-                  <College />
+                  {/* <College /> */}
                   <Typography className="text-sm text-gray-500">Campus Legacy</Typography>
-                  <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                  {/* <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" /> */}
                 </div>
               </div>
               <div
@@ -308,9 +308,9 @@ function MainMenu({
                 className="flex gap-2 items-center"
               >
                 <div className="flex items-center gap-2">
-                  <Employees />
+                  {/* <Employees /> */}
                   <Typography className="text-sm text-gray-500">Leadership & Administration</Typography>
-                  <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                  {/* <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" /> */}
                 </div>
               </div>
               <div
@@ -320,9 +320,9 @@ function MainMenu({
                 className="flex gap-2 items-center"
               >
                 <div className="flex items-center gap-2">
-                  <Certicficate />
+                  {/* <Certicficate /> */}
                   <Typography className="text-sm text-gray-500">Accreditations & Compliance</Typography>
-                  <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                  {/* <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" /> */}
                 </div>
               </div>
               <div
@@ -332,9 +332,9 @@ function MainMenu({
                 className="flex gap-2 items-center"
               >
                 <div className="flex items-center gap-2">
-                  <HandShake />
+                  {/* <HandShake /> */}
                   <Typography className="text-sm text-gray-500">Student Support & Welfare</Typography>
-                  <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                  {/* <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" /> */}
                 </div>
               </div>
             </>
@@ -378,9 +378,9 @@ function MainMenu({
                 className="flex gap-2 items-center"
               >
                 <div className="flex items-center gap-2">
-                  <Book />
+                  {/* <Book /> */}
                   <Typography className="text-sm text-gray-500">Departments</Typography>
-                  <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                  {/* <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" /> */}
                 </div>{" "}
               </div>
               <div
@@ -390,9 +390,9 @@ function MainMenu({
                 className="flex gap-2 items-center"
               >
                 <div className="flex items-center gap-2">
-                  <Examination />
+                  {/* <Examination /> */}
                   <Typography className="text-sm text-gray-500">Examinations & Records</Typography>
-                  <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                  {/* <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" /> */}
                 </div>
               </div>
               <div
@@ -402,9 +402,9 @@ function MainMenu({
                 className="flex gap-2 items-center"
               >
                 <div className="flex items-center gap-2">
-                  <Learning />
+                  {/* <Learning /> */}
                   <Typography className="text-sm text-gray-500">Learning Hub</Typography>
-                  <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                  {/* <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" /> */}
                 </div>
               </div>
             </>
@@ -420,7 +420,7 @@ function MainMenu({
           className="flex gap-4 "
         >
           <Typography className="font-semibold text-[#2884CA] ">Admissions</Typography>
-          <IoIosArrowDown className={`w-6 h-6 text-[#2884CA] -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
+          {/* <IoIosArrowDown className={`w-6 h-6 text-[#2884CA] -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} /> */}
         </div>
       </div>
       <div className="border-b-border border-b-2 py-4">
@@ -449,9 +449,9 @@ function MainMenu({
                 className="flex gap-2 items-center"
               >
                 <div className="flex items-center gap-2">
-                  <College />
+                  {/* <College /> */}
                   <Typography className="text-sm text-gray-500">Campus Facilities</Typography>
-                  <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                  {/* <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" /> */}
                 </div>
               </div>
               {/* <div
@@ -473,9 +473,9 @@ function MainMenu({
                 className="flex gap-2 items-center"
               >
                 <div className="flex items-center gap-2">
-                  <Innovation />
+                  {/* <Innovation /> */}
                   <Typography className="text-sm text-gray-500"> Innovation & Health</Typography>
-                  <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                  {/* <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" /> */}
                 </div>
               </div>
               <div
@@ -485,9 +485,9 @@ function MainMenu({
                 className="flex gap-2 items-center"
               >
                 <div className="flex items-center gap-2">
-                  <Campus />
+                  {/* <Campus /> */}
                   <Typography className="text-sm text-gray-500"> Campus Beats</Typography>
-                  <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+                  {/* <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" /> */}
                 </div>
               </div>
             </>
@@ -503,7 +503,7 @@ function MainMenu({
           className="flex gap-4 "
         >
           <Typography className="font-semibold text-[#2884CA] ">Training & Placements</Typography>
-          <IoIosArrowDown className={`w-6 h-6 text-[#2884CA] -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
+          {/* <IoIosArrowDown className={`w-6 h-6 text-[#2884CA] -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} /> */}
         </div>
       </div>
     </>
