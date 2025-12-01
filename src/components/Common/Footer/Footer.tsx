@@ -9,9 +9,9 @@ import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 // Data arrays remain unchanged from your first snippet
 const quickLinks = [
   { data: "NIRF Disclosure", links: "/about/mandatory-disclosure" },
-  { data: "Committee Members", links: "https://www.canaraengineering.in/download/Institutional%20Committee.pdf" },
-  { data: "AICTE Scholarships", links: "https://www.canaraengineering.in/download/scholarship_2020.pdf" },
-  { data: "Press Releases", links: "https://canaraengineering.in/download/News Paper Clipping.pdf" },
+  { data: "Committee Members", links: "/footer/institutional Committee.pdf" },
+  { data: "AICTE Scholarships", links: "https://apiserver.cec.edu.in/files/scolarship2020" },
+  { data: "Press Releases", links: "/footer/News Paper Clipping.pdf" },
   { data: "Grievance Redressal Committee", links: "/about/grievance-redressal-cell" },
   { data: "VTU Website", links: "https://vtu.ac.in/" },
   { data: "AICTE Website", links: "https://www.aicte.gov.in/" },
@@ -34,12 +34,12 @@ const academics = [
   { data: "Admissions", links: "/admission" },
   // { data: "Courses & Programs", links: "#" },
   // { data: "Syllabus", links: "#" },
-  { data: "Academic Calendar", links: "https://www.canaraengineering.in/download/calender.pdf" },
+  { data: "Academic Calendar", links: "/footer/calender (1).pdf" },
   // { data: "Examinations & Timetables", links: "/academics/examination-records" },
   { data: "Circulars", links: "https://vtu.ac.in/en/#1554889506437-64c3b5d5-d21e" },
   { data: "Marks & Attendance", links: "https://www.canaraengineering.in/s_attd" },
   { data: "Learning Resources", links: "https://digital.canaraengineering.in/" },
-  { data: "Scholarships", links: "https://www.canaraengineering.in/download/scholarship_2020.pdf" },
+  // { data: "Scholarships", links: "https://www.canaraengineering.in/download/scholarship_2020.pdf" },
 ];
 
 const facilities = [

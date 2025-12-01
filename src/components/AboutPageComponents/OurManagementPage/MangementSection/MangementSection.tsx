@@ -69,7 +69,7 @@ const HeroSection = () => {
               <div>
                 <Image
                   alt="orginazation"
-                  src="https://www.canaraengineering.in/orgchart.png"
+                  src="https://apiserver.cec.edu.in/files/managementSection"
                   width={1000}
                   height={100}
                   className="object-cover w-[80%] h-[80%]"

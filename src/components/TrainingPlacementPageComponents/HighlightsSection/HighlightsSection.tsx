@@ -132,13 +132,13 @@ const HighlightsSection = () => {
               {dummyData.map((item) => (
                 <SwiperSlide key={item.id} className="h-full">
                   <div className="flex flex-col justify-between items-center rounded-4xl p-6 bg-white h-full">
-                    <div className="flex flex-col items-center justify-center h-full w-full">
+                    <div className="flex flex-col items-center justify-center pb-10 h-full w-full">
                       <Image
                         src={item.img}
                         alt="trainingPlacementPageImages"
                         width={100}
                         height={100}
-                        className="w-[100%] h-[50%] object-cover"
+                        className="w-[70%]  object-contain"
                       />
                       <h1 className="text-2xl font-bold text-center mt-4">{item.title}</h1>
                       {item.company && (
