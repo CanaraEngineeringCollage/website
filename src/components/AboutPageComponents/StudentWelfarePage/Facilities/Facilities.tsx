@@ -11,7 +11,7 @@ const Facilities = () => {
     "Suggestions related to training, consultancy projects, contests, higher education, career and counseling are provided to students.",
     "Suggestions related to improvement of general facilities like canteen, bus, internet facilities, etc., are accepted and forwarded to the concerned department.",
     "For emergency healthcare of girl students, beds have been provided at ground floor rest rooms.",
-    "A sanitary napkin vending machine and incinerator is installed in the girls' washroom on the ground floor.",
+    "A sanitary napkin vending machine and incinerator is installed in the girl's washroom on the ground floor.",
     "A visiting doctor is available in the campus dispensary between 4:30 pm to 5:30 pm.",
     "A full-time counsellor is appointed by the college to counsel students on academic and personal issues.",
     "A community health centre has been set up in the college campus in association with Fr. Muller’s Hospital, Thumbay. The health centre functions every Tuesday from 10:00 am to 1:00 pm. Faculty, staff, students and nearby residents can avail the services free of cost. All minor ailments are treated at the community health centre.",

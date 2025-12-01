@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import bgImage from "../../../../public/admissionPageImages/hero.png"
+import bgImageMobile from "../../../../public/admissionPageImages/heroMobile.png"
 import ContactFormModal from '@/components/Modal/Modal'
 
 const HeroSection = () => {
@@ -12,7 +13,13 @@ const HeroSection = () => {
       <Image
         src={bgImage}
         alt="Hero Background"
-        className="absolute inset-0 w-full h-full object-cover lg:object-center md:object-[80%_center] object-[80%_center] "
+        className="absolute inset-0 w-full h-full hidden md:block object-cover lg:object-center md:object-[80%_center] object-[80%_center] "
+        priority
+      />
+         <Image
+        src={bgImageMobile}
+        alt="Hero Background"
+        className="absolute inset-0 w-full h-full md:hidden object-cover object-cover ] "
         priority
       />
 
@@ -22,7 +29,7 @@ const HeroSection = () => {
           Where Learning <br /> Meets Innovation
         </h2>
         <p className="text-[#CDE5FF] text-[16px] pe-10 leading-[1.3] md:text-[31px] mt-2">
-          Begin your engineering  <br className='md:hidden'/> journey with a  <br className='md:hidden'/> foundation-built curriculum.
+          Begin your engineering   journey with a  <br className='md:hidden'/> foundation-built curriculum.
         </p>
         <button aria-label='Apply Now' onClick={()=>setIsOpen(true)} className="mt-6 text-lg bg-white text-[#2884CA] font-bold px-10 py-2 lg:py-4 cursor-pointer rounded-full  ">
           Apply Now
