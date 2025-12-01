@@ -25,7 +25,7 @@ export default function FounderSection() {
             <p className="lg2:text-xl text-justify">
               Canara High School Association (CHSA) was founded by Sri Ammembal Subba Rao Pai with the sole purpose of imparting the youth of Dakshina
               Kannada with modern education blended with ancient cultural values. He was a great social reformer and philanthropist with a rare
-              combination of the ideal and practical. His concern for social upliftment gave birth to the Canara High School , Mangalore in 1891- the
+              combination of the ideal and practical. His concern for social upliftment gave birth to the Canara High School, Mangalore in 1891- the
               century old precursor to the conglomeration of Canara educational institutions of today, while his spirit of enterprise gave birth to
               yet another national institution – the Canara Bank, in 1906.
             </p>
