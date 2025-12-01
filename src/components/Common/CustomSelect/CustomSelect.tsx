@@ -18,7 +18,7 @@ const CustomSelect: React.FC<CustomSelectProps> = ({
       <select
         value={value}
         onChange={onChange}
-        className="w-full border border-gray-300 rounded-md p-3 pr-10 text-[16px] text-textGray 
+        className="w-full border border-gray-300 rounded-md p-3 pr-10 text-[20px]  text-textGray 
            focus:outline-none focus:ring-0 focus:border-[#2884CA] appearance-none"
       >
         {options.map((option, index) => (

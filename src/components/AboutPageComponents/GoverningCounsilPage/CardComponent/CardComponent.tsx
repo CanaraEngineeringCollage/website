@@ -34,7 +34,7 @@ const ProfileCard = ({ datam, title,keyFunctionaries }: { datam: GoverningCounci
     <section className="pb-20 max-w-5xl xl:max-w-[65%] mx-auto px-5">
 
 
-  {keyFunctionaries&&<><h1 className="text-[#1D1D1F] leading-[1.3] text-[40px] lg:text-[54px] pb-10 pt-10 md:pb-16 xl:pb-20 font-bold text-center">Key Functionaries</h1>
+  {keyFunctionaries&&<><h1 className="text-[#1D1D1F] leading-[1.3] text-3xl  md:text-[40px] lg:text-[54px] pb-10 pt-10 md:pb-16 xl:pb-20 font-bold text-center">Key Functionaries</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-8 justify-items-center mb-10">
         {keyFunctionaries.map((item, index) => {
@@ -82,7 +82,7 @@ const ProfileCard = ({ datam, title,keyFunctionaries }: { datam: GoverningCounci
         })}
       </div></>}
 
-      <h1 className="text-[#1D1D1F] leading-[1.3] text-[40px] lg:text-[54px] pb-10 pt-10 md:pb-16 xl:pb-20 font-bold text-center">{title}</h1>
+      <h1 className="text-[#1D1D1F] leading-[1.3] text-3xl md:text-[40px] lg:text-[54px] pb-10 pt-10 md:pb-16 xl:pb-20 font-bold text-center">{title}</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-8 justify-items-center">
         {data.map((item, index) => {

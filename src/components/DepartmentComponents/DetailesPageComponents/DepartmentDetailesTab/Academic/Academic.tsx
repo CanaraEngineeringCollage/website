@@ -57,7 +57,7 @@ const Academic = ({ data }: { data?: AcademicProps }) => {
           ))}
         </div>
       )}
-      {data?.annualIntake && <p className="font-semibold text-[20px]">Annual Intake: {data?.annualIntake}</p>}
+      {data?.annualIntake && <p className="font-semibold text-[14px] lg:text-[20px]">Annual Intake: {data?.annualIntake}</p>}
     </div>
   );
 };

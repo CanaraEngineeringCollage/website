@@ -34,7 +34,7 @@ const HeroSection = () => {
   return (
     <section>
       <div className="px-4 sm:px-10 md:px-16 lg:px-24  py-12 sm:py-16 md:py-20">
-        <h1 className=" text-[#1D1D1F] text-[39px] lg:text-[54px] font-bold mb-8 sm:mb-10 md:mb-16">Our Management</h1>
+        <h1 className=" text-[#1D1D1F] text-3xl md:text-[46px]  lg:text-[54px] font-bold mb-8 sm:mb-10 md:mb-16">Our Management</h1>
         <div className="grid grid-cols-1 md:grid-cols-12 ">
        {/* Mobile: Select dropdown */}
 <div className="block sm:hidden mb-6">
