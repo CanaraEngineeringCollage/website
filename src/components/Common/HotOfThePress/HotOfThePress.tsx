@@ -1,26 +1,180 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect, createContext } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import pressData from "../../../utils/hotOFThePressData/hotOfThePressData.json";
+import { AnimatePresence, motion } from "framer-motion";
+import { IconX } from "@tabler/icons-react";
+import { parse } from "node-html-parser";
 import Image from "next/image";
+import { useOutsideClick } from "@/hooks/use-outside-click";
 import Link from "next/link";
 
-const HotOfThePress = () => {
-  const swiperRef = useRef<SwiperType | null>(null);
-  const autoplayDelay = 3000; // Swiper autoplay delay in ms
+interface CampusEvent {
+  id: number;
+  category: string;
+  eventDate: string;
+  content: string;
+  eventName: string;
+}
+
+type EventDescriptionProps = {
+  src: string;
+  date: string;
+  topTitle: string;
+  topDescription: string;
+  remainingHTML: string;
+};
+
+interface CarouselContextType {
+  onCardClose: (index: number) => void;
+  currentIndex: number;
+  totalItems: number;
+  goToNextCard: () => void;
+  openCard: (index: number) => void;
+  closeCard: () => void;
+  isOpen: boolean;
+}
+
+export const CarouselContext = createContext<CarouselContextType>({
+  onCardClose: () => {},
+  currentIndex: 0,
+  totalItems: 0,
+  goToNextCard: () => {},
+  openCard: () => {},
+  closeCard: () => {},
+  isOpen: false,
+});
+
+const cardVariants = {
+  hidden: { opacity: 0, scale: 0.8, y: 100, transition: { duration: 0.3 } },
+  visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.4, type: "spring", damping: 20, stiffness: 100 } },
+  exit: { opacity: 0, scale: 0.9, y: 50, transition: { duration: 0.25 } },
+};
+
+const backdropVariants = {
+  hidden: { opacity: 0, backdropFilter: "blur(0px)" },
+  visible: { opacity: 1, backdropFilter: "blur(8px)", transition: { duration: 0.3 } },
+  exit: { opacity: 0, backdropFilter: "blur(0px)", transition: { duration: 0.2 } },
+};
+
+const contentVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.1 } },
+};
+
+const parseEventContent = (html: string) => {
+  const root = parse(html);
+  const firstHeadingEl = root.querySelector("h1,h2,h3,h4,h5,h6");
+  const topTitle = firstHeadingEl?.text?.trim() || "";
+  if (firstHeadingEl) firstHeadingEl.remove();
+  const firstParagraphEl = root.querySelector("p");
+  const topDescription = firstParagraphEl?.text?.trim() || "";
+  if (firstParagraphEl) firstParagraphEl.remove();
+  const firstImageEl = root.querySelector("img");
+  const src = firstImageEl?.getAttribute("src") || "";
+  if (firstImageEl) firstImageEl.remove();
+
+  let remainingHTML = root.toString()
+    .replace(/\n|\r/g, "")
+    .replace(/>\s+</g, "><")
+    .replace(/<[^/>]+>\s*<\/[^>]+>/g, "")
+    .trim();
+
+  return { src, topTitle, topDescription, remainingHTML };
+};
+
+function EventContent({ description }: { description: EventDescriptionProps }) {
   return (
-    <section className="lg:ml-20 xl:ml-60 md:py-0 lg:pt-24 py-10">
-      <div className="lg:flex lg:justify-between md:pb-14 pb-10">
-        <div className="flex text-black flex-col">
-          <h1 className="text-3xl text-[#1D1D1F] md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-semibold font-sans  md:pb-6 tracking-[0.13px]">
-           Highlights
-          </h1>
+    <div>
+      {description.src && (
+        <Image
+          src={description.src}
+          alt={description.topTitle}
+          loading="lazy"
+          width={1000}
+          height={700}
+          className="object-cover overflow-hidden rounded-t-2xl w-full lg:h-[500px] h-[400px] mb-10"
+        />
+      )}
+      <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
+        <div>
+          <p className="text-[17px] text-textGray uppercase font-bold mb-2">{description.date}</p>
+          <h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">{description.topTitle}</h3>
+          <p className="text-xl text-textGray">{description.topDescription}</p>
         </div>
-        <div className="hidden md:block">
+        <div className="bg-white -mt-10" dangerouslySetInnerHTML={{ __html: description.remainingHTML }} />
+      </div>
+    </div>
+  );
+}
+
+const HotOfThePressCarousel = () => {
+  const swiperRef = useRef<SwiperType | null>(null);
+  const [events, setEvents] = useState<CampusEvent[]>([]);
+  const [isOpen, setIsOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+const fetchEvents = async () => {
+  try {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz?page=1&limit=10`);
+    if (!res.ok) throw new Error("Failed to fetch buzz");
+
+    const response = await res.json();
+
+    setEvents(response.data); // <-- CORRECT
+    setIsLoaded(true);
+  } catch (err) {
+    console.error(err);
+    setIsLoaded(true);
+  }
+};
+
+  useEffect(() => {
+    fetchEvents();
+  }, []);
+
+  // Sort by date descending
+  const sortedEvents = [...events].sort((a, b) => new Date(b.eventDate).getTime() - new Date(a.eventDate).getTime());
+
+  const openCard = (index: number) => {
+    setCurrentIndex(index);
+    setIsOpen(true);
+  };
+  const closeCard = () => setIsOpen(false);
+  const goToNextCard = () => setCurrentIndex((prev) => (sortedEvents.length ? (prev + 1) % sortedEvents.length : 0));
+
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
+    const handleKeyDown = (event: KeyboardEvent) => event.key === "Escape" && isOpen && closeCard();
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen]);
+
+  useOutsideClick(containerRef, () => isOpen && closeCard());
+
+  const getEventDescription = (event: CampusEvent): EventDescriptionProps => ({
+    ...parseEventContent(event.content),
+    date: new Date(event.eventDate).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }),
+  });
+
+
+  if(events.length === 0){
+    return null
+  }
+
+  return (
+    <section className="lg:ml-20 xl:ml-60 md:py-0 md:pt-16 py-10">
+      <div className="lg:flex lg:justify-between md:pb-10 pb-10">
+        <h1 className="text-3xl text-[#1D1D1F] md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-semibold font-sans md:pb-6 tracking-[0.13px]">
+          Highlights
+        </h1>
+
+         <div className="hidden md:block">
           <Link href="/media">
           <button
             aria-label="Explore More Campus Stories"
@@ -31,9 +185,10 @@ const HotOfThePress = () => {
           </Link>
         </div>
       </div>
-      <Swiper
+
+       {isLoaded && events.length > 0 ? (<Swiper
         modules={[Autoplay, Navigation]}
-        autoplay={{ delay: autoplayDelay, disableOnInteraction: false }}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         spaceBetween={20}
         slidesPerView={1}
         loop={true}
@@ -48,38 +203,57 @@ const HotOfThePress = () => {
           1580: { slidesPerView: 3.8, spaceBetween: 1 },
         }}
         className="mySwiper"
-        onSwiper={(swiper) => {
-          swiperRef.current = swiper;
-        }}
+        onSwiper={(swiper) => { swiperRef.current = swiper; }}
       >
-        {pressData?.map((item, index) => (
-          <SwiperSlide key={index}>
-            <div className="max-w-sm min-h-[55vh] md:min-h-[45vh] bg-white lg:min-h-[65vh] xl:min-h-auto   rounded-3xl overflow-hidden ">
-              <div className="h-60 overflow-hidden">
-                <Image
-                  width={200}
-                  height={200}
-                  src={item.image} // Replace with your actual image path
-                  alt="Techfest 2025"
-                  className="w-full h-full object-cover"
-                />
+        {sortedEvents.map((event, index) => {
+          const { src, topTitle, topDescription } = parseEventContent(event.content);
+          return (
+            <SwiperSlide key={event.id}>
+             <div className="max-w-sm  bg-white  xl:min-h-auto  rounded-xl lg:rounded-3xl overflow-hidden "
+                onClick={() => openCard(index)}
+              >
+                <div className="h-60 overflow-hidden">
+                  <Image
+                    width={200}
+                    height={200}
+                    src={src || event.content}
+                    alt={topTitle || event.category}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-8 text-center">
+            <div className="flex justify-center items-center space-x-3">
+  <p className="text-textGray text-[17px] mb-1">{event.eventName}</p>
+
+  {/* Vertical divider */}
+  <div className="h-5 w-[1px] bg-textGray"></div>
+
+  <p className="text-textGray text-[17px] mb-1">
+    {new Date(event.eventDate).toLocaleDateString("en-GB", {
+      day: "numeric",
+      month: "short",
+      year: "numeric",
+    })}
+  </p>
+</div>
+
+                  {/* <p className="text-textGray text-[17px] mb-1">{event.category}</p> */}
+                  <h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">{topTitle}</h3>
+                  <button className="text-primary inline-flex text-[17px] items-center hover:underline font-medium text-sm">
+                    Read More <MdKeyboardArrowRight className="ml-1" />
+                  </button>
+                </div>
               </div>
-              <div className="p-8 text-center">
-                <p className="text-textGray text-[17px] mb-1">{item.date}</p>
-                <h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">{item.title}</h3>
-                <Link href="/media"> <button
-                  
-                  aria-label="Read More about Hot of the Press"
-                  className="text-[#2997FF] inline-flex text-[17px] items-center hover:underline font-medium text-sm"
-                >
-                  Read More <MdKeyboardArrowRight className="ml-1 " />
-                </button></Link> 
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
-      <div className="lg:flex lg:justify-between md:pb-14 pb-10">
+      ) : (
+        <div className="text-center py-10 text-textGray">No events to display.</div>
+      )}
+
+      {/* Swiper Navigation */}
+       <div className="lg:flex lg:justify-between md:pb-0 pb-10">
         <div className="flex"></div>
         <div className="hidden md:block">
           <div className="flex mr-22 gap-6 mt-20">
@@ -98,13 +272,51 @@ const HotOfThePress = () => {
           </div>
         </div>
       </div>
-      <div className="md:hidden  mt-12 flex ">
+
+        <div className="md:hidden  mt-5 flex justify-center ">
        <Link href="/media"> <button aria-label="Explore More Campus Stories" className="text-black mx-auto cursor-pointer font-bold bg-[#c3d5ed] px-5 py-2 rounded-3xl">
           Explore More Campus Stories
         </button></Link>
       </div>
+
+      {/* Modal */}
+      <AnimatePresence>
+        {isOpen && sortedEvents.length > 0 && (
+          <motion.div className="fixed inset-0 h-screen z-50 overflow-auto" initial="hidden" animate="visible" exit="exit">
+            <motion.div variants={backdropVariants} className="bg-black/80 backdrop-blur-lg h-full w-full fixed inset-0" onClick={closeCard} />
+            <motion.div
+              variants={cardVariants}
+              ref={containerRef}
+              className="max-w-4xl mx-auto bg-white h-fit z-[60] my-10 pb-10 rounded-3xl font-sans relative shadow-2xl"
+            >
+              <motion.button
+                variants={contentVariants}
+                className="absolute top-6 me-4 lg:me-8 h-8 w-8 right-0 cursor-pointer ml-auto bg-[#808080] rounded-full flex items-center justify-center"
+                onClick={closeCard}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <IconX className="h-6 w-6 text-white" />
+              </motion.button>
+              <motion.div variants={contentVariants} className="!overflow-hidden">
+                <EventContent description={getEventDescription(sortedEvents[currentIndex])} />
+              </motion.div>
+              <motion.div variants={contentVariants} className="p-4 lg:px-20 ">
+                <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">Next Event</h1>
+                <h1
+                  onClick={goToNextCard}
+                  className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]"
+                >
+                  {parseEventContent(sortedEvents[(currentIndex + 1) % sortedEvents.length].content).topTitle || "First Event"}
+                  <MdKeyboardArrowRight className="ml-1 mt-1 text-[20px] md:text-[25px]" />
+                </h1>
+              </motion.div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 };
 
-export default HotOfThePress;
+export default HotOfThePressCarousel;

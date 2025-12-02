@@ -17,6 +17,7 @@ import data from "../../../utils/aluminiSectionData/carouselData.json";
 // Types
 interface Amenity {
   imageSrc: string;
+  imageSrc2: string;
   title: string;
   description: string;
   date?: string;
@@ -49,19 +50,21 @@ function CardContent({ description }: { description: Amenity }) {
   return (
     <div>
       <Image
-        src={description.imageSrc}
+        src={description.imageSrc2}
         alt="Image"
         loading="lazy"
         width={1000}
         height={700}
         className="object-cover overflow-hidden rounded-t-2xl w-full lg:h-[500px] h-[400px] mb-10"
       />
-      <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
-        <div>
-          <h3 className="text-[31px] lg:text-[46px] leading-[1.1] lg:max-w-[70%] mb-5 font-bold">{description.title}</h3>
-          <p className="text-xl text-textGray">{description.description}</p>
+      {description.title && (
+        <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
+          <div>
+            <h3 className="text-[31px] lg:text-[46px] leading-[1.1] lg:max-w-[100%] mb-5 font-bold">{description.title}</h3>
+            <p className="text-xl text-textGray">{description.description}</p>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
@@ -149,7 +152,7 @@ export default function LegacyExcellance() {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isPlaying]);
-useEffect(() => {
+  useEffect(() => {
     if (isModalOpen) document.body.style.overflow = "hidden";
     else document.body.style.overflow = "auto";
 
@@ -160,37 +163,30 @@ useEffect(() => {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isModalOpen, closeModal]);
   return (
-    <section className="max-w-7xl xl:max-w-[75%]   mx-auto  py-8">
+    <section className="max-w-7xl xl:max-w-[75%]   mx-auto  py-8 lg:pt-3 lg:pb-10">
       <div className="grid grid-cols-1  lg:grid-cols-2 gap-8 lg2:gap-10 items-start">
         {/* Left Side - Swiper */}
-       
 
-              {data.map((item, index) => (
-               
-                  <div className="relative lg:h-[500px] rounded-3xl">
-                    <Image src={item.imageSrc} alt={item.title} width={700} height={700} className="w-full object-cover h-[100%] rounded-3xl" />
+        {data.map((item, index) => (
+          <div className="relative lg:h-[500px] rounded-3xl">
+            <Image src={item.imageSrc} alt={item.title} width={700} height={700} className="w-full object-cover h-[100%] rounded-3xl" />
 
-                    {/* Text Overlay */}
-                    <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6 lg2:p-16 rounded-b-3xl">
-                      <h2 className="text-white text-lg leading-[1.2] lg:text-[40px] font-bold mt-1">{item.title}</h2>
-                      {/* <p className="text-white  mt-2 text-sm lg:text-lg max-w-2/3">{item.description}</p> */}
-                      <button
-                        aria-label="Learn More"
-                        onClick={() => openModal(item, index)}
-                        className="mt-4 px-5 py-2 bg-white rounded-full text-slg font-semibold hover:bg-gray-200 absolute right-6 bottom-14 text-primary"
-                      >
-                        Learn More
-                      </button>
-                    </div>
-                  </div>
-                
-              ))}
-          
+            {/* Text Overlay */}
+            <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6 lg2:p-16 rounded-b-3xl">
+              <h2 className="text-white text-lg leading-[1.2] lg:text-[40px] line-clamp-1 lg:line-clamp-none  font-bold mt-1">{item.title}</h2>
+              {/* <p className="text-white  mt-2 text-sm lg:text-lg max-w-2/3">{item.description}</p> */}
+              <button
+                aria-label="Learn More"
+                onClick={() => openModal(item, index)}
+                className="mt-4 px-5 py-2 bg-white rounded-full text-slg font-semibold hover:bg-gray-200 absolute right-6 bottom-14 text-primary"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        ))}
 
-            {/* Navigation Buttons */}
-
-           
-          
+        {/* Navigation Buttons */}
       </div>
 
       {/* Modal */}
@@ -216,8 +212,8 @@ useEffect(() => {
               </motion.div>
               <motion.div variants={contentVariants} className="p-4 lg:px-20 mt-10">
                 <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">NextUp</h1>
-                <h1 onClick={goToNextCard} className="text-[#2997FF] inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]">
-                  {data[(currentIndex + 1) % data.length]?.title || "First Card"}
+                <h1 onClick={goToNextCard} className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]">
+                  {data[(currentIndex + 1) % data.length]?.title || "Next"}
                   <MdKeyboardArrowRight className="ml-1 mt-1 text-[20px] md:text-[25px]" />
                 </h1>
               </motion.div>

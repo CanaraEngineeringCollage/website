@@ -47,7 +47,7 @@ const page = () => {
       {/* <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <YourSkills />
       </section> */}
-      <section className=" -mt-16  lg:pt-10 pb-8 lg:pb-20 lg:px-16 xl:px-0 px-1 md:px-12 ">
+      <section className=" lg:-mt-16  lg:pt-10 pb-16 lg:pb-20 lg:px-16 xl:px-0 px-1 md:px-12 ">
         <VideoPlayer thumbnail="/youtubeThumbnails/Akrathi Aftermovie - Thumbail@300x.webp" youtubeUrl="oHWMDPeP1Ew" />
       </section>
    

@@ -314,7 +314,7 @@ export function Campus() {
 
 export function FooterIcon() {
   return (
-    <svg width="79" height="80" viewBox="0 0 79 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="83" height="83" viewBox="0 0 79 80" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_58_17799)">
         <path
           d="M39.5008 79.8544C61.2367 79.8544 78.8571 62.011 78.8571 40C78.8571 17.989 61.2367 0.145508 39.5008 0.145508C17.7649 0.145508 0.144531 17.989 0.144531 40C0.144531 62.011 17.7649 79.8544 39.5008 79.8544Z"

@@ -2,32 +2,34 @@
 import Image from "next/image";
 import img from "../../../../../public/aboutPageImages/our-founder/canara-founder.webp";
 
+
+
 export default function FounderSection() {
   return (
-    <section className="bg-[#fafbfe] py-10 lg:py-20 md:px-4 lg:px-4 lg2:px-4  ">
+    <section className="bg-[#fafbfe]  py-10 lg:py-20 px-5 overflow-hidden">
       <div className="max-w-7xl xl:max-w-[75%] mx-auto">
-        <div className="flex flex-col md:flex-row items-start gap-12">
+        <div className="flex flex-col md:flex-row items-start ">
           {/* Left Column - Text */}
-          <div className="flex-1  text-[#86868B] text-[17px] leading-relaxed space-y-6 ">
-            <h2 className="text-3xl  md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-[#1D1D1F] mb-6 text-center lg:text-start">Our Founder</h2>
-            <div className="flex md:hidden flex-col items-center mt-4 flex-shrink-0 mx-auto lg:px-20">
-              <div className="w-80 h-96 relative rounded-xl overflow-hidden shadow-md">
+          <div className="md:flex-1  text-[#2A2A2A] text-[17px] leading-relaxed space-y-6 ">
+            <h2 className="text-3xl  md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-[#1D1D1F]  text-center lg:text-start mb-6">Our Founder</h2>
+            <div className="flex lg:hidden flex-col items-center flex-shrink-0 mx-auto md:px-20">
+              <div className=" relative rounded-xl overflow-hidden ">
                 <Image src={img} alt="Sri Ammembal Subba Rao Pai" width={1000} height={1000} className="object-cover h-full" />
               </div>
-              <p className="mt-4 text-center text-xl lg:text-[27px] font-semibold text-[#1D1D1F]">
+              <p className="mt-4 text-center text-[20px] font-semibold text-[#1D1D1F]">
                 Sri Ammembal Subba
                 <br />
                 Rao Pai
               </p>
             </div>
-            <p className="px-4 md:px-0 ">
+            <p className="lg2:text-xl text-justify">
               Canara High School Association (CHSA) was founded by Sri Ammembal Subba Rao Pai with the sole purpose of imparting the youth of Dakshina
               Kannada with modern education blended with ancient cultural values. He was a great social reformer and philanthropist with a rare
-              combination of the ideal and practical. His concern for social upliftment gave birth to the Canara High School , Mangalore in 1891- the
+              combination of the ideal and practical. His concern for social upliftment gave birth to the Canara High School, Mangalore in 1891- the
               century old precursor to the conglomeration of Canara educational institutions of today, while his spirit of enterprise gave birth to
               yet another national institution – the Canara Bank, in 1906.
             </p>
-            <p className="px-4 md:px-0 ">
+            <p className="lg2:text-xl text-justify">
               Canara High School has grown into a dozen educational institutions, imparting quality education to over 7000 young boys and girls of
               this part of Karnataka from Nursery level to graduation. Canara Engineering College is the new millenium project of Canara High School
               Association, for which careful planning and preparation was going on right from 1991-92, the centenary year of Canara High School
@@ -36,8 +38,8 @@ export default function FounderSection() {
           </div>
 
           {/* Right Column - Image */}
-          <div className=" hidden md:flex flex-col items-center flex-shrink-0 mx-auto lg:px-20">
-            <div className="w-70 h-[10rem]  lg:h-[20rem] md:h-[26rem] relative rounded-xl overflow-hidden shadow-md">
+          <div className=" hidden lg:flex flex-col items-center flex-shrink-0 mx-auto md:px-20">
+            <div className="w-72  h-[350px] relative rounded-xl overflow-hidden ">
               <Image src={img} alt="Sri Ammembal Subba Rao Pai" fill className="object-cover" />
             </div>
             <p className="mt-4 text-center text-[27px] font-semibold text-[#1D1D1F]">
@@ -47,22 +49,22 @@ export default function FounderSection() {
             </p>
           </div>
         </div>
-        <div className="text-[#86868B] text-[17px] leading-relaxed  space-y-6 pt-5">
-          <p className="px-4 md:px-0 ">
+        <div className="text-[#2A2A2A] text-justify text-[17px] leading-relaxed  space-y-6 pt-7">
+          <p className="lg2:text-xl">
             Born on 19th November, 1852, at Mulky, near Mangalore, he underwent early schooling at Government High School, Mangalore, and it was the
             early demise of his mother that is believed to have profoundly influenced him to take to studies seriously. After passing his F.A.
             Examination, his father sent him to Madras to take up higher studies. Following his graduation from the Presidency College, he joined the
             Madras Law College. There he came into contact with Justice Holloway, whose remarkable personality proved to be a rewarding experience to
             him.
           </p>
-          <p className="px-4 md:px-0 ">
+          <p className="lg2:text-xl text-justify">
             In 1876, following the demise of his father, he returned to Mangalore and successfully practiced Law (It is said that he often attempted
             to persuade amicable out-of-court settlements for his clients, although this sometime cost him his fee). In 1891, four teachers, whom he
             had met in Madras, approached him with a proposal to start a school in Mangalore and thus was born the Canara High School, Mangalore.
             Shortly thereafter, in 1894, with a view to encourage the education of girls, he started the Canara Girls High School, indeed a
             revolutionary step considering the prevalent values and attitude of the people towards ladies education at that time.
           </p>
-          <p className="px-4 md:px-0 ">
+          <p className="lg2:text-xl text-justify">
             The disastrous crash of the Arbuthnot Company at the beginning of the 20th Century prompted him to start - in 1906 - The Canara Hindu
             Permanent Fund Ltd. (now Canara Bank) with a view to enabling the community to mobilise its own resources for self-help.Among his
             important contributions to the GSB community was the setting up of the &apos;Poor Boys Education Fund&apos; (which became ASRP Memorial

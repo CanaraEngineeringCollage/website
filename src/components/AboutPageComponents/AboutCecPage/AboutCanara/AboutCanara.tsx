@@ -8,112 +8,85 @@ export default function AboutCanara() {
 
   return (
     <div className="max-w-7xl mx-auto xl:max-w-[75%] text-justify  text-black">
-      <h4 className="text-3xl text-textGray text-center pt-10 lg:pt-7 pb-6">
-        About Canara Engineering College
-      </h4>
-      <h1 className="text-3xl text-[#1D1D1F] text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-bold">
-        A Campus Like No other
-      </h1>
+      <h4 className="text-xl text-textGray text-center pt-10 lg:pt-7 pb-6">About Canara Engineering College</h4>
+      <h1 className="text-3xl text-[#1D1D1F] text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-bold">A Campus Like No other</h1>
 
       {/* Always visible paragraphs */}
-    <div className="px-1 md:px-6 lg:px-8 lg2:px-1">
+      <div className="px-1 md:px-6 lg:px-8 lg2:px-1">
+        <p className="lg:text-xl text-lg  text-justify leading-7 pt-8 md:pt-10 text-textGray">
+          Canara Engineering College (CEC), established in 2001 as a millennium project of the Canara High School Association, is a premier autonomous
+          engineering institution located on a lush 26-acre campus at Benjanapadavu, Mangalore. Blending values with technology, CEC has emerged as a
+          leading center for technical education in the coastal region of Karnataka.
+        </p>
+        <p className="lg:text-xl text-lg  text-justify leading-7 pt-6 text-textGray">
+          The vision of our founder, Late Sri Ammembal Subba Rao Pai, was to provide *quality, affordable education* to aspiring students. Today, this
+          vision is a reality at CEC driven by highly qualified faculty, cutting-edge infrastructure, and a vibrant learning ecosystem.
+        </p>
 
-        <p className="lg:text-xl md:text-lg text-[14px] text-justify leading-7 pt-16 text-textGray">
-        Canara Engineering College(CEC), established in the year 2001 as a new
-        millennium project of Canara High School Association, in the sprawling
-        campus of 26 acres of pristine natural beauty at Benjanapadavu,
-        Mangalore has now grown as a promising engineering institution with
-        distinction in the coastal region of Karnataka, India, where values and
-        technology converge! The lofty dream of our founder, Late Sri Ammembal
-        Subba Rao Pai, of providing quality education to the needy student
-        community at affordable costs, is being realized today at CEC, through
-        well qualified and motivated faculty, state-of-the-art infrastructure
-        and distinguished learning-centric facilities.
-      </p>
-      <p className="lg:text-xl md:text-lg text-[14px] text-justify leading-7 pt-12 text-textGray">
-        Started with just an intake of 180 in three branches, today the
-        institute boasts of a total intake of 630 in seven branches, namely
-        Mechanical Engg., Computer Science & Engg., Electronics & Communication
-        Engg., Information Science & Engg., recently introduced
-        inter-disciplinary programs in demand, namely Computer Science & Design,
-        Computer Science & Business System and Artificial Intelligence & Machine
-        Learning. All these programs being approved by All India Council for
-        Technical Education (AICTE), New Delhi and affiliated to Visveswaraya
-        Technological University(VTU), Belagavi; CEC ensures that the students
-        are well trained on existing engineering practices and acquainted with
-        latest industrial trends. Glad to inform that all eligible BE programs
-        here are accredited by National Board of Accreditation(NBA), New Delhi
-        and the institute is also accredited by National Assessment and
-        Accreditation Council(NAAC) with A Grade-CGPA-3.24
-      </p>
+        <p className="lg:text-xl text-lg  text-justify leading-7 pt-6 text-textGray">
+          Starting with just 180 students in three programs, CEC has grown to an intake of 750 students across seven dynamic branches:
+          <ul className="mt-4 list-decimal list-inside leading-7">
+            <li>Computer Science & Engineering </li>
+            <li>Electronics & Communication Engineering </li>
+            <li>Information Science & Engineering </li>
+            <li>Computer Science & Design </li>
+            <li>Computer Science & Business Systems </li>
+            <li>Artificial Intelligence & Machine Learning </li>
+            <li>Mechanical Engineering </li>
+          </ul>
+        </p>
 
-      {/* Animated hidden section */}
-      <div
-        className={`transition-all duration-700 ease-in-out overflow-hidden ${
-          showMore ? "max-h-[5000px] opacity-100" : "max-h-0 opacity-0"
-        }`}
-      >
-        <p className="lg:text-xl md:text-lg text-[14px] text-justify leading-7 pt-12 text-textGray">
-          CEC today having a total student strength of around 1900 in the
-          campus with about 35% of them staying in the ergonomically built
-          college hostels and a faculty strength of 100+ with many doctorates
-          and maintaining faculty-student ratio of 1:15 strictly in line with
-          regulatory body guidelines; our well-trained students are showing
-          outstanding performance in VTU examinations securing university ranks,
-          gold medals, 100% results in leading branches, bagging district level,
-          state level and national level championships & awards in co-curricular
-          & extra-curricular activities through several student clubs & active
-          IEEE student chapter in the institute and organizing many social
-          outreach programs and state level intercollegiate techno-cultural fests
-          successfully, towards total personality development and better
-          visibility!
-        </p>
-        <p className="lg:text-xl md:text-lg text-[14px] leading-7 pt-12 text-textGray">
-          The institute library has a treasure trove of books, magazines,
-          journals and e-journals as well as digital library and e-learning
-          centres. All laboratories and workshops are equipped with the most
-          modern and sophisticated instruments, machinery and equipment,
-          fulfilling the quest for practical knowledge of the students. The
-          active Training and Placement department along with Entrepreneurship
-          Development Cell organizes several programs like training the students
-          to face campus recruitment tests and interviews through regular soft
-          skill/communication skill development programs, Entrepreneurship
-          Awareness Camps and helping the desired students to
-          productize/commercialize their creative ideas.
-        </p>
-        <p className="lg:text-xl md:text-lg text-[14px] leading-7 pt-12 text-textGray">
-          Campus placement statistics are encouraging with nearly 90% of the
-          eligible students getting placed in CSE & allied branches, with a
-          median salary of 7 lakhs and highest CTC of 17 to 24 lakhs. Reputed
-          DST and other agency funded, a few R&D Projects are being executed in
-          the institute. Active Academic tie-ups with some industries &
-          universities like Infosys, Ace-Micromatic, ICT Academy, Niveus, Nitte
-          University, MAHE-Manipal School of Information Sciences, Q-Spiders,
-          Kakunje Softwares, Ethnus etc. are helping the students and faculty
-          towards getting exposed to latest technical know-how and hands-on
-          experiences. Motivated and well guided faculty are into research
-          activity, with increasing Ph.D. registrations and Scopus indexed or web
-          of science or quartile ranked journal publications, in the recent past!
-          Infrastructure additions with modern facilities are happening in the
-          campus, in full swing
-        </p>
+        {/* Animated hidden section */}
+        <div className={`transition-all duration-700 ease-in-out overflow-hidden ${showMore ? "max-h-[5000px] opacity-100" : "max-h-0 opacity-0"}`}>
+          <p className="lg:text-xl text-lg  text-justify leading-7 pt-6 text-textGray">
+            All programs are approved by the *AICTE, New Delhi, and affiliated with **Visvesvaraya Technological University (VTU), Belagavi. As an
+            **autonomous institution, CEC now has the academic freedom to design innovative curricula aligned with **emerging industry needs, ensuring
+            students are future-ready. We take pride that all eligible B.E. programs are accredited by the **National Board of Accreditation (NBA)*
+            and the institution itself is accredited by *NAAC with an “A” grade (CGPA 3.24)*.
+          </p>
+          <p className="lg:text-xl text-lg  leading-7 pt-6 text-textGray">
+            Today, with nearly 2,000 students and 100+ faculty members (many with doctoral qualifications), CEC maintains a good student faculty in
+            line with national standards. Around 35% of our students reside in modern, eco-friendly hostels on campus. Our students consistently excel
+            in academics, securing *university ranks, gold medals, and 100% results* in leading branches, while also achieving national-level
+            recognition in cultural, technical, and sports arenas.
+          </p>
+          <p className="lg:text-xl text-lg  leading-7 pt-6 text-textGray">
+            CEC is home to a vibrant student life with *active clubs, IEEE student chapter, state-level fests, and impactful outreach programs*, all
+            fostering holistic growth and leadership. Our modern library, advanced laboratories, and digital learning centers provide students with
+            rich resources and hands-on experiences.
+          </p>
+
+          <p className="lg:text-xl text-lg  leading-7 pt-6 text-textGray">
+            Our *Training & Placement Cell* ensures career readiness through regular training in soft skills, communication, and aptitude, while the
+            *Entrepreneurship Development Cell (EDC)* nurtures innovation and startups. With strong industry partnerships and academic
+            tie-ups including Infosys, Ace Micromatic, ICT Academy, Niveus, MAHE, Q-Spiders, Ethnus, and more CEC bridges the gap between academia and
+            industry.
+          </p>
+
+          <p className="lg:text-xl text-lg  leading-7 pt-6 text-textGray">
+            Placement outcomes remain one of our strongest highlights, with *nearly 90% of eligible students placed in CSE and allied branches, a
+            **median salary of ₹7 LPA, and **highest CTC packages ranging from ₹17–24 LPA. In addition, several faculty and student-led **R\&D
+            projects funded by DST and other agencies* are in progress, showcasing our research potential.{" "}
+          </p>
+
+          <p className="lg:text-xl text-lg  leading-7 pt-6 text-textGray">
+            CEC continues to expand its infrastructure and learning opportunities, staying in step with the demands of *Industry 4.0* and beyond. With
+            a perfect balance of tradition, innovation, and excellence, Canara Engineering College is not just an institution it’s a launchpad for
+            *tomorrow’s engineers, innovators, and leaders*{" "}
+          </p>
+        </div>
       </div>
-    </div>
 
       {/* Toggle button */}
       <div className="text-center">
-      <button
-        aria-label={showMore ? "Read Less" : "Learn More"}
-        onClick={() => setShowMore(!showMore)}
-        className="pt-8 inline-flex items-center  cursor-pointer text-[#0066CC] font-medium"
-      >
-        {showMore ? "Read Less" : "Read More"}
-        {showMore ? (
-          <MdKeyboardArrowUp className="text-xl text-[#0066CC]" />
-        ) : (
-          <MdKeyboardArrowDown className="text-xl text-[#0066CC]" />
-        )}
-      </button>
+        <button
+          aria-label={showMore ? "Read Less" : "Learn More"}
+          onClick={() => setShowMore(!showMore)}
+          className="pt-8 inline-flex items-center  cursor-pointer text-[#0066CC] font-medium"
+        >
+          {showMore ? "Read Less" : "Read More"}
+          {showMore ? <MdKeyboardArrowUp className="text-xl text-[#0066CC]" /> : <MdKeyboardArrowDown className="text-xl text-[#0066CC]" />}
+        </button>
       </div>
     </div>
   );

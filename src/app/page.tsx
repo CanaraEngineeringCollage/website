@@ -19,7 +19,7 @@ export const metadata = {
     siteName: "Canara College",
     images: [
       {
-        url: "https://your-website-url.com/og-image.jpg", // update with your real OG image
+        url: "https://www.cec.edu.in/graphImage.png", // update with your real OG image
         width: 1200,
         height: 630,
         alt: "Canara College Campus",
@@ -46,7 +46,7 @@ export default function Home() {
       <section className="  lg:px-0 xl:px-0  py-2 ">
         <ExplorePrograms />
       </section>
-      <section className="bg-[#144A72] mt-6 lg:my-20 py-20">
+      <section className="bg-[#144A72] md:px-6 mt-6 lg:mt-20 md:mb-16 py-20">
         <VideoPlayer
           subTitle="Explore the campus with a virtual tour & discover one among the best colleges in the region."
           title="Experience the Campus"
@@ -55,13 +55,13 @@ export default function Home() {
           thumbnail="/youtubeThumbnails/Campus Tour-Thumbnail@300x.webp"
         />
       </section>
-      <section className="px-6  md:px-12 lg:px-26 xl:px-0 py-1 mb-10 ">
+      <section className="px-6  md:px-12 lg:px-26 xl:px-0 py-1 mb-10 lg:mb-8 ">
         <EmpoweringFutures />
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0 ">
         <TopRecruiters />
       </section>
-      <section className=" py-[4rem]">
+      <section className=" py-14 md:px-6 lg:px-0 lg:pb-[4rem]">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           // videoUrl="z-Axfq0HfZOLspAj"
@@ -69,13 +69,13 @@ export default function Home() {
           thumbnail="/youtubeThumbnails/Homepage-Thumbnail@300x.webp"
         />
       </section>
-      <section className="px-0 bg-white pt-5 pb-10 lg:mt-0 -mt-3">
+      <section className="px-0 bg-white pt-5 pb-12 lg:pb-10 lg:mt-0 -mt-3">
         <Testimonials />
       </section>
       <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0 py-0 md:mt-0 -mt-6">
         <HotOfThePress />
       </section>
-      <section className="bg-[#E5E5EA] lg:mt-0 -mt-12">
+      <section className="bg-[#E5E5EA] lg:mt-0 ">
         <FooterCard />
       </section>
     </>

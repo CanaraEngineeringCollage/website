@@ -150,7 +150,7 @@ const HowToApply = () => {
   const sectionRef = useRef(null);
 
   return (
-    <section className="max-w-7xl xl:max-w-[75%] mx-auto py-20 md:pb-10 md:pt-28 overflow-hidden" ref={sectionRef}>
+    <section className="max-w-7xl xl:max-w-[75%] mx-auto py-10 md:pb-10 md:pt-16 overflow-hidden" ref={sectionRef}>
       <div className="lg:max-w-[60%] mb-20">
         <motion.h1
           className="text-3xl text-[#1D1D1F] md:text-[40px] mb-3  lg2:text-5xl xl:text-6xl font-bold leading-tight"
@@ -183,7 +183,8 @@ const HowToApply = () => {
               onAnimationComplete={() => handleComplete(stepIdx * 4)}
             >
               <div className="flex items-center">
-                <svg
+                <svg className="w-16 h-16 xs:w-28 xs:h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 lg:w-auto lg:h-auto"
+
                   width={svgSizes[stepIdx].width}
                   height={svgSizes[stepIdx].height}
                   viewBox={svgSizes[stepIdx].viewBox}

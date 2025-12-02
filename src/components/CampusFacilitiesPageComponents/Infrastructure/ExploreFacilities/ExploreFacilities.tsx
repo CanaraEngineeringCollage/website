@@ -185,7 +185,7 @@ const ExploreFacilities = () => {
         isOpen,
       }}
     >
-      <section className="max-w-7xl mx-auto xl:max-w-[75%]  pb-16">
+      <section className="max-w-7xl mx-auto xl:max-w-[75%]  pb-16 lg:pb-10">
         <div className="lg:flex lg:justify-between md:pb-5 pb-5">
           <div className="flex">
             <h1 className="text-3xl md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-[#1D1D1F] md:pb-0">
@@ -220,8 +220,8 @@ const ExploreFacilities = () => {
                   />
                 </div>
                 <div className="p-8 text-center bg-white rounded-b-2xl ">
-                  <h2 className="text-[27px] font-bold text-black mb-2 line-clamp-2">{item.title}</h2>
-                  <span className="text-[#2997FF] inline-flex text-[17px] items-center hover:underline font-medium text-sm">
+                  <h2 className="text-[27px] font-bold xl:px-5 text-[#1D1D1F] mb-2 line-clamp-2">{item.title}</h2>
+                  <span className="text-primary inline-flex text-[17px] items-center hover:underline font-medium text-sm">
                     Read More <MdKeyboardArrowRight className="ml-1" />
                   </span>
                 </div>
@@ -271,7 +271,7 @@ const ExploreFacilities = () => {
                 </motion.div>
                 <motion.div variants={contentVariants} className="p-4 lg:px-20 mt-10">
                   <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">NextUp</h1>
-                  <h1 onClick={goToNextCard} className="text-[#2997FF] inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]">
+                  <h1 onClick={goToNextCard} className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]">
                     {pressData[(currentIndex + 1) % pressData.length]?.title || "First Card"}
                     <MdKeyboardArrowRightIcon className="ml-1 mt-1 text-[20px] md:text-[25px]" />
                   </h1>

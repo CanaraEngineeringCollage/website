@@ -1,10 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import privacyData from "../../../utils/privacyData/privacyData.json";
+import CustomSelect from "@/components/Common/CustomSelect/CustomSelect";
 
 const PrivacySection = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
-
+  const options = privacyData.map((item) => item.title);
   return (
     <section className="py-10 xl:py-20 text-[#1D1D1F] overflow-hidden">
       <div className="lg2:mx-24 mx-5">
@@ -13,13 +14,27 @@ const PrivacySection = () => {
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-12 mt-10">
           {/* Sidebar */}
-          <div className="col-span-3">
+         <div className="block md:hidden mb-6">
+            <CustomSelect
+              value={options[selectedIndex]}
+              onChange={(e) =>
+                setSelectedIndex(options.indexOf(e.target.value))
+              }
+              options={options}
+              className="w-full"
+            />
+          </div>
+
+          {/* ==== DESKTOP SIDEBAR ==== */}
+          <div className="hidden md:block col-span-3">
             {privacyData?.map((section, index) => (
               <h1
                 key={index}
                 onClick={() => setSelectedIndex(index)}
-                className={`border-b-2  pb-3 mb-3 border-border cursor-pointer ${
-                  selectedIndex === index ? "text-[#2884CA] font-bold text-[20px]" : "text-textGray font-[500] text-[20px]"
+                className={`border-b-2 pb-3 mb-3 border-border cursor-pointer transition-all ${
+                  selectedIndex === index
+                    ? "text-[#2884CA] font-bold text-[20px]"
+                    : "text-textGray font-[500] text-[20px]"
                 }`}
               >
                 {section.title}
@@ -30,7 +45,7 @@ const PrivacySection = () => {
           <div className="col-span-1"></div>
 
           {/* Main Content */}
-          <div className="col-span-8">
+         <div className="col-span-8 max-h-[70vh] md:max-h-[130vh] scrollable overflow-y-auto  pr-2">
             {privacyData[selectedIndex]?.data?.map((item, idx) => (
               <div key={idx} className="mb-6">
                 {item.datam?.map((value, i) => (
