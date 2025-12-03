@@ -51,7 +51,7 @@ const MandatoryDisclosure = () => {
           
           </div>
             <div className="col-span-1"></div>
-          <div className="col-span-8 mt-5 max-h-[40vh]  md:max-h-[140vh] scrollable overflow-y-auto  pr-2 lg:mt-0">
+          <div className="col-span-8 mt-5 max-h-[70vh]  md:max-h-[140vh] scrollable overflow-y-auto  pr-2 lg:mt-0">
             {selectedIndex === 4 ? (
               <>
                 <div className="overflow-x-auto w-full">

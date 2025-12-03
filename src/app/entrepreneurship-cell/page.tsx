@@ -34,7 +34,7 @@ const page = () => {
       <section>
         <Activities />
       </section>
-      <section className="pb-20 md-6 md:px-6 lg:px-0">
+      <section className="pb-12 lg:pb-20 md-6 md:px-6 lg:px-0">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           youtubeUrl="rk5KixNpftM"

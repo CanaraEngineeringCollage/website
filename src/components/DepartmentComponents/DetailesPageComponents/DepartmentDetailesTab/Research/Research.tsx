@@ -98,7 +98,7 @@ const Research: React.FC<ResearchProps> = ({ data ,deptName}) => {
               return (
                 <div
                   key={tIdx}
-                  className="rounded overflow-hidden border border-gray-200 w-full"
+                  className="rounded overflow-x-auto border border-gray-200 w-full"
                 >
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     {showHeader && (

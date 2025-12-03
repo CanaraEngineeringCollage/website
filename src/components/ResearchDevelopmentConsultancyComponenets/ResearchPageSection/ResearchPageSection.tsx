@@ -538,7 +538,7 @@ const RsdPageSection = () => {
             </div>
           </div>
           <div className="col-span-1"></div>
-          <div className="col-span-8 mt-3 md:mt-0 h-[30vh] md:h-[90vh] overflow-y-auto pr-2 scrollable">
+          <div className="col-span-8 mt-3 md:mt-0 max-h-[70vh] md:max-h-[90vh] overflow-y-auto pr-2 scrollable">
             {selectedIndex === 0 && <VisionMission />}
             {selectedIndex === 1 && <ResearchPolicies />}
             {selectedIndex === 2 && <ResearchBodies />}

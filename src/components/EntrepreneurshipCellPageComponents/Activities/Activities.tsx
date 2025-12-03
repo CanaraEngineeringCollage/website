@@ -58,8 +58,8 @@ const Activities = () => {
     <div className="max-w-7xl mx-auto lg:px-36 px-4 xl:max-w-[75%]  text-black">
       <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl leading-[1.2]  text-start font-bold text-[#1D1D1F]">Entrepreneurship Cell Activities</h1>
     <div className="overflow-x-auto pt-4 pb-10  ">
-  <div className="rounded-xl overflow-hidden">
-     <div className="rounded overflow-hidden border border-gray-200 w-full">
+  <div className="rounded-xl overflow-x-auto">
+     <div className="rounded overflow-x-auto border border-gray-200 w-full">
     <table className="w-full text-left text-[13px] md:text-[15px]">
       <thead className="bg-[#F3F8FC] text-[#2884CA]">
         <tr>
@@ -96,7 +96,7 @@ const Activities = () => {
         ))}
       </ul>
       <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  text-start font-bold text-[#1D1D1F] leading-[1.2] ">Other Achievements</h1>
-      <p className="lg:text-xl md:text-lg text-lg leading-7 py-10 text-textGray pt-4 pb-10">
+      <p className="lg:text-xl md:text-lg text-lg leading-7  text-textGray pt-4 lg:pb-10 lg:pt-5 pb-2">
         On 29th January, two students, Sumanth Shenoy and Aditya Pai, both members of IEEECan won the first place in Social Innovation stream in DEFI
         2017 - a Startup Event at TAPMI, Manipal, under the aegis of Manipal University Technology and Business Incubator (MUTBI), aimed at giving
         students an opportunity to pitch their venture idea and empower them through workshops and mentor-ship via association with NASSCOM and MUTBI.

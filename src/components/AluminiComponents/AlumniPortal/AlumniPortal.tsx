@@ -50,7 +50,7 @@ const AlumniPortal = () => {
             </div>
           </div>
           <div className="col-span-1"></div>
-          <div className="col-span-8 max-h-[40vh] lg:max-h-[100vh]  overflow-y-auto scrollable mt-10 md:mt-0">
+          <div className="col-span-8 max-h-[70vh] lg:max-h-[100vh]  overflow-y-auto scrollable mt-10 md:mt-0">
             {selectedIndex === 0 && <About data={alumniData[0].data} />}
             {selectedIndex === 1 && <Messages data={alumniData[1].data} />}
             {selectedIndex === 2 && <Messages data={alumniData[2].data} />}

@@ -5,7 +5,7 @@ const Glimpses = () => {
   const [flipbookLink, setFlipbookLink] = useState("");
 
   useEffect(() => {
-    fetch("https://apiserver.cec.edu.in/ppt")
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/ppt`)
       .then((res) => res.json())
       .then((data) => {
         setFlipbookLink(data.link); // extract heyzine link

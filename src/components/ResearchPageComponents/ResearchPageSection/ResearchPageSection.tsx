@@ -9,7 +9,7 @@ import Patents from "../TabComponents/Patents/Patents";
 
 
 const IframLinks = ({title,link}:{title?:string;link?:string}) => {return(
-  <div className="mb-10">
+  <div className="lg:mb-10">
     <h2 className="text-[24px] text-[#1d1d1f] font-bold  mb-2">{title}</h2>
     <ul className="space-y-1">
       <li className="flex items-center gap-2 text-[17px] text-textGray hover:text-blue-600 cursor-pointer">
@@ -82,7 +82,7 @@ const titles = ["Home", "Research Center", "Publications", "Grants","IPR/Patents
             </div>
             </div>
             <div className="col-span-1"></div>
-            <div className={`col-span-8 ${selectedIndex != 2 && "max-h-[50vh] md:max-h-[90vh]"} scrollable overflow-y-auto pr-2`}>
+            <div className={`col-span-8 ${selectedIndex != 2 && "max-h-[70vh] md:max-h-[90vh]"} scrollable overflow-y-auto pr-2`}>
               {selectedIndex === 0 && <Home />}
               {selectedIndex === 1 && <ResearchCenter />}
               {selectedIndex === 2 && <Publications />}
