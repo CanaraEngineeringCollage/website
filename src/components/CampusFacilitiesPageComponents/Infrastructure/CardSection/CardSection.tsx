@@ -84,7 +84,7 @@ function CardContent({ description, title }: CardContentProps) {
         {(description.topTitle || description.topDescription) && (
           <div>
             {description.topTitle && (
-              <h3 className="text-[31px] lg:text-[46px] leading-[1.1] lg:max-w-[70%] mb-5 font-bold">
+              <h3 className="text-[31px] lg:text-[46px] leading-[1.1] lg:max-w-[70%] mb-6 font-bold">
                 {description.topTitle}
               </h3>
             )}
@@ -121,7 +121,7 @@ function CardContent({ description, title }: CardContentProps) {
             <h3 className="text-[22px] text-textGray mb-3 font-bold">{description.middleTitle3}</h3>
             <ul className="list-disc pl-6 space-y-1">
               {description.middleDescription3.map((item, index) => (
-                <li key={index} className="text-xl text-textGray">{item}</li>
+                <li key={index} className="text-xl text-textGray leading-relaxed">{item}</li>
               ))}
             </ul>
           </div>
@@ -130,7 +130,7 @@ function CardContent({ description, title }: CardContentProps) {
         {/* MIDDLE 4 */}
         {description.middleTitle4 && description.middleDescription4?.length > 0 && (
           <div>
-            <h3 className="text-[22px] text-textGray mb-2 font-bold">{description.middleTitle4}</h3>
+            <h3 className="text-[22px] text-textGray mb-3 font-bold">{description.middleTitle4}</h3>
             <ul className="list-disc pl-6 space-y-1">
               {description.middleDescription4.map((item, index) => (
                 <li key={index} className="text-xl text-textGray leading-relaxed">{item}</li>
@@ -143,7 +143,7 @@ function CardContent({ description, title }: CardContentProps) {
         {(description.bottomTitile || description.subDescription3) && (
           <div>
             {description.bottomTitile && (
-              <h3 className="text-[32px] mb-2 font-bold">{description.bottomTitile}</h3>
+              <h3 className="text-[32px] mb-6 font-bold">{description.bottomTitile}</h3>
             )}
             {description.subDescription3 && (
               <p className="text-xl text-textGray leading-relaxed">{description.subDescription3}</p>

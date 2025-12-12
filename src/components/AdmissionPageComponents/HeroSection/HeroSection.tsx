@@ -8,7 +8,7 @@ import ContactFormModal from '@/components/Modal/Modal';
 const HeroSection = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   return (
-    <section className="relative w-full h-[90vh] lg:h-screen overflow-hidden">
+    <section className="relative w-full h-[55vh] md:h-[90vh] lg:h-screen overflow-hidden">
       {/* Background Image */}
       <Image
         src={bgImage}
