@@ -143,8 +143,17 @@ const FacultyMembersSection: React.FC = () => {
 }, [selectedCategory, selectedDepartment]);
 
   const sortedFaculty = [...facultyData].sort((a, b) => {
+    // 1. If A has priority but B does not, A comes first
+    if (a.priority && !b.priority) return -1;
+
+    // 2. If B has priority but A does not, B comes first
+    if (!a.priority && b.priority) return 1;
+
+    // 3. If BOTH have priority, sort by the priority number (Ascending: 1, 2, 3...)
     if (a.priority && b.priority) return a.priority - b.priority;
-    return new Date(a.createdAt as string).getTime() - new Date(b.createdAt as string).getTime();
+
+    // 4. Fallback: If NEITHER has priority, sort by creation date
+    return new Date(a.createdAt || 0).getTime() - new Date(b.createdAt || 0).getTime();
   });
 
   const generalTeaching = sortedFaculty.filter((item) => item.type !== "Technical Staff" && !item.subDepartment);
