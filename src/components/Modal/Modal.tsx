@@ -27,9 +27,10 @@ interface ContactFormModalProps {
   onClose: (isModalOpen: boolean) => void;
   className?: string;
   maxWidth?: string;
+  onSuccess?: () => void;
 }
 
-const ContactFormModal: React.FC<ContactFormModalProps> = ({ isOpen, onClose, className = "", maxWidth = "max-w-5xl" }) => {
+const ContactFormModal: React.FC<ContactFormModalProps> = ({ isOpen, onClose, className = "", maxWidth = "max-w-5xl", onSuccess }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [formData, setFormData] = useState({ fullName: "", email: "", phone: "", comments: "" });
   const [errors, setErrors] = useState({ fullName: "", email: "", phone: "", comments: "" });
@@ -102,7 +103,9 @@ const handleSubmit = async () => {
       setFormData({ fullName: "", email: "", phone: "", comments: "" });
       setTouched({ fullName: false, email: false, phone: false, comments: false });
       setErrors({ fullName: "", email: "", phone: "", comments: "" });
-
+if (onSuccess) {
+            onSuccess();
+        }
       onClose(false);
     } catch (error) {
       console.error("Error submitting counselling form:", error);

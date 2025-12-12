@@ -2,6 +2,7 @@ import ExploreFacilities from "@/components/CampusFacilitiesPageComponents/Infra
 import TopRecruiters from "@/components/Common/TopRecruiters/TopRecruiters";
 import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 import AboutDepartment from "@/components/TrainingPlacementPageComponents/AboutDepartment/AboutDepartment";
+
 import DepartmentFaculty from "@/components/TrainingPlacementPageComponents/DepartmentFaculty/DepartmentFaculty";
 import HeroSection from "@/components/TrainingPlacementPageComponents/HeroSection/HeroSection";
 import HighlightsSection from "@/components/TrainingPlacementPageComponents/HighlightsSection/HighlightsSection";

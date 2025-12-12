@@ -33,7 +33,7 @@ const CourseOutCome = ({ staticData, deptName }: { staticData: any; deptName: st
   };
 
   return (
-    <div className="lg:px-24 text-textGray text-[17px]">
+    <div className="lg:pl- text-textGray text-[17px]">
       <h2 className="text-xl mb-5 font-bold">Course Outcomes (CO)</h2>
 
       {/* Dropdown filters */}

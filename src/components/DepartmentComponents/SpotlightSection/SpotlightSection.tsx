@@ -1,6 +1,7 @@
 "use client";
-import Image from "next/image";
 import ContactFormModal from "@/components/Modal/Modal";
+import Image from "next/image";
+
 import { useState } from "react";
 
 

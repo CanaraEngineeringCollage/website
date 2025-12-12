@@ -75,7 +75,7 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
         return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime();
       });
 
-      setFacultyData(sortedData.slice(0, 10)); // top 10
+      setFacultyData(sortedData); // top 10
     } catch (err) {
       console.error("Error fetching faculty:", err);
     } finally {
@@ -136,14 +136,21 @@ const handlePrev = () => {
     setIsModalOpen(false);
     setSelectedMember(null);
   };
+
+ const isAIML =
+    departmentName === "Artificial Intelligence & Machine Learning" ||
+    departmentName === "Artificial Intelligence and Machine Learning";
+  
   return (
     <section className="py-16 px-6 md:px-12 max-w-7xl mx-auto my-20 xl:max-w-[75%] bg-[#F5F5F7] rounded-3xl">
       <div className="mx-auto py-10 lg1:flex hidden flex-col-reverse md:flex-row items-center justify-between gap-10">
         <div className="max-w-md space-y-44">
           <div>
-            <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-gray-900 leading-tight">
-              Get to Know Our <br />
-              <span className="">Department’s Faculty</span>
+        <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-gray-900 leading-tight">
+              {isAIML ? "Admin Team" : "Get to Know Our"} <br />
+              <span className="">
+                {isAIML ? "With Faculty" : "Department’s Faculty"}
+              </span>
             </h2>
             <p className="text-gray-700 mt-6 text-lg">
               Our admin team is the backbone of our institution, ensuring seamless operations with their expertise, dedication & commitment to
@@ -236,9 +243,11 @@ const handlePrev = () => {
       <div className="max-w-7xl mx-auto flex flex-col items-center justify-between gap-10 lg1:hidden">
         <div className="max-w-xl space-y-44">
           <div className="text-center">
-            <h2 className="text-3xl lg:text-4xl mb-3 md:text-4xl font-bold text-gray-900 leading-tight">
-              Get to Know Our <br />
-              <span className="">Department’s Faculty</span>
+        <h2 className="text-3xl lg:text-4xl mb-3 md:text-4xl font-bold text-gray-900 leading-tight">
+              {isAIML ? "Admin Team" : "Get to Know Our"} <br />
+              <span className="">
+                {isAIML ? "With Faculty" : "Department’s Faculty"}
+              </span>
             </h2>
             <p className="text-gray-700 text-lg">
               Our admin team is the backbone of our institution, ensuring seamless operations with their expertise, dedication & commitment to

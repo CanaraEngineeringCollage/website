@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import bgImage from "../../../../public/admissionPageImages/hero.png"
 import bgImageMobile from "../../../../public/admissionPageImages/heroMobile.png"
-import ContactFormModal from '@/components/Modal/Modal'
+import ContactFormModal from '@/components/Modal/Modal';
 
 const HeroSection = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)

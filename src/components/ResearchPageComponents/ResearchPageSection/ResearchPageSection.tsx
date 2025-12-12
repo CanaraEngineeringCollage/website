@@ -89,8 +89,8 @@ const titles = ["Home", "Research Center", "Publications", "Grants","IPR/Patents
               {selectedIndex === 3 && <Grants />}
               {/* {selectedIndex === 4 && <Activities />} */}
               {selectedIndex === 4 && <Patents />}
-              {selectedIndex === 5 && <IframLinks link="https://apiserver.cec.edu.in/files/R&D%20Cell" title="R&D Cell"/>}
-              {selectedIndex === 6 && <IframLinks link="https://apiserver.cec.edu.in/files/IPR%20Cell" title="IPR Cell"/>}
+              {selectedIndex === 5 && <IframLinks link="https://apiserver.cec.edu.in/files/RCC" title="R&D Cell"/>}
+              {selectedIndex === 6 && <IframLinks link="https://apiserver.cec.edu.in/files/SMC" title="IPR Cell"/>}
             </div>
           </div>
         </div>

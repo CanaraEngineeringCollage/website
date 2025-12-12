@@ -1,24 +1,46 @@
+"use client"; // Required for state management
+import ContactFormModal from "@/components/Modal/Modal";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { HiDownload } from "react-icons/hi";
 
+
 const AboutDepartment = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Function to programmatically download the file
+  const triggerFileDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/brochures/Placement Brochure Design.pdf";
+    link.setAttribute("download", "Placement Brochure Design.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-    <section className=" pb-5 md:pb-2   max-w-7xl xl:max-w-[75%] mx-auto lg:px-32">
+    <section className="pb-5 md:pb-2 max-w-7xl xl:max-w-[75%] mx-auto lg:px-32">
+      {/* Include Modal Component */}
+      <ContactFormModal 
+        isOpen={isModalOpen} 
+        onClose={setIsModalOpen} 
+        onSuccess={triggerFileDownload} // Pass the download logic here
+      />
+
       <div className="">
-        <div className="flex justify-between items-center  pb-5 lg:pb-10">
-          <h1 className="text-3xl md:text-[40px] lg2:text-[46.5px] xl:text-6xl leading-[1.2]  xl:max-w-4xl  font-bold text-[#1D1D1F] ">
+        <div className="flex justify-between items-center pb-5 lg:pb-10">
+          <h1 className="text-3xl md:text-[40px] lg2:text-[46.5px] xl:text-6xl leading-[1.2] xl:max-w-4xl font-bold text-[#1D1D1F] ">
             Training &amp; Placement at <br className="hidden lg:block"/> Canara Engineering College
           </h1>
           <div>
-            <a
-              href="/brochures/Placement Brochure Design.pdf"
-              download
+            {/* Changed from <a> to <button> to open Modal */}
+            <button
+              onClick={() => setIsModalOpen(true)}
               aria-label="Download Brochure"
-              className="text-[#2884CA] hidden  font-bold text-[17px] bg-[#d9ebff] px-6 py-2 cursor-pointer rounded-3xl lg:inline-flex gap-3"
+              className="text-[#2884CA] hidden font-bold text-[17px] bg-[#d9ebff] px-6 py-2 cursor-pointer rounded-3xl lg:inline-flex gap-3 items-center"
             >
               Download Brochure <HiDownload className="text-[24px] font-extrabold" />
-            </a>
+            </button>
           </div>
         </div>
         <p className="text-textGray text-lg lg:text-[20px] pb-5">
@@ -70,15 +92,16 @@ const AboutDepartment = () => {
           Placement Portal
         </Link>
       </div>
+      
       <div className="flex justify-center lg:hidden">
-        <a
-          href="/brochures/Placement Brochure Design.pdf"
-          download
+        {/* Mobile Button - Changed from <a> to <button> to open Modal */}
+        <button
+          onClick={() => setIsModalOpen(true)}
           aria-label="Download Brochure"
-          className="text-[#2884CA] lg:hidden mt-2 font-bold text-[17px] bg-[#d9ebff] px-6 py-2 cursor-pointer rounded-3xl inline-flex gap-3"
+          className="text-[#2884CA] lg:hidden mt-2 font-bold text-[17px] bg-[#d9ebff] px-6 py-2 cursor-pointer rounded-3xl inline-flex gap-3 items-center"
         >
           Download Brochure <HiDownload className="text-[24px] font-extrabold" />
-        </a>
+        </button>
       </div>
     </section>
   );

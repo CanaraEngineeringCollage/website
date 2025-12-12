@@ -56,8 +56,9 @@ const ResearchBodies = () => (
     <h2 className="text-[24px] text-[#1d1d1f] font-bold mb-2">Research Bodies & Committees</h2>
     <ul className="list-disc ml-5 space-y-2">
       <li>
-        <strong>Research and Consultancy Cell:</strong> Review and approve research proposals, guide research policies, monitor funded projects, and
-        ensure all research adheres to national ethical guidelines.
+        <strong>Research Advisory Committee (RAC):</strong> Review and
+approve research proposals, guide research policies, monitor funded projects, and
+ensure all research adheres to national ethical guidelines.
         <br />
         <strong>Chairperson:</strong> Principal
         <br />
@@ -65,7 +66,7 @@ const ResearchBodies = () => (
         <ul className="list-disc ml-5 space-y-1">
           <li>Dean (R&D)</li>
           <li>Chief R&D Coordinator</li>
-          <li>Faculty Members (AIML, CSE, ECE, ISE, CSD, CSBS, S&H)</li>
+          <li>Senior Faculty Member</li>
           <li>Industry Expert</li>
         </ul>
       </li>
@@ -343,7 +344,7 @@ const DepartmentHighlights = () => (
       Design, Robotics, Control & Automation.
     </p>
     <p>
-      <strong>Research Guides:</strong> Dr. Ganesh V Bhat
+      <strong>Research Guides:</strong> Dr. Ganesh V Bhat, Dr. Dayananda G K
     </p>
     <p>
       <strong>Student Research & Achievements:</strong>
@@ -438,18 +439,11 @@ const DepartmentHighlights = () => (
 // Research Output Section
 const ResearchOutput = () => (
   <div className="text-textGray text-[17px] ">
-    <h2 className="text-[24px] text-[#1d1d1f] font-bold mb-2">Research Output Summary (2020–2025)</h2>
-    <p className="mb-3">
-      <strong>Aggregate metrics (2020 to 2025):</strong>
-    </p>
-    <ul className="list-disc ml-5 space-y-1">
-      <li>International journal publications: 233</li>
-      <li>National journal publications: 13</li>
-      <li>Patents published: 157</li>
-      <li>Research grants sanctioned: 7</li>
-      <li>International conference publications: 184</li>
-      <li>National conference publications: 5</li>
-      <li>Book chapters: 13</li>
+    <h2 className="text-[24px] text-[#1d1d1f] font-bold mb-4">Research Output Summary (2020–2025)</h2>
+   <img src="https://apiserver.cec.edu.in/files/rdcc" className="" alt="" />
+    <ul className="list-disc ml-5 mt-3 space-y-1">
+      <li>Number of patents published/granted (published/granted): 123</li>
+      <li>External Project funds received (total amount): ₹31,41,764</li>
     </ul>
   </div>
 );
