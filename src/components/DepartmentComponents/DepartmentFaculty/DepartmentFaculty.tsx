@@ -147,9 +147,9 @@ const handlePrev = () => {
         <div className="max-w-md space-y-44">
           <div>
         <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-gray-900 leading-tight">
-              {isAIML ? "Admin Team" : "Get to Know Our"} <br />
+              Get to Know Our <br />
               <span className="">
-                {isAIML ? "With Faculty" : "Department’s Faculty"}
+                Department’s Faculty
               </span>
             </h2>
             <p className="text-gray-700 mt-6 text-lg">

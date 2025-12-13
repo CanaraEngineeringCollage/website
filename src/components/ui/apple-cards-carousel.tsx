@@ -99,7 +99,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     <CarouselContext.Provider value={{ onCardClose: handleCardClose, currentIndex }}>
       <div className="relative w-full">
         <div
-          className="flex w-full overflow-x-scroll overscroll-x-auto py-10 md:py-20 scroll-smooth [scrollbar-width:none]"
+          className="flex w-full overflow-x-scroll overscroll-x-auto pb-10 md:pb-20 pt-5 md:pt-12 scroll-smooth [scrollbar-width:none]"
           ref={carouselRef}
           onScroll={checkScrollability}
         >
@@ -289,7 +289,7 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
       <MotionButton
         layoutId={layout ? `card-${card.title}` : undefined}
         onClick={handleOpen}
-        className="rounded-3xl bg-white h-[30rem] w-80 md:h-[45rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10"
+        className="rounded-3xl bg-white h-[30rem] w-80 md:h-[30rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10"
         whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
         whileTap={{ scale: 0.98 }}
       >

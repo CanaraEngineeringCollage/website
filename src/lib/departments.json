@@ -52285,7 +52285,7 @@
     },
     "research": [
       {
-        "heading": "Research Areas",
+        "heading": "RESEARCH AREAS",
         "points": [
           "Artificial Intelligence",
           "Machine Learning",
@@ -52325,7 +52325,7 @@
         "moreDetailesTable": []
       },
       {
-        "heading": "Faculty Pursuing Doctoral Studies",
+        "heading": "FACULTY PURSUING DOCTORAL STUDIES",
         "points": [],
         "imageUrl": "",
         "table": [
@@ -52374,18 +52374,20 @@
         "data": [
           {
             "image": [
+              "https://apiserver.cec.edu.in/files/magazin2025AiMl",
               "https://apiserver.cec.edu.in/files/DARPANA%20V3%20ISSUE%202%20-%202024",
               "https://apiserver.cec.edu.in/files/DARPANA%20V3%20ISSUE%201%20-%202024",
               "https://apiserver.cec.edu.in/files/DARPANA%20V2%20ISSUE%202%20-%202023",
               "https://apiserver.cec.edu.in/files/DARPANA%20V2%20ISSUE%201%20-%202023"
             ],
             "linkUrl": [
+              "/magazine/ai/2025-V4-ISSUE1.pdf-1.pdf",
               "/magazine/ai/2024-V3-ISSUE2.pdf",
               "/magazine/ai/2024-V3-ISSUE1.pdf",
               "/magazine/ai/2023-V2-ISSUE2-1.pdf",
               "/magazine/ai/2023-V2-ISSUE1-1.pdf"
             ],
-            "title": ["DARPANA V3 ISSUE 2 - 2024", "DARPANA V3 ISSUE 1 - 2024", "DARPANA V2 ISSUE 2 - 2023", "DARPANA V2 ISSUE 1 - 2023"]
+            "title": ["DARPANA V4 ISSUE 1 - 2025","DARPANA V3 ISSUE 2 - 2024", "DARPANA V3 ISSUE 1 - 2024", "DARPANA V2 ISSUE 2 - 2023", "DARPANA V2 ISSUE 1 - 2023"]
           }
         ]
       }
@@ -52487,23 +52489,23 @@
     ],
     "studentAcheivemtents": [
       {
-        "title": "University Results",
+        "title": "UNIVERSITY RESULTS",
         "imageUrl": "https://apiserver.cec.edu.in/files/academic-events"
       },
       {
-        "title": "Certification Courses",
+        "title": "CERTIFICATION COURSES",
         "imageUrl": "https://apiserver.cec.edu.in/files/onlinecartificates"
       },
       {
-        "title": "Awards in Events",
+        "title": "AWARDS IN EVENTS",
         "imageUrl": "https://apiserver.cec.edu.in/files/awards"
       },
       {
-        "title": "Participation in Technical Events",
+        "title": "PARTICIPATION IN TECHNICAL EVENTS",
         "imageUrl": "https://apiserver.cec.edu.in/files/Participation%20in%20Technical%20Events%20AI"
       },
       {
-        "title": "Participation in non Technical Events",
+        "title": "PARTICIPATION IN NON TECHNICAL EVENTS",
         "imageUrl": "https://apiserver.cec.edu.in/files/nontechevents"
       }
     ],

@@ -28,7 +28,7 @@ const Peo = ({ data, deptName }: { data: PeoProps; deptName: string }) => {
       
       {data?.programEducation && deptName === "Mechanical Engineering" && <h3 className='mb-3 md:text-lg  text-[14px] leading-7  text-textGray'>Graduates of Mechanical Engineering program will:</h3>}
       
-      {data?.programEducation && <ul className="list-decimal pl-5 md:text-lg text-justify  text-[14px] leading-7 pt-2 text-textGray">
+      {data?.programEducation && <ul className="list-decimal pl-7 md:text-lg text-justify  text-[14px] leading-7 pt-2 text-textGray">
         {data?.programEducation?.map((item, index) => (
           <li key={index} className="mb-2">{item}</li>
         ))}
@@ -39,7 +39,7 @@ const Peo = ({ data, deptName }: { data: PeoProps; deptName: string }) => {
       
       {deptName !== "Mechanical Engineering" ? <h3 className='mb-3 md:text-lg  text-[14px] leading-7  text-textGray'>Engineering graduates in <span className='font-bold'>{`${deptName}`}</span> will be able to:</h3> : <h3 className='mb-3 md:text-lg  text-[14px] leading-7  text-textGray'>Engineering graduates will be able to:</h3>}
       
-      <ul className="list-disc pl-5 md:text-lg text-justify  text-[14px] leading-7  text-textGray">
+      <ul className="list-decimal pl-7 md:text-lg text-justify  text-[14px] leading-7  text-textGray">
         {data?.programOutComes?.map((item, index) => {
           const colonIndex = item.indexOf(':');
           if (colonIndex !== -1) {
@@ -59,7 +59,7 @@ const Peo = ({ data, deptName }: { data: PeoProps; deptName: string }) => {
       {/* --- PSO Section --- */}
       {data?.programSpecific && <h1 className="text-[20px] font-bold mt-5 mb-2 text-textGray">Program Specific Outcomes (PSO)</h1>}
       
-      {data?.programSpecific && <ul className="list-decimal text-justify pl-5 md:text-lg  text-[14px] leading-7  text-textGray">
+      {data?.programSpecific && <ul className="list-decimal text-justify pl-7 md:text-lg  text-[14px] leading-7  text-textGray">
         {data?.programSpecific?.map((item, index) => {
           const colonIndex = item.indexOf(':');
           if (colonIndex !== -1) {
