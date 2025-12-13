@@ -5,12 +5,12 @@ import visionImage3 from "../../../../../public/aboutPageImages/MissionVision/vi
 import visionImage4 from "../../../../../public/aboutPageImages/MissionVision/visionImage4.webp";
 export default function MissionVision() {
   return (
-      <div className="max-w-7xl pt-14 pb-24 xl:max-w-[75%] mx-auto grid grid-cols-1 lg:grid-cols-12 lg:gap-20">
+      <div className="max-w-7xl pt-14 pb-16 lg:pb-20 xl:max-w-[75%] mx-auto grid grid-cols-1 lg:grid-cols-12 lg:gap-20">
         {/* Mission Card */}
         <div className="bg-white col-span-7 overflow-hidden rounded-2xl shadow p-10 lg:p-18 space-y-6">
           <h2 className="text-3xl lg:text-5xl text-center lg:text-start font-bold text-[#1D1D1F] mb-16">Our Mission</h2>
 
-          <div className="grid grid-rows-3 gap-2 h-full pb-16">
+       <div className="flex flex-col gap-6   justify-center">
 
             {/* Item 1 */}
             <div className="flex gap-10 flex-col lg:flex-row text-center lg:text-start items-center">

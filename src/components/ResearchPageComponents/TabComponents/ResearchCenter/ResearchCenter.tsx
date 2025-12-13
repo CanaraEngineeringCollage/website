@@ -1,6 +1,8 @@
 import React from "react";
 
 const research = ["Organic Chemistry", "Inorganic Chemistry", "Corrosion Science"];
+
+const researchCs=["Machine Learning","Image Processing","Web Services","Cloud Computing","Computer Networks","Wireless Sensor Networks"]
 const detailes = [
   "Boiling Water Bath",
   "Digital melting point apparatus",
@@ -117,11 +119,11 @@ const detailes2 = [
 
 const ResearchCenter = () => {
   return (
-    <div className=" text-[#86868B] mx-5 text-[17px]">
-      <h1 className="text-[24px] text-[#1d1d1f] font-bold mb-2">Dept. of Chemistry</h1>
+    <div className=" text-textGray  text-[17px]">
+      <h1 className="text-[20px] text-[#1d1d1f] font-bold mb-2">Dept. of Chemistry</h1>
       <div className="space-y-8">
         <div>
-          <h1 className="text-xl font-bold  text-textGray mb-2">Domain of Research</h1>
+          <h1 className="text-lg font-bold  text-textGray mb-2">Domain of Research</h1>
           <ul className="list-disc ml-5 text-lg">
             {research.map((item) => (
               <li>{item}</li>
@@ -162,7 +164,28 @@ const ResearchCenter = () => {
             <li className="font-bold mt-5">Dr. Priya V. Frank</li>
             <li className="list-disc ml-10">Lavanya D. Kateel - Completed</li>
           </ul>
+
+            <ul className=" ml-5 md:text-lg  text-[14px] leading-7  text-textGray">
+            <li className="font-bold mt-5">Dr. Karthik Pai B H</li>
+            <li className="list-disc ml-10">Mr. Abhishek S. Rao – Completed</li>
+             <li className="list-disc ml-10">Mr. Vasudeva Pai – Ongoing</li>
+               <li className="font-bold ">Dr. Gurudeva Shastri Hiremath</li>
+
+          </ul>
         </div>
+        <div>
+            <h1 className="text-[20px] text-[#1d1d1f] font-bold mb-2">Dept. of Computer Science &amp; Engineering</h1>
+      <div className="space-y-8">
+      
+          <h1 className="text-lg font-bold  text-textGray mb-2">Domain of Research</h1>
+          <ul className="list-disc ml-5 text-lg">
+            {researchCs.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </div>
+        </div>
+        
         <div className="overflow-x-auto">
           <h1 className="text-xl font-bold  text-textGray mb-2">Research Facility</h1>
            <div className="rounded overflow-hidden border border-gray-200 w-full">

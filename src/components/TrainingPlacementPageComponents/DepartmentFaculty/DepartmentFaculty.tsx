@@ -21,9 +21,8 @@ const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
   const base64 = btoa(binary);
   return `data:image/jpeg;base64,${base64}`;
 };
-export default function DepartmentFaculty({ heading, description, facultyData }: { heading: string, description: string, facultyData: any }) {
+export default function DepartmentFaculty({ heading, description,  }: { heading: string, description: string }) {
 
-  console.log("facl", facultyData);
 
 
   const [data, setData] = useState<CouncilMember[]>([]);
@@ -31,42 +30,101 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [selectedMember, setSelectedMember] = useState<CouncilMember | null>(null);
   const router = useRouter();
+
+
+
+
+
+const [facultyData, setFacultyData] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+
+useEffect(() => {
+  const fetchFacultyData = async () => {
+    try {
+      setLoading(true);
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent("Placement Team")}&all=true`
+      ); // ✅ Filter by department in URL
+      if (!res.ok) throw new Error("Failed to fetch faculty data");
+
+      const data: any[] = await res.json(); // ✅ Array of Placement Team faculties
+
+      // Sort (no need to filter)
+      const placementTeam = data
+        .sort((a, b) => {
+          if (a.priority && b.priority) return a.priority - b.priority;
+          if (a.priority && !b.priority) return -1;
+          if (!a.priority && b.priority) return 1;
+          return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime();
+        })
+        .slice(0, 10); // take first 10 after sorting
+
+      setFacultyData(placementTeam);
+    } catch (error) {
+      console.error("Error fetching faculty data:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  fetchFacultyData();
+}, []);
+
   useEffect(() => {
-    setData(governingCounsilData);
-  }, []);
+    setData(facultyData);
+  }, [facultyData]);
 
-  const visibleMembers = facultyData.slice(startIndex, startIndex + 2);
-  const visibleMembersMobile = facultyData.slice(startIndex, startIndex + 1);
+ 
+  
 
-  const handleNext = () => {
-    if (startIndex + 2 < facultyData.length) {
-      setStartIndex(startIndex + 2);
-    }
+const [isMobile, setIsMobile] = useState(false);
+
+useEffect(() => {
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 768); // md breakpoint
   };
+  handleResize();
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
 
-  const handlePrev = () => {
-    if (startIndex - 2 >= 0) {
-      setStartIndex(startIndex - 2);
-    }
-  };
+// Show different number of cards based on screen size
+const visibleMembers = isMobile
+  ? data?.slice(startIndex, startIndex + 1)
+  : data?.slice(startIndex, startIndex + 2);
+
+// Handle next / previous navigation
+const handleNext = () => {
+  const step = isMobile ? 1 : 2;
+  if (startIndex + step < data.length) {
+    setStartIndex(startIndex + step);
+  }
+};
+
+const handlePrev = () => {
+  const step = isMobile ? 1 : 2;
+  if (startIndex - step >= 0) {
+    setStartIndex(startIndex - step);
+  }
+};
 
 
   return (
-    <section className="py-16 px-6 md:px-12 max-w-7xl mx-auto mt-20 lg:mt-20 mb-16  xl:max-w-[75%] bg-[#F5F5F7] rounded-3xl">
-      <div className=" mx-auto lg:flex hidden  flex-col-reverse md:flex-row items-center justify-between gap-10">
+    <section className="py-16 px-6 md:px-12 max-w-7xl mx-auto mt-20 lg:mt-12 mb-16 lg:mb-8  xl:max-w-[75%] bg-[#F5F5F7] rounded-3xl">
+      <div className=" mx-auto lg1:flex hidden  flex-col-reverse md:flex-row items-center justify-between gap-10">
         <div className="max-w-md space-y-44">
           <div>
-            <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-gray-900 leading-[1.1]">{heading}</h2>
+            <h2 className="text-3xl lg:text-4xl md:text-4xl text-start font-bold text-[#1D1D1F] leading-[1.1]">{heading}</h2>
             <p className="text-gray-700 text-lg mt-6">
               {description}
             </p>
           </div>
           <div className="flex items-center justify-between gap-4">
-            {heading != "Meet Our Admissions Team" && <Link href="/about/educators-administrators"><button
-              aria-label="Meet more of our Faculty"
+            {heading != "Meet Our Admissions Team" && <Link href="/about/educators-administrators?category=placement"><button
+              aria-label="Meet the Team"
               className="bg-[#d0e2f8] text-black text-block  px-6 py-3 rounded-full text-[14px] font-medium "
             >
-              Meet more of our Faculty
+              Meet the Team
             </button></Link>}
             <div className="flex items-center gap-3">
               <button
@@ -80,7 +138,7 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
               <button
                 aria-label="Next Faculty Member"
                 onClick={handleNext}
-                disabled={startIndex + 2 >= facultyData.length}
+                disabled={startIndex + 2 >= data.length}
                 className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full  text-[#616164]  transition disabled:opacity-30"
               >
                 <MdKeyboardArrowRight size={32} />
@@ -89,18 +147,35 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
           </div>
         </div>
 
-        <div className="flex w-full sm:grid-cols-2 gap-6">
-          {(visibleMembers || []).map((member, index) => (
+        <div className="grid grid-cols-1 w-full md:grid-cols-2 sm:grid-cols-2 justify-items-end gap-6">
+           {loading
+    ? // 🌟 Skeleton Loading (when fetching faculty data)
+      Array.from({ length: 2 }).map((_, index) => (
+        <div
+          key={index}
+          className="relative w-full max-w-[309px] aspect-[2/3] rounded-xl overflow-hidden bg-gray-200 animate-pulse flex flex-col items-center shadow-md"
+        >
+          {/* Image skeleton */}
+        <div className="absolute inset-0 bg-[#6DC0EB]/40" />
+    <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB]/70 via-[#6DC0EB]/40 to-transparent" />
+    <div className="absolute bottom-4 left-0 w-full px-3 space-y-2">
+      <div className="h-5 bg-white/50 rounded w-3/4"></div>
+      <div className="h-4 bg-white/30 rounded w-1/3"></div>
+    </div>
+        </div>
+      ))
+    :(visibleMembers || [])?.map((member, index) => (
             <div
+              onClick={() => {
+                    setSelectedMember(member);
+                    setIsModalOpen(true);
+                  }}
               key={index}
               className="relative cursor-pointer w-full max-w-[309px] lg2:h-[450px] lg:h-[350px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md"
             >
               {/* Image fills card completely */}
               <Image
-                onClick={() => {
-                  setSelectedMember(member);
-                  setIsModalOpen(true);
-                }}
+               
                 src={bufferToBase64(member.avatar)}
                 alt={member.name}
                 fill
@@ -112,11 +187,11 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
 
               {/* Content */}
               <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full">
-                <h2 className="text-base sm:text-lg md:text-xl font-bold leading-tight">
+                <h2 className="lg2:text-[18px] lg:text-[16px] md:text-[11px] text-[18px] font-bold leading-tight">
                   {member.name}
                 </h2>
                 <p className="text-xs sm:text-sm md:text-base leading-snug break-words">
-                  {member.roles.map((role, idx) => (
+                  {member.roles&&member.roles.map((role, idx) => (
                     <span key={idx}>
                       {role.title}
                       {role.organization && (
@@ -129,11 +204,8 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
                   ))}
                 </p>
                 <p
-                  onClick={() => {
-                    setSelectedMember(member);
-                    setIsModalOpen(true);
-                  }}
-                  className="text-xs sm:text-sm md:text-base font-bold flex items-center mt-1"
+                
+                  className=" lg2:text-[16px]  md:text-[11px] text-[16px] font-bold flex items-center mt-1"
                 >
                   View Profile
                   <MdKeyboardArrowRight className="ml-1 text-lg md:text-xl" />
@@ -144,29 +216,49 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
           ))}
         </div>
       </div>
-      <div className="max-w-7xl mx-auto flex flex-col items-center justify-between gap-10 lg:hidden  ">
+      <div className="max-w-7xl mx-auto flex flex-col items-center justify-between gap-10 lg1:hidden  ">
         <div className="max-w-md space-y-44">
           <div>
-            <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-center text-gray-900 leading-tight">Get to Know Our Department’s Faculty</h2>
+            <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-center mb-5 text-gray-900 leading-tight">{heading}</h2>
             <p className="text-gray-700 text-lg text-center">
-              Our faculty members are the heart of our department, guiding & inspiring students with their expertise, dedication & passion for
-              education.
+              {description}
             </p>
           </div>
         </div>
 
-        <div className="flex justify-center w-full">
-          {visibleMembersMobile.map((member, index) => (
+        <div className="flex justify-center  w-full gap-6">
+                  {loading
+    ? // 🌟 Skeleton Loading (when fetching faculty data)
+      Array.from({ length: 1 }).map((_, index) => (
+          <div
+          key={index}
+          className="relative cursor-pointer w-full max-w-[309px] h-[400px] md:h-[420px] rounded-xl overflow-hidden bg-[#6DC0EB]/40 animate-pulse flex flex-col items-center shadow-md"
+        >
+          {/* Image skeleton */}
+          <div className="absolute inset-0 bg-[#6DC0EB]/50" />
+
+          {/* Gradient area to mimic card footer */}
+          <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB]/80 via-[#6DC0EB]/50 to-transparent" />
+
+          {/* Text placeholders */}
+          <div className="absolute bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full space-y-2 z-10">
+            <div className="h-5 bg-white/60 rounded w-3/4"></div>
+            <div className="h-4 bg-white/40 rounded w-1/3"></div>
+          </div>
+        </div>
+      ))
+    : visibleMembers?.map((member, index) => (
             <div
+              onClick={() => {
+                    setSelectedMember(member);
+                    setIsModalOpen(true);
+                  }}
               key={index}
-              className="relative cursor-pointer w-full max-w-[309px] h-[270px] md:h-[420px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md"
+              className="relative cursor-pointer w-full max-w-[309px] h-[400px] md:h-[420px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md"
             >
               {/* Image fills card completely */}
               <Image
-                onClick={() => {
-                  setSelectedMember(member);
-                  setIsModalOpen(true);
-                }}
+             
                 src={bufferToBase64(member.avatar)}
                 alt={member.name}
                 fill
@@ -178,11 +270,11 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
 
               {/* Content */}
               <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full text-start">
-                <h2 className="text-[10px] sm:text-lg md:text-xl font-bold leading-tight">
+                <h2 className="lg2:text-[18px] lg:text-[16px] md:text-[11px] text-[18px] font-bold leading-tight">
                   {member.name}
                 </h2>
                 <p className="text-xs sm:text-sm md:text-base leading-snug break-words ">
-                  {member.roles.map((role, idx) => (
+                  {member?.roles?.map((role, idx) => (
                     <span key={idx}>
                       {role.title}
                       {role.organization && (
@@ -195,11 +287,8 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
                   ))}
                 </p>
                 <p
-                  onClick={() => {
-                    setSelectedMember(member);
-                    setIsModalOpen(true);
-                  }}
-                  className="text-[10px] sm:text-sm md:text-base font-bold flex items-center justify-start mt-1 " 
+                
+                  className="font-bold lg2:text-[16px]  md:text-[11px] text-[16px] font-bold flex items-center justify-start mt-1 " 
                 >
                   View Profile
                   <MdKeyboardArrowRight className="ml-1 text-sm md:text-xl" />
@@ -209,11 +298,11 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
           ))}
         </div>
         <div className="flex flex-col items-center gap-10">
-          <Link href="/about/educators-administrators"> <button
+          <Link href="/about/educators-administrators?category=placement"> <button
             aria-label="Meet more of our Admin Team"
             className="bg-blue-100 text-black text-block px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition"
           >
-            Meet more of our Faculty
+            Meet the Team
           </button></Link>
           <div className="flex items-center gap-2">
             <button
@@ -227,7 +316,7 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
             <button
               aria-label="Next Faculty Member"
               onClick={handleNext}
-              disabled={startIndex + 2 >= facultyData.length}
+              disabled={startIndex + 1 >= data.length}
               className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full  text-[#616164]  transition disabled:opacity-30"
             >
               <MdKeyboardArrowRight size={24} />
@@ -239,3 +328,5 @@ export default function DepartmentFaculty({ heading, description, facultyData }:
     </section>
   );
 }
+
+

@@ -19,7 +19,7 @@ interface Organaisation {
 
 const Organaisation = ({ data }: { data: Organaisation }) => {
   return (
-    <div className=" text-[#86868B] text-[17px]">
+    <div className=" text-textGray text-[17px]">
     { data.title&& <h2 className="text-2xl font-bold mb-4">{data.title}</h2>}
       <img
         src={data.imageUrl}
@@ -35,7 +35,7 @@ const Organaisation = ({ data }: { data: Organaisation }) => {
     <div className="overflow-x-auto">
       <div className="rounded overflow-hidden border border-gray-200 w-full">
       <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
-        <tbody className="bg-[#F3F8FC] text-[#2884CA]">
+        <tbody className=" text-[#2884CA]">
           {table.firstColumn.map((firstCol, colIdx) => {
             const secondCol = table.secondColumn[colIdx];
             const maxLength = Math.max(
@@ -50,7 +50,7 @@ const Organaisation = ({ data }: { data: Organaisation }) => {
                   <tr>
                     <td
                       colSpan={2}
-                      className="py-3 md:px-4 px-1 border-b text-center"
+                      className="py-3 bg-[#F3F8FC] md:px-4 px-1 border-b text-center"
                     >
                       {firstCol.title.join(', ')}
                     </td>

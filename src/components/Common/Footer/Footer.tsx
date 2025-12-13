@@ -9,14 +9,14 @@ import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 // Data arrays remain unchanged from your first snippet
 const quickLinks = [
   { data: "NIRF Disclosure", links: "/about/mandatory-disclosure" },
-  { data: "Committee Members", links: "https://www.canaraengineering.in/download/Institutional%20Committee.pdf" },
-  { data: "AICTE Scholarships", links: "https://www.canaraengineering.in/download/scholarship_2020.pdf" },
-  { data: "Press Releases", links: "https://canaraengineering.in/download/News Paper Clipping.pdf" },
+  { data: "Committee Members", links: "/footer/institutional Committee.pdf" },
+  { data: "AICTE Scholarships", links: "https://apiserver.cec.edu.in/files/scolarship2020" },
+  { data: "Press Releases", links: "/footer/News Paper Clipping.pdf" },
   { data: "Grievance Redressal Committee", links: "/about/grievance-redressal-cell" },
   { data: "VTU Website", links: "https://vtu.ac.in/" },
   { data: "AICTE Website", links: "https://www.aicte.gov.in/" },
   // { data: "AICTE Feedback Portal", links: "#" },
-  { data: "Vidya Lakshmi Portal", links: "https://www.vidyalakshmi.co.in/Students/login#studentlogin" },
+  // { data: "Vidya Lakshmi Portal", links: "https://www.vidyalakshmi.co.in/Students/login#studentlogin" },
 ];
 
 const ourCollege = [
@@ -33,13 +33,13 @@ const ourCollege = [
 const academics = [
   { data: "Admissions", links: "/admission" },
   // { data: "Courses & Programs", links: "#" },
-  { data: "Syllabus", links: "#" },
-  { data: "Academic Calendar", links: "https://www.canaraengineering.in/download/calender.pdf" },
+  // { data: "Syllabus", links: "#" },
+  { data: "Academic Calendar", links: "/footer/calender (1).pdf" },
   // { data: "Examinations & Timetables", links: "/academics/examination-records" },
   { data: "Circulars", links: "https://vtu.ac.in/en/#1554889506437-64c3b5d5-d21e" },
   { data: "Marks & Attendance", links: "https://www.canaraengineering.in/s_attd" },
   { data: "Learning Resources", links: "https://digital.canaraengineering.in/" },
-  { data: "Scholarships", links: "https://www.canaraengineering.in/download/scholarship_2020.pdf" },
+  // { data: "Scholarships", links: "https://www.canaraengineering.in/download/scholarship_2020.pdf" },
 ];
 
 const facilities = [
@@ -53,6 +53,7 @@ const facilities = [
 const stayConnected = [
   { data: "Alumni", links: "/alumni" },
   { data: "Media", links: "/media" },
+  { data: "Careers", links: "/careers" },
   // { data: "Calendar of Events", links: "/events" },
   // { data: "Careers", links: "#" },
 ];
@@ -72,96 +73,106 @@ const Footer: FC = () => {
   return (
     <footer className="bg-[#e5e5ea] text-gray-700 lg:px-8  text-sm pt-10">
       {/* Desktop Version */}
-     
-          <div className="lg:max-w-7xl md:max-w-6xl   xl:mx-auto xl:max-w-[75%]  mx-auto lg:block hidden">
-          <Suspense fallback={null}> <Breadcrumbs
-          items={[
-            { label: "", href: "" },
-            { label: "About CEC", href: "/about/about-cec" },
-            { label: "History of CEC", href: "/about/history-of-cec" },
-            { label: "Our Founder", href: "/about/our-founder" },
-            { label: "Our Management", href: "/about/our-management" },
-            { label: "Governing Council", href: "/about/governing-council" },
-            { label: "Mandatory Disclosure", href: "/about/mandatory-disclosure" },
-            { label: "Grievance Redressal Cell", href: "/about/grievance-redressal-cell" },
-            { label: "SWO Department", href: "/about/student-welfare-department" },
-            { label: "Academic Overview", href: "/academics/academic-overview" },
-            { label: "Programs", href: "/academics/programs" },
-            { label: "Computer Science & Engineering", href: "/department/computer-science-engineering/detailes" },
-                  { label: "Computer Science & Engineering", href: "/department/computer-science-engineering" },
-            { label: "Artificial Intelligence & Machine Learning", href: "/department/artificial-intelligence-machine-learning/detailes" },
-                        { label: "Artificial Intelligence & Machine Learning", href: "/department/artificial-intelligence-machine-learning" },
-            { label: "Information Science & Engineering", href: "/department/information-science-engineering/detailes" },
-              { label: "Information Science & Engineering", href: "/department/information-science-engineering" },
-            { label: "Electronics & Communication Engineering", href: "/department/electronics-communication-engineering/detailes" },
-                 { label: "Electronics & Communication Engineering", href: "/department/electronics-communication-engineering" },
-            { label: "Computer Science & Business System", href: "/department/computer-science-business-system/detailes" },
-                { label: "Computer Science & Business System", href: "/department/computer-science-business-system" },
-            { label: "Computer Science & Design", href: "/department/computer-science-design/detailes" },
-                   { label: "Computer Science & Design", href: "/department/computer-science-design" },
-            { label: "Science & Humanities", href: "/department/science-humanities" },
-            { label: "Distinctive Practices", href: "/about/distinctive-practices" },
-            { label: "Key Functionaries & HODs", href: "/about/key-functionaries-and-hods" },
-            { label: "Glimpses of CEC", href: "/about/glimpses-of-cec" },
-            { label: "Educators & Administrators", href: "/about/educators-administrators" },
-             { label: "Research", href: "/academics/research" },
-             { label: "About Alumni", href: "/alumni/about-alumni" },
-                { label: "Infrastructure", href: "/campus-facilities/infrastructure" },
-                  { label: "Privacy Policy", href: "/privacy-policy" },
-                   { label: "Grievance Redressal", href: "/about/mandatory-disclosure/sc-st-grievance" },
-            // { label: "Timetables", href: "/academics/examination-records" },
-            // { label: "Circulars", href: "/about" },
-            // { label: "Marks & Attendance", href: "/our-founder" },
-            { label: "Resources", href: "https://digital.canaraengineering.in/" },
-            { label: "Infrastructure", href: "/campus-facilities/infrastructuret" },
-            { label: "Hostel Life", href: "/campus-facilities/hostel-life" },
-            { label: "Student Life & Engagement", href: "/campus-facilities/studentlife-engagement" },
-            { label: "Entrepreneurship Cell", href: "/entrepreneurship-cell" },
-            { label: "Physical Education", href: "/physical-education" },
-            // { label: "Calendar of Events", href: "/events" },
-            { label: "Alumni", href: "/alumni" },
-            { label: "Admissions", href: "/admission" },
-            { label: "Training & Placements", href: "/training-placements" },
-            // { label: "Examination Timetables", href: "tt" },
-            // { label: "Marks & Attendance", href: "marks" },
-            { label: "Circulars", href: "/academics/examination-records?tab=circulars",tab:"circulars" },
-            { label: "Media", href: "/media" },
 
-          ]}
-        /></Suspense>
+      <div className="lg:max-w-7xl md:max-w-6xl   xl:mx-auto xl:max-w-[75%]  mx-auto lg:block hidden">
+        <Suspense fallback={null}>
+          {" "}
+          <Breadcrumbs
+            items={[
+              { label: "", href: "" },
+              { label: "About CEC", href: "/about/about-cec" },
+              { label: "History of CEC", href: "/about/history-of-cec" },
+              { label: "Our Founder", href: "/about/our-founder" },
+              { label: "Our Management", href: "/about/our-management" },
+              { label: "Governing Council", href: "/about/governing-council" },
+              { label: "Mandatory Disclosure", href: "/about/mandatory-disclosure" },
+              { label: "Grievance Redressal Cell", href: "/about/grievance-redressal-cell" },
+              { label: "SWO Department", href: "/about/student-welfare-department" },
+              { label: "Academic Overview", href: "/academics/academic-overview" },
+              { label: "Programs", href: "/academics/programs" },
+              { label: "Computer Science & Engineering", href: "/department/computer-science-engineering/detailes" },
+              { label: "Computer Science & Engineering", href: "/department/computer-science-engineering" },
+              { label: "Artificial Intelligence & Machine Learning", href: "/department/artificial-intelligence-machine-learning/detailes" },
+              { label: "Artificial Intelligence & Machine Learning", href: "/department/artificial-intelligence-machine-learning" },
+              { label: "Information Science & Engineering", href: "/department/information-science-engineering/detailes" },
+              { label: "Information Science & Engineering", href: "/department/information-science-engineering" },
+              { label: "Electronics & Communication Engineering", href: "/department/electronics-communication-engineering/detailes" },
+              { label: "Science & Humanities", href: "/department/science-humanities/detailes" },
+              { label: "Science & Humanities", href: "/department/science-humanities" },
+              { label: "Electronics & Communication Engineering", href: "/department/electronics-communication-engineering" },
+              { label: "Computer Science & Business System", href: "/department/computer-science-business-system/detailes" },
+              { label: "Computer Science & Business System", href: "/department/computer-science-business-system" },
+              { label: "Computer Science & Design", href: "/department/computer-science-design" },
+              { label: "Computer Science & Design", href: "/department/computer-science-design/detailes" },
+
+              { label: "Mechanical Engineering", href: "/department/mechanical-engineering" },
+              { label: "Mechanical Engineering", href: "/department/mechanical-engineering/detailes" },
+
+              { label: "Distinctive Practices", href: "/about/distinctive-practices" },
+              { label: "Key Functionaries & HODs", href: "/about/key-functionaries-and-hods" },
+              { label: "Glimpses of CEC", href: "/about/glimpses-of-cec" },
+              { label: "Educators & Administrators", href: "/about/educators-administrators" },
+              { label: "Research at CEC", href: "/academics/research" },
+              { label: "Research & Development and Consultancy Cell", href: "/academics/research-development-consultancy" },
+
+              { label: "About Alumni", href: "/alumni/about-alumni" },
+              { label: "Infrastructure", href: "/campus-facilities/infrastructure" },
+              { label: "Privacy Policy", href: "/privacy-policy" },
+              { label: "Grievance Redressal", href: "/about/mandatory-disclosure/sc-st-grievance" },
+              { label: "Careers", href: "/careers" },
+
+              // { label: "Timetables", href: "/academics/examination-records" },
+              // { label: "Circulars", href: "/about" },
+              // { label: "Marks & Attendance", href: "/our-founder" },
+              { label: "Resources", href: "https://digital.canaraengineering.in/" },
+              { label: "Infrastructure", href: "/campus-facilities/infrastructuret" },
+              { label: "Hostel Life", href: "/campus-facilities/hostel-life" },
+              { label: "Student Life & Engagement", href: "/campus-facilities/studentlife-engagement" },
+              { label: "Entrepreneurship Cell", href: "/entrepreneurship-cell" },
+              { label: "Physical Education", href: "/physical-education" },
+              // { label: "Calendar of Events", href: "/events" },
+              { label: "Alumni", href: "/alumni" },
+              { label: "Admissions", href: "/admission" },
+              { label: "Training & Placements", href: "/training-placements" },
+              // { label: "Examination Timetables", href: "tt" },
+              // { label: "Marks & Attendance", href: "marks" },
+              { label: "Circulars", href: "/academics/examination-records?tab=circulars", tab: "circulars" },
+              { label: "Media", href: "/media" },
+            ]}
+          />
+        </Suspense>
 
         <hr className="text-gray-300 pb-3.5" />
         <div className="mx-auto">
-              <div className="grid grid-cols-2 md:grid-cols-5  border-b border-gray-300 pb-10">
-          <div>
-            <h3 className="font-semibold mt-5 mb-2">Quick Links</h3>
-            <FooterList data={quickLinks} />
-          </div>
-          <div className="xl:ml-[40%] lg2:ml-[20%]">
-            <h3 className="font-semibold mt-5 mb-2">Our College</h3>
-            <FooterList data={ourCollege} />
-          </div>
-          <div className="xl:ml-[40%] lg2:ml-[20%]">
-            <h3 className="font-semibold mt-5 mb-2">Academics</h3>
-            <FooterList data={academics} />
-          </div>
-          <div className="xl:ml-[40%] lg2:ml-[20%]">
-            <h3 className="font-semibold mt-5 mb-2">Facilities</h3>
-            <FooterList data={facilities} />
-          </div>
-          <div className="xl:ml-auto lg2:ml-[20%]">
-            <h3 className="font-semibold mt-5 mb-2">Stay Connected</h3>
-            <FooterList data={stayConnected} />
+          <div className="grid grid-cols-2 md:grid-cols-5  border-b border-gray-300 pb-10">
+            <div>
+              <h3 className="font-semibold mt-5 mb-2">Quick Links</h3>
+              <FooterList data={quickLinks} />
+            </div>
+            <div className="xl:ml-[30%] lg2:ml-[20%]">
+              <h3 className="font-semibold mt-5 mb-2">Our College</h3>
+              <FooterList data={ourCollege} />
+            </div>
+            <div className="xl:ml-[30%] lg2:ml-[20%]">
+              <h3 className="font-semibold mt-5 mb-2">Academics</h3>
+              <FooterList data={academics} />
+            </div>
+            <div className="xl:ml-[30%] lg2:ml-[20%]">
+              <h3 className="font-semibold mt-5 mb-2">Facilities</h3>
+              <FooterList data={facilities} />
+            </div>
+            <div className="xl:ml-auto lg2:ml-[20%]">
+              <h3 className="font-semibold mt-5 mb-2">Stay Connected</h3>
+              <FooterList data={stayConnected} />
+            </div>
           </div>
         </div>
-        </div>
-    
 
         <div className="flex items-center justify-between space-x-10 my-8">
-          <div className="flex gap-5">
+         <Link href="/"> <div className="flex gap-5">
             <Image src={footericon1} width={300} height={300} alt="logo" />
-            <FooterIcon />
-          </div>
+             <FooterIcon />
+          </div></Link>
           <div>
             <h1 className="flex justify-end font-bold pb-3 cursor-pointer">Follow Us</h1>
             <div className="flex gap-2 cursor-pointer">
@@ -186,17 +197,17 @@ const Footer: FC = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center border-t border-gray-300 pt-4 pb-6 text-xs">
-          <p className="text-center md:text-left mb-2 md:mb-0">Copyright © 2024 CEC & Canara High School Association. All rights reserved.</p>
+          <p className="text-center md:text-left mb-2 md:mb-0">Copyright © {new Date().getFullYear()} CEC & Canara High School Association. All rights reserved.</p>
           <div className="flex space-x-6 items-center">
             <div className="flex space-x-2">
-              <Link href={'/privacy-policy'}><p>Privacy Policy | Terms of Use</p></Link>
-              
+              <Link href={"/privacy-policy"}>
+                <p>Privacy Policy | Terms of Use</p>
+              </Link>
             </div>
           </div>
         </div>
       </div>
-  
-    
+      
 
       {/* Mobile Version */}
       <div className="lg:hidden px-6">
@@ -215,10 +226,10 @@ const Footer: FC = () => {
 
         {/* Mobile Logo and Social Icons */}
         <div className="flex flex-col items-center my-8">
-          <div className="flex gap-3">
+          <Link href="/"><div className="flex gap-3">
             <Image src={footericon1} width={200} height={200} alt="logo" />
             <FooterIconMobile />
-          </div>
+          </div></Link>
           <div className="mt-4">
             <h1 className="text-center font-bold pb-3">Follow Us</h1>
             <div className="flex gap-2 justify-center">
@@ -244,8 +255,10 @@ const Footer: FC = () => {
 
         {/* Mobile Bottom Bar */}
         <div className="border-t border-gray-300 pt-4 pb-6 text-xs text-center">
-          <p className="mb-2">Copyright © 2024 CEC & Canara High School Association. All rights reserved.</p>
-          <p>Privacy Policy | Terms of Use</p>
+          <p className="mb-2">Copyright © {new Date().getFullYear()} CEC & Canara High School Association. All rights reserved.</p>
+          <Link href={"/privacy-policy"}>
+            <p>Privacy Policy | Terms of Use</p>
+          </Link>
         </div>
       </div>
     </footer>
@@ -260,10 +273,7 @@ const FooterList: FC<FooterListProps> = ({ data }) => {
         const isExternal = item.links.startsWith("http");
         return (
           <li className="leading-8" key={index}>
-            <Link
-              href={item.links}
-              {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-            >
+            <Link href={item.links} {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
               {item.data}
             </Link>
           </li>

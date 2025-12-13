@@ -5,9 +5,15 @@ import bgImage from "../../../../../public/campusFacilitiesPageImages/studentLif
 const HeroSection = () => {
   return (
     <section className="relative w-full h-[60vh] md:h-[70vh]   flex flex-col justify-center items-center text-center  overflow-hidden">
-      <div className="lg:pt-24">
-       <Image src={bgImage} alt="Background 1" className="object-cover w-full h-[80vh] md:h-[120vh]" priority />
-       </div>
+      <div className="relative w-full h-[60vh] md:aspect-auto md:h-[70vh] lg:h-[80vh]">
+        <Image
+          src={bgImage}
+          alt="Student Life Hero Background"
+          fill
+          priority
+          className="object-cover md:object-center"
+        />
+      </div>
       <div className="absolute inset-0 z-0">
        
 
@@ -19,9 +25,9 @@ const HeroSection = () => {
     
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-[150px] bg-gradient-to-t from-[#fbfcfe] via-[#fbfcfe]/85 to-transparent z-[10] md:hidden" />
-      <div className="absolute bottom-0 left-0 right-0 h-[150px] bg-gradient-to-t from-[#fbfcfe] via-[#fbfcfe]/85 to-transparent z-[10] md:hidden" />
-      <div className="absolute bottom-0 left-0 right-0 h-[150px] bg-gradient-to-t from-[#fbfcfe] via-[#fbfcfe]/85 to-transparent z-[10] md:hidden" />
+      <div className="absolute bottom-0 left-0 right-0 h-[90px] bg-gradient-to-t from-[#fbfcfe] via-[#fbfcfe]/85 to-transparent z-[10] md:hidden" />
+      <div className="absolute bottom-0 left-0 right-0 h-[90px] bg-gradient-to-t from-[#fbfcfe] via-[#fbfcfe]/85 to-transparent z-[10] md:hidden" />
+      <div className="absolute bottom-0 left-0 right-0 h-[90px] bg-gradient-to-t from-[#fbfcfe] via-[#fbfcfe]/85 to-transparent z-[10] md:hidden" />
     </section>
   );
 };

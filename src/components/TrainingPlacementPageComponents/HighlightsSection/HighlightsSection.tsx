@@ -6,8 +6,9 @@ import Image from "next/image";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { Autoplay } from "swiper/modules"; // Import Autoplay module
+import { Autoplay } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
+
 // CarouselDots Component
 interface CarouselDotsProps {
   total: number;
@@ -60,13 +61,12 @@ const HighlightsSection = () => {
     },
     {
       id: 3,
-      img: "/trainingPlacementPageImages/verifone.png",
-      title: "Dream Offers",
-      company: "Verifone",
+      img: "/trainingPlacementPageImages/verifone1.png",
+      title: "Verifone",
+      company: "",
     },
   ];
 
-  // Handle dot click to navigate to specific slide
   const handleDotClick = (index: number) => {
     if (swiperInstance) {
       swiperInstance.slideTo(index);
@@ -74,116 +74,134 @@ const HighlightsSection = () => {
   };
 
   return (
-    <section className="max-w-7xl xl:max-w-[75%] mx-auto py-28 text-black">
-       <h2 className="text-3xl md:text-[40px] lg2:text-5xl  font-bold text-black text-center mb-22 ">Key Highlights</h2>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Left Column */}
-        <div className="flex flex-col gap-6 px-3">
-          {[
-            { title: "5.6 LPA", subtitle: "Median Salary", description: "Offered to Top 5% of Student Candidates" },
-            { title: "42%", subtitle: "Pre-Placement Offers", description: "of placed students received PPOs" },
-            {
-              title: "30%",
-              subtitle: "Higher Rate of placement",
-              description: "as compared to neighbouring Engineering colleges",
-              link: true,
-            },
-          ].map((item, index) => (
-            <div key={index} className="flex flex-col justify-center items-center rounded-4xl p-6 bg-white h-full">
-              <h1 className=" text-[45px] lg:text-[60px] font-[900] text-black text-center">{item.title}</h1>
-              <h2 className="font-bold text-center text-[20px] text-black">{item.subtitle}</h2>
-              <p className="text-xl text-center">{item.description}</p>
-              {/* {item.link && (
-                <p className="text-[17px] mt-3 text-[#0066CC] flex items-center">
-                  View Profile
-                  <MdKeyboardArrowRight className="ml-1 text-xl" />
-                </p>
-              )} */}
-            </div>
-          ))}
-        </div>
+    <section className="max-w-7xl xl:max-w-[75%] mx-auto py-16 lg:pb-20 lg:pt-24 text-black">
+      <h2 className="text-3xl md:text-[40px] lg2:text-5xl font-bold text-black text-center mb-10 lg:mb-22">
+        Key Highlights
+      </h2>
 
-        {/* Center Column */}
-        <div className="px-3">
-          <div className="relative">
+      {/* GRID WITH FIXED ROW HEIGHT */}
+   <div
+  className="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-3 gap-6 lg:[grid-auto-rows:1fr]"
+>
+
+        {/* Left Column */}
+        {[
+          { title: "5.6 LPA", subtitle: "Median Salary", description: "Offered to Top 5% of Student Candidates" },
+          { title: "42%", subtitle: "Pre-Placement Offers", description: "of placed students received PPOs" },
+          {
+            title: "30%",
+            subtitle: "Higher Rate of placement",
+            description: "Recognized for strong industry-academia connect leading to higher placements",
+            link: true,
+          },
+        ].map((item, index) => (
+          <div
+            key={`left-${index}`}
+            className={cn(
+              "flex flex-col justify-center items-center rounded-4xl p-6 bg-white h-full",
+              "lg:col-start-1",
+              index === 0 && "lg:row-start-1",
+              index === 1 && "lg:row-start-2",
+              index === 2 && "lg:row-start-3"
+            )}
+          >
+            <h1 className="text-[45px] lg:text-[60px] font-[900] text-black text-center">
+              {item.title}
+            </h1>
+            <h2 className="font-bold text-center text-[20px] text-black">{item.subtitle}</h2>
+            <p className="text-xl text-center">{item.description}</p>
+          </div>
+        ))}
+
+        {/* Center Column - Swiper (Row Span 2) */}
+        <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 h-full">
+          <div className="relative h-full">
             <Swiper
               spaceBetween={20}
               slidesPerView={1}
               loop={true}
               onSwiper={(swiper) => setSwiperInstance(swiper)}
               onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-              modules={[Autoplay]} // Register Autoplay module
+              modules={[Autoplay]}
               autoplay={{
-                delay: 2000, // 3 seconds delay between slides
-                disableOnInteraction: false, // Continue autoplay after user interaction
+                delay: 2000,
+                disableOnInteraction: false,
               }}
+              className="h-full rounded-4xl"
             >
               {dummyData.map((item) => (
-                <SwiperSlide key={item.id}>
-                  <div className="flex flex-col justify-between items-center rounded-4xl p-6 bg-white h-[60vh] xl:h-[50vh]">
-                    <div className="flex flex-col items-center">
+                <SwiperSlide key={item.id} className="h-full">
+                  <div className="flex flex-col justify-between items-center rounded-4xl p-6 bg-white h-full">
+                    <div className="flex flex-col items-center justify-center pb-10 h-full w-full">
                       <Image
                         src={item.img}
                         alt="trainingPlacementPageImages"
                         width={100}
                         height={100}
-                        className="w-[80%] h-[30vh] object-contain"
+                        className="w-[70%]  object-contain"
                       />
                       <h1 className="text-2xl font-bold text-center mt-4">{item.title}</h1>
-                      {item.company&&<h2 className="text-[14px] text-center">{item.company}</h2>}
+                      {item.company && (
+                        <h2 className="text-[14px] text-center">{item.company}</h2>
+                      )}
                     </div>
                   </div>
                 </SwiperSlide>
               ))}
-              {/* Fixed CarouselDots inside the card */}
+
               <div className="absolute bottom-6 left-0 right-0 z-10">
                 <CarouselDots
                   total={dummyData.length}
                   active={activeIndex}
                   onDotClick={handleDotClick}
-                  className="bg-white"
+                  className="bg-white/80 backdrop-blur-sm"
                 />
               </div>
             </Swiper>
           </div>
+        </div>
 
-          {/* Static second card */}
-          <div className="flex flex-col justify-center items-center rounded-4xl p-6 bg-white mt-5 lg:mt-7">
-            <h1 className=" text-[45px] lg:text-[60px] font-[900] text-black text-center">220+</h1>
-            <h2 className="font-bold text-center text-[20px] text-black">Companies Visited on Campus</h2>
-            <p className="text-xl text-center">Offered to Top 5% of Student Candidates</p>
-            {/* <p className="text-[17px] mt-3 text-[#0066CC] flex items-center">
-              View Profile
-              <MdKeyboardArrowRight className="ml-1 text-xl" />
-            </p> */}
-          </div>
+        {/* Center Column - Third Row Card */}
+        <div className="flex flex-col justify-center items-center rounded-4xl p-6 bg-white h-full lg:col-start-2 lg:row-start-3">
+          <h1 className="text-[45px] lg:text-[60px] font-[900] text-black text-center">
+            220+
+          </h1>
+          <h2 className="font-bold text-center text-[20px] text-black">
+            Companies Visited on Campus
+          </h2>
+          <p className="text-xl text-center">Consistently recruiting across all branches of engineering</p>
         </div>
 
         {/* Right Column */}
-        <div className="flex flex-col gap-6 px-3">
-          {[
-            { title: "3.25 LPA", subtitle: "Average Salary", description: "Statistics based on 2023-24 Batch Data" },
-            { title: "18%", subtitle: "Students Pursuing Higher Studies", description: "" },
-            {
-              title: "98%",
-              subtitle: "Internship Completion Rate",
-              description: "completed at least one internship before graduation",
-              link: true,
-            },
-          ].map((item, index) => (
-            <div key={index} className="flex flex-col justify-center items-center rounded-4xl p-6 bg-white h-full">
-              <h1 className=" text-[45px] lg:text-[60px] font-[900] text-black text-center">{item.title}</h1>
-              <h2 className="font-bold text-center text-[20px] text-black">{item.subtitle}</h2>
-              <p className="text-xl text-center">{item.description}</p>
-              {/* {item.link && (
-                <p className="text-[17px] mt-3 text-[#0066CC] flex items-center">
-                  View Profile
-                  <MdKeyboardArrowRight className="ml-1 text-xl" />
-                </p>
-              )} */}
-            </div>
-          ))}
-        </div>
+        {[
+          { title: "3.25 LPA", subtitle: "Average Salary", description: "Statistics based on 2023-24 Batch Data" },
+          { title: "18%", subtitle: "Students Pursuing Higher Studies", description: "" },
+          {
+            title: "98%",
+            subtitle: "Internship Completion Rate",
+            description: "completed at least one internship before graduation",
+            link: true,
+          },
+        ].map((item, index) => (
+          <div
+            key={`right-${index}`}
+            className={cn(
+              "flex flex-col justify-center items-center rounded-4xl p-6 bg-white h-full",
+              "lg:col-start-3",
+              index === 0 && "lg:row-start-1",
+              index === 1 && "lg:row-start-2",
+              index === 2 && "lg:row-start-3"
+            )}
+          >
+            <h1 className="text-[45px] lg:text-[60px] font-[900] text-black text-center">
+              {item.title}
+            </h1>
+            <h2 className="font-bold text-center text-[20px] text-black">
+              {item.subtitle}
+            </h2>
+            <p className="text-xl text-center">{item.description}</p>
+          </div>
+        ))}
       </div>
     </section>
   );

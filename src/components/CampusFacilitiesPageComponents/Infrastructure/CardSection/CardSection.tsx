@@ -4,63 +4,69 @@ import { Card, Carousel } from "@/components/ui/campus-facilities/apple-cards-ca
 import Image from "next/image";
 import programData from "../../../../utils/programData/programData.json";
 
-// Updated DescriptionProps to match the JSON structure
 type DescriptionProps = {
   src: string;
-  date: string;
-  topTitle: string;
-  topDescription: string;
-  middleTitle: string;
-  middleSubTitle: string;
-  middleDescription: string;
+  date?: string;
+  topTitle?: string;
+  topDescription?: string;
+
+  middleTitle?: string;
+  middleSubTitle?: string;
+  middleDescription?: string;
+
   image1?: string;
-  middleTitle2: string;
-  middleDescription2: string;
-  middleTitle3: string;
-  middleDescription3?: [];
+
+  middleTitle2?: string;
+  middleDescription2?: string;
+
+  middleTitle3?: string;
+  middleDescription3?: string[]; // ✅ Change to array of string
+
   image2?: string;
-  middleTitle4: string;
-  middleDescription4?: [];
-  bottomTitile: string; // Note: Typo in JSON ("bottomTitile" instead of "bottomTitle")
-  subDescription3: string;
+
+  middleTitle4?: string;
+  middleDescription4?: string[]; // ✅ Change to array of string
+
+  bottomTitile?: string; // Typo matches JSON key
+  subDescription3?: string;
   image3?: string;
 };
 
 interface CardContentProps {
   description: DescriptionProps;
+  title: string;
 }
 
-// Define the Card type for type safety
 interface CardData {
+  id: number;
   category?: string;
   title: string;
   src: string;
   description: DescriptionProps;
-  style: string;
+  style?: string;
   desc?: string;
 }
 
 export default function CardSection() {
-  // Type the programData as an array of CardData
-  const cards = (programData as CardData[])?.map((card, index) => (
+  const cards = (programData as CardData[]).map((card, index) => (
     <Card
-      key={card.title}
+      key={card.id}
       card={{
         ...card,
-        content: <CardContent description={card.description} />,
+        content: <CardContent description={card.description} title={card.title} />,
       }}
       index={index}
     />
   ));
 
   return (
-    <div className="w-full h-full md:py-10 py-20 text-black">
+    <div className="w-full h-full md:py-5 py-2 text-black">
       <Carousel items={cards} />
     </div>
   );
 }
 
-function CardContent({ description }: CardContentProps) {
+function CardContent({ description, title }: CardContentProps) {
   return (
     <div>
       <Image
@@ -69,89 +75,81 @@ function CardContent({ description }: CardContentProps) {
         loading="lazy"
         width={1000}
         height={700}
-        className="object-cover overflow-hidden rounded-t-2xl w-full lg:h-[700px] h-[400px] mb-10"
+        className={`object-cover overflow-hidden rounded-t-2xl w-full lg:h-[700px] h-[400px] mb-10 ${title !== "In-Campus Hostels" ? "object-left" : "object-center"}`}
       />
-      <div className="p-4 lg:p-0 lg:px-20 space-y-10 text-left text-sm text-[#1D1D1F] bg-white">
-        {/* Top Section */}
-        <div>
-          {/* {description.date && <p className="text-[16px] font-bold text-[#88888a] mb-5">{description.date}</p>} */}
 
-          {description.topTitle && <h3 className="text-[31px] lg:text-[46px] leading-[1.1] lg:max-w-[70%] mb-5 font-bold">{description.topTitle}</h3>}
+      <div className="p-4 lg:p-0 lg:px-20 space-y-5  md:space-y-10 text-left text-sm text-[#1D1D1F] bg-white">
 
-          {description.topDescription && <p className="text-xl text-[#88888a]">{description.topDescription}</p>}
-        </div>
+        {/* TOP */}
+        {(description.topTitle || description.topDescription) && (
+          <div>
+            {description.topTitle && (
+              <h3 className="text-[31px] lg:text-[46px] leading-[1.1] lg:max-w-[70%] mb-6 font-bold">
+                {description.topTitle}
+              </h3>
+            )}
+            {description.topDescription && (
+              <p className="text-xl text-textGray leading-relaxed">{description.topDescription}</p>
+            )}
+          </div>
+        )}
 
-        {/* Middle Section 1 */}
-        <div>
-          <h3 className="text-[32px] mb-6 font-bold ">{description.middleTitle}</h3>
-          <h4 className="text-[22px] text-[#88888a] mb-3 font-bold">{description.middleSubTitle}</h4>
-          <p className="text-xl text-[#88888a]">{description.middleDescription}</p>
-        </div>
-        {/* {description.image1 && (
-          <Image
-            src={description.image1}
-            alt="Middle Image 1"
-            width={1000}
-            height={1000}
-            className="w-full rounded-2xl my-16"
-          />
-        )} */}
+        {/* MIDDLE 1 */}
+        {description.middleTitle && (
+          <div>
+            <h3 className="text-[32px] mb-6 font-bold">{description.middleTitle}</h3>
+            {description.middleSubTitle && (
+              <h4 className="text-[22px] text-textGray mb-3 font-bold">{description.middleSubTitle}</h4>
+            )}
+            {description.middleDescription && (
+              <p className="text-xl text-textGray leading-relaxed">{description.middleDescription}</p>
+            )}
+          </div>
+        )}
 
-        {/* Middle Section 2 */}
-        <div>
-          <h3 className="text-[22px] text-[#88888a] mb-3 font-bold">{description.middleTitle2}</h3>
-          <p className="text-xl text-textGray">{description.middleDescription2}</p>
-        </div>
+        {/* MIDDLE 2 */}
+        {description.middleTitle2 && (
+          <div>
+            <h3 className="text-[22px] text-textGray mb-3 font-bold">{description.middleTitle2}</h3>
+            <p className="text-xl text-textGray leading-relaxed">{description.middleDescription2}</p>
+          </div>
+        )}
 
-        {/* Middle Section 3 */}
-        <div>
-          <h3 className="text-[22px] text-[#88888a] mb-3  font-bold">{description.middleTitle3}</h3>
-          <ul>
-            {description.middleDescription3.map((item, index) => (
-              <li key={index} className="text-xl text-textGray">
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-        {/* {description.image2 && (
-          <Image
-            src={description.image2}
-            alt="Middle Image 2"
-            width={1000}
-            height={1000}
-            className="w-full rounded-2xl my-16"
-          />
-        )} */}
+        {/* MIDDLE 3 */}
+        {description.middleTitle3 && description.middleDescription3?.length > 0 && (
+          <div>
+            <h3 className="text-[22px] text-textGray mb-3 font-bold">{description.middleTitle3}</h3>
+            <ul className="list-disc pl-6 space-y-1">
+              {description.middleDescription3.map((item, index) => (
+                <li key={index} className="text-xl text-textGray leading-relaxed">{item}</li>
+              ))}
+            </ul>
+          </div>
+        )}
 
-        {/* Middle Section 4 */}
-        {/* Middle Section */}
-        <div>
-          {description.middleTitle4 && <h3 className="text-[22px] text-[#88888a] mb-2 font-bold">{description.middleTitle4}</h3>}
-          <ul>
-            {description.middleDescription4.map((item, index) => (
-              <li key={index} className="text-xl text-textGray">
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
+        {/* MIDDLE 4 */}
+        {description.middleTitle4 && description.middleDescription4?.length > 0 && (
+          <div>
+            <h3 className="text-[22px] text-textGray mb-3 font-bold">{description.middleTitle4}</h3>
+            <ul className="list-disc pl-6 space-y-1">
+              {description.middleDescription4.map((item, index) => (
+                <li key={index} className="text-xl text-textGray leading-relaxed">{item}</li>
+              ))}
+            </ul>
+          </div>
+        )}
 
-        {/* Bottom Section */}
-        <div>
-          {description.bottomTitile && <h3 className="text-[32px] mb-2 font-bold">{description.bottomTitile}</h3>}
-          {description.subDescription3 && <p className="text-xl text-textGray">{description.subDescription3}</p>}
-        </div>
-
-        {/* {description.image3 && (
-          <Image
-            src={description.image3}
-            alt="Bottom Image"
-            width={1000}
-            height={1000}
-            className="w-full rounded-2xl"
-          />
-        )} */}
+        {/* BOTTOM */}
+        {(description.bottomTitile || description.subDescription3) && (
+          <div>
+            {description.bottomTitile && (
+              <h3 className="text-[32px] mb-6 font-bold">{description.bottomTitile}</h3>
+            )}
+            {description.subDescription3 && (
+              <p className="text-xl text-textGray leading-relaxed">{description.subDescription3}</p>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

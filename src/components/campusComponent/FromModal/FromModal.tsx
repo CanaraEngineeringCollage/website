@@ -136,9 +136,27 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onClose, className = "", 
   };
 
   // Handle form submission
-  const handleSubmit = () => {
-    if (validateForm()) {
-      // Add your submission logic here (e.g., API call)
+const handleSubmit = async () => {
+  if (validateForm()) {
+    try {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/alumni`, { 
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+     
+        return;
+      }
+
+      const data = await response.json();
+      
+
+      // Reset form
       setFormData({
         fullName: "",
         email: "",
@@ -166,11 +184,17 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onClose, className = "", 
         address: "",
         comments: "",
       });
+
+      // Close modal
       onClose(false);
-    } else {
-      console.log("Form has errors:", errors);
+    } catch (error) {
+      console.error("Error submitting form:", error);
     }
-  };
+  } else {
+    console.log("Form has errors:", errors);
+  }
+};
+
 
   // Close modal on outside click
   useOutsideClick(containerRef, () => {

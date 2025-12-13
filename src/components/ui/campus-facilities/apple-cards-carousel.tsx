@@ -287,12 +287,12 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
         {/* Bottom gradient overlay */}
         <div className="absolute bottom-0 left-0 right-0 h-[60vh] bg-gradient-to-t from-black/70 via-transparent to-transparent z-30 pointer-events-none" />
         <div
-          className={`relative ${card.style} z-40 p-8 ${card.textalign} ${card.id == 1 ? "text-center md:text-left" : ""
+          className={`relative ${card.style} z-40 p-8 ${card.textalign} ${card.id == 1 ? "text-start md:text-left" : ""
             }`}
         >
           <MotionP
             layoutId={layout ? `category-${card.category}` : undefined}
-            className={`text-white text-[18px] ${card.id == 1 ? "lg:max-w-xl text-center md:text-right" : "max-w-2xl"
+            className={`text-white text-[18px] ${card.id == 1 ? "lg:max-w-xl text-start md:text-right" : "max-w-2xl"
               } md:text-[31px] font-bold md:font-medium font-sans`}
           >
             {card.category}
@@ -300,7 +300,7 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
 
           <MotionP
             layoutId={layout ? `title-${card.title}` : undefined}
-            className={`text-white text-[31px] ${card.id == 1 ? "text-center md:text-right" : "text-left"
+            className={`text-white text-[31px] ${card.id == 1 ? "text-start md:text-right" : "text-left"
               } md:text-[76px] font-semibold max-w-5xl leading-[1.1] [text-wrap:balance] font-sans mt-2`}
           >
             {card.title}
@@ -314,7 +314,13 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
             {card.desc}
           </MotionP>
         </div>
-        <BlurImage src={card.src} alt={card.title} fill className="object-cover absolute z-10 inset-0" />
+        <BlurImage
+  src={card.src}
+  alt={card.title}
+  fill
+  className={`"absolute inset-0 z-10 object-left ${card.title !== "In-Campus Hostels"?"object-left":"object-center"} object-cover md:object-center"`}
+/>
+
         <div className="absolute bottom-4 right-4 z-40">
           <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="0.888672" y="0.464844" width="36" height="36" rx="18" fill="#FFFFFF" />
