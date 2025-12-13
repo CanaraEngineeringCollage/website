@@ -5,7 +5,7 @@ import departments from "@/lib/departments.json";
 import DepartmentProfile from "../DepartmentDetailesTab/DepartmentProfile/DepartmentProfile";
 import Organaisation from "../DepartmentDetailesTab/Organaisation/Organaisation";
 import Hod from "../DepartmentDetailesTab/Hod/Hod";
-import Faculty from "../DepartmentDetailesTab/Faculty/Faculty";
+import Faculty, { FacultyMember } from "../DepartmentDetailesTab/Faculty/Faculty";
 import Academic from "../DepartmentDetailesTab/Academic/Academic";
 import Peo from "../DepartmentDetailesTab/Peo/Peo";
 import CourseOutCome from "../DepartmentDetailesTab/CourseOutCome/CourseOutCome";
@@ -24,7 +24,7 @@ interface Qualification {
   collegeOrUniversity: string;
   areaOfSpecialization: string;
 }
-interface Faculty {
+interface LocalFaculty {
   name: string;
   image: string;
   category: string;
@@ -47,7 +47,7 @@ interface CouncilMember {
   experience?: string; // Make this optional
   employmentType?: string; // Make this optional
   qualifications: Qualification[];
-  faculties?: Faculty[];
+  faculties?: LocalFaculty[];
 }
 
 // Props interface for the component
@@ -66,13 +66,16 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   const [selectedSection, setSelectedSection] =
     useState<string>("Department Profile");
 
-  const [facultyData, setFacultyData] = useState<Faculty[]>([]);
+  const [facultyData, setFacultyData] = useState<FacultyMember[]>([]);
+  const [facultyLoading, setFacultyLoading] = useState(false);
 
   const [events, setEvents] = useState<Event[]>([]);
   const [page, setPage] = useState(1);
   const [limit, setLimit] = useState(10); // start with 10
   const [hasMore, setHasMore] = useState(true);
   const [loading, setLoading] = useState(false);
+
+  const department = departments.find((dept) => dept.slug === slug);
 
   const fetchEvents = useCallback(async () => {
     if (loading || !hasMore) return;
@@ -141,7 +144,75 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
     }
   }, [loading, hasMore, events.length, fetchEvents]);
 
-  const department = departments.find((dept) => dept.slug === slug);
+  // Fetch Faculty Data
+  useEffect(() => {
+    async function fetchFaculty() {
+      if (!department?.name) return;
+      try {
+        setFacultyLoading(true);
+        const url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent(
+          department.name
+        )}&all=true`;
+        const res = await fetch(url);
+        const rawData = await res.json();
+        const data: FacultyMember[] = rawData.map((member: any) => ({
+          ...member,
+          qualifications: member.qualifications?.map((q: any) => ({
+            ...q,
+            specialization: q.specializedArea || q.specialization || "",
+          })),
+        }));
+        setFacultyData(data);
+      } catch (err) {
+        console.error("Error fetching faculty data:", err);
+      } finally {
+        setFacultyLoading(false);
+      }
+    }
+
+    if (
+      (selectedSection === "Faculty & Staff" ||
+        selectedSection === "Head of the Department") &&
+      facultyData.length === 0
+    ) {
+      fetchFaculty();
+    }
+  }, [selectedSection, department?.name, facultyData.length]);
+
+  // Separate teaching vs technical staff
+  const sortByPriorityAndDate = (arr: FacultyMember[]) =>
+    arr.sort((a, b) => {
+      if (a.priority && b.priority) return a.priority - b.priority;
+      if (a.priority && !b.priority) return -1;
+      if (!a.priority && b.priority) return 1;
+      return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime();
+    });
+
+  const teachingStaff = sortByPriorityAndDate(
+    facultyData.filter((item) => item.type !== "Technical Staff")
+  );
+  const technicalStaff = sortByPriorityAndDate(
+    facultyData.filter((item) => item.type === "Technical Staff")
+  );
+
+  const hodFaculty = facultyData.find(
+    (f) => f.name === department?.depatmentHead?.name
+  );
+
+  const hodData = department?.depatmentHead
+    ? {
+        ...department.depatmentHead,
+        ...(hodFaculty
+          ? {
+              name: hodFaculty.name,
+              position: hodFaculty.designation,
+              imageUrl: hodFaculty.image || department.depatmentHead.imageUrl,
+              avatar: hodFaculty.avatar,
+            }
+          : {}),
+      }
+    : undefined;
+
   const departmentMenuItems = [
     "Department Profile",
     ...(department?.name === "Artificial Intelligence & Machine Learning"
@@ -230,10 +301,14 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
                 <Organaisation data={department?.organisation} />
               )}
             {selectedSection === "Head of the Department" && (
-              <Hod data={department?.depatmentHead} />
+              <Hod data={hodData} facultyProfile={hodFaculty} />
             )}
-            {selectedSection === "Faculty & Staff" && (
-              <Faculty deptName={department?.name} />
+      {selectedSection === "Faculty & Staff" && (
+              <Faculty
+                teachingStaff={teachingStaff}
+                technicalStaff={technicalStaff}
+                loading={facultyLoading}
+              />
             )}
           {selectedSection === "Academic Programmes" && department?.academicsProgram && <Academic academicsProgramEce={department.academicsProgramEce} data={department.academicsProgram} />}
             {selectedSection === "Academic Programmes" && department?.academicsProgramEce && <Academic academicsProgramEce={department.academicsProgramEce} data={department.academicsProgram} />}

@@ -1,18 +1,19 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import FacultyModal from "@/components/DepartmentComponents/FacultyModal/FacultyModal";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
-interface Qualification {
+export interface Qualification {
   degree: string;
   degreeName: string;
   passingYear: string;
   college: string;
   specializedArea: string;
+  specialization: string; // Required by FacultyModal
 }
 
-interface FacultyMember {
+export interface FacultyMember {
   id: number;
   name: string;
   image?: string;
@@ -25,6 +26,14 @@ interface FacultyMember {
   employmentType: string;
   type?: string; // "Technical Staff" or others
   qualifications: Qualification[];
+  priority?: number;
+  createdAt: string;
+}
+
+interface FacultyProps {
+  teachingStaff: FacultyMember[];
+  technicalStaff: FacultyMember[];
+  loading?: boolean; // Make optional if handled by parent rendering conditionally
 }
 
 // Skeleton card shown while loading
@@ -46,11 +55,8 @@ const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
   return `data:image/jpeg;base64,${base64}`;
 };
 
-const Faculty = ({ deptName }: { deptName: string }) => {
-  const [data, setData] = useState<FacultyMember[]>([]);
+const Faculty = ({ teachingStaff, technicalStaff, loading = false }: FacultyProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [loading, setLoading] = useState(true);
-
   const [selectedMember, setSelectedMember] = useState<FacultyMember | null>(null);
 
   const openModal = (member: FacultyMember) => {
@@ -62,37 +68,6 @@ const Faculty = ({ deptName }: { deptName: string }) => {
     setIsModalOpen(false);
     setSelectedMember(null);
   };
-
-  useEffect(() => {
-    async function fetchFaculty() {
-      try {
-        setLoading(true);
-        const url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent(deptName)}&all=true`; // ✅ Add all=true to fetch all faculties
-        const res = await fetch(url);
-        const data: FacultyMember[] = await res.json();
-        setData(data);
-      } catch (err) {
-        console.error("Error fetching faculty data:", err);
-      } finally {
-        setLoading(false);
-      }
-    }
-
-    fetchFaculty();
-  }, [deptName]);
-
-  // Separate teaching vs technical staff
-  const sortByPriorityAndDate = (arr: FacultyMember[]) =>
-    arr.sort((a, b) => {
-      if (a.priority && b.priority) return a.priority - b.priority;
-      if (a.priority && !b.priority) return -1;
-      if (!a.priority && b.priority) return 1;
-      return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime();
-    });
-
-  // Separate teaching vs technical staff and sort
-  const teachingStaff = sortByPriorityAndDate(data.filter((item) => item.type !== "Technical Staff"));
-  const technicalStaff = sortByPriorityAndDate(data.filter((item) => item.type === "Technical Staff"));
 
   const renderCards = (staffArray: FacultyMember[]) =>
     staffArray.map((item, index) => {
