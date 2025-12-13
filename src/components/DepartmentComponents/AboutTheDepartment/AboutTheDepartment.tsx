@@ -21,7 +21,13 @@ const   AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepar
       <div>
         <div className="flex justify-between  mb-5 lg:mb-10">
           <div className="lg:w-[75%] ">
-            <h1 className="text-3xl md:w-[90%] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold leading-[1.2] text-[#1D1D1F]  ">Department of {departmentName}</h1>
+<h1
+  className={` md:w-[90%] 
+  font-bold leading-[1.2] text-[#1D1D1F] 
+  ${departmentName === "Artificial Intelligence & Machine Learning" ? "uppercase text-2xl md:text-[30px] lg2:text-4xl xl:text-4xl " : "md:text-[40px] text-3xl lg2:text-5xl xl:text-6xl "}`}
+>
+  Department of {departmentName}
+</h1>
           </div>
           <div className="hidden lg:block ">
             <Link href={`/department/${slug}/detailes`}>

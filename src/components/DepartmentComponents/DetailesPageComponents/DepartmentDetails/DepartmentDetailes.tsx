@@ -172,7 +172,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   ];
 
   return (
-    <section className="py-10 xl:py-36 text-black lg2:px-24 px-5 overflow-hidden">
+    <section className="py-10 xl:py-36 text-black lg2:px-20 px-5 overflow-hidden">
       <div className="">
         <h1 className="text-[#1D1D1F] text-xl lg:text-[31px] mb-2">
           Department of{" "}
@@ -223,67 +223,19 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
           <div className="col-span-1"></div>
           <div className="col-span-8 max-h-[70vh] md:max-h-[130vh] scrollable overflow-y-auto  pr-2">
             {selectedSection === "Department Profile" && (
-              <DepartmentProfile
-                annualIntake={department?.annualTake}
-                keyPoints={department?.keyPractices}
-                data={department?.description}
-              />
+              <DepartmentProfile annualIntake={department?.annualTake} keyPracticesECE={department?.keyPracticesECE} keyPoints={department?.keyPractices} data={department?.description} />
             )}
-            {selectedSection === "Organisation Structure" &&
-              department?.organisation && (
-                <Organaisation data={department?.organisation} />
-              )}
-            {selectedSection === "Head of the Department" && (
-              <Hod data={department?.depatmentHead} />
-            )}
-            {selectedSection === "Faculty & Staff" && (
-              <Faculty deptName={department?.name} />
-            )}
-            {selectedSection === "Academic Programmes" &&
-              department?.academicsProgram && (
-                <Academic data={department.academicsProgram} />
-              )}
-            {selectedSection === "PO" && department?.peo && (
-              <Peo data={department.peo} deptName={department?.name} />
-            )}
-            {selectedSection === "PEO & PO-PSO" && department?.peo && (
-              <Peo data={department.peo} deptName={department?.name} />
-            )}
-            {selectedSection === "Course Outcomes (CO)" && (
-              <CourseOutCome
-                deptName={department?.name}
-                staticData={department?.courseOutcome}
-              />
-            )}
-            {selectedSection === "Facilities" && department?.facilities && (
-              <Facilities
-                deptName={department?.name}
-                data={department?.facilities}
-              />
-            )}
-            {selectedSection === "Student Achievements" &&
-              department?.studentAcheivemtents && (
-                <StudentAchievement data={department?.studentAcheivemtents} />
-              )}
-            {selectedSection === "Research & Product Development" &&
-              department?.research && (
-                <Research
-                  deptName={department?.name}
-                  data={department?.research}
-                />
-              )}
-            {selectedSection === "Publications" && department?.publications && (
-              <Publications data={department?.publications} />
-            )}
-            {selectedSection === "Magazines & Newsletters" &&
-              department?.magazines && (
-                <Magazines data={department?.magazines} />
-              )}
-            {selectedSection === "Events" && (
-              <Events events={events} departmentName={departmentName} />
-            )}
-            {selectedSection === "Gallery" && (
-              <Gallery data={department?.gallery} />
+            {selectedSection === "Organisation Structure" && department?.organisation && <Organaisation data={department?.organisation} />}
+            {selectedSection === "Head of the Department" && <Hod data={department?.depatmentHead} />}
+            {selectedSection === "Faculty & Staff" && <Faculty deptName={department?.name}  />}
+            {selectedSection === "Academic Programmes" && department?.academicsProgram && <Academic academicsProgramEce={department.academicsProgramEce} data={department.academicsProgram} />}
+            {selectedSection === "Academic Programmes" && department?.academicsProgramEce && <Academic academicsProgramEce={department.academicsProgramEce} data={department.academicsProgram} />}
+            {selectedSection === "PO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
+            {selectedSection === "PEO & PO-PSO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
+            {selectedSection === "Course Outcomes (CO)" && <CourseOutCome deptName={department?.name} staticData={department?.courseOutcome} />}
+            {selectedSection === "Facilities" && department?.facilities && <Facilities deptName={department?.name} data={department?.facilities} />}
+            {selectedSection === "Student Achievements" && department?.studentAcheivemtents && (
+              <StudentAchievement data={department?.studentAcheivemtents} />
             )}
             {selectedSection === "Career Prospects" && (
               <CareerProspects data={department?.careerProspects[0]} />

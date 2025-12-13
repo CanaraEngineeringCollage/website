@@ -51,7 +51,7 @@ const Hod: React.FC<HodProps> = ({ data }) => {
         <div className="flex-1 flex flex-col ">
           <p
             ref={paragraphRef}
-            className="text-[14px] md:text-lg leading-7 text-justify text-textGray"
+            className="text-[14px] md:text-lg leading-7 text-justify text-textGray whitespace-pre-line"
           >
             {data?.messageFromtheDepartmentHead}
           </p>

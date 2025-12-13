@@ -12,5 +12,46 @@
     "imageSrc": "/campusFacilitiesPageImages/aluminiPageImages/3.webp",
     "description": "Ms. Chaitra Nayak, Tier 1 Analyst at Riskonnect Inc. and alumna of the ISE Department, CEC (Class of 2024), addressed the final-year students on 4th September 2024 in Lecture Hall LH 204. She shared valuable guidance and insights to help students prepare for the upcoming placement drive. Emphasizing the importance of the first round, she encouraged students to put in sincere effort and perform well right from the start. Ms. Chaitra also offered practical tips on how to approach each phase of the selection process and succeed in the subsequent rounds.",
     "imageSrc2": "/campusFacilitiesPageImages/aluminiPageImages/4.webp"
+  },
+
+
+
+
+
+    {
+    "id": "11",
+    "title": "Alumni Entrepreneur meet 2024",
+    "imageSrc": "/campusFacilitiesPageImages/aluminiPageImages/meet2024.jpg",
+    "description": "Alumni Entrepreneur meet 2024 (Alumni Entrepreneurs joined us both online &amp; offline to enlighten aspiring students on the entrepreneurial roadmap—highlighting opportunities, essential skills, passion, and the mindset required to chase their dreams of becoming successful entrepreneurs)",
+    "imageSrc2": "/campusFacilitiesPageImages/aluminiPageImages/meet2024.jpg"
+  },
+  {
+    "id": "12",
+    "title": "Academic Preparation for Industry Requirement",
+    "imageSrc": "/campusFacilitiesPageImages/aluminiPageImages/Shishir Bhat.jpeg",
+    "description": "Academic Preparation for Industry Requirement – Mr. Shishir Bhat – Vice President, Sales, Hacker Earth (Alumni CSE Batch 2005 Pass out) conducted an insightful session on Academic Preparation for Industry Requirements, guiding students on the skills and academic readiness expected by today’s industries.",
+    "imageSrc2": "/campusFacilitiesPageImages/aluminiPageImages/Shishir Bhat.jpeg"
+  },
+    {
+    "id": "13",
+    "title": "Workshop on No- Code Automation",
+    "imageSrc": "/campusFacilitiesPageImages/aluminiPageImages/ByGPSMapCamera(1).jpg",
+    "description": "Workshop on No- Code Automation by Mr. Ritesh Hegde of Ritz7 Automation. (Alumni EEE Batch 2009 Pass out) Our alumni-led workshop on No-Code Automation introduced students to powerful tools and platforms that require zero coding experience. With valuable tips and guided practice, the session empowered students to explore automation for real-world applications.",
+    "imageSrc2": "/campusFacilitiesPageImages/aluminiPageImages/ByGPSMapCamera(4).jpg"
+  },
+  {
+    "id": "2",
+    "title": "Alumni Meet 2025",
+    "imageSrc": "/campusFacilitiesPageImages/aluminiPageImages/3.webp",
+    "description": "Our Alumni Meet brought together former students to relive memories, exchange insights, and reconnect with the institution. It was a wonderful celebration of shared journeys and enduring bonds.",
+    "imageSrc2": "/campusFacilitiesPageImages/aluminiPageImages/4.webp"
+  },
+    {
+    "id": "1",
+    "title": "Mock Interview",
+    "imageSrc": "/campusFacilitiesPageImages/aluminiPageImages/IMG_1320.webp",
+    "description": "Mock Interview - Our alumni conducted mock interviews for pre-final-year students, providing personalized feedback, insights on improvement areas, and boosting their confidence for real placement interviews",
+    "imageSrc2": "/campusFacilitiesPageImages/aluminiPageImages/IMG_1320.webp"
   }
+
 ]

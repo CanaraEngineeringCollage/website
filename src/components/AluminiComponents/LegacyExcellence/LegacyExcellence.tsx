@@ -60,7 +60,7 @@ function CardContent({ description }: { description: Amenity }) {
       {description.title && (
         <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
           <div>
-            <h3 className="text-[31px] lg:text-[46px] leading-[1.1] lg:max-w-[100%] mb-5 font-bold">{description.title}</h3>
+            <h3 className="text-[28px] lg:text-[36px] leading-[1.1] lg:max-w-[100%] mb-5 font-bold">{description.title}</h3>
             <p className="text-xl text-textGray">{description.description}</p>
           </div>
         </div>
@@ -163,28 +163,46 @@ export default function LegacyExcellance() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isModalOpen, closeModal]);
   return (
-    <section className="max-w-7xl xl:max-w-[75%]   mx-auto  py-8 lg:pt-3 lg:pb-10">
+    <section className="max-w-7xl xl:max-w-[75%] px-5   mx-auto  py-8 lg:pt-3 lg:pb-10">
       <div className="grid grid-cols-1  lg:grid-cols-2 gap-8 lg2:gap-10 items-start">
         {/* Left Side - Swiper */}
+{data.map((item, index) => (
+  <div
+    key={index}
+    onClick={() => openModal(item, index)}
+    className="relative cursor-pointer lg:h-[500px] rounded-3xl overflow-hidden"
+  >
+    <Image
+      src={item.imageSrc}
+      alt={item.title}
+      width={700}
+      height={700}
+      className="w-full h-full object-cover rounded-3xl"
+    />
 
-        {data.map((item, index) => (
-          <div className="relative lg:h-[500px] rounded-3xl">
-            <Image src={item.imageSrc} alt={item.title} width={700} height={700} className="w-full object-cover h-[100%] rounded-3xl" />
+    {/* Text Overlay */}
+    <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-10">
+      {/* FLEX ROW */}
+      <div className="flex items-center justify-between ">
+        <h2 className="text-white text-lg leading-[1.2] lg:text-[30px] line-clamp-1 font-bold">
+          {item.title}
+        </h2>
 
-            {/* Text Overlay */}
-            <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6 lg2:p-16 rounded-b-3xl">
-              <h2 className="text-white text-lg leading-[1.2] lg:text-[40px] line-clamp-1 lg:line-clamp-none  font-bold mt-1">{item.title}</h2>
-              {/* <p className="text-white  mt-2 text-sm lg:text-lg max-w-2/3">{item.description}</p> */}
-              <button
-                aria-label="Learn More"
-                onClick={() => openModal(item, index)}
-                className="mt-4 px-5 py-2 bg-white rounded-full text-slg font-semibold hover:bg-gray-200 absolute right-6 bottom-14 text-primary"
-              >
-                Learn More
-              </button>
-            </div>
-          </div>
-        ))}
+        <button
+          aria-label="Learn More"
+          onClick={(e) => {
+            e.stopPropagation(); // prevent double trigger
+            openModal(item, index);
+          }}
+          className="px-5 py-2 bg-white rounded-full text-sm lg:text-base font-semibold text-primary hover:bg-gray-200 whitespace-nowrap"
+        >
+          Learn More
+        </button>
+      </div>
+    </div>
+  </div>
+))}
+
 
         {/* Navigation Buttons */}
       </div>
@@ -210,7 +228,7 @@ export default function LegacyExcellance() {
               <motion.div variants={contentVariants}>
                 <CardContent description={data[currentIndex]} />
               </motion.div>
-              <motion.div variants={contentVariants} className="p-4 lg:px-20 mt-10">
+              <motion.div variants={contentVariants} className="p-4 lg:px-20 mt-4">
                 <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">NextUp</h1>
                 <h1
   onClick={goToNextCard}
