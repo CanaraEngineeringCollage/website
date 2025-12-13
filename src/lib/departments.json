@@ -21390,41 +21390,68 @@
     ],
 
     "description": [
-      "Electronics and Communication Engineering (ECE) is a dynamic field which encompasses the acquisition, communication, manipulation, and analysis of Information/Signals. This discipline spans a wide range of applications from everyday electronics to complex systems used in industries, medical devices, and beyond. EC has experienced rapid technological growth, and its impact is evident across numerous domains of engineering.The comprehensive curriculum of ECE provides students with abundant career opportunities, not only in Electronics and Communication but also in allied fields such as Instrumentation, Computer Engineering, Aeronautics, Mechatronics, and Biomedical Engineering. Our faculty members are highly experienced and dedicated to guiding students toward successful careers, advanced studies, and research activities. They have contributed significantly to international journals and attended numerous professional development workshops.The Department of ECE at Canara Engineering College is committed in providing state-of-the-art infrastructure with cutting-edge equipment and software tools, supported by dedicated technical staff. The department has well-equipped laboratories, including those for research and industrial projects, and maintains a close interaction with alumni to continuously enhance our curriculum and technical activities. We conduct numerous core technical workshops, expert lectures, industrial visits, and internship programs to keep our students updated with industry needs and trends.Our commitment is to provide quality education through innovative teaching and learning processes, modern facilities, and a supportive academic environment."
+      "Established in 2001, the Department of Electronics &amp; Communication Engineering (ECE) has evolved into one of the most prominent disciplines in engineering. By applying the principles of science and mathematics, ECE addresses real-world challenges from designing and testing electronic devices to developing advanced communication systems.","Graduates of the department are well-prepared to contribute across industries, research, and innovation, making ECE a vital pillar of modern technology.","At Canara Engineering College, the Department of ECE serves as a hub of innovation and academic excellence. This dynamic field emphasizes the acquisition, transmission, and analysis of signals and information, driving technologies that range from everyday electronics to sophisticated medical devices and industrial systems.","In an era of rapid technological advancement, our ECE graduates stand at the forefront of engineering solutions, ready to shape diverse domains with creativity and expertise."
     ],
-    "keyPractices": [
+    "keyPracticesECE": [
       {
-        "title": "Some of the Key Practices of Department Include",
-        "points": [
-          "Student-centric teaching and learning.",
-          "Extensive use of educational software and multimedia tools.",
-          "Value addition programs to enhance student skills.",
-          "Encouragement for participation in technical events and competitions.",
-          "Industry-defined projects for final-year students.",
-          "Regular workshops on communication skills and personality development.",
-          "Mock interview sessions by industry and academic experts.",
-          "Empowering students to develop lifelong learning skills.",
-          "Continuous updates on career options and market trends.",
-          "Assisting students in developing job search strategies.",
-          "Upgrading student skill sets to meet industry expectations.",
-          "Providing individual counseling to help students set and achieve academic and career goals."
-        ]
-      }
+  "accreditationAndRecognition": {
+    "title": "Accreditation & Recognition",
+    "points": [
+      "Approved by the All India Council for Technical Education (AICTE).",
+      "Permanently affiliated to Visvesvaraya Technological University (VTU), Belgaum, Karnataka.",
+      "Accredited by the National Board of Accreditation (NBA) for a period of three years."
+    ]
+  },
+
+  "academicExcellence": {
+    "title": "Academic Excellence",
+    "description": "Guided by experienced faculty members, students gain exposure to research through hands-on projects, publications, and professional development opportunities. Faculty expertise ensures learners are prepared for successful careers, higher studies, and impactful research."
+  },
+
+  "infrastructureAndIndustryConnect": {
+    "title": "Infrastructure & Industry Connect",
+    "description": "The department offers state-of-the-art laboratories, advanced software tools, and modern equipment supported by dedicated technical staff. Strong ties with alumni and industry partners help continuously update curriculum and technical activities.",
+    "studentBenefits": [
+      "Core technical workshops and expert lectures.",
+      "Industrial visits and structured internship programs.",
+      "Research-oriented and industry-driven projects."
+    ]
+  },
+
+  "commitmentToStudents": {
+    "title": "Commitment to Students",
+    "description": "The department follows a student-centric learning approach that blends academic rigor with personal growth.",
+    "practices": [
+      "Interactive teaching using multimedia and educational software.",
+      "Value-addition programs to enhance technical and soft skills.",
+      "Encouragement to participate in technical events and competitions.",
+      "Industry-defined final-year projects.",
+      "Communication skills and personality development workshops.",
+      "Mock interviews conducted by industry and academic experts.",
+      "Career counselling and job search guidance."
+    ]
+  },
+
+  "qualityEducationStatement": {
+    "description": "The Department of ECE is committed to delivering quality education through innovative teaching methods, modern facilities, and a supportive learning environment. By empowering students with lifelong learning skills and industry-ready expertise, the department continues to shape future engineers and leaders."
+  }
+}
+
     ],
     "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
     "ethicalLearning": [
-      "Create conducive environment for overall development of students.",
-      "Mission 2: Equip the students with technical skills to bridge the gap between academia and industry"
+      "Create conducive environment for overall development of students",
+      "Equip the students with technical skills to bridge the gap between academia and industry"
     ],
-    "innovationExcellence": "Mission 2: Equip the students with technical skills to bridge the gap between academia and industry",
+    "innovationExcellence": "Equip the students with technical skills to bridge the gap between academia and industry",
     "holisticGrowthResearch": "",
     "ourVision": "The Department of Electronics and Communication Engineering strives to be a centre of repute by imparting quality education to produce globally competent graduates with human values.",
     "depatmentHead": {
-      "messageFromtheDepartmentHead": "Welcome to the department of Electronics & Communication Engineering at Canara Engineering College. The Department was established in the year 2001 with the aim of providing leadership in the field of Electronics & Communication Engineering. This department has been accredited thrice at 2015 ,2019 and 2025 by National Board of accreditation. Our mission is to develop innovative teaching and learning pedagogies to help the students to conquer new frontiers. Students are trained to work in multidisciplinary teams and motivates both co-curricular and extracurricular activities, for the overall development of its students. The department encourages the students to actively carry out their projects across various areas of Electronics and Communication and to develop their technical and research skills by attending various workshops, conferences, competitions, etc. We have a team of well qualified, experienced, and committed staff members. The Department of ECE has a unique blend of quality conscious staff members with a strong sense of ethical and professional responsibility.The department has excellent lab facilities which are being upgraded from time to time with cutting edge technology tools. Equal importance is given to both hardware and software labs. The department organizes several technical and nontechnical events to prepare the students to fit into industries. The department has several MOU with industries with their help, several activities are conducted for the overall department of students as well as faculty. Our alumni are the backbone of our department. They help the students for the placements and in upgradation of their technical knowledge.Department brings Newsletter Dhwani twice in a year. All the lectures of the subjects are available on college YouTube channel.",
-      "name": "Dr. Raghavendra M Shetty K",
-      "position": "Head of the Department",
-      "imageUrl": "/departmentImages/departmentHeads/Electronics&CommunicationEngineering.webp"
-    },
+    "messageFromtheDepartmentHead": "“A person who never made a mistake never tried anything new.” — Albert Einstein. \n Warm greetings to all stakeholders—students, parents, alumni, and well-wishers. Welcome to the Department of Electronics and Communication Engineering (ECE), a dynamic and forward-thinking academic community at Canara Engineering College. Since its establishment in 2001, the department has been a beacon of excellence in engineering education across the Coastal Karnataka region. Our undergraduate program, B.E. in Electronics and Communication Engineering, is approved by AICTE, affiliated to Visvesvaraya Technological University (VTU), Belagavi, and accredited multiple times by the National Board of Accreditation (NBA), currently holding a three-year accreditation. We are committed to nurturing talent, fostering innovation, and delivering education that meets industry and global standards. The department is anchored in four core domains: VLSI and Embedded Systems, Communication Systems, Applied Electronics, and Signal Processing and Computer Programming. With cutting-edge laboratories, industry-grade tools, and a curriculum focused on project-based and experiential learning, our students graduate with the skills and confidence to thrive in diverse professional environments. Our consistent placement record and strong industry linkages reflect our dedication to student success. Through strong Memorandums of Understanding (MoUs) with leading industries and academic institutions, we provide students with hands-on training, certification programs, technical workshops, and internship opportunities, ensuring real-world exposure and alignment with evolving industry requirements. Research is a vital part of our identity. Our VTU-recognized Research Centre, established in 2004, offers Ph.D. programs in multiple specializations with over 12 registered scholars and 05 awarded doctorates. Our research output includes more than 16 Scopus-indexed international and national journal publications, 32 conference papers, over 3100 Scopus citations, more than 6000 Google Scholar citations, and 14 patents published. Our alumni continue to make significant contributions across industries and academia, strengthening our ecosystem of mentorship and collaboration. As we move forward, we remain committed to academic rigor, innovation, and holistic development, and we invite you to be part of our journey in shaping the future of engineering.",
+    "name": "Dr. Raghavendra M Shetty K",
+    "position": "Head of the Department",
+    "imageUrl": "/departmentImages/departmentHeads/Electronics&CommunicationEngineering.webp"
+  },
 
     "ideas": {
       "placements": [
@@ -30156,8 +30183,8 @@
     "Life-Long Learning: Recognize the need for, and have the preparation and ability for i) independent and life-long learning ii) adaptability to new and emerging technologies and iii) critical thinking in the broadest context of technological change."
   ],
       "programSpecific": [
-        "An ability to understand, analyze and impart the basic knowledge of Information Science and Engineering.",
-        "An ability to apply the programming, designing, and problem solving techniques in building/simulating the applications, solving the problems and guiding the innovative career paths to become an IT Engineer."
+        "Ability to specify, design, build and test analog, digital, embedded systems and to apply programming skills in the relevant fields.",
+        "Ability to understand and apply modern wired and wireless analog and digital communication systems for existing problems."
       ]
     },
     "facilities": {
@@ -30313,49 +30340,108 @@
         "imageUrl": "https://apiserver.cec.edu.in/files/Publications%20in%20Conferences"
       }
     ],
-    "academicsProgram": {
-      "title": "Academics",
-      "des": "Established in 2001, the Department of Electronics and Communication Engineering is affiliated with Visvesvaraya Technological University (VTU), Belagavi, Karnataka. The department is approved by the All India Council for Technical Education (AICTE) for its undergraduate program and is accredited by the National Board of Accreditation (NBA) until July 2025. Committed to imparting quality education, the department aims to nurture students to meet the evolving needs of the industry.",
-      "points": [],
-      "academicAdditionalSkills": [
-        {
-          "title": "Faculty and Research",
-          "desc": "The department boasts a team of highly qualified and experienced faculty members, maintaining an excellent student-to-faculty ratio of 16:1. Among them, three hold doctoral degrees, nine are pursuing Ph.D.s, and the rest are postgraduates. Faculty members are actively engaged in research, contributing to national and international journals, and presenting papers at renowned conferences. They regularly participate in Faculty Development Programs (FDPs) and technical workshops to stay updated with the latest advancements in the field.",
-          "imageUrl": "",
-          "points": []
-        },
-        {
-          "title": "Student Development and Industry Exposure",
-          "desc": "Students are provided with ample opportunities to work on mini-projects, enhance their communication skills, and secure internships with industry partners. They are encouraged to enroll in continuous learning programs such as Spoken Tutorial and NPTEL. The Institution’s Innovation Council (IIC) organizes guest lectures, industry expert talks, and industrial visits to bridge the gap between academia and industry. Additionally, the department also conducts various co-curricular and extracurricular activities to promote holistic development. A well-established mentor-mentee system ensures personalized guidance, helping students excel in academics and participate in essential career-building activities.",
-          "imageUrl": "",
-          "points": []
-        },
-        {
-          "title": "Outcome-Based Education and Research",
-          "desc": "Following an Outcome-Based Education (OBE) framework, the department emphasizes hands-on learning through technical activities, mini-projects, and product development initiatives. Research activities are actively promoted, with students and faculty encouraged to present papers at technical fests and conferences. The department has Memorandums of Understanding (MoUs) with leading industry partners, including Kakunje Software Pvt. Ltd. and GTTC Mangalore, to facilitate collaborative learning and research. The curriculum is designed to provide a strong foundation in fundamental principles while integrating advancements in various domains such as embedded systems, digital communication, signal processing, VLSI, and microprocessors. Additionally, significant emphasis is placed on enhancing students’ coding skills to expand their career opportunities in the IT industry. Training in IT-related skills is provided by QSpiders, Bangalore, while Ethnus offers specialized soft skills training. Bridging the Curriculum Gap with Add-On Courses To further enhance students' technical expertise and bridge gaps in the curriculum, the department offers various add-on courses. These courses equip students with practical knowledge and industry-relevant skills in:",
-          "imageUrl": "",
-          "points": [
-            "Line Following Robot",
-            "Python Programming",
-            "PCB Design",
-            "Python for Networking and Database Essentials",
-            "JavaScript",
-            "Java Programming",
-            "Microcontroller and IoT"
-          ]
-        },
-        {
-          "title": "Preparing Students for a Competitive World",
-          "desc": "The department is dedicated to shaping well-rounded professionals who are industry-ready and equipped to thrive in the competitive global landscape. By fostering technical expertise, research capabilities, and essential soft skills, we ensure that our students are well-prepared for successful careers in both core engineering and IT sectors.",
-          "imageUrl": "",
-          "points": []
-        }
-      ],
-      "annualIntake": ""
+    "academicsProgramEce": {
+  "programmeDuration": {
+    "title": "Programme Duration",
+    "details": [
+      "Duration: 4 years (8 semesters)",
+      "Type: Full-time undergraduate programme"
+    ],
+    "description": "The syllabus spans 8 semesters, beginning with foundational science and engineering subjects, followed by core ECE topics, professional and open electives, mini projects, internships, and major project work. The programme offers a balanced mix of theoretical knowledge and practical exposure."
+  },
+
+  "programOverview": {
+    "title": "Program Overview",
+    "description": "Electronics and Communications Engineering is one of the most popular branches of engineering, involving research, design, development, testing, and maintenance of electronic equipment. ECE engineers also supervise the assembling and manufacturing of communication and broadcast systems. The field is founded on three major technical areas: Mathematics, Physics, and Computers."
+  },
+
+  "foundationsOfECE": {
+    "title": "Foundations of Electronics & Communication Engineering",
+    "description": "Electronics & Communication Engineering (ECE) combines research, design, development, testing, and maintenance of electronic equipment with the creation of advanced communication systems. ECE engineers play a vital role in supervising the assembly and manufacturing of communication and broadcast systems.",
+    "foundations": [
+      "Mathematics: Information, networks, and systems",
+      "Physics: Circuits, semiconductor devices, and optical systems",
+      "Computers: Microprocessors and computing devices"
+    ],
+    "summary": "This multidisciplinary foundation makes ECE a cornerstone of modern technology, powering innovations across industries."
+  },
+
+  "whyStudyECE": {
+    "title": "Why Study Electronics & Communication Engineering",
+    "idealFor": [
+      "Students with a strong interest in gadgets, electronics, and communication systems",
+      "Aspirants who want to design and develop cutting-edge devices and technologies",
+      "Students who enjoy applying science and mathematics to solve practical problems",
+      "Those seeking careers in telecommunications, IT, aerospace, healthcare, consumer electronics, and embedded systems"
+    ],
+    "learningOutcomes": "Students gain exposure to electronic devices and circuits, circuit analysis, VLSI design, digital communication, microprocessors, and signal processing. Practical learning is emphasized through laboratory sessions, industry projects, and hands-on workshops to ensure industry readiness."
+  },
+
+  "programmeProgression": {
+    "title": "Programme Progression: Semester-wise Learning Path",
+    "foundation": {
+      "title": "Foundation (Semesters I & II)",
+      "description": "Students begin with core courses in mathematics, physics, chemistry, and basic engineering sciences. Subjects include Calculus, Linear Algebra, Basic Electrical Engineering, Civil & Mechanical Engineering elements, and C Programming. Laboratory sessions in physics, chemistry, electronics, and programming ensure hands-on exposure from the start. Communication skills are strengthened through Technical English."
     },
+    "coreEngineering": {
+      "title": "Core Engineering (Semesters III & IV)",
+      "description": "The focus shifts to digital systems, signal processing, and analog electronics. Courses include Digital System Design using Verilog, Basic Signal Processing, Analog Circuits, and Communication Theory. Labs in analog and digital electronics and communication systems reinforce practical skills. Courses on professional ethics, social responsibility, and human values broaden perspectives, while internships introduce industry exposure."
+    },
+    "advancedSpecialization": {
+      "title": "Advanced Specialization (Semesters V & VI)",
+      "description": "Students study digital communication, computer networks, microwave theory, antennas, and embedded systems. Programming skills expand with Java, Data Structures, and Object-Oriented Programming. Research methodology, environmental studies, and intellectual property rights prepare students for innovation. Mini projects and advanced labs encourage independent problem-solving and design."
+    },
+    "professionalExpertise": {
+      "title": "Professional Expertise (Semesters VII & VIII)",
+      "description": "The final year emphasizes VLSI design, wireless and cellular communication, and computer networks. Electives cover cutting-edge areas such as IoT, Machine Learning, Cryptography, Radar Engineering, and Biomedical Signal Processing. Students complete major projects in two phases, present technical seminars, and undertake internships to graduate with industry-ready skills and research experience."
+    }
+  },
+
+  "electives": {
+    "title": "Electives",
+    "areas": [
+      "Artificial Neural Networks",
+      "Nanoelectronics",
+      "Satellite Communication",
+      "DSP Algorithms",
+      "IoT & Wireless Sensor Networks",
+      "Automotive Electronics",
+      "Multimedia Communication",
+      "Network Security",
+      "Optical Communication Networks",
+      "Biomedical Signal Processing"
+    ]
+  },
+
+  "programEducationalObjectives": {
+    "title": "Program Educational Objectives",
+    "objectives": [
+      "Succeed in their professional careers.",
+      "Apply knowledge of Electronics and Communication Engineering to address technological problems of industry and society.",
+      "Demonstrate leadership qualities and uphold professional and ethical standards."
+    ]
+  },
+
+  "programSpecificOutcomes": {
+    "title": "Program Specific Outcomes",
+    "outcomes": [
+      "Ability to specify, design, build, and test analog, digital, and embedded systems, and apply programming skills in relevant fields.",
+      "Ability to understand and apply modern wired and wireless analog and digital communication systems to solve real-world problems."
+    ]
+  },
+
+  "eligibilityCriteria": {
+    "title": "Eligibility Criteria",
+    "criteria": [
+      "Passed 2nd PUC / 12th / Equivalent Examination with English as one of the languages.",
+      "Secured a minimum of 45% aggregate marks in Physics and Mathematics along with one of the following subjects: Chemistry, Biotechnology, Biology, Electronics, or Computer Science (40% aggregate for Karnataka reserved category candidates).",
+      "Qualified in one of the recognized entrance examinations: CET / COMED-K / JEE / AIEE."
+    ]
+  }
+},
     "organisation": {
       "title": "",
-      "imageUrl": "https://apiserver.cec.edu.in/files/Electronics%20&%20Communication%20Engineering",
+      "imageUrl": "https://apiserver.cec.edu.in/files/organisationEce",
       "table": []
     },
     "research": [
@@ -30401,59 +30487,112 @@
           }
         ]
       },
-      {
-        "heading": "WORKING MODELS",
-        "points": [],
-        "imageUrl": "",
-        "table": [
-          {
-            "title": [],
-            "firstColumn": [],
-            "secondColumn": [],
-            "thirdColumn": [],
-            "fourthColumn": []
-          }
-        ],
-        "th": ["Year", "Project Title", "Guide", "Team Members"],
-        "moreDetailesTable": [
-          {
-            "year": "2022-23",
-            "domain": "MULTI CONTROLLED ELECTRIC WHEEL CHAIR",
-            "faculty": ["Ms. Savitha Acharya"],
-            "researchScholars": ["4CB19EC021 Dheeraj Shenoy", "4CB19EC002 Aghan Jain", "4CB19EC023 Harsvaradhan", "4CB19EC034 K S Muhammad Sawad"]
-          },
-          {
-            "year": "2023-24",
-            "domain": "AUTOMATIC RUBBER MILK MIXING MACHINE BY DETERMINING THE DRY RUBBER CONTENT OF LATEX",
-            "faculty": ["Mr. Vinay H S"],
-            "researchScholars": ["4CB20EC008 Ashish Kotian", "4CB21EC402 NaviKarthik", "4CB21EC400 Abhishek Gatty", "4CB20EC042 Sanketh Rao"]
-          },
-          {
-            "year": "2023-24",
-            "domain": "ADVAYA VAHANA",
-            "faculty": ["Ms. Jayashree K"],
-            "researchScholars": ["4CB20EC032 Pruthviraj S Uppar", "4CB20EC034 Rachan A R", "4CB20EC043 Sahana", "4CB20EC051 Shrilakshmi G Hegde"]
-          },
-          {
-            "year": "2023-24",
-            "domain": "LOW-COST MYOELECTRIC PROSTHETIC ARM",
-            "faculty": ["Dr. Dayananda G K"],
-            "researchScholars": ["4CB20EC004 Aditya P", "4CB20EC006 Amel Rayaz Bailur", "4CB20EC022 Nisha Shetty", "4CB20EC047 Sameer M Hegde"]
-          },
-          {
-            "year": "2023-24",
-            "domain": "VENDING MACHINE USING UPI",
-            "faculty": ["Ms. Rajitha A A"],
-            "researchScholars": ["4CB20EC002 Abhijith A", "4CB20EC009 Ashwin K S", "4CB20EC016 Krithik S K", "4CB20EC019 Manoj Hegde"]
-          },
-          {
-            "year": "2024-25",
-            "domain": "DESIGN AND IMPLEMENTATION OF HELICAL ANTENNA FOR AIRCRAFT COMMUNICATION",
-            "faculty": ["Mr. Sreerama Samartha J G"],
-            "researchScholars": ["4CB21EC001 Aishwarya H S", "4CB21EC054 Spandana", "4CB21EC020 Lata Keshav Naik", "4CB21EC053 Sonali S"]
-          }
-        ]
-      },
+  {
+  "heading": "WORKING MODELS",
+  "points": [],
+  "imageUrl": "",
+  "table": [
+    {
+      "title": [],
+      "firstColumn": [],
+      "secondColumn": [],
+      "thirdColumn": [],
+      "fourthColumn": []
+    }
+  ],
+  "th": ["Year", "Project Title", "Guide", "Team Members"],
+  "moreDetailesTable": [
+    {
+      "year": "2022-23",
+      "domain": "Multi Controlled Electric Wheel Chair",
+      "faculty": ["Ms. Savitha Acharya"],
+      "researchScholars": [
+        "4CB19EC021 Dheeraj Shenoy",
+        "4CB19EC002 Aghan Jain",
+        "4CB19EC023 Harshavardhan",
+        "4CB19EC034 K S Muhammad Sawad"
+      ]
+    },
+    {
+      "year": "2023-24",
+      "domain": "Automatic Rubber Milk Mixing Machine by Determining the Dry Rubber Content of Latex",
+      "faculty": ["Mr. Vinay H S"],
+      "researchScholars": [
+        "4CB20EC008 Ashish Kotian",
+        "4CB21EC402 Navikarthik",
+        "4CB21EC400 Abhishek Gatty",
+        "4CB20EC042 Sanketh Rao"
+      ]
+    },
+    {
+      "year": "2023-24",
+      "domain": "Advaya Vahana",
+      "faculty": ["Ms. Jayashree K"],
+      "researchScholars": [
+        "4CB20EC032 Pruthviraj S Uppar",
+        "4CB20EC034 Rachan A R",
+        "4CB20EC043 Sahana",
+        "4CB20EC051 Shrilakshmi G Hegde"
+      ]
+    },
+    {
+      "year": "2023-24",
+      "domain": "Low-Cost Myoelectric Prosthetic Arm",
+      "faculty": ["Dr. Dayananda G K"],
+      "researchScholars": [
+        "4CB20EC004 Aditya P",
+        "4CB20EC006 Amel Rayaz Bailur",
+        "4CB20EC022 Nisha Shetty",
+        "4CB20EC047 Sameer M Hegde"
+      ]
+    },
+    {
+      "year": "2023-24",
+      "domain": "Vending Machine Using UPI",
+      "faculty": ["Ms. Rajitha A A"],
+      "researchScholars": [
+        "4CB20EC002 Abhijith A",
+        "4CB20EC009 Ashwin K S",
+        "4CB20EC016 Krithik S K",
+        "4CB20EC019 Manoj Hegde"
+      ]
+    },
+    {
+      "year": "2024-25",
+      "domain": "Design and Implementation of Helical Antenna for Aircraft Communication",
+      "faculty": ["Mr. Sreerama Samartha J G"],
+      "researchScholars": [
+        "4CB21EC001 Aishwarya H S",
+        "4CB21EC054 Spandana",
+        "4CB21EC020 Lata Keshav Naik",
+        "4CB21EC053 Sonali S"
+      ]
+    },
+    {
+      "year": "2024-25",
+      "domain": "Unmanned Underwater Vehicle (UUV)",
+      "faculty": ["Mr. Varun K"],
+      "researchScholars": [
+        "4CB21EC037 Rahul Pai",
+        "4CB21EC031 Prajwal P Shetty",
+        "4CB21EC008 Chinmay M S",
+        "4CB21EC043 Roshan C Kochrekar","\n (This project develops an Unmanned Underwater Vehicle (UUV) for underwater exploration using advanced sensors and autonomous control. It integrates sonar for navigation and acoustic communication for data transmission in challenging underwater environments.)"
+      ]
+    },
+    {
+      "year": "2024-25",
+      "domain": "Multi Control Electric Wheel Chair",
+      "faculty": ["Mrs. Rajitha A"],
+      "researchScholars": [
+        "4CB21EC062 Veekshitha Shetty",
+        "4CB21EC045 Sannidhi Shenoy",
+        "4CB21EC048 Shratik S Nagekar",
+        "4CB22EC400 Karthik D S","\n (The goal is to create a system that helps people with visual disabilities overcome challenges and lead more independent and fulfilling lives. Text-to-speech software converts written text into speech, making it easier for visually impaired individuals to read books, newspapers, and other written materials.)"
+      ]
+    }
+  ]
+}
+,
       {
         "heading": "Publications in International Journals",
         "points": [],
@@ -30503,9 +30642,9 @@
         "table": [
           {
             "title": [],
-            "firstColumn": ["Ms. savitha Acharya", "Mr. Sreerama Samarta J G", "Mr. Vinay H S"],
-            "secondColumn": ["Ms.Jayasree K", "Mr. Sandeep Prabhu M", "Mr. Manjunath I R"],
-            "thirdColumn": ["Ms. Akshatha G Baliga", "Ms.Rajitha A A", "Mr. Sujith S Pai"],
+            "firstColumn": ["Ms. Savitha Acharya", "Ms. Jayashree K", "Ms. Akshatha G Baliga"],
+            "secondColumn": ["Mr. Sreerama Samarta J G", "Ms. Rajitha A A"],
+            "thirdColumn": ["Mr. Sujith S Pai","Mr. Vinay H S"],
             "fourthColumn": []
           }
         ]

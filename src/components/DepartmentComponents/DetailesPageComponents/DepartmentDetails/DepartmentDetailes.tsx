@@ -153,7 +153,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   ];
 
   return (
-    <section className="py-10 xl:py-36 text-black lg2:px-24 px-5 overflow-hidden">
+    <section className="py-10 xl:py-36 text-black lg2:px-20 px-5 overflow-hidden">
       <div className="">
         <h1 className="text-[#1D1D1F] text-xl lg:text-[31px] mb-2">Department of </h1>
         <h2 className="text-[30px] lg:w-[50%]  lg:text-[54px] font-bold leading-[1.1] pb-1 lg:pb-10 text-black">{department?.name}</h2>
@@ -199,12 +199,13 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
           <div className="col-span-1"></div>
           <div className="col-span-8 max-h-[70vh] md:max-h-[130vh] scrollable overflow-y-auto  pr-2">
             {selectedSection === "Department Profile" && (
-              <DepartmentProfile annualIntake={department?.annualTake} keyPoints={department?.keyPractices} data={department?.description} />
+              <DepartmentProfile annualIntake={department?.annualTake} keyPracticesECE={department?.keyPracticesECE} keyPoints={department?.keyPractices} data={department?.description} />
             )}
             {selectedSection === "Organisation Structure" && department?.organisation && <Organaisation data={department?.organisation} />}
             {selectedSection === "Head of the Department" && <Hod data={department?.depatmentHead} />}
             {selectedSection === "Faculty & Staff" && <Faculty deptName={department?.name}  />}
-            {selectedSection === "Academic Programmes" && department?.academicsProgram && <Academic data={department.academicsProgram} />}
+            {selectedSection === "Academic Programmes" && department?.academicsProgram && <Academic academicsProgramEce={department.academicsProgramEce} data={department.academicsProgram} />}
+            {selectedSection === "Academic Programmes" && department?.academicsProgramEce && <Academic academicsProgramEce={department.academicsProgramEce} data={department.academicsProgram} />}
             {selectedSection === "PO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
             {selectedSection === "PEO & PO-PSO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
             {selectedSection === "Course Outcomes (CO)" && <CourseOutCome deptName={department?.name} staticData={department?.courseOutcome} />}

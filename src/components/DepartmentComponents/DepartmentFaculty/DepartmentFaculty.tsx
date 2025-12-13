@@ -153,7 +153,7 @@ const handlePrev = () => {
               </span>
             </h2>
             <p className="text-gray-700 mt-6 text-lg">
-              Our admin team is the backbone of our institution, ensuring seamless operations with their expertise, dedication & commitment to
+              Our faculty team is the backbone of our institution, ensuring seamless operations with their expertise, dedication & commitment to
               excellence.
             </p>
           </div>
@@ -250,7 +250,7 @@ const handlePrev = () => {
               </span>
             </h2>
             <p className="text-gray-700 text-lg">
-              Our admin team is the backbone of our institution, ensuring seamless operations with their expertise, dedication & commitment to
+              Our faculty team is the backbone of our institution, ensuring seamless operations with their expertise, dedication & commitment to
               excellence.
             </p>
           </div>

@@ -177,9 +177,12 @@ const Research: React.FC<ResearchProps> = ({ data ,deptName}) => {
                         <td className="py-3 md:px-4 px-1 border-b">
                           {(row.faculty || []).join(', ')}
                         </td>
-                        <td className="py-3 md:px-4 px-1 border-b">
-                          {(row.researchScholars || []).join(', ')}
-                        </td>
+                   <td className="py-3 md:px-4 px-1 border-b whitespace-pre-line">
+  {(row.researchScholars || [])
+    .join(', ')
+    .replace(/,\s*\n/g, '\n')}
+</td>
+
                       </tr>
                     ))}
                   </tbody>

@@ -11,7 +11,7 @@ const AboutDepartment = () => {
   // Function to programmatically download the file
   const triggerFileDownload = () => {
     const link = document.createElement("a");
-    link.href = "/brochures/Placement Brochure Design.pdf";
+    link.href = "/brochures/Placement Brochure - Canara_Engineering_College - Deepthi Prabhu.pdf";
     link.setAttribute("download", "Placement Brochure Design.pdf");
     document.body.appendChild(link);
     link.click();

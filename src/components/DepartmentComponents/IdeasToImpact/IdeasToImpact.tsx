@@ -243,7 +243,9 @@ useEffect(() => {
                   </h3>
                   <p className="text-left text-2xl">Examination Pass Out Rate</p>
                   <p className="text-[16px] max-w-md text-left">
-                    Over the Past Three Academic Years
+                    {passOutRates.length === 1
+    ? "Based on the first graduating batch"
+    : "Over the past academic years"}
                   </p>
                 </div>
 
