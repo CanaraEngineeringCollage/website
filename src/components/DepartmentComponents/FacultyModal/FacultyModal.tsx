@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Dialog } from "@headlessui/react";
 import { X } from "lucide-react";
 import Image from "next/image";
+import React from "react";
 
 
 interface Qualification {
@@ -314,27 +315,69 @@ const Info = ({ label, value }: { label: string; value?: string }) =>
 
 const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (
   <div className="mt-12 text-[#1D1D1F]">
-    <h3 className="text-[32px] font-semibold mb-4 text-center">{title}</h3>
+    <h3 className="text-[32px] font-semibold mb-4 md:text-center">{title}</h3>
     {children}
   </div>
 );
 
-const DynamicListSection = ({ title, items }: { title: string; items: DescriptionItem[] }) => (
-  <Section title={title}>
-    <div className="space-y-6">
-      {items.map((item) => (
-        <div key={item.id} className="border border-[#D9D9D9] rounded-lg p-5  shadow-sm">
-          <h4 className="text-2xl font-semibold mb-3">{item.heading}</h4>
-          <ul className="list-disc pl-6 space-y-2 text-gray-700">
-            {item.descriptions.map((desc, i) => (
-              <li key={i}>{desc}</li>
+const DynamicListSection = ({
+  title,
+  items,
+}: {
+  title: string;
+  items: DescriptionItem[];
+}) => {
+  const [activeIndex, setActiveIndex] = React.useState(0);
+
+  const activeItem = items[activeIndex];
+
+  return (
+    <Section title={title}>
+      {/* 🔘 HEADING BUTTONS */}
+      <div className="flex flex-col md:flex-row flex-wrap gap-3 mb-4 md:mb-5">
+        {items.map((item, index) => (
+          <button
+            key={item.id}
+            onClick={() => setActiveIndex(index)}
+            className={`w-fit px-8 py-2 rounded-md text-sm font-medium border transition
+              ${
+                activeIndex === index
+                  ? "bg-primary text-white border-primary"
+                  : "bg-white text-gray-700 border-gray-300 hover:bg-[#F8FBFD]"
+              }`}
+          >
+            {item.heading}
+          </button>
+        ))}
+      </div>
+
+      {/* 📄 CONTENT AREA */}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={activeItem.id}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.3 }}
+          className="rounded-lg p-6"
+        >
+          {/* ✅ ACTIVE HEADING INSIDE CONTENT */}
+          <h4 className="text-2xl font-semibold text-[#1D1D1F] mb-4">
+            {activeItem.heading}
+          </h4>
+
+          <ul className="list-disc pl-6 space-y-3 text-gray-700 text-base">
+            {activeItem.descriptions.map((desc, i) => (
+              <li key={i}>{cleanText(desc)}</li>
             ))}
           </ul>
-        </div>
-      ))}
-    </div>
-  </Section>
-);
+        </motion.div>
+      </AnimatePresence>
+    </Section>
+  );
+};
+
+
 const cleanText = (input: string = "") => {
   if (!input) return "";
 

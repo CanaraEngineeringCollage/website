@@ -153,7 +153,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   ];
 
   return (
-    <section className="py-10 xl:py-36 text-black px-4 sm:px-6 md:px-10 lg:px-20 overflow-hidden">
+    <section className="py-10 xl:py-36 text-black lg2:px-24 px-5 overflow-hidden">
       <div className="">
         <h1 className="text-[#1D1D1F] text-xl lg:text-[31px] mb-2">Department of </h1>
         <h2 className="text-[30px] lg:w-[50%]  lg:text-[54px] font-bold leading-[1.1] pb-1 lg:pb-10 text-black">{department?.name}</h2>

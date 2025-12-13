@@ -7,6 +7,7 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa"; // ← Left arrow ad
 
 interface GalleryItem {
   image: string;
+   title?: string; 
 }
 
 const backdropVariants = {
@@ -128,6 +129,11 @@ const Gallery = ({ data }: { data: GalleryItem[] }) => {
                 height={1000}
                 className="object-cover w-full h-[80vh] md:h-[90vh] lg:h-[80vh] xl:h-[90vh] 2xl:h-[80vh] select-none"
               />
+                <div className="p-4  border-t">
+                <h2 className="text-lg md:text-xl font-semibold text-[#1D1D1F]">
+                 {data[selectedIndex].title}
+                </h2>
+              </div>
             </motion.div>
           </motion.div>
         )}
