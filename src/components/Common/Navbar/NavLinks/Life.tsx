@@ -90,7 +90,7 @@ export default function Life() {
                     <Link
                       href="https://www.canaraengineering.in/placements_portal.php"
                       target="_blank"
-                      className={`${pathname.includes("/media") ? `` : "text-gray-500"} hover:text-primary `}
+                      className={`${pathname.includes("/placements-portal") ? `` : "text-gray-500"} hover:text-primary `}
                     >
                      Placement Portal
                     </Link>
@@ -147,8 +147,8 @@ export default function Life() {
                   <li>
                     {" "}
                     <Link
-                      href="/media"
-                      className={`${pathname.includes("/media") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
+                      href="/student-achievements"
+                      className={`${pathname.includes("/student-achievements") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
                     >
                       Student Achievements
                     </Link>
@@ -159,7 +159,7 @@ export default function Life() {
                     <Link
                       href="https://www.canaraengineering.in/s_hostelpass"
                       target="_blank"
-                      className={`${pathname.includes("/media") ? `` : "text-gray-500"} hover:text-primary `}
+                      className={`${pathname.includes("/hostel-out-pass") ? `` : "text-gray-500"} hover:text-primary `}
                     >
                       Hostel Out Pass
                     </Link>
@@ -173,7 +173,7 @@ export default function Life() {
                     <Link
                       href="https://www.canaraengineering.in/s-info"
                       target="_blank"
-                      className={`${pathname.includes("/media") ? `` : "text-gray-500"} hover:text-primary `}
+                      className={`${pathname.includes("/student-information") ? `` : "text-gray-500"} hover:text-primary `}
                     >
                      Student Information
                     </Link>

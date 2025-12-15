@@ -49,14 +49,25 @@ const contentVariants = {
 function CardContent({ description }: { description: Amenity }) {
   return (
     <div>
-      <Image
-        src={description.imageSrc2}
-        alt="Image"
-        loading="lazy"
-        width={1000}
-        height={700}
-        className="object-cover overflow-hidden rounded-t-2xl w-full lg:h-[500px] h-[400px] mb-10"
-      />
+      {description.imageSrc2.endsWith(".mp4") ||
+      description.imageSrc2.endsWith(".webm") ? (
+        <video
+          src={description.imageSrc2}
+          controls
+          autoPlay
+          playsInline
+          className="object-contain overflow-hidden rounded-t-2xl w-full lg:h-[500px] h-[400px] mb-10"
+        />
+      ) : (
+        <Image
+          src={description.imageSrc2}
+          alt="Image"
+          loading="lazy"
+          width={1000}
+          height={700}
+          className="object-cover overflow-hidden rounded-t-2xl w-full lg:h-[500px] h-[400px] mb-10"
+        />
+      )}
       {description.title && (
         <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
           <div>
@@ -170,15 +181,26 @@ export default function LegacyExcellance() {
   <div
     key={index}
     onClick={() => openModal(item, index)}
-    className="relative cursor-pointer lg:h-[500px] rounded-3xl overflow-hidden"
+    className="relative cursor-pointer h-[200px] lg:h-[500px] rounded-3xl overflow-hidden"
   >
-    <Image
-      src={item.imageSrc}
-      alt={item.title}
-      width={700}
-      height={700}
-      className="w-full h-full object-cover rounded-3xl"
-    />
+    {item.imageSrc.endsWith(".mp4") || item.imageSrc.endsWith(".webm") ? (
+      <video
+        src={item.imageSrc}
+        muted
+        loop
+        playsInline
+        autoPlay
+        className="w-full h-full object-cover rounded-3xl"
+      />
+    ) : (
+      <Image
+        src={item.imageSrc}
+        alt={item.title}
+        width={700}
+        height={700}
+        className="w-full h-full object-cover rounded-3xl"
+      />
+    )}
 
     {/* Text Overlay */}
     <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-10">
@@ -218,7 +240,7 @@ export default function LegacyExcellance() {
             >
               <motion.button
                 variants={contentVariants}
-                className="absolute top-6 me-4 lg:me-8 h-8 w-8 right-0 cursor-pointer ml-auto bg-[#808080] rounded-full flex items-center justify-center"
+                className="absolute top-6 me-4 lg:me-8 z-[999999999999] h-8 w-8 right-0 cursor-pointer ml-auto bg-[#808080] rounded-full flex items-center justify-center"
                 onClick={closeModal}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -238,7 +260,7 @@ export default function LegacyExcellance() {
     {data[(currentIndex + 1) % data.length]?.title || "Next"}
   </span>
   
-  <MdKeyboardArrowRight className="ml-1 mt-1 text-[20px] md:text-[25px]" />
+  <MdKeyboardArrowRight className="ml-1 mt-0.5 text-[20px] md:text-[25px]" />
 </h1>
 
               </motion.div>

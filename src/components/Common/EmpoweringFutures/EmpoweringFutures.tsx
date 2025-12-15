@@ -21,7 +21,7 @@ const stats: Stat[] = [
             { year: "2021-22", value: 87 },
             { year: "2022-23", value: 85 },
             { year: "2023-24", value: 86.27 },
-            { year: "2024-25", value: 82.52 },
+            { year: "2024-25", value: 82.71 },
           ].map((item, index) => (
             <div key={index} className="flex flex-col items-center justify-end w-1/4">
               {/* Value label */}

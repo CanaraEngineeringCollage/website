@@ -3,6 +3,7 @@ import ContactFormModal from "@/components/Modal/Modal";
 import Link from "next/link";
 import React, { useState } from "react";
 import { HiDownload } from "react-icons/hi";
+import TrainingPlacementModal from "../ModalTraininigPlacement/ModalTraininigPlacement";
 
 
 const AboutDepartment = () => {
@@ -21,7 +22,7 @@ const AboutDepartment = () => {
   return (
     <section className="pb-5 md:pb-2 max-w-7xl xl:max-w-[75%] mx-auto lg:px-32">
       {/* Include Modal Component */}
-      <ContactFormModal 
+      <TrainingPlacementModal 
         isOpen={isModalOpen} 
         onClose={setIsModalOpen} 
         onSuccess={triggerFileDownload} // Pass the download logic here
@@ -32,16 +33,32 @@ const AboutDepartment = () => {
           <h1 className="text-3xl md:text-[40px] lg2:text-[46.5px] xl:text-6xl leading-[1.2] xl:max-w-4xl font-bold text-[#1D1D1F] ">
             Training &amp; Placement at <br className="hidden lg:block"/> Canara Engineering College
           </h1>
-          <div>
-            {/* Changed from <a> to <button> to open Modal */}
-            <button
-              onClick={() => setIsModalOpen(true)}
-              aria-label="Download Brochure"
-              className="text-[#2884CA] hidden font-bold text-[17px] bg-[#d9ebff] px-6 py-2 cursor-pointer rounded-3xl lg:inline-flex gap-3 items-center"
-            >
-              Download Brochure <HiDownload className="text-[24px] font-extrabold" />
-            </button>
-          </div>
+ <div className="flex flex-col gap-3 items-end">
+  {/* Download Brochure */}
+  <button
+    onClick={() => setIsModalOpen(true)}
+    aria-label="Download Brochure"
+    className="text-[#2884CA] hidden font-bold text-[17px] bg-[#d9ebff] 
+               px-6 py-2 cursor-pointer rounded-3xl lg:inline-flex gap-3 
+               items-center min-w-[250px] justify-center"
+  >
+    Download Brochure <HiDownload className="text-[24px] font-extrabold" />
+  </button>
+
+  {/* Placement Portal */}
+  <Link
+    href="https://www.canaraengineering.in/placements_portal.php"
+    target="_blank"
+    aria-label="Placement Portal"
+    className="text-[#2884CA] hidden font-bold text-[17px] 
+               border-[#d9ebff] border-2 px-6 py-2 cursor-pointer 
+               rounded-3xl lg:inline-flex gap-3 items-center 
+               min-w-[250px] justify-center"
+  >
+    Placement Portal
+  </Link>
+</div>
+
         </div>
         <p className="text-textGray text-lg lg:text-[20px] pb-5">
           Canara Engineering College has built a strong reputation in the competitive academic and corporate landscape. Our consistent placement
@@ -82,16 +99,7 @@ const AboutDepartment = () => {
         </p>
       </div>
 
-      <div>
-        <Link
-          href="https://www.canaraengineering.in/placements_portal.php"
-          target="_blank"
-          aria-label="Download Brochure"
-          className="text-[#2884CA] hidden mt-3 font-bold text-[17px] bg-[#d9ebff] px-6 py-2 cursor-pointer rounded-3xl lg:inline-flex gap-3"
-        >
-          Placement Portal
-        </Link>
-      </div>
+  
       
       <div className="flex justify-center lg:hidden">
         {/* Mobile Button - Changed from <a> to <button> to open Modal */}

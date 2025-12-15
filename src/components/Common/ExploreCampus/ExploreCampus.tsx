@@ -478,7 +478,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({
                       filteredEvents[(currentIndex + 1) % filteredEvents.length]
                         .content
                     ).topTitle || "Next Event"}
-                    <MdKeyboardArrowRight className="ml-1 mt-1 text-[20px] md:text-[25px]" />
+                    <MdKeyboardArrowRight className="ml-1 mt-0.5  text-[20px] md:text-[25px]" />
                   </h1>
                 </motion.div>
               </motion.div>

@@ -120,7 +120,7 @@ const campusBeats = [
   },
   {
     title: "Student Achievements",
-    link: "/media",
+    link: "/student-achievements",
   },
    {
     title: "Hostel Out Pass",

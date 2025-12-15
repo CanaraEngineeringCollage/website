@@ -52,7 +52,7 @@ const facilities = [
 
 const stayConnected = [
   { data: "Alumni", links: "/alumni" },
-  { data: "Media", links: "/media" },
+  { data: "Student Achievements", links: "/student-achievements" },
   { data: "Careers", links: "/careers" },
   // { data: "Calendar of Events", links: "/events" },
   // { data: "Careers", links: "#" },
@@ -137,7 +137,7 @@ const Footer: FC = () => {
               // { label: "Examination Timetables", href: "tt" },
               // { label: "Marks & Attendance", href: "marks" },
               { label: "Circulars", href: "/academics/examination-records?tab=circulars", tab: "circulars" },
-              { label: "Media", href: "/media" },
+              { label: "Student Achievements", href: "/student-achievements" },
             ]}
           />
         </Suspense>
