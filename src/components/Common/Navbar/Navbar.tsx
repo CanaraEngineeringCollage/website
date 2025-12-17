@@ -117,7 +117,7 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
             <NavbarItems />
             {/* Navbar Items */}
           </div>
-          <div className="block lg:hidden absolute top-1/2 -translate-y-1/2 right-4 z-[1000]">
+          <div className="block lg:hidden absolute top-1/2 -translate-y-1/2 right-4 z-20">
             {/* Dropdown */}
             <DropDown openSidebar={openSidebar} sidebar={sidebar} />
             {/* Dropdown */}

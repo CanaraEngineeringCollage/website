@@ -101,15 +101,23 @@ const AboutDepartment = () => {
 
   
       
-      <div className="flex justify-center lg:hidden">
+      <div className="flex flex-col items-center gap-3 justify-center lg:hidden">
         {/* Mobile Button - Changed from <a> to <button> to open Modal */}
         <button
           onClick={() => setIsModalOpen(true)}
           aria-label="Download Brochure"
-          className="text-[#2884CA] lg:hidden mt-2 font-bold text-[17px] bg-[#d9ebff] px-6 py-2 cursor-pointer rounded-3xl inline-flex gap-3 items-center"
+          className="text-[#2884CA] lg:hidden mt-2 font-bold text-[17px] bg-[#d9ebff] min-w-[250px] px-6 py-2 cursor-pointer rounded-3xl flex gap-3 items-center"
         >
           Download Brochure <HiDownload className="text-[24px] font-extrabold" />
         </button>
+  <Link
+    href="https://www.canaraengineering.in/placements_portal.php"
+    target="_blank"
+    aria-label="Placement Portal"
+          className="text-[#2884CA] lg:hidden mt-2 font-bold text-[17px] border-[#d9ebff] text-center min-w-[250px] border-2 px-6 py-2 cursor-pointer rounded-3xl  gap-3 items-center"
+        >
+            Placement Portal
+        </Link>
       </div>
     </section>
   );

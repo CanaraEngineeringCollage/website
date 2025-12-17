@@ -6,17 +6,17 @@ import Link from "next/link";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import FacultyModal from "@/components/DepartmentComponents/FacultyModal/FacultyModal";
 
-/* ================= TYPES (UNCHANGED UI EXPECTATION) ================= */
+/* ================= TYPES (UNCHANGED) ================= */
 
 interface CouncilMember {
   id: number;
   name: string;
   images?: string;
-  designation:string
+  designation: string;
   emergencycontact?: string;
-  timings:string;
+  timings: string;
   email?: string;
-  department:string;
+  department: string;
   achievements?: {
     id: string;
     heading: string;
@@ -30,12 +30,12 @@ const counsellingData: CouncilMember[] = [
   {
     id: 1,
     name: "Ms Nanditha Chinivarada",
-    images:"/studentWelfarePage/counsiler.jpg",
-    designation:"Asst. Professor and Counsellor",
-    department:"Student Welfare",
+    images: "/studentWelfarePage/counsiler.jpg",
+    designation: "Asst. Professor and Counsellor",
+    department: "Student Welfare",
     emergencycontact: "8310738241",
     email: "nandithach@canaraengineering.in",
-    timings:"9:00 A.M to 4:30 P.M (Available on all working days)"
+    timings: "9:00 A.M to 4:30 P.M (Available on all working days)",
   },
 ];
 
@@ -56,15 +56,16 @@ export default function CounsellingServices() {
   const [data, setData] = useState<CouncilMember[]>([]);
   const [startIndex, setStartIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedMember, setSelectedMember] =
-    useState<CouncilMember | null>(null);
+  const [selectedMember, setSelectedMember] = useState<CouncilMember | null>(
+    null
+  );
 
   /* ✅ USE STATIC DATA ONLY */
   useEffect(() => {
     setData(counsellingData);
   }, []);
 
-  /* ================= RESPONSIVE LOGIC (UNCHANGED) ================= */
+  /* ================= RESPONSIVE LOGIC ================= */
 
   const [isMobile, setIsMobile] = useState(false);
 
@@ -89,16 +90,24 @@ export default function CounsellingServices() {
     if (startIndex - step >= 0) setStartIndex(startIndex - step);
   };
 
-  /* ================= JSX (DESIGN UNTOUCHED) ================= */
+  /* ================= JSX ================= */
 
   return (
-    <section className="py-16 px-6 md:px-12 max-w-7xl mx-auto mt-20 lg:mt-12 mb-16 lg:mb-8 xl:max-w-[75%] bg-[#F5F5F7] rounded-3xl">
-      <div className="mx-auto lg1:flex  flex-col-reverse md:flex-row  justify-between gap-10">
-        <div className="max-w-md space-y-44">
+    <section className="py-16 px-6 md:px-12 max-w-7xl mx-auto lg:mt-12 lg:mb-8 xl:max-w-[75%] bg-[#F5F5F7] md:rounded-3xl">
+      {/* FIX: Changed `md:flex-row` to `lg:flex-row`. 
+          This forces iPad (md) to stay in column mode (stacked) to avoid squeezing.
+      */}
+      <div className="mx-auto flex flex-col lg:flex-row justify-between items-center lg:items-start md:gap-10">
+        
+        {/* Text Section */}
+        <div className="max-w-md w-full mx-auto lg:mx-0 space-y-6 lg:space-y-44">
           <div>
-            <h2 className="text-3xl text-center w-full lg:text-start lg:text-4xl md:text-4xl font-bold text-[#1D1D1F] leading-[1.1]">
+            {/* FIX: Added `text-center lg:text-start` so it centers on iPad but aligns left on Desktop */}
+            <h2 className="text-3xl text-center lg:text-start lg:text-4xl md:text-4xl font-bold text-[#1D1D1F] leading-[1.1]">
               Counselling Services
             </h2>
+            
+            {/* FIX: Ensure description centers on iPad */}
             <p className="text-gray-700 hidden md:block text-lg text-center lg:text-start mt-6">
               The institution provides professional counselling services to
               support the mental, emotional, academic, and personal well-being
@@ -107,7 +116,8 @@ export default function CounsellingServices() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 w-full mt-8 lg:mt-0  justify-items-center gap-6">
+        {/* Card Section */}
+        <div className="grid grid-cols-1 w-full  lg:mt-0 justify-items-center gap-6">
           {visibleMembers.map((member) => (
             <div
               key={member.id}
@@ -115,10 +125,13 @@ export default function CounsellingServices() {
                 setSelectedMember(member);
                 setIsModalOpen(true);
               }}
-              className="relative cursor-pointer w-full h-[400px] max-w-[309px] lg2:h-[450px] lg:h-[350px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md"
+              /* FIX: Removed custom `lg2` class. 
+                 Adjusted heights to be consistent on tablet/desktop. 
+              */
+              className="relative cursor-pointer w-full h-[400px] max-w-[309px] xl:h-[450px] lg:h-[350px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md hover:scale-[1.02] transition-transform duration-300"
             >
               <Image
-                src={member.images}
+                src={member.images || "/images/default-images.png"} 
                 alt={member.name}
                 fill
                 className="object-cover"
@@ -130,10 +143,7 @@ export default function CounsellingServices() {
                 <h2 className="text-[18px] font-bold leading-tight">
                   {member.name}
                 </h2>
-                <p className="text-sm leading-snug">
-                 
-               {member.designation}
-                </p>
+                <p className="text-sm leading-snug">{member.designation}</p>
                 <p className="text-[16px] font-bold flex items-center mt-1">
                   View Profile <MdKeyboardArrowRight className="ml-1" />
                 </p>
@@ -141,15 +151,14 @@ export default function CounsellingServices() {
             </div>
           ))}
         </div>
+
+        {/* Mobile Description (Visible only on small screens) */}
         <p className="text-gray-700 md:hidden text-lg text-center lg:text-start mt-8">
-              The institution provides professional counselling services to
-              support the mental, emotional, academic, and personal well-being
-              of all stake holders.
-            </p>
+          The institution provides professional counselling services to support
+          the mental, emotional, academic, and personal well-being of all stake
+          holders.
+        </p>
       </div>
-
-
-
 
       <FacultyModal
         isOpen={isModalOpen}

@@ -110,7 +110,7 @@ const ExploreCampus = ({ departmentName,events }: { departmentName: string, even
                 />
               </div>
 
-              <div className="p-8 text-center">
+              <div className="p-8 text-center bg-white">
                 <div className="flex justify-center items-center space-x-3">
                   {/* <p className="text-textGray text-[17px] mb-1">
                     {event.title}

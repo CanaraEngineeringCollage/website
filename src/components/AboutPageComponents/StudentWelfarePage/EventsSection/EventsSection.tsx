@@ -143,7 +143,7 @@ const EventsSection = () => {
             return (
               <SwiperSlide key={event.id}>
                 <div
-                  className="max-w-sm min-h-[55vh] md:min-h-[45vh] bg-white  lg2:min-h-[65vh] xl:min-h-[50vh] rounded-3xl overflow-hidden cursor-pointer"
+                  className="max-w-sm  bg-white  min-h-[450px] rounded-3xl overflow-hidden cursor-pointer"
                   onClick={() => openModal(event)}
                 >
                   <div className="h-60 overflow-hidden">
@@ -152,7 +152,7 @@ const EventsSection = () => {
                       height={400}
                       src={imageSrc || "/placeholder.jpg"}
                       alt={event.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-[center_25%]"
                     />
                   </div>
                   <div className="p-8 text-center">

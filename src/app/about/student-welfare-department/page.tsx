@@ -72,7 +72,7 @@ const page = () => {
 />
 
       </section>
-      <section className="pt-8 pb-12">
+      <section className="lg:pt-8 lg:pb-12">
 
         <CounsellingServices/>
       </section>
