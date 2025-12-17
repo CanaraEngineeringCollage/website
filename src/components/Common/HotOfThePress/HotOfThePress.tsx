@@ -209,7 +209,7 @@ const fetchEvents = async () => {
           const { src, topTitle, topDescription } = parseEventContent(event.content);
           return (
             <SwiperSlide key={event.id}>
-             <div className="max-w-sm  bg-white min-h-[450px]  rounded-xl lg:rounded-3xl overflow-hidden "
+             <div className="max-w-sm  bg-white min-h-[450px] cursor-pointer rounded-xl lg:rounded-3xl overflow-hidden "
                 onClick={() => openCard(index)}
               >
                 <div className="h-60 overflow-hidden">

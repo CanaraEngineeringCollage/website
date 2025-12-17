@@ -47,18 +47,19 @@ const contentVariants = {
 
 // CardContent Component
 function CardContent({ description }: { description: Amenity }) {
+  const isVideo =
+  description.imageSrc2.includes("/files/");
+
   return (
     <div>
-      {description.imageSrc2.endsWith(".mp4") ||
-      description.imageSrc2.endsWith(".webm") ? (
-        <video
-          src={description.imageSrc2}
-          controls
-          autoPlay
-          playsInline
-          className="object-contain overflow-hidden rounded-t-2xl w-full lg:h-[500px] h-[400px] mb-10"
-        />
-      ) : (
+      {isVideo ? (
+  <video
+    src={description.imageSrc2}
+    controls
+    playsInline
+    className="object-contain rounded-t-2xl w-full lg:h-[500px] h-[400px] mb-10"
+  />
+)  : (
         <Image
           src={description.imageSrc2}
           alt="Image"
@@ -90,6 +91,7 @@ export default function LegacyExcellance() {
   const progressRef = useRef<number>(0);
   const rafRef = useRef<number | null>(null);
   const AUTOPLAY_DELAY = 3000;
+  
 
   // Open modal with item data
   const openModal = (item: ModalContentType, index: number) => {
@@ -177,21 +179,26 @@ export default function LegacyExcellance() {
     <section className="max-w-7xl xl:max-w-[75%] px-5   mx-auto  py-8 lg:pt-3 lg:pb-10">
       <div className="grid grid-cols-1  lg:grid-cols-2 gap-8 lg2:gap-10 items-start">
         {/* Left Side - Swiper */}
-{data.map((item, index) => (
+{data.map((item, index) =>
+  
+{
+  const isVideo = item.imageSrc.includes("/files/") 
+  return(
   <div
     key={index}
     onClick={() => openModal(item, index)}
     className="relative cursor-pointer h-[200px] lg:h-[500px] rounded-3xl overflow-hidden"
   >
-    {item.imageSrc.endsWith(".mp4") || item.imageSrc.endsWith(".webm") ? (
-      <video
-        src={item.imageSrc}
-        muted
-        loop
-        playsInline
-        autoPlay
-        className="w-full h-full object-cover rounded-3xl"
-      />
+   {isVideo ? (
+        <video
+          src={item.imageSrc}
+          muted
+          loop
+          autoPlay
+          playsInline
+          preload="metadata"
+          className="w-full h-full object-cover rounded-3xl"
+        />
     ) : (
       <Image
         src={item.imageSrc}
@@ -223,7 +230,7 @@ export default function LegacyExcellance() {
       </div>
     </div>
   </div>
-))}
+)})}
 
 
         {/* Navigation Buttons */}

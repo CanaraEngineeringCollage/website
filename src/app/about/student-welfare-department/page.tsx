@@ -10,6 +10,7 @@ import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 import MissionAndVision from "@/components/AboutPageComponents/StudentWelfarePage/MissionAndVision/MissionAndVision";
 import Facilities from "@/components/AboutPageComponents/StudentWelfarePage/Facilities/Facilities";
 import EventsSection from "@/components/AboutPageComponents/StudentWelfarePage/EventsSection/EventsSection";
+import CounsellingServices from "@/components/AboutPageComponents/StudentWelfarePage/CounsellingServices/CounsellingServices";
 
 export const metadata = {
   title: "Student Welfare Department | Canara College",
@@ -70,6 +71,10 @@ const page = () => {
   }}
 />
 
+      </section>
+      <section className="pt-8 pb-12">
+
+        <CounsellingServices/>
       </section>
 <section className="px-4 bg-[#E5E5EA] pb-12 md:pb-0  md:px-12 lg:pl-16 lg:px-0 xl:px-0">
       <EventsSection/>

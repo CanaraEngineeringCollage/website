@@ -4,6 +4,7 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { IconX } from "@tabler/icons-react";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 // 🔹 Modal animations
 const backdropVariants = {
@@ -88,31 +89,55 @@ const ExploreCampus = ({ departmentName,events }: { departmentName: string, even
   return (
     <section className="py-10 lg:py-0 px-4 text-[#1D1D1F]">
       {/* 🔹 Event Cards */}
-      <div className="space-y-6">
-        {events.map((event) => (
-          <div
-            key={event.id}
-            className="border border-sky-200 shadow-md rounded-md overflow-hidden cursor-pointer hover:shadow-lg transition"
-            onClick={() => openModal(event)}
-          >
-            <div className="bg-slate-800 text-white text-center py-2 font-semibold text-sm">
-              {event.title} ({new Date(event.date).toLocaleDateString("en-GB")})
-            </div>
-            <div className="bg-gray-50 p-4 text-sm leading-relaxed text-gray-700">
-              {event.description.slice(0, 200)}...
-              <div className="text-center mt-3 font-semibold text-yellow-600 hover:text-yellow-700 cursor-pointer">
-                Read More &gt;&gt;
+       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        {events.map((event, index) => {
+          const src = event.image ? bufferToBase64(event.image) : "";
+        
+
+          return (
+            <div
+              key={event.id}
+              className="max-w-sm bg-white min-h-[450px] cursor-pointer rounded-xl lg:rounded-3xl overflow-hidden"
+              onClick={() => openModal(event)}
+            >
+              <div className="h-60 overflow-hidden">
+                <Image
+                  width={200}
+                  height={200}
+                  src={src}
+                  alt={event.title}
+                  className="w-full h-full object-cover object-[center_25%]"
+                />
+              </div>
+
+              <div className="p-8 text-center">
+                <div className="flex justify-center items-center space-x-3">
+                  {/* <p className="text-textGray text-[17px] mb-1">
+                    {event.title}
+                  </p> */}
+
+                  {/* <div className="h-5 w-[1px] bg-textGray"></div> */}
+
+                  <p className="text-textGray text-[17px] mb-1">
+                    {new Date(event.date).toLocaleDateString("en-GB", {
+                      day: "numeric",
+                      month: "short",
+                      year: "numeric",
+                    })}
+                  </p>
+                </div>
+
+                <h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">
+                  {event.title}
+                </h3>
+
+                <button className="text-primary inline-flex text-[17px] items-center hover:underline font-medium">
+                  Read More <MdKeyboardArrowRight className="ml-1" />
+                </button>
               </div>
             </div>
-          </div>
-        ))}
-
-        {/* Loader */}
-        {loading && (
-          <div className="text-center py-6 text-gray-500 font-medium">
-            Loading events...
-          </div>
-        )}
+          );
+        })}
       </div>
 
       {/* 🔹 Modal */}

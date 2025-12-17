@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import governingCounsilData from "../../../utils/placementFaculties/placementFaculties.json";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";

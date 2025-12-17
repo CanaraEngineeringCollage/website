@@ -100,7 +100,7 @@ const EventsSection = () => {
   return (
     <section className="lg:ml-20  xl:ml-60   pt-16  lg:pt-16 ">
       <div className="lg:flex lg:justify-between xl:pb-12 pb-10">
-        <h1 className="text-3xl text-[#1D1D1F] md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-semibold font-sans md:pb-6 tracking-[0.13px]">
+        <h1 className="text-3xl text-[#1D1D1F] md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-bold md:font-semibold font-sans md:pb-6 tracking-[0.13px]">
           Events
         </h1>
       </div>
@@ -143,7 +143,7 @@ const EventsSection = () => {
             return (
               <SwiperSlide key={event.id}>
                 <div
-                  className="max-w-sm min-h-[55vh] md:min-h-[45vh] bg-white lg:min-h-[65vh] xl:min-h-[50vh] rounded-3xl overflow-hidden cursor-pointer"
+                  className="max-w-sm min-h-[55vh] md:min-h-[45vh] bg-white  lg2:min-h-[65vh] xl:min-h-[50vh] rounded-3xl overflow-hidden cursor-pointer"
                   onClick={() => openModal(event)}
                 >
                   <div className="h-60 overflow-hidden">

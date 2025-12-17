@@ -26,6 +26,9 @@ interface CouncilMember {
   name: string;
   image?: string;
   avatar?: { type: string; data: number[] };
+  images?:string
+  emergencycontact?: string;
+  timings?:string;
   designation?: string;
   category?: string;
   department?: string;
@@ -217,7 +220,7 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                         <Image
                           width={100}
                           height={100}
-                          src={facultyData.avatar ? bufferToBase64(facultyData.avatar) : "/default-avatar.png"}
+                          src={facultyData.avatar ? bufferToBase64(facultyData.avatar) : facultyData.images}
                           alt="Faculty profile"
                           className="w-full h-full object-cover"
                         />
@@ -229,10 +232,12 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                         <Info label="Name" value={facultyData.name} />
                         <Info label="Designation" value={facultyData.designation} />
                         <Info label="Department" value={facultyData.department} />
-                        <Info
+                        {facultyData.joiningDate && <Info
                           label="Joining Date"
                           value={facultyData.joiningDate ? new Date(facultyData.joiningDate).toLocaleDateString("en-GB") : "N/A"}
-                        />
+                        />}
+ {facultyData.timings&& <Info label="Timings" value={facultyData.timings} />}
+{facultyData.emergencycontact&& <Info label="Emergency Contact" value={facultyData.emergencycontact} />}
                         <Info label="Experience" value={facultyData.experience} />
                         <Info label="Employment Type" value={facultyData.employmentType} />
                         <Info label="Address" value={facultyData.address} />
@@ -359,14 +364,14 @@ const DynamicListSection = ({
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.3 }}
-          className="rounded-lg p-6"
+          className="rounded-lg pt-4 lg:pt-0 lg:py-6"
         >
           {/* ✅ ACTIVE HEADING INSIDE CONTENT */}
           <h4 className="text-2xl font-semibold text-[#1D1D1F] mb-4">
             {activeItem.heading}
           </h4>
 
-          <ul className="list-disc pl-6 space-y-3 text-gray-700 text-base">
+          <ul className=" space-y-3 text-gray-700 text-base">
             {activeItem.descriptions.map((desc, i) => (
               <li key={i}>{cleanText(desc)}</li>
             ))}
