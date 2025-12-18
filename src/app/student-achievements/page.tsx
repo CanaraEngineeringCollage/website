@@ -1,4 +1,6 @@
 import MediaSection from "@/components/MediaPageComponents/MediaSection/MediaSection";
+import StudentAchievements from "@/components/StudentAchievements/StudentAchievements";
+import ExploreCampus from "@/components/StudentAchievements/StudentAchievements";
 import React from "react";
 
 export const metadata = {
@@ -16,7 +18,7 @@ export const metadata = {
 const page = () => {
   return (
     <section className="px-6 md:px-12 lg:px-16 xl:px-0">
-      <MediaSection />
+      <StudentAchievements />
     </section>
   );
 };

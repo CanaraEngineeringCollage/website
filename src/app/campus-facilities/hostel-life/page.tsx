@@ -4,6 +4,7 @@ import LifeAtHostels from "@/components/CampusFacilitiesPageComponents/HostelLif
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
 import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
+import StickyBottomBar from "@/components/TrainingPlacementPageComponents/StickyBottomBar/StickyBottomBar";
 import React from "react";
 
 export const metadata = {
@@ -67,6 +68,9 @@ const page = () => {
       <section className="bg-[#e5e5ea]">
         <FooterCard />
       </section>
+
+       <div className="" />
+      <StickyBottomBar buttonText="Hostel Out Pass" link="https://www.canaraengineering.in/s_hostelpass" title="Navigate to our Hostel Out Pass" />
     </>
   );
 };

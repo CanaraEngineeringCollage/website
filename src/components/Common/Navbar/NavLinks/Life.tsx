@@ -2,10 +2,17 @@
 import { ListItem, Menu, MenuHandler, MenuList, Typography } from "@material-tailwind/react";
 import { useState } from "react";
 import { FaChevronUp } from "react-icons/fa6";
-import { Campus, College, Innovation } from "@/components/Icons/Icons";
+import { Campus, College, Innovation ,Employees, Certicficate, HandShake} from "@/components/Icons/Icons";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
+const LeadearShiplinks = [
+  { href: "/about/our-founder", label: "Our Founder" },
+  { href: "/about/our-management", label: "Our Management" },
+  { href: "/about/governing-council", label: "Governing Council" },
+  { href: "/about/key-functionaries-and-hods", label: "Key Functionaries & HODs" },
+  { href: "/about/educators-administrators", label: "Educators & Administrators" },
+  { href: "/about/distinctive-practices", label: "Distinctive & Practices" },
+];
 export default function Life() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -39,21 +46,20 @@ export default function Life() {
         </Typography>
       </MenuHandler>
 
-      <MenuList
-        className="w-full bg-transparent p-0 border-none text-black  z-100 !border-0 shadow-none flex justify-center pb-4 
-        outline-none focus:ring-0 focus:outline-none"
-      >
-        <div className="w-full max-w-screen-2xl bg-white shadow-md rounded-xl flex justify-center gap-8 p-8 border-none outline-none">
-          <div className="grid grid-cols-1 w-[75%] sm:grid-cols-3 lg:grid-cols-12 gap-8 mx-auto ">
+
+    <MenuList className="w-full bg-transparent text-black p-0  z-100 border-none !border-0 shadow-none flex justify-center pb-4 outline-none focus:ring-0">
+        <div className="w-full  max-w-screen-2xl bg-white z-100 shadow-md rounded-xl flex justify-center gap-8 p-8 border-none outline-none">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mx-16 w-full">
             {/* Column 1 */}
-            <div className="flex gap-4 pr-4 lg:col-span-4 border-r border-gray-300">
-              <div className="flex items-start">
-                <College />
-              </div>
-              <div className="flex flex-col  gap-2">
-                <span className="font-bold text-lg">Campus Facilities</span>
-                <ul className="list-none text-gray-500 leading-normal my-2 space-y-4">
-                  <li>
+    {/* Column 1 — Campus Legacy */}
+<div className="flex gap-4 pr-4 border-r border-gray-300">
+  <div className="flex items-start">
+    <College />
+  </div>
+  <div className="flex flex-col gap-2">
+    <span className="font-bold text-lg">Campus Facilities</span>
+    <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
+    <li>
                     <Link
                       href="/campus-facilities/infrastructure"
                       className={`${
@@ -73,40 +79,21 @@ export default function Life() {
                       Hostel Life
                     </Link>
                   </li>
-                  <li>
-                    {" "}
-                    <Link
-                      href="/campus-facilities/studentlife-engagement"
-                      className={`${
-                        pathname.includes("/campus-facilities/studentlife-engagement") ? `text-primary font-bold` : "text-gray-500"
-                      } hover:text-primary `}
-                    >
-                      Student Life & Engagement
-                    </Link>
-                  </li>
+                 
+                     
+    </ul>
+  </div>
+</div>
 
-                     <li>
-                    {" "}
-                    <Link
-                      href="https://www.canaraengineering.in/placements_portal.php"
-                      target="_blank"
-                      className={`${pathname.includes("/placements-portal") ? `` : "text-gray-500"} hover:text-primary `}
-                    >
-                     Placement Portal
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="flex gap-4 pr-4 border-r lg:col-span-4 border-gray-300">
-              <div className="flex items-start">
-                <Innovation />
-              </div>
-              <div className="flex flex-col gap-2">
-                <span className="font-bold text-lg">Innovation & Health</span>
-                <ul className="list-none text-gray-500 leading-normal my-2 space-y-4">
-                  <li>
+{/* Column 2 — Leadership & Administration */}
+<div className="flex gap-4 pr-4 border-r border-gray-300">
+  <div className="flex items-start">
+   <Innovation />
+  </div>
+  <div className="flex flex-col gap-2">
+    <span className="font-bold text-lg">Innovation & Health</span>
+    <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
+      <li>
                     <Link
                       href="/entrepreneurship-cell"
                       className={`${pathname.includes("/entrepreneurship-cell") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
@@ -123,26 +110,19 @@ export default function Life() {
                       Physical Education
                     </Link>
                   </li>
-                </ul>
-              </div>
-            </div>
+    </ul>
+  </div>
+</div>
 
-            <div className="flex lg:col-span-3 gap-4">
-              <div className="flex items-start">
-                <Campus />
-              </div>
-              <div className="flex flex-col gap-2">
-                <span className="font-bold text-lg">Campus Beats</span>
-                <ul className="list-none text-gray-500 leading-normal my-2 space-y-4">
-                  <li>
-                    {" "}
-                    <Link
-                      href="/alumni"
-                      className={`${pathname.includes("/alumni") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
-                    >
-                      Alumni
-                    </Link>
-                  </li>
+{/* Column 3 — Accreditations & Compliance */}
+<div className="flex gap-4 pr-4 border-r border-gray-300">
+  <div className="flex items-start">
+   <Campus />
+  </div>
+  <div className="flex flex-col gap-2">
+    <span className="font-bold text-lg">Campus Beats</span>
+    <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
+
 
                   <li>
                     {" "}
@@ -154,36 +134,72 @@ export default function Life() {
                     </Link>
                   </li>
 
-                   <li>
+
+ <li>
                     {" "}
                     <Link
-                      href="https://www.canaraengineering.in/s_hostelpass"
-                      target="_blank"
-                      className={`${pathname.includes("/hostel-out-pass") ? `` : "text-gray-500"} hover:text-primary `}
+                      href="/studentlife-engagement"
+                      className={`${
+                        pathname.includes("/studentlife-engagement") ? `text-primary font-bold` : "text-gray-500"
+                      } hover:text-primary `}
                     >
-                      Hostel Out Pass
+                      Student Life & Engagement
+                    </Link>
+                  </li>
+
+                    <li>
+                    {" "}
+                    <Link
+                      href="/buzz"
+                      className={`${
+                        pathname.includes("/buzz") ? `text-primary font-bold` : "text-gray-500"
+                      } hover:text-primary `}
+                    >
+                      Buzz
                     </Link>
                   </li>
 
 
-                   
+                 
+    </ul>
+  </div>
+</div>
 
-                   <li>
+{/* Column 4 — Student Support & Welfare */}
+<div className="flex gap-4">
+  <div className="flex items-start">
+    <HandShake />
+
+    
+  </div>
+  <div className="flex flex-col gap-2">
+    <span className="font-bold text-lg">Student Support & Welfare</span>
+    <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
+        <li>
                     {" "}
                     <Link
-                      href="https://www.canaraengineering.in/s-info"
-                      target="_blank"
-                      className={`${pathname.includes("/student-information") ? `` : "text-gray-500"} hover:text-primary `}
+                      href="/alumni"
+                      className={`${pathname.includes("/alumni") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
                     >
-                     Student Information
+                      Alumni
                     </Link>
                   </li>
-                </ul>
-              </div>
-            </div>
+    </ul>
+  </div>
+</div>
+
           </div>
         </div>
       </MenuList>
+
+
+    
     </Menu>
   );
 }
+
+
+
+
+
+  

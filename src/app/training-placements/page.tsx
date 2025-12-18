@@ -88,7 +88,7 @@ const page = () => {
         <ExploreFacilities />
       </section>
       <div className="" />
-      <StickyBottomBar />
+      <StickyBottomBar buttonText="Placement Portal" link="https://www.canaraengineering.in/placements_portal.php" title="Navigate to our Placement Portal" />
     </>
   );
 };

@@ -133,6 +133,28 @@ export default function Academics() {
         </Link>
       </li>
 
+  <li>
+                    {" "}
+                    <Link
+                      href="https://www.canaraengineering.in/s-info"
+                      target="_blank"
+                      className={`${pathname.includes("/student-information") ? `` : "text-gray-500"} hover:text-primary `}
+                    >
+                     Student Information
+                    </Link>
+                  </li>
+
+                   <li>
+                    {" "}
+                    <Link
+                      href="https://cecstudent.canaraengineering.in"
+                      target="_blank"
+                      className={`${pathname.includes("/student-information") ? `` : "text-gray-500"} hover:text-primary `}
+                    >
+                     Student Dashboard
+                    </Link>
+                  </li>
+
       {/* Uncomment if you add Timetables later */}
       {/* <li>
         <Link

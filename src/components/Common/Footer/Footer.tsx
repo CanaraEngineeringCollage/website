@@ -127,7 +127,7 @@ const Footer: FC = () => {
               { label: "Resources", href: "https://digital.canaraengineering.in/" },
               { label: "Infrastructure", href: "/campus-facilities/infrastructuret" },
               { label: "Hostel Life", href: "/campus-facilities/hostel-life" },
-              { label: "Student Life & Engagement", href: "/campus-facilities/studentlife-engagement" },
+              { label: "Student Life & Engagement", href: "/studentlife-engagement" },
               { label: "Entrepreneurship Cell", href: "/entrepreneurship-cell" },
               { label: "Physical Education", href: "/physical-education" },
               // { label: "Calendar of Events", href: "/events" },

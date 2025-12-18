@@ -159,7 +159,7 @@ const campusFacilities = [
   },
     {
     title: "Student Life & Engagement",
-    link: "/campus-facilities/studentlife-engagement",
+    link: "/studentlife-engagement",
   },
     {
     title: "Placement Portal",

@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import Button from "@/components/Common/Button/Button";
 
-const StickyBottomBar = () => {
+const StickyBottomBar = ({title ,link ,buttonText}: {title: string , link: string , buttonText: string}) => {
   const [isVisible, setIsVisible] = React.useState(false);
 
   React.useEffect(() => {
@@ -26,10 +26,10 @@ const StickyBottomBar = () => {
       }`}
     >
         <div className=" w-[80%] flex justify-between items-center mx-auto">
-<p className="text-textGray font-bold text-lg lg:text-[20px] ">Navigate to our Placement Portal</p>
+<p className="text-textGray font-bold text-lg lg:text-[20px] ">{title}</p>
 
       <Link
-        href="https://www.canaraengineering.in/placements_portal.php"
+        href={link}
         target="_blank"
         aria-label="Placement Portal"
       >
@@ -40,7 +40,7 @@ const StickyBottomBar = () => {
                px-6 py-2 cursor-pointer rounded-3xl inline-flex gap-3 
                items-center min-w-[250px] justify-center"
         >
-          Placement Portal
+          {buttonText}
         </Button>
       </Link>
     </div>

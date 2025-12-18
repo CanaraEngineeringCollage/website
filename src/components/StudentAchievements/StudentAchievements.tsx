@@ -5,8 +5,9 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { IconX } from "@tabler/icons-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
-import CustomSelect from "../CustomSelect/CustomSelect";
+
 import { parse } from "node-html-parser";
+import CustomSelect from "../Common/CustomSelect/CustomSelect";
 
 interface CampusEvent {
   id: number;
@@ -217,44 +218,23 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({
   title,
   description,
 }) => {
-  const [campusEvents, setCampusEvents] = useState<CampusEvent[]>(initialEvents);
-const [categories, setCategories] = useState<string[]>([]);
-  const [activeCategory, setActiveCategory] =useState<string>();
+  const [campusEvents, setCampusEvents] = useState<CampusEvent[]>(dummyStudentAchievements);
+  const [categories, setCategories] = useState<string[]>([]);
+  const [activeCategory, setActiveCategory] = useState<string>("All");
+
+  useEffect(() => {
+    const uniqueCategories = [
+      "All",
+      ...Array.from(new Set(campusEvents.map((event) => event.category))),
+    ];
+    setCategories(uniqueCategories);
+  }, [campusEvents]);
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showAll, setShowAll] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const fetchBuzz = async () => {
-    try {
-      const [buzzRes, catRes] = await Promise.all([
-        fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz?page=1&limit=999`),
-        fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz/categories`),
-      ]);
-
-      if (!buzzRes.ok) throw new Error("Failed to fetch buzz");
-      if (!catRes.ok) throw new Error("Failed to fetch categories");
-
-      const buzzResponse = await buzzRes.json();
-      const categoriesResponse: string[] = await catRes.json();
-
-      // buzzResponse.data = actual array of buzz items
-      setCampusEvents(buzzResponse.data);
-
-      // merge dummy category + backend categories, remove duplicates
-      setCategories(categoriesResponse);
-
-      if (categoriesResponse && categoriesResponse.length > 0) {
-      setActiveCategory(categoriesResponse[0]); 
-    }
-    } catch (err) {
-      console.error(err);
-    }
-  };
-
-  useEffect(() => {
-    fetchBuzz();
-  }, []);
+ 
 
   // Sort by date descending
   const sortedEvents = [...campusEvents].sort(
@@ -311,49 +291,16 @@ const [categories, setCategories] = useState<string[]>([]);
       }}
     >
       <section className="max-w-7xl xl:max-w-[75%] mx-auto text-[#1D1D1F] py-16">
-        {(title || description) && (
+       
           <div className="text-center mb-10 lg:px-32">
             <h1 className="text-center md:leading-[1.1] text-3xl md:text-[46px] mb-5 font-bold">
-              {title}
+              Student Achievements
             </h1>
-            <p className="text-center text-[21px]">{description}</p>
+            {/* <p className="text-center text-[21px]">{description}</p> */}
           </div>
-        )}
+        
 
-        {/* Category Filters */}
-        <div className="pb-5 lg:pb-10">
-          {/* Mobile Dropdown */}
-          <div className="flex lg:hidden justify-between items-center gap-2 md:hidden">
-            <CustomSelect
-              value={activeCategory}
-              onChange={(e) => {
-                setActiveCategory(e.target.value);
-                setShowAll(false);
-              }}
-              options={categories}
-            />
-          </div>
-
-          {/* Desktop View */}
-          <div className="hidden lg:flex justify-between items-center pb-5 lg:pb-10 flex-wrap gap-2">
-            {categories.map((category, index) => (
-              <h3
-                onClick={() => {
-                  setActiveCategory(category);
-                  setShowAll(false);
-                }}
-                className={`cursor-pointer ${
-                  category === activeCategory
-                    ? "text-black font-bold"
-                    : "text-textGray"
-                } text-lg`}
-                key={index}
-              >
-                {category}
-              </h3>
-            ))}
-          </div>
-        </div>
+      
 
         {/* Event Cards */}
         <div className="flex flex-col gap-8">
@@ -424,7 +371,7 @@ const [categories, setCategories] = useState<string[]>([]);
               className="bg-[#eff1f6] text-black px-5 py-2 cursor-pointer rounded-3xl"
               onClick={() => setShowAll(true)}
             >
-              Explore More Campus Stories
+              Explore More Student Achievements
             </button>
           </div>
         )}
