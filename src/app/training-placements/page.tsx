@@ -1,3 +1,4 @@
+
 import ExploreFacilities from "@/components/CampusFacilitiesPageComponents/Infrastructure/ExploreFacilities/ExploreFacilities";
 import TopRecruiters from "@/components/Common/TopRecruiters/TopRecruiters";
 import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
@@ -7,6 +8,7 @@ import DepartmentFaculty from "@/components/TrainingPlacementPageComponents/Depa
 import HeroSection from "@/components/TrainingPlacementPageComponents/HeroSection/HeroSection";
 import HighlightsSection from "@/components/TrainingPlacementPageComponents/HighlightsSection/HighlightsSection";
 import RecruitersList from "@/components/TrainingPlacementPageComponents/RecruitersSection/RecruitersSection";
+import StickyBottomBar from "@/components/TrainingPlacementPageComponents/StickyBottomBar/StickyBottomBar";
 import React from "react";
 
 export const metadata = {
@@ -85,6 +87,8 @@ const page = () => {
       <section className="px-6  pt-14 lg:pt-16  md:px-12 lg:pl-16 lg:px-0 bg-[#e5e5ea]  xl:px-0">
         <ExploreFacilities />
       </section>
+      <div className="" />
+      <StickyBottomBar />
     </>
   );
 };

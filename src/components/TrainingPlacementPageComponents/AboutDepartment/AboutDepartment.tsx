@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { HiDownload } from "react-icons/hi";
 import TrainingPlacementModal from "../ModalTraininigPlacement/ModalTraininigPlacement";
+import Button from "@/components/Common/Button/Button";
 
 
 const AboutDepartment = () => {
@@ -35,29 +36,22 @@ const AboutDepartment = () => {
           </h1>
  <div className="flex flex-col gap-3 items-end">
   {/* Download Brochure */}
-  <button
+ <Button variant="primary1"
     onClick={() => setIsModalOpen(true)}
     aria-label="Download Brochure"
-    className="text-[#2884CA] hidden font-bold text-[17px] bg-[#d9ebff] 
+    className="text-white hidden font-bold text-[17px] bg-primary
                px-6 py-2 cursor-pointer rounded-3xl lg:inline-flex gap-3 
                items-center min-w-[250px] justify-center"
   >
     Download Brochure <HiDownload className="text-[24px] font-extrabold" />
-  </button>
+    </Button>
 
-  {/* Placement Portal */}
-  <Link
-    href="https://www.canaraengineering.in/placements_portal.php"
-    target="_blank"
-    aria-label="Placement Portal"
-    className="text-[#2884CA] hidden font-bold text-[17px] 
-               border-[#d9ebff] border-2 px-6 py-2 cursor-pointer 
-               rounded-3xl lg:inline-flex gap-3 items-center 
-               min-w-[250px] justify-center"
-  >
-    Placement Portal
-  </Link>
+    
+   
+
 </div>
+
+
 
         </div>
         <p className="text-textGray text-lg lg:text-[20px] pb-5">
@@ -123,4 +117,10 @@ const AboutDepartment = () => {
   );
 };
 
-export default AboutDepartment;
+ export default AboutDepartment;
+
+
+
+
+
+
