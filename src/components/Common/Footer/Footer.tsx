@@ -46,6 +46,7 @@ const facilities = [
   { data: "Training & Placements", links: "/training-placements" },
   { data: "Campus", links: "/about/about-cec" },
   { data: "Hostels", links: "/campus-facilities/hostel-life" },
+  { data: "Library", links: "/campus-facilities/library" },
   { data: "Sports & Cultures", links: "/physical-education" },
   { data: "Entrepreneurship Cell", links: "/entrepreneurship-cell" },
 ];
@@ -127,6 +128,7 @@ const Footer: FC = () => {
               { label: "Resources", href: "https://digital.canaraengineering.in/" },
               { label: "Infrastructure", href: "/campus-facilities/infrastructuret" },
               { label: "Hostel Life", href: "/campus-facilities/hostel-life" },
+              { label: "Library", href: "/campus-facilities/library" },
               { label: "Student Life & Engagement", href: "/studentlife-engagement" },
               { label: "Entrepreneurship Cell", href: "/entrepreneurship-cell" },
               { label: "Physical Education", href: "/physical-education" },

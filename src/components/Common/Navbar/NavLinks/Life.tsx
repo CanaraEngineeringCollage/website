@@ -79,6 +79,16 @@ export default function Life() {
                       Hostel Life
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/campus-facilities/library"
+                      className={`${
+                        pathname.includes("/campus-facilities/library") ? `text-primary font-bold` : "text-gray-500"
+                      } hover:text-primary `}
+                    >
+                      Library
+                    </Link>
+                  </li>
                  
                      
     </ul>

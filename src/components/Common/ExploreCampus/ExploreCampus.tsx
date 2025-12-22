@@ -256,6 +256,9 @@ const [categories, setCategories] = useState<string[]>([]);
     fetchBuzz();
   }, []);
 
+  console.log(campusEvents);
+  
+
   // Sort by date descending
   const sortedEvents = [...campusEvents].sort(
     (a, b) => new Date(b.eventDate).getTime() - new Date(a.eventDate).getTime()

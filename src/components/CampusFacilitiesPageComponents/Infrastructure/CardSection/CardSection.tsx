@@ -89,7 +89,7 @@ function CardContent({ description, title }: CardContentProps) {
               </h3>
             )}
             {description.topDescription && (
-              <p className="text-xl text-textGray leading-relaxed">{description.topDescription}</p>
+              <p className="text-xl text-textGray leading-relaxed whitespace-pre-line">{description.topDescription}</p>
             )}
           </div>
         )}
