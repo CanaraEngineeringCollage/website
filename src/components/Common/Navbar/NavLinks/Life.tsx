@@ -19,7 +19,7 @@ export default function Life() {
   const pathname = usePathname();
 
   return (
-    <Menu open={true} handler={setIsMenuOpen} offset={{ mainAxis: 20 }} placement="bottom" allowHover={true}>
+    <Menu open={isMenuOpen} handler={setIsMenuOpen} offset={{ mainAxis: 20 }} placement="bottom" allowHover={true}>
       <MenuHandler>
         <Typography color="inherit" as="div" variant="small" className="text-base xl:text-base">
           <ListItem

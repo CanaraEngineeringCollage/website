@@ -30,7 +30,7 @@ const counsellingData: CouncilMember[] = [
   {
     id: 1,
     name: "Ms Nanditha Chinivarada",
-    images: "/studentWelfarePage/counsiler.jpg",
+    images: "/studentWelfarePage/counsiler.webp",
     designation: "Asst. Professor and Counsellor",
     department: "Student Welfare",
     emergencycontact: "8310738241",
@@ -103,7 +103,7 @@ export default function CounsellingServices() {
         <div className="max-w-md w-full mx-auto lg:mx-0 space-y-6 lg:space-y-44">
           <div>
             {/* FIX: Added `text-center lg:text-start` so it centers on iPad but aligns left on Desktop */}
-            <h2 className="text-3xl text-center lg:text-start lg:text-4xl md:text-4xl font-bold text-[#1D1D1F] leading-[1.1]">
+            <h2 className="text-3xl text-center mb-6 md:mb-0 lg:text-start lg:text-4xl md:text-4xl font-bold text-[#1D1D1F] leading-[1.1]">
               Counselling Services
             </h2>
             
@@ -128,7 +128,7 @@ export default function CounsellingServices() {
               /* FIX: Removed custom `lg2` class. 
                  Adjusted heights to be consistent on tablet/desktop. 
               */
-              className="relative cursor-pointer w-full h-[400px] max-w-[309px] xl:h-[450px] lg:h-[350px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md hover:scale-[1.02] transition-transform duration-300"
+              className="relative cursor-pointer w-full h-[400px] max-w-[309px] xl:h-[450px] lg:h-[350px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md  transition-transform duration-300"
             >
               <Image
                 src={member.images || "/images/default-images.png"} 
