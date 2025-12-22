@@ -17,6 +17,7 @@ import {
   studentLife,
   innovation,
   campusBeats,
+  alumni,
 } from "@/utils/pagesData/navigation";
 import {
   College,
@@ -196,6 +197,16 @@ export default function Sidebar({ sidebar, openSidebar }: { sidebar: boolean; op
                   data={{
                     title: "Campus Beats",
                     links: campusBeats,
+                  }}
+                  setVisible={setVisible}
+                  openSidebar={openSidebar}
+                />
+              ),
+               alumni: (
+                <SubMenu
+                  data={{
+                    title: "Alumni",
+                    links: alumni,
                   }}
                   setVisible={setVisible}
                   openSidebar={openSidebar}
@@ -487,6 +498,18 @@ function MainMenu({
                 <div className="flex items-center gap-2">
                   {/* <Campus /> */}
                   <Typography className="text-sm text-gray-500"> Campus Beats</Typography>
+                  {/* <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" /> */}
+                </div>
+              </div>
+              <div
+                onClick={() => {
+                  setVisible("alumni");
+                }}
+                className="flex gap-2 items-center"
+              >
+                <div className="flex items-center gap-2">
+                  {/* <Campus /> */}
+                  <Typography className="text-sm text-gray-500"> Alumni</Typography>
                   {/* <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" /> */}
                 </div>
               </div>

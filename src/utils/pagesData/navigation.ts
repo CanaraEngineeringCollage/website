@@ -105,6 +105,18 @@ const curriculum = [
   // },
 ];
 
+const alumni = [
+  {
+    title: "Alumni",
+    link: "/alumni",
+  },
+  {
+    title: "About Alumni",
+    link: "/alumni/about-alumni",
+  },
+  
+];
+
 const campusBeats = [
   // {
   //   title: "Calendar of Events",
@@ -123,12 +135,12 @@ const campusBeats = [
     link: "/student-achievements",
   },
    {
-    title: "Hostel Out Pass",
-    link: "https://www.canaraengineering.in/s_hostelpass",
+    title: "Student Life & Engagement",
+    link: "/studentlife-engagement",
   },
    {
-    title: "Student Information",
-    link: "https://www.canaraengineering.in/s-info",
+    title: "Buzz",
+    link: "/buzz",
   },
 
 ];
@@ -210,6 +222,14 @@ const examination = [
     title: "Marks & Attendance",
     link: "https://www.canaraengineering.in/s_attd",
   },
+  {
+    title: "Student Information",
+    link: "https://www.canaraengineering.in/s-info",
+  },
+  {
+    title: "Student Dashboard",
+    link: "https://cecstudent.canaraengineering.in",
+  },
 ];
 export {
   campusFacilities, //
@@ -224,4 +244,5 @@ export {
   studentLife, //
   innovation, //
   campusBeats, //
+  alumni
 };
