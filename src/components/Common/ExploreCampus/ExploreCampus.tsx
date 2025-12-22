@@ -414,9 +414,7 @@ const [categories, setCategories] = useState<string[]>([]);
               );
             })
           ) : (
-            <p className="text-center text-textGray text-[18px] py-10">
-              There are no events in this category.
-            </p>
+           null
           )}
         </div>
 

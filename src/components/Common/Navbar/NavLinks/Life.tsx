@@ -19,7 +19,7 @@ export default function Life() {
   const pathname = usePathname();
 
   return (
-    <Menu open={isMenuOpen} handler={setIsMenuOpen} offset={{ mainAxis: 20 }} placement="bottom" allowHover={true}>
+    <Menu open={true} handler={setIsMenuOpen} offset={{ mainAxis: 20 }} placement="bottom" allowHover={true}>
       <MenuHandler>
         <Typography color="inherit" as="div" variant="small" className="text-base xl:text-base">
           <ListItem
@@ -49,7 +49,7 @@ export default function Life() {
 
     <MenuList className="w-full bg-transparent text-black p-0  z-100 border-none !border-0 shadow-none flex justify-center pb-4 outline-none focus:ring-0">
         <div className="w-full  max-w-screen-2xl bg-white z-100 shadow-md rounded-xl flex justify-center gap-8 p-8 border-none outline-none">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mx-16 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 ml-28 me-5 w-full">
             {/* Column 1 */}
     {/* Column 1 — Campus Legacy */}
 <div className="flex gap-4 pr-4 border-r border-gray-300">
@@ -123,9 +123,29 @@ export default function Life() {
     </ul>
   </div>
 </div>
-
-{/* Column 3 — Accreditations & Compliance */}
 <div className="flex gap-4 pr-4 border-r border-gray-300">
+  <div className="flex items-start">
+    <HandShake />
+
+    
+  </div>
+  <div className="flex flex-col gap-2">
+    <span className="font-bold text-lg">Alumni</span>
+    <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
+        <li>
+                    {" "}
+                    <Link
+                      href="/alumni"
+                      className={`${pathname.includes("/alumni") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
+                    >
+                      Alumni
+                    </Link>
+                  </li>
+    </ul>
+  </div>
+</div>
+{/* Column 3 — Accreditations & Compliance */}
+<div className="flex gap-4 pr-4  border-gray-300">
   <div className="flex items-start">
    <Campus />
   </div>
@@ -176,27 +196,7 @@ export default function Life() {
 </div>
 
 {/* Column 4 — Student Support & Welfare */}
-<div className="flex gap-4">
-  <div className="flex items-start">
-    <HandShake />
 
-    
-  </div>
-  <div className="flex flex-col gap-2">
-    <span className="font-bold text-lg">Student Support & Welfare</span>
-    <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
-        <li>
-                    {" "}
-                    <Link
-                      href="/alumni"
-                      className={`${pathname.includes("/alumni") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
-                    >
-                      Alumni
-                    </Link>
-                  </li>
-    </ul>
-  </div>
-</div>
 
           </div>
         </div>

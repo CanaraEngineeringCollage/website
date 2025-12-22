@@ -251,6 +251,14 @@
     ]
   },
   {
+    "title": "Staff",
+    "data": [
+      {
+        "type": "staff_grid"
+      }
+    ]
+  },
+  {
     "title": "Contact",
     "data": [
       {
@@ -266,5 +274,27 @@
         ]
       }
     ]
+  },
+  
+  {
+    "title": "Handbook",
+    
+    "data": [
+      {
+        "title": "Library Handbook",
+
+        "href": "https://apiserver.cec.edu.in/files/libraryHandbook"
+      }
+    ]
+  },
+  {
+    "title": "Digital Repository", 
+    "data": [
+      {
+        "link": "http://ir.vtu.ac.in:4000/home",
+        "linkText": "Visit Digital Repository"
+      }
+    ]
   }
+
 ]

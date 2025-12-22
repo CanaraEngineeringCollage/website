@@ -25,7 +25,7 @@ const StickyBottomBar = ({title ,link ,buttonText}: {title: string , link: strin
         isVisible ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
       }`}
     >
-        <div className=" w-[80%] flex justify-between items-center mx-auto">
+        <div className=" w-[80%] flex flex-col md:flex-row gap-3 md:gap-0 md:justify-between items-center mx-auto">
 <p className="text-textGray font-bold text-lg lg:text-[20px] ">{title}</p>
 
       <Link
