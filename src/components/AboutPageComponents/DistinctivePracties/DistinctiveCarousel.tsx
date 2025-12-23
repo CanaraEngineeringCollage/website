@@ -12,8 +12,6 @@ import { SwiperRef } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import data from "../../../utils/aluminiSectionData/carouselData.json";
-import { Images } from "lucide-react";
 
 // Types
 interface Amenity {
@@ -85,9 +83,7 @@ export default function DistinctiveCarousel() {
   };
 
   // Go to the next card
-  const goToNextCard = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
-  };
+ 
 
   // Progress animation using requestAnimationFrame
   const animateProgress = (startTime: number, from: number = 0) => {
