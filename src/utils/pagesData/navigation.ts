@@ -139,8 +139,8 @@ const campusBeats = [
     link: "/studentlife-engagement",
   },
    {
-    title: "Buzz",
-    link: "/buzz",
+    title: "Campus Buzz",
+    link: "/campus-buzz",
   },
 
 ];
@@ -170,17 +170,9 @@ const campusFacilities = [
     link: "/campus-facilities/hostel-life",
   },
   {
-    title: "Library",
-    link: "/campus-facilities/library",
-  },
-    {
-    title: "Student Life & Engagement",
-    link: "/studentlife-engagement",
-  },
-    {
-    title: "Placement Portal",
-    link: "https://www.canaraengineering.in/placements_portal.php",
-  },
+    title: "Central Library",
+    link: "/campus-facilities/central-library",
+  }
 ];
 
 const studentLife = [

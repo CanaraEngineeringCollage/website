@@ -171,16 +171,16 @@ const fetchEvents = async () => {
     <section className="lg:ml-20 xl:ml-60 md:py-0 md:pt-16 py-10">
       <div className="lg:flex lg:justify-between items-center md:pb-16 pb-10">
         <h1 className="text-3xl text-[#1D1D1F] md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-semibold font-sans  tracking-[0.13px]">
-          Student Achievements
+          Campus Buzz
         </h1>
 
          <div className="hidden md:block">
-          <Link href="/buzz">
+          <Link href="/campus-buzz">
           <button
-            aria-label="Explore More Student Achievements"
+            aria-label="Explore More Campus Buzz"
             className="text-black cursor-pointer font-semibold font-sans bg-[#c3d5ed] px-5 py-2 rounded-3xl mr-12"
           >
-            Explore More Student Achievements
+            Explore More Campus Buzz
           </button>
           </Link>
         </div>
@@ -274,8 +274,8 @@ const fetchEvents = async () => {
       </div>
 
         <div className="md:hidden  mt-5 flex justify-center ">
-       <Link href="/buzz"> <button aria-label="Explore More Student Achievements" className="text-black mx-auto cursor-pointer font-bold bg-[#c3d5ed] px-5 py-2 rounded-3xl">
-          Explore More Student Achievements
+       <Link href="/campus-buzz"> <button aria-label="Explore More Campus Buzz" className="text-black mx-auto cursor-pointer font-bold bg-[#c3d5ed] px-5 py-2 rounded-3xl">
+          Explore More Campus Buzz
         </button></Link>
       </div>
 

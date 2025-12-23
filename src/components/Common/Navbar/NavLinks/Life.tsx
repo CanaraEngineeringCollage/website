@@ -81,12 +81,12 @@ export default function Life() {
                   </li>
                   <li>
                     <Link
-                      href="/campus-facilities/library"
+                      href="/campus-facilities/central-library"
                       className={`${
-                        pathname.includes("/campus-facilities/library") ? `text-primary font-bold` : "text-gray-500"
+                        pathname.includes("/campus-facilities/central-library") ? `text-primary font-bold` : "text-gray-500"
                       } hover:text-primary `}
                     >
-                      Library
+                      Central Library
                     </Link>
                   </li>
                  
@@ -180,12 +180,12 @@ export default function Life() {
                     <li>
                     {" "}
                     <Link
-                      href="/buzz"
+                      href="/campus-buzz"
                       className={`${
-                        pathname.includes("/buzz") ? `text-primary font-bold` : "text-gray-500"
+                        pathname.includes("/campus-buzz") ? `text-primary font-bold` : "text-gray-500"
                       } hover:text-primary `}
                     >
-                      Buzz
+                      Campus Buzz
                     </Link>
                   </li>
 

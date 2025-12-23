@@ -17,8 +17,9 @@ interface DepartmentHeadMessageProps {
     <section className="w-full bg-[#051B2C]">
       <div className=" py-16  md:py-20 lg:py-20">
           <h1 className="text-3xl lg:hidden text-center lg:text-start mb-10 md:text-[40px] leading-[1.2] lg2:text-5xl  font-bold">{depatmentHead.name === "Dr. Basappa B Kodada" 
-    ? "Message from HOD" 
-    : "Message from the Department's Head"}</h1>
+    ? "Message from HOD":
+    depatmentHead.name === "Dr. Raghavendra M Shetty K" ? "Message from the Department Head":
+    "Message from the Department's Head"}</h1>
     <div className="grid grid-cols-1 lg:w-[70%] overflow-hidden mx-auto lg:grid-cols-12  items-center">
 
           <div className=" lg:hidden block">
@@ -36,9 +37,10 @@ interface DepartmentHeadMessageProps {
               {depatmentHead.name === "Dr. Basappa B Kodada" ? (
                 "Message from HOD"
               ) : (
+                depatmentHead.name === "Dr. Raghavendra M Shetty K" ? "Message from the Department Head":
                 <>
                   Message from the <br className="hidden xl:block" />{" "}
-                  Department&rsquo;s Head
+                  Department's Head
                 </>
               )}
             </h1>          <p className="text-[17px] mt-6 lg:mt-0 text-white text-justify lg:leading-[1.7]">
