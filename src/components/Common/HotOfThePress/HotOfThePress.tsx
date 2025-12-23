@@ -101,7 +101,7 @@ function EventContent({ description }: { description: EventDescriptionProps }) {
       )}
       <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
         <div>
-          <p className="text-[17px] text-textGray uppercase font-bold mb-2">{description.date}</p>
+       {   <p className="text-[17px] text-textGray uppercase font-bold mb-2">{description.date}</p>}
           <h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">{description.topTitle}</h3>
           <p className="text-xl text-textGray">{description.topDescription}</p>
         </div>
@@ -159,7 +159,7 @@ const fetchEvents = async () => {
 
   const getEventDescription = (event: CampusEvent): EventDescriptionProps => ({
     ...parseEventContent(event.content),
-    date: new Date(event.eventDate).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }),
+    date: event.eventDate ? new Date(event.eventDate).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }) : null,
   });
 
 
@@ -226,15 +226,15 @@ const fetchEvents = async () => {
   <p className="text-textGray text-[17px] mb-1">{event.eventName}</p>
 
   {/* Vertical divider */}
-  <div className="h-5 w-[1px] bg-textGray"></div>
+  {event.eventDate&& <div className="h-5 w-[1px] bg-textGray"></div>}
 
-  <p className="text-textGray text-[17px] mb-1">
+ {event.eventDate&& <p className="text-textGray text-[17px] mb-1">
     {new Date(event.eventDate).toLocaleDateString("en-GB", {
       day: "numeric",
       month: "short",
       year: "numeric",
     })}
-  </p>
+  </p>}
 </div>
 
                   {/* <p className="text-textGray text-[17px] mb-1">{event.category}</p> */}

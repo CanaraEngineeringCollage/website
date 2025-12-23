@@ -139,7 +139,7 @@ const Footer: FC = () => {
               // { label: "Examination Timetables", href: "tt" },
               // { label: "Marks & Attendance", href: "marks" },
               { label: "Circulars", href: "/academics/examination-records?tab=circulars", tab: "circulars" },
-              { label: "Student Achievements", href: "/student-achievements" },
+              { label: "Campus Buzz", href: "/campus-buzz" },
             ]}
           />
         </Suspense>
@@ -272,7 +272,7 @@ const FooterList: FC<FooterListProps> = ({ data }) => {
   return (
     <ul className="space-y-1">
       {data.map((item, index) => {
-        const isExternal = item.links.startsWith("http");
+        const isExternal = item.links.startsWith("http")||item.links.endsWith(".pdf");
         return (
           <li className="leading-8" key={index}>
             <Link href={item.links} {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
