@@ -24,7 +24,7 @@ const   AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepar
 <h1
   className={` md:w-[90%] 
   font-bold leading-[1.2] text-[#1D1D1F] 
-  ${departmentName === "Artificial Intelligence & Machine Learning" ? "uppercase text-2xl md:text-[30px] lg2:text-4xl xl:text-4xl " : "md:text-[40px] text-3xl lg2:text-5xl xl:text-6xl "}`}
+  md:text-[40px] text-3xl lg2:text-5xl xl:text-6xl `}
 >
   Department of {departmentName}
 </h1>

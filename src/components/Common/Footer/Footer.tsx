@@ -9,7 +9,7 @@ import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 // Data arrays remain unchanged from your first snippet
 const quickLinks = [
   { data: "NIRF Disclosure", links: "/about/mandatory-disclosure" },
-  { data: "Committee Members", links: "/footer/institutional Committee.pdf" },
+  { data: "Institutional Committees", links: "/footer/Institutional Committees and Amendments - 2025-26 - Canara Engineering college CEC.pdf" },
   { data: "AICTE Scholarships", links: "https://apiserver.cec.edu.in/files/scolarship2020" },
   { data: "Press Releases", links: "/footer/News Paper Clipping.pdf" },
   { data: "Grievance Redressal Committee", links: "/about/grievance-redressal-cell" },

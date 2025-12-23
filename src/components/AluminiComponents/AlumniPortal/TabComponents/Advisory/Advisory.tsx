@@ -25,7 +25,7 @@ const Advisory = ({ datam }) => {
   }, [datam]);
 
   return (
-    <section className="lg:pb-20">
+    <section className="lg:pb-20 lg:pe-5">
       <div className="grid grid-cols-1 pb-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-4 justify-items-center">
         {datam.map((item, index) => {
           // const isLastCard = index === members.length - 1;

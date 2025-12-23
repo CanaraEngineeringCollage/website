@@ -89,7 +89,7 @@ const ExploreCampus = ({ departmentName,events }: { departmentName: string, even
   return (
     <section className="py-10 lg:py-0 px-4 text-[#1D1D1F]">
       {/* 🔹 Event Cards */}
-       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+       <div className="max-w-7xl mx-auto grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
         {events.map((event, index) => {
           const src = event.image ? bufferToBase64(event.image) : "";
         
@@ -97,7 +97,7 @@ const ExploreCampus = ({ departmentName,events }: { departmentName: string, even
           return (
             <div
               key={event.id}
-              className="max-w-sm bg-white min-h-[450px] cursor-pointer rounded-xl lg:rounded-3xl overflow-hidden"
+              className="max-w-sm bg-white min-h-[450px] cursor-pointer shadow-sm  rounded-xl lg:rounded-3xl overflow-hidden"
               onClick={() => openModal(event)}
             >
               <div className="h-60 overflow-hidden">

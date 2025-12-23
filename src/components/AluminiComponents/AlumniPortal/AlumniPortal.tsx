@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import alumniData from "../../../utils/alumniPortalData/alumniPortalData.json";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,11 +9,51 @@ import Messages from "./TabComponents/Messages/Messages";
 import Advisory from "./TabComponents/Advisory/Advisory";
 
 import CustomSelect from "@/components/Common/CustomSelect/CustomSelect";
+import AlumniEvents from "./TabComponents/AlumniEvents/AlumniEvents";
+import { AlumniEvent, ApiEvent, bufferToBase64 } from "../../../utils/alumniPortalData/alumniEventsUtils";
 
 const AlumniPortal = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
+  const [events, setEvents] = useState<AlumniEvent[]>([]);
+  const [loading, setLoading] = useState(true);
 
   const alumniTitles = alumniData?.map((section) => section.title) || [];
+
+  useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        setLoading(true);
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/events?page=1&limit=1000&category=Alumni`);
+        const json = await response.json();
+        
+        const dataArray = Array.isArray(json.data) ? json.data : (Array.isArray(json) ? json : []);
+
+        const mappedEvents: AlumniEvent[] = dataArray.map((event: ApiEvent) => {
+          const isVideo = !!event.videoUrl;
+          const imageSrc = isVideo 
+            ? event.videoUrl! 
+            : (event.image?.data ? bufferToBase64(event.image.data) : "");
+
+          return {
+            id: event.id,
+            title: event.title,
+            description: event.description,
+            date: event.date || "",
+            imageSrc: imageSrc,
+            isVideo: isVideo,
+          };
+        });
+
+        setEvents(mappedEvents);
+      } catch (error) {
+        console.error("Failed to fetch alumni events:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchEvents();
+  }, []);
 
   return (
     <section className="py-10 xl:py-20 text-[#1D1D1F] overflow-hidden">
@@ -85,6 +125,11 @@ const AlumniPortal = () => {
                   </table>
                   </div>
                 </div>
+              </>
+            )}
+            {selectedIndex === 6 && (
+              <>
+                <AlumniEvents events={events} loading={loading} />
               </>
             )}
           </div>

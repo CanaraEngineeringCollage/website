@@ -165,5 +165,8 @@
         "links": [{ "text": "VTU Affiliation", "href": "https://apiserver.cec.edu.in/files/Acheivements" }]
       }
     ]
+  },
+  {
+    "title": "Events"
   }
 ]
