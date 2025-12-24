@@ -85,7 +85,7 @@ const FacultyMembersSection: React.FC = () => {
     general: "General Staff",
     "Student Welfare Department": "Student Welfare Department",
     "Dean Office": "Dean Office",
-    Library: "Library Staff",
+    library: "Library Staff",
     Hostel: "Hostel Staff",
   };
 
@@ -109,7 +109,7 @@ const FacultyMembersSection: React.FC = () => {
           url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=Admin&all=true`;
         } else if (selectedCategory === "general") {
           url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=General&all=true`;
-        } else if (selectedCategory === "Library") {
+        } else if (selectedCategory === "library") {
           url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=Library&all=true`;
         } else if (selectedCategory === "Hostel") {
           url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=Hostel&all=true`;
@@ -200,7 +200,7 @@ const FacultyMembersSection: React.FC = () => {
 
             {/* Desktop Sidebar */}
             <div className="hidden md:block w-full sm:w-[80%] mx-auto md:mx-0">
-              {["faculty", "placement","Student Welfare Department", "Dean Office","physical education" ,"admin", "general",  "Library", "Hostel"].map((cat) => (
+              {["faculty", "placement","Student Welfare Department", "Dean Office","physical education" ,"admin", "general",  "library", "Hostel"].map((cat) => (
                 <div key={cat} className="border-b-2 border-border py-4">
                   <h1
                     className={`text-[20px] cursor-pointer ${selectedCategory === cat ? "font-bold text-[#2884CA]" : "text-textGray"}`}

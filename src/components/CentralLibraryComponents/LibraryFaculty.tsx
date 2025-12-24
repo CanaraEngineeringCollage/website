@@ -5,8 +5,9 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import FacultyModal from "../FacultyModal/FacultyModal";
+
 import Link from "next/link";
+import FacultyModal from "@/components/DepartmentComponents/FacultyModal/FacultyModal";
 // Interface for qualifications
 interface Qualification {
   degree: string;
@@ -41,15 +42,13 @@ interface CouncilMember {
 }
 
 // Props interface for the component
-interface DepartmentSectionProps {
-  departmentName: string;
-}
+
 const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
   const binary = buffer.data.reduce((acc, byte) => acc + String.fromCharCode(byte), "");
   const base64 = btoa(binary);
   return `data:image/jpeg;base64,${base64}`;
 };
-export default function DepartmentFacultySection({ departmentName }: DepartmentSectionProps) {
+export default function LibraryFaculty() {
   const [data, setData] = useState<CouncilMember[]>([]);
   const [startIndex, setStartIndex] = useState(0);
   const router = useRouter();
@@ -63,7 +62,7 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
     setLoading(true);
     try {
       const url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent(
-        departmentName
+        "Library"
       )}&all=true`; // ✅ Add all=true to fetch all faculties
       const res = await fetch(url);
       const data: CouncilMember[] = await res.json();
@@ -84,7 +83,7 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
   }
 
   fetchFaculty();
-}, [departmentName]);
+}, []);
 
 
   useEffect(() => {
@@ -123,7 +122,7 @@ const handlePrev = () => {
 };
 
 
-  // inside DepartmentFacultySection
+  // inside Fac
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedMember, setSelectedMember] = useState<CouncilMember | null>(null);
 
@@ -137,9 +136,7 @@ const handlePrev = () => {
     setSelectedMember(null);
   };
 
- const isAIML =
-    departmentName === "Artificial Intelligence & Machine Learning" ||
-    departmentName === "Artificial Intelligence and Machine Learning";
+ 
   
   return (
     <section className="py-16 px-6 md:px-12 max-w-7xl mx-auto my-20 xl:max-w-[75%] bg-[#F5F5F7] rounded-3xl">
@@ -149,26 +146,22 @@ const handlePrev = () => {
         <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-gray-900 leading-tight">
               Get to Know Our <br />
               <span className="">
-                Department’s Faculty
+           Library Staff
               </span>
             </h2>
             <p className="text-gray-700 mt-6 text-lg">
-              Our faculty team is the backbone of our institution, ensuring seamless operations with their expertise, dedication & commitment to
-              excellence.
+                Our Library Staff team is the backbone of our institution, ensuring seamless operations through their expertise, dedication, and commitment to excellence
             </p>
           </div>
           <div className="flex items-center justify-between gap-4">
             <Link
-              href={{
-                pathname: "/about/educators-administrators",
-                query: { department: departmentName },
-              }}
+            href="/about/educators-administrators?category=library"
             >
               <button
-                aria-label="Our faculty team"
+                aria-label="Our Library Staff team"
                 className="bg-blue-100 text-black rounded-full text-block px-6 py-2  text-sm font-medium hover:bg-blue-200 transition"
               >
-                Our Faculty Team
+                Our Library Staff Team
               </button>
             </Link>
            <div className="flex items-center gap-3">
@@ -215,7 +208,7 @@ const handlePrev = () => {
             <div
               key={index}
               onClick={() => openModal(member)}
-              className="relative cursor-pointer w-full max-w-[309px] aspect-[2/3] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md"
+              className="relative  w-full max-w-[309px] aspect-[2/3] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md"
             >
               {/* Image fills card completely */}
               <Image src={bufferToBase64(member?.avatar)} alt={member.name} fill className="object-cover" />
@@ -230,10 +223,10 @@ const handlePrev = () => {
                   <span>{member.designation}</span>
                 </p>
 
-                <p className="text-xs sm:text-sm md:text-base font-bold flex items-center mt-1">
+                {/* <p className="text-xs sm:text-sm md:text-base font-bold flex items-center mt-1">
                   View Profile
                   <MdKeyboardArrowRight className="ml-1 text-lg md:text-xl" />
-                </p>
+                </p> */}
               </div>
             </div>
           ))}
@@ -246,12 +239,11 @@ const handlePrev = () => {
         <h2 className="text-3xl lg:text-4xl mb-3 md:text-4xl font-bold text-gray-900 leading-tight">
               Get to Know Our <br />
               <span className="">
-           Department’s Faculty
+           Library Staff
               </span>
             </h2>
             <p className="text-gray-700 text-lg">
-              Our faculty team is the backbone of our institution, ensuring seamless operations with their expertise, dedication & commitment to
-              excellence.
+              Our Library Staff team is the backbone of our institution, ensuring seamless operations through their expertise, dedication, and commitment to excellence
             </p>
           </div>
         </div>
@@ -263,7 +255,7 @@ const handlePrev = () => {
       Array.from({ length: 1 }).map((_, index) => (
           <div
           key={index}
-          className="relative cursor-pointer w-full h-[360px] md:h-[480px] md:w-2/3 rounded-xl overflow-hidden bg-[#6DC0EB]/40 animate-pulse flex flex-col items-center shadow-md"
+          className="relative  w-full h-[360px] md:h-[480px] md:w-2/3 rounded-xl overflow-hidden bg-[#6DC0EB]/40 animate-pulse flex flex-col items-center shadow-md"
         >
           {/* Image skeleton */}
           <div className="absolute inset-0 bg-[#6DC0EB]/50" />
@@ -284,7 +276,7 @@ const handlePrev = () => {
             <div
               key={index}
               onClick={() => openModal(member)}
-              className="relative cursor-pointer w-full h-[360px] md:w-2/3 md:h-[480px] rounded-xl  overflow-hidden bg-[#6DC0EB] text-white flex flex-col justify-center items-center shadow-md "
+              className="relative  w-full h-[360px] md:w-2/3 md:h-[480px] rounded-xl  overflow-hidden bg-[#6DC0EB] text-white flex flex-col justify-center items-center shadow-md "
             >
               {/* Image fills card completely */}
               <Image
@@ -304,10 +296,10 @@ const handlePrev = () => {
                 <p className="text-xs sm:text-sm md:text-base leading-snug break-words">
                   <span>{member.designation}</span>
                 </p>
-                <p className="text-xs sm:text-sm md:text-base font-bold flex items-center mt-1">
+                {/* <p className="text-xs sm:text-sm md:text-base font-bold flex items-center mt-1">
                   View Profile
                   <MdKeyboardArrowRight className="ml-1 text-lg md:text-xl" />
-                </p>
+                </p> */}
               </div>
             </div>
           ))}
@@ -315,14 +307,11 @@ const handlePrev = () => {
 
         <div className="flex flex-col items-center gap-7">
           <Link
-            href={{
-              pathname: "/about/educators-administrators",
-              query: { department: departmentName },
-            }}
+           href="/about/educators-administrators?category=library"
           >
             {" "}
             <button className="bg-blue-100 rounded-full text-black text-block px-6 py-2  text-sm font-medium hover:bg-blue-200 transition">
-              Our Faculty Team
+              Our Library Staff Team
             </button>
           </Link>
         <div className="flex items-center gap-2">
@@ -345,7 +334,7 @@ const handlePrev = () => {
           </div>
         </div>
       </div>
-      <FacultyModal isOpen={isModalOpen} onClose={closeModal} facultyData={selectedMember} />
+      {/* <FacultyModal isOpen={isModalOpen} onClose={closeModal} facultyData={selectedMember} /> */}
     </section>
   );
 }

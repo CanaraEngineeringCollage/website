@@ -3,13 +3,9 @@
     "title": "About Library",
     "data": [
 
-       {
-        "title": "About Library",
-        "type": "image",
-        "src": "/campusFacilitiesPageImages/4.webp",
-        "alt": "Library Interior View"
-      },
+     
       {
+        "title": "About Library",
         "description": "“One best book is equal to hundred good friends but one good friend is equal to a Library”. – Dr. A P J Abdul Kalam."
       },
      

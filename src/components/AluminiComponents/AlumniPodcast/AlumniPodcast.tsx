@@ -113,8 +113,8 @@ export default function AlumniPodcast() {
       {/* Mobile Insta Button */}
       <div className="mt-10 lg:hidden flex justify-center">
         <button onClick={() => window.open("https://www.instagram.com/cec.nexus/", "_blank")} className="text-[#2884CA]  font-bold text-[17px] bg-[#d9ebff] 
-               px-6 py-2 cursor-pointer rounded-3xl lg:inline-flex gap-3 
-               items-center min-w-[250px] justify-center hover:bg-[#cce4ff] transition-colors">
+               px-6 py-1 cursor-pointer rounded-3xl lg:inline-flex gap-3 
+               items-center min-w-[250px] flex items-center justify-center hover:bg-[#cce4ff] transition-colors">
           <InstagramBlue /> Follow us on Instagram
         </button>
       </div>

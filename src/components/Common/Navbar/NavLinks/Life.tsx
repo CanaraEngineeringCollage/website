@@ -2,7 +2,7 @@
 import { ListItem, Menu, MenuHandler, MenuList, Typography } from "@material-tailwind/react";
 import { useState } from "react";
 import { FaChevronUp } from "react-icons/fa6";
-import { Campus, College, Innovation ,Employees, Certicficate, HandShake} from "@/components/Icons/Icons";
+import { Campus, College, Innovation ,Employees, Certicficate, HandShake, Alumni} from "@/components/Icons/Icons";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 const LeadearShiplinks = [
@@ -17,6 +17,7 @@ export default function Life() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const renderBorder= pathname.includes("/campus-facilities") || pathname.includes("/entrepreneurship-cell") || pathname.includes("/physical-education")|| pathname.includes("/alumni") && pathname!=="/alumni/about-alumni" || pathname.includes("/student-achievements")|| pathname.includes("/studentlife-engagement")|| pathname.includes("/campus-buzz")
 
   return (
     <Menu open={isMenuOpen} handler={setIsMenuOpen} offset={{ mainAxis: 20 }} placement="bottom" allowHover={true}>
@@ -33,7 +34,7 @@ export default function Life() {
               isMenuOpen ? "opacity-100" : "opacity-80"
             } text-webGreen1 bg-transparent font-semibold hover:bg-transparent 
             rounded-none shadow-none ${
-              pathname.includes("/campus-facilities") || pathname.includes("/entrepreneurship-cell") || pathname.includes("/physical-education")
+              renderBorder
                 ? `border-[#005580] border-b-2 text-[#005580]`
                 : " text-[#2884CA] hover:text-[#005580]"
             } text-[#2884CA] outline-none focus:ring-0 focus:outline-none`}
@@ -125,7 +126,7 @@ export default function Life() {
 </div>
 <div className="flex gap-4 pr-4 border-r border-gray-300">
   <div className="flex items-start">
-    <HandShake />
+    <Alumni />
 
     
   </div>
