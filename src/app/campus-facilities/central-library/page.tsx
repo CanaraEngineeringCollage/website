@@ -15,7 +15,7 @@ const AboutTheDepartment = () => {
 
   return (
     <>
-    <section className="pt-5 md:pt-10 text-[#1D1D1F] xl:pt-20 pb-10 lg:pb-16 max-w-7xl xl:max-w-[75%] mx-auto   ">
+    <section className="pt-5 px-4 lg:px-0 xl:px-0 md:pt-10 text-[#1D1D1F] xl:pt-20 pb-10 lg:pb-16 max-w-7xl xl:max-w-[75%] mx-auto   ">
       <div>
         <div className="flex justify-between  mb-5 lg:mb-10">
           <div className="lg:w-[75%] ">
@@ -73,7 +73,7 @@ const AboutTheDepartment = () => {
   <h2 className="text-3xl lg2:text-5xl lg:text-4xl  text-center lg:text-start font-bold text-[#1D1D1F] mb-10">
     Our Objectives
   </h2>
-  <ul className="space-y-6 text-textGray text-[20px] list-disc sm:space-y-2">
+  <ul className="space-y-6 px-2 md:px-0 text-textGray text-[20px] list-disc sm:space-y-2">
     <li className=" items-center sm:items-start  sm:text-left gap-4 sm:gap-10 lg:gap-12">
     
        To be user friendly.

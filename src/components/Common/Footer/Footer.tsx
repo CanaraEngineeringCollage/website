@@ -141,6 +141,7 @@ const Footer: FC = () => {
               { label: "Circulars", href: "/academics/examination-records?tab=circulars", tab: "circulars" },
               { label: "Campus Buzz", href: "/campus-buzz" },
               { label: "About Library", href: "/campus-facilities/central-library/about-library" },
+              { label: "Student Achievements", href: "/student-achievements" },
             ]}
           />
         </Suspense>
