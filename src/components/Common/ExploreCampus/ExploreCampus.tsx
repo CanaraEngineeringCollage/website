@@ -8,16 +8,17 @@ import { useOutsideClick } from "@/hooks/use-outside-click";
 import CustomSelect from "../CustomSelect/CustomSelect";
 import { parse } from "node-html-parser";
 
+// --- Interfaces ---
+
 interface CampusEvent {
   id: number;
   category: string;
   eventDate: string;
   content: string;
-  eventName?: string; // <-- added, since you use event.eventName in JSX
+  eventName?: string;
 }
 
 interface ExploreCampusProps {
-  campusEvents?: CampusEvent[];
   title?: string;
   description?: string;
 }
@@ -50,6 +51,8 @@ export const CarouselContext = createContext<CarouselContextType>({
   isOpen: false,
 });
 
+// --- Animations ---
+
 const cardVariants = {
   hidden: { opacity: 0, scale: 0.8, y: 100, transition: { duration: 0.3 } },
   visible: {
@@ -76,73 +79,8 @@ const contentVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.1 } },
 };
 
-const dummyStudentAchievements: CampusEvent[] = [
-  {
-    id: 1,
-    category: "Student Achievement",
-    eventDate: "",
-    content: `
-      <p>Awarded the prestigious B.E. (Honours) degree by VTU, Belagavi for outstanding performance and commitment to advanced learning through the successful completion of six online courses in Java, Python, Al, ML, IoT, and Cloud Computing, they earned 18 additional credits.</p>
-      <img src="/mediaPageImages/B.E. (Honours. Degree).jpeg" alt="John Doe Achievement" />
-    `,
-  },
-  {
-    id: 2,
-    category: "Student Achievement",
-    eventDate: "",
-    content: `
-      <p>Nikitha Ganapathi Bhat, VTU 2024-25 First Rank with Gold Medal, Dept.of CSBS.</p>
-      <img src="/mediaPageImages/Nikitha Ganapathi Bhat.jpeg" alt="Jane Smith Achievement" />
-    `,
-  },
-  {
-    id: 3,
-    category: "Student Achievement",
-    eventDate: "",
-    content: `
-      <p>CEC celebrates 10 VTU Ranks! Congratulations to our proud achievers!</p>
-      <img src="/mediaPageImages/VTU - Rank Holders.jpeg" />
-    `,
-  },
-  {
-    id: 4,
-    category: "Student Achievement",
-    eventDate: "",
-    content: `
-      <p>UiPath Student Developer Champion Vaidehi V Pai, IV Semester CSE.</p>
-      <img src="/mediaPageImages/Ui path Student Developer.jpeg" alt="Team CEC Robotics" />
-    `,
-  },
-  {
-    id: 5,
-    category: "Student Achievement",
-    eventDate: "",
-    content: `
-      <p>Six students from our Institution have been awarded the prestigious IEEE Women in Engineering (WIE) scholarship 2024-25, funded by Quest Global and facilitated by IEEE India Philanthrophy (IIP)</p>
-      <img src="/mediaPageImages/IEEE - WIE Scholarship 2024-25.jpeg" />
-    `,
-  },
-  {
-    id: 6,
-    category: "Student Achievement",
-    eventDate: "",
-    content: `
-      <p>Mr. Krishna Pallan (ISE 3rd Year), Mr. Mukesh, and Mr. Ashlesh (AIML 3rd Year) secured 3rd Prize in The Lazarus Missions, a 96-hour ML. Hackathon hosted by IEEE NITIK Surathkal (March 1-5, 2025).</p>
-      <img src="/mediaPageImages/Hackathon.jpeg" />
-    `,
-  },
-  {
-    id: 7,
-    category: "Student Achievement",
-    eventDate: "",
-    content: `
-      <p>Ms. Pavitra Bhat K. II year ISE, secured 2nd place (silver medal) in high jump and Ms. Jayalakhmi, 1st year CSD secured Bronze Medal in High Jump in VTU State level Athletic meet held at JNNCE Shimoga on 15 March 2025.</p>
-      <img src="/mediaPageImages/VTU state level.jpeg" />
-    `,
-  },
-];
+// --- Parsers & Sub-components ---
 
-// Parse HTML
 const parseEventContent = (html: string) => {
   const root = parse(html);
   const firstHeadingEl = root.querySelector("h1,h2,h3,h4,h5,h6");
@@ -212,63 +150,111 @@ function EventContent({ description }: { description: EventDescriptionProps }) {
   );
 }
 
+// --- Main Component ---
+
 const ExploreCampus: React.FC<ExploreCampusProps> = ({
-  campusEvents: initialEvents = [],
   title,
   description,
 }) => {
-  const [campusEvents, setCampusEvents] = useState<CampusEvent[]>(initialEvents);
-const [categories, setCategories] = useState<string[]>([]);
-  const [activeCategory, setActiveCategory] =useState<string>();
+  const [campusEvents, setCampusEvents] = useState<CampusEvent[]>([]);
+  const [categories, setCategories] = useState<string[]>([]);
+  const [activeCategory, setActiveCategory] = useState<string>("");
+  
+  // Pagination State
+  const [page, setPage] = useState(1);
+  const [hasMore, setHasMore] = useState(true);
+  const [loading, setLoading] = useState(false);
+  const LIMIT = 5;
+
+  // Modal State
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [showAll, setShowAll] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const fetchBuzz = async () => {
+  // 1. Helper to fetch events
+  const fetchEvents = async (category: string, pageNum: number, shouldReset: boolean) => {
+    // If no category is selected yet, don't fetch
+    if (!category) return;
+
+    setLoading(true);
     try {
-      const [buzzRes, catRes] = await Promise.all([
-        fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz?page=1&limit=999`),
-        fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz/categories`),
-      ]);
+      const params = new URLSearchParams();
+      params.append("page", pageNum.toString());
+      params.append("limit", LIMIT.toString());
+      params.append("category", category);
 
-      if (!buzzRes.ok) throw new Error("Failed to fetch buzz");
-      if (!catRes.ok) throw new Error("Failed to fetch categories");
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz?${params.toString()}`);
+      if (!res.ok) throw new Error("Failed to fetch buzz");
+      
+      const responseJson = await res.json();
+      const newEvents = responseJson.data || [];
 
-      const buzzResponse = await buzzRes.json();
-      const categoriesResponse: string[] = await catRes.json();
+      if (shouldReset) {
+        setCampusEvents(newEvents);
+      } else {
+        setCampusEvents((prev) => [...prev, ...newEvents]);
+      }
 
-      // buzzResponse.data = actual array of buzz items
-      setCampusEvents(buzzResponse.data);
+      if (newEvents.length < LIMIT) {
+        setHasMore(false);
+      } else {
+        setHasMore(true);
+      }
 
-      // merge dummy category + backend categories, remove duplicates
-      setCategories(categoriesResponse);
-
-      if (categoriesResponse && categoriesResponse.length > 0) {
-      setActiveCategory(categoriesResponse[0]); 
-    }
     } catch (err) {
       console.error(err);
+    } finally {
+      setLoading(false);
     }
   };
 
+  // 2. Initial Fetch (Categories + First Page of Events)
   useEffect(() => {
-    fetchBuzz();
+    const init = async () => {
+      try {
+        const catRes = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz/categories`);
+        if (catRes.ok) {
+          const categoriesResponse: string[] = await catRes.json();
+          
+          // Filter out "Student Achievements" and do NOT add "All"
+          const filteredCategories = categoriesResponse.filter(
+            (c) => c !== "Student Achievements"
+          );
+
+          setCategories(filteredCategories);
+
+          // Automatically select the first category if available
+          if (filteredCategories.length > 0) {
+            const firstCategory = filteredCategories[0];
+            setActiveCategory(firstCategory);
+            // Fetch events for the first category immediately
+            await fetchEvents(firstCategory, 1, true);
+          }
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    };
+    init();
   }, []);
 
-  console.log(campusEvents);
-  
+  // 3. Handlers
+  const handleCategoryChange = (category: string) => {
+    if (category === activeCategory) return;
+    setActiveCategory(category);
+    setPage(1);
+    setHasMore(true);
+    setCampusEvents([]); 
+    fetchEvents(category, 1, true);
+  };
 
-  // Sort by date descending
-  const sortedEvents = [...campusEvents].sort(
-    (a, b) => new Date(b.eventDate).getTime() - new Date(a.eventDate).getTime()
-  );
+  const loadMore = () => {
+    const nextPage = page + 1;
+    setPage(nextPage);
+    fetchEvents(activeCategory, nextPage, false);
+  };
 
-  const filteredEvents = sortedEvents.filter((event) =>
-    activeCategory === "All" ? true : event.category === activeCategory
-  );
-  const eventsToShow = showAll ? filteredEvents : filteredEvents.slice(0, 5);
-
+  // Modal Handlers
   const handleCardClose = (index: number) => {
     setCurrentIndex(index);
     setIsOpen(false);
@@ -283,7 +269,7 @@ const [categories, setCategories] = useState<string[]>([]);
 
   const goToNextCard = () =>
     setCurrentIndex((prev) =>
-      filteredEvents.length ? (prev + 1) % filteredEvents.length : 0
+      campusEvents.length ? (prev + 1) % campusEvents.length : 0
     );
 
   useEffect(() => {
@@ -306,7 +292,7 @@ const [categories, setCategories] = useState<string[]>([]);
       value={{
         onCardClose: handleCardClose,
         currentIndex,
-        totalItems: filteredEvents.length,
+        totalItems: campusEvents.length,
         goToNextCard,
         openCard,
         closeCard,
@@ -329,10 +315,7 @@ const [categories, setCategories] = useState<string[]>([]);
           <div className="flex lg:hidden justify-between items-center gap-2 md:hidden">
             <CustomSelect
               value={activeCategory}
-              onChange={(e) => {
-                setActiveCategory(e.target.value);
-                setShowAll(false);
-              }}
+              onChange={(e) => handleCategoryChange(e.target.value)}
               options={categories}
             />
           </div>
@@ -341,10 +324,7 @@ const [categories, setCategories] = useState<string[]>([]);
           <div className="hidden lg:flex justify-between items-center pb-5 lg:pb-10 flex-wrap gap-2">
             {categories.map((category, index) => (
               <h3
-                onClick={() => {
-                  setActiveCategory(category);
-                  setShowAll(false);
-                }}
+                onClick={() => handleCategoryChange(category)}
                 className={`cursor-pointer ${
                   category === activeCategory
                     ? "text-black font-bold"
@@ -359,9 +339,9 @@ const [categories, setCategories] = useState<string[]>([]);
         </div>
 
         {/* Event Cards */}
-        <div className="flex flex-col gap-8">
-          {eventsToShow.length > 0 ? (
-            eventsToShow.map((event, index) => {
+        <div className="flex flex-col gap-8 min-h-[300px]">
+          {campusEvents.length > 0 ? (
+            campusEvents.map((event, index) => {
               const { src, topTitle, topDescription } = parseEventContent(
                 event.content
               );
@@ -373,7 +353,7 @@ const [categories, setCategories] = useState<string[]>([]);
                 >
                   <div className="flex-shrink-0 w-full md:w-[40%]">
                     <Image
-                      src={src || event.content}
+                      src={src || "/placeholder-image.jpg"} 
                       alt={topTitle || event.category}
                       width={1000}
                       height={1000}
@@ -414,16 +394,18 @@ const [categories, setCategories] = useState<string[]>([]);
               );
             })
           ) : (
-           null
+            !loading && <div className="text-center py-10">No events found.</div>
           )}
+          
+          {loading && <div className="text-center py-5">Loading events...</div>}
         </div>
 
         {/* Show More Button */}
-        {!showAll && filteredEvents.length > 5 && (
+        {hasMore && !loading && campusEvents.length > 0 && (
           <div className="flex justify-center mt-10">
             <button
-              className="bg-[#eff1f6] text-black px-5 py-2 cursor-pointer rounded-3xl"
-              onClick={() => setShowAll(true)}
+              className="bg-[#eff1f6] text-black px-5 py-2 cursor-pointer rounded-3xl hover:bg-gray-200 transition-colors"
+              onClick={loadMore}
             >
               Explore More Campus Stories
             </button>
@@ -432,7 +414,7 @@ const [categories, setCategories] = useState<string[]>([]);
 
         {/* Modal */}
         <AnimatePresence>
-          {isOpen && filteredEvents.length > 0 && (
+          {isOpen && campusEvents.length > 0 && (
             <motion.div
               className="fixed inset-0 h-screen z-50 overflow-auto"
               initial="hidden"
@@ -461,14 +443,14 @@ const [categories, setCategories] = useState<string[]>([]);
                 <motion.div variants={contentVariants} className="!overflow-hidden">
                   <EventContent
                     description={getEventDescription(
-                      filteredEvents[currentIndex]
+                      campusEvents[currentIndex]
                     )}
                   />
                 </motion.div>
                 <motion.div variants={contentVariants} className="p-4 lg:px-20 ">
                   <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">
                     {parseEventContent(
-                      filteredEvents[(currentIndex + 1) % filteredEvents.length]
+                      campusEvents[(currentIndex + 1) % campusEvents.length]
                         .content
                     ).topTitle && "Next Event"}
                   </h1>
@@ -477,7 +459,7 @@ const [categories, setCategories] = useState<string[]>([]);
                     className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]"
                   >
                     {parseEventContent(
-                      filteredEvents[(currentIndex + 1) % filteredEvents.length]
+                      campusEvents[(currentIndex + 1) % campusEvents.length]
                         .content
                     ).topTitle || "Next Event"}
                     <MdKeyboardArrowRight className="ml-1 mt-0.5  text-[20px] md:text-[25px]" />

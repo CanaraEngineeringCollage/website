@@ -121,7 +121,12 @@ const HotOfThePressCarousel = () => {
 
 const fetchEvents = async () => {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz?page=1&limit=10`);
+   const params = new URLSearchParams({
+  page: '1',
+  limit: '15',
+  excludeCategory: 'Student Achievements'
+});
+const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz?${params.toString()}`);
     if (!res.ok) throw new Error("Failed to fetch buzz");
 
     const response = await res.json();
@@ -139,7 +144,7 @@ const fetchEvents = async () => {
   }, []);
 
   // Sort by date descending
-  const sortedEvents = [...events].sort((a, b) => new Date(b.eventDate).getTime() - new Date(a.eventDate).getTime());
+  const sortedEvents = events
 
   const openCard = (index: number) => {
     setCurrentIndex(index);
@@ -238,7 +243,7 @@ const fetchEvents = async () => {
 </div>
 
                   {/* <p className="text-textGray text-[17px] mb-1">{event.category}</p> */}
-                  <h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">{topTitle}</h3>
+                  {topTitle?<h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">{topTitle}</h3>: topDescription?<h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">{topDescription}</h3>: <h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">{event.category}</h3>}
                   <button className="text-primary inline-flex text-[17px] items-center hover:underline font-medium text-sm">
                     Read More <MdKeyboardArrowRight className="ml-1" />
                   </button>

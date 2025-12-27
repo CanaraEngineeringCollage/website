@@ -7,14 +7,15 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 
 import { parse } from "node-html-parser";
-import CustomSelect from "../Common/CustomSelect/CustomSelect";
+
+// --- Interfaces ---
 
 interface CampusEvent {
   id: number;
   category: string;
   eventDate: string;
   content: string;
-  eventName?: string; // <-- added, since you use event.eventName in JSX
+  eventName?: string;
 }
 
 interface ExploreCampusProps {
@@ -51,6 +52,8 @@ export const CarouselContext = createContext<CarouselContextType>({
   isOpen: false,
 });
 
+// --- Animations ---
+
 const cardVariants = {
   hidden: { opacity: 0, scale: 0.8, y: 100, transition: { duration: 0.3 } },
   visible: {
@@ -77,74 +80,11 @@ const contentVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.1 } },
 };
 
-const dummyStudentAchievements: CampusEvent[] = [
-  {
-    id: 1,
-    category: "Student Achievement",
-    eventDate: "",
-    content: `
-      <p>Awarded the prestigious B.E. (Honours) degree by VTU, Belagavi for outstanding performance and commitment to advanced learning through the successful completion of six online courses in Java, Python, Al, ML, IoT, and Cloud Computing, they earned 18 additional credits.</p>
-      <img src="/mediaPageImages/B.E. (Honours. Degree).jpeg" alt="John Doe Achievement" />
-    `,
-  },
-  {
-    id: 2,
-    category: "Student Achievement",
-    eventDate: "",
-    content: `
-      <p>Nikitha Ganapathi Bhat, VTU 2024-25 First Rank with Gold Medal, Dept.of CSBS.</p>
-      <img src="/mediaPageImages/Nikitha Ganapathi Bhat.jpeg" alt="Jane Smith Achievement" />
-    `,
-  },
-  {
-    id: 3,
-    category: "Student Achievement",
-    eventDate: "",
-    content: `
-      <p>CEC celebrates 10 VTU Ranks! Congratulations to our proud achievers!</p>
-      <img src="/mediaPageImages/VTU - Rank Holders.jpeg" />
-    `,
-  },
-  {
-    id: 4,
-    category: "Student Achievement",
-    eventDate: "",
-    content: `
-      <p>UiPath Student Developer Champion Vaidehi V Pai, IV Semester CSE.</p>
-      <img src="/mediaPageImages/Ui path Student Developer.jpeg" alt="Team CEC Robotics" />
-    `,
-  },
-  {
-    id: 5,
-    category: "Student Achievement",
-    eventDate: "",
-    content: `
-      <p>Six students from our Institution have been awarded the prestigious IEEE Women in Engineering (WIE) scholarship 2024-25, funded by Quest Global and facilitated by IEEE India Philanthrophy (IIP)</p>
-      <img src="/mediaPageImages/IEEE - WIE Scholarship 2024-25.jpeg" />
-    `,
-  },
-  {
-    id: 6,
-    category: "Student Achievement",
-    eventDate: "",
-    content: `
-      <p>Mr. Krishna Pallan (ISE 3rd Year), Mr. Mukesh, and Mr. Ashlesh (AIML 3rd Year) secured 3rd Prize in The Lazarus Missions, a 96-hour ML. Hackathon hosted by IEEE NITIK Surathkal (March 1-5, 2025).</p>
-      <img src="/mediaPageImages/Hackathon.jpeg" />
-    `,
-  },
-  {
-    id: 7,
-    category: "Student Achievement",
-    eventDate: "",
-    content: `
-      <p>Ms. Pavitra Bhat K. II year ISE, secured 2nd place (silver medal) in high jump and Ms. Jayalakhmi, 1st year CSD secured Bronze Medal in High Jump in VTU State level Athletic meet held at JNNCE Shimoga on 15 March 2025.</p>
-      <img src="/mediaPageImages/VTU state level.jpeg" />
-    `,
-  },
-];
+// --- Parsers ---
 
-// Parse HTML
 const parseEventContent = (html: string) => {
+  if (!html) return { src: "", topTitle: "", topDescription: "", remainingHTML: "" };
+  
   const root = parse(html);
   const firstHeadingEl = root.querySelector("h1,h2,h3,h4,h5,h6");
   const topTitle = firstHeadingEl?.text?.trim() || "";
@@ -213,39 +153,77 @@ function EventContent({ description }: { description: EventDescriptionProps }) {
   );
 }
 
+// --- Main Component ---
+
 const ExploreCampus: React.FC<ExploreCampusProps> = ({
   campusEvents: initialEvents = [],
   title,
   description,
 }) => {
-  const [campusEvents, setCampusEvents] = useState<CampusEvent[]>(dummyStudentAchievements);
-  const [categories, setCategories] = useState<string[]>([]);
-  const [activeCategory, setActiveCategory] = useState<string>("All");
+  // State
+  const [campusEvents, setCampusEvents] = useState<CampusEvent[]>([]);
 
-  useEffect(() => {
-    const uniqueCategories = [
-      "All",
-      ...Array.from(new Set(campusEvents.map((event) => event.category))),
-    ];
-    setCategories(uniqueCategories);
-  }, [campusEvents]);
+  // Pagination State
+  const [page, setPage] = useState(1);
+  const [loading, setLoading] = useState(true);
+  const [hasMore, setHasMore] = useState(true);
+  const LIMIT = 5;
+
+  // Modal State
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [showAll, setShowAll] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
- 
+  // 1. Fetch Function
+  const fetchAchievements = async (pageNum: number) => {
+    setLoading(true);
+    try {
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/buzz/student-achievements?page=${pageNum}&limit=${LIMIT}`
+      );
+      if (!response.ok) {
+        throw new Error("Failed to fetch student achievements");
+      }
+      const json = await response.json();
+      const newEvents = json.data || [];
 
-  // Sort by date descending
-  const sortedEvents = [...campusEvents].sort(
-    (a, b) => new Date(b.eventDate).getTime() - new Date(a.eventDate).getTime()
-  );
+      // Append if page > 1, else replace
+      if (pageNum === 1) {
+        setCampusEvents(newEvents);
+      } else {
+        setCampusEvents((prev) => [...prev, ...newEvents]);
+      }
 
-  const filteredEvents = sortedEvents.filter((event) =>
-    activeCategory === "All" ? true : event.category === activeCategory
-  );
-  const eventsToShow = showAll ? filteredEvents : filteredEvents.slice(0, 5);
+      // Check if we reached the end (if new data is less than limit, no more pages)
+      if (newEvents.length < LIMIT) {
+        setHasMore(false);
+      } else {
+        setHasMore(true);
+      }
+    } catch (error) {
+      console.error("Error fetching achievements:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
+  // 2. Initial Load
+  useEffect(() => {
+    fetchAchievements(1);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // 3. Load More Handler
+  const handleLoadMore = () => {
+    const nextPage = page + 1;
+    setPage(nextPage);
+    fetchAchievements(nextPage);
+  };
+
+  // Use campusEvents directly (Backend handles sorting)
+  const eventsToShow = campusEvents;
+
+  // Modal Handlers
   const handleCardClose = (index: number) => {
     setCurrentIndex(index);
     setIsOpen(false);
@@ -260,7 +238,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({
 
   const goToNextCard = () =>
     setCurrentIndex((prev) =>
-      filteredEvents.length ? (prev + 1) % filteredEvents.length : 0
+      eventsToShow.length ? (prev + 1) % eventsToShow.length : 0
     );
 
   useEffect(() => {
@@ -283,7 +261,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({
       value={{
         onCardClose: handleCardClose,
         currentIndex,
-        totalItems: filteredEvents.length,
+        totalItems: eventsToShow.length,
         goToNextCard,
         openCard,
         closeCard,
@@ -291,16 +269,11 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({
       }}
     >
       <section className="max-w-7xl xl:max-w-[75%] mx-auto text-[#1D1D1F] py-16">
-       
-          <div className="text-center mb-10 lg:px-32">
-            <h1 className="text-center md:leading-[1.1] text-3xl md:text-[46px] mb-5 font-bold">
-              Student Achievements
-            </h1>
-            {/* <p className="text-center text-[21px]">{description}</p> */}
-          </div>
-        
-
-      
+        <div className="text-center mb-10 lg:px-32">
+          <h1 className="text-center md:leading-[1.1] text-3xl md:text-[46px] mb-5 font-bold">
+            Student Achievements
+          </h1>
+        </div>
 
         {/* Event Cards */}
         <div className="flex flex-col gap-8">
@@ -317,7 +290,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({
                 >
                   <div className="flex-shrink-0 w-full md:w-[40%]">
                     <Image
-                      src={src || event.content}
+                      src={src || "/placeholder-image.jpg"}
                       alt={topTitle || event.category}
                       width={1000}
                       height={1000}
@@ -358,18 +331,25 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({
               );
             })
           ) : (
-            <p className="text-center text-textGray text-[18px] py-10">
-              There are no events in this category.
-            </p>
+            // Only show empty state if not loading. 
+            // If loading is true on initial fetch, the loader below handles it.
+            !loading && (
+                <p className="text-center text-textGray text-[18px] py-10">
+                  No Student Achievements found.
+                </p>
+            )
           )}
+          
+          {/* Loading Indicator - Shows on Initial Load OR Load More */}
+          {loading && <p className="text-center py-5">Loading...</p>}
         </div>
 
-        {/* Show More Button */}
-        {!showAll && filteredEvents.length > 5 && (
+        {/* Show More Button - Only shows if NOT loading and has more data */}
+        {!loading && hasMore && eventsToShow.length > 0 && (
           <div className="flex justify-center mt-10">
             <button
-              className="bg-[#eff1f6] text-black px-5 py-2 cursor-pointer rounded-3xl"
-              onClick={() => setShowAll(true)}
+              className="bg-[#eff1f6] text-black px-5 py-2 cursor-pointer rounded-3xl hover:bg-gray-200 transition-colors"
+              onClick={handleLoadMore}
             >
               Explore More Student Achievements
             </button>
@@ -378,7 +358,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({
 
         {/* Modal */}
         <AnimatePresence>
-          {isOpen && filteredEvents.length > 0 && (
+          {isOpen && eventsToShow.length > 0 && (
             <motion.div
               className="fixed inset-0 h-screen z-50 overflow-auto"
               initial="hidden"
@@ -407,14 +387,14 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({
                 <motion.div variants={contentVariants} className="!overflow-hidden">
                   <EventContent
                     description={getEventDescription(
-                      filteredEvents[currentIndex]
+                      eventsToShow[currentIndex]
                     )}
                   />
                 </motion.div>
                 <motion.div variants={contentVariants} className="p-4 lg:px-20 ">
                   <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">
                     {parseEventContent(
-                      filteredEvents[(currentIndex + 1) % filteredEvents.length]
+                      eventsToShow[(currentIndex + 1) % eventsToShow.length]
                         .content
                     ).topTitle && "Next Event"}
                   </h1>
@@ -423,7 +403,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({
                     className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]"
                   >
                     {parseEventContent(
-                      filteredEvents[(currentIndex + 1) % filteredEvents.length]
+                      eventsToShow[(currentIndex + 1) % eventsToShow.length]
                         .content
                     ).topTitle || "Next Event"}
                     <MdKeyboardArrowRight className="ml-1 mt-0.5  text-[20px] md:text-[25px]" />
