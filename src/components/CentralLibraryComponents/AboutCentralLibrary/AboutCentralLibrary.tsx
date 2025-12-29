@@ -212,7 +212,7 @@ const AboutCentralLibrary = () => {
                 {item.href && (
                   <iframe
                     src={`${item.href}#toolbar=0&navpanes=0&view=FitH`}
-                    className="w-full h-[60vh] md:h-[100vh] mt-7 border border-gray-200 rounded-lg bg-gray-50"
+                    className="w-full h-[60vh] md:h-[100vh] mt-3 border border-gray-200 rounded-lg bg-gray-50"
                     title={item.title || `Document-${i}`}
                   >
                     <p>Your browser does not support PDFs. <a href={item.href}>Download the PDF</a>.</p>

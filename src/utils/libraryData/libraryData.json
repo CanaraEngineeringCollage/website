@@ -12,25 +12,6 @@
  
       {
         "description": "Library is a store house of Knowledge.The central Library of CEC is located in the heart of the institution and it is easily accessible to its clientele. The library has got independent building with carpet area of 1305.68 spread in 2 Floors it can accommodated 300 users at a time. The collection of library is more than47000 including general Book bank books and SC/ST Book Bank which includes Text and Reference books, Competitive Examination books and general knowledge books are available for all round development of personality. The Library subscribes 42Indian Journals, and 16 magazines in print version for various departments of UG and PG students and Faculty and Staff. We have access more than 11000+online journals, 21000+ E books, Articles from various publishers like IEEE ASPP,& POP ALL, EBSCO Engineering Suit, IEEE Blended e-Learning Platform, Eduport Global-CBS, BSP E-Book, Cengage Learning, Cambridge University Press , Mint Books, Quiklrn e-Books, Drillbit Plagiarism Originality online Check Tool,Quiklrn English Communication Language Lab etc. Subscribed packages under the VTU Consortium. Library has separate Reading Room and Reference section reading hall. Library has separate stack hall for books, Reference section and Book Bank. The in-house activities of the Library have been computerized and all books are bar coded."
-      },
-      {
-        "title": "Vision",
-        "description": "To make world class centre for quality resources in print and digital form to facilitate learning and research."
-      },
-      {
-        "title": "Mission",
-        "description": "To enable our readers to make use of Library resource and services most effectively with help from modern technological tools and applications."
-      },
-      {
-        "title": "Objectives",
-        "points": [
-          "To be user friendly.",
-          "Build collections and create tools to support teaching, learning and research.",
-          "Provide access to current and updated information resources.",
-          "To help users to find right information at the right time.",
-          "To help users in their curriculum activities with knowledge support.",
-          "Providing comfortable and learning environment to users."
-        ]
       }
     ]
   },
@@ -93,7 +74,7 @@
     "title": "E-Resources",
     "data": [
       {
-        "title":"e-RESOURCES of CENTRAL LIBRARY",
+        "title":"E-Resources of Central Library",
         "description": "Electronic resources (e-resources) are materials in digital format accessible electronically. E-resources are electronic journals (e-journal), electronic books (e-book), Conference proceeding , Articles, e-learning materials ,Videos etc., online databases in varied digital formats, Adobe Acrobat documents (.pdf), WebPages (.htm, .html, .asp etc) and more. The CEC Central Library has subscribed online e journals and e-books on various publishers through a member of VTU Consortium."
       },
 

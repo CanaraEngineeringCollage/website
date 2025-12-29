@@ -98,7 +98,7 @@ const Faculty = ({ teachingStaff, technicalStaff, loading = false }: FacultyProp
     });
 
   return (
-    <section className="pb-20">
+    <section className="md:pb-20">
       {loading ? (
         // Skeleton loading grid
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-4 justify-items-center">

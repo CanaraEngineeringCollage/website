@@ -258,7 +258,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
           <div className="col-span-3">
             <div className="sticky top-20 h-fit">
               {/* Mobile Dropdown */}
-              <div className="block md:hidden mb-6">
+              <div className="block md:hidden mb-8">
                 <CustomSelect
                   value={selectedSection}
                   onChange={(e) => {

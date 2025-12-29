@@ -504,7 +504,7 @@ const RsdPageSection = () => {
             <div className="sticky top-20 h-fit">
               
               {/* Mobile Dropdown */}
-              <div className="block md:hidden mb-6">
+              <div className="block md:hidden mb-7">
                 <CustomSelect
                   value={titles[selectedIndex]}
                   onChange={(e) => {

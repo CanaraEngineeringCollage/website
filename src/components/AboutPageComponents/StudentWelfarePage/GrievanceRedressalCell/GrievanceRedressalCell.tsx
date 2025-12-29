@@ -20,7 +20,7 @@ const GrievanceRedressalCell = () => {
           <div className="col-span-3">
             
             {/* Mobile Dropdown */}
-            <div className="block md:hidden mb-6">
+            <div className="block md:hidden mb-8">
               <CustomSelect
                 value={grievanceRedressalCell[selectedIndex]?.title || ""}
                 onChange={(e) => {

@@ -58,12 +58,12 @@ const AlumniPortal = () => {
   return (
     <section className="py-10 xl:py-20 text-[#1D1D1F] overflow-hidden">
       <div className="lg2:mx-24 mx-5">
-        <h1 className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold pb-1 lg:pb-10">About the Alumni Assocation</h1>
+        <h1 className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold pb-1 md:pb-10">About the Alumni Assocation</h1>
         <div className="grid grid-cols-1  md:grid-cols-12 mt-10">
-          <div className="col-span-3 sticky top-32 self-start block">
+          <div className="col-span-3 sticky  self-start block">
             
             {/* Mobile Dropdown */}
-            <div className="block md:hidden mb-6">
+            <div className="block md:hidden ">
               <CustomSelect
                 value={alumniData[selectedIndex]?.title || ""}
                 onChange={(e) => {
@@ -90,7 +90,7 @@ const AlumniPortal = () => {
             </div>
           </div>
           <div className="col-span-1"></div>
-          <div className="col-span-8 max-h-[70vh] lg:max-h-[100vh]  overflow-y-auto scrollable mt-10 md:mt-0">
+          <div className="col-span-8 max-h-[70vh] lg:max-h-[100vh]  overflow-y-auto scrollable mt-10 md:mt-1">
             {selectedIndex === 0 && <About data={alumniData[0].data} />}
             {selectedIndex === 1 && <Messages data={alumniData[1].data} />}
             {selectedIndex === 2 && <Messages data={alumniData[2].data} />}
