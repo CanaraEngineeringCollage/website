@@ -312,7 +312,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({
         {/* Category Filters */}
         <div className="pb-5 lg:pb-10">
           {/* Mobile Dropdown */}
-          <div className="flex lg:hidden justify-between items-center gap-2 md:hidden">
+          <div className="flex lg:hidden justify-between items-center gap-2 ">
             <CustomSelect
               value={activeCategory}
               onChange={(e) => handleCategoryChange(e.target.value)}
@@ -367,9 +367,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({
                       </p>
                     )}
                     {event.eventName && (
-                      <p className="text-textGray text-[17px] mb-3">
-                        {event.eventName}
-                      </p>
+                      <p className="text-textGray text-[17px] mb-3 capitalize">{event.eventName?.toLowerCase()}</p>
                     )}
                     {topTitle && (
                       <h2 className="text-[31px] leading-[1.1] font-bold text-[#1D1D1F] mb-2">

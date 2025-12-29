@@ -36,7 +36,7 @@ const academics = [
   // { data: "Syllabus", links: "#" },
   { data: "Academic Calendar", links: "/footer/calender (1).pdf" },
   // { data: "Examinations & Timetables", links: "/academics/examination-records" },
-  { data: "Circulars", links: "https://vtu.ac.in/en/#1554889506437-64c3b5d5-d21e" },
+  { data: "Circulars", links: "/academics/examination-records?tab=circulars" },
   { data: "Marks & Attendance", links: "https://www.canaraengineering.in/s_attd" },
   { data: "Learning Resources", links: "https://digital.canaraengineering.in/" },
   // { data: "Scholarships", links: "https://www.canaraengineering.in/download/scholarship_2020.pdf" },

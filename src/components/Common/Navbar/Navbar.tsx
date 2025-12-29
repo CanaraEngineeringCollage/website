@@ -70,12 +70,11 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
               8904737001
               </Link>
               </div>
-              <Link
-                href={"#"}
+              <p
                 className="text-[0.7rem] xl:text-[0.875rem] text-[#2884CA] font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300"
               >
                 CET Code: E123
-              </Link>
+              </p>
             </div>
             <div className="flex items-center justify-center space-x-6">
             

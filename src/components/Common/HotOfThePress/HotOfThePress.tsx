@@ -221,14 +221,14 @@ const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz?${params.toStri
                   <Image
                     width={200}
                     height={200}
-                    src={src || event.content}
+                    src={src}
                     alt={topTitle || event.category}
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-8 text-center">
             <div className="flex justify-center items-center space-x-3">
-  <p className="text-textGray text-[17px] mb-1">{event.eventName}</p>
+  <p className="text-textGray text-[17px] mb-1 line-clamp-1 capitalize">{event.eventName?.toLowerCase()}</p>
 
   {/* Vertical divider */}
   {event.eventDate&& <div className="h-5 w-[1px] bg-textGray"></div>}
@@ -306,7 +306,7 @@ const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz?${params.toStri
               <motion.div variants={contentVariants} className="!overflow-hidden">
                 <EventContent description={getEventDescription(sortedEvents[currentIndex])} />
               </motion.div>
-              <motion.div variants={contentVariants} className="p-4 lg:px-20 ">
+              {/* <motion.div variants={contentVariants} className="p-4 lg:px-20 ">
                 <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">Next Event</h1>
                 <h1
                   onClick={goToNextCard}
@@ -315,7 +315,7 @@ const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz?${params.toStri
                   {parseEventContent(sortedEvents[(currentIndex + 1) % sortedEvents.length].content).topTitle || "First Event"}
                   <MdKeyboardArrowRight className="ml-1 mt-1 text-[20px] md:text-[25px]" />
                 </h1>
-              </motion.div>
+              </motion.div> */}
             </motion.div>
           </motion.div>
         )}
