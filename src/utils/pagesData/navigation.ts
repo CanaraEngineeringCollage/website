@@ -122,14 +122,7 @@ const campusBeats = [
   //   title: "Calendar of Events",
   //   link: "/events",
   // },
-  {
-    title: "Alumni",
-    link: "/alumni",
-  },
-  {
-    title: "About Alumni",
-    link: "/alumni/about-alumni",
-  },
+
   {
     title: "Student Achievements",
     link: "/student-achievements",
