@@ -55,11 +55,13 @@ const   AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepar
 
 </div>
 
+<div className="mt-10">
    {aboutTheDepartment?.map((paragraph, index) => (
-          <p key={index} className="text-textGray text-justify text-[20px] mt-10 mb-4">
+          <p key={index} className="text-textGray text-justify text-[20px] mb-4">
             {paragraph}
           </p>
         ))}
+        </div>
       <div className="flex justify-center mt-10 lg:hidden">
        <Link href={`/department/${slug}/detailes`}>
               <button className="bg-[#007AFF26] hover:bg-blue-200 rounded-4xl px-6 py-2.5">More About the Department</button>

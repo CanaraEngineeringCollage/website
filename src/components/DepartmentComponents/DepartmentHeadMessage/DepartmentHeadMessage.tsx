@@ -33,7 +33,7 @@ interface DepartmentHeadMessageProps {
           </div>
         </div>
          <div className="col-span-7 lg2:px-0 lg:px-0 md:px-6 px-0">
-<h1 className="text-3xl hidden lg:block text-center lg:text-start my-10 md:text-[40px] leading-[1.2] lg2:text-5xl font-bold">
+<h1 className="text-3xl hidden lg:block text-center lg:text-start mb-10 md:text-[40px] leading-[1.2] lg2:text-5xl font-bold">
               {depatmentHead.name === "Dr. Basappa B Kodada" ? (
                 "Message from HOD"
               ) : (
