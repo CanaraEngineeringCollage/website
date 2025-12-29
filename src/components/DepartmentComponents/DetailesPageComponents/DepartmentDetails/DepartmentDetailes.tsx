@@ -195,23 +195,26 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
     facultyData.filter((item) => item.type === "Technical Staff")
   );
 
-  const hodFaculty = facultyData.find(
-    (f) => f.name === department?.depatmentHead?.name
+  const hodFaculty = React.useMemo(() => 
+    facultyData.find((f) => f.name === department?.depatmentHead?.name),
+    [facultyData, department?.depatmentHead?.name]
   );
 
-  const hodData = department?.depatmentHead
-    ? {
-        ...department.depatmentHead,
-        ...(hodFaculty
-          ? {
-              name: hodFaculty.name,
-              position: hodFaculty.designation,
-              imageUrl: hodFaculty.image || department.depatmentHead.imageUrl,
-              avatar: hodFaculty.avatar,
-            }
-          : {}),
-      }
-    : undefined;
+  const hodData = React.useMemo(() => {
+    if (!department?.depatmentHead) return undefined;
+    
+    return {
+      ...department.depatmentHead,
+      ...(hodFaculty
+        ? {
+            name: hodFaculty.name,
+            position: hodFaculty.designation,
+            imageUrl: hodFaculty.image || department.depatmentHead.imageUrl,
+            avatar: hodFaculty.avatar,
+          }
+        : {}),
+    };
+  }, [department?.depatmentHead, hodFaculty]);
 
   const departmentMenuItems = [
     "Department Profile",

@@ -16,6 +16,7 @@ interface HodProps {
 }
 
 const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
+  if (!buffer || !buffer.data) return "";
   const binary = buffer.data.reduce((acc, byte) => acc + String.fromCharCode(byte), "");
   const base64 = btoa(binary);
   return `data:image/jpeg;base64,${base64}`;
@@ -40,6 +41,13 @@ const Hod: React.FC<HodProps> = ({ data, facultyProfile }) => {
   const [imageHeight, setImageHeight] = useState<number | undefined>(undefined);
   const [isOpen, setIsOpen] = useState(false);
 
+  const imageSrc = React.useMemo(() => {
+    if (data?.avatar) {
+      return bufferToBase64(data.avatar);
+    }
+    return data?.imageUrl || "";
+  }, [data?.avatar, data?.imageUrl]);
+
   useEffect(() => {
     if (paragraphRef.current) {
       setImageHeight(paragraphRef.current.offsetHeight);
@@ -50,15 +58,15 @@ const Hod: React.FC<HodProps> = ({ data, facultyProfile }) => {
     <div className=" text-textGray text-[17px]">
       <div className="flex flex-col items-center lg:items-start lg:flex-row  gap-6">
                  <div className='text-center'>
-<Image
-          src={data?.avatar ? bufferToBase64(data.avatar) : data?.imageUrl || ""}
-          alt={data?.name || "HOD"}
-          width={1000}
-          height={1000}
-          className={`h-[300px] w-auto  rounded-lg shadow ${facultyProfile ? 'cursor-pointer' : ''}`}
-          onClick={() => facultyProfile && setIsOpen(true)}
-          // style={{ height: imageHeight }}
-        />
+          <Image
+            src={imageSrc}
+            alt={data?.name || "HOD"}
+            width={1000}
+            height={1000}
+            priority
+            className={`h-[300px] w-auto rounded-lg shadow ${facultyProfile ? 'cursor-pointer' : ''}`}
+            onClick={() => facultyProfile && setIsOpen(true)}
+          />
       <div className="mt-2 font-semibold text-[#1D1D1F]">{data?.name}</div>
       <div className="text-sm text-gray-500">{data?.position}</div>
       </div>

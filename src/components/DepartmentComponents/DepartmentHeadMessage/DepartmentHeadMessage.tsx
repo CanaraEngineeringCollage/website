@@ -53,7 +53,10 @@ interface DepartmentHeadMessageProps {
         <div className="w-72 md:w-80 h-96 relative overflow-hidden shadow-md rounded-xl">
             <Image src={depatmentHead.imageUrl} fill alt="Sri Ammembal Subba Rao Pai"  className="object-cover bg-[#6dc0eb]" />
             </div>
-            <p className="mt-4 text-center text-[27px] font-bold text-white">{depatmentHead.name}</p>
+        <p className="mt-4 text-center text-[27px] font-bold text-white">
+  {noOrphan(depatmentHead.name)}
+</p>
+
             <p className="text-[17px] text-white text-justify">{depatmentHead.position}</p>
           </div>
         </div>
@@ -64,3 +67,6 @@ interface DepartmentHeadMessageProps {
 };
 
 export default DepartmentHeadMessage;
+
+const noOrphan = (text: string) =>
+  text.replace(/ ([A-Z])$/, "\u00A0$1");
