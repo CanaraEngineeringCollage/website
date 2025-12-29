@@ -94,8 +94,8 @@ const AlumniPortal = () => {
             {selectedIndex === 0 && <About data={alumniData[0].data} />}
             {selectedIndex === 1 && <Messages data={alumniData[1].data} />}
             {selectedIndex === 2 && <Messages data={alumniData[2].data} />}
-            {selectedIndex === 3 && <Advisory datam={alumniData[3].data} />}
-            {selectedIndex === 4 && <Advisory datam={alumniData[4].data} />}
+            {selectedIndex === 3 && <Advisory title={"Advisory Committee"} datam={alumniData[3].data} />}
+            {selectedIndex === 4 && <Advisory title={"Office Bearers"} datam={alumniData[4].data} />}
             {selectedIndex === 5 && (
               <>
                 <div className="overflow-x-auto">

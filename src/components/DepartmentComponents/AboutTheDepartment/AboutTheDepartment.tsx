@@ -8,12 +8,13 @@ interface AboutTheDepartmentProps {
   aboutTheDepartment: string[];
   departmentName:string;
   imageUrl: string;
-  wdith?:string
+  width?:string
+  css?:string
   
 
 }
 
-const   AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepartment,departmentName,imageUrl,wdith="" }) => {
+const   AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepartment,departmentName,imageUrl,width="",css="" }) => {
   const { slug } = useParams();
 
   return (
@@ -43,13 +44,15 @@ const   AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepar
 
 
   {/* Image */}
-  <Image
+<Image
   width={1000}
   height={1000}
-    src={imageUrl}
-    alt="empoweringFuture"
-    className=" w-full h-[300px]  overflow-hidden sm:h-[400px] md:h-[590px] object-cover "
-  />
+  src={imageUrl}
+  alt="department"
+  className={`w-full h-[300px] sm:h-[400px] md:h-[590px] object-cover  ${css}`} // Adjust 30% based on image
+/>
+
+
 </div>
 
    {aboutTheDepartment?.map((paragraph, index) => (

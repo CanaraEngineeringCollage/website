@@ -4,7 +4,7 @@ import Image from "next/image";
 import FacultyModal from "@/components/DepartmentComponents/FacultyModal/FacultyModal";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
-const Advisory = ({ datam }) => {
+const Advisory = ({ datam,title }) => {
   const [members, setMembers] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedMember, setSelectedMember] = useState(null);
@@ -26,6 +26,7 @@ const Advisory = ({ datam }) => {
 
   return (
     <section className="lg:pb-20 lg:pe-5">
+      <h2 className="text-[20px]  font-bold text-center md:text-left text-textGray mb-4  ">{title}</h2>
       <div className="grid grid-cols-1 pb-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-4 justify-items-center">
         {datam.map((item, index) => {
           // const isLastCard = index === members.length - 1;

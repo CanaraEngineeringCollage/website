@@ -107,6 +107,7 @@ export default function DepartmentPage({ params }: { params: { slug: string } })
           departmentName={department.name}
           aboutTheDepartment={department.departmentAboutDescriptionArray}
           wdith={department.width}
+          css={department.css}
           imageUrl={department.bannerUrl}
         />
       </section>

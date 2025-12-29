@@ -174,7 +174,7 @@ const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz?${params.toStri
 
   return (
     <section className="lg:ml-20 xl:ml-60 md:py-0 md:pt-16 py-10">
-      <div className="lg:flex lg:justify-between items-center md:pb-16 pb-10">
+      <div className="flex justify-between items-center w-full md:pb-16 pb-10">
         <h1 className="text-3xl text-[#1D1D1F] md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-semibold font-sans  tracking-[0.13px]">
           Campus Buzz
         </h1>
@@ -183,7 +183,7 @@ const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz?${params.toStri
           <Link href="/campus-buzz">
           <button
             aria-label="Explore More Campus Buzz"
-            className="text-black cursor-pointer font-semibold font-sans bg-[#c3d5ed] px-5 py-2 rounded-3xl mr-12"
+            className="text-black cursor-pointer font-semibold font-sans bg-[#c3d5ed] px-5 py-2 rounded-3xl lg:mr-12"
           >
             Explore More Campus Buzz
           </button>
@@ -258,10 +258,9 @@ const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz?${params.toStri
       )}
 
       {/* Swiper Navigation */}
-       <div className="lg:flex lg:justify-between md:pb-0 pb-10">
-        <div className="flex"></div>
-        <div className="hidden md:block">
-          <div className="flex mr-22 gap-6 mt-20">
+       <div className="flex justify-center lg:justify-end md:pb-0 pb-10">
+      
+          <div className="flex lg:mr-22  gap-6 lg:mt-20 mt-10">
             <button
               aria-label="Previous Slide"
               className="swiper-button-prev-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-[#D2D2D7A3] flex items-center justify-center disabled:opacity-50"
@@ -274,11 +273,10 @@ const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz?${params.toStri
             >
               <MdKeyboardArrowRight />
             </button>
-          </div>
         </div>
       </div>
 
-        <div className="md:hidden  mt-5 flex justify-center ">
+        <div className="md:hidden  lg:mt-5 flex justify-center ">
        <Link href="/campus-buzz"> <button aria-label="Explore More Campus Buzz" className="text-black mx-auto cursor-pointer font-bold bg-[#c3d5ed] px-5 py-2 rounded-3xl">
           Explore More Campus Buzz
         </button></Link>

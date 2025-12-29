@@ -21407,6 +21407,8 @@
     "width": "max-w-6xl",
     "slug": "electronics-communication-engineering",
     "bannerUrl": "/departmentImages/2.webp",
+    "css":"object-[50%_20%]",
+
     "departmentAboutDescription": "The Department of ECE at Canara Engineering College offers a dynamic curriculum covering electronics, communication, and signal processing, with applications in industries, medical systems, and more. With experienced faculty, modern labs, and industry-relevant tools, the department ensures strong academic foundations and hands-on exposure.Students benefit from technical workshops, expert talks, internships, and industrial visits. The department also maintains strong alumni ties to enrich curriculum development and career guidance. Committed to quality education, we foster innovation, research, and all-round professional growth.",
     "departmentAboutDescriptionArray": [
       "The Department of ECE at Canara Engineering College offers a dynamic curriculum covering electronics, communication, and signal processing, with applications in industries, medical systems, and more. With experienced faculty, modern labs, and industry-relevant tools, the department ensures strong academic foundations and hands-on exposure.Students benefit from technical workshops, expert talks, internships, and industrial visits. The department also maintains strong alumni ties to enrich curriculum development and career guidance. Committed to quality education, we foster innovation, research, and all-round professional growth."
@@ -30712,6 +30714,7 @@
     "thumbnail": "/youtubeThumbnails/csdThumb.webp",
     "slug": "computer-science-design",
     "bannerUrl": "/departmentImages/5.webp",
+    "css":"object-[50%_20%]",
     "departmentAboutDescription": "Established in 2021, the Department of Computer Science & Design (CS&D) offers a unique blend of computing and design. Supported by experienced faculty, the department focuses on academics, research, and product development. Faculty contributions are regularly published in reputed international journals and conferences.The department emphasizes holistic student development through expert talks, industry interactions, and hands-on training. Regular FDPs, technical skill development programs, and self-learning initiatives like IIT Bombay’s Spoken Tutorials and ICT Academy certifications are integral to the learning process.With strong placement support, a growing industry interface, and a bi-annual newsletter to showcase innovation, the department is committed to shaping career-ready professionals. NSS activities further enhance student leadership, communication, and social responsibility.",
     "departmentAboutDescriptionArray": [
       "Established in 2021, the Department of Computer Science & Design (CS&D) offers a unique blend of computing and design. Supported by experienced faculty, the department focuses on academics, research, and product development. Faculty contributions are regularly published in reputed international journals and conferences.The department emphasizes holistic student development through expert talks, industry interactions, and hands-on training. Regular FDPs, technical skill development programs, and self-learning initiatives like IIT Bombay’s Spoken Tutorials and ICT Academy certifications are integral to the learning process.With strong placement support, a growing industry interface, and a bi-annual newsletter to showcase innovation, the department is committed to shaping career-ready professionals. NSS activities further enhance student leadership, communication, and social responsibility."
@@ -52583,6 +52586,7 @@
   {
     "name": "Science & Humanities",
     "slug": "science-humanities",
+    "css":"object-[50%_20%]",
     "bannerUrl": "/departmentImages/3.webp",
     "description": [
       "The Department of Science &Humanities comprises Chemistry, Physics, Mathematics & English .The department is highly focused on imparting quality education to meet the global challenges of modern Science and Technology. The department provides foundation for Engineering students to attain excellence in core competencies with high level of motivation, positive attitude, technical competent, ethical value and pedestal knowledge to face the global challenges to become world class engineers and scientists. The department has well qualified, experienced and dedicated faculty members, who are blend of knowledge and experience.Engineering Chemistry laboratory & Engineering Physics laboratory are well equipped with major equipments and caters to the needs of the students. As added gem to the crown, the Department of Science and Humanities has one VTU recognized research centre under Department of Chemistry."
