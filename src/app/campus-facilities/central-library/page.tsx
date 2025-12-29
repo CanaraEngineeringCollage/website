@@ -1,9 +1,41 @@
-"use client";
+
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
 import LibraryFaculty from "@/components/CentralLibraryComponents/LibraryFaculty";
+
+export const metadata = {
+  title: "Central Library | Canara Engineering College",
+  description:
+    "Explore the state-of-the-art Central Library at Canara Engineering College, featuring digital resources, academic journals, research databases, and a student-friendly learning environment.",
+
+  openGraph: {
+    title: "Central Library | Canara Engineering College",
+    description:
+      "Discover the digital and physical learning resources available at the Central Library of Canara Engineering College, supporting research, academics, and innovation.",
+    url: "https://apiserver.cec.edu.in/campus-facilities/central-library", // 🔗 update if final URL differs
+    siteName: "Canara Engineering College",
+    images: [
+      {
+        url: "https://apiserver.cec.edu.in/assets/images/og-central-library.jpg", // ⭐ Replace if you have actual OG image
+        width: 1200,
+        height: 630,
+        alt: "Central Library - Canara Engineering College",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Central Library | Canara Engineering College",
+    description:
+      "Learn about the advanced academic resources and digital facilities at the Central Library of Canara Engineering College.",
+    images: ["https://apiserver.cec.edu.in/assets/images/og-central-library.jpg"],
+  },
+};
 
 const AboutTheDepartment = () => {
   // --- Static Dummy Data ---
