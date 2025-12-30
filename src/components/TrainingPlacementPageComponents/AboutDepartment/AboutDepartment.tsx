@@ -34,7 +34,7 @@ const AboutDepartment = () => {
           <h1 className="text-3xl md:text-[40px] lg2:text-[46.5px] xl:text-6xl leading-[1.2] xl:max-w-4xl font-bold text-[#1D1D1F] ">
             Training &amp; Placement at <br className="hidden lg:block"/> Canara Engineering College
           </h1>
- <div className="flex-col hidden md:flex gap-3 items-end">
+ <div className="flex-col hidden lg:flex gap-3 items-end">
   {/* Download Brochure */}
  <Button variant="primary1"
     onClick={() => setIsModalOpen(true)}
@@ -97,13 +97,15 @@ const AboutDepartment = () => {
       
       <div className="flex flex-col items-center gap-3 justify-center lg:hidden">
         {/* Mobile Button - Changed from <a> to <button> to open Modal */}
-        <button
-          onClick={() => setIsModalOpen(true)}
-          aria-label="Download Brochure"
-          className="text-[#2884CA] lg:hidden mt-2 font-bold text-[17px] bg-[#d9ebff] min-w-[250px] px-6 py-2 cursor-pointer rounded-3xl flex gap-3 items-center"
-        >
-          Download Brochure <HiDownload className="text-[24px] font-extrabold" />
-        </button>
+       <Button variant="primary1"
+    onClick={() => setIsModalOpen(true)}
+    aria-label="Download Brochure"
+    className="text-white hidden font-bold text-[17px] bg-primary
+               px-6 py-2 cursor-pointer rounded-3xl lg:inline-flex gap-3 
+               items-center min-w-[250px] justify-center "
+  >
+    Download Brochure <HiDownload className="text-[24px] font-extrabold" />
+    </Button>
  
       </div>
     </section>
