@@ -68,7 +68,7 @@ export default function DistinctiveCarousel() {
   const swiperRef = useRef<SwiperRef>(null);
   const progressRef = useRef<number>(0);
   const rafRef = useRef<number | null>(null);
-  const AUTOPLAY_DELAY = 3000;
+  const AUTOPLAY_DELAY = 1000;
 
   // Open modal with item data
   const openModal = (item: ModalContentType, index: number) => {
@@ -83,63 +83,7 @@ export default function DistinctiveCarousel() {
     setModalContent(null);
   };
 
-  // Go to the next card
- 
-
-  // Progress animation using requestAnimationFrame
-  const animateProgress = (startTime: number, from: number = 0) => {
-    const step = (timestamp: number) => {
-      const elapsed = timestamp - startTime;
-      let percent = Math.min(100, from + (elapsed / AUTOPLAY_DELAY) * 100);
-      setProgress(percent);
-      progressRef.current = percent;
-      if (percent < 100 && isPlaying) {
-        rafRef.current = requestAnimationFrame(step);
-      }
-    };
-    rafRef.current = requestAnimationFrame(step);
-  };
-
-  // Pause or resume the carousel
-  const toggleCarousel = () => {
-    if (swiperRef.current) {
-      if (isPlaying) {
-        swiperRef.current.swiper.autoplay.stop();
-        setIsPlaying(false);
-        if (rafRef.current) cancelAnimationFrame(rafRef.current);
-      } else {
-        swiperRef.current.swiper.autoplay.start();
-        setIsPlaying(true);
-        animateProgress(performance.now(), progressRef.current);
-      }
-    }
-  };
-
-  // Reset progress on slide change
-  useEffect(() => {
-    const swiper = swiperInstance;
-    if (!swiper) return;
-
-    const handleSlideChange = () => {
-      setProgress(0);
-      progressRef.current = 0;
-      if (rafRef.current) cancelAnimationFrame(rafRef.current);
-      if (isPlaying) animateProgress(performance.now());
-    };
-
-    swiper.on("slideChange", handleSlideChange);
-    swiper.on("autoplay", handleSlideChange);
-
-    // Start initial progress
-    if (isPlaying) animateProgress(performance.now());
-
-    return () => {
-      swiper.off("slideChange", handleSlideChange);
-      swiper.off("autoplay", handleSlideChange);
-      if (rafRef.current) cancelAnimationFrame(rafRef.current);
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isPlaying, swiperInstance]);
+  
 
 
 
@@ -163,11 +107,7 @@ export default function DistinctiveCarousel() {
                 nextEl: ".swiper-button-next-custom",
                 prevEl: ".swiper-button-prev-custom",
               }}
-              autoplay={{ 
-                delay: AUTOPLAY_DELAY,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true
-              }}
+            autoplay={{ delay: 2000, disableOnInteraction: false }}
 
               loop={true}
               centeredSlides={true}
