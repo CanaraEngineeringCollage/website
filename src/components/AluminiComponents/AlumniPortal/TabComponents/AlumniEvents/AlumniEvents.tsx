@@ -141,7 +141,7 @@ export default function AlumniEvents({ events, loading }: AlumniEventsProps) {
                 {event.title}
               </h3>
 
-              <button className="text-blue-600 inline-flex text-[17px] items-center hover:underline font-medium mt-2">
+              <button className="text-primary  inline-flex text-[17px] items-center hover:underline font-medium mt-2">
                 Read More <MdKeyboardArrowRight className="ml-1 text-xl" />
               </button>
             </div>

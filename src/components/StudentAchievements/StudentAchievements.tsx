@@ -304,7 +304,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({
                       </p>
                     )}
                     {event.eventName && (
-                      <p className="text-textGray text-[17px] mb-3">
+                      <p className="text-textGray font-bold text-[17px] mb-3">
                         {event.eventName}
                       </p>
                     )}
