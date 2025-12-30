@@ -265,10 +265,10 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
                 <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">NextUp</h1>
                 <h1
                   onClick={handleNextCard}
-                  className="text-[#2997FF] inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]"
+                  className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]"
                 >
                   {nextCardTitle}
-                  <MdKeyboardArrowRight className="ml-1 mt-1 text-[20px] md:text-[25px]" />
+                  <MdKeyboardArrowRight className="ml-1  text-[20px] md:text-[25px]" />
                 </h1>
               </motion.div>
             </MotionDiv>

@@ -64,6 +64,7 @@ export default function DistinctiveCarousel() {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [progress, setProgress] = useState<number>(0);
   const [isPlaying, setIsPlaying] = useState<boolean>(true);
+  const [swiperInstance, setSwiperInstance] = useState<any>(null);
   const swiperRef = useRef<SwiperRef>(null);
   const progressRef = useRef<number>(0);
   const rafRef = useRef<number | null>(null);
@@ -116,7 +117,7 @@ export default function DistinctiveCarousel() {
 
   // Reset progress on slide change
   useEffect(() => {
-    const swiper = swiperRef.current?.swiper;
+    const swiper = swiperInstance;
     if (!swiper) return;
 
     const handleSlideChange = () => {
@@ -138,7 +139,7 @@ export default function DistinctiveCarousel() {
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isPlaying]);
+  }, [isPlaying, swiperInstance]);
 
 
 
@@ -156,13 +157,17 @@ export default function DistinctiveCarousel() {
         <div className="relative w-full">
           <div className="relative">
             <Swiper
-              ref={swiperRef}
+              onSwiper={setSwiperInstance}
               modules={[Navigation, Autoplay]}
               navigation={{
                 nextEl: ".swiper-button-next-custom",
                 prevEl: ".swiper-button-prev-custom",
               }}
-              autoplay={{ delay: 2000 }}
+              autoplay={{ 
+                delay: AUTOPLAY_DELAY,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true
+              }}
 
               loop={true}
               centeredSlides={true}

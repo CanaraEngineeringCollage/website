@@ -119,7 +119,7 @@ const Footer: FC = () => {
               { label: "About Alumni", href: "/alumni/about-alumni" },
               { label: "Infrastructure", href: "/campus-facilities/infrastructure" },
               { label: "Privacy Policy", href: "/privacy-policy" },
-              { label: "Grievance Redressal", href: "/about/mandatory-disclosure/sc-st-grievance" },
+              { label: "SCSTGrievance", href: "/about/mandatory-disclosure/sc-st-grievance" },
               { label: "Careers", href: "/careers" },
 
               // { label: "Timetables", href: "/academics/examination-records" },

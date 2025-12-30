@@ -2,31 +2,39 @@ import DistinctivePracties from "@/components/AboutPageComponents/DistinctivePra
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 
 export const metadata = {
-  title: "History of Canara College | A Legacy of Excellence",
-  description: "Explore the rich history of Canara College, from its foundation in 1973 to its current position as a leader in education.",
+  title: "Distinctive Practices | Canara Engineering College",
+  description:
+    "Discover the distinctive practices of Canara Engineering College that foster innovation, academic excellence, and holistic student development.",
+
   openGraph: {
-    title: "History of Canara College | A Legacy of Excellence",
-    description: "Discover the founding history, milestones, and achievements of Canara College, one of Mangalore’s prestigious institutions.",
-    url: "https://your-website-url.com/history-of-cec", // update this
-    siteName: "Canara College",
+    title: "Distinctive Practices | Canara Engineering College",
+    description:
+      "Explore the innovative approaches and unique institutional practices that set Canara Engineering College apart.",
+    url: "https://apiserver.cec.edu.in/about/distinctive-practices",
+    siteName: "Canara Engineering College",
     images: [
       {
-        url: "https://your-website-url.com/og-history-cec.jpg", // update this
+        url: "https://apiserver.cec.edu.in/assets/images/og-distinctive-practices.jpg",
         width: 1200,
         height: 630,
-        alt: "History of Canara College",
+        alt: "Distinctive Practices - Canara Engineering College",
       },
     ],
     locale: "en_US",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "History of Canara College | A Legacy of Excellence",
-    description: "A legacy of excellence since 1973. Learn more about Canara College’s inspiring history.",
-    images: ["https://your-website-url.com/og-history-cec.jpg"], // update
+    title: "Distinctive Practices | Canara Engineering College",
+    description:
+      "Learn about the distinctive practices that make Canara Engineering College a hub for innovation and growth.",
+    images: [
+      "https://apiserver.cec.edu.in/assets/images/og-distinctive-practices.jpg",
+    ],
   },
 };
+
 
 export default function DistinctiveCec() {
   return (
