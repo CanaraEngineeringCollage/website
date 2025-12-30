@@ -250,7 +250,7 @@ const ExploreFacilities = () => {
         {/* Modal */}
         <AnimatePresence>
           {isOpen && (
-            <motion.div className="fixed inset-0 h-screen z-50 overflow-auto" initial="hidden" animate="visible" exit="exit">
+            <motion.div className="fixed inset-0 h-screen z-[99999999999999999999] overflow-auto" initial="hidden" animate="visible" exit="exit">
               <motion.div variants={backdropVariants} className="bg-black/80 backdrop-blur-lg h-full w-full fixed inset-0" onClick={closeCard} />
               <motion.div
                 variants={cardVariants}
