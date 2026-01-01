@@ -89,7 +89,7 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
                 target="_blank"
                 className="text-[0.7rem] xl:text-[0.875rem] text-[#2884CA] font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300"
               >
-                Admission Open 2025
+                Admission Open {new Date().getFullYear()}
               </Link>
             </div>
           </div>
