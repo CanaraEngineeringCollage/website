@@ -15,7 +15,7 @@ const MessageSection: React.FC<MessageSectionProps> = ({ officer }) => {
     <section className="w-full bg-[#051B2C]">
       <div className="py-16 md:py-20 lg:py-24">
         <h1 className="text-3xl lg:hidden text-center lg:text-start mb-10 md:text-[40px] leading-[1.2] lg2:text-5xl font-bold">
-                    MESSAGE FROM THE DEAN - STUDENT WELFARE
+                    Message From The Dean - Student Welfare
         </h1>
 
         <div className="grid grid-cols-1 lg:w-[70%] overflow-hidden mx-auto lg:grid-cols-12 items-center">
@@ -40,7 +40,7 @@ const MessageSection: React.FC<MessageSectionProps> = ({ officer }) => {
           {/* Message Section */}
           <div className="col-span-7 lg2:px-0 lg:px-0 md:px-6 px-0">
             <h1 className="text-3xl hidden lg:block text-center lg:text-start my-10 md:text-[40px] leading-[1.2] lg2:text-[40px] xl:text-5xl font-bold">
-              MESSAGE FROM THE  <br className="hidden lg:block" /> DEAN - STUDENT WELFARE
+              Message From The  <br className="hidden lg:block" /> Dean - Student Welfare
             </h1>
             <p className="text-[17px] mt-6 lg:mt-0 text-white text-justify lg:leading-[1.7]">
               {officer.message}
