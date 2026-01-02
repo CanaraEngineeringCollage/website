@@ -96,7 +96,7 @@ function EventContent({ description }: { description: EventDescriptionProps }) {
           loading="lazy"
           width={1000}
           height={700}
-          className="object-cover overflow-hidden rounded-t-2xl w-full lg:h-[500px] h-[400px] mb-10"
+          className="object-cover overflow-hidden rounded-t-2xl w-full  mb-10"
         />
       )}
       <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">

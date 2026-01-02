@@ -104,7 +104,7 @@ export default function EmpoweringFutures() {
         <div className="flex justify-between items-start  mx-auto pb-16">
           <div>
             <h2 className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold leading-tight">Empowering Futures</h2>
-            <p className="mt-4 text-lg textGray max-w-xl">
+            <p className="mt-4 text-[14px] md:text-[23.25px] textGray max-w-xl">
               Discover exceptional placement opportunities and industry connections that pave the way for success at Canara Engineering College.
             </p>
           </div>
@@ -213,7 +213,7 @@ export default function EmpoweringFutures() {
       <section className="w-full md:hidden block px-1 py-14">
         {/* Mobile View */}
         <h1 className="text-3xl text-center text-black font-bold pb-4">Empowering Futures</h1>
-        <p className="text-center text-textGray font-medium pb-16 text-[14px]">
+        <p className="text-center text-textGray font-medium pb-16 text-[14px] md:text-[23.25px]">
           Discover exceptional placement opportunities and industry connections that pave the way for success at Canara Engineering College.{" "}
         </p>
         <div className="md:hidden flex flex-col items-center">

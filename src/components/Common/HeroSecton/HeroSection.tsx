@@ -86,7 +86,7 @@ const HeroSection = () => {
           Canara Engineering College
         </h2>
         <h1 className="text-xl md:text-[32px] font-light text-[#F5F5F7] mt-2 ">
-          Pioneering Innovation in <br /> Tech Learning
+          Pioneering Innovation in  Tech Learning
         </h1>
       </div>
 

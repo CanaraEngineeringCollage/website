@@ -373,7 +373,7 @@ const DynamicListSection = ({
 
           <ul className=" space-y-3 text-gray-700 text-base">
             {activeItem.descriptions.map((desc, i) => (
-              <li key={i}>{cleanText(desc)}</li>
+              <li key={i}>{desc}</li>
             ))}
           </ul>
         </motion.div>
