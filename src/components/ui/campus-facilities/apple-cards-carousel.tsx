@@ -300,7 +300,7 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
 
           <MotionP
             layoutId={layout ? `title-${card.title}` : undefined}
-            className={`text-white text-[31px] ${card.id == 1 ? "text-start md:text-right" : "text-left"
+            className={`text-white text-[31px] ${card.id == 1 || card.id == 7 ? "text-start md:text-right" : "text-left"
               } md:text-[76px] font-semibold max-w-5xl leading-[1.1] [text-wrap:balance] font-sans mt-2`}
           >
             {card.title}

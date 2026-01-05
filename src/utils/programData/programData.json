@@ -93,34 +93,14 @@
       ]
     }
   },
-  {
-    "id": 7,
-    "category": "",
-    "title": "Well-Equipped Classrooms",
-    "src": "/campusFacilitiesPageImages/Image4.jpg",
-    "style": "lg:top-[0] !text-xl w-full",
-    "textalign": "",
-    "mainTitle": "Well-Equipped Classrooms",
-    "description": {
-      "src": "/campusFacilitiesPageImages/Image4.jpg",
-      "content": [
-        {
-          "description": "Our classrooms are spacious, well-lit, and ergonomically designed to provide an ideal learning environment. Equipped with modern teaching aids such as projectors, smart boards, and high-speed internet, they ensure seamless integration of technology into everyday learning."
-        },
-        {
-          "bottomdescription": "Every classroom is a space where ideas thrive and interactions spark innovation."
-        }
-      ]
-    }
-  },
-   {
+    {
     "id": 5,
     "category": "",
     "title": "Auditorium",
     "src": "/campusFacilitiesPageImages/Image2.jpg",
    "style": "lg:top-[80] lg:left-[500]",
     "textalign": "text-center max-w-3xl",
-    "mainTitle": "Dr. P. Dayananda Pai & P. Sathish Pai Auditorium",
+    "mainTitle": "Dr. P. Dayananda Pai & \n P. Sathish Pai Auditorium",
     "description": {
       "src": "/campusFacilitiesPageImages/Image2.jpg",
       "content": [
@@ -150,5 +130,26 @@
         }
       ]
     }
+  },
+  {
+    "id": 7,
+    "category": "",
+    "title": "Well-Equipped Classrooms",
+    "src": "/campusFacilitiesPageImages/Image4.jpg",
+    "style": "lg:top-[0]  w-full",
+    "textalign": "",
+    "mainTitle": "Well-Equipped Classrooms",
+    "description": {
+      "src": "/campusFacilitiesPageImages/Image4.jpg",
+      "content": [
+        {
+          "description": "Our classrooms are spacious, well-lit, and ergonomically designed to provide an ideal learning environment. Equipped with modern teaching aids such as projectors, smart boards, and high-speed internet, they ensure seamless integration of technology into everyday learning."
+        },
+        {
+          "bottomdescription": "Every classroom is a space where ideas thrive and interactions spark innovation."
+        }
+      ]
+    }
   }
+ 
 ]

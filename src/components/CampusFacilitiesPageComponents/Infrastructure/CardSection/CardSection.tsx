@@ -79,7 +79,7 @@ function CardContent({
 
       {/* Dynamic Content Section (The Model) */}
       <div className="p-4 lg:p-0 lg:px-20 space-y-5  text-left text-sm text-[#1D1D1F]">
-        <h2 className="text-[31px] lg:text-[46px] leading-[1.1] lg:max-w-[70%] mb-6 font-bold">{mainTitle}</h2>
+        <h2 className="text-[31px] lg:text-[46px] leading-[1.1] lg:max-w-[70%] mb-6 font-bold whitespace-pre-line">{mainTitle}</h2>
         {description.content.map((item, i) => (
           <div key={i} className="">
             {/* Title */}
@@ -109,7 +109,7 @@ function CardContent({
 
             {/* Bullet Points */}
             {item.points && (
-              <ul className="list-disc mt-4 pl-7 md:text-xl text-[14px] leading-relaxed text-textGray ">
+              <ul className="list-disc mt-4 pl-5 md:text-xl text-[14px] leading-relaxed text-textGray ">
                 {item.points.map((point: string, j: number) => (
                   <li key={j} className="pb-1">
                     {point}
