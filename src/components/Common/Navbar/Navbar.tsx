@@ -113,8 +113,10 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
               </Link>
             </div>
             {/* Navbar Items */}
+            <div>
             <NavbarItems />
             {/* Navbar Items */}
+            </div>
           </div>
           <div className="block lg:hidden absolute top-1/2 -translate-y-1/2 right-4 z-20">
             {/* Dropdown */}

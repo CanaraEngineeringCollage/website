@@ -30,7 +30,7 @@ export default function Life() {
             aria-controls="about-menu" // ✅ Optional: add an ID to the target menu section if applicable
             aria-haspopup="true" // ✅ Indicates that it opens a submenu
             tabIndex={0} // ✅ Ensures the element is keyboard focusable
-            className={`flex items-center gap-2 py-2 pr-4 ${
+            className={`flex items-center text-base gap-2 py-1.5  ${
               isMenuOpen ? "opacity-100" : "opacity-80"
             } text-webGreen1 bg-transparent font-semibold hover:bg-transparent 
             rounded-none shadow-none ${
