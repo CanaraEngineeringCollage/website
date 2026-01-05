@@ -77,7 +77,7 @@ const AboutTheDepartment = () => {
           height={1000}
           src={imageUrl}
           alt="empoweringFuture"
-          className=" w-full h-[300px]  overflow-hidden sm:h-[400px] md:h-[590px] object-cover "
+          className=" w-full h-[300px]  overflow-hidden sm:h-[400px] md:h-[590px] xl:object-[center_30%] object-cover "
         />
       </div>
 
@@ -97,7 +97,7 @@ const AboutTheDepartment = () => {
         </Link>
       </div>
     </section>
-  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 w-full mx-auto px-4 sm:px-6 md:px-12 lg:px-28 ">
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 w-full mx-auto px-4 lg:px-0 max-w-7xl  xl:max-w-[75%] ">
   {/* Left Column */}
   <div className="flex flex-col gap-8 lg:gap-12">
     {/* Objectives */}

@@ -242,7 +242,7 @@ export default function LegacyExcellance() {
   }
 
   return (
-    <section className="max-w-7xl xl:max-w-[75%] px-5   mx-auto  py-8 lg:pt-3 lg:pb-10">
+    <section className="max-w-7xl xl:max-w-[75%] px-5 lg:px-0   mx-auto  py-8 lg:pt-3 lg:pb-10">
       <div className="grid grid-cols-1  lg:grid-cols-2 gap-8 lg2:gap-10 items-start">
         {/* Left Side - Swiper */}
         {events.map((item, index) => {

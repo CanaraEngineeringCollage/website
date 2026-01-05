@@ -55,7 +55,7 @@ const AutoPlayVideo = ({ url, onComplete, onClick }: AutoPlayVideoProps) => {
   if (!videoId) return null;
 
   return (
-    <div className="absolute inset-0 w-full h-full z-20 bg-black overflow-hidden rounded-3xl">
+    <div className="absolute inset-0 w-full h-full z-20 bg-black overflow-hidden ">
       <iframe
         ref={iframeRef}
         // --- UPDATED CSS FIX ---
@@ -364,7 +364,7 @@ function Card({ size, children, main = false, refIndex, registerRef }: CardProps
   return (
     <div
       ref={(el) => registerRef(refIndex, el)}
-      className={`relative rounded-3xl overflow-hidden transition-all duration-500 bg-gray-200 ${sizeMap[size]}`}
+      className={`relative  overflow-hidden transition-all duration-500 bg-gray-200 ${sizeMap[size]}`}
     >
       {/* Background Images for GSAP Animation */}
       <img src="" alt="" className="absolute inset-0 w-full h-full object-fill active-img" />
