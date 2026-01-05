@@ -262,7 +262,7 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
                 {card.content}
               </motion.div>
               <motion.div variants={contentVariants} className="p-4 lg:px-20 mt-10">
-                <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">NextUp</h1>
+                <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">Next Up</h1>
                 <h1
                   onClick={handleNextCard}
                   className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]"
