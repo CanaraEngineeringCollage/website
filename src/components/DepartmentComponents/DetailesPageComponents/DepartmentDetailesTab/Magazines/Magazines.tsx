@@ -21,7 +21,7 @@ const Magazines: React.FC<MagazinesProps> = ({ data }) => {
             {data.map((section, idx) => (
                 <div key={idx} className="mb-8">
                     {section.title && (
-                        <h2 className="text-xl font-semibold mb-4">{section.title}</h2>
+                        <h2 className="text-2xl font-semibold mb-4">{section.title}</h2>
                     )}
                     {section.data.map((item, i) => (
                         <div key={i} className="flex flex-row flex-wrap gap-6 mb-4">

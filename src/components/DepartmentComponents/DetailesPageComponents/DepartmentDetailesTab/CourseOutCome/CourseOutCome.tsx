@@ -34,7 +34,7 @@ const CourseOutCome = ({ staticData, deptName }: { staticData: any; deptName: st
 
   return (
     <div className="lg:pl- text-textGray text-[17px]">
-      <h2 className="text-xl mb-5 font-bold">Course Outcomes (CO)</h2>
+      <h2 className="text-2xl font-semibold mb-5 ">Course Outcomes (CO)</h2>
 
       {/* Dropdown filters */}
       <div className="flex flex-col gap-5 md:flex-row md:gap-0 md:justify-between">

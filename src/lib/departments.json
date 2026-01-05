@@ -21407,7 +21407,7 @@
     "width": "max-w-6xl",
     "slug": "electronics-communication-engineering",
     "bannerUrl": "/departmentImages/2.webp",
-    "css":"object-[50%_20%]",
+    "css":"xl:object-[90%_45%]",
 
     "departmentAboutDescription": "The Department of ECE at Canara Engineering College offers a dynamic curriculum covering electronics, communication, and signal processing, with applications in industries, medical systems, and more. With experienced faculty, modern labs, and industry-relevant tools, the department ensures strong academic foundations and hands-on exposure.Students benefit from technical workshops, expert talks, internships, and industrial visits. The department also maintains strong alumni ties to enrich curriculum development and career guidance. Committed to quality education, we foster innovation, research, and all-round professional growth.",
     "departmentAboutDescriptionArray": [

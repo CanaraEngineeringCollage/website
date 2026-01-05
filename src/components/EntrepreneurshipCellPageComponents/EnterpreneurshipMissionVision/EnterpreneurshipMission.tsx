@@ -4,7 +4,8 @@
 
 export default function EnterpreneurshipMission() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 w-full mx-auto px-4 sm:px-6 md:px-12 lg:px-28 py-12 md:py-20 lg:py-16">
+    <div className="max-w-7xl mx-auto lg:px-0 px-4 xl:max-w-[75%] py-12 md:py-20 lg:py-16  text-black">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 w-full mx-auto  ">
   {/* Left Column */}
   <div className="flex flex-col gap-8 lg:gap-12">
     {/* Objectives */}
@@ -80,6 +81,6 @@ export default function EnterpreneurshipMission() {
     </p>
   </div>
 </div>
-
+</div>
   );
 }

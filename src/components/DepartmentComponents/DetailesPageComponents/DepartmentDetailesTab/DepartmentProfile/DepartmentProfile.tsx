@@ -36,7 +36,7 @@ const DepartmentProfile = ({
 }) => {
   return (
     <div className="text-textGray">
-      <h1 className="text-lg md:text-xl font-bold mb-2">
+      <h1 className="text-2xl font-semibold  mb-2">
         About The Department
       </h1>
 

@@ -38,7 +38,7 @@ interface FacultyProps {
 
 // Skeleton card shown while loading
 const SkeletonCard: React.FC = () => (
-  <div className="relative w-full max-w-[280px] lg:h-[430px] md:h-[260px] h-[400px] rounded-xl overflow-hidden bg-[#6DC0EB]/50 animate-pulse shadow-md">
+  <div className="relative cursor-pointer w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-[#6DC0EB]/50 animate-pulse shadow-md">
     <div className="absolute inset-0 bg-[#6DC0EB]/40" />
     <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB]/70 via-[#6DC0EB]/40 to-transparent" />
     <div className="absolute bottom-4 left-0 w-full px-3 space-y-2">
@@ -79,18 +79,21 @@ const Faculty = ({ teachingStaff, technicalStaff, loading = false }: FacultyProp
         <div
           onClick={() => openModal(item)}
           key={index}
-          className={`relative cursor-pointer w-full max-w-[280px] lg:h-[430px] md:h-[260px] h-[400px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md ${
+          className={`relative cursor-pointer w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md ${
             shouldCenterLast ? "md:col-start-2 xl:col-start-auto" : ""
           }`}
         >
           <Image src={item.avatar ? bufferToBase64(item.avatar) : item.image || ""} alt={item.name} fill className="object-cover" />
           <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
-          <div className="absolute z-20 left-0 px-3 bottom-4 w-full">
-            <h2 className="lg2:text-[18px] lg:text-[16px] md:text-[11px] text-[18px] font-bold">{item.name}</h2>
-            <p className="lg:text-[16px]  md:text-[11px] text-[16px]">{item.designation}</p>
-            <p onClick={() => openModal(item)} className=" font-bold lg2:text-[16px]  md:text-[11px] text-[16px] flex items-center">
+          <div className="absolute z-20 left-0 px-2 sm:px-3 md:px-4 bottom-3 sm:bottom-4 w-full">
+            <h2 className="text-base sm:text-lg md:text-sm lg:text-sm lg2:text-base xl:text-xl font-bold leading-tight">{item.name}</h2>
+            <p className="text-xs sm:text-lg md:text-xs lg:text-xs lg2:text-sm xl:text-lg leading-snug break-words">{item.designation}</p>
+            <p
+              onClick={() => openModal(item)}
+              className="text-xs sm:text-lg md:text-sm lg:text-sm lg2:text-sm xl:text-lg font-bold flex items-center mt-1"
+            >
               View Profile
-              <MdKeyboardArrowRight className="ml-1 text-xl" />
+              <MdKeyboardArrowRight className="ml-1 text-lg" />
             </p>
           </div>
         </div>
@@ -111,7 +114,7 @@ const Faculty = ({ teachingStaff, technicalStaff, loading = false }: FacultyProp
           {/* Teaching Staff */}
           {teachingStaff.length > 0 && (
             <>
-              <h2 className="text-2xl sm:text-3xl text-center md:text-start md:text-4xl font-semibold text-[#1D1D1F] mb-6">Teaching Faculty</h2>
+              <h2 className="text-2xl text-center md:text-start  font-semibold text-[#1D1D1F] mb-2">Teaching Faculty</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-4 justify-items-center">
                 {renderCards(teachingStaff)}
               </div>
@@ -121,7 +124,7 @@ const Faculty = ({ teachingStaff, technicalStaff, loading = false }: FacultyProp
           {/* Technical Staff */}
           {technicalStaff.length > 0 && (
             <>
-              <h2 className="text-2xl sm:text-3xl text-center md:text-start md:text-4xl font-semibold text-[#1D1D1F] mb-6 mt-8">Technical Staff</h2>
+              <h2 className="text-2xl text-center md:text-start  font-semibold text-[#1D1D1F] mb-2 mt-8">Technical Staff</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-4 justify-items-center">
                 {renderCards(technicalStaff)}
               </div>

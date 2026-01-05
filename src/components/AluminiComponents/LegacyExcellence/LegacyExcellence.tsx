@@ -322,12 +322,12 @@ export default function LegacyExcellance() {
                 <CardContent description={events[currentIndex]} />
               </motion.div>
               <motion.div variants={contentVariants} className="p-4 lg:px-20 mt-4">
-                <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">NextUp</h1>
+                <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">Next Up</h1>
                 <h1
                   onClick={goToNextCard}
                   className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]"
                 >
-                  <span className="line-clamp-1 lg:line-clamp-none">
+                  <span className="line-clamp-1 ">
                     {events[(currentIndex + 1) % events.length]?.title || "Next"}
                   </span>
 

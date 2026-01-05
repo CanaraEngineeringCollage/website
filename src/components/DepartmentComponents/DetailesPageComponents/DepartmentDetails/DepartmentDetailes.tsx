@@ -14,7 +14,7 @@ import StudentAchievement from "../DepartmentDetailesTab/StudentAchievement/Stud
 import Research from "../DepartmentDetailesTab/Research/Research";
 import Publications from "../DepartmentDetailesTab/Publications/Publications";
 import Events from "../DepartmentDetailesTab/Events/Events";
-import Gallery from "../DepartmentDetailesTab/Gallery/Gallery";
+import Gallery, { GalleryItem } from "../DepartmentDetailesTab/Gallery/Gallery";
 import Magazines from "../DepartmentDetailesTab/Magazines/Magazines";
 import CareerProspects from "../CareerProspects/CareerProspects";
 
@@ -59,12 +59,18 @@ import CustomSelect from "@/components/Common/CustomSelect/CustomSelect";
 
 // ... existing imports
 
+const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
+  if (!buffer || !buffer.data) return "";
+  const binary = buffer.data.reduce((acc, byte) => acc + String.fromCharCode(byte), "");
+  const base64 = btoa(binary);
+  return `data:image/jpeg;base64,${base64}`;
+};
+
 const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   const { slug } = useParams();
 
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
-  const [selectedSection, setSelectedSection] =
-    useState<string>("Department Profile");
+  const [selectedSection, setSelectedSection] = useState<string>("Department Profile");
 
   const [facultyData, setFacultyData] = useState<FacultyMember[]>([]);
   const [facultyLoading, setFacultyLoading] = useState(false);
@@ -75,6 +81,9 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   const [hasMore, setHasMore] = useState(true);
   const [loading, setLoading] = useState(false);
 
+  const [galleryItems, setGalleryItems] = useState<GalleryItem[]>([]);
+  const [galleryLoading, setGalleryLoading] = useState(false);
+
   const department = departments.find((dept) => dept.slug === slug);
 
   const fetchEvents = useCallback(async () => {
@@ -82,11 +91,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
     try {
       setLoading(true);
       const response = await fetch(
-        `${
-          process.env.NEXT_PUBLIC_API_URL
-        }/events?category=${encodeURIComponent(
-          departmentName
-        )}&page=${page}&limit=${limit}&sortBy=date`
+        `${process.env.NEXT_PUBLIC_API_URL}/events?category=${encodeURIComponent(departmentName)}&page=${page}&limit=${limit}&sortBy=date`
       );
       if (!response.ok) throw new Error("Failed to fetch events");
       const data = await response.json();
@@ -97,12 +102,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
       }
 
       // Append new data (avoid duplicates)
-      setEvents((prev) => [
-        ...prev,
-        ...data.data.filter(
-          (newEvent: Event) => !prev.some((e) => e.id === newEvent.id)
-        ),
-      ]);
+      setEvents((prev) => [...prev, ...data.data.filter((newEvent: Event) => !prev.some((e) => e.id === newEvent.id))]);
 
       if (data.data.length < limit) {
         setHasMore(false);
@@ -127,6 +127,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
     setPage(1);
     setLimit(10);
     setHasMore(true);
+    setGalleryItems([]);
   }, [departmentName]);
 
   useEffect(() => {
@@ -144,15 +145,41 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
     }
   }, [loading, hasMore, events.length, fetchEvents]);
 
+  const fetchGallery = useCallback(async () => {
+    if (galleryLoading || galleryItems.length > 0) return; // Prevent re-fetching if data exists (or check specific flag)
+    try {
+      setGalleryLoading(true);
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/gallery?category=${encodeURIComponent(departmentName)}&all=true`);
+      if (!response.ok) throw new Error("Failed to fetch gallery");
+      const data = await response.json();
+      const newItems: GalleryItem[] = (data.data || []).map((item: any) => ({
+        ...item,
+        image: item.image && item.image.data ? bufferToBase64(item.image) : item.image,
+      }));
+      setGalleryItems(newItems);
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setGalleryLoading(false);
+    }
+  }, [departmentName, galleryLoading, galleryItems.length]);
+
+  // Initial fetch for gallery when tab is selected
+  useEffect(() => {
+    if (selectedSection === "Gallery" && galleryItems.length === 0) {
+      fetchGallery();
+    }
+  }, [selectedSection, galleryItems.length, fetchGallery]);
+
+  // Auto-fetch remaining gallery items
+
   // Fetch Faculty Data
   useEffect(() => {
     async function fetchFaculty() {
       if (!department?.name) return;
       try {
         setFacultyLoading(true);
-        const url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent(
-          department.name
-        )}&all=true`;
+        const url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent(department.name)}&all=true`;
         const res = await fetch(url);
         const rawData = await res.json();
         const data: FacultyMember[] = rawData.map((member: any) => ({
@@ -170,11 +197,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
       }
     }
 
-    if (
-      (selectedSection === "Faculty & Staff" ||
-        selectedSection === "Head of the Department") &&
-      facultyData.length === 0
-    ) {
+    if ((selectedSection === "Faculty & Staff" || selectedSection === "Head of the Department") && facultyData.length === 0) {
       fetchFaculty();
     }
   }, [selectedSection, department?.name, facultyData.length]);
@@ -188,21 +211,17 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
       return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime();
     });
 
-  const teachingStaff = sortByPriorityAndDate(
-    facultyData.filter((item) => item.type !== "Technical Staff")
-  );
-  const technicalStaff = sortByPriorityAndDate(
-    facultyData.filter((item) => item.type === "Technical Staff")
-  );
+  const teachingStaff = sortByPriorityAndDate(facultyData.filter((item) => item.type !== "Technical Staff"));
+  const technicalStaff = sortByPriorityAndDate(facultyData.filter((item) => item.type === "Technical Staff"));
 
-  const hodFaculty = React.useMemo(() => 
-    facultyData.find((f) => f.name === department?.depatmentHead?.name),
+  const hodFaculty = React.useMemo(
+    () => facultyData.find((f) => f.name === department?.depatmentHead?.name),
     [facultyData, department?.depatmentHead?.name]
   );
 
   const hodData = React.useMemo(() => {
     if (!department?.depatmentHead) return undefined;
-    
+
     return {
       ...department.depatmentHead,
       ...(hodFaculty
@@ -218,28 +237,17 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
 
   const departmentMenuItems = [
     "Department Profile",
-    ...(department?.name === "Artificial Intelligence & Machine Learning"
-      ? ["Career Prospects"]
-      : []),
-    ...(department?.name !== "Mechanical Engineering"
-      ? ["Organisation Structure"]
-      : []),
+    ...(department?.name === "Artificial Intelligence & Machine Learning" ? ["Career Prospects"] : []),
+    ...(department?.name !== "Mechanical Engineering" ? ["Organisation Structure"] : []),
     "Head of the Department",
     "Faculty & Staff",
     "Academic Programmes",
-    ...(department?.name === "Science & Humanities"
-      ? ["PO"]
-      : ["PEO & PO-PSO"]),
+    ...(department?.name === "Science & Humanities" ? ["PO"] : ["PEO & PO-PSO"]),
     "Course Outcomes (CO)",
     "Facilities",
     "Student Achievements",
-    ...(department?.name !== "Information Science & Engineering"
-      ? ["Research & Product Development"]
-      : []),
-    ...(department?.name === "Information Science & Engineering" ||
-    department?.name === "Mechanical Engineering"
-      ? ["Publications"]
-      : []),
+    ...(department?.name !== "Information Science & Engineering" ? ["Research & Product Development"] : []),
+    ...(department?.name === "Information Science & Engineering" || department?.name === "Mechanical Engineering" ? ["Publications"] : []),
     "Magazines & Newsletters",
     "Events",
     "Gallery",
@@ -248,12 +256,8 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   return (
     <section className="py-10 xl:py-36 text-black lg2:px-24 px-5 overflow-hidden">
       <div className="">
-        <h1 className="text-[#1D1D1F] text-xl lg:text-[31px] mb-2">
-          Department of{" "}
-        </h1>
-        <h2 className="text-[30px] lg:w-[50%]  lg:text-[54px] font-bold leading-[1.1] pb-1 lg:pb-10 text-black">
-          {department?.name}
-        </h2>
+        <h1 className="text-[#1D1D1F] text-xl lg:text-[31px] mb-2">Department of </h1>
+        <h2 className="text-[30px] lg:w-[50%]  lg:text-[54px] font-bold leading-[1.1] pb-1 lg:pb-10 text-black">{department?.name}</h2>
         <div className={`md:grid grid-cols-1 gap-3  md:grid-cols-12 mt-10`}>
           <div className="col-span-3">
             <div className="sticky top-20 h-fit">
@@ -283,9 +287,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
                       setSelectedSection(section);
                     }}
                     className={`border-b-2 text-[20px] pb-3 mb-3 border-border cursor-pointer ${
-                      selectedIndex === index
-                        ? "text-[#2884CA] font-bold"
-                        : "text-textGray font-[500]"
+                      selectedIndex === index ? "text-[#2884CA] font-bold" : "text-textGray font-[500]"
                     }`}
                   >
                     {section}
@@ -296,70 +298,40 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
           </div>
           <div className="col-span-1"></div>
           <div className="col-span-8 max-h-[70vh] md:max-h-[130vh] scrollable overflow-y-auto  pr-2">
-        {selectedSection === "Department Profile" && (
-              <DepartmentProfile annualIntake={department?.annualTake} keyPracticesECE={department?.keyPracticesECE} keyPoints={department?.keyPractices} data={department?.description} />
-            )}
-            {selectedSection === "Organisation Structure" &&
-              department?.organisation && (
-                <Organaisation data={department?.organisation} />
-              )}
-            {selectedSection === "Head of the Department" && (
-              <Hod data={hodData} facultyProfile={hodFaculty} />
-            )}
-      {selectedSection === "Faculty & Staff" && (
-              <Faculty
-                teachingStaff={teachingStaff}
-                technicalStaff={technicalStaff}
-                loading={facultyLoading}
+            {selectedSection === "Department Profile" && (
+              <DepartmentProfile
+                annualIntake={department?.annualTake}
+                keyPracticesECE={department?.keyPracticesECE}
+                keyPoints={department?.keyPractices}
+                data={department?.description}
               />
             )}
-          {selectedSection === "Academic Programmes" && department?.academicsProgram && <Academic academicsProgramEce={department.academicsProgramEce} data={department.academicsProgram} />}
-            {selectedSection === "Academic Programmes" && department?.academicsProgramEce && <Academic academicsProgramEce={department.academicsProgramEce} data={department.academicsProgram} />}
-            {selectedSection === "PO" && department?.peo && (
-              <Peo data={department.peo} deptName={department?.name} />
+            {selectedSection === "Organisation Structure" && department?.organisation && <Organaisation data={department?.organisation} />}
+            {selectedSection === "Head of the Department" && <Hod data={hodData} facultyProfile={hodFaculty} />}
+            {selectedSection === "Faculty & Staff" && (
+              <Faculty teachingStaff={teachingStaff} technicalStaff={technicalStaff} loading={facultyLoading} />
             )}
-            {selectedSection === "PEO & PO-PSO" && department?.peo && (
-              <Peo data={department.peo} deptName={department?.name} />
+            {selectedSection === "Academic Programmes" && department?.academicsProgram && (
+              <Academic academicsProgramEce={department.academicsProgramEce} data={department.academicsProgram} />
             )}
-            {selectedSection === "Course Outcomes (CO)" && (
-              <CourseOutCome
-                deptName={department?.name}
-                staticData={department?.courseOutcome}
-              />
+            {selectedSection === "Academic Programmes" && department?.academicsProgramEce && (
+              <Academic academicsProgramEce={department.academicsProgramEce} data={department.academicsProgram} />
             )}
-            {selectedSection === "Facilities" && department?.facilities && (
-              <Facilities
-                deptName={department?.name}
-                data={department?.facilities}
-              />
+            {selectedSection === "PO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
+            {selectedSection === "PEO & PO-PSO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
+            {selectedSection === "Course Outcomes (CO)" && <CourseOutCome deptName={department?.name} staticData={department?.courseOutcome} />}
+            {selectedSection === "Facilities" && department?.facilities && <Facilities deptName={department?.name} data={department?.facilities} />}
+            {selectedSection === "Student Achievements" && department?.studentAcheivemtents && (
+              <StudentAchievement data={department?.studentAcheivemtents} />
             )}
-            {selectedSection === "Student Achievements" &&
-              department?.studentAcheivemtents && (
-                <StudentAchievement data={department?.studentAcheivemtents} />
-              )}
-            {selectedSection === "Research & Product Development" &&
-              department?.research && (
-                <Research
-                  deptName={department?.name}
-                  data={department?.research}
-                />
-              )}
-            {selectedSection === "Publications" && department?.publications && (
-              <Publications data={department?.publications} />
+            {selectedSection === "Research & Product Development" && department?.research && (
+              <Research deptName={department?.name} data={department?.research} />
             )}
-            {selectedSection === "Magazines & Newsletters" &&
-              department?.magazines && (
-                <Magazines data={department?.magazines} />
-              )}
-            {selectedSection === "Events" && (
-              <Events events={events} departmentName={departmentName} />
-            )}
-            {selectedSection === "Gallery" && (
-              <Gallery data={department?.gallery} />
-            )}
-            {selectedSection === "Career Prospects" && (
-              <CareerProspects data={department?.careerProspects[0]} />
-            )}
+            {selectedSection === "Publications" && department?.publications && <Publications data={department?.publications} />}
+            {selectedSection === "Magazines & Newsletters" && department?.magazines && <Magazines data={department?.magazines} />}
+            {selectedSection === "Events" && <Events events={events} departmentName={departmentName} />}
+            {selectedSection === "Gallery" && <Gallery data={[...galleryItems, ...(department?.gallery || [])]} />}
+            {selectedSection === "Career Prospects" && <CareerProspects data={department?.careerProspects[0]} />}
           </div>
         </div>
       </div>
@@ -368,7 +340,3 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
 };
 
 export default DepartmentDetailes;
-
-
-
-

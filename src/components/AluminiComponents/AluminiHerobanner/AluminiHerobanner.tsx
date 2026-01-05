@@ -5,12 +5,12 @@ import imageUrl from "../../../../public/alumniPageImages/alumniHero.webp"
 
 const AluminiHeroBanner: React.FC = () => {
   return (
-    <section className="relative w-full h-[60vh] md:h-[100vh] flex flex-col justify-center items-center text-center px-4 overflow-hidden">
+    <section className="relative w-full h-[60vh] md:h-[100vh] xl:h-[100vh] flex flex-col justify-center items-center text-center px-4 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           src={imageUrl}
           alt="Background 1"
-          className="object-cover w-full h-[80vh] md:h-full"
+          className="object-cover w-full h-[80vh] xl:object-[center_90%]  md:h-full"
           priority
         fill
         />

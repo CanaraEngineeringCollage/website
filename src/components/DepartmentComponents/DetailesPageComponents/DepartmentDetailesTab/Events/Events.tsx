@@ -89,6 +89,7 @@ const ExploreCampus = ({ departmentName,events }: { departmentName: string, even
   return (
     <section className="py-10 lg:py-0 px-4 text-[#1D1D1F]">
       {/* 🔹 Event Cards */}
+      {/* <h2 className="text-2xl font-semibold  mb-4 text-[#1D1D1F]">Events</h2> */}
        <div className="max-w-7xl mx-auto grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
         {events.map((event, index) => {
           const src = event.image ? bufferToBase64(event.image) : "";

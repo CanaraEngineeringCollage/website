@@ -55,7 +55,7 @@ const sampleList = [
 
 const Activities = () => {
   return (
-    <div className="max-w-7xl mx-auto lg:px-36 px-4 xl:max-w-[75%]  text-black">
+    <div className="max-w-7xl mx-auto lg:px-0 px-4 xl:max-w-[75%]  text-black">
       <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl leading-[1.2]  text-start font-bold text-[#1D1D1F]">Entrepreneurship Cell Activities</h1>
     <div className="overflow-x-auto pt-4 pb-10  ">
   <div className="rounded-xl overflow-x-auto">

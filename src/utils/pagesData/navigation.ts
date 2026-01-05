@@ -110,10 +110,7 @@ const alumni = [
     title: "Alumni",
     link: "/alumni",
   },
-  {
-    title: "About Alumni",
-    link: "/alumni/about-alumni",
-  },
+
   
 ];
 

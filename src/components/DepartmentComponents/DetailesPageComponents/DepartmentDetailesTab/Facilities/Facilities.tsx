@@ -33,8 +33,8 @@ const Facilities: React.FC<FacilitiesProps> = ({ data,deptName }) => {
   return (
     <div className=" text-textGray text-[17px] space-y-8">
       <div>
-        {deptName==="Artificial Intelligence & Machine Learning"&&<h1 className="text-[20px] uppercase mb-2 font-bold">Laboratory Facilities</h1>}
-        {deptName!="Artificial Intelligence & Machine Learning"&&<h1 className="text-[20px] mb-2 font-bold">Facilities</h1>}
+        {deptName==="Artificial Intelligence & Machine Learning"&&<h1 className="text-2xl font-semibold uppercase mb-2 ">Laboratory Facilities</h1>}
+        {deptName!="Artificial Intelligence & Machine Learning"&&<h1 className="text-2xl font-semibold mb-2 ">Facilities</h1>}
    <p className="md:text-lg text-justify text-[14px] leading-7 text-textGray">
   {data.description.split(/(Data Structures and Algorithm Laboratory|Machine Learning Laboratory)/g).map((part, index) =>
     part === "Data Structures and Algorithm Laboratory" || part === "Machine Learning Laboratory" ? (

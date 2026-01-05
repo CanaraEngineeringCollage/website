@@ -5,9 +5,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import { IconX } from "@tabler/icons-react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa"; // ← Left arrow added
 
-interface GalleryItem {
+export interface GalleryItem {
   image: string;
-   title?: string; 
+  title?: string;
 }
 
 const backdropVariants = {
@@ -41,7 +41,6 @@ const Gallery = ({ data }: { data: GalleryItem[] }) => {
     }
   };
 
-
   React.useEffect(() => {
     if (selectedIndex !== null) document.body.style.overflow = "hidden";
     else document.body.style.overflow = "auto";
@@ -54,8 +53,9 @@ const Gallery = ({ data }: { data: GalleryItem[] }) => {
   }, [selectedIndex]);
 
   return (
-    <section className="max-w-6xl mx-auto py-12 px-4 text-[#1D1D1F]">
+    <section className="max-w-6xl mx-auto pb-12 px-4 text-[#1D1D1F]">
       {/* 🔹 Gallery Grid */}
+      {/* <h2 className="text-2xl font-semibold  mb-2 text-[#1D1D1F]">Gallery</h2> */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {data.map((item, index) => (
           <div
@@ -129,10 +129,8 @@ const Gallery = ({ data }: { data: GalleryItem[] }) => {
                 height={1000}
                 className="object-cover w-full h-[80vh] md:h-[90vh] lg:h-[80vh] xl:h-[90vh] 2xl:h-[80vh] select-none"
               />
-                <div className="p-4  border-t">
-                <h2 className="text-lg md:text-xl font-semibold text-[#1D1D1F]">
-                 {data[selectedIndex].title}
-                </h2>
+              <div className="p-4  border-t">
+                <h2 className="text-lg md:text-xl font-semibold text-[#1D1D1F]">{data[selectedIndex].title}</h2>
               </div>
             </motion.div>
           </motion.div>
