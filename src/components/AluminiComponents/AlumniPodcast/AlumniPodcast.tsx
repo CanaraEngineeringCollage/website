@@ -275,10 +275,10 @@ export default function AlumniPodcastCarousel({
   const currentCenterPodcast = getPodcast(0);
 
   return (
-    <section className={`w-full flex flex-col justify-center items-center py-10 md:pt-0 pb-10 ${backgroundColor} overflow-hidden`}>
+    <section className={`w-full flex flex-col justify-center items-center pt-5 md:pt-0 pb-10 ${backgroundColor} overflow-hidden`}>
       
       {/* --- Header Section --- */}
-      <div className="w-full max-w-7xl px-5 flex flex-col md:flex-row justify-center items-center pb-12">
+      <div className="w-full max-w-7xl px-5 flex flex-col md:flex-row justify-center items-center pb-9 lg:pb-12">
         <h2 className="text-3xl md:text-[40px] lg:text-5xl font-bold text-[#1D1D1F] text-center md:text-left">
           {heading}
         </h2>

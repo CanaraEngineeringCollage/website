@@ -5,9 +5,10 @@ import Academics from "../NavLinks/Academics";
 import Life from "../NavLinks/Life";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import FormModal from "@/components/campusComponent/FromModal/FromModal";
 import { Suspense } from "react";
 import ContactFormModal from "@/components/Modal/Modal";
+import Button from "../../Button/Button";
+
 
 function NavbarItems() {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
@@ -60,13 +61,22 @@ function NavbarItems() {
           id="apply"
           className=" font-poppins text-base pl-3 xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
         >
-          <button
+          {/* <button
             aria-label="Apply Now Button"
             onClick={() => setModalOpen(true)}
             className="bg-primary text-white px-7 py-2.5 cursor-pointer rounded-[30px]"
           >
             Apply Now
-          </button>
+          </button> */}
+
+          <Button noPadding={true} variant="primary1"
+             aria-label="Apply Now Button"
+            onClick={() => setModalOpen(true)}
+           
+              className="bg-primary text-white px-7 py-2.5 cursor-pointer rounded-[30px] "
+            >
+             Apply Now
+              </Button>
         </div>
       </div>
       <ContactFormModal isOpen={modalOpen} onClose={setModalOpen} />
