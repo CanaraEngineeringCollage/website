@@ -150,6 +150,31 @@
         }
       ]
     }
+  },
+
+
+
+
+
+
+
+
+   {
+    "id": 7,
+    "category": "",
+    "title": "Transportation",
+    "src": "",
+    "style": "lg:top-[10] lg:right-0",
+    "textalign": "",
+    "mainTitle": "Transportation",
+    "description": {
+      "src": "",
+      "content": [
+        {
+          "description": "Canara Engineering College offers a well-organized transportation facility with a fleet of more than 11 buses, ensuring convenient connectivity across Mangaluru and neighboring areas. The extensive transport network enables safe, reliable, and timely travel for students and staff, making daily commuting comfortable and hassle-free."
+        }
+      ]
+    }
   }
  
 ]
