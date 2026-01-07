@@ -150,8 +150,8 @@ const HowToApply = () => {
   const sectionRef = useRef(null);
 
   return (
-    <section className="max-w-7xl xl:max-w-[75%] mx-auto py-10 md:pb-10 md:pt-16 overflow-hidden" ref={sectionRef}>
-      <div className=" mb-20">
+    <section className="max-w-7xl xl:max-w-[75%] mx-auto pt-10 pb-3 md:pb-10 md:pt-16 overflow-hidden" ref={sectionRef}>
+      <div className=" lg:mb-20 mb-10">
         <motion.h1
           className="text-3xl text-[#1D1D1F] md:text-[40px] mb-3 text-center  lg2:text-5xl xl:text-6xl font-bold leading-tight"
           initial={{ opacity: 0, y: -20 }}
@@ -166,7 +166,7 @@ const HowToApply = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Explore Canara Engineering College’s  thriving campus with top-tier  placements, cutting-edge  <br className="lg:block "/> facilities & a vibrant student community.
+          Explore Canara Engineering College’s  thriving campus with top-tier  placements, cutting-edge  <br className="hidden lg:block "/> facilities & a vibrant student community.
         </motion.p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-7 gap-10 lg:gap-2 w-full">

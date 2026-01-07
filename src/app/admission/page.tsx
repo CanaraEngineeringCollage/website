@@ -42,7 +42,7 @@ const page = () => {
     <>
       <HeroSection />
 
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0 lg:mt-0 ">
+      <section className="px-6 md:px-12 lg:px-0 xl:px-0 lg:mt-0 ">
         <HowToApply />
       </section>
 

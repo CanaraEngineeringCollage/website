@@ -278,7 +278,7 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
       <MotionButton
         layoutId={layout ? `card-${card.title}` : undefined}
         onClick={handleOpen}
-        className="rounded-3xl bg-white h-[35rem] w-full md:h-[45rem] overflow-hidden flex flex-col items-start justify-start relative z-10"
+        className="rounded-3xl  bg-white h-[35rem] w-full md:h-[45rem] overflow-hidden flex flex-col items-start justify-start relative z-10"
         whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
         whileTap={{ scale: 0.98 }}
       >
@@ -287,12 +287,12 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
         {/* Bottom gradient overlay */}
         <div className="absolute bottom-0 left-0 right-0 h-[60vh] bg-gradient-to-t from-black/70 via-transparent to-transparent z-30 pointer-events-none" />
         <div
-          className={`relative ${card.style} z-40 p-8 ${card.textalign} ${card.id == 1 ? "text-start md:text-left" : ""
+          className={`absolute ${card.style} z-40 p-8 ${card.textalign} ${card.id == 1 ? "text-start md:text-left" : ""
             }`}
         >
           <MotionP
             layoutId={layout ? `category-${card.category}` : undefined}
-            className={`text-white text-[18px] ${card.id == 1 ? "lg:max-w-xl text-start md:text-right" : "max-w-2xl"
+            className={`text-white text-[18px] ${card.id == 1 ? "lg:max-w-xl text-start lg:text-right" : "max-w-2xl"
               } md:text-[31px] font-bold md:font-medium font-sans`}
           >
             {card.category}
@@ -300,7 +300,7 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
 
           <MotionP
             layoutId={layout ? `title-${card.title}` : undefined}
-            className={`text-white text-[31px] ${card.id == 1 || card.id == 7 ? "text-start md:text-right" : "text-left"
+            className={`text-white text-[31px] ${card.id == 1  ? "text-start lg:text-right" : "text-left"
               } md:text-[76px] font-semibold max-w-5xl leading-[1.1] [text-wrap:balance] font-sans mt-2`}
           >
             {card.title}

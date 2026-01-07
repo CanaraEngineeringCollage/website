@@ -31,7 +31,7 @@
     "category": "",
     "title": "In-Campus Hostels",
     "src": "/campusFacilitiesPageImages/hostelLifePageImages/bgImage.jpg",
-    "style": "lg:top-[450] opcity-[100]",
+    "style": "lg:bottom-[20px] opcity-[100]",
     "desc": "Comfortable, secure & well-equipped hostels designed to provide a home away from home for our students",
     "mainTitle": "Campus Hostels",
     "description": {
@@ -51,7 +51,7 @@
     "category": "",
     "title": "Research Labs",
     "src": "/campusFacilitiesPageImages/3.jpg",
-    "style": "lg:top-[100] lg:left-[380]",
+    "style": "lg:top-[10px] lg:right-[0px]",
     "mainTitle": "Research Labs",
     "description": {
       "src": "/campusFacilitiesPageImages/3.jpg",
@@ -81,7 +81,7 @@
     "category": "",
     "title": "Canteen",
     "src": "/campusFacilitiesPageImages/Image6.jpg",
-    "style": "lg:top-[10] lg:right-0",
+    "style": "lg:top-[10px] lg:left-0",
     "textalign": "text-center max-w-full",
     "mainTitle": "On-Campus Dining",
     "description": {
@@ -136,7 +136,7 @@
     "category": "",
     "title": "Well-Equipped Classrooms",
     "src": "/campusFacilitiesPageImages/Image4.jpg",
-    "style": "lg:top-[0]  w-full",
+    "style": "lg:top-[0] left-0  w-full",
     "textalign": "",
     "mainTitle": "Well-Equipped Classrooms",
     "description": {
@@ -172,6 +172,52 @@
       "content": [
         {
           "description": "Canara Engineering College offers a well-organized transportation facility with a fleet of more than 11 buses, ensuring convenient connectivity across Mangaluru and neighboring areas. The extensive transport network enables safe, reliable, and timely travel for students and staff, making daily commuting comfortable and hassle-free."
+        }
+      ]
+    }
+  },
+   {
+    "id": 10,
+    "category": "",
+    "title": "Sports & Fitness Facilities",
+    "src": "/physicalEducationPageImages/bgImage-2.png",
+    "style": "absolute  lg:bottom-[20px] left-0 ",
+    "textalign": "",
+    "mainTitle": "Sports & Fitness Facilities",
+    "description": {
+      "src": "/physicalEducationPageImages/bgImage-2.png",
+      "content": [
+        {
+          "description": "Canara Engineering College encourages a healthy balance between academics and physical well-being through well-maintained sports and fitness facilities on campus. Students are provided ample opportunities to stay active, build teamwork, and pursue sporting interests alongside their academic journey."
+        },
+         {
+          "description": "The campus features a well-equipped gymnasium, accessible to hostel residents, designed to support fitness, strength training, and overall wellness in a safe and supervised environment."
+        },
+         {
+          "description": "CEC also offers a variety of indoor sports facilities, including Badminton, Table Tennis, Chess, Powerlifting, Weightlifting, and Karate, enabling students to engage in both recreational and competitive activities throughout the year."
+        },
+         {
+          "description": "For outdoor sports enthusiasts, the college provides excellent facilities for Cricket, Volleyball, Football, Basketball, Kabaddi, Ball Badminton, Throwball, and Handball, fostering physical fitness, sportsmanship, and team spirit. These facilities collectively contribute to a vibrant and active campus life at CEC."
+        }
+      ]
+    }
+  },
+   {
+    "id": 10,
+    "category": "",
+    "title": "Banking Facility",
+    "src": "",
+    "style": "absolute top-10 right-0 ",
+    "textalign": "",
+    "mainTitle": "Banking Facility",
+    "description": {
+      "src": "",
+      "content": [
+        {
+          "description": "Canara Engineering College houses a Canara Bank branch within the campus, providing convenient and reliable banking services to students and staff. The branch is supported by a full-fledged team and is equipped with an ATM facility, ensuring easy access to essential banking services at all times."
+        },
+         {
+          "description": "The on-campus branch assists students with education loan services and extends personal loan facilities to staff, making financial processes seamless and accessible. In addition, the bank regularly engages with students and staff by sharing updates on new banking schemes, digital banking services, and the latest developments in the banking sector, promoting financial awareness and literacy within the campus community."
         }
       ]
     }
