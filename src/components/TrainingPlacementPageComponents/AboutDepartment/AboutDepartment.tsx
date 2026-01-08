@@ -6,7 +6,6 @@ import { HiDownload } from "react-icons/hi";
 import TrainingPlacementModal from "../ModalTraininigPlacement/ModalTraininigPlacement";
 import Button from "@/components/Common/Button/Button";
 
-
 const AboutDepartment = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -23,36 +22,30 @@ const AboutDepartment = () => {
   return (
     <section className="pb-5 md:pb-2 max-w-7xl xl:max-w-[75%] mx-auto lg:px-32">
       {/* Include Modal Component */}
-      <TrainingPlacementModal 
-        isOpen={isModalOpen} 
-        onClose={setIsModalOpen} 
+      <TrainingPlacementModal
+        isOpen={isModalOpen}
+        onClose={setIsModalOpen}
         onSuccess={triggerFileDownload} // Pass the download logic here
       />
 
       <div className="">
         <div className="flex justify-between items-center pb-5 lg:pb-10">
           <h1 className="text-3xl md:text-[40px] lg2:text-[46.5px] xl:text-6xl leading-[1.2] xl:max-w-4xl font-bold text-[#1D1D1F] ">
-            Training &amp; Placement at <br className="hidden lg:block"/> Canara Engineering College
+            Training &amp; Placement at <br className="hidden lg:block" /> Canara Engineering College
           </h1>
- <div className="flex-col hidden lg:flex gap-3 items-end">
-  {/* Download Brochure */}
- <Button variant="primary1"
-    onClick={() => setIsModalOpen(true)}
-    aria-label="Download Brochure"
-    className="text-white hidden font-bold text-[17px] bg-primary
+          <div className="flex-col hidden lg:flex gap-3 items-end">
+            {/* Download Brochure */}
+            <Button
+              variant="primary1"
+              onClick={() => setIsModalOpen(true)}
+              aria-label="Download Brochure"
+              className="text-white hidden font-bold text-[17px] bg-primary
                px-6 py-2 cursor-pointer rounded-3xl lg:inline-flex gap-3 
                items-center min-w-[250px] justify-center "
-  >
-    Download Brochure <HiDownload className="text-[24px] font-extrabold" />
-    </Button>
-
-    
-   
-
-</div>
-
-
-
+            >
+              Download Brochure <HiDownload className="text-[24px] font-extrabold" />
+            </Button>
+          </div>
         </div>
         <p className="text-textGray text-lg lg:text-[20px] pb-5">
           Canara Engineering College has built a strong reputation in the competitive academic and corporate landscape. Our consistent placement
@@ -72,7 +65,7 @@ const AboutDepartment = () => {
             <b>Aptitude Training</b> – sharpening logical reasoning, problem-solving, and quantitative abilities.
           </li>
           <li>
-            <b>Soft Skills</b> &amp; Personality Development – building communication, leadership, teamwork, corporate etiquette, and self-confidence.
+            <b>Soft Skills &amp; Personality Development </b> – building communication, leadership, teamwork, corporate etiquette, and self-confidence.
           </li>
           <li>
             <b>Career Preparation</b> – resume workshops, career counseling, mock interviews, and public speaking.
@@ -93,29 +86,21 @@ const AboutDepartment = () => {
         </p>
       </div>
 
-  
-      
       <div className="flex flex-col items-center gap-3 justify-center lg:hidden">
         {/* Mobile Button - Changed from <a> to <button> to open Modal */}
-       <Button variant="primary1"
-    onClick={() => setIsModalOpen(true)}
-    aria-label="Download Brochure"
-    className="text-white hidden font-bold text-[17px] bg-primary
+        <Button
+          variant="primary1"
+          onClick={() => setIsModalOpen(true)}
+          aria-label="Download Brochure"
+          className="text-white hidden font-bold text-[17px] bg-primary
                px-6 py-2 cursor-pointer rounded-3xl lg:inline-flex gap-3 
                items-center min-w-[250px] justify-center "
-  >
-    Download Brochure <HiDownload className="text-[24px] font-extrabold" />
-    </Button>
- 
+        >
+          Download Brochure <HiDownload className="text-[24px] font-extrabold" />
+        </Button>
       </div>
     </section>
   );
 };
 
- export default AboutDepartment;
-
-
-
-
-
-
+export default AboutDepartment;

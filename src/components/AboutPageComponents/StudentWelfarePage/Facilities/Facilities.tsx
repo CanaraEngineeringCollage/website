@@ -5,7 +5,21 @@ const Facilities = () => {
   const facilities = [
     "Anyone with a genuine grievance may approach the departmental coordinators of the Student Grievance Cell in person, or can contact the Student Welfare Office.",
     "In case the person is unwilling to appear in person, grievances may be conveyed over e-mail to cecwelfare@gmail.com or may be dropped in the Suggestion/Grievances Box kept outside the Student Welfare Department.",
-    'Grievance may be conveyed online through the college website. Click on "ONLINE GRIEVANCE" under "QUICK LINKS" and submit the grievance.',
+    <>
+    Grievance may be conveyed online through the college website. Click on{" "}
+    <a
+      href="https://www.canaraengineering.in/Grievance"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="  "
+    >
+      "ONLINE GRIEVANCE"
+    </a>{" "}
+    under <a href="https://www.canaraengineering.in/status_griv"
+      target="_blank"
+      rel="noopener noreferrer"
+      className=" hover-underline ">"QUICK LINKS" and submit the grievance.</a>
+  </>,
     "Every grievance and action taken on the complaint is documented.",
     "Arranging for emergency health service, as and when the need arises.",
     "Suggestions related to training, consultancy projects, contests, higher education, career and counseling are provided to students.",

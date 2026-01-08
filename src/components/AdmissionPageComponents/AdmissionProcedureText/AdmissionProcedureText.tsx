@@ -11,16 +11,16 @@ const AdmissionProcedureText = () => {
         <p className="text-textGray text-justify leading-relaxed text-lg lg:text-[20px] mb-5">
           The minimum qualification for admission to the B.E. program is a pass
           in the 2nd PUC or 10+2 higher secondary or equivalent qualifying
-          examination with a minimum aggregate of <strong>45%</strong> in
+          examination with a minimum aggregate of 45% in
           Physics, Chemistry, and Mathematics as compulsory subjects along with
-          Biotechnology, Computer Science, Biology, or Electronics as optional
+          Biotechnology, Computer Science, Biology or Electronics as optional
           subjects in place of Chemistry. A relaxation of up to{" "}
-          <strong>40%</strong> is allowed in the qualifying examination for SC,
-          ST, Category 1, and OBC candidates.
+          40% is allowed in the qualifying examination for SC,
+          ST, Category 1 and OBC candidates.
         </p>
 
         <p className="text-textGray text-justify leading-relaxed text-lg lg:text-[20px] mb-5">
-          <strong>Please Note:</strong> The relaxation in academic eligibility is
+          Please Note: The relaxation in academic eligibility is
           extended only to Karnataka candidates belonging to the SC, ST, Cat-I,
           and OBC categories. The above rules also apply to candidates seeking
           admission under the Management Quota.
@@ -31,8 +31,8 @@ const AdmissionProcedureText = () => {
           entrance examinations:
           <br />
           CET conducted by the Karnataka Examination Authority, Bangalore, OR{" "}
-          <strong>COMEDK-UGET</strong> OR <strong>JEE</strong> OR{" "}
-          <strong>KRLMPCA UGCET</strong>.
+          COMEDK-UGET OR JEE OR{" "}
+          KRLMPCA UGCET.
         </p>
 
         <h2 className="text-2xl font-semibold mt-8 mb-3">

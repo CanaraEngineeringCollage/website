@@ -47,7 +47,12 @@ export default function SpotlightSection({toppers}) {
       )}
              
               <div className="text-left pl-6">
-                <h3 className=" lg:text-xl font-semibold mb-1">{topper.name}</h3>
+           <h3 className="lg:text-xl font-semibold mb-1">
+  {topper.name
+    .toLowerCase()
+    .replace(/\b\w/g, (char) => char.toUpperCase())}
+</h3>
+
                 <p className="text-sm opacity-[0.8]">{topper.batch}</p>
                 <p className="text-sm opacity-[0.8]">{topper.percentage} CGPA {topper.vtuText && ","} {topper.vtuText &&<span className="font-bold whitespace-nowrap"> {topper.vtuText}</span>}</p>
               </div>

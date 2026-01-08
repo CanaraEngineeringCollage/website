@@ -11,23 +11,23 @@ interface CareerProspectsData {
 const CareerProspects = ({ data }: { data: CareerProspectsData }) => {
   return (
     <div className="text-textGray">
-      <h1 className="text-textGray text-lg md:text-xl font-bold mb-4">
+      <h1 className="text-textGray text-2xl font-semibold  mb-2">
         {data.title}
       </h1>
 
       {/* Market Overview */}
-      <p className="md:text-lg text-[14px] leading-7 text-justify text-textGray mb-4">
+      <p className="md:text-lg text-[14px] leading-7 text-justify text-textGray mb-2">
         {data.marketOverview}
       </p>
 
       {/* Career Opportunities */}
-      <p className="md:text-lg text-[14px] leading-7 text-justify text-textGray mb-4">
+      <p className="md:text-lg text-[14px] leading-7 text-justify text-textGray mb-2">
         {data.careerOpportunities}
       </p>
 
       {/* Roles */}
       <h2 className="text-base md:text-lg mt-4 font-bold">Potential Roles</h2>
-      <ul className="list-disc ml-5 md:text-lg text-[14px] leading-7 pt-2 text-textGray mb-4">
+      <ul className="list-disc ml-5 md:text-lg text-[14px] leading-7 pt-2 text-textGray mb-2">
         {data.roles.map((role) => (
           <li key={role}>{role}</li>
         ))}

@@ -21,7 +21,7 @@ const MissionAndVision = () => {
       <h2 className="text-3xl lg2:text-5xl lg:text-4xl text-center lg:text-start font-bold text-[#1D1D1F] mb-8">
         Our Mission
       </h2>
-      <ul className="text-textGray text-justify pl-4  list-decimal text-lg  leading-relaxed">
+      <ul className="text-textGray text- pl-4  list-decimal text-lg  leading-relaxed">
         {departmentMission.map((mission, index) => (
           <li key={index} className="mb-2">
             {mission}

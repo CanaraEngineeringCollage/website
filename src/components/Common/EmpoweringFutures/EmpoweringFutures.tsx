@@ -25,7 +25,7 @@ const stats: Stat[] = [
           ].map((item, index) => (
             <div key={index} className="flex flex-col items-center justify-end w-1/4">
               {/* Value label */}
-              <span className="mb-2 text-sm font-semibold text-primary">{item.value}</span>
+              <span className="mb-2 text-sm font-semibold text-primary">{item.value}%</span>
 
               {/* Animated bar */}
               <motion.div
@@ -151,7 +151,7 @@ export default function EmpoweringFutures() {
               ].map((item, index) => (
                 <div key={index} className="flex flex-col items-center justify-end w-1/4">
                   {/* Value label */}
-                  <span className="mb-2 text-sm font-semibold text-primary">{item.value}</span>
+                  <span className="mb-2 text-sm font-semibold text-primary">{item.value}%</span>
 
                   {/* Animated bar */}
                   <motion.div

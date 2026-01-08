@@ -43,7 +43,7 @@ export default function AboutCanara() {
         <p className="lg:text-xl text-lg text-justify leading-7 pt-6 text-textGray">
           The vision of our founder, Late Sri Ammembal Subba Rao Pai, was to
           provide{" "}
-          <span className="font-bold ">quality, affordable education</span>{" "}
+          quality, affordable education{" "}
           to aspiring students. Today, this vision is a reality at CEC driven by
           highly qualified faculty, cutting-edge infrastructure, and a vibrant
           learning ecosystem.
@@ -72,24 +72,24 @@ export default function AboutCanara() {
           <div className="overflow-hidden">
             <p className="lg:text-xl text-lg text-justify leading-7 pt-6 text-textGray">
               All programs are approved by the{" "}
-              <span className="font-bold">AICTE, New Delhi</span>, and
+              AICTE, New Delhi, and
               affiliated with{" "}
-              <span className="font-bold">
+              
                 Visvesvaraya Technological University (VTU)
-              </span>
+              
               , Belagavi. As an{" "}
-              <span className="font-bold">autonomous institution</span>, CEC now
+              autonomous institution, CEC now
               has the academic freedom to design innovative curricula aligned
-              with <span className="font-bold">emerging industry needs</span>,
+              with emerging industry needs,
               ensuring students are future-ready. We take pride that all
               eligible B.E. programs are accredited by the{" "}
-              <span className="font-bold">
+              
                 National Board of Accreditation (NBA)
-              </span>{" "}
+              {" "}
               and the institution itself is accredited by{" "}
-              <span className="font-bold">
+              
                 NAAC with an “A” grade (CGPA 3.24)
-              </span>
+              
               .
             </p>
             <p className="lg:text-xl text-lg leading-7 pt-6 text-textGray">
@@ -98,30 +98,30 @@ export default function AboutCanara() {
               faculty in line with national standards. Around 35% of our
               students reside in modern, eco-friendly hostels on campus. Our
               students consistently excel in academics, securing{" "}
-              <span className="font-bold">
+              
                 university ranks, gold medals, and 100% results
-              </span>{" "}
+              {" "}
               in leading branches, while also achieving national-level
               recognition in cultural, technical, and sports arenas.
             </p>
             <p className="lg:text-xl text-lg leading-7 pt-6 text-textGray">
               CEC is home to a vibrant student life with{" "}
-              <span className="font-bold">
+              
                 active clubs, IEEE student chapter, state-level fests, and
                 impactful outreach programs
-              </span>
+              
               , all fostering holistic growth and leadership. Our modern
               library, advanced laboratories, and digital learning centers
               provide students with rich resources and hands-on experiences.
             </p>
 
             <p className="lg:text-xl text-lg leading-7 pt-6 text-textGray">
-              Our <span className="font-bold">Training & Placement Cell</span>{" "}
+              Our Training & Placement Cell{" "}
               ensures career readiness through regular training in soft skills,
               communication, and aptitude, while the{" "}
-              <span className="font-bold">
+              
                 Entrepreneurship Development Cell (EDC)
-              </span>{" "}
+              {" "}
               nurtures innovation and startups. With strong industry
               partnerships and academic tie-ups including Infosys, Ace
               Micromatic, ICT Academy, Niveus, MAHE, Q-Spiders, Ethnus, and more
@@ -130,32 +130,32 @@ export default function AboutCanara() {
 
             <p className="lg:text-xl text-lg leading-7 pt-6 text-textGray">
               Placement outcomes remain one of our strongest highlights, with{" "}
-              <span className="font-bold">
+              
                 nearly 90% of eligible students placed in CSE and allied
                 branches
-              </span>
-              , a <span className="font-bold">median salary of ₹7 LPA</span>,
+              
+              , a median salary of ₹7 LPA,
               and{" "}
-              <span className="font-bold">
+              
                 highest CTC packages ranging from ₹17–24 LPA
-              </span>
+              
               . In addition, several faculty and student-led{" "}
-              <span className="font-bold">
+              
                 R&D projects funded by DST and other agencies
-              </span>{" "}
+              {" "}
               are in progress, showcasing our research potential.{" "}
             </p>
 
             <p className="lg:text-xl text-lg leading-7 pt-6 text-textGray">
               CEC continues to expand its infrastructure and learning
               opportunities, staying in step with the demands of{" "}
-              <span className="font-bold">Industry 4.0</span> and beyond. With a
+              Industry 4.0 and beyond. With a
               perfect balance of tradition, innovation, and excellence, Canara
               Engineering College is not just an institution it’s a launchpad
               for{" "}
-              <span className="font-bold">
+              
                 tomorrow’s engineers, innovators, and leaders
-              </span>
+              
             </p>
           </div>
         </div>
@@ -166,13 +166,13 @@ export default function AboutCanara() {
         <button
           aria-label={showMore ? "Read Less" : "Learn More"}
           onClick={handleToggle}
-          className="pt-8 inline-flex items-center cursor-pointer text-[#0066CC] font-medium"
+          className="pt-8 inline-flex items-center cursor-pointer text-primary font-medium"
         >
           {showMore ? "Read Less" : "Read More"}
           {showMore ? (
-            <MdKeyboardArrowUp className="text-xl text-[#0066CC]" />
+            <MdKeyboardArrowUp className="text-xl text-primary" />
           ) : (
-            <MdKeyboardArrowDown className="text-xl text-[#0066CC]" />
+            <MdKeyboardArrowDown className="text-xl text-primary" />
           )}
         </button>
       </div>

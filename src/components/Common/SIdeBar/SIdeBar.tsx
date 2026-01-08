@@ -503,8 +503,9 @@ function MainMenu({
               </div>
               <div
                 onClick={() => {
-                  setVisible("alumni");
-                }}
+            router.push("/alumni");
+            openSidebar(false);
+          }}
                 className="flex gap-2 items-center"
               >
                 <div className="flex items-center gap-2">

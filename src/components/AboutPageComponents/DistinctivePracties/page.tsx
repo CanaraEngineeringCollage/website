@@ -22,7 +22,7 @@ const DistinctivePracties = () => {
   const practices = [
     {
       id: 1,
-      text: "Free Community health center for students, staff and local community*",
+      text: "Free Community health center for students, staff and local community",
     },
     {
       id: 2,

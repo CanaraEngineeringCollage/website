@@ -58,7 +58,7 @@ const AboutHistoryCanara = () => {
       </div>
 
       {/* Paragraph 3 */}
-      <p className="lg:text-xl md:text-lg text-lg leading-7 pt-10 text-textGray text-justify">
+      <p className="lg:text-xl md:text-lg text-lg leading-7 py-8 lg:py-10 text-textGray text-justify">
         CEC today having a total student strength of around 1900 in the campus
         with about 35% of them staying in the ergonomically built college hostels
         and a faculty strength of 100+ with many doctorates and maintaining
@@ -74,18 +74,7 @@ const AboutHistoryCanara = () => {
       </p>
 
       {/* Paragraph 4 */}
-      <p className="lg:text-xl md:text-lg text-lg leading-7  py-8 lg:py-10 text-textGray text-justify">
-        The institute library has a treasure trove of books, magazines, journals
-        and e-journals as well as digital library and e-learning centres. All
-        laboratories and workshops are equipped with the most modern and
-        sophisticated instruments, fulfilling the quest for practical knowledge of
-        the students. The active Training and Placement department along with
-        Entrepreneurship Development Cell organizes several programs like training
-        the students to face campus recruitment tests and interviews through
-        regular soft skill/communication skill development programs, Entrepreneurship
-        Awareness Camps and helping the desired students to productize their creative
-        ideas.
-      </p>
+      
 
       {/* Image 2 */}
       <div className="overflow-hidden w-full rounded-3xl  my-3 lg:my-5">
