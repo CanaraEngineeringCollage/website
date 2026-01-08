@@ -147,25 +147,30 @@ const Footer: FC = () => {
         </Suspense>
 
         <hr className="text-gray-300 pb-3.5" />
-        <div className="mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-5  border-b border-gray-300 pb-10">
+        <div className="mx-auto w-full">
+          {/* Layout Fix: 
+             1. Removed manual margins (xl:ml-[30%] etc).
+             2. Used 'md:flex md:justify-between' for edge-to-edge alignment.
+             3. Kept 'grid-cols-2' for smaller tablet views.
+          */}
+          <div className="grid grid-cols-2 gap-y-10 gap-x-8 md:flex md:justify-between border-b border-gray-300 pb-10">
             <div>
               <h3 className="font-semibold mt-5 mb-2">Quick Links</h3>
               <FooterList data={quickLinks} />
             </div>
-            <div className="xl:ml-[30%] lg2:ml-[20%]">
+            <div>
               <h3 className="font-semibold mt-5 mb-2">Our College</h3>
               <FooterList data={ourCollege} />
             </div>
-            <div className="xl:ml-[30%] lg2:ml-[20%]">
+            <div>
               <h3 className="font-semibold mt-5 mb-2">Academics</h3>
               <FooterList data={academics} />
             </div>
-            <div className="xl:ml-[30%] lg2:ml-[20%]">
+            <div>
               <h3 className="font-semibold mt-5 mb-2">Facilities</h3>
               <FooterList data={facilities} />
             </div>
-            <div className="xl:ml-auto lg2:ml-[20%]">
+            <div>
               <h3 className="font-semibold mt-5 mb-2">Stay Connected</h3>
               <FooterList data={stayConnected} />
             </div>
@@ -173,7 +178,7 @@ const Footer: FC = () => {
         </div>
 
         <div className="flex items-center justify-between space-x-10 my-8">
-         <Link href="/"> <div className="flex gap-5">
+          <Link href="/"> <div className="flex gap-5">
             <Image src={footericon1} width={300} height={300} alt="logo" />
              <FooterIcon />
           </div></Link>
