@@ -4,7 +4,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 const FutureCampusText = () => {
   return (
-    <div className="max-w-7xl mx-auto xl:max-w-[75%] text-center  text-black">
+    <div className="max-w-7xl mx-auto xl:max-w-[75%] text-center  text-[#1D1D1F]">
       <h1 className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold">Your Future Campus</h1>
       <p className="lg:text-xl md:text-lg text-[14px] leading-7 pt-5 text-textGray  ">
         Canara Engineering College (CEC), a premier institute in Mangaluru, is part of the Canara Group of Institutions, founded in 1891 by Ammembal

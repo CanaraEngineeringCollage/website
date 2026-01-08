@@ -159,23 +159,7 @@
 
 
 
-   {
-    "id": 7,
-    "category": "",
-    "title": "Transportation",
-    "src": "",
-    "style": "lg:top-[10] lg:right-0",
-    "textalign": "",
-    "mainTitle": "Transportation",
-    "description": {
-      "src": "",
-      "content": [
-        {
-          "description": "Canara Engineering College offers a well-organized transportation facility with a fleet of more than 11 buses, ensuring convenient connectivity across Mangaluru and neighboring areas. The extensive transport network enables safe, reliable, and timely travel for students and staff, making daily commuting comfortable and hassle-free."
-        }
-      ]
-    }
-  },
+   
    {
     "id": 10,
     "category": "",
@@ -201,26 +185,10 @@
         }
       ]
     }
-  },
-   {
-    "id": 10,
-    "category": "",
-    "title": "Banking Facility",
-    "src": "",
-    "style": "absolute top-10 right-0 ",
-    "textalign": "",
-    "mainTitle": "Banking Facility",
-    "description": {
-      "src": "",
-      "content": [
-        {
-          "description": "Canara Engineering College houses a Canara Bank branch within the campus, providing convenient and reliable banking services to students and staff. The branch is supported by a full-fledged team and is equipped with an ATM facility, ensuring easy access to essential banking services at all times."
-        },
-         {
-          "description": "The on-campus branch assists students with education loan services and extends personal loan facilities to staff, making financial processes seamless and accessible. In addition, the bank regularly engages with students and staff by sharing updates on new banking schemes, digital banking services, and the latest developments in the banking sector, promoting financial awareness and literacy within the campus community."
-        }
-      ]
-    }
   }
+   
  
 ]
+
+
+

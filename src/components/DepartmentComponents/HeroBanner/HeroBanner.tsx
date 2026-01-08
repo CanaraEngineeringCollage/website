@@ -4,17 +4,15 @@ import React from "react";
 interface HeroSectionProps {
   imageUrl: string;
   departmentName: string;
-  wdith?:string
+  wdith?: string;
 }
 
-const HeroSection: React.FC<HeroSectionProps> = ({ imageUrl, departmentName,wdith="" }) => {
+const HeroSection: React.FC<HeroSectionProps> = ({ imageUrl, departmentName, wdith = "" }) => {
   return (
-   <section className="max-w-7xl xl:max-w-[75%] rounded-4xl overflow-hidden text-black mx-auto hidden md:block">
-        {/* Top Content */}
-   
+    <section className="max-w-7xl xl:max-w-[75%] rounded-4xl overflow-hidden text-[#1D1D1F] mx-auto hidden md:block">
+      {/* Top Content */}
 
-        {/* Banner Section */}
-  
+      {/* Banner Section */}
     </section>
   );
 };

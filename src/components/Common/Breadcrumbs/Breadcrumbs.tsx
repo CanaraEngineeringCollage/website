@@ -9,7 +9,7 @@ import { HiChevronRight } from "react-icons/hi";
 interface BreadcrumbItem {
   label: string;
   href: string;
-  tab?:string
+  tab?: string;
 }
 
 interface BreadcrumbsProps {
@@ -27,7 +27,7 @@ const Breadcrumbs: FC<BreadcrumbsProps> = ({ items }) => {
   }, [items, currentPath, tab]);
 
   return (
-    <nav className="text-black text-sm py-4 flex items-center gap-1" aria-label="Breadcrumb">
+    <nav className="text-[#1D1D1F] text-sm py-4 flex items-center gap-1" aria-label="Breadcrumb">
       <Link href="/" className="flex items-center gap-1 hover:underline">
         <BiSolidHomeAlt2 className="w-4 h-4" />
         <HiChevronRight className="w-4 h-4 text-[#0000008F]" />

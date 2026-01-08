@@ -118,8 +118,8 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
           </div>
         </div>
         <div className="flex justify-end gap-2 mr-10">
-          <button 
-          aria-label="Scroll Left"
+          <button
+            aria-label="Scroll Left"
             className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
             onClick={scrollLeft}
             disabled={!canScrollLeft}
@@ -127,7 +127,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
             <IconArrowNarrowLeft className="h-6 w-6 text-gray-500" />
           </button>
           <button
-          aria-label="Scroll Right"
+            aria-label="Scroll Right"
             className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
             onClick={scrollRight}
             disabled={!canScrollRight}
@@ -198,7 +198,7 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
               >
                 <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
               </button>
-              <motion.p layoutId={layout ? `category-${card.title}` : undefined} className="text-base font-medium text-black dark:text-white">
+              <motion.p layoutId={layout ? `category-${card.title}` : undefined} className="text-base font-medium text-[#1D1D1F] dark:text-white">
                 {card.category}
               </motion.p>
               <motion.p

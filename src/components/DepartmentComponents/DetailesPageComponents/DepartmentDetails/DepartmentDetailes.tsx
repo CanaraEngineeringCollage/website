@@ -254,10 +254,10 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   ];
 
   return (
-    <section className="py-10 xl:py-36 text-black lg2:px-24 px-5 overflow-hidden">
+    <section className="py-10 xl:py-36 text-[#1D1D1F] lg2:px-24 px-5 overflow-hidden">
       <div className="">
         <h1 className="text-[#1D1D1F] text-xl lg:text-[31px] mb-2">Department of </h1>
-        <h2 className="text-[30px] lg:w-[50%]  lg:text-[54px] font-bold leading-[1.1] pb-1 lg:pb-10 text-black">{department?.name}</h2>
+        <h2 className="text-[30px] lg:w-[50%]  lg:text-[54px] font-bold leading-[1.1] pb-1 lg:pb-10 text-[#1D1D1F]">{department?.name}</h2>
         <div className={`md:grid grid-cols-1 gap-3  md:grid-cols-12 mt-10`}>
           <div className="col-span-3">
             <div className="sticky top-20 h-fit">

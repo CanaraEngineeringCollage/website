@@ -1,9 +1,8 @@
-
 import { FiArrowRight } from "react-icons/fi";
 import { FaChevronDown } from "react-icons/fa6";
 import { BsArrowLeft } from "react-icons/bs";
 import React from "react";
- export default function Button({
+export default function Button({
   variant,
   children,
   darkVariant = variant,
@@ -17,27 +16,9 @@ import React from "react";
   noPadding = false,
   ...other
 }: {
-  variant:
-    | "primary1"
-    | "primary2"
-    | "primary3"
-    | "secondary1"
-    | "secondary2"
-    | "secondary3"
-    | "tertiary1"
-    | "chevron"
-    | "back";
+  variant: "primary1" | "primary2" | "primary3" | "secondary1" | "secondary2" | "secondary3" | "tertiary1" | "chevron" | "back";
   children?: React.ReactNode;
-  darkVariant?:
-    | "primary1"
-    | "primary2"
-    | "primary3"
-    | "secondary1"
-    | "secondary2"
-    | "secondary3"
-    | "tertiary1"
-    | "chevron"
-    | "back";
+  darkVariant?: "primary1" | "primary2" | "primary3" | "secondary1" | "secondary2" | "secondary3" | "tertiary1" | "chevron" | "back";
   onClick?: () => void;
   childClassName?: string;
   disabled?: boolean;
@@ -48,7 +29,7 @@ import React from "react";
   noPadding?: boolean;
 }) {
   const [darkMode, setDarkMode] = React.useState(false);
- 
+
   return (
     <button
       type={type}
@@ -68,7 +49,7 @@ import React from "react";
 
       {darkVariant === "secondary1" && hoverIcon && (
         <FiArrowRight
-          className={`${childClassName} secondary2-arrow group-hover/item:text-primary text-black group-disabled/item:text-[#D9D9D9] `}
+          className={`${childClassName} secondary2-arrow group-hover/item:text-primary text-[#1D1D1F] group-disabled/item:text-[#D9D9D9] `}
         />
       )}
 
@@ -86,7 +67,7 @@ import React from "react";
         >
           <BsArrowLeft
             size={50}
-            className={`${childClassName}  text-black   transition-colors ease-in-out duration-300 group-hover/child:text-[#A61140] group-active/child:text-[#A61140] group-focus/child:text-primary   ${
+            className={`${childClassName}  text-[#1D1D1F]   transition-colors ease-in-out duration-300 group-hover/child:text-[#A61140] group-active/child:text-[#A61140] group-focus/child:text-primary   ${
               disabled && "text-[#D9D9D9]"
             } `}
           />

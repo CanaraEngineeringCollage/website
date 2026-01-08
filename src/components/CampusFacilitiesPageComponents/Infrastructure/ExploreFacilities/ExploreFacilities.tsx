@@ -76,7 +76,7 @@ function CardContent({ description }: { description: DescriptionProps }) {
         height={700}
         className="object-cover overflow-hidden rounded-t-2xl w-full lg:h-[700px] h-[400px] mb-10"
       />
-      <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
+      <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-[#1D1D1F] bg-white">
         <div>
           <h3 className="text-[31px] lg:text-[46px] leading-[1.1] lg:max-w-[70%] mb-5 font-bold">{description.topTitle}</h3>
           <p className="text-xl text-textGray">{description.description}</p>

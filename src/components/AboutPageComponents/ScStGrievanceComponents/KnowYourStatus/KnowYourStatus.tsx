@@ -27,7 +27,7 @@ export default function KnowYourStatus() {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-white  text-black shadow-md rounded-lg">
+    <div className="max-w-md mx-auto p-6 bg-white  text-[#1D1D1F] shadow-md rounded-lg">
       <h2 className="text-2xl font-bold mb-4 text-center">Know Your Grievance Status</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>

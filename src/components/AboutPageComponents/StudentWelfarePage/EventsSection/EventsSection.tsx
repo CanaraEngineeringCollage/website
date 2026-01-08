@@ -48,20 +48,14 @@ const EventsSection = () => {
 
   const fetchEvents = async () => {
     try {
-      const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/events?category=${encodeURIComponent(
-          "Student Welfare Department"
-        )}&all=true`
-      );
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/events?category=${encodeURIComponent("Student Welfare Department")}&all=true`);
       if (!res.ok) throw new Error("Failed to fetch events");
 
       const data = await res.json();
       const eventsList: CampusEvent[] = data?.data || [];
 
       // Sort by date descending
-      const sorted = eventsList.sort(
-        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-      );
+      const sorted = eventsList.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
       setEvents(sorted);
       setIsLoaded(true);
@@ -142,10 +136,7 @@ const EventsSection = () => {
             const imageSrc = bufferToBase64(event.image);
             return (
               <SwiperSlide key={event.id}>
-                <div
-                  className="max-w-sm  bg-white  min-h-[450px] rounded-3xl overflow-hidden cursor-pointer"
-                  onClick={() => openModal(event)}
-                >
+                <div className="max-w-sm  bg-white  min-h-[450px] rounded-3xl overflow-hidden cursor-pointer" onClick={() => openModal(event)}>
                   <div className="h-60 overflow-hidden">
                     <Image
                       width={400}
@@ -165,9 +156,7 @@ const EventsSection = () => {
                         })}
                       </p>
                     </div>
-                    <h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">
-                      {event.title}
-                    </h3>
+                    <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{event.title}</h3>
                     <button className="text-[#2997FF] inline-flex text-[17px] items-center hover:underline font-medium text-sm">
                       Read More <MdKeyboardArrowRight className="ml-1" />
                     </button>
@@ -240,12 +229,8 @@ const EventsSection = () => {
               />
 
               <div className="p-6 sm:p-10 max-h-[70vh] overflow-y-auto">
-                <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-[#1D1D1F]">
-                  {selectedEvent.title}
-                </h2>
-                <p className="text-textGray mb-4">
-                  {new Date(selectedEvent.date).toLocaleDateString("en-GB")}
-                </p>
+                <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-[#1D1D1F]">{selectedEvent.title}</h2>
+                <p className="text-textGray mb-4">{new Date(selectedEvent.date).toLocaleDateString("en-GB")}</p>
                 <p className="text-textGray leading-relaxed text-justify">{selectedEvent.description}</p>
               </div>
             </motion.div>

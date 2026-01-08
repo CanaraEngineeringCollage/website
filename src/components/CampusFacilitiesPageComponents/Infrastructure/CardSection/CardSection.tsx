@@ -46,7 +46,7 @@ export default function CardSection() {
   ));
 
   return (
-    <div className="w-full h-full md:py-5 py-2 text-black">
+    <div className="w-full h-full md:py-5 py-2 text-[#1D1D1F]">
       <Carousel items={cards} />
     </div>
   );

@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const AboutHistoryCanara = () => {
   return (
-    <div className="w-full max-w-7xl mx-auto  lg:px-18 xl:px-16 pb-16 lg:pt-5 text-black">
+    <div className="w-full max-w-7xl mx-auto  lg:px-18 xl:px-16 pb-16 lg:pt-5 text-[#1D1D1F]">
       {/* Sub Heading */}
       <h4 className="text-xl md:text-3xl text-textGray py-5 xl:pt-12">
         History of Canara Engineering College

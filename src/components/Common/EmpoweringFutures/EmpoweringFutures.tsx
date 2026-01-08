@@ -15,7 +15,7 @@ const stats: Stat[] = [
   {
     component: (
       <div className="bg-[#F5F5F7] rounded-xl px-6 shadow h-[350px]">
-        <h4 className="text-2xl text-black font-semibold mb-4 text-left pt-4">Among the Highest in the Region in terms of Placements</h4>
+        <h4 className="text-2xl text-[#1D1D1F] font-semibold mb-4 text-left pt-4">Among the Highest in the Region in terms of Placements</h4>
         <div className="flex items-end justify-between  h-48 w-full">
           {[
             { year: "2021-22", value: 87 },
@@ -99,7 +99,7 @@ export default function EmpoweringFutures() {
 
   return (
     <>
-      <section className="max-w-5xl xl:max-w-[75%]  overflow-hidden text-black mx-auto hidden md:block">
+      <section className="max-w-5xl xl:max-w-[75%]  overflow-hidden text-[#1D1D1F] mx-auto hidden md:block">
         {/* Top Content */}
         <div className="flex justify-between items-start  mx-auto pb-16">
           <div>
@@ -212,7 +212,7 @@ export default function EmpoweringFutures() {
       </section>
       <section className="w-full md:hidden block px-1 py-14">
         {/* Mobile View */}
-        <h1 className="text-3xl text-center text-black font-bold pb-4">Empowering Futures</h1>
+        <h1 className="text-3xl text-center text-[#1D1D1F] font-bold pb-4">Empowering Futures</h1>
         <p className="text-center text-textGray font-medium pb-16 text-[14px] md:text-[23.25px]">
           Discover exceptional placement opportunities and industry connections that pave the way for success at Canara Engineering College.{" "}
         </p>
@@ -231,13 +231,11 @@ export default function EmpoweringFutures() {
           <CarouselDots total={stats.length} active={activeIndex} onDotClick={setActiveIndex} className="mt-6" />
         </div>
 
-       <Link href="/training-placements"> <button
-        
-          aria-label="Learn More"
-          className="bg-primary text-white font-medium px-6 py-2 rounded-full mt-10 md:mt-0 w-full"
-        >
-          Learn More
-        </button>
+        <Link href="/training-placements">
+          {" "}
+          <button aria-label="Learn More" className="bg-primary text-white font-medium px-6 py-2 rounded-full mt-10 md:mt-0 w-full">
+            Learn More
+          </button>
         </Link>
       </section>
     </>

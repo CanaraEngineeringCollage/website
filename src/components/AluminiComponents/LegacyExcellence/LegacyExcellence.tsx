@@ -13,7 +13,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-
 // Types
 interface Amenity {
   imageSrc: string;
@@ -53,13 +52,8 @@ function CardContent({ description }: { description: Amenity }) {
   return (
     <div>
       {isVideo ? (
-  <video
-    src={description.imageSrc2}
-    controls
-    playsInline
-    className="object-contain rounded-t-2xl w-full lg:h-[500px] h-[400px] mb-10"
-  />
-)  : (
+        <video src={description.imageSrc2} controls playsInline className="object-contain rounded-t-2xl w-full lg:h-[500px] h-[400px] mb-10" />
+      ) : (
         <Image
           src={description.imageSrc2}
           alt="Image"
@@ -70,7 +64,7 @@ function CardContent({ description }: { description: Amenity }) {
         />
       )}
       {description.title && (
-        <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
+        <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-[#1D1D1F] bg-white">
           <div>
             <h3 className="text-[28px] lg:text-[36px] leading-[1.1] lg:max-w-[100%] mb-5 font-bold">{description.title}</h3>
             <p className="text-xl text-textGray">{description.description}</p>
@@ -109,14 +103,14 @@ export default function LegacyExcellance() {
   // Helper to convert buffer to base64 safely
   const bufferToBase64 = (buffer: number[]): string => {
     if (!buffer || buffer.length === 0) return "";
-    
+
     // Process in chunks to avoid stack overflow with String.fromCharCode(...buffer)
     const CHUNK_SIZE = 8192;
     let binary = "";
     for (let i = 0; i < buffer.length; i += CHUNK_SIZE) {
       binary += String.fromCharCode.apply(null, buffer.slice(i, i + CHUNK_SIZE));
     }
-    
+
     return `data:image/png;base64,${btoa(binary)}`;
   };
 
@@ -126,11 +120,11 @@ export default function LegacyExcellance() {
       try {
         const response = await fetch("https://apiserver.cec.edu.in/events?page=1&limit=4&category=Alumni");
         const json = await response.json();
-        
+
         const mappedEvents: Amenity[] = json.data.map((event: ApiEvent) => {
           const isVideo = !!event.videoUrl;
-          const imageSrc = isVideo ? event.videoUrl! : (event.image ? bufferToBase64(event.image.data) : "");
-          
+          const imageSrc = isVideo ? event.videoUrl! : event.image ? bufferToBase64(event.image.data) : "";
+
           return {
             imageSrc: imageSrc,
             imageSrc2: imageSrc,
@@ -254,32 +248,16 @@ export default function LegacyExcellance() {
               className="relative cursor-pointer h-[200px] lg:h-[500px] rounded-3xl overflow-hidden"
             >
               {isVideo ? (
-                <video
-                  src={item.imageSrc}
-                  muted
-                  loop
-                  autoPlay
-                  playsInline
-                  preload="metadata"
-                  className="w-full h-full object-cover rounded-3xl"
-                />
+                <video src={item.imageSrc} muted loop autoPlay playsInline preload="metadata" className="w-full h-full object-cover rounded-3xl" />
               ) : (
-                <Image
-                  src={item.imageSrc}
-                  alt={item.title}
-                  width={700}
-                  height={700}
-                  className="w-full h-full object-cover rounded-3xl"
-                />
+                <Image src={item.imageSrc} alt={item.title} width={700} height={700} className="w-full h-full object-cover rounded-3xl" />
               )}
 
               {/* Text Overlay */}
               <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-10">
                 {/* FLEX ROW */}
                 <div className="flex items-center justify-between ">
-                  <h2 className="text-white text-lg leading-[1.2] lg:text-[30px] line-clamp-1 font-bold">
-                    {item.title}
-                  </h2>
+                  <h2 className="text-white text-lg leading-[1.2] lg:text-[30px] line-clamp-1 font-bold">{item.title}</h2>
 
                   <button
                     aria-label="Learn More"
@@ -323,13 +301,8 @@ export default function LegacyExcellance() {
               </motion.div>
               <motion.div variants={contentVariants} className="p-4 lg:px-20 mt-4">
                 <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">Next Up</h1>
-                <h1
-                  onClick={goToNextCard}
-                  className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]"
-                >
-                  <span className="line-clamp-1 ">
-                    {events[(currentIndex + 1) % events.length]?.title || "Next"}
-                  </span>
+                <h1 onClick={goToNextCard} className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]">
+                  <span className="line-clamp-1 ">{events[(currentIndex + 1) % events.length]?.title || "Next"}</span>
 
                   <MdKeyboardArrowRight className="ml-1 mt-0.5 text-[20px] md:text-[25px]" />
                 </h1>

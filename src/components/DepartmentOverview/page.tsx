@@ -38,10 +38,10 @@ const DepartmentOverview = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
 
   return (
-    <section className="py-10 xl:py-36 text-black bg-white">
+    <section className="py-10 xl:py-36 text-[#1D1D1F] bg-white">
       <div className="max-w-screen-xl mx-auto px-4 xl:px-0">
-        <h1 className="text-[20px] lg:text-[34px]  text-black">Department of</h1>
-        <h1 className="text-[30px] lg:text-[54px] font-bold pb-32 text-black">Computer Science & Engineering</h1>
+        <h1 className="text-[20px] lg:text-[34px]  text-[#1D1D1F]">Department of</h1>
+        <h1 className="text-[30px] lg:text-[54px] font-bold pb-32 text-[#1D1D1F]">Computer Science & Engineering</h1>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           {/* Sidebar Menu */}
           <aside className="md:col-span-4 border-r border-gray-300 pr-4">
@@ -64,12 +64,12 @@ const DepartmentOverview = () => {
           {/* Main Content */}
           <main className="md:col-span-8 space-y-10">
             <section>
-              <h2 className="text-2xl font-bold text-black mb-2">Vision</h2>
+              <h2 className="text-2xl font-bold text-[#1D1D1F] mb-2">Vision</h2>
               <p className="text-[17px] text-gray-700 leading-relaxed">{content.vision}</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-black mb-2">Mission</h2>
+              <h2 className="text-2xl font-bold text-[#1D1D1F] mb-2">Mission</h2>
               <ul className="list-disc list-inside space-y-2 text-[17px] text-gray-700">
                 {content.mission.map((point, i) => (
                   <li key={i}>{point}</li>
@@ -78,10 +78,8 @@ const DepartmentOverview = () => {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-black mb-2">Department Profile</h2>
-              <p className="text-[17px] text-gray-700 whitespace-pre-line leading-relaxed">
-                {content.departmentProfile}
-              </p>
+              <h2 className="text-2xl font-bold text-[#1D1D1F] mb-2">Department Profile</h2>
+              <p className="text-[17px] text-gray-700 whitespace-pre-line leading-relaxed">{content.departmentProfile}</p>
             </section>
           </main>
         </div>

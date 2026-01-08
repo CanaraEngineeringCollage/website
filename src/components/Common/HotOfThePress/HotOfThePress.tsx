@@ -77,7 +77,8 @@ const parseEventContent = (html: string) => {
   const src = firstImageEl?.getAttribute("src") || "";
   if (firstImageEl) firstImageEl.remove();
 
-  let remainingHTML = root.toString()
+  let remainingHTML = root
+    .toString()
     .replace(/\n|\r/g, "")
     .replace(/>\s+</g, "><")
     .replace(/<[^/>]+>\s*<\/[^>]+>/g, "")
@@ -99,10 +100,10 @@ function EventContent({ description }: { description: EventDescriptionProps }) {
           className="object-cover overflow-hidden rounded-t-2xl w-full  mb-10"
         />
       )}
-      <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
+      <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-[#1D1D1F] bg-white">
         <div>
-       {   <p className="text-[17px] text-textGray uppercase font-bold mb-2">{description.date}</p>}
-          <h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">{description.topTitle}</h3>
+          {<p className="text-[17px] text-textGray uppercase font-bold mb-2">{description.date}</p>}
+          <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{description.topTitle}</h3>
           <p className="text-xl text-textGray">{description.topDescription}</p>
         </div>
         <div className="bg-white -mt-10" dangerouslySetInnerHTML={{ __html: description.remainingHTML }} />
@@ -119,32 +120,32 @@ const HotOfThePressCarousel = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isLoaded, setIsLoaded] = useState(false);
 
-const fetchEvents = async () => {
-  try {
-   const params = new URLSearchParams({
-  page: '1',
-  limit: '15',
-  excludeCategory: 'Student Achievements'
-});
-const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz?${params.toString()}`);
-    if (!res.ok) throw new Error("Failed to fetch buzz");
+  const fetchEvents = async () => {
+    try {
+      const params = new URLSearchParams({
+        page: "1",
+        limit: "15",
+        excludeCategory: "Student Achievements",
+      });
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz?${params.toString()}`);
+      if (!res.ok) throw new Error("Failed to fetch buzz");
 
-    const response = await res.json();
+      const response = await res.json();
 
-    setEvents(response.data); // <-- CORRECT
-    setIsLoaded(true);
-  } catch (err) {
-    console.error(err);
-    setIsLoaded(true);
-  }
-};
+      setEvents(response.data); // <-- CORRECT
+      setIsLoaded(true);
+    } catch (err) {
+      console.error(err);
+      setIsLoaded(true);
+    }
+  };
 
   useEffect(() => {
     fetchEvents();
   }, []);
 
   // Sort by date descending
-  const sortedEvents = events
+  const sortedEvents = events;
 
   const openCard = (index: number) => {
     setCurrentIndex(index);
@@ -167,9 +168,8 @@ const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz?${params.toStri
     date: event.eventDate ? new Date(event.eventDate).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }) : null,
   });
 
-
-  if(events.length === 0){
-    return null
+  if (events.length === 0) {
+    return null;
   }
 
   return (
@@ -179,107 +179,118 @@ const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz?${params.toStri
           Campus Buzz
         </h1>
 
-         <div className="hidden md:block">
+        <div className="hidden md:block">
           <Link href="/campus-buzz">
-          <button
-            aria-label="Explore More Campus Buzz"
-            className="text-black cursor-pointer font-semibold font-sans bg-[#c3d5ed] px-5 py-2 rounded-3xl lg:mr-12"
-          >
-            Explore More Campus Buzz
-          </button>
+            <button
+              aria-label="Explore More Campus Buzz"
+              className="text-[#1D1D1F] cursor-pointer font-semibold font-sans bg-[#c3d5ed] hover:bg-blue-200 px-5 py-2 rounded-3xl lg:mr-12"
+            >
+              Explore More Campus Buzz
+            </button>
           </Link>
         </div>
       </div>
 
-       {isLoaded && events.length > 0 ? (<Swiper
-        modules={[Autoplay, Navigation]}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        spaceBetween={20}
-        slidesPerView={1}
-        loop={true}
-        navigation={{
-          nextEl: ".swiper-button-next-custom",
-          prevEl: ".swiper-button-prev-custom",
-        }}
-        breakpoints={{
-          640: { slidesPerView: 1, spaceBetween: 20 },
-          768: { slidesPerView: 2, spaceBetween: 20 },
-          1024: { slidesPerView: 3.5, spaceBetween: 20 },
-          1580: { slidesPerView: 3.8, spaceBetween: 1 },
-        }}
-        className="mySwiper"
-        onSwiper={(swiper) => { swiperRef.current = swiper; }}
-      >
-        {sortedEvents.map((event, index) => {
-          const { src, topTitle, topDescription } = parseEventContent(event.content);
-          return (
-            <SwiperSlide key={event.id}>
-             <div className="max-w-sm  bg-white min-h-[450px] cursor-pointer rounded-xl lg:rounded-3xl overflow-hidden "
-                onClick={() => openCard(index)}
-              >
-                <div className="h-60 overflow-hidden">
-                  <Image
-                    width={200}
-                    height={200}
-                    src={src}
-                    alt={topTitle || event.category}
-                    className="w-full h-full object-cover"
-                  />
+      {isLoaded && events.length > 0 ? (
+        <Swiper
+          modules={[Autoplay, Navigation]}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          spaceBetween={20}
+          slidesPerView={1}
+          loop={true}
+          navigation={{
+            nextEl: ".swiper-button-next-custom",
+            prevEl: ".swiper-button-prev-custom",
+          }}
+          breakpoints={{
+            640: { slidesPerView: 1, spaceBetween: 20 },
+            768: { slidesPerView: 2, spaceBetween: 20 },
+            1024: { slidesPerView: 3.5, spaceBetween: 20 },
+            1580: { slidesPerView: 3.8, spaceBetween: 1 },
+          }}
+          className="mySwiper"
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+          }}
+        >
+          {sortedEvents.map((event, index) => {
+            const { src, topTitle, topDescription } = parseEventContent(event.content);
+            return (
+              <SwiperSlide key={event.id}>
+                <div
+                  className="max-w-sm  bg-white min-h-[450px] cursor-pointer rounded-xl lg:rounded-3xl overflow-hidden "
+                  onClick={() => openCard(index)}
+                >
+                  <div className="h-60 overflow-hidden">
+                    <Image width={200} height={200} src={src} alt={topTitle || event.category} className="w-full h-full object-cover" />
+                  </div>
+                  <div className="p-8 text-center">
+                    <div className="flex justify-center items-center space-x-3">
+                      <p className="text-textGray text-[17px] mb-1 line-clamp-1 capitalize">{event.eventName?.toLowerCase()}</p>
+
+                      {/* Vertical divider */}
+                      {event.eventDate && <div className="h-5 w-[1px] bg-textGray"></div>}
+
+                      {event.eventDate && (
+                        <p className="text-textGray text-[17px] mb-1">
+                          {new Date(event.eventDate).toLocaleDateString("en-GB", {
+                            day: "numeric",
+                            month: "short",
+                            year: "numeric",
+                          })}
+                        </p>
+                      )}
+                    </div>
+
+                    {/* <p className="text-textGray text-[17px] mb-1">{event.category}</p> */}
+                    {topTitle ? (
+                      <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{topTitle}</h3>
+                    ) : topDescription ? (
+                      <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{topDescription}</h3>
+                    ) : (
+                      <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{event.category}</h3>
+                    )}
+                    <button className="text-primary inline-flex text-[17px] items-center hover:underline font-medium text-sm">
+                      Read More <MdKeyboardArrowRight className="ml-1" />
+                    </button>
+                  </div>
                 </div>
-                <div className="p-8 text-center">
-            <div className="flex justify-center items-center space-x-3">
-  <p className="text-textGray text-[17px] mb-1 line-clamp-1 capitalize">{event.eventName?.toLowerCase()}</p>
-
-  {/* Vertical divider */}
-  {event.eventDate&& <div className="h-5 w-[1px] bg-textGray"></div>}
-
- {event.eventDate&& <p className="text-textGray text-[17px] mb-1">
-    {new Date(event.eventDate).toLocaleDateString("en-GB", {
-      day: "numeric",
-      month: "short",
-      year: "numeric",
-    })}
-  </p>}
-</div>
-
-                  {/* <p className="text-textGray text-[17px] mb-1">{event.category}</p> */}
-                  {topTitle?<h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">{topTitle}</h3>: topDescription?<h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">{topDescription}</h3>: <h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">{event.category}</h3>}
-                  <button className="text-primary inline-flex text-[17px] items-center hover:underline font-medium text-sm">
-                    Read More <MdKeyboardArrowRight className="ml-1" />
-                  </button>
-                </div>
-              </div>
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       ) : (
         <div className="text-center py-10 text-textGray">No events to display.</div>
       )}
 
       {/* Swiper Navigation */}
-       <div className="flex justify-center lg:justify-end md:pb-0 pb-10">
-      
-          <div className="flex lg:mr-22  gap-6 lg:mt-20 mt-10">
-            <button
-              aria-label="Previous Slide"
-              className="swiper-button-prev-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-[#D2D2D7A3] flex items-center justify-center disabled:opacity-50"
-            >
-              <MdKeyboardArrowLeft />
-            </button>
-            <button
-              aria-label="Next Slide"
-              className="swiper-button-next-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-[#D2D2D7A3] flex items-center justify-center disabled:opacity-50"
-            >
-              <MdKeyboardArrowRight />
-            </button>
+      <div className="flex justify-center lg:justify-end md:pb-0 pb-10">
+        <div className="flex lg:mr-22  gap-6 lg:mt-20 mt-10">
+          <button
+            aria-label="Previous Slide"
+            className="swiper-button-prev-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-[#D2D2D7A3] flex items-center justify-center disabled:opacity-50"
+          >
+            <MdKeyboardArrowLeft />
+          </button>
+          <button
+            aria-label="Next Slide"
+            className="swiper-button-next-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-[#D2D2D7A3] flex items-center justify-center disabled:opacity-50"
+          >
+            <MdKeyboardArrowRight />
+          </button>
         </div>
       </div>
 
-        <div className="md:hidden  lg:mt-5 flex justify-center ">
-       <Link href="/campus-buzz"> <button aria-label="Explore More Campus Buzz" className="text-black mx-auto cursor-pointer font-bold bg-[#c3d5ed] px-5 py-2 rounded-3xl">
-          Explore More Campus Buzz
-        </button></Link>
+      <div className="md:hidden  lg:mt-5 flex justify-center ">
+        <Link href="/campus-buzz">
+          {" "}
+          <button
+            aria-label="Explore More Campus Buzz"
+            className="text-[#1D1D1F] mx-auto cursor-pointer font-bold bg-[#c3d5ed] px-5 py-2 rounded-3xl"
+          >
+            Explore More Campus Buzz
+          </button>
+        </Link>
       </div>
 
       {/* Modal */}

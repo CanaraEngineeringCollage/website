@@ -84,7 +84,7 @@ const contentVariants = {
 
 const parseEventContent = (html: string) => {
   if (!html) return { src: "", topTitle: "", topDescription: "", remainingHTML: "" };
-  
+
   const root = parse(html);
   const firstHeadingEl = root.querySelector("h1,h2,h3,h4,h5,h6");
   const topTitle = firstHeadingEl?.text?.trim() || "";
@@ -119,32 +119,19 @@ function EventContent({ description }: { description: EventDescriptionProps }) {
           className="object-cover overflow-hidden rounded-t-2xl w-full h-full mb-10"
         />
       )}
-      <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
+      <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-[#1D1D1F] bg-white">
         <div>
           {description.date && (
-            <p className="text-[17px] text-textGray uppercase font-bold ">
-              {new Date(description.date).toLocaleDateString("en-GB")}
-            </p>
+            <p className="text-[17px] text-textGray uppercase font-bold ">{new Date(description.date).toLocaleDateString("en-GB")}</p>
           )}
-          {description.topTitle && (
-            <h3 className="text-[27px] font-semibold font-sans text-black my-3 line-clamp-2">
-              {description.topTitle}
-            </h3>
-          )}
-          {description.topDescription && (
-            <p className="text-xl text-textGray">{description.topDescription}</p>
-          )}
+          {description.topTitle && <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] my-3 line-clamp-2">{description.topTitle}</h3>}
+          {description.topDescription && <p className="text-xl text-textGray">{description.topDescription}</p>}
         </div>
         {description.remainingHTML && (
           <div
-            className={`bg-white ${
-              description.topDescription &&
-              description.topTitle &&
-              description.src &&
-              "-mt-20"
-            } ${description.topDescription && "-mt-10"} ${
-              description.topTitle && "-mt-10"
-            }`}
+            className={`bg-white ${description.topDescription && description.topTitle && description.src && "-mt-20"} ${
+              description.topDescription && "-mt-10"
+            } ${description.topTitle && "-mt-10"}`}
             dangerouslySetInnerHTML={{ __html: description.remainingHTML }}
           />
         )}{" "}
@@ -155,11 +142,7 @@ function EventContent({ description }: { description: EventDescriptionProps }) {
 
 // --- Main Component ---
 
-const ExploreCampus: React.FC<ExploreCampusProps> = ({
-  campusEvents: initialEvents = [],
-  title,
-  description,
-}) => {
+const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEvents = [], title, description }) => {
   // State
   const [campusEvents, setCampusEvents] = useState<CampusEvent[]>([]);
 
@@ -178,9 +161,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({
   const fetchAchievements = async (pageNum: number) => {
     setLoading(true);
     try {
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/buzz/student-achievements?page=${pageNum}&limit=${LIMIT}`
-      );
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz/student-achievements?page=${pageNum}&limit=${LIMIT}`);
       if (!response.ok) {
         throw new Error("Failed to fetch student achievements");
       }
@@ -236,15 +217,11 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({
 
   const closeCard = () => setIsOpen(false);
 
-  const goToNextCard = () =>
-    setCurrentIndex((prev) =>
-      eventsToShow.length ? (prev + 1) % eventsToShow.length : 0
-    );
+  const goToNextCard = () => setCurrentIndex((prev) => (eventsToShow.length ? (prev + 1) % eventsToShow.length : 0));
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "auto";
-    const handleKeyDown = (event: KeyboardEvent) =>
-      event.key === "Escape" && isOpen && closeCard();
+    const handleKeyDown = (event: KeyboardEvent) => event.key === "Escape" && isOpen && closeCard();
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isOpen]);
@@ -270,76 +247,52 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({
     >
       <section className="max-w-7xl xl:max-w-[75%] mx-auto text-[#1D1D1F] py-16">
         <div className="text-center mb-10 lg:px-32">
-          <h1 className="text-center md:leading-[1.1] text-3xl md:text-[46px] mb-5 font-bold">
-            Student Achievements
-          </h1>
+          <h1 className="text-center md:leading-[1.1] text-3xl md:text-[46px] mb-5 font-bold">Student Achievements</h1>
         </div>
 
         {/* Event Cards */}
         <div className="flex flex-col gap-8">
-          {eventsToShow.length > 0 ? (
-            eventsToShow.map((event, index) => {
-              const { src, topTitle, topDescription } = parseEventContent(
-                event.content
-              );
-              return (
-                <div
-                  key={event.id}
-                  onClick={() => openCard(index)}
-                  className="flex cursor-pointer flex-col md:flex-row items-center gap-6 bg-white rounded-2xl shadow-md"
-                >
-                  <div className="flex-shrink-0 w-full md:w-[40%]">
-                    <Image
-                      src={src || "/placeholder-image.jpg"}
-                      alt={topTitle || event.category}
-                      width={1000}
-                      height={1000}
-                      className="rounded-l-2xl object-cover w-full h-[40vh] md:h-[30vh] lg2:h-[50vh]"
-                    />
+          {eventsToShow.length > 0
+            ? eventsToShow.map((event, index) => {
+                const { src, topTitle, topDescription } = parseEventContent(event.content);
+                return (
+                  <div
+                    key={event.id}
+                    onClick={() => openCard(index)}
+                    className="flex cursor-pointer flex-col md:flex-row items-center gap-6 bg-white rounded-2xl shadow-md"
+                  >
+                    <div className="flex-shrink-0 w-full md:w-[40%]">
+                      <Image
+                        src={src || "/placeholder-image.jpg"}
+                        alt={topTitle || event.category}
+                        width={1000}
+                        height={1000}
+                        className="rounded-l-2xl object-cover w-full h-[40vh] md:h-[30vh] lg2:h-[50vh]"
+                      />
+                    </div>
+                    <div className="flex flex-col justify-center w-full md:w-1/2 p-6 lg:p-10">
+                      {event.eventDate && (
+                        <p className="text-[17px] text-textGray uppercase font-bold mb-4">{new Date(event.eventDate).toLocaleDateString("en-GB")}</p>
+                      )}
+                      {event.eventName && <p className="text-textGray font-bold text-[17px] mb-3">{event.eventName}</p>}
+                      {topTitle && <h2 className="text-[31px] leading-[1.1] font-bold text-[#1D1D1F] mb-2">{topTitle}</h2>}
+                      {topDescription && <p className="text-textGray leading-[1.3] line-clamp-3 text-[21px] mb-4">{topDescription}</p>}
+                      <motion.button
+                        onClick={() => openCard(index)}
+                        className="text-primary inline-flex text-[21px] items-center font-medium text-sm"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        Read More <MdKeyboardArrowRight className="ml-1" />
+                      </motion.button>
+                    </div>
                   </div>
-                  <div className="flex flex-col justify-center w-full md:w-1/2 p-6 lg:p-10">
-                    {event.eventDate && (
-                      <p className="text-[17px] text-textGray uppercase font-bold mb-4">
-                        {new Date(event.eventDate).toLocaleDateString("en-GB")}
-                      </p>
-                    )}
-                    {event.eventName && (
-                      <p className="text-textGray font-bold text-[17px] mb-3">
-                        {event.eventName}
-                      </p>
-                    )}
-                    {topTitle && (
-                      <h2 className="text-[31px] leading-[1.1] font-bold text-[#1D1D1F] mb-2">
-                        {topTitle}
-                      </h2>
-                    )}
-                    {topDescription && (
-                      <p className="text-textGray leading-[1.3] line-clamp-3 text-[21px] mb-4">
-                        {topDescription}
-                      </p>
-                    )}
-                    <motion.button
-                      onClick={() => openCard(index)}
-                      className="text-primary inline-flex text-[21px] items-center font-medium text-sm"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      Read More <MdKeyboardArrowRight className="ml-1" />
-                    </motion.button>
-                  </div>
-                </div>
-              );
-            })
-          ) : (
-            // Only show empty state if not loading. 
-            // If loading is true on initial fetch, the loader below handles it.
-            !loading && (
-                <p className="text-center text-textGray text-[18px] py-10">
-                  No Student Achievements found.
-                </p>
-            )
-          )}
-          
+                );
+              })
+            : // Only show empty state if not loading.
+              // If loading is true on initial fetch, the loader below handles it.
+              !loading && <p className="text-center text-textGray text-[18px] py-10">No Student Achievements found.</p>}
+
           {/* Loading Indicator - Shows on Initial Load OR Load More */}
           {loading && <p className="text-center py-5">Loading...</p>}
         </div>
@@ -348,7 +301,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({
         {!loading && hasMore && eventsToShow.length > 0 && (
           <div className="flex justify-center mt-10">
             <button
-              className="bg-[#eff1f6] text-black px-5 py-2 cursor-pointer rounded-3xl hover:bg-gray-200 transition-colors"
+              className="bg-[#eff1f6] text-[#1D1D1F] px-5 py-2 cursor-pointer rounded-3xl hover:bg-gray-200 transition-colors"
               onClick={handleLoadMore}
             >
               Explore More Student Achievements
@@ -359,17 +312,8 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({
         {/* Modal */}
         <AnimatePresence>
           {isOpen && eventsToShow.length > 0 && (
-            <motion.div
-              className="fixed inset-0 h-screen z-50 overflow-auto"
-              initial="hidden"
-              animate="visible"
-              exit="exit"
-            >
-              <motion.div
-                variants={backdropVariants}
-                className="bg-black/80 backdrop-blur-lg h-full w-full fixed inset-0"
-                onClick={closeCard}
-              />
+            <motion.div className="fixed inset-0 h-screen z-50 overflow-auto" initial="hidden" animate="visible" exit="exit">
+              <motion.div variants={backdropVariants} className="bg-black/80 backdrop-blur-lg h-full w-full fixed inset-0" onClick={closeCard} />
               <motion.div
                 variants={cardVariants}
                 ref={containerRef}
@@ -385,27 +329,14 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({
                   <IconX className="h-6 w-6 text-white" />
                 </motion.button>
                 <motion.div variants={contentVariants} className="!overflow-hidden">
-                  <EventContent
-                    description={getEventDescription(
-                      eventsToShow[currentIndex]
-                    )}
-                  />
+                  <EventContent description={getEventDescription(eventsToShow[currentIndex])} />
                 </motion.div>
                 <motion.div variants={contentVariants} className="p-4 lg:px-20 ">
                   <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">
-                    {parseEventContent(
-                      eventsToShow[(currentIndex + 1) % eventsToShow.length]
-                        .content
-                    ).topTitle && "Next Event"}
+                    {parseEventContent(eventsToShow[(currentIndex + 1) % eventsToShow.length].content).topTitle && "Next Event"}
                   </h1>
-                  <h1
-                    onClick={goToNextCard}
-                    className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]"
-                  >
-                    {parseEventContent(
-                      eventsToShow[(currentIndex + 1) % eventsToShow.length]
-                        .content
-                    ).topTitle || "Next Event"}
+                  <h1 onClick={goToNextCard} className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]">
+                    {parseEventContent(eventsToShow[(currentIndex + 1) % eventsToShow.length].content).topTitle || "Next Event"}
                     <MdKeyboardArrowRight className="ml-1 mt-0.5  text-[20px] md:text-[25px]" />
                   </h1>
                 </motion.div>

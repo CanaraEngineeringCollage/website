@@ -1,5 +1,15 @@
 "use client";
-import React, { useEffect, useRef, useState, createContext, useContext, HTMLAttributes, ButtonHTMLAttributes, RefAttributes, useCallback } from "react";
+import React, {
+  useEffect,
+  useRef,
+  useState,
+  createContext,
+  useContext,
+  HTMLAttributes,
+  ButtonHTMLAttributes,
+  RefAttributes,
+  useCallback,
+} from "react";
 import { IconX } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion, MotionProps } from "framer-motion";
@@ -127,7 +137,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
         </div>
         <div className="flex justify-end gap-2 mr-10">
           <button
-          aria-label="Scroll Left"
+            aria-label="Scroll Left"
             className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
             onClick={scrollLeft}
             disabled={!canScrollLeft}
@@ -141,7 +151,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
             </svg>
           </button>
           <button
-          aria-label="Scroll Right"
+            aria-label="Scroll Right"
             className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
             onClick={scrollRight}
             disabled={!canScrollRight}
@@ -269,13 +279,17 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
               >
                 <IconX className="h-6 w-6 text-white" />
               </MotionButton>
-              <MotionP variants={contentVariants} layoutId={layout ? `category-${card.title}` : undefined} className="text-lg font-medium text-black">
+              <MotionP
+                variants={contentVariants}
+                layoutId={layout ? `category-${card.title}` : undefined}
+                className="text-lg font-medium text-[#1D1D1F]"
+              >
                 {card.category}
               </MotionP>
               <MotionP
                 variants={contentVariants}
                 layoutId={layout ? `title-${card.title}` : undefined}
-                className="text-2xl md:text-5xl font-semibold text-black mt-4"
+                className="text-2xl md:text-5xl font-semibold text-[#1D1D1F] mt-4"
               >
                 {card.title}
               </MotionP>
@@ -310,10 +324,12 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
         </div>
         <BlurImage src={card.src} alt={card.title} fill className="object-cover absolute z-10 inset-0" />
         <div className="absolute bottom-4 right-4 z-40">
-        <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18.25 0C28.1911 0 36.25 8.05887 36.25 18C36.25 27.9411 28.1911 36 18.25 36C8.30887 36 0.25 27.9411 0.25 18C0.25 8.05887 8.30887 0 18.25 0ZM18.25 10.125C17.892 10.125 17.5481 10.2673 17.2949 10.5205C17.042 10.7736 16.9005 11.1168 16.9004 11.4746V16.6504H11.7246C11.3668 16.6505 11.0236 16.792 10.7705 17.0449C10.5173 17.2981 10.375 17.642 10.375 18C10.375 18.358 10.5173 18.7019 10.7705 18.9551C11.0236 19.208 11.3668 19.3495 11.7246 19.3496H16.9004V24.5254C16.9005 24.8832 17.042 25.2264 17.2949 25.4795C17.5481 25.7327 17.892 25.875 18.25 25.875C18.608 25.875 18.9519 25.7327 19.2051 25.4795C19.458 25.2264 19.5995 24.8832 19.5996 24.5254V19.3496H24.7754C25.1332 19.3495 25.4764 19.208 25.7295 18.9551C25.9827 18.7019 26.125 18.358 26.125 18C26.125 17.642 25.9827 17.2981 25.7295 17.0449C25.4764 16.792 25.1332 16.6505 24.7754 16.6504V16.6592H19.5996V11.4746C19.5995 11.1168 19.458 10.7736 19.2051 10.5205C18.9519 10.2673 18.608 10.125 18.25 10.125Z" fill="#D9D9D9"/>
-</svg>
-
+          <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M18.25 0C28.1911 0 36.25 8.05887 36.25 18C36.25 27.9411 28.1911 36 18.25 36C8.30887 36 0.25 27.9411 0.25 18C0.25 8.05887 8.30887 0 18.25 0ZM18.25 10.125C17.892 10.125 17.5481 10.2673 17.2949 10.5205C17.042 10.7736 16.9005 11.1168 16.9004 11.4746V16.6504H11.7246C11.3668 16.6505 11.0236 16.792 10.7705 17.0449C10.5173 17.2981 10.375 17.642 10.375 18C10.375 18.358 10.5173 18.7019 10.7705 18.9551C11.0236 19.208 11.3668 19.3495 11.7246 19.3496H16.9004V24.5254C16.9005 24.8832 17.042 25.2264 17.2949 25.4795C17.5481 25.7327 17.892 25.875 18.25 25.875C18.608 25.875 18.9519 25.7327 19.2051 25.4795C19.458 25.2264 19.5995 24.8832 19.5996 24.5254V19.3496H24.7754C25.1332 19.3495 25.4764 19.208 25.7295 18.9551C25.9827 18.7019 26.125 18.358 26.125 18C26.125 17.642 25.9827 17.2981 25.7295 17.0449C25.4764 16.792 25.1332 16.6505 24.7754 16.6504V16.6592H19.5996V11.4746C19.5995 11.1168 19.458 10.7736 19.2051 10.5205C18.9519 10.2673 18.608 10.125 18.25 10.125Z"
+              fill="#D9D9D9"
+            />
+          </svg>
         </div>
       </MotionButton>
     </>

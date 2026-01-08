@@ -86,36 +86,37 @@ const ContactFormModal: React.FC<ContactFormModalProps> = ({ isOpen, onClose, cl
     return !Object.values(newErrors).some((error) => error !== "");
   };
 
-const handleSubmit = async () => {
-  if (validateForm()) {
-    try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/counselling`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+  const handleSubmit = async () => {
+    if (validateForm()) {
+      try {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/counselling`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
 
-      if (!res.ok) throw new Error("Failed to submit form");
+        if (!res.ok) throw new Error("Failed to submit form");
 
-      // Reset form only if API call succeeds
-      setFormData({ fullName: "", email: "", phone: "", comments: "" });
-      setTouched({ fullName: false, email: false, phone: false, comments: false });
-      setErrors({ fullName: "", email: "", phone: "", comments: "" });
-if (onSuccess) {
-            onSuccess();
+        // Reset form only if API call succeeds
+        setFormData({ fullName: "", email: "", phone: "", comments: "" });
+        setTouched({ fullName: false, email: false, phone: false, comments: false });
+        setErrors({ fullName: "", email: "", phone: "", comments: "" });
+        if (onSuccess) {
+          onSuccess();
         }
-      onClose(false);
-    } catch (error) {
-      console.error("Error submitting counselling form:", error);
-      alert("Something went wrong. Please try again later.");
+        onClose(false);
+      } catch (error) {
+        console.error("Error submitting counselling form:", error);
+        alert("Something went wrong. Please try again later.");
+      }
     }
-  }
-};
+  };
 
-
-  useOutsideClick(containerRef, () => { if (isOpen) onClose(false); });
+  useOutsideClick(containerRef, () => {
+    if (isOpen) onClose(false);
+  });
 
   React.useEffect(() => {
     if (isOpen) document.body.style.overflow = "hidden";
@@ -133,8 +134,12 @@ if (onSuccess) {
       {isOpen && (
         <motion.div className="fixed inset-0 h-screen z-[9999999999999999] overflow-auto" initial="hidden" animate="visible" exit="exit">
           {/* Backdrop */}
-          <motion.div variants={backdropVariants} className="bg-black/80 backdrop-blur-lg h-full w-full fixed inset-0" onClick={() => onClose(false)} />
-          
+          <motion.div
+            variants={backdropVariants}
+            className="bg-black/80 backdrop-blur-lg h-full w-full fixed inset-0"
+            onClick={() => onClose(false)}
+          />
+
           {/* Modal Content */}
           <motion.div
             variants={cardVariants}
@@ -153,11 +158,12 @@ if (onSuccess) {
             </motion.button>
 
             {/* Form Content */}
-            <motion.div variants={contentVariants} className="p-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-12 sm:py-12 lg:pt-24 lg:pb-20 xl:pt-32 xl:pb-28">
-              <h2 className="text-2xl sm:text-3xl lg:text-[46px] font-bold text-[#2884CA] text-center">
-                Ready to Shape Your Future?
-              </h2>
-              <h2 className="text-2xl sm:text-3xl lg:px-32 lg:text-[46px] font-bold text-black mb-4 text-center">
+            <motion.div
+              variants={contentVariants}
+              className="p-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-12 sm:py-12 lg:pt-24 lg:pb-20 xl:pt-32 xl:pb-28"
+            >
+              <h2 className="text-2xl sm:text-3xl lg:text-[46px] font-bold text-[#2884CA] text-center">Ready to Shape Your Future?</h2>
+              <h2 className="text-2xl sm:text-3xl lg:px-32 lg:text-[46px] font-bold text-[#1D1D1F] mb-4 text-center">
                 Book Your Counselling Session Today!
               </h2>
               <p className="text-gray-600 text-base sm:text-lg md:text-xl text-center max-w-3xl mx-auto">
@@ -176,7 +182,7 @@ if (onSuccess) {
                     onBlur={handleBlur}
                     className={`w-full p-3 outline-none border-b-2 ${
                       touched.fullName && errors.fullName ? "border-red-500" : "border-gray-300"
-                    } text-black`}
+                    } text-[#1D1D1F]`}
                     placeholder="Your Full Name"
                   />
                   {touched.fullName && errors.fullName && <p className="text-red-500 text-sm mt-1">{errors.fullName}</p>}
@@ -193,7 +199,7 @@ if (onSuccess) {
                     onBlur={handleBlur}
                     className={`w-full p-3 outline-none border-b-2 ${
                       touched.email && errors.email ? "border-red-500" : "border-gray-300"
-                    } text-black`}
+                    } text-[#1D1D1F]`}
                     placeholder="Enter Your Email"
                   />
                   {touched.email && errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
@@ -210,7 +216,7 @@ if (onSuccess) {
                     onBlur={handleBlur}
                     className={`w-full p-3 outline-none border-b-2 appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none [&::-moz-appearance:textfield] ${
                       touched.phone && errors.phone ? "border-red-500" : "border-gray-300"
-                    } text-black`}
+                    } text-[#1D1D1F]`}
                     placeholder="Your Phone Number"
                   />
                   {touched.phone && errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
@@ -228,7 +234,7 @@ if (onSuccess) {
                     maxLength={200}
                     className={`w-full p-3 outline-none border-b-2 ${
                       touched.comments && errors.comments ? "border-red-500" : "border-gray-300"
-                    } text-black`}
+                    } text-[#1D1D1F]`}
                     placeholder="Enter Your Comments"
                   />
                   <div className="text-right text-xs sm:text-sm text-gray-500">{formData.comments.length}/200</div>

@@ -46,7 +46,7 @@ type Event = {
   description: string;
 };
 
-const ExploreCampus = ({ departmentName,events }: { departmentName: string, events: Event[]}) => {
+const ExploreCampus = ({ departmentName, events }: { departmentName: string; events: Event[] }) => {
   const [page, setPage] = useState(1);
   const [limit, setLimit] = useState(10); // start with 10
   const [hasMore, setHasMore] = useState(true);
@@ -68,8 +68,6 @@ const ExploreCampus = ({ departmentName,events }: { departmentName: string, even
     return `data:image/jpeg;base64,${btoa(binary)}`;
   };
 
- 
-  
   const openModal = (event: Event) => setSelectedEvent(event);
   const closeModal = () => setSelectedEvent(null);
 
@@ -90,10 +88,9 @@ const ExploreCampus = ({ departmentName,events }: { departmentName: string, even
     <section className="py-10 lg:py-0 px-4 text-[#1D1D1F]">
       {/* 🔹 Event Cards */}
       {/* <h2 className="text-2xl font-semibold  mb-4 text-[#1D1D1F]">Events</h2> */}
-       <div className="max-w-7xl mx-auto grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
         {events.map((event, index) => {
           const src = event.image ? bufferToBase64(event.image) : "";
-        
 
           return (
             <div
@@ -102,13 +99,7 @@ const ExploreCampus = ({ departmentName,events }: { departmentName: string, even
               onClick={() => openModal(event)}
             >
               <div className="h-60 overflow-hidden">
-                <Image
-                  width={200}
-                  height={200}
-                  src={src}
-                  alt={event.title}
-                  className="w-full h-full object-cover object-[center_25%]"
-                />
+                <Image width={200} height={200} src={src} alt={event.title} className="w-full h-full object-cover object-[center_25%]" />
               </div>
 
               <div className="p-8 text-center bg-white">
@@ -128,9 +119,7 @@ const ExploreCampus = ({ departmentName,events }: { departmentName: string, even
                   </p>
                 </div>
 
-                <h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2">
-                  {event.title}
-                </h3>
+                <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{event.title}</h3>
 
                 <button className="text-primary inline-flex text-[17px] items-center hover:underline font-medium">
                   Read More <MdKeyboardArrowRight className="ml-1" />
@@ -185,15 +174,9 @@ const ExploreCampus = ({ departmentName,events }: { departmentName: string, even
 
               {/* Text Content */}
               <div className="p-6 sm:p-10 h-full">
-                <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-[#1D1D1F]">
-                  {selectedEvent.title}
-                </h2>
-                <p className="text-textGray mb-4">
-                  {new Date(selectedEvent.date).toLocaleDateString("en-GB")}
-                </p>
-                <p className="text-textGray leading-relaxed text-justify">
-                  {selectedEvent.description}
-                </p>
+                <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-[#1D1D1F]">{selectedEvent.title}</h2>
+                <p className="text-textGray mb-4">{new Date(selectedEvent.date).toLocaleDateString("en-GB")}</p>
+                <p className="text-textGray leading-relaxed text-justify">{selectedEvent.description}</p>
               </div>
             </motion.div>
           </motion.div>

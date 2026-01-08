@@ -7,7 +7,6 @@ import { IconX } from "@tabler/icons-react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { AlumniEvent } from "@/utils/alumniPortalData/alumniEventsUtils";
 
-
 // ------------------------------------------------------------------
 // 🔹 Animation Variants
 // ------------------------------------------------------------------
@@ -56,7 +55,7 @@ interface AlumniEventsProps {
 
 export default function AlumniEvents({ events, loading }: AlumniEventsProps) {
   const [selectedEvent, setSelectedEvent] = useState<AlumniEvent | null>(null);
-  
+
   // Note: Using a simple ref mechanism for outside click instead of a custom hook import
   // to ensure this component is copy-pasteable.
   const modalContentRef = useRef<HTMLDivElement>(null);
@@ -85,14 +84,12 @@ export default function AlumniEvents({ events, loading }: AlumniEventsProps) {
   }
 
   if (events.length === 0) {
-    return null; 
+    return null;
   }
 
   return (
     <section className=" px-4 pb-3 md:pb-10 text-[#1D1D1F]">
-      
       {/* Header Section (Optional, matching typical layout) */}
-     
 
       {/* 🔹 Event Cards Grid */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
@@ -106,14 +103,7 @@ export default function AlumniEvents({ events, loading }: AlumniEventsProps) {
             {/* Image/Video Area */}
             <div className="h-60 overflow-hidden relative bg-gray-100">
               {event.isVideo ? (
-                 <video
-                 src={event.imageSrc}
-                 muted
-                 loop
-                 autoPlay
-                 playsInline
-                 className="w-full h-full object-cover"
-               />
+                <video src={event.imageSrc} muted loop autoPlay playsInline className="w-full h-full object-cover" />
               ) : (
                 <Image
                   src={event.imageSrc || "/placeholder.jpg"}
@@ -129,17 +119,17 @@ export default function AlumniEvents({ events, loading }: AlumniEventsProps) {
             <div className="p-8 text-center bg-white">
               <div className="flex justify-center items-center space-x-3 mb-1">
                 <p className="text-gray-500 text-[17px]">
-                  {event.date ? new Date(event.date).toLocaleDateString("en-GB", {
-                    day: "numeric",
-                    month: "short",
-                    year: "numeric",
-                  }) : ""}
+                  {event.date
+                    ? new Date(event.date).toLocaleDateString("en-GB", {
+                        day: "numeric",
+                        month: "short",
+                        year: "numeric",
+                      })
+                    : ""}
                 </p>
               </div>
 
-              <h3 className="text-[27px] font-semibold font-sans text-black mb-2 line-clamp-2 leading-tight">
-                {event.title}
-              </h3>
+              <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2 leading-tight">{event.title}</h3>
 
               <button className="text-primary  inline-flex text-[17px] items-center hover:underline font-medium mt-2">
                 Read More <MdKeyboardArrowRight className="ml-1 text-xl" />
@@ -159,11 +149,7 @@ export default function AlumniEvents({ events, loading }: AlumniEventsProps) {
             exit="exit"
           >
             {/* Backdrop */}
-            <motion.div 
-              variants={backdropVariants} 
-              className="fixed inset-0 bg-black/60" 
-              onClick={closeModal} 
-            />
+            <motion.div variants={backdropVariants} className="fixed inset-0 bg-black/60" onClick={closeModal} />
 
             {/* Modal Content */}
             <motion.div
@@ -184,41 +170,29 @@ export default function AlumniEvents({ events, loading }: AlumniEventsProps) {
               {/* Modal Media */}
               <div className="w-full h-[300px] sm:h-[400px] bg-black relative">
                 {selectedEvent.isVideo ? (
-                  <video
-                    src={selectedEvent.imageSrc}
-                    controls
-                    playsInline
-                    className="w-full h-full object-contain"
-                  />
+                  <video src={selectedEvent.imageSrc} controls playsInline className="w-full h-full object-contain" />
                 ) : (
                   <div className="relative w-full h-full">
-                    <Image
-                      src={selectedEvent.imageSrc || "/placeholder.jpg"}
-                      alt={selectedEvent.title}
-                      fill
-                      className="object-cover"
-                    />
+                    <Image src={selectedEvent.imageSrc || "/placeholder.jpg"} alt={selectedEvent.title} fill className="object-cover" />
                   </div>
                 )}
               </div>
 
               {/* Modal Text */}
               <div className="p-6 sm:p-10">
-                <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-[#1D1D1F]">
-                  {selectedEvent.title}
-                </h2>
-                
+                <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-[#1D1D1F]">{selectedEvent.title}</h2>
+
                 {selectedEvent.date && (
-                   <p className="text-gray-500 mb-6 font-medium">
-                     {new Date(selectedEvent.date).toLocaleDateString("en-GB", {
-                        day: "numeric", month: "long", year: "numeric"
-                     })}
-                   </p>
+                  <p className="text-gray-500 mb-6 font-medium">
+                    {new Date(selectedEvent.date).toLocaleDateString("en-GB", {
+                      day: "numeric",
+                      month: "long",
+                      year: "numeric",
+                    })}
+                  </p>
                 )}
-               
-                <div className="text-gray-600 leading-relaxed text-justify whitespace-pre-line text-lg">
-                  {selectedEvent.description}
-                </div>
+
+                <div className="text-gray-600 leading-relaxed text-justify whitespace-pre-line text-lg">{selectedEvent.description}</div>
               </div>
             </motion.div>
           </motion.div>
