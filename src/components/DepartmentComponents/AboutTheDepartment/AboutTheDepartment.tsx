@@ -31,7 +31,7 @@ const   AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepar
 </h1>
           </div>
           <div className="hidden lg:block ">
-            <Link href={`/department/${slug}/detailes`}>
+            <Link href={`/department/${slug}/details`}>
               <button className="bg-[#007AFF26] hover:bg-blue-200 rounded-4xl lg:px-4 mt-3.5 lg:py-2.5">More About the Department</button>
             </Link>
           </div>
@@ -63,7 +63,7 @@ const   AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepar
         ))}
         </div>
       <div className="flex justify-center mt-10 lg:hidden">
-       <Link href={`/department/${slug}/detailes`}>
+       <Link href={`/department/${slug}/details`}>
               <button className="bg-[#007AFF26] hover:bg-blue-200 rounded-4xl px-6 py-2.5">More About the Department</button>
             </Link>
             </div>

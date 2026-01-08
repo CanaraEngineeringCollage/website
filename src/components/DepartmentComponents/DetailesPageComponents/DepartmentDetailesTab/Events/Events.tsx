@@ -184,7 +184,7 @@ const ExploreCampus = ({ departmentName,events }: { departmentName: string, even
               )}
 
               {/* Text Content */}
-              <div className="p-6 sm:p-10 max-h-[70vh] overflow-y-auto">
+              <div className="p-6 sm:p-10 h-full">
                 <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-[#1D1D1F]">
                   {selectedEvent.title}
                 </h2>

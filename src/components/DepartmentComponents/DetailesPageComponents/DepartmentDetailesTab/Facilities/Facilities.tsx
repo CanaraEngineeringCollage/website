@@ -31,9 +31,9 @@ interface FacilitiesProps {
 const Facilities: React.FC<FacilitiesProps> = ({ data,deptName }) => {
 
   return (
-    <div className=" text-textGray text-[17px] space-y-8">
+    <div className=" text-textGray text-[17px]">
       <div>
-        {deptName==="Artificial Intelligence & Machine Learning"&&<h1 className="text-2xl font-semibold uppercase mb-2 ">Laboratory Facilities</h1>}
+        {deptName==="Artificial Intelligence & Machine Learning"&&<h1 className="text-2xl font-semibold  mb-2 ">Laboratory Facilities</h1>}
         {deptName!="Artificial Intelligence & Machine Learning"&&<h1 className="text-2xl font-semibold mb-2 ">Facilities</h1>}
    <p className="md:text-lg text-justify text-[14px] leading-7 text-textGray">
   {data.description.split(/(Data Structures and Algorithm Laboratory|Machine Learning Laboratory)/g).map((part, index) =>
@@ -47,12 +47,12 @@ const Facilities: React.FC<FacilitiesProps> = ({ data,deptName }) => {
 
 
       </div>
-      <div className="space-y-6">
+      <div className="space-y-2 mt-3">
         
         {data.allFacilities.map((facility, idx) => (
             <div key={idx} className="pb-4">
               {facility.title2&&<h3 className="text-[22px] font-bold  text-textGray mb-2">{facility.title2}</h3>}
-            <h3 className="text-xl font-bold  text-textGray mb-2">{facility.title}</h3>
+            <h3 className={`text-xl font-bold  text-textGray ${!facility.title2&&"mb-2"} `}>{facility.title}</h3>
           
             {facility.desc &&<p className="mb-2 md:text-lg text-justify text-[14px] leading-7 text-textGray">
   {(() => {

@@ -21,7 +21,7 @@ const Academic = ({
 }) => {
 
 
-  console.log(academicsProgramEce);
+
   
 
   // 👉 If data exists → render normal Academic
@@ -49,7 +49,7 @@ const Academic = ({
         )}
 
         {data.points && (
-          <ul className="list-disc pl-5 mb-4">
+          <ul className="list-disc md:text-lg text-[14px] pl-5 mb-4">
             {data.points.map((point, index) => (
               <li key={index}>{point}</li>
             ))}
@@ -62,9 +62,9 @@ const Academic = ({
               {item.title}
             </h2>
 
-            {item.desc && <p className="text-justify mb-2">{item.desc}</p>}
+            {item.desc && <p className="text-justify md:text-lg text-[14px] mb-2">{item.desc}</p>}
 
-            <ul className="list-disc pl-5 mb-4">
+            <ul className="list-disc md:text-lg text-[14px] pl-5 mb-4">
               {item.points.map((p) => (
                 <li key={p}>{p}</li>
               ))}

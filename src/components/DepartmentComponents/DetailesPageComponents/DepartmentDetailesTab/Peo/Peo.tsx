@@ -24,7 +24,7 @@ const Peo = ({ data, deptName }: { data: PeoProps; deptName: string }) => {
   return (
     <div className=''>
       {/* --- PEO Section --- */}
-      {data?.programEducation && <h1 className="text-[20px]  font-bold text-textGray mb-3">Program Educational Objectives (PEO)</h1>}
+      {data?.programEducation && <h1 className="text-[20px]  font-bold text-textGray mb-2">Program Educational Objectives (PEO)</h1>}
       
       {data?.programEducation && deptName === "Mechanical Engineering" && <h3 className='mb-3 md:text-lg  text-[14px] leading-7  text-textGray'>Graduates of Mechanical Engineering program will:</h3>}
       

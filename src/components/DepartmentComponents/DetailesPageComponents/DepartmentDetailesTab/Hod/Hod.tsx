@@ -56,22 +56,30 @@ const Hod: React.FC<HodProps> = ({ data, facultyProfile }) => {
 
   return (
     <div className=" text-textGray text-[17px]">
-      <div className="flex flex-col items-center lg:items-start lg:flex-row  gap-6">
-                 <div className='text-center'>
-          <Image
-            src={imageSrc}
-            alt={data?.name || "HOD"}
-            width={1000}
-            height={1000}
-            priority
-            className={`h-[300px] w-auto rounded-lg shadow ${facultyProfile ? 'cursor-pointer' : ''}`}
-            onClick={() => facultyProfile && setIsOpen(true)}
-          />
-      <div className="mt-2 font-semibold text-[#1D1D1F]">{data?.name}</div>
-      <div className="text-sm text-gray-500">{data?.position}</div>
-      </div>
-        
-        <div className="flex-1 flex flex-col ">
+   <div className="flex  gap-6">
+  <div className="inline-flex flex-col items-center">
+    <Image
+      src={imageSrc}
+      alt={data?.name || "HOD"}
+      width={1000}
+      height={1000}
+      priority
+      className={`h-[300px] w-auto rounded-lg shadow ${
+        facultyProfile ? "cursor-pointer" : ""
+      }`}
+      onClick={() => facultyProfile && setIsOpen(true)}
+    />
+
+    <div className="mt-2 font-semibold text-[#1D1D1F] text-center">
+      {data?.name}
+    </div>
+    <div className="text-sm text-gray-500 text-center">
+      {data?.position}
+    </div>
+  </div>
+</div>
+
+        <div className="flex-1 flex mt-4 flex-col ">
           <p
             ref={paragraphRef}
             className="text-[14px] md:text-lg leading-7 text-justify text-textGray whitespace-pre-line"
@@ -80,7 +88,7 @@ const Hod: React.FC<HodProps> = ({ data, facultyProfile }) => {
           </p>
         </div>
    
-      </div>
+      
       {facultyProfile && (
         <FacultyModal 
           facultyData={facultyProfile} 

@@ -10740,11 +10740,9 @@
 
     "departmentAboutDescription2": "Student development is further strengthened by motivational sessions, placement and career guidance, and active alumni engagement. Students are encouraged to participate in curricular, co-curricular and extra-curricular activities, while outreach initiatives instill a sense of social responsibility. With a strong academic track record and a culture of continuous faculty upskilling, the department ensures excellence in education, innovation, and professional development.",
     "description": [
-      "The Department of Information Science & Engineering is committed to comprehensive student development, fostering enthusiasm for both academic and extracurricular activities. With fully equipped laboratories and a team of highly qualified and experienced faculty members, the department provides an environment conducive to innovation and learning.",
-      "Regular seminars, workshops, and expert lectures by industry professionals, along with industry visits, expose students and faculty to the latest trends and practices. To keep pace with evolving technologies, the department also offers specialized add-on courses. A consistent record of academic excellence reflects the department’s dedication to quality education.",
-      "Beyond academics, the department organizes motivational talks, placement training, and career guidance programs with active contributions from distinguished alumni. Faculty members continually enhance their knowledge by participating in Faculty Development Programs (FDPs) and seminars in both online and offline modes, ensuring they remain aligned with technological advancements.",
-      "Students are encouraged to actively engage in extracurricular activities through the technical/cultural clubs, as well as contribute to society through Social Outreach Programs (SOPs). These initiatives nurture leadership, teamwork, communication, environmental awareness, and a sense of social responsibility."
-    ],
+     "The Department of Information Science & Engineering is dedicated to nurturing future-ready professionals through robust academic practices and industry-focused training. Equipped with modern laboratories and guided by experienced faculty, the department places equal emphasis on holistic growth through seminars, workshops, industry visits, and specialized courses in emerging technologies.",
+      "Student development is further strengthened by motivational sessions, placement and career guidance, and active alumni engagement. Students are encouraged to participate in curricular, co-curricular and extra-curricular activities, while outreach initiatives instill a sense of social responsibility. With a strong academic track record and a culture of continuous faculty upskilling, the department ensures excellence in education, innovation, and professional development."
+     ],
     "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
     "ethicalLearning": [
       "Impart technical skills in the field of Information Science & Engineering.",
@@ -10757,7 +10755,7 @@
     "depatmentHead": {
       "messageFromtheDepartmentHead": "The Department of Information Science & Engineering (ISE) remain committed to fostering a dynamic learning environment that encourages innovation, critical thinking, and collaboration. Our excellent infrastructure and exceptional faculty ensure quality education, fostering meaningful interactions among students, parents, and staff. The Training and Placement Cell is pivotal in securing bright futures for our students. We prioritize innovation in research, teaching, and community service, striving to advance the field of Information Science and Engineering continually. Our faculty members continue to impart cutting-edge knowledge and skills to our students, preparing them to excel in the ever-evolving field of information science and engineering. Additionally, we are actively engaging in research initiatives aimed at addressing contemporary challenges and contributing to the advancement of technology.I invite you to join us in elevating the Department of Information Science & Engineering to new heights. Wishing all our students and faculty a successful and fulfilling academic journey.",
       "name": "Dr. H Manoj T Gadiyar",
-      "position": "Professor & HOD",
+      "position": "Professor & HoD",
       "imageUrl": "/departmentImages/departmentHeads/Information Science and Engg.webp"
     },
 
@@ -21540,6 +21538,9 @@
     "gallery": [
       { "image": "/departmentImages/gallery/eee/1.jpg", "title": "Building Integrity And Professionalism" },
       { "image": "/departmentImages/gallery/eee/2.jpg", "title": "Innovation And Entrepreneurship Outreach Program At Sri Ramakrishna High School, Ramakunja Post And Village, Puttur." },
+        { "image": "/departmentImages/gallery/eee/27.jpg", "title": "Foundations Of C++ Programing" },
+      { "image": "/departmentImages/gallery/eee/28.jpg", "title": "Exploring Vlsi And Mosfet Fundamentals" },
+      
       { "image": "/departmentImages/gallery/eee/3.jpeg", "title": "Farewell" },
       { "image": "/departmentImages/gallery/eee/4.jpg", "title": "Innonexus - Ideathon 2025" },
       { "image": "/departmentImages/gallery/eee/5.jpg", "title": "Udbhav 2025" },
@@ -30781,6 +30782,7 @@
     "gallery": [
       { "image": "/departmentImages/gallery/csd/1.png", "title": "Spring Boot Api Development And Testing (series 1)" },
       { "image": "/departmentImages/gallery/csd/2.jpg", "title": "" },
+        { "image": "/departmentImages/gallery/csd/52.jpeg", "title": "A Session On Personality Development: Building Confidence And Communication Skills" },
       { "image": "/departmentImages/gallery/csd/3.jpg", "title": "Session On Achieving Value Proposition Fit And Business Fit" },
       { "image": "/departmentImages/gallery/csd/4.jpg", "title": "Problem Solving And Ideation Workshop" },
       { "image": "/departmentImages/gallery/csd/5.png", "title": "Sketch Competition" },
@@ -40218,7 +40220,7 @@
       "rows": [
         {
           "academicYear": "AY 2025-26",
-          "awardsCount": 13,
+          "awardsCount": 4,
           "details": [
             "The Department of CSBS received a winner place in the Branch Entry 2025 competition conducted at Canara Engineering College.",
             "Mr. Anirudha Udupa is selected for the prestigious UDAL – DC Fellowship Program.",
@@ -52291,7 +52293,7 @@
     },
     "research": [
       {
-        "heading": "RESEARCH AREAS",
+        "heading": "Research Areas ",
         "points": [
           "Artificial Intelligence",
           "Machine Learning",
@@ -52315,7 +52317,7 @@
         "moreDetailesTable": []
       },
       {
-        "heading": "FACULTY ACHIEVEMENTS",
+        "heading": "Faculty Achievements",
         "points": [],
         "imageUrl": "https://apiserver.cec.edu.in/files/FACULTY%20ACHIEVEMENTS",
         "table": [
@@ -52331,7 +52333,7 @@
         "moreDetailesTable": []
       },
       {
-        "heading": "FACULTY PURSUING DOCTORAL STUDIES",
+        "heading": "Faculty Pursuing Doctoral Studies",
         "points": [],
         "imageUrl": "",
         "table": [
@@ -52445,22 +52447,22 @@
         },
 
         {
-          "title2": "TUTORIAL AND CLASSROOMS",
-          "title": "CLASS ROOMS",
+          "title2": "Tutorial and Classrooms",
+          "title": "Classrooms",
           "methodes": "",
           "points": [],
           "imageUrl": "https://apiserver.cec.edu.in/files/CLASS%20ROOMS%201",
           "imageUrl2": "https://apiserver.cec.edu.in/files/CLASS%20ROOMS%202"
         },
         {
-          "title": "TUTORIAL ROOM",
+          "title": "Tutorial Room",
           "desc": "Tutorial Rooms: A dedicated tutorial room is provided to offer a conducive setting for problem-solving sessions, and hands-on workshops as per the University Curriculum. The tutorial room will also help to promote interactive learning and peer-to-peer collaboration, these rooms are equipped with whiteboards, projectors to facilitate effective communication and knowledge sharing. The tutorial rooms provide a supportive environment conducive to academic fulfilment and success.",
           "methodes": "",
           "points": [],
           "imageUrl": "https://apiserver.cec.edu.in/files/TUTORIAL%20ROOM"
         },
         {
-          "title": "STAFF ROOMS",
+          "title": "Staff Rooms",
           "desc": "Our staffrooms serve as dedicated spaces for faculty members prepare course materials, and engage in scholarly activities. Equipped with comfortable furnishings and networked workstations, these rooms offer a conducive environment for productive discussions and interdisciplinary collaboration. Whether faculty members are conducting research, holding office hours, or mentoring students, our staffrooms provide a welcoming atmosphere to the professional growth and academic excellence.",
           "methodes": "",
           "points": [],
@@ -52495,23 +52497,23 @@
     ],
     "studentAcheivemtents": [
       {
-        "title": "UNIVERSITY RESULTS",
+        "title": "University Results",
         "imageUrl": "https://apiserver.cec.edu.in/files/academic-events"
       },
       {
-        "title": "CERTIFICATION COURSES",
+        "title": "Certification Courses",
         "imageUrl": "https://apiserver.cec.edu.in/files/onlinecartificates"
       },
       {
-        "title": "AWARDS IN EVENTS",
+        "title": "Awards in Events",
         "imageUrl": "https://apiserver.cec.edu.in/files/awards"
       },
       {
-        "title": "PARTICIPATION IN TECHNICAL EVENTS",
+        "title": "Participation in Technical Events",
         "imageUrl": "https://apiserver.cec.edu.in/files/Participation%20in%20Technical%20Events%20AI"
       },
       {
-        "title": "PARTICIPATION IN NON TECHNICAL EVENTS",
+        "title": "Participation in Non-Technical Events",
         "imageUrl": "https://apiserver.cec.edu.in/files/nontechevents"
       }
     ],

@@ -14,8 +14,8 @@ const FutureCampusText = () => {
         education & strong industry connections.
       </p>
       <Link href="/about/about-cec">
-        <button aria-label="Read More" className="pt-8 inline-flex items-center cursor-pointer text-[#0066CC]">
-          Read More <MdKeyboardArrowRight className="text-xl text-[#0066CC]" />
+        <button aria-label="Read More" className="pt-8 inline-flex items-center cursor-pointer text-primary">
+          Read More <MdKeyboardArrowRight className="text-xl text-primary" />
         </button>
       </Link>
     </div>

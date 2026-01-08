@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     openGraph: {
       title,
       description,
-      url: `https://your-website-url.com/department/${params.slug}/detailes`,
+      url: `https://your-website-url.com/department/${params.slug}/details`,
       siteName: "Canara College",
       images: [
         {

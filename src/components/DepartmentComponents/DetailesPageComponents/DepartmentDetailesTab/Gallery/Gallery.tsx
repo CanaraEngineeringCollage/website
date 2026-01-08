@@ -1,25 +1,45 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { IconX } from "@tabler/icons-react";
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa"; // ← Left arrow added
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 export interface GalleryItem {
   image: string;
   title?: string;
+  description?: string;
 }
 
+// 🔹 Animations matched to your LegacyExcellance component
 const backdropVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.2 } },
-  exit: { opacity: 0, transition: { duration: 0.15 } },
+  hidden: { opacity: 0, backdropFilter: "blur(0px)" },
+  visible: {
+    opacity: 1,
+    backdropFilter: "blur(8px)",
+    transition: { duration: 0.3, ease: "easeOut" },
+  },
+  exit: {
+    opacity: 0,
+    backdropFilter: "blur(0px)",
+    transition: { duration: 0.2, ease: "easeIn" },
+  },
 };
 
-const modalVariants = {
-  hidden: { opacity: 0, scale: 0.8, y: 50 },
-  visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.3, ease: "easeOut" } },
-  exit: { opacity: 0, scale: 0.9, y: 30, transition: { duration: 0.2 } },
+const cardVariants = {
+  hidden: { opacity: 0, scale: 0.8, y: 100, transition: { duration: 0.3, ease: "easeIn" } },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: { duration: 0.4, ease: "easeOut", type: "spring", damping: 20, stiffness: 100 },
+  },
+  exit: { opacity: 0, scale: 0.9, y: 50, transition: { duration: 0.25, ease: "easeIn" } },
+};
+
+const contentVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.1, ease: "easeOut" } },
 };
 
 const Gallery = ({ data }: { data: GalleryItem[] }) => {
@@ -29,7 +49,8 @@ const Gallery = ({ data }: { data: GalleryItem[] }) => {
   const openModal = (index: number) => setSelectedIndex(index);
   const closeModal = () => setSelectedIndex(null);
 
-  const nextImage = () => {
+  const nextImage = (e?: React.MouseEvent) => {
+    e?.stopPropagation();
     if (selectedIndex !== null) {
       setSelectedIndex((prev) => (prev! + 1) % data.length);
     }
@@ -41,35 +62,37 @@ const Gallery = ({ data }: { data: GalleryItem[] }) => {
     }
   };
 
-  React.useEffect(() => {
-    if (selectedIndex !== null) document.body.style.overflow = "hidden";
-    else document.body.style.overflow = "auto";
-
+  useEffect(() => {
+    document.body.style.overflow = selectedIndex !== null ? "hidden" : "auto";
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape" && selectedIndex !== null) closeModal();
+      if (selectedIndex === null) return;
+      if (event.key === "Escape") closeModal();
+      if (event.key === "ArrowRight") nextImage();
+      if (event.key === "ArrowLeft") prevImage();
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [selectedIndex]);
+  }, [selectedIndex, data.length]);
 
   return (
-    <section className="max-w-6xl mx-auto pb-12 px-4 text-[#1D1D1F]">
+    <section className="max-w-7xl mx-auto  px-4 text-[#1D1D1F]">
       {/* 🔹 Gallery Grid */}
-      {/* <h2 className="text-2xl font-semibold  mb-2 text-[#1D1D1F]">Gallery</h2> */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {data.map((item, index) => (
           <div
             key={index}
-            className="overflow-hidden rounded-2xl shadow-md cursor-pointer hover:shadow-lg transition"
+            className="overflow-hidden rounded-2xl shadow-sm cursor-pointer hover:shadow-lg transition group bg-white"
             onClick={() => openModal(index)}
           >
-            <Image
-              src={item.image}
-              alt={"gallery"}
-              width={1000}
-              height={700}
-              className="object-cover w-full h-[250px] hover:scale-105 transition-transform duration-300"
-            />
+            <div className="h-[250px] overflow-hidden">
+              <Image
+                src={item.image}
+                alt={item.title || "gallery"}
+                width={600}
+                height={400}
+                className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
           </div>
         ))}
       </div>
@@ -78,60 +101,82 @@ const Gallery = ({ data }: { data: GalleryItem[] }) => {
       <AnimatePresence>
         {selectedIndex !== null && (
           <motion.div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm"
-            variants={backdropVariants}
+            className="fixed inset-0 h-screen z-50 overflow-auto"
             initial="hidden"
             animate="visible"
             exit="exit"
-            onClick={closeModal}
           >
+            {/* Backdrop */}
             <motion.div
-              ref={modalRef}
-              variants={modalVariants}
-              initial="hidden"
-              animate="visible"
-              exit="exit"
+              variants={backdropVariants}
+              className="bg-black/80 backdrop-blur-lg h-full w-full fixed inset-0"
+              onClick={closeModal}
+            />
+
+            {/* Modal Card */}
+            <motion.div
+              variants={cardVariants}
+              className="max-w-4xl mx-auto bg-white h-fit z-[60] my-10 pb-10 rounded-3xl font-sans relative shadow-2xl overflow-hidden"
               onClick={(e) => e.stopPropagation()}
-              className="bg-white max-w-5xl mx-4 rounded-2xl overflow-hidden relative shadow-2xl"
             >
               {/* Close Button */}
-              <button
+              <motion.button
+                variants={contentVariants}
+                className="absolute top-6 me-4 lg:me-8 z-50 h-8 w-8 right-0 cursor-pointer ml-auto bg-[#808080] rounded-full flex items-center justify-center hover:bg-gray-600 transition-colors"
                 onClick={closeModal}
-                className="absolute top-4 right-4 bg-gray-600 hover:bg-gray-800 text-white p-2 rounded-full z-10"
-                aria-label="Close modal"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
               >
-                <IconX size={18} />
-              </button>
+                <IconX className="h-5 w-5 text-white" />
+              </motion.button>
 
-              {/* Left Arrow Button */}
-              <button
-                onClick={prevImage}
-                className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-600 hover:bg-gray-800 text-white p-3 rounded-r-full z-10"
-                aria-label="Previous image"
-              >
-                <FaArrowLeft size={20} />
-              </button>
+              {/* Image Content */}
+              <motion.div variants={contentVariants}>
+                <Image
+                  src={data[selectedIndex].image}
+                  alt={data[selectedIndex].title || "Gallery Image"}
+                  width={1200}
+                  height={800}
+                  // 🔹 w-full h-auto allows the image to take its complete natural size
+                  className="w-full h-auto object-cover rounded-t-3xl min-h-[300px]"
+                  priority
+                />
+                
+                {/* Title & Description */}
+                {(data[selectedIndex].title || data[selectedIndex].description) && (
+                   <div className="p-4 lg:px-20 space-y-6 text-left text-sm text-[#1D1D1F] bg-white mt-5">
+                    <div>
+                      {data[selectedIndex].title && (
+                        <h3 className="text-[27px] font-semibold  leading-[1.1] lg:max-w-[100%] ">
+                          {data[selectedIndex].title}
+                        </h3>
+                      )}
+                      {data[selectedIndex].description && (
+                        <p className="text-xl text-gray-500 leading-relaxed">
+                          {data[selectedIndex].description}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                )}
+              </motion.div>
 
-              {/* Right Arrow Button */}
-              <button
-                onClick={nextImage}
-                className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-600 hover:bg-gray-800 text-white p-3 rounded-l-full z-10"
-                aria-label="Next image"
-              >
-                <FaArrowRight size={20} />
-              </button>
+              {/* 🔹 "Next Up" Section (Exact match) */}
+              <motion.div variants={contentVariants} className="p-4 lg:px-20 ">
+                <h1 className={`${(data[selectedIndex].title || data[selectedIndex].description)&&"border-t-2"}  pt-4 text-[10px] md:text-[12px] text-textGray border-t-gray-200`}>
+                  Next Up
+                </h1>
+                <h1
+                  onClick={nextImage}
+                  className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]  hover:opacity-80 transition-opacity"
+                >
+                  <span className="line-clamp-1">
+                    {data[(selectedIndex + 1) % data.length]?.title || "Next Image"}
+                  </span>
+                  <MdKeyboardArrowRight className="ml-1 mt-0.5 text-[20px] md:text-[25px]" />
+                </h1>
+              </motion.div>
 
-              {/* Modal Image */}
-              <Image
-                src={data[selectedIndex].image}
-                alt={"gallery"}
-                width={1000}
-                height={1000}
-                className="object-cover w-full h-[80vh] md:h-[90vh] lg:h-[80vh] xl:h-[90vh] 2xl:h-[80vh] select-none"
-              />
-              <div className="p-4  border-t">
-                <h2 className="text-lg md:text-xl font-semibold text-[#1D1D1F]">{data[selectedIndex].title}</h2>
-              </div>
             </motion.div>
           </motion.div>
         )}

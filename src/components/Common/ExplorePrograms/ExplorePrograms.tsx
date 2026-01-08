@@ -2,6 +2,8 @@
 
 import { Card, Carousel } from "@/components/ui/apple-cards-carousel";
 import Image from "next/image";
+import Link from "next/link";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 type DescriptionProps = {
   subtitle1: string;
@@ -11,6 +13,7 @@ type DescriptionProps = {
   subtitle3: string;
   subDescription3: string;
   src: string;
+  url?:string
 };
 
 interface CardContentProps {
@@ -49,8 +52,9 @@ const programData = [
           // subtitle3: "Course Outcomes",
           // subDescription3:
           //   "The Computer Science and Engineering (CSE) course equips graduates with a solid foundation in computing principles, problem-solving abilities, and technical expertise. The course equips critical thinking, analytical skills, and teamwork, preparing graduates for diverse career opportunities in software development, research, and entrepreneurship. Through internships, projects, and industry collaborations, students acquire hands-on experience, making the students well-equipped to excel in top technology firms, startups, and higher education, while contributing to innovation and technological progress.",
-        
+        url:"/department/computer-science-engineering"
           }}
+
       />
     ),
   },
@@ -71,7 +75,7 @@ const programData = [
           subtitle3: "Course Outcomes",
           subDescription3:
             "The unique initiatives of the Department of Artificial Intelligence and Machine Learning (AIML), our students will be industry-ready equipped with strong technical expertise, practical problem-solving skills, and essential soft skills. The SEA efforts ensure graduates are competitive in the job market and capable of contributing effectively to the evolving demands of the AI and ML industry.",
-        
+          url:"/department/artificial-intelligence-machine-learning"
           }}
       />
     ),
@@ -94,7 +98,7 @@ const programData = [
           subtitle3: "Course Outcomes",
           subDescription3:
             "Graduates will be proficient in designing and implementing analog/digital circuits, communication systems, VLSI, embedded systems, and IoT applications, equipped with practical skills, modern tools, and effective communication to solve real- world engineering problems and adapt to evolving technologies.",
-       
+        url:"/department/electronics-communication-engineering"
           }}
       />
     ),
@@ -117,7 +121,7 @@ const programData = [
           subtitle3: "Course Outcomes",
           subDescription3:
             "Students of Computer Science and Design will be able to create innovative solutions in areas including animation, AI, Game Development and Virtual Reality. They will be able to apply core computer science concepts and the diverse programming paradigms in the real world. They will be able to apply system design principles to design plan and implement software projects. They will be equipped with design language and its elements and principles. They will be able to demonstrate design skills and knowledge through a design portfolio",
-        
+         url:"/department/computer-science-design"
           }}
       />
     ),
@@ -140,7 +144,7 @@ const programData = [
           subtitle3: "Course Outcomes",
           subDescription3:
             "Graduates from the Information Science and Engineering Department are expected to possess strong technical skills in software development, data analysis, and system design. They will be equipped to solve complex engineering problems, contribute to research, and thrive in dynamic industries through innovative solutions and critical thinking.",
-       
+        url:"/department/information-science-engineering"
           }}
       />
     ),
@@ -163,7 +167,7 @@ const programData = [
           subtitle3: "Course Outcomes",
           subDescription3:
             "Graduates will apply AI, data analytics, and business intelligence to develop innovative IT solutions. With strong problem-solving, ethical values, and entrepreneurial skills, they will drive technological advancements and industry growth.",
-       
+        url:"/department/computer-science-business-system"
           }}
       />
     ),
@@ -186,7 +190,7 @@ const programData = [
           subtitle3: "Course Outcomes",
           subDescription3:
             "Graduates will be capable of applying mechanical engineering principles to solve complex engineering problems. They will demonstrate proficiency in modern tools, sustainable design, and innovative thinking. With strong ethical values, leadership qualities, and a commitment to lifelong learning, they will contribute effectively to industrial development and technological progress.",
-       
+        url:"/department/mechanical-engineering"
           }}
       />
     ),
@@ -212,6 +216,12 @@ function CardContent({ description }: CardContentProps) {
           <h3 className="text-2xl mb-2 font-semibold">{description.subtitle3}</h3>
           <p className="text-lg  text-textGray">{description.subDescription3}</p>
         </div>}
+          <Link href={description.url}>
+        <button aria-label="Explore the Department" className="pt-4 inline-flex items-center text-lg cursor-pointer text-primary">
+         Explore the Department
+ <MdKeyboardArrowRight className="text-xl text-primary" />
+        </button>
+      </Link>
       </div>
     </div>
   );
