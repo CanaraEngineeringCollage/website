@@ -59,7 +59,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative w-full h-[90vh] md:h-[120vh] flex flex-col justify-center items-center text-center px-4 overflow-hidden">
+    <section className="relative w-full h-[80vh] md:h-[120vh] flex flex-col justify-center items-center text-center px-4 overflow-hidden">
       
       {/* Background Swiper */}
       <div className="absolute inset-0 z-0">

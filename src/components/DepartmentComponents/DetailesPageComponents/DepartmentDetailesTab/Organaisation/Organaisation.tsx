@@ -50,7 +50,7 @@ const Organaisation = ({ data }: { data: Organaisation }) => {
                   <tr>
                     <td
                       colSpan={2}
-                      className="py-3 bg-[#F3F8FC] md:px-4 px-1 border-b text-center"
+                      className="py-3 bg-[#F3F8FC] md:px-4 px-1 border-b text-start"
                     >
                       {firstCol.title.join(', ')}
                     </td>
