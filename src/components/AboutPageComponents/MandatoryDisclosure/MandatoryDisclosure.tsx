@@ -318,7 +318,7 @@ const MandatoryDisclosure = () => {
                   Ragging means causing, inducing, compelling or forcing a student, whether by way of a practical joke or otherwise, to do any act
                   which detracts from human dignity or violated his person or exposes him to ridicule or to forbear from doing any lawful act, by
                   intimidating wrongfully restraining, wrongfully confining, or injuring him or by using criminal force to him or by holding out to
-                  him any treat of such intimidation, wrongful restraint, wrongful confinement, injury or the use of criminal force
+                  him any treat of such intimidation, wrongful restraint, wrongful confinement, injury or the use of criminal force.
                 </p>
                 <h2 className="text-lg font-bold text-textGray mt-6 mb-2">Section 116 – Penalty for Ragging:</h2>
                 <ul className="space-y-1 md:text-lg  text-[14px] leading-7  text-textGray">
@@ -369,8 +369,10 @@ const MandatoryDisclosure = () => {
                   <li>Have preserved a ragging free campus with no incidents of ragging been reported so far, in the college and hostel premises.</li>
                 </ul>
                 <h2 className="text-lg font-bold text-textGray mt-6 mb-2">Anti Ragging Committee Organisation Chart</h2>
+                <div className="flex justify-center">
                 <div className="relative w-[50%] h-[600px] object-cover">
                   <Image alt="ragging" fill src="/mandatory/ragging-commite/antiraggingCommitte.jpg" />
+                </div>
                 </div>
                 <h2 className="text-lg font-bold text-textGray mt-2 mb-2">Process:</h2>
                 <ul className="space-y-2 list-decimal pl-5 md:text-lg  text-[14px] leading-7  text-textGray">
@@ -392,8 +394,10 @@ const MandatoryDisclosure = () => {
                   <li>The Committee meets in case any incident of ragging is reported. Necessary action is taken based on the issue.</li>
                 </ul>
                 <h2 className="text-lg font-bold text-textGray mt-6 mb-2">Anti Ragging Committee Functioning Flowchart</h2>
+                  <div className="flex justify-center">
                 <div className="relative w-[50%] h-[600px] object-cover">
                   <Image alt="ragging" fill src="/mandatory/ragging-commite/antiragging.png" />
+                </div>
                 </div>
                 {/* <h2 className="text-lg font-bold text-textGray mt-6 mb-2">ANTI RAGGING COMMITTEE (2024-25)</h2>
                 <h2 className="text-lg font-bold text-textGray mt-2 mb-2">Review Committee:</h2> */}

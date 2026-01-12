@@ -137,7 +137,7 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
       <div className="mx-auto py-10 lg1:flex hidden flex-col-reverse md:flex-row items-center justify-between gap-10">
         <div className="max-w-md space-y-44">
           <div>
-            <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-gray-900 leading-tight">
+            <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-[#1D1D1F] leading-tight">
               Get to Know Our <br />
               <span className="">Department’s Faculty</span>
             </h2>

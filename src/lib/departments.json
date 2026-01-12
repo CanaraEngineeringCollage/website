@@ -10,7 +10,7 @@
       "Established in 2001, the Department of Computer Science & Engineering offers a robust undergraduate program (B.E. in CSE) and previously offered M.Tech from 2011 to 2021. The department boasts a team of experienced and research-oriented faculty actively engaged in teaching, product development, and publishing in reputed journals and conferences. Regular training sessions, expert talks, and industry interactions help bridge academia and industry. Students are groomed for career success through placement training, technical workshops, and self-learning initiatives like IIT Bombay’s Spoken Tutorial. Active student clubs, annual magazines, and NSS activities promote leadership, innovation, and social responsibility."
     ],
     "description": [
-      "The department, established in 2001, offers a BE in Computer Science & Engineering and previously offered an MTech program (2011–2021). Its dedicated and experienced faculty are actively involved in teaching, research, and product development, with numerous publications in reputed international journals and conferences (IEEE/ACM/Springer). The department regularly organizes training programs for faculty, technical staff, and students, and participates in staff development programs to stay updated with technological advancements. Emphasizing students’ all-round development, the department conducts industry interactions, expert sessions, soft skills and technical training, and self-learning initiatives (Spoken Tutorials by IIT Bombay). Campus placements continue to grow with multinational recruiters. Extracurricular activities are promoted through the students’ association and NSS, and the department publishes an annual technical magazine and newsletter to showcase innovative ideas and current trends in computingSWO department "
+      "The department, established in 2001, offers a BE in Computer Science & Engineering and previously offered an MTech program (2011–2021). Its dedicated and experienced faculty are actively involved in teaching, research, and product development, with numerous publications in reputed international journals and conferences (IEEE/ACM/Springer). The department regularly organizes training programs for faculty, technical staff, and students, and participates in staff development programs to stay updated with technological advancements. Emphasizing students’ all-round development, the department conducts industry interactions, expert sessions, soft skills and technical training, and self-learning initiatives (Spoken Tutorials by IIT Bombay). Campus placements continue to grow with multinational recruiters. Extracurricular activities are promoted through the students’ association and NSS, and the department publishes an annual technical magazine and newsletter to showcase innovative ideas and current trends in computing SWO department. "
     ],
     "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
     "ethicalLearning": [
@@ -27,570 +27,575 @@
       "imageUrl": "/departmentImages/departmentHeads/computer-science.webp"
     },
 
-    "awardsTable3": {
-      "headers": [
-        { "key": "slNo", "label": "Sl. No." },
-        { "key": "enrollment", "label": "Enrollment Number" },
-        { "key": "name", "label": "Name" },
-        { "key": "event", "label": "Name of the Event / Technical Fest" },
-        { "key": "institution", "label": "Institution & Place" },
-        { "key": "date", "label": "Date of Event" },
-        { "key": "prize", "label": "Prize / Award" }
-      ],
-      "rows": [
-        {
-          "slNo": 1,
-          "enrollment": "4CB19CS076",
-          "name": "P V Paramashiva Karanth",
-          "event": "Embers’23 - National Level Technical Fest (Project Exhibition)",
-          "institution": "P A College of Engineering, Mangaluru",
-          "date": "07-05-2023 to 08-05-2023",
-          "prize": "Second Prize"
-        },
-        {
-          "slNo": 2,
-          "enrollment": "4CB18CS119",
-          "name": "Vyasaray Kamath",
-          "event": "Embers’23 - National Level Technical Fest (Project Exhibition)",
-          "institution": "P A College of Engineering, Mangaluru",
-          "date": "07-05-2023 to 08-05-2023",
-          "prize": "Second Prize"
-        },
-        {
-          "slNo": 3,
-          "enrollment": "4CB19CS112",
-          "name": "Udith Bekal",
-          "event": "Embers’23 - National Level Technical Fest (Project Exhibition)",
-          "institution": "P A College of Engineering, Mangaluru",
-          "date": "07-05-2023 to 08-05-2023",
-          "prize": "Second Prize"
-        },
-        {
-          "slNo": 4,
-          "enrollment": "4CB19CS120",
-          "name": "Vignesh",
-          "event": "Embers’23 - National Level Technical Fest (Project Exhibition)",
-          "institution": "P A College of Engineering, Mangaluru",
-          "date": "07-05-2023 to 08-05-2023",
-          "prize": "Second Prize"
-        },
-        {
-          "slNo": 5,
-          "enrollment": "4CB19CS064",
-          "name": "P Padmaprasad Shenoy",
-          "event": "Incredia - Tides of Change (Intellectum)",
-          "institution": "NMAMIT, Nitte",
-          "date": "26-04-2023 to 29-04-2023",
-          "prize": "First Prize"
-        },
-        {
-          "slNo": 6,
-          "enrollment": "4CB19CS087",
-          "name": "S Sreenivasa Shenoy",
-          "event": "Incredia - Tides of Change (Intellectum)",
-          "institution": "NMAMIT, Nitte",
-          "date": "26-04-2023 to 29-04-2023",
-          "prize": "First Prize"
-        },
-        {
-          "slNo": 7,
-          "enrollment": "4CB19CS038",
-          "name": "Elvin D Souza",
-          "event": "DEV HOST 2022",
-          "institution": "SCEM, Mangalore",
-          "date": "19-11-2022",
-          "prize": "Second Prize"
-        }
-      ]
-    },
-
-    "awardsTable2": {
-      "headers": [
-        { "key": "slNo", "label": "Sl. No." },
-        { "key": "enrollment", "label": "Enrollment Number" },
-        { "key": "name", "label": "Name" },
-        { "key": "event", "label": "Name of the Event / Technical Fest" },
-        { "key": "institution", "label": "Institution & Place" },
-        { "key": "date", "label": "Date of Event" },
-        { "key": "prize", "label": "Prize / Award" }
-      ],
-      "rows": [
-        {
-          "slNo": 1,
-          "enrollment": "4CB19CS076",
-          "name": "P V Paramashiva Karanth",
-          "event": "Embers’23 - National Level Technical Fest (Project Exhibition)",
-          "institution": "P A College of Engineering, Mangaluru",
-          "date": "07-05-2023 to 08-05-2023",
-          "prize": "Second Prize"
-        },
-        {
-          "slNo": 2,
-          "enrollment": "4CB18CS119",
-          "name": "Vyasaray Kamath",
-          "event": "Embers’23 - National Level Technical Fest (Project Exhibition)",
-          "institution": "P A College of Engineering, Mangaluru",
-          "date": "07-05-2023 to 08-05-2023",
-          "prize": "Second Prize"
-        },
-        {
-          "slNo": 3,
-          "enrollment": "4CB19CS112",
-          "name": "Udith Bekal",
-          "event": "Embers’23 - National Level Technical Fest (Project Exhibition)",
-          "institution": "P A College of Engineering, Mangaluru",
-          "date": "07-05-2023 to 08-05-2023",
-          "prize": "Second Prize"
-        },
-        {
-          "slNo": 4,
-          "enrollment": "4CB19CS120",
-          "name": "Vignesh",
-          "event": "Embers’23 - National Level Technical Fest (Project Exhibition)",
-          "institution": "P A College of Engineering, Mangaluru",
-          "date": "07-05-2023 to 08-05-2023",
-          "prize": "Second Prize"
-        },
-        {
-          "slNo": 5,
-          "enrollment": "4CB19CS064",
-          "name": "P Padmaprasad Shenoy",
-          "event": "Incredia - Tides of Change (Intellectum)",
-          "institution": "NMAMIT, Nitte",
-          "date": "26-04-2023 to 29-04-2023",
-          "prize": "First Prize"
-        },
-        {
-          "slNo": 6,
-          "enrollment": "4CB19CS087",
-          "name": "S Sreenivasa Shenoy",
-          "event": "Incredia - Tides of Change (Intellectum)",
-          "institution": "NMAMIT, Nitte",
-          "date": "26-04-2023 to 29-04-2023",
-          "prize": "First Prize"
-        },
-        {
-          "slNo": 7,
-          "enrollment": "4CB19CS038",
-          "name": "Elvin D Souza",
-          "event": "DEV HOST 2022",
-          "institution": "SCEM, Mangalore",
-          "date": "19-11-2022",
-          "prize": "Second Prize"
-        }
-      ]
-    },
-
-    "awardsTable": {
-      "headers": [
-        { "key": "slNo", "label": "Sl. No." },
-        { "key": "enrollment", "label": "Enrollment Number" },
-        { "key": "name", "label": "Name" },
-        { "key": "event", "label": "Name of the Event / Technical Fest" },
-        { "key": "institution", "label": "Institution & Place" },
-        { "key": "date", "label": "Date of Event" },
-        { "key": "prize", "label": "Prize / Award" }
-      ],
-      "rows": [
-        {
-          "slNo": 1,
-          "enrollment": "4CB22CS136",
-          "name": "Sruthi K S",
-          "event": "IEEE Project Expo-2025",
-          "institution": "Navkis College of Engineering, Hassan",
-          "date": "29-04-25",
-          "prize": "Best Project"
-        },
-        {
-          "slNo": 2,
-          "enrollment": "4CB22CS127",
-          "name": "Shridevi",
-          "event": "IEEE Project Expo-2025",
-          "institution": "Navkis College of Engineering, Hassan",
-          "date": "29-04-25",
-          "prize": "Best Project"
-        },
-        {
-          "slNo": 3,
-          "enrollment": "4CB22CS137",
-          "name": "Subhiksha",
-          "event": "IEEE Project Expo-2025",
-          "institution": "Navkis College of Engineering, Hassan",
-          "date": "29-04-25",
-          "prize": "Best Project"
-        },
-        {
-          "slNo": 4,
-          "enrollment": "4CB22CS113",
-          "name": "Sanya Pateel",
-          "event": "IEEE Project Expo-2025",
-          "institution": "Navkis College of Engineering, Hassan",
-          "date": "29-04-25",
-          "prize": "Best Project"
-        },
-        {
-          "slNo": 5,
-          "enrollment": "4CB22CS080",
-          "name": "Nithin B R",
-          "event": "TCS TechBytes IT Quiz 2025",
-          "institution": "Sahyadri College of Engineering and Management, Mangaluru",
-          "date": "18-03-25",
-          "prize": "First"
-        },
-        {
-          "slNo": 6,
-          "enrollment": "4CB23CS180",
-          "name": "Vaidehi V Pai",
-          "event": "UiPath Student Developer Champion Program",
-          "institution": "Online",
-          "date": "30-04-25",
-          "prize": "UiPath Student Developer Champion"
-        },
-        {
-          "slNo": 7,
-          "enrollment": "4CB21CS066",
-          "name": "Pavan D Naik",
-          "event": "DBPH-2023",
-          "institution": "IIT (BHU), Varanasi",
-          "date": "15-03-24",
-          "prize": "Certificate of Achievement"
-        },
-        {
-          "slNo": 8,
-          "enrollment": "4CB21CS095",
-          "name": "Sakshath Rai",
-          "event": "DBPH-2023",
-          "institution": "IIT (BHU), Varanasi",
-          "date": "15-03-24",
-          "prize": "Certificate of Achievement"
-        },
-        {
-          "slNo": 9,
-          "enrollment": "4CB21CS112",
-          "name": "Srushti R Naik",
-          "event": "DBPH-2023",
-          "institution": "IIT (BHU), Varanasi",
-          "date": "15-03-24",
-          "prize": "Certificate of Achievement"
-        },
-        {
-          "slNo": 10,
-          "enrollment": "4CB21CS065",
-          "name": "P Shreekar Shenoy",
-          "event": "DBPH-2023",
-          "institution": "IIT (BHU), Varanasi",
-          "date": "15-03-24",
-          "prize": "Certificate of Achievement"
-        },
-        {
-          "slNo": 11,
-          "enrollment": "4CB21CS047",
-          "name": "Kunal Sachin Kithur",
-          "event": "DBPH-2023",
-          "institution": "IIT (BHU), Varanasi",
-          "date": "15-03-24",
-          "prize": "Certificate of Achievement"
-        },
-        {
-          "slNo": 12,
-          "enrollment": "4CB20CS073",
-          "name": "Pratham Bhandary",
-          "event": "KSCST Funded Project",
-          "institution": "Online",
-          "date": "25-05-24",
-          "prize": "Rs. 2,500/-"
-        },
-        {
-          "slNo": 13,
-          "enrollment": "4CB20CS085",
-          "name": "Ranjita Mallya",
-          "event": "KSCST Funded Project",
-          "institution": "Online",
-          "date": "25-05-24",
-          "prize": "Rs. 2,500/-"
-        },
-        {
-          "slNo": 14,
-          "enrollment": "4CB20CS118",
-          "name": "Swarna Kamath",
-          "event": "KSCST Funded Project",
-          "institution": "Online",
-          "date": "25-05-24",
-          "prize": "Rs. 2,500/-"
-        },
-        {
-          "slNo": 15,
-          "enrollment": "4CB20CS107",
-          "name": "Shrivatsa",
-          "event": "KSCST Funded Project",
-          "institution": "Online",
-          "date": "25-05-24",
-          "prize": "Rs. 4,000/-"
-        },
-        {
-          "slNo": 16,
-          "enrollment": "4CB20CS097",
-          "name": "Shashank S",
-          "event": "KSCST Funded Project",
-          "institution": "Online",
-          "date": "25-05-24",
-          "prize": "Rs. 4,000/-"
-        },
-        {
-          "slNo": 17,
-          "enrollment": "4CB20CS106",
-          "name": "Shreyas S",
-          "event": "KSCST Funded Project",
-          "institution": "Online",
-          "date": "25-05-24",
-          "prize": "Rs. 4,000/-"
-        },
-        {
-          "slNo": 18,
-          "enrollment": "4CB20CS092",
-          "name": "Sathwik Sadashay V",
-          "event": "KSCST Funded Project",
-          "institution": "Online",
-          "date": "25-05-24",
-          "prize": "Rs. 4,000/-"
-        },
-        {
-          "slNo": 19,
-          "enrollment": "4CB20CS022",
-          "name": "Bharath M G",
-          "event": "KSCST Funded Project",
-          "institution": "Online",
-          "date": "25-05-24",
-          "prize": "Rs. 4,500/-"
-        },
-        {
-          "slNo": 20,
-          "enrollment": "4CB20CS025",
-          "name": "Chethan Kumar K V",
-          "event": "KSCST Funded Project",
-          "institution": "Online",
-          "date": "25-05-24",
-          "prize": "Rs. 4,500/-"
-        },
-
-        {
-          "slNo": 21,
-          "enrollment": "4CB20CS028",
-          "name": "Darshan Shetty",
-          "event": "KSCST Funded Project",
-          "institution": "Online",
-          "date": "25-05-24",
-          "prize": "Rs. 4,500/-"
-        },
-        {
-          "slNo": 22,
-          "enrollment": "4CB20CS014",
-          "name": "Anirudh Rao",
-          "event": "KSCST Funded Project",
-          "institution": "Online",
-          "date": "25-05-24",
-          "prize": "Rs. 4,500/-"
-        },
-        {
-          "slNo": 23,
-          "enrollment": "4CB20CS037",
-          "name": "K. Tejas Prabhu",
-          "event": "KSCST Funded Project",
-          "institution": "Online",
-          "date": "25-05-24",
-          "prize": "Rs. 4,500/-"
-        },
-        {
-          "slNo": 24,
-          "enrollment": "4CB20CS121",
-          "name": "Uday Ganapati Marathi",
-          "event": "KSCST Funded Project",
-          "institution": "Online",
-          "date": "25-05-24",
-          "prize": "Rs. 4,000/-"
-        },
-        {
-          "slNo": 25,
-          "enrollment": "4CB20CS114",
-          "name": "Sriram M V",
-          "event": "Jnansangama’24 - National Level Student Conference",
-          "institution": "VCET, Puttur",
-          "date": "03-05-2024",
-          "prize": "Second Prize"
-        },
-        {
-          "slNo": 26,
-          "enrollment": "4CB20CS096",
-          "name": "Shashank Kini",
-          "event": "Jnansangama’24 - National Level Student Conference",
-          "institution": "VCET, Puttur",
-          "date": "03-05-2024",
-          "prize": "Second Prize"
-        },
-        {
-          "slNo": 27,
-          "enrollment": "4CB20CS105",
-          "name": "Shreyas K S",
-          "event": "Jnansangama’24 - National Level Student Conference",
-          "institution": "VCET, Puttur",
-          "date": "03-05-2024",
-          "prize": "Second Prize"
-        },
-        {
-          "slNo": 28,
-          "enrollment": "4CB20CS116",
-          "name": "Sunaina Pai P",
-          "event": "Jnansangama’24 - National Level Student Conference",
-          "institution": "VCET, Puttur",
-          "date": "03-05-2024",
-          "prize": "Second Prize"
-        },
-        {
-          "slNo": 29,
-          "enrollment": "4CB20CS112",
-          "name": "Sreelakshmi",
-          "event": "Jnansangama’24 - National Level Student Conference",
-          "institution": "VCET, Puttur",
-          "date": "03-05-2024",
-          "prize": "Second Prize"
-        },
-        {
-          "slNo": 30,
-          "enrollment": "4CB20CS110",
-          "name": "Sneha",
-          "event": "Jnansangama’24 - National Level Student Conference",
-          "institution": "VCET, Puttur",
-          "date": "03-05-2024",
-          "prize": "Second Prize"
-        },
-        {
-          "slNo": 31,
-          "enrollment": "4CB20CS113",
-          "name": "Srijana",
-          "event": "Jnansangama’24 - National Level Student Conference",
-          "institution": "VCET, Puttur",
-          "date": "03-05-2024",
-          "prize": "Second Prize"
-        },
-        {
-          "slNo": 32,
-          "enrollment": "4CB21CS036",
-          "name": "Joyslin Madtha",
-          "event": "Sambram’24 - Quiz Holic",
-          "institution": "Shree Devi Institute of Technology, Mangalore",
-          "date": "04-01-24 & 05-01-24",
-          "prize": "Second"
-        },
-        {
-          "slNo": 33,
-          "enrollment": "4CB21CS005",
-          "name": "Abhishek M",
-          "event": "Sambram’24 - Quiz Holic",
-          "institution": "Shree Devi Institute of Technology, Mangalore",
-          "date": "04-01-24 & 05-01-24",
-          "prize": "Second"
-        },
-        {
-          "slNo": 34,
-          "enrollment": "4CB21CS027",
-          "name": "Dhanyashree R",
-          "event": "Sambram’24 - Quiz Holic",
-          "institution": "Shree Devi Institute of Technology, Mangalore",
-          "date": "04-01-24 & 05-01-24",
-          "prize": "Second"
-        },
-        {
-          "slNo": 35,
-          "enrollment": "4CB21CS067",
-          "name": "Praharsh T",
-          "event": "Envision 2K24 - A National Level Techno-Cultural Fest (Bahubali - The Code Begins)",
-          "institution": "Srinivas Institute of Technology, Valachil, Mangalore",
-          "date": "02-05-24 & 03-05-24",
-          "prize": "First"
-        },
-        {
-          "slNo": 36,
-          "enrollment": "4CB21CS066",
-          "name": "Pavan D Naik",
-          "event": "Envision 2K24 - A National Level Techno-Cultural Fest (Bahubali - The Code Begins)",
-          "institution": "Srinivas Institute of Technology, Valachil, Mangalore",
-          "date": "02-05-24 & 03-05-24",
-          "prize": "First"
-        },
-        {
-          "slNo": 37,
-          "enrollment": "4CB21CS047",
-          "name": "Kunal Sachin Kithur",
-          "event": "Envision 2K24 - A National Level Techno-Cultural Fest",
-          "institution": "Srinivas Institute of Technology, Valachil, Mangalore",
-          "date": "03-05-24",
-          "prize": "First"
-        },
-        {
-          "slNo": 38,
-          "enrollment": "4CB21CS067",
-          "name": "Praharsh T",
-          "event": "Envision 2K24 - A National Level Techno-Cultural Fest (Coders of Caribbean)",
-          "institution": "Srinivas Institute of Technology, Valachil, Mangaluru",
-          "date": "02-05-24 & 03-05-24",
-          "prize": "Second"
-        },
-        {
-          "slNo": 39,
-          "enrollment": "4CB21CS066",
-          "name": "Pavan D Naik",
-          "event": "Envision 2K24 - A National Level Techno-Cultural Fest (Bahubali - The Code Begins)",
-          "institution": "Srinivas Institute of Technology, Valachil, Mangaluru",
-          "date": "02-05-24 & 03-05-24",
-          "prize": "Second"
-        },
-        {
-          "slNo": 40,
-          "enrollment": "4CB21CS047",
-          "name": "Kunal Sachin Kithur",
-          "event": "Envision 2K24 - A National Level Techno-Cultural Fest (Bahubali - The Code Begins)",
-          "institution": "Srinivas Institute of Technology, Valachil, Mangaluru",
-          "date": "02-05-24 & 03-05-24",
-          "prize": "Second"
-        },
-        {
-          "slNo": 41,
-          "enrollment": "4CB21CS021",
-          "name": "Bhoomika S Bhat",
-          "event": "CODEBLAZE (TechMaze), SYNERGIA’23",
-          "institution": "SCEM, Mangalore",
-          "date": "07-12-23 to 09-12-23",
-          "prize": "Second"
-        },
-        {
-          "slNo": 42,
-          "enrollment": "4CB21CS063",
-          "name": "P Nidhi Padiyar",
-          "event": "CODEBLAZE (TechMaze), SYNERGIA’23",
-          "institution": "SCEM, Mangalore",
-          "date": "07-12-23 to 09-12-23",
-          "prize": "Second"
-        },
-        {
-          "slNo": 43,
-          "enrollment": "4CB21CS109",
-          "name": "Sivali Rao",
-          "event": "Hackathon, SYNERGIA’23",
-          "institution": "SCEM, Mangalore",
-          "date": "07-12-23 to 09-12-23",
-          "prize": "Second"
-        },
-        {
-          "slNo": 44,
-          "enrollment": "4CB21CS054",
-          "name": "Bilal Ahmed",
-          "event": "Hackathon, SYNERGIA’23",
-          "institution": "SCEM, Mangalore",
-          "date": "07-12-23 to 09-12-23",
-          "prize": "Second"
-        }
-      ]
-    },
+  "allAwards":[
+  {
+    "id": "achievements-2024-25",
+    "title": "Student Achievements & Project Awards (2024-25)",
+    "headers": [
+      { "key": "slNo", "label": "Sl. No." },
+      { "key": "enrollment", "label": "Enrollment Number" },
+      { "key": "name", "label": "Name" },
+      { "key": "event", "label": "Name of the Event / Technical Fest" },
+      { "key": "institution", "label": "Institution & Place" },
+      { "key": "date", "label": "Date of Event" },
+      { "key": "prize", "label": "Prize / Award" }
+    ],
+    "rows": [
+      {
+        "slNo": 1,
+        "enrollment": "4CB22CS136",
+        "name": "Sruthi K S",
+        "event": "IEEE Project Expo-2025",
+        "institution": "Navkis College of Engineering, Hassan",
+        "date": "29-04-25",
+        "prize": "Best Project"
+      },
+      {
+        "slNo": 2,
+        "enrollment": "4CB22CS127",
+        "name": "Shridevi",
+        "event": "IEEE Project Expo-2025",
+        "institution": "Navkis College of Engineering, Hassan",
+        "date": "29-04-25",
+        "prize": "Best Project"
+      },
+      {
+        "slNo": 3,
+        "enrollment": "4CB22CS137",
+        "name": "Subhiksha",
+        "event": "IEEE Project Expo-2025",
+        "institution": "Navkis College of Engineering, Hassan",
+        "date": "29-04-25",
+        "prize": "Best Project"
+      },
+      {
+        "slNo": 4,
+        "enrollment": "4CB22CS113",
+        "name": "Sanya Pateel",
+        "event": "IEEE Project Expo-2025",
+        "institution": "Navkis College of Engineering, Hassan",
+        "date": "29-04-25",
+        "prize": "Best Project"
+      },
+      {
+        "slNo": 5,
+        "enrollment": "4CB22CS080",
+        "name": "Nithin B R",
+        "event": "TCS TechBytes IT Quiz 2025",
+        "institution": "Sahyadri College of Engineering and Management, Mangaluru",
+        "date": "18-03-25",
+        "prize": "First"
+      },
+      {
+        "slNo": 6,
+        "enrollment": "4CB23CS180",
+        "name": "Vaidehi V Pai",
+        "event": "UiPath Student Developer Champion Program",
+        "institution": "Online",
+        "date": "30-04-25",
+        "prize": "UiPath Student Developer Champion"
+      },
+      {
+        "slNo": 7,
+        "enrollment": "4CB21CS066",
+        "name": "Pavan D Naik",
+        "event": "DBPH-2023",
+        "institution": "IIT (BHU), Varanasi",
+        "date": "15-03-24",
+        "prize": "Certificate of Achievement"
+      },
+      {
+        "slNo": 8,
+        "enrollment": "4CB21CS095",
+        "name": "Sakshath Rai",
+        "event": "DBPH-2023",
+        "institution": "IIT (BHU), Varanasi",
+        "date": "15-03-24",
+        "prize": "Certificate of Achievement"
+      },
+      {
+        "slNo": 9,
+        "enrollment": "4CB21CS112",
+        "name": "Srushti R Naik",
+        "event": "DBPH-2023",
+        "institution": "IIT (BHU), Varanasi",
+        "date": "15-03-24",
+        "prize": "Certificate of Achievement"
+      },
+      {
+        "slNo": 10,
+        "enrollment": "4CB21CS065",
+        "name": "P Shreekar Shenoy",
+        "event": "DBPH-2023",
+        "institution": "IIT (BHU), Varanasi",
+        "date": "15-03-24",
+        "prize": "Certificate of Achievement"
+      },
+      {
+        "slNo": 11,
+        "enrollment": "4CB21CS047",
+        "name": "Kunal Sachin Kithur",
+        "event": "DBPH-2023",
+        "institution": "IIT (BHU), Varanasi",
+        "date": "15-03-24",
+        "prize": "Certificate of Achievement"
+      },
+      {
+        "slNo": 12,
+        "enrollment": "4CB20CS073",
+        "name": "Pratham Bhandary",
+        "event": "KSCST Funded Project",
+        "institution": "Online",
+        "date": "25-05-24",
+        "prize": "Rs. 2,500/-"
+      },
+      {
+        "slNo": 13,
+        "enrollment": "4CB20CS085",
+        "name": "Ranjita Mallya",
+        "event": "KSCST Funded Project",
+        "institution": "Online",
+        "date": "25-05-24",
+        "prize": "Rs. 2,500/-"
+      },
+      {
+        "slNo": 14,
+        "enrollment": "4CB20CS118",
+        "name": "Swarna Kamath",
+        "event": "KSCST Funded Project",
+        "institution": "Online",
+        "date": "25-05-24",
+        "prize": "Rs. 2,500/-"
+      },
+      {
+        "slNo": 15,
+        "enrollment": "4CB20CS107",
+        "name": "Shrivatsa",
+        "event": "KSCST Funded Project",
+        "institution": "Online",
+        "date": "25-05-24",
+        "prize": "Rs. 4,000/-"
+      },
+      {
+        "slNo": 16,
+        "enrollment": "4CB20CS097",
+        "name": "Shashank S",
+        "event": "KSCST Funded Project",
+        "institution": "Online",
+        "date": "25-05-24",
+        "prize": "Rs. 4,000/-"
+      },
+      {
+        "slNo": 17,
+        "enrollment": "4CB20CS106",
+        "name": "Shreyas S",
+        "event": "KSCST Funded Project",
+        "institution": "Online",
+        "date": "25-05-24",
+        "prize": "Rs. 4,000/-"
+      },
+      {
+        "slNo": 18,
+        "enrollment": "4CB20CS092",
+        "name": "Sathwik Sadashay V",
+        "event": "KSCST Funded Project",
+        "institution": "Online",
+        "date": "25-05-24",
+        "prize": "Rs. 4,000/-"
+      },
+      {
+        "slNo": 19,
+        "enrollment": "4CB20CS022",
+        "name": "Bharath M G",
+        "event": "KSCST Funded Project",
+        "institution": "Online",
+        "date": "25-05-24",
+        "prize": "Rs. 4,500/-"
+      },
+      {
+        "slNo": 20,
+        "enrollment": "4CB20CS025",
+        "name": "Chethan Kumar K V",
+        "event": "KSCST Funded Project",
+        "institution": "Online",
+        "date": "25-05-24",
+        "prize": "Rs. 4,500/-"
+      },
+      {
+        "slNo": 21,
+        "enrollment": "4CB20CS028",
+        "name": "Darshan Shetty",
+        "event": "KSCST Funded Project",
+        "institution": "Online",
+        "date": "25-05-24",
+        "prize": "Rs. 4,500/-"
+      },
+      {
+        "slNo": 22,
+        "enrollment": "4CB20CS014",
+        "name": "Anirudh Rao",
+        "event": "KSCST Funded Project",
+        "institution": "Online",
+        "date": "25-05-24",
+        "prize": "Rs. 4,500/-"
+      },
+      {
+        "slNo": 23,
+        "enrollment": "4CB20CS037",
+        "name": "K. Tejas Prabhu",
+        "event": "KSCST Funded Project",
+        "institution": "Online",
+        "date": "25-05-24",
+        "prize": "Rs. 4,500/-"
+      },
+      {
+        "slNo": 24,
+        "enrollment": "4CB20CS121",
+        "name": "Uday Ganapati Marathi",
+        "event": "KSCST Funded Project",
+        "institution": "Online",
+        "date": "25-05-24",
+        "prize": "Rs. 4,000/-"
+      },
+      {
+        "slNo": 25,
+        "enrollment": "4CB20CS114",
+        "name": "Sriram M V",
+        "event": "Jnansangama’24 - National Level Student Conference",
+        "institution": "VCET, Puttur",
+        "date": "03-05-2024",
+        "prize": "Second Prize"
+      },
+      {
+        "slNo": 26,
+        "enrollment": "4CB20CS096",
+        "name": "Shashank Kini",
+        "event": "Jnansangama’24 - National Level Student Conference",
+        "institution": "VCET, Puttur",
+        "date": "03-05-2024",
+        "prize": "Second Prize"
+      },
+      {
+        "slNo": 27,
+        "enrollment": "4CB20CS105",
+        "name": "Shreyas K S",
+        "event": "Jnansangama’24 - National Level Student Conference",
+        "institution": "VCET, Puttur",
+        "date": "03-05-2024",
+        "prize": "Second Prize"
+      },
+      {
+        "slNo": 28,
+        "enrollment": "4CB20CS116",
+        "name": "Sunaina Pai P",
+        "event": "Jnansangama’24 - National Level Student Conference",
+        "institution": "VCET, Puttur",
+        "date": "03-05-2024",
+        "prize": "Second Prize"
+      },
+      {
+        "slNo": 29,
+        "enrollment": "4CB20CS112",
+        "name": "Sreelakshmi",
+        "event": "Jnansangama’24 - National Level Student Conference",
+        "institution": "VCET, Puttur",
+        "date": "03-05-2024",
+        "prize": "Second Prize"
+      },
+      {
+        "slNo": 30,
+        "enrollment": "4CB20CS110",
+        "name": "Sneha",
+        "event": "Jnansangama’24 - National Level Student Conference",
+        "institution": "VCET, Puttur",
+        "date": "03-05-2024",
+        "prize": "Second Prize"
+      },
+      {
+        "slNo": 31,
+        "enrollment": "4CB20CS113",
+        "name": "Srijana",
+        "event": "Jnansangama’24 - National Level Student Conference",
+        "institution": "VCET, Puttur",
+        "date": "03-05-2024",
+        "prize": "Second Prize"
+      },
+      {
+        "slNo": 32,
+        "enrollment": "4CB21CS036",
+        "name": "Joyslin Madtha",
+        "event": "Sambram’24 - Quiz Holic",
+        "institution": "Shree Devi Institute of Technology, Mangalore",
+        "date": "04-01-24 & 05-01-24",
+        "prize": "Second"
+      },
+      {
+        "slNo": 33,
+        "enrollment": "4CB21CS005",
+        "name": "Abhishek M",
+        "event": "Sambram’24 - Quiz Holic",
+        "institution": "Shree Devi Institute of Technology, Mangalore",
+        "date": "04-01-24 & 05-01-24",
+        "prize": "Second"
+      },
+      {
+        "slNo": 34,
+        "enrollment": "4CB21CS027",
+        "name": "Dhanyashree R",
+        "event": "Sambram’24 - Quiz Holic",
+        "institution": "Shree Devi Institute of Technology, Mangalore",
+        "date": "04-01-24 & 05-01-24",
+        "prize": "Second"
+      },
+      {
+        "slNo": 35,
+        "enrollment": "4CB21CS067",
+        "name": "Praharsh T",
+        "event": "Envision 2K24 - A National Level Techno-Cultural Fest (Bahubali - The Code Begins)",
+        "institution": "Srinivas Institute of Technology, Valachil, Mangalore",
+        "date": "02-05-24 & 03-05-24",
+        "prize": "First"
+      },
+      {
+        "slNo": 36,
+        "enrollment": "4CB21CS066",
+        "name": "Pavan D Naik",
+        "event": "Envision 2K24 - A National Level Techno-Cultural Fest (Bahubali - The Code Begins)",
+        "institution": "Srinivas Institute of Technology, Valachil, Mangalore",
+        "date": "02-05-24 & 03-05-24",
+        "prize": "First"
+      },
+      {
+        "slNo": 37,
+        "enrollment": "4CB21CS047",
+        "name": "Kunal Sachin Kithur",
+        "event": "Envision 2K24 - A National Level Techno-Cultural Fest",
+        "institution": "Srinivas Institute of Technology, Valachil, Mangalore",
+        "date": "03-05-24",
+        "prize": "First"
+      },
+      {
+        "slNo": 38,
+        "enrollment": "4CB21CS067",
+        "name": "Praharsh T",
+        "event": "Envision 2K24 - A National Level Techno-Cultural Fest (Coders of Caribbean)",
+        "institution": "Srinivas Institute of Technology, Valachil, Mangaluru",
+        "date": "02-05-24 & 03-05-24",
+        "prize": "Second"
+      },
+      {
+        "slNo": 39,
+        "enrollment": "4CB21CS066",
+        "name": "Pavan D Naik",
+        "event": "Envision 2K24 - A National Level Techno-Cultural Fest (Bahubali - The Code Begins)",
+        "institution": "Srinivas Institute of Technology, Valachil, Mangaluru",
+        "date": "02-05-24 & 03-05-24",
+        "prize": "Second"
+      },
+      {
+        "slNo": 40,
+        "enrollment": "4CB21CS047",
+        "name": "Kunal Sachin Kithur",
+        "event": "Envision 2K24 - A National Level Techno-Cultural Fest (Bahubali - The Code Begins)",
+        "institution": "Srinivas Institute of Technology, Valachil, Mangaluru",
+        "date": "02-05-24 & 03-05-24",
+        "prize": "Second"
+      },
+      {
+        "slNo": 41,
+        "enrollment": "4CB21CS021",
+        "name": "Bhoomika S Bhat",
+        "event": "CODEBLAZE (TechMaze), SYNERGIA’23",
+        "institution": "SCEM, Mangalore",
+        "date": "07-12-23 to 09-12-23",
+        "prize": "Second"
+      },
+      {
+        "slNo": 42,
+        "enrollment": "4CB21CS063",
+        "name": "P Nidhi Padiyar",
+        "event": "CODEBLAZE (TechMaze), SYNERGIA’23",
+        "institution": "SCEM, Mangalore",
+        "date": "07-12-23 to 09-12-23",
+        "prize": "Second"
+      },
+      {
+        "slNo": 43,
+        "enrollment": "4CB21CS109",
+        "name": "Sivali Rao",
+        "event": "Hackathon, SYNERGIA’23",
+        "institution": "SCEM, Mangalore",
+        "date": "07-12-23 to 09-12-23",
+        "prize": "Second"
+      },
+      {
+        "slNo": 44,
+        "enrollment": "4CB21CS054",
+        "name": "Bilal Ahmed",
+        "event": "Hackathon, SYNERGIA’23",
+        "institution": "SCEM, Mangalore",
+        "date": "07-12-23 to 09-12-23",
+        "prize": "Second"
+      }
+    ]
+  },
+  {
+    "id": "achievements-2023-batch-1",
+    "title": "",
+    "headers": [
+      { "key": "slNo", "label": "Sl. No." },
+      { "key": "enrollment", "label": "Enrollment Number" },
+      { "key": "name", "label": "Name" },
+      { "key": "event", "label": "Name of the Event / Technical Fest" },
+      { "key": "institution", "label": "Institution & Place" },
+      { "key": "date", "label": "Date of Event" },
+      { "key": "prize", "label": "Prize / Award" }
+    ],
+    "rows": [
+      {
+        "slNo": 1,
+        "enrollment": "4CB19CS076",
+        "name": "P V Paramashiva Karanth",
+        "event": "Embers’23 - National Level Technical Fest (Project Exhibition)",
+        "institution": "P A College of Engineering, Mangaluru",
+        "date": "07-05-2023 to 08-05-2023",
+        "prize": "Second Prize"
+      },
+      {
+        "slNo": 2,
+        "enrollment": "4CB18CS119",
+        "name": "Vyasaray Kamath",
+        "event": "Embers’23 - National Level Technical Fest (Project Exhibition)",
+        "institution": "P A College of Engineering, Mangaluru",
+        "date": "07-05-2023 to 08-05-2023",
+        "prize": "Second Prize"
+      },
+      {
+        "slNo": 3,
+        "enrollment": "4CB19CS112",
+        "name": "Udith Bekal",
+        "event": "Embers’23 - National Level Technical Fest (Project Exhibition)",
+        "institution": "P A College of Engineering, Mangaluru",
+        "date": "07-05-2023 to 08-05-2023",
+        "prize": "Second Prize"
+      },
+      {
+        "slNo": 4,
+        "enrollment": "4CB19CS120",
+        "name": "Vignesh",
+        "event": "Embers’23 - National Level Technical Fest (Project Exhibition)",
+        "institution": "P A College of Engineering, Mangaluru",
+        "date": "07-05-2023 to 08-05-2023",
+        "prize": "Second Prize"
+      },
+      {
+        "slNo": 5,
+        "enrollment": "4CB19CS064",
+        "name": "P Padmaprasad Shenoy",
+        "event": "Incredia - Tides of Change (Intellectum)",
+        "institution": "NMAMIT, Nitte",
+        "date": "26-04-2023 to 29-04-2023",
+        "prize": "First Prize"
+      },
+      {
+        "slNo": 6,
+        "enrollment": "4CB19CS087",
+        "name": "S Sreenivasa Shenoy",
+        "event": "Incredia - Tides of Change (Intellectum)",
+        "institution": "NMAMIT, Nitte",
+        "date": "26-04-2023 to 29-04-2023",
+        "prize": "First Prize"
+      },
+      {
+        "slNo": 7,
+        "enrollment": "4CB19CS038",
+        "name": "Elvin D Souza",
+        "event": "DEV HOST 2022",
+        "institution": "SCEM, Mangalore",
+        "date": "19-11-2022",
+        "prize": "Second Prize"
+      }
+    ]
+  },
+  {
+    "id": "achievements-2023-batch-2",
+    "title": "",
+    "headers": [
+      { "key": "slNo", "label": "Sl. No." },
+      { "key": "enrollment", "label": "Enrollment Number" },
+      { "key": "name", "label": "Name" },
+      { "key": "event", "label": "Name of the Event / Technical Fest" },
+      { "key": "institution", "label": "Institution & Place" },
+      { "key": "date", "label": "Date of Event" },
+      { "key": "prize", "label": "Prize / Award" }
+    ],
+    "rows": [
+      {
+        "slNo": 1,
+        "enrollment": "4CB19CS076",
+        "name": "P V Paramashiva Karanth",
+        "event": "Embers’23 - National Level Technical Fest (Project Exhibition)",
+        "institution": "P A College of Engineering, Mangaluru",
+        "date": "07-05-2023 to 08-05-2023",
+        "prize": "Second Prize"
+      },
+      {
+        "slNo": 2,
+        "enrollment": "4CB18CS119",
+        "name": "Vyasaray Kamath",
+        "event": "Embers’23 - National Level Technical Fest (Project Exhibition)",
+        "institution": "P A College of Engineering, Mangaluru",
+        "date": "07-05-2023 to 08-05-2023",
+        "prize": "Second Prize"
+      },
+      {
+        "slNo": 3,
+        "enrollment": "4CB19CS112",
+        "name": "Udith Bekal",
+        "event": "Embers’23 - National Level Technical Fest (Project Exhibition)",
+        "institution": "P A College of Engineering, Mangaluru",
+        "date": "07-05-2023 to 08-05-2023",
+        "prize": "Second Prize"
+      },
+      {
+        "slNo": 4,
+        "enrollment": "4CB19CS120",
+        "name": "Vignesh",
+        "event": "Embers’23 - National Level Technical Fest (Project Exhibition)",
+        "institution": "P A College of Engineering, Mangaluru",
+        "date": "07-05-2023 to 08-05-2023",
+        "prize": "Second Prize"
+      },
+      {
+        "slNo": 5,
+        "enrollment": "4CB19CS064",
+        "name": "P Padmaprasad Shenoy",
+        "event": "Incredia - Tides of Change (Intellectum)",
+        "institution": "NMAMIT, Nitte",
+        "date": "26-04-2023 to 29-04-2023",
+        "prize": "First Prize"
+      },
+      {
+        "slNo": 6,
+        "enrollment": "4CB19CS087",
+        "name": "S Sreenivasa Shenoy",
+        "event": "Incredia - Tides of Change (Intellectum)",
+        "institution": "NMAMIT, Nitte",
+        "date": "26-04-2023 to 29-04-2023",
+        "prize": "First Prize"
+      },
+      {
+        "slNo": 7,
+        "enrollment": "4CB19CS038",
+        "name": "Elvin D Souza",
+        "event": "DEV HOST 2022",
+        "institution": "SCEM, Mangalore",
+        "date": "19-11-2022",
+        "prize": "Second Prize"
+      }
+    ]
+  }
+],
 
     "toppers": [
       {
@@ -10322,19 +10327,19 @@
       "programEducation": [
         "Graduates will work productively as computer science engineers exhibiting ethical qualities and leadership roles in multi-disciplinary teams.",
         "Graduates will adapt to the changing technologies, tools and societal requirements.",
-        "Graduates will design and deploy software that meets the needs of individuals and the industries",
-        "Graduates will take up higher education and/or be associated with the field so that they can keep themselves abreast of Research & Development"
+        "Graduates will design and deploy software that meets the needs of individuals and the industries.",
+        "Graduates will take up higher education and/or be associated with the field so that they can keep themselves abreast of Research & Development."
       ],
      "programOutComes": [
     "Engineering Knowledge: Apply knowledge of mathematics, natural science, computing, engineering fundamentals and an engineering specialization as specified in WK1 to WK4 respectively to develop to the solution of complex engineering problems.",
-    "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development. (WK1 to WK4)",
-    "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required. (WK5)",
-    "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis & interpretation of data to provide valid conclusions. (WK8).",
-    "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction and modelling recognizing their limitations to solve complex engineering problems. (WK2 and WK6)",
-    "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for its impact on sustainability with reference to economy, health, safety, legal framework, culture and environment. (WK1, WK5, and WK7).",
-    "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national & international laws. (WK9)",
+    "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development (WK1 to WK4).",
+    "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required (WK5).",
+    "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis & interpretation of data to provide valid conclusions(WK8).",
+    "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction and modelling recognizing their limitations to solve complex engineering problems (WK2 and WK6).",
+    "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for its impact on sustainability with reference to economy, health, safety, legal framework, culture and environment (WK1, WK5, and WK7).",
+    "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national & international laws (WK9).",
     "Individual and Collaborative Team work: Function effectively as an individual, and as a member or leader in diverse/multi-disciplinary teams.",
-    "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences",
+    "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences.",
     "Project Management and Finance: Apply knowledge and understanding of engineering management principles and economic decision-making and apply these to one’s own work, as a member and leader in a team, and to manage projects and in multidisciplinary environments.",
     "Life-Long Learning: Recognize the need for, and have the preparation and ability for i) independent and life-long learning ii) adaptability to new and emerging technologies and iii) critical thinking in the broadest context of technological change."
   ],
@@ -10753,7 +10758,7 @@
     "holisticGrowthResearch": "Encourage students to become well-rounded in their professional competencies.",
     "ourVision": "The Department of Information Science and Engineering strives to be a centre of learning in the field of Information Technology to produce globally competent engineers catering to the needs of the industry and society.",
     "depatmentHead": {
-      "messageFromtheDepartmentHead": "The Department of Information Science & Engineering (ISE) remain committed to fostering a dynamic learning environment that encourages innovation, critical thinking, and collaboration. Our excellent infrastructure and exceptional faculty ensure quality education, fostering meaningful interactions among students, parents, and staff. The Training and Placement Cell is pivotal in securing bright futures for our students. We prioritize innovation in research, teaching, and community service, striving to advance the field of Information Science and Engineering continually. Our faculty members continue to impart cutting-edge knowledge and skills to our students, preparing them to excel in the ever-evolving field of information science and engineering. Additionally, we are actively engaging in research initiatives aimed at addressing contemporary challenges and contributing to the advancement of technology.I invite you to join us in elevating the Department of Information Science & Engineering to new heights. Wishing all our students and faculty a successful and fulfilling academic journey.",
+      "messageFromtheDepartmentHead": "The Department of Information Science & Engineering (ISE) remain committed to fostering a dynamic learning environment that encourages innovation, critical thinking, and collaboration. Our excellent infrastructure and exceptional faculty ensure quality education, fostering meaningful interactions among students, parents, and staff. The Training and Placement Cell is pivotal in securing bright futures for our students. We prioritize innovation in research, teaching, and community service, striving to advance the field of Information Science and Engineering continually. Our faculty members continue to impart cutting-edge knowledge and skills to our students, preparing them to excel in the ever-evolving field of information science and engineering. Additionally, we are actively engaging in research initiatives aimed at addressing contemporary challenges and contributing to the advancement of technology. I invite you to join us in elevating the Department of Information Science & Engineering to new heights. Wishing all our students and faculty a successful and fulfilling academic journey.",
       "name": "Dr. H Manoj T Gadiyar",
       "position": "Professor & HoD",
       "imageUrl": "/departmentImages/departmentHeads/Information Science and Engg.webp"
@@ -10780,34 +10785,36 @@
       }
     ],
 
-    "awardsTable": {
-      "headers": [
-        { "key": "batch", "label": "Batch" },
-        { "key": "awardsCount", "label": "Awards Count" }
-      ],
-      "rows": [
-        {
-          "batch": "2023-24",
-          "awardsCount": 61
-        },
-        {
-          "batch": "2022-23",
-          "awardsCount": 8
-        },
-        {
-          "batch": "2021-22",
-          "awardsCount": 29
-        },
-        {
-          "batch": "2020-21",
-          "awardsCount": 36
-        },
-        {
-          "batch": "2019-20",
-          "awardsCount": 9
-        }
-      ]
+  "allAwards":[{
+  "id": "awards-count-summary",
+  "title": "",
+  "headers": [
+    { "key": "batch", "label": "Batch" },
+    { "key": "awardsCount", "label": "Awards Count" }
+  ],
+  "rows": [
+    {
+      "batch": "2023-24",
+      "awardsCount": 61
     },
+    {
+      "batch": "2022-23",
+      "awardsCount": 8
+    },
+    {
+      "batch": "2021-22",
+      "awardsCount": 29
+    },
+    {
+      "batch": "2020-21",
+      "awardsCount": 36
+    },
+    {
+      "batch": "2019-20",
+      "awardsCount": 9
+    }
+  ]
+}],
     "gallery": [
       { "image": "/departmentImages/gallery/it/1.jpeg", "title": "Bootstrapping Python: Control Flow Functions And Modules" },
       { "image": "/departmentImages/gallery/it/2.jpg", "title": "Confidence" },
@@ -20999,14 +21006,14 @@
       ],
      "programOutComes": [
     "Engineering Knowledge: Apply knowledge of mathematics, natural science, computing, engineering fundamentals and an engineering specialization as specified in WK1 to WK4 respectively to develop to the solution of complex engineering problems.",
-    "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development. (WK1 to WK4)",
-    "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required. (WK5)",
-    "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis & interpretation of data to provide valid conclusions. (WK8).",
-    "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction and modelling recognizing their limitations to solve complex engineering problems. (WK2 and WK6)",
-    "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for its impact on sustainability with reference to economy, health, safety, legal framework, culture and environment. (WK1, WK5, and WK7).",
-    "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national & international laws. (WK9)",
+    "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development (WK1 to WK4).",
+    "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required (WK5).",
+    "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis & interpretation of data to provide valid conclusions (WK8).",
+    "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction and modelling recognizing their limitations to solve complex engineering problems (WK2 and WK6).",
+    "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for its impact on sustainability with reference to economy, health, safety, legal framework, culture and environment (WK1, WK5, and WK7).",
+    "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national & international laws (WK9).",
     "Individual and Collaborative Team work: Function effectively as an individual, and as a member or leader in diverse/multi-disciplinary teams.",
-    "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences",
+    "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences.",
     "Project Management and Finance: Apply knowledge and understanding of engineering management principles and economic decision-making and apply these to one’s own work, as a member and leader in a team, and to manage projects and in multidisciplinary environments.",
     "Life-Long Learning: Recognize the need for, and have the preparation and ability for i) independent and life-long learning ii) adaptability to new and emerging technologies and iii) critical thinking in the broadest context of technological change."
   ],
@@ -21407,7 +21414,7 @@
     "bannerUrl": "/departmentImages/2.webp",
     "css":"xl:object-[90%_45%]",
 
-    "departmentAboutDescription": "The Department of ECE at Canara Engineering College offers a dynamic curriculum covering electronics, communication, and signal processing, with applications in industries, medical systems, and more. With experienced faculty, modern labs, and industry-relevant tools, the department ensures strong academic foundations and hands-on exposure.Students benefit from technical workshops, expert talks, internships, and industrial visits. The department also maintains strong alumni ties to enrich curriculum development and career guidance. Committed to quality education, we foster innovation, research, and all-round professional growth.",
+    "departmentAboutDescription": "The Department of ECE at Canara Engineering College offers a dynamic curriculum covering electronics, communication, and signal processing, with applications in industries, medical systems, and more. With experienced faculty, modern labs, and industry-relevant tools, the department ensures strong academic foundations and hands-on exposure. Students benefit from technical workshops, expert talks, internships, and industrial visits. The department also maintains strong alumni ties to enrich curriculum development and career guidance. Committed to quality education, we foster innovation, research, and all-round professional growth.",
     "departmentAboutDescriptionArray": [
       "The Department of ECE at Canara Engineering College offers a dynamic curriculum covering electronics, communication, and signal processing, with applications in industries, medical systems, and more. With experienced faculty, modern labs, and industry-relevant tools, the department ensures strong academic foundations and hands-on exposure.Students benefit from technical workshops, expert talks, internships, and industrial visits. The department also maintains strong alumni ties to enrich curriculum development and career guidance. Committed to quality education, we foster innovation, research, and all-round professional growth."
     ],
@@ -21476,6 +21483,553 @@
     "imageUrl": "/departmentImages/departmentHeads/Electronics&CommunicationEngineering.webp"
   },
 
+
+
+"allAwards":[
+  {
+    "id": "ece-achievements-2024-25",
+    "title": "Year 2024-25",
+    "headers": [
+      { "key": "slNo", "label": "Sl. No." },
+      { "key": "enrollment", "label": "USN" },
+      { "key": "name", "label": "Name" },
+      { "key": "event", "label": "Name of the Event" },
+      { "key": "institution", "label": "Institution & Place" },
+      { "key": "date", "label": "Date of Event" },
+      { "key": "prize", "label": "Prize / Award" }
+    ],
+    "rows": [
+      {
+        "slNo": 1,
+        "enrollment": "4CB22EC052",
+        "name": "Teja Jagannatha Naik",
+        "event": "Innonexus – Ideathon 2025",
+        "institution": "Department of Electonics & communication engineering Vidya Vikas Institute of Engineering and Technology Mysuru",
+        "date": "12th May 2025",
+        "prize": "2nd Place"
+      },
+      {
+        "slNo": 2,
+        "enrollment": "4CB22EC002",
+        "name": "Ankitha Parulekar",
+        "event": "Innonexus – Ideathon 2025",
+        "institution": "Department of Electonics & communication engineering Vidya Vikas Institute of Engineering and Technology Mysuru",
+        "date": "12th May 2025",
+        "prize": "2nd Place"
+      },
+      {
+        "slNo": 3,
+        "enrollment": "4CB22EC006",
+        "name": "Chirag R Kamath",
+        "event": "UDBHAV 2025 project Exhibition",
+        "institution": "MRIT Mandya",
+        "date": "12th May 2025",
+        "prize": "Consolation Prize"
+      },
+      {
+        "slNo": 4,
+        "enrollment": "4CB22EC014",
+        "name": "Kapil G Prabhu",
+        "event": "UDBHAV 2025 project Exhibition",
+        "institution": "MRIT Mandya",
+        "date": "12th May 2025",
+        "prize": "Consolation Prize"
+      },
+      {
+        "slNo": 5,
+        "enrollment": "4CB22EC019",
+        "name": "M Vinayak Rao",
+        "event": "UDBHAV 2025 project Exhibition",
+        "institution": "MRIT Mandya",
+        "date": "12th May 2025",
+        "prize": "Consolation Prize"
+      },
+      {
+        "slNo": 6,
+        "enrollment": "4CB22EC018",
+        "name": "Lohith T A",
+        "event": "UDBHAV 2025 project Exhibition",
+        "institution": "MRIT Mandya",
+        "date": "12th May 2025",
+        "prize": "Consolation Prize"
+      }
+    ]
+  },
+  {
+    "id": "ece-achievements-2023-24",
+    "title": "Year 2023-24",
+    "headers": [
+      { "key": "slNo", "label": "Sl. No." },
+      { "key": "enrollment", "label": "USN" },
+      { "key": "name", "label": "Name" },
+      { "key": "event", "label": "Name of the Event" },
+      { "key": "institution", "label": "Institution & Place" },
+      { "key": "date", "label": "Date of Event" },
+      { "key": "prize", "label": "Prize / Award" }
+    ],
+    "rows": [
+      {
+        "slNo": 1,
+        "enrollment": "4CB20EC004",
+        "name": "Aditya P",
+        "event": "Hive link Hackothsava- 2023",
+        "institution": "Sree Madva Vadiraja institute of technology and management, Bantakal",
+        "date": "2nd and 3rd jun 2023",
+        "prize": "winner"
+      },
+      {
+        "slNo": 2,
+        "enrollment": "4CB20EC006",
+        "name": "Amel Rayaz Bailar",
+        "event": "Low cost Myoelectric Prosthetic ARM",
+        "institution": "Sambhram Institute of technology Bangalore",
+        "date": "08.05.2024",
+        "prize": "Consolation price"
+      },
+      {
+        "slNo": 3,
+        "enrollment": "4CB20EC047",
+        "name": "Sameer Hegde",
+        "event": "Low cost Myoelectric Prosthetic ARM",
+        "institution": "Sambhram Institute of technology Bangalore",
+        "date": "08.05.2024",
+        "prize": "Consolation price"
+      },
+      {
+        "slNo": 4,
+        "enrollment": "4CB20EC041",
+        "name": "Sanjana Pai",
+        "event": "Postman classroom program",
+        "institution": "NITK Surathkal (Conducted by Centre for Open-source software and Hardware)",
+        "date": "31.03.2023",
+        "prize": "Appreciation"
+      }
+    ]
+  },
+  {
+    "id": "ece-achievements-2022-23",
+    "title": "Year 2022-23",
+    "headers": [
+      { "key": "slNo", "label": "Sl. No." },
+      { "key": "enrollment", "label": "USN" },
+      { "key": "name", "label": "Name" },
+      { "key": "event", "label": "Name of the Event" },
+      { "key": "institution", "label": "Institution & Place" },
+      { "key": "date", "label": "Date of Event" },
+      { "key": "prize", "label": "Prize / Award" }
+    ],
+    "rows": [
+      {
+        "slNo": 1,
+        "enrollment": "4CB20EC047",
+        "name": "Sameer Hegde",
+        "event": "Smart India Hackathon",
+        "institution": "Anand institute of higher Technology",
+        "date": "Aug 25th to 26th 2022",
+        "prize": "1 lakh cash prize"
+      },
+      {
+        "slNo": 2,
+        "enrollment": "4CB20EC056",
+        "name": "Suraj Hegde S",
+        "event": "Smart India Hackathon",
+        "institution": "Anand institute of higher Technology",
+        "date": "Aug 25th to 26th 2022",
+        "prize": "1 lakh cash prize"
+      },
+      {
+        "slNo": 3,
+        "enrollment": "4CB20EC050",
+        "name": "Shreya S Gangolli",
+        "event": "Smart India Hackathon",
+        "institution": "Anand institute of higher Technology",
+        "date": "Aug 25th to 26th 2022",
+        "prize": "1 lakh cash prize"
+      },
+      {
+        "slNo": 4,
+        "enrollment": "4CB20EC004",
+        "name": "Aditya P",
+        "event": "Smart India Hackathon",
+        "institution": "Anand institute of higher Technology",
+        "date": "",
+        "prize": "1 lakh cash prize"
+      },
+      {
+        "slNo": 5,
+        "enrollment": "4CB20EC035",
+        "name": "Rahul Nayak",
+        "event": "Smart India Hackathon",
+        "institution": "Anand institute of higher Technology",
+        "date": "Aug 25th to 26th 2022",
+        "prize": "1 lakh cash prize"
+      },
+      {
+        "slNo": 6,
+        "enrollment": "4CB20EC022",
+        "name": "Nisha Shetty",
+        "event": "Ideathon 2022",
+        "institution": "Shri Madhwa vadiraja institute of technology. bantakal",
+        "date": "10th dec 2022",
+        "prize": "second prize"
+      },
+      {
+        "slNo": 7,
+        "enrollment": "4CB20EC006",
+        "name": "Amel Rayaz Bailur",
+        "event": "Ideathon 2022",
+        "institution": "Shri Madhwa vadiraja institute of technology. bantakal",
+        "date": "10th dec 2022",
+        "prize": "second prize"
+      },
+      {
+        "slNo": 8,
+        "enrollment": "4CB20EC004",
+        "name": "Adithya P",
+        "event": "HACKOTHASAVA- 2023",
+        "institution": "Shri Madhwa vadiraja institute of technology. bantakal",
+        "date": "2nd,3rd JUNE 2023",
+        "prize": "cash prize- 25000"
+      },
+      {
+        "slNo": 9,
+        "enrollment": "4CB20EC002",
+        "name": "Abhijith A",
+        "event": "Electrika (hardware hackathon)",
+        "institution": "NITK Surathkal",
+        "date": "2022",
+        "prize": "1st Place"
+      },
+      {
+        "slNo": 10,
+        "enrollment": "4CB20EC009",
+        "name": "Ashwin K S",
+        "event": "Electrika (hardware hackathon)",
+        "institution": "NITK Surathkal",
+        "date": "2022",
+        "prize": "1st Place"
+      },
+      {
+        "slNo": 11,
+        "enrollment": "4CB20EC016",
+        "name": "Krithik S Kotyan",
+        "event": "Electrika (hardware hackathon)",
+        "institution": "NITK Surathkal",
+        "date": "2022",
+        "prize": "1st Place"
+      },
+      {
+        "slNo": 12,
+        "enrollment": "4CB20EC007",
+        "name": "Ananth Shanbhag",
+        "event": "Electrika (hardware hackathon)",
+        "institution": "NITK Surathkal",
+        "date": "2022",
+        "prize": "1st Place"
+      },
+      {
+        "slNo": 13,
+        "enrollment": "4CB20EC007",
+        "name": "Ananth Shanbhag",
+        "event": "Academia- Industry Conclave 1.0 Hackathon",
+        "institution": "Manipal Institute of Technology, MAHE, Manipal",
+        "date": "09-09- 2022",
+        "prize": "Consolation Prize"
+      },
+      {
+        "slNo": 14,
+        "enrollment": "4CB20EC047",
+        "name": "Sameer Hegde",
+        "event": "Electrical (hardware hackathon)",
+        "institution": "NITK Surathkal",
+        "date": "2022",
+        "prize": "2nd Place"
+      },
+      {
+        "slNo": 15,
+        "enrollment": "4CB20EC004",
+        "name": "Aditya P",
+        "event": "Electrika (hardware hackathon)",
+        "institution": "NITK Surathkal",
+        "date": "2022",
+        "prize": "2nd Place"
+      },
+      {
+        "slNo": 16,
+        "enrollment": "4CB20EC032",
+        "name": "Pruthviraj S Uppar",
+        "event": "Academia- Industry Conclave 1.0 Hacksthon",
+        "institution": "Manipal Institute of Technology, MAHE, Manipal",
+        "date": "September 9 2022",
+        "prize": "Consolation Prize"
+      },
+      {
+        "slNo": 17,
+        "enrollment": "4CB19EC090",
+        "name": "Varshitha",
+        "event": "Manipal Med-Tech hackathon 2022",
+        "institution": "Alva’s Institute of Engineering and technology, Moodubidire",
+        "date": "20th October, 2022",
+        "prize": "Top 11 team"
+      },
+      {
+        "slNo": 18,
+        "enrollment": "4CB19EC098",
+        "name": "Yashika R Rai",
+        "event": "International Cultural jamboree SPICE 2022",
+        "institution": "Alva’s Institute of Engineering and technology, Moodubidire",
+        "date": "21st to 27th December",
+        "prize": "Consolation Prize"
+      },
+      {
+        "slNo": 19,
+        "enrollment": "4CB19EC022",
+        "name": "Disha D",
+        "event": "International Cultural jamboree SPICE 2022",
+        "institution": "Alva’s Institute of Engineering and technology, Moodubidire",
+        "date": "21st to 27th December",
+        "prize": "Consolation Prize"
+      },
+      {
+        "slNo": 20,
+        "enrollment": "4CB19EC089",
+        "name": "Vaishnavi",
+        "event": "International Cultural jamboree SPICE 2022",
+        "institution": "Alva’s Institute of Engineering and technology, Moodubidire",
+        "date": "21st to 27th December",
+        "prize": "Consolation Prize"
+      },
+      {
+        "slNo": 21,
+        "enrollment": "4CB19EC055",
+        "name": "Prathiksha V Shetty",
+        "event": "International Cultural jamboree SPICE 2022",
+        "institution": "Alva’s Institute of Engineering and technology, Moodubidire",
+        "date": "21st to 27th December",
+        "prize": "Top 11 team"
+      },
+      {
+        "slNo": 22,
+        "enrollment": "4CB19EC091",
+        "name": "Varun BM",
+        "event": "International Cultural jamboree SPICE 2022",
+        "institution": "Alva’s Institute of Engineering and technology, Moodubidire",
+        "date": "21st to 27th December",
+        "prize": "Consolation Prize"
+      },
+      {
+        "slNo": 23,
+        "enrollment": "4CB19EC087",
+        "name": "Tara Kamath",
+        "event": "International Cultural jamboree SPICE 2022",
+        "institution": "Alva’s Institute of Engineering and technology, Moodubidire",
+        "date": "21st to 27th December",
+        "prize": "Consolation Prize"
+      },
+      {
+        "slNo": 24,
+        "enrollment": "4CB19EC066",
+        "name": "Sarvesh Jayaprasad",
+        "event": "International Cultural jamboree SPICE 2022",
+        "institution": "Alva’s Institute of Engineering and technology, Moodubidire",
+        "date": "21st to 27th December",
+        "prize": "Consolation Prize"
+      }
+    ]
+  },
+  {
+    "id": "ece-achievements-2021-22",
+    "title": "Year 2021-22",
+    "headers": [
+      { "key": "slNo", "label": "Sl. No." },
+      { "key": "enrollment", "label": "USN" },
+      { "key": "name", "label": "Name" },
+      { "key": "event", "label": "Name of the Event" },
+      { "key": "institution", "label": "Institution & Place" },
+      { "key": "date", "label": "Date of Event" },
+      { "key": "prize", "label": "Prize / Award" }
+    ],
+    "rows": [
+      {
+        "slNo": 1,
+        "enrollment": "4CB18EC010",
+        "name": "Bharath Kamath",
+        "event": "Technology conference R10HTC",
+        "institution": "IEEE Bangalore subsection Bangalore",
+        "date": "30/9/2021 to 2/10/2021",
+        "prize": "First"
+      },
+      {
+        "slNo": 2,
+        "enrollment": "4CB18EC015",
+        "name": "Jyothi bangera",
+        "event": "IEEE YESIST'12 2022",
+        "institution": "Sri Venkateshwara College of Engineering, Bengaluru",
+        "date": "9/6/2022",
+        "prize": "Selected for Final round"
+      },
+      {
+        "slNo": 3,
+        "enrollment": "4CB18EC044",
+        "name": "Pragathi Baliga",
+        "event": "IEEE YESIST'12 2022",
+        "institution": "Sri Venkateshwara College of Engineering, Bengaluru",
+        "date": "9/6/2022",
+        "prize": "Selected for Final round"
+      },
+      {
+        "slNo": 4,
+        "enrollment": "4CB18EC024",
+        "name": "Shilpa ML",
+        "event": "IEEE YESIST'12 2022",
+        "institution": "Sri Venkateshwara College of Engineering, Bengaluru",
+        "date": "9/6/2022",
+        "prize": "Selected for Final round"
+      },
+      {
+        "slNo": 5,
+        "enrollment": "4CB18EC055",
+        "name": "Rohit D Hegde",
+        "event": "IEEE YESIST'12 2022",
+        "institution": "Sri Venkateshwara College of Engineering, Bengaluru",
+        "date": "9/6/2022",
+        "prize": "Selected for Final round"
+      },
+      {
+        "slNo": 6,
+        "enrollment": "4CB18EC057",
+        "name": "Rutu Shastri",
+        "event": "Manipal Biotech Hackathon 21",
+        "institution": "Manipal school of life science’s Karnataka (Online Mode)",
+        "date": "16/07/2021 to 21/07/2021",
+        "prize": "Selected under top 10 team category"
+      },
+      {
+        "slNo": 7,
+        "enrollment": "4CB18EC051",
+        "name": "Rahul shenoy",
+        "event": "Manipal Biotech Hackathon 21",
+        "institution": "Manipal school of life science’s Karnataka (Online Mode)",
+        "date": "16/07/2021 to 21/07/2021",
+        "prize": "Selected under top 10 team category"
+      },
+      {
+        "slNo": 8,
+        "enrollment": "4CB18EC082",
+        "name": "Thangamma C",
+        "event": "Manipal Biotech Hackathon 21",
+        "institution": "Manipal school of life science’s Karnataka (Online Mode)",
+        "date": "16/07/2021 to 21/07/2021",
+        "prize": "Selected under top 10 team category"
+      },
+      {
+        "slNo": 9,
+        "enrollment": "4CB20EC004",
+        "name": "Adithya P",
+        "event": "Manipal Biotech Hackathon 21",
+        "institution": "Manipal school of life science’s Karnataka (Online Mode)",
+        "date": "16/07/2021 to 21/07/2021",
+        "prize": "Selected under top 10 team category"
+      }
+    ]
+  },
+  {
+    "id": "kscst-2024-25",
+    "title": "KSCST sanctioned project in the Year 2024-2025",
+    "headers": [
+      { "key": "slNo", "label": "Sl. No." },
+      { "key": "name", "label": "Student Names" },
+      { "key": "guide", "label": "Guide" },
+      { "key": "title", "label": "Project Title" },
+      { "key": "amount", "label": "Sanctioned Amount (Rs)" }
+    ],
+    "rows": [
+      {
+        "slNo": 1,
+        "name": "Ms. SONALI S, Ms. AISHWARYA H S, Ms. LATA KESHAV NAIK, Ms. SPANDANA",
+        "guide": "Mr. SREERAMA SAMARTHA J G",
+        "title": "HELICAL ANTENNA FOR SATELLITE RECEPTION AND AIRCRAFT COMMUNICATION",
+        "amount": "5,500"
+      },
+      {
+        "slNo": 2,
+        "name": "Ms. ANUSHA SUBRAY GOUDA, Mr. AYUSH M R, Mr. K MOHAMMEDSULTHAN, Mr. MOHAMMED YUSUF MULLA",
+        "guide": "Dr. DAYANANDA G K",
+        "title": "SOLAR PANEL CLEANING BOT",
+        "amount": "6,000"
+      },
+      {
+        "slNo": 3,
+        "name": "Mr. SHUBHAM PAL, Mr. M SANDEEP PRABHU, Ms. J SAMEEKSHA, Ms. PRAGATI S NAIK, Ms. CHAITRA M KADRI",
+        "guide": "Mr. M SANDEEP PRABHU",
+        "title": "GPS TRACKING SYSTEM FOR WOMEN SAFETY",
+        "amount": "4,000"
+      }
+    ]
+  },
+  {
+    "id": "kscst-2023-24",
+    "title": "KSCST sanctioned project in the Year 2023-2024",
+    "headers": [
+      { "key": "slNo", "label": "Sl. No." },
+      { "key": "name", "label": "Student Names" },
+      { "key": "guide", "label": "Guide" },
+      { "key": "title", "label": "Project Title" },
+      { "key": "amount", "label": "Sanctioned Amount (Rs)" }
+    ],
+    "rows": [
+      {
+        "slNo": 1,
+        "name": "Mr. ADITYA P., Mr. SAMEER HEGDE, Ms. AMEL RAYAZ BAILUR, Ms. NISHA SHETT",
+        "guide": "Dr. DAYANAND G. K.",
+        "title": "LOW-COST MYOELECTRIC PROSTHETIC ARM",
+        "amount": "5,500"
+      },
+      {
+        "slNo": 2,
+        "name": "Mr. ABHISHEK SHETTY, Mr. NAGARAJ NITYANAND SHETTY, Mr. SAMARTH SHETTY, Mr. YOGISH B. PRABHU",
+        "guide": "Mrs. RAJITHA A. A.",
+        "title": "NON-INVASIVE TEMPERATURE AND BLOOD GLUCOSE LEVEL DETECTION",
+        "amount": "5,500"
+      }
+    ]
+  },
+  {
+    "id": "kscst-2022-23",
+    "title": "KSCST sanctioned project in the Year 2022-2023",
+    "headers": [
+      { "key": "slNo", "label": "Sl. No." },
+      { "key": "name", "label": "Student Names" },
+      { "key": "guide", "label": "Guide" },
+      { "key": "title", "label": "Project Title" },
+      { "key": "amount", "label": "Sanctioned Amount (Rs)" }
+    ],
+    "rows": [
+      {
+        "slNo": 1,
+        "name": "Ms. RAVEENA NAIK, Ms. VINUTHA K G, Ms. SWATI MOGER, Mr. SUDARSHAN",
+        "guide": "Mr. SANDEEP PRABHU M",
+        "title": "SMART WIRELESS STETHOSCOPE",
+        "amount": "5,000"
+      },
+      {
+        "slNo": 2,
+        "name": "Mr. DHEERAJ SHENOY, Mr. AGHAN JAIN, Mr. HARSHAVARDHAN, Mr. K.S MUHAMMAD SAWAD",
+        "guide": "Mrs. SAVITHA ACHARYA",
+        "title": "MULTI CONTROLLED ELECTRIC WHEELCHAIR",
+        "amount": "6,000"
+      },
+      {
+        "slNo": 3,
+        "name": "Mr. DEVIPRASAD NAYAK, Mr. KEERTHAN J SUVARNA, Ms. PRATHIKSHA V SHETTY, Ms. VARSHITHA",
+        "guide": "Mrs. AKSHATHA G BALIGA",
+        "title": "AUTOMATED REHABILITATION GLOVES",
+        "amount": "6,000"
+      }
+    ]
+  }
+],
+
     "ideas": {
       "placements": [
         {
@@ -21497,18 +22051,18 @@
       "awards": [
         {
           "image": "/departmentImages/IdeaImpact/1.png",
-          "title": "AY 2024-25",
-          "subtitle": "12 Awards: Top achievements in Technical & Non-Technical events"
+          "title": "Innonexus – Ideathon 2025",
+          "subtitle": ""
         },
         {
           "image": "/departmentImages/IdeaImpact/2.png",
-          "title": "AY 2023-24",
-          "subtitle": "4 Awards: Top achievements in Technical & Non-Technical events"
+          "title": "UDBHAV 2025 project Exhibition conducted at MRIT Mandya",
+          "subtitle": ""
         },
         {
           "image": "/departmentImages/IdeaImpact/3.png",
-          "title": "AY 2022-23",
-          "subtitle": "24 Awards: Top achievements in Technical & Non-Technical events"
+          "title": "Hive link Hackothsava- 2023",
+          "subtitle": ""
         }
       ],
       "passoutTotlas": ""
@@ -30193,18 +30747,18 @@
       "programEducation": [
         "Succeed in their professional career.",
         "Apply the knowledge of Electronics and Communication to address technological problems of industry and society.",
-        "Demonstrate leadership qualities and exhibit professional standard"
+        "Demonstrate leadership qualities and exhibit professional standard."
       ],
     "programOutComes": [
     "Engineering Knowledge: Apply knowledge of mathematics, natural science, computing, engineering fundamentals and an engineering specialization as specified in WK1 to WK4 respectively to develop to the solution of complex engineering problems.",
-    "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development. (WK1 to WK4)",
-    "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required. (WK5)",
-    "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis & interpretation of data to provide valid conclusions. (WK8).",
-    "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction and modelling recognizing their limitations to solve complex engineering problems. (WK2 and WK6)",
-    "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for its impact on sustainability with reference to economy, health, safety, legal framework, culture and environment. (WK1, WK5, and WK7).",
-    "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national & international laws. (WK9)",
+    "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development (WK1 to WK4).",
+    "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required (WK5).",
+    "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis & interpretation of data to provide valid conclusions (WK8).",
+    "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction and modelling recognizing their limitations to solve complex engineering problems (WK2 and WK6).",
+    "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for its impact on sustainability with reference to economy, health, safety, legal framework, culture and environment (WK1, WK5, and WK7).",
+    "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national & international laws (WK9).",
     "Individual and Collaborative Team work: Function effectively as an individual, and as a member or leader in diverse/multi-disciplinary teams.",
-    "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences",
+    "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences.",
     "Project Management and Finance: Apply knowledge and understanding of engineering management principles and economic decision-making and apply these to one’s own work, as a member and leader in a team, and to manage projects and in multidisciplinary environments.",
     "Life-Long Learning: Recognize the need for, and have the preparation and ability for i) independent and life-long learning ii) adaptability to new and emerging technologies and iii) critical thinking in the broadest context of technological change."
   ],
@@ -30240,16 +30794,16 @@
             "Trainer kits",
             "Antenna setup",
             "Various Digital Modulation Kits",
-            "Power supply units."
+            "Power supply units"
           ],
           "imageUrl": "https://apiserver.cec.edu.in/files/Hardware%20Lab%20II-LIC%20and%20Communication%20Lab"
         },
         {
           "title": "Hardware lab III-Logic Design Lab and Project Lab",
-          "desc": "The study of the various applications of Digital ICs is done in this laboratory by the students in the 2nd year. It is also used exclusively used by the Final Year students to carry out their UG Projects in the even semester",
+          "desc": "The study of the various applications of Digital ICs is done in this laboratory by the students in the 2nd year. It is also used exclusively used by the Final Year students to carry out their UG Projects in the even semester.",
           "methodes": "Major facilities/Equipments",
           "points": [
-            "Digital IC Trainer kit, IC Tester.",
+            "Digital IC Trainer kit, IC Tester",
             "MSP430 G2XX Launchpad Kit",
             "IGBT Based Three Phase PWM Inverter",
             "FPGA Based Power Electronics and Motor Control Application Setup",
@@ -30268,7 +30822,7 @@
         },
         {
           "title": "Software Lab I-VLSI Lab/Computer Networks Lab",
-          "desc": "This laboratory is utilized by the 4th year students for VLSI Lab and 3rd year students for Computer Networks lab.Electric software enables to design analog VSLI circuits and layouts and simulate them. Xilinx IDE enables to simulate digital VLSI designs.NCTUNS is used to simulate computer networks using switch and hub for TCP and UDP protocols for different bandwidths and error rates. Shortest routing protocols are executed using C compiler",
+          "desc": "This laboratory is utilized by the 4th year students for VLSI Lab and 3rd year students for Computer Networks lab. Electric software enables to design analog VSLI circuits and layouts and simulate them. Xilinx IDE enables to simulate digital VLSI designs.NCTUNS is used to simulate computer networks using switch and hub for TCP and UDP protocols for different bandwidths and error rates. Shortest routing protocols are executed using C compiler.",
           "methodes": "Major tools",
           "points": ["35 Pentium Core PCs", "48 port Ethernet Switch", "Centralised UPS", "Xilinx software", "Electric software", "NCTUNS software"],
           "imageUrl": ""
@@ -30299,7 +30853,7 @@
         },
         {
           "title": "Research/Project Lab",
-          "desc": "Additional laboratory facilities are created in the department to improve the quality of learning, catering to the needs of the students. This laboratory is used to conduct project and research work and to meet the requirement of beyond working hours",
+          "desc": "Additional laboratory facilities are created in the department to improve the quality of learning, catering to the needs of the students. This laboratory is used to conduct project and research work and to meet the requirement of beyond working hours.",
           "methodes": "",
           "points": [],
           "imageUrl": "https://apiserver.cec.edu.in/files/Research%20Project%20Lab",
@@ -30311,10 +30865,10 @@
           "desc": "",
           "methodes": "",
           "points": [
-            "Class rooms are designed so as to ensure excellent audibility.",
-            "Classrooms are well illuminated and ventilated.",
-            "Class rooms are spacious with comfortable seating arrangements.",
-            "All the class rooms are equipped with LCD projectors."
+            "Class rooms are designed so as to ensure excellent audibility",
+            "Classrooms are well illuminated and ventilated",
+            "Class rooms are spacious with comfortable seating arrangements",
+            "All the class rooms are equipped with LCD projectors"
           ],
           "imageUrl": ""
         },
@@ -30323,9 +30877,9 @@
           "desc": "",
           "methodes": "",
           "points": [
-            "Department has got a well-equipped and spacious seminar hall with a seating capacity of 120.",
+            "Department has got a well-equipped and spacious seminar hall with a seating capacity of 120",
             "Seminar hall is used for conducting short term courses, guest lecturers, FDP etc.",
-            "Seminar hall is well ventilated and illuminated."
+            "Seminar hall is well ventilated and illuminated"
           ],
           "imageUrl": ""
         },
@@ -30716,9 +31270,9 @@
     "slug": "computer-science-design",
     "bannerUrl": "/departmentImages/5.webp",
     "css":"object-[50%_20%]",
-    "departmentAboutDescription": "Established in 2021, the Department of Computer Science & Design (CS&D) offers a unique blend of computing and design. Supported by experienced faculty, the department focuses on academics, research, and product development. Faculty contributions are regularly published in reputed international journals and conferences. The department emphasizes holistic student development through expert talks, industry interactions, and hands-on training. Regular FDPs, technical skill development programs, and self-learning initiatives like IIT Bombay’s Spoken Tutorials and ICT Academy certifications are integral to the learning process.With strong placement support, a growing industry interface, and a bi-annual newsletter to showcase innovation, the department is committed to shaping career-ready professionals. NSS activities further enhance student leadership, communication, and social responsibility.",
+    "departmentAboutDescription": "Established in 2021, the Department of Computer Science & Design (CS&D) offers a unique blend of computing and design. Supported by experienced faculty, the department focuses on academics, research, and product development. Faculty contributions are regularly published in reputed international journals and conferences. The department emphasizes holistic student development through expert talks, industry interactions, and hands-on training. Regular FDPs, technical skill development programs, and self-learning initiatives like IIT Bombay’s Spoken Tutorials and ICT Academy certifications are integral to the learning process. With strong placement support, a growing industry interface, and a bi-annual newsletter to showcase innovation, the department is committed to shaping career-ready professionals. NSS activities further enhance student leadership, communication, and social responsibility.",
     "departmentAboutDescriptionArray": [
-      "Established in 2021, the Department of Computer Science & Design (CS&D) offers a unique blend of computing and design. Supported by experienced faculty, the department focuses on academics, research, and product development. Faculty contributions are regularly published in reputed international journals and conferences. The department emphasizes holistic student development through expert talks, industry interactions, and hands-on training. Regular FDPs, technical skill development programs, and self-learning initiatives like IIT Bombay’s Spoken Tutorials and ICT Academy certifications are integral to the learning process.With strong placement support, a growing industry interface, and a bi-annual newsletter to showcase innovation, the department is committed to shaping career-ready professionals. NSS activities further enhance student leadership, communication, and social responsibility."
+      "Established in 2021, the Department of Computer Science & Design (CS&D) offers a unique blend of computing and design. Supported by experienced faculty, the department focuses on academics, research, and product development. Faculty contributions are regularly published in reputed international journals and conferences. The department emphasizes holistic student development through expert talks, industry interactions, and hands-on training. Regular FDPs, technical skill development programs, and self-learning initiatives like IIT Bombay’s Spoken Tutorials and ICT Academy certifications are integral to the learning process. With strong placement support, a growing industry interface, and a bi-annual newsletter to showcase innovation, the department is committed to shaping career-ready professionals. NSS activities further enhance student leadership, communication, and social responsibility."
     ],
 
     "description": [
@@ -30740,45 +31294,49 @@
       "imageUrl": "/departmentImages/departmentHeads/ComputerScienceDesign.webp"
     },
 
-    "awardsTable": {
-      "headers": [
-        { "key": "academicYear", "label": "Academic Year" },
-        { "key": "awardsCount", "label": "Awards" },
-        { "key": "details", "label": "Details" }
-      ],
-      "rows": [
-        {
-          "academicYear": "AY 2022-23",
-          "awardsCount": 10,
-          "details": [
-            "Has secured Runners up place in Volleyball, Inter Collegiate Rest of Bangalore Division zone held at PES Mandya - 2",
-            "Has secured third place in Volleyball, Inter zone/single zone tournament held at PES Mandya - 2",
-            "1st Runner up at NITTE HEALTHCARE INNOVATION HAKATHON -2023 organized by Nitte Incubation Centre - 2",
-            "Runner up in Badminton, Inter Collegiate Division level tournament held at NMAM Institute of Technology Nitte - 1",
-            "Runner-up place in Kabaddi, Inter Collegiate Rest of Bangalore Division level Tournament held at PES College of Engineering Mandya - 3"
-          ]
-        },
-        {
-          "academicYear": "AY 2023-24",
-          "awardsCount": 3,
-          "details": [
-            "1st Prize in the Pitchers during 'CODEBLAZE' held at Sahyadri College of Engineering - 1",
-            "Second prize in 'IDEATHON' organized by CEC Benjanapadavu - 1",
-            "Second Place in Rangeela held during Aakriti-2024, an Inter-collegiate Techno-Cultural Fest organized by CEC Benjanapadavu - 1"
-          ]
-        },
-        {
-          "academicYear": "AY 2024-25",
-          "awardsCount": 5,
-          "details": [
-            "2nd Place in the event Poster Parv held during 'Aakriti 2025', a National Level Techno-Cultural Fest organized by CEC - 1",
-            "Outstanding Achiever of Yukti-2025 and Winner in Logo Design Event at VTU Belagavi - 1",
-            "Second Place in Long Jump event at VTU 26th State Level Inter Collegiate Athletic Meet 2024-25 held at Jawaharlal Nehru New College of Engineering, Shivanogga with performance of 6.00 mtr - 1",
-            "VTU Honors Degree Awarded - 2"
-          ]
-        }
-      ]
-    },
+  "allAwards" : [
+  {
+    "id": "awards-academic-years",
+    "title": "",
+    "headers": [
+      { "key": "academicYear", "label": "Academic Year" },
+      { "key": "awardsCount", "label": "Awards" },
+      { "key": "details", "label": "Details" }
+    ],
+    "rows": [
+      {
+        "academicYear": "AY 2022-23",
+        "awardsCount": 10,
+        "details": [
+          "Has secured Runners up place in Volleyball, Inter Collegiate Rest of Bangalore Division zone held at PES Mandya - 2",
+          "Has secured third place in Volleyball, Inter zone/single zone tournament held at PES Mandya - 2",
+          "1st Runner up at NITTE HEALTHCARE INNOVATION HAKATHON -2023 organized by Nitte Incubation Centre - 2",
+          "Runner up in Badminton, Inter Collegiate Division level tournament held at NMAM Institute of Technology Nitte - 1",
+          "Runner-up place in Kabaddi, Inter Collegiate Rest of Bangalore Division level Tournament held at PES College of Engineering Mandya - 3"
+        ]
+      },
+      {
+        "academicYear": "AY 2023-24",
+        "awardsCount": 3,
+        "details": [
+          "1st Prize in the Pitchers during 'CODEBLAZE' held at Sahyadri College of Engineering - 1",
+          "Second prize in 'IDEATHON' organized by CEC Benjanapadavu - 1",
+          "Second Place in Rangeela held during Aakriti-2024, an Inter-collegiate Techno-Cultural Fest organized by CEC Benjanapadavu - 1"
+        ]
+      },
+      {
+        "academicYear": "AY 2024-25",
+        "awardsCount": 5,
+        "details": [
+          "2nd Place in the event Poster Parv held during 'Aakriti 2025', a National Level Techno-Cultural Fest organized by CEC - 1",
+          "Outstanding Achiever of Yukti-2025 and Winner in Logo Design Event at VTU Belagavi - 1",
+          "Second Place in Long Jump event at VTU 26th State Level Inter Collegiate Athletic Meet 2024-25 held at Jawaharlal Nehru New College of Engineering, Shivanogga with performance of 6.00 mtr - 1",
+          "VTU Honors Degree Awarded - 2"
+        ]
+      }
+    ]
+  }
+],
     "gallery": [
       { "image": "/departmentImages/gallery/csd/1.png", "title": "Spring Boot Api Development And Testing (series 1)" },
       { "image": "/departmentImages/gallery/csd/2.jpg", "title": "" },
@@ -39884,14 +40442,14 @@
       ],
      "programOutComes": [
     "Engineering Knowledge: Apply knowledge of mathematics, natural science, computing, engineering fundamentals and an engineering specialization as specified in WK1 to WK4 respectively to develop to the solution of complex engineering problems.",
-    "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development. (WK1 to WK4)",
-    "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required. (WK5)",
-    "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis & interpretation of data to provide valid conclusions. (WK8).",
-    "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction and modelling recognizing their limitations to solve complex engineering problems. (WK2 and WK6)",
-    "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for its impact on sustainability with reference to economy, health, safety, legal framework, culture and environment. (WK1, WK5, and WK7).",
-    "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national & international laws. (WK9)",
+    "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development (WK1 to WK4).",
+    "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required (WK5).",
+    "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis & interpretation of data to provide valid conclusions (WK8).",
+    "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction and modelling recognizing their limitations to solve complex engineering problems (WK2 and WK6).",
+    "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for its impact on sustainability with reference to economy, health, safety, legal framework, culture and environment (WK1, WK5, and WK7).",
+    "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national & international laws (WK9).",
     "Individual and Collaborative Team work: Function effectively as an individual, and as a member or leader in diverse/multi-disciplinary teams.",
-    "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences",
+    "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences.",
     "Project Management and Finance: Apply knowledge and understanding of engineering management principles and economic decision-making and apply these to one’s own work, as a member and leader in a team, and to manage projects and in multidisciplinary environments.",
     "Life-Long Learning: Recognize the need for, and have the preparation and ability for i) independent and life-long learning ii) adaptability to new and emerging technologies and iii) critical thinking in the broadest context of technological change."
   ],
@@ -39919,7 +40477,7 @@
           "desc": "",
           "methodes": "",
           "points": [
-            "This lab is utilized by 3rd year CSD students to conduct lab programs related to Object Oriented Design Pattern.",
+            "This lab is utilized by 3rd year CSD students to conduct lab programs related to Object Oriented Design Pattern",
             "Number of PC: 35",
             "OS: Windows 11/10, Ubuntu 20"
           ],
@@ -39930,7 +40488,7 @@
           "desc": "",
           "methodes": "",
           "points": [
-            "his lab is utilized by 4th year CSD students to conduct lab programs related to UI/UX",
+            "This lab is utilized by 4th year CSD students to conduct lab programs related to UI/UX",
             "Number of PC: 15",
             "OS: Windows 11, Ubuntu 20"
           ],
@@ -39941,7 +40499,7 @@
           "desc": "",
           "methodes": "",
           "points": [
-            "This lab is utilized by 3rd & 4th year CSD students to conduct project work related to Full Stack Development.",
+            "This lab is utilized by 3rd & 4th year CSD students to conduct project work related to Full Stack Development",
             "Number of PC: 33",
             "OS: Windows 11, Ubuntu 20"
           ],
@@ -39952,7 +40510,7 @@
           "desc": "",
           "methodes": "",
           "points": [
-            "This lab is utilized by 4th year CSD students to engage with projects related to Robotic Process and Automation.",
+            "This lab is utilized by 4th year CSD students to engage with projects related to Robotic Process and Automation",
             "Number of PC: 35",
             "OS: Windows 11, Ubuntu 18"
           ],
@@ -40211,47 +40769,50 @@
       }
     ],
 
-    "awardsTable": {
-      "headers": [
-        { "key": "academicYear", "label": "Academic Year" },
-        { "key": "awardsCount", "label": "Awards" },
-        { "key": "details", "label": "Details" }
-      ],
-      "rows": [
-        {
-          "academicYear": "AY 2025-26",
-          "awardsCount": 4,
-          "details": [
-            "The Department of CSBS received a winner place in the Branch Entry 2025 competition conducted at Canara Engineering College.",
-            "Mr. Anirudha Udupa is selected for the prestigious UDAL – DC Fellowship Program.",
-            "Mr. Prathvi P Nayak with his team received 1st place in the Srinathon 2.0 conducted at SIT, Valachil.",
-            "Mr. Anirudh R Prabhu received 2nd runner up in the reel contest conducted by Itsmangalore page."
-          ]
-        },
-        {
-          "academicYear": "AY 2024-25",
-          "awardsCount": 7,
-          "details": [
-            "Ms. Nikhitha Ganapati Bhat received VTU 1st rank with gold medal.",
-            "Mr. Himanshu received VTU 3rd rank.",
-            "Mr. Nikhil Pai received VTU 5th rank.",
-            "Ms. Rakshitha A Bhakta received VTU 6th rank.",
-            "Ms. Shravya K received VTU 8th rank.",
-            "Ms. Swedel Lawrence Dsouza received VTU 9th rank.",
-            "Ms. Charanya K Naik has been awarded the prestigious IEEE Women in Engineering Scholarship 2024-25."
-          ]
-        },
-
-        {
-          "academicYear": "AY 2023-24",
-          "awardsCount": 2,
-          "details": [
-            "Mr. Mohammed Hashim Ali received 2nd place in the ‘JAM - Just a Minute’ conducted by Canara Engineering College.",
-            "Mr. Tanish P Shetty received 1st place in the ‘Valorani’ event conducted by Canara Engineering College."
-          ]
-        }
-      ]
-    },
+  "allAwards" : [
+  {
+    "id": "csbs-achievements",
+    "title": "CSBS Student Achievements & Awards",
+    "headers": [
+      { "key": "academicYear", "label": "Academic Year" },
+      { "key": "awardsCount", "label": "Awards" },
+      { "key": "details", "label": "Details" }
+    ],
+    "rows": [
+      {
+        "academicYear": "AY 2025-26",
+        "awardsCount": 4,
+        "details": [
+          "The Department of CSBS received a winner place in the Branch Entry 2025 competition conducted at Canara Engineering College.",
+          "Mr. Anirudha Udupa is selected for the prestigious UDAL – DC Fellowship Program.",
+          "Mr. Prathvi P Nayak with his team received 1st place in the Srinathon 2.0 conducted at SIT, Valachil.",
+          "Mr. Anirudh R Prabhu received 2nd runner up in the reel contest conducted by Itsmangalore page."
+        ]
+      },
+      {
+        "academicYear": "AY 2024-25",
+        "awardsCount": 7,
+        "details": [
+          "Ms. Nikhitha Ganapati Bhat received VTU 1st rank with gold medal.",
+          "Mr. Himanshu received VTU 3rd rank.",
+          "Mr. Nikhil Pai received VTU 5th rank.",
+          "Ms. Rakshitha A Bhakta received VTU 6th rank.",
+          "Ms. Shravya K received VTU 8th rank.",
+          "Ms. Swedel Lawrence Dsouza received VTU 9th rank.",
+          "Ms. Charanya K Naik has been awarded the prestigious IEEE Women in Engineering Scholarship 2024-25."
+        ]
+      },
+      {
+        "academicYear": "AY 2023-24",
+        "awardsCount": 2,
+        "details": [
+          "Mr. Mohammed Hashim Ali received 2nd place in the ‘JAM - Just a Minute’ conducted by Canara Engineering College.",
+          "Mr. Tanish P Shetty received 1st place in the ‘Valorani’ event conducted by Canara Engineering College."
+        ]
+      }
+    ]
+  }
+],
     "gallery": [
       { "image": "/departmentImages/gallery/csb/1.jpg", "title": "Session On Achieving Value Proposition Fit And Business Fit" },
       { "image": "/departmentImages/gallery/csb/2.jpg", "title": "Business Model Canvas (bmc)" },
@@ -45891,14 +46452,14 @@
       ],
      "programOutComes": [
     "Engineering Knowledge: Apply knowledge of mathematics, natural science, computing, engineering fundamentals and an engineering specialization as specified in WK1 to WK4 respectively to develop to the solution of complex engineering problems.",
-    "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development. (WK1 to WK4)",
-    "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required. (WK5)",
-    "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis & interpretation of data to provide valid conclusions. (WK8).",
-    "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction and modelling recognizing their limitations to solve complex engineering problems. (WK2 and WK6)",
-    "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for its impact on sustainability with reference to economy, health, safety, legal framework, culture and environment. (WK1, WK5, and WK7).",
-    "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national & international laws. (WK9)",
+    "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development (WK1 to WK4).",
+    "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required (WK5).",
+    "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis & interpretation of data to provide valid conclusions (WK8).",
+    "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction and modelling recognizing their limitations to solve complex engineering problems (WK2 and WK6).",
+    "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for its impact on sustainability with reference to economy, health, safety, legal framework, culture and environment (WK1, WK5, and WK7).",
+    "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national & international laws (WK9).",
     "Individual and Collaborative Team work: Function effectively as an individual, and as a member or leader in diverse/multi-disciplinary teams.",
-    "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences",
+    "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences.",
     "Project Management and Finance: Apply knowledge and understanding of engineering management principles and economic decision-making and apply these to one’s own work, as a member and leader in a team, and to manage projects and in multidisciplinary environments.",
     "Life-Long Learning: Recognize the need for, and have the preparation and ability for i) independent and life-long learning ii) adaptability to new and emerging technologies and iii) critical thinking in the broadest context of technological change."
   ],
@@ -46246,41 +46807,44 @@
         "image": "/departmentImages/toppersImage/ai/12.jpg"
       }
     ],
-
-    "awardsTable": {
-      "headers": [
-        { "key": "academicYear", "label": "Academic Year" },
-        { "key": "technical", "label": "Technical" },
-        { "key": "nonTechnical", "label": "Non Technical" },
-        { "key": "total", "label": "Total" }
-      ],
-      "rows": [
-        {
-          "academicYear": "2024-25",
-          "technical": 11,
-          "nonTechnical": 5,
-          "total": 16
-        },
-        {
-          "academicYear": "2023-24",
-          "technical": 9,
-          "nonTechnical": 7,
-          "total": 16
-        },
-        {
-          "academicYear": "2022-23",
-          "technical": 3,
-          "nonTechnical": 8,
-          "total": 11
-        },
-        {
-          "academicYear": "Total",
-          "technical": 23,
-          "nonTechnical": 20,
-          "total": 43
-        }
-      ]
-    },
+"allAwards" : [
+  {
+    "id": "awards-tech-nontech-summary",
+    "title": "Awards Summary (Technical vs Non-Technical)",
+    "headers": [
+      { "key": "academicYear", "label": "Academic Year" },
+      { "key": "technical", "label": "Technical" },
+      { "key": "nonTechnical", "label": "Non Technical" },
+      { "key": "total", "label": "Total" }
+    ],
+    "rows": [
+      {
+        "academicYear": "2024-25",
+        "technical": 11,
+        "nonTechnical": 5,
+        "total": 16
+      },
+      {
+        "academicYear": "2023-24",
+        "technical": 9,
+        "nonTechnical": 7,
+        "total": 16
+      },
+      {
+        "academicYear": "2022-23",
+        "technical": 3,
+        "nonTechnical": 8,
+        "total": 11
+      },
+      {
+        "academicYear": "Total",
+        "technical": 23,
+        "nonTechnical": 20,
+        "total": 43
+      }
+    ]
+  }
+],
 
     "gallery": [
       { "image": "/departmentImages/gallery/ai/1.jpg", "title": "Discipline And Time Management" },
@@ -52193,14 +52757,14 @@
       ],
     "programOutComes": [
     "Engineering Knowledge: Apply knowledge of mathematics, natural science, computing, engineering fundamentals and an engineering specialization as specified in WK1 to WK4 respectively to develop to the solution of complex engineering problems.",
-    "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development. (WK1 to WK4)",
-    "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required. (WK5)",
-    "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis & interpretation of data to provide valid conclusions. (WK8).",
-    "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction and modelling recognizing their limitations to solve complex engineering problems. (WK2 and WK6)",
-    "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for its impact on sustainability with reference to economy, health, safety, legal framework, culture and environment. (WK1, WK5, and WK7).",
-    "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national & international laws. (WK9)",
+    "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development (WK1 to WK4).",
+    "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required (WK5).",
+    "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis & interpretation of data to provide valid conclusions (WK8).",
+    "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction and modelling recognizing their limitations to solve complex engineering problems (WK2 and WK6).",
+    "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for its impact on sustainability with reference to economy, health, safety, legal framework, culture and environment (WK1, WK5, and WK7).",
+    "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national & international laws (WK9).",
     "Individual and Collaborative Team work: Function effectively as an individual, and as a member or leader in diverse/multi-disciplinary teams.",
-    "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences",
+    "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences.",
     "Project Management and Finance: Apply knowledge and understanding of engineering management principles and economic decision-making and apply these to one’s own work, as a member and leader in a team, and to manage projects and in multidisciplinary environments.",
     "Life-Long Learning: Recognize the need for, and have the preparation and ability for i) independent and life-long learning ii) adaptability to new and emerging technologies and iii) critical thinking in the broadest context of technological change."
   ],
@@ -52592,11 +53156,11 @@
     "css":"object-[50%_20%]",
     "bannerUrl": "/departmentImages/3.webp",
     "description": [
-      "The Department of Science & Humanities comprises Chemistry, Physics, Mathematics & English .The department is highly focused on imparting quality education to meet the global challenges of modern Science and Technology. The department provides foundation for Engineering students to attain excellence in core competencies with high level of motivation, positive attitude, technical competent, ethical value and pedestal knowledge to face the global challenges to become world class engineers and scientists. The department has well qualified, experienced and dedicated faculty members, who are blend of knowledge and experience. Engineering Chemistry laboratory & Engineering Physics laboratory are well equipped with major equipments and caters to the needs of the students. As added gem to the crown, the Department of Science and Humanities has one VTU recognized research centre under Department of Chemistry."
+      "The Department of Science & Humanities comprises Chemistry, Physics, Mathematics & English. The department is highly focused on imparting quality education to meet the global challenges of modern Science and Technology. The department provides foundation for Engineering students to attain excellence in core competencies with high level of motivation, positive attitude, technical competent, ethical value and pedestal knowledge to face the global challenges to become world class engineers and scientists. The department has well qualified, experienced and dedicated faculty members, who are blend of knowledge and experience. Engineering Chemistry laboratory & Engineering Physics laboratory are well equipped with major equipments and caters to the needs of the students. As added gem to the crown, the Department of Science and Humanities has one VTU recognized research centre under Department of Chemistry."
     ],
-    "departmentAboutDescription": "The Department of Science & Humanities comprises Chemistry, Physics, Mathematics & English .The department is highly focused on imparting quality education to meet the global challenges of modern Science and Technology. The department provides foundation for Engineering students to attain excellence in core competencies with high level of motivation, positive attitude, technical competent, ethical value and pedestal knowledge to face the global challenges to become world class engineers and scientists. The department has well qualified, experienced and dedicated faculty members, who are blend of knowledge and experience. Engineering Chemistry laboratory & Engineering Physics laboratory are well equipped with major equipments and caters to the needs of the students. As added gem to the crown, the Department of Science and Humanities has one VTU recognized research centre under Department of Chemistry.",
+    "departmentAboutDescription": "The Department of Science & Humanities comprises Chemistry, Physics, Mathematics & English. The department is highly focused on imparting quality education to meet the global challenges of modern Science and Technology. The department provides foundation for Engineering students to attain excellence in core competencies with high level of motivation, positive attitude, technical competent, ethical value and pedestal knowledge to face the global challenges to become world class engineers and scientists. The department has well qualified, experienced and dedicated faculty members, who are blend of knowledge and experience. Engineering Chemistry laboratory & Engineering Physics laboratory are well equipped with major equipments and caters to the needs of the students. As added gem to the crown, the Department of Science and Humanities has one VTU recognized research centre under Department of Chemistry.",
     "departmentAboutDescriptionArray": [
-      "The Department of Science & Humanities comprises Chemistry, Physics, Mathematics & English .The department is highly focused on imparting quality education to meet the global challenges of modern Science and Technology. The department provides foundation for Engineering students to attain excellence in core competencies with high level of motivation, positive attitude, technical competent, ethical value and pedestal knowledge to face the global challenges to become world class engineers and scientists. The department has well qualified, experienced and dedicated faculty members, who are blend of knowledge and experience. Engineering Chemistry laboratory & Engineering Physics laboratory are well equipped with major equipments and caters to the needs of the students. As added gem to the crown, the Department of Science and Humanities has one VTU recognized research centre under Department of Chemistry."
+      "The Department of Science & Humanities comprises Chemistry, Physics, Mathematics & English. The department is highly focused on imparting quality education to meet the global challenges of modern Science and Technology. The department provides foundation for Engineering students to attain excellence in core competencies with high level of motivation, positive attitude, technical competent, ethical value and pedestal knowledge to face the global challenges to become world class engineers and scientists. The department has well qualified, experienced and dedicated faculty members, who are blend of knowledge and experience. Engineering Chemistry laboratory & Engineering Physics laboratory are well equipped with major equipments and caters to the needs of the students. As added gem to the crown, the Department of Science and Humanities has one VTU recognized research centre under Department of Chemistry."
     ],
 
     "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
@@ -52604,7 +53168,7 @@
     "holisticGrowthResearch": "To promote holistic development through co-curricular & extra-curricular activities while encouraging unbiased research, innovation & advancement in the field.",
     "ourVision": "To be recognized as a center of knowledge dissemination in Computer Science and Engineering by imparting value-added education to transform budding minds into competent computer professionals.",
     "depatmentHead": {
-      "messageFromtheDepartmentHead": "I am elated to introduce to you, the Basic Science and Humanities Department of Canara Engineering College which lays the foundation in the world of technology for future engineers. The department of Basic Science and Humanities nurtures students with a positive attitude to achieve excellence and aims to impart quality education.The department imparts knowledge and foundation for various disciplines like Mathematics, Physics, Chemistry, and English for all the branches of engineering, with excellent infrastructure and laboratories provided with the latest equipment. We have well-qualified and dedicated faculty who are the backbone of this department. Faculty members while mentoring the students in academics and overall development, lay the foundation of basic concepts and act as a catalyst to boost their talents. We are a step ahead in providing soft skills training for first-year BE students thereby modeling their innate traits and acquiring new prowess at the beginning of their academic journey. We also play an immense role in upskilling the students and assisting them during their placements. The department is proud of its accomplishments and is thriving to do much more in years to come. We wish all success to our students and wish them all the best !",
+      "messageFromtheDepartmentHead": "I am elated to introduce to you, the Basic Science and Humanities Department of Canara Engineering College which lays the foundation in the world of technology for future engineers. The Department of Basic Science and Humanities nurtures students with a positive attitude to achieve excellence and aims to impart quality education.The department imparts knowledge and foundation for various disciplines like Mathematics, Physics, Chemistry, and English for all the branches of engineering, with excellent infrastructure and laboratories provided with the latest equipment. We have well-qualified and dedicated faculty who are the backbone of this department. Faculty members while mentoring the students in academics and overall development, lay the foundation of basic concepts and act as a catalyst to boost their talents. We are a step ahead in providing soft skills training for first-year BE students thereby modeling their innate traits and acquiring new prowess at the beginning of their academic journey. We also play an immense role in upskilling the students and assisting them during their placements. The department is proud of its accomplishments and is thriving to do much more in years to come. We wish all success to our students and wish them all the best !",
       "name": "Dr. N. Satheesh Kumar",
       "position": "H.O.D- Science & Humanities",
       "imageUrl": "/departmentImages/departmentHeads/science&humanities.webp"
@@ -61974,20 +62538,20 @@
     "peo": {
        "programOutComes": [
     "Engineering Knowledge: Apply knowledge of mathematics, natural science, computing, engineering fundamentals and an engineering specialization as specified in WK1 to WK4 respectively to develop to the solution of complex engineering problems.",
-    "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development. (WK1 to WK4)",
-    "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required. (WK5)",
-    "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis & interpretation of data to provide valid conclusions. (WK8).",
-    "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction and modelling recognizing their limitations to solve complex engineering problems. (WK2 and WK6)",
-    "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for its impact on sustainability with reference to economy, health, safety, legal framework, culture and environment. (WK1, WK5, and WK7).",
-    "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national & international laws. (WK9)",
+    "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development (WK1 to WK4).",
+    "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required (WK5).",
+    "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis & interpretation of data to provide valid conclusions (WK8).",
+    "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction and modelling recognizing their limitations to solve complex engineering problems (WK2 and WK6).",
+    "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for its impact on sustainability with reference to economy, health, safety, legal framework, culture and environment (WK1, WK5, and WK7).",
+    "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national & international laws (WK9).",
     "Individual and Collaborative Team work: Function effectively as an individual, and as a member or leader in diverse/multi-disciplinary teams.",
-    "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences",
+    "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences.",
     "Project Management and Finance: Apply knowledge and understanding of engineering management principles and economic decision-making and apply these to one’s own work, as a member and leader in a team, and to manage projects and in multidisciplinary environments.",
     "Life-Long Learning: Recognize the need for, and have the preparation and ability for i) independent and life-long learning ii) adaptability to new and emerging technologies and iii) critical thinking in the broadest context of technological change."
   ]
     },
     "facilities": {
-      "description": "Department haswell equipped, spacious lab to facilitate the needs of the first year students. Individual attention is given to all the students in the laboratory. Followings are the major equipments in the laboratory",
+      "description": "Department haswell equipped, spacious lab to facilitate the needs of the first year students. Individual attention is given to all the students in the laboratory. Followings are the major equipments in the laboratory:",
       "allFacilities": [
         {
           "title": "",
@@ -62070,7 +62634,7 @@
       "academicAdditionalSkills": [
         {
           "title": "",
-          "desc": "Since its inception, the department has consistently achieved excellent academic results",
+          "desc": "Since its inception, the department has consistently achieved excellent academic results.",
           "imageUrl": "",
           "points": []
         },
@@ -72877,14 +73441,14 @@
       ],
      "programOutComes": [
     "Engineering Knowledge: Apply knowledge of mathematics, natural science, computing, engineering fundamentals and an engineering specialization as specified in WK1 to WK4 respectively to develop to the solution of complex engineering problems.",
-    "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development. (WK1 to WK4)",
-    "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required. (WK5)",
-    "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis & interpretation of data to provide valid conclusions. (WK8).",
-    "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction and modelling recognizing their limitations to solve complex engineering problems. (WK2 and WK6)",
-    "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for its impact on sustainability with reference to economy, health, safety, legal framework, culture and environment. (WK1, WK5, and WK7).",
-    "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national & international laws. (WK9)",
+    "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development (WK1 to WK4).",
+    "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required (WK5).",
+    "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis & interpretation of data to provide valid conclusions (WK8).",
+    "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction and modelling recognizing their limitations to solve complex engineering problems (WK2 and WK6).",
+    "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for its impact on sustainability with reference to economy, health, safety, legal framework, culture and environment (WK1, WK5, and WK7).",
+    "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national & international laws (WK9).",
     "Individual and Collaborative Team work: Function effectively as an individual, and as a member or leader in diverse/multi-disciplinary teams.",
-    "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences",
+    "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences.",
     "Project Management and Finance: Apply knowledge and understanding of engineering management principles and economic decision-making and apply these to one’s own work, as a member and leader in a team, and to manage projects and in multidisciplinary environments.",
     "Life-Long Learning: Recognize the need for, and have the preparation and ability for i) independent and life-long learning ii) adaptability to new and emerging technologies and iii) critical thinking in the broadest context of technological change."
   ],
@@ -73074,10 +73638,10 @@
           "majorDesc2": "The Department has also initiated Dissection lab of which the main objectives are:",
           "majorPoint": [
             "Implement ‘Technical Training Programme’, a proprietary teaching and education programme in Engineering and Technology",
-            "Provide training and education to students and faculty members of Institutes and Engineering Colleges.",
+            "Provide training and education to students and faculty members of Institutes and Engineering Colleges",
             "Hands-on practical sessions on the most scientific way of repair, maintenance and servicing of vehicles",
             "Create research facilities",
-            "Organise Student training program (STP),workshops and seminars."
+            "Organise Student training program (STP), workshops and seminars"
           ],
           "imageUrl": "https://apiserver.cec.edu.in/files/Dissection%20lab"
         },
@@ -73115,7 +73679,7 @@
       "des": [
         "The Department of Mechanical Engineering offers 4 years B.E course.",
         "This programme offers the students with the theory and practical courses in the areas of Engineering Design, Thermodynamics, Material Science, Manufacturing Engineering, Engineering Management and others. The Department offers the students with many elective subjects. The Department is backed by a number of state of the art Laboratories such as Computer Aided Engineering Drawing Lab, Computer Aided Machine Drawing Lab, Computer Aided Modeling & Analysis Lab and Computer Integrated Manufacturing Lab, well established basic laboratories such as Basic Workshop Practice, Design Lab, Material Testing Lab, Foundry & Forging Lab, Machine Shop, Mechanical Measurements & Metrology Lab, Heat Transfer Lab, Energy Conversion Lab with full fledged facilities.",
-        "The Department is committed to impart quality education to students and encourages the students to undergo Internships and offers Industrial Visits to make the students industry ready. In order to meet these requirements and orient the students, the department has initiated additional labs like Dissection Lab, CNC lab and Advanced Materials lab.Bio diesel Processing lab, Computer Aided Modelling Lab (On AutoCAD, SolidWorks and Creo Software), PLC and Automation Lab are offered to students. Further the Department also organises In-House Symposium to boost the confidence and communication skills in students. For the benefit of Students and Faculty, the Department organises many Workshops, Webinars in association with reputed Industries like Machenn Innovations etc. The industrial visits are organised from I year to promote interaction with industries. The Department has initiated 'Innovate', the National conference for the benefit of students. The students are provided with training for better placement opportunities in core mechanical industries."
+        "The Department is committed to impart quality education to students and encourages the students to undergo Internships and offers Industrial Visits to make the students industry ready. In order to meet these requirements and orient the students, the department has initiated additional labs like Dissection Lab, CNC lab and Advanced Materials lab. Bio diesel Processing lab, Computer Aided Modelling Lab (On AutoCAD, SolidWorks and Creo Software), PLC and Automation Lab are offered to students. Further the Department also organises In-House Symposium to boost the confidence and communication skills in students. For the benefit of Students and Faculty, the Department organises many Workshops, Webinars in association with reputed Industries like Machenn Innovations etc. The industrial visits are organised from I year to promote interaction with industries. The Department has initiated 'Innovate', the National conference for the benefit of students. The students are provided with training for better placement opportunities in core mechanical industries."
       ],
       "points": [],
       "annualIntake": 30

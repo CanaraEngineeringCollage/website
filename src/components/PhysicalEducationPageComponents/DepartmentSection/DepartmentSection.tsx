@@ -102,7 +102,7 @@ const DepartmentSection = () => {
               activities, the Sports and Games Committee is formed with the following
               objectives:
             </p>
-            <ul className="list-square ml-4 sm:ml-5 text-sm sm:text-base md:text-sm lg:text-lg leading-6 sm:leading-7 text-textGray space-y-2">
+            <ul className="list-square ml-4 sm:ml-5 text-sm sm:text-base md:text-sm lg:text-[17px] leading-6 sm:leading-7 text-textGray space-y-2">
               {objectives.map((objective, index) => (
                 <li key={index}>{objective}</li>
               ))}

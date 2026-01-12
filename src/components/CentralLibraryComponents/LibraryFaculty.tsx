@@ -140,7 +140,7 @@ export default function LibraryFaculty() {
             </h2>
             <p className="text-gray-700 mt-6 text-lg">
               Our Library Staff team is the backbone of our institution, ensuring seamless operations through their expertise, dedication, and
-              commitment to excellence
+              commitment to excellence.
             </p>
           </div>
           <div className="flex items-center justify-between gap-4">
@@ -230,7 +230,7 @@ export default function LibraryFaculty() {
             </h2>
             <p className="text-gray-700 text-lg">
               Our Library Staff team is the backbone of our institution, ensuring seamless operations through their expertise, dedication, and
-              commitment to excellence
+              commitment to excellence.
             </p>
           </div>
         </div>

@@ -139,8 +139,8 @@ export default function DepartmentPage({ params }: { params: { slug: string } })
             ideasData={department.ideas}
             tableHeaders={department.awardsTable?.headers}
             tableRows={department.awardsTable?.rows}
-            awardsTable2={department.awardsTable2}
-            awardsTable3={department.awardsTable3}
+            allAwards={department.allAwards}
+          
           />
         </section>
       )}
