@@ -48,7 +48,7 @@ export default function MissionVision() {
         <div className="bg-white col-span-5 mt-10 lg:mt-0 rounded-2xl shadow p-8 flex flex-col items-center justify-center text-center space-y-6">
           <Image src={visionImage4} className="w-[250px]  " alt="visionIcon" />
           <h2 className="text-3xl lg:text-5xl font-bold text-[#1D1D1F] mb-10">Our Vision</h2>
-          <p className="text-textGray text-xl max-w-sm">
+          <p className="text-textGray text-lg max-w-sm">
             To be an Engineering Institute of highest repute and produce world-class engineers catering to the needs of mankind.
           </p>
         </div>

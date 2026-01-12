@@ -287,7 +287,7 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
         {/* Bottom gradient overlay */}
         <div className="absolute bottom-0 left-0 right-0 h-[60vh] bg-gradient-to-t from-black/70 via-transparent to-transparent z-30 pointer-events-none" />
         <div
-          className={`absolute ${card.style} z-40 p-8 ${card.textalign} ${card.id == 1 ? "text-start md:text-left" : ""
+          className={`absolute ${card.style} z-40 p-8 ${card.textalign} ${card.id == 1 ? "" : ""
             }`}
         >
           <MotionP
@@ -298,13 +298,13 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
             {card.category}
           </MotionP>
 
-          <MotionP
-            layoutId={layout ? `title-${card.title}` : undefined}
-            className={`text-white text-[31px] ${card.id == 1  ? "text-start lg:text-right" : "text-left"
-              } md:text-[76px] font-semibold max-w-5xl leading-[1.1] [text-wrap:balance] font-sans mt-2`}
-          >
-            {card.title}
-          </MotionP>
+      <MotionP
+  layoutId={layout ? `title-${card.title}` : undefined}
+  className={`text-white text-[31px] text-left
+    md:text-[60px] font-semibold max-w-full leading-[1.1] whitespace-nowrap font-sans mt-2`}
+>
+  {card.title}
+</MotionP>
 
           <MotionP
             layoutId={layout ? `desc-${card.desc}` : undefined}

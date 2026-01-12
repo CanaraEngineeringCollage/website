@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "category": "Library at CEC",
-    "title": "Learning Tech, Leading Change",
+    "category": "",
+    "title": "Expansive Library",
     "src": "/campusFacilitiesPageImages/4.webp",
-    "style": "lg:top-[170] lg:left-[350]",
+    "style": "lg:top-[10px] lg:right-[0px]",
     "textalign": "text-end max-w-2xl",
     "mainTitle": "Expansive Library",
     "description": {
@@ -29,10 +29,10 @@
   {
     "id": 2,
     "category": "",
-    "title": "In-Campus Hostels",
+    "title": "Campus Hostels",
     "src": "/campusFacilitiesPageImages/hostelLifePageImages/bgImage.jpg",
     "style": "lg:bottom-[20px] opcity-[100]",
-    "desc": "Comfortable, secure & well-equipped hostels designed to provide a home away from home for our students",
+    "desc": "",
     "mainTitle": "Campus Hostels",
     "description": {
       "src": "/campusFacilitiesPageImages/hostelLifePageImages/bgImage.jpg",
@@ -98,7 +98,7 @@
     "category": "",
     "title": "Auditorium",
     "src": "/campusFacilitiesPageImages/Image2.jpg",
-   "style": "lg:top-[80] lg:left-[500]",
+   "style": "lg:top-[10px] lg:right-[0px]",
     "textalign": "text-center max-w-3xl",
     "mainTitle": "Dr. P. Dayananda Pai & \n P. Sathish Pai Auditorium",
     "description": {
@@ -153,7 +153,23 @@
   },
 
 
-
+{
+     "id": 7,
+     "category": "",
+     "title": "Transportation",
+     "src": "/campusFacilitiesPageImages/transportation.webp",
+     "style": "lg:bottom-[10] lg:left-0",
+     "textalign": "",
+     "mainTitle": "Transportation",
+     "description": {
+       "src": "/campusFacilitiesPageImages/transportation.webp",
+       "content": [
+         {
+           "description": "Canara Engineering College offers a well-organized transportation facility with a fleet of more than 11 buses, ensuring convenient connectivity across Mangaluru and neighboring areas. The extensive transport network enables safe, reliable, and timely travel for students and staff, making daily commuting comfortable and hassle-free."
+         }
+       ]
+     }
+   },
 
 
 
@@ -165,7 +181,7 @@
     "category": "",
     "title": "Sports & Fitness Facilities",
     "src": "/physicalEducationPageImages/bgImage-2.png",
-    "style": "absolute  lg:bottom-[20px] left-0 ",
+    "style": "absolute lg:top-[5px] left-0 ",
     "textalign": "",
     "mainTitle": "Sports & Fitness Facilities",
     "description": {
