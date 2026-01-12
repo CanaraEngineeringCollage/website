@@ -223,7 +223,7 @@ export default function AlumniPodcastCarousel({
 
   return (
     // FIX 1: Increased bottom padding (pb-36) so the text has room to exist below the huge card without being cut off.
-    <section className={`w-full flex flex-col justify-center items-center pt-5 md:pt-0 pb-36 ${backgroundColor} overflow-hidden`}>
+    <section className={`w-full flex flex-col justify-center items-center pt-5 md:pt-0  ${backgroundColor} overflow-hidden`}>
       
       <div className="w-full max-w-7xl px-5 flex flex-col md:flex-row justify-center items-center pb-9 lg:pb-12">
         <h2 className="text-3xl md:text-[40px] lg:text-5xl font-bold text-[#1D1D1F] text-center md:text-left">
