@@ -30,7 +30,7 @@
       },
       {
         "title": "BOOK BANK SCHEME (GENERAL)",
-        "description": "General Book Bank facility for all students consists of multiple copies of text books .Book Bank book will be issued 3-5 books for full semester use. If failed to return the books after the due date PER DAY PER BOOK ONE RUPEE will be levied. Library resources are costly and are often rare. Handle Library books and other materials with care and respect. If the books are lost, then the borrower shall replace the books of same edition or latest edition or pay double cost of the book after getting permission from the Librarian."
+        "description": "General Book Bank facility for all students consists of multiple copies of text books .Book Bank book will be issued 3-5 books for full semester use. If failed to return the books after the due date PER DAY PER BOOK ONE RUPEE will be levied. Library resources are costly and are often rare. Handle Library books and other materials with care and respect. If the books are lost, then the borrower shall replace the books of same edition or latest edition or pay double cost of the book after getting permission from the librarian."
       },
       {
         "title": "SC/ST Book Bank",
@@ -98,26 +98,26 @@
           ["SPRINGER NATURE", "It covers 689 e-journals and Back issues from 1997.", "http://link.springer.com"],
           ["TAYLOR & FRANCIS", "It covers 581 e-journals and 781 e-books on Engineering+CSE+ ME+ CV +Allied Branches and Back issues from 2010.", "http://www.tandfonline.com"],
           ["MapMyAccess", "MapMyAccess is a remote access solution that is specifically designed for effective access of digital content subscribed by VTU Consortium Cloud server along with Universal federation search services Remote Access Solution.", "https://access.vtuconsortium.com/cec"],
-          ["Emerald e-resources", "It covers 212 e-journals on Management", "https://www.emerald.com/insight"],
-          ["ICE", "It covers 29 e-journals on Management", "https://www.emerald.com/insight"],
-          ["PACKT", "It covers 2300 E-Books on Management", "https://learning.packt.com"],
-          ["New Age International", "It covers 450 e-Books on Management", "https://digital.elib4u.com"],
-          ["Edsol Informatics", "It covers 20 e-Books on Management", "https://ebooks.edsolinformatics.com/"],
-          ["EBSCO Engineering Suit Databases", "It covers 6100 e-Journals and 24015 e-Books.", "https://search.ebscohost.com"],
-          ["Eduport Global–CBS", "It covers 174 e-Books.", "https://eduport-global.com"],
-          ["BSP E-Book", "It covers 141 E-Books.", "https://ebookstore.bspublications.net/library"],
-          ["CENGAGE LEARNING", "It covers 69 e-books .", "https://cengageindiaelibrary.ipublishcentral.net/explore"],
+          ["Emerald e-resources", "It covers 212 e-journals on Management.", "https://www.emerald.com/insight"],
+          ["ICE", "It covers 29 e-journals on Management.", "https://www.emerald.com/insight"],
+          ["PACKT", "It covers 2300 e-books on Management.", "https://learning.packt.com"],
+          ["New Age International", "It covers 450 e-books on Management.", "https://digital.elib4u.com"],
+          ["Edsol Informatics", "It covers 20 e-books on Management.", "https://ebooks.edsolinformatics.com/"],
+          ["EBSCO Engineering Suit Databases", "It covers 6100 e-journals and 24015 e-books.", "https://search.ebscohost.com"],
+          ["Eduport Global–CBS", "It covers 174 e-books.", "https://eduport-global.com"],
+          ["BSP E-Book", "It covers 141 e-books.", "https://ebookstore.bspublications.net/library"],
+          ["CENGAGE LEARNING", "It covers 69 e-books.", "https://cengageindiaelibrary.ipublishcentral.net/explore"],
           ["Cambridge University Press", "It covers 58 e-books.", "https://www.cambridge.org"],
-          ["MINT BOOKS", "It Covers 1360 e-Books.", "https://mintbook.com"],
-          ["Quiklrn", "It covers 91 E Books.", "https://quiklrn.com/app.php"],
+          ["MINT BOOKS", "It Covers 1360 e-books.", "https://mintbook.com"],
+          ["Quiklrn", "It covers 91 e-books.", "https://quiklrn.com/app.php"],
           ["Quiklrn (Language Communication Lab)", "Quiklrn’s English Communication Lab enhances Students Listening speaking reading and writing skills with added grammar and vocabulary support provided through VTU Consortium, the Lab is accessible via the institution IP only within the Campus Lab. Each Institution gets 30 shared licenses for students to use.", "https://home.quiklrn.com"],
           ["IEEE Blended e-Learning Platform", "70 Latest technology e-learning Video Courses.", "https://blendedlearning.ieee.org"],
           ["Edutainer, PAT Technology", "14 Latest technology e-learning Video Courses.", "https://vtu.edutainer.in"],
-          ["Magzter Databses", "Magazines, Newspapers Journals and others", "https://library.magzter.com"],
-          ["CELUS", "Online software for automated harvesting and analysis of COUNTER and non-COUNTER Statistics", "https://www.celus.net"],
+          ["Magzter Databses", "Magazines, Newspapers Journals and others.", "https://library.magzter.com"],
+          ["CELUS", "Online software for automated harvesting and analysis of COUNTER and non-COUNTER Statistics.", "https://www.celus.net"],
           ["IEEE ASPP & POP ALL", "It covers 201 e-Journals and 1800+ Annual conference proceedings.", "https://ieeexplore.ieee.org"],
-          ["Elsevier/Science Direct", "It covers 327 E-Books on Engineering and Allied Branches of Engineering", "http://www.sciencedirect.com/"],
-          ["Drillbit Plagiarism", "Plagiarism originality online Check", "https://www.drillbitplagiarismcheck.com"],
+          ["Elsevier/Science Direct", "It covers 327 e-Books on Engineering and Allied Branches of Engineering.", "http://www.sciencedirect.com/"],
+          ["Drillbit Plagiarism", "Plagiarism originality online Check.", "https://www.drillbitplagiarismcheck.com"],
           ["Knimbus", "Knimbus is a remote access solution that is specifically designed for effective access of digital content subscribed by VTU Consortium Cloud server along with Universal federation search services Remote Access Solution and mLibrary Mobile app.", "http://cecb.knimbus.com"]
         ]
       },
@@ -197,7 +197,7 @@
       },
       {
         "title": "Loss/Damage of Library Materials",
-        "description": "Library resources are costly and are often rare. Handle Library books and other materials with care and respect. If the books are lost, then the borrower shall replace the books of same edition or latest edition or pay double cost of the book after getting permission from the Librarian"
+        "description": "Library resources are costly and are often rare. Handle Library books and other materials with care and respect. If the books are lost, then the borrower shall replace the books of same edition or latest edition or pay double cost of the book after getting permission from the librarian."
       },
       {
         "title": "General Instructions",
@@ -218,11 +218,11 @@
           "Loss of borrower card shall be intimated to the librarian. Duplicate card will be issued at the cost of Rs. 25/- per borrower card after verification.",
           "After two weeks if the books are not returned, a fine of Rs/- 10 per day per book will be levied.",
           "The defaulter student, after the above period of due date has to pay all the late fees and cost of the books to the Accounts department before the Exam hall ticket is issued to him / her.",
-          "The Book may be retained for two weeks unless recalled by the Librarian in the meantime.",
+          "The Book may be retained for two weeks unless recalled by the librarian in the meantime.",
           "Loss or damage to book/s shall have to be made good by the borrower.",
           "To obtain No Dues certificate from the college member should.Return all books borrowed, Submit the project report, pay overdue charges if any and surrender the borrower cards to the Library.",
-          "For any further clarification about the library services the Librarian may be contacted.",
-          "In case of violation of any of the above rules / regulations, the Librarian will send the list of misbehaved students and ID card to the Principal for further action."
+          "For any further clarification about the library services the librarian may be contacted.",
+          "In case of violation of any of the above rules / regulations, the librarian will send the list of misbehaved students and ID card to the Principal for further action."
         ]
       }
     ]
@@ -244,7 +244,7 @@
       },
       {
         "points": [
-          "Address: The Librarian, Canara Engineering College, Benjanapadavu, Bantwal Taluk, Mangalore, D.K. District, Karnataka - 574219",
+          "Address: The librarian, Canara Engineering College, Benjanapadavu, Bantwal Taluk, Mangalore, D.K. District, Karnataka - 574219",
           "Phone: 8792727001",
           "Fax: 0824-2278675",
           "Email: library@canaraengineering.in"

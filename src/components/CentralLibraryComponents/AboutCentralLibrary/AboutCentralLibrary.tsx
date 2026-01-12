@@ -246,7 +246,7 @@ const AboutCentralLibrary = () => {
                               );
                             }
                             return (
-                              <tr key={rIndex} className="text-textGray hover:bg-gray-50 transition-colors">
+                              <tr key={rIndex} className="text-textGray  transition-colors">
                                 {row.map((cell: string, cIndex: number) => (
                                   <td key={cIndex} className="py-3 px-4 border-b align-top">
                                     {renderTableCell(cell)}
