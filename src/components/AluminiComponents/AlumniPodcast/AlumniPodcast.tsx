@@ -222,7 +222,8 @@ export default function AlumniPodcastCarousel({
   const currentCenterPodcast = getPodcast(0);
 
   return (
-    <section className={`w-full flex flex-col justify-center items-center pt-5 md:pt-0 pb-20 ${backgroundColor} overflow-hidden`}>
+    // FIX 1: Increased bottom padding (pb-36) so the text has room to exist below the huge card without being cut off.
+    <section className={`w-full flex flex-col justify-center items-center pt-5 md:pt-0 pb-36 ${backgroundColor} overflow-hidden`}>
       
       <div className="w-full max-w-7xl px-5 flex flex-col md:flex-row justify-center items-center pb-9 lg:pb-12">
         <h2 className="text-3xl md:text-[40px] lg:text-5xl font-bold text-[#1D1D1F] text-center md:text-left">
@@ -243,7 +244,6 @@ export default function AlumniPodcastCarousel({
         </Card>
         
         {/* --- MAIN CARD --- */}
-        {/* We pass the 'title' prop here so it renders below the card */}
         <Card 
             refIndex={2} 
             size="lg" 
@@ -262,14 +262,14 @@ export default function AlumniPodcastCarousel({
 
         <Card refIndex={3} size="md" registerRef={registerRef}>
           <button onClick={next} className="md:w-12 md:h-12 h-8 w-8 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-md flex items-center justify-center transition-colors">
-             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
           </button>
         </Card>
 
         <Card refIndex={4} size="sm" registerRef={registerRef} />
       </div>
 
-      <div className="relative mt-32 w-[80%] md:w-[31rem] h-2 rounded-full bg-[#EADFCF]/50 overflow-hidden">
+      <div className="relative mt-36 w-[80%] md:w-[31rem] h-2 rounded-full bg-[#EADFCF]/50 overflow-hidden">
         <div
           className="absolute top-0 bottom-0 bg-[#2884CA] transition-all duration-500 ease-out"
           style={{ left: `${(index / podcasts.length) * 100}%`, width: `${(1 / podcasts.length) * 100}%` }}
@@ -294,7 +294,7 @@ interface CardProps {
   main?: boolean;
   refIndex: number;
   registerRef: (i: number, el: HTMLDivElement | null) => void;
-  title?: string; // New Prop
+  title?: string;
 }
 
 const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
@@ -314,6 +314,7 @@ function Card({ size, children, main = false, refIndex, registerRef, title }: Ca
   const sizeMap = {
     sm: "hidden md:block md:w-[26vw] h-[60vh] opacity-60 scale-90",
     md: "hidden md:block md:w-[25vw] h-[70vh] opacity-80",
+    // RESTORED ORIGINAL HEIGHT 80vh
     lg: "w-[85vw] md:w-[28vw] h-[55vh] md:h-[80vh] z-10", 
   };
 
@@ -328,13 +329,9 @@ function Card({ size, children, main = false, refIndex, registerRef, title }: Ca
         }
       `}</style>
 
-      {/* INNER MASK CONTAINER 
-         This holds the images and clips them (overflow-hidden), 
-         allowing the title to sit outside in the parent div.
-      */}
-      <div className="absolute inset-0 w-full h-full overflow-hidden ">
+      {/* INNER MASK CONTAINER */}
+      <div className="absolute inset-0 w-full h-full overflow-hidden">
         
-        {/* WRAPPER 1: Active */}
         <div className="absolute inset-0 w-full h-full active-wrapper">
             <img 
                 src="" 
@@ -344,7 +341,6 @@ function Card({ size, children, main = false, refIndex, registerRef, title }: Ca
             />
         </div>
 
-        {/* WRAPPER 2: Incoming */}
         <div className="absolute inset-0 w-full h-full incoming-wrapper hidden">
             <img 
                 src="" 
@@ -354,22 +350,20 @@ function Card({ size, children, main = false, refIndex, registerRef, title }: Ca
             />
         </div>
 
-        {/* {!main && <div className="absolute inset-0 bg-black/40 z-10 transition-opacity duration-300" />}
-        {main && <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60 pointer-events-none z-20" />} */}
-
-        {/* Video / Buttons */}
         <div className="absolute inset-0 z-20 flex items-center justify-center">
             {children}
         </div>
       </div>
 
-      {/* TITLE SECTION 
-          Rendered outside the overflow-hidden mask, only if main=true.
-          Positioned absolutely below the card.
+      {/* FIX 2: Text Positioning 
+         - Changed from `-bottom-28` to `top-full mt-6`.
+         - 'top-full' strictly anchors the text AFTER the card's 80vh height, 
+           preventing it from floating 'inside' the card on short screens.
+         - Added `z-50` to ensure it is visually on top of everything.
       */}
       {main && title && (
-        <div className="absolute -bottom-24 left-1/2 -translate-x-1/2 w-[85vw] md:w-[24vw] text-center">
-            <h3 className="text-xl  font-bold text-textGray leading-tight ">
+        <div className="absolute top-full left-1/2 -translate-x-1/2 w-[85vw] md:w-[24vw] text-center mt-6 z-50">
+            <h3 className="text-xl font-bold text-textGray leading-tight">
                 {title}
             </h3>
         </div>

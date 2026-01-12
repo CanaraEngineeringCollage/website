@@ -29,7 +29,9 @@ export default function Academics() {
               isMenuOpen ? "opacity-100" : "opacity-80"
             } gap-2  text-webGreen1 transition-colors ease-in-out duration-300 hover:text-webGreen1
             bg-transparent   font-semibold hover:bg-transparent ${
-              pathname.includes("academics") || pathname.includes("/department") ? `border-[#005580] border-b-2 text-[#005580]` : " text-[#2884CA] hover:text-[#005580]"
+              pathname.includes("academics") || pathname.includes("/department")
+                ? `border-[#005580] border-b-2 text-[#005580]`
+                : " text-[#2884CA] hover:text-[#005580]"
             } shadow-none rounded-none outline-none focus:ring-0 focus:outline-none`}
             selected={isMenuOpen || isMobileMenuOpen}
             onClick={() => setIsMobileMenuOpen((cur) => !cur)}
@@ -66,97 +68,89 @@ export default function Academics() {
                       Academic Overview
                     </li>
                   </Link> */}
-                  {/* <Link href="/academics/programs">
+            {/* <Link href="/academics/programs">
                     <li className={`${pathname.includes("/academics/programs") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Programs</li>
                   </Link> */}
-                {/* </ul>
+            {/* </ul>
               </div>
             </div> */}
 
             {/* Column 2 */}
-{/* Column 2 — Departments */}
-<div className="flex lg:col-span-4 lg:gap-2 xl:gap-4 pr-4 border-r border-gray-300">
-  <div className="flex lg:ml-3 xl:ml-0 items-start">
-    <Book />
-  </div>
+            {/* Column 2 — Departments */}
+            <div className="flex lg:col-span-4 gap-4 pr-4 border-r border-gray-300">
+              <div className="flex lg:ml-3 xl:ml-0 items-start">
+                <Book />
+              </div>
 
-  <div className="flex flex-col gap-2">
-    <span className="font-bold text-lg">Departments</span>
-    <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
-      {departments.map((dept, index) => (
-        <li key={index}>
-          <Link
-            href={dept.link}
-            className={`${
-              pathname.includes(dept.link)
-                ? "text-primary font-bold"
-                : "text-gray-500"
-            } hover:text-primary`}
-          >
-            {dept.title}
-          </Link>
-        </li>
-      ))}
-    </ul>
-  </div>
-</div>
+              <div className="flex flex-col gap-2">
+                <span className="font-bold text-lg">Departments</span>
+                <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
+                  {departments.map((dept, index) => (
+                    <li key={index}>
+                      <Link
+                        href={dept.link}
+                        className={`${pathname.includes(dept.link) ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
+                      >
+                        {dept.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
 
-{/* Column 3 — Examinations & Records */}
-<div className="flex lg:col-span-4 gap-4 pr-4 border-r border-gray-300">
-  <div className="flex lg:ml-3 xl:ml-0 items-start">
-    <Examination />
-  </div>
+            {/* Column 3 — Examinations & Records */}
+            <div className="flex lg:col-span-4 gap-4 pr-4 border-r border-gray-300">
+              <div className="flex lg:ml-3 xl:ml-0 items-start">
+                <Examination />
+              </div>
 
-  <div className="flex flex-col gap-2">
-    <span className="font-bold text-lg">Examinations & Student Records</span>
-    <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
-      <li>
-        <Link
-          href="https://www.canaraengineering.in/s_attd"
-          target="_blank"
-          className={`${
-            tab === "marks" ? "text-primary font-bold" : "text-gray-500"
-          } hover:text-primary`}
-        >
-          Marks & Attendance
-        </Link>
-      </li>
+              <div className="flex flex-col gap-2">
+                <span className="font-bold text-lg">Examinations & Student Records</span>
+                <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
+                  <li>
+                    <Link
+                      href="https://www.canaraengineering.in/s_attd"
+                      target="_blank"
+                      className={`${tab === "marks" ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
+                    >
+                      Marks & Attendance
+                    </Link>
+                  </li>
 
-      <li>
-        <Link
-          href="/academics/examination-records?tab=circulars"
-          className={`${
-            tab === "circulars" ? "text-primary font-bold" : "text-gray-500"
-          } hover:text-primary`}
-        >
-          Circulars
-        </Link>
-      </li>
+                  <li>
+                    <Link
+                      href="/academics/examination-records?tab=circulars"
+                      className={`${tab === "circulars" ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
+                    >
+                      Circulars
+                    </Link>
+                  </li>
 
-  <li>
+                  <li>
                     {" "}
                     <Link
                       href="https://www.canaraengineering.in/s-info"
                       target="_blank"
                       className={`${pathname.includes("/student-information") ? `` : "text-gray-500"} hover:text-primary `}
                     >
-                     Student Information
+                      Student Information
                     </Link>
                   </li>
 
-                   <li>
+                  <li>
                     {" "}
                     <Link
                       href="https://cecstudent.canaraengineering.in"
                       target="_blank"
                       className={`${pathname.includes("/student-information") ? `` : "text-gray-500"} hover:text-primary `}
                     >
-                     Student Dashboard
+                      Student Dashboard
                     </Link>
                   </li>
 
-      {/* Uncomment if you add Timetables later */}
-      {/* <li>
+                  {/* Uncomment if you add Timetables later */}
+                  {/* <li>
         <Link
           href="/academics/examination-records?tab=tt"
           className={`${
@@ -166,10 +160,9 @@ export default function Academics() {
           Timetables
         </Link>
       </li> */}
-    </ul>
-  </div>
-</div>
-
+                </ul>
+              </div>
+            </div>
 
             {/* Column 4 */}
             <div className="flex lg:col-span-4  gap-4 hover:border-none">
@@ -178,48 +171,37 @@ export default function Academics() {
               </div>
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Learning Hub</span>
-          <ul className="list-none text-gray-500 leading-normal space-y-4 my-2 cursor-pointer">
-  <li>
-    <Link
-      href="https://digital.canaraengineering.in/"
-      target="_blank"
-      className={`${
-        pathname.includes("/academics/learning-hub")
-          ? "text-primary font-bold"
-          : "text-gray-500"
-      } hover:text-primary`}
-    >
-      Resources
-    </Link>
-  </li>
+                <ul className="list-none text-gray-500 leading-normal space-y-4 my-2 cursor-pointer">
+                  <li>
+                    <Link
+                      href="https://digital.canaraengineering.in/"
+                      target="_blank"
+                      className={`${pathname.includes("/academics/learning-hub") ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
+                    >
+                      Resources
+                    </Link>
+                  </li>
 
-  <li>
-    <Link
-      href="/academics/research"
-      className={`${
-        pathname==="/academics/research"
-          ? "text-primary font-bold"
-          : "text-gray-500"
-      } hover:text-primary`}
-    >
-      Research at CEC
-    </Link>
-  </li>
+                  <li>
+                    <Link
+                      href="/academics/research"
+                      className={`${pathname === "/academics/research" ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
+                    >
+                      Research at CEC
+                    </Link>
+                  </li>
 
-  <li>
-    <Link
-      href="/academics/research-development-consultancy"
-      className={`${
-        pathname.includes("/academics/research-development-consultancy")
-          ? "text-primary font-bold"
-          : "text-gray-500"
-      } hover:text-primary`}
-    >
-      Research &amp; Development and Consultancy Cell
-    </Link>
-  </li>
-</ul>
-
+                  <li>
+                    <Link
+                      href="/academics/research-development-consultancy"
+                      className={`${
+                        pathname.includes("/academics/research-development-consultancy") ? "text-primary font-bold" : "text-gray-500"
+                      } hover:text-primary`}
+                    >
+                      Research &amp; Development and Consultancy Cell
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
