@@ -150,7 +150,7 @@ export default function IdeasToImpact({
           return (
             <div key={table.id} className="animate-fadeIn text-center">
               
-                <h4 className="text-3xl lg:text-3xl font-bold leading-tig mt-10 text-center text-[#1D1D1F]">
+                <h4 className="text-3xl lg:text-3xl font-bold leading-tig mt-8 lg:mt-10 text-center text-[#1D1D1F]">
                   {table.title}
                 </h4>
            
@@ -192,7 +192,7 @@ export default function IdeasToImpact({
           ref={scrollTargetRef} 
           className={`grid grid-cols-1 ${
             awards ? "lg:grid-cols-2 md:mt-14 mt-10" : "lg:w-[70%] mx-auto mt-5"
-          } gap-8 text-[#1D1D1F] lg:mt-10`}
+          } lg:gap-8 text-[#1D1D1F] lg:mt-10`}
         >
           {/* Awards Card */}
           {awards && (
