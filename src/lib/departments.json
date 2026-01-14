@@ -30,7 +30,7 @@
   "allAwards":[
   {
     "id": "achievements-2024-25",
-    "title": "Student Achievements & Project Awards (2024-25)",
+    "title": "",
     "headers": [
       { "key": "slNo", "label": "Sl. No." },
       { "key": "enrollment", "label": "Enrollment Number" },
@@ -40772,7 +40772,7 @@
   "allAwards" : [
   {
     "id": "csbs-achievements",
-    "title": "CSBS Student Achievements & Awards",
+    "title": "",
     "headers": [
       { "key": "academicYear", "label": "Academic Year" },
       { "key": "awardsCount", "label": "Awards" },
@@ -46808,42 +46808,244 @@
       }
     ],
 "allAwards" : [
-  {
-    "id": "awards-tech-nontech-summary",
-    "title": "Awards Summary (Technical vs Non-Technical)",
-    "headers": [
-      { "key": "academicYear", "label": "Academic Year" },
-      { "key": "technical", "label": "Technical" },
-      { "key": "nonTechnical", "label": "Non Technical" },
-      { "key": "total", "label": "Total" }
-    ],
-    "rows": [
-      {
-        "academicYear": "2024-25",
-        "technical": 11,
-        "nonTechnical": 5,
-        "total": 16
-      },
-      {
-        "academicYear": "2023-24",
-        "technical": 9,
-        "nonTechnical": 7,
-        "total": 16
-      },
-      {
-        "academicYear": "2022-23",
-        "technical": 3,
-        "nonTechnical": 8,
-        "total": 11
-      },
-      {
-        "academicYear": "Total",
-        "technical": 23,
-        "nonTechnical": 20,
-        "total": 43
-      }
-    ]
-  }
+ {
+      "id": "awards-details-list-2025",
+      "title": "",
+      "headers": [
+        { "key": "usn", "label": "USN" },
+        { "key": "name", "label": "Name" },
+        { "key": "eventName", "label": "Name of Event / Technical Fest" },
+        { "key": "institution", "label": "Institution / Place" },
+        { "key": "date", "label": "Date of Event" },
+        { "key": "prize", "label": "Prize/Award" }
+      ],
+      "rows": [
+        {
+          "usn": "4CB24AI032",
+          "name": "Gautham",
+          "eventName": "Ideathon 2025 State Level",
+          "institution": "New Horizon College of Engineering, Bangalore",
+          "date": "21.11.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB24AI040",
+          "name": "Joel Marian Cutinha",
+          "eventName": "Ideathon 2025 State Level",
+          "institution": "New Horizon College of Engineering, Bangalore",
+          "date": "21.11.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB24AI035",
+          "name": "Impana P",
+          "eventName": "Ideathon 2025 State Level",
+          "institution": "New Horizon College of Engineering, Bangalore",
+          "date": "21.11.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB24AI047",
+          "name": "Kruttika Bhandary",
+          "eventName": "Ideathon 2025 State Level",
+          "institution": "New Horizon College of Engineering, Bangalore",
+          "date": "21.11.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB24AI036",
+          "name": "Jeevan Bevan Dsouza",
+          "eventName": "Hackothsava 2025",
+          "institution": "SMVITM",
+          "date": "3.11.2025 & 04.11.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB24AI013",
+          "name": "Ashel Ancita Pinto",
+          "eventName": "Hackothsava 2025",
+          "institution": "SMVITM",
+          "date": "3.11.2025 & 04.11.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB24AI053",
+          "name": "Maithily",
+          "eventName": "Nexathon 2025",
+          "institution": "Shree Devi Institute of Technology",
+          "date": "28.10.2025 & 29.10.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB23AI026",
+          "name": "Chaithanya K B",
+          "eventName": "SRINATHON 2.0",
+          "institution": "SIT Valachil",
+          "date": "09.10.2025 & 10.10.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB23AI127",
+          "name": "Amaresh Prabhu Barashatti",
+          "eventName": "Hackothsava 2025",
+          "institution": "SMVITM Udupi",
+          "date": "3.11.2025 & 04.11.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB23AI095",
+          "name": "Shawn Dsouza",
+          "eventName": "Hackothsava 2025",
+          "institution": "SMVITM Udupi",
+          "date": "3.11.2025 & 04.11.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB23AI075",
+          "name": "Puneeth",
+          "eventName": "AINNOVATION 2025_II - Code for Bharat",
+          "institution": "NMAMIT, Kyndril & Microsoft",
+          "date": "23.09.2025 & 24.09.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB23AI116",
+          "name": "Sujan kumar Shetty",
+          "eventName": "AINNOVATION 2025_II - Code for Bharat",
+          "institution": "NMAMIT, Kyndril & Microsoft",
+          "date": "23.09.2025 & 24.09.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB23AI116",
+          "name": "Sujan kumar Shetty",
+          "eventName": "Nexathon 2025",
+          "institution": "Shree Devi Institute of Technology",
+          "date": "28.10.2025 & 29.10.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB23AI126",
+          "name": "Yashas H Gatty",
+          "eventName": "Nexathon 2025",
+          "institution": "Shree Devi Institute of Technology",
+          "date": "28.10.2025 & 29.10.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB23AI050",
+          "name": "Madhushree",
+          "eventName": "Nexathon 2025",
+          "institution": "Shree Devi Institute of Technology",
+          "date": "28.10.2025 & 29.10.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB23AI028",
+          "name": "Dhanyashree C",
+          "eventName": "Nexathon 2025",
+          "institution": "Shree Devi Institute of Technology",
+          "date": "28.10.2025 & 29.10.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB23AI048",
+          "name": "Likhitha",
+          "eventName": "Nexathon 2025",
+          "institution": "Shree Devi Institute of Technology",
+          "date": "28.10.2025 & 29.10.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB23AI055",
+          "name": "Megha",
+          "eventName": "Nexathon 2025",
+          "institution": "Shree Devi Institute of Technology",
+          "date": "28.10.2025 & 29.10.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB23AI116",
+          "name": "Sujan kumar Shetty",
+          "eventName": "Udbhava 2025",
+          "institution": "Nitte Istitute of Professional Education",
+          "date": "07.10.2025 & 08.10.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB23AI075",
+          "name": "Puneeth",
+          "eventName": "Udbhava 2025",
+          "institution": "Nitte Istitute of Professional Education",
+          "date": "07.10.2025 & 08.10.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB23AI111",
+          "name": "Srujan Bhandary",
+          "eventName": "Udbhava 2025",
+          "institution": "Nitte Istitute of Professional Education",
+          "date": "07.10.2025 & 08.10.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB23AI064",
+          "name": "P Harshitha",
+          "eventName": "Udbhava 2025",
+          "institution": "Nitte Istitute of Professional Education",
+          "date": "07.10.2025 & 08.10.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB23AI087",
+          "name": "Sanjana Mahale",
+          "eventName": "Udbhava 2025",
+          "institution": "Nitte Istitute of Professional Education",
+          "date": "07.10.2025 & 08.10.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB23AI077",
+          "name": "Rakshith",
+          "eventName": "Udbhava 2025",
+          "institution": "Nitte Istitute of Professional Education",
+          "date": "07.10.2025 & 08.10.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB23AI079",
+          "name": "Reeshal Dsouza",
+          "eventName": "Udbhava 2025",
+          "institution": "Nitte Istitute of Professional Education",
+          "date": "07.10.2025 & 08.10.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB23AI126",
+          "name": "Yashas H Gatty",
+          "eventName": "Udbhava 2025",
+          "institution": "Nitte Istitute of Professional Education",
+          "date": "07.10.2025 & 08.10.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB23AI105",
+          "name": "Sindhu S Poojary",
+          "eventName": "Udbhava 2025",
+          "institution": "Nitte Istitute of Professional Education",
+          "date": "07.10.2025 & 08.10.2025",
+          "prize": "Certificate of Participation"
+        },
+        {
+          "usn": "4CB23AI004",
+          "name": "Abdul Rehman Imtiyaz Sayed",
+          "eventName": "Buildathon 2025",
+          "institution": "Canara Engineering College",
+          "date": "17.09.2025",
+          "prize": "Certificate of Participation"
+        }
+      ]
+    }
 ],
 
     "gallery": [
@@ -52698,18 +52900,18 @@
       "awards": [
         {
           "image": "/departmentImages/IdeaImpact/1.png",
-          "title": "AY 2024-25",
-          "subtitle": "2024-25: 11 Technical Awards and 5 Non-Technical Awards"
+          "title": "Ideathon 2025 State Level",
+          "subtitle": "New Horizon College of Engineering, Bangalore"
         },
         {
           "image": "/departmentImages/IdeaImpact/2.png",
-          "title": "AY 2023-24",
-          "subtitle": "2023-24: 9 Technical Awards and 7 Non-Technical Awards"
+          "title": "Hackothsava 2025",
+          "subtitle": "SMVITM"
         },
         {
           "image": "/departmentImages/IdeaImpact/3.png",
-          "title": "AY 2022-23",
-          "subtitle": "2022-23: 3 Technical Awards and 8 Non-Technical Awards"
+          "title": "Nexathon 2025",
+          "subtitle": "Shree Devi Institute of Technology"
         }
       ],
       "passoutTotlas": "100%"

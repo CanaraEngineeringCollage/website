@@ -69,7 +69,7 @@ function AwardsTable({
   rows: TableRow[];
 }) {
   return (
-    <div className="rounded overflow-x-auto lg:overflow-hidden border border-gray-200 w-full mt-5 lg:mt-10 text-[#1D1D1F]">
+    <div className="rounded overflow-x-auto lg:overflow-hidden border border-gray-200 w-full mt-5 lg:mt-4 text-[#1D1D1F]">
       <table className="w-full text-left text-[13px] md:text-[15px]">
         <thead className="bg-[#F3F8FC] text-[#2884CA]">
           <tr>
@@ -149,11 +149,11 @@ export default function IdeasToImpact({
 
           return (
             <div key={table.id} className="animate-fadeIn text-center">
-              {table.title && index > 0 && (
-                <h4 className="text-3xl lg:text-3xl font-bold leading-tig mt-8 text-center text-[#1D1D1F]">
+              
+                <h4 className="text-3xl lg:text-3xl font-bold leading-tig mt-10 text-center text-[#1D1D1F]">
                   {table.title}
                 </h4>
-              )}
+           
 
               <AwardsTable headers={table.headers} rows={table.rows} />
 
