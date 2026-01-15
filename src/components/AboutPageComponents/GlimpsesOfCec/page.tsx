@@ -1,18 +1,10 @@
-"use client"
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-const Glimpses = () => {
-  const [flipbookLink, setFlipbookLink] = useState("");
+interface GlimpsesProps {
+  flipbookLink: string;
+}
 
-  useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/ppt`)
-      .then((res) => res.json())
-      .then((data) => {
-        setFlipbookLink(data.link); // extract heyzine link
-      })
-      .catch((err) => console.error("Error loading PPT link:", err));
-  }, []);
-
+const Glimpses = ({ flipbookLink }: GlimpsesProps) => {
   return (
     <div className="text-[#1D1D1F] pb-20">
       <h1 className="text-center  text-[40px] text-[#1D1D1F] pt-14 pb-10 lg:pt-20 lg:pb-16 md:text-[40px] lg2:text-5xl xl:text-6xl font-bold">
@@ -21,13 +13,9 @@ const Glimpses = () => {
 
       {/* Show only when link is loaded */}
       {flipbookLink ? (
-        <iframe
-          src={flipbookLink}
-          className="w-full h-[60vh] md:h-[100vh]"
-          allowFullScreen
-        ></iframe>
+        <iframe src={flipbookLink} className="w-full h-[60vh] md:h-[100vh]" allowFullScreen></iframe>
       ) : (
-        <p className="text-center">Loading flipbook…</p>
+        <p className="text-center">Loading flipbook or content unavailable locally...</p>
       )}
     </div>
   );

@@ -28,11 +28,22 @@ export const metadata = {
   },
 };
 
-export default function GlimpsesOfCec() {
+export default async function GlimpsesOfCec() {
+  let flipbookLink = "";
+  try {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/ppt`, {
+      cache: "no-store", // Ensure fresh data
+    });
+    const data = await res.json();
+    flipbookLink = data.link;
+  } catch (err) {
+    console.error("Error loading PPT link:", err);
+  }
+
   return (
     <>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
-        <Glimpses />
+        <Glimpses flipbookLink={flipbookLink} />
       </section>
       <section className="bg-[#E5E5EA]">
         <FooterCard />
