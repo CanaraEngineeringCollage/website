@@ -10785,36 +10785,446 @@
       }
     ],
 
-  "allAwards":[{
-  "id": "awards-count-summary",
-  "title": "",
-  "headers": [
-    { "key": "batch", "label": "Batch" },
-    { "key": "awardsCount", "label": "Awards Count" }
-  ],
-  "rows": [
-    {
-      "batch": "2023-24",
-      "awardsCount": 61
-    },
-    {
-      "batch": "2022-23",
-      "awardsCount": 8
-    },
-    {
-      "batch": "2021-22",
-      "awardsCount": 29
-    },
-    {
-      "batch": "2020-21",
-      "awardsCount": 36
-    },
-    {
-      "batch": "2019-20",
-      "awardsCount": 9
-    }
-  ]
-}],
+"allAwards": [
+  {
+    "id": "awards-details-list",
+    "title": "",
+    "headers": [
+      { "key": "name", "label": "NAME" },
+      { "key": "usn", "label": "USN" },
+      { "key": "event", "label": "EVENT" },
+      { "key": "place", "label": "PLACE" },
+      { "key": "date", "label": "DATE" },
+      { "key": "prize", "label": "PRIZE WON" }
+    ],
+    "rows": [
+      {
+        "name": "DEEPA NARAYAN GOUDA",
+        "usn": "4CB23IS023",
+        "event": "NPTEL ONLINE CERTIFICATION",
+        "place": "IIT KHARAGPUR",
+        "date": "JUL-OCT 2025",
+        "prize": "ELITE+SILVER"
+      },
+      {
+        "name": "MAHESH KAMAT",
+        "usn": "4CB22IS044",
+        "event": "NPTEL ONLINE CERTIFICATION",
+        "place": "IIT KHARAGPUR",
+        "date": "JUL-OCT 2025",
+        "prize": "ELITE+SILVER"
+      },
+      {
+        "name": "VAIBHAV BALAKRISHNA KAMAT",
+        "usn": "4CB24IS114",
+        "event": "NPTEL ONLINE CERTIFICATION",
+        "place": "IIT KHARAGPUR",
+        "date": "JUL-OCT 2025",
+        "prize": "ELITE+SILVER"
+      },
+      {
+        "name": "VIGHNESH SURESH GUNAGA",
+        "usn": "(4CB24IS120)",
+        "event": "NPTEL ONLINE CERTIFICATION",
+        "place": "IIT KHARAGPUR",
+        "date": "JUL-OCT 2025",
+        "prize": "ELITE+GOLD"
+      },
+      {
+        "name": "AVYAKTH",
+        "usn": "(4CB24IS016)",
+        "event": "NPTEL ONLINE CERTIFICATION",
+        "place": "IIT KHARAGPUR",
+        "date": "JUL-OCT 2025",
+        "prize": "ELITE+GOLD"
+      },
+      {
+        "name": "Sudarshan Shenoy",
+        "usn": "4CB23IS108",
+        "event": "SRINATHON 2.0",
+        "place": "Srinivas Institute of Technology",
+        "date": "10/9/2025",
+        "prize": "Certificate of Outstanding Performance"
+      },
+      {
+        "name": "Arpitha K",
+        "usn": "4CB23IS014",
+        "event": "SRINATHON 2.0",
+        "place": "Srinivas Institute of Technology",
+        "date": "10/9/2025",
+        "prize": "Certificate of Outstanding Performance"
+      },
+      {
+        "name": "Anujna M K",
+        "usn": "4CB23IS009",
+        "event": "SRINATHON 2.0",
+        "place": "Srinivas Institute of Technology",
+        "date": "10/9/2025",
+        "prize": "Certificate of Outstanding Performance"
+      },
+      {
+        "name": "Sudarshan Shenoy",
+        "usn": "4CB23IS108",
+        "event": "Udbhava 2025-National Level Tech Fest",
+        "place": "Nitte Institute of Professional Education",
+        "date": "07-10-2025 & 08-10-2025",
+        "prize": "Certificate of Achievement"
+      },
+      {
+        "name": "Arpitha K",
+        "usn": "4CB23IS014",
+        "event": "Udbhava 2025-National Level Tech Fest",
+        "place": "Nitte Institute of Professional Education",
+        "date": "07-10-2025 & 08-10-2025",
+        "prize": "Certificate of Achievement"
+      },
+      {
+        "name": "Anujna M K",
+        "usn": "4CB23IS009",
+        "event": "Udbhava 2025-National Level Tech Fest",
+        "place": "Nitte Institute of Professional Education",
+        "date": "07-10-2025 & 08-10-2025",
+        "prize": "Certificate of Achievement"
+      },
+      {
+        "name": "KRISHNA PALLAN",
+        "usn": "4CB22IS024",
+        "event": "INFOTHON 2.0 - NATIONAL LEVEL HACKATHON",
+        "place": "VIDYAVARDHAKA COLLEGE OF ENGINEERING",
+        "date": "20-1-2024 to 21-1-2024",
+        "prize": "3RD PLACE"
+      },
+      {
+        "name": "SNEHAL",
+        "usn": "4CB22IS054",
+        "event": "State level company specific HACKATHON",
+        "place": "Sahyadri Engineering College, Adyar",
+        "date": "8-12-2023 to 9-12-2023",
+        "prize": "3RD PLACE"
+      },
+      {
+        "name": "KASHISH",
+        "usn": "4CB22IS023",
+        "event": "State level company specific HACKATHON",
+        "place": "Sahyadri Engineering College, Adyar",
+        "date": "8-12-2023 to 9-12-2023",
+        "prize": "3RD PLACE"
+      },
+      {
+        "name": "K ANKITH SHENOY",
+        "usn": "4CB21IS021",
+        "event": "Hackathon in the track of AI in Education",
+        "place": "R.V College of Engineering Banglore",
+        "date": "7/06/2024 to 8/06/2024.",
+        "prize": "RUNNERS(Received a cash prize 10,000 )"
+      },
+      {
+        "name": "KARTIK PAI",
+        "usn": "4CB21IS022",
+        "event": "Hackathon in the track of AI in Education",
+        "place": "R.V College of Engineering Banglore",
+        "date": "7/06/2024 to 8/06/2024.",
+        "prize": "RUNNERS(Received a cash prize 10,000 )"
+      },
+      {
+        "name": "TILAK SHETTY",
+        "usn": "4CB21IS056",
+        "event": "Hackathon in the track of AI in Education",
+        "place": "R.V College of Engineering Banglore",
+        "date": "7/06/2024 to 8/06/2024.",
+        "prize": "RUNNERS(Received a cash prize 10,000 )"
+      },
+      {
+        "name": "VENKATESH R KAMATH",
+        "usn": "4CB21IS060",
+        "event": "Hackathon in the track of AI in Education",
+        "place": "R.V College of Engineering Banglore",
+        "date": "7/06/2024 to 8/06/2024.",
+        "prize": "RUNNERS(Received a cash prize 10,000 )"
+      },
+      {
+        "name": "K ANKITH SHENOY",
+        "usn": "4CB21IS021",
+        "event": "Dark Pattern Buster Hackathon conducted by the Consumer Forum of India",
+        "place": "IIT Varanasi",
+        "date": "17/02/2024 to 18/02/2024",
+        "prize": "Represented for Finals"
+      },
+      {
+        "name": "KARTIK PAI",
+        "usn": "4CB21IS022",
+        "event": "Dark Pattern Buster Hackathon conducted by the Consumer Forum of India",
+        "place": "IIT Varanasi",
+        "date": "17/02/2024 to 18/02/2024",
+        "prize": "Represented for Finals"
+      },
+      {
+        "name": "MAHESH PRABHU",
+        "usn": "4CB21IS024",
+        "event": "Dark Pattern Buster Hackathon conducted by the Consumer Forum of India",
+        "place": "IIT Varanasi",
+        "date": "17/02/2024 to 18/02/2024",
+        "prize": "Represented for Finals"
+      },
+      {
+        "name": "TILAK SHETTY",
+        "usn": "4CB21IS056",
+        "event": "Dark Pattern Buster Hackathon conducted by the Consumer Forum of India",
+        "place": "IIT Varanasi",
+        "date": "17/02/2024 to 18/02/2024",
+        "prize": "Represented for Finals"
+      },
+      {
+        "name": "VENKATESH R KAMATH",
+        "usn": "4CB21IS060",
+        "event": "Dark Pattern Buster Hackathon conducted by the Consumer Forum of India",
+        "place": "IIT Varanasi",
+        "date": "17/02/2024 to 18/02/2024",
+        "prize": "Represented for Finals"
+      },
+      {
+        "name": "K ANKITH SHENOY",
+        "usn": "4CB21IS021",
+        "event": "state level -open theme track of the code blaze hackathon",
+        "place": "Sahyadri college and managemente",
+        "date": "7/09/2023 to 9/09/2023.",
+        "prize": "best presentation of their project"
+      },
+      {
+        "name": "VENKATESH R KAMATH",
+        "usn": "4CB21IS060",
+        "event": "state level -open theme track of the code blaze hackathon",
+        "place": "Sahyadri college and managemente",
+        "date": "7/09/2023 to 9/09/2023.",
+        "prize": "best presentation of their project"
+      },
+      {
+        "name": "KARTIK PAI",
+        "usn": "4CB21IS022",
+        "event": "state level -open theme track of the code blaze hackathon",
+        "place": "Sahyadri college and managemente",
+        "date": "7/09/2023 to 9/09/2023.",
+        "prize": "best presentation of their project"
+      },
+      {
+        "name": "TILAK SHETTY",
+        "usn": "4CB21IS056",
+        "event": "state level -open theme track of the code blaze hackathon",
+        "place": "Sahyadri college and managemente",
+        "date": "7/09/2023 to 9/09/2023.",
+        "prize": "best presentation of their project"
+      },
+      {
+        "name": "Chirag Honnavarkar",
+        "usn": "4CB20IS020",
+        "event": "Indian Patent: “Optiretina: An Efficient Approach for Diabetic Retinopathy Classification Using CNN”",
+        "place": "Indian Patent Office",
+        "date": "-",
+        "prize": "Patent Granted"
+      },
+      {
+        "name": "Pradhyumna Prabhu",
+        "usn": "4CB20IS001",
+        "event": "Indian Patent: “Optiretina: An Efficient Approach for Diabetic Retinopathy Classification Using CNN”",
+        "place": "Indian Patent Office",
+        "date": "-",
+        "prize": "Patent Granted"
+      },
+      {
+        "name": "Abhay S K",
+        "usn": "4CB20IS002",
+        "event": "Indian Patent: “Optiretina: An Efficient Approach for Diabetic Retinopathy Classification Using CNN”",
+        "place": "Indian Patent Office",
+        "date": "-",
+        "prize": "Patent Granted"
+      },
+      {
+        "name": "Chaithra Nayak",
+        "usn": "4CB20IS019",
+        "event": "Indian Patent: “Optiretina: An Efficient Approach for Diabetic Retinopathy Classification Using CNN”",
+        "place": "Indian Patent Office",
+        "date": "-",
+        "prize": "Patent Granted"
+      },
+      {
+        "name": "Ashwini Hegde",
+        "usn": "4CB20IS015",
+        "event": "Project Proposal: Detection of Gastric Cancer Through Advanced Endoscopic Imaging Technology Using CNN",
+        "place": "Indian Patent Office",
+        "date": "-",
+        "prize": "Sanctioned ₹4,500 (State Level)"
+      },
+      {
+        "name": "Chaithanya Puthran",
+        "usn": "4CB20IS018",
+        "event": "Project Proposal: Detection of Gastric Cancer Through Advanced Endoscopic Imaging Technology Using CNN",
+        "place": "Indian Patent Office",
+        "date": "-",
+        "prize": "Sanctioned ₹4,500 (State Level)"
+      },
+      {
+        "name": "Jayaswi",
+        "usn": "4CB20IS023",
+        "event": "Project Proposal: Detection of Gastric Cancer Through Advanced Endoscopic Imaging Technology Using CNN",
+        "place": "Indian Patent Office",
+        "date": "-",
+        "prize": "Sanctioned ₹4,500 (State Level)"
+      },
+      {
+        "name": "Rachana",
+        "usn": "4CB20IS036",
+        "event": "Project Proposal: Detection of Gastric Cancer Through Advanced Endoscopic Imaging Technology Using CNN",
+        "place": "Indian Patent Office",
+        "date": "-",
+        "prize": "Sanctioned ₹4,500 (State Level)"
+      },
+      {
+        "name": "Anjana Bhat",
+        "usn": "4CB20IS010",
+        "event": "Project Proposal: Rambutan Fruit Sweetness Profiling: Integrating Technology for Enhanced Classification",
+        "place": "KSCST",
+        "date": "-",
+        "prize": "Sanctioned ₹4,000 (State Level)"
+      },
+      {
+        "name": "Deekshitha",
+        "usn": "4CB20IS021",
+        "event": "Project Proposal: Rambutan Fruit Sweetness Profiling: Integrating Technology for Enhanced Classification",
+        "place": "KSCST",
+        "date": "-",
+        "prize": "Sanctioned ₹4,000 (State Level)"
+      },
+      {
+        "name": "Meghashree Kamath",
+        "usn": "4CB20IS029",
+        "event": "Project Proposal: Rambutan Fruit Sweetness Profiling: Integrating Technology for Enhanced Classification",
+        "place": "KSCST",
+        "date": "-",
+        "prize": "Sanctioned ₹4,000 (State Level)"
+      },
+      {
+        "name": "Varshini R Nayak",
+        "usn": "4CB20IS061",
+        "event": "Project Proposal: Rambutan Fruit Sweetness Profiling: Integrating Technology for Enhanced Classification",
+        "place": "KSCST",
+        "date": "-",
+        "prize": "Sanctioned ₹4,000 (State Level)"
+      },
+      {
+        "name": "Shwetha Prabhu",
+        "usn": "4CB20IS056",
+        "event": "Project Proposal: IntelliText – Digital Recognition of Handwritten Text",
+        "place": "KSCST",
+        "date": "-",
+        "prize": "Sanctioned ₹4,500"
+      },
+      {
+        "name": "Shravan G Amin",
+        "usn": "4CB20IS053",
+        "event": "Project Proposal: IntelliText – Digital Recognition of Handwritten Text",
+        "place": "KSCST",
+        "date": "-",
+        "prize": "Sanctioned ₹4,500"
+      },
+      {
+        "name": "Shreesha Shetty",
+        "usn": "4CB20IS054",
+        "event": "Project Proposal: IntelliText – Digital Recognition of Handwritten Text",
+        "place": "KSCST",
+        "date": "-",
+        "prize": "Sanctioned ₹4,500"
+      },
+      {
+        "name": "Akanksha",
+        "usn": "4CB20IS003",
+        "event": "Six Weeks Training",
+        "place": "-",
+        "date": "9/5/2021",
+        "prize": "90% Marks (Top Performer)"
+      },
+      {
+        "name": "Samarth",
+        "usn": "4CB20IS045",
+        "event": "Six Weeks Training",
+        "place": "-",
+        "date": "7/15/2021",
+        "prize": "80% Marks"
+      },
+      {
+        "name": "Ravi Hithang",
+        "usn": "4CB20IS040",
+        "event": "Trainings Contest",
+        "place": "Internshala Student Partner – 23 Program",
+        "date": "9/14/2021",
+        "prize": "Certificate of Excellence"
+      },
+      {
+        "name": "Ravi Hithang",
+        "usn": "4CB20IS040",
+        "event": "Dev Host-2022 Hackathon",
+        "place": "-",
+        "date": "2022",
+        "prize": "2nd Place"
+      },
+      {
+        "name": "Rajan Sharma",
+        "usn": "4CB20IS040",
+        "event": "MRPL-MSNIM Vigilance Awareness Hindi Essay Competition",
+        "place": "-",
+        "date": "2022",
+        "prize": "2nd Place"
+      },
+      {
+        "name": "Rithik K",
+        "usn": "4CB20IS042",
+        "event": "Quizholic",
+        "place": "Shree Devi Institute of Technology",
+        "date": "01/05/2023",
+        "prize": "Certificate of Excellence"
+      },
+      {
+        "name": "Shwetha Prabhu",
+        "usn": "4CB20IS056",
+        "event": "Quizholic",
+        "place": "Shree Devi Institute of Technology",
+        "date": "01/05/2023",
+        "prize": "Certificate of Excellence"
+      },
+      {
+        "name": "Shriyan Sohan",
+        "usn": "4CB20IS055",
+        "event": "Quizholic",
+        "place": "Shree Devi Institute of Technology",
+        "date": "01/05/2023",
+        "prize": "Certificate of Excellence"
+      },
+      {
+        "name": "Nikitha V Nayak",
+        "usn": "4CB20IS033",
+        "event": "Quizholic",
+        "place": "Shree Devi Institute of Technology",
+        "date": "01/05/2023",
+        "prize": "Certificate of Excellence"
+      },
+      {
+        "name": "Shwetha Prabhu",
+        "usn": "4CB20IS056",
+        "event": "Tech Presento",
+        "place": "Shree Devi Institute of Technology",
+        "date": "01/05/2023",
+        "prize": "Certificate of Excellence"
+      },
+      {
+        "name": "Nikitha V Nayak",
+        "usn": "4CB20IS033",
+        "event": "Tech Presento",
+        "place": "Shree Devi Institute of Technology",
+        "date": "01/05/2023",
+        "prize": "Certificate of Excellence"
+      }
+    ]
+  }
+],
     "gallery": [
       { "image": "/departmentImages/gallery/it/1.jpeg", "title": "Bootstrapping Python: Control Flow Functions And Modules" },
       { "image": "/departmentImages/gallery/it/2.jpg", "title": "Confidence" },
@@ -20947,17 +21357,17 @@
       "awards": [
         {
           "image": "/departmentImages/IdeaImpact/1.png",
-          "title": "2023-24: 61 awards",
+          "title": "Elite + Silver recognition in NPTEL Online Certification program.",
           "subtitle": ""
         },
         {
           "image": "/departmentImages/IdeaImpact/2.png",
-          "title": "2022-23: 8 awards",
+          "title": "Certificate of Outstanding Performance at Srinathon 2.0.",
           "subtitle": ""
         },
         {
           "image": "/departmentImages/IdeaImpact/3.png",
-          "title": "2021-22: 29 awards",
+          "title": "Udbhava 2025, a National Level Tech Fest at Nitte Institute of Professional Education.",
           "subtitle": ""
         }
       ],
@@ -40361,17 +40771,17 @@
         {
           "image": "/departmentImages/IdeaImpact/1.png",
           "title": "AY 2024-25",
-          "subtitle": "2nd Place in Poster Parv at Aakriti 2025"
+          "subtitle": "2nd Place in Poster Parv at Aakriti 2025."
         },
         {
           "image": "/departmentImages/IdeaImpact/2.png",
           "title": "AY 2024-25",
-          "subtitle": "Winner, Logo Design Event at Yukti-2025"
+          "subtitle": "Winner, Logo Design Event at Yukti-2025."
         },
         {
           "image": "/departmentImages/IdeaImpact/3.png",
           "title": "AY 2024-25",
-          "subtitle": "2nd Place, Long Jump at VTU 26th State Level Meet"
+          "subtitle": "2nd Place, Long Jump at VTU 26th State Level Meet."
         }
       ],
       "passoutTotlas": "95.16%"

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react"; // --- NEW: Added useRef
+import { useEffect, useState, useRef } from "react"; 
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { CarouselDots } from "../CarouselDots/CarouselDots";
@@ -109,7 +109,6 @@ export default function IdeasToImpact({
   const [activeIndex, setActiveIndex] = useState(0);
   const [visibleCount, setVisibleCount] = useState(0);
   
-  // --- NEW: Create a reference to the section you want to scroll back to
   const scrollTargetRef = useRef<HTMLDivElement>(null);
 
   const placements = ideasData.placements;
@@ -126,13 +125,17 @@ export default function IdeasToImpact({
     return () => clearInterval(interval);
   }, [awards?.length, placements?.length]);
 
-  // --- NEW: Helper function to handle closing and scrolling
+  // --- FIX: Updated Handler with Timeout ---
   const handleHideDetails = () => {
     setVisibleCount(0); // Close tables
-    // Scroll back to the awards card smoothly
-    if (scrollTargetRef.current) {
-      scrollTargetRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
-    }
+    
+    // We use setTimeout to let the DOM update (table collapse) BEFORE we try to scroll.
+    // We also changed block to "start" for better mobile positioning.
+    setTimeout(() => {
+      if (scrollTargetRef.current) {
+        scrollTargetRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 100);
   };
 
   // --- Helper to Render Tables Dynamically ---
@@ -162,7 +165,7 @@ export default function IdeasToImpact({
                   <button
                     onClick={() => {
                       if (isFullyExpanded) {
-                        handleHideDetails(); // --- NEW: Use helper here
+                        handleHideDetails();
                       } else {
                         setVisibleCount((prev) => prev + 1);
                       }
@@ -188,15 +191,15 @@ export default function IdeasToImpact({
         </h2>
 
         <div
-          // --- NEW: Attach the ref here so we scroll back to THIS point
+          // This ref marks the top of the grid
           ref={scrollTargetRef} 
           className={`grid grid-cols-1 ${
-            awards ? "lg:grid-cols-2 md:mt-14 mt-10" : "lg:w-[70%] mx-auto mt-5"
-          } lg:gap-8 text-[#1D1D1F] lg:mt-10`}
+            awards ? "lg:grid-cols-2 md:mt-14 gap-4 lg:gap-8  mt-10" : "lg:w-[70%] lg:gap-8  mx-auto mt-5"
+          }  text-[#1D1D1F] lg:mt-10`}
         >
           {/* Awards Card */}
           {awards && (
-            <div className="flex flex-col h-full">
+            <div className="flex flex-col min-h-[300px] h-full">
               <div className="bg-white rounded-2xl flex flex-col flex-1">
                 <motion.div
                   key={activeIndex}
@@ -206,7 +209,7 @@ export default function IdeasToImpact({
                   className="w-full flex-1"
                 >
                   <div className="bg-white p-6 rounded-2xl mb-6 h-full">
-                    <div className="grid grid-cols-2 items-center gap-6 h-full">
+                    <div className="grid md:grid-cols-2 items-center gap-6 h-full">
                       <div className="relative w-full h-48">
                         <Image
                           src={awards[activeIndex].image}
@@ -216,10 +219,10 @@ export default function IdeasToImpact({
                         />
                       </div>
                       <div>
-                        <h4 className="text-2xl font-semibold mb-4 text-left">
+                        <h4 className=" text-lg md:text-2xl font-semibold mb-4 ">
                           {awards[activeIndex].title}
                         </h4>
-                        <p className="text-gray-600 text-left max-w-[70%]">
+                        <p className="text-gray-600 ">
                           {awards[activeIndex].subtitle}
                         </p>
                       </div>
@@ -240,7 +243,7 @@ export default function IdeasToImpact({
                       onClick={() =>
                         visibleCount === 0 
                           ? setVisibleCount(1) 
-                          : handleHideDetails() // --- NEW: Use helper here
+                          : handleHideDetails()
                       }
                       className="text-primary font-semibold mt-6"
                     >
@@ -257,7 +260,7 @@ export default function IdeasToImpact({
 
           {/* Pass Out Rate Card */}
           <div className="flex flex-col h-full">
-            <div className="bg-white rounded-2xl p-6 flex-1">
+            <div className="bg-white rounded-2xl pt-6 px-6  flex-1">
               <div className="grid md:grid-cols-2 items-center gap-6 h-full">
                 <div className="relative w-full h-40 md:h-full">
                   <h3 className="text-4xl font-[900] mb-2 text-left lg:text-[60px]">
