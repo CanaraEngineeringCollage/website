@@ -188,12 +188,12 @@ const ExploreFacilities = () => {
       <section className="max-w-7xl mx-auto xl:max-w-[75%]  pb-16 lg:pb-10">
         <div className="lg:flex lg:justify-between md:pb-5 pb-5">
           <div className="flex">
-            <h1 className="text-3xl md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-[#1D1D1F] md:pb-0">
+            <h1 className="text-3xl md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-[#1D1D1F] md:pb-5">
               Our Initiatives
             </h1>
           </div>
         </div>
-        <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3  gap-8 lg:gap-5 ">
+        <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3  gap-8 lg:gap-8 lg:gap-y-10 ">
           {pressData?.map((item, index) => {
             const total = pressData.length;
             const isLast = index === total - 1;
@@ -205,7 +205,7 @@ const ExploreFacilities = () => {
               <motion.button
                 key={index}
                 onClick={() => openCard(index)}
-                className={`   lg:min-h-[65vh] xl:min-h-[50vh]  lg:mb-0  rounded-3xl overflow-hidden
+                className={`     lg:mb-0  rounded-3xl overflow-hidden
           ${isLastSingleLg ? "lg:col-span-3 lg:justify-self-center" : ""}`}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
