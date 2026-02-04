@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { FC, Suspense, useState } from "react";
 import Image from "next/image";
-import footericon1 from "../../../../public/svgs/logos/FooterIcon1.svg"; // Adjust path as needed
+import footericon1 from "../../../../public/svgs/logos/logo.svg"; // Adjust path as needed
 import { FooterIcon, FooterIconMobile, Instagram, LinkedIn, Meta, Twitter, Yt } from "@/components/Icons/Icons"; // Adjust import path
 import { motion } from "framer-motion";
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
@@ -180,7 +180,7 @@ const Footer: FC = () => {
         <div className="flex items-center justify-between space-x-10 my-8">
           <Link href="/"> <div className="flex gap-5">
             <Image src={footericon1} width={300} height={300} alt="logo" />
-             <FooterIcon />
+          
           </div></Link>
           <div>
             <h1 className="flex justify-end font-bold pb-3 cursor-pointer">Follow Us</h1>
@@ -237,7 +237,7 @@ const Footer: FC = () => {
         <div className="flex flex-col items-center my-8">
           <Link href="/"><div className="flex gap-3">
             <Image src={footericon1} width={200} height={200} alt="logo" />
-            <FooterIconMobile />
+            {/* <FooterIconMobile /> */}
           </div></Link>
           <div className="mt-4">
             <h1 className="text-center font-bold pb-3">Follow Us</h1>

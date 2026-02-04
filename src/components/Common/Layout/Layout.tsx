@@ -16,7 +16,7 @@ function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <>
-      <div className="min-h-screen ">
+     
         {/* overflow-x-hidden */}
         <header className="top-0 left-0 right-0 bg-white z-[1111] ">
           {isCampusRoute ? (
@@ -36,11 +36,13 @@ function Layout({ children }: { children: React.ReactNode }) {
               }
             }}
           >
+             <div className="min-h-screen ">
             {children}
+          </div>
           </div>
         </main>
         <Footer />
-      </div>
+      
     </>
   );
 }
