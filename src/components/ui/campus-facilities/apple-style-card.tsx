@@ -198,7 +198,7 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
               >
                 <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
               </button>
-              <motion.p layoutId={layout ? `category-${card.title}` : undefined} className="text-base font-medium text-black dark:text-white">
+              <motion.p layoutId={layout ? `category-${card.title}` : undefined} className="text-base font-medium text-[#1D1D1F] dark:text-white">
                 {card.category}
               </motion.p>
               <motion.p

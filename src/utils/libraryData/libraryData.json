@@ -1,0 +1,277 @@
+[
+  {
+    "title": "About Library",
+    "data": [
+
+     
+      {
+        "title": "About Library",
+        "description": "“One best book is equal to hundred good friends but one good friend is equal to a Library”. – Dr. A P J Abdul Kalam."
+      },
+     
+ 
+      {
+        "description": "Library is a store house of Knowledge.The central Library of CEC is located in the heart of the institution and it is easily accessible to its clientele. The library has got independent building with carpet area of 1305.68 spread in 2 Floors it can accommodated 300 users at a time. The collection of library is more than 47000 including general Book bank books and SC/ST Book Bank which includes Text and Reference books, Competitive Examination books and general knowledge books are available for all round development of personality. The Library subscribes 42Indian Journals, and 16 magazines in print version for various departments of UG and PG students and Faculty and Staff. We have access more than 11000+online journals, 21000+ E books, Articles from various publishers like IEEE ASPP,& POP ALL, EBSCO Engineering Suit, IEEE Blended e-Learning Platform, Eduport Global-CBS, BSP E-Book, Cengage Learning, Cambridge University Press , Mint Books, Quiklrn e-Books, Drillbit Plagiarism Originality online Check Tool,Quiklrn English Communication Language Lab etc. Subscribed packages under the VTU Consortium. Library has separate Reading Room and Reference section reading hall. Library has separate stack hall for books, Reference section and Book Bank. The in-house activities of the Library have been computerized and all books are bar coded."
+      }
+    ]
+  },
+  {
+    "title": "Facilities",
+    "data": [
+      {
+        "title":"Facilities",
+        "type": "image",
+        "src": "https://apiserver.cec.edu.in/files/libraryFlowChart",
+        "alt": "Library Flow Chart"
+      },
+     {
+        "title": "Open Access System",
+        "description": "Library is providing open access facility. You are free to choose any books (text/reference, competitive examination books, general books), dictionaries, encyclopedias, journals, bound volumes of journal, standards, project reports, CD-ROM, question papers and news papers in reference section."
+      },
+      {
+        "title": "BOOK BANK SCHEME (GENERAL)",
+        "description": "General Book Bank facility for all students consists of multiple copies of text books .Book Bank book will be issued 3-5 books for full semester use. If failed to return the books after the due date PER DAY PER BOOK ONE RUPEE will be levied. Library resources are costly and are often rare. Handle Library books and other materials with care and respect. If the books are lost, then the borrower shall replace the books of same edition or latest edition or pay double cost of the book after getting permission from the librarian."
+      },
+      {
+        "title": "SC/ST Book Bank",
+        "description": "Central Library has a facility to issue upto 6 books from Book Bank to students belonging to SC/ST communities who can borrow one text book for each subject in a semester. . Students whose names appear in the list of SC/ST students, received from the Principal Office are eligible to borrow these books by producing application and photocopy of cast certificate issued by the government. This Facility will be available for SC/ST Student with free of cost. These books have to be return the end of the semester (after university examination).Borrower shall be responsible for any damage or loss caused to the books and shall be required to replace the same or latest edition of the same books or the entire cost of the books will be deducted from his/her deposit."
+      },
+      {
+        "title": "New Arrivals",
+        "description": "New books are shelved on the “New Arrivals display rack” in the reference section for a limited period of time in order that library users may have a chance to browse new acquisitions."
+      },
+      {
+        "title": "Reference section",
+        "description": "The Reference Section in the library has various books that are sources of information about different subjects. They include Text /reference books, Journals, Magazines, Newspapers, CD’s dictionaries, encyclopedias, Project Reports , Hand books. Question papers, General Aptitude books and other informational books. Most books in the Reference Section may not be taken out so that they are always available to those who need them."
+      },
+      {
+        "title": "Digital Library",
+        "description": "A Digital Library having 16 systems and 36 extended docking area facilities with internet facility with speed of 300MBPS. The digital Library exclusively used for the online access of e-Journals, e-books, conference proceedings, articles, educational videos and e- resources."
+      },
+      {
+        "title": "Reprographic Service",
+        "description": "Xerox facilities are available in reference section. Users can avail the photocopying facility for making copies of reading material in Central Library. Charges apply (per page Rs.1/-)."
+      },
+      {
+        "title": "OPAC",
+        "description": "Online Public Access Catalogue facility available in the Central Library for user.The library’s catalogue of books and other reading material can be accessed through library ERP software. The library catalogue is searched by author, title, publisher, and keyword ."
+      },
+      {
+        "title": "CD Rom database service",
+        "description": "Huge collection of CD ROM in various subjects and journals available for access."
+      },
+      {
+        "title": "Question Papers",
+        "description": "VTU question papers also available for reference. Question Paper Library is the fastest and easiest way to find Old University / Board question papers in an interactive way."
+      },
+      {
+        "title": "Online Access Service",
+        "description": "This facility provided to users access e- journals, e books, Articles, Conference Proceedings, E learning materials , and videos’ from the various publishers Platform(GATE &etc.,) , Articles from various publishers Springer Nature, Taylor&Francis, Elsevier /Science Direct, , Emerald, Proquest, IEEE ASPP, Knimbus digital platform and Remote access and Drillbit Plagiarism Originality online Check Tool, etc.. Subscribed packages under the VTU Consortium."
+      }
+    ]
+  },
+ {
+    "title": "E-Resources",
+    "data": [
+      {
+        "title":"E-Resources of Central Library",
+        "description": "Electronic resources (e-resources) are materials in digital format accessible electronically. E-resources are electronic journals (e-journal), electronic books (e-book), Conference proceeding , Articles, e-learning materials ,Videos etc., online databases in varied digital formats, Adobe Acrobat documents (.pdf), WebPages (.htm, .html, .asp etc) and more. The CEC Central Library has subscribed online e journals and e-books on various publishers through a member of VTU Consortium."
+      },
+
+ {
+        "points": [
+          "E-resources such as e-journals, e-databases, e-books made available by the Central Library, are for academic use only.",
+          "Using e-resources for scholarly, educational or research, teaching, private study and clinical purposes.",
+          "Systematic downloading of entire journal issues or volumes, or large portions of other e-resources is not permitted.",
+          "Using e-resources for commercial gain is not permitted Transmitting, disseminating or otherwise making online content available to unauthorized."
+        ]
+      },
+
+
+
+      {
+        "title": "E-Journals & E-Books Access provided through VTU Consortium:-",
+        "type": "table",
+        "headers": ["Resource Name", "Description", "Link"],
+        "rows": [
+          ["IEEE ASPP", "The Core collection all Society periodicals It Covers 198 e-Journals and back issues from 2010 .", "http://ieeexplore.ieee.org"],
+          ["SPRINGER NATURE", "It covers 689 e-journals and Back issues from 1997.", "http://link.springer.com"],
+          ["TAYLOR & FRANCIS", "It covers 581 e-journals and 781 e-books on Engineering+CSE+ ME+ CV +Allied Branches and Back issues from 2010.", "http://www.tandfonline.com"],
+          ["MapMyAccess", "MapMyAccess is a remote access solution that is specifically designed for effective access of digital content subscribed by VTU Consortium Cloud server along with Universal federation search services Remote Access Solution.", "https://access.vtuconsortium.com/cec"],
+          ["Emerald e-resources", "It covers 212 e-journals on Management.", "https://www.emerald.com/insight"],
+          ["ICE", "It covers 29 e-journals on Management.", "https://www.emerald.com/insight"],
+          ["PACKT", "It covers 2300 e-books on Management.", "https://learning.packt.com"],
+          ["New Age International", "It covers 450 e-books on Management.", "https://digital.elib4u.com"],
+          ["Edsol Informatics", "It covers 20 e-books on Management.", "https://ebooks.edsolinformatics.com/"],
+          ["EBSCO Engineering Suit Databases", "It covers 6100 e-journals and 24015 e-books.", "https://search.ebscohost.com"],
+          ["Eduport Global–CBS", "It covers 174 e-books.", "https://eduport-global.com"],
+          ["BSP E-Book", "It covers 141 e-books.", "https://ebookstore.bspublications.net/library"],
+          ["CENGAGE LEARNING", "It covers 69 e-books.", "https://cengageindiaelibrary.ipublishcentral.net/explore"],
+          ["Cambridge University Press", "It covers 58 e-books.", "https://www.cambridge.org"],
+          ["MINT BOOKS", "It Covers 1360 e-books.", "https://mintbook.com"],
+          ["Quiklrn", "It covers 91 e-books.", "https://quiklrn.com/app.php"],
+          ["Quiklrn (Language Communication Lab)", "Quiklrn’s English Communication Lab enhances Students Listening speaking reading and writing skills with added grammar and vocabulary support provided through VTU Consortium, the Lab is accessible via the institution IP only within the Campus Lab. Each Institution gets 30 shared licenses for students to use.", "https://home.quiklrn.com"],
+          ["IEEE Blended e-Learning Platform", "70 Latest technology e-learning Video Courses.", "https://blendedlearning.ieee.org"],
+          ["Edutainer, PAT Technology", "14 Latest technology e-learning Video Courses.", "https://vtu.edutainer.in"],
+          ["Magzter Databses", "Magazines, Newspapers Journals and others.", "https://library.magzter.com"],
+          ["CELUS", "Online software for automated harvesting and analysis of COUNTER and non-COUNTER Statistics.", "https://www.celus.net"],
+          ["IEEE ASPP & POP ALL", "It covers 201 e-Journals and 1800+ Annual conference proceedings.", "https://ieeexplore.ieee.org"],
+          ["Elsevier/Science Direct", "It covers 327 e-Books on Engineering and Allied Branches of Engineering.", "http://www.sciencedirect.com/"],
+          ["Drillbit Plagiarism", "Plagiarism originality online Check.", "https://www.drillbitplagiarismcheck.com"],
+          ["Knimbus", "Knimbus is a remote access solution that is specifically designed for effective access of digital content subscribed by VTU Consortium Cloud server along with Universal federation search services Remote Access Solution and mLibrary Mobile app.", "http://cecb.knimbus.com"]
+        ]
+      },
+         {
+        "title": "Self learning &E learning Resources:-",
+        "type": "table",
+        "headers": ["Resource Name", "Description", "Link"],
+        "rows": [
+          ["National Digital Library (NDL)", "National Digital Library of India (Sponsored by Ministry of Human Resource Development) Educational materials are available for users ranging from primary to Post graduate levels. It includes Books, articles, Thesis, Manuscripts, Audio lectures, and Video lectures about all subjects. 7, 203, 195 + items hosted in NDL.", "http://ndl.iitkgp.ac.in"]
+        ]
+      },
+      {
+        "title": "Shodhganga: A reservoir of Indian Theses:-",
+        "type": "table",
+        "headers": ["Resource Name", "Description", "Link"],
+        "rows": [
+          ["Shodhganga", "A reservoir of Indian Theses: The Shodhganga@ INFLIBNET Centre provides a platform for research students to deposit their Ph.D. theses and make it available to the entire scholarly community in open access. The repository has the ability to capture, index, store, disseminate and preserve ETDs submitted by the researchers.", "https://shodhganga.inflibnet.ac.in/"],
+          ["Abhilekh Patal Portal", "Abhilekh Patal Portal for Access to Archives and Learning is an initiative of NAI to make its rich treasure of Indian Archival Records available to one and all at the click of a button.", "https://www.abhilekh-patal.in/jspui/"]
+        ]
+      },
+      {
+        "description": "(Note: all the above resources IP based accessible within the campus)"
+      },
+      {
+        "description": "“Libraries store the energy that fuels the imagination. They open up windows to the world and inspire us to explore and achieve, and contribute to improving our quality of life.”– Sidney Sheldon"
+      }
+    ]
+  },
+{
+    "title": "Timing",
+    "data": [
+      {
+        "title": "Timing",
+        "type": "table",
+        "headers": ["Occasion", "Reference Section", "Digital Library"],
+        "rows": [
+          ["During Working Days", "", ""],
+          ["Monday - Friday", "9.00 AM – 8.00 PM", "9.00 AM – 8.00 PM"],
+          ["Saturday (2nd, 4th & 5th)", "9.00 AM – 4.30 PM", "9.00 AM – 4.30 PM"],
+          ["Saturday (1st & 3rd)", "9.00 AM – 1.00 PM", "9.00 AM – 1.00 PM"],
+          ["Sunday", "9.00 AM – 1.00 PM", "9.00 AM – 1.00 PM"],
+          ["During Internal Examinations", "", ""],
+          ["Monday - Saturday", "9.00 AM – 8.00 PM", "9.00 AM – 8.00 PM"],
+          ["Sunday & PH", "9.00 AM – 1:00 PM", "9.00 AM – 1:00 PM"],
+          ["During VTU Examinations", "", ""],
+          ["Monday - Saturday", "9.00 AM – 8.00 PM", "9.00 AM – 8.00 PM"],
+          ["Sundays and Govt. Holidays", "9.00 AM – 1:00 PM", "9.00 AM – 1:00 PM"]
+        ]
+      }
+    ]
+  },
+ {
+    "title": "Rules",
+    "data": [
+      {
+        "title": "Admission to the Library",
+        "description": "CEC Central Library primarily intended to support the educational and research needs of the Faculty, researcher, staff and students. CEC ID qualify for admittance to the Central Library borrowing facilities. All members are required to deposit their belongings at the cub board. The Library is not responsible for any loss or damage to the same. Taking a bag inside the Library is strictly prohibited."
+      },
+      {
+        "title": "Borrowing facilities and Renewal",
+        "type": "table",
+        "headers": ["Category of users", "No. of Borrower cards", "Duration"],
+        "rows": [
+          ["Teaching Faculty", "12 books", "Full semester"],
+          ["UG students (Circulation Section)", "4", "15 days"],
+          ["UG students (Book Bank Section)", "1", "One Semester"],
+          ["UG students (SC/ST Book Bank)", "1", "One Semester"],
+          ["PG students (Circulation Section)", "4", "15 days"],
+          ["PG students (Book Bank Section)", "1", "One Semester"],
+          ["PG students (SC/ST Book Bank)", "1", "One Semester"],
+          ["Supporting Staff", "4 books", "Full semester"]
+        ]
+      },
+      {
+        "title": "Rules on Overdue Materials",
+        "description": "Books will be issued for 15 days duration. Students have to return the books on or before the due date. A fine of Rs.10 per book per day will be levied, if the books are not returned within the due date."
+      },
+      {
+        "title": "Loss/Damage of Library Materials",
+        "description": "Library resources are costly and are often rare. Handle Library books and other materials with care and respect. If the books are lost, then the borrower shall replace the books of same edition or latest edition or pay double cost of the book after getting permission from the librarian."
+      },
+      {
+        "title": "General Instructions",
+        "points": [
+          "The Library is primarily intended for the use of Students, Faculty and Staff of the college.",
+          "Silence to be maintained. Any kind of discussion is not allowed in the Library.",
+          "Dress code is compulsory.",
+          "Produce your Identity card, enter your name and sign in a Log Register kept at the entrance counter before entering library.",
+          "Personal belongings are not allowed inside the Library. Refreshments / eatables of any kind are strictly not allowed anywhere in the library premises.",
+          "Using cellular phones and audio instruments with or without speaker or headphone is strictly prohibited in the library premises.",
+          "Show the books and other materials which are being taken out of the library to the staff at the entrance counter.",
+          "Students may borrow magazines and other reading material at Periodical Section. They must return these at the counter before leaving the Reference Section as they cannot be taken outside the Library.",
+          "Students are not permitted to lend books to any other person, whether inside or outside the college.",
+          "The Library property should be treated with utmost care. Writing, drawing on the furniture/equipments, etc is strictly prohibited.",
+          "Every college student is expected to cultivate a high standard of conduct / behavior in the library.",
+          "Library membership and borrower cards are not transferrable.",
+          "A student to whom a book has been issued is responsible for it and for any damage done to it. He/she may not write anything or make any mark therein.",
+          "Loss of borrower card shall be intimated to the librarian. Duplicate card will be issued at the cost of Rs. 25/- per borrower card after verification.",
+          "After two weeks if the books are not returned, a fine of Rs/- 10 per day per book will be levied.",
+          "The defaulter student, after the above period of due date has to pay all the late fees and cost of the books to the Accounts department before the Exam hall ticket is issued to him / her.",
+          "The Book may be retained for two weeks unless recalled by the librarian in the meantime.",
+          "Loss or damage to book/s shall have to be made good by the borrower.",
+          "To obtain No Dues certificate from the college member should.Return all books borrowed, Submit the project report, pay overdue charges if any and surrender the borrower cards to the Library.",
+          "For any further clarification about the library services the librarian may be contacted.",
+          "In case of violation of any of the above rules / regulations, the librarian will send the list of misbehaved students and ID card to the Principal for further action."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Staff",
+    "data": [
+      {
+        "type": "staff_grid"
+      }
+    ]
+  },
+  {
+    "title": "Contact",
+    "data": [
+      {
+        "title": "Contact Details",
+        "description": "For any enquiry contact Circulation Desk @ Ext: 212"
+      },
+      {
+        "points": [
+          "Address: The librarian, Canara Engineering College, Benjanapadavu, Bantwal Taluk, Mangalore, D.K. District, Karnataka - 574219",
+          "Phone: 8792727001",
+          "Fax: 0824-2278675",
+          "Email: library@canaraengineering.in"
+        ]
+      }
+    ]
+  },
+  
+  {
+    "title": "Handbook",
+    
+    "data": [
+      {
+        "title": "Library Handbook",
+
+        "href": "https://apiserver.cec.edu.in/files/libraryHandbook"
+      }
+    ]
+  },
+  {
+    "title": "Digital Repository", 
+    "data": [
+      {
+        "link": "http://ir.vtu.ac.in:4000/home",
+        "linkText": "Visit Digital Repository"
+      }
+    ]
+  }
+
+]

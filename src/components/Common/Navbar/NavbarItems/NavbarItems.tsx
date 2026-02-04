@@ -5,58 +5,81 @@ import Academics from "../NavLinks/Academics";
 import Life from "../NavLinks/Life";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import FormModal from "@/components/campusComponent/FromModal/FromModal";
-import { Suspense } from "react"
+import { Suspense } from "react";
 import ContactFormModal from "@/components/Modal/Modal";
+import Button from "../../Button/Button";
+
 
 function NavbarItems() {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
-const pathname = usePathname()
+  const pathname = usePathname();
   return (
     <>
-     <div className="hidden nav-items lg:flex text-secondary lg2 flex-row space-x-3  xl:space-x-6">
-      <div className="cursor-pointer  pt-[8px] text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
-        <About />
+      <div className="hidden nav-items lg:flex text-secondary space-x-2 flex-row justify-between flex-1">
+        <div className="cursor-pointer   text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
+          <About />
+        </div>
+        <div className="cursor-pointer  text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
+          <Suspense fallback={null}>
+            <Academics />
+          </Suspense>
+        </div>
+        <div
+          id="admission"
+          className="cursor-pointer opacity-80   text-[#2884CA]   text-base hover:text-[#005580] xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
+        >
+          <Link
+            href={"/admission"}
+            className={`font-poppins ${
+              pathname === "/admission" ? "border-b-2 px-3  py-1.5 border-[#005580] text-[#005580]" : " text-[#2884CA] px-3  py-1.5 hover:text-[#005580]"
+            }  `}
+          >
+            Admissions
+          </Link>
+        </div>
+        <div
+          id="life"
+          className="cursor-pointer  group text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
+        >
+          <Life />
+        </div>
+        <Link
+          id="placement"
+          className=" opacity-80 text-[#2884CA]   font-poppins text-base xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
+          href={"/training-placements"}
+        >
+          <p
+            className={`font-poppins ${
+              pathname === "/training-placements" ? "border-b-2 px-3  py-1.5 border-[#005580] text-[#005580]" : " text-[#2884CA] py-1.5 px-3 hover:text-[#005580]"
+            }  `}
+          >
+            {" "}
+            Training & Placements
+          </p>
+        </Link>
+        <div
+          id="apply"
+          className=" font-poppins text-base pl-3 xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
+        >
+          {/* <button
+            aria-label="Apply Now Button"
+            onClick={() => setModalOpen(true)}
+            className="bg-primary text-white px-7 py-2.5 cursor-pointer rounded-[30px]"
+          >
+            Apply Now
+          </button> */}
+
+          <Button noPadding={true} variant="primary1"
+             aria-label="Apply Now Button"
+            onClick={() => setModalOpen(true)}
+           
+              className="bg-primary text-white px-7 py-2.5 cursor-pointer rounded-[30px] "
+            >
+             Apply Now
+              </Button>
+        </div>
       </div>
-      <div className="cursor-pointer pt-[8px] text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
-       <Suspense fallback={null}><Academics /></Suspense>
-        
-      </div>
-      <div
-        id="admission"
-        className="cursor-pointer opacity-80  gap-2 text-[#2884CA] pt-[8px]  text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
-      >
-        <Link href={"/admission"} className={`font-poppins ${(pathname==="/admission")?'border-b-2 border-[#005580] text-[#005580]':" text-[#2884CA]"} py-1.5 `}>
-          Admissions
-        </Link>  
-      </div>
-      <div
-        id="life"
-        className="cursor-pointer pt-[8px] group text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
-      >
-        <Life />
-      </div>
-      <Link
-        id="placement"
-        className="pt-[8px] opacity-80 text-[#2884CA]   font-poppins text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
-        href={"/training-placements"}
-      >
-       <p className={`font-poppins ${pathname==="/training-placements"?'border-b-2 border-[#005580] text-[#005580]':" text-[#2884CA]"} py-1.5 `}> Training & Placements</p>
-       
-      </Link>
-      <div
-        id="apply"
-        className="pt-[8px] pl-2 font-poppins text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
-      >
-        <button 
-        aria-label="Apply Now Button"
-        onClick={() => setModalOpen(true)} className="bg-primary text-white px-7 py-2.5 cursor-pointer rounded-[30px]">
-          Apply Now
-        </button>
-      </div>
-    </div>
-      <ContactFormModal isOpen={modalOpen} onClose={setModalOpen}/>
-      
+      <ContactFormModal isOpen={modalOpen} onClose={setModalOpen} />
     </>
   );
 }

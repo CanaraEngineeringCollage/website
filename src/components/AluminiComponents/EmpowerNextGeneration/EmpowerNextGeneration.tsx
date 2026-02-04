@@ -1,5 +1,4 @@
-"use client"
-
+"use client";
 
 import React, { useRef, useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
@@ -42,7 +41,6 @@ const contentVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.1, ease: "easeOut" } },
 };
 
-
 // CardContent Component
 
 function CardContent({ description }: { description: Amenity }) {
@@ -56,7 +54,7 @@ function CardContent({ description }: { description: Amenity }) {
         height={700}
         className="object-cover overflow-hidden rounded-t-2xl w-full lg:h-[700px] h-[400px] mb-10"
       />
-      <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
+      <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-[#1D1D1F] bg-white">
         <div>
           <h3 className="text-[31px] lg:text-[46px] leading-[1.1] lg:max-w-[70%] mb-5 font-bold">{description.title}</h3>
           <p className="text-xl text-textGray">{description.description}</p>
@@ -65,7 +63,6 @@ function CardContent({ description }: { description: Amenity }) {
     </div>
   );
 }
-
 
 const EmpowerNextGeneration: React.FC = () => {
   const { title, amenities, mainImage } = data as Data;
@@ -92,7 +89,7 @@ const EmpowerNextGeneration: React.FC = () => {
   });
 
   return (
-    <section className="max-w-5xl xl:max-w-[65%] mx-auto pt-10 pb-16 overflow-hidden text-black">
+    <section className="max-w-5xl xl:max-w-[65%] mx-auto pt-10 pb-16 overflow-hidden text-[#1D1D1F]">
       <div>
         {title && <h1 className="text-3xl text-center mb-14 md:text-[40px] lg2:text-5xl xl:text-6xl font-bold">{title}</h1>}
 
@@ -111,7 +108,13 @@ const EmpowerNextGeneration: React.FC = () => {
 
             <div className="flex items-center justify-between  gap-6 lg:me-28 mt-2">
               <p className="text-white lg:text-[20px] text-[14px] w-xl">{mainImage?.description}</p>
-              <button aria-label="Read More" onClick={() => openCard(0)} className="text-sm lg:text-base bg-white text-black px-2 py-2 w-60 rounded-full hover:bg-gray-200 transition">Read More</button>
+              <button
+                aria-label="Read More"
+                onClick={() => openCard(0)}
+                className="text-sm lg:text-base bg-white text-[#1D1D1F] px-2 py-2 w-60 rounded-full hover:bg-gray-200 transition"
+              >
+                Read More
+              </button>
             </div>
           </div>
         </div>
@@ -130,9 +133,7 @@ const EmpowerNextGeneration: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-3xl"></div>
                 <div className="absolute inset-0 flex flex-col justify-end items-center pb-6">
-                  <h1 className="text-white text-[21px]  font-bold text-center">
-                    {amenity?.title}
-                  </h1>
+                  <h1 className="text-white text-[21px]  font-bold text-center">{amenity?.title}</h1>
                   <button
                     aria-label="Read More"
                     onClick={() => openCard(index)}

@@ -16,7 +16,6 @@ interface VideoPlayerProps {
 
 const VideoPlayer: React.FC<VideoPlayerProps> = ({ youtubeUrl, videoUrl, title, subTitle, thumbnail, titleClassname, startTime }) => {
   const [isPlaying, setIsPlaying] = useState(false);
-  console.log(youtubeUrl);
 
   // Universal extractor for videoId
   function extractVideoId(input: string): string | null {
@@ -53,11 +52,10 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ youtubeUrl, videoUrl, title, 
   const videoId = useMemo(() => extractVideoId(youtubeUrl), [youtubeUrl]);
 
   if (!videoId) {
-    return <div className="text-red-500">Invalid YouTube URL or ID</div>;
+    return null;
   }
 
   const thumbnailUrl = thumbnail || `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
-  console.log(thumbnailUrl, "tt");
 
   return (
     <div className="overflow-hidden  max-w-5xl mx-auto xl:max-w-[65%] rounded-4xl px-6 md:px-0 py-">
@@ -68,7 +66,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ youtubeUrl, videoUrl, title, 
         {subTitle && <p className="font-medium md:text-2xl text-base text-white/60 max-w-4xl mx-auto">{subTitle}</p>}
       </div>
 
-      <div className={cn("relative w-full lg:max-h-[600px] mx-auto aspect-video rounded-4xl overflow-hidden")}>
+      <div className={cn("relative w-full lg:max-h-[600px] mx-auto aspect-video rounded-xl lg:rounded-4xl overflow-hidden")}>
         <AnimatePresence>
           {!isPlaying && (
             <motion.div

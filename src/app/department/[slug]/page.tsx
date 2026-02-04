@@ -11,7 +11,6 @@ import SpotlightSection from "@/components/DepartmentComponents/SpotlightSection
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
 import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 
-
 interface Qualification {
   degree: string;
   passingYear: number;
@@ -43,10 +42,7 @@ interface CouncilMember {
   employmentType?: string; // Make this optional
   qualifications: Qualification[]; // Ensure qualifications include the right data
   faculties?: Faculty[]; // Optional property for faculties
-
 }
-
-
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const department = departments.find((dept) => dept.slug === params.slug);
@@ -90,74 +86,67 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-
 export async function generateStaticParams() {
   return departments.map((dept) => ({ slug: dept.slug }));
 }
 
-export default async function DepartmentPage({ params }: { params: { slug: string } }) {
+export default function DepartmentPage({ params }: { params: { slug: string } }) {
   const department = departments?.find((dept) => dept?.slug === params?.slug);
 
-
   if (!department) return notFound();
-  console.log(department.faculties);
 
   // Filter council data as needed
   // const facultyData = councilData.faculty.filter((faculty) => faculty.department === department.name) as CouncilMember[];
-  
-  let facultyDataFetched: Faculty[] = [];
-  try {
-    const res = await fetch("https://canaraapi.megamind.studio/faculty");
-    if (!res.ok) throw new Error("Failed to fetch faculty data");
-    const data: Faculty[] = await res.json();
 
-    // Filter faculty for the current department
-    facultyDataFetched = data.filter((faculty) => faculty.department === department.name).slice(0,10);
-  } catch (error) {
-    console.error("Error fetching faculty data:", error);
-  }
-
-
-
-console.log(facultyDataFetched,"fff");
-
- 
-  
 
 
   return (
     <>
-      <HeroSection departmentName={department.name} wdith={department.width} imageUrl={department.bannerUrl} />
-      <section className="px-6 md:px-0 xl:px-0">
-        <AboutTheDepartment departmentName={department.name} aboutTheDepartment={department.departmentAboutDescription} />
-      </section>
-      <section className="">
-        <VideoPlayer
-          videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
-          youtubeUrl={department?.ytUrl}
-          thumbnail={department?.thumbnail}
+      <section className="px-6 lg:px-0 xl:px-0">
+        <AboutTheDepartment
+          departmentName={department.name}
+          aboutTheDepartment={department.departmentAboutDescriptionArray}
+          wdith={department.width}
+          css={department.css}
+          imageUrl={department.bannerUrl}
         />
       </section>
-      <section className="pt-10 lg:mb-20 lg:pt-20">
-        <DepartmentMissionVision
-          ethicalLearning={department.ethicalLearning}
-          holisticGrowthResearch={department.holisticGrowthResearch}
-          innovationExcellence={department.innovationExcellence}
-          ourVision={department.ourVision}
-        />
-      </section>
-      <section className="bg-[#071D2C] px-6 md:px-0 lg:px-0 xl:px-0 md:mt-0 mt-8">
+      {/* <HeroSection departmentName={department.name} /> */}
+
+      {department?.ytUrl && (
+        <section className="pb-10 md:px-6 lg:px-0 md:pb-10   lg:pb-14">
+          <VideoPlayer
+            videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
+            youtubeUrl={department?.ytUrl}
+            thumbnail={department?.thumbnail}
+          />
+        </section>
+      )}
+      {department.ethicalLearning && (
+        <section className=" lg:mb-14 ">
+          <DepartmentMissionVision ethicalLearning={department.ethicalLearning} ourVision={department.ourVision} />
+        </section>
+      )}
+      <section className="bg-[#071D2C] px-6 lg:px-0 lg:px-0 xl:px-0 md:mt-0 mt-8">
         <DepartmentHeadMessage depatmentHead={department.depatmentHead} />
       </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0 lg:mt-0 -mt-10">
-        <DepartmentFacultySection faculties={facultyDataFetched} />
+      <section className="px-6 md:px-12 pb-10 lg:pb-0 lg:px-16 xl:px-0 lg:mt-0 ">
+        <DepartmentFacultySection departmentName={department.name} />
       </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0 lg:mt-0 -mt-12">
-        <IdeasToImpact />
-      </section>
-      <section>
-        <SpotlightSection />
-      </section>
+      {department.ideas && (
+        <section className=" mb-20 xl:mb-40  px-6 md:px-12 lg:px-16 xl:px-0 lg:mt-0 -mt-12">
+          <IdeasToImpact
+            ideasData={department.ideas}
+            tableHeaders={department.awardsTable?.headers}
+            tableRows={department.awardsTable?.rows}
+            allAwards={department.allAwards}
+          
+          />
+        </section>
+      )}
+      {department.toppers&&<section >
+        <SpotlightSection toppers={department.toppers} />
+      </section>}
       {/* <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0 pb-8">
         <HotOfThePress />
       </section> */}

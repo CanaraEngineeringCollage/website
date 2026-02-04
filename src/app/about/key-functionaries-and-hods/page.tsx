@@ -2,6 +2,7 @@ import ProfileCard from '@/components/AboutPageComponents/GoverningCounsilPage/C
 import FooterCard from '@/components/Common/FooterCard/FooterCard'
 import React from 'react'
 import datam from "../../../utils/hodData/hodData.json"
+import keyFunctionariesData from "../../../utils/keyFunctionariesData/keyFunctionariesData.json"
 export const metadata = {
   title: "Key Functionaries & HODs | Canara Engineering College",
   description: "Meet the key functionaries and Heads of Departments at Canara Engineering College, leading academic excellence and innovation across various disciplines.",
@@ -31,7 +32,7 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-       <ProfileCard datam={datam} title="Head of the Departments"/>
+       <ProfileCard keyFunctionaries={keyFunctionariesData} datam={datam} title="Head of the Departments"/>
       <section className="bg-[#E5E5EA]">
         <FooterCard />
       </section>

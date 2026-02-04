@@ -1,249 +1,329 @@
 [
   {
-    "title": "NBA Acrreditation status of Programs",
+    "title": "Accreditations and Certifications",
+    "nba": [
+      {
+        "title": "NBA Certificate 2025",
+        "links": [
+          {
+            "text": "View NBA Certificate",
+            "href": "https://apiserver.cec.edu.in/files/NBA%20certificate%202025"
+          }
+        ]
+      }
+    ],
+    "naac": {
+      "iqac": [
+        {
+          "title": "IQAC Report 2025",
+          "links": [
+            {
+              "text": "View IQAC Report 2025",
+              "href": "https://apiserver.cec.edu.in/files/IQAC%20Report%202025"
+            }
+          ]
+        },
+        {
+          "title": "IQAC Report 2024",
+          "links": [
+            {
+              "text": "View IQAC Report 2024",
+              "href": "https://apiserver.cec.edu.in/files/IQAC%20Report%202024"
+            }
+          ]
+        },
+        {
+          "title": "IQAC Report 2023",
+          "links": [
+            {
+              "text": "View IQAC Report 2023",
+              "href": "https://apiserver.cec.edu.in/files/IQAC%20Report%202023"
+            }
+          ]
+        },
+        {
+          "title": "IQAC Report 2022",
+          "links": [
+            {
+              "text": "View IQAC Report 2022",
+              "href": "https://apiserver.cec.edu.in/files/IQAC%20Report%202022"
+            }
+          ]
+        }
+      ],
+      "aqar": [
+        {
+          "title": "NAAC AQAR",
+          "links": [
+            {
+              "text": "View Yearly Status Report 2023–2024",
+              "href": "https://apiserver.cec.edu.in/files/NAAC%20AQAR"
+            }
+          ]
+        }
+      ],
+      "nac": [
+        {
+          "title": "NAAC Certificate",
+          "links": [
+            {
+              "text": "View NAAC Certificate",
+              "href": "https://apiserver.cec.edu.in/files/NAAC%20Certificate"
+            }
+          ]
+        },
+        {
+          "title": "NAAC Grade Card",
+          "links": [
+            {
+              "text": "View NAAC Grade Card",
+              "href": "https://apiserver.cec.edu.in/files/NAAC%20Grade%20Card"
+            }
+          ]
+        },
+        {
+          "title": "NAAC SSR",
+          "links": [
+            {
+              "text": "View NAAC SSR",
+              "href": "https://apiserver.cec.edu.in/files/NAAC%20SSR"
+            }
+          ]
+        }
+      ]
+    },
+    "iso": [
+      {
+        "title": "ISO 21001:2018",
+        "links": [
+          {
+            "text": "View ISO 21001:2018 Certificate",
+            "href": "/mandatory/iso/ISO New certificate- 1 21001 EOMS.pdf"
+          }
+        ]
+      },
+      {
+        "title": "ISO 9001:2015",
+        "links": [
+          {
+            "text": "View ISO 9001:2015 Certificate",
+            "href": "/mandatory/iso/ISO New certificate -I 9001 QMS.pdf"
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "title": "NIRF Disclosure",
     "data": [
       {
-        "title": "Status Program",
-        "links": [{ "text": "View Status Program", "href": "https://www.canaraengineering.in/download/disclosure/NBA_Accreditation.pdf" }]
+        "title": "Year 2024–2025",
+        "links": [
+          {
+            "text": "View Report 2024–2025",
+            "href": "https://apiserver.cec.edu.in/files/Year%202024-2025"
+          }
+        ]
       },
       {
-        "title": "NAAC AQAR",
-        "links": [{ "text": "View YEARLY STATUS REPORT - 2023-2024", "href": "https://canaraengineering.in/AQAR_23-24%20uploaded_16-01-25.pdf" }]
+        "title": "Year 2023–2024",
+        "links": [
+          {
+            "text": "View Report 2023–2024",
+            "href": "https://apiserver.cec.edu.in/files/Year%202023-2024"
+          }
+        ]
       },
       {
-        "title": "IQAC Report 2024",
-        "links": [{ "text": "View IQAC REPORT 2024", "href": "https://canaraengineering.in/IQAC report 2024.pdf" }]
+        "title": "Year 2022–2023",
+        "links": [
+          {
+            "text": "View Report 2022–2023",
+            "href": "https://apiserver.cec.edu.in/files/Year%202022-2023"
+          }
+        ]
       },
       {
-        "title": "IQAC Report 2023",
-        "links": [{ "text": "IQAC Report 2023", "href": "https://canaraengineering.in/IQAC report_2023.pdf" }]
+        "title": "Year 2021–2022",
+        "links": [
+          {
+            "text": "View Report 2021–2022",
+            "href": "https://apiserver.cec.edu.in/files/Year%202021-2022%20MA"
+          }
+        ]
       },
       {
-        "title": "IQAC Report 2022",
-        "links": [{ "text": "Academic Calendar Odd Semester", "href": "https://canaraengineering.in/IQAC report 2022.pdf" }]
+        "title": "Year 2020–2021",
+        "links": [
+          {
+            "text": "View Report 2020–2021",
+            "href": "https://apiserver.cec.edu.in/files/Year%202020-2021"
+          }
+        ]
       },
       {
-        "title": "NAAC Certificate",
-        "links": [{ "text": "View NAAC Certificate", "href": "https://canaraengineering.in/NAAC CERTIFICATE.pdf" }]
+        "title": "Year 2019–2020",
+        "links": [
+          {
+            "text": "View Report 2019–2020",
+            "href": "https://apiserver.cec.edu.in/files/year2019-2020"
+          }
+        ]
       },
       {
-        "title": "NAAC Grade Card",
-        "links": [{ "text": "View NAAC Grade Card", "href": "https://canaraengineering.in/Institutional_Grade_Sheet.pdf" }]
+        "title": "Year 2018–2019",
+        "links": [
+          {
+            "text": "View Report 2018–2019",
+            "href": "https://apiserver.cec.edu.in/files/Year%202018-2019"
+          }
+        ]
       },
       {
-        "title": "NAAC SSR",
-        "links": [{ "text": "View NAAC SSR", "href": "https://canaraengineering.in/SSR.pdf" }]
+        "title": "Year 2017–2018",
+        "links": [
+          {
+            "text": "View Report 2017–2018",
+            "href": "https://apiserver.cec.edu.in/files/Year%202017-2018"
+          }
+        ]
       }
     ]
   },
-
-{
-    "title": "NIRF Disclosure",
-     "data": [
-      {
-        "title": "Year 2024-2025",
-        "links": [{ "text": "View REPORT - 2024-2025", "href": "https://www.canaraengineering.in/download/NIRF/submitted%20data_NIRF_24-25.pdf" }]
-      },
-      {
-        "title": "Year 2023-2024",
-        "links": [{ "text": "View REPORT - 2023-2024", "href": "https://www.canaraengineering.in/download/NIRF/NIRF%20sumbitted%20report_2024_CEC_IR-E-C-1323.pdf" }]
-      },
-      {
-        "title": "Year 2022-2023",
-        "links": [{ "text": "View REPORT - 2022-2023", "href": "https://www.canaraengineering.in/download/NIRF/All%20Report-MHRD,%20National%20Institutional%20Ranking%20Framework%20(NIRF).pdf" }]
-      },
-      {
-        "title": "Year 2021-2022",
-        "links": [{ "text": "View REPORT - 2021-2022", "href": "https://www.canaraengineering.in/download/NIRF/completed%20data_NIRF_2022.pdf" }]
-      },
-      {
-        "title": "Year 2020-2021",
-        "links": [{ "text": "View REPORT - 2020-2021", "href": "https://www.canaraengineering.in/download/NIRF/Canara%20Engineering%20College%202021.pdf" }]
-      },
-      {
-        "title": "Year 2019-2020",
-        "links": [{ "text": "View REPORT - 2019-2020", "href": "https://www.canaraengineering.in/download/NIRF/Canara%20Engineering%20College23_12_2019_17_50_31.pdf" }]
-      },
-      {
-        "title": "Year 2018-2019",
-        "links": [{ "text": "View REPORT - 2018-2019", "href": "https://www.canaraengineering.in/download/NIRF/Canara%20Engineering%20College20190219-.pdf" }]
-      },
-      {
-        "title": "Year 2017-2018",
-        "links": [{ "text": "View REPORT - 2017-2018", "href": "https://canaraengineering.in/SSR.pdf" }]
-      }
-    ]
-  },
-
-
-
-
 
   {
     "title": "AICTE Approval",
     "data": [
       {
         "title": "AICTE Documents",
-        "links": [{ "text": "AICTE Approval", "href": "https://www.canaraengineering.in/download/EOA%20Report.pdf" }]
+        "links": [
+          {
+            "text": "AICTE Approval",
+            "href": "https://apiserver.cec.edu.in/files/AICTE%20Approval"
+          }
+        ]
       }
     ]
   },
+
   {
     "title": "VTU Affiliation",
     "data": [
       {
         "title": "Affiliation Letters",
-        "links": [{ "text": "VTU Affiliation", "href": "https://www.canaraengineering.in/download/vtu%20affiliaton.pdf" }]
+        "links": [
+          {
+            "text": "VTU Affiliation",
+            "href": "https://apiserver.cec.edu.in/files/VTU%20Affiliation"
+          }
+        ]
       }
     ]
   },
+
   {
     "title": "UGC 2(f) Status",
     "data": [
       {
         "title": "UGC Details",
-        "links": [{ "text": "UGC Approval Certificate", "href": "https://www.canaraengineering.in/download/cecugc2f.pdf" }]
+        "links": [
+          {
+            "text": "UGC Approval Certificate",
+            "href": "https://apiserver.cec.edu.in/files/List%20of%20UGC%202(f)%20Status"
+          }
+        ]
       }
     ]
   },
+
   {
     "title": "Audit Report",
     "data": [
-      {
-        "title": "2023-2024",
-        "links": [{ "text": "View", "href": "https://www.canaraengineering.in/download/audited%20report/AR%2023-24.pdf" }]
-      },
-      {
-        "title": "2022-2023",
-        "links": [{ "text": "View", "href": "https://www.canaraengineering.in/download/audited%20report/AR%2022-23.pdf" }]
-      },
-      {
-        "title": "2021-2022",
-        "links": [{ "text": "View", "href": "https://www.canaraengineering.in/download/audited%20report/AR%2021-22.pdf" }]
-      },
-      {
-        "title": "2020-2021",
-        "links": [{ "text": "View", "href": "https://www.canaraengineering.in/download/audited%20report/AR%2020-21.pdf" }]
-      },
-      {
-        "title": "2019-2020",
-        "links": [{ "text": "View", "href": "https://www.canaraengineering.in/download/audited%20report/AR%2019-20.pdf" }]
-      }
+      { "title": "2023–2024", "links": [{ "text": "View", "href": "https://apiserver.cec.edu.in/files/Audit%20Report%202023-2024" }] },
+      { "title": "2022–2023", "links": [{ "text": "View", "href": "https://apiserver.cec.edu.in/files/Audit%20Report%202022-2023" }] },
+      { "title": "2021–2022", "links": [{ "text": "View", "href": "https://apiserver.cec.edu.in/files/Audit%20Report%202021-2022" }] },
+      { "title": "2020–2021", "links": [{ "text": "View", "href": "https://apiserver.cec.edu.in/files/Audit%20Report%202020-2021" }] },
+      { "title": "2019–2020", "links": [{ "text": "View", "href": "https://apiserver.cec.edu.in/files/Audit%20Report%202019-2020" }] }
     ]
   },
+
   {
     "title": "GC Meeting",
     "data": [
       {
         "title": "35th Governing Council Meeting",
-        "links": [{ "text": "View", "href": "https://www.canaraengineering.in/download/35th%20GC%20meeting%20MoM_Signed%20copy.pdf" }]
+        "links": [
+          { "text": "View", "href": "/mandatory/pdfs/35th GC meeting MoM_Signed copy (1)_compressed.pdf" }
+        ]
       },
       {
         "title": "34th Governing Council Meeting",
-        "links": [{ "text": "View", "href": "https://www.canaraengineering.in/download/34th%20GC%20meeting%20MoM_Signed%20copy.pdf" }]
+        "links": [
+          { "text": "View", "href": "https://apiserver.cec.edu.in/files/GC%2034th%20Governing%20Council%20Meeting" }
+        ]
       },
       {
         "title": "33rd Governing Council Meeting",
-        "links": [{ "text": "View", "href": "https://www.canaraengineering.in/download/REPORT%20OF%2033TH%20GOVERNUNG%20COUNCIL%20MEETING.pdf" }]
+        "links": [
+          { "text": "View", "href": "https://apiserver.cec.edu.in/files/GC%2033th%20Governing%20Council%20Meeting" }
+        ]
       },
       {
         "title": "32nd Governing Council Meeting",
-        "links": [{ "text": "View", "href": "https://www.canaraengineering.in/download/Last%20three%20GC%20Minutes.pdf" }]
+        "links": [
+          { "text": "View", "href": "/mandatory/pdfs/Last three GC Minutes_compressed (1).pdf" }
+        ]
       },
       {
         "title": "31st Governing Council Meeting",
-        "links": [{ "text": "View", "href": "https://www.canaraengineering.in/download/Last%20three%20GC%20Minutes.pdf" }]
+        "links": [
+          { "text": "View", "href": "/mandatory/pdfs/Last three GC Minutes_compressed (1).pdf" }
+        ]
       }
     ]
   },
+
   {
     "title": "Policy",
     "data": [
-      {
-        "title": "Academic policy",
-        "links": [{ "text": "View Academic policy", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Academic%20policy.pdf" }]
-      },
-      {
-        "title": "Admission policy",
-        "links": [{ "text": "View Admission policy", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Admission%20policy.pdf" }]
-      },
-      {
-        "title": "Campus Placement policy",
-        "links": [{ "text": "View Campus Placement policy", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Campus%20Placement%20policy.pdf" }]
-      },
-      {
-        "title": "Environment and Sustainability Policy",
-        "links": [{ "text": "View Environment and Sustainability Policy", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Environment%20and%20Sustainability%20Policy.pdf" }]
-      },
-      {
-        "title": "Feedback policy",
-        "links": [{ "text": "View Feedback policy", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Feedback%20policy.pdf" }]
-      },
-      {
-        "title": "Human Resourse policy",
-        "links": [{ "text": "View Human Resourse policy", "href": "https://www.imscec.canaraengineering.in/cms/cms/human%20resource%20policy_revised_signed.pdf" }]
-      },
-      {
-        "title": "Industry institute partnership cell policy",
-        "links": [{ "text": "View Industry institute partnership cell policy", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Industry%20institute%20partnership%20cell%20policy.pdf" }]
-      },
-      {
-        "title": "IQAC policy",
-        "links": [{ "text": "View IQAC policy", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/iqac%20policy.pdf" }]
-      },
-      {
-        "title": "IT and E-Governance policy",
-        "links": [{ "text": "View IT and E-Governance policy", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/IT%20and%20e-%20governance%20policy.pdf" }]
-      },
-      {
-        "title": "Library policy",
-        "links": [{ "text": "View Library policy", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Library%20Policy.pdf" }]
-      },
-      {
-        "title": "Life Long Learning policy",
-        "links": [{ "text": "View Life Long Learning policy", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Life%20long%20learning%20policy.pdf" }]
-      },
-      {
-        "title": "Maintenance policy",
-        "links": [{ "text": "View Maintenance policy", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Maintenance%20Policy.pdf" }]
-      },
-      {
-        "title": "R&D and Innovation policy",
-        "links": [{ "text": "View R&D and Innovation policy", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/R&D%20and%20Innovation%20policy.pdf" }]
-      },
-      {
-        "title": "Sports policy",
-        "links": [{ "text": "View Sports policy", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Sports%20policy.pdf" }]
-      },
-      {
-        "title": "Student Welfare policy",
-        "links": [{ "text": "View Student Welfare policy", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Student%20welfare%20policy.pdf" }]
-      },
-      {
-        "title": "Teachers Training Policy",
-        "links": [{ "text": "View Teachers Training Policy", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Teachers%20Trainig%20Policy.pdf" }]
-      },
-      {
-        "title": "Scholarship policy",
-        "links": [{ "text": "View Scholarship policy", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Student%20welfare%20policy.pdf" }]
-      },
-      {
-        "title": "Campus Management Policies",
-        "links": [{ "text": "View Campus Management Policies", "href": "https://www.imscec.canaraengineering.in/cms/cms/Policydoc/Waste%20disposal%20policies.pdf" }]
-      }
+      { "title": "Academic Policy", "links": [{ "text": "View Academic Policy", "href": "https://apiserver.cec.edu.in/files/Academic%20policy" }] },
+      { "title": "Admission Policy", "links": [{ "text": "View Admission Policy", "href": "https://apiserver.cec.edu.in/files/Admission%20policy" }] },
+      { "title": "Campus Placement Policy", "links": [{ "text": "View Campus Placement Policy", "href": "https://apiserver.cec.edu.in/files/Campus%20Placement%20policy" }] },
+      { "title": "Environment and Sustainability Policy", "links": [{ "text": "View Environment and Sustainability Policy", "href": "https://apiserver.cec.edu.in/files/Environment%20and%20Sustainability%20Policy" }] },
+      { "title": "Feedback Policy", "links": [{ "text": "View Feedback Policy", "href": "https://apiserver.cec.edu.in/files/Feedback%20policy" }] },
+      { "title": "Human Resource Policy", "links": [{ "text": "View Human Resource Policy", "href": "/mandatory/pdfs/human resource policy_revised_signed_compressed.pdf" }] },
+      { "title": "Industry–Institute Partnership Cell Policy", "links": [{ "text": "View Industry–Institute Partnership Cell Policy", "href": "https://apiserver.cec.edu.in/files/Industry%20institute%20partnership%20cell%20policy" }] },
+      { "title": "IQAC Policy", "links": [{ "text": "View IQAC Policy", "href": "https://apiserver.cec.edu.in/files/IQAC%20policy" }] },
+      { "title": "IT & E-Governance Policy", "links": [{ "text": "View IT & E-Governance Policy", "href": "https://apiserver.cec.edu.in/files/IT%20and%20E-Governance%20policy" }] },
+      { "title": "Library Policy", "links": [{ "text": "View Library Policy", "href": "https://apiserver.cec.edu.in/files/Library%20policy" }] },
+      { "title": "Life-Long Learning Policy", "links": [{ "text": "View Life-Long Learning Policy", "href": "https://apiserver.cec.edu.in/files/Life%20Long%20Learning%20policy" }] },
+      { "title": "Maintenance Policy", "links": [{ "text": "View Maintenance Policy", "href": "https://apiserver.cec.edu.in/files/Maintenance%20policy" }] },
+      { "title": "R&D and Innovation Policy", "links": [{ "text": "View R&D and Innovation Policy", "href": "https://apiserver.cec.edu.in/files/R&D%20and%20Innovation%20policy" }] },
+      { "title": "Sports Policy", "links": [{ "text": "View Sports Policy", "href": "https://apiserver.cec.edu.in/files/Sports%20policy" }] },
+      { "title": "Student Welfare Policy", "links": [{ "text": "View Student Welfare Policy", "href": "https://apiserver.cec.edu.in/files/Student%20Welfare%20policy" }] },
+      { "title": "Teachers’ Training Policy", "links": [{ "text": "View Teachers’ Training Policy", "href": "https://apiserver.cec.edu.in/files/Teachers%20Training%20Policy" }] },
+      { "title": "Scholarship Policy", "links": [{ "text": "View Scholarship Policy", "href": "https://apiserver.cec.edu.in/files/Scholarship%20policy" }] },
+      { "title": "Campus Management Policies", "links": [{ "text": "View Campus Management Policies", "href": "https://apiserver.cec.edu.in/files/Campus%20Management%20Policies" }] }
     ]
   },
+
   {
     "title": "Fees to be Paid",
-    
     "data": [
       {
         "title": "Fees Structure",
-        "year":"2025-2-26",
-        "links": [{ "text": "UG Fees 2025-2-26", "href": "https://www.canaraengineering.in/download/Details%20of%20Nominal%20fee.pdf" }]
+        "year": "2025–2026",
+        "links": [
+          {
+            "text": "UG Fees 2025–2026",
+            "href": "https://apiserver.cec.edu.in/files/Fee%20Refund%20Policy"
+          }
+        ]
       }
     ]
   },
+
   {
     "title": "Anti-Ragging Committee",
     "data": [
@@ -267,6 +347,7 @@
       }
     ]
   },
+
   {
     "title": "Internal Committee",
     "data": [
@@ -290,6 +371,7 @@
       }
     ]
   },
+
   {
     "title": "SC/ST Grievance Redressal & Welfare",
     "data": [
@@ -313,30 +395,36 @@
       }
     ]
   },
+
+  { "title": "Privacy Policy" },
+
   {
-    "title": "Privacy policy"
-  },
-  {   
     "title": "UGC Declaration",
     "data": [
       {
         "title": "UGC Declaration",
         "links": [
-          { "text": "", "href": "https://www.canaraengineering.in/download/UGC%20UNDERTAKING.pdf" }
+          {
+            "text": "View UGC Declaration",
+            "href": "https://apiserver.cec.edu.in/files/UGC%20Declaration"
+          }
         ]
       }
     ]
   },
+
   {
     "title": "Fee Refund Policy",
     "data": [
       {
         "title": "Fee Refund Policy",
         "links": [
-          { "text": "", "href": "https://www.canaraengineering.in/download/FEE%20REFUND%20POLICY.pdf" }
+          {
+            "text": "View Fee Refund Policy",
+            "href": "https://apiserver.cec.edu.in/files/Fee%20Refund%20Policy"
+          }
         ]
       }
     ]
   }
-  
 ]

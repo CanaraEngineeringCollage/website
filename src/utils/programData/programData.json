@@ -1,95 +1,210 @@
 [
-  { "id":1,
-    "category": "Library at CEC",
-    "title": "Learning Tech, Leading Change",
+  {
+    "id": 1,
+    "category": "",
+    "title": "Expansive Library",
     "src": "/campusFacilitiesPageImages/4.webp",
-    "style": "lg:top-[170]  lg:left-[350] ",
-    "textalign":" text-end max-w-2xl ",
+    "style": "lg:top-[10px] lg:right-[0px]",
+    "textalign": "text-end max-w-2xl",
+    "mainTitle": "Expansive Library",
     "description": {
       "src": "/campusFacilitiesPageImages/4.webp",
-      "date": "TECHFEST 2025 |  Feb 10, 2025",
-      "topTitle": "Pushing the Boundaries of Engineering Innovation",
-      "topDescription": "Library is a store house of Knowledge.The central Library of CEC is located in the heart of the institution and it is easily accessible to its clientele. The library has got independent building with carpet area of 1305.68 spread in 2 Floors it can accommodated 300 users at a time. The collection of library is more than47000 including general Book bank books and SC/ST Book Bank which includes Text and Reference books, Competitive Examination books and general knowledge books are available for all round development of personality. The Library subscribes 42Indian Journals, and 16 magazines in print version for various departments of UG and PG students and Faculty and Staff. We have access more than 11000+online journals, 21000+ E books, Articles from various publishers like IEEE ASPP,& POP ALL, EBSCO Engineering Suit, IEEE Blended e-Learning Platform, Eduport Global-CBS, BSP E-Book, Cengage Learning, Cambridge University Press , Mint Books, Quiklrn e-Books, Drillbit Plagiarism Originality online Check Tool,Quiklrn English Communication Language Lab etc. Subscribed packages under the VTU Consortium. Library has separate Reading Room and Reference section reading hall. Library has separate stack hall for books, Reference section and Book Bank. The in-house activities of the Library have been computerized and all books are bar coded.",
-      "middleTitle": "Key Highlights",
-      "middleSubTitle": "VISION",
-      "middleDescription": "To make world class centre for quality resources in print and digital form to facilitate learning and research.",
-      "image1": "/campusFacilitiesPageImages/3.jpg",
-      "middleTitle2": "MISSION",
-      "middleDescription2": "To enable our readers to make use of Library resource and services most effectively with help from modern technological tools and applications.",
-      "middleTitle3": "OBJECTIVES",
-      "middleDescription3":[
-  "Build collections and create tools to support teaching, learning, and research",
-  "Provide access to current and updated information resources",
-  "Help users find the right information at the right time",
-  "Support users in their curriculum activities with knowledge resources",
-  "Provide a comfortable and engaging learning environment"
-],
-"middleDescription4": []
+      "content": [
+        {
+          "description": "47,000 volumes with 5,000+ unique titles, including physical and digital formats. Access to a wealth of e-books, e-journals, and educational videos through our VTUCN membership and digital subscriptions. Over 400+ e-magazines, 10,888 educational videos, and 90+ web content platforms. Access to 200+ international proceedings and 5 lakh+ educational materials through the National Digital Library. Subscriptions to 42 print journals, 16+ magazines, and 4 newspapers."
+        },
+        {
+          "title": "Key Highlights",
+          "points": [
+            "47,000 volumes with 5,000+ unique titles in both physical and digital formats.",
+            "Access to a diverse collection of e-books, e-journals, and educational videos through our VTUCN membership and digital subscriptions.",
+            "Over 400+ e-magazines, 10,888 educational videos, and access to 90+ web content platforms.",
+            "Connectivity to 200+ international proceedings and a vast repository of 5 lakh+ educational materials through the National Digital Library.",
+            "Subscriptions to 42 print journals, 16+ magazines, and 4 newspapers, enriching academic resources for students."
+          ]
+        }
+      ]
     }
   },
   {
-      "id":2,
+    "id": 2,
     "category": "",
-    "title": "In-Campus Hostels",
+    "title": "Campus Hostels",
     "src": "/campusFacilitiesPageImages/hostelLifePageImages/bgImage.jpg",
-    "style": "lg:top-[450] opcity-[100] ",
-    "desc":"Comfortable, secure & well-equipped hostels designed to provide a home away from home for our students",
-
+    "style": "lg:top-[10px] opcity-[100]",
+    "desc": "",
+    "mainTitle": "Campus Hostels",
     "description": {
       "src": "/campusFacilitiesPageImages/hostelLifePageImages/bgImage.jpg",
-      "date": "TECHFEST 2025 |  Feb 10, 2025",
-      "topTitle": "Pushing the Boundaries of Engineering Innovation",
-      "topDescription": "The annual InnovateX 2025 Tech Fest at [College Name] was a grand success, bringing together students, faculty, and industry leaders for two days of innovation, competition, and collaboration. With over 500 participants and 20+ industry partners, the event showcased cutting-edge technology, insightful talks, and hands-on workshops that inspired the next generation of engineers.",
-      "middleTitle": "Key Highlights",
-      "middleSubTitle": "Keynote Speeches by Industry Experts",
-      "middleDescription": "Leading engineers and tech innovators from companies like Tata Technologies, Infosys, and Bosch shared insights on AI, robotics, and sustainable engineering. Their sessions provided valuable industry perspectives, bridging the gap between academic learning and real-world applications.",
-      "image1": "/campusFacilitiesPageImages/3.jpg",
-      "middleTitle2": "Hackathon: Solving Real-World Problems",
-      "middleDescription2": "Over 30 teams participated in a 24-hour coding marathon, tackling challenges in automation, cybersecurity, and smart cities. The winning team, “CodeCrafters,” designed an AI-powered traffic management system that earned high praise from industry mentors.",
-      "middleTitle3": "Workshops & Hands-on Learning",
-      "middleDescription3": [],
-      "image2": "/campusFacilitiesPageImages/3.jpg",
-      "middleTitle4": "Startup Expo & Career Networking",
-      "middleDescription4": [],
-
-      "bottomTitile": "Looking Ahead",
-      "subDescription3": "InnovateX 2025 reinforced [College Name]’s commitment to fostering innovation, skill development, and industry engagement. With growing participation each year, the event continues to shape the future of engineering education.For those who missed it, stay tuned for InnovateX 2026! Until then, keep innovating, keep exploring!"
+      "content": [
+        {
+          "description": "CEC offers comfortable on-campus hostel facilities designed to provide students with a safe, peaceful, and supportive living environment. Located within the campus and surrounded by greenery, the hostels offer a calm atmosphere that encourages focused learning while still enabling a vibrant campus life."
+        },
+         {
+          "description": "Campus Hostels CEC offers comfortable on-campus hostel facilities designed to provide students with a safe, peaceful, and supportive living environment. Located within the campus and surrounded by greenery, the hostels offer a calm atmosphere that encourages focused learning while still enabling a vibrant campus life. The hostels accommodate over 850+ students and are equipped with essential amenities such as indoor sports facilities, a well-equipped gym, on-site laundry services, and regular medical check-ups in collaboration with Father Muller’s Medical Hospital. A special mention is made of the Nandini Girls’ Hostel, which offers air-conditioned rooms and a thoughtfully designed, contemporary living space inspired by premium residential standards, providing enhanced comfort along with modern amenities. With 24/7 security and the continuous presence of dedicated wardens and assistant wardens, students are well supported, making the CEC hostels a true home away from home."
+        }
+      ]
     }
   },
   {
-      "id":3,
+    "id": 3,
     "category": "",
     "title": "Research Labs",
     "src": "/campusFacilitiesPageImages/3.jpg",
-    "style": "lg:top-[100] lg:left-[380]",
-
+    "style": "lg:top-[10px] lg:right-[0px]",
+    "mainTitle": "Research Labs",
     "description": {
       "src": "/campusFacilitiesPageImages/3.jpg",
-      "date": "",
-      "topTitle": "",
-      "topDescription": "The 'only teaching' model doesn’t match the current rapid developments in technical education. Imparting quality education in technical colleges needs to be ensured with up-to-date knowledge of technology and science. This can be ensured with the active participation of faculty and students in research & development activities. Thus, the college's R&D, innovation cell has been established to inculcate research activities among faculty, scholars, and students.The research activity comprising fundamental research, interdisciplinary and multidisciplinary research, and product developments till TRL 6 to 7 are encouraged under the cell. Further, faculty and students were motivated to carry out projects with government and private funded projects. Also, the college is striving to impart a culture of collaboration projects with Tier-1 institutes.",
-      "middleTitle": "",
-      "middleSubTitle": "",
-      "middleDescription": "",
-      "image1": "/campusFacilitiesPageImages/3.jpg",
-     "middleTitle3": "Thrust Areas",
-      "middleDescription3":[ "Artificial Intelligence",
-  "Data Science and Analytics",
-  "Data Mining",
-  "Distributed Computing",
-  "VLSI",
-  "IoT and Embedded Systems",
-  "Power Systems",
-  "Energy Engineering",
-  "Additive Manufacturing",
-  "Advanced Manufacturing Systems",
-  "Advanced Materials Processing and Characterisation",
-  "Blockchain Technology",
-  "Cyber Security"],
-      "image2": "/campusFacilitiesPageImages/3.jpg",
-     "middleTitle4": "Objectives",
-      "middleDescription4":["To foster a research culture among faculty members, students, and research scholars to engage in research activities.",
-  "To support funding and grant opportunities, both internal and external agencies for research and innovation projects.",
-  "To facilitate collaborative project work among the faculty, students, and research scholars within the institution and external organization."]}
+      "content": [
+        {
+          "description": "Our state-of-the-art Research Labs are at the heart of academic discovery and innovation on campus. Designed to foster curiosity and creativity, these labs provide the perfect environment for students and faculty to explore, experiment, and excel."
+        },
+        {
+          "title": "Key Highlights",
+          "points": [
+            "Dedicated labs for AI & ML, IoT, CAED, CS and more",
+            "Centrally Air-conditioned Environment",
+            "Guided by experienced faculty and domain experts",
+            "Supports academic projects, funded research, and interdisciplinary collaboration",
+            "Open for student innovation, startup prototyping, and technical skill development"
+          ]
+        },
+        {
+          "bottomdescription": "From ideation to real-world solutions, our labs empower you to turn ideas into impact."
+        }
+      ]
+    }
+  },
+ 
+  {
+    "id": 9,
+    "category": "",
+    "title": "Canteen",
+    "src": "/campusFacilitiesPageImages/Image6.jpg",
+    "style": "lg:top-[10px] lg:left-0",
+    "textalign": "text-center max-w-full",
+    "mainTitle": "On-Campus Dining",
+    "description": {
+      "src": "/campusFacilitiesPageImages/Image6.jpg",
+      "content": [
+        {
+          "description": "A student-friendly space to relax, recharge, and relish. Our hygienic and spacious canteens and mess facilities offer a wide range of vegetarian and non-vegetarian options to suit diverse tastes and daily needs. Nutritious, freshly prepared meals are served through Prathignhya Café and Can Café – Hangyo, while the newly introduced Can Café Express adds a vibrant hangout spot for quick bites and casual conversations. More than just dining, it’s an experience that brings the campus community together."
+        }
+      ]
+    }
+  },
+    {
+    "id": 5,
+    "category": "",
+    "title": "Auditorium",
+    "src": "/campusFacilitiesPageImages/Image2.jpg",
+   "style": "lg:top-[10px] lg:right-[0px]",
+    "textalign": "text-center max-w-3xl",
+    "mainTitle": "Dr. P. Dayananda Pai & \n P. Sathish Pai Auditorium",
+    "description": {
+      "src": "/campusFacilitiesPageImages/Image2.jpg",
+      "content": [
+        {
+          "description": "<b>Inaugurated and Blessed by</b> \n Shrimad Samyamindra Thirtha Swamiji, Mathadipathi, Shree Kashi Math Samsthan, Varanasi. \n A symbol of excellence and grandeur, the auditorium stands as a proud landmark on campus. Designed to host large-scale events, academic gatherings, and cultural programs, it reflects our commitment to providing world-class infrastructure."
+        },
+        {
+          "title": "Key Highlights",
+          "points": [
+            "Seating Capacity: 2,000",
+            "Centrally Air-conditioned Environment",
+            "Expansive 2,900 sq.m Carpet Area",
+            "State-of-the-Art Acoustics",
+            "Uninterrupted Generator Power Supply",
+            "Ample Parking Facility"
+          ]
+        },
+        {
+          "title": "Additional Features",
+          "points": [
+            "A/C Seminar Hall with 500-seat capacity, fully equipped with acoustics",
+            "Dedicated space for Start-up & Incubation Centre"
+          ]
+        },
+        {
+          "bottomdescription": "A space built to inspire, connect, and celebrate — all under one roof."
+        }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "category": "",
+    "title": "Well-Equipped Classrooms",
+    "src": "/campusFacilitiesPageImages/Image4.jpg",
+    "style": "lg:top-[0] left-0  w-full",
+    "textalign": "",
+    "mainTitle": "Well-Equipped Classrooms",
+    "description": {
+      "src": "/campusFacilitiesPageImages/Image4.jpg",
+      "content": [
+        {
+          "description": "Our classrooms are spacious, well-lit, and ergonomically designed to provide an ideal learning environment. Equipped with modern teaching aids such as projectors, smart boards, and high-speed internet, they ensure seamless integration of technology into everyday learning."
+        },
+        {
+          "bottomdescription": "Every classroom is a space where ideas thrive and interactions spark innovation."
+        }
+      ]
+    }
+  },
+
+
+{
+     "id": 7,
+     "category": "",
+     "title": "Transportation",
+     "src": "/campusFacilitiesPageImages/transportation.webp",
+     "style": "lg:bottom-[10] lg:left-0",
+     "textalign": "",
+     "mainTitle": "Transportation",
+     "description": {
+       "src": "/campusFacilitiesPageImages/transportation.webp",
+       "content": [
+         {
+           "description": "Canara Engineering College offers a well-organized transportation facility with a fleet of more than 11 buses, ensuring convenient connectivity across Mangaluru and neighboring areas. The extensive transport network enables safe, reliable, and timely travel for students and staff, making daily commuting comfortable and hassle-free."
+         }
+       ]
+     }
+   },
+
+
+
+
+
+   
+   {
+    "id": 10,
+    "category": "",
+    "title": "Sports & Fitness Facilities",
+    "src": "/physicalEducationPageImages/bgImage-2.png",
+    "style": "absolute lg:top-[5px] left-0 ",
+    "textalign": "",
+    "mainTitle": "Sports & Fitness Facilities",
+    "description": {
+      "src": "/physicalEducationPageImages/bgImage-2.png",
+      "content": [
+        {
+          "description": "Canara Engineering College encourages a healthy balance between academics and physical well-being through well-maintained sports and fitness facilities on campus. Students are provided ample opportunities to stay active, build teamwork, and pursue sporting interests alongside their academic journey."
+        },
+         {
+          "description": "The campus features a well-equipped gymnasium, accessible to hostel residents, designed to support fitness, strength training, and overall wellness in a safe and supervised environment."
+        },
+         {
+          "description": "CEC also offers a variety of indoor sports facilities, including Badminton, Table Tennis, Chess, Powerlifting, Weightlifting, and Karate, enabling students to engage in both recreational and competitive activities throughout the year."
+        },
+         {
+          "description": "For outdoor sports enthusiasts, the college provides excellent facilities for Cricket, Volleyball, Football, Basketball, Kabaddi, Ball Badminton, Throwball, and Handball, fostering physical fitness, sportsmanship, and team spirit. These facilities collectively contribute to a vibrant and active campus life at CEC."
+        }
+      ]
+    }
   }
+   
+ 
 ]
+
+
+

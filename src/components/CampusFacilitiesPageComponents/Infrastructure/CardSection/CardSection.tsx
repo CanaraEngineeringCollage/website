@@ -4,154 +4,160 @@ import { Card, Carousel } from "@/components/ui/campus-facilities/apple-cards-ca
 import Image from "next/image";
 import programData from "../../../../utils/programData/programData.json";
 
-// Updated DescriptionProps to match the JSON structure
-type DescriptionProps = {
-  src: string;
-  date: string;
-  topTitle: string;
-  topDescription: string;
-  middleTitle: string;
-  middleSubTitle: string;
-  middleDescription: string;
-  image1?: string;
-  middleTitle2: string;
-  middleDescription2: string;
-  middleTitle3: string;
-  middleDescription3?: [];
-  image2?: string;
-  middleTitle4: string;
-  middleDescription4?: [];
-  bottomTitile: string; // Note: Typo in JSON ("bottomTitile" instead of "bottomTitle")
-  subDescription3: string;
-  image3?: string;
-};
-
-interface CardContentProps {
-  description: DescriptionProps;
+// Type definitions matching your dynamic model
+interface ContentItem {
+  title?: string;
+  description?: string;
+  points?: string[];
+  href?: string; // For Iframes
+  type?: "table" | string;
+  headers?: string[];
+  rows?: string[][];
+  bottomdescription?: string;
 }
 
-// Define the Card type for type safety
+interface DescriptionProps {
+  src: string;
+  content: ContentItem[];
+}
+
 interface CardData {
+  id: number;
   category?: string;
   title: string;
   src: string;
   description: DescriptionProps;
-  style: string;
-  desc?: string;
+  mainTitle?: string;
+  bottomdescription?: string;
 }
 
 export default function CardSection() {
-  // Type the programData as an array of CardData
-  const cards = (programData as CardData[])?.map((card, index) => (
+  const cards = (programData as CardData[]).map((card, index) => (
     <Card
-      key={card.title}
+      key={card.id}
       card={{
         ...card,
-        content: <CardContent description={card.description} />,
+        content: (
+          <CardContent description={card.description} title={card.title} mainTitle={card.mainTitle} bottomdescription={card.bottomdescription} />
+        ),
       }}
       index={index}
     />
   ));
 
   return (
-    <div className="w-full h-full md:py-10 py-20 text-black">
+    <div className="w-full h-full md:py-5 py-2 text-[#1D1D1F]">
       <Carousel items={cards} />
     </div>
   );
 }
 
-function CardContent({ description }: CardContentProps) {
+function CardContent({
+  description,
+  title,
+  mainTitle,
+  bottomdescription,
+}: {
+  description: DescriptionProps;
+  title: string;
+  mainTitle?: string;
+  bottomdescription?: string;
+}) {
   return (
-    <div>
+    <div className="bg-white rounded-2xl ">
+      {/* Top Image Section */}
       <Image
         src={description.src}
-        alt="Image"
+        alt={title}
         loading="lazy"
         width={1000}
         height={700}
-        className="object-cover overflow-hidden rounded-t-2xl w-full lg:h-[700px] h-[400px] mb-10"
+        className={`object-cover overflow-hidden rounded-t-2xl w-full lg:h-[700px] h-[400px] mb-10 ${
+          title !== "In-Campus Hostels" ? "object-left" : "object-center"
+        }`}
       />
-      <div className="p-4 lg:p-0 lg:px-20 space-y-10 text-left text-sm text-[#1D1D1F] bg-white">
-        {/* Top Section */}
-        <div>
-          {/* {description.date && <p className="text-[16px] font-bold text-[#88888a] mb-5">{description.date}</p>} */}
 
-          {description.topTitle && <h3 className="text-[31px] lg:text-[46px] leading-[1.1] lg:max-w-[70%] mb-5 font-bold">{description.topTitle}</h3>}
+      {/* Dynamic Content Section (The Model) */}
+      <div className="p-4 lg:p-0 lg:px-20 space-y-5  text-left text-sm text-[#1D1D1F]">
+        <h2 className="text-[31px] lg:text-[46px] leading-[1.1] lg:max-w-[70%] mb-6 font-bold whitespace-pre-line">{mainTitle}</h2>
+        {description.content.map((item, i) => (
+          <div key={i} className="">
+            {/* Title */}
+            {/* Title */}
+            {item.title && (
+              <h2
+                className="text-[20px] md:text-[32px] font-bold text-[#1D1D1F] mb-2 whitespace-pre-line"
+                dangerouslySetInnerHTML={{ __html: item.title }}
+              />
+            )}
 
-          {description.topDescription && <p className="text-xl text-[#88888a]">{description.topDescription}</p>}
-        </div>
+            {/* Description */}
+            {item.description && (
+              <p
+                className="md:text-xl text-[14px] leading-relaxed text-textGray lg:pe-16 mb-6 whitespace-pre-line"
+                dangerouslySetInnerHTML={{ __html: item.description }}
+              />
+            )}
+            {item.bottomdescription && (
+              <p
+                className="md:text-xl text-[14px] leading-relaxed text-textGray  lg:pe-16 mb-6 whitespace-pre-line"
+                dangerouslySetInnerHTML={{ __html: item.bottomdescription }}
+              />
+            )}
 
-        {/* Middle Section 1 */}
-        <div>
-          <h3 className="text-[32px] mb-6 font-bold ">{description.middleTitle}</h3>
-          <h4 className="text-[22px] text-[#88888a] mb-3 font-bold">{description.middleSubTitle}</h4>
-          <p className="text-xl text-[#88888a]">{description.middleDescription}</p>
-        </div>
-        {/* {description.image1 && (
-          <Image
-            src={description.image1}
-            alt="Middle Image 1"
-            width={1000}
-            height={1000}
-            className="w-full rounded-2xl my-16"
-          />
-        )} */}
+            {/* Bottom Description */}
 
-        {/* Middle Section 2 */}
-        <div>
-          <h3 className="text-[22px] text-[#88888a] mb-3 font-bold">{description.middleTitle2}</h3>
-          <p className="text-xl text-textGray">{description.middleDescription2}</p>
-        </div>
+            {/* Bullet Points */}
+            {item.points && (
+              <ul className="list-disc mt-4 pl-5 md:text-xl text-[14px] leading-relaxed text-textGray ">
+                {item.points.map((point: string, j: number) => (
+                  <li key={j} className="pb-1">
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            )}
 
-        {/* Middle Section 3 */}
-        <div>
-          <h3 className="text-[22px] text-[#88888a] mb-3  font-bold">{description.middleTitle3}</h3>
-          <ul>
-            {description.middleDescription3.map((item, index) => (
-              <li key={index} className="text-xl text-textGray">
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-        {/* {description.image2 && (
-          <Image
-            src={description.image2}
-            alt="Middle Image 2"
-            width={1000}
-            height={1000}
-            className="w-full rounded-2xl my-16"
-          />
-        )} */}
+            {/* Iframe (PDF/Doc) */}
+            {item.href && (
+              <iframe
+                src={`${item.href}#toolbar=0&navpanes=0&view=FitH`}
+                className="w-full md:h-[100vh] h-[50vh] mt-7 border rounded-lg"
+                title={item.title || `Document-${i}`}
+              ></iframe>
+            )}
 
-        {/* Middle Section 4 */}
-        {/* Middle Section */}
-        <div>
-          {description.middleTitle4 && <h3 className="text-[22px] text-[#88888a] mb-2 font-bold">{description.middleTitle4}</h3>}
-          <ul>
-            {description.middleDescription4.map((item, index) => (
-              <li key={index} className="text-xl text-textGray">
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Bottom Section */}
-        <div>
-          {description.bottomTitile && <h3 className="text-[32px] mb-2 font-bold">{description.bottomTitile}</h3>}
-          {description.subDescription3 && <p className="text-xl text-textGray">{description.subDescription3}</p>}
-        </div>
-
-        {/* {description.image3 && (
-          <Image
-            src={description.image3}
-            alt="Bottom Image"
-            width={1000}
-            height={1000}
-            className="w-full rounded-2xl"
-          />
-        )} */}
+            {/* Table */}
+            {item.type === "table" && (
+              <div className="overflow-x-auto mt-7">
+                <div className="rounded overflow-x-auto border border-gray-200 w-full">
+                  <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                    <thead className="bg-[#F3F8FC] text-[#2884CA]">
+                      <tr>
+                        {item.headers?.map((header: string, hIndex: number) => (
+                          <th key={hIndex} className="py-3 md:px-4 px-1 border-b">
+                            {header}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {item.rows?.map((row: string[], rIndex: number) => (
+                        <tr key={rIndex} className="text-textGray">
+                          {row.map((cell: string, cIndex: number) => (
+                            <td key={cIndex} className="py-3 md:px-4 px-1 border-b">
+                              {cell}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -10,7 +10,8 @@ const Messages = ({ data }) => {
   const remainingPart = sentences.slice(sentenceCount).join(" ");
 
   return (
-    <div className="lg2:px-24 mx-5 text-[#86868B] text-[17px]">
+    <div className="lg:pe-5 pe-2  text-textGray text-[17px]">
+      <h2 className="text-[20px]  font-bold text-textGray mb-2  ">{data[0].title}</h2>
       <div className="flex gap-2">
         <div>
           <p className=" md:text-lg  text-[14px] leading-7 text-justify text-textGray">{ data[0]?.descrtiption}</p>

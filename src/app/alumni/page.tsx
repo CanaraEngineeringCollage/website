@@ -1,4 +1,5 @@
 import AluminiHeroBanner from "@/components/AluminiComponents/AluminiHerobanner/AluminiHerobanner";
+import AlumniPodcast from "@/components/AluminiComponents/AlumniPodcast/AlumniPodcast";
 import EmpowerNextGeneration from "@/components/AluminiComponents/EmpowerNextGeneration/EmpowerNextGeneration";
 import LegacyExcellance from "@/components/AluminiComponents/LegacyExcellence/LegacyExcellence";
 import StudentLIfeInCanara from "@/components/AluminiComponents/StudentLIfeInCanara/StudentLIfeInCanara";
@@ -38,14 +39,17 @@ const page = () => {
   return (
     <>
       <AluminiHeroBanner />
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+      <section className="px-6 pt-10 md:pt-0 md:px-12 lg:px-16 xl:px-0">
         <StudentLIfeInCanara />
       </section>
       {/* <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <EmpowerNextGeneration />
       </section> */}
-      <section className="pb-6">
+      <section className="pb-  lg:px-0 md:pb-10 xl:pb-10">
         <LegacyExcellance />
+      </section>
+      <section className="pb-6  lg:px-0 md:pb-10 xl:pb-10">
+        <AlumniPodcast />
       </section>
       {/* <section className="px-6 bg-[#E5E5EA] md:px-12 mt-12 lg:pl-16 lg:px-0 xl:px-0">
         <HotOfThePress />

@@ -8,10 +8,12 @@
     { "title": "Joint Secretary", "name": "Sri. T. Gopalkrishna Shenoy" }
   ],
   "Governing Body Members": [
-    { "title": "Sri. Basty Purushotham Shenoy", "name": "Sri. K. Shivananda Shenoy" },
-    { "title": "Sri. M. Naresh Shenoy", "name": "Sri. Raghavendra Kudwa" },
-    { "title": "Sri. Gopalkrishna Bhat K", "name": "Sri. Yogesh Kamath" },
-    { "title": "Smt. Ashwini Kamath", "name": "Sri. D. Vikram Pai" }
+     { "title": "", "name": "Sri. M. Naresh Shenoy" },
+    { "title": "", "name": "Sri. Gopalkrishna Bhat K" },
+    { "title": "", "name": "Smt. Ashwini Kamath" },
+    { "title": "", "name": "Sri. Raghavendra Kudwa" },
+    { "title": "", "name": "Sri. Yogesh Kamath" },
+    { "title": "", "name": "Sri. D. Vikram Pai" }
   ],
   "Special Invitee(s)": [{ "title": "Invitee", "name": "Sri. Giridhar Kamath" }],
   "Organisational Structure": [

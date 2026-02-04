@@ -4,7 +4,7 @@ const AboutTheProgram = () => {
   return (
     <section className="md:py-20 xl:pt-44 pb-20  max-w-7xl xl:max-w-[75%] mx-auto lg:px-32">
       <div className="">
-        <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-black pb-5 lg:pb-10">About the Program</h1>
+        <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-[#1D1D1F] pb-5 lg:pb-10">About the Program</h1>
         <p className="text-textGray  text-[20px]">
           Electronics and Communication Engineering (ECE) is a dynamic field which encompasses the acquisition, communication, manipulation, and
           analysis of Information/Signals. This discipline spans a wide range of applications from everyday electronics to complex systems used in

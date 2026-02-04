@@ -4,6 +4,7 @@ import LifeAtHostels from "@/components/CampusFacilitiesPageComponents/HostelLif
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
 import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
+import StickyBottomBar from "@/components/TrainingPlacementPageComponents/StickyBottomBar/StickyBottomBar";
 import React from "react";
 
 export const metadata = {
@@ -43,7 +44,7 @@ const page = () => {
       <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <LifeAtHostels />
       </section>
-      <section className="pt-8 lg:pt-0 w-full pb-10 lg:pb-5">
+      <section className="pt-8 lg:pt-0 md:px-6 lg:px-0 w-full pb-10 lg:pb-5">
         <VideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           youtubeUrl="https://youtu.be/m0znTqrPg1k?si=axPi_tWGFHTHxZNl"
@@ -51,7 +52,7 @@ const page = () => {
           startTime={165} // Start at 30 seconds
         />
       </section>
-      <section className="md:pt-10 pt-6 xl:py-10 pb-2 px-7   max-w-7xl xl:max-w-[75%] mx-auto lg:px-32">
+      <section className="md:pt-8 pt-6 xl:py-10 pb-2 px-7   max-w-7xl xl:max-w-[75%] mx-auto lg:px-32">
       <p className="text-textGray  text-[20px]">
          Life in the hostel at CEC is a balance of academics, fitness, and fun all in a setting that’s amidst nature, calm, and away from the city’s rush. We’re confident you’ll enjoy your time here and create wonderful memories over the next four years.
         </p>
@@ -67,6 +68,9 @@ const page = () => {
       <section className="bg-[#e5e5ea]">
         <FooterCard />
       </section>
+
+       <div className="" />
+      <StickyBottomBar buttonText="Hostel Out Pass" link="https://www.canaraengineering.in/s_hostelpass" title="Navigate to our Hostel Out Pass" />
     </>
   );
 };

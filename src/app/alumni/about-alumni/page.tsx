@@ -9,11 +9,11 @@ export const metadata = {
     title: "About Alumni | Canara Engineering College",
     description:
       "Learn more about the distinguished alumni of Canara Engineering College, their professional journeys, and their contributions to society.",
-    url: "https://cec.edu.in/alumni", // ✅ update to your actual 'About Alumni' page URL
+    url: "https://apiserver.cec.edu.in/alumni", // ✅ update to your actual 'About Alumni' page URL
     siteName: "Canara Engineering College",
     images: [
       {
-        url: "https://cec.edu.in/assets/images/og-about-alumni.jpg", // ✅ replace with real OG image path
+        url: "https://apiserver.cec.edu.in/assets/images/og-about-alumni.jpg", // ✅ replace with real OG image path
         width: 1200,
         height: 630,
         alt: "Canara Engineering College Alumni",
@@ -28,7 +28,7 @@ export const metadata = {
     title: "About Alumni | Canara Engineering College",
     description:
       "Explore the legacy and impact of Canara Engineering College alumni through their achievements and contributions.",
-    images: ["https://cec.edu.in/assets/images/og-about-alumni.jpg"], // ✅ same OG image
+    images: ["https://apiserver.cec.edu.in/assets/images/og-about-alumni.jpg"], // ✅ same OG image
   },
 };
 

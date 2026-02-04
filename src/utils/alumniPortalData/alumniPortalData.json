@@ -5,7 +5,7 @@
       {
         "title": "Alumni Association Of Canara Engineering College",
         "descrtiption": "Alumni Association of Canara Engineers got registered under the Karnataka Societies Registration Act 17, 1960. Alumni Association creates and maintains a life-long connection between the Institute and its alumni. In collaboration with an extremely dedicated volunteer board of directors, the Alumni Association works to connect alumni, support students and build an unforgettable Institute experience through diverse events, programs and services. Anyone who has completed four academic years as a student at Canara Engineering College is eligible for life membership.",
-        "image": "https://www.canaraengineering.in/departments/alumni/cert.jpg"
+        "image": "https://apiserver.cec.edu.in/files/Alumni%20Association%20Of%20Canara%20Engineering%20College"
       },
       {
         "title": "Vision  ",
@@ -22,19 +22,12 @@
       {
         "title": "Action Plan/Road Map",
         "points": [
-          "Faculty Coordinator Committee Meeting (Once in every Month)",
-          "Alumni Talks (Technical/ Non-Technical), Workshop/ Seminar, Skype/ Video Recordings.",
-          "Greetings on Independence Day to all alumni’s",
-          "Greetings on Engineers Day",
-          "Greetings on Founder’s Day",
-          "Greetings on New year",
-          "Invites for Alumni Meet, College Day & Aakriti College Fest",
-          "Alumni Meet/Reunion",
-          "Honoring Best Alumni with Memento",
-          "Collecting Feedback Forms from Alumni",
-          "Executive Committee Meeting",
-          "Annual General Body Meeting",
-          "Mailing Department Newsletter to all alumni during Graduation Day"
+          "Database Strengthening: Maintain and regularly update a comprehensive alumni database with details on higher studies, career progress, and contact information.",
+          "Networking & Engagement: Build strong alumni networks through official WhatsApp, LinkedIn, and email groups to enhance communication and collaboration.",
+          "Alumni Interaction Events: Organize expert talks, mentoring sessions, and career guidance programs by distinguished alumni for the benefit of current students.",
+          "Alumni Contributions: Facilitate alumni participation in guest lectures, internships, placements, and collaborative projects to support institutional growth.",
+          "Annual Alumni Meet: Conduct annual or regional alumni meets to celebrate alumni achievements and reinforce the bond between alumni and the institution.",
+          "Showcasing Achievements: Highlight alumni success stories and initiatives through the college website, newsletters, and social media platforms."
         ]
       }
     ]
@@ -44,19 +37,19 @@
     "title": "President's Message",
     "data": [
       {
-        "image": "https://www.canaraengineering.in/departments/alumni/AbhishekSRao.jpg",
+        "image": "/aboutAlumni/Dr._Abhishek_S_Rao_Associate_Professor.webp",
         "title": "President Message",
-        "descrtiption": "As the President of our Alumni Association of Canara Engineer’s I intend to engage and excite our Alumni Network. My intention is to work with our Alumni Board and Staff towards understanding and fulfilling the interests of our older and newer alumni and ensuring we remain connected with the students and staff on campus and excited about the potential students ahead. I hope that our activities will improve our support and mentorship of young alumni who often continue on a journey of self-discovery and transitions even after graduation.On behalf of Canara Engineering College, Alumni Association Board of Directors, I urge you to increase your involvement with the college: participate in on-campus interviews, employ Engineering graduates, volunteer to host alumni events, be a mentor for current students, and do not forget to give back to the college financially.Our College of Engineering’s past is distinguished, its present is secure, and its future is unlimited.I hope you come here often to learn more about the work of the College of Engineering, get important updates on upcoming alumni events, and keep in touch with your fellow alumni.",
+        "descrtiption": "As the President of our Alumni Association of Canara Engineer’s I intend to engage and excite our Alumni Network. My intention is to work with our Alumni Board and Staff towards understanding and fulfilling the interests of our older and newer alumni and ensuring we remain connected with the students and staff on campus and excited about the potential students ahead. I hope that our activities will improve our support and mentorship of young alumni who often continue on a journey of self-discovery and transitions even after graduation. On behalf of Canara Engineering College, Alumni Association Board of Directors, I urge you to increase your involvement with the college: participate in on-campus interviews, employ Engineering graduates, volunteer to host alumni events, be a mentor for current students, and do not forget to give back to the college financially. Our College of Engineering’s past is distinguished, its present is secure, and its future is unlimited.I hope you come here often to learn more about the work of the College of Engineering, get important updates on upcoming alumni events, and keep in touch with your fellow alumni.",
         "points": [
           "Abhishek S Rao",
           "President, AACE",
-          "Assistant Professor, Gd II",
+          "Associate Professor",
           "Dept of Information Science & Engineering,",
-          "NMAMIT, Nitte",
+          "Canara Engineering College, Mangalore",
           "Contact Address",
-          "S/o R. Suresh Rao Shubhashree , Padav Kanadka, Shaktinagar, Mangalore 16",
+          "S/o R. Suresh Rao Shubhashree, Padav Kanadka, Shaktinagar, Mangalore 16",
           "+919663167943",
-          "abhishekrao@nitte.edu.com"
+          "abhishek.rao@canaraengineering.in"
         ]
       }
     ]
@@ -65,9 +58,9 @@
     "title": "Secretary's Message",
     "data": [
       {
-        "image": "https://www.canaraengineering.in/departments/alumni/anandbhat.jpg",
+        "image": "https://apiserver.cec.edu.in/files/Anand%20Bhat%20B",
         "title": "Secretary Message",
-        "descrtiption": "Canara Engineering College organizes ALUMNI MEET during the month of Feb every year at CEC campus. I hope it is a great opportunity to meet your classmates and relish past memories. The college has been generating more competent students since 2001. The students of CEC are placed all over the world. The college has been changed tremendously over the years for the welfare of the society. In my perspective, to fill the gap between the academic and the industry, it is vital to maintain interaction with the alumni members. The ideas of alumni members are required to revamp the academic curriculum. It is very happy that the college is providing a platform to interact and exchange the ideas among the friends.",
+        "descrtiption": "Canara Engineering College organizes ALUMNI MEET during the month of February every year at CEC campus. I hope it is a great opportunity to meet your classmates and relish past memories. The college has been generating more competent students since 2001. The students of CEC are placed all over the world. The college has been changed tremendously over the years for the welfare of the society. In my perspective, to fill the gap between the academic and the industry, it is vital to maintain interaction with the alumni members. The ideas of alumni members are required to revamp the academic curriculum. It is very happy that the college is providing a platform to interact and exchange the ideas among the friends.",
         "points": [
           "Prof. Anand Bhat B",
           "Secretary, AACE",
@@ -88,7 +81,7 @@
           {
             "title": "Advisory Committee Member",
             "name": "Sri. M. Ranganath Bhat",
-            "image": "https://www.canaraengineering.in/departments/alumni/mrb.jpg",
+            "image": "/aboutPageImages/SecretaryImage/image.png",
             "desiganation": "Industrialist",
             "contact": "0824-2458121",
             "email": "rangbhat@gmail.com",
@@ -97,7 +90,7 @@
           {
             "title": "Advisory Committee Member",
             "name": "Dr. Nagesh H R",
-            "image": "https://www.canaraengineering.in/departments/faculty/0120230023.jpg",
+            "image": "/principal.jpeg",
             "desiganation": "Principal",
             "contact": "0824-2458121",
             "email": "rangbhat@gmail.com",
@@ -116,16 +109,16 @@
           {
             "title": "President",
             "name": "Mr.Abhishek S Rao",
-            "image": "https://www.canaraengineering.in/departments/alumni/office/AbhishekSRao.jpg",
+            "image": "/aboutAlumni/Dr._Abhishek_S_Rao_Associate_Professor.webp",
             "desiganation": "Assistant Professor Dept of Information Science & Engineering,NMAMIT, Nitte",
             "contact": "+919663167943",
             "email": "abhishekrao@nitte.edu.com",
-            "address": "S/o R. Suresh Rao Shubhashree , Padav Kanadka, Shaktinagar, Mangalore 16"
+            "address": "S/o R. Suresh Rao Shubhashree, Padav Kanadka, Shaktinagar, Mangalore 16"
           },
            {
              "title": "Vice-President",
             "name": "Mr. Floyd James Sequiera",
-            "image": "https://www.canaraengineering.in/departments/alumni/office/Floyd.png",
+            "image": "https://apiserver.cec.edu.in/files/Floyd%20James%20Sequiera",
             "desiganation": "Equipment Engineer- Wipro GE Healthcare (X-Ray Division) No. 122, (part 1) Xray division EPIP Area Whitefield, Bengaluru, Karnataka 560066",
             "contact": "+91-7760380272",
             "email": "Floyd.sequeira@ge.com",
@@ -134,7 +127,7 @@
           {
              "title": "Vice-President",
             "name": "Mr.Lohith B",
-            "image": "https://www.canaraengineering.in/departments/faculty/0120150011.jpg",
+            "image": "https://apiserver.cec.edu.in/files/Mr.Lohith%20B",
             "desiganation": "Programmer Analyst",
             "contact": "+91-9480202363",
             "email": "lohith.b@novigosolutions.com",
@@ -142,7 +135,7 @@
           },
            {
             "name": "Mr. Anand Bhat B",
-            "image": "https://www.canaraengineering.in/departments/alumni/office/Anand%20Bhat%20B.jpg",
+            "image": "https://apiserver.cec.edu.in/files/Mr.%20Anand%20Bhat%20B",
             "desiganation": "Assistant Professor",
             "contact": "9964224581",
             "email": "anandbhat.bantwal@gmail.com",
@@ -152,7 +145,7 @@
            {
                 "title": "Treasurer",
             "name": "Mr. Srinivas Shenoy P",
-            "image": "https://www.canaraengineering.in/departments/alumni/office/Mr.SRINIVAS%20SHENOY%20P.jpg",
+            "image": "https://apiserver.cec.edu.in/files/Mr.%20Srinivas%20Shenoy%20P",
             "desiganation": "",
             "contact": "+917259794217",
             "email": "shenoy.srinivas@gmail.com",
@@ -169,8 +162,11 @@
     "data": [
       {
         "title": "Affiliation Letters",
-        "links": [{ "text": "VTU Affiliation", "href": "https://www.canaraengineering.in/departments/alumni/Prominent%20Alumni_1.pdf" }]
+        "links": [{ "text": "VTU Affiliation", "href": "https://apiserver.cec.edu.in/files/Acheivements" }]
       }
     ]
+  },
+  {
+    "title": "Events"
   }
 ]

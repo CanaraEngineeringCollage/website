@@ -136,37 +136,59 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onClose, className = "", 
   };
 
   // Handle form submission
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (validateForm()) {
-      // Add your submission logic here (e.g., API call)
-      setFormData({
-        fullName: "",
-        email: "",
-        phone: "",
-        dateOfBirth: "",
-        usn: "",
-        address: "",
-        comments: "",
-      });
-      setTouched({
-        fullName: false,
-        email: false,
-        phone: false,
-        dateOfBirth: false,
-        usn: false,
-        address: false,
-        comments: false,
-      });
-      setErrors({
-        fullName: "",
-        email: "",
-        phone: "",
-        dateOfBirth: "",
-        usn: "",
-        address: "",
-        comments: "",
-      });
-      onClose(false);
+      try {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/alumni`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (!response.ok) {
+          const errorData = await response.json();
+
+          return;
+        }
+
+        const data = await response.json();
+
+        // Reset form
+        setFormData({
+          fullName: "",
+          email: "",
+          phone: "",
+          dateOfBirth: "",
+          usn: "",
+          address: "",
+          comments: "",
+        });
+        setTouched({
+          fullName: false,
+          email: false,
+          phone: false,
+          dateOfBirth: false,
+          usn: false,
+          address: false,
+          comments: false,
+        });
+        setErrors({
+          fullName: "",
+          email: "",
+          phone: "",
+          dateOfBirth: "",
+          usn: "",
+          address: "",
+          comments: "",
+        });
+
+        // Close modal
+        onClose(false);
+      } catch (error) {
+        console.error("Error submitting form:", error);
+      }
     } else {
       console.log("Form has errors:", errors);
     }
@@ -222,7 +244,7 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onClose, className = "", 
             {/* Form Content */}
             <motion.div variants={contentVariants} className="p-4 px-32 pt-24 pb-20">
               <h2 className="text-[46px] font-bold text-[#2884CA] text-center">Reconnect. Relive. Give Back.</h2>
-              <h2 className="text-[46px] font-bold text-black mb-4 text-center">Join Our Alumni Network Today!</h2>
+              <h2 className="text-[46px] font-bold text-[#1D1D1F] mb-4 text-center">Join Our Alumni Network Today!</h2>
               <p className="text-textGray text-[20px] text-center px-32">
                 Submit the form to stay connected & receive exclusive alumni updates, events, & opportunities!
               </p>
@@ -239,7 +261,7 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onClose, className = "", 
                     onBlur={handleBlur}
                     className={`w-full p-3 outline-none border-b-2 ${
                       touched.fullName && errors.fullName ? "border-red-500" : "border-border"
-                    } text-black`}
+                    } text-[#1D1D1F]`}
                     placeholder="Your Full Name"
                   />
                   {touched.fullName && errors.fullName && <p className="text-red-500 text-sm mt-1">{errors.fullName}</p>}
@@ -253,7 +275,9 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onClose, className = "", 
                     value={formData.email}
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    className={`w-full p-3 outline-none border-b-2 ${touched.email && errors.email ? "border-red-500" : "border-border"} text-black`}
+                    className={`w-full p-3 outline-none border-b-2 ${
+                      touched.email && errors.email ? "border-red-500" : "border-border"
+                    } text-[#1D1D1F]`}
                     placeholder="Enter Your Email"
                   />
                   {touched.email && errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
@@ -269,7 +293,7 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onClose, className = "", 
                     onBlur={handleBlur}
                     className={`w-full p-3 outline-none border-b-2 appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none [&::-moz-appearance:textfield] ${
                       touched.phone && errors.phone ? "border-red-500" : "border-gray-300"
-                    } text-black appearance-none numberInput`}
+                    } text-[#1D1D1F] appearance-none numberInput`}
                     placeholder="Your Phone Number"
                   />
                   {touched.phone && errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
@@ -299,7 +323,9 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onClose, className = "", 
                       value={formData.usn}
                       onChange={handleChange}
                       onBlur={handleBlur}
-                      className={`w-full p-3 outline-none border-b-2 ${touched.usn && errors.usn ? "border-red-500" : "border-border"} text-black`}
+                      className={`w-full p-3 outline-none border-b-2 ${
+                        touched.usn && errors.usn ? "border-red-500" : "border-border"
+                      } text-[#1D1D1F]`}
                       placeholder="Your USN"
                     />
                     {touched.usn && errors.usn && <p className="text-red-500 text-sm mt-1">{errors.usn}</p>}
@@ -316,7 +342,7 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onClose, className = "", 
                     onBlur={handleBlur}
                     className={`w-full p-3 outline-none border-b-2 ${
                       touched.address && errors.address ? "border-red-500" : "border-border"
-                    } text-black`}
+                    } text-[#1D1D1F]`}
                     placeholder="Your Current Address"
                   />
                   {touched.address && errors.address && <p className="text-red-500 text-sm mt-1">{errors.address}</p>}
@@ -333,7 +359,7 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onClose, className = "", 
                     maxLength={200}
                     className={`w-full p-3 outline-none border-b-2 ${
                       touched.comments && errors.comments ? "border-red-500" : "border-border"
-                    } text-black`}
+                    } text-[#1D1D1F]`}
                     placeholder="Enter Your Comments"
                   />
                   <div className="text-right text-sm text-gray-500">{formData.comments.length}/200</div>
@@ -341,7 +367,12 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onClose, className = "", 
                 </div>
                 {/* Submit Button */}
                 <div className="text-center">
-                  <button aria-label="Submit" type="button" className="px-10 cursor-pointer py-2 bg-[#2884CA] rounded-3xl text-white" onClick={handleSubmit}>
+                  <button
+                    aria-label="Submit"
+                    type="button"
+                    className="px-10 cursor-pointer py-2 bg-[#2884CA] rounded-3xl text-white"
+                    onClick={handleSubmit}
+                  >
                     Submit
                   </button>
                 </div>

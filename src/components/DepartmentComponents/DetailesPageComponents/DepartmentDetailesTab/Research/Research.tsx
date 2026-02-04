@@ -1,24 +1,24 @@
 import React from 'react';
 
 type TableData = {
-  title: string[];
-  slNo?: string; // if truthy, show serial number column
-  firstColumn: string[];
-  secondColumn: string[];
-  thirdColumn: string[];
-  fourthColumn: string[];
+  title?: string[];
+  slNo?: string;
+  firstColumn?: string[];
+  secondColumn?: string[];
+  thirdColumn?: string[];
+  fourthColumn?: string[];
 };
 
 type MoreDetailsTableData = {
   domain: string;
-  faculty: string[];
-  researchScholars: string[];
-  year?: string; // Optional year field
+  faculty?: string[];
+  researchScholars?: string[];
+  year?: string;
 };
 
 type ResearchData = {
-  heading: string;
-  points: string[];
+  heading?: string;
+  points?: string[];
   imageUrl?: string;
   table?: TableData[];
   moreDetailesTable?: MoreDetailsTableData[];
@@ -27,36 +27,40 @@ type ResearchData = {
 
 type ResearchProps = {
   data: ResearchData[];
+  deptName?:string
 };
 
-const Research: React.FC<ResearchProps> = ({ data }) => {
+const Research: React.FC<ResearchProps> = ({ data ,deptName}) => {
   return (
-    <div className=" text-[#86868B] text-[17px]">
-      {data.map((section, idx) => {
-        // Only render section if there is relevant data (heading, points, image, or tables)
+    <div className="text-textGray text-[17px]">
+      {(data || []).map((section, idx) => {
         const hasData =
           section.heading ||
-          section.points.length > 0 ||
+          (section.points?.length ?? 0) > 0 ||
           section.imageUrl ||
-          (section.table && section.table.some(t => 
-            t.firstColumn.length > 0 || 
-            t.secondColumn.length > 0 || 
-            t.thirdColumn.length > 0 || 
-            t.fourthColumn.length > 0
-          )) ||
-          (section.moreDetailesTable && section.moreDetailesTable.length > 0);
+          (section.table &&
+            section.table.some(
+              (t) =>
+                (t.firstColumn?.length ?? 0) > 0 ||
+                (t.secondColumn?.length ?? 0) > 0 ||
+                (t.thirdColumn?.length ?? 0) > 0 ||
+                (t.fourthColumn?.length ?? 0) > 0
+            )) ||
+          (section.moreDetailesTable?.length ?? 0) > 0;
 
         if (!hasData) return null;
 
         return (
           <div key={idx} className="mb-8">
             {section.heading && (
-              <h2 className="text-xl font-bold mb-2 text-textGray">{section.heading}</h2>
+              <h2 className="text-xl font-bold mb-2 text-textGray">
+                {section.heading}
+              </h2>
             )}
 
-            {section.points.length > 0 && (
-              <ul className="list-disc ml-6 mb-2 md:text-lg  text-[14px] leading-7  text-textGray">
-                {section.points.map((point, i) => (
+            {(section.points?.length ?? 0) > 0 && (
+              <ul className="list-disc ml-6 mb-2 md:text-lg text-[14px] leading-7 text-textGray">
+                {section.points?.map((point, i) => (
                   <li key={i}>{point}</li>
                 ))}
               </ul>
@@ -70,36 +74,49 @@ const Research: React.FC<ResearchProps> = ({ data }) => {
               />
             )}
 
-            {section.table &&
-              section.table.map((table, tIdx) => {
-                // Determine the number of columns based on non-empty data
-                const columns = [
-                  table.firstColumn,
-                  table.secondColumn,
-                  table.thirdColumn,
-                  table.fourthColumn,
-                ].filter(col => col.length > 0).length;
-                if (columns === 0) return null;
+            {section.table?.map((table, tIdx) => {
+              const columns = [
+                table.firstColumn || [],
+                table.secondColumn || [],
+                table.thirdColumn || [],
+                table.fourthColumn || [],
+              ].filter((col) => col.length > 0).length;
 
-                const maxRows = Math.max(
-                  table.firstColumn.length,
-                  table.secondColumn.length,
-                  table.thirdColumn.length,
-                  table.fourthColumn.length
-                );
-                const showSlNo = !!table.slNo;
-                const showHeader = Array.isArray(table.title) && table.title.length > 0;
+              if (columns === 0) return null;
 
-                return (
-                   <div className="rounded overflow-hidden border border-gray-200 w-full">
-                  <table key={tIdx} className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+              const maxRows = Math.max(
+                table.firstColumn?.length ?? 0,
+                table.secondColumn?.length ?? 0,
+                table.thirdColumn?.length ?? 0,
+                table.fourthColumn?.length ?? 0
+              );
+
+              const showSlNo = !!table.slNo;
+              const showHeader =
+                Array.isArray(table.title) && (table.title?.length ?? 0) > 0;
+
+              return (
+                <div
+                  key={tIdx}
+                  className="rounded overflow-x-auto border border-gray-200 w-full"
+                >
+                  <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     {showHeader && (
                       <thead>
                         <tr className="bg-[#F3F8FC] text-[#2884CA]">
-                          {showSlNo && <th className="py-3 md:px-4 px-1 border-b">Sl.No</th>}
-                          {table.title.slice(0, columns + (showSlNo ? 1 : 0)).map((title, i) => (
-                            <th key={i} className="py-3 md:px-4 px-1 border-b">{title}</th>
-                          ))}
+                          {showSlNo && (
+                            <th className="py-3 md:px-4 px-1 border-b">Sl.No</th>
+                          )}
+                          {table.title
+                            ?.slice(0, columns + (showSlNo ? 1 : 0))
+                            .map((title, i) => (
+                              <th
+                                key={i}
+                                className="py-3 md:px-4 px-1 border-b"
+                              >
+                                {title}
+                              </th>
+                            ))}
                         </tr>
                       </thead>
                     )}
@@ -107,54 +124,76 @@ const Research: React.FC<ResearchProps> = ({ data }) => {
                       {Array.from({ length: maxRows }).map((_, rowIdx) => (
                         <tr key={rowIdx} className="text-textGray">
                           {showSlNo && (
-                            <td className="py-3 md:px-4 px-1 border-b">{rowIdx + 1}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">
+                              {rowIdx + 1}
+                            </td>
                           )}
-                          {table.firstColumn[rowIdx] && (
-                            <td className="py-3 md:px-4 px-1 border-b">{table.firstColumn[rowIdx]}</td>
-                          )}
-                          {table.secondColumn[rowIdx] && (
-                            <td className="py-3 md:px-4 px-1 border-b">{table.secondColumn[rowIdx]}</td>
-                          )}
-                          {table.thirdColumn[rowIdx] && (
-                            <td className="py-3 md:px-4 px-1 border-b">{table.thirdColumn[rowIdx]}</td>
-                          )}
-                          {table.fourthColumn[rowIdx] && (
-                            <td className="py-3 md:px-4 px-1 border-b">{table.fourthColumn[rowIdx]}</td>
-                          )}
+                          <td className="py-3 md:px-4 px-1 border-b">
+                            {table.firstColumn?.[rowIdx] ?? ''}
+                          </td>
+                          <td className="py-3 md:px-4 px-1 border-b">
+                            {table.secondColumn?.[rowIdx] ?? ''}
+                          </td>
+                          <td className="py-3 md:px-4 px-1 border-b">
+                            {table.thirdColumn?.[rowIdx] ?? ''}
+                          </td>
+                          <td className="py-3 md:px-4 px-1 border-b">
+                            {table.fourthColumn?.[rowIdx] ?? ''}
+                          </td>
                         </tr>
                       ))}
                     </tbody>
                   </table>
-                  </div>
-                );
-              })}
+                </div>
+              );
+            })}
 
-            {section.moreDetailesTable && section.moreDetailesTable.length > 0 && (
-               <div className="rounded overflow-hidden border border-gray-200 w-full">
-              <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]" >
-                <thead>
-                  <tr className="bg-[#F3F8FC] text-[#2884CA]">
-                    {section.th?.map((item, idx) => (
-                      <th key={idx} className="py-3 md:px-4 px-1 border-b">{item}</th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {section.moreDetailesTable.map((row, i) => (
-                    <tr key={i} className="text-textGray">
-                      {row.year && <td className="py-3 md:px-4 px-1 border-b">{row.year}</td>}
-                      <td className="py-3 md:px-4 px-1 border-b">{row.domain}</td>
-                      <td className="py-3 md:px-4 px-1 border-b">{row.faculty.join(', ')}</td>
-                      <td className="py-3 md:px-4 px-1 border-b">{row.researchScholars.join(', ')}</td>
+            {(section.moreDetailesTable?.length ?? 0) > 0 && (
+              <div className="rounded overflow-hidden border border-gray-200 w-full">
+                <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                  <thead>
+                    <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                      {section.th?.map((item, idx) => (
+                        <th
+                          key={idx}
+                          className="py-3 md:px-4 px-1 border-b"
+                        >
+                          {item}
+                        </th>
+                      ))}
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {section.moreDetailesTable?.map((row, i) => (
+                      <tr key={i} className="text-textGray">
+                        {row.year && (
+                          <td className="py-3 md:px-4 px-1 border-b">
+                            {row.year}
+                          </td>
+                        )}
+                        <td className="py-3 md:px-4 px-1 border-b">
+                          {row.domain}
+                        </td>
+                        <td className="py-3 md:px-4 px-1 border-b">
+                          {(row.faculty || []).join(', ')}
+                        </td>
+                   <td className="py-3 md:px-4 px-1 border-b whitespace-pre-line">
+  {(row.researchScholars || [])
+    .join(', ')
+    .replace(/,\s*\n/g, '\n')}
+</td>
+
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             )}
           </div>
         );
       })}
+
+     {deptName==="Mechanical Engineering" && <a className='text-blue-600 hover:text-blue-800 underline' href="/departmentImages/JRF-APPLICATION.pdf" download>Download JRF Brochure & Application Form</a> }
     </div>
   );
 };

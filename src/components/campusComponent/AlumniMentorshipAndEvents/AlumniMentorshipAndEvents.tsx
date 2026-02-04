@@ -41,7 +41,9 @@ export default function AlumniMentorshipAndEvents() {
                       <p className="text-xs text-gray-300">{item.date}</p>
                       <h2 className="text-white text-lg font-bold mt-1">{item.title}</h2>
                       <p className="text-gray-400 text-sm mt-2">{item.description}</p>
-                      <button className="mt-4 px-5 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-gray-200">Read More</button>
+                      <button className="mt-4 px-5 py-2 bg-white text-[#1D1D1F] rounded-full text-sm font-semibold hover:bg-gray-200">
+                        Read More
+                      </button>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -60,48 +62,46 @@ export default function AlumniMentorshipAndEvents() {
                   <MdKeyboardArrowRight />
                 </button>
               </div>
-              <button className="px-6 py-2 text-black rounded-full  border ">View More</button>
+              <button className="px-6 py-2 text-[#1D1D1F] rounded-full  border ">View More</button>
             </div>
           </div>
         </div>
 
         {/* Right Side */}
         <div className="bg-white">
+          <div className="flex flex-col gap-6 text-[#1D1D1F] bg-white rounded-3xl h-full md:p-4 lg2:p-6 xl:p-16">
+            <h3 className="text-2xl font-bold ">Upcoming Events</h3>{" "}
+            <div className="flex flex-col gap-6">
+              {" "}
+              {events.map((event, index) => {
+                const [day, month] = event.date.split(" ");
+                const isLast = index === events.length - 1; // Check if it's the last item
 
-        <div className="flex flex-col gap-6 text-black bg-white rounded-3xl h-full md:p-4 lg2:p-6 xl:p-16">
-          <h3 className="text-2xl font-bold ">Upcoming Events</h3>{" "}
-          <div className="flex flex-col gap-6">
-            {" "}
-            {events.map((event, index) => {
-              const [day, month] = event.date.split(" ");
-              const isLast = index === events.length - 1; // Check if it's the last item
-              
-              return (
-                <motion.div
-                key={index}
-                className={`flex items-center gap-4 xl:gap-12 py-6 ${!isLast ? "border-b border-[#D0D0D0]" : ""}`}
-                whileHover={{ scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 300 }}
-                >
-                  <div className="flex flex-col items-center lg2:text-2xl justify-center lg2:w-20 lg2:h-20 lg:w-16 lg:h-16 w-12 h-12 xl:w-24 xl:h-24 bg-[#6DC0EB] text-white rounded-3xl text-sm font-bold">
-                    <span className="">{day}</span>
-                    <span className="">{month}</span>
-                  </div>
+                return (
+                  <motion.div
+                    key={index}
+                    className={`flex items-center gap-4 xl:gap-12 py-6 ${!isLast ? "border-b border-[#D0D0D0]" : ""}`}
+                    whileHover={{ scale: 1.02 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                  >
+                    <div className="flex flex-col items-center lg2:text-2xl justify-center lg2:w-20 lg2:h-20 lg:w-16 lg:h-16 w-12 h-12 xl:w-24 xl:h-24 bg-[#6DC0EB] text-white rounded-3xl text-sm font-bold">
+                      <span className="">{day}</span>
+                      <span className="">{month}</span>
+                    </div>
 
-                  <div>
-                    <p className="text-xs text-gray-500">{event.tag}</p>
-                    <h4 className="text-md font-semibold">{event.title}</h4>
-                  </div>
-                </motion.div>
-              );
-            })}
-          </div>
-          <div className="mt-6 mx-auto">
-            
-            <button className="px-6  py-2  bg-[#F5F5F7] font-normal rounded-full  ">View More</button>{" "}
+                    <div>
+                      <p className="text-xs text-gray-500">{event.tag}</p>
+                      <h4 className="text-md font-semibold">{event.title}</h4>
+                    </div>
+                  </motion.div>
+                );
+              })}
+            </div>
+            <div className="mt-6 mx-auto">
+              <button className="px-6  py-2  bg-[#F5F5F7] font-normal rounded-full  ">View More</button>{" "}
+            </div>
           </div>
         </div>
-            </div>
       </div>
     </section>
   );

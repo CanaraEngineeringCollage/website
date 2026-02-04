@@ -4,40 +4,15 @@ import React from "react";
 interface HeroSectionProps {
   imageUrl: string;
   departmentName: string;
-  wdith?:string
+  wdith?: string;
 }
 
-const HeroSection: React.FC<HeroSectionProps> = ({ imageUrl, departmentName,wdith="" }) => {
+const HeroSection: React.FC<HeroSectionProps> = ({ imageUrl, departmentName, wdith = "" }) => {
   return (
-    <section className="relative w-full h-full lg:h-[70vh] flex flex-col  text-center mb-5 md:mb-0  overflow-hidden">
-     <div className=" w-full">
-    <Image
-      src={imageUrl}
-      alt="Background 1"
-      width={1920} // required
-      height={1080} // required
-      className="object-cover lg2:-mt-38 lg:-mt-38 md:mt-0 mt-0  w-full"
-    />
-  </div>
-      <div className="absolute inset-0 z-0">
-        
+    <section className="max-w-7xl xl:max-w-[75%] rounded-4xl overflow-hidden text-[#1D1D1F] mx-auto hidden md:block">
+      {/* Top Content */}
 
-        {/* Top Gradient */}
-      
-
-        {/* Bottom Gradient - Mobile */}
-        <div className="absolute bottom-0 left-0 right-0 h-[100px] bg-gradient-to-t from-[#fbfcfe] via-white/60 to-transparent z-[10] md:hidden" />
-
-        {/* Bottom Gradient - Desktop */}
-        <div className="absolute bottom-0 left-0 right-0 h-[500px] md:h-[500px] bg-gradient-to-t from-[#fbfcfe] via-transparent to-transparent z-[10] hidden md:block" />
-      </div>
-
-      {/* <div className={`absolute top-28 md:top-28 ${wdith?wdith:"max-w-4xl"} mx-auto text-white px-4 z-10`}>
-        <p className="text-3xl text-[#F5F5F7] mb-3 font-normal">Department of </p>
-        <h2 className="text-[40px] md:text-[77px] leading-[50px] md:leading-[1] font-bold">
-          {departmentName}
-        </h2>
-      </div> */}
+      {/* Banner Section */}
     </section>
   );
 };

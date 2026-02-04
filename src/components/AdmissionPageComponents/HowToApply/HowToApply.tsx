@@ -150,10 +150,10 @@ const HowToApply = () => {
   const sectionRef = useRef(null);
 
   return (
-    <section className="max-w-7xl xl:max-w-[75%] mx-auto py-20 md:pb-10 md:pt-28 overflow-hidden" ref={sectionRef}>
-      <div className="lg:max-w-[60%] mb-20">
+    <section className="max-w-7xl xl:max-w-[75%] mx-auto pt-10 pb-3 md:pb-10 md:pt-16 overflow-hidden" ref={sectionRef}>
+      <div className=" lg:mb-20 mb-10">
         <motion.h1
-          className="text-3xl text-[#1D1D1F] md:text-[40px] mb-3  lg2:text-5xl xl:text-6xl font-bold leading-tight"
+          className="text-3xl text-[#1D1D1F] md:text-[40px] mb-3 text-center  lg2:text-5xl xl:text-6xl font-bold leading-tight"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -161,12 +161,13 @@ const HowToApply = () => {
           How to Apply
         </motion.h1>
         <motion.p
-          className="text-black text-lg md:text-2xl"
+          className="text-[#1D1D1F] text-lg text-center md:text-2xl"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Explore Canara Engineering College’s thriving campus with top-tier placements, cutting-edge facilities & a vibrant student community.
+          Explore Canara Engineering College’s thriving campus with top-tier placements, cutting-edge <br className="hidden lg:block " /> facilities &
+          a vibrant student community.
         </motion.p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-7 gap-10 lg:gap-2 w-full">
@@ -184,6 +185,7 @@ const HowToApply = () => {
             >
               <div className="flex items-center">
                 <svg
+                  className="w-16 h-16 xs:w-28 xs:h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 lg:w-auto lg:h-auto"
                   width={svgSizes[stepIdx].width}
                   height={svgSizes[stepIdx].height}
                   viewBox={svgSizes[stepIdx].viewBox}

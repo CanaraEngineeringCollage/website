@@ -3,7 +3,7 @@ import React from "react";
 
 const EducationalObjectives = () => {
   return (
-    <section className="max-w-7xl xl:max-w-[75%] mx-auto text-black mt-24">
+    <section className="max-w-7xl xl:max-w-[75%] mx-auto text-[#1D1D1F] mt-24">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
         {/* Left Card */}
         <div className="md:col-span-7 ">

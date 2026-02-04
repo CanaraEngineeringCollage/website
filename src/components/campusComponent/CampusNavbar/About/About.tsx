@@ -44,11 +44,11 @@ export default function AboutAlumni() {
         </Typography>
       </MenuHandler>
 
-      <MenuList className="w-full bg-transparent text-black p-0  z-100 border-none !border-0 shadow-none flex justify-center pb-4 outline-none focus:ring-0">
+      <MenuList className="w-full bg-transparent text-[#1D1D1F] p-0  z-100 border-none !border-0 shadow-none flex justify-center pb-4 outline-none focus:ring-0">
         <div className="w-full  max-w-screen-2xl bg-white z-100 shadow-md rounded-xl flex justify-center gap-8 p-8 border-none outline-none">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-8 mx-16 w-full">
             {/* Column 1 */}
-              <div className="flex gap-4 pr-4 border-r border-gray-300">
+            <div className="flex gap-4 pr-4 border-r border-gray-300">
               <div className="flex flex-col gap-2">
                 <ul className="list-none text-gray-500 leading-10">
                   <Link href="/about/about-cec">
@@ -87,7 +87,7 @@ export default function AboutAlumni() {
             </div>
 
             {/* Column 4 */}
-               <div className="flex gap-4 pr-4 border-r border-gray-300">
+            <div className="flex gap-4 pr-4 border-r border-gray-300">
               <div className="flex flex-col gap-2">
                 <ul className="list-none text-gray-500 leading-10">
                   <Link href="/about/about-cec">
@@ -98,12 +98,12 @@ export default function AboutAlumni() {
                 </ul>
               </div>
             </div>
-              <div className="flex gap-4 pr-4 border-r border-gray-300">
+            <div className="flex gap-4 pr-4 border-r border-gray-300">
               <div className="flex flex-col gap-2">
                 <ul className="list-none text-gray-500 leading-10">
                   <Link href="/about/about-cec">
                     <li className={`${pathname.includes("/about/about-cec") ? `text-primary font-bold` : " text-gray-500"} hover:text-primary`}>
-                     Office Bearers
+                      Office Bearers
                     </li>
                   </Link>
                 </ul>
@@ -114,7 +114,7 @@ export default function AboutAlumni() {
                 <ul className="list-none text-gray-500 leading-10">
                   <Link href="/about/about-cec">
                     <li className={`${pathname.includes("/about/about-cec") ? `text-primary font-bold` : " text-gray-500"} hover:text-primary`}>
-                     Acheivements
+                      Acheivements
                     </li>
                   </Link>
                 </ul>

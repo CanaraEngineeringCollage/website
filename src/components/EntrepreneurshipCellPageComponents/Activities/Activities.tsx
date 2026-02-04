@@ -55,48 +55,49 @@ const sampleList = [
 
 const Activities = () => {
   return (
-    <div className="max-w-7xl mx-auto lg:px-36 px-4 xl:max-w-[75%] pt-2 pb-5 text-black">
-      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl leading-[1.2]  text-start font-bold text-[#1D1D1F]">Entrepreneurship Cell Activities</h1>
-    <div className="overflow-x-auto pt-4 pb-10  ">
-  <div className="rounded-xl overflow-hidden">
-     <div className="rounded overflow-hidden border border-gray-200 w-full">
-    <table className="w-full text-left text-[13px] md:text-[15px]">
-      <thead className="bg-[#F3F8FC] text-[#2884CA]">
-        <tr>
-          <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
-          <th className="py-3 md:px-4 px-1 border-b">Date</th>
-          <th className="py-3 md:px-4 px-1 border-b">Program</th>
-          <th className="py-3 md:px-4 px-1 border-b">No of Participants</th>
-          <th className="py-3 md:px-4 px-1 border-b">Organizing Body</th>
-        </tr>
-      </thead>
-      <tbody>
-        {table.map((item, index) => (
-          <tr key={index} className="text-textGray">
-            <td className="py-3 md:px-4 px-1 border-b text-center">{index + 1}</td>
-            <td className="py-3 md:px-4 px-1 border-b">{item.date}</td>
-            <td className="py-3 md:px-4 px-1 border-b">{item.program}</td>
-            <td className="py-3 md:px-4 px-1 border-b text-center">{item.participants}</td>
-            <td className="py-3 md:px-4 px-1 border-b text-center">{item.orgBody}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-    </div>
-  </div>
-</div>
+    <div className="max-w-7xl mx-auto lg:px-0 px-4 xl:max-w-[75%]  text-[#1D1D1F]">
+      <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl leading-[1.2]  text-start font-bold text-[#1D1D1F]">
+        Entrepreneurship Cell Activities
+      </h1>
+      <div className="overflow-x-auto pt-4 pb-10  ">
+        <div className="rounded-xl overflow-x-auto">
+          <div className="rounded overflow-x-auto border border-gray-200 w-full">
+            <table className="w-full text-left text-[13px] md:text-[15px]">
+              <thead className="bg-[#F3F8FC] text-[#2884CA]">
+                <tr>
+                  <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
+                  <th className="py-3 md:px-4 px-1 border-b">Date</th>
+                  <th className="py-3 md:px-4 px-1 border-b">Program</th>
+                  <th className="py-3 md:px-4 px-1 border-b">No of Participants</th>
+                  <th className="py-3 md:px-4 px-1 border-b">Organizing Body</th>
+                </tr>
+              </thead>
+              <tbody>
+                {table.map((item, index) => (
+                  <tr key={index} className="text-textGray">
+                    <td className="py-3 md:px-4 px-1 border-b text-center">{index + 1}</td>
+                    <td className="py-3 md:px-4 px-1 border-b">{item.date}</td>
+                    <td className="py-3 md:px-4 px-1 border-b">{item.program}</td>
+                    <td className="py-3 md:px-4 px-1 border-b text-center">{item.participants}</td>
+                    <td className="py-3 md:px-4 px-1 border-b text-center">{item.orgBody}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
 
-      
       <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  text-start font-bold text-[#1D1D1F] leading-[1.2]">
         CEC Alumni Entrepreneurs
       </h1>
-      <ul className="lg:text-xl text-start list-disc ml-5 md:text-lg text-[14px] leading-7 pt-4 pb-10 text-textGray">
+      <ul className="lg:text-xl text-start list-disc ml-5 md:text-lg text-lg leading-7 pt-4 pb-10 text-textGray">
         {sampleList.map((item, index) => (
           <li className="pb-3">{item}</li>
         ))}
       </ul>
       <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  text-start font-bold text-[#1D1D1F] leading-[1.2] ">Other Achievements</h1>
-      <p className="lg:text-xl md:text-lg text-[14px] leading-7 py-10 text-textGray pt-4 pb-10">
+      <p className="lg:text-xl md:text-lg text-lg leading-7  text-textGray pt-4 lg:pb-10 lg:pt-5 pb-2">
         On 29th January, two students, Sumanth Shenoy and Aditya Pai, both members of IEEECan won the first place in Social Innovation stream in DEFI
         2017 - a Startup Event at TAPMI, Manipal, under the aegis of Manipal University Technology and Business Incubator (MUTBI), aimed at giving
         students an opportunity to pitch their venture idea and empower them through workshops and mentor-ship via association with NASSCOM and MUTBI.

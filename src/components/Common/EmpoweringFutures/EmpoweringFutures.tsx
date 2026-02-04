@@ -14,29 +14,32 @@ type Stat = {
 const stats: Stat[] = [
   {
     component: (
-      <div className="bg-[#F5F5F7] rounded-xl px-6 shadow h-80">
-        <h4 className="text-2xl text-black font-semibold mb-4 text-left pt-4">Among the Highest in the Region in terms of Placements</h4>
-        <div className="flex items-end justify-between h-40 w-full">
+      <div className="bg-[#F5F5F7] rounded-xl px-6 shadow h-[350px]">
+        <h4 className="text-2xl text-[#1D1D1F] font-semibold mb-4 text-left pt-4">Among the Highest in the Region in terms of Placements</h4>
+        <div className="flex items-end justify-between  h-48 w-full">
           {[
-            { year: "2021-22", value: 270, paddingTop: "65px" },
-            { year: "2020-21", value: 284, paddingTop: "70px" },
-            { year: "2019-20", value: 330, paddingTop: "85px" },
-            { year: "2018-19", value: 400, paddingTop: "110px" },
+            { year: "2021-22", value: 87 },
+            { year: "2022-23", value: 85 },
+            { year: "2023-24", value: 86.27 },
+            { year: "2024-25", value: 82.71 },
           ].map((item, index) => (
-            <div key={index} className="flex flex-col items-center justify-end">
-              <span className="mb-2 text-sm font-semibold text-primary">{item.value}</span>
+            <div key={index} className="flex flex-col items-center justify-end w-1/4">
+              {/* Value label */}
+              <span className="mb-2 text-sm font-semibold text-primary">{item.value}%</span>
+
+              {/* Animated bar */}
               <motion.div
                 initial={{ height: 0 }}
-                whileInView={{ height: `${item.value / 3}px` }}
+                whileInView={{ height: `${item.value * 2}px` }} // proportional & smooth
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
-                className="w-12  rounded-t"
+                className="xl:w-20 lg:w-16 md:w-14 w-14 rounded-t flex items-end justify-center"
                 style={{
                   background: "linear-gradient(to top, #2884CA, #6DC0EB)",
-                  paddingTop: item.paddingTop,
                 }}
               >
-                <span className="mt-20 text-[10px] pl-1 font-medium text-white">{item.year}</span>
+                {/* Year label inside bar */}
+                <span className="mb-2 text-[10px] font-medium text-white">{item.year}</span>
               </motion.div>
             </div>
           ))}
@@ -53,7 +56,7 @@ const stats: Stat[] = [
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
-        className="text-white rounded-xl p-6 h-80 shadow flex flex-col justify-center items-center relative"
+        className="text-white rounded-xl p-6 h-[350px] shadow flex flex-col justify-center items-center relative"
       >
         <Image src="/svgs/common/buisnessBag.svg" alt="business bag" width={350} height={100} className="absolute " />
         <h3 className="text-[100px] font-[900] leading-none z-10">1.2K+</h3>
@@ -71,7 +74,7 @@ const stats: Stat[] = [
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
-        className="text-white rounded-xl h-80 shadow flex flex-col justify-center items-center p-6"
+        className="text-white rounded-xl h-[350px] shadow flex flex-col justify-center items-center p-6"
       >
         <h3 className="text-[60px] pt-[60px] font-extrabold bg-gradient-to-r from-[#2884CA] to-[#6DC0EB] text-transparent bg-clip-text">78.82%</h3>
         <p className="text-[24px] font-semibold text-gray-800 text-center">
@@ -96,72 +99,73 @@ export default function EmpoweringFutures() {
 
   return (
     <>
-      <section className="max-w-5xl xl:max-w-[75%]  overflow-hidden text-black mx-auto hidden md:block">
+      <section className="max-w-5xl xl:max-w-[75%]  overflow-hidden text-[#1D1D1F] mx-auto hidden md:block">
         {/* Top Content */}
         <div className="flex justify-between items-start  mx-auto pb-16">
           <div>
-            <h2 className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold leading-tight">
-              Empowering Futures
-            </h2>
-            <p className="mt-4 text-lg text-gray-600 max-w-xl">
+            <h2 className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold leading-tight">Empowering Futures</h2>
+            <p className="mt-4 text-[14px] md:text-[23.25px] textGray max-w-xl">
               Discover exceptional placement opportunities and industry connections that pave the way for success at Canara Engineering College.
             </p>
           </div>
           <Link href="/training-placements">
             {" "}
-            <button aria-label="Learn More" className="bg-primary text-white font-medium px-6 py-2 rounded-full mt-4 md:mt-0">
+            <button aria-label="Learn More" className="bg-primary text-white font-medium md:mt-3.5 px-6 py-2 rounded-full mt-4 ">
               Learn More
             </button>
           </Link>{" "}
         </div>
 
         {/* Banner Section */}
-      <div className="w-full overflow-hidden flex relative rounded-4xl items-center shadow-lg">
-  {/* Text Overlay (Top Left) */}
-  <div className="absolute text-white w-full lg2:w-1/2 lg:w-[60%]  md:w-[60%] rounded-md z-10 px-6 lg2:pl-20 lg:pl-10  md:pl-10 text-center md:text-left">
-    <h3 className="text-xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-5xl font-semibold pb-4 md:pb-6 leading-snug">
-      A fulfilling career begins with our dedicated Placement Department.
-    </h3>
-    <p className="text-sm sm:text-base md:text-lg text-white/80">
-      Step into a world of exciting career possibilities, where we focus not just on placements,
-      but on honing your skills through tailored training and internship opportunities.
-    </p>
-  </div>
+        <div className="w-full overflow-hidden flex relative rounded-4xl items-center shadow-lg">
+          {/* Text Overlay (Top Left) */}
+          <div className="absolute text-white w-full lg2:w-1/2 lg:w-[60%]  md:w-[60%] rounded-md z-10 px-6 lg2:pl-20 lg:pl-10  md:pl-10 text-center md:text-left">
+            <h3 className="text-xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-5xl font-semibold pb-4 md:pb-6 leading-snug">
+              A fulfilling career begins with our dedicated Placement Department.
+            </h3>
+            <p className="text-sm sm:text-base md:text-lg text-white/80">
+              Step into a world of exciting career possibilities, where we focus not just on placements, but on honing your skills through tailored
+              training and internship opportunities.
+            </p>
+          </div>
 
-  {/* Image */}
-  <Image
-    src={empoweringFuture}
-    alt="empoweringFuture"
-    className=" w-full h-[300px] overflow-hidden sm:h-[400px] md:h-[490px] object-cover object-center"
-  />
-</div>
+          {/* Image */}
+          <Image
+            src={empoweringFuture}
+            alt="empoweringFuture"
+            className=" w-full h-[300px] overflow-hidden sm:h-[400px] md:h-[490px] object-cover object-center"
+          />
+        </div>
 
         {/* Stats Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center w-full mt-12">
           {/* Bar Chart Card */}
           <div className="bg-[#F5F5F7]  rounded-xl px-6 shadow">
             <h4 className="text-2xl font-semibold mb-4 text-left pt-4">Among the Highest in the Region in terms of Placements</h4>
-            <div className="flex items-end justify-between h-40 w-full">
+            <div className="flex items-end justify-between h-52 w-full">
               {[
-                { year: "2021-22", value: 270, paddingTop: "65px" },
-                { year: "2020-21", value: 284, paddingTop: "70px" },
-                { year: "2019-20", value: 330, paddingTop: "85px" },
-                { year: "2018-19", value: 400, paddingTop: "110px" },
+                { year: "2021-22", value: 87 },
+                { year: "2022-23", value: 85 },
+                { year: "2023-24", value: 86.27 },
+                { year: "2024-25", value: 82.52 },
               ].map((item, index) => (
-                <div key={index} className="flex flex-col items-center justify-end">
-                  <span className="mb-2 text-sm font-semibold text-primary">{item.value}</span>
+                <div key={index} className="flex flex-col items-center justify-end w-1/4">
+                  {/* Value label */}
+                  <span className="mb-2 text-sm font-semibold text-primary">{item.value}%</span>
+
+                  {/* Animated bar */}
                   <motion.div
                     initial={{ height: 0 }}
-                    whileInView={{ height: `${item.value / 3}px` }}
+                    whileInView={{ height: `${item.value * 2}px` }} // smoother proportional growth
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
-                    className={`xl:w-20 lg:w-16 md:w-14 rounded-t`}
+                    className="xl:w-20 lg:w-16 md:w-14 w-10 rounded-t flex items-end justify-center"
                     style={{
                       background: "linear-gradient(to top, #2884CA, #6DC0EB)",
-                      paddingTop: item.paddingTop,
                     }}
                   >
-                    <span className="mt-20 text-sm font-medium text-white">{item.year}</span>
+                    {/* Year label inside bar */}
+                    <span className="mb-2 text-[10px] font-medium text-white">{item.year}</span>
                   </motion.div>
                 </div>
               ))}
@@ -179,9 +183,9 @@ export default function EmpoweringFutures() {
             className="text-white rounded-xl p-6 shadow flex flex-col justify-center items-center"
           >
             <Image src="/svgs/common/buisnessBag.svg" alt="image" width={250} height={100} className="absolute" />
-            <h3 className="text-[100px] font-bold leading-none">1.6K+</h3>
-            <p className="mt-2 text-3xl font-bold">Student placed</p>
-            <p className="text-sm opacity-80">Over the past 4 Years</p>
+            <h3 className="text-[55px] font-bold leading-none">23.68LPA</h3>
+            <p className="mt-2 text-xl font-bold">LPA Highest Package</p>
+            {/* <p className="text-sm opacity-80">Over the past 4 Years</p> */}
           </div>
 
           {/* Right Card */}
@@ -195,7 +199,7 @@ export default function EmpoweringFutures() {
             className="text-white rounded-xl  shadow flex flex-col justify-center items-center"
           >
             <h3 className="text-[60px] pt-[60px] font-extrabold bg-gradient-to-r from-[#2884CA] to-[#6DC0EB] text-transparent bg-clip-text">
-              78.82%
+              85.19%
             </h3>
 
             <p className=" text-[24px] font-semibold text-gray-800">
@@ -206,10 +210,10 @@ export default function EmpoweringFutures() {
           </div>
         </div>
       </section>
-      <section className="w-full md:hidden block px-1 py-24">
+      <section className="w-full md:hidden block px-1 py-14">
         {/* Mobile View */}
-        <h1 className="text-3xl text-center text-black font-bold pb-4">Empowering Futures</h1>
-        <p className="text-center text-textGray font-medium pb-16 text-[14px]">
+        <h1 className="text-3xl text-center text-[#1D1D1F] font-bold pb-4">Empowering Futures</h1>
+        <p className="text-center text-textGray font-medium pb-16 text-[14px] md:text-[23.25px]">
           Discover exceptional placement opportunities and industry connections that pave the way for success at Canara Engineering College.{" "}
         </p>
         <div className="md:hidden flex flex-col items-center">
@@ -226,14 +230,13 @@ export default function EmpoweringFutures() {
           {/* Carousel Dots */}
           <CarouselDots total={stats.length} active={activeIndex} onDotClick={setActiveIndex} className="mt-6" />
         </div>
-        
-        <button
-          aria-label="Learn More"
-          onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" })}
-          className="bg-primary text-white font-medium px-6 py-2 rounded-full mt-10 md:mt-0 w-full"
-        >
-          Learn More
-        </button>
+
+        <Link href="/training-placements">
+          {" "}
+          <button aria-label="Learn More" className="bg-primary text-white font-medium px-6 py-2 rounded-full mt-10 md:mt-0 w-full">
+            Learn More
+          </button>
+        </Link>
       </section>
     </>
   );

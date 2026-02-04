@@ -74,7 +74,7 @@ const Page = () => {
         <div className="lg:col-span-9">
           <div className="bg-white h-[100%] p-4 sm:p-6 rounded-lg  w-full">
             <p className="text-sm text-gray-500">PROFILE TYPE</p>
-            <h1 className="text-[47px] leading-[1] py-3 text-black font-bold">
+            <h1 className="text-[47px] leading-[1] py-3 text-[#1D1D1F] font-bold">
               {data.profileType}
             </h1>
             <p className="text-gray-600 text-base md:text-xl">
@@ -87,14 +87,14 @@ const Page = () => {
                 </button>
               ))}
             </div>
-            <h2 className="text-lg sm:text-xl text-black font-semibold mt-5">Profile Bio</h2>
+            <h2 className="text-lg sm:text-xl text-[#1D1D1F] font-semibold mt-5">Profile Bio</h2>
             <p className="text-gray-700 mt-2 text-base md:text-xl">{data.bio.description}</p>
           </div>
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-10 pt-10">
         <div className="bg-white p-4 sm:p-6 rounded-lg  w-full">
-          <h2 className="text-xl sm:text-2xl text-black font-bold text-center mb-6">Motivations</h2>
+          <h2 className="text-xl sm:text-2xl text-[#1D1D1F] font-bold text-center mb-6">Motivations</h2>
           <div className="grid grid-cols-1 py-3 sm:grid-cols-3 gap-10 sm:gap-6">
             {data.motivations.map((motivation, index) => (
               <div key={index} className="text-center py-10 p-4 bg-white  rounded-lg">
@@ -105,13 +105,13 @@ const Page = () => {
                   height={50}
                   className="mx-auto mb-2"
                 />
-                <p className="text-black text-base">{motivation.description}</p>
+                <p className="text-[#1D1D1F] text-base">{motivation.description}</p>
               </div>
             ))}
           </div>
         </div>
         <div className="bg-white p-4 mt-10 lg:mt-0 sm:p-6 rounded-lg  w-full">
-          <h2 className="text-xl sm:text-2xl text-black font-bold text-center mb-6">Problem Areas</h2>
+          <h2 className="text-xl sm:text-2xl text-[#1D1D1F] font-bold text-center mb-6">Problem Areas</h2>
           <div className="grid grid-cols-1 py-3 sm:grid-cols-3 gap-10 sm:gap-6">
             {data.problemAreas.map((problem, index) => (
               <div key={index} className="text-center py-10 p-4 bg-white  rounded-lg">
@@ -122,7 +122,7 @@ const Page = () => {
                   height={50}
                   className="mx-auto mb-2"
                 />
-                <p className="text-black text-base">{problem.description}</p>
+                <p className="text-[#1D1D1F] text-base">{problem.description}</p>
               </div>
             ))}
           </div>
@@ -130,7 +130,7 @@ const Page = () => {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-10 mt-10 lg:pt-10">
         <div className="bg-white p-4 sm:p-6 rounded-lg  w-full">
-          <h2 className="text-xl sm:text-2xl text-black font-bold mb-6">Core Needs</h2>
+          <h2 className="text-xl sm:text-2xl text-[#1D1D1F] font-bold mb-6">Core Needs</h2>
           <ul className="list-disc pl-6 sm:pl-10 text-gray-700 space-y-2 text-base md:text-xl">
             {data.coreNeeds.map((need, index) => (
               <li key={index}>{need}</li>
@@ -140,7 +140,7 @@ const Page = () => {
         <div className="bg-white p-4 my-10 lg:my-0 sm:p-6 rounded-lg  w-full">
           <div className="flex flex-col md:flex-row justify-between">
             <div className="md:w-1/2">
-              <h2 className="text-xl sm:text-2xl text-black font-bold text-center md:text-left mb-4">Frustrations & Fears</h2>
+              <h2 className="text-xl sm:text-2xl text-[#1D1D1F] font-bold text-center md:text-left mb-4">Frustrations & Fears</h2>
               <ul className="list-none pl-0 text-gray-700 space-y-2 text-base md:text-xl">
                 {data.frustrationsAndFears.map((fear, index) => (
                   <li key={index}>{fear}</li>
@@ -148,11 +148,11 @@ const Page = () => {
               </ul>
             </div>
             <div className="md:w-1/2 md:ml-6 mt-6 md:mt-0">
-              <h2 className="text-xl sm:text-2xl text-black font-bold flex items-center justify-start mb-4">
+              <h2 className="text-xl sm:text-2xl text-[#1D1D1F] font-bold flex items-center justify-start mb-4">
                 <BiSolidRightArrow className="text-[#2884CA] mr-2 text-xl" />
                 Addressal
               </h2>
-              <ul className="space-y-3 text-black text-base md:text-xl">
+              <ul className="space-y-3 text-[#1D1D1F] text-base md:text-xl">
                 {data.addressal.map((item, index) => (
                   <li key={index} className="flex items-start">
                     <BiSolidRightArrow className="text-[#2884CA] text-lg mt-1 mr-2 shrink-0" />

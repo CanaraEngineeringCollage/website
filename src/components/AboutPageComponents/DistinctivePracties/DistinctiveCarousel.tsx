@@ -4,16 +4,9 @@ import { useState, useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import { AnimatePresence, motion } from "framer-motion";
-import { IconX } from "@tabler/icons-react";
-import { CiPlay1 } from "react-icons/ci";
-import Image from "next/image";
-import { SwiperRef } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import data from "../../../utils/aluminiSectionData/carouselData.json";
-import { Images } from "lucide-react";
 
 // Types
 interface Amenity {
@@ -24,127 +17,31 @@ interface Amenity {
   alt?: string;
 }
 
-
-
 interface ModalContentType extends Amenity {
   id: string;
 }
-// Define animation variants
-const cardVariants = {
-  hidden: { opacity: 0, scale: 0.8, y: 100, transition: { duration: 0.3, ease: "easeIn" } },
-  visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.4, ease: "easeOut", type: "spring", damping: 20, stiffness: 100 } },
-  exit: { opacity: 0, scale: 0.9, y: 50, transition: { duration: 0.25, ease: "easeIn" } },
-};
-
-const backdropVariants = {
-  hidden: { opacity: 0, backdropFilter: "blur(0px)" },
-  visible: { opacity: 1, backdropFilter: "blur(8px)", transition: { duration: 0.3, ease: "easeOut" } },
-  exit: { opacity: 0, backdropFilter: "blur(0px)", transition: { duration: 0.2, ease: "easeIn" } },
-};
-
-const contentVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.1, ease: "easeOut" } },
-};
-
-// CardContent Component
-function CardContent({ description }: { description: Amenity }) {
-
-
-
-
-  return (
-    <>
-
-    </>
-  );
-}
 
 export default function DistinctiveCarousel() {
-  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-  const [modalContent, setModalContent] = useState<ModalContentType | null>(null);
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
-  const [progress, setProgress] = useState<number>(0);
-  const [isPlaying, setIsPlaying] = useState<boolean>(true);
-  const swiperRef = useRef<SwiperRef>(null);
-  const progressRef = useRef<number>(0);
-  const rafRef = useRef<number | null>(null);
-  const AUTOPLAY_DELAY = 3000;
+  const [swiperInstance, setSwiperInstance] = useState<any>(null);
 
-  // Open modal with item data
-  const openModal = (item: ModalContentType, index: number) => {
-    setModalContent(item);
-    setCurrentIndex(index);
-    setIsModalOpen(true);
-  };
-
-  // Close modal
-  const closeModal = () => {
-    setIsModalOpen(false);
-    setModalContent(null);
-  };
-
-  // Go to the next card
-  const goToNextCard = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
-  };
-
-  // Progress animation using requestAnimationFrame
-  const animateProgress = (startTime: number, from: number = 0) => {
-    const step = (timestamp: number) => {
-      const elapsed = timestamp - startTime;
-      let percent = Math.min(100, from + (elapsed / AUTOPLAY_DELAY) * 100);
-      setProgress(percent);
-      progressRef.current = percent;
-      if (percent < 100 && isPlaying) {
-        rafRef.current = requestAnimationFrame(step);
-      }
-    };
-    rafRef.current = requestAnimationFrame(step);
-  };
-
-  // Pause or resume the carousel
-  const toggleCarousel = () => {
-    if (swiperRef.current) {
-      if (isPlaying) {
-        swiperRef.current.swiper.autoplay.stop();
-        setIsPlaying(false);
-        if (rafRef.current) cancelAnimationFrame(rafRef.current);
-      } else {
-        swiperRef.current.swiper.autoplay.start();
-        setIsPlaying(true);
-        animateProgress(performance.now(), progressRef.current);
-      }
-    }
-  };
-
-  // Reset progress on slide change
+  // --- FIX: Force Autoplay Start on Mount ---
   useEffect(() => {
-    const swiper = swiperRef.current?.swiper;
-    if (!swiper) return;
+    if (swiperInstance && swiperInstance.autoplay) {
+      // We use a small timeout to ensure this runs AFTER the initial React hydration cycle
+      const timer = setTimeout(() => {
+        // Force start
+        swiperInstance.autoplay.start();
+        
+        // Safety check: if it's still not running (rare), force it again
+        if (!swiperInstance.autoplay.running) {
+          swiperInstance.autoplay.start();
+        }
+      }, 100);
 
-    const handleSlideChange = () => {
-      setProgress(0);
-      progressRef.current = 0;
-      if (rafRef.current) cancelAnimationFrame(rafRef.current);
-      if (isPlaying) animateProgress(performance.now());
-    };
-
-    swiper.on("slideChange", handleSlideChange);
-    swiper.on("autoplay", handleSlideChange);
-
-    // Start initial progress
-    if (isPlaying) animateProgress(performance.now());
-
-    return () => {
-      swiper.off("slideChange", handleSlideChange);
-      swiper.off("autoplay", handleSlideChange);
-      if (rafRef.current) cancelAnimationFrame(rafRef.current);
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isPlaying]);
-
-
+      return () => clearTimeout(timer);
+    }
+  }, [swiperInstance]);
+  // ------------------------------------------
 
   const images = [
     "/DistinctivePractiesImages/CHC.jpg",
@@ -152,22 +49,29 @@ export default function DistinctiveCarousel() {
     "/DistinctivePractiesImages/solar.jpg",
   ];
 
-
   return (
-    <section className="  mx-auto  py-12 overflow-hidden  flex justify-center items-center ">
-      <div className="grid grid-cols-1 gap-8 lg2:gap-16 ">
+    <section className="mx-auto py-12 overflow-hidden flex justify-center items-center">
+      <div className="grid grid-cols-1 gap-8 lg2:gap-16">
         {/* Left Side - Swiper */}
         <div className="relative w-full">
           <div className="relative">
             <Swiper
-              ref={swiperRef}
+              onSwiper={setSwiperInstance}
               modules={[Navigation, Autoplay]}
+              // Added onAfterInit to trigger start immediately upon Swiper readiness
+              onAfterInit={(swiper) => {
+                swiper.autoplay.start();
+              }}
               navigation={{
                 nextEl: ".swiper-button-next-custom",
                 prevEl: ".swiper-button-prev-custom",
               }}
-              autoplay={{ delay: 2000 }}
-
+              autoplay={{ 
+                delay: 2000, 
+                disableOnInteraction: false,
+                // waiting for transition to finish helps prevent the "long pause"
+                waitForTransition: true 
+              }}
               loop={true}
               centeredSlides={true}
               slidesPerView={1}
@@ -177,7 +81,6 @@ export default function DistinctiveCarousel() {
                 320: {
                   slidesPerView: 1,
                   spaceBetween: 16,
-                 
                 },
                 768: {
                   slidesPerView: 1,
@@ -189,7 +92,7 @@ export default function DistinctiveCarousel() {
                   spaceBetween: 24,
                   centeredSlides: true,
                 },
-                  1440: {
+                1440: {
                   slidesPerView: 3,
                   spaceBetween: 24,
                   centeredSlides: true,
@@ -197,10 +100,7 @@ export default function DistinctiveCarousel() {
               }}
             >
               {images.map((src, index) => (
-                <SwiperSlide
-                  key={index}
-                  className=" lg:!w-auto"
-                >
+                <SwiperSlide key={index} className="lg:!w-auto">
                   <div className="relative h-[200px] md:h-[350px] lg:h-[500px] w-full rounded-3xl overflow-hidden">
                     <img
                       src={src}
@@ -215,22 +115,17 @@ export default function DistinctiveCarousel() {
             </Swiper>
 
             {/* Navigation Buttons */}
-
-            <div className="flex justify-end me-6 lg:justify-end items-center mt-12 ">
-
-
-              <div className=" flex gap-2 z-10">
+            <div className="flex justify-end me-6 lg:justify-end items-center mt-12">
+              <div className="flex gap-2 z-10">
                 <button
                   aria-label="Previous Slide"
                   className="swiper-button-prev-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
-                 
                 >
                   <MdKeyboardArrowLeft />
                 </button>
                 <button
                   aria-label="Next Slide"
                   className="swiper-button-next-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
- 
                 >
                   <MdKeyboardArrowRight />
                 </button>
@@ -239,8 +134,6 @@ export default function DistinctiveCarousel() {
           </div>
         </div>
       </div>
-
-
     </section>
   );
 }

@@ -5,19 +5,19 @@ import visionImage3 from "../../../../../public/aboutPageImages/MissionVision/vi
 import visionImage4 from "../../../../../public/aboutPageImages/MissionVision/visionImage4.webp";
 export default function MissionVision() {
   return (
-      <div className="max-w-7xl pt-14 pb-24 xl:max-w-[75%] mx-auto grid grid-cols-1 lg:grid-cols-12 lg:gap-20">
+      <div className="max-w-7xl pt-14 pb-16 lg:pb-20 xl:max-w-[75%] mx-auto grid grid-cols-1 lg:grid-cols-12 lg:gap-20">
         {/* Mission Card */}
         <div className="bg-white col-span-7 overflow-hidden rounded-2xl shadow p-10 lg:p-18 space-y-6">
           <h2 className="text-3xl lg:text-5xl text-center lg:text-start font-bold text-[#1D1D1F] mb-16">Our Mission</h2>
 
-          <div className="grid grid-rows-3 gap-2 h-full pb-16">
+       <div className="flex flex-col gap-6   justify-center">
 
             {/* Item 1 */}
             <div className="flex gap-10 flex-col lg:flex-row text-center lg:text-start items-center">
               <Image src={visionImage1} alt="bookImage" className="max-w-[50px] my-auto" />
               <div>
                 <h3 className=" text-xl text-textGray font-bold">Ethical & Industry-Ready Learning</h3>
-                <p className="text-textGray">
+                <p className="text-textGray text-lg">
                   Provide the right environment to develop quality education for all, irrespective of caste, creed or religion to produce future
                   leaders.
                 </p>
@@ -29,7 +29,7 @@ export default function MissionVision() {
               <Image src={visionImage2} alt="ideaIcon" className="max-w-[50px] my-auto" />
               <div>
                 <h3 className="text-xl text-textGray font-bold">Innovation Excellence</h3>
-                <p className="text-textGray">Create opportunities for pursuit of knowledge and all round development.</p>
+                <p className="text-textGray text-lg">Create opportunities for pursuit of knowledge and all round development.</p>
               </div>
             </div>
 
@@ -38,7 +38,7 @@ export default function MissionVision() {
               <Image src={visionImage3} alt="valueIcon" className="max-w-[50px] my-auto" />
               <div>
                 <h3 className="text-xl text-textGray font-bold">Instilling Core Values</h3>
-                <p className="text-textGray">Impart value education to students to build sense of integrity, honesty and ethics.</p>
+                <p className="text-textGray text-lg">Impart value education to students to build sense of integrity, honesty and ethics.</p>
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function MissionVision() {
         <div className="bg-white col-span-5 mt-10 lg:mt-0 rounded-2xl shadow p-8 flex flex-col items-center justify-center text-center space-y-6">
           <Image src={visionImage4} className="w-[250px]  " alt="visionIcon" />
           <h2 className="text-3xl lg:text-5xl font-bold text-[#1D1D1F] mb-10">Our Vision</h2>
-          <p className="text-textGray text-xl max-w-sm">
+          <p className="text-textGray text-lg max-w-sm">
             To be an Engineering Institute of highest repute and produce world-class engineers catering to the needs of mankind.
           </p>
         </div>

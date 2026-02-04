@@ -54,7 +54,7 @@ const studentSupport = [
     link: "/about/grievance-redressal-cell",
   },
   {
-    title: "SWO Department",
+    title: "Student Welfare Department",
     link: "/about/student-welfare-department",
   },
 ];
@@ -84,10 +84,14 @@ const departments = [
     title: "Artificial Intelligence & Machine Learning",
     link: "/department/artificial-intelligence-machine-learning",
   },
-  // {
-  //   title: "Science & Humanities",
-  //   link: "/department/science-humanities",
-  // },
+   {
+    title: "Mechanical Engineering",
+    link: "/department/mechanical-engineering",
+  },
+  {
+    title: "Science & Humanities",
+    link: "/department/science-humanities",
+  },
 ];
 
 const curriculum = [
@@ -101,15 +105,34 @@ const curriculum = [
   // },
 ];
 
+const alumni = [
+  {
+    title: "Alumni",
+    link: "/alumni",
+  },
+
+  
+];
+
 const campusBeats = [
   // {
   //   title: "Calendar of Events",
   //   link: "/events",
   // },
+
   {
-    title: "Alumni",
-    link: "/alumni",
+    title: "Student Achievements",
+    link: "/student-achievements",
   },
+   {
+    title: "Student Life & Engagement",
+    link: "/studentlife-engagement",
+  },
+   {
+    title: "Campus Buzz",
+    link: "/campus-buzz",
+  },
+
 ];
 
 const learningHub = [
@@ -118,8 +141,12 @@ const learningHub = [
     link: "https://digital.canaraengineering.in/",
   },
   {
-    title: "Research",
+    title: "Research at CEC",
     link: "/academics/research",
+  },
+   {
+    title: "Research & Development and Consultancy Cell",
+    link: "/academics/research-development-consultancy",
   },
 ];
 
@@ -132,10 +159,10 @@ const campusFacilities = [
     title: "Hostel Life",
     link: "/campus-facilities/hostel-life",
   },
-    {
-    title: "Student Life & Engagement",
-    link: "/campus-facilities/studentlife-engagement",
-  },
+  {
+    title: "Central Library",
+    link: "/campus-facilities/central-library",
+  }
 ];
 
 const studentLife = [
@@ -177,6 +204,14 @@ const examination = [
     title: "Marks & Attendance",
     link: "https://www.canaraengineering.in/s_attd",
   },
+  {
+    title: "Student Information",
+    link: "https://www.canaraengineering.in/s-info",
+  },
+  {
+    title: "Student Dashboard",
+    link: "https://cecstudent.canaraengineering.in",
+  },
 ];
 export {
   campusFacilities, //
@@ -191,4 +226,5 @@ export {
   studentLife, //
   innovation, //
   campusBeats, //
+  alumni
 };

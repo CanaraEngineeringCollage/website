@@ -12,15 +12,16 @@ import { SwiperRef } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import data from "../../../utils/aluminiSectionData/carouselData.json";
 
 // Types
 interface Amenity {
   imageSrc: string;
+  imageSrc2: string;
   title: string;
   description: string;
   date?: string;
   alt?: string;
+  isVideo?: boolean;
 }
 
 interface ModalContentType extends Amenity {
@@ -46,22 +47,30 @@ const contentVariants = {
 
 // CardContent Component
 function CardContent({ description }: { description: Amenity }) {
+  const isVideo = description.isVideo;
+
   return (
     <div>
-      <Image
-        src={description.imageSrc}
-        alt="Image"
-        loading="lazy"
-        width={1000}
-        height={700}
-        className="object-cover overflow-hidden rounded-t-2xl w-full lg:h-[500px] h-[400px] mb-10"
-      />
-      <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-black bg-white">
-        <div>
-          <h3 className="text-[31px] lg:text-[46px] leading-[1.1] lg:max-w-[70%] mb-5 font-bold">{description.title}</h3>
-          <p className="text-xl text-textGray">{description.description}</p>
+      {isVideo ? (
+        <video src={description.imageSrc2} controls playsInline className="object-contain rounded-t-2xl w-full lg:h-[500px] h-[400px] mb-10" />
+      ) : (
+        <Image
+          src={description.imageSrc2}
+          alt="Image"
+          loading="lazy"
+          width={1000}
+          height={700}
+          className="object-cover overflow-hidden rounded-t-2xl w-full lg:h-[500px] h-[400px] mb-10"
+        />
+      )}
+      {description.title && (
+        <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-[#1D1D1F] bg-white">
+          <div>
+            <h3 className="text-[28px] lg:text-[36px] leading-[1.1] lg:max-w-[100%] mb-5 font-bold">{description.title}</h3>
+            <p className="text-xl text-textGray">{description.description}</p>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
@@ -72,10 +81,69 @@ export default function LegacyExcellance() {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [progress, setProgress] = useState<number>(0);
   const [isPlaying, setIsPlaying] = useState<boolean>(true);
+  const [events, setEvents] = useState<Amenity[]>([]); // State to hold fetched events
   const swiperRef = useRef<SwiperRef>(null);
   const progressRef = useRef<number>(0);
   const rafRef = useRef<number | null>(null);
   const AUTOPLAY_DELAY = 3000;
+
+  // Types for API response
+  interface ApiEvent {
+    id: string;
+    title: string;
+    description: string;
+    date: string | null;
+    videoUrl: string | null;
+    image: {
+      type: string;
+      data: number[];
+    };
+  }
+
+  // Helper to convert buffer to base64 safely
+  const bufferToBase64 = (buffer: number[]): string => {
+    if (!buffer || buffer.length === 0) return "";
+
+    // Process in chunks to avoid stack overflow with String.fromCharCode(...buffer)
+    const CHUNK_SIZE = 8192;
+    let binary = "";
+    for (let i = 0; i < buffer.length; i += CHUNK_SIZE) {
+      binary += String.fromCharCode.apply(null, buffer.slice(i, i + CHUNK_SIZE));
+    }
+
+    return `data:image/png;base64,${btoa(binary)}`;
+  };
+
+  // Fetch data from API
+  useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        const response = await fetch("https://apiserver.cec.edu.in/events?page=1&limit=4&category=Alumni");
+        const json = await response.json();
+
+        const mappedEvents: Amenity[] = json.data.map((event: ApiEvent) => {
+          const isVideo = !!event.videoUrl;
+          const imageSrc = isVideo ? event.videoUrl! : event.image ? bufferToBase64(event.image.data) : "";
+
+          return {
+            imageSrc: imageSrc,
+            imageSrc2: imageSrc,
+            title: event.title,
+            description: event.description,
+            date: event.date || "",
+            alt: event.title,
+            isVideo: isVideo,
+          };
+        });
+
+        setEvents(mappedEvents);
+      } catch (error) {
+        console.error("Failed to fetch events:", error);
+      }
+    };
+
+    fetchEvents();
+  }, []);
 
   // Open modal with item data
   const openModal = (item: ModalContentType, index: number) => {
@@ -92,7 +160,9 @@ export default function LegacyExcellance() {
 
   // Go to the next card
   const goToNextCard = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
+    if (events.length > 0) {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % events.length);
+    }
   };
 
   // Progress animation using requestAnimationFrame
@@ -124,7 +194,7 @@ export default function LegacyExcellance() {
     }
   };
 
-  // Reset progress on slide change
+  // Reset progress on slide change and when events are loaded
   useEffect(() => {
     const swiper = swiperRef.current?.swiper;
     if (!swiper) return;
@@ -148,8 +218,9 @@ export default function LegacyExcellance() {
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isPlaying]);
-useEffect(() => {
+  }, [isPlaying, events]); // Add events as dependency
+
+  useEffect(() => {
     if (isModalOpen) document.body.style.overflow = "hidden";
     else document.body.style.overflow = "auto";
 
@@ -159,38 +230,52 @@ useEffect(() => {
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isModalOpen, closeModal]);
+
+  if (events.length === 0) {
+    return null; // Or return a loading spinner
+  }
+
   return (
-    <section className="max-w-7xl xl:max-w-[75%]   mx-auto  py-8">
+    <section className="max-w-7xl xl:max-w-[75%] px-5 lg:px-0   mx-auto  py-8 lg:pt-3 lg:pb-10">
       <div className="grid grid-cols-1  lg:grid-cols-2 gap-8 lg2:gap-10 items-start">
         {/* Left Side - Swiper */}
-       
+        {events.map((item, index) => {
+          const isVideo = item.isVideo;
+          return (
+            <div
+              key={index}
+              onClick={() => openModal({ ...item, id: index.toString() }, index)}
+              className="relative cursor-pointer h-[200px] lg:h-[500px] rounded-3xl overflow-hidden"
+            >
+              {isVideo ? (
+                <video src={item.imageSrc} muted loop autoPlay playsInline preload="metadata" className="w-full h-full object-cover rounded-3xl" />
+              ) : (
+                <Image src={item.imageSrc} alt={item.title} width={700} height={700} className="w-full h-full object-cover rounded-3xl" />
+              )}
 
-              {data.map((item, index) => (
-               
-                  <div className="relative lg:h-[500px] rounded-3xl">
-                    <Image src={item.imageSrc} alt={item.title} width={700} height={700} className="w-full object-cover h-[100%] rounded-3xl" />
+              {/* Text Overlay */}
+              <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-10">
+                {/* FLEX ROW */}
+                <div className="flex items-center justify-between ">
+                  <h2 className="text-white text-lg leading-[1.2] lg:text-[30px] line-clamp-1 font-bold">{item.title}</h2>
 
-                    {/* Text Overlay */}
-                    <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6 lg2:p-16 rounded-b-3xl">
-                      <h2 className="text-white text-lg leading-[1.2] lg:text-[40px] font-bold mt-1">{item.title}</h2>
-                      {/* <p className="text-white  mt-2 text-sm lg:text-lg max-w-2/3">{item.description}</p> */}
-                      <button
-                        aria-label="Learn More"
-                        onClick={() => openModal(item, index)}
-                        className="mt-4 px-5 py-2 bg-white rounded-full text-slg font-semibold hover:bg-gray-200 absolute right-6 bottom-14 text-primary"
-                      >
-                        Learn More
-                      </button>
-                    </div>
-                  </div>
-                
-              ))}
-          
+                  <button
+                    aria-label="Learn More"
+                    onClick={(e) => {
+                      e.stopPropagation(); // prevent double trigger
+                      openModal({ ...item, id: index.toString() }, index);
+                    }}
+                    className="px-5 py-2 bg-white rounded-full text-sm lg:text-base font-semibold text-primary hover:bg-gray-200 whitespace-nowrap"
+                  >
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          );
+        })}
 
-            {/* Navigation Buttons */}
-
-           
-          
+        {/* Navigation Buttons */}
       </div>
 
       {/* Modal */}
@@ -204,7 +289,7 @@ useEffect(() => {
             >
               <motion.button
                 variants={contentVariants}
-                className="absolute top-6 me-4 lg:me-8 h-8 w-8 right-0 cursor-pointer ml-auto bg-[#808080] rounded-full flex items-center justify-center"
+                className="absolute top-6 me-4 lg:me-8 z-[999999999999] h-8 w-8 right-0 cursor-pointer ml-auto bg-[#808080] rounded-full flex items-center justify-center"
                 onClick={closeModal}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -212,13 +297,14 @@ useEffect(() => {
                 <IconX className="h-6 w-6 text-white" />
               </motion.button>
               <motion.div variants={contentVariants}>
-                <CardContent description={data[currentIndex]} />
+                <CardContent description={events[currentIndex]} />
               </motion.div>
-              <motion.div variants={contentVariants} className="p-4 lg:px-20 mt-10">
-                <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">NextUp</h1>
-                <h1 onClick={goToNextCard} className="text-[#2997FF] inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]">
-                  {data[(currentIndex + 1) % data.length]?.title || "First Card"}
-                  <MdKeyboardArrowRight className="ml-1 mt-1 text-[20px] md:text-[25px]" />
+              <motion.div variants={contentVariants} className="p-4 lg:px-20 mt-4">
+                <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">Next Up</h1>
+                <h1 onClick={goToNextCard} className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]">
+                  <span className="line-clamp-1 ">{events[(currentIndex + 1) % events.length]?.title || "Next"}</span>
+
+                  <MdKeyboardArrowRight className="ml-1 mt-0.5 text-[20px] md:text-[25px]" />
                 </h1>
               </motion.div>
             </motion.div>

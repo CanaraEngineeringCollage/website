@@ -41,56 +41,55 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
     <>
       {/* First Header */}
       <section
-        className={`relative hidden lg:block transition-all ease-in-out duration-500 ${
+        className={`relative hidden group lg:block transition-all ease-in-out duration-500 ${
           isScrolled ? "-translate-y-10" : "translate-y-0"
         }`}
       >
-        <div className="flex items-center w-full h-12 bg-primary">
+        <div className="flex items-center w-full h-12 border-b border-b-[#BFDCF7]">
           <div className="hidden md:flex items-center justify-between w-full container-padding max-w-[90%] mx-auto">
             <div className="flex items-center justify-center space-x-6">
               <Link
                 href={"mailto:canarait@gmail.com"}
-                className="text-[0.7rem] xl:text-[0.875rem]  text-white/50 font-poppins hover:text-white transition-colors ease-in-out duration-300"
+                className="text-[0.7rem] xl:text-[0.875rem]  text-[#2884CA] font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300"
               >
                 Email: canarait@gmail.com
               </Link>
               <div className="flex gap-1">
-                <p className="text-[0.7rem] xl:text-[0.875rem] text-white/50 font-poppins  transition-colors ease-in-out duration-300">Phone:</p>
+                <p className="text-[0.7rem] xl:text-[0.875rem] text-[#2884CA] font-bold font-poppins  transition-colors ease-in-out duration-300">Phone:</p>
               <Link
                 href={"tel:+918792727001"}
-                className="text-[0.7rem] xl:text-[0.875rem] text-white/50 font-poppins hover:text-white transition-colors ease-in-out duration-300"
+                className="text-[0.7rem] xl:text-[0.875rem]  text-[#2884CA]  font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300"
               >
               + 91 8792727001 
               </Link>
-              <span className="text-[0.7rem] xl:text-[0.875rem] text-white/50 font-poppins hover:text-white transition-colors ease-in-out duration-300">/</span>
+              <span className="text-[0.7rem] xl:text-[0.875rem] text-[#2884CA] font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300">/</span>
                <Link
                 href={"tel:+918904737001"}
-                className="text-[0.7rem] xl:text-[0.875rem] text-white/50 font-poppins hover:text-white transition-colors ease-in-out duration-300"
+                className="text-[0.7rem] xl:text-[0.875rem] text-[#2884CA] font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300"
               >
               8904737001
               </Link>
               </div>
-              <Link
-                href={"#"}
-                className="text-[0.7rem] xl:text-[0.875rem] text-white/50 font-poppins hover:text-white transition-colors ease-in-out duration-300"
+              <p
+                className="text-[0.7rem] xl:text-[0.875rem] text-[#2884CA] font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300"
               >
                 CET Code: E123
-              </Link>
+              </p>
             </div>
             <div className="flex items-center justify-center space-x-6">
             
               <Link
                 href={"/admission"}
-                className="text-[0.7rem] xl:text-[0.875rem] text-white/50 font-poppins hover:text-white transition-colors ease-in-out duration-300"
+                className="text-[0.7rem] xl:text-[0.875rem] text-[#2884CA] font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300"
               >
                 Admission Procedure
               </Link>
               <Link
                 href={"https://apply.canaraengineering.in/"}
                 target="_blank"
-                className="text-[0.7rem] xl:text-[0.875rem] text-white/50 font-poppins hover:text-white transition-colors ease-in-out duration-300"
+                className="text-[0.7rem] xl:text-[0.875rem] text-[#2884CA] font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300"
               >
-                Admission Open 2025
+                Admission Open {new Date().getFullYear()}
               </Link>
             </div>
           </div>
@@ -114,10 +113,12 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
               </Link>
             </div>
             {/* Navbar Items */}
+            <div>
             <NavbarItems />
             {/* Navbar Items */}
+            </div>
           </div>
-          <div className="block lg:hidden absolute top-1/2 -translate-y-1/2 right-4 z-[1000]">
+          <div className="block lg:hidden absolute top-1/2 -translate-y-1/2 right-4 z-20">
             {/* Dropdown */}
             <DropDown openSidebar={openSidebar} sidebar={sidebar} />
             {/* Dropdown */}

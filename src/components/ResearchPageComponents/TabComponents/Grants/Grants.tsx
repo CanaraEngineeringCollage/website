@@ -19,21 +19,21 @@ import React from "react"
     "year": "2019-20",
     "amount": "4500",
     "fundingAgency": "KSCST, India",
-    "status": "completed"
+    "status": "Completed"
   },
   {
     "name": "Design And Development of Medhu Vada Making Machine",
     "year": "2019-20",
     "amount": "5500",
     "fundingAgency": "KSCST, India",
-    "status": "completed"
+    "status": "Completed"
   },
   {
     "name": "Semi-Automated Plate Lifting and Floor Cleaning Machine",
     "year": "2019-20",
     "amount": "6000",
     "fundingAgency": "KSCST, India",
-    "status": "completed"
+    "status": "Completed"
   },
   {
     "name": "Automation Of Extrusion Machine for Producing 3D Printing Filament",
@@ -61,63 +61,63 @@ import React from "react"
     "year": "2019-20",
     "amount": "5000",
     "fundingAgency": "KSCST, India",
-    "status": "completed"
+    "status": "Completed"
   },
   {
     "name": "Design and Development of Oil Expeller",
     "year": "2019-20",
     "amount": "5500",
     "fundingAgency": "KSCST, India",
-    "status": "completed"
+    "status": "Completed"
   },
   {
     "name": "Design And Fabrication Of Semiautomatic Plate Washing Machine",
     "year": "2018-19",
     "amount": "9000",
     "fundingAgency": "KSCST, India",
-    "status": "completed"
+    "status": "Completed"
   },
   {
     "name": "Cotton Ginning Machine",
     "year": "2018-19",
     "amount": "7000",
     "fundingAgency": "KSCST, India",
-    "status": "completed"
+    "status": "Completed"
   },
   {
     "name": "Kitchen Top Bio-Digester",
     "year": "2017-18",
     "amount": "9500",
     "fundingAgency": "KSCST, India",
-    "status": "completed"
+    "status": "Completed"
   },
   {
     "name": "Design And Development Of Sorting Machine For Oranges On Conveyor Belt With Vision System",
     "year": "2017-18",
     "amount": "7000",
     "fundingAgency": "KSCST, India",
-    "status": "completed"
+    "status": "Completed"
   },
   {
     "name": "Fabrication And Development Of Automatic Gas Control And Safety Kit",
     "year": "2017-18",
     "amount": "6000",
     "fundingAgency": "KSCST, India",
-    "status": "completed"
+    "status": "Completed"
   },
   {
     "name": "Design And Fabrication Of Improved Biomass Cook Stove For Areca Nut Husk Pellets",
     "year": "2017-18",
     "amount": "5000",
     "fundingAgency": "KSCST, India",
-    "status": "completed"
+    "status": "Completed"
   },
   {
     "name": "Analysing The Brain MRI Image Using Serial And Parallel (Treading) Processing Techniques",
     "year": "2017-18",
     "amount": "4000",
     "fundingAgency": "KSCST, India",
-    "status": "completed"
+    "status": "Completed"
   },
   {
     "name": "Semi-automation of gold refinery system",
@@ -341,7 +341,7 @@ import React from "react"
 const Grants = () => {
   return (
     <div className="overflow-x-auto">
-      <div className="rounded overflow-x-scroll md:overflow-hidden border border-gray-200 w-full">
+      <div className="rounded overflow-x-auto lg:overflow-hidden border border-gray-200 w-full">
       <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
         <thead>
           <tr className="bg-[#F3F8FC] text-[#2884CA]">

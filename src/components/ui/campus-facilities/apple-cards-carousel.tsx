@@ -262,13 +262,13 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
                 {card.content}
               </motion.div>
               <motion.div variants={contentVariants} className="p-4 lg:px-20 mt-10">
-                <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">NextUp</h1>
+                <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">Next Up</h1>
                 <h1
                   onClick={handleNextCard}
-                  className="text-[#2997FF] inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]"
+                  className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]"
                 >
                   {nextCardTitle}
-                  <MdKeyboardArrowRight className="ml-1 mt-1 text-[20px] md:text-[25px]" />
+                  <MdKeyboardArrowRight className="ml-1  text-[20px] md:text-[25px]" />
                 </h1>
               </motion.div>
             </MotionDiv>
@@ -278,7 +278,7 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
       <MotionButton
         layoutId={layout ? `card-${card.title}` : undefined}
         onClick={handleOpen}
-        className="rounded-3xl bg-white h-[35rem] w-full md:h-[45rem] overflow-hidden flex flex-col items-start justify-start relative z-10"
+        className="rounded-3xl  bg-white h-[35rem] w-full md:h-[45rem] overflow-hidden flex flex-col items-start justify-start relative z-10"
         whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
         whileTap={{ scale: 0.98 }}
       >
@@ -287,24 +287,24 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
         {/* Bottom gradient overlay */}
         <div className="absolute bottom-0 left-0 right-0 h-[60vh] bg-gradient-to-t from-black/70 via-transparent to-transparent z-30 pointer-events-none" />
         <div
-          className={`relative ${card.style} z-40 p-8 ${card.textalign} ${card.id == 1 ? "text-center md:text-left" : ""
+          className={`absolute ${card.style} z-40 p-8 ${card.textalign} ${card.id == 1 ? "" : ""
             }`}
         >
           <MotionP
             layoutId={layout ? `category-${card.category}` : undefined}
-            className={`text-white text-[18px] ${card.id == 1 ? "lg:max-w-xl text-center md:text-right" : "max-w-2xl"
+            className={`text-white text-[18px] ${card.id == 1 ? "lg:max-w-xl text-start lg:text-right" : "max-w-2xl"
               } md:text-[31px] font-bold md:font-medium font-sans`}
           >
             {card.category}
           </MotionP>
 
-          <MotionP
-            layoutId={layout ? `title-${card.title}` : undefined}
-            className={`text-white text-[31px] ${card.id == 1 ? "text-center md:text-right" : "text-left"
-              } md:text-[76px] font-semibold max-w-5xl leading-[1.1] [text-wrap:balance] font-sans mt-2`}
-          >
-            {card.title}
-          </MotionP>
+      <MotionP
+  layoutId={layout ? `title-${card.title}` : undefined}
+  className={`text-white text-[31px] text-left
+    md:text-[60px] font-semibold max-w-full leading-[1.1] whitespace-nowrap font-sans mt-2`}
+>
+  {card.title}
+</MotionP>
 
           <MotionP
             layoutId={layout ? `desc-${card.desc}` : undefined}
@@ -314,7 +314,13 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
             {card.desc}
           </MotionP>
         </div>
-        <BlurImage src={card.src} alt={card.title} fill className="object-cover absolute z-10 inset-0" />
+        <BlurImage
+  src={card.src}
+  alt={card.title}
+  fill
+  className={`"absolute inset-0 z-10 object-left ${card.title !== "In-Campus Hostels"?"object-left":"object-center"} object-cover md:object-center"`}
+/>
+
         <div className="absolute bottom-4 right-4 z-40">
           <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="0.888672" y="0.464844" width="36" height="36" rx="18" fill="#FFFFFF" />
