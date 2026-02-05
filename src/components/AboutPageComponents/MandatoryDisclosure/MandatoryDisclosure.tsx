@@ -6,9 +6,19 @@ import Link from "next/link";
 import { HiLink } from "react-icons/hi";
 
 import CustomSelect from "@/components/Common/CustomSelect/CustomSelect";
+import PDFModal from "@/components/Common/PDFModal/PDFModal";
 
 const MandatoryDisclosure = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
+  const [isPdfModalOpen, setIsPdfModalOpen] = useState(false);
+  const [currentPdfUrl, setCurrentPdfUrl] = useState("");
+  const [currentPdfTitle, setCurrentPdfTitle] = useState("");
+
+  const handleOpenPdf = (url: string, title?: string) => {
+    setCurrentPdfUrl(url);
+    if (title) setCurrentPdfTitle(title);
+    setIsPdfModalOpen(true);
+  };
 
   const disclosureTitles = disclosureData?.map((section) => section.title) || [];
 
@@ -17,70 +27,70 @@ const MandatoryDisclosure = () => {
       <div className="lg2:mx-24 mx-5">
         <h1 className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold pb-1 lg:pb-10">Mandatory Disclosure</h1>
         <div className="grid grid-cols-1  md:grid-cols-12 mt-10">
-            
           <div className="col-span-3  self-start ">
             <div className="sticky top-20 h-fit">
-            
-            {/* Mobile Dropdown */}
-            <div className="block md:hidden mb-6">
-              <CustomSelect
-                value={disclosureData[selectedIndex]?.title || ""}
-                onChange={(e) => {
-                  const newIndex = disclosureData.findIndex((item) => item.title === e.target.value);
-                  if (newIndex !== -1) setSelectedIndex(newIndex);
-                }}
-                options={disclosureTitles}
-              />
-            </div>
+              {/* Mobile Dropdown */}
+              <div className="block md:hidden mb-6">
+                <CustomSelect
+                  value={disclosureData[selectedIndex]?.title || ""}
+                  onChange={(e) => {
+                    const newIndex = disclosureData.findIndex((item) => item.title === e.target.value);
+                    if (newIndex !== -1) setSelectedIndex(newIndex);
+                  }}
+                  options={disclosureTitles}
+                />
+              </div>
 
-            {/* Desktop Sidebar */}
-            <div className="hidden md:block">
-            {disclosureData?.map((section, index) => (
-              <h1
-                key={index}
-                onClick={() => setSelectedIndex(index)}
-                className={`border-b-2  pb-3 mb-3 border-border cursor-pointer ${
-                  selectedIndex === index ? "text-[#2884CA] font-bold text-[20px]" : "text-textGray font-[500] text-[20px]"
-                }`}
-              >
-                {section.title}
-              </h1>
-            ))}
+              {/* Desktop Sidebar */}
+              <div className="hidden md:block">
+                {disclosureData?.map((section, index) => (
+                  <h1
+                    key={index}
+                    onClick={() => setSelectedIndex(index)}
+                    className={`border-b-2  pb-3 mb-3 border-border cursor-pointer ${
+                      selectedIndex === index ? "text-[#2884CA] font-bold text-[20px]" : "text-textGray font-[500] text-[20px]"
+                    }`}
+                  >
+                    {section.title}
+                  </h1>
+                ))}
+              </div>
             </div>
           </div>
-          
-          </div>
-            <div className="col-span-1"></div>
+          <div className="col-span-1"></div>
           <div className="col-span-8 mt-5 max-h-[70vh]  md:max-h-[140vh] scrollable overflow-y-auto  pr-2 lg:mt-0">
             {selectedIndex === 4 ? (
               <>
                 <div className="overflow-x-auto w-full">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">List of UGC 2(f) Status</h2>
-                   <div className="rounded overflow-hidden border border-gray-200 ">
-                  <table className="w-full text-left text-[13px] md:text-[15px]">
-                    <thead className="bg-gray-100">
-                      <tr className="bg-[#F3F8FC] text-[#2884CA]">
-                        <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
-                        <th className="py-3 md:px-4 px-1 border-b">Year</th>
-                        <th className="py-3 md:px-4 px-1 border-b">View</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {disclosureData[4]?.data?.map((item, idx) => (
-                        <tr key={idx} className="text-textGray">
-                          <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
-                          <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
-                          <td className="py-3 md:px-4 px-1 border-b">
-                            {item.links?.[0]?.href && (
-                              <a href={item.links[0].href} target="_blank"  className="text-[#2884CA] hover:underline">
-                                {item.links[0].text || "Download"}
-                              </a>
-                            )}
-                          </td>
+                  <div className="rounded overflow-hidden border border-gray-200 ">
+                    <table className="w-full text-left text-[13px] md:text-[15px]">
+                      <thead className="bg-gray-100">
+                        <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                          <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
+                          <th className="py-3 md:px-4 px-1 border-b">Year</th>
+                          <th className="py-3 md:px-4 px-1 border-b">View</th>
                         </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                      </thead>
+                      <tbody>
+                        {disclosureData[4]?.data?.map((item, idx) => (
+                          <tr key={idx} className="text-textGray">
+                            <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">
+                              {item.links?.[0]?.href && (
+                                <div
+                                  onClick={() => handleOpenPdf(item.links[0].href, item.links[0].text || item.title)}
+                                  className="text-[#2884CA] hover:underline cursor-pointer"
+                                >
+                                  {item.links[0].text || "Download"}
+                                </div>
+                              )}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </>
@@ -88,191 +98,209 @@ const MandatoryDisclosure = () => {
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">Audit Report</h2>
-                       <div className="rounded overflow-hidden border border-gray-200 w-full">
-                  <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
-                    <thead >
-                      <tr className="bg-[#F3F8FC] text-[#2884CA]">
-                        <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
-                        <th className="py-3 md:px-4 px-1 border-b">Year</th>
-                        <th className="py-3 md:px-4 px-1 border-b">View</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {disclosureData[5]?.data?.map((item, idx) => (
-                        <tr key={idx} className="text-textGray">
-                          <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
-                          <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
-                          <td className="py-3 md:px-4 px-1 border-b">
-                            {item.links?.[0]?.href && (
-                              <a href={item.links[0].href} target="_blank" rel="noopener noreferrer" className="text-[#2884CA] hover:underline">
-                                {item.links[0].text || "Download"}
-                              </a>
-                            )}
-                          </td>
+                  <div className="rounded overflow-hidden border border-gray-200 w-full">
+                    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                      <thead>
+                        <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                          <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
+                          <th className="py-3 md:px-4 px-1 border-b">Year</th>
+                          <th className="py-3 md:px-4 px-1 border-b">View</th>
                         </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                      </thead>
+                      <tbody>
+                        {disclosureData[5]?.data?.map((item, idx) => (
+                          <tr key={idx} className="text-textGray">
+                            <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">
+                              {item.links?.[0]?.href && (
+                                <div
+                                  onClick={() => handleOpenPdf(item.links[0].href, item.links[0].text || item.title)}
+                                  className="text-[#2884CA] hover:underline cursor-pointer"
+                                >
+                                  {item.links[0].text || "Download"}
+                                </div>
+                              )}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </>
-            ):selectedIndex === 2 ? (
+            ) : selectedIndex === 2 ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">AICTE Approval</h2>
-                    <div className="rounded overflow-hidden border border-gray-200 w-full">
-                  <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
-                    <thead >
-                      <tr className="bg-[#F3F8FC] text-[#2884CA]">
-                        <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
-                        <th className="py-3 md:px-4 px-1 border-b">Description</th>
-                        <th className="py-3 md:px-4 px-1 border-b">View</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {disclosureData[2]?.data?.map((item, idx) => (
-                        <tr key={idx} className="text-textGray">
-                          <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
-                          <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
-                          <td className="py-3 md:px-4 px-1 border-b">
-                            {item.links?.[0]?.href && (
-                              <a href={item.links[0].href} target="_blank" rel="noopener noreferrer" className="text-[#2884CA] hover:underline">
-                                View {item.links[0].text || "Download"}
-                              </a>
-                            )}
-                          </td>
+                  <div className="rounded overflow-hidden border border-gray-200 w-full">
+                    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                      <thead>
+                        <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                          <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
+                          <th className="py-3 md:px-4 px-1 border-b">Description</th>
+                          <th className="py-3 md:px-4 px-1 border-b">View</th>
                         </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                      </thead>
+                      <tbody>
+                        {disclosureData[2]?.data?.map((item, idx) => (
+                          <tr key={idx} className="text-textGray">
+                            <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">
+                              {item.links?.[0]?.href && (
+                                <div
+                                  onClick={() => handleOpenPdf(item.links[0].href, `View ${item.links[0].text || "Download"}`)}
+                                  className="text-[#2884CA] hover:underline cursor-pointer"
+                                >
+                                  View {item.links[0].text || "Download"}
+                                </div>
+                              )}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </>
-            ):selectedIndex === 3 ? (
+            ) : selectedIndex === 3 ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">VTU Affiliation</h2>
-                    <div className="rounded overflow-hidden border border-gray-200 w-full">
-                  <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
-                    <thead >
-                      <tr className="bg-[#F3F8FC] text-[#2884CA]">
-                        <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
-                        <th className="py-3 md:px-4 px-1 border-b">Description</th>
-                        <th className="py-3 md:px-4 px-1 border-b">View</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {disclosureData[3]?.data?.map((item, idx) => (
-                        <tr key={idx} className="text-textGray">
-                          <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
-                          <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
-                          <td className="py-3 md:px-4 px-1 border-b">
-                            {item.links?.[0]?.href && (
-                              <a href={item.links[0].href} target="_blank" rel="noopener noreferrer" className="text-[#2884CA] hover:underline">
-                                View {item.links[0].text || "Download"}
-                              </a>
-                            )}
-                          </td>
+                  <div className="rounded overflow-hidden border border-gray-200 w-full">
+                    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                      <thead>
+                        <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                          <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
+                          <th className="py-3 md:px-4 px-1 border-b">Description</th>
+                          <th className="py-3 md:px-4 px-1 border-b">View</th>
                         </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                      </thead>
+                      <tbody>
+                        {disclosureData[3]?.data?.map((item, idx) => (
+                          <tr key={idx} className="text-textGray">
+                            <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">
+                              {item.links?.[0]?.href && (
+                                <div
+                                  onClick={() => handleOpenPdf(item.links[0].href, `View ${item.links[0].text || "Download"}`)}
+                                  className="text-[#2884CA] hover:underline cursor-pointer"
+                                >
+                                  View {item.links[0].text || "Download"}
+                                </div>
+                              )}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </>
-            ):selectedIndex === 13 ? (
+            ) : selectedIndex === 13 ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">UGC Declaration</h2>
-                    <div className="rounded overflow-hidden border border-gray-200 w-full">
-                  <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
-                    <thead >
-                      <tr className="bg-[#F3F8FC] text-[#2884CA]">
-                        <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
-                        <th className="py-3 md:px-4 px-1 border-b">Description</th>
-                        <th className="py-3 md:px-4 px-1 border-b">View</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {disclosureData[13]?.data?.map((item, idx) => (
-                        <tr key={idx} className="text-textGray">
-                          <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
-                          <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
-                          <td className="py-3 md:px-4 px-1 border-b">
-                            {item.links?.[0]?.href && (
-                              <a href={item.links[0].href} target="_blank" rel="noopener noreferrer" className="text-[#2884CA] hover:underline">
-                                View UGC Declaration
-                              </a>
-                            )}
-                          </td>
+                  <div className="rounded overflow-hidden border border-gray-200 w-full">
+                    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                      <thead>
+                        <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                          <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
+                          <th className="py-3 md:px-4 px-1 border-b">Description</th>
+                          <th className="py-3 md:px-4 px-1 border-b">View</th>
                         </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                      </thead>
+                      <tbody>
+                        {disclosureData[13]?.data?.map((item, idx) => (
+                          <tr key={idx} className="text-textGray">
+                            <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">
+                              {item.links?.[0]?.href && (
+                                <div
+                                  onClick={() => handleOpenPdf(item.links[0].href, "View UGC Declaration")}
+                                  className="text-[#2884CA] hover:underline cursor-pointer"
+                                >
+                                  View UGC Declaration
+                                </div>
+                              )}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </>
-            ):selectedIndex === 14 ? (
+            ) : selectedIndex === 14 ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">Fee Refund Policy</h2>
-                   <div className="rounded overflow-hidden border border-gray-200 w-full">
-                  <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
-                    <thead >
-                      <tr className="bg-[#F3F8FC] text-[#2884CA]">
-                        <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
-                        <th className="py-3 md:px-4 px-1 border-b">Description</th>
-                        <th className="py-3 md:px-4 px-1 border-b">View</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {disclosureData[14]?.data?.map((item, idx) => (
-                        <tr key={idx} className="text-textGray">
-                          <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
-                          <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
-                          <td className="py-3 md:px-4 px-1 border-b">
-                            {item.links?.[0]?.href && (
-                              <a href={item.links[0].href} target="_blank" rel="noopener noreferrer" className="text-[#2884CA] hover:underline">
-                                View Policy
-                              </a>
-                            )}
-                          </td>
+                  <div className="rounded overflow-hidden border border-gray-200 w-full">
+                    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                      <thead>
+                        <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                          <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
+                          <th className="py-3 md:px-4 px-1 border-b">Description</th>
+                          <th className="py-3 md:px-4 px-1 border-b">View</th>
                         </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                      </thead>
+                      <tbody>
+                        {disclosureData[14]?.data?.map((item, idx) => (
+                          <tr key={idx} className="text-textGray">
+                            <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">
+                              {item.links?.[0]?.href && (
+                                <div
+                                  onClick={() => handleOpenPdf(item.links[0].href, "View Policy")}
+                                  className="text-[#2884CA] hover:underline cursor-pointer"
+                                >
+                                  View Policy
+                                </div>
+                              )}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </>
-            ):selectedIndex === 8 ? (
+            ) : selectedIndex === 8 ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">Fees to be Paid</h2>
-                   <div className="rounded overflow-hidden border border-gray-200 w-full">
-                  <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
-                    <thead >
-                      <tr className="bg-[#F3F8FC] text-[#2884CA]">
-                        <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
-                        <th className="py-3 md:px-4 px-1 border-b">Year</th>
-                        <th className="py-3 md:px-4 px-1 border-b">View</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {disclosureData[8]?.data?.map((item, idx) => (
-                        <tr key={idx} className="text-textGray">
-                          <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
-                          <td className="py-3 md:px-4 px-1 border-b">{item.year}</td>
-                          <td className="py-3 md:px-4 px-1 border-b">
-                            {item.links?.[0]?.href && (
-                              <a href={item.links[0].href} target="_blank" rel="noopener noreferrer" className="text-[#2884CA] hover:underline">
-                                View UG Fees
-                              </a>
-                            )}
-                          </td>
+                  <div className="rounded overflow-hidden border border-gray-200 w-full">
+                    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                      <thead>
+                        <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                          <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
+                          <th className="py-3 md:px-4 px-1 border-b">Year</th>
+                          <th className="py-3 md:px-4 px-1 border-b">View</th>
                         </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                      </thead>
+                      <tbody>
+                        {disclosureData[8]?.data?.map((item, idx) => (
+                          <tr key={idx} className="text-textGray">
+                            <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">{item.year}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">
+                              {item.links?.[0]?.href && (
+                                <div
+                                  onClick={() => handleOpenPdf(item.links[0].href, "View UG Fees")}
+                                  className="text-[#2884CA] hover:underline cursor-pointer"
+                                >
+                                  View UG Fees
+                                </div>
+                              )}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </>
@@ -281,30 +309,33 @@ const MandatoryDisclosure = () => {
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">GC Meeting</h2>
                   <div className="rounded overflow-hidden border border-gray-200 w-full">
-                  <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
-                    <thead >
-                      <tr className="bg-[#F3F8FC] text-[#2884CA]">
-                        <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
-                        <th className="py-3 md:px-4 px-1 border-b">Description</th>
-                        <th className="py-3 md:px-4 px-1 border-b">View</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {disclosureData[6]?.data?.map((item, idx) => (
-                        <tr key={idx} className="text-textGray">
-                          <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
-                          <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
-                          <td className="py-3 md:px-4 px-1 border-b">
-                            {item.links?.[0]?.href && (
-                              <a href={item.links[0].href} target="_blank" rel="noopener noreferrer" className="text-[#2884CA] hover:underline">
-                                {item.links[0].text || "View Document"}
-                              </a>
-                            )}
-                          </td>
+                    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                      <thead>
+                        <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                          <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
+                          <th className="py-3 md:px-4 px-1 border-b">Description</th>
+                          <th className="py-3 md:px-4 px-1 border-b">View</th>
                         </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                      </thead>
+                      <tbody>
+                        {disclosureData[6]?.data?.map((item, idx) => (
+                          <tr key={idx} className="text-textGray">
+                            <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">
+                              {item.links?.[0]?.href && (
+                                <div
+                                  onClick={() => handleOpenPdf(item.links[0].href, item.links[0].text || "View Document")}
+                                  className="text-[#2884CA] hover:underline cursor-pointer"
+                                >
+                                  {item.links[0].text || "View Document"}
+                                </div>
+                              )}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </>
@@ -370,9 +401,9 @@ const MandatoryDisclosure = () => {
                 </ul>
                 <h2 className="text-lg font-bold text-textGray mt-6 mb-2">Anti Ragging Committee Organisation Chart</h2>
                 <div className="flex justify-center">
-                <div className="relative w-[50%] h-[600px] object-cover">
-                  <Image alt="ragging" fill src="/mandatory/ragging-commite/antiraggingCommitte.jpg" />
-                </div>
+                  <div className="relative w-[50%] h-[600px] object-cover">
+                    <Image alt="ragging" fill src="/mandatory/ragging-commite/antiraggingCommitte.jpg" />
+                  </div>
                 </div>
                 <h2 className="text-lg font-bold text-textGray mt-2 mb-2">Process:</h2>
                 <ul className="space-y-2 list-decimal pl-5 md:text-lg  text-[14px] leading-7  text-textGray">
@@ -394,160 +425,369 @@ const MandatoryDisclosure = () => {
                   <li>The Committee meets in case any incident of ragging is reported. Necessary action is taken based on the issue.</li>
                 </ul>
                 <h2 className="text-lg font-bold text-textGray mt-6 mb-2">Anti Ragging Committee Functioning Flowchart</h2>
-                  <div className="flex justify-center">
-                <div className="relative w-[50%] h-[600px] object-cover">
-                  <Image alt="ragging" fill src="/mandatory/ragging-commite/antiragging.png" />
-                </div>
+                <div className="flex justify-center">
+                  <div className="relative w-[50%] h-[600px] object-cover">
+                    <Image alt="ragging" fill src="/mandatory/ragging-commite/antiragging.png" />
+                  </div>
                 </div>
                 {/* <h2 className="text-lg font-bold text-textGray mt-6 mb-2">ANTI RAGGING COMMITTEE (2024-25)</h2>
                 <h2 className="text-lg font-bold text-textGray mt-2 mb-2">Review Committee:</h2> */}
-              <div className="overflow-x-auto">
-  <h2 className="text-xl font-bold mb-4 mt-8 text-textGray">ANTI RAGGING COMMITTEE (2025-26)</h2>
-  <div className="rounded overflow-hidden border border-gray-200 w-full">
-    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
-      <thead>
-        <tr className="bg-[#F3F8FC] text-[#2884CA]">
-          <th className="py-3 md:px-4 px-1 border-b">Name</th>
-          <th className="py-3 md:px-4 px-1 border-b">Designation</th>
-          <th className="py-3 md:px-4 px-1 border-b">Department</th>
-        </tr>
-      </thead>
-      <tbody className="text-textGray">
-        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Nagesh H.R.</td><td className="py-3 md:px-4 px-1 border-b">Chairman</td><td className="py-3 md:px-4 px-1 border-b">CSE</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Priya V Frank</td><td className="py-3 md:px-4 px-1 border-b">Nodal Officer</td><td className="py-3 md:px-4 px-1 border-b">SW</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Demian Antony D’Mello</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">CSE</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Niranjan Rai</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">MECH</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Karthik Pai B H</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">CSE</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Raghavendra M. Shetty K</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">ECE</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. H. Manoj T. Gadiyar</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">ISE</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Praahas Amin</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">CSD</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Basappa B. Kodada</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">AIML</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Rajgopal K T</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">CSBS</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. N. Satheesha Kumara</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">S&amp;H</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Gowrish Nagvekar</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">Hostel – Chief Warden</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Ms. Prathibha M</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">AIML</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mrs. Jacintha Alfred Lobo</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">WARDEN</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Shabarish Kumar B V</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">WARDEN</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Manoj Kumar</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">WARDEN</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Ms. Meera P.</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">WARDEN</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mrs. Usha</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">WARDEN</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. M Prashanth Kamath</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">AO</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Hareesha A</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">PD</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">PSI, Bantwal Rural Police Station, Bantwal</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">Police Dept.</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Roopesh Baliga - 4CB23CS128</td><td className="py-3 md:px-4 px-1 border-b">Student Member</td><td className="py-3 md:px-4 px-1 border-b">CSE</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Ms. Vaidehi V Pai - 4CB23CS180</td><td className="py-3 md:px-4 px-1 border-b">Student Member</td><td className="py-3 md:px-4 px-1 border-b">CSE</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Ms. Prapthi Y Poojari - 4CB22EC029</td><td className="py-3 md:px-4 px-1 border-b">Student Member</td><td className="py-3 md:px-4 px-1 border-b">ECE</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Sudeer Nayak - 4CB23IS111</td><td className="py-3 md:px-4 px-1 border-b">Student Member</td><td className="py-3 md:px-4 px-1 border-b">ISE</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Abhishek S Naik - 4CB22AI003</td><td className="py-3 md:px-4 px-1 border-b">Student Member</td><td className="py-3 md:px-4 px-1 border-b">AIML</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Ankur A Prabhu - 4CB23CG006</td><td className="py-3 md:px-4 px-1 border-b">Student Member</td><td className="py-3 md:px-4 px-1 border-b">CSD</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. H Balaji Nayak - 4CB23CB021</td><td className="py-3 md:px-4 px-1 border-b">Student Member</td><td className="py-3 md:px-4 px-1 border-b">CSBS</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Rohil S Salian - 4CB24CB040</td><td className="py-3 md:px-4 px-1 border-b">Student Member</td><td className="py-3 md:px-4 px-1 border-b">CSBS</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Ms. Dithwi R Shetty - I year</td><td className="py-3 md:px-4 px-1 border-b">Student Member</td><td className="py-3 md:px-4 px-1 border-b">AIML</td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-                <div className="overflow-x-auto mt-10">
-                  <h2 className="text-xl font-bold mb-4 text-textGray">Anti-Ragging Cell (2025–26)</h2>
-                   <div className="rounded overflow-hidden border border-gray-200 w-full">
-                  <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
-                    <thead className="bg-[#F3F8FC] text-[#2884CA]">
-                      <tr>
-                        <th className="py-3 md:px-4 px-1 border-b">Name</th>
-                        <th className="py-3 md:px-4 px-1 border-b">Designation</th>
-                        <th className="py-3 md:px-4 px-1 border-b">Department</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-textGray">
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Dr. N. Satheesha Kumar</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Coordinator</td>
-                        <td className="py-3 md:px-4 px-1 border-b">S&amp;H</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Guruprsad Upadhya</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">S&amp;H</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Satish Hegde H</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">S&amp;H</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 md:px-4 px-1 border-b">Mr. Prashantha Somayaji K</td>
-                        <td className="py-3 md:px-4 px-1 border-b">Member</td>
-                        <td className="py-3 md:px-4 px-1 border-b">S&amp;H</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div className="overflow-x-auto">
+                  <h2 className="text-xl font-bold mb-4 mt-8 text-textGray">ANTI RAGGING COMMITTEE (2025-26)</h2>
+                  <div className="rounded overflow-hidden border border-gray-200 w-full">
+                    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                      <thead>
+                        <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                          <th className="py-3 md:px-4 px-1 border-b">Name</th>
+                          <th className="py-3 md:px-4 px-1 border-b">Designation</th>
+                          <th className="py-3 md:px-4 px-1 border-b">Department</th>
+                        </tr>
+                      </thead>
+                      <tbody className="text-textGray">
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Dr. Nagesh H.R.</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Chairman</td>
+                          <td className="py-3 md:px-4 px-1 border-b">CSE</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Dr. Priya V Frank</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Nodal Officer</td>
+                          <td className="py-3 md:px-4 px-1 border-b">SW</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Dr. Demian Antony D’Mello</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">CSE</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Dr. Niranjan Rai</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">MECH</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Dr. Karthik Pai B H</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">CSE</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Dr. Raghavendra M. Shetty K</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">ECE</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Dr. H. Manoj T. Gadiyar</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">ISE</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Dr. Praahas Amin</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">CSD</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Dr. Basappa B. Kodada</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">AIML</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Dr. Rajgopal K T</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">CSBS</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Dr. N. Satheesha Kumara</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">S&amp;H</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Gowrish Nagvekar</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Hostel – Chief Warden</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Ms. Prathibha M</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">AIML</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mrs. Jacintha Alfred Lobo</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">WARDEN</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Shabarish Kumar B V</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">WARDEN</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Manoj Kumar</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">WARDEN</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Ms. Meera P.</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">WARDEN</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mrs. Usha</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">WARDEN</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. M Prashanth Kamath</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">AO</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Hareesha A</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">PD</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">PSI, Bantwal Rural Police Station, Bantwal</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Police Dept.</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Roopesh Baliga - 4CB23CS128</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">CSE</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Ms. Vaidehi V Pai - 4CB23CS180</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">CSE</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Ms. Prapthi Y Poojari - 4CB22EC029</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">ECE</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Sudeer Nayak - 4CB23IS111</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">ISE</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Abhishek S Naik - 4CB22AI003</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">AIML</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Ankur A Prabhu - 4CB23CG006</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">CSD</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. H Balaji Nayak - 4CB23CB021</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">CSBS</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Rohil S Salian - 4CB24CB040</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">CSBS</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Ms. Dithwi R Shetty - I year</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">AIML</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
-              <div className="overflow-x-auto mt-10">
-  <h2 className="text-xl font-bold mb-4 text-textGray">Flying Squad 1 (2025–26)</h2>
-  <div className="rounded overflow-hidden border border-gray-200 w-full">
-    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
-      <thead className="bg-[#F3F8FC] text-[#2884CA]">
-        <tr>
-          <th className="py-3 md:px-4 px-1 border-b">Name</th>
-          <th className="py-3 md:px-4 px-1 border-b">Designation</th>
-          <th className="py-3 md:px-4 px-1 border-b">Department</th>
-        </tr>
-      </thead>
-      <tbody className="text-textGray">
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Sathish S Nadig</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">CSBS</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mrs. Sadhana B</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">ISE</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Sandesh Kamath</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">AIML</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Ramesh E</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">CSBS</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Sunil Kumar B L</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">CSE</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Nischaykumar Hegde</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">CSD</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mrs. Archana S</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">AIML</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Sandeep S</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">S&amp;H</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mrs. Jacintha Alfred Lobo</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">Warden</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Ms. Meera P</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">Warden</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Manoj Kumar</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">Warden</td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-              <div className="overflow-x-auto mt-10">
-  <h2 className="text-xl font-bold mb-4 text-textGray">Flying Squad 2 (2025–26)</h2>
-  <div className="rounded overflow-hidden border border-gray-200 w-full">
-    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
-      <thead className="bg-[#F3F8FC] text-[#2884CA]">
-        <tr>
-          <th className="py-3 md:px-4 px-1 border-b">Name</th>
-          <th className="py-3 md:px-4 px-1 border-b">Designation</th>
-          <th className="py-3 md:px-4 px-1 border-b">Department</th>
-        </tr>
-      </thead>
-      <tbody className="text-textGray">
-        <tr><td className="py-3 md:px-4 px-1 border-b">Dr. Prameela Kolake</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">S&amp;H</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Ms. Meghashree</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">S&amp;H</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Ms. Navyashree Shetty B</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">S&amp;H</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Ramesh S Nayak</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">ISE</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Vinay H S</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">ECE</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mrs. Pooja Kini</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">CSBS</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Adithya M</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">CSE</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mrs. Sourabha S Rai</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">CSD</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Siju V. Soman</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">AIML</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Shabarish Kumar</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">WARDEN</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mrs. Usha</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">WARDEN</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">Mr. Hareesh</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">PD</td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
+                <div className="overflow-x-auto mt-10">
+                  <h2 className="text-xl font-bold mb-4 text-textGray">Anti-Ragging Cell (2025–26)</h2>
+                  <div className="rounded overflow-hidden border border-gray-200 w-full">
+                    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                      <thead className="bg-[#F3F8FC] text-[#2884CA]">
+                        <tr>
+                          <th className="py-3 md:px-4 px-1 border-b">Name</th>
+                          <th className="py-3 md:px-4 px-1 border-b">Designation</th>
+                          <th className="py-3 md:px-4 px-1 border-b">Department</th>
+                        </tr>
+                      </thead>
+                      <tbody className="text-textGray">
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Dr. N. Satheesha Kumar</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Coordinator</td>
+                          <td className="py-3 md:px-4 px-1 border-b">S&amp;H</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Guruprsad Upadhya</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">S&amp;H</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Satish Hegde H</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">S&amp;H</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Prashantha Somayaji K</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">S&amp;H</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div className="overflow-x-auto mt-10">
+                  <h2 className="text-xl font-bold mb-4 text-textGray">Flying Squad 1 (2025–26)</h2>
+                  <div className="rounded overflow-hidden border border-gray-200 w-full">
+                    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                      <thead className="bg-[#F3F8FC] text-[#2884CA]">
+                        <tr>
+                          <th className="py-3 md:px-4 px-1 border-b">Name</th>
+                          <th className="py-3 md:px-4 px-1 border-b">Designation</th>
+                          <th className="py-3 md:px-4 px-1 border-b">Department</th>
+                        </tr>
+                      </thead>
+                      <tbody className="text-textGray">
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Sathish S Nadig</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">CSBS</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mrs. Sadhana B</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">ISE</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Sandesh Kamath</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">AIML</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Ramesh E</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">CSBS</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Dr. Sunil Kumar B L</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">CSE</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Dr. Nischaykumar Hegde</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">CSD</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mrs. Archana S</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">AIML</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Sandeep S</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">S&amp;H</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mrs. Jacintha Alfred Lobo</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Warden</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Ms. Meera P</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Warden</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Manoj Kumar</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Warden</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div className="overflow-x-auto mt-10">
+                  <h2 className="text-xl font-bold mb-4 text-textGray">Flying Squad 2 (2025–26)</h2>
+                  <div className="rounded overflow-hidden border border-gray-200 w-full">
+                    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                      <thead className="bg-[#F3F8FC] text-[#2884CA]">
+                        <tr>
+                          <th className="py-3 md:px-4 px-1 border-b">Name</th>
+                          <th className="py-3 md:px-4 px-1 border-b">Designation</th>
+                          <th className="py-3 md:px-4 px-1 border-b">Department</th>
+                        </tr>
+                      </thead>
+                      <tbody className="text-textGray">
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Dr. Prameela Kolake</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">S&amp;H</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Ms. Meghashree</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">S&amp;H</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Ms. Navyashree Shetty B</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">S&amp;H</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Ramesh S Nayak</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">ISE</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Vinay H S</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">ECE</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mrs. Pooja Kini</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">CSBS</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Adithya M</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">CSE</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mrs. Sourabha S Rai</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">CSD</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Siju V. Soman</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">AIML</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Shabarish Kumar</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">WARDEN</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mrs. Usha</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">WARDEN</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3 md:px-4 px-1 border-b">Mr. Hareesh</td>
+                          <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                          <td className="py-3 md:px-4 px-1 border-b">PD</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </>
             ) : selectedIndex === 10 ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">Internal Committee</h2>
                   <h2 className="text-lg font-bold text-textGray mb-2">Objectives:</h2>
-                  <ul className="space-y-1  pl-6   md:text-lg list-disc   text-[14px] leading-7  text-textGray" >
+                  <ul className="space-y-1  pl-6   md:text-lg list-disc   text-[14px] leading-7  text-textGray">
                     <li className=" items-start text-textGray">
                       To handle and resolve complaints related to harassment and discrimination against women effectively.
                     </li>
@@ -580,32 +820,76 @@ const MandatoryDisclosure = () => {
                     parents and any other stake holders.
                   </p>
                   <div className="overflow-x-auto mt-5">
-  <h2 className="text-xl font-bold mb-4 text-textGray">Internal Committee (IC) 2025–26</h2>
-  <div className="rounded overflow-hidden border border-gray-200 w-full">
-    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
-      <thead className="bg-[#F3F8FC] text-[#2884CA]">
-        <tr>
-          <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
-          <th className="py-3 md:px-4 px-1 border-b">Name</th>
-          <th className="py-3 md:px-4 px-1 border-b">Designation</th>
-          <th className="py-3 md:px-4 px-1 border-b">Department</th>
-        </tr>
-      </thead>
-      <tbody className="text-textGray">
-        <tr><td className="py-3 md:px-4 px-1 border-b">1.</td><td className="py-3 md:px-4 px-1 border-b">Dr. Priya V. Frank</td><td className="py-3 md:px-4 px-1 border-b">Chair Person</td><td className="py-3 md:px-4 px-1 border-b">S&amp;H</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">2.</td><td className="py-3 md:px-4 px-1 border-b">Dr. Prameela Kolake</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">S&amp;H</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">3.</td><td className="py-3 md:px-4 px-1 border-b">Mrs. Vidyalakshmi P B</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">S&amp;H</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">4.</td><td className="py-3 md:px-4 px-1 border-b">Mrs. Vinoda Baliga</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">S&amp;H</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">5.</td><td className="py-3 md:px-4 px-1 border-b">Mrs. Lavina Monteiro</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">ADMIN</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">6.</td><td className="py-3 md:px-4 px-1 border-b">Ms. Nanditha Chinivarda</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">S&amp;H / Counselor</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">7.</td><td className="py-3 md:px-4 px-1 border-b">Mrs. Archana Baliga, Secretary, Samvit Education Trust</td><td className="py-3 md:px-4 px-1 border-b">Member</td><td className="py-3 md:px-4 px-1 border-b">NGO</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">8.</td><td className="py-3 md:px-4 px-1 border-b">Ms. Sanjana Mahale – 4CB23AI087</td><td className="py-3 md:px-4 px-1 border-b">Student Member</td><td className="py-3 md:px-4 px-1 border-b">AIML</td></tr>
-        <tr><td className="py-3 md:px-4 px-1 border-b">9.</td><td className="py-3 md:px-4 px-1 border-b">Ms. Moolya Praveeksha Narayan – 4CB23CS094</td><td className="py-3 md:px-4 px-1 border-b">Student Member</td><td className="py-3 md:px-4 px-1 border-b">CSE</td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
+                    <h2 className="text-xl font-bold mb-4 text-textGray">Internal Committee (IC) 2025–26</h2>
+                    <div className="rounded overflow-hidden border border-gray-200 w-full">
+                      <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                        <thead className="bg-[#F3F8FC] text-[#2884CA]">
+                          <tr>
+                            <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
+                            <th className="py-3 md:px-4 px-1 border-b">Name</th>
+                            <th className="py-3 md:px-4 px-1 border-b">Designation</th>
+                            <th className="py-3 md:px-4 px-1 border-b">Department</th>
+                          </tr>
+                        </thead>
+                        <tbody className="text-textGray">
+                          <tr>
+                            <td className="py-3 md:px-4 px-1 border-b">1.</td>
+                            <td className="py-3 md:px-4 px-1 border-b">Dr. Priya V. Frank</td>
+                            <td className="py-3 md:px-4 px-1 border-b">Chair Person</td>
+                            <td className="py-3 md:px-4 px-1 border-b">S&amp;H</td>
+                          </tr>
+                          <tr>
+                            <td className="py-3 md:px-4 px-1 border-b">2.</td>
+                            <td className="py-3 md:px-4 px-1 border-b">Dr. Prameela Kolake</td>
+                            <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                            <td className="py-3 md:px-4 px-1 border-b">S&amp;H</td>
+                          </tr>
+                          <tr>
+                            <td className="py-3 md:px-4 px-1 border-b">3.</td>
+                            <td className="py-3 md:px-4 px-1 border-b">Mrs. Vidyalakshmi P B</td>
+                            <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                            <td className="py-3 md:px-4 px-1 border-b">S&amp;H</td>
+                          </tr>
+                          <tr>
+                            <td className="py-3 md:px-4 px-1 border-b">4.</td>
+                            <td className="py-3 md:px-4 px-1 border-b">Mrs. Vinoda Baliga</td>
+                            <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                            <td className="py-3 md:px-4 px-1 border-b">S&amp;H</td>
+                          </tr>
+                          <tr>
+                            <td className="py-3 md:px-4 px-1 border-b">5.</td>
+                            <td className="py-3 md:px-4 px-1 border-b">Mrs. Lavina Monteiro</td>
+                            <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                            <td className="py-3 md:px-4 px-1 border-b">ADMIN</td>
+                          </tr>
+                          <tr>
+                            <td className="py-3 md:px-4 px-1 border-b">6.</td>
+                            <td className="py-3 md:px-4 px-1 border-b">Ms. Nanditha Chinivarda</td>
+                            <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                            <td className="py-3 md:px-4 px-1 border-b">S&amp;H / Counselor</td>
+                          </tr>
+                          <tr>
+                            <td className="py-3 md:px-4 px-1 border-b">7.</td>
+                            <td className="py-3 md:px-4 px-1 border-b">Mrs. Archana Baliga, Secretary, Samvit Education Trust</td>
+                            <td className="py-3 md:px-4 px-1 border-b">Member</td>
+                            <td className="py-3 md:px-4 px-1 border-b">NGO</td>
+                          </tr>
+                          <tr>
+                            <td className="py-3 md:px-4 px-1 border-b">8.</td>
+                            <td className="py-3 md:px-4 px-1 border-b">Ms. Sanjana Mahale – 4CB23AI087</td>
+                            <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
+                            <td className="py-3 md:px-4 px-1 border-b">AIML</td>
+                          </tr>
+                          <tr>
+                            <td className="py-3 md:px-4 px-1 border-b">9.</td>
+                            <td className="py-3 md:px-4 px-1 border-b">Ms. Moolya Praveeksha Narayan – 4CB23CS094</td>
+                            <td className="py-3 md:px-4 px-1 border-b">Student Member</td>
+                            <td className="py-3 md:px-4 px-1 border-b">CSE</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
                 </div>
               </>
             ) : selectedIndex === 11 ? (
@@ -614,7 +898,9 @@ const MandatoryDisclosure = () => {
                   <h2 className="text-[20px] font-bold text-textGray mb-4">SC/ST, OBC, Minority Scholarship Information</h2>
 
                   <h2 className="text-xl font-bold  text-textGray mb-1">Details of Online Websites to Apply for Scholarships:</h2>
-                  <p className="md:text-lg  text-[14px] leading-7 mb-2  text-textGray">The student can apply for only one of the category scholarships given below.</p>
+                  <p className="md:text-lg  text-[14px] leading-7 mb-2  text-textGray">
+                    The student can apply for only one of the category scholarships given below.
+                  </p>
 
                   <ul className="space-y-1 md:text-lg  text-[14px] leading-7  text-textGray">
                     <li className="flex gap-2 items-start text-textGray">
@@ -715,80 +1001,79 @@ const MandatoryDisclosure = () => {
                     <Link href="/about/mandatory-disclosure/sc-st-grievance" className="text-[#2884CA] underline md:text-lg  text-[14px] leading-7 ">
                       Click Here to Submit Online Grievance
                     </Link>
-                   
                   </div>
 
                   <div className="overflow-x-auto mt-5">
                     <h2 className="text-xl font-bold mb-4 text-textGray">Committee List – SC/ST</h2>
-                     <div className="rounded overflow-hidden border border-gray-200 w-full">
-                    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
-                      <thead className="bg-[#F3F8FC] text-[#2884CA]">
-                        <tr>
-                          <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
-                          <th className="py-3 md:px-4 px-1 border-b">Name</th>
-                          <th className="py-3 md:px-4 px-1 border-b">Designation</th>
-                          <th className="py-3 md:px-4 px-1 border-b">Dept</th>
-                        </tr>
-                      </thead>
-                      <tbody className="text-textGray">
-                        {[
-                          ["1.", "Dr.Basappa Kodada", "Chairman", "AIML"],
-                          ["2.", "Mr. Ramesh Nayak", "Member", "ISE"],
-                          ["3.", "Mrs. Kanmani", "Member", "AIML"],
-                          ["4.", "Mr. Prashant Kamath", "Member", "ADMIN"],
-                          ["5.", "Mrs. Meera Hegde", "Member", "ADMIN"],
-                          ["6.", "Mr. Pradeep Ganapayya Gond - 4CB20EC027", "Student Member", "ECE"],
-                          ["7.", "Ms. Anjali - 4CB20IS008", "Student Member", "ISE"],
-                          ["8.", "Ms. Chaithra - 4CB21CS023", "Student Member", "CSE"],
-                          ["9.", "Mr. Manohara - 4CB21CB023", "Student Member", "CSBS"],
-                          ["10.", "Mr. Ganesh K - 4CB22IS013", "Student Member", "ISE"],
-                          ["11.", "Mr. Deekshith - 4CB22CG007", "Student Member", "CSD"],
-                        ].map(([sl, name, designation, dept], i) => (
-                          <tr key={i}>
-                            <td className="py-3 md:px-4 px-1 border-b">{sl}</td>
-                            <td className="py-3 md:px-4 px-1 border-b">{name}</td>
-                            <td className="py-3 md:px-4 px-1 border-b">{designation}</td>
-                            <td className="py-3 md:px-4 px-1 border-b">{dept}</td>
+                    <div className="rounded overflow-hidden border border-gray-200 w-full">
+                      <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                        <thead className="bg-[#F3F8FC] text-[#2884CA]">
+                          <tr>
+                            <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
+                            <th className="py-3 md:px-4 px-1 border-b">Name</th>
+                            <th className="py-3 md:px-4 px-1 border-b">Designation</th>
+                            <th className="py-3 md:px-4 px-1 border-b">Dept</th>
                           </tr>
-                        ))}
-                      </tbody>
-                    </table>
+                        </thead>
+                        <tbody className="text-textGray">
+                          {[
+                            ["1.", "Dr.Basappa Kodada", "Chairman", "AIML"],
+                            ["2.", "Mr. Ramesh Nayak", "Member", "ISE"],
+                            ["3.", "Mrs. Kanmani", "Member", "AIML"],
+                            ["4.", "Mr. Prashant Kamath", "Member", "ADMIN"],
+                            ["5.", "Mrs. Meera Hegde", "Member", "ADMIN"],
+                            ["6.", "Mr. Pradeep Ganapayya Gond - 4CB20EC027", "Student Member", "ECE"],
+                            ["7.", "Ms. Anjali - 4CB20IS008", "Student Member", "ISE"],
+                            ["8.", "Ms. Chaithra - 4CB21CS023", "Student Member", "CSE"],
+                            ["9.", "Mr. Manohara - 4CB21CB023", "Student Member", "CSBS"],
+                            ["10.", "Mr. Ganesh K - 4CB22IS013", "Student Member", "ISE"],
+                            ["11.", "Mr. Deekshith - 4CB22CG007", "Student Member", "CSD"],
+                          ].map(([sl, name, designation, dept], i) => (
+                            <tr key={i}>
+                              <td className="py-3 md:px-4 px-1 border-b">{sl}</td>
+                              <td className="py-3 md:px-4 px-1 border-b">{name}</td>
+                              <td className="py-3 md:px-4 px-1 border-b">{designation}</td>
+                              <td className="py-3 md:px-4 px-1 border-b">{dept}</td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
                     </div>
                   </div>
 
                   <div className="overflow-x-auto mt-10">
                     <h2 className="text-xl font-bold mb-4 text-textGray">Number of SC/ST/OBC Students Receiving Scholarship</h2>
                     <div className="rounded overflow-hidden border border-gray-200 w-full">
-                    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
-                      <thead className="bg-[#F3F8FC] text-[#2884CA]">
-                        <tr>
-                          <th className="py-3 md:px-4 px-1 border-b">Year</th>
-                          <th className="py-3 md:px-4 px-1 border-b">SC Students</th>
-                          <th className="py-3 md:px-4 px-1 border-b">ST Students</th>
-                          <th className="py-3 md:px-4 px-1 border-b">OBC Students</th>
-                        </tr>
-                      </thead>
-                      <tbody className="text-textGray">
-                        {[
-                          ["2023", "23", "7", "394"],
-                          ["2022", "11", "13", "512"],
-                          ["2021", "4", "7", "465"],
-                          ["2020", "1", "17", "466"],
-                          ["2019", "8", "22", "582"],
-                          ["2018", "16", "24", "585"],
-                          ["2017", "23", "26", "501"],
-                          ["2016", "33", "26", "425"],
-                          ["2015", "35", "23", "383"],
-                        ].map(([year, sc, st, obc], i) => (
-                          <tr key={i}>
-                            <td className="py-3 md:px-4 px-1 border-b">{year}</td>
-                            <td className="py-3 md:px-4 px-1 border-b">{sc}</td>
-                            <td className="py-3 md:px-4 px-1 border-b">{st}</td>
-                            <td className="py-3 md:px-4 px-1 border-b">{obc}</td>
+                      <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                        <thead className="bg-[#F3F8FC] text-[#2884CA]">
+                          <tr>
+                            <th className="py-3 md:px-4 px-1 border-b">Year</th>
+                            <th className="py-3 md:px-4 px-1 border-b">SC Students</th>
+                            <th className="py-3 md:px-4 px-1 border-b">ST Students</th>
+                            <th className="py-3 md:px-4 px-1 border-b">OBC Students</th>
                           </tr>
-                        ))}
-                      </tbody>
-                    </table>
+                        </thead>
+                        <tbody className="text-textGray">
+                          {[
+                            ["2023", "23", "7", "394"],
+                            ["2022", "11", "13", "512"],
+                            ["2021", "4", "7", "465"],
+                            ["2020", "1", "17", "466"],
+                            ["2019", "8", "22", "582"],
+                            ["2018", "16", "24", "585"],
+                            ["2017", "23", "26", "501"],
+                            ["2016", "33", "26", "425"],
+                            ["2015", "35", "23", "383"],
+                          ].map(([year, sc, st, obc], i) => (
+                            <tr key={i}>
+                              <td className="py-3 md:px-4 px-1 border-b">{year}</td>
+                              <td className="py-3 md:px-4 px-1 border-b">{sc}</td>
+                              <td className="py-3 md:px-4 px-1 border-b">{st}</td>
+                              <td className="py-3 md:px-4 px-1 border-b">{obc}</td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
@@ -848,7 +1133,9 @@ const MandatoryDisclosure = () => {
                     these cookies and know when a cookie is being sent to your computer. If you choose to refuse our cookies, you may not be able to
                     use some portions of our Service.
                   </p>
-                  <p className="md:text-lg  text-[14px] leading-7 text-textGray ">For more general information on cookies, please read "What Are Cookies".</p>
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray ">
+                    For more general information on cookies, please read "What Are Cookies".
+                  </p>
 
                   <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Service Providers</h2>
                   <p className="md:text-lg  text-[14px] leading-7 text-textGray ">
@@ -955,7 +1242,9 @@ const MandatoryDisclosure = () => {
                     these cookies and know when a cookie is being sent to your computer. If you choose to refuse our cookies, you may not be able to
                     use some portions of our Service.
                   </p>
-                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">For more general information on cookies, please read "What Are Cookies".</p>
+                  <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
+                    For more general information on cookies, please read "What Are Cookies".
+                  </p>
 
                   <h2 className="text-xl font-bold mt-5 mb-2 text-textGray">Service Providers</h2>
                   <p className="md:text-lg  text-[14px] leading-7  text-textGray">
@@ -1007,128 +1296,116 @@ const MandatoryDisclosure = () => {
                   </p>
                 </div>
               </>
-            ) :selectedIndex === 0?(
+            ) : selectedIndex === 0 ? (
               <>
-                   <h2 className="text-[24px] font-bold text-textGray mb-3">NBA Accreditation</h2>
+                <h2 className="text-[24px] font-bold text-textGray mb-3">NBA Accreditation</h2>
                 {disclosureData[selectedIndex]?.nba?.map((item, idx) => (
                   <div key={idx} className="mb-10">
-                    
                     <h2 className="text-[18px] font-semi-bold text-textGray mb-2">{item.title}</h2>
                     <ul className="space-y-1">
                       {item?.links?.map((link, i) =>
                         link?.href ? (
-
                           <li key={i} className="flex group items-center gap-2 text-[16px] text-textGray hover:text-[#2884CA] cursor-pointer">
-                            <Link href={link.href} target="_blank" className="flex items-center gap-2 hover:text-[#2884CA]">
+                            <div onClick={() => handleOpenPdf(link.href, link.text)} className="flex items-center gap-2 hover:text-[#2884CA]">
                               <HiLink className="text-textGray group-hover:text-[#2884CA] mt-2" />
                               <span className="text-textGray group-hover:text-[#2884CA] text-[16px] pt-2 leading-7">{link.text}</span>
-                            </Link>
+                            </div>
                           </li>
-                        ) : null
+                        ) : null,
                       )}
                     </ul>
                   </div>
                 ))}
-                 <h2 className="text-[24px] font-bold text-textGray mb-3">NAAC Accreditation</h2>
-                   <h2 className="text-[21px] font-bold text-textGray mb-3">IQAC</h2>
+                <h2 className="text-[24px] font-bold text-textGray mb-3">NAAC Accreditation</h2>
+                <h2 className="text-[21px] font-bold text-textGray mb-3">IQAC</h2>
                 {disclosureData[selectedIndex]?.naac?.iqac?.map((item, idx) => (
                   <div key={idx} className="mb-8">
-                    
                     <h2 className="text-[18px] font-semi-bold text-textGray mb-2">{item.title}</h2>
                     <ul className="space-y-1">
                       {item?.links?.map((link, i) =>
                         link?.href ? (
-
                           <li key={i} className="flex group items-center gap-2 text-[16px] text-textGray hover:text-[#2884CA] cursor-pointer">
-                            <Link href={link.href} target="_blank" className="flex items-center gap-2 hover:text-[#2884CA]">
+                            <div onClick={() => handleOpenPdf(link.href, link.text)} className="flex items-center gap-2 hover:text-[#2884CA]">
                               <HiLink className="text-textGray group-hover:text-[#2884CA] mt-2" />
                               <span className="text-textGray group-hover:text-[#2884CA] text-[16px] pt-2 leading-7">{link.text}</span>
-                            </Link>
+                            </div>
                           </li>
-                        ) : null
+                        ) : null,
                       )}
                     </ul>
                   </div>
                 ))}
 
-                   <h2 className="text-[21px] font-bold text-textGray mb-3">AQAR</h2>
+                <h2 className="text-[21px] font-bold text-textGray mb-3">AQAR</h2>
                 {disclosureData[selectedIndex]?.naac?.aqar?.map((item, idx) => (
                   <div key={idx} className="mb-8">
-                    
                     <h2 className="text-[18px] font-semi-bold text-textGray mb-2">{item.title}</h2>
                     <ul className="space-y-1">
                       {item?.links?.map((link, i) =>
                         link?.href ? (
-
                           <li key={i} className="flex group items-center gap-2 text-[16px] text-textGray hover:text-[#2884CA] cursor-pointer">
-                            <Link href={link.href} target="_blank" className="flex items-center gap-2 hover:text-[#2884CA]">
+                            <div onClick={() => handleOpenPdf(link.href, link.text)} className="flex items-center gap-2 hover:text-[#2884CA]">
                               <HiLink className="text-textGray group-hover:text-[#2884CA] mt-2" />
                               <span className="text-textGray group-hover:text-[#2884CA] text-[16px] pt-2 leading-7">{link.text}</span>
-                            </Link>
+                            </div>
                           </li>
-                        ) : null
+                        ) : null,
                       )}
                     </ul>
                   </div>
                 ))}
-                  <h2 className="text-[21px] font-bold text-textGray mb-3">NAAC</h2>
-                 {disclosureData[selectedIndex]?.naac?.nac?.map((item, idx) => (
+                <h2 className="text-[21px] font-bold text-textGray mb-3">NAAC</h2>
+                {disclosureData[selectedIndex]?.naac?.nac?.map((item, idx) => (
                   <div key={idx} className="mb-8">
-                    
                     <h2 className="text-[18px] font-semi-bold text-textGray mb-2">{item.title}</h2>
                     <ul className="space-y-1">
                       {item?.links?.map((link, i) =>
                         link?.href ? (
-
                           <li key={i} className="flex group items-center gap-2 text-[16px] text-textGray hover:text-[#2884CA] cursor-pointer">
                             <Link href={link.href} target="_blank" className="flex items-center gap-2 hover:text-[#2884CA]">
                               <HiLink className="text-textGray group-hover:text-[#2884CA] mt-2" />
                               <span className="text-textGray group-hover:text-[#2884CA] text-[16px] pt-2 leading-7">{link.text}</span>
                             </Link>
                           </li>
-                        ) : null
+                        ) : null,
                       )}
                     </ul>
                   </div>
                 ))}
-                 <h2 className="text-[24px] font-bold text-textGray mb-3">ISO Certifications</h2>
+                <h2 className="text-[24px] font-bold text-textGray mb-3">ISO Certifications</h2>
                 {disclosureData[selectedIndex]?.iso?.map((item, idx) => (
                   <div key={idx} className="mb-10">
-                    
                     <h2 className="text-[18px] font-semi-bold text-textGray mb-2">{item.title}</h2>
                     <ul className="space-y-1">
                       {item?.links?.map((link, i) =>
                         link?.href ? (
-
                           <li key={i} className="flex group items-center gap-2 text-[16px] text-textGray hover:text-[#2884CA] cursor-pointer">
-                            <Link href={link.href} target="_blank" className="flex items-center gap-2 hover:text-[#2884CA]">
+                            <div onClick={() => handleOpenPdf(link.href, link.text)} className="flex items-center gap-2 hover:text-[#2884CA]">
                               <HiLink className="text-textGray group-hover:text-[#2884CA] mt-2" />
                               <span className="text-textGray group-hover:text-[#2884CA] text-[16px] pt-2 leading-7">{link.text}</span>
-                            </Link>
+                            </div>
                           </li>
-                        ) : null
+                        ) : null,
                       )}
                     </ul>
                   </div>
                 ))}
               </>
-            ) :  selectedIndex === 1 || selectedIndex === 7 ? (
+            ) : selectedIndex === 1 || selectedIndex === 7 ? (
               <>
                 {disclosureData[selectedIndex]?.data?.map((item, idx) => (
                   <div key={idx} className="mb-10">
-                    
                     <h2 className="text-[20px] font-bold text-textGray mb-2">{item.title}</h2>
                     <ul className="space-y-1">
                       {item?.links?.map((link, i) =>
                         link?.href ? (
-
                           <li key={i} className="flex group items-center gap-2 text-[17px] text-textGray hover:text-[#2884CA] cursor-pointer">
-                            <Link href={link.href} target="_blank" className="flex items-center gap-2 hover:text-[#2884CA]">
+                            <div onClick={() => handleOpenPdf(link.href, link.text)} className="flex items-center gap-2 hover:text-[#2884CA]">
                               <HiLink className="text-textGray group-hover:text-[#2884CA] mt-2" />
                               <span className="text-textGray group-hover:text-[#2884CA] text-[16px] pt-2 leading-7">{link.text}</span>
-                            </Link>
+                            </div>
                           </li>
-                        ) : null
+                        ) : null,
                       )}
                     </ul>
                   </div>
@@ -1145,7 +1422,7 @@ const MandatoryDisclosure = () => {
                           <li key={i} className="flex items-center gap-2 text-[17px] text-textGray hover:text-[#2884CA] cursor-pointer">
                             <iframe src={link.href} className="w-[100%] h-[70vh]" />
                           </li>
-                        ) : null
+                        ) : null,
                       )}
                     </ul>
                   </div>
@@ -1155,6 +1432,7 @@ const MandatoryDisclosure = () => {
           </div>
         </div>
       </div>
+      <PDFModal isOpen={isPdfModalOpen} onClose={setIsPdfModalOpen} pdfUrl={currentPdfUrl} title={currentPdfTitle} />
     </section>
   );
 };

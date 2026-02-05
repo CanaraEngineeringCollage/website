@@ -58,8 +58,11 @@ interface CouncilMember {
 const page = () => {
   return (
     <>
-      <HeroSection />
-      <section className="px-6  lg:px-16 xl:px-0 mb-9 mt-5 lg:mt-10">
+      {/* <HeroSection /> */}
+       <section className="px-6  lg:px-16 xl:px-0  lg:mt-0 mt-2 ">
+        <HighlightsSection />
+      </section>
+      <section className="px-6  lg:px-16 xl:px-0 mb-9 mt-5 ">
         <AboutDepartment />
       </section>
       <section className="pb-10 md:px-6 lg:px-0 lg:mt-0 -mt-8">
@@ -78,9 +81,9 @@ const page = () => {
       <section className="px-6  lg:px-16 xl:px-0">
         <TopRecruiters />
       </section>
-      <section className="px-6  lg:px-16 xl:px-0  lg:mt-0 mt-2 ">
+      {/* <section className="px-6  lg:px-16 xl:px-0  lg:mt-0 mt-2 ">
         <HighlightsSection />
-      </section>
+      </section> */}
       <section className="px-6 lg:px-16 xl:px-0 mb-14 lg:mb-5">
         <RecruitersList />
       </section>

@@ -32,6 +32,7 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
     }
   }
   useEffect(() => {
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -41,8 +42,8 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
     <>
       {/* First Header */}
       <section
-        className={`relative hidden group lg:block transition-all ease-in-out duration-500 ${
-          isScrolled ? "-translate-y-10" : "translate-y-0"
+        className={`relative hidden group lg:block transition-all ease-in-out duration-500 overflow-hidden ${
+          isScrolled ? "-mt-12 opacity-0" : "mt-0 opacity-100"
         }`}
       >
         <div className="flex items-center w-full h-12 border-b border-b-[#BFDCF7]">
@@ -50,44 +51,43 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
             <div className="flex items-center justify-center space-x-6">
               <Link
                 href={"mailto:canarait@gmail.com"}
-                className="text-[0.7rem] xl:text-[0.875rem]  text-[#2884CA] font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300"
+                className="text-[14px] xl:text-[16px]  text-[#2884CA] font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300"
               >
                 Email: canarait@gmail.com
               </Link>
               <div className="flex gap-1">
-                <p className="text-[0.7rem] xl:text-[0.875rem] text-[#2884CA] font-bold font-poppins  transition-colors ease-in-out duration-300">Phone:</p>
-              <Link
-                href={"tel:+918792727001"}
-                className="text-[0.7rem] xl:text-[0.875rem]  text-[#2884CA]  font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300"
-              >
-              + 91 8792727001 
-              </Link>
-              <span className="text-[0.7rem] xl:text-[0.875rem] text-[#2884CA] font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300">/</span>
-               <Link
-                href={"tel:+918904737001"}
-                className="text-[0.7rem] xl:text-[0.875rem] text-[#2884CA] font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300"
-              >
-              8904737001
-              </Link>
+                <p className="text-[14px] xl:text-[16px] text-[#2884CA] font-bold font-poppins  transition-colors ease-in-out duration-300">Phone:</p>
+                <Link
+                  href={"tel:+918792727001"}
+                  className="text-[14px] xl:text-[16px]  text-[#2884CA]  font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300"
+                >
+                  + 91 8792727001
+                </Link>
+                <span className="text-[14px] xl:text-[16px] text-[#2884CA] font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300">
+                  /
+                </span>
+                <Link
+                  href={"tel:+918904737001"}
+                  className="text-[14px] xl:text-[16px] text-[#2884CA] font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300"
+                >
+                  8904737001
+                </Link>
               </div>
-              <p
-                className="text-[0.7rem] xl:text-[0.875rem] text-[#2884CA] font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300"
-              >
+              <p className="text-[14px] xl:text-[16px] text-[#2884CA] font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300">
                 CET Code: E123
               </p>
             </div>
             <div className="flex items-center justify-center space-x-6">
-            
               <Link
                 href={"/admission"}
-                className="text-[0.7rem] xl:text-[0.875rem] text-[#2884CA] font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300"
+                className="text-[14px] xl:text-[16px] text-[#2884CA] font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300"
               >
                 Admission Procedure
               </Link>
               <Link
                 href={"https://apply.canaraengineering.in/"}
                 target="_blank"
-                className="text-[0.7rem] xl:text-[0.875rem] text-[#2884CA] font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300"
+                className="text-[14px] xl:text-[16px] text-[#2884CA] font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300"
               >
                 Admission Open {new Date().getFullYear()}
               </Link>
@@ -99,23 +99,40 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
         <nav className="  py-0 max-w-[90%] mx-auto">
           {/* For large and Medium-sized Screen */}
           <div className="flex items-center justify-between relative py-7 lg:py-2 xl:py-3 container-padding">
-            <div className="flex flex-row items-center w-36 md:w-40 2xl:w-60 h-10 relative">
+            <div className="lg:flex hidden  flex-row items-center  relative">
               <Link href={"/"}>
                 <Image
                   src={"/svgs/logos/logo.svg"}
-                  fill
+                  width={300}
+                  height={80}
+                  priority
                   alt="logo"
                   onClick={() => {
                     router.push("/");
                   }}
-                  className="object-contain cursor-pointer"
+                  className="object-contain cursor-pointer h-16 w-auto"
+                />
+              </Link>
+            </div>
+            <div className="flex lg:hidden flex-row items-center  relative">
+              <Link href={"/"}>
+                <Image
+                  src={"/svgs/logos/logo.svg"}
+                  width={200}
+                  height={60}
+                  priority
+                  alt="logo"
+                  onClick={() => {
+                    router.push("/");
+                  }}
+                  className="object-contain cursor-pointer h-12 w-auto"
                 />
               </Link>
             </div>
             {/* Navbar Items */}
             <div>
-            <NavbarItems />
-            {/* Navbar Items */}
+              <NavbarItems />
+              {/* Navbar Items */}
             </div>
           </div>
           <div className="block lg:hidden absolute top-1/2 -translate-y-1/2 right-4 z-20">

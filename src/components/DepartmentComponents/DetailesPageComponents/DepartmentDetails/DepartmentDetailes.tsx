@@ -1,6 +1,7 @@
 "use client";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { useParams } from "next/navigation";
+import Image from "next/image";
 import departments from "@/lib/departments.json";
 import DepartmentProfile from "../DepartmentDetailesTab/DepartmentProfile/DepartmentProfile";
 import Organaisation from "../DepartmentDetailesTab/Organaisation/Organaisation";
@@ -56,6 +57,8 @@ interface DepartmentSectionProps {
 }
 
 import CustomSelect from "@/components/Common/CustomSelect/CustomSelect";
+import { ArrowLeftIcon } from "lucide-react";
+import Link from "next/link";
 
 // ... existing imports
 
@@ -91,7 +94,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
     try {
       setLoading(true);
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/events?category=${encodeURIComponent(departmentName)}&page=${page}&limit=${limit}&sortBy=date`
+        `${process.env.NEXT_PUBLIC_API_URL}/events?category=${encodeURIComponent(departmentName)}&page=${page}&limit=${limit}&sortBy=date`,
       );
       if (!response.ok) throw new Error("Failed to fetch events");
       const data = await response.json();
@@ -216,7 +219,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
 
   const hodFaculty = React.useMemo(
     () => facultyData.find((f) => f.name === department?.depatmentHead?.name),
-    [facultyData, department?.depatmentHead?.name]
+    [facultyData, department?.depatmentHead?.name],
   );
 
   const hodData = React.useMemo(() => {
@@ -254,11 +257,51 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   ];
 
   return (
-    <section className="py-10 xl:py-36 text-[#1D1D1F] lg2:px-24 px-5 overflow-hidden">
+    <section className=" text-[#1D1D1F]  overflow-hidden">
       <div className="">
-        <h1 className="text-[#1D1D1F] text-xl lg:text-[31px] mb-2">Department of </h1>
-        <h2 className="text-[30px] lg:w-[50%]  lg:text-[54px] font-bold leading-[1.1] pb-1 lg:pb-10 text-[#1D1D1F]">{department?.name}</h2>
-        <div className={`md:grid grid-cols-1 gap-3  md:grid-cols-12 mt-10`}>
+        <div className="relative h-[300px] md:h-[450px] w-full flex items-center overflow-hidden bg-[#eff2f6]">
+          {/* Image Container: Starts after 60% (occupies right 40%) */}
+          <div className="absolute right-0 top-0 h-full w-[70%]">
+            <Image src="/departmentImages/bgImageMoreAbout.png" alt="bg" fill className="object-cover object-center" />
+            {/* Gradient Mask: Only applied to this 40% section to blend the hard left edge */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#eff2f6] via-transparent to-transparent z-10" />
+          </div>
+
+          {/* Content Container: Occupies the left 60% */}
+          <div className="w-full lg2:px-24 px-5 h-full relative z-20 flex flex-col justify-center">
+            {/* Go Back Button */}
+            <div className="absolute top-14">
+              <Link href={`/department/${slug}`}>
+                <button className="flex items-center gap-2 text-[#555]  transition-colors">
+                  <ArrowLeftIcon width={20} height={20} />
+                  <span className="text-lg text-[#6B6B6B]">Go Back</span>
+                </button>
+              </Link>
+            </div>
+
+            {/* Text Headings - Restricted to 60% width */}
+            <div className="mt-12 lg:w-[60%]">
+              <h1 className="text-[#333] text-xl lg:text-[32px] mb-1 font-medium">Department of</h1>
+              <h2 className="text-[30px] lg:text-[56px] font-bold leading-[1.15] text-[#1D1D1F]">
+                {department?.name
+                  // 1. Split by ' & ' or ' and ' (case insensitive)
+                  // The parentheses () keep the separator in the array
+                  ?.split(/(\s+&\s+|\s+and\s+)/i)
+                  .map((part, index) => (
+                    <React.Fragment key={index}>
+                      {/* Render the text part */}
+                      {part}
+
+                      {/* 2. Check if this part is a separator. If yes, add the responsive break */}
+                      {/(\s+&\s+|\s+and\s+)/i.test(part) && <br className="hidden lg:block" />}
+                    </React.Fragment>
+                  ))}
+              </h2>
+            </div>
+          </div>
+          <div className="absolute bottom-0 left-0 right-0 h-[400px] md:h-[100px] bg-gradient-to-t from-[#fbfcfe] via-[#fbfcfe]/60 to-transparent z-[10] " />
+        </div>
+        <div className={`md:grid grid-cols-1 pb-14 xl:pb-32 text-[#1D1D1F] lg2:px-24 px-5 gap-3  md:grid-cols-12 mt-10`}>
           <div className="col-span-3">
             <div className="sticky top-20 h-fit">
               {/* Mobile Dropdown */}

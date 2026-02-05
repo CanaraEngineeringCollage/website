@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { FC, Suspense, useState } from "react";
 import Image from "next/image";
-import footericon1 from "../../../../public/svgs/logos/FooterIcon1.svg"; // Adjust path as needed
+import footericon1 from "../../../../public/svgs/logos/logo.svg"; // Adjust path as needed
 import { FooterIcon, FooterIconMobile, Instagram, LinkedIn, Meta, Twitter, Yt } from "@/components/Icons/Icons"; // Adjust import path
 import { motion } from "framer-motion";
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
@@ -49,6 +49,7 @@ const facilities = [
   { data: "Central Library", links: "/campus-facilities/central-library" },
   { data: "Sports & Cultures", links: "/physical-education" },
   { data: "Entrepreneurship Cell", links: "/entrepreneurship-cell" },
+  { data: "Placement Portal", links: "https://www.canaraengineering.in/placement_portal/" },
 ];
 
 const stayConnected = [
@@ -72,7 +73,7 @@ const Footer: FC = () => {
   const [stayConnectedIsOpen, setStayConnectedIsOpen] = useState<boolean>(false);
 
   return (
-    <footer className="bg-[#e5e5ea] text-gray-700 lg:px-8  text-sm pt-10">
+    <footer id="main-footer" className="bg-[#e5e5ea] text-gray-700 lg:px-8  text-sm pt-10">
       {/* Desktop Version */}
 
       <div className="lg:max-w-7xl md:max-w-6xl   xl:mx-auto xl:max-w-[75%]  mx-auto lg:block hidden">
@@ -178,10 +179,12 @@ const Footer: FC = () => {
         </div>
 
         <div className="flex items-center justify-between space-x-10 my-8">
-          <Link href="/"> <div className="flex gap-5">
-            <Image src={footericon1} width={300} height={300} alt="logo" />
-             <FooterIcon />
-          </div></Link>
+          <Link href="/">
+            {" "}
+            <div className="flex gap-5">
+              <Image src={footericon1} width={300} height={300} alt="logo" />
+            </div>
+          </Link>
           <div>
             <h1 className="flex justify-end font-bold pb-3 cursor-pointer">Follow Us</h1>
             <div className="flex gap-2 cursor-pointer">
@@ -206,7 +209,9 @@ const Footer: FC = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center border-t border-gray-300 pt-4 pb-6 text-xs">
-          <p className="text-center md:text-left mb-2 md:mb-0">Copyright © {new Date().getFullYear()} CEC & Canara High School Association. All rights reserved.</p>
+          <p className="text-center md:text-left mb-2 md:mb-0">
+            Copyright © {new Date().getFullYear()} CEC & Canara High School Association. All rights reserved.
+          </p>
           <div className="flex space-x-6 items-center">
             <div className="flex space-x-2">
               <Link href={"/privacy-policy"}>
@@ -216,7 +221,6 @@ const Footer: FC = () => {
           </div>
         </div>
       </div>
-      
 
       {/* Mobile Version */}
       <div className="lg:hidden px-6">
@@ -235,10 +239,12 @@ const Footer: FC = () => {
 
         {/* Mobile Logo and Social Icons */}
         <div className="flex flex-col items-center my-8">
-          <Link href="/"><div className="flex gap-3">
-            <Image src={footericon1} width={200} height={200} alt="logo" />
-            <FooterIconMobile />
-          </div></Link>
+          <Link href="/">
+            <div className="flex gap-3">
+              <Image src={footericon1} width={200} height={200} alt="logo" />
+              {/* <FooterIconMobile /> */}
+            </div>
+          </Link>
           <div className="mt-4">
             <h1 className="text-center font-bold pb-3">Follow Us</h1>
             <div className="flex gap-2 justify-center">
@@ -279,7 +285,7 @@ const FooterList: FC<FooterListProps> = ({ data }) => {
   return (
     <ul className="space-y-1">
       {data.map((item, index) => {
-        const isExternal = item.links.startsWith("http")||item.links.endsWith(".pdf");
+        const isExternal = item.links.startsWith("http") || item.links.endsWith(".pdf");
         return (
           <li className="leading-8" key={index}>
             <Link href={item.links} {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}>

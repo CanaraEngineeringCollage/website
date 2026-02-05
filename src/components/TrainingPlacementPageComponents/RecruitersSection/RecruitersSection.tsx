@@ -94,7 +94,7 @@ const RecruitersList: React.FC = () => {
   };
 
   // ✅ Define Headers based on your Entity
-  const headers = ["Company Name", "Mode", "Type of Company", "Package (LPA)", "Grand Total"];
+  const headers = ["Company Name", "Mode", "Type of Company", "Package (LPA)", "Total students recruited"];
 
   return (
     <div className="max-w-7xl xl:max-w-[75%] mx-auto text-center">

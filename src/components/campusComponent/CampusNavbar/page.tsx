@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-
 import DropDown from "@/components/Common/Navbar/DropDown/DropDown";
 import NavbarItems from "../NavbarItems/page";
 function CampusNavbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: boolean }) {
@@ -16,11 +15,26 @@ function CampusNavbar({ openSidebar, sidebar }: { openSidebar: () => void; sideb
         <nav className="  py-0 max-w-[90%] mx-auto">
           {/* For large and Medium-sized Screen */}
           <div className="flex items-center justify-between relative py-7 lg:py-2 xl:py-3 container-padding">
-            <div className="flex flex-row items-center w-36 md:w-40 2xl:w-60 h-10 relative">
+            <div className="lg:flex hidden  flex-row items-center  relative">
               <Link href={"/"}>
                 <Image
                   src={"/svgs/logos/logo.svg"}
-                  fill
+                  width={300}
+                  height={300}
+                  alt="logo"
+                  onClick={() => {
+                    router.push("/");
+                  }}
+                  className="object-contain cursor-pointer"
+                />
+              </Link>
+            </div>
+            <div className="flex lg:hidden flex-row items-center  relative">
+              <Link href={"/"}>
+                <Image
+                  src={"/svgs/logos/logo.svg"}
+                  width={200}
+                  height={200}
                   alt="logo"
                   onClick={() => {
                     router.push("/");

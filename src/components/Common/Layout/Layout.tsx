@@ -15,33 +15,31 @@ function Layout({ children }: { children: React.ReactNode }) {
   const isCampusRoute = pathname.startsWith("/events") || pathname.startsWith("/alumni");
 
   return (
-    <>
-      <div className="min-h-screen ">
-        {/* overflow-x-hidden */}
-        <header className="top-0 left-0 right-0 bg-white z-[1111] ">
-          {isCampusRoute ? (
-            <CampusNavbar openSidebar={() => openSidebar((prev) => !prev)} sidebar={sidebar} />
-          ) : (
-            <Navbar openSidebar={() => openSidebar((prev) => !prev)} sidebar={sidebar} />
-          )}
-        </header>
-        <main className=" font-poppins">
-          <div className="lg:hidden">
+    <div className="flex flex-col min-h-screen">
+      {/* overflow-x-hidden */}
+      <header className=" bg-white z-[1111] ">
+        {isCampusRoute ? (
+          <CampusNavbar openSidebar={() => openSidebar((prev) => !prev)} sidebar={sidebar} />
+        ) : (
+          <Navbar openSidebar={() => openSidebar((prev) => !prev)} sidebar={sidebar} />
+        )}
+      </header>
+      <main className=" font-poppins flex-grow">
+        <div className="lg:hidden">
           <Sidebar openSidebar={() => openSidebar((prev) => !prev)} sidebar={sidebar} />
-          </div>
-          <div
-            onClick={() => {
-              if (sidebar) {
-                openSidebar(false);
-              }
-            }}
-          >
-            {children}
-          </div>
-        </main>
-        <Footer />
-      </div>
-    </>
+        </div>
+        <div
+          onClick={() => {
+            if (sidebar) {
+              openSidebar(false);
+            }
+          }}
+        >
+          {children}
+        </div>
+      </main>
+      <Footer />
+    </div>
   );
 }
 export default Layout;
