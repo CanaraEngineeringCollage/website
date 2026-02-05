@@ -40788,18 +40788,19 @@
     },
 
     "toppers": [
+      
+      {
+        "name": "ADITHI N",
+        "batch": "2024-25 ",
+        "percentage": "9.36",
+        "image": "/departmentImages/toppersImage/csd/1.jpg"
+      },
       {
         "name": "SHWETHA RAVINDRA BALIGA",
         "batch": "2024-25 ",
         "percentage": "9.39",
         "image": "/departmentImages/toppersImage/csd/3.jpg",
         "vtuText":"VTU Honours"
-      },
-      {
-        "name": "ADITHI N",
-        "batch": "2024-25 ",
-        "percentage": "9.36",
-        "image": "/departmentImages/toppersImage/csd/1.jpg"
       },
       {
         "name": "NAVYA",
@@ -47197,18 +47198,19 @@
       }
     ],
     "toppers": [
+      
+      {
+        "name": "Pallavi",
+        "batch": "2024-25",
+        "percentage": "9.09",
+        "image": "/departmentImages/toppersImage/ai/3.webp"
+      },
       {
         "name": "Ashay Shetty",
         "batch": "2024-25",
         "percentage": "9.51",
         "image": "/departmentImages/toppersImage/ai/1.webp",
         "vtuText": "VTU 10th Rank"
-      },
-      {
-        "name": "Pallavi",
-        "batch": "2024-25",
-        "percentage": "9.09",
-        "image": "/departmentImages/toppersImage/ai/3.webp"
       },
       {
         "name": "Chaithanya Lakshmi",

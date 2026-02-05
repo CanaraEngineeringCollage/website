@@ -88,7 +88,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative w-full h-[80vh] md:h-[120vh] flex flex-col justify-center items-center text-center px-4 overflow-hidden bg-[#144A72]">
+    <section className="relative w-full h-[80vh] md:h-[100vh] flex flex-col justify-center items-center text-center px-4 overflow-hidden bg-[#144A72]">
       {/* Background Swiper */}
       <div className="absolute inset-0 z-0">
         <Swiper

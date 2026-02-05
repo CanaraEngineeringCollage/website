@@ -49,6 +49,7 @@ const facilities = [
   { data: "Central Library", links: "/campus-facilities/central-library" },
   { data: "Sports & Cultures", links: "/physical-education" },
   { data: "Entrepreneurship Cell", links: "/entrepreneurship-cell" },
+  { data: "Placement Portal", links: "https://www.canaraengineering.in/placement_portal/" },
 ];
 
 const stayConnected = [

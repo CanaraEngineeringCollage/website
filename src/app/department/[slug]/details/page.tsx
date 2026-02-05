@@ -69,7 +69,7 @@ const Page =  ({ params }: { params: { slug: string } }) => {
 
   return (
     <section>
-      <DepartmentDetailes  departmentName={department.name} />
+      <DepartmentDetailes departmentName={department.name} />
     </section>
   );
 };
