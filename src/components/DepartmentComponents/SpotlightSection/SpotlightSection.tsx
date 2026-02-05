@@ -63,7 +63,7 @@ export default function SpotlightSection({toppers}) {
         {/* CTA Section */}
         <div className="text-center mt-28 mb-5 space-y-8">
           <h2 className="md:text-[40px] text-[32px] leading-[1.1] lg2:text-5xl font-bold mb-4 max-w-2xl text-center mx-auto">
-            Ready to take the next step?
+           Admissions Open for {new Date().getFullYear()}
           </h2>
           <p className="text-lg mb-6 max-w-2xl text-white/70 mx-auto">
             Book a one-on-one counseling session & get all your questions
@@ -71,10 +71,10 @@ export default function SpotlightSection({toppers}) {
           </p>
           <button
             onClick={() => setIsOpen(true)}
-            aria-label="Book Your Counseling Session Today"
-            className="bg-white text-primary font-semibold py-3 px-5 rounded-full shadow-md hover:bg-gray-100 transition"
+            aria-label="Apply Now"
+            className="bg-white text-primary font-semibold py-2 px-5 md:text-lg rounded-full shadow-md hover:bg-gray-100 transition"
           >
-            Book Your Counseling Session Today
+            Apply Now
           </button>
           <ContactFormModal isOpen={isOpen} onClose={setIsOpen} />
         </div>

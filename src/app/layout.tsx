@@ -7,6 +7,7 @@ import ScrollToTopButton from "@/components/Common/ScrollToTopButton";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { Analytics } from "@vercel/analytics/next";
+import FloatingSticky from "@/components/Common/FloatingSticky/FloatingSticky";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({
        <Layout>
         {children}
         <ScrollToTopButton/>
+        <FloatingSticky />
        </Layout>
       </body>
     </html>
