@@ -38,10 +38,25 @@ export const metadata = {
   },
 };
 
-export default function Home() {
+export default async function Home() {
+  const getHomePageImages = async () => {
+    try {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+      const res = await fetch(`${apiUrl}/home-page-images`, { cache: "no-store" });
+      if (res.ok) {
+        return await res.json();
+      }
+    } catch (error) {
+      console.error("Failed to fetch home page images", error);
+    }
+    return [];
+  };
+
+  const images = await getHomePageImages();
+
   return (
     <>
-      <HeroSection />
+      <HeroSection images={images} />
       <section className="px-6 md:px-12 lg:px-36 xl:px-20 py-12">
         <FutureCampusText />
       </section>
@@ -71,7 +86,7 @@ export default function Home() {
           thumbnail="/youtubeThumbnails/Homepage-Thumbnail@300x.webp"
         />
       </section>
-       <section className="bg-white">
+      <section className="bg-white">
         <IdeasTakeFlight />
       </section>
       <section className="px-0 bg-white pt-5 pb-12 lg:pb-10 lg:mt-0 -mt-3">
@@ -80,13 +95,11 @@ export default function Home() {
       <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0 py-0 md:mt-0 -mt-6">
         <HotOfThePress />
       </section>
-     
+
       <section className="bg-[#E5E5EA] px-6 lg:mt-0 ">
         <LocationSection />
-        </section>
-        <section className="bg-[#E5E5EA]">
-          
-      
+      </section>
+      <section className="bg-[#E5E5EA]">
         <FooterCard />
       </section>
     </>

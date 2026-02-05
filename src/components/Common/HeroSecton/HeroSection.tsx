@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 
 // Images
@@ -28,7 +28,16 @@ const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
   return `data:image/jpeg;base64,${base64}`;
 };
 
-const HeroSection = () => {
+export interface HomePageImage {
+  id: number;
+  image: { type: string; data: number[] };
+}
+
+interface HeroSectionProps {
+  images?: HomePageImage[];
+}
+
+const HeroSection = ({ images = [] }: HeroSectionProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [swiperRef, setSwiperRef] = useState(null);
 
@@ -53,32 +62,8 @@ const HeroSection = () => {
     { label: "Affiliated to VTU", src: affiliated },
   ];
 
-  // FIXED: Interface matches console log structure
-  interface HomePageImage {
-    id: number;
-    image: { type: string; data: number[] };
-  }
-
-  const [backendImages, setBackendImages] = useState<HomePageImage[]>([]);
-
-  useEffect(() => {
-    const fetchImages = async () => {
-      try {
-        const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-        const res = await fetch(`${apiUrl}/home-page-images`, { cache: "no-store" });
-        if (res.ok) {
-          const data = await res.json();
-          setBackendImages(data);
-        }
-      } catch (error) {
-        console.error("Failed to fetch home page images", error);
-      }
-    };
-    fetchImages();
-  }, []);
-
   // FIXED: Mapping to .image instead of .imageUrl
-  const backgroundImages = backendImages.length > 0 ? backendImages.map((img) => img.image) : [bg3, bg2];
+  const backgroundImages = images.length > 0 ? images.map((img) => img.image) : [bg3, bg2];
 
   const handleDotClick = (index) => {
     if (swiperRef) {
@@ -99,19 +84,13 @@ const HeroSection = () => {
           className="w-full h-full"
         >
           {backgroundImages.map((img, index) => {
-             // FIXED: Conditional check to handle both Buffer and Static Import
-             const isBuffer = img && img.data && Array.isArray(img.data);
-             const imageSrc = isBuffer ? bufferToBase64(img) : img;
+            // FIXED: Conditional check to handle both Buffer and Static Import
+            const isBuffer = img && typeof img === "object" && "data" in img && Array.isArray((img as any).data);
+            const imageSrc = isBuffer ? bufferToBase64(img as { type: string; data: number[] }) : (img as any);
 
-             return (
+            return (
               <SwiperSlide key={index}>
-                <Image
-                  src={imageSrc}
-                  alt={`Background ${index + 1}`}
-                  fill
-                  className="object-cover -translate-y-[90px] lg:translate-y-0"
-                  priority
-                />
+                <Image src={imageSrc} alt={`Background ${index + 1}`} fill className="object-cover -translate-y-[90px] lg:translate-y-0" priority />
                 <div className="absolute bottom-0 left-0 right-0 h-[400px] md:h-[500px] bg-gradient-to-t from-[#f5f5f7] via-white/85 to-transparent z-[10] block md:hidden pointer-events-none" />
                 <div className="absolute bottom-0 left-0 right-0 h-[300px] md:h-[200px] bg-gradient-to-t from-[#fcfdff] via-white/85 to-transparent z-[10] hidden md:block pointer-events-none" />
               </SwiperSlide>
@@ -122,7 +101,6 @@ const HeroSection = () => {
       </div>
 
       {/* Main Content */}
-      
 
       {/* Logos Carousel Container */}
       <div className="absolute bottom-4 left-0 right-0 mx-auto md:bottom-3 shadow-sm bg-[#f5f5f7] py-5 lg:bg-[#f5f5f7] rounded-xl md:p-4 xl:max-w-[90%] md:max-w-[90%] lg:max-5-7xl z-20 w-full">

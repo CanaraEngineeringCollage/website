@@ -5,6 +5,7 @@ import { FaChevronUp } from "react-icons/fa6";
 import { College, Employees, Certicficate, HandShake } from "../../../../components/Icons/Icons";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import GlimpsesModal from "../../GlimpsesModal/GlimpsesModal"; // Import the modal
 const LeadearShiplinks = [
   { href: "/about/our-founder", label: "Our Founder" },
   { href: "/about/our-management", label: "Our Management" },
@@ -17,6 +18,7 @@ const LeadearShiplinks = [
 export default function About() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isGlimpsesModalOpen, setIsGlimpsesModalOpen] = useState(false); // State for Glimpses Modal
   const pathname = usePathname();
 
   return (
@@ -75,12 +77,16 @@ export default function About() {
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      href="/about/glimpses-of-cec"
-                      className={`${pathname.includes("/about/glimpses-of-cec") ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
+                    <div
+                      role="button"
+                      onClick={() => {
+                        setIsGlimpsesModalOpen(true);
+                        setIsMenuOpen(false); // Close menu when modal opens
+                      }}
+                      className={`${isGlimpsesModalOpen ? "text-primary font-bold" : "text-gray-500"} hover:text-primary cursor-pointer`}
                     >
                       Glimpses of CEC
-                    </Link>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -161,6 +167,8 @@ export default function About() {
           </div>
         </div>
       </MenuList>
+      {/* Glimpses Modal */}
+      <GlimpsesModal isOpen={isGlimpsesModalOpen} onClose={setIsGlimpsesModalOpen} />
     </Menu>
   );
 }
