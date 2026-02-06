@@ -527,6 +527,18 @@ function MainMenu({
           )}
         </div>
       </div>
+       <div className="border-b-border border-b-2 py-4">
+        <div
+          onClick={() => {
+            router.push("/research-development-consultancy");
+            openSidebar(false);
+          }}
+          className="flex gap-4 "
+        >
+          <Typography className="font-semibold text-[#2884CA] ">R&D Cell</Typography>
+          {/* <IoIosArrowDown className={`w-6 h-6 text-[#2884CA] -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} /> */}
+        </div>
+      </div>
       <div className="border-b-border border-b-2 py-4">
         <div
           onClick={() => {

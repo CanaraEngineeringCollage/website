@@ -88,7 +88,7 @@ const ProfileCard = ({ title }: { title: string }) => {
               <div
                 key={index}
                 onClick={() => handleCardClick(item)}
-                className={`relative w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md cursor-pointer transition-transform hover:scale-[1.02] ${
+                className={`relative w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md cursor-pointer transition-transform  ${
                   shouldCenterLast ? "md:col-start-2 xl:col-start-auto" : ""
                 }`}
               >
@@ -132,7 +132,7 @@ const ProfileCard = ({ title }: { title: string }) => {
               <div
                 key={index}
                 onClick={() => handleCardClick(item)}
-                className={`relative w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md cursor-pointer transition-transform hover:scale-[1.02] ${
+                className={`relative w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md cursor-pointer transition-transform  ${
                   shouldCenterLast ? "md:col-start-2 xl:col-start-auto" : ""
                 }`}
               >
