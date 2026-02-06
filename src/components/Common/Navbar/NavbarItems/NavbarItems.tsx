@@ -54,7 +54,7 @@ function NavbarItems() {
             }  `}
           >
             {" "}
-           R&D Cell
+           Research
           </p>
         </Link>
         <Link

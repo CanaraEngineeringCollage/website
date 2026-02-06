@@ -190,17 +190,6 @@ export default function Academics() {
                       Research at CEC
                     </Link>
                   </li>
-
-                  <li>
-                    <Link
-                      href="/academics/research-development-consultancy"
-                      className={`${
-                        pathname.includes("/academics/research-development-consultancy") ? "text-primary font-bold" : "text-gray-500"
-                      } hover:text-primary`}
-                    >
-                      Research &amp; Development and Consultancy Cell
-                    </Link>
-                  </li>
                 </ul>
               </div>
             </div>

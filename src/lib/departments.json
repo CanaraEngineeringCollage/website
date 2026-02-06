@@ -10357,8 +10357,7 @@
             "This lab is utilized by the 3rd year CSE students to conduct lab programs related to Web Programming and Cloud Computing.",
             "Number of Desktop: 35",
             "OS: Windows 11, Ubuntu 20"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Web%20Programming"
+          ]
         },
         {
           "title": "DevOps / Blockchain Lab",
@@ -10366,8 +10365,7 @@
             "This lab is utilized by the 3rd year CSE students to conduct lab programs related to DevOps and Blockchain.",
             "Number of Desktop: 35",
             "OS: Windows 11/10, Ubuntu 20"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/DevOps"
+          ]
         },
         {
           "title": "Data Structures / Algorithms Lab",
@@ -10375,8 +10373,7 @@
             "This lab is utilized by the 2nd year CSE students to conduct lab programs related to Data Structures and Algorithms.",
             "Number of Desktop: 36",
             "OS: Windows 10, Ubuntu 20"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Data%20Structures"
+          ]
         },
         {
           "title": "R Programming / LaTeX Lab",
@@ -10384,8 +10381,7 @@
             "This lab is utilized by the 2nd & 3rd year CSE students to conduct lab programs related to R Programming and LaTeX.",
             "Number of Desktop: 33",
             "OS: Windows 10, Ubuntu 20"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/R%20Programming"
+          ]
         },
         {
           "title": "Database Management System / Machine Learning Lab",
@@ -10393,8 +10389,7 @@
             "This lab is utilized by the 3rd year CSE students to conduct lab programs related to Machine Learning.",
             "Number of Desktop: 36",
             "OS: Windows 10, Ubuntu 18"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Database%20Management%20System%20and%20Machine%20Learning%20Lab"
+          ]
         },
         {
           "title": "Faculty Research Lab",
@@ -10403,8 +10398,15 @@
             "HP Workstation Z2 Tower G9 Workstation with Core i7 processor, 32 GB RAM",
             "OS: Windows 11 Professional",
             "Software: Anaconda Navigator, VS Code"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Faculty%20Research%20Lab"
+          ]
+        },
+        {
+          "swiper":["https://apiserver.cec.edu.in/files/Web%20Programming",
+  "https://apiserver.cec.edu.in/files/DevOps",
+  "https://apiserver.cec.edu.in/files/Data%20Structures",
+  "https://apiserver.cec.edu.in/files/R%20Programming",
+  "https://apiserver.cec.edu.in/files/Database%20Management%20System%20and%20Machine%20Learning%20Lab",
+  "https://apiserver.cec.edu.in/files/Faculty%20Research%20Lab"]
         },
         {
           "title": "Major Facilities in Laboratory",

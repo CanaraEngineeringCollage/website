@@ -535,7 +535,7 @@ function MainMenu({
           }}
           className="flex gap-4 "
         >
-          <Typography className="font-semibold text-[#2884CA] ">R&D Cell</Typography>
+          <Typography className="font-semibold text-[#2884CA] ">Research</Typography>
           {/* <IoIosArrowDown className={`w-6 h-6 text-[#2884CA] -rotate-90 transition-all ease-in-out duration-300 lg:hidden`} /> */}
         </div>
       </div>
