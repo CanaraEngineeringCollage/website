@@ -42,9 +42,14 @@ export default async function Home() {
   const getHomePageImages = async () => {
     try {
       const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-      const res = await fetch(`${apiUrl}/home-page-images`, { cache: "no-store" });
+      const res = await fetch(`${apiUrl}/home-page-images`, { next: { revalidate: 3600 } });
       if (res.ok) {
-        return await res.json();
+        const data = await res.json();
+        // Return only lightweight metadata, not the heavy buffer
+        return data.map((img: any) => ({
+          id: img.id,
+          type: img.image?.type || "image/jpeg",
+        }));
       }
     } catch (error) {
       console.error("Failed to fetch home page images", error);

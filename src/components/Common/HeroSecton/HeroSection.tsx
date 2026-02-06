@@ -20,17 +20,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
-// Helper function to convert Buffer to Base64
-const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
-  if (!buffer || !buffer.data) return ""; // Safety check
-  const binary = buffer.data.reduce((acc, byte) => acc + String.fromCharCode(byte), "");
-  const base64 = btoa(binary);
-  return `data:image/jpeg;base64,${base64}`;
-};
-
 export interface HomePageImage {
-  id: number;
-  image: { type: string; data: number[] };
+  id: string | number;
+  type?: string;
 }
 
 interface HeroSectionProps {
@@ -62,12 +54,19 @@ const HeroSection = ({ images = [] }: HeroSectionProps) => {
     { label: "Affiliated to VTU", src: affiliated },
   ];
 
-  // FIXED: Mapping to .image instead of .imageUrl
-  const backgroundImages = images.length > 0 ? images.map((img) => img.image) : [bg3, bg2];
+  // If we have API images, map them to objects with a `src` property using the API route
+  // Otherwise fall back to static imports
+  const backgroundSlides =
+    images.length > 0
+      ? images.map((img) => ({ type: "api", src: `/api/hero-image/${img.id}` }))
+      : [
+          { type: "static", src: bg3 },
+          { type: "static", src: bg2 },
+        ];
 
-  const handleDotClick = (index) => {
-    if (swiperRef) {
-      swiperRef.slideToLoop(index);
+  const handleDotClick = (index: number) => {
+    if (swiperRef && (swiperRef as any).slideToLoop) {
+      (swiperRef as any).slideToLoop(index);
       setActiveIndex(index);
     }
   };
@@ -83,19 +82,19 @@ const HeroSection = ({ images = [] }: HeroSectionProps) => {
           effect="fade"
           className="w-full h-full"
         >
-          {backgroundImages.map((img, index) => {
-            // FIXED: Conditional check to handle both Buffer and Static Import
-            const isBuffer = img && typeof img === "object" && "data" in img && Array.isArray((img as any).data);
-            const imageSrc = isBuffer ? bufferToBase64(img as { type: string; data: number[] }) : (img as any);
-
-            return (
-              <SwiperSlide key={index}>
-                <Image src={imageSrc} alt={`Background ${index + 1}`} fill className="object-cover -translate-y-[90px] lg:translate-y-0" priority />
-                <div className="absolute bottom-0 left-0 right-0 h-[400px] md:h-[500px] bg-gradient-to-t from-[#f5f5f7] via-white/85 to-transparent z-[10] block md:hidden pointer-events-none" />
-                <div className="absolute bottom-0 left-0 right-0 h-[300px] md:h-[200px] bg-gradient-to-t from-[#fcfdff] via-white/85 to-transparent z-[10] hidden md:block pointer-events-none" />
-              </SwiperSlide>
-            );
-          })}
+          {backgroundSlides.map((slide, index) => (
+            <SwiperSlide key={index}>
+              <Image
+                src={slide.src}
+                alt={`Background ${index + 1}`}
+                fill
+                className="object-cover -translate-y-[90px] lg:translate-y-0"
+                priority={index === 0}
+              />
+              <div className="absolute bottom-0 left-0 right-0 h-[400px] md:h-[500px] bg-gradient-to-t from-[#f5f5f7] via-white/85 to-transparent z-[10] block md:hidden pointer-events-none" />
+              <div className="absolute bottom-0 left-0 right-0 h-[300px] md:h-[200px] bg-gradient-to-t from-[#fcfdff] via-white/85 to-transparent z-[10] hidden md:block pointer-events-none" />
+            </SwiperSlide>
+          ))}
         </Swiper>
         <div className="absolute bottom-0 left-0 right-0 h-2/4 lg:h-2/4 bg-gradient-to-b from-transparent to-white opacity-2000 pointer-events-none"></div>
       </div>
@@ -106,7 +105,7 @@ const HeroSection = ({ images = [] }: HeroSectionProps) => {
       <div className="absolute bottom-4 left-0 right-0 mx-auto md:bottom-3 shadow-sm bg-[#f5f5f7] py-5 lg:bg-[#f5f5f7] rounded-xl md:p-4 xl:max-w-[90%] md:max-w-[90%] lg:max-5-7xl z-20 w-full">
         <Swiper
           modules={[Autoplay]}
-          onSwiper={setSwiperRef}
+          onSwiper={setSwiperRef as any}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
           autoplay={{
             delay: 1000,
