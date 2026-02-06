@@ -32,6 +32,7 @@ import {
   StudentsLife,
   Innovation,
 } from "../../../components/Icons/Icons";
+import GlimpsesModal from "../GlimpsesModal/GlimpsesModal";
 
 export default function Sidebar({ sidebar, openSidebar }: { sidebar: boolean; openSidebar: () => void }) {
   const [open, setOpen] = useState({
@@ -40,22 +41,22 @@ export default function Sidebar({ sidebar, openSidebar }: { sidebar: boolean; op
     lifeAtSahyadri: false,
   });
   const [visible, setVisible] = useState("main-menu");
+  const [glimpsesModalOpen, setGlimpsesModalOpen] = useState(false);
 
-
-    useEffect(() => {
-      if (sidebar) {
-        document.body.style.overflow = "hidden";
-      } else {
-        document.body.style.overflow = "auto";
+  useEffect(() => {
+    if (sidebar) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape" && sidebar) {
+        openSidebar(false);
       }
-      const handleKeyDown = (event: KeyboardEvent) => {
-        if (event.key === "Escape" && sidebar) {
-          openSidebar(false);
-        }
-      };
-      window.addEventListener("keydown", handleKeyDown);
-      return () => window.removeEventListener("keydown", handleKeyDown);
-    }, [sidebar, openSidebar]);
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [sidebar, openSidebar]);
   return (
     <div>
       <div
@@ -139,6 +140,7 @@ export default function Sidebar({ sidebar, openSidebar }: { sidebar: boolean; op
                   }}
                   setVisible={setVisible}
                   openSidebar={openSidebar}
+                  openGlimpsesModal={setGlimpsesModalOpen}
                 />
               ),
               administration: (
@@ -202,7 +204,7 @@ export default function Sidebar({ sidebar, openSidebar }: { sidebar: boolean; op
                   openSidebar={openSidebar}
                 />
               ),
-               alumni: (
+              alumni: (
                 <SubMenu
                   data={{
                     title: "Alumni",
@@ -216,6 +218,7 @@ export default function Sidebar({ sidebar, openSidebar }: { sidebar: boolean; op
           }
         </div>
       </div>
+      <GlimpsesModal isOpen={glimpsesModalOpen} onClose={setGlimpsesModalOpen} />
     </div>
   );
 }
@@ -224,6 +227,7 @@ function SubMenu({
   setVisible,
   data,
   openSidebar,
+  openGlimpsesModal,
 }: {
   setVisible: (visible: string) => void;
   data: {
@@ -234,6 +238,7 @@ function SubMenu({
     }>;
   };
   openSidebar: (state: boolean) => void;
+  openGlimpsesModal?: (state: boolean) => void;
 }) {
   const router = useRouter();
   return (
@@ -252,7 +257,11 @@ function SubMenu({
           <div
             key={index}
             onClick={() => {
-              router.push(link.link);
+              if (link.link === "/about/glimpses-of-cec" && openGlimpsesModal) {
+                openGlimpsesModal(true);
+              } else {
+                router.push(link.link);
+              }
               setVisible("main-menu");
               openSidebar(false);
             }}
@@ -503,9 +512,9 @@ function MainMenu({
               </div>
               <div
                 onClick={() => {
-            router.push("/alumni");
-            openSidebar(false);
-          }}
+                  router.push("/alumni");
+                  openSidebar(false);
+                }}
                 className="flex gap-2 items-center"
               >
                 <div className="flex items-center gap-2">

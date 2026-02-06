@@ -6,7 +6,6 @@ import { X } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
-
 interface Qualification {
   degree: string;
   passingYear: string | number;
@@ -21,14 +20,14 @@ interface DescriptionItem {
   descriptions: string[];
 }
 
-interface CouncilMember {
+export interface CouncilMember {
   id?: number | string;
   name: string;
   image?: string;
   avatar?: { type: string; data: number[] };
-  images?:string
+  images?: string;
   emergencycontact?: string;
-  timings?:string;
+  timings?: string;
   designation?: string;
   category?: string;
   department?: string;
@@ -49,7 +48,6 @@ interface FacultyModalProps {
   onClose: (isOpen: boolean) => void;
   facultyData: CouncilMember | null;
 }
-
 
 export const departmentFullForms: Record<string, string> = {
   // ----- ENGINEERING -----
@@ -159,16 +157,13 @@ export const departmentFullForms: Record<string, string> = {
   media: "Media Studies",
 };
 
-
-
 const getFullForm = (abbr: string) => {
   if (!abbr) return "";
   const key = abbr.trim().toLowerCase();
   return departmentFullForms[key] || abbr;
 };
 
-
-const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
+export const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
   const binary = buffer.data.reduce((acc, byte) => acc + String.fromCharCode(byte), "");
   const base64 = btoa(binary);
   return `data:image/jpeg;base64,${base64}`;
@@ -232,12 +227,14 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                         <Info label="Name" value={facultyData.name} />
                         <Info label="Designation" value={facultyData.designation} />
                         <Info label="Department" value={facultyData.department} />
-                        {facultyData.joiningDate && <Info
-                          label="Joining Date"
-                          value={facultyData.joiningDate ? new Date(facultyData.joiningDate).toLocaleDateString("en-GB") : "N/A"}
-                        />}
- {facultyData.timings&& <Info label="Timings" value={facultyData.timings} />}
-{facultyData.emergencycontact&& <Info label="Emergency Contact" value={facultyData.emergencycontact} />}
+                        {facultyData.joiningDate && (
+                          <Info
+                            label="Joining Date"
+                            value={facultyData.joiningDate ? new Date(facultyData.joiningDate).toLocaleDateString("en-GB") : "N/A"}
+                          />
+                        )}
+                        {facultyData.timings && <Info label="Timings" value={facultyData.timings} />}
+                        {facultyData.emergencycontact && <Info label="Emergency Contact" value={facultyData.emergencycontact} />}
                         <Info label="Experience" value={facultyData.experience} />
                         <Info label="Employment Type" value={facultyData.employmentType} />
                         <Info label="Address" value={facultyData.address} />
@@ -281,9 +278,7 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                                     {qual.college.toLowerCase().includes("vtu") ? qual.college.replace(/vtu/i, "VTU") : qual.college}
                                   </td>
 
-                                  <td className="px-6 py-3">
-                                    {getFullForm(qual.specialization)}
-                                  </td>
+                                  <td className="px-6 py-3">{getFullForm(qual.specialization)}</td>
                                 </tr>
                               ))}
                           </tbody>
@@ -325,13 +320,7 @@ const Section = ({ title, children }: { title: string; children: React.ReactNode
   </div>
 );
 
-const DynamicListSection = ({
-  title,
-  items,
-}: {
-  title: string;
-  items: DescriptionItem[];
-}) => {
+const DynamicListSection = ({ title, items }: { title: string; items: DescriptionItem[] }) => {
   const [activeIndex, setActiveIndex] = React.useState(0);
 
   const activeItem = items[activeIndex];
@@ -345,11 +334,7 @@ const DynamicListSection = ({
             key={item.id}
             onClick={() => setActiveIndex(index)}
             className={`w-fit px-8 py-2 rounded-md text-sm font-medium border transition
-              ${
-                activeIndex === index
-                  ? "bg-primary text-white border-primary"
-                  : "bg-white text-gray-700 border-gray-300 hover:bg-[#F8FBFD]"
-              }`}
+              ${activeIndex === index ? "bg-primary text-white border-primary" : "bg-white text-gray-700 border-gray-300 hover:bg-[#F8FBFD]"}`}
           >
             {item.heading}
           </button>
@@ -367,9 +352,7 @@ const DynamicListSection = ({
           className="rounded-lg pt-4 lg:pt-0 lg:py-6"
         >
           {/* ✅ ACTIVE HEADING INSIDE CONTENT */}
-          <h4 className="text-2xl font-semibold text-[#1D1D1F] mb-4">
-            {activeItem.heading}
-          </h4>
+          <h4 className="text-2xl font-semibold text-[#1D1D1F] mb-4">{activeItem.heading}</h4>
 
           <ul className=" space-y-3 text-gray-700 text-base">
             {activeItem.descriptions.map((desc, i) => (
@@ -381,7 +364,6 @@ const DynamicListSection = ({
     </Section>
   );
 };
-
 
 const cleanText = (input: string = "") => {
   if (!input) return "";

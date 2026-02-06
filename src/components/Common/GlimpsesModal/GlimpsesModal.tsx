@@ -29,7 +29,7 @@ interface GlimpsesModalProps {
   maxWidth?: string;
 }
 
-const GlimpsesModal: React.FC<GlimpsesModalProps> = ({ isOpen, onClose, className = "", maxWidth = "max-w-7xl" }) => {
+const GlimpsesModal: React.FC<GlimpsesModalProps> = ({ isOpen, onClose, className = "", maxWidth = "max-w-full" }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [flipbookLink, setFlipbookLink] = useState("");
 
