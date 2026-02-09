@@ -61,27 +61,27 @@ const studentSupport = [
 
 const departments = [
   {
-    title: "Computer Science & Engineering",
+    title: "Computer Science and Engineering",
     link: "/department/computer-science-engineering",
   },
   {
-    title: "Information Science & Engineering",
+    title: "Information Science and Engineering",
     link: "/department/information-science-engineering",
   },
   {
-    title: "Electronics & Communication Engineering",
+    title: "Electronics and Communication Engineering",
     link: "/department/electronics-communication-engineering",
   },
   {
-    title: "Computer Science & Design",
+    title: "Computer Science and Design",
     link: "/department/computer-science-design",
   },
   {
-    title: "Computer Science & Business System",
+    title: "Computer Science and Business System",
     link: "/department/computer-science-business-system",
   },
   {
-    title: "Artificial Intelligence & Machine Learning",
+    title: "Artificial Intelligence and Machine Learning",
     link: "/department/artificial-intelligence-machine-learning",
   },
    {
@@ -89,7 +89,7 @@ const departments = [
     link: "/department/mechanical-engineering",
   },
   {
-    title: "Science & Humanities",
+    title: "Science and Humanities",
     link: "/department/science-humanities",
   },
 ];

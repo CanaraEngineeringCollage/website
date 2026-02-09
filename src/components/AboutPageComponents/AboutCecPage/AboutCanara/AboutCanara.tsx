@@ -53,12 +53,12 @@ export default function AboutCanara() {
           Starting with just 180 students in three programs, CEC has grown to an
           intake of 750 students across seven dynamic branches:
           <ul className="mt-4 list-decimal list-inside leading-7">
-            <li>Computer Science & Engineering </li>
-            <li>Electronics & Communication Engineering </li>
-            <li>Information Science & Engineering </li>
-            <li>Computer Science & Design </li>
-            <li>Computer Science & Business Systems </li>
-            <li>Artificial Intelligence & Machine Learning </li>
+            <li>Computer Science and Engineering </li>
+            <li>Electronics and Communication Engineering </li>
+            <li>Information Science and Engineering </li>
+            <li>Computer Science and Design </li>
+            <li>Computer Science and Business Systems </li>
+            <li>Artificial Intelligence and Machine Learning </li>
             <li>Mechanical Engineering </li>
           </ul>
         </div>

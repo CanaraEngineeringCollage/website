@@ -31,31 +31,10 @@ export const metadata = {
     images: ["https://your-website-url.com/og-key-functionaries-hods.jpg"], // update this
   },
 };
-const getFacultyData = async () => {
-  const baseUrl = process.env.NEXT_PUBLIC_API_URL;
-  try {
-    const [keyRes, hodRes] = await Promise.all([
-      fetch(`${baseUrl}/faculty?keyFunctionary=true`, { next: { revalidate: 300 } }),
-      fetch(`${baseUrl}/faculty?hod=true`, { next: { revalidate: 300 } }),
-    ]);
-
-    const keyJson = await keyRes.json();
-    const hodJson = await hodRes.json();
-
-    return {
-      keyFunctionaries: keyJson.data || [],
-      hodData: hodJson.data || [],
-    };
-  } catch (error) {
-    console.error("Error fetching faculty data:", error);
-    return { keyFunctionaries: [], hodData: [] };
-  }
-};
-
 const page = () => {
   return (
     <div>
-      <ProfileCard title="Head of the Departments" />
+      <ProfileCard keyFunctionaries={keyFunctionariesData} datam={datam} title="Head of the Departments" />
       <section className="bg-[#E5E5EA]">
         <FooterCard />
       </section>

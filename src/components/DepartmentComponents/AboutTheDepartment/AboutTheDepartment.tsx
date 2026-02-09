@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { useParams } from "next/navigation";
 import Image from "next/image";
+import useAndFormatter from "@/hooks/useAndFormatter";
 
 interface AboutTheDepartmentProps {
   aboutTheDepartment: string[];
@@ -23,11 +24,11 @@ const   AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepar
         <div className="flex justify-between  mb-5 lg:mb-10">
           <div className="lg:w-[75%] ">
 <h1
-  className={` md:w-[90%] 
+  className={` md:w-[80%] 
   font-bold leading-[1.2] text-[#1D1D1F] 
   md:text-[40px] text-3xl lg2:text-5xl xl:text-6xl `}
 >
-  Department of {departmentName}
+  Department of {useAndFormatter(departmentName)}
 </h1>
           </div>
           <div className="hidden lg:block ">
