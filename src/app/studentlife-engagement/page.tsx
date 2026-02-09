@@ -5,7 +5,9 @@ import YourSkills from "@/components/CampusFacilitiesPageComponents/StudentLifeE
 import YoutubeSection from "@/components/CampusFacilitiesPageComponents/StudentLifeEngagement/YoutubeSection/YoutubeSection";
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
+import CollapsSection from "@/components/CampusFacilitiesPageComponents/StudentLifeEngagement/CollapsSection/CollapsSection";
 import React from "react";
+import StudentClubs from "@/components/CampusFacilitiesPageComponents/StudentLifeEngagement/StudentClubs/StudentClubs";
 
 export const metadata = {
   title: "Student Life Engagement | Canara College",
@@ -41,16 +43,23 @@ const page = () => {
       <section>
         <HeroSection />
       </section>
-      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+      <section className="px-6 lg:px-0 xl:px-0">
         <HolisticStudent />
       </section>
+      
       {/* <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <YourSkills />
       </section> */}
       <section className=" lg:-mt-16  lg:pt-10 pb-16 lg:pb-20 lg:px-16 xl:px-0 px-1 md:px-12 ">
         <VideoPlayer thumbnail="/youtubeThumbnails/Akrathi Aftermovie - Thumbail@300x.webp" youtubeUrl="oHWMDPeP1Ew" />
       </section>
-   
+      <section className="px-6  lg:px-0 xl:px-0 ">
+        <StudentClubs />
+      </section>
+      <section className="px-6  lg:px-0 xl:px-0 py-10">
+        <CollapsSection />
+      </section>
+
       <section className="bg-[#e5e5ea] ">
         <FooterCard />
       </section>

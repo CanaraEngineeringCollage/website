@@ -1,8 +1,8 @@
-import ProfileCard from "@/components/AboutPageComponents/GoverningCounsilPage/CardComponent/CardComponent";
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import governingCounsilData from "../../../utils/governingCounsilData/governingCounsilData.json";
 
 import React from "react";
+import GoverningCouncilProfileCard from "@/components/AboutPageComponents/GoverningCounsilPage/GoverningCouncilCard/GoverningCouncilCard";
 
 export const metadata = {
   title: "Governing Council | Visionary Leadership at Canara College",
@@ -35,7 +35,7 @@ export const metadata = {
 const page = () => {
   return (
     <>
-      <ProfileCard datam={governingCounsilData} title="Governing Council"/>
+      <GoverningCouncilProfileCard datam={governingCounsilData} title="Governing Council"/>
       <section className="bg-[#E5E5EA]">
         <FooterCard />
       </section>

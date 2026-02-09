@@ -15,7 +15,7 @@ function NavbarItems() {
   const pathname = usePathname();
   return (
     <>
-      <div className="hidden nav-items lg:flex text-secondary space-x-2 flex-row justify-between flex-1">
+      <div className="hidden nav-items lg:flex text-secondary  flex-row justify-between flex-1">
         <div className="cursor-pointer   text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
           <About />
         </div>
@@ -43,6 +43,20 @@ function NavbarItems() {
         >
           <Life />
         </div>
+         <Link
+          id="placement"
+          className=" opacity-80 text-[#2884CA]   font-poppins text-base xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
+          href={"/research-development-consultancy"}
+        >
+          <p
+            className={`font-poppins ${
+              pathname === "/research-development-consultancy" ? "border-b-2 px-3  py-1.5 border-[#005580] text-[#005580]" : " text-[#2884CA] py-1.5 px-3 hover:text-[#005580]"
+            }  `}
+          >
+            {" "}
+           Research
+          </p>
+        </Link>
         <Link
           id="placement"
           className=" opacity-80 text-[#2884CA]   font-poppins text-base xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"

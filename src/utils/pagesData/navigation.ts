@@ -144,10 +144,6 @@ const learningHub = [
     title: "Research at CEC",
     link: "/academics/research",
   },
-   {
-    title: "Research & Development and Consultancy Cell",
-    link: "/academics/research-development-consultancy",
-  },
 ];
 
 const campusFacilities = [

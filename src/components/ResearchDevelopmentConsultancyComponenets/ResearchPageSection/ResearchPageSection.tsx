@@ -35,18 +35,92 @@ const VisionMission = () => (
 
 // Research Policies Section
 const ResearchPolicies = () => (
-  <div className="text-textGray text-[17px] space-y-5">
-    <h2 className="text-[24px] text-[#1d1d1f] font-bold mb-2">Research Policies and Guidelines</h2>
-    <p>
-      The Research Policy of Canara Engineering College provides a framework to promote, support, and regulate research activities across all
-      departments. It ensures quality, ethical practices, and alignment with institutional goals.
-    </p>
-    <ul className="list-disc ml-5 space-y-1">
-      <li>Research Incentives (publications, patents, funded projects)</li>
-      <li>Seed Grant / Internal Funding Schemes</li>
-      <li>Research exchange programs</li>
-      <li>Publication & Authorship guidelines</li>
-    </ul>
+  <div className="text-textGray text-[17px] space-y-6">
+    {/* Existing Section */}
+    <div className="space-y-5">
+      <h2 className="text-[24px] text-[#1d1d1f] font-bold mb-2">Research Policies and Guidelines</h2>
+      <p>
+        The Research Policy of Canara Engineering College provides a framework to promote, support, and regulate research activities across all
+        departments. It ensures quality, ethical practices, and alignment with institutional goals.
+      </p>
+      <ul className="list-disc ml-5 space-y-1">
+        <li>Research Incentives (publications, patents, funded projects)</li>
+        <li>Seed Grant / Internal Funding Schemes</li>
+        <li>Research exchange programs</li>
+        <li>Publication & Authorship guidelines</li>
+      </ul>
+    </div>
+
+    
+    {/* New Section: Research Support Schemes */}
+    <div className="space-y-5">
+      <h2 className="text-[24px] text-[#1d1d1f] font-bold mb-2">Research Support Schemes at CEC</h2>
+
+      {/* 1. Research Grants */}
+      <div>
+        <h3 className="text-[19px] text-[#1d1d1f] font-bold">1. Research Grants & Internal Funding</h3>
+        <p className="mt-2">
+          CEC provides structured research grant schemes to encourage faculty to initiate, strengthen, and expand their research activities.
+        </p>
+        <p className="mt-1">The support enables faculty to:</p>
+        <ul className="list-disc ml-5 space-y-1 mt-2">
+          <li>Start new research ideas and pilot studies.</li>
+          <li>Build preliminary data for external funding proposals.</li>
+          <li>Promote interdisciplinary and collaborative research.</li>
+          <li>Align research with institutional priority areas and emerging thematic domains.</li>
+        </ul>
+      </div>
+
+      {/* 2. Publication Support */}
+      <div>
+        <h3 className="text-[19px] text-[#1d1d1f] font-bold">2. Publication Support</h3>
+        <p className="mt-2">To promote high-quality research dissemination, CEC supports:</p>
+        <ul className="list-disc ml-5 space-y-1 mt-2">
+          <li>Publications in reputed national and international journals.</li>
+          <li>Indexed conference publications (faculty and student-driven).</li>
+          <li>Support for article processing charges (APC) in credible journals.</li>
+          <li>Encouragement for impactful, ethical, and responsible publishing practices.</li>
+        </ul>
+      </div>
+
+      {/* 3. Patent Support */}
+      <div>
+        <h3 className="text-[19px] text-[#1d1d1f] font-bold">3. Patent Support & Intellectual Property Facilitation</h3>
+        <p className="mt-2">CEC encourages innovation and technology development through:</p>
+        <ul className="list-disc ml-5 space-y-1 mt-2">
+          <li>Support for patent filing and examination processes.</li>
+          <li>Incentives for patent publication and granted patents.</li>
+          <li>Guidance for protecting intellectual property generated through institutional research.</li>
+          <li>Promotion of translational research and commercialization potential.</li>
+        </ul>
+      </div>
+
+      {/* 4. Research Exchange */}
+      <div>
+        <h3 className="text-[19px] text-[#1d1d1f] font-bold">4. Research Exchange & Mobility Programs</h3>
+        <p className="mt-2">To strengthen research exposure and collaboration, CEC supports:</p>
+        <ul className="list-disc ml-5 space-y-1 mt-2">
+          <li>Faculty participation in national workshops, training, and research visits.</li>
+          <li>International research exchange opportunities for global academic engagement.</li>
+          <li>Short-term visits for research discussions, technology demonstrations, or project-based collaborations.</li>
+          <li>Capacity building through exposure to advanced laboratories, institutions, and industrial R&D environments.</li>
+        </ul>
+      </div>
+
+      {/* 5. Additional Incentives */}
+      <div>
+        <h3 className="text-[19px] text-[#1d1d1f] font-bold">5. Additional Research Incentives</h3>
+        <p className="mt-2">CEC provides recognition and institutional support for:</p>
+        <ul className="list-disc ml-5 space-y-1 mt-2">
+          <li>Books and book chapters published with reputed publishers.</li>
+          <li>Externally funded projects and consultancy work.</li>
+          <li>Student research mentorship and supervision.</li>
+          <li>Projects with societal, community, or rural impact.</li>
+          <li>Training, capacity-building, and upskilling programs.</li>
+          <li>Outstanding research contributions and academic achievements.</li>
+        </ul>
+      </div>
+    </div>
   </div>
 );
 
@@ -439,12 +513,23 @@ const DepartmentHighlights = () => (
 // Research Output Section
 const ResearchOutput = () => (
   <div className="text-textGray text-[17px] ">
-    <h2 className="text-[24px] text-[#1d1d1f] font-bold mb-4">Research Output Summary (2020–2025)</h2>
+
+    <h2 className="text-[24px] text-[#1d1d1f] font-bold mb-2">Research Output</h2>
+    <div className="mb-4">
+            <h3 className="text-[20px] text-[#1d1d1f] mb-2 font-bold">Research Output Summary (2020–2025)</h3>
    <img src="https://apiserver.cec.edu.in/files/rdcc" className="" alt="" />
     <ul className="list-disc ml-5 mt-3 space-y-1">
       <li>Number of patents published/granted (published/granted): 123</li>
       <li>External Project funds received (total amount): ₹31,41,764</li>
-    </ul>
+    </ul></div>
+       <div className="mb-2">
+            <h3 className="text-[20px] text-[#1d1d1f] mb-2 font-bold">Department-Wise Unique Research Publications (2021–2025)</h3>
+   <img src="https://apiserver.cec.edu.in/files/deptUniqueResearch" className="mb-6" alt="" />
+   <img src="https://apiserver.cec.edu.in/files/deptUniqueResearch-2" className="" alt="" />
+    </div>
+    
+
+    
   </div>
 );
 
@@ -468,15 +553,20 @@ const ResearchInfrastructure = () => (
 const Collaborations = () => (
   <div className="text-textGray text-[17px] space-y-5">
     <h2 className="text-[24px] text-[#1d1d1f] font-bold mb-2">Collaborations & MoUs</h2>
-    <ul className="list-disc ml-5 space-y-1">
-      <li>NexaInnovSolutions</li>
-      <li>Accolade Tech Solutions Pvt. Ltd.</li>
-      <li>DLithe, Bengaluru</li>
-      <li>GlowLogics Solutions</li>
-      <li>Karunadu Technologies</li>
-      <li>Govt. Tool and Training Centre</li>
-      <li>Kakunje Software Pvt. Ltd.</li>
-    </ul>
+   <ul className="list-disc ml-5 space-y-1">
+  <li>Govt. Tool Room and Training Centre, Baikampady</li>
+  <li>ScleraVDMS Pvt. Ltd.</li>
+  <li>Nexalnnov Solutions</li>
+  <li>Megamind Advertising Pvt. Ltd.</li>
+  <li>DLithe, Bengaluru</li>
+  <li>GlowLogics Solutions</li>
+  <li>Karunadu Technologies</li>
+  <li>Mangalore University (Cardiff)</li>
+  <li>Accolade Tech Solutions Pvt. Ltd.</li>
+  <li>Manipal Academy of Higher Education</li>
+  <li>QSPIDER</li>
+  <li>ETHNUS</li>
+</ul>
   </div>
 );
 

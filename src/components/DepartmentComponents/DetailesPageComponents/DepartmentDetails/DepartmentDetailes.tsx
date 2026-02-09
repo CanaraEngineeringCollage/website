@@ -270,7 +270,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
           {/* Content Container: Occupies the left 60% */}
           <div className="w-full lg2:px-24 px-5 h-full relative z-20 flex flex-col justify-center">
             {/* Go Back Button */}
-            <div className="absolute top-14">
+            <div className="absolute top-20">
               <Link href={`/department/${slug}`}>
                 <button className="flex items-center gap-2 text-[#555]  transition-colors">
                   <ArrowLeftIcon width={20} height={20} />

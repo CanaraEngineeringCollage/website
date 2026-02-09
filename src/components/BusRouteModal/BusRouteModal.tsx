@@ -30,54 +30,111 @@ interface BusRouteModalProps {
   maxWidth?: string;
 }
 
+// Updated Data Structure
 const busRoutes = [
   {
-    routeNo: "ROUTE NO.1\n(BUS NO. 4)",
-    route:
-      "NITK- THADAMBAIL- MARIGUDI(SURATHKAL)- SURAJ HOTEL- GOVINDADAS COLLEGE- HOSABETTU- HONNAKATTE- KULAI- PANAMBUR- KULOOR- KODICAL CROSS- CHOWKI CANARA BANK- MAROLI- PADIL",
+    routeNo: "1",
+    departureTime: "7.50 a.m.",
+    stops: "Talapady - Beeri – Kotekar - Kolya – College",
+    coordinator: "Mr. Navaneet Bhaktha",
+    contactNo: "8111939377",
+    busNo: "1",
   },
   {
-    routeNo: "ROUTE NO.2\n(BUS NO.10)",
-    route:
-      "KOTTARA CHOWKI- KOTTARA (INFOSYS)- URWA STORE- CHILIMBI- LADY HILL- LALBAGH- BALLALBAGH- EMPIRE MALL- BESANT SCHOOL- PVS- BUNTS HOSTEL- CV NAYAK HALL- CITY HOSPITAL- KADRI MALLIKATTE- SHIVABAGH- NANTHOOR- KODAKKAL",
+    routeNo: "2",
+    departureTime: "7.30 a.m.",
+    stops: "Puttur (Darbe Circle) – Bus Stand – Bolwar – Nagara – Kabaka – Mani – Kalladka – College",
+    coordinator: "Mr. Subramanya",
+    contactNo: "8861494057",
+    busNo: "2",
   },
   {
-    routeNo: "ROUTE NO.3\n(BUS NO.5)",
-    route: "ALAKE- KUDROLI- NEW CHITRA- CAR STREET- RTO- PANDESHWAR- MANGALA DEVI- MARNAMIKATTE- NANDIGUDDA- VELENCIA- KANKANADY",
+    routeNo: "3",
+    departureTime: "7.45 a.m.",
+    stops: "Kavoor – Bondel – Padavinangadi – Mary Hill – Yeyyadi – KPT – Nanthoor Junction - Bikkarnakatte – College",
+    coordinator: "Mr. Suresh S",
+    contactNo: "9845512424",
+    busNo: "3",
   },
   {
-    routeNo: "ROUTE NO.4\n(BUS NO.1)",
-    route: "TALAPADY- BEERI- KOTEKAR- KOLYA",
+    routeNo: "4",
+    departureTime: "7.45 a.m.",
+    stops: "NITK – Thadambail – Marigudi(Surathkal) – Suraj Hotel – Govindadas College – Hosabettu – Honnakatte – Kulai – Panambur – Kuloor – Kodical Cross – Chowki Canara Bank - College",
+    coordinator: "Mr. Rajesh Rao",
+    contactNo: "9483924838",
+    busNo: "4",
   },
   {
-    routeNo: "ROUTE NO.5\n(BUS NO.2)",
-    route: "DARBE CIRCLE- BUS STAND- BOLWAR- NAGARA- KABAKA- MANI- KALLADKA- PANEMANGALUR",
+    routeNo: "5",
+    departureTime: "7.50 a.m.",
+    stops: "RTO – Pandeshwar – Mangala Devi – Marnamikatte – Nandigudde- Velencia – Kankanady– Red building – Naguri- Padil- College",
+    coordinator: "Mrs. Bhavani",
+    contactNo: "9916071734",
+    busNo: "5",
   },
   {
-    routeNo: "ROUTE NO.6\n(BUS NO.8)",
-    route:
-      "PANDITH HOUSE- KUTTAR- YENEPOYA- DERALAKATTE- KANACHUR- ASSAIGOLI- KONAJE- MUDIPU- SAJIPA- MELKAR- PANEMANGALORE- BC ROAD- KAIKAMBA BC ROAD- MODANKAP",
+    routeNo: "6",
+    departureTime: "7.50 a.m.",
+    stops: "Ashok Nagar – Daivajna Hall – Marigudi – Urwa Market – Mannagudda – Durga Mahal –Adyarkatte - College",
+    coordinator: "Mr. Ajay Shet",
+    contactNo: "9480174650",
+    busNo: "6",
   },
   {
-    routeNo: "ROUTE NO.7\n(BUS NO.9)",
-    route:
-      "MALEMAR- DEREBAIL KONCHADY- KONCHADY KATTE- DEREBAIL CHURCH- KUNTIKAN- KOTTARA CROSS- BEJAI KAPIKAD- BALIGA STORE- KSRTC BUS STAND- BEJAI CIRCLE- MUSEUM- PADAVU SCHOOL-ALAPE- PADIL JUNCTION",
+    routeNo: "7",
+    departureTime: "7.45 a.m.",
+    stops: "Kolya- Kumpala – Ullala – Thokkottu – Kallapu – Jeppinamogaru – Yekkuru – Gorigudda – Ujjodi – Pumpwell – College",
+    coordinator: "Ms. Pavithra Nayak",
+    contactNo: "6363728492",
+    busNo: "7",
   },
   {
-    routeNo: "ROUTE NO.8\n(BUS NO.6)",
-    route: "ASHOK NAGAR- DAIVAJNA HALL- MARIGUDI URWA- URWA MARKET- MANNAGUDDA- DURGA MAHAL- ADYAR KATTE- ADYAR- ADYAR POST OFFICE- NETRAKERE",
+    routeNo: "8",
+    departureTime: "7.35 a.m.",
+    stops: "Pandit House - Kuttar - Yenepoya - Deralakatte - Kanachur - Assaigoli - Konaje - Mudipu - Sajipa - Melkar - Panemangalur - BC Road – Kaikamba (BC Road) –Modankap – Pachinadka - College",
+    coordinator: "Mr. Shubhashree",
+    contactNo: "9008379109",
+    busNo: "8",
   },
   {
-    routeNo: "ROUTE NO.9\n(BUS NO.3)",
-    route: "KAVOOR- BODEL- PADAVINANGADI- MARY HILL- YEYYADI – KPT- NANTHOOR JUNCTION- BIKKARNAKATTE",
+    routeNo: "9",
+    departureTime: "7.45 a.m.",
+    stops: "Malemar – Derebail Konchady – Konchadi katte(Land links) – Derebail church – Kuntikan – Kottara Cross – Bejai Kapikad – Baliga Store – KSRTC Bus stand - Bejai Circle – Museum – Padavu School – Alape - Padil Junction – Adyar – Adyar P O - Nethrakere – College",
+    coordinator: "Mrs.Ashwini J",
+    contactNo: "9480532203",
+    busNo: "09",
   },
   {
-    routeNo: "ROUTE NO.10\n(BUS NO.7)",
-    route: "KUMPALA- ULLALA- THOKKOTTU- KALLAPU- JEPPINAMOGARU – YEKKURU- GORIGUDDA- JUJJODI- PUMPWELL- RED BUILDING- NAGURI",
+    routeNo: "10",
+    departureTime: "7.50 a.m.",
+    stops: "Kottara Chowki – Kottara(Infosys) – Urwa Store – Chilimbi – Lady Hill – Lalbagh – Ballalbagh - Empiremall - Besant School – PVS - Bunts Hostel – CV Nayak hall – City Hospital – Kadri Mallikatte – Shivabagh – Nanthoor –Kodakkal - Farangipet - College",
+    coordinator: "Mrs. Pallavi M",
+    contactNo: "9845555573",
+    busNo: "10",
   },
   {
-    routeNo: "ROUTE NO.11\n(BUS NO.11)",
-    route: "MOODABIDRI- YEDAPADAVU- GANJIMATA- KAIKAMBA- POLALI DWARA- POLALI- KALPANE",
+    routeNo: "11",
+    departureTime: "7.45 a.m.",
+    stops: "Moodabidri – Yedapadavu – Ganjimata – Kaikamba – Polali Dwara – Polali -Kalpane – college",
+    coordinator: "Mr. Gajanan Prabhu",
+    contactNo: "9886286993",
+    busNo: "11",
+  },
+  {
+    routeNo: "12",
+    departureTime: "7.50 a.m.",
+    stops: "Mannagudda Durgamahal - Kudroli dwara - New Chithra – Carstreet -Venkataramana Temple - Temple Square – Hampanakatta - Jyothi – Pumpwell – Padil – College",
+    coordinator: "Mrs. Vinoda Baliga",
+    contactNo: "9980248567",
+    busNo: "12",
+  },
+  {
+    routeNo: "14",
+    departureTime: "7.30 a.m.",
+    stops: "Uppinangady-Perne-Madala-Mani-Kalladka-B.C.Road-Modankap-Pachhinadka-",
+    coordinator: "Mrs. Bhavya",
+    contactNo: "94818 45863",
+    busNo: "14",
   },
 ];
 
@@ -85,7 +142,6 @@ const BusRouteModal: React.FC<BusRouteModalProps> = ({ isOpen, onClose, classNam
   const containerRef = useRef<HTMLDivElement>(null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  // FIX 1: Only trigger close if isOpen is true AND we are not currently viewing an image.
   useOutsideClick(containerRef, () => {
     if (isOpen && !selectedImage) onClose(false);
   });
@@ -96,7 +152,6 @@ const BusRouteModal: React.FC<BusRouteModalProps> = ({ isOpen, onClose, classNam
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
-        // FIX 2: Prioritize closing the image preview. If no image, then close main modal.
         if (selectedImage) {
           setSelectedImage(null);
         } else if (isOpen) {
@@ -106,7 +161,7 @@ const BusRouteModal: React.FC<BusRouteModalProps> = ({ isOpen, onClose, classNam
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen, onClose, selectedImage]); // Added selectedImage to dependency array
+  }, [isOpen, onClose, selectedImage]);
 
   return (
     <AnimatePresence>
@@ -117,8 +172,7 @@ const BusRouteModal: React.FC<BusRouteModalProps> = ({ isOpen, onClose, classNam
             variants={backdropVariants}
             className="bg-black/80 backdrop-blur-lg h-full w-full fixed inset-0"
             onClick={() => {
-                // Optional safety: Only close main modal if image isn't open
-                if (!selectedImage) onClose(false);
+              if (!selectedImage) onClose(false);
             }}
           />
 
@@ -141,7 +195,7 @@ const BusRouteModal: React.FC<BusRouteModalProps> = ({ isOpen, onClose, classNam
 
             {/* Content */}
             <motion.div variants={contentVariants} className="p-4 sm:px-8 md:px-10 lg:px-12 py-12 sm:py-12 lg:pt-16 lg:pb-12">
-              <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-bold text-[#1D1D1F] mb-8 text-center">Bus Route Information</h2>
+              <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-bold text-[#1D1D1F] mb-8 text-center">College Bus Route Information</h2>
 
               {/* Table Section */}
               <div className="overflow-x-auto">
@@ -149,16 +203,24 @@ const BusRouteModal: React.FC<BusRouteModalProps> = ({ isOpen, onClose, classNam
                   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
                     <thead className="bg-[#F3F8FC] text-[#2884CA]">
                       <tr>
-                        <th className="py-3 md:px-4 px-1 border-b whitespace-pre-line">ROUTE NO.(BUS NO.)</th>
-                        <th className="py-3 md:px-4 px-1 border-b">Travel Route</th>
+                        <th className="py-3 md:px-4 px-1 border-b whitespace-nowrap">Route No</th>
+                        <th className="py-3 md:px-4 px-1 border-b whitespace-nowrap">Departure Time</th>
+                        <th className="py-3 md:px-4 px-1 border-b min-w-[200px]">Stops</th>
+                        <th className="py-3 md:px-4 px-1 border-b whitespace-nowrap">Coordinator</th>
+                        <th className="py-3 md:px-4 px-1 border-b whitespace-nowrap">Contact No</th>
+                        <th className="py-3 md:px-4 px-1 border-b whitespace-nowrap">Bus No</th>
                       </tr>
                     </thead>
 
                     <tbody className="transition-all duration-700 ease-in-out">
                       {busRoutes.map((route, index) => (
                         <tr key={index} className="text-textGray">
-                          <td className="py-3 md:px-4 px-1 border-b whitespace-pre-line font-medium align-top">{route.routeNo}</td>
-                          <td className="py-3 md:px-4 px-1 border-b align-top">{route.route}</td>
+                          <td className="py-3 md:px-4 px-1 border-b align-top font-medium">{route.routeNo}</td>
+                          <td className="py-3 md:px-4 px-1 border-b align-top">{route.departureTime}</td>
+                          <td className="py-3 md:px-4 px-1 border-b align-top">{route.stops}</td>
+                          <td className="py-3 md:px-4 px-1 border-b align-top">{route.coordinator}</td>
+                          <td className="py-3 md:px-4 px-1 border-b align-top">{route.contactNo}</td>
+                          <td className="py-3 md:px-4 px-1 border-b align-top">{route.busNo}</td>
                         </tr>
                       ))}
                     </tbody>

@@ -10357,8 +10357,7 @@
             "This lab is utilized by the 3rd year CSE students to conduct lab programs related to Web Programming and Cloud Computing.",
             "Number of Desktop: 35",
             "OS: Windows 11, Ubuntu 20"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Web%20Programming"
+          ]
         },
         {
           "title": "DevOps / Blockchain Lab",
@@ -10366,8 +10365,7 @@
             "This lab is utilized by the 3rd year CSE students to conduct lab programs related to DevOps and Blockchain.",
             "Number of Desktop: 35",
             "OS: Windows 11/10, Ubuntu 20"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/DevOps"
+          ]
         },
         {
           "title": "Data Structures / Algorithms Lab",
@@ -10375,8 +10373,7 @@
             "This lab is utilized by the 2nd year CSE students to conduct lab programs related to Data Structures and Algorithms.",
             "Number of Desktop: 36",
             "OS: Windows 10, Ubuntu 20"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Data%20Structures"
+          ]
         },
         {
           "title": "R Programming / LaTeX Lab",
@@ -10384,8 +10381,7 @@
             "This lab is utilized by the 2nd & 3rd year CSE students to conduct lab programs related to R Programming and LaTeX.",
             "Number of Desktop: 33",
             "OS: Windows 10, Ubuntu 20"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/R%20Programming"
+          ]
         },
         {
           "title": "Database Management System / Machine Learning Lab",
@@ -10393,8 +10389,7 @@
             "This lab is utilized by the 3rd year CSE students to conduct lab programs related to Machine Learning.",
             "Number of Desktop: 36",
             "OS: Windows 10, Ubuntu 18"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Database%20Management%20System%20and%20Machine%20Learning%20Lab"
+          ]
         },
         {
           "title": "Faculty Research Lab",
@@ -10403,8 +10398,15 @@
             "HP Workstation Z2 Tower G9 Workstation with Core i7 processor, 32 GB RAM",
             "OS: Windows 11 Professional",
             "Software: Anaconda Navigator, VS Code"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Faculty%20Research%20Lab"
+          ]
+        },
+        {
+          "swiper":["https://apiserver.cec.edu.in/files/Web%20Programming",
+  "https://apiserver.cec.edu.in/files/DevOps",
+  "https://apiserver.cec.edu.in/files/Data%20Structures",
+  "https://apiserver.cec.edu.in/files/R%20Programming",
+  "https://apiserver.cec.edu.in/files/Database%20Management%20System%20and%20Machine%20Learning%20Lab",
+  "https://apiserver.cec.edu.in/files/Faculty%20Research%20Lab"]
         },
         {
           "title": "Major Facilities in Laboratory",
@@ -21437,28 +21439,23 @@
       "allFacilities": [
         {
           "title": "Advance Computing Laboratory",
-          "points": ["This lab is utilized by the 2nd year ISE students for Java & Advanced Java experiments."],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Advance%20Computing%20Laboratory"
+          "points": ["This lab is utilized by the 2nd year ISE students for Java & Advanced Java experiments."]
         },
         {
           "title": "Algorithm Laboratory",
-          "points": ["This lab is utilized by the 2nd year ISE students to conduct lab programs related to Data structures and Algorithms."],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Algorithm%20Laboratory"
-        },
+          "points": ["This lab is utilized by the 2nd year ISE students to conduct lab programs related to Data structures and Algorithms."]        },
         {
           "title": "Machine Learning/Data Processing & Visualization Laboratory",
-          "points": ["This lab is utilized by 3rd year ISE students for laboratories such as Machine Learning, Python and Data Visualization Lab."],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Project%20Laboratory"
-        },
+          "points": ["This lab is utilized by 3rd year ISE students for laboratories such as Machine Learning, Python and Data Visualization Lab."]        },
         {
           "title": "Project Laboratory",
-          "points": ["This lab is utilized by the 3rd and 4th year students for developing mini-projects and major project."],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Project%20Laboratory"
+          "points": ["This lab is utilized by the 3rd and 4th year students for developing mini-projects and major project."]
         },
         {
           "title": "Code Nest Laboratory",
-          "points": ["This lab is utilized by 2nd and 3rd year ISE students for Latex Lab and Devops Labs."],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Code%20Nest%20Laboratory"
+          "points": ["This lab is utilized by 2nd and 3rd year ISE students for Latex Lab and Devops Labs."]        },
+        {
+"swiper":[ "https://apiserver.cec.edu.in/files/Advance%20Computing%20Laboratory","https://apiserver.cec.edu.in/files/Algorithm%20Laboratory","https://apiserver.cec.edu.in/files/Project%20Laboratory","https://apiserver.cec.edu.in/files/Code%20Nest%20Laboratory"]
         },
         {
           "title": "Learning Materials",
@@ -31191,8 +31188,7 @@
             "Klystron setup",
             "Antenna Trainer kit set",
             "OFC kits"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Hardware%20Lab%20I-Advanced%20Communication%20Lab"
+          ]
         },
         {
           "title": "Hardware Lab II-LIC and Communication Lab",
@@ -31205,8 +31201,7 @@
             "Antenna setup",
             "Various Digital Modulation Kits",
             "Power supply units"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Hardware%20Lab%20II-LIC%20and%20Communication%20Lab"
+          ]
         },
         {
           "title": "Hardware lab III-Logic Design Lab and Project Lab",
@@ -31265,10 +31260,10 @@
           "title": "Research/Project Lab",
           "desc": "Additional laboratory facilities are created in the department to improve the quality of learning, catering to the needs of the students. This laboratory is used to conduct project and research work and to meet the requirement of beyond working hours.",
           "methodes": "",
-          "points": [],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Research%20Project%20Lab",
-          "imageUrl2": "https://apiserver.cec.edu.in/files/Research%20Project%20Lab2",
-          "imageUrl3": "https://apiserver.cec.edu.in/files/Research%20Project%20Lab3"
+          "points": []
+        },
+        {
+          "swiper":["https://apiserver.cec.edu.in/files/Hardware%20Lab%20I-Advanced%20Communication%20Lab","https://apiserver.cec.edu.in/files/Hardware%20Lab%20II-LIC%20and%20Communication%20Lab","https://apiserver.cec.edu.in/files/Research%20Project%20Lab","https://apiserver.cec.edu.in/files/Research%20Project%20Lab2","https://apiserver.cec.edu.in/files/Research%20Project%20Lab3"]
         },
         {
           "title": "Class Room",
@@ -40880,8 +40875,7 @@
             "This lab is utilized by 2nd year CSD students to conduct lab programs related to Data structure and algorithm",
             "Number of PC: 35",
             "OS: Windows 11, Ubuntu 20"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Data%20Structures%20and%20Algorithms%20Lab"
+          ]
         },
         {
           "title": "Object Oriented Design Pattern Lab",
@@ -40891,8 +40885,7 @@
             "This lab is utilized by 3rd year CSD students to conduct lab programs related to Object Oriented Design Pattern",
             "Number of PC: 35",
             "OS: Windows 11/10, Ubuntu 20"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Object%20Oriented%20Design%20Pattern%20Lab"
+          ]
         },
         {
           "title": "UI/UX Lab",
@@ -40902,8 +40895,7 @@
             "This lab is utilized by 4th year CSD students to conduct lab programs related to UI/UX",
             "Number of PC: 15",
             "OS: Windows 11, Ubuntu 20"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/UI%20UX%20Lab"
+          ]
         },
         {
           "title": "Full Stack Development Lab",
@@ -40913,8 +40905,7 @@
             "This lab is utilized by 3rd & 4th year CSD students to conduct project work related to Full Stack Development",
             "Number of PC: 33",
             "OS: Windows 11, Ubuntu 20"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Full%20Stack%20Development%20Lab"
+          ]
         },
         {
           "title": "Robotic Process and Automation Lab",
@@ -40924,9 +40915,9 @@
             "This lab is utilized by 4th year CSD students to engage with projects related to Robotic Process and Automation",
             "Number of PC: 35",
             "OS: Windows 11, Ubuntu 18"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Robotic%20Process%20and%20Automation%20Lab"
+          ]
         },
+        {"swiper":["https://apiserver.cec.edu.in/files/Data%20Structures%20and%20Algorithms%20Lab","https://apiserver.cec.edu.in/files/Object%20Oriented%20Design%20Pattern%20Lab","https://apiserver.cec.edu.in/files/UI%20UX%20Lab","https://apiserver.cec.edu.in/files/Full%20Stack%20Development%20Lab","https://apiserver.cec.edu.in/files/Robotic%20Process%20and%20Automation%20Lab"]},
         {
           "title": "Department Library",
           "desc": "",
@@ -46890,8 +46881,7 @@
             "This lab is intended to support students in understanding and putting various data structure and algorithm experiments into practice, as well as in Ability Enhancement Courses that use hands-on methods. Students can practice coding, evaluate the effectiveness of various techniques, and work through challenging challenges in this setting. There are 33 computer systems in the lab, all of which include the software tools needed to conduct and evaluate academic laboratory research. Academic Labs: DAA and Data Structures.",
             "Number of PC: 33",
             "OS: Windows 11, Ubuntu 20"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Data%20Structures%20and%20Algorithm%20Laboratory%20(CSBSL-01)"
+          ]
         },
         {
           "title": "Computer System Laboratory (CSBSL-02)",
@@ -46901,8 +46891,7 @@
             "With 33 systems and the newest software, this lab offers a space for knowledge implementation and experimentation. Each system has access to the internet. Data analytics can be done with it as well. Angular J S, Software Design Lab, and R-Programming Lab are academic labs.",
             "Number of PC: 33",
             "OS: Windows 11/10, Ubuntu 20"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Computer%20System%20Laboratory%20(CSBSL-02)"
+          ]
         },
         {
           "title": "Business Intelligence and Data Analytics Laboratory(CSBSL-03)",
@@ -46912,9 +46901,9 @@
             "This lab is equipped with all the software necessary for regular laboratory work as well as project work and is appropriate for conducting any skill development program.",
             "Number of PC: 32",
             "OS: Windows 10, Ubuntu 20"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Business%20Intelligence%20and%20Data%20Analytics%20Laboratory(CSBSL-03)"
+          ]
         },
+        {"swiper":["https://apiserver.cec.edu.in/files/Data%20Structures%20and%20Algorithm%20Laboratory%20(CSBSL-01)","https://apiserver.cec.edu.in/files/Computer%20System%20Laboratory%20(CSBSL-02)","https://apiserver.cec.edu.in/files/Business%20Intelligence%20and%20Data%20Analytics%20Laboratory(CSBSL-03)"]},
         {
           "title": "Major Facilities in Laboratory",
           "categories": [
@@ -53585,44 +53574,39 @@
           "title": "",
           "desc": "Data Structure and Algorithms Laboratory (AIL01): This lab is designed to help students understand and implement various experiments of data structures and algorithms, and also Ability Enhancement Courses with practical approaches. It provides an environment for students to practice coding, analyze the efficiency of different algorithms, and solve complex problems. The laboratory is equipped with computer systems with the necessary software tools required for implementing and testing academic laboratory experiments. Academic Labs: Data Structures, DAA.",
           "methodes": "",
-          "points": [],
-          "imageUrl": "https://apiserver.cec.edu.in/files/lab2"
+          "points": []
         },
         {
           "title": "",
           "desc": "Machine Learning Laboratory (AIL02): The Machine Learning Laboratory is dedicated to providing students with practical experience in developing and applying machine learning algorithms. The lab is equipped with powerful computing resources and software tools for tasks such as data pre-processing, model training, and evaluation. Students can work on real-world datasets and projects to gain insights into machine learning techniques, experiment with different algorithms, and evaluate their performance. Academic Labs: Python Programming, Machine Learning.",
           "methodes": "",
-          "points": [],
-          "imageUrl": "https://apiserver.cec.edu.in/files/lab1"
+          "points": []
         },
         {
           "title": "",
           "desc": "Data Processing and Visualization Laboratory (AIL03): The Data Processing and Visualization Laboratory is equipped with computer systems that supports to implement and run the applications of artificial intelligence and machine learning experiments. The laboratory is installed with data visualization tools to facilitate intensive data analysis and modelling tasks. With access to leading software platforms and frameworks, students can explore and implement algorithms for data preprocessing, feature extraction, statistical analysis, and machine and deep learning model development.",
           "methodes": "",
-          "points": [],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Data%20Processing%20and%20Visualization%20Laboratory%20(AIL03)"
+          "points": []
         },
         {
           "title": "",
           "desc": "Deep Learning Laboratory (AIL04): The Deep Learning Laboratory (AIL04) is a dedicated facility designed to support research, innovation, and hands-on learning in deep learning and advanced artificial intelligence. This lab provides an environment for students, faculty, and researchers to explore cutting-edge techniques, including neural networks, computer vision, natural language processing, and generative AI.",
           "methodes": "",
-          "points": [],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Deep%20Learning%20Laboratory%20(AIL04)"
+          "points": []
         },
         {
           "title": "",
           "desc": "Project Laboratory (AIL05): The Project Laboratory (AIL05) provides dedicated workspaces for students to collaborate and work on their projects while utilizing the available computing resources. This lab fosters innovation by offering a conducive environment for designing, developing, and testing various academic and research-based projects.",
           "methodes": "",
-          "points": [],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Project%20Laboratory%20(AIL05)"
+          "points": []
         },
         {
           "title": "",
           "desc": "Intelligent System Laboratory (AIL06): The Intelligent System Laboratory (AIL06) is a facility designed to support advanced computing for students, faculty, and research scholars. This lab is equipped with high-performance HP Z-series workstations and provides robust computational resources for projects and experiments in Artificial Intelligence, Machine Learning, Data Science, and other high-demand fields that require high-end computing resources. This dedicated space empowers students to explore and develop complex algorithms, intelligent systems and conduct cutting-edge research, fostering innovation and academic excellence.",
           "methodes": "",
-          "points": [],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Intelligent%20System%20Laboratory%20(AIL06)"
+          "points": []
         },
+        {"swiper":["https://apiserver.cec.edu.in/files/lab2","https://apiserver.cec.edu.in/files/lab1","https://apiserver.cec.edu.in/files/Data%20Processing%20and%20Visualization%20Laboratory%20(AIL03)","https://apiserver.cec.edu.in/files/Deep%20Learning%20Laboratory%20(AIL04)","https://apiserver.cec.edu.in/files/Project%20Laboratory%20(AIL05)","https://apiserver.cec.edu.in/files/Intelligent%20System%20Laboratory%20(AIL06)"]},
 
         {
           "title2": "Tutorial and Classrooms",
@@ -74083,24 +74067,21 @@
         },
         {
           "title": "Computer Aided Engineering Drawing Lab",
-          "points": ["This lab with high end computers and drafting package is devoted for training first year students in computer aided drafting."],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Computer%20Aided%20Engineering%20Drawing%20Lab"
+          "points": ["This lab with high end computers and drafting package is devoted for training first year students in computer aided drafting."]
         },
         {
           "title": "Computer Aided Machine Drawing Lab",
           "points": [],
           "majorDesc": "In this lab students study about 2-D and 3-D Drawings of fasteners like bolt and nut, couplings, Keys and joints, rivets, thread forms and 3-D assembly drawings of different Machine Elements.",
           "majorDesc2": "Major Facilities/Equipments:",
-          "majorPoint": ["81 computers with high end configurations", "Installed Solid Edge Software."],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Computer%20Aided%20Machine%20Drawing%20Lab"
+          "majorPoint": ["81 computers with high end configurations", "Installed Solid Edge Software."]
         },
         {
           "title": "Machine Shop",
           "points": [],
           "majorDesc": "In this lab students study about various machining operations using Lathe, drilling, milling, shaping, grinding machines.",
           "majorDesc2": "Major Facilities/Equipments:",
-          "majorPoint": ["Lathes", "Milling machines", "Drilling machines", "Grinding machines", "shaping machine", "CNC Lathes."],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Machine%20Shop"
+          "majorPoint": ["Lathes", "Milling machines", "Drilling machines", "Grinding machines", "shaping machine", "CNC Lathes."]
         },
         {
           "title": "Foundry and Forging Lab",
@@ -74116,8 +74097,7 @@
             "Furnaces",
             "different types of Dies",
             "Moulding boxes."
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Foundry%20and%20Forging%20Lab"
+          ]
         },
         {
           "title": "Metallography and Material Testing Lab",
@@ -74134,8 +74114,7 @@
             "Micro hardness tester",
             "Microscope",
             "Heat Treatment Furnace."
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Metallography%20and%20Material%20Testing%20Lab"
+          ]
         },
         {
           "title": "Mechanical Measurements and Metrology Lab",
@@ -74153,8 +74132,7 @@
             "Bore Dial Gauge",
             "Sine Bar/Sine Center",
             "Slip gauges."
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Mechanical%20Measurements%20and%20Metrology%20Lab"
+          ]
         },
 
         {
@@ -74173,8 +74151,7 @@
             "Multistage Centrifugal Pump Test Rig",
             "V-Notch, Venturimeter, Orifice meter",
             "Blower, Compressor."
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Fluid%20Mechanics%20and%20Machinery%20Lab"
+          ]
         },
 
         {
@@ -74192,8 +74169,7 @@
             "Air cooled and water cooled Petrol Engines",
             "Diesel Engines, Variable Compression Engine",
             "Twin Cylinder Diesel Engine (Morse Test), Planimeter."
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Energy%20Conversion%20Engineering%20Lab"
+          ]
         },
 
         {
@@ -74210,8 +74186,7 @@
             "Heat Flux Measurement",
             "Vapour Compression Refrigeration Apparatus",
             "Air Conditioning Test Rig."
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Heat%20and%20Mass%20Transfer%20Lab"
+          ]
         },
 
         {
@@ -74226,8 +74201,7 @@
             "Porter and Hartnell Governor",
             "Pressure Variation Measurement Equipment",
             "Torque Measurement Equipment, Strain Rosettes."
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Design%20Lab"
+          ]
         },
 
         {
@@ -74256,9 +74230,9 @@
             "Hands-on practical sessions on the most scientific way of repair, maintenance and servicing of vehicles",
             "Create research facilities",
             "Organise Student training program (STP), workshops and seminars"
-          ],
-          "imageUrl": "https://apiserver.cec.edu.in/files/Dissection%20lab"
+          ]
         },
+        {"swiper":["https://apiserver.cec.edu.in/files/Computer%20Aided%20Engineering%20Drawing%20Lab","https://apiserver.cec.edu.in/files/Computer%20Aided%20Machine%20Drawing%20Lab","https://apiserver.cec.edu.in/files/Machine%20Shop","https://apiserver.cec.edu.in/files/Foundry%20and%20Forging%20Lab","https://apiserver.cec.edu.in/files/Metallography%20and%20Material%20Testing%20Lab","https://apiserver.cec.edu.in/files/Mechanical%20Measurements%20and%20Metrology%20Lab","https://apiserver.cec.edu.in/files/Fluid%20Mechanics%20and%20Machinery%20Lab","https://apiserver.cec.edu.in/files/Energy%20Conversion%20Engineering%20Lab","https://apiserver.cec.edu.in/files/Heat%20and%20Mass%20Transfer%20Lab","https://apiserver.cec.edu.in/files/Design%20Lab","https://apiserver.cec.edu.in/files/Dissection%20lab"]},
 
         {
           "title": "CNC Hands-on Lab",

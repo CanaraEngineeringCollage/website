@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 const data = [
   {
@@ -193,7 +194,8 @@ const data = [
 const Patents = () => {
   return (
 <div className="overflow-x-auto">
-   <div className="rounded overflow-x-auto border border-gray-200 w-full">
+   <h1 className="text-[24px] text-[#1d1d1f] font-bold mb-2">IPR/Patents</h1>
+   <div className="rounded overflow-x-auto space-y-8 border border-gray-200 w-full">
   <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
     <thead>
       <tr className="bg-[#F3F8FC] text-[#2884CA]">
@@ -226,6 +228,12 @@ const Patents = () => {
       ))}
     </tbody>
   </table>
+  <div>
+     <h1 className="text-xl font-bold  text-textGray mb-2">
+            Patent Publication Summary (2021-25)
+          </h1>
+  <Image src="https://apiserver.cec.edu.in/files/iprPatents" width={1000} height={1000} alt=''/>
+  </div>
   </div>
 </div>
 
