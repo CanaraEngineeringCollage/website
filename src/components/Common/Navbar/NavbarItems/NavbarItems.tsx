@@ -15,7 +15,7 @@ function NavbarItems() {
   const pathname = usePathname();
   return (
     <>
-      <div className="hidden nav-items lg:flex text-secondary space-x-2 flex-row justify-between flex-1">
+      <div className="hidden nav-items lg:flex text-secondary  flex-row justify-between flex-1">
         <div className="cursor-pointer   text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
           <About />
         </div>

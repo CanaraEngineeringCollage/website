@@ -6,10 +6,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 
-
 // import required modules
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+import { BiRightArrow } from "react-icons/bi";
+import { FaAngleRight } from "react-icons/fa6";
 
 interface FacilityCategory {
   title: string;
@@ -60,8 +61,11 @@ const Facilities: React.FC<FacilitiesProps> = ({ data, deptName }) => {
       <div className="space-y-2 mt-3">
         {data.allFacilities.map((facility, idx) => (
           <div key={idx} className="pb-4">
-            {facility.title2 && <h3 className="text-[22px] font-bold  text-textGray mb-2">{facility.title2}</h3>}
-            <h3 className={`text-xl font-bold  text-textGray ${!facility.title2 && "mb-2"} `}>{facility.title}</h3>
+            {facility.title2 && <h3 className="text-[22px] font-bold   text-textGray mb-2"><FaAngleRight/>{facility.title2}</h3>}
+          {facility.title&&  <h3 className={`text-xl font-bold flex items-center gap-1  text-textGray ${!facility.title2 && "mb-2"} `}><svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 1.5L7.84685 7.74717L1.5 13.9943" stroke="#2A2A2A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+{facility.title}</h3>}
 
             {facility.desc && (
               <p className="mb-2 md:text-lg text-justify text-[14px] leading-7 text-textGray">
@@ -122,8 +126,11 @@ const Facilities: React.FC<FacilitiesProps> = ({ data, deptName }) => {
                   modules={[Navigation, Pagination, Autoplay]}
                   spaceBetween={20}
                   slidesPerView={1}
-                  navigation
-                  pagination={{ clickable: true }}
+                  navigation={{
+                    prevEl: `.swiper-button-prev-custom-${idx}`,
+                    nextEl: `.swiper-button-next-custom-${idx}`,
+                  }}
+                 
                   autoplay={{ delay: 3000, disableOnInteraction: false }}
                   breakpoints={{
                     640: {
@@ -136,7 +143,7 @@ const Facilities: React.FC<FacilitiesProps> = ({ data, deptName }) => {
                       slidesPerView: 2.2,
                     },
                   }}
-                  className="mySwiper rounded-lg"
+                  className=" rounded-lg"
                 >
                   {facility.swiper.map((imgUrl, imgIndex) => (
                     <SwiperSlide key={imgIndex}>
@@ -146,22 +153,22 @@ const Facilities: React.FC<FacilitiesProps> = ({ data, deptName }) => {
                     </SwiperSlide>
                   ))}
                 </Swiper>
-               <div className="flex justify-end me-6 lg:justify-end items-center mt-12">
-                            <div className="flex gap-2 z-10">
-                              <button
-                                aria-label="Previous Slide"
-                                className="swiper-button-prev-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
-                              >
-                                <MdKeyboardArrowLeft />
-                              </button>
-                              <button
-                                aria-label="Next Slide"
-                                className="swiper-button-next-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
-                              >
-                                <MdKeyboardArrowRight />
-                              </button>
-                            </div>
-                          </div>
+                <div className="flex justify-end me-6 lg:justify-end items-center mt-12">
+                  <div className="flex gap-2 z-10">
+                    <button
+                      aria-label="Previous Slide"
+                      className={`swiper-button-prev-custom-${idx} swiper-button-prev-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50`}
+                    >
+                      <MdKeyboardArrowLeft />
+                    </button>
+                    <button
+                      aria-label="Next Slide"
+                      className={`swiper-button-next-custom-${idx} swiper-button-next-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50`}
+                    >
+                      <MdKeyboardArrowRight />
+                    </button>
+                  </div>
+                </div>
               </div>
             )}
 

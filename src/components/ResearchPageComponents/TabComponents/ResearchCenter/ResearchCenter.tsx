@@ -2,7 +2,15 @@ import React from "react";
 
 const research = ["Organic Chemistry", "Inorganic Chemistry", "Corrosion Science"];
 
-const researchCs=["Machine Learning","Image Processing","Web Services","Cloud Computing","Computer Networks","Wireless Sensor Networks"]
+const researchCs = [
+  "Machine Learning",
+  "Image Processing",
+  "Web Services",
+  "Cloud Computing",
+  "Computer Networks",
+  "Wireless Sensor Networks",
+];
+
 const detailes = [
   "Boiling Water Bath",
   "Digital melting point apparatus",
@@ -22,8 +30,20 @@ const detailes = [
   "Water Bath thermostatic",
 ];
 
-// data.ts
- const researchGuides = [
+// Chemistry Guides Data
+const chemGuides = [
+  {
+    name: "Dr. Priya V. Frank",
+    scholars: ["Lavanya D. Kateel - Completed"],
+  },
+  {
+    name: "Dr. Lavanya D. Kateel",
+    scholars: [],
+  },
+];
+
+// CS Guides Data
+const researchGuides = [
   {
     name: "Dr. Nagesh H R",
     scholars: [
@@ -38,10 +58,11 @@ const detailes = [
       "Mrs. Asmita Poojeri – Completed",
       "Mr. H Nagesh Shenoy – Completed",
       "Mr. Annappaswamy D.R – Ongoing",
+      "Ms. Vandana U – Ongoing",
       "Mr. Guruprasad – Ongoing",
-      "Ms. Jyothi N – Ongoing",
+      "Ms. Jyothi G N – Ongoing",
       "Mrs. Harinakshi C – Ongoing",
-      "Mrs. Megharani – Ongoing",
+      "Mrs. Megha Rani R – Ongoing",
       "Mrs. Suketha – Ongoing",
     ],
   },
@@ -50,9 +71,9 @@ const detailes = [
     scholars: [
       "Mr. Santosh Kumar D.K. – Completed",
       "Mrs. Usha Kirana S P – Completed",
-      "Miss. Annapoorna – Ongoing",
+      "Ms. Annapurna M – Ongoing",
       "Mr. Deepak D. – Ongoing",
-      "Miss. Saritha Suvarna – Ongoing",
+      "Ms. Saritha Suvarna – Ongoing",
     ],
   },
   {
@@ -61,23 +82,48 @@ const detailes = [
   },
   {
     name: "Dr. Basappa B Kodada",
-    scholars: ["Verdine Noronha – Ongoing", "Pooja N S – Ongoing"],
+    scholars: [
+      "Verdine Noronha – Ongoing",
+      "Pooja N S – Ongoing",
+      "Aparna Krishnan – Ongoing",
+      "Supriya A V – Ongoing",
+    ],
   },
   {
     name: "Dr. Manoj T Gadiyar",
-    scholars: ["Mr. Rajagopal K. T – Completed", "Mr. Kishor Shivathaya – Ongoing"],
+    scholars: [
+      "Mr. Rajagopal K. T – Completed",
+      "Mr. Kishor Shivathaya – Ongoing",
+      "Suchitra N Shenoy – Ongoing",
+    ],
+  },
+  {
+    name: "Dr. Karthik Pai B H",
+    scholars: [
+      "Mr. Abhishek S. Rao – Completed",
+      "Mr. Vasudeva Pai – Ongoing",
+    ],
+  },
+  {
+    name: "Dr. Pavithra D S",
+    scholars: ["Archana S – Ongoing", "Sharath P V – Ongoing"],
+  },
+  {
+    name: "Dr. Gurudeva Shastri Hiremath",
+    scholars: [],
   },
 ];
 
+// EC Guides Data
 const researchGuides2 = [
   {
     name: "Dr. Ganesh V. Bhat",
     scholars: [
-      "Vishwanath Sherigar – Completed",
+      "Mr. Vishwanath Sherigar – Completed",
       "Mr. Padmahasa M – Ongoing",
       "Mr. Vayusutha M – Ongoing",
       "Mrs. Jayashree K – Ongoing",
-      "Mrs. Suchitra N Shenoy – Ongoing"
+      "Mrs. Suchitra N Shenoy – Ongoing",
     ],
   },
   {
@@ -85,8 +131,10 @@ const researchGuides2 = [
     scholars: [
       "Mr. Mohan A R – Ongoing",
       "Mrs. Tara B B – Ongoing",
+      "Mr. Anantha Krishna Kamath – Ongoing",
     ],
-  }]
+  },
+];
 
 const domainResearch = [
   "VLSI",
@@ -98,6 +146,7 @@ const domainResearch = [
   "Biomedical Engineering",
   "Control System",
 ];
+
 const detailes2 = [
   "Power Scopes",
   "Function Generators",
@@ -120,163 +169,210 @@ const detailes2 = [
 const ResearchCenter = () => {
   return (
     <div className=" text-textGray  text-[17px]">
-      <h1 className="text-[20px] text-[#1d1d1f] font-bold mb-2">Dept. of Chemistry</h1>
+      <h1 className="text-[24px] text-[#1d1d1f] font-bold mb-2">Research Center</h1>
+      <h1 className="text-[20px] text-[#1d1d1f] font-bold mb-2">
+        Dept. of Chemistry
+      </h1>
       <div className="space-y-8">
         <div>
-          <h1 className="text-lg font-bold  text-textGray mb-2">Domain of Research</h1>
+          <h1 className="text-lg font-bold  text-textGray mb-2">
+            Domain of Research
+          </h1>
           <ul className="list-disc ml-5 text-lg">
-            {research.map((item) => (
-              <li>{item}</li>
+            {research.map((item, index) => (
+              <li key={index}>{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
-          <h1 className="text-xl font-bold  text-textGray mb-2">Research Facility</h1>
+          <h1 className="text-xl font-bold  text-textGray mb-2">
+            Research Facility
+          </h1>
           <div className="overflow-x-auto">
-             <div className="rounded overflow-hidden border border-gray-200 w-full">
-            <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
-              <thead>
-                <tr className="bg-[#F3F8FC] text-[#2884CA]">
-                  <th className="py-3 md:px-4 px-1 border-b">Name</th>
-                  <th className="py-3 md:px-4 px-1 border-b">Facility Details</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="text-textGray">
-                  <td className="px-4 py-3 align-top font-medium">Chemistry Research Laboratory</td>
-                  <td className="px-4 py-3">
-                    <ul className="list-disc pl-5 space-y-1">
-                      {detailes.map((item) => (
-                        <li>{item}</li>
-                      ))}
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+            <div className="rounded overflow-hidden border border-gray-200 w-full">
+              <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                <thead>
+                  <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                    <th className="py-3 md:px-4 px-1 border-b">Name</th>
+                    <th className="py-3 md:px-4 px-1 border-b">
+                      Facility Details
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="text-textGray">
+                    <td className="px-4 py-3 align-top font-medium">
+                      Chemistry Research Laboratory
+                    </td>
+                    <td className="px-4 py-3">
+                      <ul className="list-disc pl-5 space-y-1">
+                        {detailes.map((item, index) => (
+                          <li key={index}>{item}</li>
+                        ))}
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
         <div>
-          <h1 className="text-xl font-bold  text-textGray mb-2">Research Guides & Research Scholars</h1>
-          <ul className=" ml-5 md:text-lg  text-[14px] leading-7  text-textGray">
-            <li className="font-bold mt-5">Dr. Priya V. Frank</li>
-            <li className="list-disc ml-10">Lavanya D. Kateel - Completed</li>
-          </ul>
-
-            <ul className=" ml-5 md:text-lg  text-[14px] leading-7  text-textGray">
-            <li className="font-bold mt-5">Dr. Karthik Pai B H</li>
-            <li className="list-disc ml-10">Mr. Abhishek S. Rao – Completed</li>
-             <li className="list-disc ml-10">Mr. Vasudeva Pai – Ongoing</li>
-               <li className="font-bold ">Dr. Gurudeva Shastri Hiremath</li>
-
-          </ul>
-        </div>
-        <div>
-            <h1 className="text-[20px] text-[#1d1d1f] font-bold mb-2">Dept. of Computer Science &amp; Engineering</h1>
-      <div className="space-y-8">
-      
-          <h1 className="text-lg font-bold  text-textGray mb-2">Domain of Research</h1>
-          <ul className="list-disc ml-5 text-lg">
-            {researchCs.map((item) => (
-              <li>{item}</li>
-            ))}
-          </ul>
-        </div>
-        </div>
-        
-        <div className="overflow-x-auto">
-          <h1 className="text-xl font-bold  text-textGray mb-2">Research Facility</h1>
-           <div className="rounded overflow-hidden border border-gray-200 w-full">
-          <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
-            <thead>
-              <tr className="bg-[#F3F8FC] text-[#2884CA]">
-                <th className="py-3 md:px-4 px-1 border-b">Name</th>
-                <th className="py-3 md:px-4 px-1 border-b">Facility Details</th>
-              </tr>
-            </thead>
-            <tbody className="text-textGray">
-              <tr >
-                <td className="py-3 md:px-4 px-1 border-b">Research Center</td>
-                <td className="py-3 md:px-4 px-1 border-b">
-                  <p>
-                    HP Workstation Z2 Tower G9 Workstation with Core I7 processor, 32 GB RAM with Windows11 Professional. Other Softwares: Netbeans,
-                    Java, Eclipse, Visual Studio 2012, Python 3.7, Anaconda IDE, Jupyter, SPYDER, MySQL, MS OFFICE 2007, 2016.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          </div>
-        </div>
-
-        <div className="">
-          <h2 className="text-xl font-semibold mb-4">Research Guides & Research Scholars</h2>
-          <ol className=" pl-5 space-y-3 md:text-lg  text-[14px] leading-7  text-textGray">
-            {researchGuides.map((guide, index) => (
+          <h1 className="text-xl font-bold  text-textGray mb-2">
+            Research Guides & Research Scholars
+          </h1>
+          <ol className="pl-5 space-y-3 md:text-lg text-[14px] leading-7 text-textGray">
+            {chemGuides.map((guide, index) => (
               <li key={index}>
                 <p className="font-bold">{guide.name}</p>
-                <ul className="list-disc pl-5 mt-1 space-y-1">
-                  {guide.scholars.map((scholar, idx) => (
-                    <li key={idx} className="">
-                      {scholar}
-                    </li>
-                  ))}
-                </ul>
+                {guide.scholars.length > 0 && (
+                  <ul className="list-disc pl-5 mt-1 space-y-1">
+                    {guide.scholars.map((scholar, idx) => (
+                      <li key={idx} className="">
+                        {scholar}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </li>
             ))}
           </ol>
         </div>
         <div>
-          <h2 className="text-[24px] text-[#1d1d1f] font-bold mb-2">Dept. of Electronics & Communications</h2>
-          <h2 className="text-lg font-bold mb-4">Domain of Research</h2>
-          <ul className="list-disc ml-5 text-lg">
-            {domainResearch.map((item, index) => (
-              <li className="pb-1">{item}</li>
-            ))}
-          </ul>
+          <h1 className="text-[20px] text-[#1d1d1f] font-bold mb-2">
+            Dept. of Computer Science &amp; Engineering
+          </h1>
+          <div className="space-y-8">
+            <h1 className="text-lg font-bold  text-textGray mb-2">
+              Domain of Research
+            </h1>
+            <ul className="list-disc ml-5 text-lg">
+              {researchCs.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </div>
         </div>
-        <div>
-          <h1 className="text-xl font-bold  text-textGray mb-2">Research Facility</h1>
-          <div className="overflow-x-auto">
-             <div className="rounded overflow-hidden border border-gray-200 w-full">
+
+        <div className="overflow-x-auto">
+          <h1 className="text-xl font-bold  text-textGray mb-2">
+            Research Facility
+          </h1>
+          <div className="rounded overflow-hidden border border-gray-200 w-full">
             <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
               <thead>
                 <tr className="bg-[#F3F8FC] text-[#2884CA]">
                   <th className="py-3 md:px-4 px-1 border-b">Name</th>
-                  <th className="py-3 md:px-4 px-1 border-b">Facility Details</th>
+                  <th className="py-3 md:px-4 px-1 border-b">
+                    Facility Details
+                  </th>
                 </tr>
               </thead>
               <tbody className="text-textGray">
-                <tr >
-                  <td className="px-4 py-3 align-top font-medium">R&D Laboratory Analog Oscilloscopes</td>
-                  <td className="px-4 py-3">
-                    <ul className="list-disc pl-5 space-y-1">
-                      {detailes2.map((item) => (
-                        <li>{item}</li>
-                      ))}
-                    </ul>
+                <tr>
+                  <td className="py-3 md:px-4 px-1 border-b">
+                    Research Center
+                  </td>
+                  <td className="py-3 md:px-4 px-1 border-b">
+                    <p>
+                      HP Workstation Z2 Tower G9 Workstation with Core I7
+                      processor, 32 GB RAM with Windows11 Professional. Other
+                      Softwares: Netbeans, Java, Eclipse, Visual Studio 2012,
+                      Python 3.7, Anaconda IDE, Jupyter, SPYDER, MySQL, MS
+                      OFFICE 2007, 2016.
+                    </p>
                   </td>
                 </tr>
               </tbody>
             </table>
+          </div>
+        </div>
+
+        <div className="">
+          <h2 className="text-xl font-semibold mb-4">
+            Research Guides & Research Scholars
+          </h2>
+          <ol className=" pl-5 space-y-3 md:text-lg  text-[14px] leading-7  text-textGray">
+            {researchGuides.map((guide, index) => (
+              <li key={index}>
+                <p className="font-bold">{guide.name}</p>
+                {guide.scholars.length > 0 && (
+                  <ul className="list-disc pl-5 mt-1 space-y-1">
+                    {guide.scholars.map((scholar, idx) => (
+                      <li key={idx} className="">
+                        {scholar}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ol>
+        </div>
+        <div>
+          <h2 className="text-[24px] text-[#1d1d1f] font-bold mb-2">
+            Dept. of Electronics & Communications
+          </h2>
+          <h2 className="text-lg font-bold mb-4">Domain of Research</h2>
+          <ul className="list-disc ml-5 text-lg">
+            {domainResearch.map((item, index) => (
+              <li key={index} className="pb-1">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h1 className="text-xl font-bold  text-textGray mb-2">
+            Research Facility
+          </h1>
+          <div className="overflow-x-auto">
+            <div className="rounded overflow-hidden border border-gray-200 w-full">
+              <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                <thead>
+                  <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                    <th className="py-3 md:px-4 px-1 border-b">Name</th>
+                    <th className="py-3 md:px-4 px-1 border-b">
+                      Facility Details
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="text-textGray">
+                  <tr>
+                    <td className="px-4 py-3 align-top font-medium">
+                      R&D Laboratory Analog Oscilloscopes
+                    </td>
+                    <td className="px-4 py-3">
+                      <ul className="list-disc pl-5 space-y-1">
+                        {detailes2.map((item, index) => (
+                          <li key={index}>{item}</li>
+                        ))}
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
-         <div className="">
-          <h2 className="text-xl font-semibold mb-4">Research Guides & Research Scholars</h2>
+        <div className="">
+          <h2 className="text-xl font-semibold mb-4">
+            Research Guides & Research Scholars
+          </h2>
           <ol className=" pl-5 space-y-3  md:text-lg  text-[14px] leading-7  text-textGray">
             {researchGuides2.map((guide, index) => (
               <li key={index}>
                 <p className="font-bold">{guide.name}</p>
-                <ul className="list-disc pl-5 mt-1 space-y-1">
-                  {guide.scholars.map((scholar, idx) => (
-                    <li key={idx} className="">
-                      {scholar}
-                    </li>
-                  ))}
-                </ul>
+                {guide.scholars.length > 0 && (
+                  <ul className="list-disc pl-5 mt-1 space-y-1">
+                    {guide.scholars.map((scholar, idx) => (
+                      <li key={idx} className="">
+                        {scholar}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </li>
             ))}
           </ol>

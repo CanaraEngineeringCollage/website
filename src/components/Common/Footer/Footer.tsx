@@ -115,7 +115,7 @@ const Footer: FC = () => {
               { label: "Glimpses of CEC", href: "/about/glimpses-of-cec" },
               { label: "Educators & Administrators", href: "/about/educators-administrators" },
               { label: "Research at CEC", href: "/academics/research" },
-              { label: "Research & Development and Consultancy Cell", href: "/academics/research-development-consultancy" },
+              { label: "Research & Development and Consultancy Cell", href: "/research-development-consultancy" },
 
               { label: "About Alumni", href: "/alumni/about-alumni" },
               { label: "Infrastructure", href: "/campus-facilities/infrastructure" },
