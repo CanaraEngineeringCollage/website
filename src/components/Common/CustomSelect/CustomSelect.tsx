@@ -1,3 +1,4 @@
+import useAndFormatter from "@/hooks/useAndFormatter";
 import React from "react";
 
 interface CustomSelectProps {
@@ -24,7 +25,7 @@ const CustomSelect: React.FC<CustomSelectProps> = ({
       >
         {options.map((option, index) => (
           <option key={index} value={option}>
-            {option}
+            {useAndFormatter(option)}
           </option>
         ))}
       </select>

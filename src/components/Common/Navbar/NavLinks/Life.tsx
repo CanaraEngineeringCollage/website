@@ -37,9 +37,9 @@ export default function Life() {
             aria-controls="about-menu" // ✅ Optional: add an ID to the target menu section if applicable
             aria-haspopup="true" // ✅ Indicates that it opens a submenu
             tabIndex={0} // ✅ Ensures the element is keyboard focusable
-            className={`flex items-center text-base gap-2 py-1.5  ${
+            className={`flex items-center text-base xl:text-base whitespace-nowrap gap-2 py-1.5  ${
               isMenuOpen ? "opacity-100" : "opacity-80"
-            } text-webGreen1 bg-transparent font-semibold hover:bg-transparent 
+            } text-webGreen1 bg-transparent font-semibold hover:bg-transparent  
             rounded-none shadow-none ${
               renderBorder ? `border-[#005580] border-b-2 text-[#005580]` : " text-[#2884CA] hover:text-[#005580]"
             } text-[#2884CA] outline-none focus:ring-0 focus:outline-none`}

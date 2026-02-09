@@ -38,7 +38,7 @@ export default function Button({
       {...other}
       className={` ${darkMode ? darkVariant : variant} ${
         variant !== "tertiary1" && !noPadding && "px-10 py-3"
-      } ${text} font-openSans rounded-full relative font-bold cursor-pointer group/item ${className}`}
+      } ${text} font-openSans !outline-none  rounded-full relative font-bold cursor-pointer group/item ${className}`}
     >
       {children}
       {variant === "secondary2" && hoverIcon && (

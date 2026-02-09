@@ -49,6 +49,7 @@ const FacultyCard: React.FC<{ member: CouncilMember; onClick?: () => void }> = (
 );
 
 import CustomSelect from "@/components/Common/CustomSelect/CustomSelect";
+import useAndFormatter from "@/hooks/useAndFormatter";
 
 // ... existing imports
 
@@ -220,7 +221,7 @@ const FacultyMembersSection: React.FC = () => {
                           className={`cursor-pointer py-1 ${selectedDepartment === dept ? "font-bold text-[#2884CA]" : "text-textGray"}`}
                           onClick={() => setSelectedDepartment(dept)}
                         >
-                          {dept}
+                          {useAndFormatter(dept)}
                         </li>
                       ))}
                     </ul>

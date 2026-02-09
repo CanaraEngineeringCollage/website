@@ -32,7 +32,7 @@ export default function About() {
             aria-controls="about-menu" // ✅ Optional: add an ID to the target menu section if applicable
             aria-haspopup="true" // ✅ Indicates that it opens a submenu
             tabIndex={0} // ✅ Ensures the element is keyboard focusable
-            className={`flex items-center text-base gap-2 py-1.5 ${
+            className={`flex items-center text-base xl:text-base whitespace-nowrap gap-2 py-1.5 ${
               isMenuOpen ? "opacity-100" : "opacity-80"
             }  transition-colors ease-in-out duration-300 hover:text-we bg-transparent font-semibold hover:bg-transparent ${
               pathname.includes("about") && pathname !== "/campus-facilities/central-library/about-library"

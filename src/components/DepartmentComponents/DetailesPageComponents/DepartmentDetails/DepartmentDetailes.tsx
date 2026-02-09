@@ -59,6 +59,7 @@ interface DepartmentSectionProps {
 import CustomSelect from "@/components/Common/CustomSelect/CustomSelect";
 import { ArrowLeftIcon } from "lucide-react";
 import Link from "next/link";
+import useAndFormatter from "@/hooks/useAndFormatter";
 
 // ... existing imports
 
@@ -290,7 +291,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
                   .map((part, index) => (
                     <React.Fragment key={index}>
                       {/* Render the text part */}
-                      {part}
+                      {useAndFormatter(part)}
 
                       {/* 2. Check if this part is a separator. If yes, add the responsive break */}
                       {/(\s+&\s+|\s+and\s+)/i.test(part) && <br className="hidden lg:block" />}

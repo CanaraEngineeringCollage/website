@@ -9,7 +9,6 @@ import { Suspense } from "react";
 import ContactFormModal from "@/components/Modal/Modal";
 import Button from "../../Button/Button";
 
-
 function NavbarItems() {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const pathname = usePathname();
@@ -26,12 +25,14 @@ function NavbarItems() {
         </div>
         <div
           id="admission"
-          className="cursor-pointer opacity-80   text-[#2884CA]   text-base hover:text-[#005580] xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
+          className="cursor-pointer opacity-80 whitespace-nowrap text-[#2884CA] text-base hover:text-[#005580] xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
         >
           <Link
             href={"/admission"}
             className={`font-poppins ${
-              pathname === "/admission" ? "border-b-2 px-3  py-1.5 border-[#005580] text-[#005580]" : " text-[#2884CA] px-3  py-1.5 hover:text-[#005580]"
+              pathname === "/admission"
+                ? "border-b-2 px-3  py-1.5 border-[#005580] text-[#005580]"
+                : " text-[#2884CA] px-3  py-1.5 hover:text-[#005580]"
             }  `}
           >
             Admissions
@@ -43,28 +44,32 @@ function NavbarItems() {
         >
           <Life />
         </div>
-         <Link
+        <Link
           id="placement"
-          className=" opacity-80 text-[#2884CA]   font-poppins text-base xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
+          className=" opacity-80 text-[#2884CA] whitespace-nowrap font-poppins text-base xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
           href={"/research-development-consultancy"}
         >
           <p
             className={`font-poppins ${
-              pathname === "/research-development-consultancy" ? "border-b-2 px-3  py-1.5 border-[#005580] text-[#005580]" : " text-[#2884CA] py-1.5 px-3 hover:text-[#005580]"
+              pathname === "/research-development-consultancy"
+                ? "border-b-2 px-3  py-1.5 border-[#005580] text-[#005580]"
+                : " text-[#2884CA] py-1.5 px-3 hover:text-[#005580]"
             }  `}
           >
             {" "}
-           Research
+            Research
           </p>
         </Link>
         <Link
           id="placement"
-          className=" opacity-80 text-[#2884CA]   font-poppins text-base xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
+          className=" opacity-80 text-[#2884CA] whitespace-nowrap font-poppins text-base xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
           href={"/training-placements"}
         >
           <p
             className={`font-poppins ${
-              pathname === "/training-placements" ? "border-b-2 px-3  py-1.5 border-[#005580] text-[#005580]" : " text-[#2884CA] py-1.5 px-3 hover:text-[#005580]"
+              pathname === "/training-placements"
+                ? "border-b-2 px-3  py-1.5 border-[#005580] text-[#005580]"
+                : " text-[#2884CA] py-1.5 px-3 hover:text-[#005580]"
             }  `}
           >
             {" "}
@@ -73,7 +78,7 @@ function NavbarItems() {
         </Link>
         <div
           id="apply"
-          className=" font-poppins text-base pl-3 xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
+          className=" font-poppins text-base xl:text-base whitespace-nowrap pl-3 font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
         >
           {/* <button
             aria-label="Apply Now Button"
@@ -83,14 +88,15 @@ function NavbarItems() {
             Apply Now
           </button> */}
 
-          <Button noPadding={true} variant="primary1"
-             aria-label="Apply Now Button"
+          <Button
+            noPadding={true}
+            variant="primary1"
+            aria-label="Apply Now Button"
             onClick={() => setModalOpen(true)}
-           
-              className="bg-primary text-white px-7 py-2.5 cursor-pointer rounded-[30px] "
-            >
-             Apply Now
-              </Button>
+            className="bg-primary text-white  px-7 py-2.5 cursor-pointer rounded-[30px] "
+          >
+            Apply Now
+          </Button>
         </div>
       </div>
       <ContactFormModal isOpen={modalOpen} onClose={setModalOpen} />
