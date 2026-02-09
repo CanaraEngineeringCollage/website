@@ -175,7 +175,7 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
   return (
     <AnimatePresence>
       {isOpen && (
-        <Dialog as="div" className="relative z-50" open={isOpen} onClose={onClose}>
+        <Dialog as="div" className="relative z-[9999999999999]" open={isOpen} onClose={onClose}>
           {/* Overlay */}
           <div className="fixed inset-0 z-40">
             <motion.div

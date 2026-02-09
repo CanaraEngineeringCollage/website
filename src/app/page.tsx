@@ -91,7 +91,7 @@ export default async function Home() {
           thumbnail="/youtubeThumbnails/Homepage-Thumbnail@300x.webp"
         />
       </section>
-      <section className="bg-white px-6 lg:px-0">
+      <section className="bg-white px-6 ">
         <IdeasTakeFlight />
       </section>
       <section className="px-0 bg-white pt-5 pb-12 lg:pb-10 lg:mt-0 -mt-3">

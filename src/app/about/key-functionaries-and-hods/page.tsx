@@ -1,14 +1,16 @@
-import ProfileCard from '@/components/AboutPageComponents/GoverningCounsilPage/CardComponent/CardComponent'
-import FooterCard from '@/components/Common/FooterCard/FooterCard'
-import React from 'react'
-import datam from "../../../utils/hodData/hodData.json"
-import keyFunctionariesData from "../../../utils/keyFunctionariesData/keyFunctionariesData.json"
+import ProfileCard from "@/components/AboutPageComponents/GoverningCounsilPage/CardComponent/CardComponent";
+import FooterCard from "@/components/Common/FooterCard/FooterCard";
+import React from "react";
+import datam from "../../../utils/hodData/hodData.json";
+import keyFunctionariesData from "../../../utils/keyFunctionariesData/keyFunctionariesData.json";
 export const metadata = {
   title: "Key Functionaries & HODs | Canara Engineering College",
-  description: "Meet the key functionaries and Heads of Departments at Canara Engineering College, leading academic excellence and innovation across various disciplines.",
+  description:
+    "Meet the key functionaries and Heads of Departments at Canara Engineering College, leading academic excellence and innovation across various disciplines.",
   openGraph: {
     title: "Key Functionaries & HODs | Canara Engineering College",
-    description: "Explore profiles of key functionaries and Heads of Departments at Canara Engineering College, guiding students and driving innovation.",
+    description:
+      "Explore profiles of key functionaries and Heads of Departments at Canara Engineering College, guiding students and driving innovation.",
     url: "https://your-website-url.com/about/key-functionaries-and-hods", // update this
     siteName: "Canara Engineering College",
     images: [
@@ -28,16 +30,37 @@ export const metadata = {
     description: "Get to know the key functionaries and Heads of Departments at Canara Engineering College.",
     images: ["https://your-website-url.com/og-key-functionaries-hods.jpg"], // update this
   },
-}
+};
+const getFacultyData = async () => {
+  const baseUrl = process.env.NEXT_PUBLIC_API_URL;
+  try {
+    const [keyRes, hodRes] = await Promise.all([
+      fetch(`${baseUrl}/faculty?keyFunctionary=true`, { next: { revalidate: 300 } }),
+      fetch(`${baseUrl}/faculty?hod=true`, { next: { revalidate: 300 } }),
+    ]);
+
+    const keyJson = await keyRes.json();
+    const hodJson = await hodRes.json();
+
+    return {
+      keyFunctionaries: keyJson.data || [],
+      hodData: hodJson.data || [],
+    };
+  } catch (error) {
+    console.error("Error fetching faculty data:", error);
+    return { keyFunctionaries: [], hodData: [] };
+  }
+};
+
 const page = () => {
   return (
     <div>
-       <ProfileCard keyFunctionaries={keyFunctionariesData} datam={datam} title="Head of the Departments"/>
+      <ProfileCard title="Head of the Departments" />
       <section className="bg-[#E5E5EA]">
         <FooterCard />
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

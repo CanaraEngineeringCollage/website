@@ -50,16 +50,16 @@ const page = () => {
       {/* <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <YourSkills />
       </section> */}
-      <section className=" lg:-mt-16  lg:pt-10 pb-16 lg:pb-20 lg:px-16 xl:px-0 px-1 md:px-12 ">
-        <VideoPlayer thumbnail="/youtubeThumbnails/Akrathi Aftermovie - Thumbail@300x.webp" youtubeUrl="oHWMDPeP1Ew" />
-      </section>
+      
       <section className="px-6  lg:px-0 xl:px-0 ">
         <StudentClubs />
       </section>
       <section className="px-6  lg:px-0 xl:px-0 py-10">
         <CollapsSection />
       </section>
-
+<section className=" lg:-mt-16  lg:pt-10 pb-16 lg:pb-20 lg:px-16 xl:px-0 px-1 md:px-12 ">
+        <VideoPlayer thumbnail="/youtubeThumbnails/Akrathi Aftermovie - Thumbail@300x.webp" youtubeUrl="oHWMDPeP1Ew" />
+      </section>
       <section className="bg-[#e5e5ea] ">
         <FooterCard />
       </section>

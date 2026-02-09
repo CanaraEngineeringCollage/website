@@ -11,6 +11,7 @@ import Advisory from "./TabComponents/Advisory/Advisory";
 import CustomSelect from "@/components/Common/CustomSelect/CustomSelect";
 import AlumniEvents from "./TabComponents/AlumniEvents/AlumniEvents";
 import { AlumniEvent, ApiEvent, bufferToBase64 } from "../../../utils/alumniPortalData/alumniEventsUtils";
+import { ArrowLeftIcon } from "lucide-react";
 
 const AlumniPortal = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
@@ -58,8 +59,18 @@ const AlumniPortal = () => {
   return (
     <section className="py-10 xl:py-20 text-[#1D1D1F] overflow-hidden">
       <div className="lg2:mx-24 mx-5">
-        <h1 className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold pb-1 md:pb-10">About the Alumni Assocation</h1>
-        <div className="grid grid-cols-1  md:grid-cols-12 mt-10">
+        <div>
+           <div className="md:mb-16 mb-8 md:mt-5">
+              <Link href={`/alumni`}>
+                <button className="flex items-center gap-2 text-[#555]  transition-colors">
+                  <ArrowLeftIcon width={20} height={20} />
+                  <span className="text-lg text-[#6B6B6B]">Go Back</span>
+                </button>
+              </Link>
+            </div>
+        </div>
+        <h1 className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold pb-0 md:pb-10">About the Alumni Assocation</h1>
+        <div className="grid grid-cols-1  md:grid-cols-12 mt-8 md:mt-10">
           <div className="col-span-3 sticky  self-start block">
             
             {/* Mobile Dropdown */}

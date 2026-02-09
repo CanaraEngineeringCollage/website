@@ -67,8 +67,8 @@ const HighlightsSection = () => {
   };
 
   return (
-    <section className="max-w-7xl xl:max-w-[75%] mx-auto py-16 lg:pb-20 lg:pt-24 text-[#1D1D1F]">
-      <h2 className="text-3xl md:text-[40px] lg2:text-5xl font-bold text-[#1D1D1F] text-center mb-10 lg:mb-22">Key Highlights</h2>
+    <section className="max-w-7xl xl:max-w-[75%] mx-auto py-16 lg:pb-16 lg:pt-20 text-[#1D1D1F]">
+      <h2 className="text-3xl md:text-[40px] lg2:text-5xl font-bold text-[#1D1D1F] text-center mb-10 lg:mb-16">Key Highlights</h2>
 
       {/* GRID WITH FIXED ROW HEIGHT */}
       <div className="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-3 gap-6 lg:[grid-auto-rows:1fr]">

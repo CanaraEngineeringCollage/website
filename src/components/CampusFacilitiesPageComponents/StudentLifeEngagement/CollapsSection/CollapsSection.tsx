@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
@@ -115,7 +115,7 @@ const ClubList = ({ title, clubs }: { title: string; clubs: ClubData[] }) => {
       <h2 className="text-3xl font-bold mb-6 text-[#1D1D1F]  ">{title}</h2>
       <div className="space-y-4">
         {clubs.map((club, index) => (
-          <div key={index} className="border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+          <div key={index} className="border border-gray-200 rounded-lg  overflow-hidden">
             <button
               onClick={() => toggleAccordion(index)}
               className={`w-full flex justify-between items-center p-5 text-left font-medium transition-colors duration-200 ${
@@ -123,8 +123,8 @@ const ClubList = ({ title, clubs }: { title: string; clubs: ClubData[] }) => {
               }`}
             >
               <span className="text-lg">{club.title}</span>
-              <span className={`transform transition-transform duration-200 ${openIndex === index ? "rotate-180" : ""}`}>
-                {openIndex === index ? <FaChevronUp /> : <FaChevronDown />}
+              <span className={`transform text-textGray transition-transform duration-200 ${openIndex === index ? "" : ""}`}>
+                {openIndex === index ? <FaChevronUp className="text-textGray" /> : <FaChevronDown className="text-textGray" />}
               </span>
             </button>
             <div
@@ -133,9 +133,9 @@ const ClubList = ({ title, clubs }: { title: string; clubs: ClubData[] }) => {
               } overflow-hidden bg-white`}
             >
               <div className="p-5 border-t border-gray-200 bg-gray-50/50">
-                <p className="text-textGray font-medium mb-3">{club.description}</p>
-                <h4 className="text-sm font-semibold text-textGray uppercase tracking-wide mb-2">Key Activities:</h4>
-                <ul className="list-disc list-inside space-y-1 text-textGray pl-2">
+                <p className="text-textGray text-lg font-medium mb-3">{club.description}</p>
+                {/* <h4 className="text-sm font-semibold text-textGray uppercase tracking-wide mb-2">Key Activities:</h4> */}
+                <ul className="list-disc list-inside text-lg space-y-1 text-textGray pl-2">
                   {club.activities.map((activity, actIndex) => (
                     <li key={actIndex}>{activity}</li>
                   ))}
@@ -153,8 +153,7 @@ const ClubList = ({ title, clubs }: { title: string; clubs: ClubData[] }) => {
 
 const CollapsSection = () => {
   return (
-    <div className="w-full max-w-7xl xl:max-w-[80%] mx-auto py-10 px-6 lg:px-0">
-      
+    <div className="w-full max-w-7xl xl:max-w-[80%] mx-auto py-5 lg:pb-10 lg:pt-0">
       {/* Non-Technical Section */}
       <ClubList title="Non-Technical Clubs" clubs={nonTechnicalClubs} />
 
@@ -162,23 +161,23 @@ const CollapsSection = () => {
       <ClubList title="Technical Clubs (Department Supported)" clubs={technicalClubs} />
 
       {/* Summary Footer */}
-      <div className="mt-12 text-[#1D1D1F]  ">
-        <div className="">
-          <div>
-            <h3 className="font-bold ">Total Clubs</h3>
-            <p className="text-2xl  font-bold">17</p>
-          </div>
-          <div>
-            <h3 className="font-bold ">Club Hours</h3>
-            <p className="text-textGray">Wednesdays | 2:00 PM – 4:30 PM</p>
-          </div>
-          <div>
-            <h3 className="font-bold ">Focus Areas</h3>
-            <p className="text-textGray text-sm">Creativity • Technology • Leadership • Innovation • Social Responsibility</p>
-          </div>
+      <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 text-[#1D1D1F]">
+        <div className="flex flex-col justify-center items-center rounded-[30px] p-8 bg-gray-50 h-full min-h-[180px] text-center transition-transform hover:scale-[1.02] duration-300">
+          <h3 className="text-5xl md:text-6xl font-extrabold text-[#1D1D1F] mb-3">17</h3>
+          <p className="font-bold text-xl text-[#1D1D1F]">Total Clubs</p>
+        </div>
+        <div className="flex flex-col justify-center items-center rounded-[30px] p-8 bg-gray-50 h-full min-h-[180px] text-center transition-transform hover:scale-[1.02] duration-300">
+          <h3 className="font-bold text-2xl text-[#1D1D1F] mb-3">Club Hours</h3>
+          <p className="text-textGray text-lg font-medium">Wednesdays</p>
+          <p className="text-textGray text-lg">2:00 PM – 4:30 PM</p>
+        </div>
+        <div className="flex flex-col justify-center items-center rounded-[30px] p-8 bg-gray-50 h-full min-h-[180px] text-center transition-transform hover:scale-[1.02] duration-300">
+          <h3 className="font-bold text-2xl text-[#1D1D1F] mb-3">Focus Areas</h3>
+          <p className="text-textGray text-base leading-relaxed max-w-[280px]">
+            Creativity • Technology • Leadership • Innovation • Social Responsibility
+          </p>
         </div>
       </div>
-
     </div>
   );
 };

@@ -47,7 +47,7 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
         }`}
       >
         <div className="flex items-center w-full h-12 border-b border-b-[#BFDCF7]">
-          <div className="hidden md:flex items-center justify-between w-full container-padding max-w-[90%] mx-auto">
+          <div className="hidden md:flex items-center justify-between w-full container-padding max-w-[95%] mx-auto">
             <div className="flex items-center justify-center space-x-6">
               <Link
                 href={"mailto:canarait@gmail.com"}
@@ -96,7 +96,7 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
         </div>
       </section>
       <section className={`bg-white relative transition-all duration-500 ease-in-out `}>
-        <nav className="  py-0 max-w-[90%] mx-auto">
+        <nav className="  py-0 max-w-[95%] mx-auto">
           {/* For large and Medium-sized Screen */}
           <div className="flex items-center justify-between relative py-7 lg:py-2 xl:py-3 container-padding">
             <div className="lg:flex hidden  flex-row items-center  relative">

@@ -105,11 +105,21 @@ const AboutCentralLibrary = () => {
   return (
     <section className="py-10 text-[#1D1D1F] lg2:px-24 mx-5 overflow-hidden">
       <div>
-        <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold pb-1 lg:pb-10 text-[#1D1D1F]">
+         <div>
+                   <div className="md:mb-16 mb-8 md:mt-5">
+                      <Link href={`/campus-facilities/central-library`}>
+                        <button className="flex items-center gap-2 text-[#555]  transition-colors">
+                          <ArrowLeftIcon width={20} height={20} />
+                          <span className="text-lg text-[#6B6B6B]">Go Back</span>
+                        </button>
+                      </Link>
+                    </div>
+                </div>
+        <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold  lg:pb-10 text-[#1D1D1F]">
           Central Library
         </h1>
         
-        <div className={`md:grid grid-cols-1 gap-3 md:grid-cols-12 mt-10`}>
+        <div className={`md:grid grid-cols-1 gap-3 md:grid-cols-12 mt-8 md:mt-10`}>
           {/* Sidebar Area */}
           <div className="col-span-3">
             
@@ -274,6 +284,7 @@ export default AboutCentralLibrary;
 
 
 import Image from "next/image";
+import { ArrowLeftIcon } from "lucide-react";
 
 // --- Interfaces ---
 export interface Qualification {

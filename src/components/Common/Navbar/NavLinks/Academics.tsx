@@ -100,7 +100,38 @@ export default function Academics() {
             </div>
 
             {/* Column 3 — Examinations & Records */}
-            <div className="flex lg:col-span-4 gap-4 pr-4 border-r border-gray-300">
+          
+
+            {/* Column 4 */}
+            <div className="flex lg:col-span-4 border-r border-gray-300  gap-4 ">
+              <div className="flex lg:ml-3 xl:ml-0 items-start">
+                <Learning />
+              </div>
+              <div className="flex flex-col gap-2">
+                <span className="font-bold text-lg">Learning Hub</span>
+                <ul className="list-none text-gray-500 leading-normal space-y-4 my-2 cursor-pointer">
+                  <li>
+                    <Link
+                      href="https://digital.canaraengineering.in/"
+                      target="_blank"
+                      className={`${pathname.includes("/academics/learning-hub") ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
+                    >
+                      Resources
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      href="/academics/research"
+                      className={`${pathname === "/academics/research" ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
+                    >
+                      Research at CEC
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+              <div className="flex lg:col-span-4 gap-4 pr-4 ">
               <div className="flex lg:ml-3 xl:ml-0 items-start">
                 <Examination />
               </div>
@@ -160,36 +191,6 @@ export default function Academics() {
           Timetables
         </Link>
       </li> */}
-                </ul>
-              </div>
-            </div>
-
-            {/* Column 4 */}
-            <div className="flex lg:col-span-4  gap-4 hover:border-none">
-              <div className="flex lg:ml-3 xl:ml-0 items-start">
-                <Learning />
-              </div>
-              <div className="flex flex-col gap-2">
-                <span className="font-bold text-lg">Learning Hub</span>
-                <ul className="list-none text-gray-500 leading-normal space-y-4 my-2 cursor-pointer">
-                  <li>
-                    <Link
-                      href="https://digital.canaraengineering.in/"
-                      target="_blank"
-                      className={`${pathname.includes("/academics/learning-hub") ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
-                    >
-                      Resources
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      href="/academics/research"
-                      className={`${pathname === "/academics/research" ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
-                    >
-                      Research at CEC
-                    </Link>
-                  </li>
                 </ul>
               </div>
             </div>
