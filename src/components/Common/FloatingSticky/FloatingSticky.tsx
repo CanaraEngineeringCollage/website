@@ -33,7 +33,7 @@ export default function FloatingSticky() {
     };
   }, []);
 
-  if (pathname === "/training-placements" || pathname === "/campus-facilities/hostel-life") {
+  if (pathname === "/training-placements" || pathname === "/explore/hostel-life") {
     return null;
   }
 

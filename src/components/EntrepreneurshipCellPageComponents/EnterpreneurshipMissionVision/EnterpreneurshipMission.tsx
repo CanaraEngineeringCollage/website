@@ -3,8 +3,17 @@ export default function EnterpreneurshipMission() {
     <div className="max-w-7xl mx-auto lg:px-0 px-4 xl:max-w-[75%] py-12 md:py-20 lg:py-16  text-[#1D1D1F]">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 w-full mx-auto  ">
         {/* Left Column */}
+         <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 md:p-10 flex flex-col items-center justify-center text-center">
+          <img src="/aboutPageImages/MissionVision/visionImage4.webp" alt="vision" className="w-40 sm:w-60 md:w-72 lg:w-[344px] h-auto mb-6" />
+          <h2 className="text-3xl lg2:text-5xl lg:text-4xl text-center lg:text-start font-bold text-[#1D1D1F] mb-4">Our Vision</h2>
+          <p className="text-textGray text-sm sm:text-base leading-relaxed">
+            Alumni Association of Canara Engineer’s vision is to develop a dedicated and dynamic global alumni community whose members are committed
+            to each other and to develop connections among alumni and students to strengthen their commitment to college.
+          </p>
+        </div>
         <div className="flex flex-col gap-8 lg:gap-12">
           {/* Objectives */}
+          
           <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 md:p-10 lg:px-12">
             <h2 className="text-3xl lg2:text-5xl lg:text-4xl  text-center lg:text-start font-bold text-[#1D1D1F] mb-10">Our Objectives</h2>
             <ul className="space-y-6 sm:space-y-8">
@@ -43,14 +52,7 @@ export default function EnterpreneurshipMission() {
         </div>
 
         {/* Right Column */}
-        <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 md:p-10 flex flex-col items-center justify-center text-center">
-          <img src="/aboutPageImages/MissionVision/visionImage4.webp" alt="vision" className="w-40 sm:w-60 md:w-72 lg:w-[344px] h-auto mb-6" />
-          <h2 className="text-3xl lg2:text-5xl lg:text-4xl text-center lg:text-start font-bold text-[#1D1D1F] mb-4">Our Vision</h2>
-          <p className="text-textGray text-sm sm:text-base leading-relaxed">
-            Alumni Association of Canara Engineer’s vision is to develop a dedicated and dynamic global alumni community whose members are committed
-            to each other and to develop connections among alumni and students to strengthen their commitment to college.
-          </p>
-        </div>
+       
       </div>
     </div>
   );

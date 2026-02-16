@@ -82,7 +82,7 @@ export default function Sidebar({ sidebar, openSidebar }: { sidebar: boolean; op
               campusFacilities: (
                 <SubMenu
                   data={{
-                    title: "Campus Facilities",
+                    title: "Explore",
                     links: campusFacilities,
                   }}
                   setVisible={setVisible}
@@ -187,7 +187,7 @@ export default function Sidebar({ sidebar, openSidebar }: { sidebar: boolean; op
               innovation: (
                 <SubMenu
                   data={{
-                    title: "Innovation & Health",
+                    title: "Innovation",
                     links: innovation,
                   }}
                   setVisible={setVisible}

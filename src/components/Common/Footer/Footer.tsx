@@ -45,9 +45,9 @@ const academics = [
 const facilities = [
   { data: "Training & Placements", links: "/training-placements" },
   { data: "Campus", links: "/about/about-cec" },
-  { data: "Hostels", links: "/campus-facilities/hostel-life" },
-  { data: "Central Library", links: "/campus-facilities/central-library" },
-  { data: "Sports & Cultures", links: "/physical-education" },
+  { data: "Hostels", links: "/explore/hostel-life" },
+  { data: "Central Library", links: "/explore/central-library" },
+  { data: "Sports & Cultures", links: "/explore/physical-education" },
   { data: "Entrepreneurship Cell", links: "/entrepreneurship-cell" },
   { data: "Placement Portal", links: "https://www.canaraengineering.in/placement_portal/" },
 ];
@@ -118,7 +118,7 @@ const Footer: FC = () => {
               { label: "Research & Development and Consultancy Cell", href: "/research-development-consultancy" },
 
               { label: "About Alumni", href: "/alumni/about-alumni" },
-              { label: "Infrastructure", href: "/campus-facilities/infrastructure" },
+              { label: "Infrastructure", href: "/explore/infrastructure" },
               { label: "Privacy Policy", href: "/privacy-policy" },
               { label: "SCSTGrievance", href: "/about/mandatory-disclosure/sc-st-grievance" },
               { label: "Careers", href: "/careers" },
@@ -127,12 +127,12 @@ const Footer: FC = () => {
               // { label: "Circulars", href: "/about" },
               // { label: "Marks & Attendance", href: "/our-founder" },
               { label: "Resources", href: "https://digital.canaraengineering.in/" },
-              { label: "Infrastructure", href: "/campus-facilities/infrastructuret" },
-              { label: "Hostel Life", href: "/campus-facilities/hostel-life" },
-              { label: "Central Library", href: "/campus-facilities/central-library" },
+              { label: "Infrastructure", href: "/explore/infrastructuret" },
+              { label: "Hostel Life", href: "/explore/hostel-life" },
+              { label: "Central Library", href: "/explore/central-library" },
               { label: "Student Life & Engagement", href: "/studentlife-engagement" },
               { label: "Entrepreneurship Cell", href: "/entrepreneurship-cell" },
-              { label: "Physical Education", href: "/physical-education" },
+              { label: "Physical Education", href: "/explore/physical-education" },
               // { label: "Calendar of Events", href: "/events" },
               { label: "Alumni", href: "/alumni" },
               { label: "Admissions", href: "/admission" },
@@ -141,8 +141,9 @@ const Footer: FC = () => {
               // { label: "Marks & Attendance", href: "marks" },
               { label: "Circulars", href: "/academics/examination-records?tab=circulars", tab: "circulars" },
               { label: "Campus Buzz", href: "/campus-buzz" },
-              { label: "About Library", href: "/campus-facilities/central-library/about-library" },
+              { label: "About Library", href: "/explore/central-library/about-library" },
               { label: "Student Achievements", href: "/student-achievements" },
+               { label: "Cif", href: "/cif" },
             ]}
           />
         </Suspense>

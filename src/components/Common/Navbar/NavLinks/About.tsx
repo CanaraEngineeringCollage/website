@@ -35,7 +35,7 @@ export default function About() {
             className={`flex items-center text-base xl:text-base whitespace-nowrap gap-2 py-1.5 ${
               isMenuOpen ? "opacity-100" : "opacity-80"
             }  transition-colors ease-in-out duration-300 hover:text-we bg-transparent font-semibold hover:bg-transparent ${
-              pathname.includes("about") && pathname !== "/campus-facilities/central-library/about-library"
+              pathname.includes("about") && pathname !== "/explore/central-library/about-library"
                 ? `border-[#005580] border-b-2 text-[#005580]`
                 : " text-[#2884CA] hover:text-[#005580]"
             } shadow-none rounded-none outline-none focus:ring-0`}
