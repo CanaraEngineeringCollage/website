@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import departments from "@/lib/departments.json";
+import { allDepartmentsData } from "@/lib/allDepartments";
 import councilData from "../../../utils/councilMembers/councilMembers.json"; // Import the council data
 import HeroSection from "@/components/DepartmentComponents/HeroBanner/HeroBanner";
 import AboutTheDepartment from "@/components/DepartmentComponents/AboutTheDepartment/AboutTheDepartment";
@@ -45,7 +45,7 @@ interface CouncilMember {
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const department = departments.find((dept) => dept.slug === params.slug);
+  const department = allDepartmentsData.find((dept) => dept.slug === params.slug);
 
   if (!department) return notFound();
 
@@ -87,11 +87,11 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 }
 
 export async function generateStaticParams() {
-  return departments.map((dept) => ({ slug: dept.slug }));
+  return allDepartmentsData.map((dept) => ({ slug: dept.slug }));
 }
 
 export default function DepartmentPage({ params }: { params: { slug: string } }) {
-  const department = departments?.find((dept) => dept?.slug === params?.slug);
+  const department = allDepartmentsData.find((dept) => dept.slug === params.slug);
 
   if (!department) return notFound();
 

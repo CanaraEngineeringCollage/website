@@ -10696,39 +10696,53 @@
         ]
       }
     ],
-    "magazines": [
-      {
-        "title": "Magazines",
-        "data": [
-          {
-            "image": ["https://apiserver.cec.edu.in/files/Magazines", "https://apiserver.cec.edu.in/files/Magazines"],
-            "linkUrl": [
-              "https://apiserver.cec.edu.in/files/Magazine1",
-              "https://apiserver.cec.edu.in/files/Magazine2"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Newsletters",
-        "data": [
-          {
-            "image": [
-              "https://apiserver.cec.edu.in/files/Newsletters1",
-              "https://apiserver.cec.edu.in/files/Newsletters2",
-              "https://apiserver.cec.edu.in/files/Newsletters3",
-              "https://apiserver.cec.edu.in/files/Newsletters4",
-              "https://apiserver.cec.edu.in/files/Newsletters5"
-            ],
-            "linkUrl": [
-              "/magazine/cse/Srushti-Newsletter July-Dec 24 (1).pdf",
-              "/magazine/cse/Srushti-Newsletter Jan-june 2024.pdf",
-              "/magazine/cse/Srushti-Newsletter July-Dec 23.pdf",
-              "/magazine/cse/Srushti-Newsletter Jan-June 23.pdf",
-              "/magazine/cse/Srushti-Newsletter Aug-Jan 23.pdf"
-            ]
-          }
-        ]
-      }
-    ]
+   
+  "magazines": [
+    {
+      "title": "Magazines",
+      "items": [
+        {
+          "title":"CICA CHRONICLES V1 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/Magazines",
+          "linkUrl": "https://apiserver.cec.edu.in/files/Magazine1"
+        },
+        {
+          "title":"CICA CHRONICLES V1 ISSUE 2",
+          "image": "https://apiserver.cec.edu.in/files/Magazines",
+          "linkUrl": "https://apiserver.cec.edu.in/files/Magazine2"
+        }
+      ]
+    },
+    {
+      "title": "Newsletters",
+      "items": [
+        {
+          "title":"SRUSHTI V12 ISSUE 2",
+          "image": "https://apiserver.cec.edu.in/files/Newsletters1",
+          "linkUrl": "/magazine/cse/Srushti-Newsletter July-Dec 24 (1).pdf"
+        },
+        {
+          "title":"SRUSHTI V12 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/Newsletters2",
+          "linkUrl": "/magazine/cse/Srushti-Newsletter Jan-june 2024.pdf"
+        },
+        {
+          "title":"SRUSHTI V11 ISSUE 2",
+          "image": "https://apiserver.cec.edu.in/files/Newsletters3",
+          "linkUrl": "/magazine/cse/Srushti-Newsletter July-Dec 23.pdf"
+        },
+        {
+          "title":"SRUSHTI V11 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/Newsletters4",
+          "linkUrl": "/magazine/cse/Srushti-Newsletter Jan-June 23.pdf"
+        },
+        {
+          "title":"SRUSHTI V10 ISSUE 2",
+          "image": "https://apiserver.cec.edu.in/files/Newsletters5",
+          "linkUrl": "/magazine/cse/Srushti-Newsletter Aug-Jan 23.pdf"
+        }
+      ]
+    }
+  ]
+
   }

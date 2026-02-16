@@ -2,7 +2,7 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { useParams } from "next/navigation";
 import Image from "next/image";
-import departments from "@/lib/departments.json";
+import { allDepartmentsData } from "@/lib/allDepartments";
 import DepartmentProfile from "../DepartmentDetailesTab/DepartmentProfile/DepartmentProfile";
 import Organaisation from "../DepartmentDetailesTab/Organaisation/Organaisation";
 import Hod from "../DepartmentDetailesTab/Hod/Hod";
@@ -59,7 +59,7 @@ interface DepartmentSectionProps {
 import CustomSelect from "@/components/Common/CustomSelect/CustomSelect";
 import { ArrowLeftIcon } from "lucide-react";
 import Link from "next/link";
-import useAndFormatter from "@/hooks/useAndFormatter";
+import formatDepartmentName from "@/utils/formatDepartmentName";
 
 // ... existing imports
 
@@ -88,7 +88,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   const [galleryItems, setGalleryItems] = useState<GalleryItem[]>([]);
   const [galleryLoading, setGalleryLoading] = useState(false);
 
-  const department = departments.find((dept) => dept.slug === slug);
+  const department = allDepartmentsData.find((dept) => dept.slug === slug);
 
   const fetchEvents = useCallback(async () => {
     if (loading || !hasMore) return;
@@ -291,7 +291,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
                   .map((part, index) => (
                     <React.Fragment key={index}>
                       {/* Render the text part */}
-                      {useAndFormatter(part)}
+                      {formatDepartmentName(part)}
 
                       {/* 2. Check if this part is a separator. If yes, add the responsive break */}
                       {/(\s+&\s+|\s+and\s+)/i.test(part) && <br className="hidden lg:block" />}

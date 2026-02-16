@@ -11047,33 +11047,53 @@
         ]
       }
     ],
-    "magazines": [
-      {
-        "title": "Newsletters",
-        "data": [
-          {
-            "image": [
-              "https://apiserver.cec.edu.in/files/Newsletterss1",
-              "https://apiserver.cec.edu.in/files/Newsletterss2",
-              "https://apiserver.cec.edu.in/files/Newsletterss3",
-              "https://apiserver.cec.edu.in/files/Newsletterss4",
-              "https://apiserver.cec.edu.in/files/Newsletterss5",
-              "https://apiserver.cec.edu.in/files/Newsletterss6",
-              "https://apiserver.cec.edu.in/files/Newsletterss7",
-              "https://apiserver.cec.edu.in/files/Newsletterss8"
-            ],
-            "linkUrl": [
-              "/magazine/ise/1 IKSHA-Newsletter Jul- Dec 2024.pdf",
-              "/magazine/ise/1 IKSHA-Newsletter Jan- June 2024.pdf",
-              "/magazine/ise/3 IKSHA -Newsletter July - Dec 2023.pdf",
-              "/magazine/ise/4 IKSHA-Newsletter Jan-June 2023.pdf",
-              "/magazine/ise/5 IKSHA-IS-V9-Aug 2022_I2.pdf",
-              "/magazine/ise/6 IKSHA-IS-V10-Sep_2022_I1.pdf",
-              "/magazine/ise/7 IKSHA- Newsletter July-Dec 2021.pdf",
-              "/magazine/ise/8 IKSHA-Newsletter Jan-June 2021.pdf"
-            ]
-          }
-        ]
-      }
-    ]
+   
+  "magazines": [
+    {
+      "title": "Newsletters",
+      "items": [
+        {
+          "title":"IKSHA V11 ISSUE 2",
+          "image": "https://apiserver.cec.edu.in/files/Newsletterss1",
+          "linkUrl": "/magazine/ise/1 IKSHA-Newsletter Jul- Dec 2024.pdf"
+        },
+        {
+          "title":"IKSHA V11 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/Newsletterss2",
+          "linkUrl": "/magazine/ise/1 IKSHA-Newsletter Jan- June 2024.pdf"
+        },
+        {
+          "title":"IKSHA V10 ISSUE 2",
+          "image": "https://apiserver.cec.edu.in/files/Newsletterss3",
+          "linkUrl": "/magazine/ise/3 IKSHA -Newsletter July - Dec 2023.pdf"
+        },
+        {
+          "title":"IKSHA V10 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/Newsletterss4",
+          "linkUrl": "/magazine/ise/4 IKSHA-Newsletter Jan-June 2023.pdf"
+        },
+        {
+          "title":"IKSHA V9 ISSUE 2",
+          "image": "https://apiserver.cec.edu.in/files/Newsletterss5",
+          "linkUrl": "/magazine/ise/5 IKSHA-IS-V9-Aug 2022_I2.pdf"
+        },
+        {
+          "title":"IKSHA V10 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/Newsletterss6",
+          "linkUrl": "/magazine/ise/6 IKSHA-IS-V10-Sep_2022_I1.pdf"
+        },
+        {
+          "title":"IKSHA V8 ISSUE 2",
+          "image": "https://apiserver.cec.edu.in/files/Newsletterss7",
+          "linkUrl": "/magazine/ise/7 IKSHA- Newsletter July-Dec 2021.pdf"
+        },
+        {
+          "title":"IKSHA V8 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/Newsletterss8",
+          "linkUrl": "/magazine/ise/8 IKSHA-Newsletter Jan-June 2021.pdf"
+        }
+      ]
+    }
+  ]
+
   }

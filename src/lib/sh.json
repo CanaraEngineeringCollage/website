@@ -9635,21 +9635,23 @@
         ]
       }
     ],
-    "magazines": [
-      {
-        "title": "Newsletters",
-        "data": [
-          {
-            "image": [
-              "https://apiserver.cec.edu.in/files/hynw1",
-              "https://apiserver.cec.edu.in/files/hynw2"
-            ],
-            "linkUrl": [
-              "/magazine/sm/INCHARA.pdf",
-              "/magazine/sm/Inchara Volume 9 Issue 1 2023.pdf"
-            ]
-          }
-        ]
-      }
-    ]
+   
+  "magazines": [
+    {
+      "title": "Newsletters",
+      "items": [
+        {
+          "title":"INCHARA V10 ISSUE 2",
+          "image": "https://apiserver.cec.edu.in/files/hynw1",
+          "linkUrl": "/magazine/sm/INCHARA.pdf"
+        },
+        {
+          "title":"INCHARA V9 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/hynw2",
+          "linkUrl": "/magazine/sm/Inchara Volume 9 Issue 1 2023.pdf"
+        }
+      ]
+    }
+  ]
+
   }

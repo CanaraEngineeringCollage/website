@@ -5,7 +5,7 @@ import { Dialog } from "@headlessui/react";
 import { X } from "lucide-react";
 import Image from "next/image";
 import React from "react";
-import useAndFormatter from "@/hooks/useAndFormatter";
+import formatDepartmentName from "@/utils/formatDepartmentName";
 
 interface Qualification {
   degree: string;
@@ -227,7 +227,7 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                       <div className="grid grid-cols-1 gap-3">
                         <Info label="Name" value={facultyData.name} />
                         <Info label="Designation" value={facultyData.designation} />
-                        <Info label="Department" value={useAndFormatter(facultyData.department)} />
+                        <Info label="Department" value={formatDepartmentName(facultyData.department)} />
                         {facultyData.joiningDate && (
                           <Info
                             label="Joining Date"

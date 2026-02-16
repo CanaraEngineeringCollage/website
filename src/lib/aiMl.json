@@ -6406,30 +6406,40 @@
         ]
       }
     ],
-    "magazines": [
-      {
-        "title": "Newsletters",
-        "data": [
-          {
-            "image": [
-              "https://apiserver.cec.edu.in/files/magazin2025AiMl",
-              "https://apiserver.cec.edu.in/files/DARPANA%20V3%20ISSUE%202%20-%202024",
-              "https://apiserver.cec.edu.in/files/DARPANA%20V3%20ISSUE%201%20-%202024",
-              "https://apiserver.cec.edu.in/files/DARPANA%20V2%20ISSUE%202%20-%202023",
-              "https://apiserver.cec.edu.in/files/DARPANA%20V2%20ISSUE%201%20-%202023"
-            ],
-            "linkUrl": [
-              "/magazine/ai/2025-V4-ISSUE1.pdf-1.pdf",
-              "/magazine/ai/2024-V3-ISSUE2.pdf",
-              "/magazine/ai/2024-V3-ISSUE1.pdf",
-              "/magazine/ai/2023-V2-ISSUE2-1.pdf",
-              "/magazine/ai/2023-V2-ISSUE1-1.pdf"
-            ],
-            "title": ["DARPANA V4 ISSUE 1 - 2025","DARPANA V3 ISSUE 2 - 2024", "DARPANA V3 ISSUE 1 - 2024", "DARPANA V2 ISSUE 2 - 2023", "DARPANA V2 ISSUE 1 - 2023"]
-          }
-        ]
-      }
-    ],
+ 
+  "magazines": [
+    {
+      "title": "Newsletters",
+      "items": [
+        {
+          "image": "https://apiserver.cec.edu.in/files/magazin2025AiMl",
+          "linkUrl": "/magazine/ai/2025-V4-ISSUE1.pdf-1.pdf",
+          "title": "DARPANA V4 ISSUE 1"
+        },
+        {
+          "image": "https://apiserver.cec.edu.in/files/DARPANA%20V3%20ISSUE%202%20-%202024",
+          "linkUrl": "/magazine/ai/2024-V3-ISSUE2.pdf",
+          "title": "DARPANA V3 ISSUE 2"
+        },
+        {
+          "image": "https://apiserver.cec.edu.in/files/DARPANA%20V3%20ISSUE%201%20-%202024",
+          "linkUrl": "/magazine/ai/2024-V3-ISSUE1.pdf",
+          "title": "DARPANA V3 ISSUE 1"
+        },
+        {
+          "image": "https://apiserver.cec.edu.in/files/DARPANA%20V2%20ISSUE%202%20-%202023",
+          "linkUrl": "/magazine/ai/2023-V2-ISSUE2-1.pdf",
+          "title": "DARPANA V2 ISSUE 2"
+        },
+        {
+          "image": "https://apiserver.cec.edu.in/files/DARPANA%20V2%20ISSUE%201%20-%202023",
+          "linkUrl": "/magazine/ai/2023-V2-ISSUE1-1.pdf",
+          "title": "DARPANA V2 ISSUE 1"
+        }
+      ]
+    }
+  ],
+
     "facilities": {
       "description": "The department is well equipped with laboratory facilities like the Data Structures and Algorithm Laboratory and the Machine Learning Laboratory. These laboratory facilities play a crucial role in providing students with hands-on experience and practical exposure to the concepts and technologies taught in the classroom.",
       "allFacilities": [

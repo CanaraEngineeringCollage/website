@@ -49,7 +49,7 @@ const FacultyCard: React.FC<{ member: CouncilMember; onClick?: () => void }> = (
 );
 
 import CustomSelect from "@/components/Common/CustomSelect/CustomSelect";
-import useAndFormatter from "@/hooks/useAndFormatter";
+import formatDepartmentName from "@/utils/formatDepartmentName";
 
 // ... existing imports
 
@@ -90,9 +90,7 @@ const FacultyMembersSection: React.FC = () => {
     Hostel: "Hostel Staff",
   };
 
-  const reverseCategoryMapping = Object.fromEntries(
-    Object.entries(categoryMapping).map(([key, value]) => [value, key])
-  );
+  const reverseCategoryMapping = Object.fromEntries(Object.entries(categoryMapping).map(([key, value]) => [value, key]));
 
   const categoryOptions = Object.values(categoryMapping);
 
@@ -118,8 +116,7 @@ const FacultyMembersSection: React.FC = () => {
           url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=Student%20Welfare%20Department&all=true`;
         } else if (selectedCategory === "Dean Office") {
           url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=Dean%20Office&all=true`;
-        }
-        else if (selectedCategory === "physical education") {
+        } else if (selectedCategory === "physical education") {
           url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=Physical%20Education&all=true`;
         }
 
@@ -138,10 +135,9 @@ const FacultyMembersSection: React.FC = () => {
     fetchFaculty();
   }, [selectedCategory, selectedDepartment]);
 
-
   useEffect(() => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}, [selectedCategory, selectedDepartment]);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [selectedCategory, selectedDepartment]);
 
   const sortedFaculty = [...facultyData].sort((a, b) => {
     // 1. If A has priority but B does not, A comes first
@@ -177,7 +173,6 @@ const FacultyMembersSection: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
         <div className="md:col-span-5">
           <div className="sticky top-20 h-fit">
-            
             {/* Mobile Dropdowns */}
             <div className="block md:hidden mb-6 space-y-4">
               <CustomSelect
@@ -189,19 +184,25 @@ const FacultyMembersSection: React.FC = () => {
                 }}
                 options={categoryOptions}
               />
-              
+
               {selectedCategory === "faculty" && (
-                <CustomSelect
-                  value={selectedDepartment}
-                  onChange={(e) => setSelectedDepartment(e.target.value)}
-                  options={departments}
-                />
+                <CustomSelect value={selectedDepartment} onChange={(e) => setSelectedDepartment(e.target.value)} options={departments} />
               )}
             </div>
 
             {/* Desktop Sidebar */}
             <div className="hidden md:block w-full sm:w-[80%] mx-auto md:mx-0">
-              {["faculty", "placement","Student Welfare Department", "Dean Office","physical education" ,"admin", "general",  "library", "Hostel"].map((cat) => (
+              {[
+                "faculty",
+                "placement",
+                "Student Welfare Department",
+                "Dean Office",
+                "physical education",
+                "admin",
+                "general",
+                "library",
+                "Hostel",
+              ].map((cat) => (
                 <div key={cat} className="border-b-2 border-border py-4">
                   <h1
                     className={`text-[20px] cursor-pointer ${selectedCategory === cat ? "font-bold text-[#2884CA]" : "text-textGray"}`}
@@ -221,7 +222,7 @@ const FacultyMembersSection: React.FC = () => {
                           className={`cursor-pointer py-1 ${selectedDepartment === dept ? "font-bold text-[#2884CA]" : "text-textGray"}`}
                           onClick={() => setSelectedDepartment(dept)}
                         >
-                          {useAndFormatter(dept)}
+                          {formatDepartmentName(dept)}
                         </li>
                       ))}
                     </ul>

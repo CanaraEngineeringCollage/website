@@ -10982,42 +10982,68 @@
         ]
       }
     ],
-    "magazines": [
-      {
-        "title": "Magazines",
-        "data": [
-          {
-            "image": [
-              "https://apiserver.cec.edu.in/files/Magazines2meing",
-              "https://apiserver.cec.edu.in/files/Magazines3meing",
-              "https://apiserver.cec.edu.in/files/Magazines4meing",
-              "https://apiserver.cec.edu.in/files/Magazines5meing",
-              "https://apiserver.cec.edu.in/files/Magazines6meing",
-              "https://apiserver.cec.edu.in/files/Magazines7meing",
-      
-              "https://apiserver.cec.edu.in/files/Magazines9meing",
-              "https://apiserver.cec.edu.in/files/Magazines10meing",
-              "https://apiserver.cec.edu.in/files/Magazines11meing",
-              "https://apiserver.cec.edu.in/files/Magazines12meing",
-              "https://apiserver.cec.edu.in/files/Magazines13meing"
-            ],
-            "linkUrl": [
-              "/magazine/me/Mechmirror_Feb_24 (2).pdf",
-              "/magazine/me/Mechmirror_Jul_23.pdf",
-              "/magazine/me/Mechmirror_Feb_23.pdf",
-              "/magazine/me/Mechmirror_Jul_22.pdf",
-              "/magazine/me/Mechmirror_Feb_22.pdf",
-              "/magazine/me/Mechmirror_Jul_21.pdf",
-              "/magazine/me/me_2019.pdf",
-        
-              "/magazine/me/MECH_MIRROR_VOL7_ISU1  Jan 2018 (3).pdf",
-              "/magazine/me/Mech Mirror Vol 7 August 2018.pdf",
-              "/magazine/me/MECH MIRROR July 2017.pdf",
+  
+  "magazines": [
+    {
+      "title": "Magazines",
+      "items": [
+        {
+          "title":"MECH MIRROR V13 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/Magazines2meing",
+          "linkUrl": "/magazine/me/Mechmirror_Feb_24 (2).pdf"
+        },
+        {
+          "title":"MECH MIRROR V12 ISSUE 2",
+          "image": "https://apiserver.cec.edu.in/files/Magazines3meing",
+          "linkUrl": "/magazine/me/Mechmirror_Jul_23.pdf"
+        },
+        {
+          "title":"MECH MIRROR V12 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/Magazines4meing",
+          "linkUrl": "/magazine/me/Mechmirror_Feb_23.pdf"
+        },
+        {
+          "title":"MECH MIRROR V11 ISSUE 2",
+          "image": "https://apiserver.cec.edu.in/files/Magazines5meing",
+          "linkUrl": "/magazine/me/Mechmirror_Jul_22.pdf"
+        },
+        {
+          "title":"MECH MIRROR V11 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/Magazines6meing",
+          "linkUrl": "/magazine/me/Mechmirror_Feb_22.pdf"
+        },
+        {
+          "title":"MECH MIRROR V11 ISSUE 2",
+          "image": "https://apiserver.cec.edu.in/files/Magazines7meing",
+          "linkUrl": "/magazine/me/Mechmirror_Jul_21.pdf"
+        },
+        {
+          "title":"MECH MIRROR V10 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/Magazines9meing",
+          "linkUrl": "/magazine/me/me_2019.pdf"
+        },
+        {
+          "title":"MECH MIRROR V7 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/Magazines10meing",
+          "linkUrl": "/magazine/me/MECH_MIRROR_VOL7_ISU1  Jan 2018 (3).pdf"
+        },
+        {
+          "title":"MECH MIRROR V7 ISSUE 2",
+          "image": "https://apiserver.cec.edu.in/files/Magazines11meing",
+          "linkUrl": "/magazine/me/Mech Mirror Vol 7 August 2018.pdf"
+        },
+        {
+          "title":"MECH MIRROR V6 ISSUE 2",
+          "image": "https://apiserver.cec.edu.in/files/Magazines12meing",
+          "linkUrl": "/magazine/me/MECH MIRROR July 2017.pdf"
+        },
+        {
+          "title":"MECH MIRROR V6 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/Magazines13meing",
+          "linkUrl": "/magazine/me/MECH MIRROR  JAN 2017.pdf"
+        }
+      ]
+    }
+  ]
 
-              "/magazine/me/MECH MIRROR  JAN 2017.pdf"
-            ]
-          }
-        ]
-      }
-    ]
   }

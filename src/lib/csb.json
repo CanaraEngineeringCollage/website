@@ -5992,29 +5992,43 @@
         ]
       }
     ],
-    "magazines": [
-      {
-        "title": "Newsletters",
-        "data": [
-          {
-            "image": [
-              "https://apiserver.cec.edu.in/files/newslatterCsbV3",
-              "https://apiserver.cec.edu.in/files/Newsletters1csbimg",
-              "https://apiserver.cec.edu.in/files/Newsletters2csbimg",
-              "https://apiserver.cec.edu.in/files/Newsletters3csbimg",
-              "https://apiserver.cec.edu.in/files/Newsletters4csbimg",
-              "https://apiserver.cec.edu.in/files/Newsletters5csbimg"
-            ],
-            "linkUrl": [
-              "/magazine/csb/Arohana Volume 3 Issue 2 (1)_compressed (1) - Shubhashree.pdf",
-              "/magazine/csb/Arohana(June 2024-Dec 2024).pdf",
-              "/magazine/csb/Arohana (Volume 2 Issue 2).pdf",
-              "/magazine/csb/Arohana(Volume 2 Issue 1).pdf",
-              "/magazine/csb/Arohana issue2.pdf",
-              "/magazine/csb/Arohana issue1.pdf"
-            ]
-          }
-        ]
-      }
-    ]
+   
+  "magazines": [
+    {
+      "title": "Newsletters",
+      "items": [
+        {
+          "title":"AROHANA V3 ISSUE 2",
+          "image": "https://apiserver.cec.edu.in/files/newslatterCsbV3",
+          "linkUrl": "/magazine/csb/Arohana Volume 3 Issue 2 (1)_compressed (1) - Shubhashree.pdf"
+        },
+        {
+          "title":"AROHANA V3 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/Newsletters1csbimg",
+          "linkUrl": "/magazine/csb/Arohana(June 2024-Dec 2024).pdf"
+        },
+        {
+          "title":"AROHANA V2 ISSUE 2",
+          "image": "https://apiserver.cec.edu.in/files/Newsletters2csbimg",
+          "linkUrl": "/magazine/csb/Arohana (Volume 2 Issue 2).pdf"
+        },
+        {
+          "title":"AROHANA V2 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/Newsletters3csbimg",
+          "linkUrl": "/magazine/csb/Arohana(Volume 2 Issue 1).pdf"
+        },
+        {
+          "title":"AROHANA V1 ISSUE 2",
+          "image": "https://apiserver.cec.edu.in/files/Newsletters4csbimg",
+          "linkUrl": "/magazine/csb/Arohana issue2.pdf"
+        },
+        {
+          "title":"AROHANA V1 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/Newsletters5csbimg",
+          "linkUrl": "/magazine/csb/Arohana issue1.pdf"
+        }
+      ]
+    }
+  ]
+
   }

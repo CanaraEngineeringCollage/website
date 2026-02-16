@@ -9821,36 +9821,58 @@
         ]
       }
     ],
-    "magazines": [
-      {
-        "title": "Newsletters",
-        "data": [
-          {
-            "image": [
-              "https://apiserver.cec.edu.in/files/ec1",
-              "https://apiserver.cec.edu.in/files/ec1",
-            
-              "https://apiserver.cec.edu.in/files/ec1",
-              "https://apiserver.cec.edu.in/files/ec4",
-              "https://apiserver.cec.edu.in/files/ec5",
-              "https://apiserver.cec.edu.in/files/ec6",
-              "https://apiserver.cec.edu.in/files/ec7",
-              "https://apiserver.cec.edu.in/files/ec8",
-              "https://apiserver.cec.edu.in/files/ec9"
-            ],
-            "linkUrl": [
-              "/magazine/ec/DHWANI Jan2025.pdf",
-              "/magazine/ec/DHWANI Jul2024.pdf",
-              "/magazine/ec/dhwani (2).pdf",
-              "/magazine/ec/Jan 2024 (1).pdf",
-              "/magazine/ec/Feb 2023.pdf",
-              "/magazine/ec/EC NEWSLETTER AUG 2021 .pdf",
-              "/magazine/ec/Aug 2022.pdf",
-              "/magazine/ec/reducedJan 2019 EC DHWANI.pdf",
-              "/magazine/ec/EC NEWSLETTER AUG 2021  (1).pdf"
-            ]
-          }
-        ]
-      }
-    ]
+   
+  "magazines": [
+    {
+      "title": "Newsletters",
+      "items": [
+        {
+          "title":"DHWANI V15 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/ec1",
+          "linkUrl": "/magazine/ec/DHWANI Jan2025.pdf"
+        },
+        {
+          "title":"DHWANI V14 ISSUE 2",
+          "image": "https://apiserver.cec.edu.in/files/ec1",
+          "linkUrl": "/magazine/ec/DHWANI Jul2024.pdf"
+        },
+        {
+          "title":"DHWANI V14 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/ec1",
+          "linkUrl": "/magazine/ec/dhwani (2).pdf"
+        },
+        {
+          "title":"DHWANI V14 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/ec4",
+          "linkUrl": "/magazine/ec/Jan 2024 (1).pdf"
+        },
+        {
+          "title":"DHWANI V13 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/ec5",
+          "linkUrl": "/magazine/ec/Feb 2023.pdf"
+        },
+        {
+          "title":"DHWANI V11 ISSUE 2",
+          "image": "https://apiserver.cec.edu.in/files/ec6",
+          "linkUrl": "/magazine/ec/EC NEWSLETTER AUG 2021 .pdf"
+        },
+        {
+          "title":"DHWANI V12 ISSUE 2",
+          "image": "https://apiserver.cec.edu.in/files/ec7",
+          "linkUrl": "/magazine/ec/Aug 2022.pdf"
+        },
+        {
+          "title":"DHWANI V9 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/ec8",
+          "linkUrl": "/magazine/ec/reducedJan 2019 EC DHWANI.pdf"
+        },
+        {
+          "title":"DHWANI V11 ISSUE 2",
+          "image": "https://apiserver.cec.edu.in/files/ec9",
+          "linkUrl": "/magazine/ec/EC NEWSLETTER AUG 2021  (1).pdf"
+        }
+      ]
+    }
+  ]
+
   }

@@ -9421,27 +9421,37 @@
         ]
       }
     ],
-    "magazines": [
-      {
-        "title": "Newsletters",
-        "data": [
-          {
-            "image": [
-              "https://apiserver.cec.edu.in/files/Newsletters1img",
-              "https://apiserver.cec.edu.in/files/Newsletters2img",
-              "https://apiserver.cec.edu.in/files/Newsletters3img",
-              "https://apiserver.cec.edu.in/files/Newsletters4img",
-              "https://apiserver.cec.edu.in/files/Newsletters5img"
-            ],
-            "linkUrl": [
-              "/magazine/csd/BITS AND BYTES_Vol_3_Issue_1_July24_Dec_24.pdf",
-              "/magazine/csd/BITS AND BYTES_Vol_2_Issue_2_Jan24_Jun_24.pdf",
-              "/magazine/csd/BITS AND BYTES_Vol_2_Issue_1_July23_Dec_23.pdf",
-              "/magazine/csd/BITS AND BYTES_Vol_1_Issue_1_Aug22_Jan_23.pdf",
-              "/magazine/csd/NEWSLETTER.pdf"
-            ]
-          }
-        ]
-      }
-    ]
+  
+  "magazines": [
+    {
+      "title": "Newsletters",
+      "items": [
+        {
+          "title":"BITS & BYTES V3 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/Newsletters1img",
+          "linkUrl": "/magazine/csd/BITS AND BYTES_Vol_3_Issue_1_July24_Dec_24.pdf"
+        },
+        {
+          "title":"BITS & BYTES V2 ISSUE 2",
+          "image": "https://apiserver.cec.edu.in/files/Newsletters2img",
+          "linkUrl": "/magazine/csd/BITS AND BYTES_Vol_2_Issue_2_Jan24_Jun_24.pdf"
+        },
+        {
+          "title":"BITS & BYTES V2 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/Newsletters3img",
+          "linkUrl": "/magazine/csd/BITS AND BYTES_Vol_2_Issue_1_July23_Dec_23.pdf"
+        },
+        {
+          "title":"BITS & BYTES V1 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/Newsletters4img",
+          "linkUrl": "/magazine/csd/BITS AND BYTES_Vol_1_Issue_1_Aug22_Jan_23.pdf"
+        },
+        {
+          "title":"BITS & BYTES V1 ISSUE 1",
+          "image": "https://apiserver.cec.edu.in/files/Newsletters5img",
+          "linkUrl": "/magazine/csd/NEWSLETTER.pdf"
+        }
+      ]
+    }
+  ]
   }
