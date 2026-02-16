@@ -215,7 +215,7 @@ const Footer: FC = () => {
           <div className="flex space-x-6 items-center">
             <div className="flex space-x-2">
               <Link href={"/privacy-policy"}>
-                <p>Privacy Policy | Terms of Use</p>
+                <p>Privacy Policy</p>
               </Link>
             </div>
           </div>
@@ -272,7 +272,7 @@ const Footer: FC = () => {
         <div className="border-t border-gray-300 pt-4 pb-6 text-xs text-center">
           <p className="mb-2">Copyright © {new Date().getFullYear()} CEC & Canara High School Association. All rights reserved.</p>
           <Link href={"/privacy-policy"}>
-            <p>Privacy Policy | Terms of Use</p>
+            <p>Privacy Policy</p>
           </Link>
         </div>
       </div>
