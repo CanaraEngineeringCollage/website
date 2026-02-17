@@ -98,8 +98,6 @@ export default function DepartmentPage({ params }: { params: { slug: string } })
   // Filter council data as needed
   // const facultyData = councilData.faculty.filter((faculty) => faculty.department === department.name) as CouncilMember[];
 
-
-
   return (
     <>
       <section className="px-6 lg:px-0 xl:px-0">
@@ -128,7 +126,7 @@ export default function DepartmentPage({ params }: { params: { slug: string } })
         </section>
       )}
       <section className="bg-[#071D2C] px-6 lg:px-0 lg:px-0 xl:px-0 md:mt-0 mt-8">
-        <DepartmentHeadMessage depatmentHead={department.depatmentHead} />
+        <DepartmentHeadMessage departmentName={department.name} depatmentHead={department.depatmentHead} />
       </section>
       <section className="px-6 md:px-12 pb-10 lg:pb-0 lg:px-16 xl:px-0 lg:mt-0 ">
         <DepartmentFacultySection departmentName={department.name} />
@@ -140,13 +138,14 @@ export default function DepartmentPage({ params }: { params: { slug: string } })
             tableHeaders={department.awardsTable?.headers}
             tableRows={department.awardsTable?.rows}
             allAwards={department.allAwards}
-          
           />
         </section>
       )}
-      {department.toppers&&<section >
-        <SpotlightSection toppers={department.toppers} />
-      </section>}
+      {department.toppers && (
+        <section>
+          <SpotlightSection toppers={department.toppers} />
+        </section>
+      )}
       {/* <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0 pb-8">
         <HotOfThePress />
       </section> */}
