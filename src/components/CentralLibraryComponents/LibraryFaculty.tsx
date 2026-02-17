@@ -130,7 +130,7 @@ export default function LibraryFaculty() {
   };
 
   return (
-    <section className="py-16 px-6 md:px-12 max-w-7xl mx-auto mt-20 md:my-20 xl:max-w-[75%] bg-[#F5F5F7] md:rounded-3xl">
+    <section className="py-16 px-6 md:px-12 max-w-7xl mx-auto mt-10  md:my-20 xl:max-w-[75%] bg-[#F5F5F7] md:rounded-3xl">
       <div className="mx-auto py-10 lg1:flex hidden flex-col-reverse md:flex-row items-center justify-between gap-10">
         <div className="max-w-md space-y-44">
           <div>

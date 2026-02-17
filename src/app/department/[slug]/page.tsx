@@ -100,7 +100,7 @@ export default function DepartmentPage({ params }: { params: { slug: string } })
 
   return (
     <>
-      <section className="px-6 lg:px-0 xl:px-0">
+      <section className="px-6 mt-5 md:mt-0 lg:px-0 xl:px-0">
         <AboutTheDepartment
           departmentName={department.name}
           aboutTheDepartment={department.departmentAboutDescriptionArray}

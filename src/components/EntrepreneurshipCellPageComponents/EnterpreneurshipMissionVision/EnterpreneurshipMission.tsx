@@ -1,6 +1,6 @@
 export default function EnterpreneurshipMission() {
   return (
-    <div className="max-w-7xl mx-auto lg:px-0 px-4 xl:max-w-[75%] py-12 md:py-20 lg:py-16  text-[#1D1D1F]">
+    <div className="max-w-7xl mx-auto lg:px-0 px-4 xl:max-w-[75%] pt-5 pb-12 md:py-20 lg:py-16  text-[#1D1D1F]">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 w-full mx-auto  ">
         {/* Left Column */}
          <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 md:p-10 flex flex-col items-center justify-center text-center">

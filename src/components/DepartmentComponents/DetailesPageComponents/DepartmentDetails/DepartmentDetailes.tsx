@@ -223,21 +223,30 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
     [facultyData, department?.depatmentHead?.name],
   );
 
-  const hodData = React.useMemo(() => {
-    if (!department?.depatmentHead) return undefined;
+  const [hodApiData, setHodApiData] = useState<CouncilMember | null>(null);
 
-    return {
-      ...department.depatmentHead,
-      ...(hodFaculty
-        ? {
-            name: hodFaculty.name,
-            position: hodFaculty.designation,
-            imageUrl: hodFaculty.image || department.depatmentHead.imageUrl,
-            avatar: hodFaculty.avatar,
+  // Fetch HOD Data specifically
+  useEffect(() => {
+    async function fetchHod() {
+      if (!department?.name) return;
+      try {
+        const url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?hod=true&department=${encodeURIComponent(department.name)}`;
+        const res = await fetch(url);
+        if (res.ok) {
+          const result = await res.json();
+          if (result.data && result.data.length > 0) {
+            setHodApiData(result.data[0]);
           }
-        : {}),
-    };
-  }, [department?.depatmentHead, hodFaculty]);
+        }
+      } catch (err) {
+        console.error("Error fetching HOD data:", err);
+      }
+    }
+
+    if (selectedSection === "Head of the Department" && !hodApiData) {
+      fetchHod();
+    }
+  }, [selectedSection, department?.name, hodApiData]);
 
   const departmentMenuItems = [
     "Department Profile",
@@ -256,6 +265,24 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
     "Events",
     "Gallery",
   ];
+
+  const hodData = React.useMemo(() => {
+    if (!department?.depatmentHead) return undefined;
+
+    const sourceData = hodApiData || hodFaculty;
+
+    return {
+      ...department.depatmentHead,
+      ...(sourceData
+        ? {
+            name: sourceData.name,
+            position: sourceData.designation,
+            imageUrl: sourceData.avatar ? bufferToBase64(sourceData.avatar) : sourceData.image || department.depatmentHead.imageUrl,
+            avatar: sourceData.avatar,
+          }
+        : {}),
+    };
+  }, [department?.depatmentHead, hodFaculty, hodApiData]);
 
   return (
     <section className=" text-[#1D1D1F]  overflow-hidden">

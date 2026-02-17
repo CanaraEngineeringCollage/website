@@ -93,7 +93,7 @@ const ProfileCard = ({ title }: { title: string }) => {
                 <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
                 <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full">
                   <h2 className="text-base sm:text-lg md:text-xl font-bold leading-tight ">{item.name}</h2>
-                  <p className="text-xs sm:text-sm md:text-base leading-snug break-words">{item.department}</p>
+                  <p className="text-xs sm:text-sm md:text-base leading-snug break-words">{item.keyFunctionaryName}</p>
                 </div>
               </div>
             );
@@ -133,7 +133,7 @@ const ProfileCard = ({ title }: { title: string }) => {
                 <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
                 <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full">
                   <h2 className="text-base sm:text-lg md:text-xl font-bold leading-tight ">{item.name}</h2>
-                  <p className="text-xs sm:text-sm md:text-base leading-snug break-words">{item.department}</p>
+                  <p className="text-xs sm:text-sm md:text-base leading-snug break-words">{item.hodName}</p>
                 </div>
               </div>
             );
