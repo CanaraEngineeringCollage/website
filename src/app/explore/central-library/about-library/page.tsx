@@ -1,5 +1,3 @@
-
-
 import AboutCentralLibrary from "@/components/CentralLibraryComponents/AboutCentralLibrary/AboutCentralLibrary";
 
 export const metadata = {
@@ -11,7 +9,7 @@ export const metadata = {
     title: "About Central Library | Canara Engineering College",
     description:
       "Get to know the academic support, digital tools, resource facilities, and services offered by the Central Library that empower student learning and research.",
-    url: "https://apiserver.cec.edu.in/campus-facilities/central-library/about-library", // 🔗 final page URL
+    url: "https://apiserver.cec.edu.in/explore/central-library/about-library", // 🔗 final page URL
     siteName: "Canara Engineering College",
     images: [
       {
@@ -28,18 +26,17 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "About Central Library | Canara Engineering College",
-    description:
-      "Explore the mission, resources, digital systems, and student learning support provided by the Central Library.",
+    description: "Explore the mission, resources, digital systems, and student learning support provided by the Central Library.",
     images: ["https://apiserver.cec.edu.in/assets/images/og-about-library.jpg"],
   },
 };
 
 // Helper to map API data to FacultyMember interface
-const page=()=>{
-  return(
+const page = () => {
+  return (
     <>
-    <AboutCentralLibrary/>
+      <AboutCentralLibrary />
     </>
-  )
-}
-export default page
+  );
+};
+export default page;

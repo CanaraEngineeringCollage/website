@@ -230,7 +230,7 @@ export default function IdeasToImpact({
                   </div>
                 </motion.div>
 
-                <div className="flex justify-between items-center px-6">
+                <div className="flex justify-between pb-5 items-center px-6">
                   <CarouselDots
                     total={awards.length}
                     active={activeIndex}

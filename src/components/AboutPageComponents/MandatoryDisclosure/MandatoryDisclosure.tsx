@@ -20,7 +20,36 @@ const MandatoryDisclosure = () => {
     setIsPdfModalOpen(true);
   };
 
-  const disclosureTitles = disclosureData?.map((section) => section.title) || [];
+  const disclosureTitles = [...(disclosureData?.map((section) => section.title) || []), "Academic Calendar"];
+
+  const handleFetchAcademicCalendar = async () => {
+    try {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/academic-calendar`);
+      if (response.ok) {
+        const data = await response.json();
+        // Check for pdf object, pdf inside data object, or pdf in first item of data array
+        const pdfData = data.pdf || (data.data && data.data.pdf) || (Array.isArray(data.data) && data.data[0]?.pdf);
+
+        if (pdfData) {
+          if (pdfData.type === "Buffer" && Array.isArray(pdfData.data)) {
+            const byteArray = new Uint8Array(pdfData.data);
+            const blob = new Blob([byteArray], { type: "application/pdf" });
+            const url = URL.createObjectURL(blob);
+            handleOpenPdf(url, "Academic Calendar");
+          } else if (typeof pdfData === "string") {
+            handleOpenPdf(pdfData, "Academic Calendar");
+          }
+        } else {
+          alert("No academic calendar found.");
+        }
+      } else {
+        alert("Failed to fetch academic calendar.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Error fetching academic calendar.");
+    }
+  };
 
   return (
     <section className="py-10 xl:py-20 text-[#1D1D1F] overflow-hidden">
@@ -32,9 +61,9 @@ const MandatoryDisclosure = () => {
               {/* Mobile Dropdown */}
               <div className="block md:hidden mb-6">
                 <CustomSelect
-                  value={disclosureData[selectedIndex]?.title || ""}
+                  value={disclosureTitles[selectedIndex] || ""}
                   onChange={(e) => {
-                    const newIndex = disclosureData.findIndex((item) => item.title === e.target.value);
+                    const newIndex = disclosureTitles.findIndex((title) => title === e.target.value);
                     if (newIndex !== -1) setSelectedIndex(newIndex);
                   }}
                   options={disclosureTitles}
@@ -43,7 +72,7 @@ const MandatoryDisclosure = () => {
 
               {/* Desktop Sidebar */}
               <div className="hidden md:block">
-                {disclosureData?.map((section, index) => (
+                {disclosureTitles.map((title, index) => (
                   <h1
                     key={index}
                     onClick={() => setSelectedIndex(index)}
@@ -51,7 +80,7 @@ const MandatoryDisclosure = () => {
                       selectedIndex === index ? "text-[#2884CA] font-bold text-[20px]" : "text-textGray font-[500] text-[20px]"
                     }`}
                   >
-                    {section.title}
+                    {title}
                   </h1>
                 ))}
               </div>
@@ -59,7 +88,33 @@ const MandatoryDisclosure = () => {
           </div>
           <div className="col-span-1"></div>
           <div className="col-span-8 mt-5 max-h-[70vh]  md:max-h-[140vh] scrollable overflow-y-auto  pr-2 lg:mt-0">
-            {selectedIndex === 4 ? (
+            {disclosureTitles[selectedIndex] === "Academic Calendar" ? (
+              <>
+                <div className="overflow-x-auto w-full">
+                  <h2 className="text-[20px] font-bold text-textGray mb-4">Academic Calendar</h2>
+                  <div className="rounded overflow-hidden border border-gray-200 ">
+                    <table className="w-full text-left text-[13px] md:text-[15px]">
+                      <thead className="bg-gray-100">
+                        <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                          <th className="py-3 md:px-4 px-1 border-b">Title</th>
+                          <th className="py-3 md:px-4 px-1 border-b">View</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="text-textGray">
+                          <td className="py-3 md:px-4 px-1 border-b">Academic Calendar</td>
+                          <td className="py-3 md:px-4 px-1 border-b">
+                            <div onClick={handleFetchAcademicCalendar} className="text-[#2884CA] hover:underline cursor-pointer">
+                              View Academic Calendar
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </>
+            ) : selectedIndex === 4 ? (
               <>
                 <div className="overflow-x-auto w-full">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">List of UGC 2(f) Status</h2>

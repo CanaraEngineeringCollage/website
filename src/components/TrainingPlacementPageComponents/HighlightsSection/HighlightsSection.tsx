@@ -100,7 +100,7 @@ const HighlightsSection = () => {
         ))}
 
         {/* Center Column - Swiper (Row Span 2) */}
-        <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 h-full">
+        <div className="lg:col-start-2 lg:row-start-1 lg:row-span-3 h-full">
           <div className="relative h-full">
             <Swiper
               spaceBetween={20}
@@ -135,15 +135,15 @@ const HighlightsSection = () => {
         </div>
 
         {/* Center Column - Third Row Card */}
-        <div className="flex flex-col justify-center items-center rounded-4xl p-6 bg-white h-full lg:col-start-2 lg:row-start-3">
+        {/* <div className="flex flex-col justify-center items-center rounded-4xl p-6 bg-white h-full lg:col-start-2 lg:row-start-3">
           <h1 className="text-[45px] lg:text-[60px] font-[900] text-[#1D1D1F] text-center">220+</h1>
           <h2 className="font-bold text-center text-[20px] text-[#1D1D1F]">Companies Visited on Campus</h2>
           <p className="text-xl text-center">Consistently recruiting across all branches of engineering</p>
-        </div>
+        </div> */}
 
         {/* Right Column */}
         {[
-          { title: "3.25 LPA", subtitle: "Average Salary", description: "Statistics based on 2023-24 Batch Data" },
+          { title: "220+", subtitle: "Companies Visited on Campus", description: "Consistently recruiting across all branches of engineering" },
           { title: "18%", subtitle: "Students Pursuing Higher Studies", description: "" },
           {
             title: "98%",

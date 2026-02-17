@@ -1,12 +1,12 @@
 import DepartmentDetailes from "@/components/DepartmentComponents/DetailesPageComponents/DepartmentDetails/DepartmentDetailes";
 import React from "react";
-import departments from "@/lib/departments.json";
+import { allDepartmentsData } from "@/lib/allDepartments";
 import { notFound } from "next/navigation";
 
 
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const department = departments.find((dept) => dept.slug === params.slug);
+  const department = allDepartmentsData.find((dept) => dept.slug === params.slug);
 
   if (!department) return notFound();
 
@@ -62,7 +62,7 @@ interface Faculty {
   qualifications: Qualification[];
 }
 const Page =  ({ params }: { params: { slug: string } }) => {
-  const department = departments.find((dept) => dept.slug === params.slug);
+  const department = allDepartmentsData.find((dept) => dept.slug === params.slug);
   if (!department) return notFound();
 
   

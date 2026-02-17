@@ -3,19 +3,33 @@ import Link from "next/link";
 import React from "react";
 import { useParams } from "next/navigation";
 import Image from "next/image";
-import useAndFormatter from "@/hooks/useAndFormatter";
 
 interface AboutTheDepartmentProps {
   aboutTheDepartment: string[];
-  departmentName:string;
+  departmentName: string;
   imageUrl: string;
-  width?:string
-  css?:string
-  
-
+  width?: string;
+  css?: string;
 }
 
-const   AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepartment,departmentName,imageUrl,width="",css="" }) => {
+const formatDepartmentName = (name: string) => {
+  if (!name) return "";
+  const parts = name.split("&");
+  return parts.map((part, index) => (
+    <React.Fragment key={index}>
+      {part.trim()}
+      {index < parts.length - 1 ? (
+        <>
+         <br className="hidden lg:block" />
+          {" and "}
+         
+        </>
+      ) : null}
+    </React.Fragment>
+  ));
+};
+
+const AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepartment, departmentName, imageUrl, width = "", css = "" }) => {
   const { slug } = useParams();
 
   return (
@@ -23,13 +37,13 @@ const   AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepar
       <div>
         <div className="flex justify-between  mb-5 lg:mb-10">
           <div className="lg:w-[75%] ">
-<h1
-  className={` md:w-[80%] 
+            <h1
+              className={`  
   font-bold leading-[1.2] text-[#1D1D1F] 
   md:text-[40px] text-3xl lg2:text-5xl xl:text-6xl `}
->
-  Department of {useAndFormatter(departmentName)}
-</h1>
+            >
+              Department of {formatDepartmentName(departmentName)}
+            </h1>
           </div>
           <div className="hidden lg:block ">
             <Link href={`/department/${slug}/details`}>
@@ -37,38 +51,32 @@ const   AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepar
             </Link>
           </div>
         </div>
-        
-      
       </div>
-          <div className="w-full overflow-hidden rounded-4xl flex relative  items-center shadow-lg">
-  {/* Text Overlay (Top Left) */}
+      <div className="w-full overflow-hidden rounded-4xl flex relative  items-center shadow-lg">
+        {/* Text Overlay (Top Left) */}
 
+        {/* Image */}
+        <Image
+          width={1000}
+          height={1000}
+          src={imageUrl}
+          alt="department"
+          className={`w-full h-[300px] sm:h-[400px] md:h-[590px] object-cover  ${css}`} // Adjust 30% based on image
+        />
+      </div>
 
-  {/* Image */}
-<Image
-  width={1000}
-  height={1000}
-  src={imageUrl}
-  alt="department"
-  className={`w-full h-[300px] sm:h-[400px] md:h-[590px] object-cover  ${css}`} // Adjust 30% based on image
-/>
-
-
-</div>
-
-<div className="mt-10">
-   {aboutTheDepartment?.map((paragraph, index) => (
+      <div className="mt-10">
+        {aboutTheDepartment?.map((paragraph, index) => (
           <p key={index} className="text-textGray text-justify text-[20px] mb-4">
             {paragraph}
           </p>
         ))}
-        </div>
+      </div>
       <div className="flex justify-center mt-10 lg:hidden">
-       <Link href={`/department/${slug}/details`}>
-              <button className="bg-[#007AFF26] hover:bg-blue-200 rounded-4xl px-6 py-2.5">More About the Department</button>
-            </Link>
-            </div>
-
+        <Link href={`/department/${slug}/details`}>
+          <button className="bg-[#007AFF26] hover:bg-blue-200 rounded-4xl px-6 py-2.5">More About the Department</button>
+        </Link>
+      </div>
     </section>
   );
 };

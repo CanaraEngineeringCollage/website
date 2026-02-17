@@ -6,7 +6,7 @@ import { Book, Examination, Learning, Notpad } from "@/components/Icons/Icons";
 import Link from "next/link";
 import { departments } from "@/utils/pagesData/navigation";
 import { usePathname, useSearchParams } from "next/navigation";
-import useAndFormatter from "@/hooks/useAndFormatter";
+import formatDepartmentName from "@/utils/formatDepartmentName";
 
 export default function Academics() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -92,7 +92,7 @@ export default function Academics() {
                         href={dept.link}
                         className={`${pathname.includes(dept.link) ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
                       >
-                        {useAndFormatter(dept.title)}
+                        {formatDepartmentName(dept.title)}
                       </Link>
                     </li>
                   ))}

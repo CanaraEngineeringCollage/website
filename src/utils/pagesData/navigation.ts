@@ -13,8 +13,6 @@ const campusLegacy = [
   },
 ];
 
-
-
 const administration = [
   {
     title: "Our Founder",
@@ -36,10 +34,9 @@ const administration = [
     title: "Educators & Administrators",
     link: "/about/educators-administrators",
   },
-  { 
-     title: "Distinctive & Practices", 
-    link: "/about/distinctive-practices", 
-   
+  {
+    title: "Distinctive & Practices",
+    link: "/about/distinctive-practices",
   },
 ];
 const accreditations = [
@@ -84,7 +81,7 @@ const departments = [
     title: "Artificial Intelligence and Machine Learning",
     link: "/department/artificial-intelligence-machine-learning",
   },
-   {
+  {
     title: "Mechanical Engineering",
     link: "/department/mechanical-engineering",
   },
@@ -110,8 +107,6 @@ const alumni = [
     title: "Alumni",
     link: "/alumni",
   },
-
-  
 ];
 
 const campusBeats = [
@@ -124,15 +119,14 @@ const campusBeats = [
     title: "Student Achievements",
     link: "/student-achievements",
   },
-   {
+  {
     title: "Student Life & Engagement",
     link: "/studentlife-engagement",
   },
-   {
+  {
     title: "Campus Buzz",
     link: "/campus-buzz",
   },
-
 ];
 
 const learningHub = [
@@ -149,16 +143,20 @@ const learningHub = [
 const campusFacilities = [
   {
     title: "Infrastructure",
-    link: "/campus-facilities/infrastructure",
+    link: "/explore/infrastructure",
   },
   {
     title: "Hostel Life",
-    link: "/campus-facilities/hostel-life",
+    link: "/explore/hostel-life",
   },
   {
     title: "Central Library",
-    link: "/campus-facilities/central-library",
-  }
+    link: "/explore/central-library",
+  },
+  {
+    title: "Physical Education",
+    link: "/explore/physical-education",
+  },
 ];
 
 const studentLife = [
@@ -182,8 +180,8 @@ const innovation = [
     link: "/entrepreneurship-cell",
   },
   {
-    title: "Physical Education",
-    link: "/physical-education",
+    title: "Cif",
+    link: "/cif",
   },
 ];
 
@@ -222,5 +220,5 @@ export {
   studentLife, //
   innovation, //
   campusBeats, //
-  alumni
+  alumni,
 };

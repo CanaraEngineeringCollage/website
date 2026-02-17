@@ -48,7 +48,7 @@ export default function AboutCec() {
           thumbnail="/youtubeThumbnails/Principal-Thumbnail.png"
         />
       </section>
-      <section className="lg:mt-0 -mt-5">
+      <section className="lg:mt-0 ">
         <MissionVision />
       </section>
       <section className="bg-[#071D2C] px-6 md:px-0 xl:px-0">

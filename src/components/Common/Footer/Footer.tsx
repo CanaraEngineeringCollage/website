@@ -34,7 +34,7 @@ const academics = [
   { data: "Admissions", links: "/admission" },
   // { data: "Courses & Programs", links: "#" },
   // { data: "Syllabus", links: "#" },
-  { data: "Academic Calendar", links: "/footer/calender (1).pdf" },
+  { data: "Academic Calendar", links: `${process.env.NEXT_PUBLIC_API_URL}/academic-calendar` },
   // { data: "Examinations & Timetables", links: "/academics/examination-records" },
   { data: "Circulars", links: "/academics/examination-records?tab=circulars" },
   { data: "Marks & Attendance", links: "https://www.canaraengineering.in/s_attd" },
@@ -45,9 +45,9 @@ const academics = [
 const facilities = [
   { data: "Training & Placements", links: "/training-placements" },
   { data: "Campus", links: "/about/about-cec" },
-  { data: "Hostels", links: "/campus-facilities/hostel-life" },
-  { data: "Central Library", links: "/campus-facilities/central-library" },
-  { data: "Sports & Cultures", links: "/physical-education" },
+  { data: "Hostels", links: "/explore/hostel-life" },
+  { data: "Central Library", links: "/explore/central-library" },
+  { data: "Sports & Cultures", links: "/explore/physical-education" },
   { data: "Entrepreneurship Cell", links: "/entrepreneurship-cell" },
   { data: "Placement Portal", links: "https://www.canaraengineering.in/placement_portal/" },
 ];
@@ -64,6 +64,25 @@ interface FooterListProps {
   data: { data: string; links: string }[];
 }
 
+// Helper function to open PDF
+const openPdf = (pdfData: any) => {
+  if (!pdfData) return;
+
+  try {
+    if (pdfData.type === "Buffer" && Array.isArray(pdfData.data)) {
+      const byteArray = new Uint8Array(pdfData.data);
+      const blob = new Blob([byteArray], { type: "application/pdf" });
+      const url = URL.createObjectURL(blob);
+      window.open(url, "_blank");
+    } else if (typeof pdfData === "string") {
+      window.open(pdfData, "_blank");
+    }
+  } catch (e) {
+    console.error("Error opening PDF", e);
+    alert("Could not open PDF");
+  }
+};
+
 const Footer: FC = () => {
   // State for collapsible sections on mobile
   const [quickIsOpen, setQuickIsOpen] = useState<boolean>(false);
@@ -71,6 +90,26 @@ const Footer: FC = () => {
   const [academicsIsOpen, setAcademicsIsOpen] = useState<boolean>(false);
   const [facilitiesIsOpen, setFacilitiesIsOpen] = useState<boolean>(false);
   const [stayConnectedIsOpen, setStayConnectedIsOpen] = useState<boolean>(false);
+
+  const handleAcademicCalendarClick = async () => {
+    try {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/academic-calendar`);
+      if (response.ok) {
+        const data = await response.json();
+        const pdf = data.pdf || (data.data && data.data.pdf) || (Array.isArray(data.data) && data.data[0]?.pdf);
+        if (pdf) {
+          openPdf(pdf);
+        } else {
+          alert("No academic calendar found.");
+        }
+      } else {
+        alert("Failed to fetch academic calendar.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Error fetching academic calendar.");
+    }
+  };
 
   return (
     <footer id="main-footer" className="bg-[#e5e5ea] text-gray-700 lg:px-8  text-sm pt-10">
@@ -118,7 +157,7 @@ const Footer: FC = () => {
               { label: "Research & Development and Consultancy Cell", href: "/research-development-consultancy" },
 
               { label: "About Alumni", href: "/alumni/about-alumni" },
-              { label: "Infrastructure", href: "/campus-facilities/infrastructure" },
+              { label: "Infrastructure", href: "/explore/infrastructure" },
               { label: "Privacy Policy", href: "/privacy-policy" },
               { label: "SCSTGrievance", href: "/about/mandatory-disclosure/sc-st-grievance" },
               { label: "Careers", href: "/careers" },
@@ -127,12 +166,12 @@ const Footer: FC = () => {
               // { label: "Circulars", href: "/about" },
               // { label: "Marks & Attendance", href: "/our-founder" },
               { label: "Resources", href: "https://digital.canaraengineering.in/" },
-              { label: "Infrastructure", href: "/campus-facilities/infrastructuret" },
-              { label: "Hostel Life", href: "/campus-facilities/hostel-life" },
-              { label: "Central Library", href: "/campus-facilities/central-library" },
+              { label: "Infrastructure", href: "/explore/infrastructuret" },
+              { label: "Hostel Life", href: "/explore/hostel-life" },
+              { label: "Central Library", href: "/explore/central-library" },
               { label: "Student Life & Engagement", href: "/studentlife-engagement" },
               { label: "Entrepreneurship Cell", href: "/entrepreneurship-cell" },
-              { label: "Physical Education", href: "/physical-education" },
+              { label: "Physical Education", href: "/explore/physical-education" },
               // { label: "Calendar of Events", href: "/events" },
               { label: "Alumni", href: "/alumni" },
               { label: "Admissions", href: "/admission" },
@@ -141,8 +180,9 @@ const Footer: FC = () => {
               // { label: "Marks & Attendance", href: "marks" },
               { label: "Circulars", href: "/academics/examination-records?tab=circulars", tab: "circulars" },
               { label: "Campus Buzz", href: "/campus-buzz" },
-              { label: "About Library", href: "/campus-facilities/central-library/about-library" },
+              { label: "About Library", href: "/explore/central-library/about-library" },
               { label: "Student Achievements", href: "/student-achievements" },
+              { label: "Cif", href: "/cif" },
             ]}
           />
         </Suspense>
@@ -165,7 +205,7 @@ const Footer: FC = () => {
             </div>
             <div>
               <h3 className="font-semibold mt-5 mb-2">Academics</h3>
-              <FooterList data={academics} />
+              <FooterList data={academics} onCalendarClick={handleAcademicCalendarClick} />
             </div>
             <div>
               <h3 className="font-semibold mt-5 mb-2">Facilities</h3>
@@ -215,7 +255,7 @@ const Footer: FC = () => {
           <div className="flex space-x-6 items-center">
             <div className="flex space-x-2">
               <Link href={"/privacy-policy"}>
-                <p>Privacy Policy | Terms of Use</p>
+                <p>Privacy Policy</p>
               </Link>
             </div>
           </div>
@@ -230,7 +270,13 @@ const Footer: FC = () => {
           {/* Our College */}
           <FooterSection title="Our College" data={ourCollege} isOpen={collegeIsOpen} setIsOpen={setCollegeIsOpen} />
           {/* Academics */}
-          <FooterSection title="Academics" data={academics} isOpen={academicsIsOpen} setIsOpen={setAcademicsIsOpen} />
+          <FooterSection
+            title="Academics"
+            data={academics}
+            isOpen={academicsIsOpen}
+            setIsOpen={setAcademicsIsOpen}
+            onCalendarClick={handleAcademicCalendarClick}
+          />
           {/* Facilities */}
           <FooterSection title="Facilities" data={facilities} isOpen={facilitiesIsOpen} setIsOpen={setFacilitiesIsOpen} />
           {/* Stay Connected */}
@@ -272,7 +318,7 @@ const Footer: FC = () => {
         <div className="border-t border-gray-300 pt-4 pb-6 text-xs text-center">
           <p className="mb-2">Copyright © {new Date().getFullYear()} CEC & Canara High School Association. All rights reserved.</p>
           <Link href={"/privacy-policy"}>
-            <p>Privacy Policy | Terms of Use</p>
+            <p>Privacy Policy</p>
           </Link>
         </div>
       </div>
@@ -281,11 +327,20 @@ const Footer: FC = () => {
 };
 
 // Reusable Footer List Component
-const FooterList: FC<FooterListProps> = ({ data }) => {
+const FooterList: FC<FooterListProps & { onCalendarClick?: () => void }> = ({ data, onCalendarClick }) => {
   return (
     <ul className="space-y-1">
       {data.map((item, index) => {
         const isExternal = item.links.startsWith("http") || item.links.endsWith(".pdf");
+        if (item.data === "Academic Calendar" && onCalendarClick) {
+          return (
+            <li className="leading-8" key={index}>
+              <button onClick={onCalendarClick} className="hover:text-primary transition-colors text-left">
+                {item.data}
+              </button>
+            </li>
+          );
+        }
         return (
           <li className="leading-8" key={index}>
             <Link href={item.links} {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
@@ -322,13 +377,14 @@ const FooterSection: FC<{
   data: { data: string; links: string }[];
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
-}> = ({ title, data, isOpen, setIsOpen }) => (
+  onCalendarClick?: () => void;
+}> = ({ title, data, isOpen, setIsOpen, onCalendarClick }) => (
   <div className="border-b border-gray-300 pb-2">
     <div onClick={() => setIsOpen(!isOpen)} className="flex items-center justify-between font-semibold cursor-pointer py-2">
       {title}
       <ArrowIcon isOpen={isOpen} />
     </div>
-    {isOpen && <FooterList data={data} />}
+    {isOpen && <FooterList data={data} onCalendarClick={onCalendarClick} />}
   </div>
 );
 

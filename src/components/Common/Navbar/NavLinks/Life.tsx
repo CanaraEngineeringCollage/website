@@ -17,14 +17,20 @@ export default function Life() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
-  const renderBorder =
+const renderBorder =
     pathname.includes("/campus-facilities") ||
     pathname.includes("/entrepreneurship-cell") ||
-    pathname.includes("/physical-education") ||
+    pathname.includes("/explore/physical-education") ||
+    pathname.includes("/explore/hostel-life") ||
+    pathname.includes("/explore/central-library") ||
+    pathname.includes("/cif") ||
     (pathname.includes("/alumni") && pathname !== "/alumni/about-alumni") ||
     pathname.includes("/student-achievements") ||
     pathname.includes("/studentlife-engagement") ||
-    pathname.includes("/campus-buzz");
+    pathname.includes("/campus-buzz") ||
+    pathname.includes("/explore/infrastructure");
+    
+
 
   return (
     <Menu open={isMenuOpen} handler={setIsMenuOpen} offset={{ mainAxis: 20 }} placement="bottom" allowHover={true}>
@@ -62,36 +68,39 @@ export default function Life() {
                 <College />
               </div>
               <div className="flex flex-col gap-2">
-                <span className="font-bold text-lg">Campus Facilities</span>
+                <span className="font-bold text-lg">Explore</span>
                 <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
                   <li>
                     <Link
-                      href="/campus-facilities/infrastructure"
-                      className={`${
-                        pathname.includes("/campus-facilities/infrastructure") ? `text-primary font-bold` : "text-gray-500"
-                      } hover:text-primary `}
+                      href="/explore/infrastructure"
+                      className={`${pathname.includes("/explore/infrastructure") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
                     >
                       Infrastructure
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/campus-facilities/hostel-life"
-                      className={`${
-                        pathname.includes("/campus-facilities/hostel-life") ? `text-primary font-bold` : "text-gray-500"
-                      } hover:text-primary `}
+                      href="/explore/hostel-life"
+                      className={`${pathname.includes("/explore/hostel-life") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
                     >
                       Hostel Life
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/campus-facilities/central-library"
-                      className={`${
-                        pathname.includes("/campus-facilities/central-library") ? `text-primary font-bold` : "text-gray-500"
-                      } hover:text-primary `}
+                      href="/explore/central-library"
+                      className={`${pathname.includes("/explore/central-library") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
                     >
                       Central Library
+                    </Link>
+                  </li>
+                  <li>
+                    {" "}
+                    <Link
+                      href="/explore/physical-education"
+                      className={`${pathname.includes("/explore/physical-education") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
+                    >
+                      Physical Education
                     </Link>
                   </li>
                 </ul>
@@ -104,7 +113,7 @@ export default function Life() {
                 <Innovation />
               </div>
               <div className="flex flex-col gap-2">
-                <span className="font-bold text-lg">Innovation & Health</span>
+                <span className="font-bold text-lg">Innovation</span>
                 <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
                   <li>
                     <Link
@@ -114,13 +123,12 @@ export default function Life() {
                       Entrepreneurship Cell
                     </Link>
                   </li>
-                  <li>
-                    {" "}
+                   <li>
                     <Link
-                      href="/physical-education"
-                      className={`${pathname.includes("/physical-education") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
+                      href="/cif"
+                      className={`${pathname.includes("/cif") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
                     >
-                      Physical Education
+                      Cif
                     </Link>
                   </li>
                 </ul>

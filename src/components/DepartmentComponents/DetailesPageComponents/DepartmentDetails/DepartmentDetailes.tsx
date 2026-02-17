@@ -2,7 +2,7 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { useParams } from "next/navigation";
 import Image from "next/image";
-import departments from "@/lib/departments.json";
+import { allDepartmentsData } from "@/lib/allDepartments";
 import DepartmentProfile from "../DepartmentDetailesTab/DepartmentProfile/DepartmentProfile";
 import Organaisation from "../DepartmentDetailesTab/Organaisation/Organaisation";
 import Hod from "../DepartmentDetailesTab/Hod/Hod";
@@ -59,7 +59,7 @@ interface DepartmentSectionProps {
 import CustomSelect from "@/components/Common/CustomSelect/CustomSelect";
 import { ArrowLeftIcon } from "lucide-react";
 import Link from "next/link";
-import useAndFormatter from "@/hooks/useAndFormatter";
+import formatDepartmentName from "@/utils/formatDepartmentName";
 
 // ... existing imports
 
@@ -88,7 +88,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   const [galleryItems, setGalleryItems] = useState<GalleryItem[]>([]);
   const [galleryLoading, setGalleryLoading] = useState(false);
 
-  const department = departments.find((dept) => dept.slug === slug);
+  const department = allDepartmentsData.find((dept) => dept.slug === slug);
 
   const fetchEvents = useCallback(async () => {
     if (loading || !hasMore) return;
@@ -223,21 +223,30 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
     [facultyData, department?.depatmentHead?.name],
   );
 
-  const hodData = React.useMemo(() => {
-    if (!department?.depatmentHead) return undefined;
+  const [hodApiData, setHodApiData] = useState<CouncilMember | null>(null);
 
-    return {
-      ...department.depatmentHead,
-      ...(hodFaculty
-        ? {
-            name: hodFaculty.name,
-            position: hodFaculty.designation,
-            imageUrl: hodFaculty.image || department.depatmentHead.imageUrl,
-            avatar: hodFaculty.avatar,
+  // Fetch HOD Data specifically
+  useEffect(() => {
+    async function fetchHod() {
+      if (!department?.name) return;
+      try {
+        const url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?hod=true&department=${encodeURIComponent(department.name)}`;
+        const res = await fetch(url);
+        if (res.ok) {
+          const result = await res.json();
+          if (result.data && result.data.length > 0) {
+            setHodApiData(result.data[0]);
           }
-        : {}),
-    };
-  }, [department?.depatmentHead, hodFaculty]);
+        }
+      } catch (err) {
+        console.error("Error fetching HOD data:", err);
+      }
+    }
+
+    if (selectedSection === "Head of the Department" && !hodApiData) {
+      fetchHod();
+    }
+  }, [selectedSection, department?.name, hodApiData]);
 
   const departmentMenuItems = [
     "Department Profile",
@@ -256,6 +265,24 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
     "Events",
     "Gallery",
   ];
+
+  const hodData = React.useMemo(() => {
+    if (!department?.depatmentHead) return undefined;
+
+    const sourceData = hodApiData || hodFaculty;
+
+    return {
+      ...department.depatmentHead,
+      ...(sourceData
+        ? {
+            name: sourceData.name,
+            position: sourceData.designation,
+            imageUrl: sourceData.avatar ? bufferToBase64(sourceData.avatar) : sourceData.image || department.depatmentHead.imageUrl,
+            avatar: sourceData.avatar,
+          }
+        : {}),
+    };
+  }, [department?.depatmentHead, hodFaculty, hodApiData]);
 
   return (
     <section className=" text-[#1D1D1F]  overflow-hidden">
@@ -291,7 +318,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
                   .map((part, index) => (
                     <React.Fragment key={index}>
                       {/* Render the text part */}
-                      {useAndFormatter(part)}
+                      {formatDepartmentName(part)}
 
                       {/* 2. Check if this part is a separator. If yes, add the responsive break */}
                       {/(\s+&\s+|\s+and\s+)/i.test(part) && <br className="hidden lg:block" />}
