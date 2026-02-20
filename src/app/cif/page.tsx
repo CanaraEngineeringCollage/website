@@ -5,7 +5,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Coming Soon | Canara Engineering College",
   description: "This page is currently under construction. Stay tuned for updates!",
-};
+  };
 
 const ComingSoonPage = () => {
   return (

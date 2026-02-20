@@ -16,7 +16,7 @@ export const metadata = {
   openGraph: {
     title: "Entrepreneurship Cell | Canara College",
     description: "Learn more about the Entrepreneurship Cell, its objectives, and activities at Canara College.",
-    url: "https://your-website.com/entrepreneurship-cell", // replace with actual URL
+    url: "https://cec.edu.in/entrepreneurship-cell", // replace with actual URL
     siteName: "Canara College",
   },
 };

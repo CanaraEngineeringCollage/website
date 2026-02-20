@@ -7,11 +7,11 @@ export const metadata = {
   openGraph: {
     title: "Grievance Redressal Cell | Student Support at Canara College",
     description: "Canara College is committed to addressing student grievances with fairness and transparency through its Grievance Redressal Cell.",
-    url: "https://your-website-url.com/grievance-redressal-cell", // update this
+    url: "https://cec.edu.in/about/grievance-redressal-cell", // update this
     siteName: "Canara College",
     images: [
       {
-        url: "https://your-website-url.com/og-grievance-redressal.jpg", // update this
+        url: "https://cec.edu.in/og-grievance-redressal.jpg", // update this
         width: 1200,
         height: 630,
         alt: "Grievance Redressal Cell at Canara College",
@@ -24,7 +24,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Grievance Redressal Cell | Student Support at Canara College",
     description: "Ensuring fairness, transparency, and a supportive environment for students at Canara College.",
-    images: ["https://your-website-url.com/og-grievance-redressal.jpg"], // update
+    images: ["https://cec.edu.in/og-grievance-redressal.jpg"], // update
   },
 };
 

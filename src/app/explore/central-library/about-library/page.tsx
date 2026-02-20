@@ -4,7 +4,6 @@ export const metadata = {
   title: "About Central Library | Canara Engineering College",
   description:
     "Learn about the mission, vision, infrastructure, digital resources, and learning environment provided by the Central Library at Canara Engineering College.",
-
   openGraph: {
     title: "About Central Library | Canara Engineering College",
     description:

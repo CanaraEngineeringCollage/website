@@ -3,8 +3,6 @@ import React from "react";
 import { allDepartmentsData } from "@/lib/allDepartments";
 import { notFound } from "next/navigation";
 
-
-
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const department = allDepartmentsData.find((dept) => dept.slug === params.slug);
 
@@ -13,8 +11,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const title = `${department.name} Department - Details | Canara Engineering College`;
   const description = `Explore detailed information about the ${department.name} Department at Canara Engineering College, including faculty, academic programs, research, facilities, and achievements.`;
 
-  const imageUrl =
-    department.bannerUrl || "https://your-website-url.com/default-og-image.jpg";
+  const imageUrl = department.bannerUrl || "https://cec.edu.in/default-og-image.jpg";
 
   return {
     title,
@@ -22,7 +19,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     openGraph: {
       title,
       description,
-      url: `https://your-website-url.com/department/${params.slug}/details`,
+      url: `https://cec.edu.in/department/${params.slug}/details`,
       siteName: "Canara College",
       images: [
         {
@@ -61,11 +58,9 @@ interface Faculty {
   employmentType: string;
   qualifications: Qualification[];
 }
-const Page =  ({ params }: { params: { slug: string } }) => {
+const Page = ({ params }: { params: { slug: string } }) => {
   const department = allDepartmentsData.find((dept) => dept.slug === params.slug);
   if (!department) return notFound();
-
-  
 
   return (
     <section>

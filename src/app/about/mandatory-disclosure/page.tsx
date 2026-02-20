@@ -7,11 +7,11 @@ export const metadata = {
   openGraph: {
     title: "Mandatory Disclosure | Canara College",
     description: "Explore the mandatory disclosure documents required for transparency and legal compliance at Canara College.",
-    url: "https://your-website-url.com/mandatory-disclosure", // update this
+    url: "https://cec.edu.in/about/mandatory-disclosure", // update this
     siteName: "Canara College",
     images: [
       {
-        url: "https://your-website-url.com/og-mandatory-disclosure.jpg", // update this
+        url: "https://cec.edu.in/og-mandatory-disclosure.jpg", // update this
         width: 1200,
         height: 630,
         alt: "Mandatory Disclosure at Canara College",
@@ -24,7 +24,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Mandatory Disclosure | Canara College",
     description: "Access the mandatory disclosure and legal documents for transparency at Canara College.",
-    images: ["https://your-website-url.com/og-mandatory-disclosure.jpg"], // update
+    images: ["https://cec.edu.in/og-mandatory-disclosure.jpg"], // update
   },
 };
 

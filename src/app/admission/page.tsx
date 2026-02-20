@@ -16,11 +16,11 @@ export const metadata = {
   openGraph: {
     title: "Admissions | Canara College",
     description: "Apply to Canara College and learn about our admission process, available programs, and future opportunities.",
-    url: "https://your-website-url.com/admission", // Update URL
+    url: "https://cec.edu.in/admission", // Update URL
     siteName: "Canara College",
     images: [
       {
-        url: "https://your-website-url.com/og-admission.jpg", // Update image URL
+        url: "https://cec.edu.in/og-admission.jpg", // Update image URL
         width: 1200,
         height: 630,
         alt: "Canara College Admission",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Admissions | Canara College",
     description: "Learn how to apply and find details on admissions at Canara College.",
-    images: ["https://your-website-url.com/og-admission.jpg"], // Update image URL
+    images: ["https://cec.edu.in/og-admission.jpg"], // Update image URL
   },
 };
 

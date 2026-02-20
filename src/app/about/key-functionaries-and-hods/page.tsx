@@ -11,11 +11,11 @@ export const metadata = {
     title: "Key Functionaries & HODs | Canara Engineering College",
     description:
       "Explore profiles of key functionaries and Heads of Departments at Canara Engineering College, guiding students and driving innovation.",
-    url: "https://your-website-url.com/about/key-functionaries-and-hods", // update this
+    url: "https://cec.edu.in/about/key-functionaries-and-hods", // update this
     siteName: "Canara Engineering College",
     images: [
       {
-        url: "https://your-website-url.com/og-key-functionaries-hods.jpg", // update this
+        url: "https://cec.edu.in/og-key-functionaries-hods.jpg", // update this
         width: 1200,
         height: 630,
         alt: "Key Functionaries & HODs of Canara Engineering College",
@@ -28,7 +28,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Key Functionaries & HODs | Canara Engineering College",
     description: "Get to know the key functionaries and Heads of Departments at Canara Engineering College.",
-    images: ["https://your-website-url.com/og-key-functionaries-hods.jpg"], // update this
+    images: ["https://cec.edu.in/og-key-functionaries-hods.jpg"], // update this
   },
 };
 const page = () => {

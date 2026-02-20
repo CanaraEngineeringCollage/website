@@ -8,7 +8,6 @@ export const metadata = {
   title: "Central Library | Canara Engineering College",
   description:
     "Explore the state-of-the-art Central Library at Canara Engineering College, featuring digital resources, academic journals, research databases, and a student-friendly learning environment.",
-
   openGraph: {
     title: "Central Library | Canara Engineering College",
     description:
@@ -34,6 +33,7 @@ export const metadata = {
     images: ["https://apiserver.cec.edu.in/assets/images/og-central-library.jpg"],
   },
 };
+
 
 const AboutTheDepartment = () => {
   // --- Static Dummy Data ---

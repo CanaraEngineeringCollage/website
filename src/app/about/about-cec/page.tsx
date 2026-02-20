@@ -13,11 +13,11 @@ export const metadata = {
   openGraph: {
     title: "About Canara College | Legacy of Excellence Since 1973",
     description: "Explore the rich history, vision, mission, and values of Canara College, a premier institution affiliated to Mangalore University.",
-    url: "https://your-website-url.com/about", // update with real URL
+    url: "https://cec.edu.in/about/about-cec", // update with real URL
     siteName: "Canara College",
     images: [
       {
-        url: "https://your-website-url.com/og-about-image.jpg", // update with your real OG image
+        url: "https://cec.edu.in/og-about-image.jpg", // update with your real OG image
         width: 1200,
         height: 630,
         alt: "About Canara College Campus",
@@ -30,7 +30,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "About Canara College | Legacy of Excellence Since 1973",
     description: "Discover the legacy and mission of Canara College, empowering students for a brighter future.",
-    images: ["https://your-website-url.com/og-about-image.jpg"], // update this
+    images: ["https://cec.edu.in/og-about-image.jpg"], // update this
   },
 };
 
@@ -42,11 +42,7 @@ export default function AboutCec() {
         <AboutCanara />
       </section>
       <section className="py-10 md:px-6 lg:px-0 lg:py-5 lg:mt-0 -mt-3">
-        <VideoPlayer
-          videoUrl="BEVUuWkR7LU"
-          youtubeUrl="BEVUuWkR7LU"
-          thumbnail="/youtubeThumbnails/Principal-Thumbnail.png"
-        />
+        <VideoPlayer videoUrl="BEVUuWkR7LU" youtubeUrl="BEVUuWkR7LU" thumbnail="/youtubeThumbnails/Principal-Thumbnail.png" />
       </section>
       <section className="lg:mt-0 ">
         <MissionVision />

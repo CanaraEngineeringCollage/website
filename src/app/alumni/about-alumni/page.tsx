@@ -4,12 +4,11 @@ export const metadata = {
   title: "About Alumni | Canara Engineering College",
   description:
     "Discover the achievements, contributions, and success stories of Canara Engineering College alumni who continue to make an impact across industries and communities.",
-
   openGraph: {
     title: "About Alumni | Canara Engineering College",
     description:
       "Learn more about the distinguished alumni of Canara Engineering College, their professional journeys, and their contributions to society.",
-    url: "https://apiserver.cec.edu.in/alumni", // ✅ update to your actual 'About Alumni' page URL
+    url: "https://apiserver.cec.edu.in/alumni/about-alumni", // ✅ update to your actual 'About Alumni' page URL
     siteName: "Canara Engineering College",
     images: [
       {

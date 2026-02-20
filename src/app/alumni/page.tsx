@@ -14,11 +14,11 @@ export const metadata = {
   openGraph: {
     title: "Alumni | Canara College",
     description: "Explore Canara College alumni's legacy, their role in empowering future students, and their impact on the community.",
-    url: "https://your-website-url.com/alumni", // Update with actual URL
+    url: "https://cec.edu.in/alumni", // Update with actual URL
     siteName: "Canara College",
     images: [
       {
-        url: "https://your-website-url.com/og-alumni.jpg", // Update image URL
+        url: "https://cec.edu.in/og-alumni.jpg", // Update image URL
         width: 1200,
         height: 630,
         alt: "Alumni Canara College",
@@ -31,7 +31,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Alumni | Canara College",
     description: "Learn about the achievements of Canara College alumni and their ongoing contributions to education and society.",
-    images: ["https://your-website-url.com/og-alumni.jpg"], // Update image URL
+    images: ["https://cec.edu.in/og-alumni.jpg"], // Update image URL
   },
 };
 

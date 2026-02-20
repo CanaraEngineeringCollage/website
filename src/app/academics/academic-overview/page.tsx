@@ -14,11 +14,11 @@ export const metadata = {
   openGraph: {
     title: "Academic Overview | Canara College",
     description: "Learn about the academic offerings at Canara College, from diverse programs to student experiences and opportunities.",
-    url: "https://your-website-url.com/academic-overview",
+    url: "https://cec.edu.in/academics/academic-overview",
     siteName: "Canara College",
     images: [
       {
-        url: "https://your-website-url.com/og-academic-overview.jpg",
+        url: "https://cec.edu.in/og-academic-overview.jpg",
         width: 1200,
         height: 630,
         alt: "Academic Overview at Canara College",
@@ -31,7 +31,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Academic Overview | Canara College",
     description: "Discover the academic programs and student experiences at Canara College.",
-    images: ["https://your-website-url.com/og-academic-overview.jpg"],
+    images: ["https://cec.edu.in/og-academic-overview.jpg"],
   },
 };
 
