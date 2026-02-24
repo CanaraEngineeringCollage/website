@@ -8,11 +8,11 @@ export const metadata = {
   openGraph: {
     title: "Our Management | Canara College",
     description: "Learn about the leadership and management team at Canara College, responsible for shaping the future of education.",
-    url: "https://your-website-url.com/our-management", // update this
+    url: "https://cec.edu.in/about/our-management", // update this
     siteName: "Canara College",
     images: [
       {
-        url: "https://your-website-url.com/og-management.jpg", // update this
+        url: "https://cec.edu.in/og-management.jpg", // update this
         width: 1200,
         height: 630,
         alt: "Our Management Team at Canara College",
@@ -25,7 +25,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Our Management | Canara College",
     description: "Meet the leadership and management team of Canara College.",
-    images: ["https://your-website-url.com/og-management.jpg"], // update
+    images: ["https://cec.edu.in/og-management.jpg"], // update
   },
 };
 

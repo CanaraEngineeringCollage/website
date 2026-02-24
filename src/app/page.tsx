@@ -9,19 +9,17 @@ import TopRecruiters from "@/components/Common/TopRecruiters/TopRecruiters";
 import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 import LocationSection from "@/components/HomepageComponents/LocationSection";
 import IdeasTakeFlight from "@/components/HomepageComponents/IdeasTakeFlight";
+import { Metadata } from "next";
 
-export const metadata = {
-  title: "Canara Engineering College, Mangalore | NAAC A Grade Institution",
-  description:
-    "Canara College, accredited with A Grade by NAAC and affiliated to Mangalore University, offers premier undergraduate programs. Join a legacy of excellence in education since 1973!",
+export const metadata: Metadata = {
   openGraph: {
     title: "Canara Engineering College, Mangalore | NAAC A Grade Institution",
     description: "Providing excellent undergraduate education since 1973. Accredited with A Grade by NAAC and affiliated to Mangalore University.",
-    url: "https://your-website-url.com",
+    url: "/", 
     siteName: "Canara College",
     images: [
       {
-        url: "https://www.cec.edu.in/graphImage.png", // update with your real OG image
+        url: "https://cec.edu.in/graphImage.png", // Thanks to metadataBase in layout, this becomes https://cec.edu.in/graphImage.png
         width: 1200,
         height: 630,
         alt: "Canara College Campus",
@@ -34,7 +32,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Canara College, Mangalore | NAAC A Grade Institution",
     description: "Providing excellent undergraduate education since 1973.",
-    images: ["https://your-website-url.com/og-image.jpg"],
+    images: ["https://cec.edu.in/og-image.jpg"],
   },
 };
 

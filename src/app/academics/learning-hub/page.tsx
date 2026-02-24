@@ -8,11 +8,11 @@ export const metadata = {
     title: "Learning Hub | Canara College",
     description:
       "The Learning Hub provides resources, study materials, and academic support for Canara College students to succeed in their studies.",
-    url: "https://your-website-url.com/learning-hub", // update this
+    url: "https://cec.edu.in/academics/learning-hub", // update this
     siteName: "Canara College",
     images: [
       {
-        url: "https://your-website-url.com/og-learning-hub.jpg", // update this
+        url: "https://cec.edu.in/og-learning-hub.jpg", // update this
         width: 1200,
         height: 630,
         alt: "Learning Hub at Canara College",
@@ -25,7 +25,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Learning Hub | Canara College",
     description: "Access resources, study materials, and academic support through the Learning Hub at Canara College.",
-    images: ["https://your-website-url.com/og-learning-hub.jpg"], // update this
+    images: ["https://cec.edu.in/og-learning-hub.jpg"], // update this
   },
 };
 

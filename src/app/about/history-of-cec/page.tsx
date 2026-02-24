@@ -8,11 +8,11 @@ export const metadata = {
   openGraph: {
     title: "History of Canara College | A Legacy of Excellence",
     description: "Discover the founding history, milestones, and achievements of Canara College, one of Mangalore’s prestigious institutions.",
-    url: "https://your-website-url.com/history-of-cec", // update this
+    url: "https://cec.edu.in/about/history-of-cec", // update this
     siteName: "Canara College",
     images: [
       {
-        url: "https://your-website-url.com/og-history-cec.jpg", // update this
+        url: "https://cec.edu.in/og-history-cec.jpg", // update this
         width: 1200,
         height: 630,
         alt: "History of Canara College",
@@ -25,7 +25,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "History of Canara College | A Legacy of Excellence",
     description: "A legacy of excellence since 1973. Learn more about Canara College’s inspiring history.",
-    images: ["https://your-website-url.com/og-history-cec.jpg"], // update
+    images: ["https://cec.edu.in/og-history-cec.jpg"], // update
   },
 };
 

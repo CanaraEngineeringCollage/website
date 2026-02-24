@@ -5,7 +5,6 @@ export const metadata = {
   title: "Distinctive Practices | Canara Engineering College",
   description:
     "Discover the distinctive practices of Canara Engineering College that foster innovation, academic excellence, and holistic student development.",
-
   openGraph: {
     title: "Distinctive Practices | Canara Engineering College",
     description:

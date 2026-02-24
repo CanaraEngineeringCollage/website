@@ -8,11 +8,11 @@ export const metadata = {
   openGraph: {
     title: "Our Founder | Canara College",
     description: "Discover the inspiring story of the founder of Canara College and their dedication to education and service.",
-    url: "https://your-website-url.com/our-founder", // update this
+    url: "https://cec.edu.in/about/our-founder", // update this
     siteName: "Canara College",
     images: [
       {
-        url: "https://your-website-url.com/og-founder.jpg", // update this
+        url: "https://cec.edu.in/og-founder.jpg", // update this
         width: 1200,
         height: 630,
         alt: "Founder of Canara College",
@@ -25,7 +25,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Our Founder | Canara College",
     description: "Learn about the founder of Canara College and their legacy.",
-    images: ["https://your-website-url.com/og-founder.jpg"], // update
+    images: ["https://cec.edu.in/og-founder.jpg"], // update
   },
 };
 

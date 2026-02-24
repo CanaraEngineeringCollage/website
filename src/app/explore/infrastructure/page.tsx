@@ -9,11 +9,11 @@ export const metadata = {
   openGraph: {
     title: "Infrastructure | Canara College",
     description: "Discover the infrastructure at Canara College, featuring modern facilities and resources that enhance the student experience.",
-    url: "https://your-website-url.com/infrastructure", // Update with the actual URL
+    url: "https://cec.edu.in/explore/infrastructure", // Update with the actual URL
     siteName: "Canara College",
     images: [
       {
-        url: "https://your-website-url.com/og-infrastructure.jpg", // Update image URL
+        url: "https://cec.edu.in/og-infrastructure.jpg", // Update image URL
         width: 1200,
         height: 630,
         alt: "Infrastructure at Canara College",
@@ -26,7 +26,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Infrastructure | Canara College",
     description: "Explore the infrastructure and modern facilities at Canara College that support an enriching academic environment.",
-    images: ["https://your-website-url.com/og-infrastructure.jpg"], // Update image URL
+    images: ["https://cec.edu.in/og-infrastructure.jpg"], // Update image URL
   },
 };
 
@@ -39,7 +39,6 @@ const page = () => {
       <section className="lg:mt-0 -mt-16">
         <CardSection />
       </section>
-    
     </>
   );
 };

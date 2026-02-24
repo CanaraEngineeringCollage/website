@@ -10,7 +10,7 @@ interface TopRecruiter {
   mode: string;    // On Campus/Pool/Off Campus
   type: string;    // IT/Core
   package: string;
-  count: number;
+  studentsRecruited: number;
   year: string;
 }
 
@@ -201,7 +201,7 @@ const RecruitersList: React.FC = () => {
                           {item.package}
                         </td>
                         <td className="py-3 md:px-4 px-1 border-b">
-                          {item.count}
+                          {item.studentsRecruited}
                         </td>
                       </tr>
                     ))}

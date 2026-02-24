@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     ? department.departmentAboutDescription
     : `Explore the ${department.name} Department at Canara Engineering College, offering quality education, experienced faculty, and a commitment to excellence.`;
 
-  const imageUrl = department.bannerUrl || "https://your-website-url.com/default-og-image.jpg";
+  const imageUrl = department.bannerUrl || "https://cec.edu.in/default-og-image.jpg";
 
   return {
     title,
@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     openGraph: {
       title,
       description,
-      url: `https://your-website-url.com/department/${params.slug}`,
+      url: `https://cec.edu.in/department/${params.slug}`,
       siteName: "Canara College",
       images: [
         {

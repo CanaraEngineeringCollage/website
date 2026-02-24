@@ -15,7 +15,7 @@ export const metadata = {
     title: "Physical Education Department | Canara College",
     description:
       "Explore the Physical Education Department at Canara College, featuring state-of-the-art facilities and a strong focus on building strength and health.",
-    url: "https://your-website.com/physical-education",
+    url: "https://cec.edu.in/explore/physical-education",
     siteName: "Canara College",
   },
 };

@@ -17,7 +17,7 @@ export const metadata = {
   openGraph: {
     title: "Training and Placement | Your College Name",
     description: "Explore the training and placement opportunities, department highlights, and the companies that recruit from our college.",
-    url: "https://your-website.com/training-placements",
+    url: "https://cec.edu.in/training-placements",
     siteName: "Your College Name",
   },
 };

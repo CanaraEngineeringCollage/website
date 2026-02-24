@@ -17,11 +17,11 @@ export const metadata = {
     title: "Student Life Engagement | Canara College",
     description:
       "Discover the student life engagement opportunities at Canara College. Learn about our holistic approach to student development, campus activities, and skill-building initiatives.",
-    url: "https://your-website-url.com/studentlife-engagement", // Update with the actual URL
+    url: "https://cec.edu.in/studentlife-engagement", // Update with the actual URL
     siteName: "Canara College",
     images: [
       {
-        url: "https://your-website-url.com/og-student-life-engagement.jpg", // Update image URL
+        url: "https://cec.edu.in/og-student-life-engagement.jpg", // Update image URL
         width: 1200,
         height: 630,
         alt: "Student Life Engagement at Canara College",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Student Life Engagement | Canara College",
     description: "Explore student life engagement at Canara College, including holistic development, skill-building activities, and campus life.",
-    images: ["https://your-website-url.com/og-student-life-engagement.jpg"], // Update image URL
+    images: ["https://cec.edu.in/og-student-life-engagement.jpg"], // Update image URL
   },
 };
 const page = () => {
@@ -46,18 +46,18 @@ const page = () => {
       <section className="px-6 lg:px-0 xl:px-0">
         <HolisticStudent />
       </section>
-      
+
       {/* <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <YourSkills />
       </section> */}
-      
+
       <section className="px-6  lg:px-0 xl:px-0 ">
         <StudentClubs />
       </section>
       <section className="px-6  lg:px-0 xl:px-0 py-10">
         <CollapsSection />
       </section>
-<section className=" lg:-mt-16  lg:pt-10 pb-16 lg:pb-20 lg:px-16 xl:px-0 px-1 md:px-12 ">
+      <section className=" lg:-mt-16  lg:pt-10 pb-16 lg:pb-20 lg:px-16 xl:px-0 px-1 md:px-12 ">
         <VideoPlayer thumbnail="/youtubeThumbnails/Akrathi Aftermovie - Thumbail@300x.webp" youtubeUrl="oHWMDPeP1Ew" />
       </section>
       <section className="bg-[#e5e5ea] ">

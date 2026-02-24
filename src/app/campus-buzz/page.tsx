@@ -5,7 +5,6 @@ export const metadata = {
   title: "Campus Buzz | Canara Engineering College",
   description:
     "Explore the latest campus news, events, student achievements, and highlights from Canara Engineering College. Stay connected with everything happening on campus.",
-
   openGraph: {
     title: "Campus Buzz | Canara Engineering College",
     description:

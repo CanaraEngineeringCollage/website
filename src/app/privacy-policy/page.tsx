@@ -7,14 +7,14 @@ export const metadata = {
   openGraph: {
     title: "Privacy Policy | Your Website",
     description: "Learn about our privacy practices and how we safeguard your information on our website.",
-    url: "https://your-website.com/privacy-policy",
+    url: "https://cec.edu.in/privacy-policy",
     siteName: "Your Website",
   },
 };
 
 const page = () => {
   return (
-    <section >
+    <section>
       <PrivacySection />
     </section>
   );
