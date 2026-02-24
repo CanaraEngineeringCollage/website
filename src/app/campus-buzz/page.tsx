@@ -1,5 +1,5 @@
-import React from 'react'
-import ExploreCampus from "@/components/Common/ExploreCampus/ExploreCampus";
+// Import the Wrapper instead of the main component
+import ExploreCampusWrapper from "@/components/Common/ExploreCampus/ExploreCampusWrapper";
 
 export const metadata = {
   title: "Campus Buzz | Canara Engineering College",
@@ -7,8 +7,7 @@ export const metadata = {
     "Explore the latest campus news, events, student achievements, and highlights from Canara Engineering College. Stay connected with everything happening on campus.",
   openGraph: {
     title: "Campus Buzz | Canara Engineering College",
-    description:
-      "Stay updated with campus events, student success stories, and all the latest happenings at Canara Engineering College.",
+    description: "Stay updated with campus events, student success stories, and all the latest happenings at Canara Engineering College.",
     url: "https://apiserver.cec.edu.in/campus-buzz",
     siteName: "Canara Engineering College",
     images: [
@@ -26,15 +25,20 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Campus Buzz | Canara Engineering College",
-    description:
-      "Get the latest updates on events, news, and student achievements from Canara Engineering College.",
+    description: "Get the latest updates on events, news, and student achievements from Canara Engineering College.",
     images: ["https://apiserver.cec.edu.in/assets/images/og-campus-buzz.jpg"],
   },
 };
 
 const Page = () => {
-    return(<section className='px-6 md:px-12 lg:px-16 xl:px-0'> <ExploreCampus  title="Explore More Campus" description='Stay updated with the latest news, events & achievements from across our campus' />;
-</section>)
-}
+  return (
+    <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+      <ExploreCampusWrapper 
+        title="Explore More Campus" 
+        description="Stay updated with the latest news, events & achievements from across our campus" 
+      />
+    </section>
+  );
+};
 
-export default Page
+export default Page;
