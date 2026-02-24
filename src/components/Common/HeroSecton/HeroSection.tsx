@@ -121,11 +121,19 @@ const HeroSection = ({ images = [] }: HeroSectionProps) => {
         >
           {logos.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white shadow-sm rounded-2xl w-full flex flex-col items-center justify-center min-h-[150px]">
-                <div className="mb-4">
-                  <Image src={item.src} alt={item.label} width={60} height={60} />
+              <div className="bg-white shadow-sm rounded-2xl w-full flex flex-col items-center py-5 px-2 min-h-[150px] h-full">
+                {/* Fixed height wrapper for the image */}
+                <div className="h-[70px] w-full flex items-center justify-center">
+                  <Image 
+                    src={item.src} 
+                    alt={item.label} 
+                    width={60} 
+                    height={60} 
+                    className="max-h-[60px] w-auto object-contain" 
+                  />
                 </div>
-                <p className="text-sm font-medium text-center text-[#1a1a1a]">{item.label}</p>
+                {/* mt-auto pushes the text to the absolute bottom evenly */}
+                <p className="text-sm font-medium text-center text-[#1a1a1a] mt-auto pt-2">{item.label}</p>
               </div>
             </SwiperSlide>
           ))}
