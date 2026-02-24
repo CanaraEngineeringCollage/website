@@ -104,7 +104,7 @@ const Faculty = ({ teachingStaff, technicalStaff, loading = false }: FacultyProp
     <section className="md:pb-20">
       {loading ? (
         // Skeleton loading grid
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-4 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-4 justify-items-center">
           {Array.from({ length: 8 }).map((_, i) => (
             <SkeletonCard key={i} />
           ))}
@@ -115,7 +115,7 @@ const Faculty = ({ teachingStaff, technicalStaff, loading = false }: FacultyProp
           {teachingStaff.length > 0 && (
             <>
               <h2 className="text-2xl text-center md:text-start  font-semibold text-[#1D1D1F] mb-2">Teaching Faculty</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-4 justify-items-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-4 justify-items-center">
                 {renderCards(teachingStaff)}
               </div>
             </>
@@ -125,7 +125,7 @@ const Faculty = ({ teachingStaff, technicalStaff, loading = false }: FacultyProp
           {technicalStaff.length > 0 && (
             <>
               <h2 className="text-2xl text-center md:text-start  font-semibold text-[#1D1D1F] mb-2 mt-8">Technical Staff</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-4 justify-items-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-4 justify-items-center">
                 {renderCards(technicalStaff)}
               </div>
             </>

@@ -99,9 +99,9 @@ export default function EmpoweringFutures() {
 
   return (
     <>
-      <section className="max-w-5xl xl:max-w-[75%]  overflow-hidden text-[#1D1D1F] mx-auto hidden md:block">
+      <section className="max-w-5xl xl:max-w-[75%]  overflow-hidden text-[#1D1D1F] mx-auto hidden lg:block">
         {/* Top Content */}
-        <div className="flex justify-between items-start  mx-auto pb-16">
+        <div className="flex justify-between flex-wrap items-start  mx-auto pb-16">
           <div>
             <h2 className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold leading-tight">Empowering Futures</h2>
             <p className="mt-4 text-[14px] md:text-[23.25px] textGray max-w-xl">
@@ -210,13 +210,13 @@ export default function EmpoweringFutures() {
           </div>
         </div>
       </section>
-      <section className="w-full md:hidden block px-1 py-14">
+      <section className="w-full lg:hidden block px-1 py-14">
         {/* Mobile View */}
         <h1 className="text-3xl text-center text-[#1D1D1F] font-bold pb-4">Empowering Futures</h1>
         <p className="text-center text-textGray font-medium pb-16 text-[14px] md:text-[23.25px]">
           Discover exceptional placement opportunities and industry connections that pave the way for success at Canara Engineering College.{" "}
         </p>
-        <div className="md:hidden flex flex-col items-center">
+        <div className="lg:hidden flex flex-col items-center">
           <motion.div
             key={activeIndex}
             initial={{ opacity: 0, x: 30 }}
@@ -231,9 +231,9 @@ export default function EmpoweringFutures() {
           <CarouselDots total={stats.length} active={activeIndex} onDotClick={setActiveIndex} className="mt-6" />
         </div>
 
-        <Link href="/training-placements">
+        <Link href="/training-placements" className="flex justify-center">
           {" "}
-          <button aria-label="Learn More" className="bg-primary text-white font-medium px-6 py-2 rounded-full mt-10 md:mt-0 w-full">
+          <button aria-label="Learn More" className="bg-primary text-white font-medium px-6 py-2 rounded-full mt-10 md:mt-0 w-auto">
             Learn More
           </button>
         </Link>

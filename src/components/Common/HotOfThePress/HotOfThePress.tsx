@@ -125,7 +125,7 @@ const HotOfThePressCarousel = () => {
       const params = new URLSearchParams({
         page: "1",
         limit: "15",
-        excludeCategory: "Student Achievements",
+        excludeCategory: "Student Achievements,Weekly Digest",
       });
       const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/buzz?${params.toString()}`);
       if (!res.ok) throw new Error("Failed to fetch buzz");
