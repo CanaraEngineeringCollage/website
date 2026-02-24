@@ -1,12 +1,14 @@
 import Image from "next/image";
 import React from "react";
 import bgImage from "../../../../../public/campusFacilitiesPageImages/hostelLifePageImages/hostel.jpg";
+import bgImageMobile from "../../../../../public/campusFacilitiesPageImages/hostelLifePageImages/hostelMobile.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full h-[60vh] md:h-[70vh]  flex flex-col justify-center items-center text-center px-4 overflow-hidden">
+    <section className="relative w-full h-[70vh] md:h-[70vh]  flex flex-col justify-center items-center text-center px-4 overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <Image src={bgImage} alt="Background 1" className="object-cover w-full h-[80vh] md:h-full" priority />
+        <Image src={bgImage} alt="Background 1" className="object-cover w-full h-[80vh] md:h-full hidden md:block" priority />
+        <Image src={bgImageMobile} alt="Background 1" className="object-cover w-full h-full md:hidden" priority />
 
         {/* Mobile Gradient */}
 

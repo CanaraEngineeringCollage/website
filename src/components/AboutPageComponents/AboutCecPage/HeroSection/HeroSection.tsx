@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import bg1 from "../../../../../public/aboutPageImages/campusLegacy/aboutcec.jpg";
+import bg2 from "../../../../../public/aboutPageImages/campusLegacy/aboutcecMobile.png";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -15,7 +16,13 @@ const HeroSection = () => {
         <Image
           src={bg1}
           alt="Background Image"
-          className="object-cover w-full h-full"
+          className="object-cover w-full h-full hidden md:block"
+          priority
+        />
+        <Image
+          src={bg2}
+          alt="Background Image"
+          className="object-cover w-full h-full md:hidden"
           priority
         />
 
