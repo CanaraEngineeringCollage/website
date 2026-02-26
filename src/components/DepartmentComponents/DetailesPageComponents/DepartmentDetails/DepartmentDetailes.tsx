@@ -139,6 +139,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
       fetchEvents();
     }
   }, [fetchEvents, hasMore]);
+  
 
   useEffect(() => {
     if (!loading && hasMore && events.length > 0) {
