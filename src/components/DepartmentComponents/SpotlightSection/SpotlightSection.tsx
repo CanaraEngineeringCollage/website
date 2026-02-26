@@ -70,7 +70,7 @@ export default function SpotlightSection({ toppers }) {
                         2. Added 'backdrop-blur-xl' (Blurs the line behind the text)
                         3. Added 'bg-black/60' (Semi-transparent dark tint)
                     */}
-                    <div className="backdrop-blur-xl bg-[#031a40]/50 border border-white/50 text-white px-6 py-2 rounded-full whitespace-nowrap text-sm font-semibold shadow-xl">
+                    <div className="backdrop-blur-xl bg-[#031a40]/5 border border-white/50 text-white px-6 py-2 rounded-full whitespace-nowrap text-sm font-semibold shadow-xl">
                       {topper.vtuText}
                     </div>
                   </div>

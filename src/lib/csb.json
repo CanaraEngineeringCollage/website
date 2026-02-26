@@ -38,19 +38,24 @@
         "name": "Nikhitha Ganapati Bhat",
         "batch": "2024-25",
         "percentage": "9.29",
-        "image": "/departmentImages/toppersImage/csbs/7.jpg"
+        "image": "/departmentImages/toppersImage/csbs/7.jpg",
+        "vtuText": "VTU 1st Rank, Gold Medal"
+        
       },
       {
         "name": "Himanshu",
         "batch": "2024-25",
         "percentage": "9.27",
-        "image": "/departmentImages/toppersImage/csbs/8.jpg"
+        "image": "/departmentImages/toppersImage/csbs/8.jpg",
+        "vtuText": "VTU 3rd Rank"
+        
       },
       {
         "name": "Nikhil N Pai",
         "batch": "2024-25",
         "percentage": "9.18",
-        "image": "/departmentImages/toppersImage/csbs/9.jpg"
+        "image": "/departmentImages/toppersImage/csbs/9.jpg",
+        "vtuText": "VTU 5th Rank"
       }
     ],
 
@@ -5839,16 +5844,20 @@
         "imageUrl": "https://apiserver.cec.edu.in/files/University%20Examination%20Results"
       },
       {
+        "title": "University Rank",
+        "imageUrl": "https://apiserver.cec.edu.in/files/csbUnviersityRank"
+      },
+      {
         "title": "Awards in Technical Events/Conferences",
         "imageUrl": "https://apiserver.cec.edu.in/files/Awards%20in%20Technical%20Events%20Conferences"
       },
       {
         "title": "Participation in Technical Events",
-        "imageUrl": "https://apiserver.cec.edu.in/files/Participation%20in%20Technical%20Events%20CSB"
+        "imageUrl": "https://apiserver.cec.edu.in/files/Participation%20in%20Technical%20Certification"
       },
       {
         "title": "Participation in Technical Certification",
-        "imageUrl": "https://apiserver.cec.edu.in/files/Participation%20in%20Technical%20Certification"
+        "imageUrl": "https://apiserver.cec.edu.in/files/CSB%20Participation%20in%20Technical%20Certification"
       }
     ],
     "academicsProgram": {

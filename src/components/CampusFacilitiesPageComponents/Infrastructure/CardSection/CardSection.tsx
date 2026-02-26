@@ -67,15 +67,27 @@ function CardContent({
     <div className="bg-white rounded-2xl ">
       {/* Top Image Section */}
       <Image
-        src={description.src}
+        src={description.desktopSrc}
         alt={title}
         loading="lazy"
         width={1000}
         height={700}
-        className={`object-cover overflow-hidden rounded-t-2xl w-full lg:h-[700px] h-[400px] mb-10 ${
+        className={`object-cover overflow-hidden rounded-t-2xl w-full hidden md:block lg:h-[700px] h-[400px] mb-10 ${
           title !== "In-Campus Hostels" ? "object-left" : "object-center"
         }`}
       />
+       <Image
+        src={description.mobileSrc}
+        alt={title}
+        loading="lazy"
+        width={1000}
+        height={700}
+        className={`object-cover overflow-hidden rounded-t-2xl w-full lg:h-[700px] md:hidden h-[400px] mb-10 ${
+          title !== "In-Campus Hostels" ? "object-left" : "object-center"
+        }`}
+      />
+
+
 
       {/* Dynamic Content Section (The Model) */}
       <div className="p-4 lg:p-0 lg:px-20 space-y-5  text-left text-sm text-[#1D1D1F]">

@@ -23,8 +23,12 @@
             "Subscriptions to 42 print journals, 16+ magazines, and 4 newspapers, enriching academic resources for students."
           ]
         }
-      ]
-    }
+      ],
+      "desktopSrc": "/campusFacilitiesPageImages/4.webp",
+      "mobileSrc": "/campusFacilitiesPageImages/4.webp"
+    },
+    "desktopSrc": "/campusFacilitiesPageImages/4.webp",
+    "mobileSrc": "/campusFacilitiesPageImages/4.webp"
   },
   {
     "id": 2,
@@ -40,11 +44,15 @@
         {
           "description": "CEC offers comfortable on-campus hostel facilities designed to provide students with a safe, peaceful, and supportive living environment. Located within the campus and surrounded by greenery, the hostels offer a calm atmosphere that encourages focused learning while still enabling a vibrant campus life."
         },
-         {
+        {
           "description": "Campus Hostels CEC offers comfortable on-campus hostel facilities designed to provide students with a safe, peaceful, and supportive living environment. Located within the campus and surrounded by greenery, the hostels offer a calm atmosphere that encourages focused learning while still enabling a vibrant campus life. The hostels accommodate over 850+ students and are equipped with essential amenities such as indoor sports facilities, a well-equipped gym, on-site laundry services, and regular medical check-ups in collaboration with Father Muller’s Medical Hospital. A special mention is made of the Nandini Girls’ Hostel, which offers air-conditioned rooms and a thoughtfully designed, contemporary living space inspired by premium residential standards, providing enhanced comfort along with modern amenities. With 24/7 security and the continuous presence of dedicated wardens and assistant wardens, students are well supported, making the CEC hostels a true home away from home."
         }
-      ]
-    }
+      ],
+      "desktopSrc": "/campusFacilitiesPageImages/hostelLifePageImages/bgImage.jpg",
+      "mobileSrc": "/campusFacilitiesPageImages/hostelMobile.png"
+    },
+    "desktopSrc": "/campusFacilitiesPageImages/hostelLifePageImages/bgImage.jpg",
+    "mobileSrc": "/campusFacilitiesPageImages/hostelMobile.png"
   },
   {
     "id": 3,
@@ -72,10 +80,13 @@
         {
           "bottomdescription": "From ideation to real-world solutions, our labs empower you to turn ideas into impact."
         }
-      ]
-    }
+      ],
+      "desktopSrc": "/campusFacilitiesPageImages/3.jpg",
+      "mobileSrc": "/campusFacilitiesPageImages/3.jpg"
+    },
+    "desktopSrc": "/campusFacilitiesPageImages/3.jpg",
+    "mobileSrc": "/campusFacilitiesPageImages/3.jpg"
   },
- 
   {
     "id": 9,
     "category": "",
@@ -90,15 +101,19 @@
         {
           "description": "A student-friendly space to relax, recharge, and relish. Our hygienic and spacious canteens and mess facilities offer a wide range of vegetarian and non-vegetarian options to suit diverse tastes and daily needs. Nutritious, freshly prepared meals are served through Prathignhya Café and Can Café – Hangyo, while the newly introduced Can Café Express adds a vibrant hangout spot for quick bites and casual conversations. More than just dining, it’s an experience that brings the campus community together."
         }
-      ]
-    }
+      ],
+      "desktopSrc": "/campusFacilitiesPageImages/Image6.jpg",
+      "mobileSrc": "/campusFacilitiesPageImages/Image6.jpg"
+    },
+    "desktopSrc": "/campusFacilitiesPageImages/Image6.jpg",
+    "mobileSrc": "/campusFacilitiesPageImages/Image6.jpg"
   },
-    {
+  {
     "id": 5,
     "category": "",
     "title": "Auditorium",
     "src": "/campusFacilitiesPageImages/Image2.jpg",
-   "style": "lg:top-[10px] lg:right-[0px]",
+    "style": "lg:top-[10px] lg:right-[0px]",
     "textalign": "text-center max-w-3xl",
     "mainTitle": "Dr. P. Dayananda Pai & \n P. Sathish Pai Auditorium",
     "description": {
@@ -128,8 +143,12 @@
         {
           "bottomdescription": "A space built to inspire, connect, and celebrate — all under one roof."
         }
-      ]
-    }
+      ],
+      "desktopSrc": "/campusFacilitiesPageImages/Image2.jpg",
+      "mobileSrc": "/campusFacilitiesPageImages/Image2.jpg"
+    },
+    "desktopSrc": "/campusFacilitiesPageImages/Image2.jpg",
+    "mobileSrc": "/campusFacilitiesPageImages/Image2.jpg"
   },
   {
     "id": 7,
@@ -148,35 +167,35 @@
         {
           "bottomdescription": "Every classroom is a space where ideas thrive and interactions spark innovation."
         }
-      ]
-    }
+      ],
+      "desktopSrc": "/campusFacilitiesPageImages/Image4.jpg",
+      "mobileSrc": "/campusFacilitiesPageImages/Image4.jpg"
+    },
+    "desktopSrc": "/campusFacilitiesPageImages/Image4.jpg",
+    "mobileSrc": "/campusFacilitiesPageImages/Image4.jpg"
   },
-
-
-{
-     "id": 7,
-     "category": "",
-     "title": "Transportation",
-     "src": "/campusFacilitiesPageImages/transportation.webp",
-     "style": "lg:bottom-[10] lg:left-0",
-     "textalign": "",
-     "mainTitle": "Transportation",
-     "description": {
-       "src": "/campusFacilitiesPageImages/transportation.webp",
-       "content": [
-         {
-           "description": "Canara Engineering College offers a well-organized transportation facility with a fleet of more than 11 buses, ensuring convenient connectivity across Mangaluru and neighboring areas. The extensive transport network enables safe, reliable, and timely travel for students and staff, making daily commuting comfortable and hassle-free."
-         }
-       ]
-     }
-   },
-
-
-
-
-
-   
-   {
+  {
+    "id": 7,
+    "category": "",
+    "title": "Transportation",
+    "src": "/campusFacilitiesPageImages/transportation.webp",
+    "style": "lg:bottom-[10] lg:left-0",
+    "textalign": "",
+    "mainTitle": "Transportation",
+    "description": {
+      "src": "/campusFacilitiesPageImages/transportation.webp",
+      "content": [
+        {
+          "description": "Canara Engineering College offers a well-organized transportation facility with a fleet of more than 11 buses, ensuring convenient connectivity across Mangaluru and neighboring areas. The extensive transport network enables safe, reliable, and timely travel for students and staff, making daily commuting comfortable and hassle-free."
+        }
+      ],
+      "desktopSrc": "/campusFacilitiesPageImages/transportation.webp",
+      "mobileSrc": "/campusFacilitiesPageImages/transportationMobile.png"
+    },
+    "desktopSrc": "/campusFacilitiesPageImages/transportation.webp",
+    "mobileSrc": "/campusFacilitiesPageImages/transportationMobile.png"
+  },
+  {
     "id": 10,
     "category": "",
     "title": "Sports & Fitness Facilities",
@@ -190,21 +209,20 @@
         {
           "description": "Canara Engineering College encourages a healthy balance between academics and physical well-being through well-maintained sports and fitness facilities on campus. Students are provided ample opportunities to stay active, build teamwork, and pursue sporting interests alongside their academic journey."
         },
-         {
+        {
           "description": "The campus features a well-equipped gymnasium, accessible to hostel residents, designed to support fitness, strength training, and overall wellness in a safe and supervised environment."
         },
-         {
+        {
           "description": "CEC also offers a variety of indoor sports facilities, including Badminton, Table Tennis, Chess, Powerlifting, Weightlifting, and Karate, enabling students to engage in both recreational and competitive activities throughout the year."
         },
-         {
+        {
           "description": "For outdoor sports enthusiasts, the college provides excellent facilities for Cricket, Volleyball, Football, Basketball, Kabaddi, Ball Badminton, Throwball, and Handball, fostering physical fitness, sportsmanship, and team spirit. These facilities collectively contribute to a vibrant and active campus life at CEC."
         }
-      ]
-    }
+      ],
+      "desktopSrc": "/physicalEducationPageImages/bgImage-2.png",
+      "mobileSrc": "/physicalEducationPageImages/bgImage-2.png"
+    },
+    "desktopSrc": "/physicalEducationPageImages/bgImage-2.png",
+    "mobileSrc": "/physicalEducationPageImages/bgImage-2.png"
   }
-   
- 
 ]
-
-
-

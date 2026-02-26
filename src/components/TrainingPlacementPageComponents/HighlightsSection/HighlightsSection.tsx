@@ -74,7 +74,7 @@ const HighlightsSection = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-3 gap-6 lg:[grid-auto-rows:1fr]">
         {/* Left Column */}
         {[
-          { title: "5.6 LPA", subtitle: "Median Salary", description: "Offered to Top 5% of Student Candidates" },
+          { title: "", subtitle: "Premier Hiring Partners", description: "(Recruiting Across Core and Emerging Domain)" },
           { title: "42%", subtitle: "Pre-Placement Offers", description: "of placed students received PPOs" },
           {
             title: "30%",

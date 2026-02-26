@@ -15,6 +15,8 @@ interface CarouselProps {
 
 type Card = {
   src: string;
+  desktopSrc?: string;
+  mobileSrc?: string;
   title: string;
   category?: string;
   content: React.ReactNode;
@@ -35,12 +37,12 @@ interface CarouselContextType {
 }
 
 export const CarouselContext = createContext<CarouselContextType>({
-  onCardClose: () => { },
+  onCardClose: () => {},
   currentIndex: 0,
   totalItems: 0,
-  goToNextCard: () => { },
-  openCard: () => { },
-  closeCard: () => { },
+  goToNextCard: () => {},
+  openCard: () => {},
+  closeCard: () => {},
   isOpen: false,
 });
 
@@ -50,13 +52,13 @@ type CustomMotionProps = Omit<MotionProps, "onAnimationStart" | "onAnimationEnd"
   onAnimationIteration?: React.AnimationEventHandler<HTMLElement>;
 };
 
-interface MotionDivProps extends CustomMotionProps, HTMLAttributes<HTMLDivElement>, RefAttributes<HTMLDivElement> { }
+interface MotionDivProps extends CustomMotionProps, HTMLAttributes<HTMLDivElement>, RefAttributes<HTMLDivElement> {}
 const MotionDiv = motion.div as React.ComponentType<MotionDivProps>;
 
-interface MotionPProps extends CustomMotionProps, HTMLAttributes<HTMLParagraphElement>, RefAttributes<HTMLParagraphElement> { }
+interface MotionPProps extends CustomMotionProps, HTMLAttributes<HTMLParagraphElement>, RefAttributes<HTMLParagraphElement> {}
 const MotionP = motion.p as React.ComponentType<MotionPProps>;
 
-interface MotionButtonProps extends CustomMotionProps, ButtonHTMLAttributes<HTMLButtonElement>, RefAttributes<HTMLButtonElement> { }
+interface MotionButtonProps extends CustomMotionProps, ButtonHTMLAttributes<HTMLButtonElement>, RefAttributes<HTMLButtonElement> {}
 const MotionButton = motion.button as React.ComponentType<MotionButtonProps>;
 
 export const Carousel = ({ items }: CarouselProps) => {
@@ -163,8 +165,6 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
     goToNextCard(); // Move to the next card
   };
 
-
-
   React.useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -235,13 +235,11 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
     },
   };
 
-
-
   return (
     <>
       <AnimatePresence>
         {isOpen && currentIndex === index && (
-          <MotionDiv className="fixed inset-0 h-screen z-50 overflow-auto" initial="hidden" animate="visible" exit="exit">
+          <MotionDiv className="fixed inset-0 h-screen z-[99999] overflow-auto" initial="hidden" animate="visible" exit="exit">
             <MotionDiv variants={backdropVariants} className="bg-black/80 backdrop-blur-lg h-full w-full fixed inset-0" onClick={handleClose} />
             <MotionDiv
               variants={cardVariants}
@@ -261,12 +259,9 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
               <motion.div variants={contentVariants} className="">
                 {card.content}
               </motion.div>
-              <motion.div variants={contentVariants} className="p-4 lg:px-20 mt-10">
+              <motion.div variants={contentVariants} className="p-4 lg:px-20 md:mt-10">
                 <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">Next Up</h1>
-                <h1
-                  onClick={handleNextCard}
-                  className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]"
-                >
+                <h1 onClick={handleNextCard} className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]">
                   {nextCardTitle}
                   <MdKeyboardArrowRight className="ml-1  text-[20px] md:text-[25px]" />
                 </h1>
@@ -286,40 +281,45 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
         <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
         {/* Bottom gradient overlay */}
         <div className="absolute bottom-0 left-0 right-0 h-[60vh] bg-gradient-to-t from-black/70 via-transparent to-transparent z-30 pointer-events-none" />
-        <div
-          className={`absolute ${card.style} z-40 p-8 ${card.textalign} ${card.id == 1 ? "" : ""
-            }`}
-        >
+        <div className={`absolute ${card.style} z-40 p-8 ${card.textalign} ${card.id == 1 ? "" : ""}`}>
           <MotionP
             layoutId={layout ? `category-${card.category}` : undefined}
-            className={`text-white text-[18px] ${card.id == 1 ? "lg:max-w-xl text-start lg:text-right" : "max-w-2xl"
-              } md:text-[31px] font-bold md:font-medium font-sans`}
+            className={`text-white text-[18px] ${
+              card.id == 1 ? "lg:max-w-xl text-start lg:text-right" : "max-w-2xl"
+            } md:text-[31px] font-bold md:font-medium font-sans`}
           >
             {card.category}
           </MotionP>
 
-      <MotionP
-  layoutId={layout ? `title-${card.title}` : undefined}
-  className={`text-white text-[31px] text-left
-    md:text-[60px] font-semibold max-w-full leading-[1.1] whitespace-nowrap font-sans mt-2`}
->
-  {card.title}
-</MotionP>
+          <MotionP
+            layoutId={layout ? `title-${card.title}` : undefined}
+            className={`text-white text-[31px] text-left
+    md:text-[60px] font-semibold max-w-full leading-[1.1] font-sans mt-2`}
+          >
+            {card.title}
+          </MotionP>
 
           <MotionP
             layoutId={layout ? `desc-${card.desc}` : undefined}
-            className={`text-white text-[18px] md:text-[31px] max-w-6xl font-bold md:font-medium font-sans ${card.id == 1 ? "text-center md:text-left" : "text-left"
-              }`}
+            className={`text-white text-[18px] md:text-[31px] max-w-6xl font-bold md:font-medium font-sans ${
+              card.id == 1 ? "text-center md:text-left" : "text-left"
+            }`}
           >
             {card.desc}
           </MotionP>
         </div>
         <BlurImage
-  src={card.src}
-  alt={card.title}
-  fill
-  className={`"absolute inset-0 z-10 object-left ${card.title !== "In-Campus Hostels"?"object-left":"object-center"} object-cover md:object-center"`}
-/>
+          src={card.desktopSrc || card.src}
+          alt={card.title}
+          fill
+          className={`hidden md:block absolute inset-0 z-10 ${card.title !== "In-Campus Hostels" ? "object-left" : "object-center"} object-cover md:object-center`}
+        />
+        <BlurImage
+          src={card.mobileSrc || card.src}
+          alt={card.title}
+          fill
+          className={`block md:hidden absolute inset-0 z-10 ${card.title !== "In-Campus Hostels" ? "object-left" : "object-center"} object-cover md:object-center`}
+        />
 
         <div className="absolute bottom-4 right-4 z-40">
           <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
