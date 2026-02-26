@@ -10,6 +10,7 @@ interface AlumniPodcast {
   url: string;
   createdAt: string;
   title: string;
+  thumbnailUrl?: string; // Updated to match the string URL from the backend
 }
 
 interface CarouselProps {
@@ -24,48 +25,11 @@ const getYoutubeId = (url?: string) => {
   return match && match[1] ? match[1] : null;
 };
 
-// --- Helper: Get Best Possible Start Image ---
+// --- Helper: Get Best Possible Start Image (Fallback) ---
 const getYoutubeThumbnail = (url?: string) => {
   const id = getYoutubeId(url);
   if (!id) return "/placeholder.jpg";
   return `https://img.youtube.com/vi/${id}/maxres1.jpg`;
-};
-
-// --- Sub-Component: AutoPlay Video Player ---
-interface AutoPlayVideoProps {
-  url: string;
-  onComplete: () => void;
-  onClick: () => void;
-}
-
-const AutoPlayVideo = ({ url, onComplete, onClick }: AutoPlayVideoProps) => {
-  const videoId = getYoutubeId(url);
-  const iframeRef = useRef<HTMLIFrameElement>(null);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      onComplete();
-    }, 5500);
-    return () => clearTimeout(timer);
-  }, [onComplete]);
-
-  if (!videoId) return null;
-
-  return (
-    <div className="absolute inset-0 w-full h-full z-20 bg-black overflow-hidden ">
-      <iframe
-        ref={iframeRef}
-        className="absolute top-1/2 left-1/2 h-full w-[600%] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-        src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=0&start=0&modestbranding=1&rel=0&iv_load_policy=3&disablekb=1&fs=0&showinfo=0&loop=1&playlist=${videoId}`}
-        allow="autoplay; encrypted-media"
-        title="Video Preview"
-      />
-      <div 
-        onClick={onClick}
-        className="absolute inset-0 z-30 cursor-pointer bg-transparent"
-      />
-    </div>
-  );
 };
 
 export default function AlumniPodcastCarousel({
@@ -83,16 +47,31 @@ export default function AlumniPodcastCarousel({
   const directionRef = useRef(1);
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-  // --- Fetch Data ---
+  // --- Fetch & Process Data ---
   useEffect(() => {
     const fetchPodcasts = async () => {
       try {
         const apiUrl = process.env.NEXT_PUBLIC_API_URL;
         if (!apiUrl) return;
+        
         const res = await fetch(`${apiUrl}/alumni/podcast`, { cache: "no-store" });
         if (!res.ok) throw new Error("Network response was not ok");
-        const data = await res.json();
-        setPodcasts(data);
+        
+        const data: AlumniPodcast[] = await res.json();
+        
+        const processedData = data.map((podcast) => {
+          let thumbnailUrl = getYoutubeThumbnail(podcast.url); 
+          
+          // --- UPDATED IMAGE LOGIC HERE ---
+          // Use the uploaded image if it exists, otherwise fallback to YouTube thumbnail
+          if (podcast.thumbnailUrl) {
+            thumbnailUrl = `${apiUrl}/alumni/file/${podcast.thumbnailUrl}`;
+          }
+          
+          return { ...podcast, thumbnailUrl };
+        });
+
+        setPodcasts(processedData);
       } catch (error) {
         console.error("Failed to fetch alumni podcasts", error);
       } finally {
@@ -124,6 +103,19 @@ export default function AlumniPodcastCarousel({
     return podcasts[(index + offset + podcasts.length) % podcasts.length];
   };
 
+  // --- Auto-Slide Timer ---
+  useEffect(() => {
+    if (podcasts.length === 0) return;
+    
+    // Automatically trigger 'next' every 4.5 seconds
+    const timer = setInterval(() => {
+      next();
+    }, 4500); 
+
+    // Cleanup interval on unmount or when dependencies change
+    return () => clearInterval(timer);
+  }, [index, podcasts.length, isAnimating]);
+
   // --- Touch Handling ---
   const touchStartX = useRef<number | null>(null);
   const touchEndX = useRef<number | null>(null);
@@ -144,7 +136,7 @@ export default function AlumniPodcastCarousel({
   };
 
   // --- GSAP Animation Logic ---
-  const animateCard = (card: HTMLDivElement, newUrl: string) => {
+  const animateCard = (card: HTMLDivElement, imgSrc: string) => {
     const dir = directionRef.current;
     
     const oldWrapper = card.querySelector(".active-wrapper") as HTMLDivElement;
@@ -154,8 +146,7 @@ export default function AlumniPodcastCarousel({
 
     const newImg = newWrapper.querySelector("img");
     if (newImg) {
-        newImg.removeAttribute("data-scaled");
-        newImg.src = getYoutubeThumbnail(newUrl);
+        newImg.src = imgSrc; 
     }
 
     setIsAnimating(true);
@@ -195,7 +186,7 @@ export default function AlumniPodcastCarousel({
         if(img) {
             const offset = [-2, -1, 0, 1, 2][i];
             const podcast = getPodcast(offset);
-            if (podcast) img.src = getYoutubeThumbnail(podcast.url);
+            if (podcast && podcast.thumbnailUrl) img.src = podcast.thumbnailUrl;
         }
       }
     });
@@ -209,20 +200,25 @@ export default function AlumniPodcastCarousel({
       if (!card) return;
       const offset = [-2, -1, 0, 1, 2][i];
       const podcast = getPodcast(offset);
-      if (podcast) animateCard(card, podcast.url);
+      if (podcast && podcast.thumbnailUrl) animateCard(card, podcast.thumbnailUrl);
     });
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index, podcasts]);
 
   const handleVideoClick = (url: string) => window.open(url, "_blank");
 
-  if (loading) return <div className="h-[600px] flex items-center justify-center">Loading Podcasts...</div>;
+  // --- BEAUTIFUL LOADING STATE ---
+  if (loading) {
+    return (
+      null
+    );
+  }
+  
   if (podcasts.length === 0) return null;
 
   const currentCenterPodcast = getPodcast(0);
 
   return (
-    // FIX 1: Increased bottom padding (pb-36) so the text has room to exist below the huge card without being cut off.
     <section className={`w-full flex flex-col justify-center items-center pt-5 md:pt-0  ${backgroundColor} overflow-hidden`}>
       
       <div className="w-full max-w-7xl px-5 flex flex-col md:flex-row justify-center items-center pb-9 lg:pb-12">
@@ -251,13 +247,12 @@ export default function AlumniPodcastCarousel({
             registerRef={registerRef}
             title={currentCenterPodcast?.title} 
         >
-           {!isAnimating && currentCenterPodcast?.url && (
-              <AutoPlayVideo 
-                 url={currentCenterPodcast.url} 
-                 onComplete={next}
-                 onClick={() => handleVideoClick(currentCenterPodcast.url)}
+           {currentCenterPodcast?.url && (
+              <div 
+                onClick={() => handleVideoClick(currentCenterPodcast.url)}
+                className="absolute inset-0 z-30 cursor-pointer"
               />
-            ) }
+           )}
         </Card>
 
         <Card refIndex={3} size="md" registerRef={registerRef}>
@@ -306,16 +301,14 @@ const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
   } 
   else if (currentSrc.includes("sd1.jpg")) {
     img.src = currentSrc.replace("sd1.jpg", "hq1.jpg");
-    img.dataset.scaled = "true";
   }
 };
 
 function Card({ size, children, main = false, refIndex, registerRef, title }: CardProps) {
   const sizeMap = {
-    sm: "hidden md:block md:w-[26vw] h-[60vh] opacity-60 scale-90",
-    md: "hidden md:block md:w-[25vw] h-[70vh] opacity-80",
-    // RESTORED ORIGINAL HEIGHT 80vh
-    lg: "w-[85vw] md:w-[28vw] h-[55vh] md:h-[80vh] z-10", 
+    sm: "hidden lg:block lg:w-[26vw] h-[55vh]  scale-90",
+    md: "hidden md:block md:w-[30vw] lg:w-[25vw] h-[40vh] lg:h-[70vh] ",
+    lg: "w-[85vw] md:w-[50vw] lg:w-[28vw] h-[35vh] md:h-[45vh] lg:h-[80vh] z-10", 
   };
 
   return (
@@ -323,12 +316,6 @@ function Card({ size, children, main = false, refIndex, registerRef, title }: Ca
       ref={(el) => registerRef(refIndex, el)}
       className={`relative transition-all duration-500 ${sizeMap[size]}`}
     >
-      <style jsx>{`
-        img[data-scaled="true"] {
-          transform: scale(1.35);
-        }
-      `}</style>
-
       {/* INNER MASK CONTAINER */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
         
@@ -337,7 +324,7 @@ function Card({ size, children, main = false, refIndex, registerRef, title }: Ca
                 src="" 
                 alt="" 
                 onError={handleImageError}
-                className="w-full h-full object-cover transition-transform duration-300" 
+                className="w-full h-full object-fill transition-transform duration-300" 
             />
         </div>
 
@@ -346,7 +333,7 @@ function Card({ size, children, main = false, refIndex, registerRef, title }: Ca
                 src="" 
                 alt="" 
                 onError={handleImageError}
-                className="w-full h-full object-cover transition-transform duration-300" 
+                className="w-full h-full object-fill transition-transform duration-300" 
             />
         </div>
 
@@ -355,15 +342,9 @@ function Card({ size, children, main = false, refIndex, registerRef, title }: Ca
         </div>
       </div>
 
-      {/* FIX 2: Text Positioning 
-         - Changed from `-bottom-28` to `top-full mt-6`.
-         - 'top-full' strictly anchors the text AFTER the card's 80vh height, 
-           preventing it from floating 'inside' the card on short screens.
-         - Added `z-50` to ensure it is visually on top of everything.
-      */}
       {main && title && (
-        <div className="absolute top-full left-1/2 -translate-x-1/2 w-[85vw] md:w-[24vw] text-center mt-6 z-50">
-            <h3 className="text-xl font-bold text-textGray leading-tight">
+        <div className="absolute top-full left-1/2 -translate-x-1/2 w-[85vw] md:w-[35vw] lg:w-[24vw] text-center mt-6 z-50">
+            <h3 className="text-xl font-bold text-[#1D1D1F] leading-tight">
                 {title}
             </h3>
         </div>

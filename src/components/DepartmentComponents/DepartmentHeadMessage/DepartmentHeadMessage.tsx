@@ -67,7 +67,7 @@ const DepartmentHeadMessage: React.FC<DepartmentHeadMessageProps> = ({ departmen
         <h1 className="text-3xl lg:hidden text-center lg:text-start mb-10 md:text-[40px] leading-[1.2] lg2:text-5xl  font-bold">
           Message from the Head of the Department
         </h1>
-        <div className="grid grid-cols-1 lg:w-[70%] overflow-hidden mx-auto lg:grid-cols-12  items-center">
+        <div className="grid grid-cols-1 lg2:w-[70%] overflow-hidden mx-auto lg:grid-cols-12 justify-items-end  items-center">
           <div className=" lg:hidden block">
             {/* Image Section */}
             <div className="flex flex-col items-center lg:ms-46 ms-1">

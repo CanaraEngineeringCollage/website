@@ -22,7 +22,8 @@ import "swiper/css/effect-fade";
 
 export interface HomePageImage {
   id: string | number;
-  type?: string;
+  desktopUrl?: string | null;
+  mobileUrl?: string | null;
 }
 
 interface HeroSectionProps {
@@ -54,14 +55,18 @@ const HeroSection = ({ images = [] }: HeroSectionProps) => {
     { label: "Affiliated to VTU", src: affiliated },
   ];
 
-  // If we have API images, map them to objects with a `src` property using the API route
-  // Otherwise fall back to static imports
+  // Map API images to include both desktop and mobile sources. 
+  // Fall back to desktop if a specific mobile image isn't provided.
   const backgroundSlides =
     images.length > 0
-      ? images.map((img) => ({ type: "api", src: `/api/hero-image/${img.id}` }))
+      ? images.map((img) => ({
+          type: "api",
+          desktopSrc: img.desktopUrl,
+          mobileSrc: img.mobileUrl || img.desktopUrl, 
+        }))
       : [
-          { type: "static", src: bg3 },
-          { type: "static", src: bg2 },
+          { type: "static", desktopSrc: bg3, mobileSrc: bg3 },
+          { type: "static", desktopSrc: bg2, mobileSrc: bg2 },
         ];
 
   const handleDotClick = (index: number) => {
@@ -84,13 +89,29 @@ const HeroSection = ({ images = [] }: HeroSectionProps) => {
         >
           {backgroundSlides.map((slide, index) => (
             <SwiperSlide key={index}>
-              <Image
-                src={slide.src}
-                alt={`Background ${index + 1}`}
-                fill
-                className="object-cover -translate-y-[90px] lg:translate-y-0"
-                priority={index === 0}
-              />
+              
+              {/* Desktop Image (Hidden on mobile) */}
+              {slide.desktopSrc && (
+                <Image
+                  src={slide.desktopSrc}
+                  alt={`Desktop Background ${index + 1}`}
+                  fill
+                  className="object-cover hidden md:block -translate-y-[90px] lg:translate-y-0"
+                  priority={index === 0}
+                />
+              )}
+
+              {/* Mobile Image (Hidden on md and up) */}
+              {slide.mobileSrc && (
+                <Image
+                  src={slide.mobileSrc}
+                  alt={`Mobile Background ${index + 1}`}
+                  fill
+                  className="object-cover block md:hidden -translate-y-[90px] lg:translate-y-0"
+                  priority={index === 0}
+                />
+              )}
+
               <div className="absolute bottom-0 left-0 right-0 h-[400px] md:h-[500px] bg-gradient-to-t from-[#f5f5f7] via-white/85 to-transparent z-[10] block md:hidden pointer-events-none" />
               <div className="absolute bottom-0 left-0 right-0 h-[300px] md:h-[200px] bg-gradient-to-t from-[#fcfdff] via-white/85 to-transparent z-[10] hidden md:block pointer-events-none" />
             </SwiperSlide>

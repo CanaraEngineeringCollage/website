@@ -37,29 +37,37 @@ export const metadata: Metadata = {
 };
 
 export default async function Home() {
-  const getHomePageImages = async () => {
-    try {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-      const res = await fetch(`${apiUrl}/home-page-images`, { next: { revalidate: 3600 } });
-      if (res.ok) {
-        const data = await res.json();
-        // Return only lightweight metadata, not the heavy buffer
-        return data.map((img: any) => ({
-          id: img.id,
-          type: img.image?.type || "image/jpeg",
-        }));
-      }
-    } catch (error) {
-      console.error("Failed to fetch home page images", error);
-    }
-    return [];
-  };
+  // Add this inside your Home component or update the existing one
+const getHomePageImages = async () => {
+  try {
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    const res = await fetch(`${apiUrl}/home-page-images`, { next: { revalidate: 3600 } });
+    
+    if (res.ok) {
+      const rawData = await res.json();
+      
+      // Map the raw data to the exact props HeroSection needs
+      const formattedData = rawData.map((img: any) => ({
+        id: img.id,
+        desktopUrl: img.imageUrl ? `${apiUrl}/home-page-images/file/${img.imageUrl}` : null,
+        mobileUrl: img.mobileImageUrl ? `${apiUrl}/home-page-images/file/${img.mobileImageUrl}` : null,
+      }));
 
-  const images = await getHomePageImages();
+      return formattedData;
+    }
+  } catch (error) {
+    console.error("Failed to fetch home page images", error);
+  }
+  return [];
+};
+
+// Then in your component:
+const data = await getHomePageImages();
+
 
   return (
     <>
-      <HeroSection images={images} />
+      <HeroSection images={data} />
       <section className="px-6 md:px-12 lg:px-36 xl:px-20 py-12">
         <FutureCampusText />
       </section>
