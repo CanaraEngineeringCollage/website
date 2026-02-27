@@ -157,10 +157,13 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
       const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/gallery?category=${encodeURIComponent(departmentName)}&all=true`);
       if (!response.ok) throw new Error("Failed to fetch gallery");
       const data = await response.json();
+      
+      // ✅ UPDATED logic to handle standard image URLs instead of buffer arrays
       const newItems: GalleryItem[] = (data.data || []).map((item: any) => ({
         ...item,
-        image: item.image && item.image.data ? bufferToBase64(item.image) : item.image,
+        image: item.imageUrl ? `${process.env.NEXT_PUBLIC_API_URL}/gallery/file/${item.imageUrl}` : item.image,
       }));
+      
       setGalleryItems(newItems);
     } catch (err) {
       console.error(err);
@@ -175,8 +178,6 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
       fetchGallery();
     }
   }, [selectedSection, galleryItems.length, fetchGallery]);
-
-  // Auto-fetch remaining gallery items
 
   // Fetch Faculty Data
   useEffect(() => {

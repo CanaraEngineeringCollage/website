@@ -41,7 +41,7 @@ export default function FloatingSticky() {
     <>
       {/* Floating Bar */}
       <div
-        className={`fixed left-0 right-0 flex justify-center z-50 bottom-2 lg:bottom-5 h-[auto] bg-none lg:bg-transparent max-w-[350px] md:max-w-[400px] mx-auto py-1 transition-all duration-300 ${
+        className={`fixed left-0 right-0 flex justify-center z-10 bottom-2 lg:bottom-5 h-[auto] bg-none lg:bg-transparent max-w-[350px] md:max-w-[400px] mx-auto py-1 transition-all duration-300 ${
           isScrolled && !isFooterVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0 pointer-events-none"
         }`}
       >

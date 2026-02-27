@@ -61,8 +61,8 @@ const Facilities: React.FC<FacilitiesProps> = ({ data, deptName }) => {
       <div className="space-y-2 mt-3">
         {data.allFacilities.map((facility, idx) => (
           <div key={idx} className="pb-4">
-            {facility.title2 && <h3 className="text-[22px] font-bold   text-textGray mb-2"><FaAngleRight/>{facility.title2}</h3>}
-          {facility.title&&  <h3 className={`text-xl font-bold flex items-center gap-1  text-textGray ${!facility.title2 && "mb-2"} `}><svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            {facility.title2 && <h3 className="text-[22px] font-bold   text-textGray mb-2">{facility.title2}</h3>}
+          {facility.title&&  <h3 className={`text-xl font-bold flex items-center gap-1  text-textGray mb-2 `}><svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.5 1.5L7.84685 7.74717L1.5 13.9943" stroke="#2A2A2A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 {facility.title}</h3>}
