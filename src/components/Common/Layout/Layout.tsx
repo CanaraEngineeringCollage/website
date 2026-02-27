@@ -17,7 +17,7 @@ function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex flex-col min-h-screen">
       {/* overflow-x-hidden */}
-      <header className=" bg-white z-[1111] ">
+      <header className=" bg-white z-30 ">
         {isCampusRoute ? (
           <CampusNavbar openSidebar={() => openSidebar((prev) => !prev)} sidebar={sidebar} />
         ) : (

@@ -1,0 +1,398 @@
+[
+  {
+    "title": "About CIF & EDC",
+    "data": [
+      {
+        "title": "About Canara Innovation Foundation (CIF)",
+        "descrtiption": "Canara Innovation Foundation (CIF) is the Incubation center of Canara Engineering College, established to nurture, mentor, and transform students into entrepreneurs, innovators, and job creators to promote innovation and entrepreneurship ecosystem. CIF acts as a bridge between students, industry, government schemes, investors, and mentors, enabling early-stage ideas to evolve into scalable and sustainable startups.",
+        "points": [
+          "Start-up mentoring & validation support",
+          "Access to government grants & schemes",
+          "Industry mentorship & expert guidance",
+          "Investor networking opportunities",
+          "Innovation lab & prototype support",
+          "Entrepreneurship awareness programs"
+        ]
+      },
+      {
+        "title": "About Entrepreneurship Development Cell (EDC)",
+        "descrtiption": "The Entrepreneurship Development Cell (EDC) functions under CEC and serves as the faculty and student driven body promoting entrepreneurial mind-set and innovation. EDC acts as the grassroots movement of entrepreneurship within the campus.",
+        "points": [
+          "Conducting start-up boot camps",
+          "Hosting hackathons and ideathons",
+          "Organizing investor connect programs",
+          "Conducting start-up awareness sessions",
+          "Encouraging interdisciplinary innovation"
+        ]
+      },
+      {
+        "title": "Vision",
+        "descrtiption": "To create a vibrant innovation ecosystem that transforms students into ethical, impactful, and scalable entrepreneurs contributing to nation-building."
+      },
+      {
+        "title": "Mission",
+        "points": [
+          "To identify and nurture innovative ideas from students and faculty",
+          "To provide structured incubation and mentorship support",
+          "To connect start-ups with government schemes, investors, and industry",
+          "To create awareness about start-up opportunities and funding programs",
+          "To build a sustainable innovation-driven campus culture"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "CEO's Message",
+    "data": [
+      {
+        "image": "https://apiserver.cec.edu.in/files/Prashanth%20Kumar%20A",
+        "title": "CEO's Message",
+        "descrtiption": "At Canara Innovation Foundation, we believe entrepreneurship is not about waiting for the perfect idea — it is about starting the journey. Our mission is to empower students to think boldly, act confidently, and build responsibly. Innovation is a continuous process, and through structured mentorship, ecosystem support, and government-backed opportunities, we help students transform ideas into impactful ventures. We are committed to creating entrepreneurs who do not just seek jobs — but create them. Let us innovate, incubate, and inspire.",
+        "points": ["Prashanth Kumar A", "CEO, Canara Innovation Foundation", "+919187152001 / +918123769715", "prahanth.kumar@canaraengineering.in"]
+      }
+    ]
+  },
+  {
+    "title": "Board of Directors",
+    "data": [
+      {
+        "title": "Board of Directors",
+        "points": [
+          "Chairman: Sri. M Vaman Kamath",
+          "Executive Director: Sri. M Ranganath Bhat",
+          "Executive Director: Dr. Udaya Kumar K Shenoy",
+          "Director: Sri. Yogesh Kamath",
+          "Director: Sri. Gopal Krishna Shenoy",
+          "Director: Mr. Shanthan S Malashetter",
+          "Director: Ms. Shweta Uttam",
+          "Director: Mr. Vishwas U S"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Activities",
+    "data": [
+      {
+        "slNo": "1",
+        "eventName": "Srijan Shibir – Igniting Young Minds for Innovation",
+        "date": "25th – 27th Nov 2024",
+        "resourcePerson": "Dr. Shivakiran S Makam, Director – Strategy & Collaboration, Section Infin-8 Foundation",
+        "outcome": "Introduced students to design thinking, ideation, and startup creation. Developed innovative problem-solving skills."
+      },
+      {
+        "slNo": "2",
+        "eventName": "Acharya Faculty Development Program (FDP) – Empowering Educators for Startup Ecosystems",
+        "date": "9th – 11th Jan 2025",
+        "resourcePerson": "Dr. Chandramouli, Ms. Shaheen B, Dr. Shivakiran S Makam",
+        "outcome": "Equipped faculty with innovation, startup, and incubator management skills. Enhanced faculty capabilities to mentor student entrepreneurs."
+      },
+      {
+        "slNo": "3",
+        "eventName": "E² – Exploring Entrepreneurship – Enabling Student Entrepreneurs",
+        "date": "1st Mar 2025",
+        "resourcePerson": "Mr. Naveen Lakkur, Chief Innovation Coach, Institute of Inspiring Innovation (III)",
+        "outcome": "First major activity of the incubator. Introduced students to the fundamentals of entrepreneurship and startup ecosystem."
+      },
+      {
+        "slNo": "4",
+        "eventName": "E² – Session 1: Identifying and Defining the Business Problems (Market Research)",
+        "date": "11th Mar 2025",
+        "resourcePerson": "Ms. Shweta Uttam, Chief Executive Officer, AIC IISER Pune SEED Foundation",
+        "outcome": "Enabled students to identify and analyze business problems using market research methodologies."
+      },
+      {
+        "slNo": "5",
+        "eventName": "E² – Session 2: Ideation Master Class",
+        "date": "12th Mar 2025",
+        "resourcePerson": "Mr. Amit Ranjan Tiwari, Chief Executive Officer, Atal Incubation Centre, Dr. Babasaheb Ambedkar Marathwada University",
+        "outcome": "Provided deep insights into ideation techniques and processes. Guided participants in refining their startup ideas."
+      },
+      {
+        "slNo": "6",
+        "eventName": "E² – Session 3: Design Thinking",
+        "date": "13th Mar 2025",
+        "resourcePerson": "Dr. Satish M. Bhavankar, CEO, Tumkuru Innovation, Incubation & Entrepreneurship Council (TIIEC)",
+        "outcome": "Introduced students to the principles and framework of design thinking. Facilitated hands-on activities to apply design thinking for innovative problem-solving."
+      },
+      {
+        "slNo": "7",
+        "eventName": "E²: Exploring Entrepreneurship Program - Student Startup Idea Review and Mentoring Session",
+        "date": "21st April 2025",
+        "resourcePerson": "Mr. Anand Kannan, Independent Director, IICA (Indian Institute of Corporate Affairs)",
+        "outcome": "Clarity on entrepreneurship as a career. Expert mentoring on ideas. Increased student engagement in startup planning."
+      },
+      {
+        "slNo": "8",
+        "eventName": "Workshop on Innovation and Entrepreneurship",
+        "date": "23rd April 2025",
+        "resourcePerson": "Mr. Prashanth Kumar A, Mr. Ajith Kumar B P, Mr. Yathish K, Mr. K. Prasad Pai, Mr. M. H. Soorajprasad, Mr. Ajay S. Shet, Mr. Arjun K, Dr. Dayananda G. K, Mr. Vinodh Kumar M. V",
+        "outcome": "Students understand how to generate innovative business ideas. Learn to create and present a Business Model Canvas. Improved ideation and planning capability."
+      },
+      {
+        "slNo": "9",
+        "eventName": "Workshop: Build Your Ideas – Business Model Canvas for Beginners",
+        "date": "7th May 2025",
+        "resourcePerson": "Mr. K. Prasad Pai, Assistant Professor, Dept. of Science and Humanities, Canara Engineering College",
+        "outcome": "Learn BMC fundamentals. Step-by-step startup planning. Encourages early-stage validation and iteration."
+      },
+      {
+        "slNo": "10",
+        "eventName": "Startup Synergy: Mapping Acharyas with Budding Entrepreneurs",
+        "date": "19th – 20th May 2025",
+        "resourcePerson": "Internal Faculty & Mentors",
+        "outcome": "Connected faculty mentors (Acharyas) with budding student entrepreneurs. Encouraged collaboration and guidance for startups."
+      },
+      {
+        "slNo": "11",
+        "eventName": "Final Pitch Day – Exploring Entrepreneurship Program",
+        "date": "3rd Sept 2025",
+        "resourcePerson": "Mr. Vishwas US, Mr. Puneeth Rai, Mr. Ajay Prabhu",
+        "outcome": "14 student teams pitched startup ideas. Winners selected with cash prizes. Students gained pitching experience and expert feedback."
+      },
+      {
+        "slNo": "12",
+        "eventName": "Orientation Session – Bolpu Program (Bold, Local, Purposeful)",
+        "date": "4th Sept 2025",
+        "resourcePerson": "Mr. Akshay Alva, Mr. Karthik S Rai",
+        "outcome": "Introduced Bolpu program under leadership of MP Capt. Brijesh Chowta. Encouraged grassroots entrepreneurship in Dakshina Kannada."
+      },
+      {
+        "slNo": "13",
+        "eventName": "Curtain Raiser – 100-Day Bridge Program",
+        "date": "7th Nov 2025",
+        "resourcePerson": "Dr. Shivakiran S Makam, Director – Strategy & Collaboration, Section Infin-8 Foundation",
+        "outcome": "Strengthened problem validation and ideation. Prepared teams for market analysis."
+      },
+      {
+        "slNo": "14",
+        "eventName": "Session on Grants, Challenges, Pitch Deck, BMC & UN SDGs Mapping",
+        "date": "8th Nov 2025",
+        "resourcePerson": "Dr. Shivakiran S Makam, Director – Strategy & Collaboration, Section Infin-8 Foundation",
+        "outcome": "Trained students in pitch deck preparation. Guided on grants and SDG mapping."
+      },
+      {
+        "slNo": "15",
+        "eventName": "Nuances of Business & Finance for Startups",
+        "date": "26th Nov 2025",
+        "resourcePerson": "Mr. Daniel Marsh Pereira (Chartered Accountant, NBS & Co.)",
+        "outcome": "Explained startup finance fundamentals. Covered financial planning, compliance, and funding perspectives for startups."
+      },
+      {
+        "slNo": "16",
+        "eventName": "Spot IP Strength in Your Idea/Business & Its Protection and Legal & Regulatory Compliance",
+        "date": "27th Nov 2025",
+        "resourcePerson": "Prof. Dr. Iddya Karunasagar (Advisor – Research & Patents, Nitte University)",
+        "outcome": "Explained identification of IP potential in startup ideas. Covered IP protection strategies and legal & regulatory compliance for startups."
+      },
+      {
+        "slNo": "17",
+        "eventName": "CEC Startup Elevate – Showcasing Innovation and Entrepreneurship",
+        "date": "15th Feb 2025",
+        "resourcePerson": "Mr. Prashanth Kumar A, Coordinator - Entrepreneurship Development Cell and EDC Staff Coordinators",
+        "outcome": "Evaluated and validated student startup ideas. Provided constructive feedback for startup improvement."
+      },
+      {
+        "slNo": "18",
+        "eventName": "Awareness sessions about Innovation and Entrepreneurship facilities at CEC",
+        "date": "Feb 2025",
+        "resourcePerson": "Mr. Prashanth Kumar A (Coordinator – EDC & Asst. Prof., Dept. of ISE)",
+        "outcome": "Students of 4th and 6th Semester of every engineering branch were addressed and motivated to be a part of Incubation Eco system at CEC."
+      },
+      {
+        "slNo": "19",
+        "eventName": "Workshop on Innovation and Entrepreneurship",
+        "date": "23rd April 2025",
+        "resourcePerson": "Mr. Prashanth Kumar A, Mr. Ajith Kumar B P, Mr. Yathish K, Mr. K. Prasad Pai, Mr. M. H. Soorajprasad, Mr. Ajay S. Shet, Mr. Arjun K, Dr. Dayananda G. K, Mr. Vinodh Kumar M. V",
+        "outcome": "Students understand how to generate innovative business ideas. Learn to create and present a Business Model Canvas. Improved ideation and planning capability."
+      },
+      {
+        "slNo": "20",
+        "eventName": "Startup Synergy: Mapping Acharyas with Budding Entrepreneurs",
+        "date": "19th – 20th May 2025",
+        "resourcePerson": "Internal Faculty & Mentors",
+        "outcome": "Connected faculty mentors (Acharyas) with budding student entrepreneurs. Encouraged collaboration and guidance for startups."
+      },
+      {
+        "slNo": "21",
+        "eventName": "Entrepreneurship Bootcamp",
+        "date": "13th Aug 2025",
+        "resourcePerson": "Mr. Prashanth Kumar A, Mr. K. Prasad Pai",
+        "outcome": "Introduced students to entrepreneurship basics. Enabled ideation and early-stage startup awareness."
+      },
+      {
+        "slNo": "22",
+        "eventName": "Problem Identification – Spotting Problems That Matter",
+        "date": "20th Aug 2025",
+        "resourcePerson": "Mr. Prashanth Kumar A (Coordinator – EDC & Asst. Prof., Dept. of ISE)",
+        "outcome": "Helped students identify real-world problems that can become startup opportunities. Strengthened problem-solving mindset."
+      },
+      {
+        "slNo": "23",
+        "eventName": "Problem Identification: L1 – Develop Macro Industry–Problem Perspective",
+        "date": "17th Sept 2025",
+        "resourcePerson": "Mr. Prashanth Kumar A, Mr. K. Prasad Pai",
+        "outcome": "Understood macro industry problem areas. Identified large-scale challenges suitable for startup opportunities."
+      },
+      {
+        "slNo": "24",
+        "eventName": "Expert Session on Entrepreneurship – Bootcamp",
+        "date": "29th Oct 2025",
+        "resourcePerson": "Mr. Prashanth Kumar A (Coordinator – EDC & Asst. Prof., Dept. of ISE)",
+        "outcome": "Introduced entrepreneurship fundamentals. Enabled early-stage ideation."
+      },
+      {
+        "slNo": "25",
+        "eventName": "L2, L3, L4 – Assemble, Examine and Analyze Real-World Problems",
+        "date": "29th Oct 2025",
+        "resourcePerson": "Mr. Prashanth Kumar A (Coordinator – EDC & Asst. Prof., Dept. of ISE)",
+        "outcome": "Guided students in assembling and analyzing real-world problems."
+      },
+      {
+        "slNo": "26",
+        "eventName": "Customer Identification, Persona Validation & Customer-Problem Fit",
+        "date": "12th Nov 2025",
+        "resourcePerson": "Mr. Prashanth Kumar A (Coordinator – EDC & Asst. Prof., Dept. of ISE)",
+        "outcome": "Identified customer segments. Validated persona and customer–problem fit."
+      },
+      {
+        "slNo": "27",
+        "eventName": "Examine Ideation Techniques and Solution Idea Generation",
+        "date": "26th Nov 2025",
+        "resourcePerson": "Mr. Prashanth Kumar A (Coordinator – EDC & Asst. Prof., Dept. of ISE)",
+        "outcome": "Introduced structured ideation techniques. Enabled solution-oriented thinking for identified problems."
+      },
+      {
+        "slNo": "28",
+        "eventName": "Identify Global Competitors: A Strategic Guide for Entrepreneurs",
+        "date": "3rd Dec 2025",
+        "resourcePerson": "Mr. Prashanth Kumar A (Coordinator – EDC & Asst. Prof., Dept. of ISE)",
+        "outcome": "Guided students in identifying global and local competitors. Explained competitive analysis for early-stage startups."
+      },
+      {
+        "slNo": "29",
+        "eventName": "Entrepreneurial Review of Industry Trends and Estimate Market Size (TAM)",
+        "date": "10th Dec 2025",
+        "resourcePerson": "Mr. Prashanth Kumar A (Coordinator – EDC & Asst. Prof., Dept. of ISE)",
+        "outcome": "Analyzed current industry trends. Explained market sizing concepts with focus on TAM estimation."
+      }
+    ]
+  },
+  {
+    "title": "Outreach Programs",
+    "data": [
+      {
+        "slNo": "1",
+        "eventName": "EMERGE 2025 – Nurturing Next-Gen Innovators",
+        "date": "31st Jan – 2nd Feb 2025",
+        "resourcePerson": "Industry Experts & Mentors",
+        "outcome": "Provided a platform for students to showcase their innovative ideas. Identified potential startups."
+      },
+      {
+        "slNo": "2",
+        "eventName": "Participation in Manipal Startup Expo 2025",
+        "date": "25th August 2025",
+        "resourcePerson": "Industry Experts & Mentors",
+        "outcome": "Exposure to the startup ecosystem. Investor interactions and networking."
+      },
+      {
+        "slNo": "3",
+        "eventName": "Vendor Development Programme – MSME",
+        "date": "18th & 19th September 2025",
+        "resourcePerson": "Industry Experts & Mentors",
+        "outcome": "Exposure to the industrial ecosystem. Understood vendor development opportunities."
+      },
+      {
+        "slNo": "4",
+        "eventName": "Participation in Mangaluru Technovanza 2025",
+        "date": "24th September 2025",
+        "resourcePerson": "Industry Experts & Mentors",
+        "outcome": "Attended leadership sessions. Understood KDEM initiatives."
+      }
+    ]
+  },
+  {
+    "title": "MoUs",
+    "data": [
+      {
+        "title": "Section Infin-8 Foundation",
+        "descrtiption": "Canara Innovation Foundation has signed an MoU with Section Infin-8 Foundation to promote innovation, leadership development, and student-driven entrepreneurial initiatives. The collaboration focuses on capacity building, mentorship support, and exposure to real-world impact programs. This partnership strengthens CIF’s commitment to nurturing socially responsible and innovation-oriented entrepreneurs."
+      },
+      {
+        "title": "Wadhwani Foundation",
+        "descrtiption": "Canara Innovation Foundation has signed an MoU with the Wadhwani Foundation to strengthen entrepreneurship education and student skill development. This non-commercial, philanthropic collaboration enables access to globally recognized entrepreneurial learning platforms and structured startup-readiness programs. The partnership supports faculty enablement and empowers students with practical entrepreneurial competencies."
+      }
+    ]
+  },
+ {
+  "title": "Event Posters",
+  "data": [
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(1).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(2).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(3).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(4).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(5).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(6).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(7).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(8).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(9).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(10).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(11).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(12).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(13).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(14).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(15).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(16).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(17).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(18).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(19).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(20).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(21).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(22).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(23).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(24).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(25).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(26).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(27).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(28).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifEvent1%20(29).jpeg" }
+  ]
+},
+  {
+    "title": "Photo Gallery",
+   "data": [
+    { "image": "https://apiserver.cec.edu.in/files/cifGallery%20(1).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifGallery%20(2).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifGallery%20(3).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifGallery%20(4).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifGallery%20(5).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifGallery%20(6).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifGallery%20(7).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifGallery%20(8).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifGallery%20(9).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifGallery%20(10).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifGallery%20(11).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifGallery%20(12).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifGallery%20(13).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifGallery%20(14).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifGallery%20(15).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifGallery%20(16).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifGallery%20(17).jpeg" },
+    { "image": "https://apiserver.cec.edu.in/files/cifGallery%20(18).jpeg" }
+  ]
+  },
+  {
+    "title": "Connect With Us",
+    "data": [
+      {
+        "title": "Stay Connected",
+        "points": [
+          "Instagram: @canara_innovation_foundation",
+          "LinkedIn: Canara Innovation Foundation (CIF)",
+          "Email: cif.incubation@canaraengineering.in",
+          "Location: CANARA INNOVATION FOUNDATION, Canara Engineering College, Sudheendra Nagar, Benjanapadavu, Bantwal Taluk, Mangaluru, D.K. District, Karnataka, INDIA - 574219"
+        ]
+      }
+    ]
+  }
+]
