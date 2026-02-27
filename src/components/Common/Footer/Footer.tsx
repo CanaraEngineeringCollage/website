@@ -96,9 +96,13 @@ const Footer: FC = () => {
       const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/academic-calendar`);
       if (response.ok) {
         const data = await response.json();
-        const pdf = data.pdf || (data.data && data.data.pdf) || (Array.isArray(data.data) && data.data[0]?.pdf);
-        if (pdf) {
-          openPdf(pdf);
+        
+        // Extract the pdfUrl depending on how the backend sends it
+        const pdfUrl = data.pdfUrl || (data.data && data.data.pdfUrl) || (Array.isArray(data.data) && data.data[0]?.pdfUrl);
+        
+        if (pdfUrl) {
+          const fullUrl = `${process.env.NEXT_PUBLIC_API_URL}/academic-calendar/file/${pdfUrl}`;
+          window.open(fullUrl, "_blank");
         } else {
           alert("No academic calendar found.");
         }

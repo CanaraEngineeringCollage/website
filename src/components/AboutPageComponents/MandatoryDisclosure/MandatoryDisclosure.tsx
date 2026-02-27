@@ -23,33 +23,29 @@ const MandatoryDisclosure = () => {
   const disclosureTitles = [...(disclosureData?.map((section) => section.title) || []), "Academic Calendar"];
 
   const handleFetchAcademicCalendar = async () => {
-    try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/academic-calendar`);
-      if (response.ok) {
-        const data = await response.json();
-        // Check for pdf object, pdf inside data object, or pdf in first item of data array
-        const pdfData = data.pdf || (data.data && data.data.pdf) || (Array.isArray(data.data) && data.data[0]?.pdf);
+  try {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/academic-calendar`);
+    if (response.ok) {
+      const data = await response.json();
+      
+      // Extract the pdfUrl depending on how the backend sends it
+      const pdfUrl = data.pdfUrl || (data.data && data.data.pdfUrl) || (Array.isArray(data.data) && data.data[0]?.pdfUrl);
 
-        if (pdfData) {
-          if (pdfData.type === "Buffer" && Array.isArray(pdfData.data)) {
-            const byteArray = new Uint8Array(pdfData.data);
-            const blob = new Blob([byteArray], { type: "application/pdf" });
-            const url = URL.createObjectURL(blob);
-            handleOpenPdf(url, "Academic Calendar");
-          } else if (typeof pdfData === "string") {
-            handleOpenPdf(pdfData, "Academic Calendar");
-          }
-        } else {
-          alert("No academic calendar found.");
-        }
+      if (pdfUrl) {
+        // Construct the full URL pointing to your backend file route
+        const fullUrl = `${process.env.NEXT_PUBLIC_API_URL}/academic-calendar/file/${pdfUrl}`;
+        handleOpenPdf(fullUrl, "Academic Calendar");
       } else {
-        alert("Failed to fetch academic calendar.");
+        alert("No academic calendar found.");
       }
-    } catch (error) {
-      console.error(error);
-      alert("Error fetching academic calendar.");
+    } else {
+      alert("Failed to fetch academic calendar.");
     }
-  };
+  } catch (error) {
+    console.error(error);
+    alert("Error fetching academic calendar.");
+  }
+};
 
   return (
     <section className="py-10 xl:py-20 text-[#1D1D1F] overflow-hidden">

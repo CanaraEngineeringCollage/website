@@ -169,7 +169,6 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ title, description }) => 
   const [categories, setCategories] = useState<string[]>([]);
   const [activeCategory, setActiveCategory] = useState<string>("");
   
-
   // Pagination State
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
@@ -386,7 +385,13 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ title, description }) => 
                       {mountedEditions.has(editionName) && (
                         <div className="flex flex-row flex-wrap gap-6 mt-6 mb-4">
                           {items.map((item, i) => {
-                            const pdfUrl = item.pdf ? `${process.env.NEXT_PUBLIC_API_URL}/files/${item.pdf}` : item.pdfUrl || item.url || "#";
+                            // UDPATED PDF URL LOGIC HERE
+                            const pdfUrl = item.pdf
+                              ? item.pdf.startsWith("buzz-digest-")
+                                ? `${process.env.NEXT_PUBLIC_API_URL}/buzz/file/${item.pdf}`
+                                : `${process.env.NEXT_PUBLIC_API_URL}/files/${item.pdf}`
+                              : item.pdfUrl || item.url || "#";
+
                             return (
                               <motion.div
                                 key={i}

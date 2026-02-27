@@ -14,7 +14,7 @@ const Messages = ({ data }) => {
       <h2 className="text-[20px]  font-bold text-textGray mb-2  ">{data[0].title}</h2>
       <div className="flex gap-2">
         <div>
-          <p className=" md:text-lg  text-[14px] leading-7 text-justify text-textGray">{ data[0]?.descrtiption}</p>
+          <p className=" md:text-lg  text-[14px] leading-7 text-justify  whitespace-pre-line text-textGray">{ data[0]?.descrtiption}</p>
           {/* <div className="mt-2 font-semibold text-[#1D1D1F]">{data[0]?.name}</div>
            */}
         </div>
