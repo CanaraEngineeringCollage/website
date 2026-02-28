@@ -8,6 +8,7 @@ import Organaisation from "../DepartmentDetailesTab/Organaisation/Organaisation"
 import Hod from "../DepartmentDetailesTab/Hod/Hod";
 import Faculty, { FacultyMember } from "../DepartmentDetailesTab/Faculty/Faculty";
 import Academic from "../DepartmentDetailesTab/Academic/Academic";
+import AcademicSyllabusSchema from "../DepartmentDetailesTab/AcademicSyllabusSchema/AcademicSyllabusSchema"; // <-- New Import
 import Peo from "../DepartmentDetailesTab/Peo/Peo";
 import CourseOutCome from "../DepartmentDetailesTab/CourseOutCome/CourseOutCome";
 import Facilities from "../DepartmentDetailesTab/Facilities/Facilities";
@@ -60,8 +61,6 @@ import CustomSelect from "@/components/Common/CustomSelect/CustomSelect";
 import { ArrowLeftIcon } from "lucide-react";
 import Link from "next/link";
 import formatDepartmentName from "@/utils/formatDepartmentName";
-
-// ... existing imports
 
 const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
   if (!buffer || !buffer.data) return "";
@@ -250,6 +249,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
     }
   }, [selectedSection, department?.name, hodApiData]);
 
+  // --> ADDED "Academic Syllabus & Schema" to the tabs array <--
   const departmentMenuItems = [
     "Department Profile",
     ...(department?.name === "Artificial Intelligence & Machine Learning" ? ["Career Prospects"] : []),
@@ -257,6 +257,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
     "Head of the Department",
     "Faculty & Staff",
     "Academic Programmes",
+    "Academic Syllabus & Schema", // NEW TAB
     ...(department?.name === "Science & Humanities" ? ["PO"] : ["PEO & PO-PSO"]),
     "Course Outcomes (CO)",
     "Facilities",
@@ -331,7 +332,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
           </div>
           <div className="absolute bottom-0 left-0 right-0 h-[400px] md:h-[100px] bg-gradient-to-t from-[#fbfcfe] via-[#fbfcfe]/60 to-transparent z-[10] " />
         </div>
-        <div className={`md:grid grid-cols-1 pb-14 xl:pb-32 text-[#1D1D1F] lg2:px-24 px-5 gap-3  md:grid-cols-12 mt-10`}>
+        <div className={`md:grid grid-cols-1 pb-14 xl:pb-32 text-[#1D1D1F] lg2:px-24 px-5 gap-3  md:grid-cols-12 md:mt-10`}>
           <div className="col-span-3">
             <div className="sticky top-20 h-fit">
               {/* Mobile Dropdown */}
@@ -384,12 +385,20 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
             {selectedSection === "Faculty & Staff" && (
               <Faculty teachingStaff={teachingStaff} technicalStaff={technicalStaff} loading={facultyLoading} />
             )}
+            
+            {/* Standard Academic Programmes Logic */}
             {selectedSection === "Academic Programmes" && department?.academicsProgram && (
               <Academic academicsProgramEce={department.academicsProgramEce} data={department.academicsProgram} />
             )}
             {selectedSection === "Academic Programmes" && department?.academicsProgramEce && (
               <Academic academicsProgramEce={department.academicsProgramEce} data={department.academicsProgram} />
             )}
+            
+            {/* --> NEW PDF Academic Syllabus Schema Section Component <-- */}
+            {selectedSection === "Academic Syllabus & Schema" && department?.name && (
+              <AcademicSyllabusSchema departmentName={department.name} />
+            )}
+
             {selectedSection === "PO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
             {selectedSection === "PEO & PO-PSO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
             {selectedSection === "Course Outcomes (CO)" && <CourseOutCome deptName={department?.name} staticData={department?.courseOutcome} />}
