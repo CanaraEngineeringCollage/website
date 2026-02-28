@@ -192,6 +192,7 @@ const Facilities: React.FC<FacilitiesProps> = ({ data, deptName }) => {
                 </div>
               </div>
             )}
+            
 
             {facility.categories && (
               <div className="mt-2 space-y-2">
