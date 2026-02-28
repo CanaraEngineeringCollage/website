@@ -15,17 +15,17 @@ function NavbarItems() {
   return (
     <>
       <div className="hidden nav-items lg:flex text-secondary  flex-row justify-between flex-1">
-        <div className="cursor-pointer   text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
+        <div className="   text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
           <About />
         </div>
-        <div className="cursor-pointer  text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
+        <div className="  text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center">
           <Suspense fallback={null}>
             <Academics />
           </Suspense>
         </div>
         <div
           id="admission"
-          className="cursor-pointer opacity-80 whitespace-nowrap text-[#2884CA] text-base hover:text-[#005580] xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
+          className=" opacity-80 whitespace-nowrap text-[#2884CA] text-base hover:text-[#005580] xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
         >
           <Link
             href={"/admission"}
@@ -40,16 +40,16 @@ function NavbarItems() {
         </div>
         <div
           id="life"
-          className="cursor-pointer  group text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
+          className="  group text-sm xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
         >
           <Life />
         </div>
-        <Link
-          id="placement"
+        <div
+          id="research"
           className=" opacity-80 text-[#2884CA] whitespace-nowrap font-poppins text-base xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
-          href={"/research-development-consultancy"}
         >
-          <p
+          <Link
+            href={"/research-development-consultancy"}
             className={`font-poppins ${
               pathname === "/research-development-consultancy"
                 ? "border-b-2 px-3  py-1.5 border-[#005580] text-[#005580]"
@@ -58,14 +58,14 @@ function NavbarItems() {
           >
             {" "}
             Research
-          </p>
-        </Link>
-        <Link
+          </Link>
+        </div>
+        <div
           id="placement"
           className=" opacity-80 text-[#2884CA] whitespace-nowrap font-poppins text-base xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
-          href={"/training-placements"}
         >
-          <p
+          <Link
+            href={"/training-placements"}
             className={`font-poppins ${
               pathname === "/training-placements"
                 ? "border-b-2 px-3  py-1.5 border-[#005580] text-[#005580]"
@@ -74,8 +74,8 @@ function NavbarItems() {
           >
             {" "}
             Training & Placements
-          </p>
-        </Link>
+          </Link>
+        </div>
         <div
           id="apply"
           className=" font-poppins text-base xl:text-base whitespace-nowrap pl-3 font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"

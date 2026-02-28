@@ -9113,26 +9113,33 @@
     },
 
     "toppers": [
-      
+         {
+        "name": "SHWETHA RAVINDRA BALIGA",
+        "batch": "2024-25 ",
+        "percentage": "9.3",
+        "image": "/departmentImages/toppersImage/csd/3.jpg",
+        "vtuText":"VTU Honours"
+      },
       {
         "name": "ADITHI N",
         "batch": "2024-25 ",
         "percentage": "9.36",
         "image": "/departmentImages/toppersImage/csd/1.jpg"
       },
-      {
-        "name": "SHWETHA RAVINDRA BALIGA",
-        "batch": "2024-25 ",
-        "percentage": "9.39",
-        "image": "/departmentImages/toppersImage/csd/3.jpg",
-        "vtuText":"VTU Honours"
-      },
+   
       {
         "name": "NAVYA",
         "batch": "2024-25",
         "percentage": "9.29",
         "image": "/departmentImages/toppersImage/csd/2.jpg"
+      },
+      {
+        "name": "Ramya Ramachandra Achari",
+        "batch": "2024-25",
+        "percentage": "9.1",
+        "image": "/departmentImages/toppersImage/csd/2.jpg"
       }
+      
     ],
 
     "placement": {
