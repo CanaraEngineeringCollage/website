@@ -45,7 +45,8 @@ const Facilities: React.FC<FacilitiesProps> = ({ data, deptName }) => {
     <div className=" text-textGray text-[17px]">
       <div>
         {deptName === "Artificial Intelligence & Machine Learning" && <h1 className="text-2xl font-semibold  mb-2 ">Laboratory Facilities</h1>}
-        {deptName != "Artificial Intelligence & Machine Learning" && <h1 className="text-2xl font-semibold mb-2 ">Department Facilities</h1>}
+        {deptName === "Mechanical Engineering" && <h1 className="text-2xl font-semibold  mb-2 ">Advanced Laboratory Ecosystem – “Where Engineering Vision <br className="hidden lg:block" /> Becomes Reality”</h1>}
+        {deptName != "Artificial Intelligence & Machine Learning" || deptName != "Mechanical Engineering" && <h1 className="text-2xl font-semibold mb-2 ">Department Facilities</h1>}
         <p className="md:text-lg text-justify text-[14px] leading-7 text-textGray">
           {data.description.split(/(Data Structures and Algorithm Laboratory|Machine Learning Laboratory)/g).map((part, index) =>
             part === "Data Structures and Algorithm Laboratory" || part === "Machine Learning Laboratory" ? (
@@ -58,6 +59,7 @@ const Facilities: React.FC<FacilitiesProps> = ({ data, deptName }) => {
           )}
         </p>
       </div>
+      
       <div className="space-y-2 mt-3">
         {data.allFacilities.map((facility, idx) => (
           <div key={idx} className="pb-4">
@@ -122,6 +124,25 @@ const Facilities: React.FC<FacilitiesProps> = ({ data, deptName }) => {
             {/* Swiper Image Rendering */}
             {facility.swiper && facility.swiper.length > 0 && (
               <div className="mt-5">
+                {facility.desc2 && (
+              <p className="mb-2 md:text-lg text-justify text-[14px] leading-7 text-textGray">
+                {(() => {
+                  const splitIndex = facility.desc2.indexOf(":"); // find the first colon
+                  if (splitIndex !== -1) {
+                    const title = facility.desc2.slice(0, splitIndex + 1); // include colon
+                    const rest = facility.desc2.slice(splitIndex + 1); // the rest of the text
+                    return (
+                      <>
+                        <span className="font-bold">{title}</span>
+                        {rest}
+                      </>
+                    );
+                  }
+                  // If no colon found, just render normally
+                  return facility.desc2;
+                })()}
+              </p>
+            )}
                 <Swiper
                   modules={[Navigation, Pagination, Autoplay]}
                   spaceBetween={20}

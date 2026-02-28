@@ -8,7 +8,7 @@ import Organaisation from "../DepartmentDetailesTab/Organaisation/Organaisation"
 import Hod from "../DepartmentDetailesTab/Hod/Hod";
 import Faculty, { FacultyMember } from "../DepartmentDetailesTab/Faculty/Faculty";
 import Academic from "../DepartmentDetailesTab/Academic/Academic";
-import AcademicSyllabusSchema from "../DepartmentDetailesTab/AcademicSyllabusSchema/AcademicSyllabusSchema"; // <-- New Import
+import AcademicSyllabusSchema, { SyllabusItem } from "../DepartmentDetailesTab/AcademicSyllabusSchema/AcademicSyllabusSchema"; // <-- New Import
 import Peo from "../DepartmentDetailesTab/Peo/Peo";
 import CourseOutCome from "../DepartmentDetailesTab/CourseOutCome/CourseOutCome";
 import Facilities from "../DepartmentDetailesTab/Facilities/Facilities";
@@ -61,6 +61,7 @@ import CustomSelect from "@/components/Common/CustomSelect/CustomSelect";
 import { ArrowLeftIcon } from "lucide-react";
 import Link from "next/link";
 import formatDepartmentName from "@/utils/formatDepartmentName";
+import DepartmentalStructure from "../DepartmentalStructure/DepartmentalStructure";
 
 const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
   if (!buffer || !buffer.data) return "";
@@ -86,6 +87,9 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
 
   const [galleryItems, setGalleryItems] = useState<GalleryItem[]>([]);
   const [galleryLoading, setGalleryLoading] = useState(false);
+
+  const [syllabusData, setSyllabusData] = useState<SyllabusItem[]>([]);
+  const [syllabusLoading, setSyllabusLoading] = useState(false);
 
   const department = allDepartmentsData.find((dept) => dept.slug === slug);
 
@@ -131,6 +135,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
     setLimit(10);
     setHasMore(true);
     setGalleryItems([]);
+    setSyllabusData([]);
   }, [departmentName]);
 
   useEffect(() => {
@@ -138,7 +143,6 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
       fetchEvents();
     }
   }, [fetchEvents, hasMore]);
-  
 
   useEffect(() => {
     if (!loading && hasMore && events.length > 0) {
@@ -156,13 +160,13 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
       const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/gallery?category=${encodeURIComponent(departmentName)}&all=true`);
       if (!response.ok) throw new Error("Failed to fetch gallery");
       const data = await response.json();
-      
+
       // ✅ UPDATED logic to handle standard image URLs instead of buffer arrays
       const newItems: GalleryItem[] = (data.data || []).map((item: any) => ({
         ...item,
         image: item.imageUrl ? `${process.env.NEXT_PUBLIC_API_URL}/gallery/file/${item.imageUrl}` : item.image,
       }));
-      
+
       setGalleryItems(newItems);
     } catch (err) {
       console.error(err);
@@ -177,6 +181,28 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
       fetchGallery();
     }
   }, [selectedSection, galleryItems.length, fetchGallery]);
+
+  // Fetch Academic Syllabus
+  useEffect(() => {
+    const fetchSyllabus = async () => {
+      if (!department?.name) return;
+      setSyllabusLoading(true);
+      try {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/academic-syllabus?department=${encodeURIComponent(department.name)}&limit=100`);
+        if (!res.ok) throw new Error("Failed to fetch academic syllabus");
+        const data = await res.json();
+        setSyllabusData(data.data || []);
+      } catch (error) {
+        console.error("Failed to fetch academic syllabus", error);
+      } finally {
+        setSyllabusLoading(false);
+      }
+    };
+
+    if (syllabusData.length === 0) {
+      fetchSyllabus();
+    }
+  }, [department?.name, syllabusData.length]);
 
   // Fetch Faculty Data
   useEffect(() => {
@@ -252,11 +278,12 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   // --> ADDED "Academic Syllabus & Schema" to the tabs array <--
   const departmentMenuItems = [
     "Department Profile",
-    ...(department?.name === "Artificial Intelligence & Machine Learning" ? ["Career Prospects"] : []),
+    ...(department?.name === "Artificial Intelligence & Machine Learning" || department?.name === "Mechanical Engineering" ? ["Career Prospects"] : []),
     ...(department?.name !== "Mechanical Engineering" ? ["Organisation Structure"] : []),
     "Head of the Department",
     "Faculty & Staff",
     "Academic Programmes",
+    ...(department?.name === "Mechanical Engineering" ? ["Departmental Structure"] : []),
     "Academic Syllabus & Schema", // NEW TAB
     ...(department?.name === "Science & Humanities" ? ["PO"] : ["PEO & PO-PSO"]),
     "Course Outcomes (CO)",
@@ -385,7 +412,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
             {selectedSection === "Faculty & Staff" && (
               <Faculty teachingStaff={teachingStaff} technicalStaff={technicalStaff} loading={facultyLoading} />
             )}
-            
+
             {/* Standard Academic Programmes Logic */}
             {selectedSection === "Academic Programmes" && department?.academicsProgram && (
               <Academic academicsProgramEce={department.academicsProgramEce} data={department.academicsProgram} />
@@ -393,10 +420,10 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
             {selectedSection === "Academic Programmes" && department?.academicsProgramEce && (
               <Academic academicsProgramEce={department.academicsProgramEce} data={department.academicsProgram} />
             )}
-            
+
             {/* --> NEW PDF Academic Syllabus Schema Section Component <-- */}
             {selectedSection === "Academic Syllabus & Schema" && department?.name && (
-              <AcademicSyllabusSchema departmentName={department.name} />
+              <AcademicSyllabusSchema departmentName={department.name} data={syllabusData} loading={syllabusLoading} />
             )}
 
             {selectedSection === "PO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
@@ -413,7 +440,8 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
             {selectedSection === "Magazines & Newsletters" && department?.magazines && <Magazines data={department?.magazines} />}
             {selectedSection === "Events" && <Events events={events} departmentName={departmentName} />}
             {selectedSection === "Gallery" && <Gallery data={[...galleryItems, ...(department?.gallery || [])]} />}
-            {selectedSection === "Career Prospects" && <CareerProspects data={department?.careerProspects[0]} />}
+            {selectedSection === "Career Prospects" && <CareerProspects data={department?.careerProspects} />}
+            {selectedSection === "Departmental Structure" && <DepartmentalStructure data={department?.departmentalStructure} />}
           </div>
         </div>
       </div>

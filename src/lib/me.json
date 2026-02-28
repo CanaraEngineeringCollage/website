@@ -8,9 +8,12 @@
     "departmentAboutDescriptionArray": [
       "Mechanical Engineering branch at Canara Engineering College was started in the year 2004 with an intake of 60. Mechanical Engineering is one of the broadest engineering disciplines. The curriculum prepares a student for a wide variety of technical and professional areas having their roots in Mechanical Engineering - areas as diverse as Aeronautics, Aerospace, Power generation, Energy conversion and conservation, Transportation, Manufacturing, Product Design, Robotics and controls and others."
     ],
-    "description": [
-      "Mechanical Engineering branch at Canara Engineering College was started in the year 2004 with an intake of 60. Mechanical Engineering is one of the broadest engineering disciplines. The curriculum prepares a student for a wide variety of technical and professional areas having their roots in Mechanical Engineering - areas as diverse as Aeronautics, Aerospace, Power generation, Energy conversion and conservation, Transportation, Manufacturing, Product Design, Robotics and controls and others."
-    ],
+    "annualTake": "Current intake: 30",
+  "description": [
+    "The Mechanical Engineering branch at Canara Engineering College was established in 2004 with an initial intake of 60 students, with a vision to cultivate technically proficient and industry-ready engineers. The program has earned distinction by being accredited twice by the National Board of Accreditation (NBA), reflecting its commitment to academic excellence, quality education, and continuous improvement.",
+    "Recognized as one of the most versatile and expansive engineering disciplines, Mechanical Engineering provides a strong foundation that enables graduates to excel across a wide spectrum of technological domains. The curriculum is thoughtfully designed to integrate core engineering fundamentals with emerging technologies, preparing students for diverse professional pathways such as Aeronautics, Aerospace, Power Generation, Energy Conversion and Conservation, Transportation Systems, Advanced Manufacturing, Product Design, Robotics, Automation, and Intelligent Control Systems. This multidisciplinary approach equips learners not only with robust technical expertise but also with analytical, innovative, and problem-solving skills essential for success in today’s rapidly evolving global engineering environment.",
+    "Our alumni serve in responsible and high-ranking positions in leading core mechanical industries across the world, a testament to the department’s strong academic foundation, industry-oriented training, and commitment to professional excellence."
+  ],
     "youtubeUrl": "https://youtu.be/aYK0H85E_oU?si=kSOVp7s_GUjHfg8G",
     "ethicalLearning": [
       "Imparting engineering education through experienced faculty, good infrastructure and systematic teaching learning process.",
@@ -19,7 +22,7 @@
     ],
     "ourVision": "To impart state of the art quality Mechanical Engineering education and create competent professionals.",
     "depatmentHead": {
-      "messageFromtheDepartmentHead": "Mechanical Engineering Department is one of the most active and most happening Departments in CEC. It is one of the very few departments around Mangalore that has the Industrial CNC Machining centres. A team of 01 Associate Professors and 05 Assistant Professors are working with passion and dedication to ensure career oriented Total Quality Education. To meet such a feat the Department has introduced additional labs on Advanced Material testing, CNC operation, Dissection lab, Bio diesel Processing lab, Computer Aided Modelling Lab (On AutoCAD, SolidWorks and Creo Software) with an objective to provide the practical exposure to students. The Department organizes many Workshops, Webinars and Faculty Development Programmes in variety of domains for the benefit of Students and Faculty. The Department has MoU with MNCs who visit the department to impart career-oriented training. We are totally focussed on Outcome based education (OBE) via Industrial Internships and Product development centres. Exclusive work is being carried out on Electric vehicles in association of Electrical Department. A research project funded by the Department of Science and Technology (DST) with a grant of ₹30 lakhs, sanctioned in 2023, was successfully completed in 2025 in the field of plastic recycling. These are new fields where the Department is working to make students Industry ready.",
+      "messageFromtheDepartmentHead": "Mechanical Engineering Department is one of the most active and most happening Departments in CEC. It is one of the very few departments around Mangalore that has the Industrial CNC Machining centres. A team of 01 Associate Professor and 05 Assistant Professors are working with passion and dedication to ensure career oriented Total Quality Education. To meet such a feat the Department has introduced additional labs on Advanced Material testing, CNC operation, Dissection lab, Bio diesel Processing lab, Computer Aided Modelling Lab (On AutoCAD, SolidWorks and Creo Software) with an objective to provide the practical exposure to students. The Department organizes many Workshops, Webinars and Faculty Development Programmes in variety of domains for the benefit of Students and Faculty. The Department has MoU with MNCs who visit the department to impart career-oriented training. We are totally focussed on Outcome based education (OBE) via Industrial Internships and Product development centres. Exclusive work is being carried out on Electric vehicles in association of Electrical Department. A research project funded by the Department of Science and Technology (DST) with a grant of ₹30 lakhs, sanctioned in 2023, was successfully completed in 2025 in the field of plastic recycling. These are new fields where the Department is working to make students Industry ready.",
       "name": "Dr. Niranjan Rai",
       "position": "HOD & Associate Professor",
       "imageUrl": "/departmentImages/departmentHeads/mechHod.jpeg"
@@ -10544,6 +10547,96 @@
         "imageUrl": ["https://apiserver.cec.edu.in/files/FACULTY%20PUBLICATIONS"]
       }
     ],
+ "careerProspects": [
+    {
+      "title": "Mechanical Engineering in the New Advanced Era",
+      "marketOverview": "Mechanical Engineering, often regarded as the backbone of technological civilization, continues to evolve as one of the most dynamic and future ready engineering disciplines. In the new era of rapid technological advancement, globalization, automation, and sustainability, mechanical engineers are no longer confined to traditional industries, they are innovators, designers, analysts, and problem-solvers shaping the future of modern society.",
+      "careerOpportunities": "Mechanical engineers remain among the most globally employable professionals. Their expertise is required in manufacturing, energy, infrastructure, healthcare equipment, transportation, research laboratories, and emerging tech startups. With industries transitioning toward Industry 4.0 and smart factories, the demand for engineers who can combine mechanical knowledge with digital intelligence is steadily increasing worldwide.\n\nMechanical Engineering also nurtures entrepreneurial thinking. With knowledge of design, manufacturing, and systems engineering, graduates can establish startups in product design, fabrication, automation solutions, renewable energy devices, or consultancy services.",
+      "roleSections": [
+        {
+          "heading": "Core Engineering Roles",
+          "roles": [
+            "Design Engineer",
+            "Production Engineer",
+            "Maintenance Engineer",
+            "Quality Control Engineer",
+            "Project Engineer",
+            "Manufacturing Engineer",
+            "Tool & Die Engineer"
+          ]
+        },
+        {
+          "heading": "Advanced Technology Roles",
+          "roles": [
+            "Robotics Engineer",
+            "Automation Engineer",
+            "Mechatronics Engineer",
+            "Simulation & CAE Analyst",
+            "Additive Manufacturing Specialist",
+            "Digital Twin Engineer",
+            "Industrial IoT Engineer"
+          ]
+        },
+        {
+          "heading": "Energy & Sustainability Careers",
+          "roles": [
+            "Renewable Energy Engineer",
+            "Thermal Systems Engineer",
+            "HVAC Design Engineer",
+            "Power Plant Engineer",
+            "Energy Auditor",
+            "Sustainability Consultant"
+          ]
+        },
+        {
+          "heading": "Transportation & Aerospace Sector",
+          "roles": [
+            "Automotive Design Engineer",
+            "Electric Vehicle Systems Engineer",
+            "Aerospace Engineer",
+            "Propulsion Engineer",
+            "Vehicle Testing Engineer"
+          ]
+        },
+        {
+          "heading": "Research, Innovation & Specialized Fields",
+          "roles": [
+            "Materials Engineer",
+            "Metallurgical Analyst",
+            "R&D Engineer",
+            "Computational Mechanics Analyst",
+            "Biomedical Device Engineer"
+          ]
+        },
+        {
+          "heading": "Management & Interdisciplinary Roles",
+          "roles": [
+            "Technical Consultant",
+            "Operations Manager",
+            "Supply Chain Analyst",
+            "Product Development Engineer",
+            "Technical Sales Engineer"
+          ]
+        },
+        {
+          "heading": "Higher Studies & Academic Careers",
+          "roles": [
+            "Research Scientist",
+            "Innovation Lab Specialist"
+          ]
+        },
+        {
+          "heading": "Entrepreneurial Opportunities",
+          "roles": [
+            "Startup Founders",
+            "Product Designers",
+            "Manufacturing Consultants",
+            "Technology Innovators"
+          ]
+        }
+      ]
+    }
+  ],
 
     "events": [
       {
@@ -10650,204 +10743,117 @@
         "Possesses adequate interpersonal skills to solve managerial and technical issues."
       ]
     },
-    "facilities": {
-      "description": "The department of Mechanical Engineering started in the year 2004 with a sole aim to impart quality education to students in the field of Mechanical Engineering. The Department is equipped with well furnished Classrooms with LCD projectors, State of the art Laboratories and Department Library with good collection of books.",
-      "allFacilities": [
-        {
-          "title": "Basic Workshop",
-          "points": [],
-          "majorDesc": "In this lab students study about various tools, fitting work, sheet metal work and welding.",
-          "majorDesc2": "Major Facilities/Equipments:",
-          "majorPoint": ["Bench Vice", "Leg Vice", "Arc welding machine", "Fitting tools", "Sheet metal tools", "Welding tools."]
-        },
-        {
-          "title": "Computer Aided Engineering Drawing Lab",
-          "points": ["This lab with high end computers and drafting package is devoted for training first year students in computer aided drafting."]
-        },
-        {
-          "title": "Computer Aided Machine Drawing Lab",
-          "points": [],
-          "majorDesc": "In this lab students study about 2-D and 3-D Drawings of fasteners like bolt and nut, couplings, Keys and joints, rivets, thread forms and 3-D assembly drawings of different Machine Elements.",
-          "majorDesc2": "Major Facilities/Equipments:",
-          "majorPoint": ["81 computers with high end configurations", "Installed Solid Edge Software."]
-        },
-        {
-          "title": "Machine Shop",
-          "points": [],
-          "majorDesc": "In this lab students study about various machining operations using Lathe, drilling, milling, shaping, grinding machines.",
-          "majorDesc2": "Major Facilities/Equipments:",
-          "majorPoint": ["Lathes", "Milling machines", "Drilling machines", "Grinding machines", "shaping machine", "CNC Lathes."]
-        },
-        {
-          "title": "Foundry and Forging Lab",
-          "points": [],
-          "majorDesc": "In this lab students study about various foundry and forging process, measurement of various parameters of foundry sand etc.",
-          "majorDesc2": "Major Facilities/Equipments:",
-          "majorPoint": [
-            "Permeability tester",
-            "Sand siever",
-            "Drilling machines",
-            "Moisture content testing machine",
-            "Ovens",
-            "Furnaces",
-            "different types of Dies",
-            "Moulding boxes."
-          ]
-        },
-        {
-          "title": "Metallography and Material Testing Lab",
-          "points": [],
-          "majorDesc": "In this lab students study about various properties of metals using testing equipments like Universal Testing Machine, Hardness Testing Machines, Wear Testing Machine, Impact Testing Machine, Metallographic Studies etc.",
-          "majorDesc2": "Major Facilities/Equipments:",
-          "majorPoint": [
-            "Brinell",
-            "Vicker",
-            "Rockwell Hardness Tester",
-            "Impact Tester",
-            "Wear tester",
-            "Universal Testing Machine",
-            "Micro hardness tester",
-            "Microscope",
-            "Heat Treatment Furnace."
-          ]
-        },
-        {
-          "title": "Mechanical Measurements and Metrology Lab",
-          "points": [],
-          "majorDesc": "This lab covers study of various measuring methods, equipments and tools used in Industries.",
-          "majorDesc2": "Major Facilities/Equipments:",
-          "majorPoint": [
-            "Accelerometer",
-            "Calibration of Thermocouple",
-            "Oscillator",
-            "Indicator",
-            "Load Cell",
-            "LVDT Amplifier",
-            "Gear Tooth Vernier Caliper",
-            "Bore Dial Gauge",
-            "Sine Bar/Sine Center",
-            "Slip gauges."
-          ]
-        },
-
-        {
-          "title": "Fluid Mechanics and Machinery Lab",
-          "points": [],
-          "majorDesc": "This lab covers the study of various performance characteristics, measurements of flow using various methods and instruments.",
-          "majorDesc2": "Major Facilities/Equipments:",
-          "majorPoint": [
-            "Francis Turbine Test Rig",
-            "Kaplan Turbine Test Rig",
-            "Pelton Wheel Test Rig",
-            "Gear Pump Test Rig",
-            "Impact of Jet on vane Test Rig",
-            "Friction in Pipes Test Rig",
-            "Single Stage Centrifugal Pump Test Rig",
-            "Multistage Centrifugal Pump Test Rig",
-            "V-Notch, Venturimeter, Orifice meter",
-            "Blower, Compressor."
-          ]
-        },
-
-        {
-          "title": "Energy Conversion Engineering Lab",
-          "points": [],
-          "majorDesc": "This lab deals with the study of various performance characteristics of Internal Combustion Engines like 2 stroke, 4 stroke petrol, diesel engines, analysis and other tests related to energy conversion engineering.",
-          "majorDesc2": "Major Facilities/Equipments:",
-          "majorPoint": [
-            "Bomb Calorimeter/Boys Calorimeter, Orsat Apparatus",
-            "Cloud and Pour Point Apparatus",
-            "Abel Pensky Flash and Fire Point Apparatus",
-            "Pensky Martin Flash and Fire Point Apparatus",
-            "Redwood Viscometer, Saybolt Viscometer",
-            "Torsion Viscometer",
-            "Air cooled and water cooled Petrol Engines",
-            "Diesel Engines, Variable Compression Engine",
-            "Twin Cylinder Diesel Engine (Morse Test), Planimeter."
-          ]
-        },
-
-        {
-          "title": "Heat and Mass Transfer Lab",
-          "points": [],
-          "majorDesc": "This lab deals with the study of various performance characteristics of Heat and Mass Transfer equipments like Air Conditioner, Refrigeration, Heat flow analysis etc.",
-          "majorDesc2": "Major Facilities/Equipments:",
-          "majorPoint": [
-            "Forced Convection Apparatus, Pin-fin Apparatus",
-            "Free or Natural Convection Apparatus",
-            "Parallel flow and Counter flow Heat Exchangers",
-            "Thermal Conductivity Apparatus",
-            "Stefan Boltzman Apparatus, Emissivity Apparatus",
-            "Heat Flux Measurement",
-            "Vapour Compression Refrigeration Apparatus",
-            "Air Conditioning Test Rig."
-          ]
-        },
-
-        {
-          "title": "Design Lab",
-          "points": [],
-          "majorDesc": "This lab deals with the study of various design aspects like Vibration, Balancing, Whirling of Shaft, Bearings, Gyroscopic Systems, Physical Stress Analysis Methods etc.",
-          "majorDesc2": "Major Facilities/Equipments:",
-          "majorPoint": [
-            "Gyroscopic Set up, Journal Bearing Test Rig",
-            "Equipment for studying Whirling of Shaft",
-            "Static and Dynamic Balancing Machine",
-            "Porter and Hartnell Governor",
-            "Pressure Variation Measurement Equipment",
-            "Torque Measurement Equipment, Strain Rosettes."
-          ]
-        },
-
-        {
-          "title": "Computer Aided Modeling and Analysis Lab",
-          "points": [],
-          "majorDesc": "In this lab students are taught how to do Finite Element Analysis for any structural members which are exposed to different types of load like, Axial, Transverse & inclined Load, Temperature in the material, Stress analysis and Vibration analysis.",
-          "majorDesc2": "Major Facilities/Equipments:",
-          "majorPoint": ["35 Computers with Ansys V12 software installed."]
-        },
-
-        {
-          "title": "Computer Integrated Manufacturing Lab:",
-          "points": [],
-          "majorDesc": "In this lab students learn about how to write CNC part programming of turning, drilling and milling operations and to do Simulation. Using CAM software to create model and do sequence of machining operation and generate CNC part program.",
-          "majorDesc2": "Major Facilities/Equipments:",
-          "majorPoint": ["G35 Computers with EdgeCAM and CADEM softwares installed."]
-        },
-
-        {
-          "title": "Dissection lab",
-          "points": [],
-          "majorDesc2": "The Department has also initiated Dissection lab of which the main objectives are:",
-          "majorPoint": [
-            "Implement ‘Technical Training Programme’, a proprietary teaching and education programme in Engineering and Technology",
-            "Provide training and education to students and faculty members of Institutes and Engineering Colleges",
-            "Hands-on practical sessions on the most scientific way of repair, maintenance and servicing of vehicles",
-            "Create research facilities",
-            "Organise Student training program (STP), workshops and seminars"
-          ]
-        },
-        {"swiper":["https://apiserver.cec.edu.in/files/Computer%20Aided%20Engineering%20Drawing%20Lab","https://apiserver.cec.edu.in/files/Computer%20Aided%20Machine%20Drawing%20Lab","https://apiserver.cec.edu.in/files/Machine%20Shop","https://apiserver.cec.edu.in/files/Foundry%20and%20Forging%20Lab","https://apiserver.cec.edu.in/files/Metallography%20and%20Material%20Testing%20Lab","https://apiserver.cec.edu.in/files/Mechanical%20Measurements%20and%20Metrology%20Lab","https://apiserver.cec.edu.in/files/Fluid%20Mechanics%20and%20Machinery%20Lab","https://apiserver.cec.edu.in/files/Energy%20Conversion%20Engineering%20Lab","https://apiserver.cec.edu.in/files/Heat%20and%20Mass%20Transfer%20Lab","https://apiserver.cec.edu.in/files/Design%20Lab","https://apiserver.cec.edu.in/files/Dissection%20lab"]},
-
-        {
-          "title": "CNC Hands-on Lab",
-          "points": [],
-          "majorDesc": "In this lab in addition to regular curriculum the students will learn to write program and execute the same on machines for several turning operations like plain, step, groove, contour turning, external thread cutting and drilling in CNC Turning Center. Similarly face milling, slot milling, end milling, pocket milling and contour milling operations inCNC Vertical Machining Center.",
-          "majorDesc2": "Major Facilities/Equipments:",
-          "majorPoint": [
-            "CNC Turning center – Jobber Junior (ACE Designers Ltd.)",
-            "CNC Vertical Machining Center – VM 300 (TAL Manufacturing Solution Ltd.)"
-          ]
-        },
-
-        {
-          "title": "Advanced Materials Lab",
-          "points": [
-            "Material Science is one of the prime importance field in mechanical engineering. Microstructure and hardness are important properties which govern the behaviour of materials. The current laboratory syllabus is designed to improve the technical skill of students in material microstructure and micro-Vicker's hardness study."
-          ]
-        }
-      ]
-    },
+   "facilities": {
+    "description": "Since its inception in 2004, the Department of Mechanical Engineering has cultivated a dynamic learning environment driven by innovation, precision, and hands-on excellence. Our infrastructure is more than a collection of laboratories, it is a fully integrated engineering ecosystem where theory meets technology, creativity meets application, and students transform into industry-ready professionals. Equipped with smart classrooms, advanced instrumentation, and a rich departmental library, the department provides an immersive platform for experiential learning and research-driven exploration. \n\nWhere Engineering Vision Becomes Reality: Our laboratories are not just spaces, they are innovation arenas where curiosity is encouraged, experimentation is celebrated, and excellence is engineered. By blending advanced infrastructure with outcome-based learning, the department ensures that every graduate emerges technically skilled, creatively inspired, and professionally prepared to lead in the evolving world of mechanical engineering.",
+    "allFacilities": [
+      {
+        "title": "Digital Design Excellence – CAD & Modelling Labs",
+        "desc": "Our high-performance computing facilities empower students to visualize, design, and simulate engineering components with professional software platforms. From fundamental drafting to complex 3D assemblies and simulations, these labs nurture design thinking and digital engineering expertise.",
+        "methodes": "",
+        "points": [
+          "Major Equipment: High-performance computers with Mechanical software’s like Solid Edge, SolidWorks, AutoCAD Inventor, Creo software."
+        ]
+      },
+      {
+        "title": "Precision Manufacturing Hub – Machine Shop",
+        "desc": "This industry-grade facility provides real machining experience on conventional and CNC machines, enabling students to master turning, milling, drilling, shaping, and grinding operations while understanding modern manufacturing standards.",
+        "methodes": "",
+        "points": [
+          "Major Equipment: Lathes, Milling Machines, Drilling Machines, Grinding Machines, Shaping Machine, Arc Welding Machine, Fitting Tools, Sheet Metal Tools, Welding Tools, CNC Lathes, 3-D printing Machine."
+        ]
+      },
+      {
+        "title": "Metal Processing Innovation – Foundry & Forging Lab",
+        "desc": "Students explore the science of metal shaping, casting, and forming processes while analysing material behaviour and quality parameters, gaining a deep understanding of manufacturing metallurgy.",
+        "methodes": "",
+        "points": [
+          "Major Equipment: Permeability Tester, Sand Siever, Moisture Content Tester, Furnaces, Ovens, Dies, Moulding Boxes."
+        ]
+      },
+      {
+        "title": "Material Intelligence Center – Metallography & Testing Lab",
+        "desc": "With advanced testing systems and microscopic analysis tools, this lab allows students to evaluate strength, hardness, wear, impact resistance, and microstructure of materials, bridging material science with real engineering applications.",
+        "methodes": "",
+        "points": [
+          "Major Equipment: Brinell, Vickers, and Rockwell Hardness Testers, Impact Tester, Wear Tester, Universal Testing Machine, Micro-Hardness Tester, Microscope, Heat Treatment Furnace."
+        ]
+      },
+      {
+        "title": "Industrial Precision Lab – Metrology & Measurements",
+        "desc": "Accuracy is the backbone of engineering. This laboratory trains students in modern measurement techniques and instrumentation used in industrial quality control and calibration systems.",
+        "methodes": "",
+        "points": [
+          "Major Equipment: Accelerometer, Thermocouple Calibration Unit, Oscillator, Indicators, Load Cell, LVDT Amplifier, Gear Tooth Vernier Calliper, Bore Dial Gauge, Sine Bar, Slip Gauges."
+        ]
+      },
+      {
+        "title": "Fluid Dynamics & Turbo Machinery Arena",
+        "desc": "Students investigate fluid flow behaviour and machine performance through specialized test rigs, gaining practical insight into turbines, pumps, compressors, and flow measurement systems.",
+        "methodes": "",
+        "points": [
+          "Major Equipment: Francis, Kaplan, and Pelton Turbine Test Rigs; Gear Pump; Impact of Jet Apparatus; Friction in Pipes Setup; Centrifugal Pump Test Rigs; Venturi-meter, Orifice Meter, Blower, Compressor."
+        ]
+      },
+      {
+        "title": "Energy Systems Laboratory",
+        "desc": "This facility provides a comprehensive understanding of energy conversion, engine performance, and fuel analysis using sophisticated testing instruments and live engine setups.",
+        "methodes": "",
+        "points": [
+          "Major Equipment: Bomb Calorimeter, Orsat Apparatus, Flash & Fire Point Apparatus, Viscometers, Petrol and Diesel Engines, Variable Compression Engine, Twin Cylinder Diesel Engine (Morse Test), Planimeter."
+        ]
+      },
+      {
+        "title": "Thermal Engineering Research Lab - Heat Transfer Lab",
+        "desc": "Dedicated to heat transfer and refrigeration systems, this lab enables students to analyse thermal performance, energy efficiency, and real-time system behaviour through experimental setups.",
+        "methodes": "",
+        "points": [
+          "Major Equipment: Convection Apparatus, Heat Exchangers, Thermal Conductivity Setup, Stefan-Boltzmann Apparatus, Emissivity Apparatus, Heat Flux Meter, Refrigeration Unit, Air Conditioning Test Rig."
+        ]
+      },
+      {
+        "title": "Dynamics & Design Innovation Lab",
+        "desc": "Students explore machine design principles, vibrations, balancing, gyroscopic motion, and stress analysis, strengthening their analytical and problem-solving skills in mechanical system design.",
+        "methodes": "",
+        "points": [
+          "Major Equipment: Gyroscopic Setup, Whirling of Shaft Apparatus, Balancing Machine, Governors, Pressure and Torque Measurement Systems, Strain Rosettes."
+        ]
+      },
+      {
+        "title": "Simulation & Structural Analysis Center",
+        "desc": "Using advanced Finite Element Analysis tools, students simulate real-world engineering problems involving loads, temperature, stress, and vibration—building predictive engineering capability.",
+        "methodes": "",
+        "points": [
+          "Major Equipment: High-end computers equipped with ANSYS software."
+        ]
+      },
+      {
+        "title": "Smart Manufacturing Lab – CIM Lab",
+        "desc": "This futuristic lab trains students in CNC programming, simulation, and computer-aided manufacturing workflows, replicating modern automated production environments.",
+        "methodes": "",
+        "points": [
+          "Major Equipment: 35 computers with Edge-CAM and CADEM software."
+        ]
+      },
+       {
+        "title": "Where Engineering Vision Becomes Reality",
+        "desc": "Our laboratories are not just spaces, they are innovation arenas where curiosity is encouraged, experimentation is celebrated, and excellence is engineered. By blending advanced infrastructure with outcome-based learning, the department ensures that every graduate emerges technically skilled, creatively inspired, and professionally prepared to lead in the evolving world of mechanical engineering."
+      },
+      {
+  "swiper": [
+    "https://apiserver.cec.edu.in/files/meFacilities1",
+    "https://apiserver.cec.edu.in/files/meFacilities2",
+    "https://apiserver.cec.edu.in/files/meFacilities3",
+    "https://apiserver.cec.edu.in/files/meFacilities4",
+    "https://apiserver.cec.edu.in/files/meFacilities5",
+    "https://apiserver.cec.edu.in/files/meFacilities6",
+    "https://apiserver.cec.edu.in/files/meFacilities7",
+    "https://apiserver.cec.edu.in/files/meFacilities8",
+    "https://apiserver.cec.edu.in/files/meFacilities9",
+    "https://apiserver.cec.edu.in/files/meFacilities10",
+    "https://apiserver.cec.edu.in/files/meFacilities11"
+  ]
+}]
+  },
     "studentAcheivemtents": [
       {
         "title": "EXAMINATION RESULTS",
