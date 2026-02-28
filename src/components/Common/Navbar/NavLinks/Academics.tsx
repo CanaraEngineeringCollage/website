@@ -26,7 +26,7 @@ export default function Academics() {
             aria-controls="about-menu" // ✅ Optional: add an ID to the target menu section if applicable
             aria-haspopup="true" // ✅ Indicates that it opens a submenu
             tabIndex={0} // ✅ Ensures the element is keyboard focusable
-            className={`flex items-center text-base xl:text-base whitespace-nowrap py-1.5 ${
+            className={`flex items-center text-base cursor-pointer xl:text-base whitespace-nowrap py-1.5 ${
               isMenuOpen ? "opacity-100" : "opacity-80"
             } gap-2  text-webGreen1 transition-colors ease-in-out duration-300 hover:text-webGreen1
             bg-transparent   font-semibold hover:bg-transparent ${
@@ -48,7 +48,7 @@ export default function Academics() {
         outline-none focus:ring-0 focus:outline-none hover:border-none  text-[#1D1D1F] z-100"
       >
         <div
-          className="w-full max-w-screen-2xl bg-white shadow-md  rounded-xl flex justify-center gap-8 lg:py-8 xl:p-8 
+          className="w-full  bg-white shadow-md  rounded-xl flex justify-center gap-8 lg:py-8 xl:p-8 
         border-none outline-none hover:border-none"
         >
           <div className="grid grid-cols-1 max-w-[75%] sm:grid-cols-2 lg:grid-cols-12  lg:gap-0 xl:gap-8 mx-16 w-full">

@@ -98,7 +98,7 @@ const DepartmentProfile = ({
       {/* Annual Intake */}
       {annualIntake && (
         <p className="font-semibold text-[20px] mt-4">
-          Annual Intake: {annualIntake}
+         {annualIntake}
         </p>
       )}
     </div>

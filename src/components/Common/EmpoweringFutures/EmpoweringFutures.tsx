@@ -233,7 +233,7 @@ export default function EmpoweringFutures() {
 
         <Link href="/training-placements" className="flex justify-center">
           {" "}
-          <button aria-label="Learn More" className="bg-primary text-white font-medium px-6 py-2 rounded-full mt-10 md:mt-0 w-auto">
+          <button aria-label="Learn More" className="bg-primary text-white font-medium px-6 py-2 rounded-full mt-10 w-auto">
             Learn More
           </button>
         </Link>

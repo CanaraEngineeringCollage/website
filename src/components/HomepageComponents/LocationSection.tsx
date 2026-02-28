@@ -9,7 +9,7 @@ const LocationSection = () => {
   return (
     <>
       <section className="  max-w-7xl pb-12 pt-5 md:pb-0 md:pt-20 mx-auto xl:max-w-[75%]">
-        <div className="bg-white rounded-3xl  pb-4   md:p-12 flex flex-col lg:flex-row items-center gap-4 mx-auto md:gap-10 max-w-7xl w-full">
+        <div className="bg-white rounded-3xl  pb-4   md:p-12 flex flex-col lg:flex-row items-center gap-4 mx-auto md:gap-10  w-full">
           {/* Left: Map Image Placeholder */}
           <div className="w-full lg:w-1/2 flex justify-center">
             <div className="relative w-full h-64 md:h-80 lg:h-96 bg-gray-200 rounded-t-2xl md:rounded-t-none md:rounded-2xl overflow-hidden shadow-sm">

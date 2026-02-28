@@ -43,7 +43,7 @@ const renderBorder =
             aria-controls="about-menu" // ✅ Optional: add an ID to the target menu section if applicable
             aria-haspopup="true" // ✅ Indicates that it opens a submenu
             tabIndex={0} // ✅ Ensures the element is keyboard focusable
-            className={`flex items-center text-base xl:text-base whitespace-nowrap gap-2 py-1.5  ${
+            className={`flex items-center text-base cursor-pointer xl:text-base whitespace-nowrap gap-2 py-1.5  ${
               isMenuOpen ? "opacity-100" : "opacity-80"
             } text-webGreen1 bg-transparent font-semibold hover:bg-transparent  
             rounded-none shadow-none ${
@@ -59,7 +59,7 @@ const renderBorder =
       </MenuHandler>
 
       <MenuList className="w-full bg-transparent text-[#1D1D1F] p-0  z-100 border-none !border-0 shadow-none flex justify-center pb-4 outline-none focus:ring-0">
-        <div className="w-full  max-w-screen-2xl bg-white z-100 shadow-md rounded-xl flex justify-center gap-8 p-8 border-none outline-none">
+        <div className="w-full   bg-white z-100 shadow-md rounded-xl flex justify-center gap-8 p-8 border-none outline-none">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-24 w-full">
             {/* Column 1 */}
             {/* Column 1 — Campus Legacy */}
@@ -128,7 +128,7 @@ const renderBorder =
                       href="/cif"
                       className={`${pathname.includes("/cif") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
                     >
-                      Cif
+                     Canara Innovation Foundation
                     </Link>
                   </li>
                 </ul>

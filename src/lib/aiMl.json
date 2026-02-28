@@ -9,7 +9,7 @@
     "departmentAboutDescriptionArray": [
       "Established in 2021, the Department of AIML offers a B.E. program focused on cutting-edge technologies driving today’s digital transformation. With applications across healthcare, robotics, finance, and more, the curriculum equips students with strong foundations in AI, ML, data science, computer vision, and programming. The department emphasizes industry readiness through technical training, soft skills development, and self-paced certifications via platforms like SWAYAM, Coursera, and edX. Faculty and students are actively involved in research and continuous upskilling. Extracurricular and club activities further support holistic growth and strong placement outcomes."
     ],
-    "annualTake": "120",
+    "annualTake": "Annual Intake: 120",
     "description": [
       "The department was established in 2021 to offer an undergraduate degree program, the Bachelor of Engineering (BE) in Artificial Intelligence and Machine Learning (AIML). AIML is at the forefront of computer science, expanding rapidly into sectors such as healthcare, security, entertainment, education, autonomous transportation, robotics, space exploration, speech processing, and stock trading, among others. The pervasive influence of artificial intelligence has profoundly impacted our lives.",
       "AI aims to emulate human intelligence, imparting cognitive abilities to robots. Machine learning (ML), a subset of AI, enables machines to learn autonomously. The emergence of AI and ML has generated numerous career opportunities and is a pivotal driver of digital transformation, creating a high demand for skilled engineers proficient in these technologies. Graduates of this program possess a highly valuable degree, opening doors to employment across various industries.",
@@ -29,26 +29,31 @@
       "position": "Professor & HOD",
       "imageUrl": "/departmentImages/departmentHeads/aiml.webp"
     },
-    "careerProspects": [
-      {
-        "title": "Career Prospects and Market Opportunities",
-        "marketOverview": "The global Artificial Intelligence market is projected to grow from USD 58.3 billion in 2021 to USD 309.6 billion by 2026, with a Compound Annual Growth Rate (CAGR) of 39.7% during this period. This rapid expansion is impacting all sectors of hardware and software services. Virtually every industry is affected by Artificial Intelligence (AI), creating thousands of job opportunities for qualified engineers specializing in AI and Machine Learning (ML).",
-        "careerOpportunities": "A degree in Artificial Intelligence and Machine Learning can lead to diverse career opportunities across industries such as manufacturing, logistics, aviation, healthcare, and finance. It offers enhanced employment prospects for individuals with strong foundational knowledge in data structures, robust problem-solving skills, and proficiency in essential concepts like data mining, deep learning, neural networks, predictive modelling, and popular data science tools such as R, Python, and NumPy.",
-        "roles": [
-          "Data Analyst",
-          "Data Science Specialist",
-          "Business Analyst",
-          "Data Engineer",
-          "Data Scientist",
-          "AI/ML Engineer",
-          "Business Intelligence Engineer",
-          "Research Scientist",
-          "Software Engineer",
-          "System Analyst"
-        ],
-        "roleDescription": "These roles require hands-on experience and proficiency in applying AI and ML techniques to solve complex problems, driving innovation and efficiency across various domains."
-      }
-    ],
+   "careerProspects": [
+    {
+      "title": "Career Prospects and Market Opportunities",
+      "marketOverview": "The global Artificial Intelligence market is projected to grow from USD 58.3 billion in 2021 to USD 309.6 billion by 2026, with a Compound Annual Growth Rate (CAGR) of 39.7% during this period. This rapid expansion is impacting all sectors of hardware and software services. Virtually every industry is affected by Artificial Intelligence (AI), creating thousands of job opportunities for qualified engineers specializing in AI and Machine Learning (ML).",
+      "careerOpportunities": "A degree in Artificial Intelligence and Machine Learning can lead to diverse career opportunities across industries such as manufacturing, logistics, aviation, healthcare, and finance. It offers enhanced employment prospects for individuals with strong foundational knowledge in data structures, robust problem-solving skills, and proficiency in essential concepts like data mining, deep learning, neural networks, predictive modelling, and popular data science tools such as R, Python, and NumPy.",
+      "roleSections": [
+        {
+          "heading": "Potential Roles",
+          "roles": [
+            "Data Analyst",
+            "Data Science Specialist",
+            "Business Analyst",
+            "Data Engineer",
+            "Data Scientist",
+            "AI/ML Engineer",
+            "Business Intelligence Engineer",
+            "Research Scientist",
+            "Software Engineer",
+            "System Analyst"
+          ]
+        }
+      ],
+      "roleDescription": "These roles require hands-on experience and proficiency in applying AI and ML techniques to solve complex problems, driving innovation and efficiency across various domains."
+    }
+  ],
     "toppers": [
       
       {

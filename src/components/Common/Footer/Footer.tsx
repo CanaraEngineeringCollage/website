@@ -186,7 +186,7 @@ const Footer: FC = () => {
               { label: "Campus Buzz", href: "/campus-buzz" },
               { label: "About Library", href: "/explore/central-library/about-library" },
               { label: "Student Achievements", href: "/student-achievements" },
-              { label: "Cif", href: "/cif" },
+              { label: "Canara Innovation Foundation", href: "/cif" },
             ]}
           />
         </Suspense>
@@ -238,7 +238,7 @@ const Footer: FC = () => {
               <Link target="_blank" href="https://www.instagram.com/cecmangalore/">
                 <Instagram />
               </Link>
-              <Link target="_blank" href="https://www.facebook.com/profile.php?id=61575102539032">
+              <Link target="_blank" href="https://www.facebook.com/share/1AjszML4e3">
                 <Meta />
               </Link>
               <Link target="_blank" href="https://www.youtube.com/@canaraengineeringcollegema3340">
@@ -304,7 +304,7 @@ const Footer: FC = () => {
               <Link target="_blank" href="https://www.instagram.com/cecmangalore/">
                 <Instagram />
               </Link>
-              <Link target="_blank" href="https://www.facebook.com/profile.php?id=61575102539032">
+              <Link target="_blank" href="https://www.facebook.com/share/1AjszML4e3">
                 <Meta />
               </Link>
               <Link target="_blank" href="https://www.youtube.com/@canaraengineeringcollegema3340">
