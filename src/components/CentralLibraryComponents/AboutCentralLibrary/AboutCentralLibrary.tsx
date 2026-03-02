@@ -7,7 +7,7 @@ import Link from "next/link";
 // Helper to map API data to FacultyMember interface
 const mapApiDataToFaculty = (data: any[]): FacultyMember[] => {
   return data.map((item, index) => ({
-    id: item._id || index,
+    id: item.id || item._id || index,
     name: item.name,
     designation: item.designation,
     department: "Library",
@@ -302,8 +302,6 @@ interface LibraryStaffProps {
   loading?: boolean;
 }
 
-// --- Helper Functions ---
-
 // --- Sub-Components ---
 const SkeletonCard: React.FC = () => (
   <div className="relative w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-gray-200 animate-pulse">
@@ -320,15 +318,18 @@ const SkeletonCard: React.FC = () => (
 const LibraryStaff = ({ staffList, loading = false }: LibraryStaffProps) => {
   const renderCards = (staffArray: FacultyMember[]) =>
     staffArray.map((item, index) => {
-      // Determine Image Source (Base64 buffer OR URL string)
-     const imgSrc = `${process.env.NEXT_PUBLIC_API_URL}/faculty/${item.id}/avatar`;
-
       return (
         <div
           key={item.id || index}
           className="relative w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md  transition-transform duration-300"
         >
-          <Image src={imgSrc} alt={item.name} fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+          <Image
+            src={`${process.env.NEXT_PUBLIC_API_URL}/faculty/${item.id}/avatar`}
+            alt={item.name}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
 
           {/* Gradient Overlay */}
           <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>

@@ -125,9 +125,8 @@ export default function LibraryFaculty() {
               <span>Library Staff</span>
             </h2>
             <p className="text-gray-700 mt-6 text-lg">
-              Our Library Staff team is the backbone of our institution,
-              ensuring seamless operations through their expertise,
-              dedication, and commitment to excellence.
+              Our Library Staff team is the backbone of our institution, ensuring seamless operations through their expertise, dedication, and
+              commitment to excellence.
             </p>
           </div>
 
@@ -142,7 +141,7 @@ export default function LibraryFaculty() {
               <button
                 onClick={handlePrev}
                 disabled={startIndex === 0}
-              className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full   text-[#616164] hover:bg-gray-200 transition disabled:opacity-30"
+                className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full   text-[#616164] hover:bg-gray-200 transition disabled:opacity-30"
               >
                 <MdKeyboardArrowLeft size={32} />
               </button>
@@ -150,7 +149,7 @@ export default function LibraryFaculty() {
               <button
                 onClick={handleNext}
                 disabled={startIndex + 2 >= data.length}
-              className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full  text-[#616164]  transition disabled:opacity-30"
+                className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full  text-[#616164]  transition disabled:opacity-30"
               >
                 <MdKeyboardArrowRight size={32} />
               </button>
@@ -166,20 +165,13 @@ export default function LibraryFaculty() {
               className="relative w-full max-w-[309px] aspect-[2/3] rounded-xl overflow-hidden bg-[#6DC0EB] text-white shadow-md"
             >
               {/* ✅ Fixed Image */}
-              <Image
-                src={`${process.env.NEXT_PUBLIC_API_URL}/faculty/${member.id}/avatar`}
-                alt={member.name}
-                fill
-                className="object-cover"
-              />
+              <Image src={`${process.env.NEXT_PUBLIC_API_URL}/faculty/${member.id}/avatar`} alt={member.name} fill className="object-cover" />
 
               <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
 
               <div className="absolute z-20 bottom-3 px-3 left-0 w-full">
                 <h2 className="text-lg font-bold">{member.name}</h2>
-                <p className="text-sm break-words">
-                  {member.designation}
-                </p>
+                <p className="text-sm break-words">{member.designation}</p>
               </div>
             </div>
           ))}
@@ -193,22 +185,16 @@ export default function LibraryFaculty() {
             Get to Know Our <br /> Library Staff
           </h2>
           <p className="text-gray-700 text-lg mt-3">
-            Our Library Staff team is the backbone of our institution,
-            ensuring seamless operations through their expertise.
+            Our Library Staff team is the backbone of our institution, ensuring seamless operations through their expertise.
           </p>
         </div>
 
         <div className="flex w-full gap-6">
           {visibleMembers?.map((member, index) => (
-            <div
-              key={index}
-              className="relative w-full h-[360px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white shadow-md"
-            >
+            <div key={index} className="relative w-full h-[360px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white shadow-md">
               {/* ✅ Fixed Image */}
               <Image
-                onClick={() =>
-                  router.push(`/user-details/${member.id}`)
-                }
+                onClick={() => router.push(`/user-details/${member.id}`)}
                 src={`${process.env.NEXT_PUBLIC_API_URL}/faculty/${member.id}/avatar`}
                 alt={member.name}
                 fill
@@ -229,7 +215,7 @@ export default function LibraryFaculty() {
           <button
             onClick={handlePrev}
             disabled={startIndex === 0}
-              className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full   text-[#616164] hover:bg-gray-200 transition disabled:opacity-30"
+            className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full   text-[#616164] hover:bg-gray-200 transition disabled:opacity-30"
           >
             <MdKeyboardArrowLeft size={24} />
           </button>
@@ -237,7 +223,7 @@ export default function LibraryFaculty() {
           <button
             onClick={handleNext}
             disabled={startIndex + 1 >= data.length}
-              className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full  text-[#616164]  transition disabled:opacity-30"
+            className="w-8 h-8 flex items-center justify-center bg-[#dedee3] rounded-full  text-[#616164]  transition disabled:opacity-30"
           >
             <MdKeyboardArrowRight size={24} />
           </button>
