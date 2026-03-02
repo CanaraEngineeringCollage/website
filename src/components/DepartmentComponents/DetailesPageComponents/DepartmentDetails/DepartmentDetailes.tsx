@@ -8,7 +8,10 @@ import Organaisation from "../DepartmentDetailesTab/Organaisation/Organaisation"
 import Hod from "../DepartmentDetailesTab/Hod/Hod";
 import Faculty, { FacultyMember } from "../DepartmentDetailesTab/Faculty/Faculty";
 import Academic from "../DepartmentDetailesTab/Academic/Academic";
-import AcademicSyllabusSchema, { SyllabusItem } from "../DepartmentDetailesTab/AcademicSyllabusSchema/AcademicSyllabusSchema"; // <-- New Import
+import type { SyllabusItem } from "../DepartmentDetailesTab/AcademicSyllabusSchema/AcademicSyllabusSchema"; // <-- New Import
+import dynamic from "next/dynamic";
+
+const AcademicSyllabusSchema = dynamic(() => import("../DepartmentDetailesTab/AcademicSyllabusSchema/AcademicSyllabusSchema"), { ssr: false });
 import Peo from "../DepartmentDetailesTab/Peo/Peo";
 import CourseOutCome from "../DepartmentDetailesTab/CourseOutCome/CourseOutCome";
 import Facilities from "../DepartmentDetailesTab/Facilities/Facilities";
