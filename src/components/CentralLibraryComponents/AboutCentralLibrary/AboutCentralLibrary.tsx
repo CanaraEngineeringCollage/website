@@ -303,11 +303,6 @@ interface LibraryStaffProps {
 }
 
 // --- Helper Functions ---
-const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
-  const binary = buffer.data.reduce((acc, byte) => acc + String.fromCharCode(byte), "");
-  const base64 = btoa(binary);
-  return `data:image/jpeg;base64,${base64}`;
-};
 
 // --- Sub-Components ---
 const SkeletonCard: React.FC = () => (
@@ -326,7 +321,7 @@ const LibraryStaff = ({ staffList, loading = false }: LibraryStaffProps) => {
   const renderCards = (staffArray: FacultyMember[]) =>
     staffArray.map((item, index) => {
       // Determine Image Source (Base64 buffer OR URL string)
-      const imgSrc = item.avatar ? bufferToBase64(item.avatar) : item.image || "/images/defaults/avatar-default.png";
+     const imgSrc = `${process.env.NEXT_PUBLIC_API_URL}/faculty/${item.id}/avatar`;
 
       return (
         <div

@@ -32,17 +32,13 @@ const getYoutubeThumbnail = (url?: string) => {
   return `https://img.youtube.com/vi/${id}/maxres1.jpg`;
 };
 
-export default function AlumniPodcastCarousel({
-  heading = "Alumni Podcast",
-  backgroundColor = "",
-}: CarouselProps) {
-  
+export default function AlumniPodcastCarousel({ heading = "Alumni Podcast", backgroundColor = "" }: CarouselProps) {
   // --- State ---
   const [podcasts, setPodcasts] = useState<AlumniPodcast[]>([]);
   const [loading, setLoading] = useState(true);
   const [index, setIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
-  
+
   // GSAP Refs
   const directionRef = useRef(1);
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -53,21 +49,21 @@ export default function AlumniPodcastCarousel({
       try {
         const apiUrl = process.env.NEXT_PUBLIC_API_URL;
         if (!apiUrl) return;
-        
+
         const res = await fetch(`${apiUrl}/alumni/podcast`, { cache: "no-store" });
         if (!res.ok) throw new Error("Network response was not ok");
-        
+
         const data: AlumniPodcast[] = await res.json();
-        
+
         const processedData = data.map((podcast) => {
-          let thumbnailUrl = getYoutubeThumbnail(podcast.url); 
-          
+          let thumbnailUrl = getYoutubeThumbnail(podcast.url);
+
           // --- UPDATED IMAGE LOGIC HERE ---
           // Use the uploaded image if it exists, otherwise fallback to YouTube thumbnail
           if (podcast.thumbnailUrl) {
             thumbnailUrl = `${apiUrl}/alumni/file/${podcast.thumbnailUrl}`;
           }
-          
+
           return { ...podcast, thumbnailUrl };
         });
 
@@ -106,11 +102,11 @@ export default function AlumniPodcastCarousel({
   // --- Auto-Slide Timer ---
   useEffect(() => {
     if (podcasts.length === 0) return;
-    
+
     // Automatically trigger 'next' every 4.5 seconds
     const timer = setInterval(() => {
       next();
-    }, 4500); 
+    }, 4500);
 
     // Cleanup interval on unmount or when dependencies change
     return () => clearInterval(timer);
@@ -138,7 +134,7 @@ export default function AlumniPodcastCarousel({
   // --- GSAP Animation Logic ---
   const animateCard = (card: HTMLDivElement, imgSrc: string) => {
     const dir = directionRef.current;
-    
+
     const oldWrapper = card.querySelector(".active-wrapper") as HTMLDivElement;
     const newWrapper = card.querySelector(".incoming-wrapper") as HTMLDivElement;
 
@@ -146,11 +142,11 @@ export default function AlumniPodcastCarousel({
 
     const newImg = newWrapper.querySelector("img");
     if (newImg) {
-        newImg.src = imgSrc; 
+      newImg.src = imgSrc;
     }
 
     setIsAnimating(true);
-    
+
     const startX = dir > 0 ? "100%" : "-100%";
 
     gsap.set(newWrapper, { x: startX, zIndex: 2, display: "block" });
@@ -159,7 +155,7 @@ export default function AlumniPodcastCarousel({
     const tl = gsap.timeline({
       onComplete: () => {
         setIsAnimating(false);
-      }
+      },
     });
 
     tl.to(newWrapper, { x: "0%", duration: 0.8, ease: "power3.inOut" });
@@ -183,15 +179,15 @@ export default function AlumniPodcastCarousel({
       const activeWrapper = card.querySelector(".active-wrapper");
       if (activeWrapper) {
         const img = activeWrapper.querySelector("img");
-        if(img) {
-            const offset = [-2, -1, 0, 1, 2][i];
-            const podcast = getPodcast(offset);
-            if (podcast && podcast.thumbnailUrl) img.src = podcast.thumbnailUrl;
+        if (img) {
+          const offset = [-2, -1, 0, 1, 2][i];
+          const podcast = getPodcast(offset);
+          if (podcast && podcast.thumbnailUrl) img.src = podcast.thumbnailUrl;
         }
       }
     });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [podcasts]); 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [podcasts]);
 
   // Index Change Trigger
   useEffect(() => {
@@ -202,62 +198,60 @@ export default function AlumniPodcastCarousel({
       const podcast = getPodcast(offset);
       if (podcast && podcast.thumbnailUrl) animateCard(card, podcast.thumbnailUrl);
     });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index, podcasts]);
 
   const handleVideoClick = (url: string) => window.open(url, "_blank");
 
   // --- BEAUTIFUL LOADING STATE ---
   if (loading) {
-    return (
-      null
-    );
+    return null;
   }
-  
+
   if (podcasts.length === 0) return null;
 
   const currentCenterPodcast = getPodcast(0);
 
   return (
     <section className={`w-full flex flex-col justify-center items-center pt-5 md:pt-0  ${backgroundColor} overflow-hidden`}>
-      
       <div className="w-full max-w-7xl px-5 flex flex-col md:flex-row justify-center items-center pb-9 lg:pb-12">
-        <h2 className="text-3xl md:text-[40px] lg:text-5xl font-bold text-[#1D1D1F] text-center md:text-left">
-          {heading}
-        </h2>
+        <h2 className="text-3xl md:text-[40px] lg:text-5xl font-bold text-[#1D1D1F] text-center md:text-left">{heading}</h2>
       </div>
 
       <div
         className="w-full md:w-[120%] flex justify-center items-end gap-3 md:gap-10 touch-pan-y"
-        onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
       >
         <Card refIndex={0} size="sm" registerRef={registerRef} />
-        
+
         <Card refIndex={1} size="md" registerRef={registerRef}>
-          <button onClick={prev} className="md:w-12 md:h-12 h-8 w-8 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-md flex items-center justify-center transition-colors">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          <button
+            onClick={prev}
+            className="md:w-12 md:h-12 h-8 w-8 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-md flex items-center justify-center transition-colors"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="m15 18-6-6 6-6" />
+            </svg>
           </button>
         </Card>
-        
+
         {/* --- MAIN CARD --- */}
-        <Card 
-            refIndex={2} 
-            size="lg" 
-            main 
-            registerRef={registerRef}
-            title={currentCenterPodcast?.title} 
-        >
-           {currentCenterPodcast?.url && (
-              <div 
-                onClick={() => handleVideoClick(currentCenterPodcast.url)}
-                className="absolute inset-0 z-30 cursor-pointer"
-              />
-           )}
+        <Card refIndex={2} size="lg" main registerRef={registerRef} title={currentCenterPodcast?.title}>
+          {currentCenterPodcast?.url && (
+            <div onClick={() => handleVideoClick(currentCenterPodcast.url)} className="absolute inset-0 z-30 cursor-pointer" />
+          )}
         </Card>
 
         <Card refIndex={3} size="md" registerRef={registerRef}>
-          <button onClick={next} className="md:w-12 md:h-12 h-8 w-8 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-md flex items-center justify-center transition-colors">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          <button
+            onClick={next}
+            className="md:w-12 md:h-12 h-8 w-8 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-md flex items-center justify-center transition-colors"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="m9 18 6-6-6-6" />
+            </svg>
           </button>
         </Card>
 
@@ -272,11 +266,13 @@ export default function AlumniPodcastCarousel({
       </div>
 
       <div className="mt-10 flex justify-center">
-        <button onClick={() => window.open("https://www.instagram.com/cec.nexus/", "_blank")} className="text-[#2884CA] font-bold text-[17px] bg-[#d9ebff] px-6 py-2 rounded-3xl flex items-center gap-2 hover:bg-[#cce4ff] transition-colors">
+        <button
+          onClick={() => window.open("https://www.instagram.com/cec.nexus/", "_blank")}
+          className="text-[#2884CA] font-bold text-[17px] bg-[#d9ebff] px-6 py-2 rounded-3xl flex items-center gap-2 hover:bg-[#cce4ff] transition-colors"
+        >
           {InstagramBlue && <InstagramBlue />} Follow us on Instagram
         </button>
       </div>
-
     </section>
   );
 }
@@ -295,11 +291,10 @@ interface CardProps {
 const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
   const img = e.currentTarget;
   const currentSrc = img.src;
-  
+
   if (currentSrc.includes("maxres1.jpg")) {
     img.src = currentSrc.replace("maxres1.jpg", "sd1.jpg");
-  } 
-  else if (currentSrc.includes("sd1.jpg")) {
+  } else if (currentSrc.includes("sd1.jpg")) {
     img.src = currentSrc.replace("sd1.jpg", "hq1.jpg");
   }
 };
@@ -308,48 +303,29 @@ function Card({ size, children, main = false, refIndex, registerRef, title }: Ca
   const sizeMap = {
     sm: "hidden lg:block lg:w-[26vw] h-[55vh]  scale-90",
     md: "hidden md:block md:w-[30vw] lg:w-[25vw] h-[40vh] lg:h-[70vh] ",
-    lg: "w-[85vw] md:w-[50vw] lg:w-[28vw] h-[35vh] md:h-[45vh] lg:h-[80vh] z-10", 
+    lg: "w-[85vw] md:w-[50vw] lg:w-[28vw] h-[35vh] md:h-[45vh] lg:h-[80vh] z-10",
   };
 
   return (
-    <div
-      ref={(el) => registerRef(refIndex, el)}
-      className={`relative transition-all duration-500 ${sizeMap[size]}`}
-    >
+    <div ref={(el) => registerRef(refIndex, el)} className={`relative transition-all duration-500 ${sizeMap[size]}`}>
       {/* INNER MASK CONTAINER */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
-        
         <div className="absolute inset-0 w-full h-full active-wrapper">
-            <img 
-                src="" 
-                alt="" 
-                onError={handleImageError}
-                className="w-full h-full object-fill transition-transform duration-300" 
-            />
+          <img src={null} alt="" onError={handleImageError} className="w-full h-full object-fill transition-transform duration-300" />
         </div>
 
         <div className="absolute inset-0 w-full h-full incoming-wrapper hidden">
-            <img 
-                src="" 
-                alt="" 
-                onError={handleImageError}
-                className="w-full h-full object-fill transition-transform duration-300" 
-            />
+          <img src={null} alt="" onError={handleImageError} className="w-full h-full object-fill transition-transform duration-300" />
         </div>
 
-        <div className="absolute inset-0 z-20 flex items-center justify-center">
-            {children}
-        </div>
+        <div className="absolute inset-0 z-20 flex items-center justify-center">{children}</div>
       </div>
 
       {main && title && (
         <div className="absolute top-full left-1/2 -translate-x-1/2 w-[85vw] md:w-[35vw] lg:w-[24vw] text-center mt-6 z-50">
-            <h3 className="text-xl font-bold text-[#1D1D1F] leading-tight">
-                {title}
-            </h3>
+          <h3 className="text-xl font-bold text-[#1D1D1F] leading-tight">{title}</h3>
         </div>
       )}
-
     </div>
   );
 }
