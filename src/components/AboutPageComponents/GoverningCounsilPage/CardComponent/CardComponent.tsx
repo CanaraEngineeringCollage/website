@@ -1,9 +1,12 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import FacultyModal, { bufferToBase64, CouncilMember } from "../../../DepartmentComponents/FacultyModal/FacultyModal";
+// Removed bufferToBase64 from imports
+import FacultyModal, { CouncilMember } from "../../../DepartmentComponents/FacultyModal/FacultyModal";
 
 interface CardMember extends CouncilMember {
+  id: string | number; // Required to target the specific faculty member's image
+  hasAvatar?: boolean;  // ✅ FIX 1: Changed from hasImage to match backend
   roles?: { title: string; organization: string }[];
 }
 
@@ -13,14 +16,20 @@ const ProfileCard = ({ title }: { title: string }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedMember, setSelectedMember] = useState<CardMember | null>(null);
+  
+  // Use a stable timestamp for cache-busting to prevent image flickering on state changes
+  const [fetchTime, setFetchTime] = useState(Date.now());
+
+  const baseUrl = process.env.NEXT_PUBLIC_API_URL;
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const baseUrl = process.env.NEXT_PUBLIC_API_URL;
-
         // Fetch both endpoints concurrently
-        const [keyRes, hodRes] = await Promise.all([fetch(`${baseUrl}/faculty?keyFunctionary=true`), fetch(`${baseUrl}/faculty?hod=true`)]);
+        const [keyRes, hodRes] = await Promise.all([
+          fetch(`${baseUrl}/faculty?keyFunctionary=true`), 
+          fetch(`${baseUrl}/faculty?hod=true`)
+        ]);
 
         const keyJson = await keyRes.json();
         const hodJson = await hodRes.json();
@@ -30,6 +39,7 @@ const ProfileCard = ({ title }: { title: string }) => {
 
         setKeyFunctionaries(finalKeyData);
         setData(finalHodData);
+        setFetchTime(Date.now()); // Update timestamp when fresh data arrives
       } catch (error) {
         console.error("Error fetching faculty data:", error);
       } finally {
@@ -38,7 +48,7 @@ const ProfileCard = ({ title }: { title: string }) => {
     };
 
     fetchData();
-  }, []);
+  }, [baseUrl]);
 
   const handleCardClick = (member: CardMember) => {
     setSelectedMember(member);
@@ -83,13 +93,19 @@ const ProfileCard = ({ title }: { title: string }) => {
 
             return (
               <div
-                key={index}
+                key={item.id || index}
                 onClick={() => handleCardClick(item)}
                 className={`relative w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md cursor-pointer transition-transform  ${
                   shouldCenterLast ? "md:col-start-2 xl:col-start-auto" : ""
                 }`}
               >
-                <Image src={bufferToBase64(item.avatar) || ""} alt={item.name} fill className="object-cover" />
+                <Image 
+                  // ✅ FIX 2: Changed `item.hasImage` to `item.hasAvatar` and `/image` to `/avatar`
+                  src={item.hasAvatar ? `${baseUrl}/faculty/${item.id}/avatar?t=${fetchTime}` : "/fallback-avatar.png"} 
+                  alt={item.name} 
+                  fill 
+                  className="object-cover" 
+                />
                 <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
                 <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full">
                   <h2 className="text-base sm:text-lg md:text-xl font-bold leading-tight ">{item.name}</h2>
@@ -123,13 +139,19 @@ const ProfileCard = ({ title }: { title: string }) => {
 
             return (
               <div
-                key={index}
+                key={item.id || index}
                 onClick={() => handleCardClick(item)}
                 className={`relative w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md cursor-pointer transition-transform  ${
                   shouldCenterLast ? "md:col-start-2 xl:col-start-auto" : ""
                 }`}
               >
-                <Image src={bufferToBase64(item.avatar) || ""} alt={item.name} fill className="object-cover" />
+                <Image 
+                  // ✅ FIX 2: Changed `item.hasImage` to `item.hasAvatar` and `/image` to `/avatar`
+                  src={item.hasAvatar ? `${baseUrl}/faculty/${item.id}/avatar?t=${fetchTime}` : "/fallback-avatar.png"} 
+                  alt={item.name} 
+                  fill 
+                  className="object-cover" 
+                />
                 <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
                 <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full">
                   <h2 className="text-base sm:text-lg md:text-xl font-bold leading-tight ">{item.name}</h2>

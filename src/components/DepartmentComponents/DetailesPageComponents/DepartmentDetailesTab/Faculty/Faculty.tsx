@@ -17,7 +17,7 @@ export interface FacultyMember {
   id: number;
   name: string;
   image?: string;
-  avatar?: { type: string; data: number[] };
+  hasAvatar?: boolean; // ✅ FIX 1: Added hasAvatar flag
   category: string;
   designation: string;
   department: string;
@@ -49,11 +49,7 @@ const SkeletonCard: React.FC = () => (
   </div>
 );
 
-const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
-  const binary = buffer.data.reduce((acc, byte) => acc + String.fromCharCode(byte), "");
-  const base64 = btoa(binary);
-  return `data:image/jpeg;base64,${base64}`;
-};
+// ✅ REMOVED bufferToBase64 function
 
 const Faculty = ({ teachingStaff, technicalStaff, loading = false }: FacultyProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -83,7 +79,13 @@ const Faculty = ({ teachingStaff, technicalStaff, loading = false }: FacultyProp
             shouldCenterLast ? "md:col-start-2 xl:col-start-auto" : ""
           }`}
         >
-          <Image src={item.avatar ? bufferToBase64(item.avatar) : item.image || ""} alt={item.name} fill className="object-cover" />
+          {/* ✅ FIX 2: Used hasAvatar and the backend URL */}
+          <Image 
+            src={item.hasAvatar ? `${process.env.NEXT_PUBLIC_API_URL}/faculty/${item.id}/avatar` : (item.image || "/fallback-avatar.png")} 
+            alt={item.name} 
+            fill 
+            className="object-cover" 
+          />
           <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
           <div className="absolute z-20 left-0 px-2 sm:px-3 md:px-4 bottom-3 sm:bottom-4 w-full">
             <h2 className="text-base sm:text-lg md:text-sm lg:text-sm lg2:text-base xl:text-xl font-bold leading-tight">{item.name}</h2>
@@ -131,7 +133,7 @@ const Faculty = ({ teachingStaff, technicalStaff, loading = false }: FacultyProp
             </>
           )}
 
-          <FacultyModal isOpen={isModalOpen} onClose={closeModal} facultyData={selectedMember} />
+          <FacultyModal isOpen={isModalOpen} onClose={closeModal} facultyData={selectedMember as any} />
         </>
       )}
     </section>

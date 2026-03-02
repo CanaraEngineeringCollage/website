@@ -34,7 +34,7 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-      <ProfileCard keyFunctionaries={keyFunctionariesData} datam={datam} title="Head of the Departments" />
+      <ProfileCard  title="Head of the Departments" />
       <section className="bg-[#E5E5EA]">
         <FooterCard />
       </section>

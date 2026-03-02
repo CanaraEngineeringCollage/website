@@ -45,7 +45,8 @@ interface LocalFaculty {
 interface CouncilMember {
   id: number;
   name: string;
-  image: string;
+  image?: string;
+  hasAvatar?: boolean; // ✅ FIX 1: Added hasAvatar flag
   designation: string;
   category: string;
   department: string;
@@ -67,12 +68,7 @@ import Link from "next/link";
 import formatDepartmentName from "@/utils/formatDepartmentName";
 import DepartmentalStructure from "../DepartmentalStructure/DepartmentalStructure";
 
-const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
-  if (!buffer || !buffer.data) return "";
-  const binary = buffer.data.reduce((acc, byte) => acc + String.fromCharCode(byte), "");
-  const base64 = btoa(binary);
-  return `data:image/jpeg;base64,${base64}`;
-};
+// ✅ REMOVED bufferToBase64 function
 
 const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   const { slug } = useParams();
@@ -237,17 +233,9 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
     }
   }, [selectedSection, department?.name, facultyData.length]);
 
-  // Separate teaching vs technical staff
-  const sortByPriorityAndDate = (arr: FacultyMember[]) =>
-    arr.sort((a, b) => {
-      if (a.priority && b.priority) return a.priority - b.priority;
-      if (a.priority && !b.priority) return -1;
-      if (!a.priority && b.priority) return 1;
-      return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime();
-    });
-
-  const teachingStaff = sortByPriorityAndDate(facultyData.filter((item) => item.type !== "Technical Staff"));
-  const technicalStaff = sortByPriorityAndDate(facultyData.filter((item) => item.type === "Technical Staff"));
+  // ✅ REMOVED manual sorting logic since backend handles it perfectly now!
+  const teachingStaff = facultyData.filter((item) => item.type !== "Technical Staff");
+  const technicalStaff = facultyData.filter((item) => item.type === "Technical Staff");
 
   const hodFaculty = React.useMemo(
     () => facultyData.find((f) => f.name === department?.depatmentHead?.name),
@@ -306,7 +294,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   const hodData = React.useMemo(() => {
     if (!department?.depatmentHead) return undefined;
 
-    const sourceData = hodApiData || hodFaculty;
+    const sourceData = hodApiData || (hodFaculty as unknown as CouncilMember);
 
     return {
       ...department.depatmentHead,
@@ -314,8 +302,10 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
         ? {
             name: sourceData.name,
             position: sourceData.designation,
-            imageUrl: sourceData.avatar ? bufferToBase64(sourceData.avatar) : sourceData.image || department.depatmentHead.imageUrl,
-            avatar: sourceData.avatar,
+            // ✅ FIX 2: Check for hasAvatar and use API endpoint instead of buffer
+            imageUrl: sourceData.hasAvatar 
+               ? `${process.env.NEXT_PUBLIC_API_URL}/faculty/${sourceData.id}/avatar` 
+               : sourceData.image || department.depatmentHead.imageUrl,
           }
         : {}),
     };

@@ -25,10 +25,12 @@ const DepartmentHeadMessage: React.FC<DepartmentHeadMessageProps> = ({ departmen
   const [loading, setLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const baseUrl = process.env.NEXT_PUBLIC_API_URL; // ✅ Added baseUrl for endpoint fetch
+
   useEffect(() => {
     const fetchDepartmentHead = async () => {
       try {
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/faculty?hod=true&department=${encodeURIComponent(departmentName)}`);
+        const response = await fetch(`${baseUrl}/faculty?hod=true&department=${encodeURIComponent(departmentName)}`);
         if (response.ok) {
           const result = await response.json();
           if (result.data && result.data.length > 0) {
@@ -38,6 +40,7 @@ const DepartmentHeadMessage: React.FC<DepartmentHeadMessageProps> = ({ departmen
       } catch (error) {
         console.error("Failed to fetch department head:", error);
       } finally {
+        setDepartmentHeadData((prev) => prev); // keep previous state if fetch fails
         setLoading(false);
       }
     };
@@ -45,7 +48,7 @@ const DepartmentHeadMessage: React.FC<DepartmentHeadMessageProps> = ({ departmen
     if (departmentName) {
       fetchDepartmentHead();
     }
-  }, [departmentName]);
+  }, [departmentName, baseUrl]);
 
   if (loading) {
     return <div className="w-full h-96 bg-[#051B2C] animate-pulse"></div>;
@@ -55,11 +58,10 @@ const DepartmentHeadMessage: React.FC<DepartmentHeadMessageProps> = ({ departmen
     return null;
   }
 
-  const imageSrc = departmentHeadData.avatar
-    ? bufferToBase64(departmentHeadData.avatar)
-    : typeof departmentHeadData.image === "string"
-      ? departmentHeadData.image
-      : bufferToBase64(departmentHeadData.image as any);
+  // ✅ FIX: Constructed image source using the hasAvatar flag and endpoint fetch
+  const imageSrc = departmentHeadData.hasAvatar
+    ? `${baseUrl}/faculty/${departmentHeadData.id}/avatar`
+    : (departmentHeadData.images || "/fallback-avatar.png");
 
   return (
     <section className="w-full bg-[#051B2C]">

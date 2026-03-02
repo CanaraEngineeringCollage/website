@@ -20,20 +20,24 @@ const AlumniPortal = () => {
 
   const alumniTitles = alumniData?.map((section) => section.title) || [];
 
+  const baseUrl = process.env.NEXT_PUBLIC_API_URL; // ✅ Added baseUrl
+
   useEffect(() => {
     const fetchEvents = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/events?page=1&limit=1000&category=Alumni`);
+        const response = await fetch(`${baseUrl}/events?page=1&limit=1000&category=Alumni`);
         const json = await response.json();
         
         const dataArray = Array.isArray(json.data) ? json.data : (Array.isArray(json) ? json : []);
 
-        const mappedEvents: AlumniEvent[] = dataArray.map((event: ApiEvent) => {
+        const mappedEvents: AlumniEvent[] = dataArray.map((event: any) => { // ✅ Used 'any' to cleanly access hasImage from backend
           const isVideo = !!event.videoUrl;
+          
+          // ✅ FIX: Replaced buffer check with hasImage flag and backend URL
           const imageSrc = isVideo 
-            ? event.videoUrl! 
-            : (event.image?.data ? bufferToBase64(event.image.data) : "");
+            ? event.videoUrl 
+            : (event.hasImage ? `${baseUrl}/events/${event.id}/image` : "");
 
           return {
             id: event.id,
@@ -54,7 +58,7 @@ const AlumniPortal = () => {
     };
 
     fetchEvents();
-  }, []);
+  }, [baseUrl]);
 
   return (
     <section className="py-10 xl:py-20 text-[#1D1D1F] overflow-hidden">

@@ -29,7 +29,8 @@ interface Faculty {
 interface CouncilMember {
   id: number;
   name: string;
-  image: string;
+  image?: string;
+  hasAvatar?: boolean; // ✅ Added hasAvatar flag
   designation: string;
   category: string;
   department: string;
@@ -44,11 +45,7 @@ interface CouncilMember {
 interface DepartmentSectionProps {
   departmentName: string;
 }
-const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
-  const binary = buffer.data.reduce((acc, byte) => acc + String.fromCharCode(byte), "");
-  const base64 = btoa(binary);
-  return `data:image/jpeg;base64,${base64}`;
-};
+
 export default function DepartmentFacultySection({ departmentName }: DepartmentSectionProps) {
   const [data, setData] = useState<CouncilMember[]>([]);
   const [startIndex, setStartIndex] = useState(0);
@@ -57,22 +54,18 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
   const [facultyData, setFacultyData] = useState<CouncilMember[]>([]);
   const [loading, setLoading] = useState(false);
 
+  const baseUrl = process.env.NEXT_PUBLIC_API_URL;
+
   useEffect(() => {
     async function fetchFaculty() {
       setLoading(true);
       try {
-        const url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent(departmentName)}&all=true`; // ✅ Add all=true to fetch all faculties
+        const url = `${baseUrl}/faculty?department=${encodeURIComponent(departmentName)}&all=true`; // ✅ Add all=true to fetch all faculties
         const res = await fetch(url);
         const data: CouncilMember[] = await res.json();
 
-        const sortedData = data.sort((a, b) => {
-          if (a.priority && b.priority) return a.priority - b.priority;
-          if (a.priority && !b.priority) return -1;
-          if (!a.priority && b.priority) return 1;
-          return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime();
-        });
-
-        setFacultyData(sortedData); // top 10
+        // ✅ Removed manual sorting as the backend handles it now
+        setFacultyData(data); // top 10
       } catch (err) {
         console.error("Error fetching faculty:", err);
       } finally {
@@ -81,7 +74,7 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
     }
 
     fetchFaculty();
-  }, [departmentName]);
+  }, [departmentName, baseUrl]);
 
   useEffect(() => {
     setData(facultyData);
@@ -206,8 +199,13 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
                   onClick={() => openModal(member)}
                   className="relative cursor-pointer w-full max-w-[309px] aspect-[2/3] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md"
                 >
-                  {/* Image fills card completely */}
-                  <Image src={bufferToBase64(member?.avatar)} alt={member.name} fill className="object-cover" />
+                  {/* ✅ Fixed Image Source */}
+                  <Image 
+                    src={member.hasAvatar ? `${baseUrl}/faculty/${member.id}/avatar` : (member.image || "/fallback-avatar.png")} 
+                    alt={member.name} 
+                    fill 
+                    className="object-cover" 
+                  />
 
                   {/* Responsive gradient */}
                   <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
@@ -271,10 +269,10 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
                   onClick={() => openModal(member)}
                   className="relative cursor-pointer w-full h-[360px] md:w-2/3 md:h-[480px] rounded-xl  overflow-hidden bg-[#6DC0EB] text-white flex flex-col justify-center items-center shadow-md "
                 >
-                  {/* Image fills card completely */}
+                  {/* ✅ Fixed Image Source */}
                   <Image
                     onClick={() => router.push(`/user-details/${member.id}`)}
-                    src={bufferToBase64(member?.avatar)}
+                    src={member.hasAvatar ? `${baseUrl}/faculty/${member.id}/avatar` : (member.image || "/fallback-avatar.png")}
                     alt={member.name}
                     fill
                     className="object-cover"
@@ -330,7 +328,7 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
           </div>
         </div>
       </div>
-      <FacultyModal isOpen={isModalOpen} onClose={closeModal} facultyData={selectedMember} />
+      <FacultyModal isOpen={isModalOpen} onClose={closeModal} facultyData={selectedMember as any} />
     </section>
   );
 }

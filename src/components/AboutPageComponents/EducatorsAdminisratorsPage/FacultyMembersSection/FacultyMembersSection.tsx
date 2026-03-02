@@ -9,6 +9,7 @@ interface CouncilMember {
   id: number;
   name: string;
   image?: string;
+  hasAvatar?: boolean; // ✅ FIX 1: Added hasAvatar flag
   avatar?: { type: string; data: number[] };
   designation: string;
   department?: string;
@@ -31,7 +32,13 @@ const FacultyCard: React.FC<{ member: CouncilMember; onClick?: () => void }> = (
       onClick ? "cursor-pointer" : "cursor-default"
     } w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md`}
   >
-    <Image src={member.avatar ? bufferToBase64(member.avatar) : member.image || ""} alt={member.name} fill className="object-cover" />
+    <Image 
+      // ✅ FIX 2: Used hasAvatar and the backend URL
+      src={member.hasAvatar ? `${process.env.NEXT_PUBLIC_API_URL}/faculty/${member.id}/avatar` : (member.image || "/fallback-avatar.png")} 
+      alt={member.name} 
+      fill 
+      className="object-cover" 
+    />
     <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
     <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full">
       <h2 className="text-base sm:text-lg md:text-sm lg:text-sm lg2:text-base xl:text-xl font-bold leading-tight">{member.name}</h2>
@@ -139,24 +146,11 @@ const FacultyMembersSection: React.FC = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [selectedCategory, selectedDepartment]);
 
-  const sortedFaculty = [...facultyData].sort((a, b) => {
-    // 1. If A has priority but B does not, A comes first
-    if (a.priority && !b.priority) return -1;
+  // ✅ REMOVED manual sorting here since backend handles it perfectly now!
+  const generalTeaching = facultyData.filter((item) => item.type !== "Technical Staff" && !item.subDepartment);
+  const technicalStaff = facultyData.filter((item) => item.type === "Technical Staff");
 
-    // 2. If B has priority but A does not, B comes first
-    if (!a.priority && b.priority) return 1;
-
-    // 3. If BOTH have priority, sort by the priority number (Ascending: 1, 2, 3...)
-    if (a.priority && b.priority) return a.priority - b.priority;
-
-    // 4. Fallback: If NEITHER has priority, sort by creation date
-    return new Date(a.createdAt || 0).getTime() - new Date(b.createdAt || 0).getTime();
-  });
-
-  const generalTeaching = sortedFaculty.filter((item) => item.type !== "Technical Staff" && !item.subDepartment);
-  const technicalStaff = sortedFaculty.filter((item) => item.type === "Technical Staff");
-
-  const groupedBySubDept = sortedFaculty.reduce((acc: Record<string, CouncilMember[]>, faculty) => {
+  const groupedBySubDept = facultyData.reduce((acc: Record<string, CouncilMember[]>, faculty) => {
     if (faculty.subDepartment) {
       if (!acc[faculty.subDepartment]) acc[faculty.subDepartment] = [];
       acc[faculty.subDepartment].push(faculty);
@@ -299,7 +293,7 @@ const FacultyMembersSection: React.FC = () => {
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg2:grid-cols-3 gap-4 justify-items-center">
               {/* ✅ NO onClick here → NO MODAL → NO View Profile */}
-              {sortedFaculty.map((item) => (
+              {facultyData.map((item) => ( // ✅ Changed from sortedFaculty to facultyData
                 <FacultyCard
                   key={item.id}
                   member={item}
@@ -318,7 +312,7 @@ const FacultyMembersSection: React.FC = () => {
         </div>
       </div>
 
-      <FacultyModal isOpen={isModalOpen} onClose={setIsModalOpen} facultyData={selectedMember} />
+      <FacultyModal isOpen={isModalOpen} onClose={setIsModalOpen} facultyData={selectedMember as any} />
     </section>
   );
 };

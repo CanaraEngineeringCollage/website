@@ -42,7 +42,8 @@ type Event = {
   id: number;
   title: string;
   date: string;
-  image: any;
+  image?: any;
+  hasImage?: boolean; // ✅ FIX 1: Added hasImage flag
   description: string;
 };
 
@@ -54,19 +55,9 @@ const ExploreCampus = ({ departmentName, events }: { departmentName: string; eve
   const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
   const modalRef = useRef<HTMLDivElement>(null);
 
-  // ✅ FIXED: Safe Buffer → Base64 conversion (chunked to prevent stack overflow)
-  const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
-    if (!buffer?.data) return "";
-    const CHUNK_SIZE = 0x8000; // 32 KB per chunk
-    let binary = "";
-    const bytes = buffer.data;
-    const len = bytes.length;
-    for (let i = 0; i < len; i += CHUNK_SIZE) {
-      const chunk = bytes.slice(i, i + CHUNK_SIZE);
-      binary += String.fromCharCode.apply(null, chunk);
-    }
-    return `data:image/jpeg;base64,${btoa(binary)}`;
-  };
+  const baseUrl = process.env.NEXT_PUBLIC_API_URL; // ✅ Added baseUrl
+
+  // ✅ REMOVED bufferToBase64 function
 
   const openModal = (event: Event) => setSelectedEvent(event);
   const closeModal = () => setSelectedEvent(null);
@@ -90,7 +81,8 @@ const ExploreCampus = ({ departmentName, events }: { departmentName: string; eve
       {/* <h2 className="text-2xl font-semibold  mb-4 text-[#1D1D1F]">Events</h2> */}
       <div className="max-w-7xl mx-auto grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
         {events.map((event, index) => {
-          const src = event.image ? bufferToBase64(event.image) : "";
+          // ✅ FIX 2: Used hasImage and the backend URL
+          const src = event.hasImage ? `${baseUrl}/events/${event.id}/image` : (event.image || "/fallback-image.png");
 
           return (
             <div
@@ -162,9 +154,10 @@ const ExploreCampus = ({ departmentName, events }: { departmentName: string; eve
               </button>
 
               {/* Image */}
-              {selectedEvent.image && (
+              {(selectedEvent.hasImage || selectedEvent.image) && (
                 <Image
-                  src={bufferToBase64(selectedEvent.image)}
+                  // ✅ FIX 3: Used hasImage and the backend URL for the modal
+                  src={selectedEvent.hasImage ? `${baseUrl}/events/${selectedEvent.id}/image` : (selectedEvent.image || "/fallback-image.png")}
                   alt={selectedEvent.title}
                   width={800}
                   height={600}

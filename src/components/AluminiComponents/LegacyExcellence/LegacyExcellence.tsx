@@ -81,49 +81,30 @@ export default function LegacyExcellance() {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [progress, setProgress] = useState<number>(0);
   const [isPlaying, setIsPlaying] = useState<boolean>(true);
-  const [events, setEvents] = useState<Amenity[]>([]); // State to hold fetched events
+  const [events, setEvents] = useState<Amenity[]>([]); 
   const swiperRef = useRef<SwiperRef>(null);
   const progressRef = useRef<number>(0);
   const rafRef = useRef<number | null>(null);
   const AUTOPLAY_DELAY = 3000;
-
-  // Types for API response
-  interface ApiEvent {
-    id: string;
-    title: string;
-    description: string;
-    date: string | null;
-    videoUrl: string | null;
-    image: {
-      type: string;
-      data: number[];
-    };
-  }
-
-  // Helper to convert buffer to base64 safely
-  const bufferToBase64 = (buffer: number[]): string => {
-    if (!buffer || buffer.length === 0) return "";
-
-    // Process in chunks to avoid stack overflow with String.fromCharCode(...buffer)
-    const CHUNK_SIZE = 8192;
-    let binary = "";
-    for (let i = 0; i < buffer.length; i += CHUNK_SIZE) {
-      binary += String.fromCharCode.apply(null, buffer.slice(i, i + CHUNK_SIZE));
-    }
-
-    return `data:image/png;base64,${btoa(binary)}`;
-  };
+  
+  const baseUrl = process.env.NEXT_PUBLIC_API_URL || "https://apiserver.cec.edu.in";
 
   // Fetch data from API
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await fetch("https://apiserver.cec.edu.in/events?page=1&limit=4&category=Alumni");
+        const response = await fetch(`${baseUrl}/events?page=1&limit=4&category=Alumni`);
         const json = await response.json();
 
-        const mappedEvents: Amenity[] = json.data.map((event: ApiEvent) => {
+        const mappedEvents: Amenity[] = json.data.map((event: any) => {
           const isVideo = !!event.videoUrl;
-          const imageSrc = isVideo ? event.videoUrl! : event.image ? bufferToBase64(event.image.data) : "";
+          
+          // ✅ Updated to use the direct image endpoint
+          const imageSrc = isVideo 
+            ? event.videoUrl! 
+            : event.hasImage 
+              ? `${baseUrl}/events/${event.id}/image` 
+              : "";
 
           return {
             imageSrc: imageSrc,
@@ -143,7 +124,7 @@ export default function LegacyExcellance() {
     };
 
     fetchEvents();
-  }, []);
+  }, [baseUrl]);
 
   // Open modal with item data
   const openModal = (item: ModalContentType, index: number) => {
@@ -179,21 +160,6 @@ export default function LegacyExcellance() {
     rafRef.current = requestAnimationFrame(step);
   };
 
-  // Pause or resume the carousel
-  const toggleCarousel = () => {
-    if (swiperRef.current) {
-      if (isPlaying) {
-        swiperRef.current.swiper.autoplay.stop();
-        setIsPlaying(false);
-        if (rafRef.current) cancelAnimationFrame(rafRef.current);
-      } else {
-        swiperRef.current.swiper.autoplay.start();
-        setIsPlaying(true);
-        animateProgress(performance.now(), progressRef.current);
-      }
-    }
-  };
-
   // Reset progress on slide change and when events are loaded
   useEffect(() => {
     const swiper = swiperRef.current?.swiper;
@@ -209,7 +175,6 @@ export default function LegacyExcellance() {
     swiper.on("slideChange", handleSlideChange);
     swiper.on("autoplay", handleSlideChange);
 
-    // Start initial progress
     if (isPlaying) animateProgress(performance.now());
 
     return () => {
@@ -217,8 +182,7 @@ export default function LegacyExcellance() {
       swiper.off("autoplay", handleSlideChange);
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isPlaying, events]); // Add events as dependency
+  }, [isPlaying, events]);
 
   useEffect(() => {
     if (isModalOpen) document.body.style.overflow = "hidden";
@@ -229,16 +193,15 @@ export default function LegacyExcellance() {
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isModalOpen, closeModal]);
+  }, [isModalOpen]);
 
   if (events.length === 0) {
-    return null; // Or return a loading spinner
+    return null;
   }
 
   return (
     <section className="max-w-7xl xl:max-w-[75%] px-5 lg:px-0   mx-auto  py-8 lg:pt-3 lg:pb-10">
-      <div className="grid grid-cols-1  lg:grid-cols-2 gap-8 lg2:gap-10 items-start">
-        {/* Left Side - Swiper */}
+      <div className="grid grid-cols-1   lg:grid-cols-2 gap-8 lg2:gap-10 items-start">
         {events.map((item, index) => {
           const isVideo = item.isVideo;
           return (
@@ -253,16 +216,14 @@ export default function LegacyExcellance() {
                 <Image src={item.imageSrc} alt={item.title} width={700} height={700} className="w-full h-full object-cover rounded-3xl" />
               )}
 
-              {/* Text Overlay */}
               <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-10">
-                {/* FLEX ROW */}
                 <div className="flex items-center justify-between ">
                   <h2 className="text-white text-lg leading-[1.2] lg:text-[30px] line-clamp-1 font-bold">{item.title}</h2>
 
                   <button
                     aria-label="Learn More"
                     onClick={(e) => {
-                      e.stopPropagation(); // prevent double trigger
+                      e.stopPropagation();
                       openModal({ ...item, id: index.toString() }, index);
                     }}
                     className="px-5 py-2 bg-white rounded-full text-sm lg:text-base font-semibold text-primary hover:bg-gray-200 whitespace-nowrap"
@@ -274,11 +235,8 @@ export default function LegacyExcellance() {
             </div>
           );
         })}
-
-        {/* Navigation Buttons */}
       </div>
 
-      {/* Modal */}
       <AnimatePresence>
         {isModalOpen && modalContent && (
           <motion.div className="fixed inset-0 h-screen z-50 overflow-auto" initial="hidden" animate="visible" exit="exit">
@@ -303,7 +261,6 @@ export default function LegacyExcellance() {
                 <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">Next Up</h1>
                 <h1 onClick={goToNextCard} className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]">
                   <span className="line-clamp-1 ">{events[(currentIndex + 1) % events.length]?.title || "Next"}</span>
-
                   <MdKeyboardArrowRight className="ml-1 mt-0.5 text-[20px] md:text-[25px]" />
                 </h1>
               </motion.div>

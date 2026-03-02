@@ -25,6 +25,7 @@ export interface CouncilMember {
   id?: number | string;
   name: string;
   image?: string;
+  hasAvatar?: boolean; 
   avatar?: { type: string; data: number[] };
   images?: string;
   emergencycontact?: string;
@@ -171,6 +172,8 @@ export const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
 };
 
 export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyModalProps) {
+  const baseUrl = process.env.NEXT_PUBLIC_API_URL; 
+
   if (!facultyData) return null;
 
   return (
@@ -212,11 +215,12 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                 <div className="py-10 lg:px-20">
                   <div className="flex flex-col lg:flex-row gap-6 lg:items-center">
                     <div className="flex-shrink-0 mx-auto lg:mx-0">
-                      <div className="rounded-lg overflow-hidden w-60 h-80 bg-sky-400">
+                      {/* ✅ CHANGED bg-sky-400 to bg-gray-200 here */}
+                      <div className="rounded-lg overflow-hidden w-60 h-80 bg-gray-200">
                         <Image
                           width={100}
                           height={100}
-                          src={facultyData.avatar ? bufferToBase64(facultyData.avatar) : facultyData.images}
+                          src={facultyData.hasAvatar ? `${baseUrl}/faculty/${facultyData.id}/avatar` : (facultyData.images || "/fallback-avatar.png")}
                           alt="Faculty profile"
                           className="w-full h-full object-cover"
                         />
@@ -261,19 +265,18 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                           </thead>
                           <tbody className="text-gray-700">
                             {facultyData.qualifications
-                              .slice() // create a copy so original data is not mutated
+                              .slice() 
                               .sort((a, b) => {
-                                // Extract year as number
                                 const getYear = (val: string) => {
-                                  const match = val.match(/\d{4}/); // match 4-digit year
+                                  const match = val.match(/\d{4}/); 
                                   return match ? parseInt(match[0], 10) : 0;
                                 };
-                                return getYear(b.passingYear) - getYear(a.passingYear); // descending
+                                return getYear(b.passingYear) - getYear(a.passingYear); 
                               })
                               .map((qual, index) => (
                                 <tr key={index}>
                                   <td className="px-6 py-3 border-r border-[#D9D9D9]">{qual.degree}</td>
-                                  <td className="px-6 py-3 border-r border-[#D9D9D9]">{qual.nameOfDigree}</td>
+                                  <td className="px-6 py-3 border-r border-[#D9D9D9]">{qual.nameOfDigree as any}</td>
                                   <td className="px-6 py-3 border-r border-[#D9D9D9]">{qual.passingYear}</td>
                                   <td className="px-6 py-3 border-r border-[#D9D9D9]">
                                     {qual.college.toLowerCase().includes("vtu") ? qual.college.replace(/vtu/i, "VTU") : qual.college}

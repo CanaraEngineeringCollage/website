@@ -11,14 +11,12 @@ interface CouncilMember {
   id: number;
   name: string;
   image: string;
+  hasAvatar?: boolean; // ✅ Added hasAvatar flag
   roles: { title: string; organization: string }[];
 }
 
-const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
-  const binary = buffer.data.reduce((acc, byte) => acc + String.fromCharCode(byte), "");
-  const base64 = btoa(binary);
-  return `data:image/jpeg;base64,${base64}`;
-};
+// ✅ REMOVED bufferToBase64 function
+
 export default function DepartmentFaculty({ heading, description }: { heading: string; description: string }) {
   const [data, setData] = useState<CouncilMember[]>([]);
   const [startIndex, setStartIndex] = useState(0);
@@ -29,24 +27,19 @@ export default function DepartmentFaculty({ heading, description }: { heading: s
   const [facultyData, setFacultyData] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
+  const baseUrl = process.env.NEXT_PUBLIC_API_URL; // ✅ Added baseUrl
+
   useEffect(() => {
     const fetchFacultyData = async () => {
       try {
         setLoading(true);
-        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent("Placement Team")}&all=true`); // ✅ Filter by department in URL
+        const res = await fetch(`${baseUrl}/faculty?department=${encodeURIComponent("Placement Team")}&all=true`); // ✅ Filter by department in URL
         if (!res.ok) throw new Error("Failed to fetch faculty data");
 
         const data: any[] = await res.json(); // ✅ Array of Placement Team faculties
 
-        // Sort (no need to filter)
-        const placementTeam = data
-          .sort((a, b) => {
-            if (a.priority && b.priority) return a.priority - b.priority;
-            if (a.priority && !b.priority) return -1;
-            if (!a.priority && b.priority) return 1;
-            return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime();
-          })
-          .slice(0, 10); // take first 10 after sorting
+        // ✅ REMOVED manual frontend sorting, just slicing the first 10
+        const placementTeam = data.slice(0, 10); // take first 10 after backend sorting
 
         setFacultyData(placementTeam);
       } catch (error) {
@@ -57,7 +50,7 @@ export default function DepartmentFaculty({ heading, description }: { heading: s
     };
 
     fetchFacultyData();
-  }, []);
+  }, [baseUrl]);
 
   useEffect(() => {
     setData(facultyData);
@@ -158,9 +151,9 @@ export default function DepartmentFaculty({ heading, description }: { heading: s
                   key={index}
                   className="relative cursor-pointer w-full max-w-[309px] lg2:h-[450px] lg:h-[350px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md"
                 >
-                  {/* Image fills card completely */}
+                  {/* ✅ Fixed Image fills card completely */}
                   <Image
-                    src={bufferToBase64(member.avatar)}
+                    src={member.hasAvatar ? `${baseUrl}/faculty/${member.id}/avatar` : (member.image || "/fallback-avatar.png")}
                     alt={member.name}
                     fill
                     className="object-cover" // ensures no gaps, same as first design
@@ -233,8 +226,13 @@ export default function DepartmentFaculty({ heading, description }: { heading: s
                   key={index}
                   className="relative cursor-pointer w-full max-w-[309px] h-[400px] md:h-[420px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md"
                 >
-                  {/* Image fills card completely */}
-                  <Image src={bufferToBase64(member.avatar)} alt={member.name} fill className="object-cover" />
+                  {/* ✅ Fixed Image fills card completely (Mobile view) */}
+                  <Image 
+                    src={member.hasAvatar ? `${baseUrl}/faculty/${member.id}/avatar` : (member.image || "/fallback-avatar.png")} 
+                    alt={member.name} 
+                    fill 
+                    className="object-cover" 
+                  />
 
                   {/* Gradient overlay */}
                   <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
@@ -293,7 +291,7 @@ export default function DepartmentFaculty({ heading, description }: { heading: s
           </div>
         </div>
       </div>
-      <FacultyModal isOpen={isModalOpen} onClose={setIsModalOpen} facultyData={selectedMember} />
+      <FacultyModal isOpen={isModalOpen} onClose={setIsModalOpen} facultyData={selectedMember as any} />
     </section>
   );
 }
