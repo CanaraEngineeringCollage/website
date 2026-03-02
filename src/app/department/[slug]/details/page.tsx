@@ -3,8 +3,15 @@ import React from "react";
 import { allDepartmentsData } from "@/lib/allDepartments";
 import { notFound } from "next/navigation";
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const department = allDepartmentsData.find((dept) => dept.slug === params.slug);
+export async function generateStaticParams() {
+  return allDepartmentsData.map((dept) => ({
+    slug: dept.slug,
+  }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const department = allDepartmentsData.find((dept) => dept.slug === slug);
 
   if (!department) return notFound();
 
@@ -58,8 +65,9 @@ interface Faculty {
   employmentType: string;
   qualifications: Qualification[];
 }
-const Page = ({ params }: { params: { slug: string } }) => {
-  const department = allDepartmentsData.find((dept) => dept.slug === params.slug);
+const Page = async ({ params }: { params: Promise<{ slug: string }> }) => {
+  const { slug } = await params;
+  const department = allDepartmentsData.find((dept) => dept.slug === slug);
   if (!department) return notFound();
 
   return (

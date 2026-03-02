@@ -19,6 +19,7 @@ import Events from "../DepartmentDetailesTab/Events/Events";
 import Gallery, { GalleryItem } from "../DepartmentDetailesTab/Gallery/Gallery";
 import Magazines from "../DepartmentDetailesTab/Magazines/Magazines";
 import CareerProspects from "../CareerProspects/CareerProspects";
+import FacultyExcellence from "../DepartmentDetailesTab/FacultyExcellence/FacultyExcellence";
 
 interface Qualification {
   degree: string;
@@ -278,7 +279,9 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   // --> ADDED "Academic Syllabus & Schema" to the tabs array <--
   const departmentMenuItems = [
     "Department Profile",
-    ...(department?.name === "Artificial Intelligence & Machine Learning" || department?.name === "Mechanical Engineering" ? ["Career Prospects"] : []),
+    ...(department?.name === "Artificial Intelligence & Machine Learning" || department?.name === "Mechanical Engineering"
+      ? ["Career Prospects"]
+      : []),
     ...(department?.name !== "Mechanical Engineering" ? ["Organisation Structure"] : []),
     "Head of the Department",
     "Faculty & Staff",
@@ -290,7 +293,8 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
     "Facilities",
     "Student Achievements",
     ...(department?.name !== "Information Science & Engineering" ? ["Research & Product Development"] : []),
-    ...(department?.name === "Information Science & Engineering" || department?.name === "Mechanical Engineering" ? ["Publications"] : []),
+    ...(department?.name === "Information Science & Engineering" ? ["Publications"] : []),
+    ...(department?.name === "Mechanical Engineering" ? ["Faculty Excellence  and publication"] : []),
     "Magazines & Newsletters",
     "Events",
     "Gallery",
@@ -437,6 +441,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
               <Research deptName={department?.name} data={department?.research} />
             )}
             {selectedSection === "Publications" && department?.publications && <Publications data={department?.publications} />}
+            {selectedSection === "Faculty Excellence  and publication" && <FacultyExcellence />}
             {selectedSection === "Magazines & Newsletters" && department?.magazines && <Magazines data={department?.magazines} />}
             {selectedSection === "Events" && <Events events={events} departmentName={departmentName} />}
             {selectedSection === "Gallery" && <Gallery data={[...galleryItems, ...(department?.gallery || [])]} />}

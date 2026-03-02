@@ -55,14 +55,14 @@ const HeroSection = ({ images = [] }: HeroSectionProps) => {
     { label: "Affiliated to VTU", src: affiliated },
   ];
 
-  // Map API images to include both desktop and mobile sources. 
+  // Map API images to include both desktop and mobile sources.
   // Fall back to desktop if a specific mobile image isn't provided.
   const backgroundSlides =
     images.length > 0
       ? images.map((img) => ({
           type: "api",
           desktopSrc: img.desktopUrl,
-          mobileSrc: img.mobileUrl || img.desktopUrl, 
+          mobileSrc: img.mobileUrl || img.desktopUrl,
         }))
       : [
           { type: "static", desktopSrc: bg3, mobileSrc: bg3 },
@@ -89,7 +89,6 @@ const HeroSection = ({ images = [] }: HeroSectionProps) => {
         >
           {backgroundSlides.map((slide, index) => (
             <SwiperSlide key={index}>
-              
               {/* Desktop Image (Hidden on mobile) */}
               {slide.desktopSrc && (
                 <Image
@@ -145,13 +144,7 @@ const HeroSection = ({ images = [] }: HeroSectionProps) => {
               <div className="bg-white shadow-sm rounded-2xl w-full flex flex-col items-center py-5 px-2 min-h-[150px] h-full">
                 {/* Fixed height wrapper for the image */}
                 <div className="h-[70px] w-full flex items-center justify-center">
-                  <Image 
-                    src={item.src} 
-                    alt={item.label} 
-                    width={60} 
-                    height={60} 
-                    className="max-h-[60px] w-auto object-contain" 
-                  />
+                  <Image src={item.src} alt={item.label} width={60} height={60} className="max-h-[60px] w-auto object-contain" priority />
                 </div>
                 {/* mt-auto pushes the text to the absolute bottom evenly */}
                 <p className="text-sm font-medium text-center text-[#1a1a1a] mt-auto pt-2">{item.label}</p>
