@@ -44,8 +44,9 @@ interface CouncilMember {
   faculties?: Faculty[]; // Optional property for faculties
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const department = allDepartmentsData.find((dept) => dept.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const department = allDepartmentsData.find((dept) => dept.slug === slug);
 
   if (!department) return notFound();
 
@@ -64,7 +65,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     openGraph: {
       title,
       description,
-      url: `https://cec.edu.in/department/${params.slug}`,
+      url: `https://cec.edu.in/department/${slug}`,
       siteName: "Canara College",
       images: [
         {
@@ -90,8 +91,9 @@ export async function generateStaticParams() {
   return allDepartmentsData.map((dept) => ({ slug: dept.slug }));
 }
 
-export default function DepartmentPage({ params }: { params: { slug: string } }) {
-  const department = allDepartmentsData.find((dept) => dept.slug === params.slug);
+export default async function DepartmentPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const department = allDepartmentsData.find((dept) => dept.slug === slug);
 
   if (!department) return notFound();
 

@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     openGraph: {
       title,
       description,
-      url: `https://cec.edu.in/department/${params.slug}/details`,
+      url: `https://cec.edu.in/department/${slug}/details`,
       siteName: "Canara College",
       images: [
         {

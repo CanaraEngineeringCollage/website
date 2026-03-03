@@ -46,7 +46,7 @@ const Facilities: React.FC<FacilitiesProps> = ({ data, deptName }) => {
       <div>
         {deptName === "Artificial Intelligence & Machine Learning" && <h1 className="text-2xl font-semibold  mb-2 ">Laboratory Facilities</h1>}
         {deptName === "Mechanical Engineering" && <h1 className="text-2xl font-semibold  mb-2 ">Advanced Laboratory Ecosystem – “Where Engineering Vision <br className="hidden lg:block" /> Becomes Reality”</h1>}
-        {deptName != "Artificial Intelligence & Machine Learning" || deptName != "Mechanical Engineering" && <h1 className="text-2xl font-semibold mb-2 ">Department Facilities</h1>}
+        {deptName !== "Artificial Intelligence & Machine Learning" && deptName !== "Mechanical Engineering" && <h1 className="text-2xl font-semibold mb-2 ">Department Facilities</h1>}
         <p className="md:text-lg text-justify text-[14px] leading-7 text-textGray">
           {data.description.split(/(Data Structures and Algorithm Laboratory|Machine Learning Laboratory)/g).map((part, index) =>
             part === "Data Structures and Algorithm Laboratory" || part === "Machine Learning Laboratory" ? (
@@ -64,10 +64,27 @@ const Facilities: React.FC<FacilitiesProps> = ({ data, deptName }) => {
         {data.allFacilities.map((facility, idx) => (
           <div key={idx} className="pb-4">
             {facility.title2 && <h3 className="text-[22px] font-bold   text-textGray mb-2">{facility.title2}</h3>}
-          {facility.title&&  <h3 className={`text-xl font-bold flex items-center gap-1  text-textGray mb-2 `}><svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.5 1.5L7.84685 7.74717L1.5 13.9943" stroke="#2A2A2A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-{facility.title}</h3>}
+        {facility.title && (
+  <h3 className="text-xl font-bold flex items-start gap-2 text-textGray mb-2">
+    <svg 
+      className="shrink-0 mt-[6px]" /* Prevents shrinking and aligns with the first line */
+      width="10" 
+      height="16" 
+      viewBox="0 0 10 16" 
+      fill="none" 
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path 
+        d="M1.5 1.5L7.84685 7.74717L1.5 13.9943" 
+        stroke="#2A2A2A" 
+        strokeWidth="3" 
+        strokeLinecap="round" 
+        strokeLinejoin="round"
+      />
+    </svg>
+    <span>{facility.title}</span>
+  </h3>
+)}
 
             {facility.desc && (
               <p className="mb-2 md:text-lg text-justify text-[14px] leading-7 text-textGray">

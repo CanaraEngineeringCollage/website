@@ -9440,7 +9440,9 @@
             "Micro-oven"
           ],
           "imageUrl": ""
-        }
+        },
+        {
+        "swiper": ["https://apiserver.cec.edu.in/files/s&hFacilitiesImage1","https://apiserver.cec.edu.in/files/s&hFacilitiesImage2"]}
       ]
     },
     "publications": [

@@ -5848,16 +5848,12 @@
         "imageUrl": "https://apiserver.cec.edu.in/files/csbUnviersityRank"
       },
       {
-        "title": "Awards in Technical Events/Conferences",
-        "imageUrl": "https://apiserver.cec.edu.in/files/Awards%20in%20Technical%20Events%20Conferences"
-      },
-      {
         "title": "Participation in Technical Events",
         "imageUrl": "https://apiserver.cec.edu.in/files/Participation%20in%20Technical%20Certification"
       },
       {
         "title": "Participation in Technical Certification",
-        "imageUrl": "https://apiserver.cec.edu.in/files/CSB%20Participation%20in%20Technical%20Certification"
+        "imageUrl": "https://apiserver.cec.edu.in/files/Participation%20in%20Technical%20Certification"
       }
     ],
     "academicsProgram": {
