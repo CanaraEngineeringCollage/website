@@ -29,7 +29,7 @@ const LocationSection = () => {
 
           {/* Right: Content */}
           <div className="w-full p-3 md:p-0 lg:w-1/2 space-y-3 md:space-y-6 text-center lg:text-left">
-            <h2 className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl leading-[1.3] xl:text-6xl font-bold">
+            <h2 className="text-3xl text-[#1D1D1F] md:text-[40px] lg2:text-5xl leading-[1.3]  font-bold">
               Need Help Locating <br className="hidden lg:block" />
               the CEC Campus?
             </h2>
