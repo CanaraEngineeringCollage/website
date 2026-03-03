@@ -41,7 +41,7 @@ export default async function Home() {
 const getHomePageImages = async () => {
   try {
     const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-    const res = await fetch(`${apiUrl}/home-page-images`, { next: { revalidate: 3600 } });
+    const res = await fetch(`${apiUrl}/home-page-images`, { next: { revalidate: 300 } });
     
     if (res.ok) {
       const rawData = await res.json();
