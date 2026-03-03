@@ -23,29 +23,29 @@ const MandatoryDisclosure = () => {
   const disclosureTitles = [...(disclosureData?.map((section) => section.title) || []), "Academic Calendar"];
 
   const handleFetchAcademicCalendar = async () => {
-  try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/academic-calendar`);
-    if (response.ok) {
-      const data = await response.json();
-      
-      // Extract the pdfUrl depending on how the backend sends it
-      const pdfUrl = data.pdfUrl || (data.data && data.data.pdfUrl) || (Array.isArray(data.data) && data.data[0]?.pdfUrl);
+    try {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/academic-calendar`);
+      if (response.ok) {
+        const data = await response.json();
 
-      if (pdfUrl) {
-        // Construct the full URL pointing to your backend file route
-        const fullUrl = `${process.env.NEXT_PUBLIC_API_URL}/academic-calendar/file/${pdfUrl}`;
-        handleOpenPdf(fullUrl, "Academic Calendar");
+        // Extract the pdfUrl depending on how the backend sends it
+        const pdfUrl = data.pdfUrl || (data.data && data.data.pdfUrl) || (Array.isArray(data.data) && data.data[0]?.pdfUrl);
+
+        if (pdfUrl) {
+          // Construct the full URL pointing to your backend file route
+          const fullUrl = `${process.env.NEXT_PUBLIC_API_URL}/academic-calendar/file/${pdfUrl}`;
+          handleOpenPdf(fullUrl, "Academic Calendar");
+        } else {
+          alert("No academic calendar found.");
+        }
       } else {
-        alert("No academic calendar found.");
+        alert("Failed to fetch academic calendar.");
       }
-    } else {
-      alert("Failed to fetch academic calendar.");
+    } catch (error) {
+      console.error(error);
+      alert("Error fetching academic calendar.");
     }
-  } catch (error) {
-    console.error(error);
-    alert("Error fetching academic calendar.");
-  }
-};
+  };
 
   return (
     <section className="py-10 xl:py-20 text-[#1D1D1F] overflow-hidden">
@@ -110,7 +110,7 @@ const MandatoryDisclosure = () => {
                   </div>
                 </div>
               </>
-            ) : selectedIndex === 4 ? (
+            ) : disclosureTitles[selectedIndex] === "UGC 2(f) Status" ? (
               <>
                 <div className="overflow-x-auto w-full">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">List of UGC 2(f) Status</h2>
@@ -124,7 +124,7 @@ const MandatoryDisclosure = () => {
                         </tr>
                       </thead>
                       <tbody>
-                        {disclosureData[4]?.data?.map((item, idx) => (
+                        {disclosureData[selectedIndex]?.data?.map((item, idx) => (
                           <tr key={idx} className="text-textGray">
                             <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
                             <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
@@ -145,7 +145,7 @@ const MandatoryDisclosure = () => {
                   </div>
                 </div>
               </>
-            ) : selectedIndex === 5 ? (
+            ) : disclosureTitles[selectedIndex] === "Audit Report" ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">Audit Report</h2>
@@ -159,7 +159,7 @@ const MandatoryDisclosure = () => {
                         </tr>
                       </thead>
                       <tbody>
-                        {disclosureData[5]?.data?.map((item, idx) => (
+                        {disclosureData[selectedIndex]?.data?.map((item, idx) => (
                           <tr key={idx} className="text-textGray">
                             <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
                             <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
@@ -180,7 +180,7 @@ const MandatoryDisclosure = () => {
                   </div>
                 </div>
               </>
-            ) : selectedIndex === 2 ? (
+            ) : disclosureTitles[selectedIndex] === "AICTE Approval" ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">AICTE Approval</h2>
@@ -194,7 +194,7 @@ const MandatoryDisclosure = () => {
                         </tr>
                       </thead>
                       <tbody>
-                        {disclosureData[2]?.data?.map((item, idx) => (
+                        {disclosureData[selectedIndex]?.data?.map((item, idx) => (
                           <tr key={idx} className="text-textGray">
                             <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
                             <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
@@ -215,7 +215,7 @@ const MandatoryDisclosure = () => {
                   </div>
                 </div>
               </>
-            ) : selectedIndex === 3 ? (
+            ) : disclosureTitles[selectedIndex] === "VTU Affiliation" ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">VTU Affiliation</h2>
@@ -229,7 +229,7 @@ const MandatoryDisclosure = () => {
                         </tr>
                       </thead>
                       <tbody>
-                        {disclosureData[3]?.data?.map((item, idx) => (
+                        {disclosureData[selectedIndex]?.data?.map((item, idx) => (
                           <tr key={idx} className="text-textGray">
                             <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
                             <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
@@ -250,7 +250,7 @@ const MandatoryDisclosure = () => {
                   </div>
                 </div>
               </>
-            ) : selectedIndex === 13 ? (
+            ) : disclosureTitles[selectedIndex] === "UGC Declaration" ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">UGC Declaration</h2>
@@ -264,7 +264,7 @@ const MandatoryDisclosure = () => {
                         </tr>
                       </thead>
                       <tbody>
-                        {disclosureData[13]?.data?.map((item, idx) => (
+                        {disclosureData[selectedIndex]?.data?.map((item, idx) => (
                           <tr key={idx} className="text-textGray">
                             <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
                             <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
@@ -285,7 +285,7 @@ const MandatoryDisclosure = () => {
                   </div>
                 </div>
               </>
-            ) : selectedIndex === 14 ? (
+            ) : disclosureTitles[selectedIndex] === "Fee Refund Policy" ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">Fee Refund Policy</h2>
@@ -299,7 +299,7 @@ const MandatoryDisclosure = () => {
                         </tr>
                       </thead>
                       <tbody>
-                        {disclosureData[14]?.data?.map((item, idx) => (
+                        {disclosureData[selectedIndex]?.data?.map((item, idx) => (
                           <tr key={idx} className="text-textGray">
                             <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
                             <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
@@ -320,7 +320,7 @@ const MandatoryDisclosure = () => {
                   </div>
                 </div>
               </>
-            ) : selectedIndex === 8 ? (
+            ) : disclosureTitles[selectedIndex] === "Fees to be Paid" ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">Fees to be Paid</h2>
@@ -334,7 +334,7 @@ const MandatoryDisclosure = () => {
                         </tr>
                       </thead>
                       <tbody>
-                        {disclosureData[8]?.data?.map((item, idx) => (
+                        {disclosureData[selectedIndex]?.data?.map((item, idx) => (
                           <tr key={idx} className="text-textGray">
                             <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
                             <td className="py-3 md:px-4 px-1 border-b">{item.year}</td>
@@ -355,7 +355,7 @@ const MandatoryDisclosure = () => {
                   </div>
                 </div>
               </>
-            ) : selectedIndex === 6 ? (
+            ) : disclosureTitles[selectedIndex] === "GC Meeting" ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">GC Meeting</h2>
@@ -369,7 +369,7 @@ const MandatoryDisclosure = () => {
                         </tr>
                       </thead>
                       <tbody>
-                        {disclosureData[6]?.data?.map((item, idx) => (
+                        {disclosureData[selectedIndex]?.data?.map((item, idx) => (
                           <tr key={idx} className="text-textGray">
                             <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
                             <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
@@ -390,7 +390,43 @@ const MandatoryDisclosure = () => {
                   </div>
                 </div>
               </>
-            ) : selectedIndex === 9 ? (
+            ) :  disclosureTitles[selectedIndex] === "Summary" ||
+              disclosureTitles[selectedIndex] === "Academic Council" ? (
+              <>
+                <div className="overflow-x-auto">
+                  <h2 className="text-[20px] font-bold text-textGray mb-4">{disclosureTitles[selectedIndex]}</h2>
+                  <div className="rounded overflow-hidden border border-gray-200 w-full">
+                    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px]">
+                      <thead>
+                        <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                          <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
+                          <th className="py-3 md:px-4 px-1 border-b">Description</th>
+                          <th className="py-3 md:px-4 px-1 border-b">View</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {disclosureData[selectedIndex]?.data?.map((item, idx) => (
+                          <tr key={idx} className="text-textGray">
+                            <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">{item.title}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">
+                              {item.links?.[0]?.href && (
+                                <div
+                                  onClick={() => handleOpenPdf(item.links[0].href, item.links[0].text || "View Document")}
+                                  className="text-[#2884CA] hover:underline cursor-pointer"
+                                >
+                                  {item.links[0].text || "View Document"}
+                                </div>
+                              )}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </>
+            ) :  disclosureTitles[selectedIndex] === "Anti-Ragging Committee" ? (
               <>
                 {" "}
                 <h2 className="text-[20px] font-bold text-textGray mb-2">Anti Ragging Policy</h2>
@@ -833,7 +869,7 @@ const MandatoryDisclosure = () => {
                   </div>
                 </div>
               </>
-            ) : selectedIndex === 10 ? (
+            ) : disclosureTitles[selectedIndex] === "Internal Committee" ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">Internal Committee</h2>
@@ -943,7 +979,7 @@ const MandatoryDisclosure = () => {
                   </div>
                 </div>
               </>
-            ) : selectedIndex === 11 ? (
+            ) : disclosureTitles[selectedIndex] === "SC/ST Grievance Redressal & Welfare" ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">SC/ST, OBC, Minority Scholarship Information</h2>
@@ -1129,7 +1165,7 @@ const MandatoryDisclosure = () => {
                   </div>
                 </div>
               </>
-            ) : selectedIndex === 12 ? (
+            ) : disclosureTitles[selectedIndex] === "Privacy Policy" ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-2">Privacy Policy of Canara Engineering College</h2>
@@ -1238,7 +1274,7 @@ const MandatoryDisclosure = () => {
                   </p>
                 </div>
               </>
-            ) : selectedIndex === 12 ? (
+            ) : disclosureTitles[selectedIndex] === "Privacy Policy" ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">Privacy Policy of Canara Engineering College</h2>
@@ -1347,7 +1383,7 @@ const MandatoryDisclosure = () => {
                   </p>
                 </div>
               </>
-            ) : selectedIndex === 0 ? (
+            ) : disclosureTitles[selectedIndex] === "Accreditations and Certifications" ? (
               <>
                 <h2 className="text-[24px] font-bold text-textGray mb-3">NBA Accreditation</h2>
                 {disclosureData[selectedIndex]?.nba?.map((item, idx) => (
@@ -1442,7 +1478,9 @@ const MandatoryDisclosure = () => {
                   </div>
                 ))}
               </>
-            ) : selectedIndex === 1 || selectedIndex === 7 ? (
+            ) : disclosureTitles[selectedIndex] === "NIRF Disclosure" ||
+              disclosureTitles[selectedIndex] === "Policy"
+              ? (
               <>
                 {disclosureData[selectedIndex]?.data?.map((item, idx) => (
                   <div key={idx} className="mb-10">

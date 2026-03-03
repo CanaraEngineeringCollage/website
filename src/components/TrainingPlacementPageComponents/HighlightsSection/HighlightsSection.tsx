@@ -75,13 +75,13 @@ const HighlightsSection = () => {
         {/* Left Column */}
         {[
           { title: "", subtitle: "Premier Hiring Partners", description: "(Recruiting Across Core and Emerging Domain)" },
-          { title: "42%", subtitle: "Pre-Placement Offers", description: "of placed students received PPOs" },
-          {
-            title: "30%",
-            subtitle: "Higher Rate of placement",
-            description: "Recognized for strong industry-academia connect leading to higher placements",
-            link: true,
-          },
+          { title: "5.6 LPA", subtitle: "Median Salary", description: "Offered to Top 5% of Student Candidates" },
+          // {
+          //   title: "30%",
+          //   subtitle: "Higher Rate of placement",
+          //   description: "Recognized for strong industry-academia connect leading to higher placements",
+          //   link: true,
+          // },
         ].map((item, index) => (
           <div
             key={`left-${index}`}
@@ -100,7 +100,7 @@ const HighlightsSection = () => {
         ))}
 
         {/* Center Column - Swiper (Row Span 2) */}
-        <div className="lg:col-start-2 lg:row-start-1 lg:row-span-3 h-full">
+        <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 h-full">
           <div className="relative h-full">
             <Swiper
               spaceBetween={20}
@@ -135,21 +135,21 @@ const HighlightsSection = () => {
         </div>
 
         {/* Center Column - Third Row Card */}
-        {/* <div className="flex flex-col justify-center items-center rounded-4xl p-6 bg-white h-full lg:col-start-2 lg:row-start-3">
-          <h1 className="text-[45px] lg:text-[60px] font-[900] text-[#1D1D1F] text-center">220+</h1>
-          <h2 className="font-bold text-center text-[20px] text-[#1D1D1F]">Companies Visited on Campus</h2>
-          <p className="text-xl text-center">Consistently recruiting across all branches of engineering</p>
-        </div> */}
+        <div className="flex flex-col justify-center items-center rounded-4xl p-6 bg-white h-full lg:col-start-2 lg:row-start-3">
+          <h1 className="text-[45px] lg:text-[60px] font-[900] text-[#1D1D1F] text-center">100%</h1>
+          <h2 className="font-bold text-center text-[20px] text-[#1D1D1F]">Internship Completion Rate</h2>
+          <p className="text-xl text-center">completed at least one internship before graduation</p>
+        </div>
 
         {/* Right Column */}
         {[
            { title: "220+", subtitle: "Companies Visited on Campus", description: "Consistently recruiting across all branches of engineering" },
           { title: "18%", subtitle: "Students Pursuing Higher Studies", description: "" },
-          {
-            title: "100%",
-            subtitle: "Internship Completion Rate",
-            description: "completed at least one internship before graduation",
-          },
+          // {
+          //   title: "100%",
+          //   subtitle: "Internship Completion Rate",
+          //   description: "completed at least one internship before graduation",
+          // },
         ].map((item, index) => (
           <div
             key={`right-${index}`}

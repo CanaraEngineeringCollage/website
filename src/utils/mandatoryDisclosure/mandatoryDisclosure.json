@@ -1,5 +1,19 @@
 [
   {
+    "title": "Summary",
+    "data": [
+      {
+        "title": "Summary",
+        "links": [
+          {
+            "text": "View Summary",
+            "href": "https://apiserver.cec.edu.in/files/summuryOfMandatory"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "title": "Accreditations and Certifications",
     "nba": [
       {
@@ -253,33 +267,23 @@
     "data": [
       {
         "title": "35th Governing Council Meeting",
-        "links": [
-          { "text": "View", "href": "/mandatory/pdfs/35th GC meeting MoM_Signed copy (1)_compressed.pdf" }
-        ]
+        "links": [{ "text": "View", "href": "/mandatory/pdfs/35th GC meeting MoM_Signed copy (1)_compressed.pdf" }]
       },
       {
         "title": "34th Governing Council Meeting",
-        "links": [
-          { "text": "View", "href": "https://apiserver.cec.edu.in/files/GC%2034th%20Governing%20Council%20Meeting" }
-        ]
+        "links": [{ "text": "View", "href": "https://apiserver.cec.edu.in/files/GC%2034th%20Governing%20Council%20Meeting" }]
       },
       {
         "title": "33rd Governing Council Meeting",
-        "links": [
-          { "text": "View", "href": "https://apiserver.cec.edu.in/files/GC%2033th%20Governing%20Council%20Meeting" }
-        ]
+        "links": [{ "text": "View", "href": "https://apiserver.cec.edu.in/files/GC%2033th%20Governing%20Council%20Meeting" }]
       },
       {
         "title": "32nd Governing Council Meeting",
-        "links": [
-          { "text": "View", "href": "/mandatory/pdfs/Last three GC Minutes_compressed (1).pdf" }
-        ]
+        "links": [{ "text": "View", "href": "/mandatory/pdfs/Last three GC Minutes_compressed (1).pdf" }]
       },
       {
         "title": "31st Governing Council Meeting",
-        "links": [
-          { "text": "View", "href": "/mandatory/pdfs/Last three GC Minutes_compressed (1).pdf" }
-        ]
+        "links": [{ "text": "View", "href": "/mandatory/pdfs/Last three GC Minutes_compressed (1).pdf" }]
       }
     ]
   },
@@ -288,23 +292,72 @@
     "title": "Policy",
     "data": [
       { "title": "Academic Policy", "links": [{ "text": "View Academic Policy", "href": "https://apiserver.cec.edu.in/files/Academic%20policy" }] },
-      { "title": "Admission Policy", "links": [{ "text": "View Admission Policy", "href": "https://apiserver.cec.edu.in/files/Admission%20policy" }] },
-      { "title": "Campus Placement Policy", "links": [{ "text": "View Campus Placement Policy", "href": "https://apiserver.cec.edu.in/files/Campus%20Placement%20policy" }] },
-      { "title": "Environment and Sustainability Policy", "links": [{ "text": "View Environment and Sustainability Policy", "href": "https://apiserver.cec.edu.in/files/Environment%20and%20Sustainability%20Policy" }] },
+      {
+        "title": "Admission Policy",
+        "links": [{ "text": "View Admission Policy", "href": "https://apiserver.cec.edu.in/files/Admission%20policy" }]
+      },
+      {
+        "title": "Campus Placement Policy",
+        "links": [{ "text": "View Campus Placement Policy", "href": "https://apiserver.cec.edu.in/files/Campus%20Placement%20policy" }]
+      },
+      {
+        "title": "Environment and Sustainability Policy",
+        "links": [
+          {
+            "text": "View Environment and Sustainability Policy",
+            "href": "https://apiserver.cec.edu.in/files/Environment%20and%20Sustainability%20Policy"
+          }
+        ]
+      },
       { "title": "Feedback Policy", "links": [{ "text": "View Feedback Policy", "href": "https://apiserver.cec.edu.in/files/Feedback%20policy" }] },
-      { "title": "Human Resource Policy", "links": [{ "text": "View Human Resource Policy", "href": "/mandatory/pdfs/human resource policy_revised_signed_compressed.pdf" }] },
-      { "title": "Industry–Institute Partnership Cell Policy", "links": [{ "text": "View Industry–Institute Partnership Cell Policy", "href": "https://apiserver.cec.edu.in/files/Industry%20institute%20partnership%20cell%20policy" }] },
+      {
+        "title": "Human Resource Policy",
+        "links": [{ "text": "View Human Resource Policy", "href": "/mandatory/pdfs/human resource policy_revised_signed_compressed.pdf" }]
+      },
+      {
+        "title": "Industry–Institute Partnership Cell Policy",
+        "links": [
+          {
+            "text": "View Industry–Institute Partnership Cell Policy",
+            "href": "https://apiserver.cec.edu.in/files/Industry%20institute%20partnership%20cell%20policy"
+          }
+        ]
+      },
       { "title": "IQAC Policy", "links": [{ "text": "View IQAC Policy", "href": "https://apiserver.cec.edu.in/files/IQAC%20policy" }] },
-      { "title": "IT & E-Governance Policy", "links": [{ "text": "View IT & E-Governance Policy", "href": "https://apiserver.cec.edu.in/files/IT%20and%20E-Governance%20policy" }] },
+      {
+        "title": "IT & E-Governance Policy",
+        "links": [{ "text": "View IT & E-Governance Policy", "href": "https://apiserver.cec.edu.in/files/IT%20and%20E-Governance%20policy" }]
+      },
       { "title": "Library Policy", "links": [{ "text": "View Library Policy", "href": "https://apiserver.cec.edu.in/files/Library%20policy" }] },
-      { "title": "Life-Long Learning Policy", "links": [{ "text": "View Life-Long Learning Policy", "href": "https://apiserver.cec.edu.in/files/Life%20Long%20Learning%20policy" }] },
-      { "title": "Maintenance Policy", "links": [{ "text": "View Maintenance Policy", "href": "https://apiserver.cec.edu.in/files/Maintenance%20policy" }] },
-      { "title": "R&D and Innovation Policy", "links": [{ "text": "View R&D and Innovation Policy", "href": "https://apiserver.cec.edu.in/files/R&D%20and%20Innovation%20policy" }] },
+      {
+        "title": "Life-Long Learning Policy",
+        "links": [{ "text": "View Life-Long Learning Policy", "href": "https://apiserver.cec.edu.in/files/Life%20Long%20Learning%20policy" }]
+      },
+      {
+        "title": "Maintenance Policy",
+        "links": [{ "text": "View Maintenance Policy", "href": "https://apiserver.cec.edu.in/files/Maintenance%20policy" }]
+      },
+      {
+        "title": "R&D and Innovation Policy",
+        "links": [{ "text": "View R&D and Innovation Policy", "href": "https://apiserver.cec.edu.in/files/R&D%20and%20Innovation%20policy" }]
+      },
       { "title": "Sports Policy", "links": [{ "text": "View Sports Policy", "href": "https://apiserver.cec.edu.in/files/Sports%20policy" }] },
-      { "title": "Student Welfare Policy", "links": [{ "text": "View Student Welfare Policy", "href": "https://apiserver.cec.edu.in/files/Student%20Welfare%20policy" }] },
-      { "title": "Teachers’ Training Policy", "links": [{ "text": "View Teachers’ Training Policy", "href": "https://apiserver.cec.edu.in/files/Teachers%20Training%20Policy" }] },
-      { "title": "Scholarship Policy", "links": [{ "text": "View Scholarship Policy", "href": "https://apiserver.cec.edu.in/files/Scholarship%20policy" }] },
-      { "title": "Campus Management Policies", "links": [{ "text": "View Campus Management Policies", "href": "https://apiserver.cec.edu.in/files/Campus%20Management%20Policies" }] }
+      {
+        "title": "Student Welfare Policy",
+        "links": [{ "text": "View Student Welfare Policy", "href": "https://apiserver.cec.edu.in/files/Student%20Welfare%20policy" }]
+      },
+      {
+        "title": "Teachers’ Training Policy",
+        "links": [{ "text": "View Teachers’ Training Policy", "href": "https://apiserver.cec.edu.in/files/Teachers%20Training%20Policy" }]
+      },
+      {
+        "title": "Scholarship Policy",
+        "links": [{ "text": "View Scholarship Policy", "href": "https://apiserver.cec.edu.in/files/Scholarship%20policy" }]
+      },
+      {
+        "title": "Campus Management Policies",
+        "links": [{ "text": "View Campus Management Policies", "href": "https://apiserver.cec.edu.in/files/Campus%20Management%20Policies" }]
+      }
     ]
   },
 
@@ -422,6 +475,20 @@
           {
             "text": "View Fee Refund Policy",
             "href": "https://apiserver.cec.edu.in/files/Fee%20Refund%20Policy"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Academic Council",
+    "data": [
+      {
+        "title": "Academic Council",
+        "links": [
+          {
+            "text": "Academic Council",
+            "href": "https://apiserver.cec.edu.in/files/Academic%20Council%20-%202025.pdf.pdf"
           }
         ]
       }

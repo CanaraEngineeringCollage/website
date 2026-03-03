@@ -81,7 +81,7 @@
           {
             "title": "Advisory Committee Member",
             "name": "Sri. M. Ranganath Bhat",
-            "image": "/aboutPageImages/SecretaryImage/image.png",
+            "image": "https://apiserver.cec.edu.in/files/Sri.%20M.%20Ranganath%20Bhat",
             "desiganation": "Industrialist",
             "contact": "0824-2458121",
             "email": "rangbhat@gmail.com",
@@ -127,7 +127,7 @@
           {
              "title": "Vice-President",
             "name": "Mr.Lohith B",
-            "image": "https://apiserver.cec.edu.in/files/Mr.Lohith%20B",
+            "image": "https://apiserver.cec.edu.in/files/lohithb",
             "desiganation": "Programmer Analyst",
             "contact": "+91-9480202363",
             "email": "lohith.b@novigosolutions.com",

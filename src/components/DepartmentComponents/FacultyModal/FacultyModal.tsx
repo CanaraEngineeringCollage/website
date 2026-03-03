@@ -217,14 +217,15 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                     <div className="flex-shrink-0 mx-auto lg:mx-0">
                       {/* ✅ CHANGED bg-sky-400 to bg-gray-200 here */}
                       <div className="rounded-lg overflow-hidden w-60 h-80 bg-gray-200">
-                        <Image
-                          width={100}
-                          height={100}
-                          src={facultyData.hasAvatar ? `${baseUrl}/faculty/${facultyData.id}/avatar` : (facultyData.images || "/fallback-avatar.png")}
-                          alt="Faculty profile"
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
+  <Image
+    width={300}  /* Increased to provide a high-res source */
+    height={400} /* Increased to provide a high-res source */
+    quality={90} /* Optional: Bumps up the default Next.js compression quality */
+    src={facultyData.hasAvatar ? `${baseUrl}/faculty/${facultyData.id}/avatar` : (facultyData.images || "/fallback-avatar.png")}
+    alt="Faculty profile"
+    className="w-full h-full object-cover"
+  />
+</div>
                     </div>
 
                     <div className="space-y-2 text-xl text-[#1D1D1F]">

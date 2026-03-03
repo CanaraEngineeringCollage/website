@@ -58,28 +58,28 @@ const studentSupport = [
 
 const departments = [
   {
-    title: "Computer Science and Engineering",
-    link: "/department/computer-science-engineering",
-  },
-  {
-    title: "Information Science and Engineering",
-    link: "/department/information-science-engineering",
-  },
-  {
-    title: "Electronics and Communication Engineering",
-    link: "/department/electronics-communication-engineering",
-  },
-  {
-    title: "Computer Science and Design",
-    link: "/department/computer-science-design",
+    title: "Artificial Intelligence and Machine Learning",
+    link: "/department/artificial-intelligence-machine-learning",
   },
   {
     title: "Computer Science and Business System",
     link: "/department/computer-science-business-system",
   },
   {
-    title: "Artificial Intelligence and Machine Learning",
-    link: "/department/artificial-intelligence-machine-learning",
+    title: "Computer Science and Design",
+    link: "/department/computer-science-design",
+  },
+  {
+    title: "Computer Science and Engineering",
+    link: "/department/computer-science-engineering",
+  },
+  {
+    title: "Electronics and Communication Engineering",
+    link: "/department/electronics-communication-engineering",
+  },
+  {
+    title: "Information Science and Engineering",
+    link: "/department/information-science-engineering",
   },
   {
     title: "Mechanical Engineering",
