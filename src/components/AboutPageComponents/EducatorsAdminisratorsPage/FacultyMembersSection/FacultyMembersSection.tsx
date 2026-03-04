@@ -30,7 +30,7 @@ const FacultyCard: React.FC<{ member: CouncilMember; onClick?: () => void }> = (
     onClick={onClick}
     className={`relative ${
       onClick ? "cursor-pointer" : "cursor-default"
-    } w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden  text-white flex flex-col items-center shadow-md`}
+    } w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md`}
   >
     <img 
       // ✅ FIX 2: Used hasAvatar and the backend URL
