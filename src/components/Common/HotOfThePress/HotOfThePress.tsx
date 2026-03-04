@@ -91,15 +91,15 @@ function EventContent({ description }: { description: EventDescriptionProps }) {
   return (
     <div>
       {description.src && (
-        <Image
-          src={description.src}
-          alt={description.topTitle}
-          loading="lazy"
-          width={1000}
-          height={700}
-          className="object-cover overflow-hidden rounded-t-2xl w-full  mb-10"
-        />
-      )}
+       <img
+      src={description.src}
+      alt={description.topTitle}
+      loading="lazy"
+      width={1000}
+      height={700}
+      className="object-cover overflow-hidden rounded-t-2xl w-full  mb-10"
+    />
+  )}
       <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-[#1D1D1F] bg-white">
         <div>
           {<p className="text-[17px] text-textGray uppercase font-bold mb-2">{description.date}</p>}
@@ -222,7 +222,7 @@ const HotOfThePressCarousel = () => {
                   onClick={() => openCard(index)}
                 >
                   <div className="h-60 overflow-hidden">
-                    <Image width={200} height={200} src={src} alt={topTitle || event.category} className="w-full h-full object-cover" />
+                    <img src={src} alt={topTitle || event.category} className="w-full h-full object-cover" />
                   </div>
                   <div className="p-8 text-center">
                     <div className="flex justify-center items-center space-x-3">
