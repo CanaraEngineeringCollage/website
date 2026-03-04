@@ -12,11 +12,11 @@ const TopperCard = ({ topper }: { topper: any }) => (
     {/* Card Border Container */}
     <div className="w-full border border-white/40 rounded-[30px] px-6 pb-8 pt-48 flex flex-col items-center min-h-[300px] relative">
       {/* Floating Image */}
-      {topper.image && (
-        <div className="absolute -top-12 w-52 h-52 rounded-2xl overflow-hidden shadow-lg bg-[#5AB9EA]">
-          <Image src={topper.image} alt={topper.name} fill className="w-full h-full object-cover object-top" />
-        </div>
-      )}
+   {topper.image && (
+      <div className="absolute -top-12 w-52 h-52 rounded-2xl overflow-hidden shadow-lg bg-[#5AB9EA]">
+        <img src={topper.image} alt={topper.name} className="w-full h-full object-cover object-top" />
+      </div>
+    )}
 
       {/* Content */}
       <div className="text-center space-y-2">
