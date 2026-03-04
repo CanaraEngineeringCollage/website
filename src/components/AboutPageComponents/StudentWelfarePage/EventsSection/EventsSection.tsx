@@ -8,7 +8,6 @@ import "swiper/css/navigation";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import { IconX } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 
 interface CampusEvent {
@@ -17,15 +16,9 @@ interface CampusEvent {
   date: string;
   description: string;
   title: string;
-  image: { type: string; data: number[] } | null;
+  image?: any;
+  hasImage?: boolean;
 }
-
-const bufferToBase64 = (buffer: { type: string; data: number[] } | null) => {
-  if (!buffer || !buffer.data) return "";
-  const binary = buffer.data.reduce((acc, byte) => acc + String.fromCharCode(byte), "");
-  const base64 = typeof window !== "undefined" ? btoa(binary) : Buffer.from(binary, "binary").toString("base64");
-  return `data:image/jpeg;base64,${base64}`;
-};
 
 const backdropVariants = {
   hidden: { opacity: 0, backdropFilter: "blur(0px)" },
@@ -46,9 +39,11 @@ const EventsSection = () => {
   const modalRef = useRef<HTMLDivElement>(null);
   const [isLoaded, setIsLoaded] = useState(false);
 
+  const baseUrl = process.env.NEXT_PUBLIC_API_URL;
+
   const fetchEvents = async () => {
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/events?category=${encodeURIComponent("Student Welfare Department")}&all=true`);
+      const res = await fetch(`${baseUrl}/events?category=${encodeURIComponent("Student Welfare Department")}&all=true`);
       if (!res.ok) throw new Error("Failed to fetch events");
 
       const data = await res.json();
@@ -133,15 +128,14 @@ const EventsSection = () => {
           }}
         >
           {events.map((event) => {
-            const imageSrc = bufferToBase64(event.image);
+            const imageSrc = event.hasImage ? `${baseUrl}/events/${event.id}/image` : (event.image || "/fallback-image.png");
+            
             return (
               <SwiperSlide key={event.id}>
                 <div className="max-w-sm  bg-white  min-h-[450px] rounded-3xl overflow-hidden cursor-pointer" onClick={() => openModal(event)}>
                   <div className="h-60 overflow-hidden">
-                    <Image
-                      width={400}
-                      height={400}
-                      src={imageSrc || "/placeholder.jpg"}
+                    <img
+                      src={imageSrc}
                       alt={event.title}
                       className="w-full h-full object-cover object-[center_25%]"
                     />
@@ -220,13 +214,13 @@ const EventsSection = () => {
                 <IconX size={18} />
               </button>
 
-              <Image
-                src={bufferToBase64(selectedEvent.image)}
-                alt={selectedEvent.title}
-                width={800}
-                height={600}
-                className="w-full h-auto object-cover bg-black rounded-t-3xl"
-              />
+              {(selectedEvent.hasImage || selectedEvent.image) && (
+                <img
+                  src={selectedEvent.hasImage ? `${baseUrl}/events/${selectedEvent.id}/image` : (selectedEvent.image || "/fallback-image.png")}
+                  alt={selectedEvent.title}
+                  className="w-full h-auto object-cover bg-black rounded-t-3xl"
+                />
+              )}
 
               <div className="p-6 sm:p-10 max-h-[70vh] overflow-y-auto">
                 <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-[#1D1D1F]">{selectedEvent.title}</h2>

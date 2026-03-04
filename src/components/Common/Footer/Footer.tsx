@@ -34,7 +34,7 @@ const academics = [
   { data: "Admissions", links: "/admission" },
   // { data: "Courses & Programs", links: "#" },
   // { data: "Syllabus", links: "#" },
-  { data: "Academic Calendar", links: `${process.env.NEXT_PUBLIC_API_URL}/academic-calendar` },
+  { data: "Academic Calendar", links: "/about/mandatory-disclosure?tab=Academic Calendar" },
   // { data: "Examinations & Timetables", links: "/academics/examination-records" },
   { data: "Circulars", links: "/academics/examination-records?tab=circulars" },
   { data: "Marks & Attendance", links: "https://www.canaraengineering.in/s_attd" },
@@ -90,30 +90,6 @@ const Footer: FC = () => {
   const [academicsIsOpen, setAcademicsIsOpen] = useState<boolean>(false);
   const [facilitiesIsOpen, setFacilitiesIsOpen] = useState<boolean>(false);
   const [stayConnectedIsOpen, setStayConnectedIsOpen] = useState<boolean>(false);
-
-  const handleAcademicCalendarClick = async () => {
-    try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/academic-calendar`);
-      if (response.ok) {
-        const data = await response.json();
-        
-        // Extract the pdfUrl depending on how the backend sends it
-        const pdfUrl = data.pdfUrl || (data.data && data.data.pdfUrl) || (Array.isArray(data.data) && data.data[0]?.pdfUrl);
-        
-        if (pdfUrl) {
-          const fullUrl = `${process.env.NEXT_PUBLIC_API_URL}/academic-calendar/file/${pdfUrl}`;
-          window.open(fullUrl, "_blank");
-        } else {
-          alert("No academic calendar found.");
-        }
-      } else {
-        alert("Failed to fetch academic calendar.");
-      }
-    } catch (error) {
-      console.error(error);
-      alert("Error fetching academic calendar.");
-    }
-  };
 
   return (
     <footer id="main-footer" className="bg-[#e5e5ea] text-gray-700 lg:px-8  text-sm pt-10">
@@ -209,7 +185,7 @@ const Footer: FC = () => {
             </div>
             <div>
               <h3 className="font-semibold mt-5 mb-2">Academics</h3>
-              <FooterList data={academics} onCalendarClick={handleAcademicCalendarClick} />
+              <FooterList data={academics} />
             </div>
             <div>
               <h3 className="font-semibold mt-5 mb-2">Facilities</h3>
@@ -274,13 +250,7 @@ const Footer: FC = () => {
           {/* Our College */}
           <FooterSection title="Our College" data={ourCollege} isOpen={collegeIsOpen} setIsOpen={setCollegeIsOpen} />
           {/* Academics */}
-          <FooterSection
-            title="Academics"
-            data={academics}
-            isOpen={academicsIsOpen}
-            setIsOpen={setAcademicsIsOpen}
-            onCalendarClick={handleAcademicCalendarClick}
-          />
+          <FooterSection title="Academics" data={academics} isOpen={academicsIsOpen} setIsOpen={setAcademicsIsOpen} />
           {/* Facilities */}
           <FooterSection title="Facilities" data={facilities} isOpen={facilitiesIsOpen} setIsOpen={setFacilitiesIsOpen} />
           {/* Stay Connected */}
@@ -331,20 +301,12 @@ const Footer: FC = () => {
 };
 
 // Reusable Footer List Component
-const FooterList: FC<FooterListProps & { onCalendarClick?: () => void }> = ({ data, onCalendarClick }) => {
+const FooterList: FC<FooterListProps> = ({ data }) => {
   return (
     <ul className="space-y-1">
       {data.map((item, index) => {
         const isExternal = item.links.startsWith("http") || item.links.endsWith(".pdf");
-        if (item.data === "Academic Calendar" && onCalendarClick) {
-          return (
-            <li className="leading-8" key={index}>
-              <button onClick={onCalendarClick} className="hover:text-primary transition-colors text-left">
-                {item.data}
-              </button>
-            </li>
-          );
-        }
+
         return (
           <li className="leading-8" key={index}>
             <Link href={item.links} {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
@@ -381,14 +343,13 @@ const FooterSection: FC<{
   data: { data: string; links: string }[];
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
-  onCalendarClick?: () => void;
-}> = ({ title, data, isOpen, setIsOpen, onCalendarClick }) => (
+}> = ({ title, data, isOpen, setIsOpen }) => (
   <div className="border-b border-gray-300 pb-2">
     <div onClick={() => setIsOpen(!isOpen)} className="flex items-center justify-between font-semibold cursor-pointer py-2">
       {title}
       <ArrowIcon isOpen={isOpen} />
     </div>
-    {isOpen && <FooterList data={data} onCalendarClick={onCalendarClick} />}
+    {isOpen && <FooterList data={data} />}
   </div>
 );
 

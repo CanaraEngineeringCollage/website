@@ -90,9 +90,13 @@ const ExploreCampus = ({ departmentName, events }: { departmentName: string; eve
               className="max-w-sm bg-white min-h-[450px] cursor-pointer shadow-sm  rounded-xl lg:rounded-3xl overflow-hidden"
               onClick={() => openModal(event)}
             >
-              <div className="h-60 overflow-hidden">
-                <Image width={200} height={200} src={src} alt={event.title} className="w-full h-full object-cover object-[center_25%]" />
-              </div>
+             <div className="h-60 overflow-hidden">
+    <img 
+      src={src} 
+      alt={event.title} 
+      className="w-full h-full object-cover object-[center_25%]" 
+    />
+  </div>
 
               <div className="p-8 text-center bg-white">
                 <div className="flex justify-center items-center space-x-3">
@@ -155,12 +159,11 @@ const ExploreCampus = ({ departmentName, events }: { departmentName: string; eve
 
               {/* Image */}
               {(selectedEvent.hasImage || selectedEvent.image) && (
-                <Image
+                <img
                   // ✅ FIX 3: Used hasImage and the backend URL for the modal
                   src={selectedEvent.hasImage ? `${baseUrl}/events/${selectedEvent.id}/image` : (selectedEvent.image || "/fallback-image.png")}
                   alt={selectedEvent.title}
-                  width={800}
-                  height={600}
+  
                   className="w-full h-auto object-cover bg-black rounded-t-3xl"
                 />
               )}

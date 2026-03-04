@@ -6,6 +6,7 @@ import Sidebar from "../SIdeBar/SIdeBar";
 import Footer from "../Footer/Footer";
 import CampusNavbar from "@/components/campusComponent/CampusNavbar/page";
 import { usePathname } from "next/navigation";
+import CurtainScreen from "@/components/Inaguration";
 
 function Layout({ children }: { children: React.ReactNode }) {
   const [sidebar, openSidebar] = useState<boolean>(false);
@@ -17,7 +18,8 @@ function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex flex-col min-h-screen">
       {/* overflow-x-hidden */}
-      <header className=" bg-white z-30 ">
+      {/* {pathname === "/" && <CurtainScreen />} */}
+      <header className=" bg-white z-30 relative  top-0">
         {isCampusRoute ? (
           <CampusNavbar openSidebar={() => openSidebar((prev) => !prev)} sidebar={sidebar} />
         ) : (

@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Dialog } from "@headlessui/react";
 import { X } from "lucide-react";
-import Image from "next/image";
+
 import React from "react";
 import formatDepartmentName from "@/utils/formatDepartmentName";
 
@@ -25,7 +25,7 @@ export interface CouncilMember {
   id?: number | string;
   name: string;
   image?: string;
-  hasAvatar?: boolean; 
+  hasAvatar?: boolean;
   avatar?: { type: string; data: number[] };
   images?: string;
   emergencycontact?: string;
@@ -165,14 +165,14 @@ const getFullForm = (abbr: string) => {
   return departmentFullForms[key] || abbr;
 };
 
-export const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
+const bufferToBase64 = (buffer: { type: string; data: number[] }) => {
   const binary = buffer.data.reduce((acc, byte) => acc + String.fromCharCode(byte), "");
   const base64 = btoa(binary);
   return `data:image/jpeg;base64,${base64}`;
 };
 
 export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyModalProps) {
-  const baseUrl = process.env.NEXT_PUBLIC_API_URL; 
+  const baseUrl = process.env.NEXT_PUBLIC_API_URL;
 
   if (!facultyData) return null;
 
@@ -215,17 +215,18 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                 <div className="py-10 lg:px-20">
                   <div className="flex flex-col lg:flex-row gap-6 lg:items-center">
                     <div className="flex-shrink-0 mx-auto lg:mx-0">
-                      {/* ✅ CHANGED bg-sky-400 to bg-gray-200 here */}
                       <div className="rounded-lg overflow-hidden w-60 h-80 bg-gray-200">
-  <Image
-    width={300}  /* Increased to provide a high-res source */
-    height={400} /* Increased to provide a high-res source */
-    quality={90} /* Optional: Bumps up the default Next.js compression quality */
-    src={facultyData.hasAvatar ? `${baseUrl}/faculty/${facultyData.id}/avatar` : (facultyData.images || "/fallback-avatar.png")}
-    alt="Faculty profile"
-    className="w-full h-full object-cover"
-  />
-</div>
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={
+                            facultyData.hasAvatar
+                              ? `${baseUrl}/faculty/${facultyData.id}/avatar`
+                              : facultyData.image || facultyData.images || "/fallback-avatar.png"
+                          }
+                          alt="Faculty profile"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
                     </div>
 
                     <div className="space-y-2 text-xl text-[#1D1D1F]">
@@ -266,13 +267,13 @@ export default function FacultyModal({ isOpen, onClose, facultyData }: FacultyMo
                           </thead>
                           <tbody className="text-gray-700">
                             {facultyData.qualifications
-                              .slice() 
+                              .slice()
                               .sort((a, b) => {
                                 const getYear = (val: string) => {
-                                  const match = val.match(/\d{4}/); 
+                                  const match = val.match(/\d{4}/);
                                   return match ? parseInt(match[0], 10) : 0;
                                 };
-                                return getYear(b.passingYear) - getYear(a.passingYear); 
+                                return getYear(b.passingYear) - getYear(a.passingYear);
                               })
                               .map((qual, index) => (
                                 <tr key={index}>

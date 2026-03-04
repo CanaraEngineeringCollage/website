@@ -80,6 +80,138 @@
 
   "allAwards": [
     {
+  "id": "achievements-2025-26",
+  "title": "Technical, Sports and cultural achievements ( students) - 2025-26",
+  "headers": [
+    { "key": "slNo", "label": "Sl. No." },
+    { "key": "enrollment", "label": "Student USN" },
+    { "key": "name", "label": "Name of Student" },
+    { "key": "event", "label": "Name of the Event" },
+    { "key": "institution", "label": "Institution & Place" },
+    { "key": "date", "label": "Date of Event" },
+    { "key": "prize", "label": "Prize / Award" }
+  ],
+  "rows": [
+    {
+      "slNo": 1,
+      "enrollment": "4CB23EC001",
+      "name": "Abhiram A N",
+      "event": "17th State-Level Karate Championship",
+      "institution": "VTU Belagavi",
+      "date": "16/02/2026",
+      "prize": "Gold Medal-Team Kata under Senior Category, Silver Medal-Individual Kata under U-21 category, Bronze medal - Individual Kata under senior category"
+    },
+    {
+      "slNo": 2,
+      "enrollment": "4CB23EC017",
+      "name": "G. Vishal V. Prabhu",
+      "event": "Science Project Contest held in celebration of Akshay Urja Diwas",
+      "institution": "Fiza by Nexus Mall in Mangaluru",
+      "date": "20/08/2025",
+      "prize": "First Place with a cash prize of ₹12,000"
+    },
+    {
+      "slNo": 3,
+      "enrollment": "4CB23EC052",
+      "name": "U. Rakesh R. Pai",
+      "event": "Science Project Contest held in celebration of Akshay Urja Diwas",
+      "institution": "Fiza by Nexus Mall in Mangaluru",
+      "date": "20/08/2025",
+      "prize": "First Place with a cash prize of ₹12,000"
+    },
+    {
+      "slNo": 4,
+      "enrollment": "4CB22EC045",
+      "name": "Shrikrithi",
+      "event": "NPTEL Online Course “System Design Through Verilog”",
+      "institution": "IIT Guwahati",
+      "date": "08-12-2025",
+      "prize": "Elite + Gold (Top 5%)"
+    },
+    {
+      "slNo": 5,
+      "enrollment": "4CB22EC031",
+      "name": "Pratheeksha",
+      "event": "NPTEL Online Course “System Design Through Verilog”",
+      "institution": "IIT Guwahati",
+      "date": "08-12-2025",
+      "prize": "Elite + Silver"
+    },
+    {
+      "slNo": 6,
+      "enrollment": "4CB22EC036",
+      "name": "Rashmitha",
+      "event": "NPTEL Online Course “System Design Through Verilog”",
+      "institution": "IIT Guwahati",
+      "date": "08-12-2025",
+      "prize": "Elite + Silver"
+    },
+    {
+      "slNo": 7,
+      "enrollment": "4CB22EC024",
+      "name": "Neha Sahana",
+      "event": "NPTEL Online Course “System Design Through Verilog”",
+      "institution": "IIT Guwahati",
+      "date": "08-12-2025",
+      "prize": "Elite + Silver"
+    },
+    {
+      "slNo": 8,
+      "enrollment": "4CB24EC015",
+      "name": "Dikshit Vittal Gondali",
+      "event": "National Level Hardware Hackathon organized by the Department of Electronics and Communication Engineering",
+      "institution": "CMR Institute of Technology, Bengaluru",
+      "date": "17/10/2025",
+      "prize": "Third Place"
+    },
+    {
+      "slNo": 9,
+      "enrollment": "4CB24EC018",
+      "name": "Hema Prarthana H T",
+      "event": "National Level Hardware Hackathon organized by the Department of Electronics and Communication Engineering",
+      "institution": "CMR Institute of Technology, Bengaluru",
+      "date": "17/10/2025",
+      "prize": "Third Place"
+    },
+    {
+      "slNo": 10,
+      "enrollment": "4CB24EC042",
+      "name": "Prajwal H S",
+      "event": "National Level Hardware Hackathon organized by the Department of Electronics and Communication Engineering",
+      "institution": "CMR Institute of Technology, Bengaluru",
+      "date": "17/10/2025",
+      "prize": "Third Place"
+    },
+    {
+      "slNo": 11,
+      "enrollment": "4CB24EC052",
+      "name": "Shreya Babu Patil",
+      "event": "National Level Hardware Hackathon organized by the Department of Electronics and Communication Engineering",
+      "institution": "CMR Institute of Technology, Bengaluru",
+      "date": "17/10/2025",
+      "prize": "Third Place"
+    },
+    {
+      "slNo": 12,
+      "enrollment": "4CB23EC048",
+      "name": "Sheik Mahammad Nizamuddin",
+      "event": "IOT LAAGUE",
+      "institution": "SDIT, Mangalore",
+      "date": "12-03-2025",
+      "prize": "First Place"
+    },
+    {
+      "slNo": 13,
+      "enrollment": "4CB23EC011",
+      "name": "Caveen Prashanth Pinto",
+      "event": "IOT LAAGUE",
+      "institution": "SDIT, Mangalore",
+      "date": "12-03-2025",
+      "prize": "First Place"
+    }
+  ]
+},
+    {
       "id": "ece-achievements-2024-25",
       "title": "Year 2024-25",
       "headers": [
@@ -666,19 +798,19 @@
       "name": "POOJA LAXMAN ACHARI",
       "batch": "2024-25",
       "percentage": "9.03",
-      "image": "/departmentImages/toppersImage/ec/1.webp"
+      "image": "/departmentImages/toppersImage/ec/11.webp"
     },
     {
       "name": "AISHWARYA H S",
       "batch": "2024-25",
       "percentage": "9.01",
-      "image": "/departmentImages/toppersImage/ec/3.webp"
+      "image": "/departmentImages/toppersImage/ec/10.webp"
     },
     {
       "name": "NISARGA B U",
       "batch": "2024-25",
       "percentage": "8.92",
-      "image": "/departmentImages/toppersImage/ec/2.webp"
+      "image": "/departmentImages/toppersImage/ec/12.webp"
     }
   ],
 

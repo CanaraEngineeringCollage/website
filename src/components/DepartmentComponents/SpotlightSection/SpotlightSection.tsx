@@ -23,7 +23,7 @@ const TopperCard = ({ topper }: { topper: any }) => (
         <h3 className="text-base md:text-lg font-bold leading-tight">
           {topper.name.toLowerCase().replace(/\b\w/g, (char: string) => char.toUpperCase())}
         </h3>
-        <p className="text-sm md:text-base  text-gray-300 font-semibold tracking-wide">{topper.percentage} CGPA</p>
+        {topper.percentage && <p className="text-sm md:text-base  text-gray-300 font-semibold tracking-wide">{topper.percentage} CGPA</p>}
         <p className="text-sm text-gray-300 font-light">{topper.batch || "2024-25"}</p>
       </div>
 
@@ -73,7 +73,6 @@ export default function SpotlightSection({ toppers }: { toppers: any[] }) {
                 delay: 2000,
                 disableOnInteraction: false,
               }}
-              
               className="w-full pb-10" // Added pb-10 here to not cut off the pill
             >
               {toppers.map((topper, index) => (
@@ -84,7 +83,15 @@ export default function SpotlightSection({ toppers }: { toppers: any[] }) {
             </Swiper>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[50px] xl:gap-10 mb-20 pb-10">
+          <div
+            className={`grid grid-cols-1 gap-[50px] xl:gap-10 mb-20 pb-10 ${
+              toppers.length === 1
+                ? "max-w-[350px] xl:max-w-[400px] mx-auto"
+                : toppers.length === 2
+                  ? "md:grid-cols-2 max-w-[700px] xl:max-w-[800px] mx-auto"
+                  : "md:grid-cols-2 lg:grid-cols-3"
+            }`}
+          >
             {toppers.map((topper, index) => (
               <TopperCard key={index} topper={topper} />
             ))}

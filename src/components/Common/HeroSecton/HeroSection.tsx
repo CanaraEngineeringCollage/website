@@ -77,7 +77,7 @@ const HeroSection = ({ images = [] }: HeroSectionProps) => {
   };
 
   return (
-    <section className="relative w-full h-[80vh] md:h-[80vh] flex flex-col justify-center items-center text-center px-4 overflow-hidden bg-[#144A72]">
+    <section className="relative w-full h-[100vh] md:h-[80vh] flex flex-col justify-center items-center text-center px-4 overflow-hidden bg-[#144A72]">
       {/* Background Swiper */}
       <div className="absolute inset-0 z-0">
         <Swiper
@@ -95,7 +95,7 @@ const HeroSection = ({ images = [] }: HeroSectionProps) => {
                   src={slide.desktopSrc}
                   alt={`Desktop Background ${index + 1}`}
                   fill
-                  className="object-cover hidden md:block -translate-y-[90px] lg:translate-y-0"
+                  className="object-cover hidden lg:block -translate-y-[90px] lg:translate-y-0"
                   priority={index === 0}
                 />
               )}
@@ -106,7 +106,7 @@ const HeroSection = ({ images = [] }: HeroSectionProps) => {
                   src={slide.mobileSrc}
                   alt={`Mobile Background ${index + 1}`}
                   fill
-                  className="object-cover block md:hidden -translate-y-[90px] lg:translate-y-0"
+                  className="object-cover block lg:hidden -translate-y-[90px] lg:translate-y-0"
                   priority={index === 0}
                 />
               )}
