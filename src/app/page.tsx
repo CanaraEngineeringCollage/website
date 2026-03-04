@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Canara Engineering College, Mangalore | NAAC A Grade Institution",
     description: "Providing excellent undergraduate education since 1973. Accredited with A Grade by NAAC and affiliated to Mangalore University.",
-    url: "/", 
+    url: "/",
     siteName: "Canara College",
     images: [
       {
@@ -38,32 +38,31 @@ export const metadata: Metadata = {
 
 export default async function Home() {
   // Add this inside your Home component or update the existing one
-const getHomePageImages = async () => {
-  try {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-    const res = await fetch(`${apiUrl}/home-page-images`, { next: { revalidate: 300 } });
-    
-    if (res.ok) {
-      const rawData = await res.json();
-      
-      // Map the raw data to the exact props HeroSection needs
-      const formattedData = rawData.map((img: any) => ({
-        id: img.id,
-        desktopUrl: img.imageUrl ? `${apiUrl}/home-page-images/file/${img.imageUrl}` : null,
-        mobileUrl: img.mobileImageUrl ? `${apiUrl}/home-page-images/file/${img.mobileImageUrl}` : null,
-      }));
+  const getHomePageImages = async () => {
+    try {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+      const res = await fetch(`${apiUrl}/home-page-images`, { next: { revalidate: 300 } });
 
-      return formattedData;
+      if (res.ok) {
+        const rawData = await res.json();
+
+        // Map the raw data to the exact props HeroSection needs
+        const formattedData = rawData.map((img: any) => ({
+          id: img.id,
+          desktopUrl: img.imageUrl ? `${apiUrl}/home-page-images/file/${img.imageUrl}` : null,
+          mobileUrl: img.mobileImageUrl ? `${apiUrl}/home-page-images/file/${img.mobileImageUrl}` : null,
+        }));
+
+        return formattedData;
+      }
+    } catch (error) {
+      console.error("Failed to fetch home page images", error);
     }
-  } catch (error) {
-    console.error("Failed to fetch home page images", error);
-  }
-  return [];
-};
+    return [];
+  };
 
-// Then in your component:
-const data = await getHomePageImages();
-
+  // Then in your component:
+  const data = await getHomePageImages();
 
   return (
     <>
