@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import disclosureData from "../../../utils/mandatoryDisclosure/mandatoryDisclosure.json";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,10 +10,15 @@ import CustomSelect from "@/components/Common/CustomSelect/CustomSelect";
 import PDFModal from "@/components/Common/PDFModal/PDFModal";
 
 const MandatoryDisclosure = () => {
+  const searchParams = useSearchParams();
+  const tabParam = searchParams.get("tab");
+
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [isPdfModalOpen, setIsPdfModalOpen] = useState(false);
   const [currentPdfUrl, setCurrentPdfUrl] = useState("");
   const [currentPdfTitle, setCurrentPdfTitle] = useState("");
+  const [academicCalendars, setAcademicCalendars] = useState<any[]>([]);
+  const [loadingCalendar, setLoadingCalendar] = useState(false);
 
   const handleOpenPdf = (url: string, title?: string) => {
     setCurrentPdfUrl(url);
@@ -22,28 +28,37 @@ const MandatoryDisclosure = () => {
 
   const disclosureTitles = [...(disclosureData?.map((section) => section.title) || []), "Academic Calendar"];
 
-  const handleFetchAcademicCalendar = async () => {
+  useEffect(() => {
+    if (tabParam) {
+      const index = disclosureTitles.findIndex((title) => title.toLowerCase() === tabParam.toLowerCase());
+      if (index !== -1) {
+        setSelectedIndex(index);
+      }
+    }
+  }, [tabParam]);
+
+  useEffect(() => {
+    if (disclosureTitles[selectedIndex] === "Academic Calendar" && academicCalendars.length === 0) {
+      fetchAcademicCalendars();
+    }
+  }, [selectedIndex]);
+
+  const fetchAcademicCalendars = async () => {
+    setLoadingCalendar(true);
     try {
       const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/academic-calendar`);
       if (response.ok) {
         const data = await response.json();
-
-        // Extract the pdfUrl depending on how the backend sends it
-        const pdfUrl = data.pdfUrl || (data.data && data.data.pdfUrl) || (Array.isArray(data.data) && data.data[0]?.pdfUrl);
-
-        if (pdfUrl) {
-          // Construct the full URL pointing to your backend file route
-          const fullUrl = `${process.env.NEXT_PUBLIC_API_URL}/academic-calendar/file/${pdfUrl}`;
-          handleOpenPdf(fullUrl, "Academic Calendar");
-        } else {
-          alert("No academic calendar found.");
+        if (Array.isArray(data)) {
+          setAcademicCalendars(data);
+        } else if (data.data && Array.isArray(data.data)) {
+          setAcademicCalendars(data.data);
         }
-      } else {
-        alert("Failed to fetch academic calendar.");
       }
     } catch (error) {
       console.error(error);
-      alert("Error fetching academic calendar.");
+    } finally {
+      setLoadingCalendar(false);
     }
   };
 
@@ -92,19 +107,42 @@ const MandatoryDisclosure = () => {
                     <table className="w-full text-left text-[13px] md:text-[15px]">
                       <thead className="bg-gray-100">
                         <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                          <th className="py-3 md:px-4 px-1 border-b">Sl No</th>
                           <th className="py-3 md:px-4 px-1 border-b">Title</th>
                           <th className="py-3 md:px-4 px-1 border-b">View</th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr className="text-textGray">
-                          <td className="py-3 md:px-4 px-1 border-b">Academic Calendar</td>
-                          <td className="py-3 md:px-4 px-1 border-b">
-                            <div onClick={handleFetchAcademicCalendar} className="text-[#2884CA] hover:underline cursor-pointer">
-                              View Academic Calendar
-                            </div>
-                          </td>
-                        </tr>
+                        {academicCalendars.map((calendar, idx) => (
+                          <tr key={idx} className="text-textGray">
+                            <td className="py-3 md:px-4 px-1 border-b">{idx + 1}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">{calendar.title || "Academic Calendar"}</td>
+                            <td className="py-3 md:px-4 px-1 border-b">
+                              <div
+                                onClick={() =>
+                                  handleOpenPdf(`${process.env.NEXT_PUBLIC_API_URL}/academic-calendar/file/${calendar.pdfUrl}`, calendar.title)
+                                }
+                                className="text-[#2884CA] hover:underline cursor-pointer"
+                              >
+                                View Academic Calendar
+                              </div>
+                            </td>
+                          </tr>
+                        ))}
+                        {loadingCalendar && (
+                          <tr className="text-textGray">
+                            <td colSpan={3} className="py-3 md:px-4 px-1 border-b text-center">
+                              Loading...
+                            </td>
+                          </tr>
+                        )}
+                        {!loadingCalendar && academicCalendars.length === 0 && (
+                          <tr className="text-textGray">
+                            <td colSpan={3} className="py-3 md:px-4 px-1 border-b text-center">
+                              No academic calendars found.
+                            </td>
+                          </tr>
+                        )}
                       </tbody>
                     </table>
                   </div>
@@ -390,8 +428,7 @@ const MandatoryDisclosure = () => {
                   </div>
                 </div>
               </>
-            ) :  disclosureTitles[selectedIndex] === "Summary" ||
-              disclosureTitles[selectedIndex] === "Academic Council" ? (
+            ) : disclosureTitles[selectedIndex] === "Summary" || disclosureTitles[selectedIndex] === "Academic Council" ? (
               <>
                 <div className="overflow-x-auto">
                   <h2 className="text-[20px] font-bold text-textGray mb-4">{disclosureTitles[selectedIndex]}</h2>
@@ -426,7 +463,7 @@ const MandatoryDisclosure = () => {
                   </div>
                 </div>
               </>
-            ) :  disclosureTitles[selectedIndex] === "Anti-Ragging Committee" ? (
+            ) : disclosureTitles[selectedIndex] === "Anti-Ragging Committee" ? (
               <>
                 {" "}
                 <h2 className="text-[20px] font-bold text-textGray mb-2">Anti Ragging Policy</h2>
@@ -1478,9 +1515,7 @@ const MandatoryDisclosure = () => {
                   </div>
                 ))}
               </>
-            ) : disclosureTitles[selectedIndex] === "NIRF Disclosure" ||
-              disclosureTitles[selectedIndex] === "Policy"
-              ? (
+            ) : disclosureTitles[selectedIndex] === "NIRF Disclosure" || disclosureTitles[selectedIndex] === "Policy" ? (
               <>
                 {disclosureData[selectedIndex]?.data?.map((item, idx) => (
                   <div key={idx} className="mb-10">

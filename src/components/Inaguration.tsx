@@ -1,7 +1,8 @@
 "use client";
 
 import { motion, useScroll, useTransform, useSpring, useMotionValueEvent } from "framer-motion";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
+import { flushSync } from "react-dom";
 import confetti from "canvas-confetti";
 
 // Left half of the curtain
@@ -250,7 +251,8 @@ const LeftCurtain = () => (
     <path fillRule="evenodd" clipRule="evenodd" d="M701.115 -290.141H692.122V1173.14H701.115V-290.141Z" fill="#025C9E" />
     <path fillRule="evenodd" clipRule="evenodd" d="M700.127 -290.141H693.13V1173.14H700.127V-290.141Z" fill="#025EA2" />
     <path d="M699.138 -290.141H694.119V1173.14H699.138V-290.141Z" fill="#0261A7" />
-    <rect x="-6" width="1452" height="883" fill="url(#paint0_radial_left)" />
+    <rect x="-6" width="1452" height="883" fill="url(#paint0_radial_left)" style={{ mixBlendMode: "soft-light" }} />
+    <rect x="-116" y="611" width="1672" height="308" fill="url(#paint1_linear_left)" style={{ mixBlendMode: "multiply" }} />
     <defs>
       <radialGradient
         id="paint0_radial_left"
@@ -263,6 +265,10 @@ const LeftCurtain = () => (
         <stop stopColor="#012A4A" stopOpacity="0" />
         <stop offset="1" stopColor="#012A4A" />
       </radialGradient>
+      <linearGradient id="paint1_linear_left" x1="720" y1="611" x2="720" y2="919" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#000000" stopOpacity="0" />
+        <stop offset="1" stopColor="#000000" />
+      </linearGradient>
     </defs>
   </svg>
 );
@@ -513,7 +519,8 @@ const RightCurtain = () => (
     <path fillRule="evenodd" clipRule="evenodd" d="M1427.12 -290.14H1418.12V1173.14H1427.12V-290.14Z" fill="#025C9E" />
     <path fillRule="evenodd" clipRule="evenodd" d="M1426.13 -290.14H1419.13V1173.14H1426.13V-290.14Z" fill="#025EA2" />
     <path d="M1425.14 -290.14H1420.12V1173.14H1425.14V-290.14Z" fill="#0261A7" />
-    <rect x="-6" width="1452" height="883" fill="url(#paint0_radial_right)" />
+    <rect x="-6" width="1452" height="883" fill="url(#paint0_radial_right)" style={{ mixBlendMode: "soft-light" }} />
+    <rect x="-116" y="611" width="1672" height="308" fill="url(#paint1_linear_right)" style={{ mixBlendMode: "multiply" }} />
     <defs>
       <radialGradient
         id="paint0_radial_right"
@@ -526,6 +533,10 @@ const RightCurtain = () => (
         <stop stopColor="#012A4A" stopOpacity="0" />
         <stop offset="1" stopColor="#012A4A" />
       </radialGradient>
+      <linearGradient id="paint1_linear_right" x1="720" y1="611" x2="720" y2="919" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#000000" stopOpacity="0" />
+        <stop offset="1" stopColor="#000000" />
+      </linearGradient>
     </defs>
   </svg>
 );

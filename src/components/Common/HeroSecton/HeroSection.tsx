@@ -95,7 +95,7 @@ const HeroSection = ({ images = [] }: HeroSectionProps) => {
                   src={slide.desktopSrc}
                   alt={`Desktop Background ${index + 1}`}
                   fill
-                  className="object-cover hidden md:block -translate-y-[90px] lg:translate-y-0"
+                  className="object-cover hidden lg:block -translate-y-[90px] lg:translate-y-0"
                   priority={index === 0}
                 />
               )}
@@ -106,7 +106,7 @@ const HeroSection = ({ images = [] }: HeroSectionProps) => {
                   src={slide.mobileSrc}
                   alt={`Mobile Background ${index + 1}`}
                   fill
-                  className="object-cover block md:hidden -translate-y-[90px] lg:translate-y-0"
+                  className="object-cover block lg:hidden -translate-y-[90px] lg:translate-y-0"
                   priority={index === 0}
                 />
               )}

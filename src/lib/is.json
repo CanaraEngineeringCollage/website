@@ -10799,19 +10799,23 @@
     "studentAcheivemtents": [
       {
         "title": "Student Achievements",
-        "imageUrl": "https://apiserver.cec.edu.in/files/Participation%20Outside%20State"
+        "imageUrl": "https://apiserver.cec.edu.in/files/1.NPTEL.jpg"
       },
       {
         "title": "",
-        "imageUrl": "https://apiserver.cec.edu.in/files/Prizes%20and%20award%20received"
+        "imageUrl": "https://apiserver.cec.edu.in/files/2.TECHNICAL%20EVENTS.jpg"
       },
       {
         "title": "",
-        "imageUrl": "https://apiserver.cec.edu.in/files/NPTEL%20Certification"
+        "imageUrl": "https://apiserver.cec.edu.in/files/3.KSCST.jpg"
       },
       {
-        "title": "Result",
-        "imageUrl": "https://apiserver.cec.edu.in/files/Examination%20rsult"
+        "title": "",
+        "imageUrl": "https://apiserver.cec.edu.in/files/4.AWARDS.jpg"
+      },
+      {
+        "title": "",
+        "imageUrl": "https://apiserver.cec.edu.in/files/5.%20EXAM%20RESULTS.jpg"
       }
     ],
     "academicsProgram": {

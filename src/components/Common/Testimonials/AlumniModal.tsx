@@ -74,13 +74,13 @@ export default function AlumniModal({ isOpen, onClose, alumniData }: AlumniModal
                       </div>
 
                       <div className="flex gap-4 text-sm font-medium  p-3 rounded-lg w-fit">
-                        <div>
-                          <span className="text-textGray block text-xs">Batch</span>
+                        <div className="flex gap-1 items-center ">
+                          <span className="text-textGray block ">Batch</span>
                           {alumniData.batch}
                         </div>
                         <div className="w-px bg-gray-300"></div>
-                        <div>
-                          <span className="text-textGray block text-xs">Branch</span>
+                        <div className="flex gap-1 items-center ">
+                          <span className="text-textGray block ">Branch</span>
                           {alumniData.branch}
                         </div>
                       </div>
