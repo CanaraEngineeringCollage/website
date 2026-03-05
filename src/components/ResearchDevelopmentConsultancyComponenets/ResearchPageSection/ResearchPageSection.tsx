@@ -51,7 +51,6 @@ const ResearchPolicies = () => (
       </ul>
     </div>
 
-    
     {/* New Section: Research Support Schemes */}
     <div className="space-y-5">
       <h2 className="text-[24px] text-[#1d1d1f] font-bold mb-2">Research Support Schemes at CEC</h2>
@@ -130,9 +129,8 @@ const ResearchBodies = () => (
     <h2 className="text-[24px] text-[#1d1d1f] font-bold mb-2">Research Bodies & Committees</h2>
     <ul className="list-disc ml-5 space-y-2">
       <li>
-        <strong>Research Advisory Committee (RAC):</strong> Review and
-approve research proposals, guide research policies, monitor funded projects, and
-ensure all research adheres to national ethical guidelines.
+        <strong>Research Advisory Committee (RAC):</strong> Review and approve research proposals, guide research policies, monitor funded projects,
+        and ensure all research adheres to national ethical guidelines.
         <br />
         <strong>Chairperson:</strong> Principal
         <br />
@@ -190,70 +188,74 @@ const DepartmentHighlights = () => (
 
     <h3 className="font-bold text-[20px]">Student Research & Achievements (Patents)</h3>
     <div className="rounded overflow-x-auto border border-gray-200 w-full">
-    <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px] text-textGray">
-      <thead>
-        <tr className="bg-[#F3F8FC] text-[#2884CA]">
-          <th className="py-3 md:px-4 px-1 border-b">S.No</th>
-          <th className="py-3 md:px-4 px-1 border-b">Student Name(s)</th>
-          <th className="py-3 md:px-4 px-1 border-b">Title / Achievement</th>
-          <th className="py-3 md:px-4 px-1 border-b">Agency / Year</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td className="py-3 md:px-4 align-top px-1 border-b">1</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">
-            Mehul Muralidhar Kini, Anoop S Prabhu K, Shashank S, M Akhila Prabhu, Sarthak Pramod Pai, Sharan Raghveer Pai
-          </td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">UAV Assisted Waste Segregation for Urban Areas</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
-        </tr>
-        <tr>
-          <td className="py-3 md:px-4 align-top px-1 border-b">2</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Pratham R, Shreya M, Sidharth K, Jayashree A R</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">AI-based Acoustic Wave Monitoring of Rail Wear, Quality, Along with Other Parameters</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
-        </tr>
-        <tr>
-          <td className="py-3 md:px-4 align-top px-1 border-b">3</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Akshata Krishna Hegde, Abhijna, Karishma B, Shriram Udaya Kumar Shenoy</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">AI-Based Road Inspection System</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
-        </tr>
-        <tr>
-          <td className="py-3 md:px-4 align-top px-1 border-b">4</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Chitra, Akshay M, Karishma K, Nithin Kamath</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Artificial Intelligence for Smart Agriculture</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
-        </tr>
-        <tr>
-          <td className="py-3 md:px-4 align-top px-1 border-b">5</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Shreelakshmi R Hegde, Komal Naik, Siddarth Kini Ullal, Jagat Pal</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">CookCommander - An IoT-Based Robust Stove Control System</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
-        </tr>
-        <tr>
-          <td className="py-3 md:px-4 align-top px-1 border-b">6</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">M Sooraj Shenoy, Denzil Serrao, Yatheesha K V, Karthik Baliga</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Dashboard for Swacchta Using Artificial Intelligence-Based Image Analysis</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
-        </tr>
-        <tr>
-          <td className="py-3 md:px-4 align-top px-1 border-b">7</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Abhishek Sudesh Naik, Manish Anandu Naik, Karthik Ravi Achari, Tejas Suresh Tandel</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Smart Bin Incentives System</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
-        </tr>
-      </tbody>
-    </table>
+      <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px] text-textGray">
+        <thead>
+          <tr className="bg-[#F3F8FC] text-[#2884CA]">
+            <th className="py-3 md:px-4 px-1 border-b">S.No</th>
+            <th className="py-3 md:px-4 px-1 border-b">Student Name(s)</th>
+            <th className="py-3 md:px-4 px-1 border-b">Title / Achievement</th>
+            <th className="py-3 md:px-4 px-1 border-b">Agency / Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="py-3 md:px-4 align-top px-1 border-b">1</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">
+              Mehul Muralidhar Kini, Anoop S Prabhu K, Shashank S, M Akhila Prabhu, Sarthak Pramod Pai, Sharan Raghveer Pai
+            </td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">UAV Assisted Waste Segregation for Urban Areas</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
+          </tr>
+          <tr>
+            <td className="py-3 md:px-4 align-top px-1 border-b">2</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Pratham R, Shreya M, Sidharth K, Jayashree A R</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">
+              AI-based Acoustic Wave Monitoring of Rail Wear, Quality, Along with Other Parameters
+            </td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
+          </tr>
+          <tr>
+            <td className="py-3 md:px-4 align-top px-1 border-b">3</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Akshata Krishna Hegde, Abhijna, Karishma B, Shriram Udaya Kumar Shenoy</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">AI-Based Road Inspection System</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
+          </tr>
+          <tr>
+            <td className="py-3 md:px-4 align-top px-1 border-b">4</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Chitra, Akshay M, Karishma K, Nithin Kamath</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Artificial Intelligence for Smart Agriculture</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
+          </tr>
+          <tr>
+            <td className="py-3 md:px-4 align-top px-1 border-b">5</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Shreelakshmi R Hegde, Komal Naik, Siddarth Kini Ullal, Jagat Pal</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">CookCommander - An IoT-Based Robust Stove Control System</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
+          </tr>
+          <tr>
+            <td className="py-3 md:px-4 align-top px-1 border-b">6</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">M Sooraj Shenoy, Denzil Serrao, Yatheesha K V, Karthik Baliga</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Dashboard for Swacchta Using Artificial Intelligence-Based Image Analysis</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
+          </tr>
+          <tr>
+            <td className="py-3 md:px-4 align-top px-1 border-b">7</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">
+              Abhishek Sudesh Naik, Manish Anandu Naik, Karthik Ravi Achari, Tejas Suresh Tandel
+            </td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Smart Bin Incentives System</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <p>
       <strong>Collaborations & MoUs:</strong>
     </p>
     <ul className="list-disc ml-5 space-y-1">
-      <li>NexaInnovSolutions — Internships, projects, research, placements</li>
-      <li>Accolade Tech Solutions Pvt. Ltd. — Internships, projects, research, placements</li>
+      <li>NexaInnovSolutions - Internships, projects, research, placements</li>
+      <li>Accolade Tech Solutions Pvt. Ltd. - Internships, projects, research, placements</li>
     </ul>
 
     {/* Science & Humanities */}
@@ -305,9 +307,9 @@ const DepartmentHighlights = () => (
       <strong>Student Achievements:</strong>
     </p>
     <ul className="list-disc ml-5 space-y-1">
-      <li>Varun Raj — Top 12 finalists, Emerge Ideathon (Feb 2025)</li>
-      <li>Melisha — Top 12 finalists, Emerge Ideathon (Feb 2025)</li>
-      <li>Diya H S — Top 12 finalists, Emerge Ideathon (Feb 2025)</li>
+      <li>Varun Raj - Top 12 finalists, Emerge Ideathon (Feb 2025)</li>
+      <li>Melisha - Top 12 finalists, Emerge Ideathon (Feb 2025)</li>
+      <li>Diya H S - Top 12 finalists, Emerge Ideathon (Feb 2025)</li>
     </ul>
 
     {/* CSD */}
@@ -347,54 +349,56 @@ const DepartmentHighlights = () => (
     </ul>
     <h3 className="font-bold text-[20px]">Student Research & Achievements</h3>
     <div className="rounded overflow-x-auto border border-gray-200 w-full">
-    <table className="w-full border border-gray-300 text-left text-textGray">
-      <thead>
-        <tr className="bg-[#F3F8FC] text-[#2884CA]">
-          <th className="py-3 md:px-4 px-1 border-b">S.No</th>
-          <th className="py-3 md:px-4 px-1 border-b">Student Name(s)</th>
-          <th className="py-3 md:px-4 px-1 border-b">Title / Achievement</th>
-          <th className="py-3 md:px-4 px-1 border-b">Conference / Journal / Year</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td className="py-3 md:px-4 align-top px-1 border-b">1</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Guruprasad Bhat, Sneha Shanbhag, Swati Shet, Vasudeva</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Avatar Closet: An AR-Based Multi-Modal Virtual Try-On System for Fashion Retail</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">3rd IEEE ICRAIS, 2025</td>
-        </tr>
-        <tr>
-          <td className="py-3 md:px-4 align-top px-1 border-b">2</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Sruthi K S</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">A Unified Computer Vision System for Multilingual Bi-directional Gesture Recognition</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">3rd IEEE ICRAIS, 2025</td>
-        </tr>
-        <tr>
-          <td className="py-3 md:px-4 align-top px-1 border-b">3</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Trayee Shridhar Nayak</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Deep Learning for Tulsi Leaf Disease Identification</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">IEEE AIDE, 2025</td>
-        </tr>
-        <tr>
-          <td className="py-3 md:px-4 align-top px-1 border-b">4</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Parimi Uma Sahithya</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Harnessing Deep Learning for Missing Child Identification</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">ICAIT, 2024</td>
-        </tr>
-        <tr>
-          <td className="py-3 md:px-4 align-top px-1 border-b">5</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Nikitha Mogaveer</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Handwritten Character Recognition of Kannada using CNN</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">IJARCCE, 2024</td>
-        </tr>
-        <tr>
-          <td className="py-3 md:px-4 align-top px-1 border-b">6</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Ananya Mrutyunjaya et al.</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">Virtudine: Discover Nutrient-Rich Flavors Through Pixels using AR</td>
-          <td className="py-3 md:px-4 align-top px-1 border-b">NCDTE, 2024</td>
-        </tr>
-      </tbody>
-    </table>
+      <table className="w-full border border-gray-300 text-left text-textGray">
+        <thead>
+          <tr className="bg-[#F3F8FC] text-[#2884CA]">
+            <th className="py-3 md:px-4 px-1 border-b">S.No</th>
+            <th className="py-3 md:px-4 px-1 border-b">Student Name(s)</th>
+            <th className="py-3 md:px-4 px-1 border-b">Title / Achievement</th>
+            <th className="py-3 md:px-4 px-1 border-b">Conference / Journal / Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="py-3 md:px-4 align-top px-1 border-b">1</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Guruprasad Bhat, Sneha Shanbhag, Swati Shet, Vasudeva</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Avatar Closet: An AR-Based Multi-Modal Virtual Try-On System for Fashion Retail</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">3rd IEEE ICRAIS, 2025</td>
+          </tr>
+          <tr>
+            <td className="py-3 md:px-4 align-top px-1 border-b">2</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Sruthi K S</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">
+              A Unified Computer Vision System for Multilingual Bi-directional Gesture Recognition
+            </td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">3rd IEEE ICRAIS, 2025</td>
+          </tr>
+          <tr>
+            <td className="py-3 md:px-4 align-top px-1 border-b">3</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Trayee Shridhar Nayak</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Deep Learning for Tulsi Leaf Disease Identification</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">IEEE AIDE, 2025</td>
+          </tr>
+          <tr>
+            <td className="py-3 md:px-4 align-top px-1 border-b">4</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Parimi Uma Sahithya</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Harnessing Deep Learning for Missing Child Identification</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">ICAIT, 2024</td>
+          </tr>
+          <tr>
+            <td className="py-3 md:px-4 align-top px-1 border-b">5</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Nikitha Mogaveer</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Handwritten Character Recognition of Kannada using CNN</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">IJARCCE, 2024</td>
+          </tr>
+          <tr>
+            <td className="py-3 md:px-4 align-top px-1 border-b">6</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Ananya Mrutyunjaya et al.</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">Virtudine: Discover Nutrient-Rich Flavors Through Pixels using AR</td>
+            <td className="py-3 md:px-4 align-top px-1 border-b">NCDTE, 2024</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <p>
       <strong>Research Infrastructure:</strong> Research lab with 8 PCs.
@@ -403,9 +407,9 @@ const DepartmentHighlights = () => (
       <strong>Collaborations & MoUs:</strong>
     </p>
     <ul className="list-disc ml-5 space-y-1">
-      <li>DLithe, Bengaluru — Industrial training, Internship, R&D, Skill development, Guest lectures, FDPs</li>
-      <li>GlowLogics Solutions — Webinar</li>
-      <li>Karunadu Technologies — FDPs and Internships</li>
+      <li>DLithe, Bengaluru - Industrial training, Internship, R&D, Skill development, Guest lectures, FDPs</li>
+      <li>GlowLogics Solutions - Webinar</li>
+      <li>Karunadu Technologies - FDPs and Internships</li>
     </ul>
     <p>
       <strong>Upcoming Initiatives:</strong> Workshop on “Manuscript Writing”, Skill Development Programme on “IoT Unplugged: Connecting the Future”
@@ -424,11 +428,11 @@ const DepartmentHighlights = () => (
       <strong>Student Research & Achievements:</strong>
     </p>
     <ul className="list-disc ml-5 space-y-1">
-      <li>Sindhu Shenoy M — Aid for Visually Challenged People (ICWITE 2024)</li>
-      <li>Bharath H M — Reflecting on Technology: Smart Mirror Review (Springer Nature 2024)</li>
-      <li>Prathap M — Efficient Vehicle Management through Automated License Plate Recognition (ICCSST-2023)</li>
-      <li>Bhavyashree — Pothole Detection using YOLOv5 (ICCSST-2023)</li>
-      <li>Pavan — Recognition of diseases in Tomato and Potato plant (NCETE-2023)</li>
+      <li>Sindhu Shenoy M - Aid for Visually Challenged People (ICWITE 2024)</li>
+      <li>Bharath H M - Reflecting on Technology: Smart Mirror Review (Springer Nature 2024)</li>
+      <li>Prathap M - Efficient Vehicle Management through Automated License Plate Recognition (ICCSST-2023)</li>
+      <li>Bhavyashree - Pothole Detection using YOLOv5 (ICCSST-2023)</li>
+      <li>Pavan - Recognition of diseases in Tomato and Potato plant (NCETE-2023)</li>
     </ul>
     <p>
       <strong>Research Infrastructure:</strong> Research/Project Lab with 3D Printer and additional lab access beyond working hours.
@@ -437,8 +441,8 @@ const DepartmentHighlights = () => (
       <strong>Collaborations & MoUs:</strong>
     </p>
     <ul className="list-disc ml-5 space-y-1">
-      <li>Govt Tool and Training Centre — Internships and Training</li>
-      <li>Kakunje Software Pvt. Ltd. — Workshops and Projects</li>
+      <li>Govt Tool and Training Centre - Internships and Training</li>
+      <li>Kakunje Software Pvt. Ltd. - Workshops and Projects</li>
     </ul>
 
     <p>
@@ -481,26 +485,26 @@ const DepartmentHighlights = () => (
     </p>
     <ul className="list-disc ml-5 space-y-1">
       <li>
-        Diya, Prithvi S Nayak, Samridhi S, Shraddha J Naik — Innovative Web-Based Platform for Sustainable and Efficient Canteen Operations (Utility
+        Diya, Prithvi S Nayak, Samridhi S, Shraddha J Naik - Innovative Web-Based Platform for Sustainable and Efficient Canteen Operations (Utility
         Patent, 2025)
       </li>
       <li>
-        Amulya Jois, Rakshitha Shetty A, Tilak Shetty, Venkatesh R Kamath — Intercode - Seamless Real-Time Code Collaboration for Technical Interviews
+        Amulya Jois, Rakshitha Shetty A, Tilak Shetty, Venkatesh R Kamath - Intercode - Seamless Real-Time Code Collaboration for Technical Interviews
         (Utility Patent, 2025)
       </li>
-      <li>Sujal V Kanchan — PrivAI - Intelligent Privacy Detection and Protection Solution for Social Media Users (Utility Patent, 2025)</li>
-      <li>Aniketh K, Darshan, Nishan, Varshith B A — AI Talentsuite – Dual Application System for Candidate Upskilling (Utility Patent, 2025)</li>
+      <li>Sujal V Kanchan - PrivAI - Intelligent Privacy Detection and Protection Solution for Social Media Users (Utility Patent, 2025)</li>
+      <li>Aniketh K, Darshan, Nishan, Varshith B A - AI Talentsuite – Dual Application System for Candidate Upskilling (Utility Patent, 2025)</li>
       <li>
-        Sumedha, Sinchana Sn, Shreesha, Sujnan Acharya — AI-Based Women and Child Health Monitoring Application During Pregnancy Stages (Utility
+        Sumedha, Sinchana Sn, Shreesha, Sujnan Acharya - AI-Based Women and Child Health Monitoring Application During Pregnancy Stages (Utility
         Patent, 2025)
       </li>
       <li>
-        Krishna H Pallan, Akash Javali, Payal, P Rethi Kumaar — Mind-Care: Multimodal Sentiment Analysis Framework for Mental Health Detection
+        Krishna H Pallan, Akash Javali, Payal, P Rethi Kumaar - Mind-Care: Multimodal Sentiment Analysis Framework for Mental Health Detection
         (Utility Patent, 2025)
       </li>
-      <li>B Lipika, Devika Bhandary, Rashmi S, Shraddha K — Agriflow: Revolutionizing Irrigation with IoT Automation (Utility Patent, 2025)</li>
+      <li>B Lipika, Devika Bhandary, Rashmi S, Shraddha K - Agriflow: Revolutionizing Irrigation with IoT Automation (Utility Patent, 2025)</li>
       <li>
-        Chirag Honnavarkar, Pradhyumna Prabhu, Abhay S K, Chaithra Nayak — Retinaguard: Optimal CNN Solution for Diabetic Retinopathy (Utility Patent,
+        Chirag Honnavarkar, Pradhyumna Prabhu, Abhay S K, Chaithra Nayak - Retinaguard: Optimal CNN Solution for Diabetic Retinopathy (Utility Patent,
         2024)
       </li>
     </ul>
@@ -513,23 +517,20 @@ const DepartmentHighlights = () => (
 // Research Output Section
 const ResearchOutput = () => (
   <div className="text-textGray text-[17px] ">
-
     <h2 className="text-[24px] text-[#1d1d1f] font-bold mb-2">Research Output</h2>
     <div className="mb-4">
-            <h3 className="text-[20px] text-[#1d1d1f] mb-2 font-bold">Research Output Summary (2020–2025)</h3>
-   <img src="https://apiserver.cec.edu.in/files/rdcc" className="" alt="" />
-    <ul className="list-disc ml-5 mt-3 space-y-1">
-      <li>Number of patents published/granted (published/granted): 123</li>
-      <li>External Project funds received (total amount): ₹31,41,764</li>
-    </ul></div>
-       <div className="mb-2">
-            <h3 className="text-[20px] text-[#1d1d1f] mb-2 font-bold">Department-Wise Unique Research Publications (2021–2025)</h3>
-   <img src="https://apiserver.cec.edu.in/files/deptUniqueResearch" className="mb-6" alt="" />
-   <img src="https://apiserver.cec.edu.in/files/deptUniqueResearch-2" className="" alt="" />
+      <h3 className="text-[20px] text-[#1d1d1f] mb-2 font-bold">Research Output Summary (2020–2025)</h3>
+      <img src="https://apiserver.cec.edu.in/files/rdcc" className="" alt="" />
+      <ul className="list-disc ml-5 mt-3 space-y-1">
+        <li>Number of patents published/granted (published/granted): 123</li>
+        <li>External Project funds received (total amount): ₹31,41,764</li>
+      </ul>
     </div>
-    
-
-    
+    <div className="mb-2">
+      <h3 className="text-[20px] text-[#1d1d1f] mb-2 font-bold">Department-Wise Unique Research Publications (2021–2025)</h3>
+      <img src="https://apiserver.cec.edu.in/files/deptUniqueResearch" className="mb-6" alt="" />
+      <img src="https://apiserver.cec.edu.in/files/deptUniqueResearch-2" className="" alt="" />
+    </div>
   </div>
 );
 
@@ -553,20 +554,20 @@ const ResearchInfrastructure = () => (
 const Collaborations = () => (
   <div className="text-textGray text-[17px] space-y-5">
     <h2 className="text-[24px] text-[#1d1d1f] font-bold mb-2">Collaborations & MoUs</h2>
-   <ul className="list-disc ml-5 space-y-1">
-  <li>Govt. Tool Room and Training Centre, Baikampady</li>
-  <li>ScleraVDMS Pvt. Ltd.</li>
-  <li>Nexalnnov Solutions</li>
-  <li>Megamind Advertising Pvt. Ltd.</li>
-  <li>DLithe, Bengaluru</li>
-  <li>GlowLogics Solutions</li>
-  <li>Karunadu Technologies</li>
-  <li>Mangalore University (Cardiff)</li>
-  <li>Accolade Tech Solutions Pvt. Ltd.</li>
-  <li>Manipal Academy of Higher Education</li>
-  <li>QSPIDER</li>
-  <li>ETHNUS</li>
-</ul>
+    <ul className="list-disc ml-5 space-y-1">
+      <li>Govt. Tool Room and Training Centre, Baikampady</li>
+      <li>ScleraVDMS Pvt. Ltd.</li>
+      <li>Nexalnnov Solutions</li>
+      <li>Megamind Advertising Pvt. Ltd.</li>
+      <li>DLithe, Bengaluru</li>
+      <li>GlowLogics Solutions</li>
+      <li>Karunadu Technologies</li>
+      <li>Mangalore University (Cardiff)</li>
+      <li>Accolade Tech Solutions Pvt. Ltd.</li>
+      <li>Manipal Academy of Higher Education</li>
+      <li>QSPIDER</li>
+      <li>ETHNUS</li>
+    </ul>
   </div>
 );
 
@@ -588,11 +589,12 @@ const RsdPageSection = () => {
   return (
     <section className="py-10 xl:py-20 text-[#1D1D1F] overflow-hidden">
       <div className="lg2:mx-24 mx-5">
-        <h1 className="text-[30px] lg:text-[54px] font-bold pb-1 leading-[1.2] lg:pb-10 text-[#1D1D1F]">Research &amp; Development <br /> and Consultancy Cell</h1>
+        <h1 className="text-[30px] lg:text-[54px] font-bold pb-1 leading-[1.2] lg:pb-10 text-[#1D1D1F]">
+          Research &amp; Development <br /> and Consultancy Cell
+        </h1>
         <div className="md:grid grid-cols-1 gap-3 md:gap-0 md:grid-cols-12 mt-10">
           <div className="col-span-3 sticky top-20 md:top-32 self-start md:mb-0">
             <div className="sticky top-20 h-fit">
-              
               {/* Mobile Dropdown */}
               <div className="block md:hidden mb-7">
                 <CustomSelect
@@ -607,17 +609,17 @@ const RsdPageSection = () => {
 
               {/* Desktop Sidebar */}
               <div className="hidden md:block">
-              {titles.map((title, index) => (
-                <h1
-                  key={index}
-                  onClick={() => setSelectedIndex(index)}
-                  className={`text-[20px] pb-3 mb-3 cursor-pointer ${index !== titles.length - 1 ? "border-b-2 border-border" : ""} ${
-                    selectedIndex === index ? "text-[#2884CA] font-bold" : "text-textGray font-[500]"
-                  }`}
-                >
-                  {title}
-                </h1>
-              ))}
+                {titles.map((title, index) => (
+                  <h1
+                    key={index}
+                    onClick={() => setSelectedIndex(index)}
+                    className={`text-[20px] pb-3 mb-3 cursor-pointer ${index !== titles.length - 1 ? "border-b-2 border-border" : ""} ${
+                      selectedIndex === index ? "text-[#2884CA] font-bold" : "text-textGray font-[500]"
+                    }`}
+                  >
+                    {title}
+                  </h1>
+                ))}
               </div>
             </div>
           </div>

@@ -60,37 +60,37 @@ const nonTechnicalClubs: ClubData[] = [
 
 const technicalClubs: ClubData[] = [
   {
-    title: "Coding Club — CSE",
+    title: "Coding Club - CSE",
     description: "Enhances programming and problem-solving skills.",
     activities: ["Coding challenges", "Programming competitions", "Collaborative learning sessions"],
   },
   {
-    title: "Design Club — CSD",
+    title: "Design Club - CSD",
     description: "Explores UI/UX and digital creativity.",
     activities: ["Interface design workshops", "Digital visualization projects"],
   },
   {
-    title: "Geek Hub — ISE",
+    title: "Geek Hub - ISE",
     description: "Promotes exploration of emerging technologies.",
     activities: ["Technical workshops", "Knowledge-sharing forums"],
   },
   {
-    title: "Technovation Club — ECE",
+    title: "Technovation Club - ECE",
     description: "Encourages innovation in electronics and hardware systems.",
     activities: ["Electronics experimentation", "Technical demonstrations"],
   },
   {
-    title: "Respawn Syndicate — CSD",
+    title: "Respawn Syndicate - CSD",
     description: "Focuses on gaming technology and creative development.",
     activities: ["Game-tech exploration", "Interactive project work"],
   },
   {
-    title: "AI Club — AIML",
+    title: "AI Club - AIML",
     description: "Engages students in AI-driven learning and innovation.",
     activities: ["AI/ML sessions", "Data-driven project discussions"],
   },
   {
-    title: "Stratalyze — CSBS",
+    title: "Stratalyze - CSBS",
     description: "Integrates analytics with business technology thinking.",
     activities: ["Strategy workshops", "Industry-oriented discussions"],
   },

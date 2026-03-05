@@ -8922,7 +8922,7 @@
           "co": [
             { "no": "CO1", "description": "Design mechanical components like curved beams and cylinders." },
             { "no": "CO2", "description": "Design mechanical components like belts, ropes, chains, and springs." },
-            { "no": "CO3", "description": "Design mechanical components like gears—spur, helical, bevel, and worm gears." },
+            { "no": "CO3", "description": "Design mechanical components like gears-spur, helical, bevel, and worm gears." },
             { "no": "CO4", "description": "Design mechanical components like clutches and brakes." },
             { "no": "CO5", "description": "Understand lubrication and bearings; design hydrodynamic bearings and select antifriction bearings." }
           ]

@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 interface VideoPlayerProps {
   youtubeUrl: string; // can be full URL OR raw videoId
   videoUrl?: string;
-  title?: string;
+  title?: string | JSX.Element;
   subTitle?: string;
   thumbnail?: string;
   titleClassname?: string;
@@ -61,7 +61,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ youtubeUrl, videoUrl, title, 
     <div className="overflow-hidden  max-w-5xl mx-auto xl:max-w-[65%] rounded-4xl px-6 md:px-0 py-">
       <div className="mx-auto text-center text-white mb-10">
         {title && (
-          <h2 className={cn(titleClassname, "text-3xl md:text-[40px] max-w-4xl mx-auto lg2:text-5xl xl:text-6xl font-bold mb-5")}>{title}</h2>
+          <h2 className={ "text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl md:mt-5  font-bold text-[#1D1D1F] mb-5"}>{title}</h2>
         )}
         {subTitle && <p className="font-medium md:text-2xl text-base text-white/60 max-w-4xl mx-auto">{subTitle}</p>}
       </div>

@@ -135,13 +135,10 @@
         },
         {
           "title": "Additional Features",
-          "points": [
-            "A/C Seminar Hall with 500-seat capacity, fully equipped with acoustics",
-            "Dedicated space for Start-up & Incubation Centre"
-          ]
+          "points": ["A/C Seminar Hall with 500-seat capacity, fully equipped with acoustics", "Dedicated space for Start-up & Incubation Centre"]
         },
         {
-          "bottomdescription": "A space built to inspire, connect, and celebrate — all under one roof."
+          "bottomdescription": "A space built to inspire, connect, and celebrate - all under one roof."
         }
       ],
       "desktopSrc": "/campusFacilitiesPageImages/Image2.jpg",

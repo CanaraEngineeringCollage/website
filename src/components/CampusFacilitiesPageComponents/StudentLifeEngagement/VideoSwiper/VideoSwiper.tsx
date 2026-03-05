@@ -7,13 +7,15 @@ import { gsap } from "gsap";
 interface AlumniPodcast {
   id: number;
   url: string;
+  description: string;
 }
 
 interface CarouselProps {
+  heading?: string;
   backgroundColor?: string;
 }
 
-export default function VideoSwiper({ backgroundColor = "" }: CarouselProps) {
+export default function AlumniPodcastCarousel({ heading = "Student Life & Activities at Canara", backgroundColor = "" }: CarouselProps) {
   // --- State ---
   const [podcasts, setPodcasts] = useState<AlumniPodcast[]>([]);
   const [loading, setLoading] = useState(true);
@@ -25,22 +27,80 @@ export default function VideoSwiper({ backgroundColor = "" }: CarouselProps) {
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   // --- Static Data ---
+  // --- Static Data ---
   useEffect(() => {
-    // Generate the 13 .mp4 videos
-    const staticVideos = Array.from({ length: 13 }, (_, i) => ({
-      id: i + 1,
-      url: `https://apiserver.cec.edu.in/files/studentLyfEngagementVideo%20(${i + 1}).mp4`,
-    }));
-    
-    // Add the 2 .mov videos
-    staticVideos.push({
-      id: 14,
-      url: `https://apiserver.cec.edu.in/files/studentLyfEngagementVideo%20(14).mov`,
-    });
-    staticVideos.push({
-      id: 15,
-      url: `https://apiserver.cec.edu.in/files/studentLyfEngagementVideo%20(15).mov`,
-    });
+    const staticVideos = [
+      {
+        id: 1,
+        url: "https://apiserver.cec.edu.in/files/studentLyfEngagementVideo%20(1).mp4",
+        description: "Aakriti Aftermovie",
+      },
+      {
+        id: 2,
+        url: "https://apiserver.cec.edu.in/files/studentLyfEngagementVideo%20(2).mp4",
+        description: "Canara Engineering College Campus Tour",
+      },
+      {
+        id: 3,
+        url: "https://apiserver.cec.edu.in/files/studentLyfEngagementVideo%20(3).mp4",
+        description: "Ayudha Pooja 2025",
+      },
+      {
+        id: 4,
+        url: "https://apiserver.cec.edu.in/files/studentLyfEngagementVideo%20(4).mp4",
+        description: "Branch Entry Freshers Day",
+      },
+      {
+        id: 5,
+        url: "https://apiserver.cec.edu.in/files/studentLyfEngagementVideo%20(5).mp4",
+        description: "CCL-1",
+      },
+      {
+        id: 6,
+        url: "https://apiserver.cec.edu.in/files/studentLyfEngagementVideo%20(6).mp4",
+        description: "CCL-2",
+      },
+      {
+        id: 7,
+        url: "https://apiserver.cec.edu.in/files/studentLyfEngagementVideo%20(7).mp4",
+        description: "Founders Day",
+      },
+      {
+        id: 8,
+        url: "https://apiserver.cec.edu.in/files/studentLyfEngagementVideo%20(8).mp4",
+        description: "Garba 2025",
+      },
+      {
+        id: 9,
+        url: "https://apiserver.cec.edu.in/files/studentLyfEngagementVideo%20(9).mp4",
+        description: "Kabbadi",
+      },
+      {
+        id: 10,
+        url: "https://apiserver.cec.edu.in/files/studentLyfEngagementVideo%20(10).mp4",
+        description: "Orientation Day 2025",
+      },
+      {
+        id: 12,
+        url: "https://apiserver.cec.edu.in/files/studentLyfEngagementVideo%20(12).mp4",
+        description: "Student Council 2025",
+      },
+      {
+        id: 13,
+        url: "https://apiserver.cec.edu.in/files/studentLyfEngagementVideo%20(13).mp4",
+        description: "Republic Day 2026",
+      },
+      {
+        id: 14,
+        url: "https://apiserver.cec.edu.in/files/studentLyfEngagementVideo%20(14).mov",
+        description: "Events",
+      },
+      {
+        id: 15,
+        url: "https://apiserver.cec.edu.in/files/studentLyfEngagementVideo%20(15).mov",
+        description: "Aakrithi 2025",
+      }
+    ];
 
     setPodcasts(staticVideos);
     setLoading(false);
@@ -180,10 +240,16 @@ export default function VideoSwiper({ backgroundColor = "" }: CarouselProps) {
   if (loading) return null;
   if (podcasts.length === 0) return null;
 
+  const currentCenterPodcast = getPodcast(0);
+
   return (
     <section className={`w-full flex flex-col justify-center items-center pt-5 md:pt-0 pb-16 ${backgroundColor} overflow-hidden`}>
+      <div className="w-full max-w-7xl px-5 flex flex-col md:flex-row justify-center items-center pb-9 lg:pb-12 mt-10">
+        <h2 className="text-3xl md:text-[40px] lg:text-5xl font-bold text-[#1D1D1F] text-center md:text-left">{heading}</h2>
+      </div>
+
       <div
-        className="w-full md:w-[120%] flex justify-center items-end gap-3 md:gap-10 touch-pan-y mt-10"
+        className="w-full md:w-[120%] flex justify-center items-end gap-3 md:gap-10 touch-pan-y"
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
@@ -202,7 +268,14 @@ export default function VideoSwiper({ backgroundColor = "" }: CarouselProps) {
         </Card>
 
         {/* --- MAIN CARD --- */}
-        <Card refIndex={2} size="lg" main registerRef={registerRef} onVideoEnd={next} />
+        <Card 
+          refIndex={2} 
+          size="lg" 
+          main 
+          registerRef={registerRef} 
+          onVideoEnd={next}
+          description={currentCenterPodcast?.description}
+        />
 
         <Card refIndex={3} size="md" registerRef={registerRef}>
           <button
@@ -218,7 +291,7 @@ export default function VideoSwiper({ backgroundColor = "" }: CarouselProps) {
         <Card refIndex={4} size="sm" registerRef={registerRef} />
       </div>
 
-      <div className="relative mt-20 w-[80%] md:w-[31rem] h-2 rounded-full bg-[#EADFCF]/50 overflow-hidden">
+      <div className="relative mt-24 md:mt-32 w-[80%] md:w-[31rem] h-2 rounded-full bg-[#EADFCF]/50 overflow-hidden">
         <div
           className="absolute top-0 bottom-0 bg-[#2884CA] transition-all duration-500 ease-out"
           style={{ left: `${(index / podcasts.length) * 100}%`, width: `${(1 / podcasts.length) * 100}%` }}
@@ -237,9 +310,10 @@ interface CardProps {
   refIndex: number;
   registerRef: (i: number, el: HTMLDivElement | null) => void;
   onVideoEnd?: () => void;
+  description?: string;
 }
 
-function Card({ size, children, main = false, refIndex, registerRef, onVideoEnd }: CardProps) {
+function Card({ size, children, main = false, refIndex, registerRef, onVideoEnd, description }: CardProps) {
   const sizeMap = {
     sm: "hidden lg:block lg:w-[26vw] h-[55vh]  scale-90",
     md: "hidden md:block md:w-[30vw] lg:w-[25vw] h-[40vh] lg:h-[70vh] ",
@@ -274,6 +348,13 @@ function Card({ size, children, main = false, refIndex, registerRef, onVideoEnd 
 
         <div className="absolute inset-0 z-20 flex items-center justify-center">{children}</div>
       </div>
+
+      {/* --- ONLY DESCRIPTION UNDER CARD --- */}
+      {main && description && (
+        <div className="absolute top-full left-1/2 -translate-x-1/2 w-[85vw] md:w-[35vw] lg:w-[24vw] text-center mt-6 z-50">
+          <h3 className="text-xl font-bold text-[#1D1D1F] leading-tight">{description}</h3>
+        </div>
+      )}
     </div>
   );
 }

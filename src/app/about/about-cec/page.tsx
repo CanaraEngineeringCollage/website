@@ -9,7 +9,7 @@ import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 export const metadata = {
   title: "About Canara College | Legacy of Excellence Since 1973",
   description:
-    "Learn about Canara College, Mangalore — an institution accredited with A Grade by NAAC, fostering academic excellence and holistic development since 1973.",
+    "Learn about Canara College, Mangalore - an institution accredited with A Grade by NAAC, fostering academic excellence and holistic development since 1973.",
   openGraph: {
     title: "About Canara College | Legacy of Excellence Since 1973",
     description: "Explore the rich history, vision, mission, and values of Canara College, a premier institution affiliated to Mangalore University.",

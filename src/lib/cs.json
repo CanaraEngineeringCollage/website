@@ -3715,8 +3715,8 @@
             { "no": "CO1", "description": "Demonstrate effective communication and teamwork skills in an engineering professional career." },
             { "no": "CO2", "description": "Use IT tools and techniques to generate scientific documentation and results." },
             { "no": "CO3", "description": "Apply critical and creative thinking to identify societal problems and propose innovative solutions." },
-            { "no": "CO4", "description": "—" },
-            { "no": "CO5", "description": "—" }
+            { "no": "CO4", "description": "-" },
+            { "no": "CO5", "description": "-" }
           ]
         },
         {
