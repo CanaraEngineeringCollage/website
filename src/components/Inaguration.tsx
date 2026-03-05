@@ -1097,7 +1097,14 @@ export default function CurtainScreen() {
 
   // THE SEAMLESS UNMOUNT FIX
   useEffect(() => {
-    if (hasVisited) return;
+    if (hasVisited) {
+      // 1. Restore interactions if component is bypassed
+      document.body.style.pointerEvents = ""; 
+      return;
+    }
+
+    // 2. Disable all hovers and clicks on the website while curtain is showing
+    document.body.style.pointerEvents = "none";
 
     const handleScroll = () => {
       if (!containerRef.current) return;
@@ -1108,6 +1115,10 @@ export default function CurtainScreen() {
       // When rect.bottom <= 0, it means the user has fully scrolled past the 200vh section.
       // Your Navbar is now sitting perfectly at the top of their screen.
       if (rect.bottom <= 0) {
+        
+        // 3. Restore interactions right before unmounting
+        document.body.style.pointerEvents = "";
+
         // We use flushSync to instantly remove the component from the DOM
         flushSync(() => {
           setHasVisited(true);
@@ -1120,7 +1131,11 @@ export default function CurtainScreen() {
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      // 4. Safety cleanup to ensure site becomes clickable if component unmounts unexpectedly
+      document.body.style.pointerEvents = "";
+    };
   }, [hasVisited]);
 
   const smoothProgress = useSpring(scrollYProgress, {

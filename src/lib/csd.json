@@ -29,49 +29,332 @@
       "imageUrl": "/departmentImages/departmentHeads/ComputerScienceDesign.webp"
     },
 
-  "allAwards" : [
-  {
-    "id": "awards-academic-years",
-    "title": "",
-    "headers": [
-      { "key": "academicYear", "label": "Academic Year" },
-      { "key": "awardsCount", "label": "Awards" },
-      { "key": "details", "label": "Details" }
-    ],
-    "rows": [
-      {
-        "academicYear": "AY 2022-23",
-        "awardsCount": 10,
-        "details": [
-          "Has secured Runners up place in Volleyball, Inter Collegiate Rest of Bangalore Division zone held at PES Mandya - 2",
-          "Has secured third place in Volleyball, Inter zone/single zone tournament held at PES Mandya - 2",
-          "1st Runner up at NITTE HEALTHCARE INNOVATION HAKATHON -2023 organized by Nitte Incubation Centre - 2",
-          "Runner up in Badminton, Inter Collegiate Division level tournament held at NMAM Institute of Technology Nitte - 1",
-          "Runner-up place in Kabaddi, Inter Collegiate Rest of Bangalore Division level Tournament held at PES College of Engineering Mandya - 3"
-        ]
-      },
-      {
-        "academicYear": "AY 2023-24",
-        "awardsCount": 3,
-        "details": [
-          "1st Prize in the Pitchers during 'CODEBLAZE' held at Sahyadri College of Engineering - 1",
-          "Second prize in 'IDEATHON' organized by CEC Benjanapadavu - 1",
-          "Second Place in Rangeela held during Aakriti-2024, an Inter-collegiate Techno-Cultural Fest organized by CEC Benjanapadavu - 1"
-        ]
-      },
-      {
-        "academicYear": "AY 2024-25",
-        "awardsCount": 5,
-        "details": [
-          "2nd Place in the event Poster Parv held during 'Aakriti 2025', a National Level Techno-Cultural Fest organized by CEC - 1",
-          "Outstanding Achiever of Yukti-2025 and Winner in Logo Design Event at VTU Belagavi - 1",
-          "Second Place in Long Jump event at VTU 26th State Level Inter Collegiate Athletic Meet 2024-25 held at Jawaharlal Nehru New College of Engineering, Shivanogga with performance of 6.00 mtr - 1",
-          "VTU Honors Degree Awarded - 2"
-        ]
-      }
-    ]
-  }
-],
+ "allAwards": [
+    {
+      "id": "awards-2022-2023",
+      "title": "Student Achievements 2022-2023",
+      "headers": [
+        { "key": "slNo", "label": "SL NO" },
+        { "key": "enrollmentNumber", "label": "ENROLLMENT NUMBER" },
+        { "key": "name", "label": "NAME" },
+        { "key": "event", "label": "NAME OF THE EVENT / TECHNICAL FEST" },
+        { "key": "institution", "label": "INSTITUTION & PLACE" },
+        { "key": "date", "label": "DATE OF EVENT" },
+        { "key": "prize", "label": "PRIZE / AWARD" }
+      ],
+      "rows": [
+        {
+          "slNo": "1",
+          "enrollmentNumber": "4CB21CG051",
+          "name": "Shreya S Rao",
+          "event": "Volleyball - Inter Collegiate Rest of Bangalore Division",
+          "institution": "PES Mandya",
+          "date": "11/24/2022",
+          "prize": "Winner"
+        },
+        {
+          "slNo": "2",
+          "enrollmentNumber": "4CB21CG033",
+          "name": "Poorva Kumari",
+          "event": "Volleyball - Inter Collegiate Rest of Bangalore Division",
+          "institution": "PES Mandya",
+          "date": "11/24/2022",
+          "prize": "Winner"
+        },
+        {
+          "slNo": "3",
+          "enrollmentNumber": "4CB21CG051",
+          "name": "Shreya S Rao",
+          "event": "Volleyball - Inter Zone / Single Zone Tournament",
+          "institution": "PES Mandya",
+          "date": "16-12-2022 to 17-12-2022",
+          "prize": "Third Place"
+        },
+        {
+          "slNo": "4",
+          "enrollmentNumber": "4CB21CG038",
+          "name": "Purag P Rai",
+          "event": "NITTE Healthcare Innovation Hackathon 2023",
+          "institution": "Nitte Incubation Centre",
+          "date": "5/5/2023",
+          "prize": "Runner Up"
+        },
+        {
+          "slNo": "5",
+          "enrollmentNumber": "4CB21CG036",
+          "name": "Prakrithi Sujir",
+          "event": "NITTE Healthcare Innovation Hackathon 2023",
+          "institution": "Nitte Incubation Centre",
+          "date": "5/5/2023",
+          "prize": "Runner Up"
+        },
+        {
+          "slNo": "6",
+          "enrollmentNumber": "4CB21CG033",
+          "name": "Poorva Kumari",
+          "event": "Badminton - Inter Collegiate Division Tournament",
+          "institution": "NMAM Institute of Technology, Nitte",
+          "date": "7/19/2023",
+          "prize": "Runner Up"
+        },
+        {
+          "slNo": "7",
+          "enrollmentNumber": "4CB21CG004",
+          "name": "Adithi N",
+          "event": "Kabaddi - Inter Collegiate Rest of Bangalore Division Tournament",
+          "institution": "PES College of Engineering, Mandya",
+          "date": "31-7-2023 to 1-8-2023",
+          "prize": "Runner Up"
+        },
+        {
+          "slNo": "8",
+          "enrollmentNumber": "4CB21CG051",
+          "name": "Shreya S Rao",
+          "event": "Kabaddi - Inter Collegiate Rest of Bangalore Division Tournament",
+          "institution": "PES College of Engineering, Mandya",
+          "date": "31-7-2023 to 1-8-2023",
+          "prize": "Runner Up"
+        }
+      ]
+    },
+    {
+      "id": "awards-2023-2024",
+      "title": "Student Achievements 2023-2024",
+      "headers": [
+        { "key": "slNo", "label": "SL NO" },
+        { "key": "enrollmentNumber", "label": "ENROLLMENT NUMBER" },
+        { "key": "name", "label": "NAME" },
+        { "key": "event", "label": "NAME OF THE EVENT / TECHNICAL FEST" },
+        { "key": "institution", "label": "INSTITUTION & PLACE" },
+        { "key": "date", "label": "DATE OF EVENT" },
+        { "key": "prize", "label": "PRIZE / AWARD" }
+      ],
+      "rows": [
+        {
+          "slNo": "1",
+          "enrollmentNumber": "4CB21CG034",
+          "name": "Prabuddh Shetty",
+          "event": "CODEBLAZE - Pitchers Event",
+          "institution": "Sahyadri College of Engineering",
+          "date": "7-12-2023 to 9-12-2023",
+          "prize": "1st Place"
+        },
+        {
+          "slNo": "2",
+          "enrollmentNumber": "4CB21CG034",
+          "name": "Prabhudh Shetty",
+          "event": "IDEATHON",
+          "institution": "Canara Engineering College, Benjanapadavu",
+          "date": "1/24/2024",
+          "prize": "2nd Place"
+        },
+        {
+          "slNo": "3",
+          "enrollmentNumber": "4CB22CG048",
+          "name": "Shreya Premanand Naik",
+          "event": "Rangeela - Aakriti 2024 Techno Cultural Fest",
+          "institution": "Canara Engineering College, Benjanapadavu",
+          "date": "9-5-2024 to 11-5-2024",
+          "prize": "2nd Place"
+        },
+        {
+          "slNo": "4",
+          "enrollmentNumber": "4CB21CG033",
+          "name": "Poorva Kumari",
+          "event": "VTU Mangalore Division Badminton Tournament",
+          "institution": "St.Joseph Engineering College",
+          "date": "7-Jul-24",
+          "prize": "2nd Place"
+        },
+        {
+          "slNo": "5",
+          "enrollmentNumber": "4CB22CG022",
+          "name": "Mahima US",
+          "event": "UI Design Challenge - TECHX 2024",
+          "institution": "COMEDKares",
+          "date": "7/6/2024",
+          "prize": "Winner"
+        },
+        {
+          "slNo": "6",
+          "enrollmentNumber": "4CB22CG041",
+          "name": "Sanjana Karanth",
+          "event": "UI Design Challenge - TECHX 2024",
+          "institution": "COMEDKares",
+          "date": "7/6/2024",
+          "prize": "Winner"
+        },
+        {
+          "slNo": "7",
+          "enrollmentNumber": "4CB22CG012",
+          "name": "Harshitha Pai",
+          "event": "UI Design Challenge - TECHX 2024",
+          "institution": "COMEDKares",
+          "date": "7/6/2024",
+          "prize": "Winner"
+        },
+        {
+          "slNo": "8",
+          "enrollmentNumber": "4CB22CG008",
+          "name": "Deekshith Nayak",
+          "event": "Valorant Event",
+          "institution": "Sharada PU College",
+          "date": "5/13/2024",
+          "prize": "1st Place"
+        },
+        {
+          "slNo": "10",
+          "enrollmentNumber": "4CB21CG038",
+          "name": "Purag P Rai",
+          "event": "Primed - Placement Hackathon (IEEE Mangalore Subsection)",
+          "institution": "Canara Engineering College",
+          "date": "6/8/2024",
+          "prize": "1st Place"
+        }
+      ]
+    },
+    {
+      "id": "awards-2024-2025",
+      "title": "Student Achievements 2024-2025",
+      "headers": [
+        { "key": "slNo", "label": "SL NO" },
+        { "key": "enrollmentNumber", "label": "ENROLLMENT NUMBER" },
+        { "key": "name", "label": "NAME" },
+        { "key": "event", "label": "NAME OF THE EVENT / TECHNICAL FEST" },
+        { "key": "institution", "label": "INSTITUTION & PLACE" },
+        { "key": "date", "label": "DATE OF EVENT" },
+        { "key": "prize", "label": "PRIZE / AWARD" }
+      ],
+      "rows": [
+        {
+          "slNo": "1",
+          "enrollmentNumber": "4CB21CG012",
+          "name": "Atharv Krishna Gudigar",
+          "event": "KSCST Project Funding - ACCIALERT Real Time IoT Based Accident Detection System",
+          "institution": "Jawaharlal nehru new college of Engineering Shivamogga(JNNCE)",
+          "date": "7/1/2025",
+          "prize": "4500"
+        },
+        {
+          "slNo": "2",
+          "enrollmentNumber": "4CB21CG040",
+          "name": "Ramya Ramachandra Achari",
+          "event": "KSCST Project Funding - ACCIALERT Real Time IoT Based Accident Detection System",
+          "institution": "Jawaharlal nehru new college of Engineering Shivamogga(JNNCE)",
+          "date": "7/2/2025",
+          "prize": "4500"
+        },
+        {
+          "slNo": "3",
+          "enrollmentNumber": "4CB21CG044",
+          "name": "Sanjana",
+          "event": "KSCST Project Funding - ACCIALERT Real Time IoT Based Accident Detection System",
+          "institution": "Jawaharlal nehru new college of Engineering Shivamogga(JNNCE)",
+          "date": "7/3/2025",
+          "prize": "4500"
+        },
+        {
+          "slNo": "4",
+          "enrollmentNumber": "4CB21CG045",
+          "name": "Sanket Narayan Ambig",
+          "event": "KSCST Project Funding - ACCIALERT Real Time IoT Based Accident Detection System",
+          "institution": "Jawaharlal nehru new college of Engineering Shivamogga(JNNCE)",
+          "date": "7/4/2025",
+          "prize": "4500"
+        },
+        {
+          "slNo": "5",
+          "enrollmentNumber": "4CB21CG052",
+          "name": "Shwetha Ravindra Baliga",
+          "event": "VTU Rank",
+          "institution": "VTU",
+          "date": "Feb-25",
+          "prize": "5th Rank"
+        },
+        {
+          "slNo": "6",
+          "enrollmentNumber": "4CB21CG004",
+          "name": "Adithi N",
+          "event": "VTU Rank",
+          "institution": "VTU",
+          "date": "Feb-25",
+          "prize": "6th Rank"
+        },
+        {
+          "slNo": "7",
+          "enrollmentNumber": "4CB21CG030",
+          "name": "Navya",
+          "event": "VTU Rank",
+          "institution": "VTU",
+          "date": "Feb-25",
+          "prize": "10th Rank"
+        },
+        {
+          "slNo": "8",
+          "enrollmentNumber": "4CB21CG052",
+          "name": "Shwetha Ravindra Baliga",
+          "event": "B.E Honours Degree",
+          "institution": "VTU",
+          "date": "Feb-25",
+          "prize": "Honours Degree"
+        },
+        {
+          "slNo": "9",
+          "enrollmentNumber": "4CB21CG040",
+          "name": "Ramya Ramachandra Achari",
+          "event": "B.E Honours Degree",
+          "institution": "VTU",
+          "date": "Feb-25",
+          "prize": "Honours Degree"
+        },
+        {
+          "slNo": "10",
+          "enrollmentNumber": "4CB22CG028",
+          "name": "Pramod GG",
+          "event": "Poster Parv - Aakriti 2025",
+          "institution": "Canara Engineering College",
+          "date": "27-03-2025 to 29-03-2025",
+          "prize": "2nd Place"
+        },
+        {
+          "slNo": "11",
+          "enrollmentNumber": "4CB23CG006",
+          "name": "Ankur A Prabhu",
+          "event": "Yukti 2025 - Logo Design Event",
+          "institution": "VTU Belagavi",
+          "date": "2/21/2025",
+          "prize": "Winner"
+        },
+        {
+          "slNo": "12",
+          "enrollmentNumber": "4CB23CG025",
+          "name": "Manish Damodhar Naik",
+          "event": "VTU State Level Inter Collegiate Athletic Meet - Long Jump",
+          "institution": "JNNCE Shivamogga",
+          "date": "15-18 March 2025",
+          "prize": "2nd Place"
+        },
+        {
+          "slNo": "13",
+          "enrollmentNumber": "4CB23CG042",
+          "name": "Rishab B",
+          "event": "NPTEL Certification Course- software Conceptual Design",
+          "institution": "NPTEL",
+          "date": "August -September 2024",
+          "prize": "Completed"
+        },
+        {
+          "slNo": "14",
+          "enrollmentNumber": "4CB22CG052",
+          "name": "Sreedevi",
+          "event": "NPTEL Certification Course-Programming in Java",
+          "institution": "NPTEL",
+          "date": "Jan-April 2025",
+          "prize": "Completed"
+        }
+      ]
+    }
+  ],
     "gallery": [
       { "image": "/departmentImages/gallery/csd/1.png", "title": "Spring Boot Api Development And Testing (series 1)" },
       { "image": "/departmentImages/gallery/csd/2.jpg", "title": "" },
@@ -9095,18 +9378,18 @@
       "awards": [
         {
           "image": "/departmentImages/IdeaImpact/1.png",
-          "title": "AY 2024-25",
-          "subtitle": "2nd Place in Poster Parv at Aakriti 2025."
+          "title": "Top VTU Ranks",
+          "subtitle": "Secured 5th, 6th, and 10th University Ranks."
         },
         {
           "image": "/departmentImages/IdeaImpact/2.png",
-          "title": "AY 2024-25",
-          "subtitle": "Winner, Logo Design Event at Yukti-2025."
+          "title": "KSCST Project Funding",
+          "subtitle": "Funded for the 'ACCIALERT' IoT Accident Detection System."
         },
         {
           "image": "/departmentImages/IdeaImpact/3.png",
-          "title": "AY 2024-25",
-          "subtitle": "2nd Place, Long Jump at VTU 26th State Level Meet."
+          "title": "Hackathon Victories",
+          "subtitle": "1st Place at IEEE Primed and CODEBLAZE Pitchers."
         }
       ],
       "passoutTotlas": "95.16%"

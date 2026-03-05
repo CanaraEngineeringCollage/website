@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react"; 
-import { motion } from "framer-motion";
+import { useEffect, useState, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { CarouselDots } from "../CarouselDots/CarouselDots";
 
@@ -61,13 +61,7 @@ interface IdeasToImpactProps {
 }
 
 // --- Sub-Component ---
-function AwardsTable({
-  headers,
-  rows,
-}: {
-  headers: TableHeader[];
-  rows: TableRow[];
-}) {
+function AwardsTable({ headers, rows }: { headers: TableHeader[]; rows: TableRow[] }) {
   return (
     <div className="rounded overflow-x-auto lg:overflow-hidden border border-gray-200 w-full mt-5 lg:mt-4 text-[#1D1D1F]">
       <table className="w-full text-left text-[13px] md:text-[15px]">
@@ -87,9 +81,7 @@ function AwardsTable({
                 const cell = row[header.key];
                 return (
                   <td key={header.key} className="py-3 md:px-4 px-1 border-b">
-                    {Array.isArray(cell)
-                      ? cell.map((item, i) => <div key={i}>{item}</div>)
-                      : cell}
+                    {Array.isArray(cell) ? cell.map((item, i) => <div key={i}>{item}</div>) : cell}
                   </td>
                 );
               })}
@@ -102,13 +94,10 @@ function AwardsTable({
 }
 
 // --- Main Component ---
-export default function IdeasToImpact({
-  ideasData,
-  allAwards,
-}: IdeasToImpactProps) {
+export default function IdeasToImpact({ ideasData, allAwards }: IdeasToImpactProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [visibleCount, setVisibleCount] = useState(0);
-  
+
   const scrollTargetRef = useRef<HTMLDivElement>(null);
 
   const placements = ideasData.placements;
@@ -125,17 +114,11 @@ export default function IdeasToImpact({
     return () => clearInterval(interval);
   }, [awards?.length, placements?.length]);
 
-  // --- FIX: Updated Handler with Timeout ---
   const handleHideDetails = () => {
-    setVisibleCount(0); // Close tables
-    
-    // We use setTimeout to let the DOM update (table collapse) BEFORE we try to scroll.
-    // We also changed block to "start" for better mobile positioning.
-    setTimeout(() => {
-      if (scrollTargetRef.current) {
-        scrollTargetRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    }, 100);
+    setVisibleCount(0);
+    if (scrollTargetRef.current) {
+      scrollTargetRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
 
   // --- Helper to Render Tables Dynamically ---
@@ -143,7 +126,7 @@ export default function IdeasToImpact({
     if (!allAwards || allAwards.length === 0) return null;
 
     return (
-      <>
+      <AnimatePresence>
         {allAwards.map((table, index) => {
           if (index >= visibleCount) return null;
 
@@ -151,17 +134,22 @@ export default function IdeasToImpact({
           const isFullyExpanded = visibleCount === allAwards.length;
 
           return (
-            <div key={table.id} className="animate-fadeIn text-center">
-              
-                <h4 className="text-3xl lg:text-3xl font-bold leading-tig mt-8 lg:mt-10 text-center text-[#1D1D1F]">
-                  {table.title}
-                </h4>
-           
+            <motion.div
+              key={table.id}
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="text-center overflow-hidden"
+            >
+              <h4 className="text-3xl lg:text-3xl font-bold leading-tight mt-8 lg:mt-10 text-center text-[#1D1D1F]">
+                {table.title}
+              </h4>
 
               <AwardsTable headers={table.headers} rows={table.rows} />
 
               {isLastVisibleItem && (
-                <div className="flex justify-center">
+                <div className="flex justify-center pb-4">
                   <button
                     onClick={() => {
                       if (isFullyExpanded) {
@@ -176,23 +164,21 @@ export default function IdeasToImpact({
                   </button>
                 </div>
               )}
-            </div>
+            </motion.div>
           );
         })}
-      </>
+      </AnimatePresence>
     );
   };
 
   return (
     <section className="w-full">
       <div className="max-w-7xl mx-auto xl:max-w-[75%] text-center">
-        <h2 className="text-3xl lg:text-5xl font-bold text-[#1D1D1F] lg:mb-16">
-          From Ideas to Impact
-        </h2>
+        <h2 className="text-3xl lg:text-5xl font-bold text-[#1D1D1F] lg:mb-16">From Ideas to Impact</h2>
 
         <div
           // This ref marks the top of the grid
-          ref={scrollTargetRef} 
+          ref={scrollTargetRef}
           className={`grid grid-cols-1 ${
             awards ? "lg:grid-cols-2 md:mt-14 gap-4 lg:gap-8  mt-10" : "lg:w-[70%] lg:gap-8  mx-auto mt-5"
           }  text-[#1D1D1F] lg:mt-10`}
@@ -211,40 +197,22 @@ export default function IdeasToImpact({
                   <div className="bg-white p-6 rounded-2xl mb-6 h-full">
                     <div className="grid md:grid-cols-2 items-center gap-6 h-full">
                       <div className="relative w-full h-48">
-                        <Image
-                          src={awards[activeIndex].image}
-                          alt={awards[activeIndex].title}
-                          fill
-                          className="object-contain"
-                        />
+                        <Image src={awards[activeIndex].image} alt={awards[activeIndex].title} fill className="object-contain" />
                       </div>
                       <div>
-                        <h4 className=" text-lg md:text-2xl font-semibold mb-4 ">
-                          {awards[activeIndex].title}
-                        </h4>
-                        <p className="text-gray-600 ">
-                          {awards[activeIndex].subtitle}
-                        </p>
+                        <h4 className=" text-lg md:text-2xl font-semibold mb-4 ">{awards[activeIndex].title}</h4>
+                        <p className="text-gray-600 ">{awards[activeIndex].subtitle}</p>
                       </div>
                     </div>
                   </div>
                 </motion.div>
 
                 <div className="flex justify-between pb-5 items-center px-6">
-                  <CarouselDots
-                    total={awards.length}
-                    active={activeIndex}
-                    onDotClick={setActiveIndex}
-                    className="mt-6"
-                  />
+                  <CarouselDots total={awards.length} active={activeIndex} onDotClick={setActiveIndex} className="mt-6" />
 
                   {allAwards.length > 0 && (
                     <button
-                      onClick={() =>
-                        visibleCount === 0 
-                          ? setVisibleCount(1) 
-                          : handleHideDetails()
-                      }
+                      onClick={() => (visibleCount === 0 ? setVisibleCount(1) : handleHideDetails())}
                       className="text-primary font-semibold mt-6"
                     >
                       {visibleCount === 0 ? "See More" : "Hide Details"}
@@ -263,28 +231,17 @@ export default function IdeasToImpact({
             <div className="bg-white rounded-2xl pt-6 px-6  flex-1">
               <div className="grid md:grid-cols-2 items-center gap-6 h-full">
                 <div className="relative w-full h-40 md:h-full">
-                  <h3 className="text-4xl font-[900] mb-2 text-left lg:text-[60px]">
-                    {ideasData.passoutTotlas}
-                  </h3>
-                  <p className="text-left text-2xl">
-                    Examination Pass Out Rate
-                  </p>
+                  <h3 className="text-4xl font-[900] mb-2 text-left lg:text-[60px]">{ideasData.passoutTotlas}</h3>
+                  <p className="text-left text-2xl">Examination Pass Out Rate</p>
                   <p className="text-[16px] max-w-md text-left">
-                    {passOutRates.length === 1
-                      ? "Based on the first graduating batch"
-                      : "Over the past academic years"}
+                    {passOutRates.length === 1 ? "Based on the first graduating batch" : "Over the past academic years"}
                   </p>
                 </div>
 
                 <div className="flex items-end justify-between w-full md:gap-4 gap-2 px-12 md:px-0">
                   {passOutRates.map((item, index) => (
-                    <div
-                      key={index}
-                      className="flex flex-col items-center justify-end h-full"
-                    >
-                      <span className="mb-2 text-sm font-semibold text-primary">
-                        {item.value}%
-                      </span>
+                    <div key={index} className="flex flex-col items-center justify-end h-full">
+                      <span className="mb-2 text-sm font-semibold text-primary">{item.value}%</span>
                       <div className="relative xl:w-20 lg:w-16 md:w-14 w-16 h-80 bg-gray-200 rounded-t overflow-hidden flex items-end">
                         <motion.div
                           initial={{ height: 0 }}
@@ -293,13 +250,10 @@ export default function IdeasToImpact({
                           transition={{ duration: 0.6, delay: index * 0.2 }}
                           className="w-full absolute bottom-0 flex items-end justify-center"
                           style={{
-                            background:
-                              "linear-gradient(to top, #2884CA, #6DC0EB)",
+                            background: "linear-gradient(to top, #2884CA, #6DC0EB)",
                           }}
                         >
-                          <span className="text-xs font-medium text-white pb-1">
-                            {item.year}
-                          </span>
+                          <span className="text-xs font-medium text-white pb-1">{item.year}</span>
                         </motion.div>
                       </div>
                     </div>

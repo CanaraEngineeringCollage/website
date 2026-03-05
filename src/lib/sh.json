@@ -9327,6 +9327,175 @@
         "description": "A guest lecture on modern machine learning frameworks and data ethics. Conducted by Dr. Rakshith M D with 150 attendees across multiple departments."
       }
     ],
+    "allAwards": [
+    {
+      "id": "first-year-achievements-list",
+      "title": "ACHIEVEMENTS OF 1ST YEAR STUDENTS till 2024-25",
+      "headers": [
+        { "key": "usn", "label": "USN" },
+        { "key": "name", "label": "NAME" },
+        { "key": "category", "label": "CATEGORY" },
+        { "key": "organizer", "label": "ORGANIZER" },
+        { "key": "rank", "label": "RANK" }
+      ],
+      "rows": [
+        {
+          "usn": "4CB23CS143",
+          "name": "Shravya V Shetty",
+          "category": "Weightlifting",
+          "organizer": "Karnataka State Weightlifters Association",
+          "rank": "First"
+        },
+        {
+          "usn": "4CB23CS143",
+          "name": "Shravya V Shetty",
+          "category": "Weightlifting",
+          "organizer": "Dasara Sports Meet CM Cup",
+          "rank": "Third"
+        },
+        {
+          "usn": "4CB23CS143",
+          "name": "Shravya V Shetty",
+          "category": "Hammer Throw",
+          "organizer": "VTU 25th Inter Collegiate State Level Athletic Meet",
+          "rank": "First"
+        },
+        {
+          "usn": "4CB23IS106",
+          "name": "Shreya Nayuktha",
+          "category": "Dance",
+          "organizer": "VTU – Yukti 2024",
+          "rank": "First"
+        },
+        {
+          "usn": "4CB23IS069",
+          "name": "Punyashree A",
+          "category": "Dance",
+          "organizer": "VTU – Yukti 2024",
+          "rank": "First"
+        },
+        {
+          "usn": "4CB23AI069",
+          "name": "Prarthana",
+          "category": "Dance",
+          "organizer": "VTU – Yukti 2024",
+          "rank": "First"
+        },
+        {
+          "usn": "4CB23EC028",
+          "name": "M S Kavana",
+          "category": "Dance",
+          "organizer": "VTU – Yukti 2024",
+          "rank": "First"
+        },
+        {
+          "usn": "4CB23IS017",
+          "name": "Bhoomika Upadhaya",
+          "category": "Dance",
+          "organizer": "VTU – Yukti 2024",
+          "rank": "First"
+        },
+        {
+          "usn": "4CB23AI047",
+          "name": "Kirthi Pratham Shetty",
+          "category": "NCC",
+          "organizer": "St Aloysius College",
+          "rank": "Best NCC Award"
+        },
+        {
+          "usn": "4CB23AI047",
+          "name": "Kirthi Pratham Shetty",
+          "category": "NCC",
+          "organizer": "13 KAR BN NCC",
+          "rank": "CPL"
+        },
+        {
+          "usn": "4CB23AI047",
+          "name": "Kirthi Pratham Shetty",
+          "category": "NCC",
+          "organizer": "14 KAR BN NCC",
+          "rank": "CPL"
+        },
+        {
+          "usn": "4CB23EC046",
+          "name": "Sanjana U J",
+          "category": "High Jump",
+          "organizer": "Karnataka State Junior &U-23 Athletic meet 2023",
+          "rank": "Second"
+        },
+        {
+          "usn": "4CB23CS004",
+          "name": "Adarsh S. K",
+          "category": "Gaming- Valorant",
+          "organizer": "Sharada College",
+          "rank": "First"
+        },
+        {
+          "usn": "4CB23CS110",
+          "name": "Niveditha",
+          "category": "Poem Writing",
+          "organizer": "Manguluru Lit Fest",
+          "rank": "Second"
+        },
+        {
+          "usn": "4CB23CB028",
+          "name": "Kruthika B R",
+          "category": "Shuttle Badminton",
+          "organizer": "VTU Inter Collegiate Division Level Tournament",
+          "rank": "Second"
+        },
+        {
+          "usn": "4CB23CS188",
+          "name": "Yashas",
+          "category": "Table Tennis",
+          "organizer": "VTU Inter Collegiate Division Level Tournament",
+          "rank": "Second"
+        },
+        {
+          "usn": "4CB23IS057",
+          "name": "Pavithra Bhat K",
+          "category": "Long Jump",
+          "organizer": "VTU 25th Inter Collegiate State Level Athletic Meet",
+          "rank": "Third"
+        },
+        {
+          "usn": "4CB23IS057",
+          "name": "Pavithra Bhat K",
+          "category": "High Jump",
+          "organizer": "VTU 25th Inter Collegiate State Level Athletic Meet",
+          "rank": "Second"
+        },
+        {
+          "usn": "4CB24CG014",
+          "name": "Jayalakshmi",
+          "category": "High Jump",
+          "organizer": "Jawaharlal Nehru New College of Engineering, Shivamoga",
+          "rank": "Third"
+        },
+        {
+          "usn": "4CB24CG014",
+          "name": "Jayalakshmi",
+          "category": "Kabaddi",
+          "organizer": "VTU",
+          "rank": "Second"
+        },
+        {
+          "usn": "4CB24CS129",
+          "name": "Sanjana J N",
+          "category": "Dance",
+          "organizer": "Mangalore Institution of Technology and Engineering",
+          "rank": "Second"
+        },
+        {
+          "usn": "4CB24CS056",
+          "name": "Janani N",
+          "category": "Kabaddi",
+          "organizer": "VTU",
+          "rank": "Second"
+        }
+      ]
+    }
+  ],
     "ideas": {
       "placements": [
         {
@@ -9344,6 +9513,23 @@
         { "year": "2021-22", "value": 97.52 },
         { "year": "2019-20", "value": 98.4 },
         { "year": "2018-19", "value": 99.21 }
+      ],
+       "awards": [
+      {
+    "image": "/departmentImages/IdeaImpact/1.png",
+    "title": "State & VTU Athletic Achievements",
+    "subtitle": "1st & 3rd place in Weightlifting, and 1st place in Hammer Throw."
+  },
+        {
+    "image": "/departmentImages/IdeaImpact/2.png",
+    "title": "VTU Yukti Dance Competition",
+    "subtitle": "Secured 1st place in Dance."
+  },
+       {
+    "image": "/departmentImages/IdeaImpact/3.png",
+    "title": "National Cadet Corps (NCC) Achievements",
+    "subtitle": "Received Best NCC Award at St Aloysius College and secured CPL rank in 13 & 14 KAR BN."
+  }
       ],
 
       "passoutTotlas": "98%"

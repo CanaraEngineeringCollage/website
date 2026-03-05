@@ -74,8 +74,9 @@ const HighlightsSection = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-3 gap-6 lg:[grid-auto-rows:1fr]">
         {/* Left Column */}
         {[
-          { title: "", subtitle: "Premier Hiring Partners", description: "(Recruiting Across Core and Emerging Domain)" },
           { title: "5.6 LPA", subtitle: "Median Salary", description: "Offered to Top 5% of Student Candidates" },
+          { title: "100%", subtitle: "Internship Completion Rate", description: "completed at least one internship before graduation" },
+
           // {
           //   title: "30%",
           //   subtitle: "Higher Rate of placement",
@@ -136,9 +137,9 @@ const HighlightsSection = () => {
 
         {/* Center Column - Third Row Card */}
         <div className="flex flex-col justify-center items-center rounded-4xl p-6 bg-white h-full lg:col-start-2 lg:row-start-3">
-          <h1 className="text-[45px] lg:text-[60px] font-[900] text-[#1D1D1F] text-center">100%</h1>
-          <h2 className="font-bold text-center text-[20px] text-[#1D1D1F]">Internship Completion Rate</h2>
-          <p className="text-xl text-center">completed at least one internship before graduation</p>
+          {/* <h1 className="text-[45px] lg:text-[60px] font-[900] text-[#1D1D1F] text-center">100%</h1> */}
+          <h2 className="font-bold text-center text-[20px] text-[#1D1D1F]">Premier Hiring Partners</h2>
+          <p className="text-xl text-center"> (Recruiting Across Core and Emerging Domain)</p>
         </div>
 
         {/* Right Column */}

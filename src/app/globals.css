@@ -48,9 +48,8 @@ lite-youtube {
   --color-primary: #2884ca;
   --color-secondary: #005580;
   --color-border: #e3e6ed;
-  --color-textGray: #2A2A2A;
+  --color-textGray: #2a2a2a;
   --color-white2: #ffffff;
-
 }
 
 @theme {
@@ -63,8 +62,6 @@ lite-youtube {
   --breakpoint-xl: 1580px;
   --breakpoint-2xl: 2000px;
 }
-
-
 
 lite-youtube {
   max-width: none !important;
@@ -89,7 +86,7 @@ lite-youtube {
 .animate-marquee {
   display: flex;
   width: max-content;
-  animation: marquee 30s linear infinite;
+  animation: marquee 60s linear infinite;
 }
 
 .list-square {
@@ -97,7 +94,7 @@ lite-youtube {
 }
 
 .animate-marquee.reverse {
-  animation: marqueeReverse 30s linear infinite;
+  animation: marqueeReverse 60s linear infinite;
 }
 
 @keyframes marquee {
@@ -166,9 +163,8 @@ lite-youtube {
 }
 .hide-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none;    /* Firefox */
+  scrollbar-width: none; /* Firefox */
 }
-
 
 .logo-scroll-container {
   overflow: hidden;
@@ -176,17 +172,16 @@ lite-youtube {
   width: 100%;
 }
 
-
 .scrollable::-webkit-scrollbar {
-  width: 12px;               /* vertical scrollbar width */
-  height: 8px;               /* horizontal scrollbar height (if any) */
+  width: 12px; /* vertical scrollbar width */
+  height: 8px; /* horizontal scrollbar height (if any) */
 }
 .scrollable::-webkit-scrollbar-track {
-  background: #e6f2ff;       /* track color (light blue/whitish) */
+  background: #e6f2ff; /* track color (light blue/whitish) */
   border-radius: 10px;
 }
 .scrollable::-webkit-scrollbar-thumb {
-  background-color: #2884CA; /* thumb color (blue) */
+  background-color: #2884ca; /* thumb color (blue) */
   border-radius: 10px;
   border: 3px solid #e6f2ff; /* creates a padding effect around thumb */
 }
@@ -196,17 +191,16 @@ lite-youtube {
 
 /* Firefox */
 .scrollable {
-  scrollbar-width: thin;                 /* "auto" | "thin" | "none" */
-  scrollbar-color: #6faddc #e6f2ff;     /* thumb color then track color */
+  scrollbar-width: thin; /* "auto" | "thin" | "none" */
+  scrollbar-color: #6faddc #e6f2ff; /* thumb color then track color */
 }
 
-
-.u-row{
+.u-row {
   min-width: 100% !important;
   padding: 0 !important;
 }
 
-.u-row-container, 
+.u-row-container,
 .u-row-container * {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -214,11 +208,9 @@ lite-youtube {
   margin-right: 0 !important;
   max-width: 100% !important;
   background: white !important;
-  box-sizing: border-box;    /* ensures padding/border won’t break layout */
+  box-sizing: border-box; /* ensures padding/border won’t break layout */
   overflow: hidden !important;
 }
-
-
 
 /* @theme {
   --color-primary: #2884ca;
@@ -248,7 +240,8 @@ lite-youtube {
 }
 
 /* Pseudo-elements for the sliding animation */
-.primary1:after, .primary1:before {
+.primary1:after,
+.primary1:before {
   position: absolute;
   content: "";
   width: 0;
@@ -267,16 +260,16 @@ lite-youtube {
 
 .primary1:before {
   background-color: #d9ebff;
-  
 }
 
 .primary1:hover {
   color: #fff;
   /* Ensure wobble-on-hover animation is defined in your global CSS */
-  animation: wobble-on-hover ease-in-out 0.6s forwards; 
+  animation: wobble-on-hover ease-in-out 0.6s forwards;
 }
 
-.primary1:hover:after, .primary1:hover:before {
+.primary1:hover:after,
+.primary1:hover:before {
   left: 0;
   width: 100%;
 }
