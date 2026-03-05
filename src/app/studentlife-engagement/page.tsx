@@ -8,6 +8,7 @@ import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 import CollapsSection from "@/components/CampusFacilitiesPageComponents/StudentLifeEngagement/CollapsSection/CollapsSection";
 import React from "react";
 import StudentClubs from "@/components/CampusFacilitiesPageComponents/StudentLifeEngagement/StudentClubs/StudentClubs";
+import VideoSwiper from "@/components/CampusFacilitiesPageComponents/StudentLifeEngagement/VideoSwiper/VideoSwiper";
 
 export const metadata = {
   title: "Student Life Engagement | Canara College",
@@ -59,6 +60,9 @@ const page = () => {
       </section>
       <section className=" lg:-mt-16  lg:pt-10 pb-16 lg:pb-20 lg:px-16 xl:px-0 px-1 md:px-12 ">
         <VideoPlayer thumbnail="/youtubeThumbnails/Akrathi Aftermovie - Thumbail@300x.webp" youtubeUrl="oHWMDPeP1Ew" />
+      </section>
+      <section>
+        <VideoSwiper/>
       </section>
       <section className="bg-[#e5e5ea] ">
         <FooterCard />

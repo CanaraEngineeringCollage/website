@@ -33,7 +33,7 @@ const renderFeaturedRow = (featured: FeaturedAlumni[], onReadMore: (item: Featur
       {[...featured, ...featured].map((item, index) => (
         <div
           key={index}
-          className="mx-4 flex-shrink-0 w-[550px] md:w-[650px] bg-primary rounded-[28px] overflow-hidden flex items-center text-white shadow-lg p-6"
+          className="mx-4 flex-shrink-0 w-[550px] md:w-[650px] bg-primary rounded-[28px] overflow-hidden flex items-center text-white  p-6"
         >
           {/* Left Side: Fully Rounded Image */}
           <div className="w-1/4 flex justify-center items-center">
