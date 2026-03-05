@@ -1164,7 +1164,7 @@ export default function CurtainScreen() {
         </motion.div>
 
         <motion.div style={{ opacity: logoOpacity, scale: logoScale }} className="absolute z-0 flex flex-col items-center justify-center">
-          <img src="/inagurationLogo.png" alt="Website Logo" className="w-48 md:w-[450px] h-auto drop-shadow-2xl" />
+          <img src="/Canara EC 25 years.png" alt="Website Logo" className="w-48 md:w-[500px] h-auto drop-shadow-2xl" />
         </motion.div>
 
         <motion.div
