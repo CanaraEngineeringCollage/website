@@ -59,7 +59,7 @@ const page = () => {
         <CollapsSection />
       </section>
       <section className=" lg:-mt-16  lg:pt-10 pb- lg:pb-14 lg:px-16 xl:px-0 px-1 md:px-12 ">
-        <VideoPlayer  title={<>Aakriti – Our <br className="md:hidden"/> Flagship Event</>} thumbnail="/youtubeThumbnails/Akrathi Aftermovie - Thumbail@300x.webp" youtubeUrl="oHWMDPeP1Ew" />
+        <VideoPlayer titleClassname="text-[#1D1D1F] md:mt-5"  title={<>Aakriti – Our <br className="md:hidden"/> Flagship Event</>} thumbnail="/youtubeThumbnails/Akrathi Aftermovie - Thumbail@300x.webp" youtubeUrl="oHWMDPeP1Ew" />
       </section>
       <section>
         <VideoSwiper/>

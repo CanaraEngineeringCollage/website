@@ -139,7 +139,7 @@ const HighlightsSection = () => {
         <div className="flex flex-col justify-center items-center rounded-4xl p-6 bg-white h-full lg:col-start-2 lg:row-start-3">
           {/* <h1 className="text-[45px] lg:text-[60px] font-[900] text-[#1D1D1F] text-center">100%</h1> */}
           <h2 className="font-bold text-center text-[20px] text-[#1D1D1F]">Premier Hiring Partners</h2>
-          <p className="text-xl text-center"> (Recruiting Across Core and Emerging Domain)</p>
+          <p className="text-xl text-center">Recruiting Across Core and Emerging Domain</p>
         </div>
 
         {/* Right Column */}

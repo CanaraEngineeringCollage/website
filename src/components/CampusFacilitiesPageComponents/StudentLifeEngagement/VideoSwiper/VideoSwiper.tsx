@@ -15,7 +15,7 @@ interface CarouselProps {
   backgroundColor?: string;
 }
 
-export default function AlumniPodcastCarousel({ heading = "Student Life & Activities at Canara", backgroundColor = "" }: CarouselProps) {
+export default function AlumniPodcastCarousel({ heading = "Life Beyond the Classroom at Canara", backgroundColor = "" }: CarouselProps) {
   // --- State ---
   const [podcasts, setPodcasts] = useState<AlumniPodcast[]>([]);
   const [loading, setLoading] = useState(true);
