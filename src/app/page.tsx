@@ -101,12 +101,12 @@ export default async function Home() {
       </section>
       {/* <section className="px-0 bg-white pt-5 pb-12 lg:pb-10 lg:mt-0 -mt-3">
         <Testimonials />
-      </section>
-      <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0 py-0 md:mt-0 -mt-6">
+      </section> */}
+      {/* <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0 py-0 md:mt-0 -mt-6">
         <HotOfThePress />
-      </section>
+      </section> */}
 
-      <section className="bg-[#E5E5EA] px-6 lg:mt-0 ">
+      {/* <section className="bg-[#E5E5EA] px-6 lg:mt-0 ">
         <LocationSection />
       </section>
       <section className="bg-[#E5E5EA]">
