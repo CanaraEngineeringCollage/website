@@ -307,7 +307,7 @@ const IdeasTakeFlight = () => {
         {ideasData.map((card) => (
           <motion.div
             key={card.id}
-            className="group relative rounded-2xl h-[350px] w-full shadow-md overflow-hidden cursor-pointer"
+            className="group relative rounded-2xl h-[350px] md:h-[400px] w-full shadow-md overflow-hidden cursor-pointer"
             onClick={() => setActiveCard(card)}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
