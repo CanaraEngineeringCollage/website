@@ -111,6 +111,7 @@ function EventContent({ description }: { description: EventDescriptionProps }) {
     <div>
       {description.src && (
         <Image
+        unoptimized
           src={description.src}
           alt={description.topTitle}
           loading="lazy"
@@ -263,6 +264,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ campusEvents: initialEven
                   >
                     <div className="flex-shrink-0 w-full md:w-[40%]">
                       <Image
+                      unoptimized
                         src={src || "/placeholder-image.jpg"}
                         alt={topTitle || event.category}
                         width={1000}

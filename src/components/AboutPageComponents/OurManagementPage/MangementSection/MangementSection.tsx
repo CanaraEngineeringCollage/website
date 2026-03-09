@@ -68,6 +68,7 @@ const HeroSection = () => {
             {selectedHeading === "Organisational Structure" ? (
               <div>
                 <Image
+                unoptimized
                   alt="orginazation"
                   src="https://apiserver.cec.edu.in/files/managementSection"
                   width={1000}

@@ -126,6 +126,7 @@ const KeyFunctionariesAndHods = () => {
                   src={imgSrc}
                   alt={item.name}
                   fill
+                  unoptimized
                   className="object-cover"
                 />
 

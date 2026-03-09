@@ -232,7 +232,7 @@ const Patents = () => {
      <h1 className="text-xl font-bold  text-textGray mb-2">
             Patent Publication Summary (2021-25)
           </h1>
-  <Image src="https://apiserver.cec.edu.in/files/iprPatents" width={1000} height={1000} alt=''/>
+  <Image unoptimized src="https://apiserver.cec.edu.in/files/iprPatents" width={1000} height={1000} alt=''/>
   </div>
   </div>
 </div>

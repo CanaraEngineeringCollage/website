@@ -103,7 +103,8 @@ const ProfileCard = ({ title }: { title: string }) => {
                   // ✅ FIX 2: Changed `item.hasImage` to `item.hasAvatar` and `/image` to `/avatar`
                   src={item.hasAvatar ? `${baseUrl}/faculty/${item.id}/avatar?t=${fetchTime}` : "/fallback-avatar.png"} 
                   alt={item.name} 
-                  fill 
+                  fill
+                  unoptimized 
                   className="object-cover" 
                 />
                 <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
@@ -150,6 +151,7 @@ const ProfileCard = ({ title }: { title: string }) => {
                   src={item.hasAvatar ? `${baseUrl}/faculty/${item.id}/avatar?t=${fetchTime}` : "/fallback-avatar.png"} 
                   alt={item.name} 
                   fill 
+                  unoptimized
                   className="object-cover" 
                 />
                 <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>

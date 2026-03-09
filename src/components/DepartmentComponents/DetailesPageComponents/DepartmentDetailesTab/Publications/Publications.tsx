@@ -14,6 +14,7 @@ const Publications = ({data}:{data:Publication[]}) => {
         <div className="flex flex-col gap-4">
           {pub.imageUrl.map((url: string, idx: number) => (
             <Image
+            unoptimized
               key={idx}
               src={url}
               alt={`${pub.title} ${idx + 1}`}
