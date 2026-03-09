@@ -12,9 +12,9 @@ import "swiper/css";
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 interface ModalSection {
-  subtitle?: string;      // styled as a bold sub-heading
-  description?: string;   // styled as body paragraph
-  points?: string[];      // styled as bullet list
+  subtitle?: string; // styled as a bold sub-heading
+  description?: string; // styled as body paragraph
+  points?: string[]; // styled as bullet list
 }
 
 interface PdfDownload {
@@ -28,7 +28,7 @@ interface IdeaCard {
   cardImage: string;
   modalTitle: string;
   modalImage: string;
-  modalSections?: ModalSection[];  // dynamic, ordered sections
+  modalSections?: ModalSection[]; // dynamic, ordered sections
   galleryImages?: string[];
   highlights?: string[];
   additionalFacilities?: string[];
@@ -66,14 +66,10 @@ const ideasData: IdeaCard[] = [
       },
       {
         subtitle: "Additional Facilities",
-        points: [
-          "A/C Seminar Hall with 500-seat capacity, fully equipped with acoustics",
-          "Dedicated space for Start-up & Incubation Centre",
-        ],
+        points: ["A/C Seminar Hall with 500-seat capacity, fully equipped with acoustics", "Dedicated space for Start-up & Incubation Centre"],
       },
       {
-        description:
-          "A space built to inspire, connect, and celebrate — all under one roof.",
+        description: "A space built to inspire, connect, and celebrate — all under one roof.",
       },
     ],
   },
@@ -138,22 +134,22 @@ const ideasData: IdeaCard[] = [
           "Canara Engineering College is proud to have students recognized as recipients of the IEEE WIE Scholarship 2025–26, funded by Quest Global. The scholarship amount is utilized exclusively towards college tuition fees, in full compliance with audit and institutional guidelines.",
       },
     ],
- galleryImages:[
-  "https://apiserver.cec.edu.in/files/scholarshimage2%20(1).jpeg",
-  "https://apiserver.cec.edu.in/files/scholarshimage2%20(2).jpeg",
-  "https://apiserver.cec.edu.in/files/scholarshimage2%20(3).jpeg",
-  "https://apiserver.cec.edu.in/files/scholarshimage2%20(5).jpeg",
-  "https://apiserver.cec.edu.in/files/scholarshimage2%20(6).jpeg",
-  "https://apiserver.cec.edu.in/files/scholarshimage2%20(7).jpeg",
-  "https://apiserver.cec.edu.in/files/scholarshimage2%20(8).jpeg",
-  "https://apiserver.cec.edu.in/files/scholarshimage2%20(9).jpeg",
-  "https://apiserver.cec.edu.in/files/scholarshimage2%20(10).jpeg",
-  "https://apiserver.cec.edu.in/files/scholarshimage2%20(11).jpeg",
-  "https://apiserver.cec.edu.in/files/scholarshimage2%20(12).jpeg",
-  "https://apiserver.cec.edu.in/files/scholarshimage2%20(13).jpeg",
-  "https://apiserver.cec.edu.in/files/scholarshimage2%20(14).jpeg",
-  "https://apiserver.cec.edu.in/files/scholarshimage2%20(15).jpeg"
-],
+    galleryImages: [
+      "https://apiserver.cec.edu.in/files/scholarshimage2%20(1).jpeg",
+      "https://apiserver.cec.edu.in/files/scholarshimage2%20(2).jpeg",
+      "https://apiserver.cec.edu.in/files/scholarshimage2%20(3).jpeg",
+      // "https://apiserver.cec.edu.in/files/scholarshimage2%20(5).jpeg",
+      "https://apiserver.cec.edu.in/files/scholarshimage2%20(6).jpeg",
+      "https://apiserver.cec.edu.in/files/scholarshimage2%20(7).jpeg",
+      "https://apiserver.cec.edu.in/files/scholarshimage2%20(8).jpeg",
+      "https://apiserver.cec.edu.in/files/scholarshimage2%20(9).jpeg",
+      "https://apiserver.cec.edu.in/files/scholarshimage2%20(10).jpeg",
+      "https://apiserver.cec.edu.in/files/scholarshimage2%20(11).jpeg",
+      "https://apiserver.cec.edu.in/files/scholarshimage2%20(12).jpeg",
+      "https://apiserver.cec.edu.in/files/scholarshimage2%20(13).jpeg",
+      "https://apiserver.cec.edu.in/files/scholarshimage2%20(14).jpeg",
+      "https://apiserver.cec.edu.in/files/scholarshimage2%20(15).jpeg",
+    ],
     pdfDownloads: [
       {
         label: "Scholarship Utilization Letter",
@@ -245,20 +241,15 @@ function GallerySwiper({ images, cardId }: { images: string[]; cardId: number })
         }}
         breakpoints={{
           640: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 2 },
+          768: { slidesPerView: 1.2 },
+          1024: { slidesPerView: 1.2 },
         }}
         className="rounded-lg"
       >
         {images.map((imgUrl, idx) => (
           <SwiperSlide key={idx}>
-            <div className="relative w-full h-[300px] md:h-[400px]">
-              <Image
-                src={imgUrl}
-                alt={`Gallery image ${idx + 1}`}
-                fill
-                className="object-cover rounded-lg"
-              />
+            <div className="relative w-full h-[300px] md:h-[450px]">
+              <Image src={imgUrl} alt={`Gallery image ${idx + 1}`} fill className="object-cover rounded-lg" />
             </div>
           </SwiperSlide>
         ))}
@@ -302,9 +293,7 @@ const IdeasTakeFlight = () => {
 
   return (
     <section className="py-16 max-w-7xl mx-auto xl:max-w-[75%] text-center text-[#1D1D1F] bg-white">
-      <h2 className="text-3xl md:text-5xl font-bold mb-6 text-center">
-        Where Ideas Take Flight
-      </h2>
+      <h2 className="text-3xl md:text-5xl font-bold mb-6 text-center">Where Ideas Take Flight</h2>
       <div className="max-w-[90%] mx-auto">
         <p className="text-textGray text-center mb-12 text-base md:text-lg leading-relaxed">
           The Canara Entrepreneurship Cell is dedicated to nurturing innovation, fostering leadership, & empowering students to transform ideas into
@@ -323,17 +312,10 @@ const IdeasTakeFlight = () => {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
-            <Image
-              src={card.cardImage}
-              alt={card.cardTitle}
-              fill
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
-            />
+            <Image src={card.cardImage} alt={card.cardTitle} fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 text-left">
-              <h3 className="text-white text-xl md:text-2xl font-bold line-clamp-2 drop-shadow-md">
-                {card.cardTitle}
-              </h3>
+              <h3 className="text-white text-xl md:text-2xl font-bold line-clamp-2 drop-shadow-md">{card.cardTitle}</h3>
             </div>
           </motion.div>
         ))}
@@ -375,33 +357,18 @@ const IdeasTakeFlight = () => {
               <motion.div variants={contentVariants}>
                 {/* Hero Image */}
                 <div className="relative w-full lg:h-[700px] h-[400px] mb-10">
-                  <Image
-                    src={activeCard.modalImage}
-                    alt={activeCard.modalTitle}
-                    fill
-                    className="object-cover rounded-t-3xl"
-                  />
+                  <Image src={activeCard.modalImage} alt={activeCard.modalTitle} fill className="object-cover rounded-t-3xl" />
                 </div>
 
                 <div className="p-6 lg:px-20 space-y-5 text-left text-[#1D1D1F]">
                   {/* Modal Title */}
-                  <h3 className="text-2xl lg:text-4xl leading-tight font-bold">
-                    {activeCard.modalTitle}
-                  </h3>
+                  <h3 className="text-2xl lg:text-4xl leading-tight font-bold">{activeCard.modalTitle}</h3>
 
                   {/* Dynamic Sections */}
                   {activeCard.modalSections?.map((section, idx) => (
                     <div key={idx} className="space-y-2">
-                      {section.subtitle && (
-                        <h4 className="text-lg font-semibold text-[#1D1D1F]">
-                          {section.subtitle}
-                        </h4>
-                      )}
-                      {section.description && (
-                        <p className="text-base md:text-lg text-textGray leading-7 text-justify">
-                          {section.description}
-                        </p>
-                      )}
+                      {section.subtitle && <h4 className="text-lg font-semibold text-[#1D1D1F]">{section.subtitle}</h4>}
+                      {section.description && <p className="text-base md:text-lg text-textGray leading-7 text-justify">{section.description}</p>}
                       {section.points && section.points.length > 0 && (
                         <ul className="list-disc ml-6 space-y-1 text-base md:text-lg text-textGray leading-7">
                           {section.points.map((point, pIdx) => (
@@ -415,7 +382,7 @@ const IdeasTakeFlight = () => {
                   {/* Gallery Swiper */}
                   {activeCard.galleryImages && activeCard.galleryImages.length > 0 && (
                     <div>
-                      <h4 className="text-lg font-semibold mb-3">Gallery</h4>
+                      {/* <h4 className="text-lg font-semibold mb-3">Gallery</h4> */}
                       <GallerySwiper images={activeCard.galleryImages} cardId={activeCard.id} />
                     </div>
                   )}
@@ -431,7 +398,7 @@ const IdeasTakeFlight = () => {
                           className="inline-flex items-center gap-2 text-base text-[#1D1D1F] hover:underline underline-offset-2"
                         >
                           {/* <span className="text-[10px] font-bold bg-red-600 text-white px-[5px] py-[2px] rounded tracking-wide">PDF</span> */}
-                         Download {pdf.label}
+                          Download {pdf.label}
                         </a>
                       ))}
                     </div>
