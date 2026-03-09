@@ -292,6 +292,7 @@ const HotOfThePressCarousel = () => {
           </button>
         </Link>
       </div>
+      
 
       {/* Modal */}
       <AnimatePresence>
