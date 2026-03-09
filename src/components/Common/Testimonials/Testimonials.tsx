@@ -201,6 +201,42 @@ export function Testimonials({ className }: TestimonialsProps) {
     employer: "NetApp",
     designation: "Member of Technical Staff – Software Engineer 2 (MTS Software Engineer 2)",
     testimonial: "Looking back, the four years I spent at CEC were truly transformative and played a major role in shaping who I am today. My transition from a student to a working professional was significant, and I am deeply grateful to the institution for the support and guidance I received throughout that journey. The faculty at CEC deserve special appreciation. Their in-depth knowledge, passion for teaching, and clarity in fundamentals helped me build a strong academic foundation. The quality and standards of the content delivered were excellent, and today, if my core fundamentals meet professional standards, I credit my lecturers for their dedication and expertise. Beyond academics, CEC felt like a close-knit family. Every student felt like a cousin, every lecturer like a mentor and well-wisher, and every event felt like a celebration at home. The leadership and technical opportunities I received, especially during my third year, significantly boosted my confidence and prepared me for my professional career. I will always remain truly thankful to CEC for the learning, experiences, and values that continue to guide me today."
+  },
+  {
+    name: "Mr. Joyson Madtha",
+    batch: "2018",
+    branch: "ISE",
+    employer: "Codecraft Technologies Private Limited",
+    designation: "Senior Software Developer",
+    imageUrl: "https://apiserver.cec.edu.in/files/Joyson%20Madtha.webp",
+    testimonial: "I walked into college unsure of who I’d become; I walked out knowing who I must be—a seeker of knowledge. Degrees may bring jobs, but curiosity builds destiny. Don’t wait for perfect mentors like Arjuna; but be Ekalavya and the rest will become history. Learn deeply, stay humble, and live these campus days fully, because once they pass, life rarely grants such fearless freedom again."
+  },
+  {
+    name: "Mrs. Akshatha Shenoy",
+    batch: "2016",
+    branch: "ISE",
+    employer: "Infosys Ltd",
+    designation: "Technology Lead, Toronto DC",
+    imageUrl: "https://apiserver.cec.edu.in/files/Akshatha%20Shenoy-ISE-2016.webp",
+    testimonial: "My four years at Canara Engineering College in Information Science & Engineering were truly transformative. The strong technical foundation, campus recruitment opportunities, and constant encouragement to explore helped shape my career and personality. Beyond academics, the friendships and memories I built there will always remain priceless."
+  },
+  {
+    name: "Ms. Felicita Fernandes",
+    batch: "2019",
+    branch: "ISE",
+    employer: "Harri",
+    designation: "Senior Customer Success Manager",
+    imageUrl: "https://apiserver.cec.edu.in/files/Felicita%20Fernandes.webp",
+    testimonial: "My journey at Canara Engineering College in the Information Science and Engineering branch was transformative. It strengthened my technical foundation, problem-solving skills, analytical skills and confidence, while offering supportive faculty, collaborative learning, and lifelong friendships that shaped my personal and professional growth."
+  },
+  {
+    name: "Mrs. Sambhrama B R",
+    batch: "2020",
+    branch: "ISE",
+    employer: "Oracle",
+    designation: "Senior Member of Technical Staff",
+    imageUrl: "https://apiserver.cec.edu.in/files/Mrs.%20Sambrama%20B%20R.webp",
+    testimonial: "My time at Canara Engineering College was truly transformative. The rigorous academic environment and great faculty resources fostered my technical expertise and professional resilience. Thanks to the unwavering support of the faculty and a robust placement cell, I successfully secured a campus placement at a premier organization SAP. It was an invaluable foundation for my career start. At Canara Engineering College we get good support for both academic and cultural activities too which helps us to grow as an enthusiastic individual."
   }
     
   ];

@@ -54,20 +54,20 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ youtubeUrl, videoUrl, title, 
   if (!videoId) {
     return null;
   }
-  
 
   const thumbnailUrl = thumbnail || `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
 
   return (
-    <div className="overflow-hidden  max-w-5xl mx-auto xl:max-w-[65%] rounded-4xl px-6 md:px-0 py-">
+    <div className="overflow-hidden max-w-5xl mx-auto xl:max-w-[65%] rounded-4xl px-6 md:px-0 py-">
       <div className="mx-auto text-center text-white mb-10">
         {title && (
-          <h2 className={cn(titleClassname, "text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl   font-bold  mb-5")}>{title}</h2>
+          <h2 className={cn(titleClassname, "text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold mb-5")}>{title}</h2>
         )}
         {subTitle && <p className="font-medium md:text-2xl text-base text-white/60 max-w-4xl mx-auto">{subTitle}</p>}
       </div>
 
-      <div className={cn("relative w-full lg:max-h-[600px] mx-auto aspect-video rounded-xl lg:rounded-4xl overflow-hidden")}>
+      {/* FIXED: Added bg-black here so it fades to black while the iframe loads */}
+      <div className={cn("relative w-full lg:max-h-[600px] mx-auto aspect-video rounded-xl lg:rounded-4xl overflow-hidden bg-black")}>
         <AnimatePresence>
           {!isPlaying && (
             <motion.div
@@ -75,7 +75,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ youtubeUrl, videoUrl, title, 
               initial={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
-              className="absolute inset-0 cursor-pointer"
+              className="absolute inset-0 cursor-pointer z-10"
               onClick={() => setIsPlaying(true)}
             >
               <Image
