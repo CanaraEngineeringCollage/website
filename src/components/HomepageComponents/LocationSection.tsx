@@ -47,7 +47,7 @@ const LocationSection = () => {
                 onClick={() => setIsModalOpen(true)}
                 className="inline-block bg-blue-100 hover:bg-blue-200 text-primary font-semibold px-2 md:px-8 py-3 rounded-full transition-colors duration-300 cursor-pointer"
               >
-                Click to view bus route Information
+                Click to view bus route information
               </button>
             </div>
             <div className="pt-4 md:hidden">
@@ -55,7 +55,7 @@ const LocationSection = () => {
                 onClick={() => setIsModalOpen(true)}
                 className="inline-block bg-blue-100 hover:bg-blue-200 text-primary font-semibold px-6 md:px-8 py-3 rounded-full transition-colors duration-300 cursor-pointer"
               >
-                Bus Route Information
+                Bus Route information
               </button>
             </div>
           </div>
