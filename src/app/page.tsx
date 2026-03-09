@@ -66,7 +66,7 @@ export default async function Home() {
 
   return (
     <>
-      <HeroSection images={data} />
+      {/* <HeroSection images={data} />
       <section className="px-6 md:px-12 lg:px-36 xl:px-20 py-12">
         <FutureCampusText />
       </section>
@@ -95,11 +95,11 @@ export default async function Home() {
           youtubeUrl="Xhq4QpXZco8"
           thumbnail="/youtubeThumbnails/Homepage-Thumbnail@300x.webp"
         />
-      </section>
+      </section> */}
       <section className="bg-white px-6 ">
         <IdeasTakeFlight />
       </section>
-      <section className="px-0 bg-white pt-5 pb-12 lg:pb-10 lg:mt-0 -mt-3">
+      {/* <section className="px-0 bg-white pt-5 pb-12 lg:pb-10 lg:mt-0 -mt-3">
         <Testimonials />
       </section>
       <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0 py-0 md:mt-0 -mt-6">
@@ -111,7 +111,7 @@ export default async function Home() {
       </section>
       <section className="bg-[#E5E5EA]">
         <FooterCard />
-      </section>
+      </section> */}
     </>
   );
 }
