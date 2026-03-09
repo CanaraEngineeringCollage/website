@@ -147,6 +147,7 @@ const ideasData: IdeaCard[] = [
       { label: "Scholarship Utilization Letter", path: "/pdfs/Scholarship Utilization Letter.pdf" },
     ],
   },
+  
   {
     id: 5,
     cardTitle: "UDAL DC Fellowship",
