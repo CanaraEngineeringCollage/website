@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const IframLinks = ({ title, link }: { title?: string; link?: string }) => {
   return (
@@ -171,349 +172,368 @@ const ResearchBodies = () => (
 );
 
 // Department Highlights Section
-const DepartmentHighlights = () => (
-  <div className="text-textGray text-[17px] space-y-4">
-    <h2 className="text-[24px] text-[#1d1d1f] font-bold mb-2">Department-wise Research Highlights</h2>
+const DepartmentHighlights = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-    {/* AIML */}
-    <h3 className="font-bold text-[20px]">Artificial Intelligence & Machine Learning (AIML)</h3>
-    <p>
-      <strong>Thrust Areas:</strong> Artificial Intelligence, Machine Learning, Internet of Things and Robotics, Deep Learning, Industrial Automation,
-      Cloud Computing, Cryptography, Information Security.
-    </p>
-    <p>
-      <strong>Specialized Labs/Facilities:</strong> Intelligent System Laboratory (AIL06) equipped with high-performance HP Z-series workstations for
-      advanced computing in AI, ML, Data Science, and related fields. Supports complex algorithms, intelligent systems, and cutting-edge research.
-    </p>
+  const toggleAccordion = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
 
-    <h3 className="font-bold text-[20px]">Student Research & Achievements (Patents)</h3>
-    <div className="rounded overflow-x-auto border border-gray-200 w-full">
-      <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px] text-textGray">
-        <thead>
-          <tr className="bg-[#F3F8FC] text-[#2884CA]">
-            <th className="py-3 md:px-4 px-1 border-b">S.No</th>
-            <th className="py-3 md:px-4 px-1 border-b">Student Name(s)</th>
-            <th className="py-3 md:px-4 px-1 border-b">Title / Achievement</th>
-            <th className="py-3 md:px-4 px-1 border-b">Agency / Year</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td className="py-3 md:px-4 align-top px-1 border-b">1</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">
-              Mehul Muralidhar Kini, Anoop S Prabhu K, Shashank S, M Akhila Prabhu, Sarthak Pramod Pai, Sharan Raghveer Pai
-            </td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">UAV Assisted Waste Segregation for Urban Areas</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
-          </tr>
-          <tr>
-            <td className="py-3 md:px-4 align-top px-1 border-b">2</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Pratham R, Shreya M, Sidharth K, Jayashree A R</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">
-              AI-based Acoustic Wave Monitoring of Rail Wear, Quality, Along with Other Parameters
-            </td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
-          </tr>
-          <tr>
-            <td className="py-3 md:px-4 align-top px-1 border-b">3</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Akshata Krishna Hegde, Abhijna, Karishma B, Shriram Udaya Kumar Shenoy</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">AI-Based Road Inspection System</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
-          </tr>
-          <tr>
-            <td className="py-3 md:px-4 align-top px-1 border-b">4</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Chitra, Akshay M, Karishma K, Nithin Kamath</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Artificial Intelligence for Smart Agriculture</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
-          </tr>
-          <tr>
-            <td className="py-3 md:px-4 align-top px-1 border-b">5</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Shreelakshmi R Hegde, Komal Naik, Siddarth Kini Ullal, Jagat Pal</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">CookCommander - An IoT-Based Robust Stove Control System</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
-          </tr>
-          <tr>
-            <td className="py-3 md:px-4 align-top px-1 border-b">6</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">M Sooraj Shenoy, Denzil Serrao, Yatheesha K V, Karthik Baliga</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Dashboard for Swacchta Using Artificial Intelligence-Based Image Analysis</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
-          </tr>
-          <tr>
-            <td className="py-3 md:px-4 align-top px-1 border-b">7</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">
-              Abhishek Sudesh Naik, Manish Anandu Naik, Karthik Ravi Achari, Tejas Suresh Tandel
-            </td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Smart Bin Incentives System</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
-          </tr>
-        </tbody>
-      </table>
+  const AccordionItem = ({ title, index, children }: { title: string, index: number, children: React.ReactNode }) => {
+    const isOpen = openIndex === index;
+    return (
+      <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
+        <button
+          onClick={() => toggleAccordion(index)}
+          className={`w-full flex justify-between items-center p-5 text-left font-medium transition-colors duration-200 ${
+            isOpen ? "bg-gray-100" : "bg-white text-textGray hover:bg-gray-50"
+          }`}
+        >
+          <span className="text-[20px] font-bold text-[#1d1d1f]">{title}</span>
+          <span className="transform text-textGray transition-transform duration-200">
+            {isOpen ? <FaChevronUp className="text-textGray" /> : <FaChevronDown className="text-textGray" />}
+          </span>
+        </button>
+        <div
+          className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${
+            isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+          }`}
+        >
+          <div className="overflow-hidden">
+            <div className="p-5 border-t border-gray-200 bg-gray-50/50 space-y-4">
+              {children}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <div className="text-textGray text-[17px]">
+      <h2 className="text-[24px] text-[#1d1d1f] font-bold mb-6">Department-wise Research Highlights</h2>
+
+      {/* AIML */}
+      <AccordionItem title="Artificial Intelligence and Machine Learning (AIML)" index={0}>
+        <p>
+          <strong>Thrust Areas:</strong> Artificial Intelligence, Machine Learning, Internet of Things and Robotics, Deep Learning, Industrial Automation,
+          Cloud Computing, Cryptography, Information Security.
+        </p>
+        <p>
+          <strong>Specialized Labs/Facilities:</strong> Intelligent System Laboratory (AIL06) equipped with high-performance HP Z-series workstations for
+          advanced computing in AI, ML, Data Science, and related fields. Supports complex algorithms, intelligent systems, and cutting-edge research.
+        </p>
+
+        <h3 className="font-bold text-[18px]">Student Research & Achievements (Patents)</h3>
+        <div className="rounded overflow-x-auto border border-gray-200 w-full">
+          <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px] text-textGray">
+            <thead>
+              <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                <th className="py-3 md:px-4 px-1 border-b">S.No</th>
+                <th className="py-3 md:px-4 px-1 border-b">Student Name(s)</th>
+                <th className="py-3 md:px-4 px-1 border-b">Title / Achievement</th>
+                <th className="py-3 md:px-4 px-1 border-b">Agency / Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="py-3 md:px-4 align-top px-1 border-b">1</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">
+                  Mehul Muralidhar Kini, Anoop S Prabhu K, Shashank S, M Akhila Prabhu, Sarthak Pramod Pai, Sharan Raghveer Pai
+                </td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">UAV Assisted Waste Segregation for Urban Areas</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
+              </tr>
+              <tr>
+                <td className="py-3 md:px-4 align-top px-1 border-b">2</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Pratham R, Shreya M, Sidharth K, Jayashree A R</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">
+                  AI-based Acoustic Wave Monitoring of Rail Wear, Quality, Along with Other Parameters
+                </td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
+              </tr>
+              <tr>
+                <td className="py-3 md:px-4 align-top px-1 border-b">3</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Akshata Krishna Hegde, Abhijna, Karishma B, Shriram Udaya Kumar Shenoy</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">AI-Based Road Inspection System</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
+              </tr>
+              <tr>
+                <td className="py-3 md:px-4 align-top px-1 border-b">4</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Chitra, Akshay M, Karishma K, Nithin Kamath</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Artificial Intelligence for Smart Agriculture</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
+              </tr>
+              <tr>
+                <td className="py-3 md:px-4 align-top px-1 border-b">5</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Shreelakshmi R Hegde, Komal Naik, Siddarth Kini Ullal, Jagat Pal</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">CookCommander - An IoT-Based Robust Stove Control System</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
+              </tr>
+              <tr>
+                <td className="py-3 md:px-4 align-top px-1 border-b">6</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">M Sooraj Shenoy, Denzil Serrao, Yatheesha K V, Karthik Baliga</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Dashboard for Swacchta Using Artificial Intelligence-Based Image Analysis</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
+              </tr>
+              <tr>
+                <td className="py-3 md:px-4 align-top px-1 border-b">7</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">
+                  Abhishek Sudesh Naik, Manish Anandu Naik, Karthik Ravi Achari, Tejas Suresh Tandel
+                </td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Smart Bin Incentives System</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Indian Patent, 2025</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          <strong>Collaborations & MoUs:</strong>
+        </p>
+        <ul className="list-disc ml-5 space-y-1">
+          <li>NexaInnovSolutions - Internships, projects, research, placements</li>
+          <li>Accolade Tech Solutions Pvt. Ltd. - Internships, projects, research, placements</li>
+        </ul>
+      </AccordionItem>
+
+      {/* Science & Humanities */}
+      <AccordionItem title="Science and Humanities (S&H)" index={1}>
+        <p>
+          <strong>Research Centre:</strong> Chemistry Research Centre since 2010.
+        </p>
+        <p>
+          <strong>Focus Areas:</strong> Organic Synthesis, Corrosion Science, Green Chemistry, Industrial relevance research.
+        </p>
+        <p>
+          <strong>Research Supervisors:</strong>
+        </p>
+        <ul className="list-disc ml-5 space-y-1">
+          <li>Dr. Priya V. Frank</li>
+          <li>Dr. Lavanya D. Kateel</li>
+        </ul>
+        <p>
+          <strong>Research Infrastructure (selected equipment):</strong>
+        </p>
+        <ul className="list-disc ml-5 space-y-1">
+          <li>Boiling Water Bath</li>
+          <li>Digital Melting Point Apparatus</li>
+          <li>Electronic Balance</li>
+          <li>Fume Exhaust Hood</li>
+          <li>Hot Air Oven</li>
+          <li>Heating Mantle</li>
+          <li>Hot Plate</li>
+          <li>Ion Exchange Plant</li>
+          <li>Ice Flaker</li>
+          <li>Micro Oven Grill</li>
+          <li>Magnetic Stirrer</li>
+          <li>Oil-Free Vacuum Pump</li>
+          <li>Oil Bath</li>
+          <li>Rotary Vacuum Flash Evaporator</li>
+          <li>UV-Visible Spectrophotometer</li>
+          <li>Water Bath Thermostatic</li>
+        </ul>
+
+        <img src="/rsdImages/1.png" />
+      </AccordionItem>
+
+      {/* CSBS */}
+      <AccordionItem title="Computer Science and Business Systems (CSBS)" index={2}>
+        <p>
+          <strong>Thrust Areas:</strong> Networking, Cloud Computing, Deep Learning, Artificial Intelligence, Machine Learning, Renewable Energy,
+          Operations Management, Cryptography, Cyber Security, Healthcare, Medical Imaging, Nanosensor.
+        </p>
+        <p>
+          <strong>Student Achievements:</strong>
+        </p>
+        <ul className="list-disc ml-5 space-y-1">
+          <li>Varun Raj - Top 12 finalists, Emerge Ideathon (Feb 2025)</li>
+          <li>Melisha - Top 12 finalists, Emerge Ideathon (Feb 2025)</li>
+          <li>Diya H S - Top 12 finalists, Emerge Ideathon (Feb 2025)</li>
+        </ul>
+      </AccordionItem>
+
+      {/* CSD */}
+      <AccordionItem title="Computer Science and Design (CSD)" index={3}>
+        <p>
+          <strong>Research Strengths:</strong> Full Stack Development, Multimedia Design, UI/UX, Machine Learning, Data Science.
+        </p>
+        <p>
+          <strong>Thrust Areas:</strong>
+        </p>
+        <ul className="list-disc ml-5 space-y-1">
+          <li>Full Stack Development – modern frameworks, scalable architectures, cloud-native deployment, DevOps practices</li>
+          <li>Multimedia Design – digital content creation, animation, game development, computer graphics, interactive media</li>
+          <li>UI/UX – human–computer interaction, user-centered design, accessibility, usability testing</li>
+          <li>Machine Learning and Data Science – predictive analytics, deep learning, big data techniques</li>
+        </ul>
+        <p>
+          <strong>Upcoming / Ongoing Initiatives:</strong> 2-day hands-on workshop on “Generative AI and Applications for Education”
+        </p>
+      </AccordionItem>
+
+      {/* CSE */}
+      <AccordionItem title="Computer Science and Engineering (CSE)" index={4}>
+        <p>
+          <strong>Department Research Highlights:</strong> Data Science, ML, Deep Learning, Cyber Security, GIS, Remote Sensing, Cloud Computing.
+          Recognized as a Research Center with six approved research guides.
+        </p>
+        <p>
+          <strong>Research Guides:</strong>
+        </p>
+        <ul className="list-disc ml-5 space-y-1">
+          <li>Dr. Nagesh H R</li>
+          <li>Dr. Demian Antony D’Mello</li>
+          <li>Dr. Udaya Kumar K Shenoy</li>
+          <li>Dr. Karthik Pai B H</li>
+          <li>Dr. Basappa Kodada</li>
+          <li>Dr. H Manoj Gadiyar</li>
+        </ul>
+        <h3 className="font-bold text-[18px]">Student Research & Achievements</h3>
+        <div className="rounded overflow-x-auto border border-gray-200 w-full">
+          <table className="w-full border border-gray-300 text-left text-textGray">
+            <thead>
+              <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                <th className="py-3 md:px-4 px-1 border-b">S.No</th>
+                <th className="py-3 md:px-4 px-1 border-b">Student Name(s)</th>
+                <th className="py-3 md:px-4 px-1 border-b">Title / Achievement</th>
+                <th className="py-3 md:px-4 px-1 border-b">Conference / Journal / Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="py-3 md:px-4 align-top px-1 border-b">1</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Guruprasad Bhat, Sneha Shanbhag, Swati Shet, Vasudeva</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Avatar Closet: An AR-Based Multi-Modal Virtual Try-On System for Fashion Retail</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">3rd IEEE ICRAIS, 2025</td>
+              </tr>
+              <tr>
+                <td className="py-3 md:px-4 align-top px-1 border-b">2</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Sruthi K S</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">
+                  A Unified Computer Vision System for Multilingual Bi-directional Gesture Recognition
+                </td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">3rd IEEE ICRAIS, 2025</td>
+              </tr>
+              <tr>
+                <td className="py-3 md:px-4 align-top px-1 border-b">3</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Trayee Shridhar Nayak</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Deep Learning for Tulsi Leaf Disease Identification</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">IEEE AIDE, 2025</td>
+              </tr>
+              <tr>
+                <td className="py-3 md:px-4 align-top px-1 border-b">4</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Parimi Uma Sahithya</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Harnessing Deep Learning for Missing Child Identification</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">ICAIT, 2024</td>
+              </tr>
+              <tr>
+                <td className="py-3 md:px-4 align-top px-1 border-b">5</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Nikitha Mogaveer</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Handwritten Character Recognition of Kannada using CNN</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">IJARCCE, 2024</td>
+              </tr>
+              <tr>
+                <td className="py-3 md:px-4 align-top px-1 border-b">6</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Ananya Mrutyunjaya et al.</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">Virtudine: Discover Nutrient-Rich Flavors Through Pixels using AR</td>
+                <td className="py-3 md:px-4 align-top px-1 border-b">NCDTE, 2024</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          <strong>Research Infrastructure:</strong> Research lab with 8 PCs.
+        </p>
+        <p>
+          <strong>Collaborations & MoUs:</strong>
+        </p>
+        <ul className="list-disc ml-5 space-y-1">
+          <li>DLithe, Bengaluru - Industrial training, Internship, R&D, Skill development, Guest lectures, FDPs</li>
+          <li>GlowLogics Solutions - Webinar</li>
+          <li>Karunadu Technologies - FDPs and Internships</li>
+        </ul>
+        <p>
+          <strong>Upcoming Initiatives:</strong> Workshop on “Manuscript Writing”, Skill Development Programme on “IoT Unplugged: Connecting the Future”
+        </p>
+      </AccordionItem>
+
+      {/* ECE */}
+      <AccordionItem title="Electronics and Communication Engineering (ECE)" index={5}>
+        <p>
+          <strong>Student Research & Achievements:</strong>
+        </p>
+        <ul className="list-disc ml-5 space-y-1">
+          <li>Sindhu Shenoy M - Aid for Visually Challenged People (ICWITE 2024)</li>
+          <li>Bharath H M - Reflecting on Technology: Smart Mirror Review (Springer Nature 2024)</li>
+          <li>Prathap M - Efficient Vehicle Management through Automated License Plate Recognition (ICCSST-2023)</li>
+          <li>Bhavyashree - Pothole Detection using YOLOv5 (ICCSST-2023)</li>
+          <li>Pavan - Recognition of diseases in Tomato and Potato plant (NCETE-2023)</li>
+          <li>
+            Savitha Acharya, Guruprasad, K. Shreenidhi, Chithara S, Arpita Naik, Nidhi G
+            <br />
+            Title: An Efficient LDO Regulator Design with Minimal Dropout for Battery-Operated Device
+            <br />
+            Publisher: 2026 IEEE 17th International Conference on Computational Intelligence and Communication Networks (CICN)
+          </li>
+          <li>
+            Savitha Acharya, Ankita Parulekar, Arpita Naik, Prasad Poojary, Teja Jagannatha Naik- Title: On-Chip Power Regulator; Publisher: IRE Journals
+          </li>
+        </ul>
+        <p>
+          <strong>Research Infrastructure:</strong> Research/Project Lab with 3D Printer and additional lab access beyond working hours.
+        </p>
+        <p>
+          <strong>Collaborations & MoUs:</strong>
+        </p>
+        <ul className="list-disc ml-5 space-y-1">
+          <li>Govt Tool and Training Centre - Internships and Training</li>
+          <li>OCTYAWAVE TECHNOLOGY - Workshops and Projects</li>
+          <li>EXPERIMIND LABDS PRIVSTE LIMITED- Workshops and Projects</li>
+        </ul>
+      </AccordionItem>
+
+      {/* ISE */}
+      <AccordionItem title="Information Science and Engineering (ISE)" index={6}>
+        <p>
+          <strong>Department Research Highlights:</strong> Strong research culture with patents, grants, FDPs, student projects, and industry
+          collaborations.
+        </p>
+        <p>
+          <strong>Student Research & Achievements (selected Utility Patents & Grants):</strong>
+        </p>
+        <ul className="list-disc ml-5 space-y-1">
+          <li>
+            Diya, Prithvi S Nayak, Samridhi S, Shraddha J Naik - Innovative Web-Based Platform for Sustainable and Efficient Canteen Operations (Utility
+            Patent, 2025)
+          </li>
+          <li>
+            Amulya Jois, Rakshitha Shetty A, Tilak Shetty, Venkatesh R Kamath - Intercode - Seamless Real-Time Code Collaboration for Technical Interviews
+            (Utility Patent, 2025)
+          </li>
+          <li>Sujal V Kanchan - PrivAI - Intelligent Privacy Detection and Protection Solution for Social Media Users (Utility Patent, 2025)</li>
+          <li>Aniketh K, Darshan, Nishan, Varshith B A - AI Talentsuite – Dual Application System for Candidate Upskilling (Utility Patent, 2025)</li>
+          <li>
+            Sumedha, Sinchana Sn, Shreesha, Sujnan Acharya - AI-Based Women and Child Health Monitoring Application During Pregnancy Stages (Utility
+            Patent, 2025)
+          </li>
+          <li>
+            Krishna H Pallan, Akash Javali, Payal, P Rethi Kumaar - Mind-Care: Multimodal Sentiment Analysis Framework for Mental Health Detection
+            (Utility Patent, 2025)
+          </li>
+          <li>B Lipika, Devika Bhandary, Rashmi S, Shraddha K - Agriflow: Revolutionizing Irrigation with IoT Automation (Utility Patent, 2025)</li>
+          <li>
+            Chirag Honnavarkar, Pradhyumna Prabhu, Abhay S K, Chaithra Nayak - Retinaguard: Optimal CNN Solution for Diabetic Retinopathy (Utility Patent,
+            2024)
+          </li>
+        </ul>
+        <p>
+          <strong>Other Notable Achievements:</strong> KSCST-funded projects, hackathon prizes, conference publications, national-level awards (2023–2025)
+        </p>
+      </AccordionItem>
     </div>
-
-    <p>
-      <strong>Collaborations & MoUs:</strong>
-    </p>
-    <ul className="list-disc ml-5 space-y-1">
-      <li>NexaInnovSolutions - Internships, projects, research, placements</li>
-      <li>Accolade Tech Solutions Pvt. Ltd. - Internships, projects, research, placements</li>
-    </ul>
-
-    {/* Science & Humanities */}
-    <h3 className="font-bold text-[20px]">Science & Humanities (S&H)</h3>
-    <p>
-      <strong>Research Centre:</strong> Chemistry Research Centre since 2010.
-    </p>
-    <p>
-      <strong>Focus Areas:</strong> Organic Synthesis, Corrosion Science, Green Chemistry, Industrial relevance research.
-    </p>
-    <p>
-      <strong>Research Supervisors:</strong>
-    </p>
-    <ul className="list-disc ml-5 space-y-1">
-      <li>Dr. Priya V. Frank</li>
-      <li>Dr. Lavanya D. Kateel</li>
-    </ul>
-    <p>
-      <strong>Research Infrastructure (selected equipment):</strong>
-    </p>
-    <ul className="list-disc ml-5 space-y-1">
-      <li>Boiling Water Bath</li>
-      <li>Digital Melting Point Apparatus</li>
-      <li>Electronic Balance</li>
-      <li>Fume Exhaust Hood</li>
-      <li>Hot Air Oven</li>
-      <li>Heating Mantle</li>
-      <li>Hot Plate</li>
-      <li>Ion Exchange Plant</li>
-      <li>Ice Flaker</li>
-      <li>Micro Oven Grill</li>
-      <li>Magnetic Stirrer</li>
-      <li>Oil-Free Vacuum Pump</li>
-      <li>Oil Bath</li>
-      <li>Rotary Vacuum Flash Evaporator</li>
-      <li>UV-Visible Spectrophotometer</li>
-      <li>Water Bath Thermostatic</li>
-    </ul>
-
-    <img src="/rsdImages/1.png" />
-
-    {/* CSBS */}
-    <h3 className="font-bold text-[20px]">Computer Science & Business Systems (CSBS)</h3>
-    <p>
-      <strong>Thrust Areas:</strong> Networking, Cloud Computing, Deep Learning, Artificial Intelligence, Machine Learning, Renewable Energy,
-      Operations Management, Cryptography, Cyber Security, Healthcare, Medical Imaging, Nanosensor.
-    </p>
-    <p>
-      <strong>Student Achievements:</strong>
-    </p>
-    <ul className="list-disc ml-5 space-y-1">
-      <li>Varun Raj - Top 12 finalists, Emerge Ideathon (Feb 2025)</li>
-      <li>Melisha - Top 12 finalists, Emerge Ideathon (Feb 2025)</li>
-      <li>Diya H S - Top 12 finalists, Emerge Ideathon (Feb 2025)</li>
-    </ul>
-
-    {/* CSD */}
-    <h3 className="font-bold text-[20px]">Computer Science & Design (CSD)</h3>
-    <p>
-      <strong>Research Strengths:</strong> Full Stack Development, Multimedia Design, UI/UX, Machine Learning, Data Science.
-    </p>
-    <p>
-      <strong>Thrust Areas:</strong>
-    </p>
-    <ul className="list-disc ml-5 space-y-1">
-      <li>Full Stack Development – modern frameworks, scalable architectures, cloud-native deployment, DevOps practices</li>
-      <li>Multimedia Design – digital content creation, animation, game development, computer graphics, interactive media</li>
-      <li>UI/UX – human–computer interaction, user-centered design, accessibility, usability testing</li>
-      <li>Machine Learning and Data Science – predictive analytics, deep learning, big data techniques</li>
-    </ul>
-    <p>
-      <strong>Upcoming / Ongoing Initiatives:</strong> 2-day hands-on workshop on “Generative AI and Applications for Education”
-    </p>
-
-    {/* CSE */}
-    <h3 className="font-bold text-[20px]">Computer Science & Engineering (CSE)</h3>
-    <p>
-      <strong>Department Research Highlights:</strong> Data Science, ML, Deep Learning, Cyber Security, GIS, Remote Sensing, Cloud Computing.
-      Recognized as a Research Center with six approved research guides.
-    </p>
-    <p>
-      <strong>Research Guides:</strong>
-    </p>
-    <ul className="list-disc ml-5 space-y-1">
-      <li>Dr. Nagesh H R</li>
-      <li>Dr. Demian Antony D’Mello</li>
-      <li>Dr. Udaya Kumar K Shenoy</li>
-      <li>Dr. Karthik Pai B H</li>
-      <li>Dr. Basappa Kodada</li>
-      <li>Dr. H Manoj Gadiyar</li>
-    </ul>
-    <h3 className="font-bold text-[20px]">Student Research & Achievements</h3>
-    <div className="rounded overflow-x-auto border border-gray-200 w-full">
-      <table className="w-full border border-gray-300 text-left text-textGray">
-        <thead>
-          <tr className="bg-[#F3F8FC] text-[#2884CA]">
-            <th className="py-3 md:px-4 px-1 border-b">S.No</th>
-            <th className="py-3 md:px-4 px-1 border-b">Student Name(s)</th>
-            <th className="py-3 md:px-4 px-1 border-b">Title / Achievement</th>
-            <th className="py-3 md:px-4 px-1 border-b">Conference / Journal / Year</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td className="py-3 md:px-4 align-top px-1 border-b">1</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Guruprasad Bhat, Sneha Shanbhag, Swati Shet, Vasudeva</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Avatar Closet: An AR-Based Multi-Modal Virtual Try-On System for Fashion Retail</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">3rd IEEE ICRAIS, 2025</td>
-          </tr>
-          <tr>
-            <td className="py-3 md:px-4 align-top px-1 border-b">2</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Sruthi K S</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">
-              A Unified Computer Vision System for Multilingual Bi-directional Gesture Recognition
-            </td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">3rd IEEE ICRAIS, 2025</td>
-          </tr>
-          <tr>
-            <td className="py-3 md:px-4 align-top px-1 border-b">3</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Trayee Shridhar Nayak</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Deep Learning for Tulsi Leaf Disease Identification</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">IEEE AIDE, 2025</td>
-          </tr>
-          <tr>
-            <td className="py-3 md:px-4 align-top px-1 border-b">4</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Parimi Uma Sahithya</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Harnessing Deep Learning for Missing Child Identification</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">ICAIT, 2024</td>
-          </tr>
-          <tr>
-            <td className="py-3 md:px-4 align-top px-1 border-b">5</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Nikitha Mogaveer</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Handwritten Character Recognition of Kannada using CNN</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">IJARCCE, 2024</td>
-          </tr>
-          <tr>
-            <td className="py-3 md:px-4 align-top px-1 border-b">6</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Ananya Mrutyunjaya et al.</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">Virtudine: Discover Nutrient-Rich Flavors Through Pixels using AR</td>
-            <td className="py-3 md:px-4 align-top px-1 border-b">NCDTE, 2024</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p>
-      <strong>Research Infrastructure:</strong> Research lab with 8 PCs.
-    </p>
-    <p>
-      <strong>Collaborations & MoUs:</strong>
-    </p>
-    <ul className="list-disc ml-5 space-y-1">
-      <li>DLithe, Bengaluru - Industrial training, Internship, R&D, Skill development, Guest lectures, FDPs</li>
-      <li>GlowLogics Solutions - Webinar</li>
-      <li>Karunadu Technologies - FDPs and Internships</li>
-    </ul>
-    <p>
-      <strong>Upcoming Initiatives:</strong> Workshop on “Manuscript Writing”, Skill Development Programme on “IoT Unplugged: Connecting the Future”
-    </p>
-
-    {/* ECE */}
-    <h3 className="font-bold text-[20px]">Electronics & Communication Engineering (ECE)</h3>
-    <p>
-      <strong>Thrust Areas:</strong> VLSI, Embedded Systems & IoT, Advanced Communication Systems, Signal/Image/AI Processing, RF, Microwave & Antenna
-      Design, Robotics, Control & Automation.
-    </p>
-    <p>
-      <strong>Research Guides:</strong> Dr. Ganesh V Bhat, Dr. Dayananda G K
-    </p>
-    <p>
-      <strong>Student Research & Achievements:</strong>
-    </p>
-    <ul className="list-disc ml-5 space-y-1">
-      <li>Sindhu Shenoy M - Aid for Visually Challenged People (ICWITE 2024)</li>
-      <li>Bharath H M - Reflecting on Technology: Smart Mirror Review (Springer Nature 2024)</li>
-      <li>Prathap M - Efficient Vehicle Management through Automated License Plate Recognition (ICCSST-2023)</li>
-      <li>Bhavyashree - Pothole Detection using YOLOv5 (ICCSST-2023)</li>
-      <li>Pavan - Recognition of diseases in Tomato and Potato plant (NCETE-2023)</li>
-    </ul>
-    <p>
-      <strong>Research Infrastructure:</strong> Research/Project Lab with 3D Printer and additional lab access beyond working hours.
-    </p>
-    <p>
-      <strong>Collaborations & MoUs:</strong>
-    </p>
-    <ul className="list-disc ml-5 space-y-1">
-      <li>Govt Tool and Training Centre - Internships and Training</li>
-      <li>Kakunje Software Pvt. Ltd. - Workshops and Projects</li>
-    </ul>
-
-    <p>
-      <strong>Research/Project</strong>
-    </p>
-    <img src="/rsdImages/2.png" />
-    <p>
-      <strong>Research Lab</strong>
-    </p>
-    <img src="/rsdImages/3.png" />
-    <p>
-      <strong>3D Printer</strong>
-    </p>
-    <img src="/rsdImages/4.png" />
-    <p>
-      <strong>Research/Project</strong>
-    </p>
-    <img src="/rsdImages/5.png" />
-
-    <p className="mt-3">
-      <strong>Upcoming Initiatives:</strong>
-    </p>
-    <ul className="list-disc ml-5 space-y-1">
-      <li>Hackathons</li>
-      <li>Invited Talks</li>
-      <li>FDP on Applied Embedded Systems (STM32F410RE)</li>
-      <li>Mini Project Exhibition</li>
-      <li>Major Project Exhibition</li>
-      <li>MoU-linked Activities</li>
-    </ul>
-
-    {/* ISE */}
-    <h3 className="font-bold text-[20px]">Information Science & Engineering (ISE)</h3>
-    <p>
-      <strong>Department Research Highlights:</strong> Strong research culture with patents, grants, FDPs, student projects, and industry
-      collaborations.
-    </p>
-    <p>
-      <strong>Student Research & Achievements (selected Utility Patents & Grants):</strong>
-    </p>
-    <ul className="list-disc ml-5 space-y-1">
-      <li>
-        Diya, Prithvi S Nayak, Samridhi S, Shraddha J Naik - Innovative Web-Based Platform for Sustainable and Efficient Canteen Operations (Utility
-        Patent, 2025)
-      </li>
-      <li>
-        Amulya Jois, Rakshitha Shetty A, Tilak Shetty, Venkatesh R Kamath - Intercode - Seamless Real-Time Code Collaboration for Technical Interviews
-        (Utility Patent, 2025)
-      </li>
-      <li>Sujal V Kanchan - PrivAI - Intelligent Privacy Detection and Protection Solution for Social Media Users (Utility Patent, 2025)</li>
-      <li>Aniketh K, Darshan, Nishan, Varshith B A - AI Talentsuite – Dual Application System for Candidate Upskilling (Utility Patent, 2025)</li>
-      <li>
-        Sumedha, Sinchana Sn, Shreesha, Sujnan Acharya - AI-Based Women and Child Health Monitoring Application During Pregnancy Stages (Utility
-        Patent, 2025)
-      </li>
-      <li>
-        Krishna H Pallan, Akash Javali, Payal, P Rethi Kumaar - Mind-Care: Multimodal Sentiment Analysis Framework for Mental Health Detection
-        (Utility Patent, 2025)
-      </li>
-      <li>B Lipika, Devika Bhandary, Rashmi S, Shraddha K - Agriflow: Revolutionizing Irrigation with IoT Automation (Utility Patent, 2025)</li>
-      <li>
-        Chirag Honnavarkar, Pradhyumna Prabhu, Abhay S K, Chaithra Nayak - Retinaguard: Optimal CNN Solution for Diabetic Retinopathy (Utility Patent,
-        2024)
-      </li>
-    </ul>
-    <p>
-      <strong>Other Notable Achievements:</strong> KSCST-funded projects, hackathon prizes, conference publications, national-level awards (2023–2025)
-    </p>
-  </div>
-);
-
+  );
+};
 // Research Output Section
 const ResearchOutput = () => (
   <div className="text-textGray text-[17px] ">

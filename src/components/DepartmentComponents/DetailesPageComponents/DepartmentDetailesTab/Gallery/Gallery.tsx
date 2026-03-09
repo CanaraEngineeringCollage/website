@@ -86,6 +86,7 @@ const Gallery = ({ data }: { data: GalleryItem[] }) => {
           >
             <div className="h-[250px] overflow-hidden">
               <Image
+              unoptimized
                 src={item.image}
                 alt={item.title || "gallery"}
                 width={600}
@@ -133,6 +134,7 @@ const Gallery = ({ data }: { data: GalleryItem[] }) => {
               {/* Image Content */}
               <motion.div variants={contentVariants}>
                 <Image
+                unoptimized
                   src={data[selectedIndex].image}
                   alt={data[selectedIndex].title || "Gallery Image"}
                   width={1200}

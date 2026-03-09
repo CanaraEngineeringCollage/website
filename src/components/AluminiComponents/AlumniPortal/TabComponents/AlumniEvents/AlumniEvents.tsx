@@ -106,6 +106,7 @@ export default function AlumniEvents({ events, loading }: AlumniEventsProps) {
                 <video src={event.imageSrc} muted loop autoPlay playsInline className="w-full h-full object-cover" />
               ) : (
                 <Image
+                unoptimized
                   src={event.imageSrc || "/placeholder.jpg"}
                   alt={event.title}
                   width={400}
@@ -173,7 +174,7 @@ export default function AlumniEvents({ events, loading }: AlumniEventsProps) {
                   <video src={selectedEvent.imageSrc} controls playsInline className="w-full h-full object-contain" />
                 ) : (
                   <div className="relative w-full h-full">
-                    <Image src={selectedEvent.imageSrc || "/placeholder.jpg"} alt={selectedEvent.title} fill className="object-cover" />
+                    <Image unoptimized src={selectedEvent.imageSrc || "/placeholder.jpg"} alt={selectedEvent.title} fill className="object-cover" />
                   </div>
                 )}
               </div>

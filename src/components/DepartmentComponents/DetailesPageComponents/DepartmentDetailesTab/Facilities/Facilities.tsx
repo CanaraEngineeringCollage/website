@@ -128,13 +128,13 @@ const Facilities: React.FC<FacilitiesProps> = ({ data, deptName }) => {
             {/* Legacy Image Rendering */}
             <div className={`${deptName === "Artificial Intelligence & Machine Learning" ? "flex flex-col lg2:flex-row flex-wrap  gap-2" : ""}`}>
               {facility?.imageUrl && (
-                <Image loading="lazy" src={facility.imageUrl} width={500} height={500} alt={facility.title} className="mt-5 rounded" />
+                <Image  src={facility.imageUrl} width={500} height={500} alt={facility.title} className="mt-5 rounded" />
               )}
               {facility?.imageUrl2 && (
-                <Image loading="lazy" src={facility.imageUrl2} width={500} height={500} alt={facility.title} className="mt-5 rounded" />
+                <Image  src={facility.imageUrl2} width={500} height={500} alt={facility.title} className="mt-5 rounded" />
               )}
               {facility?.imageUrl3 && (
-                <Image loading="lazy" src={facility.imageUrl3} width={500} height={500} alt={facility.title} className="mt-5 rounded" />
+                <Image  src={facility.imageUrl3} width={500} height={500} alt={facility.title} className="mt-5 rounded" />
               )}
             </div>
 

@@ -165,7 +165,7 @@ export default function LibraryFaculty() {
               className="relative w-full max-w-[309px] aspect-[2/3] rounded-xl overflow-hidden bg-[#6DC0EB] text-white shadow-md"
             >
               {/* ✅ Fixed Image */}
-              <Image src={`${process.env.NEXT_PUBLIC_API_URL}/faculty/${member.id}/avatar`} alt={member.name} fill className="object-cover" />
+              <Image unoptimized src={`${process.env.NEXT_PUBLIC_API_URL}/faculty/${member.id}/avatar`} alt={member.name} fill className="object-cover" />
 
               <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
 
@@ -194,11 +194,13 @@ export default function LibraryFaculty() {
             <div key={index} className="relative w-full h-[360px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white shadow-md">
               {/* ✅ Fixed Image */}
               <Image
+              unoptimized
                 onClick={() => router.push(`/user-details/${member.id}`)}
                 src={`${process.env.NEXT_PUBLIC_API_URL}/faculty/${member.id}/avatar`}
                 alt={member.name}
                 fill
                 className="object-cover"
+                
               />
 
               <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>

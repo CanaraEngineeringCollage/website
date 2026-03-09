@@ -81,6 +81,7 @@ const Faculty = ({ teachingStaff, technicalStaff, loading = false }: FacultyProp
         >
           {/* ✅ FIX 2: Used hasAvatar and the backend URL */}
           <Image 
+          unoptimized
             src={item.hasAvatar ? `${process.env.NEXT_PUBLIC_API_URL}/faculty/${item.id}/avatar` : (item.image || "/fallback-avatar.png")} 
             alt={item.name} 
             fill 

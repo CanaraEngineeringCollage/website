@@ -77,7 +77,7 @@ const DepartmentHeadMessage: React.FC<DepartmentHeadMessageProps> = ({ departmen
                 onClick={() => setIsModalOpen(true)}
                 className="w-72 md:w-80 h-96 relative overflow-hidden shadow-md rounded-xl cursor-pointer hover:opacity-90 transition-opacity"
               >
-                <Image fill src={imageSrc} alt={departmentHeadData.name} className="object-cover bg-[#6dc0eb]" />
+                <Image unoptimized fill src={imageSrc} alt={departmentHeadData.name} className="object-cover bg-[#6dc0eb]" />
               </div>
               <p className="mt-4 text-center text-[27px] font-bold text-white">{departmentHeadData.name}</p>
               <p className="text-[17px] text-white">{departmentHeadData.designation}</p>
@@ -99,7 +99,7 @@ const DepartmentHeadMessage: React.FC<DepartmentHeadMessageProps> = ({ departmen
                 onClick={() => setIsModalOpen(true)}
                 className="w-72 md:w-80 h-96 relative overflow-hidden shadow-md rounded-xl cursor-pointer hover:opacity-90 transition-opacity"
               >
-                <Image src={imageSrc} fill alt={departmentHeadData.name} className="object-cover bg-[#6dc0eb]" />
+                <Image unoptimized src={imageSrc} fill alt={departmentHeadData.name} className="object-cover bg-[#6dc0eb]" />
               </div>
               <p className="mt-4 text-center text-[27px] font-bold text-white">{noOrphan(departmentHeadData.name)}</p>
 

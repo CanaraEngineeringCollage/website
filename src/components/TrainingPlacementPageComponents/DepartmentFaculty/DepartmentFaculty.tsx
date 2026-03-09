@@ -153,6 +153,7 @@ export default function DepartmentFaculty({ heading, description }: { heading: s
                 >
                   {/* ✅ Fixed Image fills card completely */}
                   <Image
+                  unoptimized
                     src={member.hasAvatar ? `${baseUrl}/faculty/${member.id}/avatar` : (member.image || "/fallback-avatar.png")}
                     alt={member.name}
                     fill
@@ -228,6 +229,7 @@ export default function DepartmentFaculty({ heading, description }: { heading: s
                 >
                   {/* ✅ Fixed Image fills card completely (Mobile view) */}
                   <Image 
+                  unoptimized
                     src={member.hasAvatar ? `${baseUrl}/faculty/${member.id}/avatar` : (member.image || "/fallback-avatar.png")} 
                     alt={member.name} 
                     fill 

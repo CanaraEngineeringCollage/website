@@ -48,6 +48,7 @@ const Hod: React.FC<HodProps> = ({ data, facultyProfile }) => {
       <div className="flex  gap-6">
         <div className="inline-flex flex-col items-center">
           <Image
+          unoptimized
             src={imageSrc}
             alt={data?.name || "HOD"}
             width={1000}

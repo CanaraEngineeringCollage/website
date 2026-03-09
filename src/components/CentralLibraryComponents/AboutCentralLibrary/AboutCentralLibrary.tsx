@@ -324,6 +324,7 @@ const LibraryStaff = ({ staffList, loading = false }: LibraryStaffProps) => {
           className="relative w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md  transition-transform duration-300"
         >
           <Image
+          unoptimized
             src={`${process.env.NEXT_PUBLIC_API_URL}/faculty/${item.id}/avatar`}
             alt={item.name}
             fill

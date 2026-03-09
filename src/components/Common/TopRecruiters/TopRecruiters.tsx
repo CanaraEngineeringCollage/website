@@ -16,6 +16,7 @@ const renderLogos = (logosArray: { src: string; alt: string; height?: string }[]
       {[...logosArray, ...logosArray].map((logo, index) => (
         <div key={index} className="flex items-center justify-center mx-4">
           <Image
+          unoptimized
             src={logo.src}
             alt={logo.alt}
             width={180}
