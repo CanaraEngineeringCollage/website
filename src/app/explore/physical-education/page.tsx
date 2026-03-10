@@ -29,10 +29,10 @@ const page = () => {
       <section>
         <HeroSection />
       </section>
-      <section className="px-6 md:px-12 lg:px-20 xl:px-0">
+      <section className="px-6 ">
         <BuildingStrength />
       </section>
-      <section>
+      <section className="px-6 ">
         <DepartmentSection />
       </section>
       <section className="pb-[70px] md:px-6  pt-8 md:pt-7">

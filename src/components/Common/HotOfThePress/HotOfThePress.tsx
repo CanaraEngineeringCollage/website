@@ -91,15 +91,15 @@ function EventContent({ description }: { description: EventDescriptionProps }) {
   return (
     <div>
       {description.src && (
-        <img
-          src={description.src}
-          alt={description.topTitle}
-          loading="lazy"
-          width={1000}
-          height={700}
-          className="object-cover overflow-hidden rounded-t-2xl w-full  mb-10"
-        />
-      )}
+       <img
+      src={description.src}
+      alt={description.topTitle}
+      loading="lazy"
+      width={1000}
+      height={700}
+      className="object-cover overflow-hidden rounded-t-2xl w-full  mb-10"
+    />
+  )}
       <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-[#1D1D1F] bg-white">
         <div>
           {<p className="text-[17px] text-textGray uppercase font-bold mb-2">{description.date}</p>}
@@ -165,7 +165,7 @@ const HotOfThePressCarousel = () => {
 
   const getEventDescription = (event: CampusEvent): EventDescriptionProps => ({
     ...parseEventContent(event.content),
-    date: event.eventDate ? new Date(event.eventDate).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }) : "",
+    date: event.eventDate ? new Date(event.eventDate).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }) : null,
   });
 
   if (events.length === 0) {
@@ -173,142 +173,126 @@ const HotOfThePressCarousel = () => {
   }
 
   return (
-    <section className="w-full pt-10 pb-3 md:pb-10 md:pt-16 overflow-hidden">
-      {/* GRID STRUCTURE EXPLANATION:
-        We create a 3-column grid mimicking your mx-auto layout.
-        Column 1: Left empty space (1fr)
-        Column 2: The centered container (min(100%, 80rem) or 75%)
-        Column 3: Right empty space (1fr)
-      */}
-      <div className="grid grid-cols-[1fr_min(100%,80rem)_1fr] xl:grid-cols-[1fr_75%_1fr]">
-        
-        {/* HEADER: Placed strictly in the center column (col-start-2) */}
-        <div className="col-start-2 px-6 w-full">
-          <div className="flex justify-between items-center w-full md:pb-16 pb-10">
-            <h1 className="text-3xl text-[#1D1D1F] md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-semibold font-sans  tracking-[0.13px]">
-              Campus Buzz
-            </h1>
+    <section className="lg:ml-20 xl:ml-60 md:py-0 md:pt-16 py-10">
+      <div className="flex justify-between items-center w-full md:pb-16 pb-10">
+        <h1 className="text-3xl text-[#1D1D1F] md:text-left text-center md:text-[40px] lg2:text-5xl xl:text-6xl font-semibold font-sans  tracking-[0.13px]">
+          Campus Buzz
+        </h1>
 
-            <div className="hidden md:block">
-              <Link href="/campus-buzz">
-                <button
-                  aria-label="Explore More Campus Buzz"
-                  className="text-[#1D1D1F] cursor-pointer font-semibold font-sans bg-[#c3d5ed] hover:bg-blue-200 px-5 py-2 rounded-3xl"
-                >
-                  Explore More Campus Buzz
-                </button>
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        {/* SWIPER: Spans from center column through the right margin (col-start-2 col-end-4) */}
-        <div className="col-start-2 col-end-4 pl-6 w-full min-w-0">
-          {isLoaded && events.length > 0 ? (
-            <Swiper
-              modules={[Autoplay, Navigation]}
-              autoplay={{ delay: 3000, disableOnInteraction: false }}
-              spaceBetween={20}
-              slidesPerView={1}
-              loop={true}
-              navigation={{
-                nextEl: ".swiper-button-next-custom",
-                prevEl: ".swiper-button-prev-custom",
-              }}
-              breakpoints={{
-                640: { slidesPerView: 1, spaceBetween: 20 },
-                768: { slidesPerView: 2, spaceBetween: 20 },
-                1024: { slidesPerView: 3.5, spaceBetween: 20 },
-                1580: { slidesPerView: 3.8, spaceBetween: 1 },
-              }}
-              className="mySwiper"
-              onSwiper={(swiper) => {
-                swiperRef.current = swiper;
-              }}
+        <div className="hidden md:block">
+          <Link href="/campus-buzz">
+            <button
+              aria-label="Explore More Campus Buzz"
+              className="text-[#1D1D1F] cursor-pointer font-semibold font-sans bg-[#c3d5ed] hover:bg-blue-200 px-5 py-2 rounded-3xl lg:mr-12"
             >
-              {sortedEvents.map((event, index) => {
-                const { src, topTitle, topDescription } = parseEventContent(event.content);
-                return (
-                  <SwiperSlide key={event.id}>
-                    <div
-                      className="max-w-sm  bg-white min-h-[450px] cursor-pointer rounded-xl lg:rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
-                      onClick={() => openCard(index)}
-                    >
-                      <div className="h-60 overflow-hidden">
-                        <img src={src} alt={topTitle || event.category} className="w-full h-full object-cover" />
-                      </div>
-                      <div className="p-8 text-center">
-                        <div className="flex justify-center items-center space-x-3">
-                          <p className="text-textGray text-[17px] mb-1 line-clamp-1 capitalize">{event.eventName?.toLowerCase()}</p>
-
-                          {/* Vertical divider */}
-                          {event.eventDate && <div className="h-5 w-[1px] bg-textGray"></div>}
-
-                          {event.eventDate && (
-                            <p className="text-textGray text-[17px] mb-1">
-                              {new Date(event.eventDate).toLocaleDateString("en-GB", {
-                                day: "numeric",
-                                month: "short",
-                                year: "numeric",
-                              })}
-                            </p>
-                          )}
-                        </div>
-
-                        {/* <p className="text-textGray text-[17px] mb-1">{event.category}</p> */}
-                        {topTitle ? (
-                          <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{topTitle}</h3>
-                        ) : topDescription ? (
-                          <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{topDescription}</h3>
-                        ) : (
-                          <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{event.category}</h3>
-                        )}
-                        <button className="text-primary inline-flex text-[17px] items-center hover:underline font-medium text-sm">
-                          Read More <MdKeyboardArrowRight className="ml-1" />
-                        </button>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                );
-              })}
-            </Swiper>
-          ) : (
-            <div className="text-center py-10 text-textGray">No events to display.</div>
-          )}
-        </div>
-
-        {/* NAVIGATION: Placed strictly back in the center column (col-start-2) */}
-        <div className="col-start-2 px-6 w-full">
-          <div className="flex justify-center lg:justify-end md:pb-0 pb-10">
-            <div className="flex gap-6 lg:mt-20 mt-10">
-              <button
-                aria-label="Previous Slide"
-                className="swiper-button-prev-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-[#D2D2D7A3] flex items-center justify-center disabled:opacity-50"
-              >
-                <MdKeyboardArrowLeft />
-              </button>
-              <button
-                aria-label="Next Slide"
-                className="swiper-button-next-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-[#D2D2D7A3] flex items-center justify-center disabled:opacity-50"
-              >
-                <MdKeyboardArrowRight />
-              </button>
-            </div>
-          </div>
-
-          <div className="md:hidden  lg:mt-5 flex justify-center ">
-            <Link href="/campus-buzz">
-              {" "}
-              <button
-                aria-label="Explore More Campus Buzz"
-                className="text-[#1D1D1F] mx-auto cursor-pointer font-bold bg-[#c3d5ed] px-5 py-2 rounded-3xl"
-              >
-                Explore More Campus Buzz
-              </button>
-            </Link>
-          </div>
+              Explore More Campus Buzz
+            </button>
+          </Link>
         </div>
       </div>
+
+      {isLoaded && events.length > 0 ? (
+        <Swiper
+          modules={[Autoplay, Navigation]}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          spaceBetween={20}
+          slidesPerView={1}
+          loop={true}
+          navigation={{
+            nextEl: ".swiper-button-next-custom",
+            prevEl: ".swiper-button-prev-custom",
+          }}
+          breakpoints={{
+            640: { slidesPerView: 1, spaceBetween: 20 },
+            768: { slidesPerView: 2, spaceBetween: 20 },
+            1024: { slidesPerView: 3.5, spaceBetween: 20 },
+            1580: { slidesPerView: 3.8, spaceBetween: 1 },
+          }}
+          className="mySwiper"
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+          }}
+        >
+          {sortedEvents.map((event, index) => {
+            const { src, topTitle, topDescription } = parseEventContent(event.content);
+            return (
+              <SwiperSlide key={event.id}>
+                <div
+                  className="max-w-sm  bg-white min-h-[450px] cursor-pointer rounded-xl lg:rounded-3xl overflow-hidden "
+                  onClick={() => openCard(index)}
+                >
+                  <div className="h-60 overflow-hidden">
+                    <img src={src} alt={topTitle || event.category} className="w-full h-full object-cover" />
+                  </div>
+                  <div className="p-8 text-center">
+                    <div className="flex justify-center items-center space-x-3">
+                      <p className="text-textGray text-[17px] mb-1 line-clamp-1 capitalize">{event.eventName?.toLowerCase()}</p>
+
+                      {/* Vertical divider */}
+                      {event.eventDate && <div className="h-5 w-[1px] bg-textGray"></div>}
+
+                      {event.eventDate && (
+                        <p className="text-textGray text-[17px] mb-1">
+                          {new Date(event.eventDate).toLocaleDateString("en-GB", {
+                            day: "numeric",
+                            month: "short",
+                            year: "numeric",
+                          })}
+                        </p>
+                      )}
+                    </div>
+
+                    {/* <p className="text-textGray text-[17px] mb-1">{event.category}</p> */}
+                    {topTitle ? (
+                      <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{topTitle}</h3>
+                    ) : topDescription ? (
+                      <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{topDescription}</h3>
+                    ) : (
+                      <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{event.category}</h3>
+                    )}
+                    <button className="text-primary inline-flex text-[17px] items-center hover:underline font-medium text-sm">
+                      Read More <MdKeyboardArrowRight className="ml-1" />
+                    </button>
+                  </div>
+                </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      ) : (
+        <div className="text-center py-10 text-textGray">No events to display.</div>
+      )}
+
+      {/* Swiper Navigation */}
+      <div className="flex justify-center lg:justify-end md:pb-0 pb-10">
+        <div className="flex lg:mr-22  gap-6 lg:mt-20 mt-10">
+          <button
+            aria-label="Previous Slide"
+            className="swiper-button-prev-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-[#D2D2D7A3] flex items-center justify-center disabled:opacity-50"
+          >
+            <MdKeyboardArrowLeft />
+          </button>
+          <button
+            aria-label="Next Slide"
+            className="swiper-button-next-custom relative z-[1] lg:w-[36px] text-3xl text-[#616165] cursor-pointer lg:h-[36px] w-[27px] h-[27px] rounded-full bg-[#D2D2D7A3] flex items-center justify-center disabled:opacity-50"
+          >
+            <MdKeyboardArrowRight />
+          </button>
+        </div>
+      </div>
+
+      <div className="md:hidden  lg:mt-5 flex justify-center ">
+        <Link href="/campus-buzz">
+          {" "}
+          <button
+            aria-label="Explore More Campus Buzz"
+            className="text-[#1D1D1F] mx-auto cursor-pointer font-bold bg-[#c3d5ed] px-5 py-2 rounded-3xl"
+          >
+            Explore More Campus Buzz
+          </button>
+        </Link>
+      </div>
+      
 
       {/* Modal */}
       <AnimatePresence>
@@ -332,6 +316,16 @@ const HotOfThePressCarousel = () => {
               <motion.div variants={contentVariants} className="!overflow-hidden">
                 <EventContent description={getEventDescription(sortedEvents[currentIndex])} />
               </motion.div>
+              {/* <motion.div variants={contentVariants} className="p-4 lg:px-20 ">
+                <h1 className="border-t-2 pt-9 text-[10px] md:text-[12px] text-textGray border-t-gray-200">Next Event</h1>
+                <h1
+                  onClick={goToNextCard}
+                  className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]"
+                >
+                  {parseEventContent(sortedEvents[(currentIndex + 1) % sortedEvents.length].content).topTitle || "First Event"}
+                  <MdKeyboardArrowRight className="ml-1 mt-1 text-[20px] md:text-[25px]" />
+                </h1>
+              </motion.div> */}
             </motion.div>
           </motion.div>
         )}

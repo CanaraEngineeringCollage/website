@@ -116,8 +116,9 @@ export default function LibraryFaculty() {
   };
 
   return (
-    <section className="py-16 px-6 md:px-12 max-w-7xl mx-auto mt-10 md:my-20 xl:max-w-[75%] bg-[#F5F5F7] md:rounded-3xl">
-      <div className="mx-auto py-10 lg1:flex hidden flex-col-reverse md:flex-row items-center justify-between gap-10">
+    <section className="py-12 md:py-16 px-6    ">
+      <div className="max-w-7xl xl:max-w-[75%]  mx-auto my-3 md:my-5   ">
+      <div className="mx-auto py-10 lg1:flex px-6 md:px-12 hidden flex-col-reverse bg-[#F5F5F7] md:rounded-3xl md:flex-row items-center justify-between gap-10">
         <div className="max-w-md space-y-44">
           <div>
             <h2 className="text-3xl lg:text-4xl md:text-4xl font-bold text-gray-900 leading-tight">
@@ -231,7 +232,7 @@ export default function LibraryFaculty() {
           </button>
         </div>
       </div>
-
+</div>
       {/* <FacultyModal isOpen={isModalOpen} onClose={closeModal} facultyData={selectedMember} /> */}
     </section>
   );

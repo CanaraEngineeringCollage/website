@@ -47,8 +47,9 @@ const AboutTheDepartment = () => {
 
   return (
     <>
-      <section className="pt-5 px-4 lg:px-0 xl:px-0 md:pt-10 text-[#1D1D1F] xl:pt-20 pb-10 lg:pb-16 max-w-7xl xl:max-w-[75%] mx-auto   ">
-        <div>
+      <section className="pt-5 px-6  md:pt-10 text-[#1D1D1F] xl:pt-20 pb-10 lg:pb-16   ">
+        <div className="max-w-7xl xl:max-w-[75%] mx-auto ">
+        <div >
           <div className="flex justify-between  mb-5 lg:mb-10">
             <div className="lg:w-[75%] ">
               <h1
@@ -89,8 +90,12 @@ const AboutTheDepartment = () => {
             <button className="bg-[#007AFF26] hover:bg-blue-200 rounded-4xl px-6 py-2.5">More About the Library</button>
           </Link>
         </div>
+        </div>
       </section>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 w-full mx-auto px-4 lg:px-0 max-w-7xl  xl:max-w-[75%] ">
+
+      <section className=" px-6    ">
+      <div className="max-w-7xl xl:max-w-[75%] mx-auto  ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 w-full mx-auto  ">
         {/* Left Column */}
         <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 md:p-10 flex flex-col items-center justify-center text-center">
           <img src="/aboutPageImages/MissionVision/visionImage4.webp" alt="vision" className="w-40 sm:w-60 md:w-72 lg:w-[344px] h-auto mb-6" />
@@ -139,6 +144,8 @@ const AboutTheDepartment = () => {
 
         {/* Right Column */}
       </div>
+      </div>
+      </section>
 
       <LibraryFaculty />
     </>

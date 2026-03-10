@@ -47,7 +47,7 @@ const page = () => {
       <section>
         <HeroSection />
       </section>
-      <section className="px-6 lg:px-0 xl:px-0">
+      <section className="px-6 ">
         <HolisticStudent />
       </section>
 
@@ -55,13 +55,13 @@ const page = () => {
         <YourSkills />
       </section> */}
 
-      <section className="px-6  lg:px-0 xl:px-0 ">
+      <section className="px-6   ">
         <StudentClubs />
       </section>
-      <section className="px-6  lg:px-0 xl:px-0 py-10">
+      <section className="px-6   py-10">
         <CollapsSection />
       </section>
-      <section className=" lg:-mt-16  lg:pt-10 pb- lg:pb-14 lg:px-16 xl:px-0 px-1 md:px-12 ">
+      <section className=" lg:-mt-16  lg:pt-10 pb- lg:pb-14   md:px-12 ">
         <VideoPlayer
           titleClassname="text-[#1D1D1F] md:mt-5"
           title={

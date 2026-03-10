@@ -42,13 +42,13 @@ const page = () => {
   return (
     <>
       <AluminiHeroBanner />
-      <section className="px-6 pt-10 md:pt-0 md:px-12 lg:px-16 xl:px-0">
+      <section className="px-6 pt-10 md:pt-0  ">
         <StudentLIfeInCanara />
       </section>
       {/* <section className="px-6 md:px-12 lg:px-16 xl:px-0">
         <EmpowerNextGeneration />
       </section> */}
-      <section className="pb-  lg:px-0 md:pb-10 xl:pb-10">
+      <section className="pb- px-6 lg:px-0 md:pb-10 xl:pb-10">
         <LegacyExcellance />
       </section>
       <section className="pb-6  lg:px-0 md:pb-10 xl:pb-10">

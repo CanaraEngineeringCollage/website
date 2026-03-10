@@ -30,11 +30,11 @@ const page = () => {
       <section>
         <HeroSection />
       </section>
-      <section className="">
+      <section className="md:px-6">
         {/* <IdeasText /> */}
         <EnterpreneurshipMission />
       </section>
-      <section>
+      <section className="px-6">
         <Activities />
       </section>
       <section className="pb-12 lg:pb-20 md-6 md:px-6 lg:px-0">

@@ -498,19 +498,7 @@ function MainMenu({
                   {/* <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" /> */}
                 </div>
               </div>
-              <div
-                onClick={() => {
-                  setVisible("campusBeats");
-                }}
-                className="flex gap-2 items-center"
-              >
-                <div className="flex items-center gap-2">
-                  {/* <Campus /> */}
-                  <Typography className="text-sm text-gray-500"> Campus Beats</Typography>
-                  {/* <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" /> */}
-                </div>
-              </div>
-              <div
+               <div
                 onClick={() => {
                   router.push("/alumni");
                   openSidebar(false);
@@ -523,6 +511,19 @@ function MainMenu({
                   {/* <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" /> */}
                 </div>
               </div>
+              <div
+                onClick={() => {
+                  setVisible("campusBeats");
+                }}
+                className="flex gap-2 items-center"
+              >
+                <div className="flex items-center gap-2">
+                  {/* <Campus /> */}
+                  <Typography className="text-sm text-gray-500"> Campus Beats</Typography>
+                  {/* <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" /> */}
+                </div>
+              </div>
+             
             </>
           )}
         </div>

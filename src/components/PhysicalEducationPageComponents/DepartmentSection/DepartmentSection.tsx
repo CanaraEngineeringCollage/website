@@ -79,14 +79,14 @@ const participation = [
 
 const DepartmentSection = () => {
   return (
-    <div className="w-full mx-auto  xl:max-w-[75%]   text-[#1D1D1F]">
+    <div className="w-full mx-auto max-w-7xl  xl:max-w-[75%]   text-[#1D1D1F]">
       {/* <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-[#1D1D1F]"> Department of Physical Education</h1>
       <p className="lg:text-xl md:text-lg text-[14px] leading-7 pt-5 pb-8 text-textGray">
         Physical education-is an integral part of educational program designed to promote the optimum development of an individual. It makes one
         emotionally, mentally and physically strong. The primary aims of physical education are varied, based on the needs of time and place. Sports
         is commonly defined as an organized, competitive and skillful physical activity requiring commitment and fair play.
       </p> */}
-      <section className="w-full bg-none  sm:pt-16 sm:pb-8  px-4 sm:px-6 md:px-12">
+      <section className="w-full bg-none  sm:pt-16 sm:pb-8  ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 max-w-7xl mx-auto">
           {/* Goals Section */}
           <div className="bg-white py-6 sm:py-8 md:py-10 px-5 sm:px-7 md:px-9 w-full min-h-[500px] rounded-lg shadow-sm">
@@ -123,7 +123,7 @@ const DepartmentSection = () => {
         </div>
       </section>
 
-      <div className="lg:px-32 px-5 lg:mt-8 mt-12">
+      <div className=" lg:mt-8 mt-12">
         <ModelTable title="Sports Committee Panel" headers={["Sl No", "Name", "Designation", "Department"]} rows={members} />
         <ModelTable title="College Sports Facilities" headers={["Sl No", "Sports", "No"]} rows={sportsFacilities} />
         <ModelTable title="Our Journey in State-Level Sports" headers={["Sl No", "Year", "Number of Events (State Level)", "Number of Participants"]} rows={participation} />
