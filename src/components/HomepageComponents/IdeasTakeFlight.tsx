@@ -176,7 +176,7 @@ const ideasData: IdeaCard[] = [
     cardTitle: "UDAL DC Fellowship",
     cardImage: "https://apiserver.cec.edu.in/files/udalDcImage1",
     modalTitle: "UDAL DC Fellowship",
-    modalImage: "https://apiserver.cec.edu.in/files/udalDcImage4",
+    modalImage: "https://apiserver.cec.edu.in/files/udalDcImage1",
     modalSections: [
       {
         description:
@@ -201,7 +201,8 @@ const ideasData: IdeaCard[] = [
       },
     ],
     galleryImages: [
-      "https://apiserver.cec.edu.in/files/udalDcImage5",
+      "https://apiserver.cec.edu.in/files/udalDcImage1",
+      "https://apiserver.cec.edu.in/files/udalDcImage4",
       "https://apiserver.cec.edu.in/files/udalDcImage3",
       "https://apiserver.cec.edu.in/files/udalDcImage2",
     ],

@@ -116,26 +116,16 @@ export function Testimonials({ className }: TestimonialsProps) {
     setIsModalOpen(true);
   };
 
-  const featuredAlumni: FeaturedAlumni[] = [
+const featuredAlumni: FeaturedAlumni[] = [
     {
-      name: "Anirudh Shenoy",
-      batch: "2017",
-      branch: "ME",
-      employer: "Automotive Axles Ltd, Mysore",
-      designation: "Senior Manager - Manufacturing Engineering, NPD & Gear engineering",
-      imageUrl: "https://apiserver.cec.edu.in/files/Anirudh%20Shenoy.jpeg",
+      name: "Mahesh Prabhu",
+      batch: "2008",
+      branch: "ECE",
+      employer: "Infosys",
+      designation: "Project Manager",
+      imageUrl: "https://apiserver.cec.edu.in/files/Mahwsh_prabhu.webp",
       testimonial:
-        "My journey at Canara Engineering College laid a strong foundation for my professional career in manufacturing engineering. The curriculum combined with hands-on learning through mini projects and final-year projects helped me develop strong analytical thinking and practical problem-solving skills.Being part of SAE BAJA was a turning point in my journey. Designing, manufacturing, and assembling an all-terrain vehicle under real-world constraints taught me teamwork, time management, cost control, and the importance of design validation. It gave me exposure to manufacturing processes, tolerance stack-ups, quality checks, and cross-functional coordination - experiences that directly relate to my current role in axle assembly manufacturing.The college not only shaped my technical capabilities but also instilled confidence, leadership, and a practical approach to engineering challenges, which continue to help me in handling production, CapEx projects, and remote manufacturing operations today.",
-    },
-    {
-      name: "Anusha G Shetty",
-      batch: "2024",
-      branch: "ME",
-      employer: "M.Tech in welding Engineering from NIT-Trichy",
-      designation: "Student",
-      imageUrl: "https://apiserver.cec.edu.in/files/Anusha%20photo.jpeg",
-      testimonial:
-        "The college fostered a student-friendly environment where everyone was encouraged to participate in techno-cultural fests, sports events, and academic activities. It provided equal opportunities to explore talents, gain knowledge, and build confidence, creating a vibrant campus life and a supportive learning atmosphere.",
+        "Having passed out from CEC in 2008, I look back at my college years with immense gratitude and pride. Strong Technical foundation and holistic learning environment I received played a defining role in shaping my professional journey. I owe a great deal to all my Lectures and Professors at CEC. Their dedication, clarity in teaching and constant encouragement helped me develop not just engineering knowledge but also the confidence and discipline needed to excel in the industry. Securing a campus placement was a milestone that set the direction for my career, and it was made possible by the structured training, support and guidance I received throughout my time at CEC. Today, as I continue to grow in my career, the values, skills, and mindset instilled during my college days remain an integral part of who I am. I am proud to be an alumnus of CEC.",
     },
     {
       name: "Dwithi DP",
@@ -148,44 +138,24 @@ export function Testimonials({ className }: TestimonialsProps) {
         "As a girl in Mechanical Engineering at Canara Engineering College, my four-year journey made me stronger and more confident. With many assignments, internals, and final exams, I developed technical knowledge, discipline, and self-belief that prepared me for my professional career.",
     },
     {
-      name: "T Pranav Pai",
-      batch: "2025",
-      branch: "ME",
-      employer: "Sobha Limited",
-      designation: "Engineer - Design and Engineering.",
-      imageUrl: "https://apiserver.cec.edu.in/files/Pranav%20Pai.jpeg",
+      name: "Ms. Felicita Fernandes",
+      batch: "2019",
+      branch: "ISE",
+      employer: "Harri",
+      designation: "Senior Customer Success Manager",
+      imageUrl: "https://apiserver.cec.edu.in/files/Felicita%20Fernandes.webp",
       testimonial:
-        "My time at Canara Engineering College helped me build strong technical knowledge and confidence. The support from teachers and the learning environment played an important role in my career growth. I am grateful and proud to be an alumnus of this institution.",
+        "My journey at Canara Engineering College in the Information Science and Engineering branch was transformative. It strengthened my technical foundation, problem-solving skills, analytical skills and confidence, while offering supportive faculty, collaborative learning, and lifelong friendships that shaped my personal and professional growth.",
     },
     {
-      name: "Ramakanth Shenoy Mangalpady",
-      batch: "2009",
-      branch: "CSE",
-      employer: "EGDK India Private Limited",
-      imageUrl: "https://apiserver.cec.edu.in/files/Ramakanth%20Shenoy.jpg",
-      designation: "Solution Architect.",
+      name: "Poornima Vinod Shanbhag",
+      batch: "2019 - 2023",
+      branch: "ECE",
+      employer: "Signoff Semiconductors Pvt Ltd",
+      designation: "Embedded Engineer - I",
+      imageUrl: "https://apiserver.cec.edu.in/files/Poornima.webp",
       testimonial:
-        "I joined Canara in 1991, completing an 18-year academic journey ending with my 2009 graduation from Canara Engineering College. A 16-year IT veteran in Mangalore with experience at firms like Infosys and Niveus, I am currently a Solution Architect at EGDK India, a subsidiary of EG A/S Denmark.",
-    },
-    {
-      name: "Sudheendra Shenoy",
-      batch: "2005",
-      branch: "CSE",
-      employer: "Accenture",
-      imageUrl: "https://apiserver.cec.edu.in/files/Sudheendra%20Shenoy.jpg",
-      designation: "Manager",
-      testimonial:
-        "My years at Canara engineering college were a blend of learning, growth and lifelong friendships. The experience helped me build discipline, confidence and a strong career direction. It laid the groundwork for the professional I am today.",
-    },
-    {
-      name: "Niranjana N K",
-      batch: "2018",
-      branch: "CSE",
-      employer: "Persistent Systems",
-      imageUrl: "https://apiserver.cec.edu.in/files/Niranjana%20N%20K.jpg",
-      designation: "Project Lead",
-      testimonial:
-        "Canara Engineering College offered more than just a degree; it provided a nurturing environment for growth. Through its vibrant campus life and dedicated mentors, I developed the leadership and interpersonal skills that still drive my professional success today. An unforgettable journey!",
+        "Being a part of the Electronics and Communication Department at Canara College of Engineering was truly a wonderful experience. The college laid a strong foundation in my life through quality education and the guidance of very supportive lecturers. It provided me the freedom to explore my interests along with my curriculum, helping me grow as a confident professional. The E&C R&D department encouraged experimentation and provided hands-on experience with various electronic components, which helped me greatly in developing my practical knowledge and skills. Canara became the place where my ambitions took root and my career began to grow. The four years spent here are truly memorable. The Placement Department puts in significant efforts to help students secure placement in reputed companies. I am truly thankful to the institution for shaping my career.",
     },
     {
       name: "Neeraj Fernandes",
@@ -198,14 +168,34 @@ export function Testimonials({ className }: TestimonialsProps) {
         "I am deeply honoured to congratulate Canara Engineering College on its 25 years of excellence. Being part of the very first batch, I feel proud to have witnessed the institution’s humble beginnings and steady growth. The dedication of the management and faculty played a vital role in shaping our knowledge, skills, and professional values. Their guidance and support laid a strong foundation for our careers and personal development. The college not only provided quality education but also instilled confidence, discipline, and lifelong learning in us. It is truly inspiring to see how the institution has grown into a respected center of academic excellence over the past 25 years. I will always cherish my association with Canara Engineering College and remain grateful for the opportunities it provided. I wish the college continued success and many more milestones in the years ahead.",
     },
     {
-      name: "Adithya Pai B",
-      batch: "2023",
-      imageUrl: "https://apiserver.cec.edu.in/files/Adithya%20Pai%20B.JPG",
-      branch: "CSE",
-      employer: "NetApp",
-      designation: "Member of Technical Staff – Software Engineer 2 (MTS Software Engineer 2)",
+      name: "Rutu Shastri",
+      batch: "2018 - 2022",
+      branch: "ECE",
+      employer: "Tata Consultancy Services",
+      designation: "Senior Cyber Security Engineer",
+      imageUrl: "https://apiserver.cec.edu.in/files/Rutushasthri.webp",
       testimonial:
-        "Looking back, the four years I spent at CEC were truly transformative and played a major role in shaping who I am today. My transition from a student to a working professional was significant, and I am deeply grateful to the institution for the support and guidance I received throughout that journey. The faculty at CEC deserve special appreciation. Their in-depth knowledge, passion for teaching, and clarity in fundamentals helped me build a strong academic foundation. The quality and standards of the content delivered were excellent, and today, if my core fundamentals meet professional standards, I credit my lecturers for their dedication and expertise. Beyond academics, CEC felt like a close-knit family. Every student felt like a cousin, every lecturer like a mentor and well-wisher, and every event felt like a celebration at home. The leadership and technical opportunities I received, especially during my third year, significantly boosted my confidence and prepared me for my professional career. I will always remain truly thankful to CEC for the learning, experiences, and values that continue to guide me today.",
+        "Our journey at Canara Engineering College has been a blend of learning, challenges, and unforgettable memories. From late-night study sessions to exciting project presentations, every moment shaped our skills and confidence. Supportive faculty, strong friendships, teamwork, and practical exposure helped us grow not only as engineers but also as responsible and determined individuals.",
+    },
+    {
+      name: "Anirudh Shenoy",
+      batch: "2017",
+      branch: "ME",
+      employer: "Automotive Axles Ltd, Mysore",
+      designation: "Senior Manager - Manufacturing Engineering, NPD & Gear engineering",
+      imageUrl: "https://apiserver.cec.edu.in/files/Anirudh%20Shenoy.jpeg",
+      testimonial:
+        "My journey at Canara Engineering College laid a strong foundation for my professional career in manufacturing engineering. The curriculum combined with hands-on learning through mini projects and final-year projects helped me develop strong analytical thinking and practical problem-solving skills.Being part of SAE BAJA was a turning point in my journey. Designing, manufacturing, and assembling an all-terrain vehicle under real-world constraints taught me teamwork, time management, cost control, and the importance of design validation. It gave me exposure to manufacturing processes, tolerance stack-ups, quality checks, and cross-functional coordination - experiences that directly relate to my current role in axle assembly manufacturing.The college not only shaped my technical capabilities but also instilled confidence, leadership, and a practical approach to engineering challenges, which continue to help me in handling production, CapEx projects, and remote manufacturing operations today.",
+    },
+    {
+      name: "Ranjith Kumar",
+      batch: "2014",
+      branch: "ECE",
+      employer: "Garrett Advancing Motion, France",
+      designation: "R & D Validation Engineer",
+      imageUrl: "https://apiserver.cec.edu.in/files/Ranjith%20Kumar",
+      testimonial:
+        "My journey in the engineering domain at my college was truly wonderful. I had the opportunity to participate in numerous events and even serve as an organizer, which greatly improved my communication and leadership skills. Being part of the Robotics team and the Industrial Partnership Cell provided valuable industry exposure and helped me understand the connection between academics and industry. Regular industry visits and early internship opportunities enriched my learning experience. With supportive faculty and amazing classmates, my time there was both inspiring and memorable.",
     },
     {
       name: "Mr. Joyson Madtha",
@@ -218,24 +208,64 @@ export function Testimonials({ className }: TestimonialsProps) {
         "I walked into college unsure of who I’d become; I walked out knowing who I must be—a seeker of knowledge. Degrees may bring jobs, but curiosity builds destiny. Don’t wait for perfect mentors like Arjuna; but be Ekalavya and the rest will become history. Learn deeply, stay humble, and live these campus days fully, because once they pass, life rarely grants such fearless freedom again.",
     },
     {
-      name: "Mrs. Akshatha Shenoy",
-      batch: "2016",
-      branch: "ISE",
-      employer: "Infosys Ltd",
-      designation: "Technology Lead, Toronto DC",
-      imageUrl: "https://apiserver.cec.edu.in/files/Akshatha%20Shenoy-ISE-2016.webp",
+      name: "Ramakanth Shenoy Mangalpady",
+      batch: "2009",
+      branch: "CSE",
+      employer: "EGDK India Private Limited",
+      imageUrl: "https://apiserver.cec.edu.in/files/Ramakanth%20Shenoy.jpg",
+      designation: "Solution Architect.",
       testimonial:
-        "My four years at Canara Engineering College in Information Science & Engineering were truly transformative. The strong technical foundation, campus recruitment opportunities, and constant encouragement to explore helped shape my career and personality. Beyond academics, the friendships and memories I built there will always remain priceless.",
+        "I joined Canara in 1991, completing an 18-year academic journey ending with my 2009 graduation from Canara Engineering College. A 16-year IT veteran in Mangalore with experience at firms like Infosys and Niveus, I am currently a Solution Architect at EGDK India, a subsidiary of EG A/S Denmark.",
     },
     {
-      name: "Ms. Felicita Fernandes",
-      batch: "2019",
-      branch: "ISE",
-      employer: "Harri",
-      designation: "Senior Customer Success Manager",
-      imageUrl: "https://apiserver.cec.edu.in/files/Felicita%20Fernandes.webp",
+      name: "Ashwini Shenoy",
+      batch: "2014",
+      branch: "ECE",
+      employer: "Allegion India Pvt Ltd",
+      designation: "Lead Firmware Engineer",
+      imageUrl: "https://apiserver.cec.edu.in/files/Ashwini.webp",
       testimonial:
-        "My journey at Canara Engineering College in the Information Science and Engineering branch was transformative. It strengthened my technical foundation, problem-solving skills, analytical skills and confidence, while offering supportive faculty, collaborative learning, and lifelong friendships that shaped my personal and professional growth.",
+        "My time at Canara Engineering College provided a strong academic foundation and nurtured my passion for engineering. The guidance from faculty and the supportive learning environment helped shape my analytical thinking and technical skills, which continue to guide my professional journey. I encourage juniors to stay curious, keep learning beyond the classroom, and make the most of the opportunities available.",
+    },
+    {
+      name: "Adithya Pai B",
+      batch: "2023",
+      imageUrl: "https://apiserver.cec.edu.in/files/Adithya%20Pai%20B.JPG",
+      branch: "CSE",
+      employer: "NetApp",
+      designation: "Member of Technical Staff – Software Engineer 2 (MTS Software Engineer 2)",
+      testimonial:
+        "Looking back, the four years I spent at CEC were truly transformative and played a major role in shaping who I am today. My transition from a student to a working professional was significant, and I am deeply grateful to the institution for the support and guidance I received throughout that journey. The faculty at CEC deserve special appreciation. Their in-depth knowledge, passion for teaching, and clarity in fundamentals helped me build a strong academic foundation. The quality and standards of the content delivered were excellent, and today, if my core fundamentals meet professional standards, I credit my lecturers for their dedication and expertise. Beyond academics, CEC felt like a close-knit family. Every student felt like a cousin, every lecturer like a mentor and well-wisher, and every event felt like a celebration at home. The leadership and technical opportunities I received, especially during my third year, significantly boosted my confidence and prepared me for my professional career. I will always remain truly thankful to CEC for the learning, experiences, and values that continue to guide me today.",
+    },
+    {
+      name: "Anusha G Shetty",
+      batch: "2024",
+      branch: "ME",
+      employer: "M.Tech in welding Engineering from NIT-Trichy",
+      designation: "Student",
+      imageUrl: "https://apiserver.cec.edu.in/files/Anusha%20photo.jpeg",
+      testimonial:
+        "The college fostered a student-friendly environment where everyone was encouraged to participate in techno-cultural fests, sports events, and academic activities. It provided equal opportunities to explore talents, gain knowledge, and build confidence, creating a vibrant campus life and a supportive learning atmosphere.",
+    },
+    {
+      name: "Austin Pais",
+      batch: "2014 (B.E), 2016 (M.Tech)",
+      branch: "ECE",
+      employer: "Google Operations Center (GOC)",
+      designation: "Quality Assurance Senior Associate",
+      imageUrl: "https://apiserver.cec.edu.in/files/Austin.webp",
+      testimonial:
+        "As an alumnus, I can honestly say CEC was the catalyst for my career. Beyond the rigorous academics, the hands-on labs and mentorship from faculty provided a real-world edge that textbooks alone couldn't offer. It wasn’t just about earning a degree; it was about building the problem-solving mindset I use every day in the industry. I credit much of my professional success to the robust placement cell and industry-aligned curriculum here. The college bridges the gap between theory and practice through incredible internship opportunities and corporate networking. For any aspiring engineer, this institution provides the perfect launchpad to secure a role at a top-tier global firm.",
+    },
+    {
+      name: "Niranjana N K",
+      batch: "2018",
+      branch: "CSE",
+      employer: "Persistent Systems",
+      imageUrl: "https://apiserver.cec.edu.in/files/Niranjana%20N%20K.jpg",
+      designation: "Project Lead",
+      testimonial:
+        "Canara Engineering College offered more than just a degree; it provided a nurturing environment for growth. Through its vibrant campus life and dedicated mentors, I developed the leadership and interpersonal skills that still drive my professional success today. An unforgettable journey!",
     },
     {
       name: "Mrs. Sambhrama B R",
@@ -248,76 +278,46 @@ export function Testimonials({ className }: TestimonialsProps) {
         "My time at Canara Engineering College was truly transformative. The rigorous academic environment and great faculty resources fostered my technical expertise and professional resilience. Thanks to the unwavering support of the faculty and a robust placement cell, I successfully secured a campus placement at a premier organization SAP. It was an invaluable foundation for my career start. At Canara Engineering College we get good support for both academic and cultural activities too which helps us to grow as an enthusiastic individual.",
     },
     {
-    name: "Austin Pais",
-    batch: "2014 (B.E), 2016 (M.Tech)",
-    branch: "ECE",
-    employer: "Google Operations Center (GOC)",
-    designation: "Quality Assurance Senior Associate",
-    imageUrl: "https://apiserver.cec.edu.in/files/Austin.webp",
-    testimonial:
-      "As an alumnus, I can honestly say CEC was the catalyst for my career. Beyond the rigorous academics, the hands-on labs and mentorship from faculty provided a real-world edge that textbooks alone couldn't offer. It wasn’t just about earning a degree; it was about building the problem-solving mindset I use every day in the industry. I credit much of my professional success to the robust placement cell and industry-aligned curriculum here. The college bridges the gap between theory and practice through incredible internship opportunities and corporate networking. For any aspiring engineer, this institution provides the perfect launchpad to secure a role at a top-tier global firm.",
-  },
-  {
-    name: "Rutu Shastri",
-    batch: "2018 - 2022",
-    branch: "ECE",
-    employer: "Tata Consultancy Services",
-    designation: "Senior Cyber Security Engineer",
-    imageUrl: "https://apiserver.cec.edu.in/files/Rutushasthri.webp",
-    testimonial:
-      "Our journey at Canara Engineering College has been a blend of learning, challenges, and unforgettable memories. From late-night study sessions to exciting project presentations, every moment shaped our skills and confidence. Supportive faculty, strong friendships, teamwork, and practical exposure helped us grow not only as engineers but also as responsible and determined individuals.",
-  },
-  {
-    name: "Mahesh Prabhu",
-    batch: "2008",
-    branch: "ECE",
-    employer: "Infosys",
-    designation: "Project Manager",
-    imageUrl: "https://apiserver.cec.edu.in/files/Mahwsh_prabhu.webp",
-    testimonial:
-      "Having passed out from CEC in 2008, I look back at my college years with immense gratitude and pride. Strong Technical foundation and holistic learning environment I received played a defining role in shaping my professional journey. I owe a great deal to all my Lectures and Professors at CEC. Their dedication, clarity in teaching and constant encouragement helped me develop not just engineering knowledge but also the confidence and discipline needed to excel in the industry. Securing a campus placement was a milestone that set the direction for my career, and it was made possible by the structured training, support and guidance I received throughout my time at CEC. Today, as I continue to grow in my career, the values, skills, and mindset instilled during my college days remain an integral part of who I am. I am proud to be an alumnus of CEC.",
-  },
-  {
-    name: "Purushotham Kudva",
-    batch: "2009",
-    branch: "ECE",
-    employer: "Smapptech Systems Pvt Ltd",
-    designation: "Co-Founder & Director – Banking Solutions",
-    imageUrl: "https://apiserver.cec.edu.in/files/Purushotham.webp",
-    testimonial:
-      "My time at the institution laid the foundation for my professional journey. The encouragement from faculty and the strong academic environment helped shape my technical thinking and confidence to pursue opportunities beyond the classroom. The lessons and values I gained there continue to guide me today as a technology professional and co-founder.",
-  },
-  {
-    name: "Ashwini Shenoy",
-    batch: "2014",
-    branch: "ECE",
-    employer: "Allegion India Pvt Ltd",
-    designation: "Lead Firmware Engineer",
-    imageUrl: "https://apiserver.cec.edu.in/files/Ashwini.webp",
-    testimonial:
-      "My time at Canara Engineering College provided a strong academic foundation and nurtured my passion for engineering. The guidance from faculty and the supportive learning environment helped shape my analytical thinking and technical skills, which continue to guide my professional journey. I encourage juniors to stay curious, keep learning beyond the classroom, and make the most of the opportunities available.",
-  },
-  {
-    name: "Poornima Vinod Shanbhag",
-    batch: "2019 - 2023",
-    branch: "ECE",
-    employer: "Signoff Semiconductors Pvt Ltd",
-    designation: "Embedded Engineer - I",
-    imageUrl: "https://apiserver.cec.edu.in/files/Poornima.webp",
-    testimonial:
-      "Being a part of the Electronics and Communication Department at Canara College of Engineering was truly a wonderful experience. The college laid a strong foundation in my life through quality education and the guidance of very supportive lecturers. It provided me the freedom to explore my interests along with my curriculum, helping me grow as a confident professional. The E&C R&D department encouraged experimentation and provided hands-on experience with various electronic components, which helped me greatly in developing my practical knowledge and skills. Canara became the place where my ambitions took root and my career began to grow. The four years spent here are truly memorable. The Placement Department puts in significant efforts to help students secure placement in reputed companies. I am truly thankful to the institution for shaping my career.",
-  },
-  {
-    name: "Ranjith Kumar",
-    batch: "2014",
-    branch: "ECE",
-    employer: "Garrett Advancing Motion, France",
-    designation: "R & D Validation Engineer",
-    imageUrl: "https://apiserver.cec.edu.in/files/Ranjith%20Kumar",
-    testimonial:
-      "My journey in the engineering domain at my college was truly wonderful. I had the opportunity to participate in numerous events and even serve as an organizer, which greatly improved my communication and leadership skills. Being part of the Robotics team and the Industrial Partnership Cell provided valuable industry exposure and helped me understand the connection between academics and industry. Regular industry visits and early internship opportunities enriched my learning experience. With supportive faculty and amazing classmates, my time there was both inspiring and memorable.",
-  }
-  ];
+      name: "Sudheendra Shenoy",
+      batch: "2005",
+      branch: "CSE",
+      employer: "Accenture",
+      imageUrl: "https://apiserver.cec.edu.in/files/Sudheendra%20Shenoy.jpg",
+      designation: "Manager",
+      testimonial:
+        "My years at Canara engineering college were a blend of learning, growth and lifelong friendships. The experience helped me build discipline, confidence and a strong career direction. It laid the groundwork for the professional I am today.",
+    },
+    {
+      name: "Purushotham Kudva",
+      batch: "2009",
+      branch: "ECE",
+      employer: "Smapptech Systems Pvt Ltd",
+      designation: "Co-Founder & Director – Banking Solutions",
+      imageUrl: "https://apiserver.cec.edu.in/files/Purushotham.webp",
+      testimonial:
+        "My time at the institution laid the foundation for my professional journey. The encouragement from faculty and the strong academic environment helped shape my technical thinking and confidence to pursue opportunities beyond the classroom. The lessons and values I gained there continue to guide me today as a technology professional and co-founder.",
+    },
+    {
+      name: "T Pranav Pai",
+      batch: "2025",
+      branch: "ME",
+      employer: "Sobha Limited",
+      designation: "Engineer - Design and Engineering.",
+      imageUrl: "https://apiserver.cec.edu.in/files/Pranav%20Pai.jpeg",
+      testimonial:
+        "My time at Canara Engineering College helped me build strong technical knowledge and confidence. The support from teachers and the learning environment played an important role in my career growth. I am grateful and proud to be an alumnus of this institution.",
+    },
+    {
+      name: "Mrs. Akshatha Shenoy",
+      batch: "2016",
+      branch: "ISE",
+      employer: "Infosys Ltd",
+      designation: "Technology Lead, Toronto DC",
+      imageUrl: "https://apiserver.cec.edu.in/files/Akshatha%20Shenoy-ISE-2016.webp",
+      testimonial:
+        "My four years at Canara Engineering College in Information Science & Engineering were truly transformative. The strong technical foundation, campus recruitment opportunities, and constant encouragement to explore helped shape my career and personality. Beyond academics, the friendships and memories I built there will always remain priceless.",
+    }
+];
 
   const testimonials: Testimonial[] = [
     { quote: "CEC’s training and guidance helped me become an engineer at Intel.", author: "Sneha K", course: "CSE", year: "2013-17" },
