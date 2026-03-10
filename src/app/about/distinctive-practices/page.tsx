@@ -2,6 +2,9 @@ import DistinctivePracties from "@/components/AboutPageComponents/DistinctivePra
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 
 export const metadata = {
+  alternates: {
+    canonical: '/about/distinctive-practices'
+  },
   title: "Distinctive Practices | Canara Engineering College",
   description:
     "Discover the distinctive practices of Canara Engineering College that foster innovation, academic excellence, and holistic student development.",

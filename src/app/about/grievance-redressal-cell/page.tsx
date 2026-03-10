@@ -2,6 +2,9 @@ import GrievanceRedressalCell from "@/components/AboutPageComponents/StudentWelf
 import React from "react";
 
 export const metadata = {
+  alternates: {
+    canonical: '/about/grievance-redressal-cell'
+  },
   title: "Grievance Redressal Cell | Student Support at Canara College",
   description: "Learn about the Grievance Redressal Cell at Canara College, ensuring a fair, transparent, and supportive environment for students.",
   openGraph: {

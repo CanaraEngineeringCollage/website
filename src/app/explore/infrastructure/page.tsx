@@ -3,6 +3,9 @@ import HeroSection from "@/components/CampusFacilitiesPageComponents/Infrastruct
 import React from "react";
 
 export const metadata = {
+  alternates: {
+    canonical: '/explore/infrastructure'
+  },
   title: "Infrastructure | Canara College",
   description:
     "Explore the modern infrastructure at Canara College, including state-of-the-art facilities, resources, and services that support a vibrant academic environment.",

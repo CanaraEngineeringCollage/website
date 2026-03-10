@@ -12,6 +12,9 @@ import IdeasTakeFlight from "@/components/HomepageComponents/IdeasTakeFlight";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/'
+  },
   openGraph: {
     title: "Canara Engineering College, Mangalore | NAAC A Grade Institution",
     description: "Providing excellent undergraduate education since 1973. Accredited with A Grade by NAAC and affiliated to Mangalore University.",

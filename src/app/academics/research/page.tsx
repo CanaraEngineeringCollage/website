@@ -1,6 +1,9 @@
 import ResearchPageSection from "@/components/ResearchPageComponents/ResearchPageSection/ResearchPageSection";
 import React from "react";
 export const metadata = {
+  alternates: {
+    canonical: '/academics/research'
+  },
   title: "Research | Canara College",
   description:
     "Discover research initiatives at Canara College, including innovative projects, publications, and contributions from faculty and students.",

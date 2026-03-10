@@ -12,6 +12,9 @@ import StickyBottomBar from "@/components/TrainingPlacementPageComponents/Sticky
 import React from "react";
 
 export const metadata = {
+  alternates: {
+    canonical: '/training-placements'
+  },
   title: "Training and Placement | Your College Name",
   description: "Explore the training and placement opportunities available at our institute. Learn about top recruiters, faculty, and facilities.",
   openGraph: {

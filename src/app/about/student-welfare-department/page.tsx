@@ -13,6 +13,9 @@ import EventsSection from "@/components/AboutPageComponents/StudentWelfarePage/E
 import CounsellingServices from "@/components/AboutPageComponents/StudentWelfarePage/CounsellingServices/CounsellingServices";
 
 export const metadata = {
+  alternates: {
+    canonical: '/about/student-welfare-department'
+  },
   title: "Student Welfare Department | Canara College",
   description: "Explore the Student Welfare Department of Canara College, providing support, services, and a nurturing environment for students.",
   openGraph: {

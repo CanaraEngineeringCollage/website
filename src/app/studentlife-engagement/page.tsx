@@ -11,6 +11,9 @@ import StudentClubs from "@/components/CampusFacilitiesPageComponents/StudentLif
 import VideoSwiper from "@/components/CampusFacilitiesPageComponents/StudentLifeEngagement/VideoSwiper/VideoSwiper";
 
 export const metadata = {
+  alternates: {
+    canonical: '/studentlife-engagement'
+  },
   title: "Student Life Engagement | Canara College",
   description:
     "At Canara College, we focus on holistic student development. Explore opportunities for personal growth, skills development, and engagement with campus activities.",

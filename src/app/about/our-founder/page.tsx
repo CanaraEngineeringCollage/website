@@ -3,6 +3,9 @@ import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import React from "react";
 
 export const metadata = {
+  alternates: {
+    canonical: '/about/our-founder'
+  },
   title: "Our Founder | Canara College",
   description: "Learn about the visionary founder of Canara College and their contributions to education and community.",
   openGraph: {

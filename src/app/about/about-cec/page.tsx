@@ -7,6 +7,9 @@ import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
 import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 
 export const metadata = {
+  alternates: {
+    canonical: '/about/about-cec'
+  },
   title: "About Canara College | Legacy of Excellence Since 1973",
   description:
     "Learn about Canara College, Mangalore - an institution accredited with A Grade by NAAC, fostering academic excellence and holistic development since 1973.",

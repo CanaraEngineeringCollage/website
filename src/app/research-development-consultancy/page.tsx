@@ -2,6 +2,9 @@ import ResearchPageSection from "@/components/ResearchDevelopmentConsultancyComp
 import React from "react";
 
 export const metadata = {
+  alternates: {
+    canonical: '/research-development-consultancy'
+  },
   title: "Research & Development and Consultancy Cell | Canara College",
   description:
     "Explore the Research & Development and Consultancy Cell at Canara College, highlighting faculty-led projects, student research, publications, and consultancy initiatives.",

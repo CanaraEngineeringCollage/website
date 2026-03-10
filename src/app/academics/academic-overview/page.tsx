@@ -8,6 +8,9 @@ import React from "react";
 import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 
 export const metadata = {
+  alternates: {
+    canonical: '/academics/academic-overview'
+  },
   title: "Academic Overview | Canara College",
   description:
     "Explore the academic programs, opportunities, and student testimonials at Canara College. Empowering futures through quality education.",

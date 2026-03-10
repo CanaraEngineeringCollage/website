@@ -8,6 +8,9 @@ import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
 import React from "react";
 
 export const metadata = {
+  alternates: {
+    canonical: '/alumni'
+  },
   title: "Alumni | Canara College",
   description:
     "Discover the impact Canara College alumni have made through success stories, their experiences, and how they are empowering the next generation.",

@@ -9,6 +9,9 @@ import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 import DepartmentSection from "@/components/PhysicalEducationPageComponents/DepartmentSection/DepartmentSection";
 
 export const metadata = {
+  alternates: {
+    canonical: '/explore/physical-education'
+  },
   title: "Physical Education Department | Canara College",
   description: "Learn more about the Physical Education Department at Canara College, including its mission, facilities, and modern amenities.",
   openGraph: {

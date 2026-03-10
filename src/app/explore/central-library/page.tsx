@@ -5,6 +5,9 @@ import Image from "next/image";
 import LibraryFaculty from "@/components/CentralLibraryComponents/LibraryFaculty";
 
 export const metadata = {
+  alternates: {
+    canonical: '/explore/central-library'
+  },
   title: "Central Library | Canara Engineering College",
   description:
     "Explore the state-of-the-art Central Library at Canara Engineering College, featuring digital resources, academic journals, research databases, and a student-friendly learning environment.",

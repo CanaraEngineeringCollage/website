@@ -3,6 +3,9 @@ import { Metadata } from "next";
 import CifPortal from "@/components/CifComponents/CifPortal/CifPortal";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/cif'
+  },
   title: "Canara Innovation Foundation | Canara Engineering College",
   description:
     "Learn about Canara Innovation Foundation (CIF), the Incubation center of Canara Engineering College, and the Entrepreneurship Development Cell (EDC).",

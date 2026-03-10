@@ -3,6 +3,9 @@ import React from "react";
 import { Suspense } from "react";
 
 export const metadata = {
+  alternates: {
+    canonical: '/academics/examination-records'
+  },
   title: "Examination Records | Canara College",
   description: "Access the examination records, schedules, and important updates for students at Canara College.",
   openGraph: {

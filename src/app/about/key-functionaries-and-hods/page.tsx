@@ -4,6 +4,9 @@ import React from "react";
 import datam from "../../../utils/hodData/hodData.json";
 import keyFunctionariesData from "../../../utils/keyFunctionariesData/keyFunctionariesData.json";
 export const metadata = {
+  alternates: {
+    canonical: '/about/key-functionaries-and-hods'
+  },
   title: "Key Functionaries & HODs | Canara Engineering College",
   description:
     "Meet the key functionaries and Heads of Departments at Canara Engineering College, leading academic excellence and innovation across various disciplines.",

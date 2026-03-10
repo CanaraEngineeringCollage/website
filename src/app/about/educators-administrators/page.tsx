@@ -3,6 +3,9 @@ import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import React, { Suspense } from "react";
 
 export const metadata = {
+  alternates: {
+    canonical: '/about/educators-administrators'
+  },
   title: "Educators & Administrators | Canara College Faculty and Leadership",
   description:
     "Meet the esteemed faculty members and experienced administrators of Canara College, dedicated to academic excellence and student success.",

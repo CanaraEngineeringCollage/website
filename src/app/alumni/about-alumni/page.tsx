@@ -1,6 +1,9 @@
 import AlumniPortal from '@/components/AluminiComponents/AlumniPortal/AlumniPortal'
 import React from 'react'
 export const metadata = {
+  alternates: {
+    canonical: '/alumni/about-alumni'
+  },
   title: "About Alumni | Canara Engineering College",
   description:
     "Discover the achievements, contributions, and success stories of Canara Engineering College alumni who continue to make an impact across industries and communities.",

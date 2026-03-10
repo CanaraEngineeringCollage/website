@@ -3,6 +3,9 @@ import HeroSection from "@/components/AboutPageComponents/HistoryOfCec/HeroBanne
 import FooterCard from "@/components/Common/FooterCard/FooterCard";
 
 export const metadata = {
+  alternates: {
+    canonical: '/about/history-of-cec'
+  },
   title: "History of Canara College | A Legacy of Excellence",
   description: "Explore the rich history of Canara College, from its foundation in 1973 to its current position as a leader in education.",
   openGraph: {

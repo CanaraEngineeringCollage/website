@@ -1,6 +1,9 @@
 import ScStGrievance from "@/components/AboutPageComponents/ScStGrievanceComponents/ScStGrievance/ScStGrievance";
 import React from "react";
 export const metadata = {
+  alternates: {
+    canonical: '/about/mandatory-disclosure/sc-st-grievance'
+  },
   title: "SC/ST Grievance Cell | Canara Engineering College",
   description:
     "Learn about the SC/ST Grievance Cell at Canara Engineering College, established to address concerns, ensure equality, and provide support to students and staff from SC/ST communities.",

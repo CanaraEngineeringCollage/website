@@ -10,6 +10,9 @@ import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 import { Testimonials } from "@/components/Common/Testimonials/Testimonials";
 
 export const metadata = {
+  alternates: {
+    canonical: '/academics/programs'
+  },
   title: "Academic Programs | Canara College",
   description: "Explore the academic programs offered by Canara College, including educational objectives, program outcomes, and more.",
   openGraph: {

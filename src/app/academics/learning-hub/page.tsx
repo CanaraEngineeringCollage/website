@@ -2,6 +2,9 @@ import HeroSection from "@/components/AcademicsPageComponents/LearningHubPage/He
 import React from "react";
 
 export const metadata = {
+  alternates: {
+    canonical: '/academics/learning-hub'
+  },
   title: "Learning Hub | Canara College",
   description: "Explore the Learning Hub at Canara College, offering resources, study materials, and academic support for students.",
   openGraph: {

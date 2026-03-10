@@ -5,6 +5,9 @@ import React from "react";
 import GoverningCouncilProfileCard from "@/components/AboutPageComponents/GoverningCounsilPage/GoverningCouncilCard/GoverningCouncilCard";
 
 export const metadata = {
+  alternates: {
+    canonical: '/about/governing-council'
+  },
   title: "Governing Council | Visionary Leadership at Canara College",
   description: "Discover the distinguished members of the Governing Council who guide Canara College towards academic excellence and innovation.",
   openGraph: {

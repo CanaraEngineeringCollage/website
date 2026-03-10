@@ -2,6 +2,9 @@
 import ExploreCampusWrapper from "@/components/Common/ExploreCampus/ExploreCampusWrapper";
 
 export const metadata = {
+  alternates: {
+    canonical: '/campus-buzz'
+  },
   title: "Campus Buzz | Canara Engineering College",
   description:
     "Explore the latest campus news, events, student achievements, and highlights from Canara Engineering College. Stay connected with everything happening on campus.",

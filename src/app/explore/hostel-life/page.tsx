@@ -8,6 +8,9 @@ import StickyBottomBar from "@/components/TrainingPlacementPageComponents/Sticky
 import React from "react";
 
 export const metadata = {
+  alternates: {
+    canonical: '/explore/hostel-life'
+  },
   title: "Hostel Life | Canara College",
   description:
     "Explore the vibrant hostel life at Canara College, featuring amenities, student life, and the facilities available to make the stay comfortable and enjoyable.",

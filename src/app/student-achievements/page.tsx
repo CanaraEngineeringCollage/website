@@ -4,6 +4,9 @@ import ExploreCampus from "@/components/StudentAchievements/StudentAchievements"
 import React from "react";
 
 export const metadata = {
+  alternates: {
+    canonical: '/student-achievements'
+  },
   title: "Student Achievements | Canara Engineering College",
   description:
     "Celebrate the outstanding achievements of students at Canara Engineering College, including awards, competitions, academic excellence, and co-curricular milestones.",

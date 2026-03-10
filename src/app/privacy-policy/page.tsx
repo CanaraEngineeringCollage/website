@@ -2,6 +2,9 @@ import PrivacySection from "@/components/PrivacyPolicyPageComponents/PrivacySect
 import React from "react";
 
 export const metadata = {
+  alternates: {
+    canonical: '/privacy-policy'
+  },
   title: "Privacy Policy | Your Website",
   description: "Read our Privacy Policy to understand how we collect, use, and protect your personal information.",
   openGraph: {

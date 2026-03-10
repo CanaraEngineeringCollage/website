@@ -3,6 +3,9 @@ import FooterCard from "@/components/Common/FooterCard/FooterCard";
 import React from "react";
 
 export const metadata = {
+  alternates: {
+    canonical: '/about/our-management'
+  },
   title: "Our Management | Canara College",
   description: "Meet the management team of Canara College, dedicated to providing quality education and leading the institution toward success.",
   openGraph: {

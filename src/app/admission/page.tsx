@@ -11,6 +11,9 @@ import DepartmentFaculty from "@/components/TrainingPlacementPageComponents/Depa
 import AdmissionProcedureText from "@/components/AdmissionPageComponents/AdmissionProcedureText/AdmissionProcedureText";
 
 export const metadata = {
+  alternates: {
+    canonical: '/admission'
+  },
   title: "Admissions | Canara College",
   description: "Find all the information you need for admission to Canara College, including how to apply, programs offered, and more.",
   openGraph: {

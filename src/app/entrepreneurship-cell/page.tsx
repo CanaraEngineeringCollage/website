@@ -11,6 +11,9 @@ import DepartmentMissionVision from "@/components/DepartmentComponents/Departmen
 import EnterpreneurshipMission from "@/components/EntrepreneurshipCellPageComponents/EnterpreneurshipMissionVision/EnterpreneurshipMission";
 
 export const metadata = {
+  alternates: {
+    canonical: '/entrepreneurship-cell'
+  },
   title: "Entrepreneurship Cell | Canara College",
   description: "Learn more about the Entrepreneurship Cell, its objectives, and activities at Canara College.",
   openGraph: {
