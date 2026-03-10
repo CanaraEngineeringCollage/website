@@ -313,7 +313,7 @@ export function Testimonials({ className }: TestimonialsProps) {
     branch: "ECE",
     employer: "Garrett Advancing Motion, France",
     designation: "R & D Validation Engineer",
-    imageUrl: "",
+    imageUrl: "https://apiserver.cec.edu.in/files/Ranjith%20Kumar",
     testimonial:
       "My journey in the engineering domain at my college was truly wonderful. I had the opportunity to participate in numerous events and even serve as an organizer, which greatly improved my communication and leadership skills. Being part of the Robotics team and the Industrial Partnership Cell provided valuable industry exposure and helped me understand the connection between academics and industry. Regular industry visits and early internship opportunities enriched my learning experience. With supportive faculty and amazing classmates, my time there was both inspiring and memorable.",
   }

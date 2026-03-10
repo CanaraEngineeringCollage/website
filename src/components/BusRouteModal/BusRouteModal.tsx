@@ -313,7 +313,7 @@ const BusRouteModal: React.FC<BusRouteModalProps> = ({ isOpen, onClose, classNam
                 alt="Bus Timing Preview"
                 width={1200}
                 height={800}
-                className="rounded-lg shadow-none object-contain md:object-cover h-screen w-auto"
+                className="rounded-lg shadow-none object-contain  h-screen w-auto"
               />
             </div>
           </motion.div>
