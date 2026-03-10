@@ -93,7 +93,7 @@ export default function CounsellingServices() {
   /* ================= JSX ================= */
 
   return (
-    <section className="py-16 px-6 md:px-12 max-w-7xl mx-auto lg:mt-12 lg:mb-8 xl:max-w-[75%] bg-[#F5F5F7] md:rounded-3xl">
+    <section className="py-16  md:px-12 max-w-7xl mx-auto lg:mt-12 lg:mb-8 xl:max-w-[75%] bg-[#F5F5F7] md:rounded-3xl">
       {/* FIX: Changed `md:flex-row` to `lg:flex-row`. 
           This forces iPad (md) to stay in column mode (stacked) to avoid squeezing.
       */}

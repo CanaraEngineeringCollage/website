@@ -10,7 +10,7 @@ const departmentMission = [
 
 const MissionAndVision = () => {
   return (
-    <div className=' max-w-7xl  xl:max-w-[75%] mx-auto  sm:px-6 md:px-0  py-16 md:py-20 lg:py-20 '>
+    <div className=' max-w-7xl  xl:max-w-[75%] mx-auto   md:px-6  py-16 md:py-20 lg:py-20 '>
      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 ">
        <div className="bg-white lg:rounded-2xl shadow-sm p-6 sm:p-8 md:p-10 flex flex-col items-center justify-center text-center">
     <img

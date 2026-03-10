@@ -48,13 +48,13 @@ const page = () => {
       <section>
         <HeroSection />
       </section>
-      <section className="px-4 md:px-0 xl:px-0">
+      <section className="">
         <AboutTheDepartment />
       </section>
       <section>
         <MissionAndVision />
       </section>
-      <section className="px-4">
+      <section className="">
         <Facilities />
       </section>
       <section className=" lg:mt-0 md:px-6 lg:px-0 -mt-2">
@@ -74,7 +74,7 @@ const page = () => {
           }}
         />
       </section>
-      <section className="lg:pt-8 lg:pb-12">
+      <section className="lg:pt-8 md:px-6 lg:pb-12">
         <CounsellingServices />
       </section>
       <section className="px-4 bg-[#E5E5EA] pb-12 md:pb-0  md:px-12 lg:pl-16 lg:px-0 xl:px-0">

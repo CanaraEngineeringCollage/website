@@ -13,7 +13,7 @@ const GrievanceRedressalCell = () => {
   const grievanceTitles = grievanceRedressalCell?.map((section) => section.title) || [];
 
   return (
-    <section className="py-10 text-[#1D1D1F] lg2:px-24 mx-5 overflow-hidden">
+    <section className="py-10 text-[#1D1D1F] lg2:px-24 px-5 overflow-hidden">
       <div>
         <h1 className="text-3xl  md:text-[40px] lg2:text-5xl xl:text-6xl font-bold pb-1 lg:pb-10 text-[#1D1D1F]">Grievance Redressal Cell</h1>
         <div className={`md:grid grid-cols-1 gap-3  md:grid-cols-12 mt-10`}>

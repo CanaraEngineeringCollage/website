@@ -47,7 +47,7 @@ export default function AboutCec() {
       <section className="py-10 md:px-6 lg:px-0 lg:py-5 lg:mt-0 -mt-3">
         <VideoPlayer videoUrl="BEVUuWkR7LU" youtubeUrl="BEVUuWkR7LU" thumbnail="/youtubeThumbnails/Principal-Thumbnail.png" />
       </section>
-      <section className="lg:mt-0 ">
+      <section className="lg:mt-0 px-6  ">
         <MissionVision />
       </section>
       <section className="bg-[#071D2C] px-6 md:px-0 xl:px-0">

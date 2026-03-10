@@ -59,43 +59,31 @@ const DistinctivePracties = () => {
         </p>
 
         {/* First Row (3 Cards) */}
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg2:grid-cols-3 gap-6 md:gap-8 max-w-7xl w-full justify-center  md:grid lg:hidden lg2:grid  ">
+     {/* First Row (3 Cards Centered) */}
+       {/* First Row (3 Cards) */}
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl w-full justify-center">
           {practices.slice(0, 3).map((item) => (
             <div
               key={item.id}
-              className="bg-white p-4 sm:p-6 md:p-8 lg:p-10 rounded-lg w-full lg:w-[397px] 
-             h-auto lg:h-[216px] flex items-center justify-center text-center 
-             border border-[#2884CA] transition-colors duration-300 mx-auto"
+              className="bg-white p-4 sm:p-6 md:p-8 lg:p-10 rounded-lg w-full lg:max-w-[397px] 
+              h-auto lg:h-[216px] flex items-center justify-center text-center 
+              border border-[#2884CA] transition-colors duration-300 mx-auto"
             >
               <p className="text-textGray text-lg md:text-lg px-2">{item.text}</p>
             </div>
           ))}
         </div>
 
-        {/* Second Row (2 Cards Centered) */}
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2   lg2:grid-cols-2 gap-6 md:gap-8 max-w-4xl w-full justify-center mt-10   md:grid lg:hidden lg2:grid">
+        {/* Second Row (2 Cards) */}
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 max-w-4xl w-full justify-center mt-6 md:mt-8">
           {practices.slice(3).map((item) => (
             <div
               key={item.id}
-              className="bg-white p-4 sm:p-6 md:p-8 lg:p-10 rounded-lg w-full lg:w-[397px] 
-             h-auto lg:h-[216px] flex items-center justify-center text-center 
-             border border-[#2884CA] transition-colors duration-300 mx-auto"
+              className="bg-white p-4 sm:p-6 md:p-8 lg:p-10 rounded-lg w-full lg:max-w-[397px] 
+              h-auto lg:h-[216px] flex items-center justify-center text-center 
+              border border-[#2884CA] transition-colors duration-300 mx-auto"
             >
               <p className="text-textGray text-lg md:text-lg px-2">{item.text}</p>
-            </div>
-          ))}
-        </div>
-
-        {/* lg hidden for mac */}
-         <div className="hidden grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg2:grid-cols-3 gap-6 md:gap-8 max-w-7xl w-full justify-center  md:hidden  lg:grid lg2:hidden   ">
-          {practices.map((item) => (
-            <div
-              key={item.id}
-              className="bg-white p-4 sm:p-6 md:p-8 lg:p-10 rounded-lg w-full lg:w-[397px] 
-             h-auto lg:h-[216px] flex items-center justify-center text-center 
-             border border-[#2884CA] transition-colors duration-300 mx-auto"
-            >
-              <p className="text-textGray text-sm sm:text-lg md:text-lg px-2">{item.text}</p>
             </div>
           ))}
         </div>
