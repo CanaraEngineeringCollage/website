@@ -153,7 +153,7 @@ const ClubList = ({ title, clubs }: { title: string; clubs: ClubData[] }) => {
 
 const CollapsSection = () => {
   return (
-    <div className="w-full max-w-7xl xl:max-w-[80%] mx-auto py-5 lg:pb-10 lg:pt-0">
+    <div className="w-full max-w-7xl xl:max-w-[75%] mx-auto py-5 lg:pb-10 lg:pt-0">
       {/* Non-Technical Section */}
       <ClubList title="Non-Technical Clubs" clubs={nonTechnicalClubs} />
 
