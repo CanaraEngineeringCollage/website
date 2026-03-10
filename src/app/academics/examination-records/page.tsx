@@ -4,7 +4,7 @@ import { Suspense } from "react";
 
 export const metadata = {
   alternates: {
-    canonical: '/academics/examination-records'
+    canonical: "/academics/examination-records",
   },
   title: "Examination Records | Canara College",
   description: "Access the examination records, schedules, and important updates for students at Canara College.",
@@ -21,7 +21,7 @@ export const metadata = {
         alt: "Examination Records at Canara College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {

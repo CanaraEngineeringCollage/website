@@ -61,6 +61,37 @@ export default function RootLayout({
         <Analytics />
         <Layout>
           {children}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "CollegeOrUniversity",
+                name: "Canara Engineering College",
+                url: "https://cec.edu.in",
+                logo: "https://cec.edu.in/assets/images/logo.png",
+                description: "Canara Engineering College is a private engineering college in Karnataka, India, approximately 22 km from Mangaluru in the surroundings of Benjanapadavu. It was established in 2001 as a Millennium project by Canara High School Association. The college is affiliated to Visvesvaraya Technological University, Belgaum.",
+                foundingDate: "2001",
+                telephone: "+91-8792727001",
+                sameAs: [
+                  "https://www.facebook.com/share/1AjszML4e3",
+                  "https://www.instagram.com/cecmangalore/",
+                  "https://www.linkedin.com/school/77697892/",
+                  "https://www.youtube.com/@canaraengineeringcollegema3340",
+                  "https://x.com/cecmangalore",
+                  "https://en.wikipedia.org/wiki/Canara_Engineering_College"
+                ],
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Benjanapadavu, Bantwal Taluk",
+                  addressLocality: "Mangaluru",
+                  addressRegion: "Karnataka",
+                  postalCode: "574219",
+                  addressCountry: "IN",
+                },
+              }),
+            }}
+          />
           <ScrollToTopButton />
           <FloatingSticky />
         </Layout>

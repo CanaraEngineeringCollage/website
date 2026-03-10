@@ -1,8 +1,8 @@
-import AlumniPortal from '@/components/AluminiComponents/AlumniPortal/AlumniPortal'
-import React from 'react'
+import AlumniPortal from "@/components/AluminiComponents/AlumniPortal/AlumniPortal";
+import React from "react";
 export const metadata = {
   alternates: {
-    canonical: '/alumni/about-alumni'
+    canonical: "/alumni/about-alumni",
   },
   title: "About Alumni | Canara Engineering College",
   description:
@@ -21,15 +21,14 @@ export const metadata = {
         alt: "Canara Engineering College Alumni",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
     title: "About Alumni | Canara Engineering College",
-    description:
-      "Explore the legacy and impact of Canara Engineering College alumni through their achievements and contributions.",
+    description: "Explore the legacy and impact of Canara Engineering College alumni through their achievements and contributions.",
     images: ["https://apiserver.cec.edu.in/assets/images/og-about-alumni.jpg"], // ✅ same OG image
   },
 };
@@ -37,9 +36,9 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-      <AlumniPortal/>
+      <AlumniPortal />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

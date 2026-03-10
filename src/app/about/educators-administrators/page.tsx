@@ -4,7 +4,7 @@ import React, { Suspense } from "react";
 
 export const metadata = {
   alternates: {
-    canonical: '/about/educators-administrators'
+    canonical: "/about/educators-administrators",
   },
   title: "Educators & Administrators | Canara College Faculty and Leadership",
   description:
@@ -22,7 +22,7 @@ export const metadata = {
         alt: "Faculty and Administrators at Canara College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {
@@ -33,15 +33,14 @@ export const metadata = {
   },
 };
 
-const Page =  () => {
-
-  
-
-
+const Page = () => {
   return (
     <>
       {/* Pass fetched data as prop */}
-      <Suspense fallback={null}> <FacultyMembersSection  /></Suspense>
+      <Suspense fallback={null}>
+        {" "}
+        <FacultyMembersSection />
+      </Suspense>
       <section className="bg-[#E5E5EA]">
         <FooterCard />
       </section>

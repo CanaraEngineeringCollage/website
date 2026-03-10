@@ -78,7 +78,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
           alt: `${department.name} Department Banner`,
         },
       ],
-      locale: "en_US",
+      locale: "en_IN",
       type: "website",
     },
     twitter: {

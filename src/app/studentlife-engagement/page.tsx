@@ -12,7 +12,7 @@ import VideoSwiper from "@/components/CampusFacilitiesPageComponents/StudentLife
 
 export const metadata = {
   alternates: {
-    canonical: '/studentlife-engagement'
+    canonical: "/studentlife-engagement",
   },
   title: "Student Life Engagement | Canara College",
   description:
@@ -31,7 +31,7 @@ export const metadata = {
         alt: "Student Life Engagement at Canara College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {
@@ -62,10 +62,19 @@ const page = () => {
         <CollapsSection />
       </section>
       <section className=" lg:-mt-16  lg:pt-10 pb- lg:pb-14 lg:px-16 xl:px-0 px-1 md:px-12 ">
-        <VideoPlayer titleClassname="text-[#1D1D1F] md:mt-5"  title={<>Aakriti – Our <br className="md:hidden"/> Flagship Event</>} thumbnail="/youtubeThumbnails/Akrathi Aftermovie - Thumbail@300x.webp" youtubeUrl="oHWMDPeP1Ew" />
+        <VideoPlayer
+          titleClassname="text-[#1D1D1F] md:mt-5"
+          title={
+            <>
+              Aakriti – Our <br className="md:hidden" /> Flagship Event
+            </>
+          }
+          thumbnail="/youtubeThumbnails/Akrathi Aftermovie - Thumbail@300x.webp"
+          youtubeUrl="oHWMDPeP1Ew"
+        />
       </section>
       <section>
-        <VideoSwiper/>
+        <VideoSwiper />
       </section>
       <section className="bg-[#e5e5ea] ">
         <FooterCard />

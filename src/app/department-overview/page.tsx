@@ -4,7 +4,7 @@ import React from "react";
 
 export const metadata = {
   alternates: {
-    canonical: '/department-overview'
+    canonical: "/department-overview",
   },
   title: "Canara College",
   description: "Canara College’s Mandatory Disclosure section provides legal and regulatory information as per the requirements of the institution.",
@@ -21,7 +21,7 @@ export const metadata = {
         alt: "Mandatory Disclosure at Canara College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {

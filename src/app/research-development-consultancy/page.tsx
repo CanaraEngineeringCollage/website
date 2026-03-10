@@ -3,7 +3,7 @@ import React from "react";
 
 export const metadata = {
   alternates: {
-    canonical: '/research-development-consultancy'
+    canonical: "/research-development-consultancy",
   },
   title: "Research & Development and Consultancy Cell | Canara College",
   description:
@@ -21,7 +21,7 @@ export const metadata = {
         alt: "Research & Development and Consultancy Cell at Canara College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {

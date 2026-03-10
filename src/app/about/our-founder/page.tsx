@@ -4,7 +4,7 @@ import React from "react";
 
 export const metadata = {
   alternates: {
-    canonical: '/about/our-founder'
+    canonical: "/about/our-founder",
   },
   title: "Our Founder | Canara College",
   description: "Learn about the visionary founder of Canara College and their contributions to education and community.",
@@ -21,7 +21,7 @@ export const metadata = {
         alt: "Founder of Canara College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {

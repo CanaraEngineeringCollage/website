@@ -6,7 +6,7 @@ import LibraryFaculty from "@/components/CentralLibraryComponents/LibraryFaculty
 
 export const metadata = {
   alternates: {
-    canonical: '/explore/central-library'
+    canonical: "/explore/central-library",
   },
   title: "Central Library | Canara Engineering College",
   description:
@@ -25,7 +25,7 @@ export const metadata = {
         alt: "Central Library - Canara Engineering College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
 
@@ -36,7 +36,6 @@ export const metadata = {
     images: ["https://apiserver.cec.edu.in/assets/images/og-central-library.jpg"],
   },
 };
-
 
 const AboutTheDepartment = () => {
   // --- Static Dummy Data ---

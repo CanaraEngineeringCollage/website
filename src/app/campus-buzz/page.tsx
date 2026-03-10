@@ -3,7 +3,7 @@ import ExploreCampusWrapper from "@/components/Common/ExploreCampus/ExploreCampu
 
 export const metadata = {
   alternates: {
-    canonical: '/campus-buzz'
+    canonical: "/campus-buzz",
   },
   title: "Campus Buzz | Canara Engineering College",
   description:
@@ -21,7 +21,7 @@ export const metadata = {
         alt: "Campus Buzz - Canara Engineering College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
 
@@ -36,9 +36,9 @@ export const metadata = {
 const Page = () => {
   return (
     <section className="px-6 md:px-12 lg:px-16 xl:px-0">
-      <ExploreCampusWrapper 
-        title="Explore More Campus" 
-        description="Stay updated with the latest news, events & achievements from across our campus" 
+      <ExploreCampusWrapper
+        title="Explore More Campus"
+        description="Stay updated with the latest news, events & achievements from across our campus"
       />
     </section>
   );

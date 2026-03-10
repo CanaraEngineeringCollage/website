@@ -13,7 +13,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: '/'
+    canonical: "/",
   },
   openGraph: {
     title: "Canara Engineering College, Mangalore | NAAC A Grade Institution",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         alt: "Canara College Campus",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {

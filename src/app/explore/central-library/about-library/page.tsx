@@ -2,7 +2,7 @@ import AboutCentralLibrary from "@/components/CentralLibraryComponents/AboutCent
 
 export const metadata = {
   alternates: {
-    canonical: '/explore/central-library/about-library'
+    canonical: "/explore/central-library/about-library",
   },
   title: "About Central Library | Canara Engineering College",
   description:
@@ -21,7 +21,7 @@ export const metadata = {
         alt: "About Central Library - Canara Engineering College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "article", // more suitable for content/info page
   },
 

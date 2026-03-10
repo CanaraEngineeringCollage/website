@@ -3,7 +3,7 @@ import React, { Suspense } from "react";
 
 export const metadata = {
   alternates: {
-    canonical: '/about/mandatory-disclosure'
+    canonical: "/about/mandatory-disclosure",
   },
   title: "Mandatory Disclosure | Canara College",
   description: "Canara College’s Mandatory Disclosure section provides legal and regulatory information as per the requirements of the institution.",
@@ -20,7 +20,7 @@ export const metadata = {
         alt: "Mandatory Disclosure at Canara College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {

@@ -8,7 +8,7 @@ import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 
 export const metadata = {
   alternates: {
-    canonical: '/about/about-cec'
+    canonical: "/about/about-cec",
   },
   title: "About Canara College | Legacy of Excellence Since 1973",
   description:
@@ -26,7 +26,7 @@ export const metadata = {
         alt: "About Canara College Campus",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {

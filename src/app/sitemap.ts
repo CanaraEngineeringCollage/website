@@ -4,8 +4,12 @@ import { allDepartmentsData } from "@/lib/allDepartments";
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://cec.edu.in";
 
-  // Base date for consistent indexing (can be replaced with dynamic updated dates from a CMS/DB)
-  const baseLastModified = new Date();
+  // Use a fixed date for static pages that change rarely (e.g., the last major site update)
+  // This prevents Google from thinking every page changes every day.
+  const staticLastModified = new Date("2024-01-01T00:00:00Z");
+  
+  // For dynamic pages, use the current date or a date from DB when available
+  const dynamicLastModified = new Date();
 
   // Define static routes with specific priorities based on SEO importance
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -48,23 +52,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/privacy-policy", priority: 0.3 }, // Lowest priority for SEO
   ].map((route) => ({
     url: `${baseUrl}${route.url}`,
-    lastModified: baseLastModified,
-    changeFrequency: route.url === "/campus-buzz" || route.url === "/training-placements" ? "weekly" : "monthly",
-    priority: route.priority,
+    lastModified: staticLastModified,
   }));
 
   const departmentRoutes: MetadataRoute.Sitemap = allDepartmentsData.flatMap((dept: any) => [
     {
       url: `${baseUrl}/department/${dept.slug}`,
-      lastModified: baseLastModified,
-      changeFrequency: "monthly",
-      priority: 0.9, // High priority for individual department main pages
+      lastModified: staticLastModified,
     },
     {
       url: `${baseUrl}/department/${dept.slug}/details`,
-      lastModified: baseLastModified,
-      changeFrequency: "monthly",
-      priority: 0.7, // Slightly lower for the specific details within the department
+      lastModified: staticLastModified,
     },
   ]);
 

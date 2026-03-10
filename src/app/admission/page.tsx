@@ -12,7 +12,7 @@ import AdmissionProcedureText from "@/components/AdmissionPageComponents/Admissi
 
 export const metadata = {
   alternates: {
-    canonical: '/admission'
+    canonical: "/admission",
   },
   title: "Admissions | Canara College",
   description: "Find all the information you need for admission to Canara College, including how to apply, programs offered, and more.",
@@ -29,7 +29,7 @@ export const metadata = {
         alt: "Canara College Admission",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {

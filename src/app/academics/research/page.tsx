@@ -2,7 +2,7 @@ import ResearchPageSection from "@/components/ResearchPageComponents/ResearchPag
 import React from "react";
 export const metadata = {
   alternates: {
-    canonical: '/academics/research'
+    canonical: "/academics/research",
   },
   title: "Research | Canara College",
   description:
@@ -21,7 +21,7 @@ export const metadata = {
         alt: "Research at Canara College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {

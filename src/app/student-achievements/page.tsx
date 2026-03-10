@@ -5,7 +5,7 @@ import React from "react";
 
 export const metadata = {
   alternates: {
-    canonical: '/student-achievements'
+    canonical: "/student-achievements",
   },
   title: "Student Achievements | Canara Engineering College",
   description:
@@ -24,20 +24,17 @@ export const metadata = {
         alt: "Student Achievements - Canara Engineering College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
     title: "Student Achievements | Canara Engineering College",
-    description:
-      "Explore the proud moments and achievements of Canara Engineering College students across various fields and competitions.",
+    description: "Explore the proud moments and achievements of Canara Engineering College students across various fields and competitions.",
     images: ["https://apiserver.cec.edu.in/assets/images/og-student-achievements.jpg"],
   },
 };
-
-
 
 const page = () => {
   return (

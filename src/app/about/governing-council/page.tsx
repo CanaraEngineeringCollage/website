@@ -6,7 +6,7 @@ import GoverningCouncilProfileCard from "@/components/AboutPageComponents/Govern
 
 export const metadata = {
   alternates: {
-    canonical: '/about/governing-council'
+    canonical: "/about/governing-council",
   },
   title: "Governing Council | Visionary Leadership at Canara College",
   description: "Discover the distinguished members of the Governing Council who guide Canara College towards academic excellence and innovation.",
@@ -24,7 +24,7 @@ export const metadata = {
         alt: "Governing Council of Canara College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {

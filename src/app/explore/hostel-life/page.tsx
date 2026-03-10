@@ -9,7 +9,7 @@ import React from "react";
 
 export const metadata = {
   alternates: {
-    canonical: '/explore/hostel-life'
+    canonical: "/explore/hostel-life",
   },
   title: "Hostel Life | Canara College",
   description:
@@ -27,7 +27,7 @@ export const metadata = {
         alt: "Hostel Life at Canara College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {

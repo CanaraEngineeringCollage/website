@@ -14,7 +14,7 @@ import CounsellingServices from "@/components/AboutPageComponents/StudentWelfare
 
 export const metadata = {
   alternates: {
-    canonical: '/about/student-welfare-department'
+    canonical: "/about/student-welfare-department",
   },
   title: "Student Welfare Department | Canara College",
   description: "Explore the Student Welfare Department of Canara College, providing support, services, and a nurturing environment for students.",
@@ -31,7 +31,7 @@ export const metadata = {
         alt: "Student Welfare Department at Canara College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {

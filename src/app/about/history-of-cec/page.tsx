@@ -4,7 +4,7 @@ import FooterCard from "@/components/Common/FooterCard/FooterCard";
 
 export const metadata = {
   alternates: {
-    canonical: '/about/history-of-cec'
+    canonical: "/about/history-of-cec",
   },
   title: "History of Canara College | A Legacy of Excellence",
   description: "Explore the rich history of Canara College, from its foundation in 1973 to its current position as a leader in education.",
@@ -21,7 +21,7 @@ export const metadata = {
         alt: "History of Canara College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {

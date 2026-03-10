@@ -3,7 +3,7 @@ import React from "react";
 
 export const metadata = {
   alternates: {
-    canonical: '/about/grievance-redressal-cell'
+    canonical: "/about/grievance-redressal-cell",
   },
   title: "Grievance Redressal Cell | Student Support at Canara College",
   description: "Learn about the Grievance Redressal Cell at Canara College, ensuring a fair, transparent, and supportive environment for students.",
@@ -20,7 +20,7 @@ export const metadata = {
         alt: "Grievance Redressal Cell at Canara College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {

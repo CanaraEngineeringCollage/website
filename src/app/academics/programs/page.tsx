@@ -11,7 +11,7 @@ import { Testimonials } from "@/components/Common/Testimonials/Testimonials";
 
 export const metadata = {
   alternates: {
-    canonical: '/academics/programs'
+    canonical: "/academics/programs",
   },
   title: "Academic Programs | Canara College",
   description: "Explore the academic programs offered by Canara College, including educational objectives, program outcomes, and more.",
@@ -28,7 +28,7 @@ export const metadata = {
         alt: "Academic Programs at Canara College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {

@@ -2,7 +2,7 @@ import ScStGrievance from "@/components/AboutPageComponents/ScStGrievanceCompone
 import React from "react";
 export const metadata = {
   alternates: {
-    canonical: '/about/mandatory-disclosure/sc-st-grievance'
+    canonical: "/about/mandatory-disclosure/sc-st-grievance",
   },
   title: "SC/ST Grievance Cell | Canara Engineering College",
   description:
@@ -21,7 +21,7 @@ export const metadata = {
         alt: "SC/ST Grievance Cell - Canara Engineering College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {

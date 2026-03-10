@@ -4,7 +4,7 @@ import React from "react";
 
 export const metadata = {
   alternates: {
-    canonical: '/explore/infrastructure'
+    canonical: "/explore/infrastructure",
   },
   title: "Infrastructure | Canara College",
   description:
@@ -22,7 +22,7 @@ export const metadata = {
         alt: "Infrastructure at Canara College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {

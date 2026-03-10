@@ -9,7 +9,7 @@ import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 
 export const metadata = {
   alternates: {
-    canonical: '/academics/academic-overview'
+    canonical: "/academics/academic-overview",
   },
   title: "Academic Overview | Canara College",
   description:
@@ -27,7 +27,7 @@ export const metadata = {
         alt: "Academic Overview at Canara College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {

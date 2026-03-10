@@ -5,7 +5,7 @@ import datam from "../../../utils/hodData/hodData.json";
 import keyFunctionariesData from "../../../utils/keyFunctionariesData/keyFunctionariesData.json";
 export const metadata = {
   alternates: {
-    canonical: '/about/key-functionaries-and-hods'
+    canonical: "/about/key-functionaries-and-hods",
   },
   title: "Key Functionaries & HODs | Canara Engineering College",
   description:
@@ -24,7 +24,7 @@ export const metadata = {
         alt: "Key Functionaries & HODs of Canara Engineering College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {
@@ -37,7 +37,7 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-      <ProfileCard  title="Heads of the Department" />
+      <ProfileCard title="Heads of the Department" />
       <section className="bg-[#E5E5EA]">
         <FooterCard />
       </section>

@@ -3,7 +3,7 @@ import React from "react";
 
 export const metadata = {
   alternates: {
-    canonical: '/academics/learning-hub'
+    canonical: "/academics/learning-hub",
   },
   title: "Learning Hub | Canara College",
   description: "Explore the Learning Hub at Canara College, offering resources, study materials, and academic support for students.",
@@ -21,7 +21,7 @@ export const metadata = {
         alt: "Learning Hub at Canara College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {

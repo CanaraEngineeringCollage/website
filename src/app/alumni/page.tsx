@@ -9,7 +9,7 @@ import React from "react";
 
 export const metadata = {
   alternates: {
-    canonical: '/alumni'
+    canonical: "/alumni",
   },
   title: "Alumni | Canara College",
   description:
@@ -27,7 +27,7 @@ export const metadata = {
         alt: "Alumni Canara College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {

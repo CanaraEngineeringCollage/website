@@ -4,7 +4,7 @@ import React from "react";
 
 export const metadata = {
   alternates: {
-    canonical: '/about/our-management'
+    canonical: "/about/our-management",
   },
   title: "Our Management | Canara College",
   description: "Meet the management team of Canara College, dedicated to providing quality education and leading the institution toward success.",
@@ -21,7 +21,7 @@ export const metadata = {
         alt: "Our Management Team at Canara College",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {
