@@ -90,7 +90,7 @@ const ideasData: IdeaCard[] = [
   {
     id: 2,
     cardTitle: "Center of Excellence",
-    cardImage: "https://apiserver.cec.edu.in/files/centerOfExcellence1",
+    cardImage: "https://apiserver.cec.edu.in/files/centerOfExcellence2",
     modalTitle: "Center of Excellence",
     modalImage: "https://apiserver.cec.edu.in/files/centerOfExcellence2",
     modalSections: [
@@ -240,6 +240,35 @@ const ideasData: IdeaCard[] = [
       ]},
     ],
   },
+  {
+    id: 7,
+    cardTitle: "CIF",
+    cardImage: "https://apiserver.cec.edu.in/files/cifMouImage",
+    modalTitle: "Canara Innovation Foundation",
+    modalImage: "https://apiserver.cec.edu.in/files/cifMouImage",
+    modalSections: [
+      {
+        subtitle: "Student-to-Startup Ecosystem",
+        description:
+          "We empower students to transform innovative ideas into scalable startups through mentorship, incubation support, and structured entrepreneurial programs.",
+      },
+      {
+        subtitle: "Direct Access to Grants & Opportunities",
+        description:
+          "Students are guided to explore government startup schemes, innovation grants, and funding opportunities that accelerate their entrepreneurial journey.",
+      },
+      {
+        subtitle: "Industry & Investor Connect",
+        description:
+          "CIF bridges the gap between students, industry experts, and investors through mentorship programs, startup pitch sessions, and networking events.",
+      },
+      {
+        subtitle: "Hands-on Innovation Culture",
+        description:
+          "Through hackathons, ideathons, bootcamps, and innovation labs, CIF nurtures practical problem-solving and real-world entrepreneurial thinking.",
+      },
+    ],
+  },
 ];
 
 // ─── Animation variants ────────────────────────────────────────────────────────
@@ -263,7 +292,7 @@ const contentVariants = {
 
 // ─── Gallery Swiper ────────────────────────────────────────────────────────────
 
-function GallerySwiper({ images, swiperId }: { images: string[]; swiperId: string }) {
+function GallerySwiper({ images, swiperId, previewCount = 1, objectFit = "cover" }: { images: string[]; swiperId: string; previewCount?: number; objectFit?: "cover" | "contain" }) {
   const swiperRef = useRef<SwiperType | null>(null);
 
   return (
@@ -272,23 +301,23 @@ function GallerySwiper({ images, swiperId }: { images: string[]; swiperId: strin
         onSwiper={(s) => (swiperRef.current = s)}
         modules={[Navigation, Autoplay]}
         spaceBetween={20}
-        slidesPerView={1}
+        slidesPerView={previewCount}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         navigation={{
           prevEl: `.swiper-prev-${swiperId}`,
           nextEl: `.swiper-next-${swiperId}`,
         }}
         breakpoints={{
-          640: { slidesPerView: 1 },
-          768: { slidesPerView: 1 },
-          1024: { slidesPerView: 1 },
+          640: { slidesPerView: previewCount },
+          768: { slidesPerView: previewCount },
+          1024: { slidesPerView: previewCount },
         }}
         className="rounded-lg"
       >
         {images.map((imgUrl, idx) => (
           <SwiperSlide key={idx}>
-            <div className="relative w-full h-[300px] md:h-[450px]">
-              <Image src={imgUrl} alt={`Gallery image ${idx + 1}`} fill className="object-cover rounded-lg" />
+            <div className="relative w-full h-[300px] md:h-[450px] ">
+              <Image src={imgUrl} alt={`Gallery image ${idx + 1}`} fill className={`${objectFit === "contain" ? "object-contain" : "object-cover"} rounded-lg`} />
             </div>
           </SwiperSlide>
         ))}
@@ -384,12 +413,17 @@ function MouTabContent({ tabs }: { tabs: MouTab[] }) {
               )}
 
               {entry.images && entry.images.length === 1 && (
-                <div className="relative w-full h-[300px] md:h-[500px] mt-2 rounded-xl overflow-hidden">
-                  <Image src={entry.images[0]} alt={entry.title} fill className="object-cover rounded-xl" />
+                <div className="relative w-full h-[300px] md:h-[500px] mt-2 rounded-xl overflow-hidden ">
+                  <Image src={entry.images[0]} alt={entry.title} fill className="object-contain rounded-xl" />
                 </div>
               )}
               {entry.images && entry.images.length > 1 && (
-                <GallerySwiper images={entry.images} swiperId={`mou-${activeTab}-${idx}`} />
+                <GallerySwiper
+                  images={entry.images}
+                  swiperId={`mou-${activeTab}-${idx}`}
+                  previewCount={tabs[activeTab]?.tabName === "CSE" ? 2 : 1}
+                  objectFit={tabs[activeTab]?.tabName === "CSE" ? "contain" : "cover"}
+                />
               )}
             </div>
           ))}
@@ -420,7 +454,7 @@ const IdeasTakeFlight = () => {
     <section className="py-16 max-w-7xl mx-auto xl:max-w-[75%] text-center text-[#1D1D1F] bg-white">
       <h2 className="text-3xl md:text-5xl font-bold mb-6 text-center">Where Ideas Take Flight</h2>
       <div className="max-w-[90%] mx-auto">
-        <p className="text-textGray text-center mb-12 text-base md:text-lg leading-relaxed">
+        <p className="text-textGray text-center mb-12 text-[14px] md:text-[23.25px] leading-relaxed">
           The Canara Entrepreneurship Cell is dedicated to nurturing innovation, fostering leadership, & empowering students to transform ideas into
           successful ventures. Through mentorship, startup incubation, industry collaborations, & hands-on workshops, we provide the perfect launchpad
           for aspiring entrepreneurs to thrive in the ever-evolving business landscape.
