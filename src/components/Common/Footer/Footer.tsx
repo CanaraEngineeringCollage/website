@@ -34,7 +34,7 @@ const academics = [
   { data: "Admissions", links: "/admission" },
   // { data: "Courses & Programs", links: "#" },
   // { data: "Syllabus", links: "#" },
-  { data: "Academic Calendar", links: "/about/mandatory-disclosure?tab=Academic Calendar" },
+  { data: "Academic Calendar", links: "/about/mandatory-disclosure?tab=academic-calendar" },
   // { data: "Examinations & Timetables", links: "/academics/examination-records" },
   { data: "Circulars", links: "/academics/examination-records?tab=circulars" },
   { data: "Marks & Attendance", links: "https://www.canaraengineering.in/s_attd" },

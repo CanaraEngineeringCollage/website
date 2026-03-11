@@ -30,12 +30,14 @@ const MandatoryDisclosure = () => {
 
   useEffect(() => {
     if (tabParam) {
-      const index = disclosureTitles.findIndex((title) => title.toLowerCase() === tabParam.toLowerCase());
+      const index = disclosureTitles.findIndex(
+        (title) => title.toLowerCase().replace(/\s+/g, "-") === tabParam.toLowerCase().replace(/\s+/g, "-")
+      );
       if (index !== -1) {
         setSelectedIndex(index);
       }
     }
-  }, [tabParam]);
+  }, [tabParam, disclosureTitles]);
 
   useEffect(() => {
     if (disclosureTitles[selectedIndex] === "Academic Calendar" && academicCalendars.length === 0) {
@@ -1544,7 +1546,11 @@ const MandatoryDisclosure = () => {
                       {item?.links?.map((link, i) =>
                         link?.href ? (
                           <li key={i} className="flex items-center gap-2 text-[17px] text-textGray hover:text-[#2884CA] cursor-pointer">
-                            <iframe src={link.href} className="w-[100%] h-[70vh]" />
+                       <iframe 
+  src={`https://docs.google.com/viewer?url=${encodeURIComponent(link.href)}&embedded=true`} 
+  className="w-full h-[70vh]" 
+  title="PDF Viewer"
+/>
                           </li>
                         ) : null,
                       )}
