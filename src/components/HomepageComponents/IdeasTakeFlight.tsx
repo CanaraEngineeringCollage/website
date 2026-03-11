@@ -618,7 +618,7 @@ const IdeasTakeFlight = () => {
       <div className="max-w-[90%] mx-auto">
         <p className="text-textGray text-center mb-12 text-[14px] md:text-[23.25px] leading-relaxed">
           From industry MoUs and a TiE-backed Centre of Excellence to life-changing Scholarships, Sponsored Research breaking new ground, a
-          high-computing GPU Lab driving innovation, a grand Auditorium hosting 2000+, a thriving Incubation Centre for aspiring entrepreneurs, and
+          high-computing GPU Lab driving innovation, a grand Auditorium hosting 2000+, a thriving Incubation Centre for aspiring entrepreneurs and
           the prestigious UDAL DC Fellowship.
         </p>
       </div>
