@@ -8,6 +8,7 @@ import Activities from "../TabComponents/Activities/Activities";
 import Patents from "../TabComponents/Patents/Patents";
 
 
+
 const IframLinks = ({title,link}:{title?:string;link?:string}) => {return(
   <div className="lg:mb-10">
     <h2 className="text-[24px] text-[#1d1d1f] font-bold  mb-2">{title}</h2>
