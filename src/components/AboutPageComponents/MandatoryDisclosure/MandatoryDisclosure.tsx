@@ -30,9 +30,7 @@ const MandatoryDisclosure = () => {
 
   useEffect(() => {
     if (tabParam) {
-      const index = disclosureTitles.findIndex(
-        (title) => title.toLowerCase().replace(/\s+/g, "-") === tabParam.toLowerCase().replace(/\s+/g, "-")
-      );
+      const index = disclosureTitles.findIndex((title) => title.toLowerCase().replace(/\s+/g, "-") === tabParam.toLowerCase().replace(/\s+/g, "-"));
       if (index !== -1) {
         setSelectedIndex(index);
       }
@@ -1545,12 +1543,21 @@ const MandatoryDisclosure = () => {
                     <ul className="space-y-1">
                       {item?.links?.map((link, i) =>
                         link?.href ? (
-                          <li key={i} className="flex items-center gap-2 text-[17px] text-textGray hover:text-[#2884CA] cursor-pointer">
-                       <iframe 
-  src={`https://docs.google.com/viewer?url=${encodeURIComponent(link.href)}&embedded=true`} 
-  className="w-full h-[70vh]" 
-  title="PDF Viewer"
-/>
+                          <li key={i} className="flex group items-center gap-2 text-[17px] text-textGray hover:text-[#2884CA] cursor-pointer w-full">
+                            <iframe 
+                              src={`https://docs.google.com/viewer?url=${encodeURIComponent(link.href)}&embedded=true`} 
+                              className="w-full h-[70vh] hidden md:block" 
+                              title="PDF Viewer"
+                            />
+                            <a 
+                              href={link.href} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="flex items-center gap-2 hover:text-[#2884CA] md:hidden"
+                            >
+                              <HiLink className="text-textGray group-hover:text-[#2884CA] mt-2" />
+                              <span className="text-textGray group-hover:text-[#2884CA] text-[16px] pt-2 leading-7">{link.text || "View Document"}</span>
+                            </a>
                           </li>
                         ) : null,
                       )}

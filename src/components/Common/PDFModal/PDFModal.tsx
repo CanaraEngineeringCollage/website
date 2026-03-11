@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { IconX } from "@tabler/icons-react";
+import { IconX, IconExternalLink } from "@tabler/icons-react";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 
 // Animation variants
@@ -82,7 +82,23 @@ const PDFModal: React.FC<PDFModalProps> = ({ isOpen, onClose, pdfUrl, title = "D
               {/* <h1 className="text-center text-[24px] sm:text-[32px] text-[#1D1D1F] font-bold mb-8 px-8">{title}</h1> */}
 
               {pdfUrl ? (
-                <iframe src={pdfUrl} className="w-full h-[60vh] md:h-[100vh] rounded-xl  border-none shadow-sm" allowFullScreen title={title}></iframe>
+                <>
+                  <iframe src={pdfUrl} className="w-full h-[60vh] md:h-[100vh] rounded-xl border-none shadow-sm hidden md:block" allowFullScreen title={title}></iframe>
+                  <div className="flex flex-col items-center justify-center h-[60vh] md:hidden">
+                    <p className="text-center text-lg text-gray-700 mb-6 px-4">
+                      {title}
+                    </p>
+                    <a 
+                      href={pdfUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="bg-[#2884CA] text-white px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-[#1f6a9e] transition-colors shadow-md"
+                    >
+                      <IconExternalLink className="w-5 h-5 text-white" />
+                      View Document
+                    </a>
+                  </div>
+                </>
               ) : (
                 <div className="flex justify-center items-center h-[60vh]">
                   <p className="text-center text-lg text-gray-500">Loading document...</p>
