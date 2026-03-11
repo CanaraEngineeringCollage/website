@@ -28,7 +28,7 @@ interface TestimonialsProps {
 
 // Render for the Special Blue Cards
 const renderFeaturedRow = (featured: FeaturedAlumni[], onReadMore: (item: FeaturedAlumni) => void) => (
-  <div className="marquee-container mb-8">
+  <div className="marquee-container ">
     <div className="animate-marquee reverse flex" style={{ animationDuration: "200s" }}>
       {[...featured, ...featured].map((item, index) => (
         <div

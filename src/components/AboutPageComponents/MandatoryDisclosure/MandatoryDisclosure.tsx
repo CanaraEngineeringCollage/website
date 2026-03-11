@@ -21,6 +21,12 @@ const MandatoryDisclosure = () => {
   const [loadingCalendar, setLoadingCalendar] = useState(false);
 
   const handleOpenPdf = (url: string, title?: string) => {
+    // If on mobile (less than 768px), open directly in a new tab instead of opening the modal
+    if (window.innerWidth < 768) {
+      window.open(url, '_blank', 'noopener,noreferrer');
+      return;
+    }
+    
     setCurrentPdfUrl(url);
     if (title) setCurrentPdfTitle(title);
     setIsPdfModalOpen(true);
@@ -1429,11 +1435,22 @@ const MandatoryDisclosure = () => {
                     <ul className="space-y-1">
                       {item?.links?.map((link, i) =>
                         link?.href ? (
-                          <li key={i} className="flex group items-center gap-2 text-[16px] text-textGray hover:text-[#2884CA] cursor-pointer">
-                            <div onClick={() => handleOpenPdf(link.href, link.text)} className="flex items-center gap-2 hover:text-[#2884CA]">
+                          <li key={i} className="flex group items-center gap-2 text-[16px] text-textGray hover:text-[#2884CA] cursor-pointer w-full">
+                            {/* Desktop: Open Modal */}
+                            <div onClick={() => handleOpenPdf(link.href, link.text)} className="hidden md:flex items-center gap-2 hover:text-[#2884CA]">
                               <HiLink className="text-textGray group-hover:text-[#2884CA] mt-2" />
                               <span className="text-textGray group-hover:text-[#2884CA] text-[16px] pt-2 leading-7">{link.text}</span>
                             </div>
+                            {/* Mobile: Direct Link */}
+                            <a 
+                              href={link.href} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="flex items-center gap-2 hover:text-[#2884CA] md:hidden w-full"
+                            >
+                              <HiLink className="text-textGray group-hover:text-[#2884CA] mt-2" />
+                              <span className="text-textGray group-hover:text-[#2884CA] text-[16px] pt-2 leading-7">{link.text}</span>
+                            </a>
                           </li>
                         ) : null,
                       )}
@@ -1448,11 +1465,22 @@ const MandatoryDisclosure = () => {
                     <ul className="space-y-1">
                       {item?.links?.map((link, i) =>
                         link?.href ? (
-                          <li key={i} className="flex group items-center gap-2 text-[16px] text-textGray hover:text-[#2884CA] cursor-pointer">
-                            <div onClick={() => handleOpenPdf(link.href, link.text)} className="flex items-center gap-2 hover:text-[#2884CA]">
+                          <li key={i} className="flex group items-center gap-2 text-[16px] text-textGray hover:text-[#2884CA] cursor-pointer w-full">
+                            {/* Desktop: Open Modal */}
+                            <div onClick={() => handleOpenPdf(link.href, link.text)} className="hidden md:flex items-center gap-2 hover:text-[#2884CA]">
                               <HiLink className="text-textGray group-hover:text-[#2884CA] mt-2" />
                               <span className="text-textGray group-hover:text-[#2884CA] text-[16px] pt-2 leading-7">{link.text}</span>
                             </div>
+                            {/* Mobile: Direct Link */}
+                            <a 
+                              href={link.href} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="flex items-center gap-2 hover:text-[#2884CA] md:hidden w-full"
+                            >
+                              <HiLink className="text-textGray group-hover:text-[#2884CA] mt-2" />
+                              <span className="text-textGray group-hover:text-[#2884CA] text-[16px] pt-2 leading-7">{link.text}</span>
+                            </a>
                           </li>
                         ) : null,
                       )}
@@ -1467,11 +1495,22 @@ const MandatoryDisclosure = () => {
                     <ul className="space-y-1">
                       {item?.links?.map((link, i) =>
                         link?.href ? (
-                          <li key={i} className="flex group items-center gap-2 text-[16px] text-textGray hover:text-[#2884CA] cursor-pointer">
-                            <div onClick={() => handleOpenPdf(link.href, link.text)} className="flex items-center gap-2 hover:text-[#2884CA]">
+                          <li key={i} className="flex group items-center gap-2 text-[16px] text-textGray hover:text-[#2884CA] cursor-pointer w-full">
+                            {/* Desktop: Open Modal */}
+                            <div onClick={() => handleOpenPdf(link.href, link.text)} className="hidden md:flex items-center gap-2 hover:text-[#2884CA]">
                               <HiLink className="text-textGray group-hover:text-[#2884CA] mt-2" />
                               <span className="text-textGray group-hover:text-[#2884CA] text-[16px] pt-2 leading-7">{link.text}</span>
                             </div>
+                            {/* Mobile: Direct Link */}
+                            <a 
+                              href={link.href} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="flex items-center gap-2 hover:text-[#2884CA] md:hidden w-full"
+                            >
+                              <HiLink className="text-textGray group-hover:text-[#2884CA] mt-2" />
+                              <span className="text-textGray group-hover:text-[#2884CA] text-[16px] pt-2 leading-7">{link.text}</span>
+                            </a>
                           </li>
                         ) : null,
                       )}
@@ -1503,11 +1542,22 @@ const MandatoryDisclosure = () => {
                     <ul className="space-y-1">
                       {item?.links?.map((link, i) =>
                         link?.href ? (
-                          <li key={i} className="flex group items-center gap-2 text-[16px] text-textGray hover:text-[#2884CA] cursor-pointer">
-                            <div onClick={() => handleOpenPdf(link.href, link.text)} className="flex items-center gap-2 hover:text-[#2884CA]">
+                          <li key={i} className="flex group items-center gap-2 text-[16px] text-textGray hover:text-[#2884CA] cursor-pointer w-full">
+                            {/* Desktop: Open Modal */}
+                            <div onClick={() => handleOpenPdf(link.href, link.text)} className="hidden md:flex items-center gap-2 hover:text-[#2884CA]">
                               <HiLink className="text-textGray group-hover:text-[#2884CA] mt-2" />
                               <span className="text-textGray group-hover:text-[#2884CA] text-[16px] pt-2 leading-7">{link.text}</span>
                             </div>
+                            {/* Mobile: Direct Link */}
+                            <a 
+                              href={link.href} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="flex items-center gap-2 hover:text-[#2884CA] md:hidden w-full"
+                            >
+                              <HiLink className="text-textGray group-hover:text-[#2884CA] mt-2" />
+                              <span className="text-textGray group-hover:text-[#2884CA] text-[16px] pt-2 leading-7">{link.text}</span>
+                            </a>
                           </li>
                         ) : null,
                       )}
@@ -1523,11 +1573,22 @@ const MandatoryDisclosure = () => {
                     <ul className="space-y-1">
                       {item?.links?.map((link, i) =>
                         link?.href ? (
-                          <li key={i} className="flex group items-center gap-2 text-[17px] text-textGray hover:text-[#2884CA] cursor-pointer">
-                            <div onClick={() => handleOpenPdf(link.href, link.text)} className="flex items-center gap-2 hover:text-[#2884CA]">
+                          <li key={i} className="flex group items-center gap-2 text-[17px] text-textGray hover:text-[#2884CA] cursor-pointer w-full">
+                            {/* Desktop: Open Modal */}
+                            <div onClick={() => handleOpenPdf(link.href, link.text)} className="hidden md:flex items-center gap-2 hover:text-[#2884CA]">
                               <HiLink className="text-textGray group-hover:text-[#2884CA] mt-2" />
                               <span className="text-textGray group-hover:text-[#2884CA] text-[16px] pt-2 leading-7">{link.text}</span>
                             </div>
+                            {/* Mobile: Direct Link */}
+                            <a 
+                              href={link.href} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="flex items-center gap-2 hover:text-[#2884CA] md:hidden w-full"
+                            >
+                              <HiLink className="text-textGray group-hover:text-[#2884CA] mt-2" />
+                              <span className="text-textGray group-hover:text-[#2884CA] text-[16px] pt-2 leading-7">{link.text}</span>
+                            </a>
                           </li>
                         ) : null,
                       )}

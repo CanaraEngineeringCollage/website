@@ -76,7 +76,7 @@ export default function RootLayout({
                 sameAs: [
                   "https://www.facebook.com/share/1AjszML4e3",
                   "https://www.instagram.com/cecmangalore/",
-                  "https://www.linkedin.com/school/77697892/",
+                  "https://www.linkedin.com/school/canara-engineering-college-official",
                   "https://www.youtube.com/@canaraengineeringcollegema3340",
                   "https://x.com/cecmangalore",
                   "https://en.wikipedia.org/wiki/Canara_Engineering_College"

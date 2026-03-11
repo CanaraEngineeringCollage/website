@@ -202,15 +202,34 @@ const AboutCentralLibrary = () => {
 
                 {/* Standard Iframe (Handbook / Docs) */}
                 {item.href && (
-                  <iframe
-                    src={`${item.href}#toolbar=0&navpanes=0&view=FitH`}
-                    className="w-full h-[60vh] md:h-[100vh] mt-3 border border-gray-200 rounded-lg bg-gray-50"
-                    title={item.title || `Document-${i}`}
-                  >
-                    <p>
-                      Your browser does not support PDFs. <a href={item.href}>Download the PDF</a>.
-                    </p>
-                  </iframe>
+                  <>
+                    {/* Desktop */}
+                    <iframe
+                      src={`${item.href}#toolbar=0&navpanes=0&view=FitH`}
+                      className="w-full h-[60vh] md:h-[100vh] mt-3 border border-gray-200 rounded-lg bg-gray-50 hidden md:block"
+                      title={item.title || `Document-${i}`}
+                    >
+                      <p>
+                        Your browser does not support PDFs. <a href={item.href}>Download the PDF</a>.
+                      </p>
+                    </iframe>
+
+                    {/* Mobile */}
+                    <a 
+                      href={`${item.href}#toolbar=0&navpanes=0&view=FitH`} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="mt-6 flex items-center justify-center gap-2 bg-[#2884CA] text-white px-6 py-3 rounded-lg hover:bg-[#1f6a9e] transition-colors shadow-md md:hidden"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path>
+                        <path d="M11 13l9 -9"></path>
+                        <path d="M15 4h5v5"></path>
+                      </svg>
+                      View Document
+                    </a>
+                  </>
                 )}
 
                 {/* Standard Table */}

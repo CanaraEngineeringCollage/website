@@ -12,8 +12,25 @@ const IframLinks = ({title,link}:{title?:string;link?:string}) => {return(
   <div className="lg:mb-10">
     <h2 className="text-[24px] text-[#1d1d1f] font-bold  mb-2">{title}</h2>
     <ul className="space-y-1">
-      <li className="flex items-center gap-2 text-[17px] text-textGray hover:text-blue-600 cursor-pointer">
-        <iframe src={link} className="w-[100%] md:h-[70vh] h-[50vh]" />
+      <li className="flex flex-col gap-2 text-[17px] text-textGray w-full">
+        {/* Desktop Iframe */}
+        <iframe src={link} className="w-[100%] md:h-[70vh] h-[50vh] hidden md:block border border-gray-200 rounded-lg" />
+        
+        {/* Mobile Link */}
+        <a 
+          href={link} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="mt-3 flex items-center justify-center gap-2 bg-[#2884CA] text-white px-6 py-3 rounded-lg hover:bg-[#1f6a9e] transition-colors shadow-md md:hidden"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path>
+            <path d="M11 13l9 -9"></path>
+            <path d="M15 4h5v5"></path>
+          </svg>
+          View Document
+        </a>
       </li>
     </ul>
   </div>)

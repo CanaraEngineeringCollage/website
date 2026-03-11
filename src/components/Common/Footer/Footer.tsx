@@ -208,7 +208,7 @@ const Footer: FC = () => {
           <div>
             <h1 className="flex justify-end font-bold pb-3 cursor-pointer">Follow Us</h1>
             <div className="flex gap-2 cursor-pointer">
-              <Link target="_blank" href="https://www.linkedin.com/school/77697892/admin/dashboard/">
+              <Link target="_blank" href="https://www.linkedin.com/school/canara-engineering-college-official">
                 <LinkedIn />
               </Link>
               <Link target="_blank" href="https://www.instagram.com/cecmangalore/">
@@ -268,7 +268,7 @@ const Footer: FC = () => {
           <div className="mt-4">
             <h1 className="text-center font-bold pb-3">Follow Us</h1>
             <div className="flex gap-2 justify-center">
-              <Link target="_blank" href="https://www.linkedin.com/school/77697892/admin/dashboard/">
+              <Link target="_blank" href="https://www.linkedin.com/school/canara-engineering-college-official">
                 <LinkedIn />
               </Link>
               <Link target="_blank" href="https://www.instagram.com/cecmangalore/">
@@ -290,7 +290,7 @@ const Footer: FC = () => {
 
         {/* Mobile Bottom Bar */}
         <div className="border-t border-gray-300 pt-4 pb-6 text-xs text-center">
-          <p className="mb-2">Copyright © {new Date().getFullYear()} CEC & Canara High School Association. All rights reserved.</p>
+          <p className="mb-2">Copyright © {new Date().getFullYear()} CEC & Canara High School Association. <br /> All rights reserved.</p>
           <Link href={"/privacy-policy"}>
             <p>Privacy Policy</p>
           </Link>

@@ -19,7 +19,7 @@ function Layout({ children }: { children: React.ReactNode }) {
     <div className="flex flex-col min-h-screen">
       {/* overflow-x-hidden */}
       {pathname === "/" && <CurtainScreen />}
-      <header className=" bg-white z-30 relative  top-0">
+      <header className=" bg-white z-40 relative  top-0">
         {isCampusRoute ? (
           <CampusNavbar openSidebar={() => openSidebar((prev) => !prev)} sidebar={sidebar} />
         ) : (
