@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
   productionBrowserSourceMaps: true,
 
   images: {
+    unoptimized: true,
     domains: [
       "testapi.megamind.studio",
       "www.canaraengineering.in",
