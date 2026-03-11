@@ -21,7 +21,7 @@ interface AmenitiesCardProps {
 
 const AmenitiesCard: React.FC<AmenitiesCardProps> = ({ title, amenities, mainImage }) => {
   return (
-    <section className="max-w-7xl xl:max-w-[75%] lg:px-32 mx-auto pt-14 lg:pb-20 pb-12 overflow-hidden text-[#1D1D1F]">
+    <section className=" max-w-5xl mx-auto xl:max-w-[65%] rounded-4xl px-6 md:px-0  pt-14 lg:pb-20 pb-12 overflow-hidden text-[#1D1D1F]">
       <div>
         {title && <h1 className={`text-3xl  ${style} lg:mb-10 mb-8 md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold`}>{title}</h1>}
         {/* Main Image Section */}

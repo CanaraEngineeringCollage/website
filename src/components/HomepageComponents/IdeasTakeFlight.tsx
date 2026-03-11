@@ -614,12 +614,12 @@ const IdeasTakeFlight = () => {
 
   return (
     <section className="py-16 max-w-7xl mx-auto xl:max-w-[75%] text-center text-[#1D1D1F] bg-white">
-      <h2 className="text-3xl md:text-5xl font-bold mb-6 text-center">Where Ideas Take Flight</h2>
+      <h2 className="text-3xl md:text-5xl font-bold mb-6 text-center">What Sets Us Apart</h2>
       <div className="max-w-[90%] mx-auto">
         <p className="text-textGray text-center mb-12 text-[14px] md:text-[23.25px] leading-relaxed">
-          The Canara Entrepreneurship Cell is dedicated to nurturing innovation, fostering leadership, & empowering students to transform ideas into
-          successful ventures. Through mentorship, startup incubation, industry collaborations, & hands-on workshops, we provide the perfect launchpad
-          for aspiring entrepreneurs to thrive in the ever-evolving business landscape.
+          From industry MoUs and a TiE-backed Centre of Excellence to life-changing Scholarships, Sponsored Research breaking new ground, a
+          high-computing GPU Lab driving innovation, a grand Auditorium hosting 2000+, a thriving Incubation Centre for aspiring entrepreneurs, and
+          the prestigious UDAL DC Fellowship.
         </p>
       </div>
 

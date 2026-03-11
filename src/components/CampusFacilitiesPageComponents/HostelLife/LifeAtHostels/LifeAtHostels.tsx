@@ -4,7 +4,7 @@ import { HiDownload } from "react-icons/hi";
 
 const LifeAtHostels = () => {
   return (
-    <section className="md:pt-10 pt-6 xl:py-10 pb-2 px-6  max-w-7xl xl:max-w-[75%] mx-auto lg:px-32">
+    <section className="md:pt-10 pt-6 xl:py-10 pb-2 max-w-5xl mx-auto xl:max-w-[65%] rounded-4xl px-6 md:px-0">
       <div className="">
         <div className="flex justify-between items-center pb-5 lg:pb-10">
           <h1 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl  font-bold text-[#1D1D1F] ">Life at CEC Hostels</h1>
