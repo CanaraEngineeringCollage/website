@@ -9,6 +9,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import FloatingSticky from "@/components/Common/FloatingSticky/FloatingSticky";
 import Script from "next/script";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -48,6 +49,10 @@ export const metadata: Metadata = {
     "CET Engineering Colleges Mangalore",
     "COMEDK Engineering Colleges Mangalore",
   ],
+  // Add the Google Site Verification here
+  verification: {
+    google: "-Bpv8fhe20Z5fhxjIm712LCBfsVP34uv_PvlTIXxrQw",
+  },
 };
 
 export default function RootLayout({
