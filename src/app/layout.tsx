@@ -8,6 +8,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { Analytics } from "@vercel/analytics/next";
 import FloatingSticky from "@/components/Common/FloatingSticky/FloatingSticky";
+import Script from "next/script";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -93,6 +94,7 @@ export default function RootLayout({
             }}
           />
           <ScrollToTopButton />
+          <Script src="/smoothScroll/smoothScroll.js"/>
           <FloatingSticky />
         </Layout>
       </body>

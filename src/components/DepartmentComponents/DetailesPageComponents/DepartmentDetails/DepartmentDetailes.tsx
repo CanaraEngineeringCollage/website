@@ -303,9 +303,9 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
             name: sourceData.name,
             position: sourceData.designation,
             // ✅ FIX 2: Check for hasAvatar and use API endpoint instead of buffer
-            imageUrl: sourceData.hasAvatar 
-               ? `${process.env.NEXT_PUBLIC_API_URL}/faculty/${sourceData.id}/avatar` 
-               : sourceData.image || department.depatmentHead.imageUrl,
+            imageUrl: sourceData.hasAvatar
+              ? `${process.env.NEXT_PUBLIC_API_URL}/faculty/${sourceData.id}/avatar`
+              : sourceData.image || department.depatmentHead.imageUrl,
           }
         : {}),
     };
@@ -317,7 +317,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
         <div className="relative h-[300px] md:h-[450px] w-full flex items-center overflow-hidden bg-[#eff2f6]">
           {/* Image Container: Starts after 60% (occupies right 40%) */}
           <div className="absolute right-0 top-0 h-full w-[70%]">
-            <Image  src="/departmentImages/bgImageMoreAbout.png" alt="bg" fill className="object-cover object-center" />
+            <Image src="/departmentImages/bgImageMoreAbout.png" alt="bg" fill className="object-cover object-center" />
             {/* Gradient Mask: Only applied to this 40% section to blend the hard left edge */}
             <div className="absolute inset-0 bg-gradient-to-r from-[#eff2f6] via-transparent to-transparent z-10" />
           </div>
