@@ -196,7 +196,6 @@ export default function LibraryFaculty() {
               {/* ✅ Fixed Image */}
               <Image
               unoptimized
-                onClick={() => router.push(`/user-details/${member.id}`)}
                 src={`${process.env.NEXT_PUBLIC_API_URL}/faculty/${member.id}/avatar`}
                 alt={member.name}
                 fill
