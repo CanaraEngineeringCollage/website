@@ -41,7 +41,7 @@ const MandatoryDisclosure = () => {
         setSelectedIndex(index);
       }
     }
-  }, [tabParam, disclosureTitles]);
+  }, [tabParam]);
 
   useEffect(() => {
     if (disclosureTitles[selectedIndex] === "Academic Calendar" && academicCalendars.length === 0) {

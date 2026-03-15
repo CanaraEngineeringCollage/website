@@ -6,7 +6,7 @@ import Sidebar from "../SIdeBar/SIdeBar";
 import Footer from "../Footer/Footer";
 import CampusNavbar from "@/components/campusComponent/CampusNavbar/page";
 import { usePathname } from "next/navigation";
-import CurtainScreen from "@/components/Inaguration";
+
 
 function Layout({ children }: { children: React.ReactNode }) {
   const [sidebar, openSidebar] = useState<boolean>(false);
