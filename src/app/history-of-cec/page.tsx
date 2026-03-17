@@ -1,0 +1,48 @@
+import AboutHistoryCanara from "@/components/AboutPageComponents/HistoryOfCec/AboutHistoryOfCanara/AboutHistoryOfCanara";
+import HeroSection from "@/components/AboutPageComponents/HistoryOfCec/HeroBanner/HistoryOfCec";
+import FooterCard from "@/components/Common/FooterCard/FooterCard";
+
+export const metadata = {
+  alternates: {
+    canonical: "/history-of-cec",
+  },
+  title: "History of Canara College | A Legacy of Excellence",
+  description: "Explore the rich history of Canara College, from its foundation in 1973 to its current position as a leader in education.",
+  openGraph: {
+    title: "History of Canara College | A Legacy of Excellence",
+    description: "Discover the founding history, milestones, and achievements of Canara College, one of Mangalore’s prestigious institutions.",
+    url: "https://cec.edu.in/history-of-cec", // update this
+    siteName: "Canara College",
+    images: [
+      {
+        url: "https://cec.edu.in/og-history-cec.jpg", // update this
+        width: 1200,
+        height: 630,
+        alt: "History of Canara College",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "History of Canara College | A Legacy of Excellence",
+    description: "A legacy of excellence since 1973. Learn more about Canara College’s inspiring history.",
+    images: ["https://cec.edu.in/og-history-cec.jpg"], // update
+  },
+};
+
+export default function AboutCec() {
+  return (
+    <>
+      <HeroSection />
+      <section className="px-6 md:px-12 lg:px-16 xl:px-0">
+        <AboutHistoryCanara />
+      </section>
+
+      <section className="bg-[#E5E5EA]">
+        <FooterCard />
+      </section>
+    </>
+  );
+}

@@ -95,7 +95,7 @@ export default function DepartmentFaculty({ heading, description }: { heading: s
           </div>
           <div className="flex items-center justify-between gap-4">
             {heading != "Meet Our Admissions Team" && (
-              <Link href="/about/educators-administrators?category=placement">
+              <Link href="/educators-administrators?category=placement">
                 <button
                   aria-label="Meet the Team"
                   className="bg-[#d0e2f8] text-[#1D1D1F] text-block  px-6 py-3 rounded-full text-[14px] font-medium "
@@ -153,8 +153,8 @@ export default function DepartmentFaculty({ heading, description }: { heading: s
                 >
                   {/* ✅ Fixed Image fills card completely */}
                   <Image
-                  unoptimized
-                    src={member.hasAvatar ? `${baseUrl}/faculty/${member.id}/avatar` : (member.image || "/fallback-avatar.png")}
+                    unoptimized
+                    src={member.hasAvatar ? `${baseUrl}/faculty/${member.id}/avatar` : member.image || "/fallback-avatar.png"}
                     alt={member.name}
                     fill
                     className="object-cover" // ensures no gaps, same as first design
@@ -228,12 +228,12 @@ export default function DepartmentFaculty({ heading, description }: { heading: s
                   className="relative cursor-pointer w-full max-w-[309px] h-[400px] md:h-[420px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md"
                 >
                   {/* ✅ Fixed Image fills card completely (Mobile view) */}
-                  <Image 
-                  unoptimized
-                    src={member.hasAvatar ? `${baseUrl}/faculty/${member.id}/avatar` : (member.image || "/fallback-avatar.png")} 
-                    alt={member.name} 
-                    fill 
-                    className="object-cover" 
+                  <Image
+                    unoptimized
+                    src={member.hasAvatar ? `${baseUrl}/faculty/${member.id}/avatar` : member.image || "/fallback-avatar.png"}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
                   />
 
                   {/* Gradient overlay */}
@@ -264,7 +264,7 @@ export default function DepartmentFaculty({ heading, description }: { heading: s
               ))}
         </div>
         <div className="flex flex-col items-center gap-10">
-          <Link href="/about/educators-administrators?category=placement">
+          <Link href="/educators-administrators?category=placement">
             {" "}
             <button
               aria-label="Meet more of our Admin Team"

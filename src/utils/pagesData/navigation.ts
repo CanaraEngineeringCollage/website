@@ -1,58 +1,58 @@
 const campusLegacy = [
   {
     title: "About the CEC Campus",
-    link: "/about/about-cec",
+    link: "/about-cec",
   },
   {
     title: "History of CEC",
-    link: "/about/history-of-cec",
+    link: "/history-of-cec",
   },
   {
     title: "Glimpses of CEC",
-    link: "/about/glimpses-of-cec",
+    link: "/glimpses-of-cec",
   },
 ];
 
 const administration = [
   {
     title: "Our Founder",
-    link: "/about/our-founder",
+    link: "/our-founder",
   },
   {
     title: "Our Management",
-    link: "/about/our-management",
+    link: "/our-management",
   },
   {
     title: "Governing Council",
-    link: "/about/governing-council",
+    link: "/governing-council",
   },
   {
     title: "Key Functionaries & HODs",
-    link: "/about/key-functionaries-and-hods",
+    link: "/key-functionaries-and-hods",
   },
   {
     title: "Educators & Administrators",
-    link: "/about/educators-administrators",
+    link: "/educators-administrators",
   },
   {
     title: "Distinctive & Practices",
-    link: "/about/distinctive-practices",
+    link: "/distinctive-practices",
   },
 ];
 const accreditations = [
   {
     title: "Mandatory Disclosure",
-    link: "/about/mandatory-disclosure",
+    link: "/mandatory-disclosure",
   },
 ];
 const studentSupport = [
   {
     title: "Grievance Redressal Cell",
-    link: "/about/grievance-redressal-cell",
+    link: "/grievance-redressal-cell",
   },
   {
     title: "Student Welfare Department",
-    link: "/about/student-welfare-department",
+    link: "/student-welfare-department",
   },
 ];
 
@@ -94,11 +94,11 @@ const departments = [
 const curriculum = [
   // {
   //   title: "Academic Overview",
-  //   link: "/academics/academic-overview",
+  //   link: "/academic-overview",
   // },
   // {
   //   title: "Programs",
-  //   link: "/academics/programs",
+  //   link: "/programs",
   // },
 ];
 
@@ -136,26 +136,26 @@ const learningHub = [
   },
   {
     title: "Research at CEC",
-    link: "/academics/research",
+    link: "/research",
   },
 ];
 
 const campusFacilities = [
   {
     title: "Infrastructure",
-    link: "/explore/infrastructure",
+    link: "/infrastructure",
   },
   {
     title: "Hostel Life",
-    link: "/explore/hostel-life",
+    link: "/hostel-life",
   },
   {
     title: "Central Library",
-    link: "/explore/central-library",
+    link: "/central-library",
   },
   {
     title: "Physical Education",
-    link: "/explore/physical-education",
+    link: "/physical-education",
   },
 ];
 
@@ -188,11 +188,11 @@ const innovation = [
 const examination = [
   // {
   //   title: "Examination Timetables",
-  //   link: "/academics/examination-records?tab=tt",
+  //   link: "/examination-records?tab=tt",
   // },
   {
     title: "Circulars",
-    link: "/academics/examination-records?tab=circulars",
+    link: "/examination-records?tab=circulars",
   },
   {
     title: "Marks & Attendance",

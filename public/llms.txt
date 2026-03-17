@@ -24,36 +24,36 @@ Canara Engineering College, located near Mangaluru, Karnataka, offers quality te
 # Important Pages
 - [Engineering College Insights](https://cec.edu.in/): Canara Engineering College offers quality education and placements.
 - [Engineering Admissions Open](https://cec.edu.in/admission): Secure your engineering admission with comprehensive guidance and support.
-- [Engineering Programs Overview](https://cec.edu.in/academics/programs): Explore diverse engineering programs at Canara Engineering College.
+- [Engineering Programs Overview](https://cec.edu.in/programs): Explore diverse engineering programs at Canara Engineering College.
 - [Training and Placement](https://cec.edu.in/training-placements): Comprehensive training and placement support for engineering students.
 - [Computer Science Department Overview](https://cec.edu.in/department-overview): Comprehensive overview of Computer Science & Engineering department.
 - [Campus Updates and Events](https://cec.edu.in/campus-buzz): Latest news and events from our campus community.
 - [Faculty Recruitment 2026–27](https://cec.edu.in/careers): Faculty recruitment for engineering positions at Canara College.
 - [Student Achievements](https://cec.edu.in/student-achievements): Celebrating student achievements in sports and academics.
 - [Alumni Connection Page](https://cec.edu.in/alumni): Engage alumni to inspire and support future college students.
-- [Engineering Programs Overview](https://cec.edu.in/academics/academic-overview): Explore diverse engineering programs at Canara Engineering College.
+- [Engineering Programs Overview](https://cec.edu.in/academic-overview): Explore diverse engineering programs at Canara Engineering College.
 - [Canara Innovation Foundation](https://cec.edu.in/cif): Nurturing student entrepreneurship and innovation at Canara Engineering College.
 - [Entrepreneurship Development Cell](https://cec.edu.in/entrepreneurship-cell): Supporting future entrepreneurs through workshops and networking opportunities.
-- [Campus Infrastructure Overview](https://cec.edu.in/explore/infrastructure): Explore a range of campus facilities designed for success.
-- [Hostel Life at CEC](https://cec.edu.in/explore/hostel-life): Explore hostel life with amenities, safety, and community at CEC.
+- [Campus Infrastructure Overview](https://cec.edu.in/infrastructure): Explore a range of campus facilities designed for success.
+- [Hostel Life at CEC](https://cec.edu.in/hostel-life): Explore hostel life with amenities, safety, and community at CEC.
 - [Dynamic Student Engagement](https://cec.edu.in/studentlife-engagement): Explore diverse student life, clubs, and activities at Canara.
 - [Research and Development](https://cec.edu.in/research-development-consultancy): Innovation-driven research, fostering collaboration and societal impact.
-- [Central Library Resources](https://cec.edu.in/explore/central-library): Central Library offers extensive resources for learning and research.
-- [Physical Education Overview](https://cec.edu.in/explore/physical-education): Explore comprehensive physical education programs and sports facilities.
-- [Research and Development](https://cec.edu.in/academics/research): Promoting research and innovation in technical education and collaboration.
-- [Digital Learning Hub](https://cec.edu.in/academics/learning-hub): Explore digital learning resources for enhanced education accessibility.
-- [Mandatory Disclosure Information](https://cec.edu.in/about/mandatory-disclosure): Important disclosures and policies of CEC educational institution.
-- [Distinctive Practices](https://cec.edu.in/about/distinctive-practices): Caring college community focused on sustainability and support.
-- [Educators and Administrators](https://cec.edu.in/about/educators-administrators): Explore faculty and administrative staff at CEC Institute.
-- [Governing Council Members](https://cec.edu.in/about/governing-council): Details of CEC's governing council and its members' roles.
-- [Management Structure Overview](https://cec.edu.in/about/our-management): Explore our management structure and leadership details here.
-- [Sri Ammembal Subba Rao](https://cec.edu.in/about/our-founder): Founder of Canara institutions, a reformer and philanthropist.
-- [Key Functionaries and HODs](https://cec.edu.in/about/key-functionaries-and-hods): Explore key functionaries and HODs of CEC college.
-- [Student Welfare Department](https://cec.edu.in/about/student-welfare-department): Department promoting student welfare, holistic growth, and support initiatives.
-- [Central Library Overview](https://cec.edu.in/explore/central-library/about-library): Explore CEC's Central Library with extensive resources and facilities.
+- [Central Library Resources](https://cec.edu.in/central-library): Central Library offers extensive resources for learning and research.
+- [Physical Education Overview](https://cec.edu.in/physical-education): Explore comprehensive physical education programs and sports facilities.
+- [Research and Development](https://cec.edu.in/research): Promoting research and innovation in technical education and collaboration.
+- [Digital Learning Hub](https://cec.edu.in/learning-hub): Explore digital learning resources for enhanced education accessibility.
+- [Mandatory Disclosure Information](https://cec.edu.in/mandatory-disclosure): Important disclosures and policies of CEC educational institution.
+- [Distinctive Practices](https://cec.edu.in/distinctive-practices): Caring college community focused on sustainability and support.
+- [Educators and Administrators](https://cec.edu.in/educators-administrators): Explore faculty and administrative staff at CEC Institute.
+- [Governing Council Members](https://cec.edu.in/governing-council): Details of CEC's governing council and its members' roles.
+- [Management Structure Overview](https://cec.edu.in/our-management): Explore our management structure and leadership details here.
+- [Sri Ammembal Subba Rao](https://cec.edu.in/our-founder): Founder of Canara institutions, a reformer and philanthropist.
+- [Key Functionaries and HODs](https://cec.edu.in/key-functionaries-and-hods): Explore key functionaries and HODs of CEC college.
+- [Student Welfare Department](https://cec.edu.in/student-welfare-department): Department promoting student welfare, holistic growth, and support initiatives.
+- [Central Library Overview](https://cec.edu.in/central-library/about-library): Explore CEC's Central Library with extensive resources and facilities.
 - [Canara Engineering Alumni Association](https://cec.edu.in/alumni/about-alumni): Connecting Canara Engineering College alumni for networking and support.
-- [History of CEC](https://cec.edu.in/about/history-of-cec): Explore Canara Engineering College's remarkable growth and history.
-- [SC/ST Grievance Process](https://cec.edu.in/about/mandatory-disclosure/sc-st-grievance): Information on SC/ST grievance process and submissions.
+- [History of CEC](https://cec.edu.in/history-of-cec): Explore Canara Engineering College's remarkable growth and history.
+- [SC/ST Grievance Process](https://cec.edu.in/mandatory-disclosure/sc-st-grievance): Information on SC/ST grievance process and submissions.
 - [AI and Machine Learning](https://cec.edu.in/department/artificial-intelligence-machine-learning): Explore the AI and Machine Learning department's innovative programs.
 - [AI & Machine Learning](https://cec.edu.in/department/artificial-intelligence-machine-learning/details): Explore AI and Machine Learning education and career opportunities.
 - [Computer Science Engineering](https://cec.edu.in/department/computer-science-engineering): Explore top Computer Science engineering programs and faculty support.
@@ -73,9 +73,9 @@ Canara Engineering College, located near Mangaluru, Karnataka, offers quality te
 - [Academic Calendar 2025-26](https://cec.edu.in/footer/calender%20(1).pdf): Detailed academic calendar for 2025-26 academic year.
  
 # Resources
-- [About Canara Engineering College](https://cec.edu.in/about/about-cec): Leading engineering college in Mangalore, fostering innovation and excellence.
+- [About Canara Engineering College](https://cec.edu.in/about-cec): Leading engineering college in Mangalore, fostering innovation and excellence.
 - [Privacy Policy Overview](https://cec.edu.in/privacy-policy): Learn about data collection and privacy practices at CEC.
-- [Grievance Redressal Cell](https://cec.edu.in/about/grievance-redressal-cell): Cell resolves student grievances ensuring a fair educational environment.
+- [Grievance Redressal Cell](https://cec.edu.in/grievance-redressal-cell): Cell resolves student grievances ensuring a fair educational environment.
  
  
 # Contact

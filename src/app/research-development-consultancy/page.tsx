@@ -11,7 +11,7 @@ export const metadata = {
   openGraph: {
     title: "Research & Development and Consultancy Cell | Canara College",
     description: "Discover research projects, publications, and consultancy initiatives led by faculty and students at Canara College.",
-    url: "https://cec.edu.in/academics/research-development-consultancy", // update this
+    url: "https://cec.edu.in/research-development-consultancy", // update this
     siteName: "Canara College",
     images: [
       {

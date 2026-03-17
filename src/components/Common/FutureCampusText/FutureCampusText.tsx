@@ -13,7 +13,7 @@ const FutureCampusText = () => {
         branches, it has since expanded to seven branches with a total intake of 664 students, shaping future-ready engineers through quality
         education & strong industry connections.
       </p>
-      <Link href="/about/about-cec">
+      <Link href="/about-cec">
         <button aria-label="Read More" className="pt-8 inline-flex items-center cursor-pointer text-primary">
           Read More <MdKeyboardArrowRight className="text-xl text-primary" />
         </button>

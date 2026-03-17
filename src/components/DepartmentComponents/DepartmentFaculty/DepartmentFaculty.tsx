@@ -142,7 +142,7 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
           <div className="flex items-center justify-between gap-4">
             <Link
               href={{
-                pathname: "/about/educators-administrators",
+                pathname: "/educators-administrators",
                 query: { department: departmentName },
               }}
             >
@@ -200,12 +200,12 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
                   className="relative cursor-pointer w-full max-w-[309px] aspect-[2/3] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md"
                 >
                   {/* ✅ Fixed Image Source */}
-                  <Image 
-                  unoptimized
-                    src={member.hasAvatar ? `${baseUrl}/faculty/${member.id}/avatar` : (member.image || "/fallback-avatar.png")} 
-                    alt={member.name} 
-                    fill 
-                    className="object-cover" 
+                  <Image
+                    unoptimized
+                    src={member.hasAvatar ? `${baseUrl}/faculty/${member.id}/avatar` : member.image || "/fallback-avatar.png"}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
                   />
 
                   {/* Responsive gradient */}
@@ -272,8 +272,8 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
                 >
                   {/* ✅ Fixed Image Source */}
                   <Image
-                  unoptimized
-                    src={member.hasAvatar ? `${baseUrl}/faculty/${member.id}/avatar` : (member.image || "/fallback-avatar.png")}
+                    unoptimized
+                    src={member.hasAvatar ? `${baseUrl}/faculty/${member.id}/avatar` : member.image || "/fallback-avatar.png"}
                     alt={member.name}
                     fill
                     className="object-cover"
@@ -300,7 +300,7 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
         <div className="flex flex-col items-center gap-7">
           <Link
             href={{
-              pathname: "/about/educators-administrators",
+              pathname: "/educators-administrators",
               query: { department: departmentName },
             }}
           >

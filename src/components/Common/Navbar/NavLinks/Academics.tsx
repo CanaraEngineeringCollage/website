@@ -60,17 +60,17 @@ export default function Academics() {
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Curriculums</span>
                 <ul className="list-none text-gray-500 leading-10 cursor-pointer">
-                  <Link href="/academics/academic-overview">
+                  <Link href="/academic-overview">
                     <li
                       className={`${
-                        pathname.includes("/academics/academic-overview") ? `text-primary font-bold` : "text-gray-500"
+                        pathname.includes("/academic-overview") ? `text-primary font-bold` : "text-gray-500"
                       } hover:text-primary `}
                     >
                       Academic Overview
                     </li>
                   </Link> */}
-            {/* <Link href="/academics/programs">
-                    <li className={`${pathname.includes("/academics/programs") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Programs</li>
+            {/* <Link href="/programs">
+                    <li className={`${pathname.includes("/programs") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Programs</li>
                   </Link> */}
             {/* </ul>
               </div>
@@ -114,17 +114,14 @@ export default function Academics() {
                     <Link
                       href="https://digital.canaraengineering.in/"
                       target="_blank"
-                      className={`${pathname.includes("/academics/learning-hub") ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
+                      className={`${pathname.includes("/learning-hub") ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
                     >
                       Resources
                     </Link>
                   </li>
 
                   <li>
-                    <Link
-                      href="/academics/research"
-                      className={`${pathname === "/academics/research" ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
-                    >
+                    <Link href="/research" className={`${pathname === "/research" ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}>
                       Research at CEC
                     </Link>
                   </li>
@@ -151,7 +148,7 @@ export default function Academics() {
 
                   <li>
                     <Link
-                      href="/academics/examination-records?tab=circulars"
+                      href="/examination-records?tab=circulars"
                       className={`${tab === "circulars" ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
                     >
                       Circulars
@@ -183,7 +180,7 @@ export default function Academics() {
                   {/* Uncomment if you add Timetables later */}
                   {/* <li>
         <Link
-          href="/academics/examination-records?tab=tt"
+          href="/examination-records?tab=tt"
           className={`${
             tab === "tt" ? "text-primary font-bold" : "text-gray-500"
           } hover:text-primary`}
