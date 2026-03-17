@@ -6,6 +6,7 @@ import NextStepSection from "@/components/AboutPageComponents/AboutCecPage/NextS
 import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
 import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
 
+
 export const metadata = {
   alternates: {
     canonical: "/about-cec",
