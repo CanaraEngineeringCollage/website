@@ -65,7 +65,7 @@ const FacultyMembersSection: React.FC = () => {
   const departmentFromQuery = searchParams.get("department");
   const categoryFromQuery = searchParams.get("category");
 
-  const [selectedDepartment, setSelectedDepartment] = useState(departmentFromQuery || "Computer Science & Engineering");
+  const [selectedDepartment, setSelectedDepartment] = useState(departmentFromQuery || "Artificial Intelligence & Machine Learning");
   const [selectedCategory, setSelectedCategory] = useState(categoryFromQuery || "faculty");
 
   const [facultyData, setFacultyData] = useState<CouncilMember[]>([]);

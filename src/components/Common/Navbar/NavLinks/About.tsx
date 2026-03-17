@@ -24,28 +24,40 @@ export default function About() {
   return (
     <Menu open={isMenuOpen} handler={setIsMenuOpen} offset={{ mainAxis: 20 }} placement="bottom" allowHover={true}>
       <MenuHandler>
-        <Typography as="div" className="text-base xl:text-base">
-          <ListItem
-            placeholder={"Life At Canara"} // ✅ Added placeholder for better UX
-            role="button" // ✅ Added role for accessibility: required for aria-* to be valid
-            aria-expanded={isMenuOpen} // ✅ Added to indicate the toggle state
-            aria-controls="about-menu" // ✅ Optional: add an ID to the target menu section if applicable
-            aria-haspopup="true" // ✅ Indicates that it opens a submenu
-            tabIndex={0} // ✅ Ensures the element is keyboard focusable
-            className={`flex items-center text-base cursor-pointer xl:text-base whitespace-nowrap gap-2 py-1.5 ${
-              isMenuOpen ? "opacity-100" : "opacity-80"
-            }  transition-colors ease-in-out duration-300 hover:text-we bg-transparent font-semibold hover:bg-transparent ${
-              pathname.includes("about") && pathname !== "/central-library/about-library"
-                ? `border-[#005580] border-b-2 text-[#005580]`
-                : " text-[#2884CA] hover:text-[#005580]"
-            } shadow-none rounded-none outline-none focus:ring-0`}
-            selected={isMenuOpen || isMobileMenuOpen}
-            onClick={() => setIsMobileMenuOpen((cur) => !cur)}
-          >
-            About
-            <FaChevronUp strokeWidth={2.5} className={`hidden h-3 w-3 transition-transform lg:block ${isMenuOpen ? "" : "rotate-180"}`} />
-          </ListItem>
-        </Typography>
+       <Typography as="div" className="text-base xl:text-base">
+  <ListItem
+    placeholder={"Life At Canara"} 
+    role="button" 
+    aria-expanded={isMenuOpen} 
+    aria-controls="about-menu" 
+    aria-haspopup="true" 
+    tabIndex={0} 
+    className={`flex items-center text-base cursor-pointer xl:text-base whitespace-nowrap gap-2 py-1.5 ${
+      isMenuOpen ? "opacity-100" : "opacity-80"
+    }  transition-colors ease-in-out duration-300 hover:text-we bg-transparent font-semibold hover:bg-transparent ${
+      [
+        "/about-cec",
+        "/history-of-cec",
+        "/our-founder",
+        "/our-management",
+        "/governing-council",
+        "/key-functionaries-and-hods",
+        "/educators-administrators",
+        "/distinctive-practices",
+        "/mandatory-disclosure",
+        "/grievance-redressal-cell",
+        "/student-welfare-department"
+      ].includes(pathname)
+        ? `border-[#005580] border-b-2 text-[#005580]`
+        : " text-[#2884CA] hover:text-[#005580]"
+    } shadow-none rounded-none outline-none focus:ring-0`}
+    selected={isMenuOpen || isMobileMenuOpen}
+    onClick={() => setIsMobileMenuOpen((cur) => !cur)}
+  >
+    About
+    <FaChevronUp strokeWidth={2.5} className={`hidden h-3 w-3 transition-transform lg:block ${isMenuOpen ? "" : "rotate-180"}`} />
+  </ListItem>
+</Typography>
       </MenuHandler>
 
       <MenuList className="w-full bg-transparent text-[#1D1D1F] p-0  z-100 border-none !border-0 shadow-none flex justify-center pb-4 outline-none focus:ring-0">
