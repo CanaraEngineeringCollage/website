@@ -8,11 +8,11 @@ import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 
 // Data arrays remain unchanged from your first snippet
 const quickLinks = [
-  { data: "NIRF Disclosure", links: "/about/mandatory-disclosure" },
+  { data: "NIRF Disclosure", links: "/mandatory-disclosure" },
   { data: "Institutional Committees", links: "/footer/Institutional Committees and Amendments - 2025-26 - Canara Engineering college CEC.pdf" },
   { data: "AICTE Scholarships", links: "https://apiserver.cec.edu.in/files/scolarship2020" },
   { data: "Press Releases", links: "/footer/News Paper Clipping.pdf" },
-  { data: "Grievance Redressal Committee", links: "/about/grievance-redressal-cell" },
+  { data: "Grievance Redressal Committee", links: "/grievance-redressal-cell" },
   { data: "VTU Website", links: "https://vtu.ac.in/" },
   { data: "AICTE Website", links: "https://www.aicte.gov.in/" },
   // { data: "AICTE Feedback Portal", links: "#" },
@@ -20,23 +20,23 @@ const quickLinks = [
 ];
 
 const ourCollege = [
-  { data: "About Us", links: "/about/about-cec" },
-  { data: "Our Founder", links: "/about/our-founder" },
-  { data: "Our Management", links: "/about/our-management" },
-  { data: "Key Functionaries & HODs", links: "/about/key-functionaries-and-hods" },
-  { data: "Educators & Administrators", links: "/about/educators-administrators" },
+  { data: "About Us", links: "/about-cec" },
+  { data: "Our Founder", links: "/our-founder" },
+  { data: "Our Management", links: "/our-management" },
+  { data: "Key Functionaries & HODs", links: "/key-functionaries-and-hods" },
+  { data: "Educators & Administrators", links: "/educators-administrators" },
   // { data: "Departments", links: "#" },
   // { data: "NBA Accreditations", links: "#" },
-  { data: "Mandatory Disclosures", links: "/about/mandatory-disclosure" },
+  { data: "Mandatory Disclosures", links: "/mandatory-disclosure" },
 ];
 
 const academics = [
   { data: "Admissions", links: "/admission" },
   // { data: "Courses & Programs", links: "#" },
   // { data: "Syllabus", links: "#" },
-  { data: "Academic Calendar", links: "/about/mandatory-disclosure?tab=academic-calendar" },
-  // { data: "Examinations & Timetables", links: "/academics/examination-records" },
-  { data: "Circulars", links: "/academics/examination-records?tab=circulars" },
+  { data: "Academic Calendar", links: "/mandatory-disclosure?tab=academic-calendar" },
+  // { data: "Examinations & Timetables", links: "/examination-records" },
+  { data: "Circulars", links: "/examination-records?tab=circulars" },
   { data: "Marks & Attendance", links: "https://www.canaraengineering.in/s_attd" },
   { data: "Learning Resources", links: "https://digital.canaraengineering.in/" },
   // { data: "Scholarships", links: "https://www.canaraengineering.in/download/scholarship_2020.pdf" },
@@ -44,10 +44,10 @@ const academics = [
 
 const facilities = [
   { data: "Training & Placements", links: "/training-placements" },
-  { data: "Campus", links: "/about/about-cec" },
-  { data: "Hostels", links: "/explore/hostel-life" },
-  { data: "Central Library", links: "/explore/central-library" },
-  { data: "Sports & Cultures", links: "/explore/physical-education" },
+  { data: "Campus", links: "/about-cec" },
+  { data: "Hostels", links: "/hostel-life" },
+  { data: "Central Library", links: "/central-library" },
+  { data: "Sports & Cultures", links: "/physical-education" },
   { data: "Entrepreneurship Cell", links: "/entrepreneurship-cell" },
   { data: "Placement Portal", links: "https://www.canaraengineering.in/placement_portal/" },
 ];
@@ -101,16 +101,16 @@ const Footer: FC = () => {
           <Breadcrumbs
             items={[
               { label: "", href: "" },
-              { label: "About CEC", href: "/about/about-cec" },
-              { label: "History of CEC", href: "/about/history-of-cec" },
-              { label: "Our Founder", href: "/about/our-founder" },
-              { label: "Our Management", href: "/about/our-management" },
-              { label: "Governing Council", href: "/about/governing-council" },
-              { label: "Mandatory Disclosure", href: "/about/mandatory-disclosure" },
-              { label: "Grievance Redressal Cell", href: "/about/grievance-redressal-cell" },
-              { label: "SWO Department", href: "/about/student-welfare-department" },
-              { label: "Academic Overview", href: "/academics/academic-overview" },
-              { label: "Programs", href: "/academics/programs" },
+              { label: "About CEC", href: "/about-cec" },
+              { label: "History of CEC", href: "/history-of-cec" },
+              { label: "Our Founder", href: "/our-founder" },
+              { label: "Our Management", href: "/our-management" },
+              { label: "Governing Council", href: "/governing-council" },
+              { label: "Mandatory Disclosure", href: "/mandatory-disclosure" },
+              { label: "Grievance Redressal Cell", href: "/grievance-redressal-cell" },
+              { label: "SWO Department", href: "/student-welfare-department" },
+              { label: "Academic Overview", href: "/academic-overview" },
+              { label: "Programs", href: "/programs" },
               { label: "Computer Science and Engineering", href: "/department/computer-science-engineering/details" },
               { label: "Computer Science and Engineering", href: "/department/computer-science-engineering" },
               { label: "Artificial Intelligence and Machine Learning", href: "/department/artificial-intelligence-machine-learning/details" },
@@ -129,38 +129,38 @@ const Footer: FC = () => {
               { label: "Mechanical Engineering", href: "/department/mechanical-engineering" },
               { label: "Mechanical Engineering", href: "/department/mechanical-engineering/details" },
 
-              { label: "Distinctive Practices", href: "/about/distinctive-practices" },
-              { label: "Key Functionaries & HODs", href: "/about/key-functionaries-and-hods" },
-              { label: "Glimpses of CEC", href: "/about/glimpses-of-cec" },
-              { label: "Educators & Administrators", href: "/about/educators-administrators" },
-              { label: "Research at CEC", href: "/academics/research" },
+              { label: "Distinctive Practices", href: "/distinctive-practices" },
+              { label: "Key Functionaries & HODs", href: "/key-functionaries-and-hods" },
+              { label: "Glimpses of CEC", href: "/glimpses-of-cec" },
+              { label: "Educators & Administrators", href: "/educators-administrators" },
+              { label: "Research at CEC", href: "/research" },
               { label: "Research & Development and Consultancy Cell", href: "/research-development-consultancy" },
 
               { label: "About Alumni", href: "/alumni/about-alumni" },
-              { label: "Infrastructure", href: "/explore/infrastructure" },
+              { label: "Infrastructure", href: "/infrastructure" },
               { label: "Privacy Policy", href: "/privacy-policy" },
-              { label: "SCSTGrievance", href: "/about/mandatory-disclosure/sc-st-grievance" },
+              { label: "SCSTGrievance", href: "/mandatory-disclosure/sc-st-grievance" },
               { label: "Careers", href: "/careers" },
 
-              // { label: "Timetables", href: "/academics/examination-records" },
+              // { label: "Timetables", href: "/examination-records" },
               // { label: "Circulars", href: "/about" },
               // { label: "Marks & Attendance", href: "/our-founder" },
               { label: "Resources", href: "https://digital.canaraengineering.in/" },
-              { label: "Infrastructure", href: "/explore/infrastructuret" },
-              { label: "Hostel Life", href: "/explore/hostel-life" },
-              { label: "Central Library", href: "/explore/central-library" },
+              { label: "Infrastructure", href: "/infrastructuret" },
+              { label: "Hostel Life", href: "/hostel-life" },
+              { label: "Central Library", href: "/central-library" },
               { label: "Student Life & Engagement", href: "/studentlife-engagement" },
               { label: "Entrepreneurship Cell", href: "/entrepreneurship-cell" },
-              { label: "Physical Education", href: "/explore/physical-education" },
+              { label: "Physical Education", href: "/physical-education" },
               // { label: "Calendar of Events", href: "/events" },
               { label: "Alumni", href: "/alumni" },
               { label: "Admissions", href: "/admission" },
               { label: "Training & Placements", href: "/training-placements" },
               // { label: "Examination Timetables", href: "tt" },
               // { label: "Marks & Attendance", href: "marks" },
-              { label: "Circulars", href: "/academics/examination-records?tab=circulars", tab: "circulars" },
+              { label: "Circulars", href: "/examination-records?tab=circulars", tab: "circulars" },
               { label: "Campus Buzz", href: "/campus-buzz" },
-              { label: "About Library", href: "/explore/central-library/about-library" },
+              { label: "About Library", href: "/central-library/about-library" },
               { label: "Student Achievements", href: "/student-achievements" },
               { label: "Canara Innovation Foundation", href: "/cif" },
             ]}
@@ -290,7 +290,9 @@ const Footer: FC = () => {
 
         {/* Mobile Bottom Bar */}
         <div className="border-t border-gray-300 pt-4 pb-6 text-xs text-center">
-          <p className="mb-2">Copyright © {new Date().getFullYear()} CEC & Canara High School Association. <br /> All rights reserved.</p>
+          <p className="mb-2">
+            Copyright © {new Date().getFullYear()} CEC & Canara High School Association. <br /> All rights reserved.
+          </p>
           <Link href={"/privacy-policy"}>
             <p>Privacy Policy</p>
           </Link>

@@ -257,7 +257,7 @@ function SubMenu({
           <div
             key={index}
             onClick={() => {
-              if (link.link === "/about/glimpses-of-cec" && openGlimpsesModal) {
+              if (link.link === "/glimpses-of-cec" && openGlimpsesModal) {
                 openGlimpsesModal(true);
               } else {
                 router.push(link.link);
@@ -498,7 +498,7 @@ function MainMenu({
                   {/* <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" /> */}
                 </div>
               </div>
-               <div
+              <div
                 onClick={() => {
                   router.push("/alumni");
                   openSidebar(false);
@@ -523,12 +523,11 @@ function MainMenu({
                   {/* <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" /> */}
                 </div>
               </div>
-             
             </>
           )}
         </div>
       </div>
-       <div className="border-b-border border-b-2 py-4">
+      <div className="border-b-border border-b-2 py-4">
         <div
           onClick={() => {
             router.push("/research-development-consultancy");

@@ -6,12 +6,12 @@ import { College, Employees, Certicficate, HandShake } from "../../../../compone
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 const LeadearShiplinks = [
-  { href: "/about/our-founder", label: "Our Founder" },
-  { href: "/about/our-management", label: "Our Management" },
-  { href: "/about/governing-council", label: "Governing Council" },
-  { href: "/about/key-functionaries-and-hods", label: "Key Functionaries & HODs" },
-  { href: "/about/educators-administrators", label: "Educators & Administrators" },
-  { href: "/about/distinctive-practices", label: "Distinctive & Practices" },
+  { href: "/our-founder", label: "Our Founder" },
+  { href: "/our-management", label: "Our Management" },
+  { href: "/governing-council", label: "Governing Council" },
+  { href: "/key-functionaries-and-hods", label: "Key Functionaries & HODs" },
+  { href: "/educators-administrators", label: "Educators & Administrators" },
+  { href: "/distinctive-practices", label: "Distinctive & Practices" },
 ];
 
 export default function AboutAlumni() {
@@ -51,8 +51,8 @@ export default function AboutAlumni() {
             <div className="flex gap-4 pr-4 border-r border-gray-300">
               <div className="flex flex-col gap-2">
                 <ul className="list-none text-gray-500 leading-10">
-                  <Link href="/about/about-cec">
-                    <li className={`${pathname.includes("/about/about-cec") ? `text-primary font-bold` : " text-gray-500"} hover:text-primary`}>
+                  <Link href="/about-cec">
+                    <li className={`${pathname.includes("/about-cec") ? `text-primary font-bold` : " text-gray-500"} hover:text-primary`}>
                       About Alumni
                     </li>
                   </Link>
@@ -64,8 +64,8 @@ export default function AboutAlumni() {
             <div className="flex gap-4 pr-4 border-r border-gray-300">
               <div className="flex flex-col gap-2">
                 <ul className="list-none text-gray-500 leading-10">
-                  <Link href="/about/about-cec">
-                    <li className={`${pathname.includes("/about/about-cec") ? `text-primary font-bold` : " text-gray-500"} hover:text-primary`}>
+                  <Link href="/about-cec">
+                    <li className={`${pathname.includes("/about-cec") ? `text-primary font-bold` : " text-gray-500"} hover:text-primary`}>
                       President's Message
                     </li>
                   </Link>
@@ -77,8 +77,8 @@ export default function AboutAlumni() {
             <div className="flex gap-4 pr-4 border-r border-gray-300">
               <div className="flex flex-col gap-2">
                 <ul className="list-none text-gray-500 leading-10">
-                  <Link href="/about/about-cec">
-                    <li className={`${pathname.includes("/about/about-cec") ? `text-primary font-bold` : " text-gray-500"} hover:text-primary`}>
+                  <Link href="/about-cec">
+                    <li className={`${pathname.includes("/about-cec") ? `text-primary font-bold` : " text-gray-500"} hover:text-primary`}>
                       Secretary's Message
                     </li>
                   </Link>
@@ -90,8 +90,8 @@ export default function AboutAlumni() {
             <div className="flex gap-4 pr-4 border-r border-gray-300">
               <div className="flex flex-col gap-2">
                 <ul className="list-none text-gray-500 leading-10">
-                  <Link href="/about/about-cec">
-                    <li className={`${pathname.includes("/about/about-cec") ? `text-primary font-bold` : " text-gray-500"} hover:text-primary`}>
+                  <Link href="/about-cec">
+                    <li className={`${pathname.includes("/about-cec") ? `text-primary font-bold` : " text-gray-500"} hover:text-primary`}>
                       Advisory Committee
                     </li>
                   </Link>
@@ -101,8 +101,8 @@ export default function AboutAlumni() {
             <div className="flex gap-4 pr-4 border-r border-gray-300">
               <div className="flex flex-col gap-2">
                 <ul className="list-none text-gray-500 leading-10">
-                  <Link href="/about/about-cec">
-                    <li className={`${pathname.includes("/about/about-cec") ? `text-primary font-bold` : " text-gray-500"} hover:text-primary`}>
+                  <Link href="/about-cec">
+                    <li className={`${pathname.includes("/about-cec") ? `text-primary font-bold` : " text-gray-500"} hover:text-primary`}>
                       Office Bearers
                     </li>
                   </Link>
@@ -112,8 +112,8 @@ export default function AboutAlumni() {
             <div className="flex gap-4 ">
               <div className="flex flex-col gap-2">
                 <ul className="list-none text-gray-500 leading-10">
-                  <Link href="/about/about-cec">
-                    <li className={`${pathname.includes("/about/about-cec") ? `text-primary font-bold` : " text-gray-500"} hover:text-primary`}>
+                  <Link href="/about-cec">
+                    <li className={`${pathname.includes("/about-cec") ? `text-primary font-bold` : " text-gray-500"} hover:text-primary`}>
                       Acheivements
                     </li>
                   </Link>

@@ -105,7 +105,7 @@ const AboutCentralLibrary = () => {
       <div>
         <div>
           <div className="md:mb-16 mb-8 md:mt-5">
-            <Link href={`/explore/central-library`}>
+            <Link href={`/central-library`}>
               <button className="flex items-center gap-2 text-[#555]  transition-colors">
                 <ArrowLeftIcon width={20} height={20} />
                 <span className="text-lg text-[#6B6B6B]">Go Back</span>
@@ -215,13 +215,22 @@ const AboutCentralLibrary = () => {
                     </iframe>
 
                     {/* Mobile */}
-                    <a 
-                      href={`${item.href}#toolbar=0&navpanes=0&view=FitH`} 
-                      target="_blank" 
+                    <a
+                      href={`${item.href}#toolbar=0&navpanes=0&view=FitH`}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="mt-6 flex items-center justify-center gap-2 bg-[#2884CA] text-white px-6 py-3 rounded-lg hover:bg-[#1f6a9e] transition-colors shadow-md md:hidden"
                     >
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-5 w-5"
+                        viewBox="0 0 24 24"
+                        strokeWidth="2"
+                        stroke="currentColor"
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                         <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path>
                         <path d="M11 13l9 -9"></path>
@@ -343,7 +352,7 @@ const LibraryStaff = ({ staffList, loading = false }: LibraryStaffProps) => {
           className="relative w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md  transition-transform duration-300"
         >
           <Image
-          unoptimized
+            unoptimized
             src={`${process.env.NEXT_PUBLIC_API_URL}/faculty/${item.id}/avatar`}
             alt={item.name}
             fill

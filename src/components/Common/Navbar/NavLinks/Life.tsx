@@ -6,31 +6,29 @@ import { Campus, College, Innovation, Employees, Certicficate, HandShake, Alumni
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 const LeadearShiplinks = [
-  { href: "/about/our-founder", label: "Our Founder" },
-  { href: "/about/our-management", label: "Our Management" },
-  { href: "/about/governing-council", label: "Governing Council" },
-  { href: "/about/key-functionaries-and-hods", label: "Key Functionaries & HODs" },
-  { href: "/about/educators-administrators", label: "Educators & Administrators" },
-  { href: "/about/distinctive-practices", label: "Distinctive & Practices" },
+  { href: "/our-founder", label: "Our Founder" },
+  { href: "/our-management", label: "Our Management" },
+  { href: "/governing-council", label: "Governing Council" },
+  { href: "/key-functionaries-and-hods", label: "Key Functionaries & HODs" },
+  { href: "/educators-administrators", label: "Educators & Administrators" },
+  { href: "/distinctive-practices", label: "Distinctive & Practices" },
 ];
 export default function Life() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
-const renderBorder =
+  const renderBorder =
     pathname.includes("/campus-facilities") ||
     pathname.includes("/entrepreneurship-cell") ||
-    pathname.includes("/explore/physical-education") ||
-    pathname.includes("/explore/hostel-life") ||
-    pathname.includes("/explore/central-library") ||
+    pathname.includes("/physical-education") ||
+    pathname.includes("/hostel-life") ||
+    pathname.includes("/central-library") ||
     pathname.includes("/cif") ||
     (pathname.includes("/alumni") && pathname !== "/alumni/about-alumni") ||
     pathname.includes("/student-achievements") ||
     pathname.includes("/studentlife-engagement") ||
     pathname.includes("/campus-buzz") ||
-    pathname.includes("/explore/infrastructure");
-    
-
+    pathname.includes("/infrastructure");
 
   return (
     <Menu open={isMenuOpen} handler={setIsMenuOpen} offset={{ mainAxis: 20 }} placement="bottom" allowHover={true}>
@@ -72,24 +70,24 @@ const renderBorder =
                 <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
                   <li>
                     <Link
-                      href="/explore/infrastructure"
-                      className={`${pathname.includes("/explore/infrastructure") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
+                      href="/infrastructure"
+                      className={`${pathname.includes("/infrastructure") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
                     >
                       Infrastructure
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/explore/hostel-life"
-                      className={`${pathname.includes("/explore/hostel-life") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
+                      href="/hostel-life"
+                      className={`${pathname.includes("/hostel-life") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
                     >
                       Hostel Life
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/explore/central-library"
-                      className={`${pathname.includes("/explore/central-library") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
+                      href="/central-library"
+                      className={`${pathname.includes("/central-library") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
                     >
                       Central Library
                     </Link>
@@ -97,8 +95,8 @@ const renderBorder =
                   <li>
                     {" "}
                     <Link
-                      href="/explore/physical-education"
-                      className={`${pathname.includes("/explore/physical-education") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
+                      href="/physical-education"
+                      className={`${pathname.includes("/physical-education") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
                     >
                       Physical Education
                     </Link>
@@ -123,12 +121,9 @@ const renderBorder =
                       Entrepreneurship Cell
                     </Link>
                   </li>
-                   <li>
-                    <Link
-                      href="/cif"
-                      className={`${pathname.includes("/cif") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}
-                    >
-                     Canara Innovation Foundation
+                  <li>
+                    <Link href="/cif" className={`${pathname.includes("/cif") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>
+                      Canara Innovation Foundation
                     </Link>
                   </li>
                 </ul>

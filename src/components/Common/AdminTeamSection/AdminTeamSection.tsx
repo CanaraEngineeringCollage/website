@@ -56,7 +56,7 @@ export default function AdminTeamSection() {
             </p>
           </div>
           <div className="flex items-center gap-4">
-            <Link href="/about/educators-administrators">
+            <Link href="/educators-administrators">
               {" "}
               <button
                 aria-label="Meet more of our Admin Team"
@@ -97,7 +97,7 @@ export default function AdminTeamSection() {
               className={`relative cursor-pointer w-full max-w-[309px] h-[440px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md`}
             >
               <Image
-              unoptimized
+                unoptimized
                 onClick={() => router.push(`/user-details/${member.id}`)}
                 src={member.image}
                 alt={member.name}
@@ -152,7 +152,7 @@ export default function AdminTeamSection() {
               className={`relative cursor-pointer w-full max-w-[309px] h-[480px] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center py-6 shadow-md`}
             >
               <Image
-              unoptimized
+                unoptimized
                 onClick={() => {}}
                 src={member.image}
                 alt={member.name}

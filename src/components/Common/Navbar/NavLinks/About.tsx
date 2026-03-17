@@ -7,12 +7,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import GlimpsesModal from "../../GlimpsesModal/GlimpsesModal"; // Import the modal
 const LeadearShiplinks = [
-  { href: "/about/our-founder", label: "Our Founder" },
-  { href: "/about/our-management", label: "Our Management" },
-  { href: "/about/governing-council", label: "Governing Council" },
-  { href: "/about/key-functionaries-and-hods", label: "Key Functionaries & HODs" },
-  { href: "/about/educators-administrators", label: "Educators & Administrators" },
-  { href: "/about/distinctive-practices", label: "Distinctive & Practices" },
+  { href: "/our-founder", label: "Our Founder" },
+  { href: "/our-management", label: "Our Management" },
+  { href: "/governing-council", label: "Governing Council" },
+  { href: "/key-functionaries-and-hods", label: "Key Functionaries & HODs" },
+  { href: "/educators-administrators", label: "Educators & Administrators" },
+  { href: "/distinctive-practices", label: "Distinctive & Practices" },
 ];
 
 export default function About() {
@@ -35,7 +35,7 @@ export default function About() {
             className={`flex items-center text-base cursor-pointer xl:text-base whitespace-nowrap gap-2 py-1.5 ${
               isMenuOpen ? "opacity-100" : "opacity-80"
             }  transition-colors ease-in-out duration-300 hover:text-we bg-transparent font-semibold hover:bg-transparent ${
-              pathname.includes("about") && pathname !== "/explore/central-library/about-library"
+              pathname.includes("about") && pathname !== "/central-library/about-library"
                 ? `border-[#005580] border-b-2 text-[#005580]`
                 : " text-[#2884CA] hover:text-[#005580]"
             } shadow-none rounded-none outline-none focus:ring-0`}
@@ -62,16 +62,16 @@ export default function About() {
                 <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
                   <li>
                     <Link
-                      href="/about/about-cec"
-                      className={`${pathname.includes("/about/about-cec") ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
+                      href="/about-cec"
+                      className={`${pathname.includes("/about-cec") ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
                     >
                       About the CEC Campus
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/about/history-of-cec"
-                      className={`${pathname.includes("/about/history-of-cec") ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
+                      href="/history-of-cec"
+                      className={`${pathname.includes("/history-of-cec") ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
                     >
                       History of CEC
                     </Link>
@@ -121,10 +121,8 @@ export default function About() {
                 <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
                   <li>
                     <Link
-                      href="/about/mandatory-disclosure"
-                      className={`${
-                        pathname.includes("/about/mandatory-disclosure") ? "text-primary font-bold" : "text-gray-500"
-                      } hover:text-primary`}
+                      href="/mandatory-disclosure"
+                      className={`${pathname.includes("/mandatory-disclosure") ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
                     >
                       Mandatory Disclosure
                     </Link>
@@ -143,19 +141,17 @@ export default function About() {
                 <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
                   <li>
                     <Link
-                      href="/about/grievance-redressal-cell"
-                      className={`${
-                        pathname.includes("/about/grievance-redressal-cell") ? "text-primary font-bold" : "text-gray-500"
-                      } hover:text-primary`}
+                      href="/grievance-redressal-cell"
+                      className={`${pathname.includes("/grievance-redressal-cell") ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
                     >
                       Grievance Redressal Cell
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/about/student-welfare-department"
+                      href="/student-welfare-department"
                       className={`${
-                        pathname.includes("/about/student-welfare-department") ? "text-primary font-bold" : "text-gray-500"
+                        pathname.includes("/student-welfare-department") ? "text-primary font-bold" : "text-gray-500"
                       } hover:text-primary`}
                     >
                       Student Welfare Department
