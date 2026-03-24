@@ -174,7 +174,7 @@ const FacultyMembersSection: React.FC = () => {
                 onChange={(e) => {
                   const newCategory = reverseCategoryMapping[e.target.value];
                   setSelectedCategory(newCategory);
-                  if (newCategory === "faculty") setSelectedDepartment("Computer Science & Engineering");
+                  if (newCategory === "faculty") setSelectedDepartment("Artificial Intelligence & Machine Learning");
                 }}
                 options={categoryOptions}
               />
@@ -202,7 +202,7 @@ const FacultyMembersSection: React.FC = () => {
                     className={`text-[20px] cursor-pointer ${selectedCategory === cat ? "font-bold text-[#2884CA]" : "text-textGray"}`}
                     onClick={() => {
                       setSelectedCategory(cat);
-                      if (cat === "faculty") setSelectedDepartment("Computer Science & Engineering");
+                      if (cat === "faculty") setSelectedDepartment("Artificial Intelligence & Machine Learning");
                     }}
                   >
                     {categoryMapping[cat]}
