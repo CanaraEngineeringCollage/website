@@ -60,9 +60,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ youtubeUrl, videoUrl, title, 
   return (
     <div className="overflow-hidden max-w-5xl mx-auto xl:max-w-[65%] rounded-4xl px-6 md:px-0 py-">
       <div className="mx-auto text-center text-white mb-10">
-        {title && (
-          <h2 className={cn(titleClassname, "text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold mb-5")}>{title}</h2>
-        )}
+        {title && <h2 className={cn(titleClassname, "text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold mb-5")}>{title}</h2>}
         {subTitle && <p className="font-medium md:text-2xl text-base text-white/60 max-w-4xl mx-auto">{subTitle}</p>}
       </div>
 
@@ -78,15 +76,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ youtubeUrl, videoUrl, title, 
               className="absolute inset-0 cursor-pointer z-10"
               onClick={() => setIsPlaying(true)}
             >
-              <Image
-                src={thumbnailUrl}
-                alt="Video thumbnail"
-                fill
-                unoptimized
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 700px"
-                priority
-              />
+              <Image src={thumbnailUrl} alt="Video thumbnail" fill className="object-cover" sizes="(max-width: 768px) 100vw, 700px" priority />
               {/* Play button */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-[50px] h-[50px] lg:w-[90px] lg:h-[90px] bg-black/40 rounded-full flex items-center justify-center">

@@ -6,7 +6,7 @@ import FacultyModal, { CouncilMember } from "../../../DepartmentComponents/Facul
 
 interface CardMember extends CouncilMember {
   id: string | number; // Required to target the specific faculty member's image
-  hasAvatar?: boolean;  // ✅ FIX 1: Changed from hasImage to match backend
+  hasAvatar?: boolean; // ✅ FIX 1: Changed from hasImage to match backend
   roles?: { title: string; organization: string }[];
 }
 
@@ -16,7 +16,7 @@ const ProfileCard = ({ title }: { title: string }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedMember, setSelectedMember] = useState<CardMember | null>(null);
-  
+
   // Use a stable timestamp for cache-busting to prevent image flickering on state changes
   const [fetchTime, setFetchTime] = useState(Date.now());
 
@@ -26,10 +26,7 @@ const ProfileCard = ({ title }: { title: string }) => {
     const fetchData = async () => {
       try {
         // Fetch both endpoints concurrently
-        const [keyRes, hodRes] = await Promise.all([
-          fetch(`${baseUrl}/faculty?keyFunctionary=true`), 
-          fetch(`${baseUrl}/faculty?hod=true`)
-        ]);
+        const [keyRes, hodRes] = await Promise.all([fetch(`${baseUrl}/faculty?keyFunctionary=true`), fetch(`${baseUrl}/faculty?hod=true`)]);
 
         const keyJson = await keyRes.json();
         const hodJson = await hodRes.json();
@@ -99,13 +96,12 @@ const ProfileCard = ({ title }: { title: string }) => {
                   shouldCenterLast ? "md:col-start-2 xl:col-start-auto" : ""
                 }`}
               >
-                <Image 
+                <Image
                   // ✅ FIX 2: Changed `item.hasImage` to `item.hasAvatar` and `/image` to `/avatar`
-                  src={item.hasAvatar ? `${baseUrl}/faculty/${item.id}/avatar?t=${fetchTime}` : "/fallback-avatar.png"} 
-                  alt={item.name} 
+                  src={item.hasAvatar ? `${baseUrl}/faculty/${item.id}/avatar?t=${fetchTime}` : "/fallback-avatar.png"}
+                  alt={item.name}
                   fill
-                  unoptimized 
-                  className="object-cover" 
+                  className="object-cover"
                 />
                 <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
                 <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full">
@@ -146,13 +142,12 @@ const ProfileCard = ({ title }: { title: string }) => {
                   shouldCenterLast ? "md:col-start-2 xl:col-start-auto" : ""
                 }`}
               >
-                <Image 
+                <Image
                   // ✅ FIX 2: Changed `item.hasImage` to `item.hasAvatar` and `/image` to `/avatar`
-                  src={item.hasAvatar ? `${baseUrl}/faculty/${item.id}/avatar?t=${fetchTime}` : "/fallback-avatar.png"} 
-                  alt={item.name} 
-                  fill 
-                  unoptimized
-                  className="object-cover" 
+                  src={item.hasAvatar ? `${baseUrl}/faculty/${item.id}/avatar?t=${fetchTime}` : "/fallback-avatar.png"}
+                  alt={item.name}
+                  fill
+                  className="object-cover"
                 />
                 <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
                 <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full">

@@ -15,10 +15,10 @@ interface ManagementItem {
 
 interface CanaraInstituteItem {
   "Sl.No": string;
-  "Name": string;
+  Name: string;
   "Year of Est.": string;
   "Programs of Study": string;
-  "Address": string;
+  Address: string;
 }
 
 interface ManagementData {
@@ -36,30 +36,25 @@ const HeroSection = () => {
       <div className="px-4 sm:px-10 md:px-16 lg:px-24  py-12 sm:py-16 md:py-20">
         <h1 className=" text-[#1D1D1F] text-3xl md:text-[46px]  lg:text-[54px] font-bold mb-8 sm:mb-10 md:mb-16">Our Management</h1>
         <div className="grid grid-cols-1 md:grid-cols-12 ">
-       {/* Mobile: Select dropdown */}
-<div className="block sm:hidden mb-6">
-  <CustomSelect
-    value={selectedHeading}
-    onChange={(e) => setSelectedHeading(e.target.value)}
-    options={headings}
-  />
-</div>
+          {/* Mobile: Select dropdown */}
+          <div className="block sm:hidden mb-6">
+            <CustomSelect value={selectedHeading} onChange={(e) => setSelectedHeading(e.target.value)} options={headings} />
+          </div>
 
-
-{/* Desktop: Heading list */}
-<div className="hidden sm:block md:col-span-3 text-[20px]">
-  {headings.map((heading, index) => (
-    <h1
-      key={index}
-      className={`border-b-2 pb-3 mb-3 border-border cursor-pointer ${
-        selectedHeading === heading ? "text-[#2884CA] font-bold" : "text-textGray"
-      }`}
-      onClick={() => setSelectedHeading(heading)}
-    >
-      {heading}
-    </h1>
-  ))}
-</div>
+          {/* Desktop: Heading list */}
+          <div className="hidden sm:block md:col-span-3 text-[20px]">
+            {headings.map((heading, index) => (
+              <h1
+                key={index}
+                className={`border-b-2 pb-3 mb-3 border-border cursor-pointer ${
+                  selectedHeading === heading ? "text-[#2884CA] font-bold" : "text-textGray"
+                }`}
+                onClick={() => setSelectedHeading(heading)}
+              >
+                {heading}
+              </h1>
+            ))}
+          </div>
 
           <div className="md:col-span-1"></div>
           <div className="md:col-span-8 mt-5 md:mt-0">
@@ -68,7 +63,6 @@ const HeroSection = () => {
             {selectedHeading === "Organisational Structure" ? (
               <div>
                 <Image
-                unoptimized
                   alt="orginazation"
                   src="https://apiserver.cec.edu.in/files/managementSection"
                   width={1000}
@@ -79,30 +73,30 @@ const HeroSection = () => {
             ) : selectedHeading === "Canara Institutes" ? (
               <div className="overflow-x-auto">
                 <div className="rounded overflow-x-auto border border-gray-200 w-full">
-                <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px] ">
-                  <thead>
-                    <tr className="bg-[#F3F8FC] text-[#2884CA]">
-                      <th className="py-3 md:px-4 px-1 border-b">Sl.No</th>
-                      <th className="py-3 md:px-4 px-1 border-b">Institution Name</th>
-                      <th className="py-3 md:px-4 px-1 border-b min-w-[120px]">Year of Est.</th>
-                      <th className="py-3 md:px-4 px-1 border-b">Programs of Study</th>
-                      <th className="py-3 md:px-4 px-1 border-b">Address</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {(data["Canara Institutes"] as CanaraInstituteItem[])?.map((item, index) => (
-                      <tr key={index} className="text-textGray h-16">
-                        <td className="py-3 md:px-4 px-1 border-b">{index + 1}</td>
-                        <td className="py-3 md:px-4 px-1 border-b">{item["Name"]}</td>
-                        <td className="py-3 md:px-4 px-1 border-b min-w-[120px]">{item["Year of Est."]}</td>
-                        <td className="py-3 md:px-4 px-1 border-b">{item["Programs of Study"]}</td>
-                        <td className="py-3 md:px-4 px-1 border-b">{item["Address"]}</td>
+                  <table className="w-full text-left border border-gray-200 text-[13px] md:text-[15px] ">
+                    <thead>
+                      <tr className="bg-[#F3F8FC] text-[#2884CA]">
+                        <th className="py-3 md:px-4 px-1 border-b">Sl.No</th>
+                        <th className="py-3 md:px-4 px-1 border-b">Institution Name</th>
+                        <th className="py-3 md:px-4 px-1 border-b min-w-[120px]">Year of Est.</th>
+                        <th className="py-3 md:px-4 px-1 border-b">Programs of Study</th>
+                        <th className="py-3 md:px-4 px-1 border-b">Address</th>
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+                    </thead>
+                    <tbody>
+                      {(data["Canara Institutes"] as CanaraInstituteItem[])?.map((item, index) => (
+                        <tr key={index} className="text-textGray h-16">
+                          <td className="py-3 md:px-4 px-1 border-b">{index + 1}</td>
+                          <td className="py-3 md:px-4 px-1 border-b">{item["Name"]}</td>
+                          <td className="py-3 md:px-4 px-1 border-b min-w-[120px]">{item["Year of Est."]}</td>
+                          <td className="py-3 md:px-4 px-1 border-b">{item["Programs of Study"]}</td>
+                          <td className="py-3 md:px-4 px-1 border-b">{item["Address"]}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
                 </div>
+              </div>
             ) : selectedHeading === "Governing Body Members" ? (
               <>
                 <div className="block sm:hidden   ">
@@ -111,24 +105,25 @@ const HeroSection = () => {
                       key={index}
                       className={`flex justify-between gap-2 pb-3 mb-3  ${index < (data[selectedHeading] as ManagementItem[]).length - 1 ? "border-b-2 border-border " : ""}`}
                     >
-       
                       <h1 className="text-[16px] text-textGray ">{item.name}</h1>
                     </div>
                   ))}
                 </div>
                 {/* Desktop layout: original two-column layout */}
                 <div className="hidden sm:grid sm:grid-cols-12">
-                
                   <div className="text-[17px] col-span-12  text-textGray ">
                     {(data[selectedHeading] as ManagementItem[]).map((item, index) => (
-                      <h1 key={index} className={`pb-3 mb-3 ${index < (data[selectedHeading] as ManagementItem[]).length - 1 ? "border-b-2 border-border" : ""}`}>
+                      <h1
+                        key={index}
+                        className={`pb-3 mb-3 ${index < (data[selectedHeading] as ManagementItem[]).length - 1 ? "border-b-2 border-border" : ""}`}
+                      >
                         {item.name}
                       </h1>
                     ))}
                   </div>
                 </div>
               </>
-            ): (
+            ) : (
               <>
                 <div className="block sm:hidden   ">
                   {(data[selectedHeading] as ManagementItem[]).map((item, index) => (
@@ -145,14 +140,20 @@ const HeroSection = () => {
                 <div className="hidden sm:grid sm:grid-cols-12">
                   <div className="text-[17px] col-span-4 text-textGray">
                     {(data[selectedHeading] as ManagementItem[]).map((item, index) => (
-                      <h1 key={index} className={`pb-3 mb-3 font-bold text-[17px] ${index < (data[selectedHeading] as ManagementItem[]).length - 1 ? "border-b-2  border-border" : ""}`}>
+                      <h1
+                        key={index}
+                        className={`pb-3 mb-3 font-bold text-[17px] ${index < (data[selectedHeading] as ManagementItem[]).length - 1 ? "border-b-2  border-border" : ""}`}
+                      >
                         {item.title}
                       </h1>
                     ))}
                   </div>
                   <div className="text-[17px] col-span-8  text-textGray ">
                     {(data[selectedHeading] as ManagementItem[]).map((item, index) => (
-                      <h1 key={index} className={`pb-3 mb-3 ${index < (data[selectedHeading] as ManagementItem[]).length - 1 ? "border-b-2 border-border" : ""}`}>
+                      <h1
+                        key={index}
+                        className={`pb-3 mb-3 ${index < (data[selectedHeading] as ManagementItem[]).length - 1 ? "border-b-2 border-border" : ""}`}
+                      >
                         {item.name}
                       </h1>
                     ))}

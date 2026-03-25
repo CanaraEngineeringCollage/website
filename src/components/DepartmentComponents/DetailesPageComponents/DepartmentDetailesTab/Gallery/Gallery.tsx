@@ -86,7 +86,6 @@ const Gallery = ({ data }: { data: GalleryItem[] }) => {
           >
             <div className="h-[250px] overflow-hidden">
               <Image
-              unoptimized
                 src={item.image}
                 alt={item.title || "gallery"}
                 width={600}
@@ -101,18 +100,9 @@ const Gallery = ({ data }: { data: GalleryItem[] }) => {
       {/* 🔹 Modal */}
       <AnimatePresence>
         {selectedIndex !== null && (
-          <motion.div
-            className="fixed inset-0 h-screen z-50 overflow-auto"
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-          >
+          <motion.div className="fixed inset-0 h-screen z-50 overflow-auto" initial="hidden" animate="visible" exit="exit">
             {/* Backdrop */}
-            <motion.div
-              variants={backdropVariants}
-              className="bg-black/80 backdrop-blur-lg h-full w-full fixed inset-0"
-              onClick={closeModal}
-            />
+            <motion.div variants={backdropVariants} className="bg-black/80 backdrop-blur-lg h-full w-full fixed inset-0" onClick={closeModal} />
 
             {/* Modal Card */}
             <motion.div
@@ -134,7 +124,6 @@ const Gallery = ({ data }: { data: GalleryItem[] }) => {
               {/* Image Content */}
               <motion.div variants={contentVariants}>
                 <Image
-                unoptimized
                   src={data[selectedIndex].image}
                   alt={data[selectedIndex].title || "Gallery Image"}
                   width={1200}
@@ -143,21 +132,15 @@ const Gallery = ({ data }: { data: GalleryItem[] }) => {
                   className="w-full h-auto object-cover rounded-t-3xl min-h-[300px]"
                   priority
                 />
-                
+
                 {/* Title & Description */}
                 {(data[selectedIndex].title || data[selectedIndex].description) && (
-                   <div className="p-4 lg:px-20 space-y-6 text-left text-sm text-[#1D1D1F] bg-white mt-5">
+                  <div className="p-4 lg:px-20 space-y-6 text-left text-sm text-[#1D1D1F] bg-white mt-5">
                     <div>
                       {data[selectedIndex].title && (
-                        <h3 className="text-[27px] font-semibold  leading-[1.1] lg:max-w-[100%] ">
-                          {data[selectedIndex].title}
-                        </h3>
+                        <h3 className="text-[27px] font-semibold  leading-[1.1] lg:max-w-[100%] ">{data[selectedIndex].title}</h3>
                       )}
-                      {data[selectedIndex].description && (
-                        <p className="text-xl text-gray-500 leading-relaxed">
-                          {data[selectedIndex].description}
-                        </p>
-                      )}
+                      {data[selectedIndex].description && <p className="text-xl text-gray-500 leading-relaxed">{data[selectedIndex].description}</p>}
                     </div>
                   </div>
                 )}
@@ -165,20 +148,19 @@ const Gallery = ({ data }: { data: GalleryItem[] }) => {
 
               {/* 🔹 "Next Up" Section (Exact match) */}
               <motion.div variants={contentVariants} className="p-4 lg:px-20 ">
-                <h1 className={`${(data[selectedIndex].title || data[selectedIndex].description)&&"border-t-2"}  pt-4 text-[10px] md:text-[12px] text-textGray border-t-gray-200`}>
+                <h1
+                  className={`${(data[selectedIndex].title || data[selectedIndex].description) && "border-t-2"}  pt-4 text-[10px] md:text-[12px] text-textGray border-t-gray-200`}
+                >
                   Next Up
                 </h1>
                 <h1
                   onClick={nextImage}
                   className="text-primary inline-flex items-center cursor-pointer font-bold text-[16px] md:text-[20px]  hover:opacity-80 transition-opacity"
                 >
-                  <span className="line-clamp-1">
-                    {data[(selectedIndex + 1) % data.length]?.title || "Next Image"}
-                  </span>
+                  <span className="line-clamp-1">{data[(selectedIndex + 1) % data.length]?.title || "Next Image"}</span>
                   <MdKeyboardArrowRight className="ml-1 mt-0.5 text-[20px] md:text-[25px]" />
                 </h1>
               </motion.div>
-
             </motion.div>
           </motion.div>
         )}

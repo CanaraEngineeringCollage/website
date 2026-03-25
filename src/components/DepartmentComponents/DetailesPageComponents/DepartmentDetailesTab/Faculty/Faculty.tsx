@@ -80,12 +80,11 @@ const Faculty = ({ teachingStaff, technicalStaff, loading = false }: FacultyProp
           }`}
         >
           {/* ✅ FIX 2: Used hasAvatar and the backend URL */}
-          <Image 
-          unoptimized
-            src={item.hasAvatar ? `${process.env.NEXT_PUBLIC_API_URL}/faculty/${item.id}/avatar` : (item.image || "/fallback-avatar.png")} 
-            alt={item.name} 
-            fill 
-            className="object-cover" 
+          <Image
+            src={item.hasAvatar ? `${process.env.NEXT_PUBLIC_API_URL}/faculty/${item.id}/avatar` : item.image || "/fallback-avatar.png"}
+            alt={item.name}
+            fill
+            className="object-cover"
           />
           <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
           <div className="absolute z-20 left-0 px-2 sm:px-3 md:px-4 bottom-3 sm:bottom-4 w-full">

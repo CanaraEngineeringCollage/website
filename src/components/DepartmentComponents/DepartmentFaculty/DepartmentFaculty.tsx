@@ -201,7 +201,6 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
                 >
                   {/* ✅ Fixed Image Source */}
                   <Image
-                    unoptimized
                     src={member.hasAvatar ? `${baseUrl}/faculty/${member.id}/avatar` : member.image || "/fallback-avatar.png"}
                     alt={member.name}
                     fill
@@ -272,7 +271,6 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
                 >
                   {/* ✅ Fixed Image Source */}
                   <Image
-                    unoptimized
                     src={member.hasAvatar ? `${baseUrl}/faculty/${member.id}/avatar` : member.image || "/fallback-avatar.png"}
                     alt={member.name}
                     fill

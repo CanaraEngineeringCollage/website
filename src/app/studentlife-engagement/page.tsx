@@ -69,7 +69,7 @@ const page = () => {
               Aakriti – Our <br className="md:hidden" /> Flagship Event
             </>
           }
-          thumbnail="/youtubeThumbnails/Akrathi Aftermovie - Thumbail@300x.webp"
+          thumbnail="/youtubeThumbnails/AkrathiAftermovie-Thumbail@300x.webp"
           youtubeUrl="oHWMDPeP1Ew"
         />
       </section>

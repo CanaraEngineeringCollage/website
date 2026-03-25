@@ -53,7 +53,7 @@ type EventDescriptionProps = {
   topTitle: string;
   topDescription: string;
   remainingHTML: string;
-}
+};
 
 interface CarouselContextType {
   onCardClose: (index: number) => void;
@@ -133,7 +133,6 @@ function EventContent({ description }: { description: EventDescriptionProps }) {
     <div>
       {description.src && (
         <Image
-        unoptimized
           src={description.src}
           alt={description.topTitle}
           loading="lazy"
@@ -169,7 +168,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ title, description }) => 
   const [campusEvents, setCampusEvents] = useState<CampusEvent[]>([]);
   const [categories, setCategories] = useState<string[]>([]);
   const [activeCategory, setActiveCategory] = useState<string>("");
-  
+
   // Pagination State
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
@@ -250,7 +249,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ title, description }) => 
     setPage(1);
     setHasMore(true);
     setCampusEvents([]);
-    setOpenEdition(null); 
+    setOpenEdition(null);
     setMountedEditions(new Set()); // Reset cache to prevent memory leaks
     fetchEvents(category, 1, true);
   };
@@ -298,7 +297,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ title, description }) => 
           event.weeklyDigest.forEach((edition) => {
             const edName = edition.editionName || "Other";
             if (!groups[edName]) groups[edName] = [];
-            
+
             // Push all items from this edition into the group
             if (edition.items && Array.isArray(edition.items)) {
               groups[edName].push(...edition.items);
@@ -366,8 +365,18 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ title, description }) => 
                     >
                       <h3 className="lg:text-2xl text-xl font-medium text-[#1D1D1F]">{editionName}</h3>
                       <span className={`text-2xl transform transition-transform duration-300 ${openEdition === editionName ? "rotate-180" : ""}`}>
-                        <svg className="h-5 w-5 lg:h-auto lg:w-auto" width="24" height="13" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M14.5123 14.5122C13.7769 15.2476 12.5826 15.2476 11.8472 14.5122L0.551673 3.21663C-0.183715 2.48124 -0.183715 1.28697 0.551673 0.551587C1.28706 -0.1838 2.48133 -0.1838 3.21672 0.551587L13.1827 10.5176L23.1487 0.557473C23.884 -0.177915 25.0783 -0.177915 25.8137 0.557473C26.5491 1.29286 26.5491 2.48713 25.8137 3.22252L14.5181 14.5181L14.5123 14.5122Z" fill="#1D1D1F"/>
+                        <svg
+                          className="h-5 w-5 lg:h-auto lg:w-auto"
+                          width="24"
+                          height="13"
+                          viewBox="0 0 27 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.5123 14.5122C13.7769 15.2476 12.5826 15.2476 11.8472 14.5122L0.551673 3.21663C-0.183715 2.48124 -0.183715 1.28697 0.551673 0.551587C1.28706 -0.1838 2.48133 -0.1838 3.21672 0.551587L13.1827 10.5176L23.1487 0.557473C23.884 -0.177915 25.0783 -0.177915 25.8137 0.557473C26.5491 1.29286 26.5491 2.48713 25.8137 3.22252L14.5181 14.5181L14.5123 14.5122Z"
+                            fill="#1D1D1F"
+                          />
                         </svg>
                       </span>
                     </div>
@@ -401,12 +410,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ title, description }) => 
                                 transition={{ delay: i * 0.05 }}
                                 className="flex flex-col w-40"
                               >
-                                <a
-                                  href={pdfUrl}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="block transition-transform hover:scale-105"
-                                >
+                                <a href={pdfUrl} target="_blank" rel="noopener noreferrer" className="block transition-transform hover:scale-105">
                                   <div className="w-40 h-48 overflow-hidden rounded shadow bg-gray-100 relative">
                                     <Document
                                       file={pdfUrl !== "#" ? pdfUrl : null}
@@ -422,17 +426,17 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ title, description }) => 
                                       }
                                       className="w-full h-full"
                                     >
-                                      <Page 
-                                        pageNumber={1} 
-                                        width={160} 
-                                        renderTextLayer={false} 
-                                        renderAnnotationLayer={false} 
+                                      <Page
+                                        pageNumber={1}
+                                        width={160}
+                                        renderTextLayer={false}
+                                        renderAnnotationLayer={false}
                                         className="w-full h-full [&>canvas]:!w-full [&>canvas]:!h-full [&>canvas]:!object-fit"
                                       />
                                     </Document>
                                   </div>
                                 </a>
-                                
+
                                 <span className="mt-2 text-center text-sm font-medium line-clamp-2 leading-tight">
                                   {item.name || "Untitled Document"}
                                 </span>
@@ -460,7 +464,6 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ title, description }) => 
                 >
                   <div className="flex-shrink-0 w-full md:w-[40%]">
                     <Image
-                    unoptimized
                       src={src || "/placeholder-image.jpg"}
                       alt={topTitle || event.category}
                       width={1000}
@@ -470,9 +473,7 @@ const ExploreCampus: React.FC<ExploreCampusProps> = ({ title, description }) => 
                   </div>
                   <div className="flex flex-col justify-center w-full md:w-1/2 p-6 lg:p-10">
                     {event.eventDate && (
-                      <p className="text-[17px] text-textGray uppercase font-bold mb-4">
-                        {new Date(event.eventDate).toLocaleDateString("en-GB")}
-                      </p>
+                      <p className="text-[17px] text-textGray uppercase font-bold mb-4">{new Date(event.eventDate).toLocaleDateString("en-GB")}</p>
                     )}
                     {event.eventName && <p className="text-textGray text-[17px] mb-3 capitalize">{event.eventName?.toLowerCase()}</p>}
                     {topTitle && <h2 className="text-[31px] leading-[1.1] font-bold text-[#1D1D1F] mb-2">{topTitle}</h2>}

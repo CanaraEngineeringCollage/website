@@ -55,7 +55,6 @@ function CardContent({ description }: { description: Amenity }) {
         <video src={description.imageSrc2} controls playsInline className="object-contain rounded-t-2xl w-full lg:h-[500px] h-[400px] mb-10" />
       ) : (
         <Image
-        unoptimized
           src={description.imageSrc2}
           alt="Image"
           loading="lazy"
@@ -82,12 +81,12 @@ export default function LegacyExcellance() {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [progress, setProgress] = useState<number>(0);
   const [isPlaying, setIsPlaying] = useState<boolean>(true);
-  const [events, setEvents] = useState<Amenity[]>([]); 
+  const [events, setEvents] = useState<Amenity[]>([]);
   const swiperRef = useRef<SwiperRef>(null);
   const progressRef = useRef<number>(0);
   const rafRef = useRef<number | null>(null);
   const AUTOPLAY_DELAY = 3000;
-  
+
   const baseUrl = process.env.NEXT_PUBLIC_API_URL || "https://apiserver.cec.edu.in";
 
   // Fetch data from API
@@ -99,13 +98,9 @@ export default function LegacyExcellance() {
 
         const mappedEvents: Amenity[] = json.data.map((event: any) => {
           const isVideo = !!event.videoUrl;
-          
+
           // ✅ Updated to use the direct image endpoint
-          const imageSrc = isVideo 
-            ? event.videoUrl! 
-            : event.hasImage 
-              ? `${baseUrl}/events/${event.id}/image` 
-              : "";
+          const imageSrc = isVideo ? event.videoUrl! : event.hasImage ? `${baseUrl}/events/${event.id}/image` : "";
 
           return {
             imageSrc: imageSrc,
@@ -214,7 +209,7 @@ export default function LegacyExcellance() {
               {isVideo ? (
                 <video src={item.imageSrc} muted loop autoPlay playsInline preload="metadata" className="w-full h-full object-cover rounded-3xl" />
               ) : (
-                <Image unoptimized src={item.imageSrc} alt={item.title} width={700} height={700} className="w-full h-full object-cover rounded-3xl" />
+                <Image src={item.imageSrc} alt={item.title} width={700} height={700} className="w-full h-full object-cover rounded-3xl" />
               )}
 
               <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-10">

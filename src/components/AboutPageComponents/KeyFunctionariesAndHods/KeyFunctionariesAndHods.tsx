@@ -62,10 +62,7 @@ const KeyFunctionariesAndHods = () => {
           return;
         }
 
-        const [kfRes, hodRes] = await Promise.all([
-          fetch(`${apiUrl}/faculty?keyFunctionary=true`),
-          fetch(`${apiUrl}/faculty?hod=true`),
-        ]);
+        const [kfRes, hodRes] = await Promise.all([fetch(`${apiUrl}/faculty?keyFunctionary=true`), fetch(`${apiUrl}/faculty?hod=true`)]);
 
         if (kfRes.ok) {
           const kfData = await kfRes.json();
@@ -109,9 +106,7 @@ const KeyFunctionariesAndHods = () => {
             const remainder = data.length % 3;
             const shouldCenterLast = remainder === 1 && isLastCard;
 
-            const imgSrc = item.avatar
-              ? bufferToBase64(item.avatar)
-              : item.images || item.image || "/placeholder.png";
+            const imgSrc = item.avatar ? bufferToBase64(item.avatar) : item.images || item.image || "/placeholder.png";
 
             return (
               <div
@@ -122,29 +117,20 @@ const KeyFunctionariesAndHods = () => {
                 onClick={() => handleCardClick(item)}
               >
                 {/* Image fills card completely */}
-                <Image
-                  src={imgSrc}
-                  alt={item.name}
-                  fill
-                  unoptimized
-                  className="object-cover"
-                />
+                <Image src={imgSrc} alt={item.name} fill className="object-cover" />
 
                 {/* Responsive gradient */}
                 <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10 w-full"></div>
 
                 {/* Content */}
                 <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full">
-                  <h2 className="text-base sm:text-lg md:text-xl font-bold leading-tight ">
-                    {item.name}
-                  </h2>
+                  <h2 className="text-base sm:text-lg md:text-xl font-bold leading-tight ">{item.name}</h2>
                   <p className="text-xs sm:text-sm md:text-base leading-snug break-words">
                     {item.roles && item.roles.length > 0 ? (
                       item.roles.map((role, idx) => (
                         <span key={idx}>
                           {role.title}
-                          {item.roles!.length > 1 && role.organization && ","}{" "}
-                          <span className="font-semibold">{role.organization}</span>
+                          {item.roles!.length > 1 && role.organization && ","} <span className="font-semibold">{role.organization}</span>
                           {idx < item.roles!.length - 1 && <br />}
                         </span>
                       ))
@@ -168,9 +154,9 @@ const KeyFunctionariesAndHods = () => {
     <div className="max-w-5xl xl:max-w-[65%] mx-auto px-5 pb-20">
       <div className="h-16 w-3/4 bg-gray-200 animate-pulse mx-auto mb-16 rounded"></div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-8 justify-items-center">
-         {Array.from({ length: 4 }).map((_, i) => (
-           <SkeletonCard key={i} />
-         ))}
+        {Array.from({ length: 4 }).map((_, i) => (
+          <SkeletonCard key={i} />
+        ))}
       </div>
     </div>
   );
@@ -182,11 +168,7 @@ const KeyFunctionariesAndHods = () => {
       {renderSection("Key Functionaries", keyFunctionaries)}
       {renderSection("Head of the Departments", hods)}
 
-      <FacultyModal
-        isOpen={isModalOpen}
-        onClose={closeModal}
-        facultyData={selectedMember}
-      />
+      <FacultyModal isOpen={isModalOpen} onClose={closeModal} facultyData={selectedMember} />
     </section>
   );
 };
