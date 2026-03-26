@@ -24,6 +24,7 @@ export default function Academics() {
             role="button" // ✅ Added role for accessibility: required for aria-* to be valid
             aria-expanded={isMenuOpen} // ✅ Added to indicate the toggle state
             aria-controls="about-menu" // ✅ Optional: add an ID to the target menu section if applicable
+            aria-label="Academics"
             aria-haspopup="true" // ✅ Indicates that it opens a submenu
             tabIndex={0} // ✅ Ensures the element is keyboard focusable
             className={`flex items-center text-base cursor-pointer xl:text-base whitespace-nowrap py-1.5 ${

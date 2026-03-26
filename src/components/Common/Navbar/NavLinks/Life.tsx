@@ -40,6 +40,7 @@ export default function Life() {
             aria-expanded={isMenuOpen} // ✅ Added to indicate the toggle state
             aria-controls="about-menu" // ✅ Optional: add an ID to the target menu section if applicable
             aria-haspopup="true" // ✅ Indicates that it opens a submenu
+            aria-label="Life At Canara"
             tabIndex={0} // ✅ Ensures the element is keyboard focusable
             className={`flex items-center text-base cursor-pointer xl:text-base whitespace-nowrap gap-2 py-1.5  ${
               isMenuOpen ? "opacity-100" : "opacity-80"

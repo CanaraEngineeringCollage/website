@@ -31,6 +31,7 @@ export default function About() {
     aria-expanded={isMenuOpen} 
     aria-controls="about-menu" 
     aria-haspopup="true" 
+    aria-label="About"
     tabIndex={0} 
     className={`flex items-center text-base cursor-pointer xl:text-base whitespace-nowrap gap-2 py-1.5 ${
       isMenuOpen ? "opacity-100" : "opacity-80"

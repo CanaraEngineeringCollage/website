@@ -28,6 +28,7 @@ function NavbarItems() {
           className=" opacity-80 whitespace-nowrap text-[#2884CA] text-base hover:text-[#005580] xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
         >
           <Link
+          aria-label="Admission"
             href={"/admission"}
             className={`font-poppins ${
               pathname === "/admission"
@@ -49,6 +50,7 @@ function NavbarItems() {
           className=" opacity-80 text-[#2884CA] whitespace-nowrap font-poppins text-base xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
         >
           <Link
+          aria-label="Research"
             href={"/research-development-consultancy"}
             className={`font-poppins ${
               pathname === "/research-development-consultancy"
@@ -65,6 +67,7 @@ function NavbarItems() {
           className=" opacity-80 text-[#2884CA] whitespace-nowrap font-poppins text-base xl:text-base font-semibold transition duration-300 ease-in-out h-20 flex items-center justify-center"
         >
           <Link
+          aria-label="Training & Placements"
             href={"/training-placements"}
             className={`font-poppins ${
               pathname === "/training-placements"
