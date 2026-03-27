@@ -1,15 +1,19 @@
-import FooterCard from "@/components/Common/FooterCard/FooterCard";
-import HotOfThePress from "@/components/Common/HotOfThePress/HotOfThePress";
-import EmpoweringFutures from "@/components/Common/EmpoweringFutures/EmpoweringFutures";
 import ExplorePrograms from "@/components/Common/ExplorePrograms/ExplorePrograms";
 import FutureCampusText from "@/components/Common/FutureCampusText/FutureCampusText";
 import HeroSection from "@/components/Common/HeroSecton/HeroSection";
-import { Testimonials } from "@/components/Common/Testimonials/Testimonials";
-import TopRecruiters from "@/components/Common/TopRecruiters/TopRecruiters";
-import VideoPlayer from "@/components/Common/VideoPlayer/VideoPlayer";
-import LocationSection from "@/components/HomepageComponents/LocationSection";
-import IdeasTakeFlight from "@/components/HomepageComponents/IdeasTakeFlight";
 import { Metadata } from "next";
+import dynamic from "next/dynamic";
+
+const LazyVideoPlayer = dynamic(() => import("@/components/Common/VideoPlayer/VideoPlayer"));
+const LazyEmpoweringFutures = dynamic(() => import("@/components/Common/EmpoweringFutures/EmpoweringFutures"));
+const LazyTopRecruiters = dynamic(() => import("@/components/Common/TopRecruiters/TopRecruiters"));
+const LazyIdeasTakeFlight = dynamic(() => import("@/components/HomepageComponents/IdeasTakeFlight"));
+const LazyTestimonials = dynamic(() =>
+  import("@/components/Common/Testimonials/Testimonials").then((mod) => mod.Testimonials)
+);
+const LazyHotOfThePress = dynamic(() => import("@/components/Common/HotOfThePress/HotOfThePress"));
+const LazyLocationSection = dynamic(() => import("@/components/HomepageComponents/LocationSection"));
+const LazyFooterCard = dynamic(() => import("@/components/Common/FooterCard/FooterCard"));
 
 export const metadata: Metadata = {
   alternates: {
@@ -77,7 +81,7 @@ export default async function Home() {
         <ExplorePrograms />
       </section>
       <section className="bg-[#144A72] md:px-6 mt-6 lg:mt-20 md:mb-16 py-20">
-        <VideoPlayer
+        <LazyVideoPlayer
           subTitle="Explore the campus with a virtual tour & discover one among the best colleges in the region."
           title="Experience the Campus"
           videoUrl="z-Axfq0HfZOLspAj"
@@ -86,13 +90,13 @@ export default async function Home() {
         />
       </section>
       <section className="px-6  md:px-12 lg:px-26 xl:px-0 py-1 mb-10 lg:mb-8 ">
-        <EmpoweringFutures />
+        <LazyEmpoweringFutures />
       </section>
       <section className="px-6 md:px-12 lg:px-16 xl:px-0 ">
-        <TopRecruiters />
+        <LazyTopRecruiters />
       </section>
       <section className=" py-14 md:px-6 lg:px-0 lg:pb-[4rem]">
-        <VideoPlayer
+        <LazyVideoPlayer
           videoUrl="https://res.cloudinary.com/dvandhsai/video/upload/v1745987839/hcemhmez5c9xxttp4e1v.mp4"
           // videoUrl="z-Axfq0HfZOLspAj"
           youtubeUrl="Xhq4QpXZco8"
@@ -100,20 +104,20 @@ export default async function Home() {
         />
       </section>
       <section className="bg-white px-6 ">
-        <IdeasTakeFlight />
+        <LazyIdeasTakeFlight />
       </section>
       <section className="px-0 bg-white pt-5 pb-12 lg:pb-10 lg:mt-0 -mt-3">
-        <Testimonials />
+        <LazyTestimonials />
       </section>
       <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16 lg:px-0 xl:px-0 py-0 md:mt-0 -mt-6">
-        <HotOfThePress />
+        <LazyHotOfThePress />
       </section>
 
       <section className="bg-[#E5E5EA] px-6 lg:mt-0 ">
-        <LocationSection />
+        <LazyLocationSection />
       </section>
       <section className="bg-[#E5E5EA]">
-        <FooterCard />
+        <LazyFooterCard />
       </section>
     </>
   );

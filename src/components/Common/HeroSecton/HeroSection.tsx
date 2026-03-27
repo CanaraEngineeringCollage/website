@@ -17,7 +17,6 @@ import bg2 from "../../../../public/herosectionImages/heroBg.webp";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
 export interface HomePageImage {
@@ -97,6 +96,9 @@ const HeroSection = ({ images = [] }: HeroSectionProps) => {
                   fill
                   className="object-cover hidden lg:block -translate-y-[90px] lg:translate-y-0"
                   priority={index === 0}
+                  loading={index === 0 ? "eager" : "lazy"}
+                  fetchPriority={index === 0 ? "high" : "auto"}
+                  sizes="(max-width: 1023px) 0px, 100vw"
                 />
               )}
 
@@ -108,6 +110,9 @@ const HeroSection = ({ images = [] }: HeroSectionProps) => {
                   fill
                   className="object-cover block lg:hidden -translate-y-[90px] lg:translate-y-0"
                   priority={index === 0}
+                  loading={index === 0 ? "eager" : "lazy"}
+                  fetchPriority={index === 0 ? "high" : "auto"}
+                  sizes="100vw"
                 />
               )}
 
@@ -144,7 +149,7 @@ const HeroSection = ({ images = [] }: HeroSectionProps) => {
               <div className="bg-white shadow-sm rounded-2xl w-full flex flex-col items-center py-5 px-2 min-h-[150px] h-full">
                 {/* Fixed height wrapper for the image */}
                 <div className="h-[70px] w-full flex items-center justify-center">
-                  <Image src={item.src} alt={item.label} width={60} height={60} className="max-h-[60px] w-auto object-contain" priority />
+                  <Image src={item.src} alt={item.label} width={60} height={60} className="max-h-[60px] w-auto object-contain" />
                 </div>
                 {/* mt-auto pushes the text to the absolute bottom evenly */}
                 <p className="text-sm font-medium text-center text-[#1a1a1a] mt-auto pt-2">{item.label}</p>
