@@ -14,7 +14,7 @@ const FutureCampusText = () => {
         education & strong industry connections.
       </p>
       <Link href="/about-cec">
-        <button aria-label="Read More" className="pt-8 inline-flex items-center cursor-pointer text-primary">
+        <button aria-label="Read more about Canara Engineering College" className="pt-8 inline-flex items-center cursor-pointer text-primary">
           Read More <MdKeyboardArrowRight className="text-xl text-primary" />
         </button>
       </Link>
