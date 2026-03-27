@@ -174,7 +174,7 @@ const AboutCentralLibrary = () => {
                 {/* --- External Link Button (Fallback) --- */}
                 {item.link && (
                   <div className="mt-6">
-                    <Link href={item.link} target="_blank">
+                    <Link href={item.link} target="_blank" rel="noopener noreferrer">
                       <button className="bg-[#2884CA] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors shadow-md">
                         {item.linkText || "Visit Link"}
                       </button>

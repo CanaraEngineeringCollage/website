@@ -1036,28 +1036,28 @@ const MandatoryDisclosure = () => {
                     <li className="flex gap-2 items-start text-textGray">
                       <span className="font-medium">•</span>
                       Lower Income for SC students –{" "}
-                      <a href="https://sw.kar.nic.in" className="text-[#2884CA] underline" target="_blank">
+                      <a href="https://sw.kar.nic.in" className="text-[#2884CA] underline" rel="noopener noreferrer" target="_blank">
                         https://sw.kar.nic.in
                       </a>
                     </li>
                     <li className="flex gap-2 items-start text-textGray">
                       <span className="font-medium">•</span>
                       Lower Income ST students, MHRD, and Beedi Scholarship –{" "}
-                      <a href="https://scholarships.gov.in" className="text-[#2884CA] underline" target="_blank">
+                      <a href="https://scholarships.gov.in" className="text-[#2884CA] underline" rel="noopener noreferrer" target="_blank">
                         https://scholarships.gov.in
                       </a>
                     </li>
                     <li className="flex gap-2 items-start text-textGray">
                       <span className="font-medium">•</span>
                       Higher Income SC & ST students –{" "}
-                      <a href="http://dte.kar.nic.in" className="text-[#2884CA] underline" target="_blank">
+                      <a href="http://dte.kar.nic.in" className="text-[#2884CA] underline" rel="noopener noreferrer" target="_blank">
                         http://dte.kar.nic.in
                       </a>
                     </li>
                     <li className="flex gap-2 items-start text-textGray">
                       <span className="font-medium">•</span>
                       OBC Scholarship –{" "}
-                      <a href="https://karepass.cgg.gov.in" className="text-[#2884CA] underline" target="_blank">
+                      <a href="https://karepass.cgg.gov.in" className="text-[#2884CA] underline" rel="noopener noreferrer" target="_blank">
                         https://karepass.cgg.gov.in
                       </a>
                     </li>
@@ -1215,7 +1215,7 @@ const MandatoryDisclosure = () => {
 
                   <p className="md:text-lg  text-[14px] leading-7 text-textGray ">
                     Canara Engineering College operates the
-                    <a href="https://www.canaraengineering.in/" target="_blank" className="text-[#2884CA] underline ml-1">
+                    <a href="https://www.canaraengineering.in/" target="_blank" rel="noopener noreferrer" className="text-[#2884CA] underline ml-1">
                       https://www.canaraengineering.in/
                     </a>{" "}
                     website, which provides the SERVICE.
@@ -1233,7 +1233,7 @@ const MandatoryDisclosure = () => {
 
                   <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at
-                    <a href="https://www.canaraengineering.in/" target="_blank" className="text-[#2884CA] underline ml-1">
+                    <a href="https://www.canaraengineering.in/" target="_blank" rel="noopener noreferrer" className="text-[#2884CA] underline ml-1">
                       https://www.canaraengineering.in/
                     </a>
                     , unless otherwise defined in this Privacy Policy.
@@ -1324,7 +1324,7 @@ const MandatoryDisclosure = () => {
 
                   <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     Canara Engineering College operates the
-                    <a href="https://www.canaraengineering.in/" target="_blank" className="text-[#2884CA] underline ml-1">
+                    <a href="https://www.canaraengineering.in/" target="_blank" rel="noopener noreferrer" className="text-[#2884CA] underline ml-1">
                       https://www.canaraengineering.in/
                     </a>{" "}
                     website, which provides the SERVICE.
@@ -1342,7 +1342,7 @@ const MandatoryDisclosure = () => {
 
                   <p className="md:text-lg  text-[14px] leading-7 text-textGray pt-2">
                     The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at
-                    <a href="https://www.canaraengineering.in/" target="_blank" className="text-[#2884CA] underline ml-1">
+                    <a href="https://www.canaraengineering.in/" target="_blank" rel="noopener noreferrer" className="text-[#2884CA] underline ml-1">
                       https://www.canaraengineering.in/
                     </a>
                     , unless otherwise defined in this Privacy Policy.
@@ -1535,7 +1535,7 @@ const MandatoryDisclosure = () => {
                         link?.href ? (
                           <li key={i} className="flex group items-center gap-2 text-[16px] text-textGray hover:text-[#2884CA] cursor-pointer">
                             <Link href={link.href} target="_blank" className="flex items-center gap-2 hover:text-[#2884CA]">
-                              <HiLink className="text-textGray group-hover:text-[#2884CA] mt-2" />
+                              <HiLink aria-hidden="true" className="text-textGray group-hover:text-[#2884CA] mt-2" />
                               <span className="text-textGray group-hover:text-[#2884CA] text-[16px] pt-2 leading-7">{link.text}</span>
                             </Link>
                           </li>
@@ -1621,6 +1621,7 @@ const MandatoryDisclosure = () => {
                         link?.href ? (
                           <li key={i} className="flex group items-center gap-2 text-[17px] text-textGray hover:text-[#2884CA] cursor-pointer w-full">
                             <iframe
+                            
                               src={`https://docs.google.com/viewer?url=${encodeURIComponent(link.href)}&embedded=true`}
                               className="w-full h-[70vh] hidden md:block"
                               title="PDF Viewer"

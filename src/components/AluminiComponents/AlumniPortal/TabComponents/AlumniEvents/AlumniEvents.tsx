@@ -129,7 +129,7 @@ export default function AlumniEvents({ events, loading }: AlumniEventsProps) {
                 </p>
               </div>
 
-              <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2 leading-tight">{event.title}</h3>
+              <h2 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2 leading-tight">{event.title}</h2>
 
               <button className="text-primary  inline-flex text-[17px] items-center hover:underline font-medium mt-2">
                 Read More <MdKeyboardArrowRight className="ml-1 text-xl" />

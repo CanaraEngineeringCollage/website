@@ -114,7 +114,8 @@ export default function Academics() {
                   <li>
                     <Link
                       href="https://digital.canaraengineering.in/"
-                      target="_blank"
+                      target="_blank" rel="noopener noreferrer"
+
                       className={`${pathname.includes("/learning-hub") ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
                     >
                       Resources
@@ -140,7 +141,7 @@ export default function Academics() {
                   <li>
                     <Link
                       href="https://www.canaraengineering.in/s_attd"
-                      target="_blank"
+                      target="_blank" rel="noopener noreferrer"
                       className={`${tab === "marks" ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
                     >
                       Marks & Attendance
@@ -160,7 +161,7 @@ export default function Academics() {
                     {" "}
                     <Link
                       href="https://www.canaraengineering.in/s-info"
-                      target="_blank"
+                      target="_blank" rel="noopener noreferrer"
                       className={`${pathname.includes("/student-information") ? `` : "text-gray-500"} hover:text-primary `}
                     >
                       Student Information
@@ -171,7 +172,7 @@ export default function Academics() {
                     {" "}
                     <Link
                       href="https://cecstudent.canaraengineering.in"
-                      target="_blank"
+                      target="_blank" rel="noopener noreferrer"
                       className={`${pathname.includes("/student-information") ? `` : "text-gray-500"} hover:text-primary `}
                     >
                       Student Dashboard

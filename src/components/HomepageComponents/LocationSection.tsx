@@ -15,6 +15,7 @@ const LocationSection = () => {
             <div className="relative w-full h-64 md:h-80 lg:h-96 bg-gray-200 rounded-t-2xl md:rounded-t-none md:rounded-2xl overflow-hidden shadow-sm">
               {/* Replace this with actual Map component or Image */}
               <iframe
+              title="Canara Engineering College Location"
                 src="https://maps.google.com/maps?ll=12.898335,74.986103&z=17&t=m&output=embed"
                 width="100%"
                 height="100%"

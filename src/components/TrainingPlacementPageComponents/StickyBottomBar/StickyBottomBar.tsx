@@ -36,7 +36,7 @@ const StickyBottomBar = ({ title, link, buttonText }: { title: string; link: str
       <div className=" w-[80%] flex flex-col md:flex-row gap-3 md:gap-0 md:justify-between items-center mx-auto">
         <p className="text-textGray font-bold text-lg lg:text-[20px] ">{title}</p>
 
-        <Link href={link} target="_blank" aria-label="Placement Portal">
+        <Link href={link} target="_blank" rel="noopener noreferrer" aria-label="Placement Portal">
           <Button
             variant="primary1"
             aria-label="Placement Portal"

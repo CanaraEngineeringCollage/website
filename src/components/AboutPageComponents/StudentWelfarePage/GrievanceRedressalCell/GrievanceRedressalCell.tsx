@@ -51,7 +51,7 @@ const GrievanceRedressalCell = () => {
           {selectedIndex === 6 ? (
             <div className="col-span-8 max-h-[70vh]   md:max-h-[100vh] scrollable overflow-y-auto  pr-2">
               <div className="flex flex-row justify-center sm:gap-10 gap-4 items-center mb-10">
-               <Link href="https://www.canaraengineering.in/Grievance" target="_blank"> <button
+               <Link href="https://www.canaraengineering.in/Grievance" target="_blank" rel="noopener noreferrer"> <button
                   aria-label="New Grievance"
                   onClick={() => setActiveTab("New Grievance")}
                   className={`border border-black${
@@ -60,7 +60,7 @@ const GrievanceRedressalCell = () => {
                 >
                   New Grievance
                 </button></Link>
-               <Link href="https://www.canaraengineering.in/status_griv" target="_blank"><button
+               <Link href="https://www.canaraengineering.in/status_griv" target="_blank" rel="noopener noreferrer"><button
                   aria-label="Know your status"
                   onClick={() => setActiveTab("Know your status")}
                   className={`border border-black${

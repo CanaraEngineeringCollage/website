@@ -244,14 +244,21 @@ function SubMenu({
   return (
     <>
       <div
-        onClick={() => {
-          setVisible("main-menu");
-        }}
-        className="flex gap-2 items-center"
-      >
-        <IoIosArrowDown className={`w-4 h-4 text-gray-500 rotate-90 transition-all ease-in-out duration-300 lg:hidden`} />
-        <Typography className="font-medium text-gray-500  text-lg">{data.title}</Typography>
-      </div>
+  onClick={() => {
+    setVisible("main-menu");
+  }}
+  // 1. Set the main container to start from the top
+  className="flex gap-2 items-start"
+>
+  {/* 2. Wrap the icon in a container that matches the exact line-height of text-lg (h-7). Add shrink-0 so it doesn't get squished by long text. */}
+  <div className="h-7 flex items-center shrink-0">
+    <IoIosArrowDown className="w-4 h-4 text-gray-500 rotate-90 transition-all ease-in-out duration-300 lg:hidden" />
+  </div>
+  
+  <Typography className="font-medium text-gray-500 text-lg">
+    {data.title}
+  </Typography>
+</div>
       <div className={`space-y-2 transition-all ease-in-out duration-300 mt-2`}>
         {data.links.map((link, index) => (
           <div

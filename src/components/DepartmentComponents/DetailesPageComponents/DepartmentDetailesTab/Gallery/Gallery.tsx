@@ -138,7 +138,7 @@ const Gallery = ({ data }: { data: GalleryItem[] }) => {
                   <div className="p-4 lg:px-20 space-y-6 text-left text-sm text-[#1D1D1F] bg-white mt-5">
                     <div>
                       {data[selectedIndex].title && (
-                        <h3 className="text-[27px] font-semibold  leading-[1.1] lg:max-w-[100%] ">{data[selectedIndex].title}</h3>
+                        <h2 className="text-[27px] font-semibold  leading-[1.1] lg:max-w-[100%] ">{data[selectedIndex].title}</h2>
                       )}
                       {data[selectedIndex].description && <p className="text-xl text-gray-500 leading-relaxed">{data[selectedIndex].description}</p>}
                     </div>

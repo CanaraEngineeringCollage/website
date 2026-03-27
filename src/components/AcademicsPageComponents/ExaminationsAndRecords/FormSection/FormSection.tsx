@@ -65,7 +65,7 @@ const FormSection: React.FC = () => {
               <div className="flex items-center group-hover:text-[#2884CA]">
                 <div className="flex items-center gap-2 mt-2 group ">
                   <HiLink className="text-textGray group-hover:text-[#2884CA] " />
-                  <a href="https://vtu.ac.in/en/#1554889506437-64c3b5d5-d21e" target="_blank" className="group-hover:text-[#2884CA]">
+                  <a href="https://vtu.ac.in/en/#1554889506437-64c3b5d5-d21e" target="_blank" rel="noopener noreferrer"  className="group-hover:text-[#2884CA]">
                     Open VTU Circulars
                   </a>
                 </div>

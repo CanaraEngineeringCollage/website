@@ -134,6 +134,7 @@ const GlimpsesModal: React.FC<GlimpsesModalProps> = ({
               {/* Iframe Content */}
               {flipbookLink ? (
                 <iframe
+                title="Glimpses of Canara Engineering College Flipbook"
                   src={flipbookLink}
                   className="w-full h-[60vh] md:h-[80vh] rounded-xl border-none shadow-sm"
                   allowFullScreen

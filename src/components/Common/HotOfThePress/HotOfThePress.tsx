@@ -103,7 +103,7 @@ function EventContent({ description }: { description: EventDescriptionProps }) {
       <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-[#1D1D1F] bg-white">
         <div>
           {<p className="text-[17px] text-textGray uppercase font-bold mb-2">{description.date}</p>}
-          <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{description.topTitle}</h3>
+          <h2 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{description.topTitle}</h2>
           <p className="text-xl text-textGray">{description.topDescription}</p>
         </div>
         <div className="bg-white -mt-10" dangerouslySetInnerHTML={{ __html: description.remainingHTML }} />
@@ -244,11 +244,11 @@ const HotOfThePressCarousel = () => {
 
                     {/* <p className="text-textGray text-[17px] mb-1">{event.category}</p> */}
                     {topTitle ? (
-                      <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{topTitle}</h3>
+                      <h2 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{topTitle}</h2>
                     ) : topDescription ? (
-                      <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{topDescription}</h3>
+                      <h2 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{topDescription}</h2>
                     ) : (
-                      <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{event.category}</h3>
+                      <h2 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{event.category}</h2>
                     )}
                     <button className="text-primary inline-flex text-[17px] items-center hover:underline font-medium text-sm">
                       Read More <MdKeyboardArrowRight className="ml-1" />

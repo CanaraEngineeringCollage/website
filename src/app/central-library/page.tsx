@@ -98,7 +98,13 @@ const AboutTheDepartment = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 w-full mx-auto  ">
             {/* Left Column */}
             <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 md:p-10 flex flex-col items-center justify-center text-center">
-              <img src="/aboutPageImages/MissionVision/visionImage4.webp" alt="vision" className="w-40 sm:w-60 md:w-72 lg:w-[344px] h-auto mb-6" />
+       <Image 
+  src="/aboutPageImages/MissionVision/visionImage4.webp" 
+  alt="vision" 
+  width={344} 
+  height={344} /* Important: Update this number to match the actual height of your image file! */
+  className="w-40 sm:w-60 md:w-72 lg:w-[344px] h-auto mb-6" 
+/>
               <h2 className="text-3xl lg2:text-5xl lg:text-4xl text-center lg:text-start font-bold text-[#1D1D1F] mb-4">Our Vision</h2>
               <p className="text-textGray text-[20px] leading-relaxed">
                 To make world class centre for quality resources in print and digital form to facilitate learning and research.
