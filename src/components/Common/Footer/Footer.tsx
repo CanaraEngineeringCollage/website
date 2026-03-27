@@ -208,20 +208,20 @@ const Footer: FC = () => {
           <div>
             <h1 className="flex justify-end font-bold pb-3 cursor-pointer">Follow Us</h1>
             <div className="flex gap-2 cursor-pointer">
-              <Link target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/school/canara-engineering-college-official">
+              <Link aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/school/canara-engineering-college-official">
                 <LinkedIn />
               </Link>
-              <Link target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/cecmangalore/">
+              <Link aria-label="Instagram" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/cecmangalore/">
                 <Instagram />
               </Link>
-              <Link target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/share/1AjszML4e3">
+              <Link aria-label="Facebook" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/share/1AjszML4e3">
                 <Meta />
               </Link>
-              <Link target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@canaraengineeringcollegema3340">
+              <Link aria-label="Youtube" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@canaraengineeringcollegema3340">
                 <Yt />
               </Link>
 
-              <Link target="_blank" rel="noopener noreferrer" href="https://x.com/cecmangalore">
+              <Link aria-label="Twitter" target="_blank" rel="noopener noreferrer" href="https://x.com/cecmangalore">
                 <Twitter />
               </Link>
             </div>
@@ -268,20 +268,20 @@ const Footer: FC = () => {
           <div className="mt-4">
             <h1 className="text-center font-bold pb-3">Follow Us</h1>
             <div className="flex gap-2 justify-center">
-              <Link target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/school/canara-engineering-college-official">
+              <Link aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/school/canara-engineering-college-official">
                 <LinkedIn />
               </Link>
-              <Link target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/cecmangalore/">
+              <Link aria-label="Instagram" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/cecmangalore/">
                 <Instagram />
               </Link>
-              <Link target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/share/1AjszML4e3">
+              <Link aria-label="Facebook" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/share/1AjszML4e3">
                 <Meta />
               </Link>
-              <Link target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@canaraengineeringcollegema3340">
+              <Link aria-label="Youtube" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@canaraengineeringcollegema3340">
                 <Yt />
               </Link>
 
-              <Link target="_blank" rel="noopener noreferrer" href="https://x.com/cecmangalore">
+              <Link aria-label="Twitter" target="_blank" rel="noopener noreferrer" href="https://x.com/cecmangalore">
                 <Twitter />
               </Link>
             </div>

@@ -6,6 +6,10 @@ function DropDown({ openSidebar, sidebar }: { openSidebar: (callback: (prev: boo
       <div
         onClick={() => openSidebar((prev: boolean) => !prev)}
         tabIndex={0}
+        role="button"
+        aria-expanded={sidebar}
+        aria-controls="sidebar"
+        aria-label="Toggle sidebar"
         className="  text-[#213557] hover:text-yellow-400   cursor-pointer"
       >
         <svg

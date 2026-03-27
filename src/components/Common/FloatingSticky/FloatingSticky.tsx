@@ -52,6 +52,7 @@ export default function FloatingSticky() {
               href="tel:+918792727001"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Call Admissions"
               className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-50 transition-colors flex-1 justify-center"
             >
               <Phone aria-hidden="true" className="w-5 h-5 text-[#2884ca]" />
@@ -63,6 +64,7 @@ export default function FloatingSticky() {
             {/* Admission Button */}
             <Link
               href="/admission"
+              
               className="flex items-center gap-2 px-4 py-2 bg-[#2884ca] rounded-full hover:bg-[#1f6fa0] transition-colors flex-1 justify-center"
             >
               <GraduationCap aria-hidden="true" className="w-5 h-5 text-white" />

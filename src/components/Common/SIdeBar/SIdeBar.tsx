@@ -249,6 +249,10 @@ function SubMenu({
   }}
   // 1. Set the main container to start from the top
   className="flex gap-2 items-start"
+  role="button"
+  aria-expanded={true}
+  aria-controls="sidebar"
+  aria-label="Toggle sidebar"
 >
   {/* 2. Wrap the icon in a container that matches the exact line-height of text-lg (h-7). Add shrink-0 so it doesn't get squished by long text. */}
   <div className="h-7 flex items-center shrink-0">

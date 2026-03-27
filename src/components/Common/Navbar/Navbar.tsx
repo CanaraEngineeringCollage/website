@@ -24,20 +24,20 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
   // }, []);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // function handleScroll() {
-  //   if (window.scrollY > 100) {
-  //     setIsScrolled(true);
-  //   } else {
-  //     setIsScrolled(false);
-  //   }
-  // }
-  // useEffect(() => {
-  //   handleScroll();
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
+  function handleScroll() {
+    if (window.scrollY > 100) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  }
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       {/* First Header */}
