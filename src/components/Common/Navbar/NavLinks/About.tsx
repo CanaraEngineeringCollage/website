@@ -24,7 +24,7 @@ export default function About() {
   return (
     <Menu open={isMenuOpen} handler={setIsMenuOpen} offset={{ mainAxis: 20 }} placement="bottom" allowHover={true}>
       <MenuHandler>
-       <Typography as="div" className="text-base xl:text-base">
+       <Typography as="div" role="button" className="text-base xl:text-base">
   <ListItem
     placeholder={"Life At Canara"} 
     role="button" 

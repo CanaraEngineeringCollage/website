@@ -176,23 +176,23 @@ const Footer: FC = () => {
           */}
           <div className="grid grid-cols-2 gap-y-10 gap-x-8 md:flex md:justify-between border-b border-gray-300 pb-10">
             <div>
-              <h3 className="font-semibold mt-5 mb-2">Quick Links</h3>
+              <h2 className="font-semibold mt-5 mb-2">Quick Links</h2>
               <FooterList data={quickLinks} />
             </div>
             <div>
-              <h3 className="font-semibold mt-5 mb-2">Our College</h3>
+              <h2 className="font-semibold mt-5 mb-2">Our College</h2>
               <FooterList data={ourCollege} />
             </div>
             <div>
-              <h3 className="font-semibold mt-5 mb-2">Academics</h3>
+              <h2 className="font-semibold mt-5 mb-2">Academics</h2>
               <FooterList data={academics} />
             </div>
             <div>
-              <h3 className="font-semibold mt-5 mb-2">Facilities</h3>
+              <h2 className="font-semibold mt-5 mb-2">Facilities</h2>
               <FooterList data={facilities} />
             </div>
             <div>
-              <h3 className="font-semibold mt-5 mb-2">Stay Connected</h3>
+              <h2 className="font-semibold mt-5 mb-2">Stay Connected</h2>
               <FooterList data={stayConnected} />
             </div>
           </div>

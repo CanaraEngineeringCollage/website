@@ -18,7 +18,7 @@ export default function Academics() {
   return (
     <Menu open={isMenuOpen} handler={setIsMenuOpen} offset={{ mainAxis: 20 }} placement="bottom" allowHover={true}>
       <MenuHandler>
-        <Typography as="div" variant="small" className="text-base xl:text-base">
+        <Typography as="div" role="button" variant="small" className="text-base xl:text-base">
           <ListItem
             placeholder={"Life At Canara"} // ✅ Added placeholder for better UX
             role="button" // ✅ Added role for accessibility: required for aria-* to be valid
