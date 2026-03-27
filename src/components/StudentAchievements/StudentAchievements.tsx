@@ -124,7 +124,7 @@ function EventContent({ description }: { description: EventDescriptionProps }) {
           {description.date && (
             <p className="text-[17px] text-textGray uppercase font-bold ">{new Date(description.date).toLocaleDateString("en-GB")}</p>
           )}
-          {description.topTitle && <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] my-3 line-clamp-2">{description.topTitle}</h3>}
+          {description.topTitle && <h2 className="text-[27px] font-semibold font-sans text-[#1D1D1F] my-3 line-clamp-2">{description.topTitle}</h2>}
           {description.topDescription && <p className="text-xl text-textGray">{description.topDescription}</p>}
         </div>
         {description.remainingHTML && (

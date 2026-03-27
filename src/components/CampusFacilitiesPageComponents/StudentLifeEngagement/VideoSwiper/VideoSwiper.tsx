@@ -317,7 +317,7 @@ function Card({ size, children, main = false, refIndex, registerRef, onVideoEnd,
   const sizeMap = {
     sm: "hidden lg:block lg:w-[26vw] h-[55vh]  scale-90",
     md: "hidden md:block md:w-[30vw] lg:w-[25vw] h-[40vh] lg:h-[70vh] ",
-    lg: "w-[85vw] md:w-[50vw] lg:w-[28vw] h-[35vh] md:h-[45vh] lg:h-[80vh] z-10",
+    lg: "w-[85vw] md:w-[50vw] lg:w-[28vw] h-[60vh] md:h-[45vh] lg:h-[80vh] z-10",
   };
 
   return (

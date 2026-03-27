@@ -23,8 +23,20 @@ interface ModalContentType extends Amenity {
 
 export default function DistinctiveCarousel() {
   const [swiperInstance, setSwiperInstance] = useState<any>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
-  // --- FIX: Force Autoplay Start on Mount ---
+  // --- FIX 1: Detect if the user is on mobile to apply the specific array fix ---
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+    checkMobile(); // Check on initial load
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+  // ----------------------------------------------------------------------------
+
+  // --- FIX 2: Force Autoplay Start on Mount ---
   useEffect(() => {
     if (swiperInstance && swiperInstance.autoplay) {
       // We use a small timeout to ensure this runs AFTER the initial React hydration cycle
@@ -43,11 +55,15 @@ export default function DistinctiveCarousel() {
   }, [swiperInstance]);
   // ------------------------------------------
 
-  const images = [
+  const baseImages = [
     "/DistinctivePractiesImages/CHC.jpg",
     "/DistinctivePractiesImages/plastic.png",
     "/DistinctivePractiesImages/solar.jpg",
   ];
+
+  // FIX 3: Duplicate array ONLY on mobile to fix the blank swipe bug.
+  // Desktop stays at 3 images to prevent the weird background/repetitive layout issue.
+  const images = isMobile ? [...baseImages, ...baseImages] : baseImages;
 
   return (
     <section className="mx-auto py-12 overflow-hidden flex justify-center items-center">
@@ -56,6 +72,7 @@ export default function DistinctiveCarousel() {
         <div className="relative w-full">
           <div className="relative">
             <Swiper
+              key={images.length} // Crucial: forces Swiper to properly reset when switching between mobile/desktop
               onSwiper={setSwiperInstance}
               modules={[Navigation, Autoplay]}
               // Added onAfterInit to trigger start immediately upon Swiper readiness

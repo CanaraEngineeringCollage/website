@@ -15,7 +15,7 @@ const IframLinks = ({title,link}:{title?:string;link?:string}) => {return(
     <ul className="space-y-1">
       <li className="flex flex-col gap-2 text-[17px] text-textGray w-full">
         {/* Desktop Iframe */}
-        <iframe src={link} className="w-[100%] md:h-[70vh] h-[50vh] hidden md:block border border-gray-200 rounded-lg" />
+        <iframe title="Research Page Section" src={link} className="w-[100%] md:h-[70vh] h-[50vh] hidden md:block border border-gray-200 rounded-lg" />
         
         {/* Mobile Link */}
         <a 
@@ -82,7 +82,7 @@ const titles = ["Home", "Research Center", "Publications", "Grants","IPR/Patents
                         selectedIndex === index ? "text-[#2884CA] font-bold" : "text-textGray font-[500]"
                       }`}
                     >
-                      <a  href="https://canaraengineering.irins.org/" target="_blank">{title}</a>
+                      <a  href="https://canaraengineering.irins.org/" target="_blank" rel="noopener noreferrer">{title}</a>
                     </h1>
                   ) : (
                     <h1

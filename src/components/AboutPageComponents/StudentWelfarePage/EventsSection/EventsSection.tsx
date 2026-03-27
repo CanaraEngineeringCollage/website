@@ -150,7 +150,7 @@ const EventsSection = () => {
                         })}
                       </p>
                     </div>
-                    <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{event.title}</h3>
+                    <h2 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{event.title}</h2>
                     <button className="text-[#2997FF] inline-flex text-[17px] items-center hover:underline font-medium text-sm">
                       Read More <MdKeyboardArrowRight className="ml-1" />
                     </button>

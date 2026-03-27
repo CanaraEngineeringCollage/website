@@ -13,7 +13,7 @@ const Glimpses = ({ flipbookLink }: GlimpsesProps) => {
 
       {/* Show only when link is loaded */}
       {flipbookLink ? (
-        <iframe src={flipbookLink} className="w-full h-[60vh] md:h-[100vh]" allowFullScreen></iframe>
+        <iframe title="Glimpses of Canara Engineering College Flipbook"  src={flipbookLink} className="w-full h-[60vh] md:h-[100vh]" allowFullScreen></iframe>
       ) : (
         <p className="text-center">Loading flipbook or content unavailable locally...</p>
       )}

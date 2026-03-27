@@ -204,7 +204,7 @@ export default function LegacyExcellance() {
             <div
               key={index}
               onClick={() => openModal({ ...item, id: index.toString() }, index)}
-              className="relative cursor-pointer h-[200px] lg:h-[500px] rounded-3xl overflow-hidden"
+              className="relative cursor-pointer h-[300px] lg:h-[500px] rounded-3xl overflow-hidden"
             >
               {isVideo ? (
                 <video src={item.imageSrc} muted loop autoPlay playsInline preload="metadata" className="w-full h-full object-cover rounded-3xl" />

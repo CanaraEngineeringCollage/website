@@ -51,9 +51,10 @@ export default function FloatingSticky() {
             <a
               href="tel:+918792727001"
               target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-50 transition-colors flex-1 justify-center"
             >
-              <Phone className="w-5 h-5 text-[#2884ca]" />
+              <Phone aria-hidden="true" className="w-5 h-5 text-[#2884ca]" />
               <Typography className="font-bold text-[#2884ca] text-sm hidden sm:block">Call</Typography>
             </a>
 
@@ -64,7 +65,7 @@ export default function FloatingSticky() {
               href="/admission"
               className="flex items-center gap-2 px-4 py-2 bg-[#2884ca] rounded-full hover:bg-[#1f6fa0] transition-colors flex-1 justify-center"
             >
-              <GraduationCap className="w-5 h-5 text-white" />
+              <GraduationCap aria-hidden="true" className="w-5 h-5 text-white" />
               <Typography className="font-bold text-white text-sm">Admission</Typography>
             </Link>
           </div>

@@ -32,12 +32,12 @@ const FacultyCard: React.FC<{ member: CouncilMember; onClick?: () => void }> = (
       onClick ? "cursor-pointer" : "cursor-default"
     } w-full max-w-[309px] aspect-[3/4] rounded-xl overflow-hidden bg-[#6DC0EB] text-white flex flex-col items-center shadow-md`}
   >
-    <img 
+    <Image 
       // ✅ FIX 2: Used hasAvatar and the backend URL
       src={member.hasAvatar ? `${process.env.NEXT_PUBLIC_API_URL}/faculty/${member.id}/avatar` : (member.image || "/fallback-avatar.png")} 
       alt={member.name} 
-     
-    className="absolute top-0 left-0 w-full h-full object-cover"
+      fill
+      className="object-cover"
     />
     <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-[#6DC0EB] via-[#6DC0EB]/70 to-transparent z-10"></div>
     <div className="absolute z-20 bottom-3 sm:bottom-4 px-2 sm:px-3 md:px-4 left-0 w-full">

@@ -87,6 +87,7 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
               <Link
                 href={"https://apply.canaraengineering.in/"}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-[14px] xl:text-[16px] text-[#2884CA] font-bold font-poppins hover:text-[#005580] transition-colors ease-in-out duration-300"
               >
                 Admission Open {new Date().getFullYear()}

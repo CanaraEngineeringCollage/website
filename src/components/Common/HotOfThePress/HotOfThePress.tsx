@@ -91,19 +91,19 @@ function EventContent({ description }: { description: EventDescriptionProps }) {
   return (
     <div>
       {description.src && (
-       <img
-      src={description.src}
-      alt={description.topTitle}
-      loading="lazy"
-      width={1000}
-      height={700}
-      className="object-cover overflow-hidden rounded-t-2xl w-full  mb-10"
-    />
-  )}
+        <Image
+          src={description.src}
+          alt={description.topTitle || "Event Image"}
+          loading="lazy"
+          width={1000}
+          height={700}
+          className="object-cover overflow-hidden rounded-t-2xl w-full  mb-10"
+        />
+      )}
       <div className="p-4 lg:px-20 space-y-10 text-left text-sm text-[#1D1D1F] bg-white">
         <div>
           {<p className="text-[17px] text-textGray uppercase font-bold mb-2">{description.date}</p>}
-          <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{description.topTitle}</h3>
+          <h2 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{description.topTitle}</h2>
           <p className="text-xl text-textGray">{description.topDescription}</p>
         </div>
         <div className="bg-white -mt-10" dangerouslySetInnerHTML={{ __html: description.remainingHTML }} />
@@ -222,7 +222,13 @@ const HotOfThePressCarousel = () => {
                   onClick={() => openCard(index)}
                 >
                   <div className="h-60 overflow-hidden">
-                    <img src={src} alt={topTitle || event.category} className="w-full h-full object-cover" />
+                    <Image 
+                      src={src || "https://via.placeholder.com/600x400?text=Campus+Buzz"} 
+                      alt={topTitle || event.category} 
+                      width={600} 
+                      height={400} 
+                      className="w-full h-full object-cover" 
+                    />
                   </div>
                   <div className="p-8 text-center">
                     <div className="flex justify-center items-center space-x-3">
@@ -244,11 +250,11 @@ const HotOfThePressCarousel = () => {
 
                     {/* <p className="text-textGray text-[17px] mb-1">{event.category}</p> */}
                     {topTitle ? (
-                      <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{topTitle}</h3>
+                      <h2 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{topTitle}</h2>
                     ) : topDescription ? (
-                      <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{topDescription}</h3>
+                      <h2 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{topDescription}</h2>
                     ) : (
-                      <h3 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{event.category}</h3>
+                      <h2 className="text-[27px] font-semibold font-sans text-[#1D1D1F] mb-2 line-clamp-2">{event.category}</h2>
                     )}
                     <button className="text-primary inline-flex text-[17px] items-center hover:underline font-medium text-sm">
                       Read More <MdKeyboardArrowRight className="ml-1" />

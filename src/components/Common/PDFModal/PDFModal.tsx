@@ -83,7 +83,7 @@ const PDFModal: React.FC<PDFModalProps> = ({ isOpen, onClose, pdfUrl, title = "D
 
               {pdfUrl ? (
                 <>
-                  <iframe src={pdfUrl} className="w-full h-[60vh] md:h-[100vh] rounded-xl border-none shadow-sm hidden md:block" allowFullScreen title={title}></iframe>
+                  <iframe title="PDF Viewer" src={pdfUrl} className="w-full h-[60vh] md:h-[100vh] rounded-xl border-none shadow-sm hidden md:block" allowFullScreen title={title}></iframe>
                   <div className="flex flex-col items-center justify-center h-[60vh] md:hidden">
                     <p className="text-center text-lg text-gray-700 mb-6 px-4">
                       {title}
