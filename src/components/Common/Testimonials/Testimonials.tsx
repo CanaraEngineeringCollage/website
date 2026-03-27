@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import AlumniModal from "./AlumniModal";
+import Image from "next/image";
 
 interface Testimonial {
   quote: string;
@@ -36,18 +37,21 @@ const renderFeaturedRow = (featured: FeaturedAlumni[], onReadMore: (item: Featur
           className="mx-4 flex-shrink-0 w-[550px] md:w-[650px] bg-primary rounded-[28px] overflow-hidden flex items-center text-white  p-6"
         >
           {/* Left Side: Fully Rounded Image */}
-          <div className="w-1/4 flex justify-center items-center">
-            <div className="w-24 h-24 md:w-32 md:h-32 flex-shrink-0 overflow-hidden rounded-full border-2 border-white/20">
-              <img
-                src={item.imageUrl}
-                alt={item.name}
-                className="w-full h-full object-cover"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src = "https://via.placeholder.com/150?text=Alumni";
-                }}
-              />
-            </div>
-          </div>
+      <div className="w-1/4 flex justify-center items-center">
+    <div className="w-24 h-24 md:w-32 md:h-32 flex-shrink-0 overflow-hidden rounded-full border-2 border-white/20">
+      <Image
+        src={item.imageUrl || "https://via.placeholder.com/150?text=Alumni"}
+        alt={item.name}
+        width={128}
+        height={128}
+        className="w-full h-full object-cover"
+        onError={(e) => {
+          e.currentTarget.srcset = "";
+          e.currentTarget.src = "https://via.placeholder.com/150?text=Alumni";
+        }}
+      />
+    </div>
+  </div>
 
           {/* Right Side: Description and Details (All left-aligned) */}
           <div className="w-3/4 pl-6 flex flex-col justify-center relative">

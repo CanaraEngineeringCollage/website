@@ -29,17 +29,18 @@ function CampusNavbar({ openSidebar, sidebar }: { openSidebar: () => void; sideb
                 />
               </Link>
             </div>
-            <div className="flex lg:hidden flex-row items-center  relative">
+          <div className="flex lg:hidden flex-row items-center  relative">
               <Link href={"/"}>
                 <Image
                   src={"/svgs/logos/logo.svg"}
                   width={200}
-                  height={200}
+                  height={60}
+                  priority
                   alt="logo"
                   onClick={() => {
                     router.push("/");
                   }}
-                  className="object-contain cursor-pointer"
+                  className="object-contain cursor-pointer h-12 w-auto"
                 />
               </Link>
             </div>

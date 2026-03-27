@@ -41,7 +41,7 @@ const Page = () => {
       <div className=" space-y-8">
         {/* Title */}
         <h1 className="text-3xl md:w-[90%] md:text-[40px] lg2:text-5xl xl:text-6xl font-bold leading-[1.2] text-[#1D1D1F]">
-          Faculty Recruitment {academicYear}
+          Faculty Recruitment <br className="md:hidden"/>{academicYear}
         </h1>
 
         {/* Intro paragraph */}
