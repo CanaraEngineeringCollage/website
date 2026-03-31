@@ -5,10 +5,12 @@ import Layout from "@/components/Common/Layout/Layout";
 import { helveticaNow } from "./fonts";
 import ScrollToTopButton from "@/components/Common/ScrollToTopButton";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-
 import { Analytics } from "@vercel/analytics/next";
 import FloatingSticky from "@/components/Common/FloatingSticky/FloatingSticky";
 import Script from "next/script";
+
+// 1. Import the official GoogleTagManager component
+import { GoogleTagManager } from '@next/third-parties/google';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,13 +23,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  // Acts as the base domain for all relative URLs in your app
   metadataBase: new URL("https://cec.edu.in"), 
-  
   title: {
-    // Fallback title for the homepage or if a page forgets a title
     default: "Canara Engineering College, Mangalore | NAAC A Grade Institution", 
-    // Template automatically applies to all inner pages (e.g., "About | Canara Engineering College")
     template: "%s | Canara Engineering College", 
   },
   description:
@@ -49,7 +47,6 @@ export const metadata: Metadata = {
     "CET Engineering Colleges Mangalore",
     "COMEDK Engineering Colleges Mangalore",
   ],
-  // Add the Google Site Verification here
   verification: {
     google: "-Bpv8fhe20Z5fhxjIm712LCBfsVP34uv_PvlTIXxrQw",
   },
@@ -63,6 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} ${helveticaNow.variable}  antialiased`}>
+        
         <SpeedInsights />
         <Analytics />
         <Layout>
@@ -99,10 +97,13 @@ export default function RootLayout({
             }}
           />
           <ScrollToTopButton />
-          <Script src="/smoothScroll/smoothScroll.js"/>
+          <Script src="/smoothScroll/smoothScroll.js" strategy="afterInteractive" />
           <FloatingSticky />
         </Layout>
       </body>
+      
+      {/* 2. Add the component at the end of the HTML tag */}
+      <GoogleTagManager gtmId="GTM-543CDW9N" />
     </html>
   );
 }
