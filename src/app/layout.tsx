@@ -9,8 +9,8 @@ import { Analytics } from "@vercel/analytics/next";
 import FloatingSticky from "@/components/Common/FloatingSticky/FloatingSticky";
 import Script from "next/script";
 
-// 1. Import the official GoogleTagManager component
-import { GoogleTagManager } from '@next/third-parties/google';
+// 1. Import the official GoogleTagManager and GoogleAnalytics components
+import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -102,8 +102,9 @@ export default function RootLayout({
         </Layout>
       </body>
       
-      {/* 2. Add the component at the end of the HTML tag */}
+      {/* 2. Add the components at the end of the HTML tag */}
       <GoogleTagManager gtmId="GTM-543CDW9N" />
+      <GoogleAnalytics gaId="G-YJ09NRG5NX" />
     </html>
   );
 }
