@@ -29,7 +29,7 @@ const StickyBottomBar = ({ title, link, buttonText }: { title: string; link: str
 
   return (
     <div
-      className={`fixed bottom-0 left-0 w-full bg-white  z-50 py-4    transition-all duration-700 ease-in-out transform ${
+      className={`fixed bottom-0 left-0 w-full bg-white  z-30 py-4    transition-all duration-700 ease-in-out transform ${
         !isFooterVisible ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
       }`}
     >

@@ -10,14 +10,14 @@ const nextConfig: NextConfig = {
   productionBrowserSourceMaps: true,
 
   images: {
-    domains: [
-      "testapi.megamind.studio",
-      "www.canaraengineering.in",
-      "assets.unlayer.com",
-      "cec.edu.in",
-      "apiserver.cec.edu.in",
-      "img.youtube.com",
-      "i.ytimg.com",
+    remotePatterns: [
+      { protocol: "https", hostname: "testapi.megamind.studio" },
+      { protocol: "https", hostname: "www.canaraengineering.in" },
+      { protocol: "https", hostname: "assets.unlayer.com" },
+      { protocol: "https", hostname: "cec.edu.in" },
+      { protocol: "https", hostname: "apiserver.cec.edu.in" },
+      { protocol: "https", hostname: "img.youtube.com" },
+      { protocol: "https", hostname: "i.ytimg.com" },
     ],
   },
 };
