@@ -3,6 +3,7 @@ import React, { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { IconX } from "@tabler/icons-react";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+import { toast } from "react-hot-toast";
 
 // Animation variants (unchanged)
 const backdropVariants = {
@@ -95,7 +96,9 @@ const TrainingPlacementModal: React.FC<ContactFormModalProps> = ({ isOpen, onClo
 
   const handleSubmit = async () => {
     if (validateForm()) {
+      onClose(false);
       try {
+        const toastId = toast.loading("Submitting your form...");
         const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/placement`, {
           method: "POST",
           headers: {
@@ -104,19 +107,25 @@ const TrainingPlacementModal: React.FC<ContactFormModalProps> = ({ isOpen, onClo
           body: JSON.stringify(formData),
         });
 
-        if (!res.ok) throw new Error("Failed to submit form");
+        if (!res.ok) {
+          toast.dismiss(toastId);
+          throw new Error("Failed to submit form");
+        }
 
         // Reset form only if API call succeeds
+        toast.dismiss(toastId);
+        toast.success("Submitted successfully! We’ll contact you soon.");
+        
         setFormData({ fullName: "", designation: "", organization: "", email: "", phone: "" });
         setTouched({ fullName: false, designation: false, organization: false, email: false, phone: false });
         setErrors({ fullName: "", designation: "", organization: "", email: "", phone: "" });
         if (onSuccess) {
           onSuccess();
         }
-        onClose(false);
+        
       } catch (error) {
-        console.error("Error submitting counselling form:", error);
-        alert("Something went wrong. Please try again later.");
+        console.error("Error submitting placement form:", error);
+        toast.error("Something went wrong. Please try again later.");
       }
     }
   };

@@ -12,6 +12,8 @@ import Script from "next/script";
 // 1. Import the official GoogleTagManager and GoogleAnalytics components
 import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google';
 
+import { Toaster } from "react-hot-toast";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -63,6 +65,15 @@ export default function RootLayout({
         
         <SpeedInsights />
         <Analytics />
+    <Toaster
+  position="top-center"
+  toastOptions={{
+    style: {
+      whiteSpace: "nowrap",
+      maxWidth: "none",
+    },
+  }}
+/>
         <Layout>
           {children}
           <script

@@ -3,6 +3,7 @@ import React, { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { IconX } from "@tabler/icons-react";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+import { toast } from "react-hot-toast";
 
 // Animation variants (unchanged)
 const backdropVariants = {
@@ -138,7 +139,9 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onClose, className = "", 
   // Handle form submission
   const handleSubmit = async () => {
     if (validateForm()) {
+      onClose(false);
       try {
+        const toastId = toast.loading("Submitting your form...");
         const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/alumni`, {
           method: "POST",
           headers: {
@@ -148,12 +151,18 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onClose, className = "", 
         });
 
         if (!response.ok) {
-          const errorData = await response.json();
-
-          return;
+          toast.dismiss(toastId);
+          // Wait to consume the json parsing if we care but generic error handling here
+          try {
+            await response.json();
+          } catch(e) {}
+          throw new Error("Failed to submit form");
         }
 
         const data = await response.json();
+        
+        toast.dismiss(toastId);
+        toast.success("Submitted successfully! We’ll contact you soon.");
 
         // Reset form
         setFormData({
@@ -188,6 +197,7 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onClose, className = "", 
         onClose(false);
       } catch (error) {
         console.error("Error submitting form:", error);
+        toast.error("Something went wrong. Please try again later.");
       }
     } else {
       console.log("Form has errors:", errors);
