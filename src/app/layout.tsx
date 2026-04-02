@@ -4,8 +4,7 @@ import "./globals.css";
 import Layout from "@/components/Common/Layout/Layout";
 import { helveticaNow } from "./fonts";
 import ScrollToTopButton from "@/components/Common/ScrollToTopButton";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from "@vercel/analytics/next";
+
 import FloatingSticky from "@/components/Common/FloatingSticky/FloatingSticky";
 import Script from "next/script";
 
@@ -63,8 +62,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} ${helveticaNow.variable}  antialiased`}>
         
-        <SpeedInsights />
-        <Analytics />
+    
     <Toaster
   position="top-center"
   toastOptions={{
