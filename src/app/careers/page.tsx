@@ -61,7 +61,7 @@ const Page = () => {
             <li>Information Science and Engineering</li>
             <li>Computer Science and Design</li>
             <li>Computer Science and Business System</li>
-            <li>Artificial Intelligence and Machine Learning.</li>
+            <li>Artificial Intelligence and Machine Learning</li>
           </ul>
         </div>
 
