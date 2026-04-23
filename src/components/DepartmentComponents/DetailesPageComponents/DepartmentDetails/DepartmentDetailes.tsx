@@ -67,6 +67,7 @@ import { ArrowLeftIcon } from "lucide-react";
 import Link from "next/link";
 import formatDepartmentName from "@/utils/formatDepartmentName";
 import DepartmentalStructure from "../DepartmentalStructure/DepartmentalStructure";
+import CourseOutComeAiDs from "../CourseOutComeAiDs/CourseOutComeAiDs";
 
 // ✅ REMOVED bufferToBase64 function
 
@@ -266,9 +267,10 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
       fetchHod();
     }
   }, [selectedSection, department?.name, hodApiData]);
-
+  const isAIDS = department?.name === "Artificial Intelligence & Data Science";
   // --> ADDED "Academic Syllabus & Schema" to the tabs array <--
-  const departmentMenuItems = [
+  const departmentMenuItems = isAIDS
+    ? ["Department Profile", "Course Outcomes (CO)"] : [
     "Department Profile",
     ...(department?.name === "Artificial Intelligence & Machine Learning" || department?.name === "Mechanical Engineering"
       ? ["Career Prospects"]
@@ -425,7 +427,8 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
 
             {selectedSection === "PO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
             {selectedSection === "PEO & PO-PSO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
-            {selectedSection === "Course Outcomes (CO)" && <CourseOutCome deptName={department?.name} staticData={department?.courseOutcome} />}
+            {selectedSection === "Course Outcomes (CO)" && department.name !=="Artificial Intelligence & Data Science" && <CourseOutCome deptName={department?.name} staticData={department?.courseOutcome} />}
+            {selectedSection === "Course Outcomes (CO)" && department.name ==="Artificial Intelligence & Data Science" && <CourseOutComeAiDs />}
             {selectedSection === "Facilities" && department?.facilities && <Facilities deptName={department?.name} data={department?.facilities} />}
             {selectedSection === "Student Achievements" && department?.studentAcheivemtents && (
               <StudentAchievement data={department?.studentAcheivemtents} />

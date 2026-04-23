@@ -6,10 +6,13 @@ import ec from "./ec.json";
 import is from "./is.json";
 import me from "./me.json";
 import sh from "./sh.json";
+import aiDs from "./aiDs.json";
+
 
 
 export const allDepartmentsData = [
   aiMl,
+  aiDs,
   cs,
   csb,
   csd,

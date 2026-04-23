@@ -125,7 +125,7 @@ export default async function DepartmentPage({ params }: { params: Promise<{ slu
           />
         </section>
       )}
-      {department.ethicalLearning && (
+      {department.ethicalLearning && department.name !== "Artificial Intelligence & Data Science" && (
         <section className=" lg:mb-14 ">
           <DepartmentMissionVision ethicalLearning={department.ethicalLearning} ourVision={department.ourVision} />
         </section>
@@ -133,9 +133,9 @@ export default async function DepartmentPage({ params }: { params: Promise<{ slu
       <section className="bg-[#071D2C] px-6   md:mt-0 mt-8">
         <DepartmentHeadMessage departmentName={department.name} depatmentHead={department.depatmentHead} />
       </section>
-      <section className="px-6 md:px-12 pb-10 lg:pb-0 lg:px-6 xl:px-0 lg:mt-0 ">
+     {department.name !=="Artificial Intelligence & Data Science" && <section className="px-6 md:px-12 pb-10 lg:pb-0 lg:px-6 xl:px-0 lg:mt-0 ">
         <DepartmentFacultySection departmentName={department.name} />
-      </section>
+      </section>}
       {department.ideas && (
         <section className=" mb-20 xl:mb-40  px-6 md:px-12 lg:px-6 xl:px-0 lg:mt-0 -mt-12">
           <IdeasToImpact
@@ -146,11 +146,11 @@ export default async function DepartmentPage({ params }: { params: Promise<{ slu
           />
         </section>
       )}
-      {department.toppers && (
+
         <section>
-          <SpotlightSection toppers={department.toppers} />
+          <SpotlightSection  toppers={department?.toppers?.length ? department.toppers : []}  />
         </section>
-      )}
+
       {/* <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16  pb-8">
         <HotOfThePress />
       </section> */}

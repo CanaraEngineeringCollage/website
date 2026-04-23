@@ -125,6 +125,8 @@ const Footer: FC = () => {
               { label: "Computer Science and Business System", href: "/department/computer-science-business-system" },
               { label: "Computer Science and Design", href: "/department/computer-science-design" },
               { label: "Computer Science and Design", href: "/department/computer-science-design/details" },
+             { label: "Artificial Intelligence and Data Science", href: "/department/artificial-intelligence-data-science" },
+              { label: "Artificial Intelligence and Data Science", href: "/department/artificial-intelligence-data-science/details" },
 
               { label: "Mechanical Engineering", href: "/department/mechanical-engineering" },
               { label: "Mechanical Engineering", href: "/department/mechanical-engineering/details" },

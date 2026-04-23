@@ -57,6 +57,10 @@ const studentSupport = [
 ];
 
 const departments = [
+   {
+    title: "Artificial Intelligence and Data Science",
+    link: "/department/artificial-intelligence-data-science",
+  },
   {
     title: "Artificial Intelligence and Machine Learning",
     link: "/department/artificial-intelligence-machine-learning",
