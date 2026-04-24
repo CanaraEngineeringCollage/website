@@ -58,7 +58,7 @@ const studentSupport = [
 
 const departments = [
    {
-    title: "Artificial Intelligence and Data Science",
+    title: "AI & DS (Proposed – for the upcoming academic year 2026–2027)",
     link: "/department/artificial-intelligence-data-science",
   },
   {

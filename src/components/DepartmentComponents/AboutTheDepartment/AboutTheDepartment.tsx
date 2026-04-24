@@ -20,9 +20,9 @@ const formatDepartmentName = (name: string) => {
       {part.trim()}
       {index < parts.length - 1 ? (
         <>
-         <br className="hidden lg:block" />
+          <br className={`hidden ${name !== "AI & DS (Proposed – for the upcoming academic year 2026–2027)" && "lg:block"}`} />
           {" and "}
-         
+
         </>
       ) : null}
     </React.Fragment>

@@ -125,17 +125,26 @@ export default async function DepartmentPage({ params }: { params: Promise<{ slu
           />
         </section>
       )}
-      {department.ethicalLearning && department.name !== "Artificial Intelligence & Data Science" && (
-        <section className=" lg:mb-14 ">
-          <DepartmentMissionVision ethicalLearning={department.ethicalLearning} ourVision={department.ourVision} />
-        </section>
-      )}
+      {department.ethicalLearning &&
+        department.name !== "Artificial Intelligence & Data Science" &&
+        department.name !== "AI & DS (Proposed – for the upcoming academic year 2026–2027)" && (
+          <section className=" lg:mb-14 ">
+            <DepartmentMissionVision ethicalLearning={department.ethicalLearning} ourVision={department.ourVision} />
+          </section>
+        )}
       <section className="bg-[#071D2C] px-6   md:mt-0 mt-8">
         <DepartmentHeadMessage departmentName={department.name} depatmentHead={department.depatmentHead} />
       </section>
-     {department.name !=="Artificial Intelligence & Data Science" && <section className="px-6 md:px-12 pb-10 lg:pb-0 lg:px-6 xl:px-0 lg:mt-0 ">
-        <DepartmentFacultySection departmentName={department.name} />
-      </section>}
+      <section className="px-6 md:px-12 pb-10 lg:pb-0 lg:px-6 xl:px-0 lg:mt-0 ">
+        <DepartmentFacultySection
+          departmentName={
+            department.name === "AI & DS (Proposed – for the upcoming academic year 2026–2027)" ||
+            department.name === "Artificial Intelligence & Data Science"
+              ? "Computer Science & Business System"
+              : department.name
+          }
+        />
+      </section>
       {department.ideas && (
         <section className=" mb-20 xl:mb-40  px-6 md:px-12 lg:px-6 xl:px-0 lg:mt-0 -mt-12">
           <IdeasToImpact
@@ -147,9 +156,9 @@ export default async function DepartmentPage({ params }: { params: Promise<{ slu
         </section>
       )}
 
-        <section>
-          <SpotlightSection  toppers={department?.toppers?.length ? department.toppers : []}  />
-        </section>
+      <section>
+        <SpotlightSection toppers={department?.toppers?.length ? department.toppers : []} />
+      </section>
 
       {/* <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16  pb-8">
         <HotOfThePress />
