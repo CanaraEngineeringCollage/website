@@ -60,7 +60,12 @@ export default function DepartmentFacultySection({ departmentName }: DepartmentS
     async function fetchFaculty() {
       setLoading(true);
       try {
-        const url = `${baseUrl}/faculty?department=${encodeURIComponent(departmentName)}&all=true`; // ✅ Add all=true to fetch all faculties
+        const isAIDS =
+          departmentName === "AI & DS (Proposed – for the upcoming academic year 2026–2027)" ||
+          departmentName === "Artificial Intelligence & Data Science";
+
+        const targetDept = isAIDS ? "Computer Science & Business System" : departmentName;
+        const url = `${baseUrl}/faculty?department=${encodeURIComponent(targetDept)}&all=true`; // ✅ Add all=true to fetch all faculties
         const res = await fetch(url);
         const data: CouncilMember[] = await res.json();
 

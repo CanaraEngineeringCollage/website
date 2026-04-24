@@ -65,8 +65,27 @@ const FacultyMembersSection: React.FC = () => {
   const departmentFromQuery = searchParams.get("department");
   const categoryFromQuery = searchParams.get("category");
 
-  const [selectedDepartment, setSelectedDepartment] = useState(departmentFromQuery || "Artificial Intelligence & Machine Learning");
+  const [selectedDepartment, setSelectedDepartment] = useState(departmentFromQuery || "AI & DS (Proposed – for the upcoming academic year 2026–2027)");
   const [selectedCategory, setSelectedCategory] = useState(categoryFromQuery || "faculty");
+
+  useEffect(() => {
+    if (departmentFromQuery) {
+      // Normalize department name from query params to match internal state
+      let normalized = departmentFromQuery;
+      if (
+        normalized === "Department of AI and DS (Proposed – for the upcoming academic year 2026–2027)" ||
+        normalized === "AI and DS (Proposed – for the upcoming academic year 2026–2027)"
+      ) {
+        normalized = "AI & DS (Proposed – for the upcoming academic year 2026–2027)";
+      } else if (normalized === "Artificial Intelligence and Data Science") {
+        normalized = "Artificial Intelligence & Data Science";
+      }
+      setSelectedDepartment(normalized);
+    }
+    if (categoryFromQuery) {
+      setSelectedCategory(categoryFromQuery);
+    }
+  }, [departmentFromQuery, categoryFromQuery]);
 
   const [facultyData, setFacultyData] = useState<CouncilMember[]>([]);
   const [loading, setLoading] = useState(true);
@@ -75,14 +94,16 @@ const FacultyMembersSection: React.FC = () => {
   const [selectedMember, setSelectedMember] = useState<CouncilMember | null>(null);
 
   const departments = [
+    "AI & DS (Proposed – for the upcoming academic year 2026–2027)",
+    "Artificial Intelligence & Data Science",
     "Artificial Intelligence & Machine Learning",
-  "Computer Science & Business System",
-  "Computer Science & Design",
-  "Computer Science & Engineering",
-  "Electronics & Communication Engineering",
-  "Information Science & Engineering",
-  "Mechanical Engineering",
-  "Science & Humanities",
+    "Computer Science & Business System",
+    "Computer Science & Design",
+    "Computer Science & Engineering",
+    "Electronics & Communication Engineering",
+    "Information Science & Engineering",
+    "Mechanical Engineering",
+    "Science & Humanities",
   ];
 
   const categoryMapping: { [key: string]: string } = {
@@ -110,7 +131,12 @@ const FacultyMembersSection: React.FC = () => {
         if (selectedCategory === "placement") {
           url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=Placement%20Team&all=true`;
         } else if (selectedCategory === "faculty") {
-          url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent(selectedDepartment)}&all=true`;
+          const isAIDS =
+            selectedDepartment === "AI & DS (Proposed – for the upcoming academic year 2026–2027)" ||
+            selectedDepartment === "Artificial Intelligence & Data Science";
+
+          const targetDept = isAIDS ? "Computer Science & Business System" : selectedDepartment;
+          url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent(targetDept)}&all=true`;
         } else if (selectedCategory === "admin") {
           url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=Admin&all=true`;
         } else if (selectedCategory === "general") {
@@ -174,7 +200,7 @@ const FacultyMembersSection: React.FC = () => {
                 onChange={(e) => {
                   const newCategory = reverseCategoryMapping[e.target.value];
                   setSelectedCategory(newCategory);
-                  if (newCategory === "faculty") setSelectedDepartment("Artificial Intelligence & Machine Learning");
+                  if (newCategory === "faculty") setSelectedDepartment("AI & DS (Proposed – for the upcoming academic year 2026–2027)");
                 }}
                 options={categoryOptions}
               />
@@ -202,7 +228,7 @@ const FacultyMembersSection: React.FC = () => {
                     className={`text-[20px] cursor-pointer ${selectedCategory === cat ? "font-bold text-[#2884CA]" : "text-textGray"}`}
                     onClick={() => {
                       setSelectedCategory(cat);
-                      if (cat === "faculty") setSelectedDepartment("Artificial Intelligence & Machine Learning");
+                      if (cat === "faculty") setSelectedDepartment("AI & DS (Proposed – for the upcoming academic year 2026–2027)");
                     }}
                   >
                     {categoryMapping[cat]}

@@ -126,8 +126,7 @@ export default async function DepartmentPage({ params }: { params: Promise<{ slu
         </section>
       )}
       {department.ethicalLearning &&
-        department.name !== "Artificial Intelligence & Data Science" &&
-        department.name !== "AI & DS (Proposed – for the upcoming academic year 2026–2027)" && (
+         (
           <section className=" lg:mb-14 ">
             <DepartmentMissionVision ethicalLearning={department.ethicalLearning} ourVision={department.ourVision} />
           </section>
@@ -136,14 +135,7 @@ export default async function DepartmentPage({ params }: { params: Promise<{ slu
         <DepartmentHeadMessage departmentName={department.name} depatmentHead={department.depatmentHead} />
       </section>
       <section className="px-6 md:px-12 pb-10 lg:pb-0 lg:px-6 xl:px-0 lg:mt-0 ">
-        <DepartmentFacultySection
-          departmentName={
-            department.name === "AI & DS (Proposed – for the upcoming academic year 2026–2027)" ||
-            department.name === "Artificial Intelligence & Data Science"
-              ? "Computer Science & Business System"
-              : department.name
-          }
-        />
+        <DepartmentFacultySection departmentName={department.name} />
       </section>
       {department.ideas && (
         <section className=" mb-20 xl:mb-40  px-6 md:px-12 lg:px-6 xl:px-0 lg:mt-0 -mt-12">
