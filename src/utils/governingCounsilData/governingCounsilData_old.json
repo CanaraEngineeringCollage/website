@@ -139,13 +139,24 @@
     ]
   },
   {
+    "id": 12,
+    "name": "Dr. Nagesh H R",
+    "image": "/governingCounsilImages/12.png",
+    "category": "Prospective",
+    "roles": [
+      { "title": "Member Secretary", "organization": "CEC GC" },
+      { "title": "Principal", "organization": "CEC" }
+    ]
+  },
+
+  {
     "id": 13,
     "name": "Dr. Demian Antony D Mello",
     "image": "/governingCounsilImages/13.png",
     "category": "Prospective",
     "roles": [
       { "title": "Member Secretary", "organization": "CEC GC" },
-      { "title": "Principal & Dean-Academics", "organization": "" }
+      { "title": "Vice Principal & Dean-Academics", "organization": "" }
     ]
   },
   {
