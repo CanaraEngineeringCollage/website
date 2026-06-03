@@ -125,6 +125,11 @@ const Footer: FC = () => {
               { label: "Computer Science and Business System", href: "/department/computer-science-business-system" },
               { label: "Computer Science and Design", href: "/department/computer-science-design" },
               { label: "Computer Science and Design", href: "/department/computer-science-design/details" },
+              { label: "AI and DS (Proposed – for the upcoming academic year 2026–2027)", href: "/department/artificial-intelligence-data-science" },
+              {
+                label: "AI and DS (Proposed – for the upcoming academic year 2026–2027)",
+                href: "/department/artificial-intelligence-data-science/details",
+              },
 
               { label: "Mechanical Engineering", href: "/department/mechanical-engineering" },
               { label: "Mechanical Engineering", href: "/department/mechanical-engineering/details" },
@@ -208,7 +213,12 @@ const Footer: FC = () => {
           <div>
             <h1 className="flex justify-end font-bold pb-3 cursor-pointer">Follow Us</h1>
             <div className="flex gap-2 cursor-pointer">
-              <Link aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/school/canara-engineering-college-official">
+              <Link
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/school/canara-engineering-college-official"
+              >
                 <LinkedIn />
               </Link>
               <Link aria-label="Instagram" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/cecmangalore/">
@@ -268,7 +278,12 @@ const Footer: FC = () => {
           <div className="mt-4">
             <h1 className="text-center font-bold pb-3">Follow Us</h1>
             <div className="flex gap-2 justify-center">
-              <Link aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/school/canara-engineering-college-official">
+              <Link
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/school/canara-engineering-college-official"
+              >
                 <LinkedIn />
               </Link>
               <Link aria-label="Instagram" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/cecmangalore/">

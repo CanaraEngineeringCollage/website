@@ -53,11 +53,11 @@ export default function SpotlightSection({ toppers }: { toppers: any[] }) {
     >
       {/* Top Section */}
       <div className="max-w-7xl xl:max-w-[75%] mx-auto px-6 lg:px-32 text-center py-16 md:py-10">
-        <h2 className="text-3xl md:text-[40px] leading-[1.1] lg2:text-5xl font-bold mb-4 lg:mb-4 xl:mb-4">In the Spotlight</h2>
-        <p className="text-lg lg:text-[20.34px] mb-14 text-[#FFFFFFB2]">Honoring Our Toppers for Their Dedication & Excellence!</p>
+       {toppers.length > 0 && <h2 className="text-3xl md:text-[40px] leading-[1.1] lg2:text-5xl font-bold mb-4 lg:mb-4 xl:mb-4">In the Spotlight</h2>}
+       {toppers.length > 0 && <p className="text-lg lg:text-[20.34px] mb-14 text-[#FFFFFFB2]">Honoring Our Toppers for Their Dedication & Excellence!</p>}
 
         {/* Cards Grid or Carousel */}
-        {toppers.length > 3 ? (
+        {toppers.length > 3 && toppers.length >0 ? (
           <div className="mb-20">
             <Swiper
               spaceBetween={50}
@@ -82,7 +82,7 @@ export default function SpotlightSection({ toppers }: { toppers: any[] }) {
               ))}
             </Swiper>
           </div>
-        ) : (
+        ) : ( toppers.length >0 &&
           <div
             className={`grid grid-cols-1 gap-[50px] xl:gap-10 mb-20 pb-10 ${
               toppers.length === 1
@@ -99,7 +99,7 @@ export default function SpotlightSection({ toppers }: { toppers: any[] }) {
         )}
 
         {/* CTA Section */}
-        <div className="text-center mt-28 mb-5 space-y-8">
+        <div className={`text-center ${toppers.length >0 && "mt-28 mb-5"}   space-y-8`}>
           <h2 className="md:text-[40px] text-[32px] leading-[1.1] lg2:text-5xl font-bold mb-4 max-w-2xl text-center mx-auto">
             Admissions Open for {new Date().getFullYear()}
           </h2>

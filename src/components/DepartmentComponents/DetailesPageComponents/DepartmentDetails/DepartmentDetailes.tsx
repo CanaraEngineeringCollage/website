@@ -67,6 +67,7 @@ import { ArrowLeftIcon } from "lucide-react";
 import Link from "next/link";
 import formatDepartmentName from "@/utils/formatDepartmentName";
 import DepartmentalStructure from "../DepartmentalStructure/DepartmentalStructure";
+import CourseOutComeAiDs from "../CourseOutComeAiDs/CourseOutComeAiDs";
 
 // ✅ REMOVED bufferToBase64 function
 
@@ -204,13 +205,18 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
     }
   }, [department?.name, syllabusData.length]);
 
+  const isAIDS =
+    department?.name === "Artificial Intelligence & Data Science" ||
+    department?.name === "AI & DS (Proposed – for the upcoming academic year 2026–2027)";
+
   // Fetch Faculty Data
   useEffect(() => {
     async function fetchFaculty() {
       if (!department?.name) return;
       try {
         setFacultyLoading(true);
-        const url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent(department.name)}&all=true`;
+        const targetDept = isAIDS ? "Computer Science & Business System" : department.name;
+        const url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?department=${encodeURIComponent(targetDept)}&all=true`;
         const res = await fetch(url);
         const rawData = await res.json();
         const data: FacultyMember[] = rawData.map((member: any) => ({
@@ -231,7 +237,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
     if ((selectedSection === "Faculty & Staff" || selectedSection === "Head of the Department") && facultyData.length === 0) {
       fetchFaculty();
     }
-  }, [selectedSection, department?.name, facultyData.length]);
+  }, [selectedSection, department?.name, facultyData.length, isAIDS]);
 
   // ✅ REMOVED manual sorting logic since backend handles it perfectly now!
   const teachingStaff = facultyData.filter((item) => item.type !== "Technical Staff");
@@ -249,7 +255,8 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
     async function fetchHod() {
       if (!department?.name) return;
       try {
-        const url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?hod=true&department=${encodeURIComponent(department.name)}`;
+        const targetDept = isAIDS ? "Computer Science & Business System" : department.name;
+        const url = `${process.env.NEXT_PUBLIC_API_URL}/faculty?hod=true&department=${encodeURIComponent(targetDept)}`;
         const res = await fetch(url);
         if (res.ok) {
           const result = await res.json();
@@ -265,31 +272,33 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
     if (selectedSection === "Head of the Department" && !hodApiData) {
       fetchHod();
     }
-  }, [selectedSection, department?.name, hodApiData]);
+  }, [selectedSection, department?.name, hodApiData, isAIDS]);
 
   // --> ADDED "Academic Syllabus & Schema" to the tabs array <--
-  const departmentMenuItems = [
-    "Department Profile",
-    ...(department?.name === "Artificial Intelligence & Machine Learning" || department?.name === "Mechanical Engineering"
-      ? ["Career Prospects"]
-      : []),
-    ...(department?.name !== "Mechanical Engineering" ? ["Organisation Structure"] : []),
-    "Head of the Department",
-    "Faculty & Staff",
-    "Academic Programmes",
-    ...(department?.name === "Mechanical Engineering" ? ["Departmental Structure"] : []),
-    "Academic Syllabus & Schema", // NEW TAB
-    ...(department?.name === "Science & Humanities" ? ["PO"] : ["PEO & PO-PSO"]),
-    "Course Outcomes (CO)",
-    "Facilities",
-    "Student Achievements",
-    ...(department?.name !== "Information Science & Engineering" ? ["Research & Product Development"] : []),
-    ...(department?.name === "Information Science & Engineering" ? ["Publications"] : []),
-    ...(department?.name === "Mechanical Engineering" ? ["Faculty Excellence  and publication"] : []),
-    "Magazines & Newsletters",
-    "Events",
-    "Gallery",
-  ];
+  const departmentMenuItems = isAIDS
+    ? ["Department Profile", "Faculty & Staff", "Course Outcomes (CO)"]
+    : [
+        "Department Profile",
+        ...(department?.name === "Artificial Intelligence & Machine Learning" || department?.name === "Mechanical Engineering"
+          ? ["Career Prospects"]
+          : []),
+        ...(department?.name !== "Mechanical Engineering" ? ["Organisation Structure"] : []),
+        "Head of the Department",
+        "Faculty & Staff",
+        "Academic Programmes",
+        ...(department?.name === "Mechanical Engineering" ? ["Departmental Structure"] : []),
+        "Academic Syllabus & Schema", // NEW TAB
+        ...(department?.name === "Science & Humanities" ? ["PO"] : ["PEO & PO-PSO"]),
+        "Course Outcomes (CO)",
+        "Facilities",
+        "Student Achievements",
+        ...(department?.name !== "Information Science & Engineering" ? ["Research & Product Development"] : []),
+        ...(department?.name === "Information Science & Engineering" ? ["Publications"] : []),
+        ...(department?.name === "Mechanical Engineering" ? ["Faculty Excellence  and publication"] : []),
+        "Magazines & Newsletters",
+        "Events",
+        "Gallery",
+      ];
 
   const hodData = React.useMemo(() => {
     if (!department?.depatmentHead) return undefined;
@@ -348,7 +357,9 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
                       {formatDepartmentName(part)}
 
                       {/* 2. Check if this part is a separator. If yes, add the responsive break */}
-                      {/(\s+&\s+|\s+and\s+)/i.test(part) && <br className="hidden lg:block" />}
+                      {/(\s+&\s+|\s+and\s+)/i.test(part) && (
+                        <br className={`hidden ${!isAIDS && "lg:block"}`} />
+                      )}
                     </React.Fragment>
                   ))}
               </h2>
@@ -425,7 +436,10 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
 
             {selectedSection === "PO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
             {selectedSection === "PEO & PO-PSO" && department?.peo && <Peo data={department.peo} deptName={department?.name} />}
-            {selectedSection === "Course Outcomes (CO)" && <CourseOutCome deptName={department?.name} staticData={department?.courseOutcome} />}
+            {selectedSection === "Course Outcomes (CO)" && !isAIDS && (
+              <CourseOutCome deptName={department?.name} staticData={department?.courseOutcome} />
+            )}
+            {selectedSection === "Course Outcomes (CO)" && isAIDS && <CourseOutComeAiDs />}
             {selectedSection === "Facilities" && department?.facilities && <Facilities deptName={department?.name} data={department?.facilities} />}
             {selectedSection === "Student Achievements" && department?.studentAcheivemtents && (
               <StudentAchievement data={department?.studentAcheivemtents} />

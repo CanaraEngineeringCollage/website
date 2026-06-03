@@ -125,11 +125,12 @@ export default async function DepartmentPage({ params }: { params: Promise<{ slu
           />
         </section>
       )}
-      {department.ethicalLearning && (
-        <section className=" lg:mb-14 ">
-          <DepartmentMissionVision ethicalLearning={department.ethicalLearning} ourVision={department.ourVision} />
-        </section>
-      )}
+      {department.ethicalLearning &&
+         (
+          <section className=" lg:mb-14 ">
+            <DepartmentMissionVision ethicalLearning={department.ethicalLearning} ourVision={department.ourVision} />
+          </section>
+        )}
       <section className="bg-[#071D2C] px-6   md:mt-0 mt-8">
         <DepartmentHeadMessage departmentName={department.name} depatmentHead={department.depatmentHead} />
       </section>
@@ -146,11 +147,11 @@ export default async function DepartmentPage({ params }: { params: Promise<{ slu
           />
         </section>
       )}
-      {department.toppers && (
-        <section>
-          <SpotlightSection toppers={department.toppers} />
-        </section>
-      )}
+
+      <section>
+        <SpotlightSection toppers={department?.toppers?.length ? department.toppers : []} />
+      </section>
+
       {/* <section className="px-6 bg-[#E5E5EA] md:px-12 lg:pl-16  pb-8">
         <HotOfThePress />
       </section> */}
