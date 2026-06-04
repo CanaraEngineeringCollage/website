@@ -40,11 +40,11 @@ const programData = [
    {
     category: "Bachelor of Engineering in",
     title: "Artificial Intelligence and Data Science",
-    src: "/engineeringProgrammImages/aids.webp",
+    src: "/engineeringProgrammImages/aidsLtest.webp",
     content: (
       <CardContent
         description={{
-          src: "/engineeringProgrammImages/aids.webp",
+          src: "/engineeringProgrammImages/aidsLtest.webp",
           subtitle1: "Overview of the Department ",
           subDescription1:
             "The Department of Artificial Intelligence and Data Science (AIDS) stands out for its comprehensive and structured approach to skill enrichment and enhancement programs. It offers and executes a unique model ensuring students gain hands-on experience in data science, artificial intelligence, and data analytics, data engineering, and visualization techniques. The department also encourages students to pursue self-learning through various platforms enabling them to stay updated with evolving technologies and industry trends. By integrating industry internships, placement training, real-time data-driven projects, and research initiatives, the department ensures students are industry-ready, enhancing their analytical capabilities, employability, and competitiveness in the data-driven job market.",
