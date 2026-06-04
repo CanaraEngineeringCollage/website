@@ -67,6 +67,7 @@ export default async function Home() {
   // Then in your component:
   const data = await getHomePageImages();
 
+  
   return (
     <>
       <HeroSection images={data} />
