@@ -95,6 +95,18 @@ const departments = [
   },
 ];
 
+const pgDepartments = [
+  {
+    title: "MBA",
+    link: "/department/mba",
+  },
+  {
+    title: "MCA",
+    link: "/department/mca",
+  },
+  
+];
+
 const curriculum = [
   // {
   //   title: "Academic Overview",
@@ -225,4 +237,5 @@ export {
   innovation, //
   campusBeats, //
   alumni,
+  pgDepartments,
 };

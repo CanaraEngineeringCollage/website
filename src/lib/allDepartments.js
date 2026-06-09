@@ -7,9 +7,8 @@ import is from "./is.json";
 import me from "./me.json";
 import sh from "./sh.json";
 import aiDs from "./aiDs.json";
-
-
-
+import mca from "./mca.json";
+import mba from "./mba.json";
 export const allDepartmentsData = [
   aiMl,
   aiDs,
@@ -20,4 +19,6 @@ export const allDepartmentsData = [
   is,
   me,
   sh,
+  mca,
+  mba,
 ];

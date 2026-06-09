@@ -30,7 +30,7 @@ const Academic = ({
       <div className="text-textGray text-[17px]">
 
         {data.title && (
-          <h1 className="text-[20px] font-bold mb-4">{data.title}</h1>
+          <h1 className="text-textGray text-2xl font-semibold mb-2">{data.title}</h1>
         )}
 
         {Array.isArray(data.des) ? (

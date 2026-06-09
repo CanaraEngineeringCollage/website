@@ -37,6 +37,40 @@ export default function ExplorePrograms() {
 
 // 👇 These are the actual program cards
 const programData = [
+  {
+    category: "Masters of",
+    title: "Business Administration",
+    src: "/engineeringProgrammImages/mba.webp",
+    content: (
+      <CardContent
+        description={{
+          src: "/engineeringProgrammImages/mba.webp",
+          subtitle1: "Overview of the Department ",
+          subDescription1:
+            "The MBA in FinTech & Data Analytics at Canara Engineering College is a two-year postgraduate management programme structured around modern business environments. Offered in collaboration with QSpiders Eduversity, the programme equips students with a dual foundation that covers FinTech domains including banking, investment banking, insurance, and branch operations, alongside data analytics tools such as SQL, Power BI, and Advanced Excel. Practical learning, expert mentorship, and structured internship access are built into the curriculum from the outset, ensuring that students develop the professional readiness that financial services employers demand. Graduates are positioned for roles in financial analysis, business intelligence, FinTech consultancy, and analytics-driven management across a range of industry sectors.",
+         
+          url: "/department/mba",
+        }}
+      />
+    ),
+  },
+  {
+    category: "Masters of",
+    title: "Computer Applications",
+    src: "/engineeringProgrammImages/mca.webp",
+    content: (
+      <CardContent
+        description={{
+          src: "/engineeringProgrammImages/mca.webp",
+          subtitle1: "Overview of the Department ",
+          subDescription1:
+            "Canara Engineering College offers a two-year Master of Computer Applications (MCA) programme specialising in Full Stack Development with Artificial Intelligence and Machine Learning, delivered in academic collaboration with QSpiders Eduversity. The programme is structured to equip postgraduate students with advanced competencies in software development, AI-driven systems, cloud technologies, and modern application frameworks through a curriculum that integrates academic depth with industry-oriented training. Students benefit from hands-on project development, expert mentorship from senior industry professionals, and structured placement support embedded across all semesters of the programme. The MCA in Full Stack Development with AI & ML prepares graduates for roles in software engineering, artificial intelligence, and cloud computing within the evolving technology sector.",
+         
+          url: "/department/mca",
+        }}
+      />
+    ),
+  },
    {
     category: "Bachelor of Engineering in",
     title: "Artificial Intelligence and Data Science",

@@ -18,6 +18,7 @@ import {
   innovation,
   campusBeats,
   alumni,
+  pgDepartments,
 } from "@/utils/pagesData/navigation";
 import {
   College,
@@ -116,6 +117,17 @@ export default function Sidebar({ sidebar, openSidebar }: { sidebar: boolean; op
                   data={{
                     title: "Departments",
                     links: departments,
+                  }}
+                  setVisible={setVisible}
+                  openSidebar={openSidebar}
+                />
+              ),
+
+              pgDepartments: (
+                <SubMenu
+                  data={{
+                    title: "PG Departments",
+                    links: pgDepartments,
                   }}
                   setVisible={setVisible}
                   openSidebar={openSidebar}
@@ -413,6 +425,16 @@ function MainMenu({
                   <Typography className="text-sm text-gray-500">Departments</Typography>
                   {/* <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" /> */}
                 </div>{" "}
+              </div>
+              <div
+                onClick={() => {
+                  setVisible("pgDepartments");
+                }}
+                className="flex gap-2 items-center"
+              >
+                <div className="flex items-center gap-2">
+                  <Typography className="text-sm text-gray-500">PG Departments</Typography>
+                </div>
               </div>
               <div
                 onClick={() => {

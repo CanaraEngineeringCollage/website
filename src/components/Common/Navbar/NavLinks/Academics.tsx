@@ -15,23 +15,31 @@ export default function Academics() {
   const searchParams = useSearchParams();
   const tab = searchParams.get("tab");
 
+  // Separate PG (MCA/MBA) and UG Departments to avoid duplicates
+  const pgDepartments = departments.filter((dept) =>
+    dept.title.toLowerCase().includes("mca") || dept.title.toLowerCase().includes("mba")
+  );
+  const ugDepartments = departments.filter((dept) =>
+    !dept.title.toLowerCase().includes("mca") && !dept.title.toLowerCase().includes("mba")
+  );
+
   return (
     <Menu open={isMenuOpen} handler={setIsMenuOpen} offset={{ mainAxis: 20 }} placement="bottom" allowHover={true}>
       <MenuHandler>
         <Typography as="div" role="button" variant="small" className="text-base xl:text-base">
           <ListItem
-            placeholder={"Life At Canara"} // ✅ Added placeholder for better UX
-            role="button" // ✅ Added role for accessibility: required for aria-* to be valid
-            aria-expanded={isMenuOpen} // ✅ Added to indicate the toggle state
-            aria-controls="about-menu" // ✅ Optional: add an ID to the target menu section if applicable
+            placeholder={"Life At Canara"}
+            role="button"
+            aria-expanded={isMenuOpen}
+            aria-controls="about-menu"
             aria-label="Academics"
-            aria-haspopup="true" // ✅ Indicates that it opens a submenu
-            tabIndex={0} // ✅ Ensures the element is keyboard focusable
+            aria-haspopup="true"
+            tabIndex={0}
             className={`flex items-center text-base cursor-pointer xl:text-base whitespace-nowrap py-1.5 ${
               isMenuOpen ? "opacity-100" : "opacity-80"
             } gap-2  text-webGreen1 transition-colors ease-in-out duration-300 hover:text-webGreen1
             bg-transparent   font-semibold hover:bg-transparent ${
-              pathname.includes("/department")|| pathname.includes("/examination-records") || pathname === "/research" 
+              pathname.includes("/department") || pathname.includes("/examination-records") || pathname === "/research"
                 ? `border-[#005580] border-b-2 text-[#005580]`
                 : " text-[#2884CA] hover:text-[#005580]"
             } shadow-none rounded-none outline-none focus:ring-0 focus:outline-none`}
@@ -52,34 +60,10 @@ export default function Academics() {
           className="w-full  bg-white shadow-md  rounded-xl flex justify-center gap-8 lg:py-8 xl:p-8 
         border-none outline-none hover:border-none"
         >
-          <div className="grid grid-cols-1 max-w-[75%] sm:grid-cols-2 lg:grid-cols-12  lg:gap-0 xl:gap-8 mx-16 w-full">
-            {/* Column 1 */}
-            {/* <div className="flex lg:col-span-2  gap-4 pr-4 border-r border-gray-300 ">
-              <div className="flex items-start">
-                <Notpad />
-              </div>
-              <div className="flex flex-col gap-2">
-                <span className="font-bold text-lg">Curriculums</span>
-                <ul className="list-none text-gray-500 leading-10 cursor-pointer">
-                  <Link href="/academic-overview">
-                    <li
-                      className={`${
-                        pathname.includes("/academic-overview") ? `text-primary font-bold` : "text-gray-500"
-                      } hover:text-primary `}
-                    >
-                      Academic Overview
-                    </li>
-                  </Link> */}
-            {/* <Link href="/programs">
-                    <li className={`${pathname.includes("/programs") ? `text-primary font-bold` : "text-gray-500"} hover:text-primary `}>Programs</li>
-                  </Link> */}
-            {/* </ul>
-              </div>
-            </div> */}
-
-            {/* Column 2 */}
-            {/* Column 2 — Departments */}
-            <div className="flex lg:col-span-4 gap-4 pr-4 border-r border-gray-300">
+          <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-12  lg:gap-0 xl:gap-8 mx-16 w-full">
+            
+            {/* Column 1 — Main Departments (UG) */}
+            <div className="flex lg:col-span-3 gap-4 pr-4 border-r border-gray-300">
               <div className="flex lg:ml-3 xl:ml-0 items-start">
                 <Book />
               </div>
@@ -87,7 +71,7 @@ export default function Academics() {
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-lg">Departments</span>
                 <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
-                  {departments.map((dept, index) => (
+                  {ugDepartments.map((dept, index) => (
                     <li key={index}>
                       <Link
                         href={dept.link}
@@ -101,10 +85,54 @@ export default function Academics() {
               </div>
             </div>
 
-            {/* Column 3 — Examinations & Records */}
+            {/* Column 2 — PG Departments (MCA & MBA) */}
+            <div className="flex lg:col-span-3 gap-4 pr-4 border-r border-gray-300">
+              <div className="flex lg:ml-3 xl:ml-0 items-start">
+                <Book /> {/* You can swap this with another icon if you prefer */}
+              </div>
 
-            {/* Column 4 */}
-            <div className="flex lg:col-span-4 border-r border-gray-300  gap-4 ">
+              <div className="flex flex-col gap-2">
+                <span className="font-bold text-lg">PG Departments</span>
+                <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
+                  {/* If MCA/MBA exist in your navigation.js array, map them. Otherwise, fall back to hardcoded links */}
+                  {pgDepartments.length > 0 ? (
+                    pgDepartments.map((dept, index) => (
+                      <li key={index}>
+                        <Link
+                          href={dept.link}
+                          className={`${pathname.includes(dept.link) ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
+                        >
+                          {formatDepartmentName(dept.title)}
+                        </Link>
+                      </li>
+                    ))
+                  ) : (
+                    <>
+                     
+                      <li>
+                        <Link
+                          href="/department/mba"
+                          className={`${pathname.includes("/department/mba") ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
+                        >
+                          MBA
+                        </Link>
+                      </li>
+                       <li>
+                        <Link
+                          href="/department/mca"
+                          className={`${pathname.includes("/department/mca") ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
+                        >
+                          MCA
+                        </Link>
+                      </li>
+                    </>
+                  )}
+                </ul>
+              </div>
+            </div>
+
+            {/* Column 3 — Learning Hub */}
+            <div className="flex lg:col-span-3 border-r border-gray-300  gap-4 ">
               <div className="flex lg:ml-3 xl:ml-0 items-start">
                 <Learning />
               </div>
@@ -115,13 +143,11 @@ export default function Academics() {
                     <Link
                       href="https://digital.canaraengineering.in/"
                       target="_blank" rel="noopener noreferrer"
-
                       className={`${pathname.includes("/learning-hub") ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
                     >
                       Resources
                     </Link>
                   </li>
-
                   <li>
                     <Link href="/research" className={`${pathname === "/research" ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}>
                       Research at CEC
@@ -130,13 +156,15 @@ export default function Academics() {
                 </ul>
               </div>
             </div>
-            <div className="flex lg:col-span-4 gap-4 pr-4 ">
+
+            {/* Column 4 — Examinations & Records */}
+            <div className="flex lg:col-span-3 gap-4 pr-4 ">
               <div className="flex lg:ml-3 xl:ml-0 items-start">
                 <Examination />
               </div>
 
               <div className="flex flex-col gap-2">
-                <span className="font-bold text-lg">Examinations & Student Records</span>
+                <span className="font-bold text-lg">Examinations & Records</span>
                 <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
                   <li>
                     <Link
@@ -147,7 +175,6 @@ export default function Academics() {
                       Marks & Attendance
                     </Link>
                   </li>
-
                   <li>
                     <Link
                       href="/examination-records?tab=circulars"
@@ -156,9 +183,7 @@ export default function Academics() {
                       Circulars
                     </Link>
                   </li>
-
                   <li>
-                    {" "}
                     <Link
                       href="https://www.canaraengineering.in/s-info"
                       target="_blank" rel="noopener noreferrer"
@@ -167,9 +192,7 @@ export default function Academics() {
                       Student Information
                     </Link>
                   </li>
-
                   <li>
-                    {" "}
                     <Link
                       href="https://cecstudent.canaraengineering.in"
                       target="_blank" rel="noopener noreferrer"
@@ -178,21 +201,10 @@ export default function Academics() {
                       Student Dashboard
                     </Link>
                   </li>
-
-                  {/* Uncomment if you add Timetables later */}
-                  {/* <li>
-        <Link
-          href="/examination-records?tab=tt"
-          className={`${
-            tab === "tt" ? "text-primary font-bold" : "text-gray-500"
-          } hover:text-primary`}
-        >
-          Timetables
-        </Link>
-      </li> */}
                 </ul>
               </div>
             </div>
+
           </div>
         </div>
       </MenuList>

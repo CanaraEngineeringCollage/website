@@ -131,12 +131,18 @@ export default async function DepartmentPage({ params }: { params: Promise<{ slu
             <DepartmentMissionVision ethicalLearning={department.ethicalLearning} ourVision={department.ourVision} />
           </section>
         )}
-      <section className="bg-[#071D2C] px-6   md:mt-0 mt-8">
-        <DepartmentHeadMessage departmentName={department.name} depatmentHead={department.depatmentHead} />
-      </section>
-      <section className="px-6 md:px-12 pb-10 lg:pb-0 lg:px-6 xl:px-0 lg:mt-0 ">
-        <DepartmentFacultySection departmentName={department.name} />
-      </section>
+      {!["mca", "mba"].includes(slug) && (
+        <>
+          {department.depatmentHead && (
+            <section className="bg-[#071D2C] px-6   md:mt-0 mt-8">
+              <DepartmentHeadMessage departmentName={department.name} depatmentHead={department.depatmentHead} />
+            </section>
+          )}
+          <section className="px-6 md:px-12 pb-10 lg:pb-0 lg:px-6 xl:px-0 lg:mt-0 ">
+            <DepartmentFacultySection departmentName={department.name} />
+          </section>
+        </>
+      )}
       {department.ideas && (
         <section className=" mb-20 xl:mb-40  px-6 md:px-12 lg:px-6 xl:px-0 lg:mt-0 -mt-12">
           <IdeasToImpact

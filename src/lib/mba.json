@@ -1,0 +1,70 @@
+{
+  "name": "MBA in FinTech & Data Analytics",
+  "slug": "mba",
+  "departmentAboutDescription": "The MBA in FinTech & Data Analytics provides advanced management education with a focus on emerging business technologies and analytical decision-making. The programme examines how digital transformation influences financial services, customer engagement, business operations, and organisational strategy. Students study management concepts with specialised areas that support data interpretation, financial analysis, and technology-enabled business processes. Delivered in collaboration with QSpiders Eduversity, the programme is built on an academic framework that aligns management learning with evolving industry expectations.",
+  "departmentAboutDescriptionArray": [
+    "The MBA in FinTech & Data Analytics provides advanced management education with a focus on emerging business technologies and analytical decision-making. The programme examines how digital transformation influences financial services, customer engagement, business operations, and organisational strategy. Students study management concepts with specialised areas that support data interpretation, financial analysis, and technology-enabled business processes. Delivered in collaboration with QSpiders Eduversity, the programme is built on an academic framework that aligns management learning with evolving industry expectations."
+  ],
+ "bannerUrl": "/departmentImages/aids.webp",
+  "toppers": [],
+  "description": [
+    "The MBA in FinTech & Data Analytics is a specialised postgraduate programme that covers finance, technology, and business management. As organisations adopt digital platforms, automated processes, and data-centric strategies, the demand for professionals who understand both business operations and technological applications continues to increase. The programme introduces students to modern financial services, analytical frameworks, and organisational processes while strengthening managerial competence across key business functions.",
+    "Canara Engineering College offers the programme in collaboration with QSpiders Eduversity, bringing together postgraduate management studies and specialised domain exposure. The curriculum incorporates hands-on training that helps in applying classroom concepts to business scenarios, equipping students with an understanding of how financial institutions, enterprises, and technology-enabled organisations operate. The programme is designed to support the development of a broad skill set relevant to evolving business and financial sectors."
+  ],
+  "academicsProgram": {
+    "title": "Academic Syllabus",
+    "des": "The curriculum combines specialised financial subjects, analytical technologies, and professional skills to provide a comprehensive understanding of modern business environments. Students develop competencies relevant to finance, analytics, operations, and organisational management.",
+    "academicAdditionalSkills": [
+      {
+        "title": "FinTech",
+        "imageUrl": "",
+        "points": [
+          "Banking",
+          "Asset Business",
+          "Liability Business",
+          "Insurance & Investments",
+          "Investment Banking",
+          "Branch Operations"
+        ]
+      },
+      {
+        "title": "Data Analytics",
+        "imageUrl": "",
+        "points": [
+          "SQL",
+          "Power BI",
+          "Advanced Excel"
+        ]
+      },
+      {
+        "title": "Soft Skills",
+        "imageUrl": "",
+        "points": [
+          "Communication Skills",
+          "Customer Orientation Skills",
+          "Grooming & Presentation"
+        ]
+      }
+    ]
+  },
+  "careerProspects": [
+    {
+      "title": "Career Prospects",
+      "marketOverview": "Businesses across sectors increasingly depend on data interpretation, financial analysis, and technology-enabled decision-making to remain competitive. Graduates can pursue opportunities in financial institutions, consulting firms, corporate enterprises, and emerging FinTech organisations where analytical and managerial capabilities are highly valued.",
+      "careerOpportunities": "",
+      "roleSections": [
+        {
+          "heading": "Roles",
+          "roles": [
+            "Financial Analyst",
+            "Business Analyst",
+            "Data Analyst",
+            "Banking Analyst",
+            "FinTech Consultant",
+            "Investment Analyst"
+          ]
+        }
+      ]
+    }
+  ]
+}

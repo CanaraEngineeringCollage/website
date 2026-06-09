@@ -275,8 +275,13 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
   }, [selectedSection, department?.name, hodApiData, isAIDS]);
 
   // --> ADDED "Academic Syllabus & Schema" to the tabs array <--
+  const isMCAorMBA = ["mca", "mba"].includes(department?.slug || "");
+   const isMCA = ["mca"].includes(department?.slug || "");
+
   const departmentMenuItems = isAIDS
     ? ["Department Profile", "Faculty & Staff", "Course Outcomes (CO)"]
+    : isMCAorMBA
+    ? ["Department Profile", "Career Prospects", "Academic Syllabus"]
     : [
         "Department Profile",
         ...(department?.name === "Artificial Intelligence & Machine Learning" || department?.name === "Mechanical Engineering"
@@ -344,7 +349,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
             </div>
 
             {/* Text Headings - Restricted to 60% width */}
-            <div className="mt-12 lg:w-[60%]">
+            <div className="mt-12 lg:w-[90%]">
               <h1 className="text-[#333] text-xl lg:text-[32px] mb-1 font-medium">Department of</h1>
               <h2 className="text-[30px] lg:text-[56px] font-bold leading-[1.15] text-[#1D1D1F]">
                 {department?.name
@@ -358,7 +363,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
 
                       {/* 2. Check if this part is a separator. If yes, add the responsive break */}
                       {/(\s+&\s+|\s+and\s+)/i.test(part) && (
-                        <br className={`hidden ${!isAIDS && "lg:block"}`} />
+                        <br className={`hidden ${!isAIDS && !isMCA && "lg:block"}`} />
                       )}
                     </React.Fragment>
                   ))}
@@ -422,10 +427,10 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
             )}
 
             {/* Standard Academic Programmes Logic */}
-            {selectedSection === "Academic Programmes" && department?.academicsProgram && (
+            {(selectedSection === "Academic Programmes" || selectedSection === "Academic Syllabus") && department?.academicsProgram && (
               <Academic academicsProgramEce={department.academicsProgramEce} data={department.academicsProgram} />
             )}
-            {selectedSection === "Academic Programmes" && department?.academicsProgramEce && (
+            {(selectedSection === "Academic Programmes" || selectedSection === "Academic Syllabus") && department?.academicsProgramEce && (
               <Academic academicsProgramEce={department.academicsProgramEce} data={department.academicsProgram} />
             )}
 

@@ -1,0 +1,60 @@
+{
+  "name": "MCA in Full Stack Development with Artificial Intelligence and Machine Learning",
+  "slug": "mca",
+  "departmentAboutDescription": "The Master of Computer Applications programme in Full Stack Development with Artificial Intelligence and Machine Learning is a two-year postgraduate programme offered by Canara Engineering College in collaboration with QSpiders Eduversity. It is designed to develop advanced competencies in software engineering, AI-driven systems, and modern application development. The programme follows an industry-integrated curriculum that progresses from foundational computer science concepts to specialised areas such as machine learning, generative AI, and cloud technologies. Students emerge from the programme with the technical depth and professional competency required to compete effectively in the contemporary technology industry.",
+  "departmentAboutDescriptionArray": [
+    "The Master of Computer Applications programme in Full Stack Development with Artificial Intelligence and Machine Learning is a two-year postgraduate programme offered by Canara Engineering College in collaboration with QSpiders Eduversity. It is designed to develop advanced competencies in software engineering, AI-driven systems, and modern application development. The programme follows an industry-integrated curriculum that progresses from foundational computer science concepts to specialised areas such as machine learning, generative AI, and cloud technologies. Students emerge from the programme with the technical depth and professional competency required to compete effectively in the contemporary technology industry."
+  ],
+  "bannerUrl": "/departmentImages/aids.webp",
+  "toppers": [],
+  "description": [
+    "The MCA in Full Stack Development with AI & ML offered by Canara Engineering College addresses the evolving requirements of the software and digital technology sectors. The programme provides advanced education in application development, programming, database technologies, and intelligent computing systems, while maintaining a strong foundation in computer applications. Students engage with contemporary development frameworks to create scalable, data-driven, and user-focused software solutions.",
+    "The MCA programme, offered in association with QSpiders Eduversity, brings together postgraduate education and industry-oriented training. Technical instruction is delivered by senior industry architects and technology professionals who bring current development practices, tools, and methodologies into the classroom, providing students with experiences that reflect professional working environments. With organisations increasingly prioritising candidates who possess both strong technical foundations and hands-on experience, the programme supports the development of capabilities that are highly relevant to modern technology careers."
+  ],
+  "academicsProgram": {
+    "title": "Academic Syllabus",
+    "des": "Designed to meet high academic standards and professional application requirements, the MCA syllabus encompasses a carefully structured sequence of technical and professional learning areas. Each aspect of the curriculum has been selected to reflect current industry demands and the competencies expected of software and AI professionals entering the technology sector today.",
+    "academicAdditionalSkills": [
+      {
+        "title": "Technical / Core Areas",
+        "imageUrl": "",
+        "points": [
+          "Web Application Development",
+          "Prompt Engineering",
+          "Predictive Intelligence Systems using Machine Learning",
+          "Generative AI",
+          "Data Structures & Algorithms Foundations"
+        ]
+      },
+      {
+        "title": "Soft Skills & Professional Development",
+        "imageUrl": "",
+        "points": [
+          "Communication Skills",
+          "Customer Orientation Skills",
+          "Grooming & Presentation Skills"
+        ]
+      }
+    ]
+  },
+  "careerProspects": [
+    {
+      "title": "Career Prospects",
+      "marketOverview": "The demand for skilled technology professionals with expertise in software development and artificial intelligence continues to expand as digital transformation accelerates across industries and geographies. Full-stack developers, AI engineers, and cloud practitioners are among the most actively recruited profiles in the technology sector, with opportunities available in diverse organisational environments and industry verticals.",
+      "careerOpportunities": "Graduates of the MCA programme enter the workforce equipped with the technical skills and practical experience to pursue roles of significant professional scope, with a foundation that supports continued specialisation and career advancement over time.",
+      "roleSections": [
+        {
+          "heading": "Roles",
+          "roles": [
+            "Full Stack Developer",
+            "Software Developer",
+            "AI Engineer",
+            "ML Engineer",
+            "Cloud Developer",
+            "Backend Developer"
+          ]
+        }
+      ]
+    }
+  ]
+}
