@@ -164,7 +164,7 @@ export default function Academics() {
               </div>
 
               <div className="flex flex-col gap-2">
-                <span className="font-bold text-lg">Examinations & Records</span>
+                <span className="font-bold text-lg">Examinations & Student Records</span>
                 <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
                   <li>
                     <Link

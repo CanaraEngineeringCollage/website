@@ -130,6 +130,13 @@ const Footer: FC = () => {
                 label: "AI and DS (Proposed – for the upcoming academic year 2026–2027)",
                 href: "/department/artificial-intelligence-data-science/details",
               },
+              
+              { label: "MBA", href: "/department/mba" },
+              { label: "MBA", href: "/department/mba/details" },
+
+              { label: "MCA", href: "/department/mca" },
+              { label: "MCA", href: "/department/mca/details" },
+
 
               { label: "Mechanical Engineering", href: "/department/mechanical-engineering" },
               { label: "Mechanical Engineering", href: "/department/mechanical-engineering/details" },
