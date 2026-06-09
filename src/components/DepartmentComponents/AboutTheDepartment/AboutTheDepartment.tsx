@@ -42,7 +42,11 @@ const AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepartm
   font-bold leading-[1.2] text-[#1D1D1F] 
   md:text-[40px] text-3xl lg2:text-5xl xl:text-6xl `}
             >
-              Department of {formatDepartmentName(departmentName)}
+              {slug === "mba" || slug === "mca" ? (
+                formatDepartmentName(departmentName)
+              ) : (
+                <>Department of {formatDepartmentName(departmentName)}</>
+              )}
             </h1>
           </div>
           <div className="hidden lg:block ">

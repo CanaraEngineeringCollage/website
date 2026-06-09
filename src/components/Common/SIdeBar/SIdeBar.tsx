@@ -115,7 +115,7 @@ export default function Sidebar({ sidebar, openSidebar }: { sidebar: boolean; op
               departments: (
                 <SubMenu
                   data={{
-                    title: "Departments",
+                    title: "UG Programs",
                     links: departments,
                   }}
                   setVisible={setVisible}
@@ -126,7 +126,7 @@ export default function Sidebar({ sidebar, openSidebar }: { sidebar: boolean; op
               pgDepartments: (
                 <SubMenu
                   data={{
-                    title: "PG Departments",
+                    title: "PG Programs",
                     links: pgDepartments,
                   }}
                   setVisible={setVisible}
@@ -433,7 +433,7 @@ function MainMenu({
                 className="flex gap-2 items-center"
               >
                 <div className="flex items-center gap-2">
-                  <Typography className="text-sm text-gray-500">PG Departments</Typography>
+                  <Typography className="text-sm text-gray-500">PG Programs</Typography>
                 </div>
               </div>
               <div

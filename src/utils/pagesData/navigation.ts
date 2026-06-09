@@ -97,11 +97,11 @@ const departments = [
 
 const pgDepartments = [
   {
-    title: "MBA",
+    title: "MBA (FinTech & Data Science)",
     link: "/department/mba",
   },
   {
-    title: "MCA",
+    title: "MCA (Full Stack Development, AI & ML)",
     link: "/department/mca",
   },
   

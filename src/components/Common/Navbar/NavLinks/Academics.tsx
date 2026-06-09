@@ -69,7 +69,7 @@ export default function Academics() {
               </div>
 
               <div className="flex flex-col gap-2">
-                <span className="font-bold text-lg">Departments</span>
+                <span className="font-bold text-lg">UG Programs</span>
                 <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
                   {ugDepartments.map((dept, index) => (
                     <li key={index}>
@@ -85,14 +85,14 @@ export default function Academics() {
               </div>
             </div>
 
-            {/* Column 2 — PG Departments (MCA & MBA) */}
+            {/* Column 2 — PG Programs (MCA & MBA) */}
             <div className="flex lg:col-span-3 gap-4 pr-4 border-r border-gray-300">
               <div className="flex lg:ml-3 xl:ml-0 items-start">
                 <Book /> {/* You can swap this with another icon if you prefer */}
               </div>
 
               <div className="flex flex-col gap-2">
-                <span className="font-bold text-lg">PG Departments</span>
+                <span className="font-bold text-lg">PG Programs</span>
                 <ul className="list-none text-gray-500 leading-normal my-2 space-y-4 cursor-pointer">
                   {/* If MCA/MBA exist in your navigation.js array, map them. Otherwise, fall back to hardcoded links */}
                   {pgDepartments.length > 0 ? (
@@ -114,7 +114,7 @@ export default function Academics() {
                           href="/department/mba"
                           className={`${pathname.includes("/department/mba") ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
                         >
-                          MBA
+                          MBA (FinTech & Data Science)
                         </Link>
                       </li>
                        <li>
@@ -122,7 +122,7 @@ export default function Academics() {
                           href="/department/mca"
                           className={`${pathname.includes("/department/mca") ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
                         >
-                          MCA
+                          MCA (Full Stack Development, AI & ML)
                         </Link>
                       </li>
                     </>

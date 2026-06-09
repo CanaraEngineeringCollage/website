@@ -349,7 +349,7 @@ const DepartmentDetailes = ({ departmentName }: DepartmentSectionProps) => {
             </div>
 
             {/* Text Headings - Restricted to 60% width */}
-            <div className="mt-12 lg:w-[90%]">
+            <div className="mt-12 lg:w-[70%]">
               <h1 className="text-[#333] text-xl lg:text-[32px] mb-1 font-medium">Department of</h1>
               <h2 className="text-[30px] lg:text-[56px] font-bold leading-[1.15] text-[#1D1D1F]">
                 {department?.name
