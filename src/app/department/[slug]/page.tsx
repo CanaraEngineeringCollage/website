@@ -165,7 +165,7 @@ export default async function DepartmentPage({ params }: { params: Promise<{ slu
               { title: <>Frontend & Backend <br className="hidden md:block" /> Technologies</>,icon:"/departmentImages/mcaMbaSvgs/frontendBackend.svg", },
               { title: <>Cloud & Database <br className="hidden md:block" /> Technologies</>,icon:"/departmentImages/mcaMbaSvgs/cloud.svg", },
               { title: <>Java <br className="hidden md:block" /> Programming</>,icon:"/departmentImages/mcaMbaSvgs/java.svg", },
-              { title: <>Real-Time Application <br className="hidden md:block" /> Development</>,icon:"/departmentImages/mcaMbaSvgs/realTime.svg", }
+              { title: <>Real-Time Application <br className="hidden md:block" /> Development</>,icon:"/departmentImages/mcaMbaSvgs/realtime.svg", }
             ]}
           />
         </section>
