@@ -101,7 +101,7 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
       <section className={`bg-white  relative transition-all duration-500 ease-in-out `}>
         <nav className="  py-0 max-w-[95%] mx-auto">
           {/* For large and Medium-sized Screen */}
-          <div className="flex items-center justify-between relative py-7 lg:py-2 xl:py-3 container-padding">
+          <div className={`flex items-center justify-between relative ${isMcaOrMba ? "py-4" :"py-7"}  lg:py-2 xl:py-3 container-padding container-padding`}>
             <div className="lg:flex hidden  flex-row items-center  relative">
               <Link href={"/"}>
                 <Image
@@ -147,14 +147,14 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
               </Link>
               {isMcaOrMba && (
                 <>
-                  <div className="h-6 w-px bg-gray-300 mx-1"></div>
+                  <div className="h-12 w-px bg-gray-300 mx-1"></div>
                   <Image
                     src={"/svgs/logos/QE SVG.svg"}
-                    width={100}
-                    height={60}
+                    width={200}
+                  height={60}
                     priority
                     alt="QSpiders logo"
-                    className="object-cover h-5 w-32"
+                    className="object-cover h-8 w-32"
                   />
                 </>
               )}
