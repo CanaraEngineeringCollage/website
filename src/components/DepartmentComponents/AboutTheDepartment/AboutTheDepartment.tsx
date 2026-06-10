@@ -65,7 +65,8 @@ const AboutTheDepartment: React.FC<AboutTheDepartmentProps> = ({ aboutTheDepartm
           height={1000}
           src={imageUrl}
           alt="department"
-          className={`w-full h-[300px] sm:h-[400px] md:h-[590px] object-cover  ${css}`} // Adjust 30% based on image
+          // You can tweak the 15% value below to adjust exactly where the top aligns!
+          className={`w-full h-[300px] sm:h-[400px] md:h-[590px] object-cover ${(slug === "mba" || slug === "mca") ? "lg:object-[center_15%]" : ""} ${css}`} // Adjust 30% based on image
         />
       </div>
 
