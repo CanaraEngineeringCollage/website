@@ -34,7 +34,7 @@ const ProgrammeHighlights = ({
             <div className="mb-4 text-primary">
               {item.icon ? (
                 typeof item.icon === "string" ? (
-                  <img src={item.icon} alt={item.title} className="w-20 h-20 object-contain" />
+                  <img src={item.icon} alt={item.title} className="md:w-20 md:h-20 w-16 h-16 object-contain" />
                 ) : (
                   item.icon
                 )

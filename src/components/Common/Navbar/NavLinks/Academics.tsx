@@ -122,7 +122,7 @@ export default function Academics() {
                           href="/department/mca"
                           className={`${pathname.includes("/department/mca") ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
                         >
-                          MCA (Full Stack Development, AI and ML)
+                          MCA (Full Stack Development, {pathname.includes("/department/mca") && <br className="hidden lg:block" />} AI and ML)
                         </Link>
                       </li>
                     </>

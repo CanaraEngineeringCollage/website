@@ -36,7 +36,7 @@ const KeyLearningAreas = ({
             <div className="flex-shrink-0 text-primary">
               {item.icon ? (
                 typeof item.icon === "string" ? (
-                  <img src={item.icon} alt="icon" className="w-20 h-20 object-contain" />
+                  <img src={item.icon} alt="icon" className="md:w-20 md:h-20 w-14 h-14 object-contain" />
                 ) : (
                   item.icon
                 )

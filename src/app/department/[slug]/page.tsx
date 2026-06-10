@@ -120,7 +120,7 @@ export default async function DepartmentPage({ params }: { params: Promise<{ slu
 
       {slug === "mca" && (
         <>
-        <section className="lg:mb-14 mt-10 md:mt-14">
+        <section className="lg:mb-14  md:mt-10">
           <ProgrammeHighlights
             title="Programme Highlights"
             description="The programme integrates academic learning with industry-oriented technical training to strengthen employability and professional competence across technology domains."
@@ -155,7 +155,7 @@ export default async function DepartmentPage({ params }: { params: Promise<{ slu
           image="/departmentImages/mbaMca/highlight.jpg"
         />
 
-        <section className="lg:mb-14 mt-10 md:mt-14">
+        <section className="lg:mb-14  md:mt-14">
           <KeyLearningAreas
             title="Key Learning Areas"
             description="The curriculum covers essential computing disciplines while introducing students to emerging technology applications and professional competencies. Learning activities are designed to strengthen analytical thinking, technical execution, and workplace readiness."
@@ -174,7 +174,7 @@ export default async function DepartmentPage({ params }: { params: Promise<{ slu
 
       {slug === "mba" && (
         <>
-        <section className="lg:mb-14 mt-10 md:mt-14">
+        <section className="lg:mb-14  md:mt-10">
           <ProgrammeHighlights
             title="Programme Highlights"
             description="The MBA programme at Canara Engineering College combines core management education with specialised exposure to financial technology and business analytics domains."
@@ -207,7 +207,7 @@ export default async function DepartmentPage({ params }: { params: Promise<{ slu
           image="/departmentImages/mbaMca/highlight.jpg"
         />
 
-        <section className="lg:mb-14 mt-10 md:mt-14">
+        <section className="lg:mb-14  md:mt-14">
           <KeyLearningAreas
             title="Key Learning Areas"
             description="Students are introduced to essential financial functions, analytical tools, and business technologies that support operational efficiency and informed decision-making. The curriculum also incorporates professional competencies that contribute to workplace effectiveness."
