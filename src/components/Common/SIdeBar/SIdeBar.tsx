@@ -422,7 +422,7 @@ function MainMenu({
               >
                 <div className="flex items-center gap-2">
                   {/* <Book /> */}
-                  <Typography className="text-sm text-gray-500">Departments</Typography>
+                  <Typography className="text-sm text-gray-500">UG Departments</Typography>
                   {/* <IoIosArrowDown className="w-4 h-4 text-gray-500 -rotate-90 transition-all ease-in-out duration-300 lg:hidden" /> */}
                 </div>{" "}
               </div>

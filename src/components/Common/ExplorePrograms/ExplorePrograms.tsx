@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Card, Carousel } from "@/components/ui/apple-cards-carousel";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,16 +22,50 @@ interface CardContentProps {
 }
 
 export default function ExplorePrograms() {
-  const cards = programData.map((card, index) => <Card key={card.title} card={card} index={index} />);
+  const [selectedCategory, setSelectedCategory] = useState<"UG" | "PG">("UG");
+
+  const filteredPrograms = programData.filter((card) => {
+    if (selectedCategory === "UG") {
+      return card.category.startsWith("Bachelor");
+    } else {
+      return card.category.startsWith("Masters");
+    }
+  });
+
+  const cards = filteredPrograms.map((card, index) => (
+    <Card key={card.title} card={card} index={index} />
+  ));
 
   return (
-    <div className="w-full  h-full  text-[#1D1D1F] ">
-      <div className="xl:max-w-[75%] max-w-7xl mx-auto">
-        <h2 className="    xl:ps-0   lg:ms-0 text-center  mx-auto text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-[#1D1D1F]">
+    <div className="w-full h-full text-[#1D1D1F]">
+      <div className="xl:max-w-[75%] max-w-7xl mx-auto px-5 lg:px-6 flex flex-col items-center sm:flex-row justify-between gap-4">
+        <h2 className="text-3xl md:text-[40px] lg2:text-5xl xl:text-6xl font-bold text-[#1D1D1F] text-center sm:text-left">
           Explore our Programmes
         </h2>
+        <div className="flex bg-white shadow-sm border border-[#F3F3F3] rounded-full p-1 gap-1 w-fit shrink-0">
+          <button
+            onClick={() => setSelectedCategory("UG")}
+            className={`px-5 py-2 rounded-full font-bold text-sm transition-all duration-300 flex items-center justify-center cursor-pointer select-none ${
+              selectedCategory === "UG"
+                ? "bg-[#2884ca] text-white shadow-sm"
+                : "text-[#2884ca] hover:bg-gray-50"
+            }`}
+          >
+            UG Programmes
+          </button>
+          <button
+            onClick={() => setSelectedCategory("PG")}
+            className={`px-5 py-2 rounded-full font-bold text-sm transition-all duration-300 flex items-center justify-center cursor-pointer select-none ${
+              selectedCategory === "PG"
+                ? "bg-[#2884ca] text-white shadow-sm"
+                : "text-[#2884ca] hover:bg-gray-50"
+            }`}
+          >
+            PG Programmes
+          </button>
+        </div>
       </div>
-      <Carousel items={cards} />
+      <Carousel key={selectedCategory} items={cards} />
     </div>
   );
 }

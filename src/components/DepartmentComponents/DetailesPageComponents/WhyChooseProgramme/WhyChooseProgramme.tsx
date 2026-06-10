@@ -12,8 +12,8 @@ const WhyChooseProgramme = ({
   image,
 }: WhyChooseProgrammeProps) => {
   return (
-    <section className="bg-[#071D2C] py-16 lg:py-24 px-6 md:px-12 lg:px-24 w-full">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+    <section className="bg-[#071D2C] py-16 lg:py-24 px-6 w-full">
+      <div className="max-w-7xl  xl:max-w-[75%] mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
         {/* Left Side: Content */}
         <div className="w-full lg:w-1/2 text-white">
           <h2 className="text-3xl md:text-4xl lg:text-[45px] font-bold mb-10 leading-[1.2]">

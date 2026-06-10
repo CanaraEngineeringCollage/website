@@ -125,7 +125,7 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
                   height={80}
                     priority
                     alt="QSpiders logo"
-                    className="object-cover h-16 w-[530px]"
+                    className="object-cover h-16 w-[530px] xl:w-[350px]"
                   />
                 </>
               )}
@@ -154,7 +154,7 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
                   height={60}
                     priority
                     alt="QSpiders logo"
-                    className="object-cover h-8 w-32"
+                    className="object-cover h-8 w-42"
                   />
                 </>
               )}
