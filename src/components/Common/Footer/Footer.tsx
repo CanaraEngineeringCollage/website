@@ -131,11 +131,11 @@ const Footer: FC = () => {
                 href: "/department/artificial-intelligence-data-science/details",
               },
               
-              { label: "MBA (FinTech & Data Science)", href: "/department/mba" },
-              { label: "MBA (FinTech & Data Science)", href: "/department/mba/details" },
+              { label: "MBA (FinTech and Data Science)", href: "/department/mba" },
+              { label: "MBA (FinTech and Data Science)", href: "/department/mba/details" },
 
-              { label: "MCA (Full Stack Development, AI & ML)", href: "/department/mca" },
-              { label: "MCA (Full Stack Development, AI & ML)", href: "/department/mca/details" },
+              { label: "MCA (Full Stack Development, AI and ML)", href: "/department/mca" },
+              { label: "MCA (Full Stack Development, AI and ML)", href: "/department/mca/details" },
 
 
               { label: "Mechanical Engineering", href: "/department/mechanical-engineering" },

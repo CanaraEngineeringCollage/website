@@ -114,7 +114,7 @@ export default function Academics() {
                           href="/department/mba"
                           className={`${pathname.includes("/department/mba") ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
                         >
-                          MBA (FinTech & Data Science)
+                          MBA (FinTech and Data Science)
                         </Link>
                       </li>
                        <li>
@@ -122,7 +122,7 @@ export default function Academics() {
                           href="/department/mca"
                           className={`${pathname.includes("/department/mca") ? "text-primary font-bold" : "text-gray-500"} hover:text-primary`}
                         >
-                          MCA (Full Stack Development, AI & ML)
+                          MCA (Full Stack Development, AI and ML)
                         </Link>
                       </li>
                     </>
