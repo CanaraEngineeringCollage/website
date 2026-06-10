@@ -23,7 +23,7 @@ const ProgrammeHighlights = ({
         {title}
       </h2>
       {description && (
-        <p className="text-textGray text-center text-[20px] max-w-3xl mx-auto mb-16 leading-relaxed">
+        <p className="text-textGray text-center text-[20px] max-w-3xl mx-auto mb-16 ">
           {description}
         </p>
       )}

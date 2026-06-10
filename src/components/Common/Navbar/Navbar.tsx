@@ -1,12 +1,14 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import DropDown from "./DropDown/DropDown";
 import NavbarItems from "./NavbarItems/NavbarItems";
 import { useEffect, useState } from "react";
 function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: boolean }) {
   const router = useRouter();
+  const pathname = usePathname();
+  const isMcaOrMba = pathname?.includes("/department/mca") || pathname?.includes("/department/mba");
   // const [isScrolled, setIsScrolled] = useState(false);
 
   // function handleScroll() {
@@ -114,8 +116,51 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
                   className="object-contain cursor-pointer h-16 w-auto"
                 />
               </Link>
+              {isMcaOrMba && (
+                <>
+                  <div className="h-16 w-px bg-gray-300 mx-2"></div>
+                  <Image
+                    src={"/svgs/logos/QE SVG.svg"}
+                     width={300}
+                  height={80}
+                    priority
+                    alt="QSpiders logo"
+                    className="object-cover h-16 w-56"
+                  />
+                </>
+              )}
             </div>
-            <div className="flex lg:hidden flex-row items-center  relative">
+            {isMcaOrMba &&
+               <div className="flex lg:hidden flex-row items-center  relative">
+              <Link href={"/"}>
+                <Image
+                  src={"/svgs/logos/logo.svg"}
+                  width={200}
+                  height={60}
+                  priority
+                  alt="logo"
+                  onClick={() => {
+                    router.push("/");
+                  }}
+                  className="object-contain cursor-pointer h-8 w-32"
+                />
+              </Link>
+              {isMcaOrMba && (
+                <>
+                  <div className="h-6 w-px bg-gray-300 mx-1"></div>
+                  <Image
+                    src={"/svgs/logos/QE SVG.svg"}
+                    width={100}
+                    height={60}
+                    priority
+                    alt="QSpiders logo"
+                    className="object-cover h-5 w-32"
+                  />
+                </>
+              )}
+            </div>
+            }
+           { !isMcaOrMba && <div className="flex lg:hidden flex-row items-center gap-2 sm:gap-3 relative">
               <Link href={"/"}>
                 <Image
                   src={"/svgs/logos/logo.svg"}
@@ -129,7 +174,7 @@ function Navbar({ openSidebar, sidebar }: { openSidebar: () => void; sidebar: bo
                   className="object-contain cursor-pointer h-12 w-auto"
                 />
               </Link>
-            </div>
+            </div>}
             {/* Navbar Items */}
             <div>
               <NavbarItems />

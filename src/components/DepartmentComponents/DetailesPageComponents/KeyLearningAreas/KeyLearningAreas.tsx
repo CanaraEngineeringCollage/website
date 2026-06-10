@@ -47,7 +47,7 @@ const KeyLearningAreas = ({
                 </div>
               )}
             </div>
-            <h3 className="text-lg md:text-[20px] font-medium text-[#1D1D1F] leading-snug">
+            <h3 className="text-lg md:text-[20px] font-medium text-[#1D1D1F] ">
               {item.title}
             </h3>
           </div>
