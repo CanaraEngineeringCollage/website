@@ -25,7 +25,7 @@ type Card = {
   src: string;
   title: string;
   category: string;
-  content: React.ReactNode;
+  content?: React.ReactNode;
 };
 
 export const CarouselContext = createContext<{
@@ -208,7 +208,9 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
   }, [open, handleClose]); // Add handleClose to dependency array
 
   const handleOpen = () => {
-    setOpen(true);
+    if (card.content) {
+      setOpen(true);
+    }
   };
 
   // Animation variants for the card
@@ -295,9 +297,23 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
               <MotionP
                 variants={contentVariants}
                 layoutId={layout ? `title-${card.title}` : undefined}
-                className="text-2xl md:text-5xl font-semibold text-[#1D1D1F] mt-4"
+                className="text-2xl md:text-5xl font-semibold text-[#1D1D1F] mt-4 flex flex-col gap-2"
               >
-                {card.title}
+                {typeof card.title === "string" && card.title.includes("\n") ? (
+                  card.title.split("\n").map((line, idx) => {
+                    if (line.trim().startsWith("•")) {
+                      return (
+                        <span key={idx} className="flex items-start gap-2 text-left">
+                          <span className="shrink-0">•</span>
+                          <span>{line.replace(/^•\s*/, "")}</span>
+                        </span>
+                      );
+                    }
+                    return <span key={idx} className="text-left">{line}</span>;
+                  })
+                ) : (
+                  card.title
+                )}
               </MotionP>
               <motion.div variants={contentVariants} className="py-10">
                 {card.content}
@@ -308,10 +324,13 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
       </AnimatePresence>
       <MotionButton
         layoutId={layout ? `card-${card.title}` : undefined}
-        onClick={handleOpen}
-        className="rounded-3xl bg-white h-[30rem] w-80 md:h-[30rem] xl:h-[45rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10"
-        whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
-        whileTap={{ scale: 0.98 }}
+        onClick={card.content ? handleOpen : undefined}
+        className={cn(
+          "rounded-3xl bg-white h-[30rem] w-80 md:h-[30rem] xl:h-[45rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10",
+          !card.content && "cursor-default"
+        )}
+        whileHover={card.content ? { scale: 1.02, transition: { duration: 0.2 } } : undefined}
+        whileTap={card.content ? { scale: 0.98 } : undefined}
       >
         <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
         <div className="relative z-40 p-8">
@@ -323,20 +342,36 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
           </MotionP>
           <MotionP
             layoutId={layout ? `title-${card.title}` : undefined}
-            className="text-white text-[17px] md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"
+            className="text-white text-[17px] md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2 flex flex-col gap-2"
           >
-            {card.title}
+            {typeof card.title === "string" && card.title.includes("\n") ? (
+              card.title.split("\n").map((line, idx) => {
+                if (line.trim().startsWith("•")) {
+                  return (
+                    <span key={idx} className="flex items-start gap-2 text-left">
+                      <span className="shrink-0">•</span>
+                      <span>{line.replace(/^•\s*/, "")}</span>
+                    </span>
+                  );
+                }
+                return <span key={idx} className="text-left">{line}</span>;
+              })
+            ) : (
+              card.title
+            )}
           </MotionP>
         </div>
         <BlurImage src={card.src} alt={card.title} fill className="object-cover absolute z-10 inset-0" />
-        <div className="absolute bottom-4 right-4 z-40">
-          <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M18.25 0C28.1911 0 36.25 8.05887 36.25 18C36.25 27.9411 28.1911 36 18.25 36C8.30887 36 0.25 27.9411 0.25 18C0.25 8.05887 8.30887 0 18.25 0ZM18.25 10.125C17.892 10.125 17.5481 10.2673 17.2949 10.5205C17.042 10.7736 16.9005 11.1168 16.9004 11.4746V16.6504H11.7246C11.3668 16.6505 11.0236 16.792 10.7705 17.0449C10.5173 17.2981 10.375 17.642 10.375 18C10.375 18.358 10.5173 18.7019 10.7705 18.9551C11.0236 19.208 11.3668 19.3495 11.7246 19.3496H16.9004V24.5254C16.9005 24.8832 17.042 25.2264 17.2949 25.4795C17.5481 25.7327 17.892 25.875 18.25 25.875C18.608 25.875 18.9519 25.7327 19.2051 25.4795C19.458 25.2264 19.5995 24.8832 19.5996 24.5254V19.3496H24.7754C25.1332 19.3495 25.4764 19.208 25.7295 18.9551C25.9827 18.7019 26.125 18.358 26.125 18C26.125 17.642 25.9827 17.2981 25.7295 17.0449C25.4764 16.792 25.1332 16.6505 24.7754 16.6504V16.6592H19.5996V11.4746C19.5995 11.1168 19.458 10.7736 19.2051 10.5205C18.9519 10.2673 18.608 10.125 18.25 10.125Z"
-              fill="#D9D9D9"
-            />
-          </svg>
-        </div>
+        {card.content && (
+          <div className="absolute bottom-4 right-4 z-40">
+            <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.25 0C28.1911 0 36.25 8.05887 36.25 18C36.25 27.9411 28.1911 36 18.25 36C8.30887 36 0.25 27.9411 0.25 18C0.25 8.05887 8.30887 0 18.25 0ZM18.25 10.125C17.892 10.125 17.5481 10.2673 17.2949 10.5205C17.042 10.7736 16.9005 11.1168 16.9004 11.4746V16.6504H11.7246C11.3668 16.6505 11.0236 16.792 10.7705 17.0449C10.5173 17.2981 10.375 17.642 10.375 18C10.375 18.358 10.5173 18.7019 10.7705 18.9551C11.0236 19.208 11.3668 19.3495 11.7246 19.3496H16.9004V24.5254C16.9005 24.8832 17.042 25.2264 17.2949 25.4795C17.5481 25.7327 17.892 25.875 18.25 25.875C18.608 25.875 18.9519 25.7327 19.2051 25.4795C19.458 25.2264 19.5995 24.8832 19.5996 24.5254V19.3496H24.7754C25.1332 19.3495 25.4764 19.208 25.7295 18.9551C25.9827 18.7019 26.125 18.358 26.125 18C26.125 17.642 25.9827 17.2981 25.7295 17.0449C25.4764 16.792 25.1332 16.6505 24.7754 16.6504V16.6592H19.5996V11.4746C19.5995 11.1168 19.458 10.7736 19.2051 10.5205C18.9519 10.2673 18.608 10.125 18.25 10.125Z"
+                fill="#D9D9D9"
+              />
+            </svg>
+          </div>
+        )}
       </MotionButton>
     </>
   );
