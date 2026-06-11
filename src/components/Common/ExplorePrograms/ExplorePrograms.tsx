@@ -74,7 +74,7 @@ export default function ExplorePrograms() {
 // 👇 These are the actual program cards
 const programData = [
   {
-    category: "Masters of Business Administration in",
+    category: "Master of Business Administration in",
     title: "FinTech and Data Analytics",
     src: "/engineeringProgrammImages/mba.webp",
     content: (
@@ -91,7 +91,7 @@ const programData = [
     ),
   },
   {
-    category: "Masters of Computer Applications in",
+    category: "Master of Computer Applications in",
     title: "Full Stack Development with AI and ML",
     src: "/engineeringProgrammImages/mca.webp",
     content: (
