@@ -38,7 +38,11 @@ const AdmissionProcedureText = () => {
         <h2 className="text-2xl font-semibold mt-8 mb-3">
           Programmes Offered
         </h2>
-        <ul className="list-disc pl-4 text-textGray leading-relaxed text-lg lg:text-[20px] space-y-2">
+
+        <p className="font-semibold text-lg lg:text-[20px] mt-4 mb-2">
+          UG Programmes
+        </p>
+        <ul className="list-disc pl-4 text-textGray leading-relaxed text-lg lg:text-[20px] space-y-2 mb-6">
           <li>
             BE in Computer Science and Engineering – Intake 180 (Year of
             Commencement 2001)
@@ -56,8 +60,8 @@ const AdmissionProcedureText = () => {
             2021)
           </li>
           <li>
-            BE in Computer Science and Business System – Intake 60 (Year of
-            Commencement 2021)
+            BE in Artificial Intelligence and Data Science – Intake 60 (Year of
+            Commencement 2026)
           </li>
           <li>
             BE in Electronics and Communication Engineering – Intake 120 (Year
@@ -66,6 +70,27 @@ const AdmissionProcedureText = () => {
           <li>
             BE in Mechanical Engineering – Intake 30 (Year of Commencement 2004)
           </li>
+        </ul>
+
+        <p className="font-semibold text-lg lg:text-[20px] mt-4 mb-2">
+          PG Programmes
+        </p>
+        <ul className="list-disc pl-4 text-textGray leading-relaxed text-lg lg:text-[20px] space-y-2 mb-6">
+          <li>
+            MBA in Fintech and Data Analytics - Intake 60 ( Year of Commencement 2026)
+          </li>
+          <li>
+            MCA in Full-Stack Development with AI&ML - Intake 60 ( Year of Commencement 2026)
+          </li>
+        </ul>
+
+        <p className="font-semibold text-lg lg:text-[20px] mt-4 mb-2">
+          Ph.D Programmes
+        </p>
+        <ul className="list-disc pl-4 text-textGray leading-relaxed text-lg lg:text-[20px] space-y-2 mb-6">
+          <li>Computer Science and Engineering</li>
+          <li>Electronics and Communication Engineering</li>
+          <li>Chemistry</li>
         </ul>
 
         <h2 className="text-2xl font-semibold mt-8 mb-3">

@@ -28,7 +28,7 @@ export default function ExplorePrograms() {
     if (selectedCategory === "UG") {
       return card.category.startsWith("Bachelor");
     } else {
-      return card.category.startsWith("Masters");
+      return card.category.startsWith("Masters") || card.category.startsWith("Doctor");
     }
   });
 
@@ -106,6 +106,11 @@ const programData = [
         }}
       />
     ),
+  },
+  {
+    category: "Doctor of Philosophy ",
+    title: "Ph.D. in CSE/ ECE/ Chemistry",
+    src: "/engineeringProgrammImages/phd.webp",
   },
    {
     category: "Bachelor of Engineering in",
