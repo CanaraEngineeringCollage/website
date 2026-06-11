@@ -28,7 +28,7 @@ export default function ExplorePrograms() {
     if (selectedCategory === "UG") {
       return card.category.startsWith("Bachelor");
     } else {
-      return card.category.startsWith("Masters") || card.category.startsWith("Doctor");
+      return card.category.startsWith("Master") || card.category.startsWith("Doctor");
     }
   });
 
