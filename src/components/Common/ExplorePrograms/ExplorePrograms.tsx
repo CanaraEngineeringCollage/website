@@ -35,6 +35,7 @@ export default function ExplorePrograms() {
   const cards = filteredPrograms.map((card, index) => (
     <Card key={card.title} card={card} index={index} />
   ));
+  
 
   return (
     <div className="w-full h-full text-[#1D1D1F]">
