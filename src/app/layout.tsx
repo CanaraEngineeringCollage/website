@@ -113,7 +113,7 @@ export default function RootLayout({
       
       {/* 2. Add the components at the end of the HTML tag */}
       <GoogleTagManager gtmId="GTM-543CDW9N" />
-      <GoogleAnalytics gaId="G-YJ09NRG5NX" />
+      <GoogleAnalytics gaId="G-34BZWHYWL7" />
     </html>
   );
 }
