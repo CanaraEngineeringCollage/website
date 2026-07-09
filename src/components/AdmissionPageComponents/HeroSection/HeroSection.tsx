@@ -1,8 +1,6 @@
 "use client";
 import Image from 'next/image'
 import React, { useState } from 'react'
-import bgImage from "../../../../public/admissionPageImages/hero.png"
-import bgImageMobile from "../../../../public/admissionPageImages/heroMobile.png"
 import ContactFormModal from '@/components/Modal/Modal';
 
 const HeroSection = () => {
@@ -11,13 +9,13 @@ const HeroSection = () => {
     <section className="relative w-full h-[55vh] md:h-[90vh] lg:h-[700px] xl:h-screen overflow-hidden">
       {/* Background Image */}
       <Image
-        src={bgImage}
+        src={"/admissionPageImages/hero.png"}
         alt="Hero Background"
         className="absolute inset-0 w-full h-full hidden md:block object-cover lg:object-center md:object-[80%_center] object-[80%_center] "
         priority
       />
          <Image
-        src={bgImageMobile}
+        src={"/admissionPageImages/heroMobile.png"}
         alt="Hero Background"
         className="absolute inset-0 w-full h-full md:hidden object-cover object-cover ] "
         priority
