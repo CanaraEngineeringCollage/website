@@ -1,23 +1,31 @@
 "use client";
-import Image from 'next/image'
-import React, { useState } from 'react'
+import Image from 'next/image';
+import React, { useState } from 'react';
 import ContactFormModal from '@/components/Modal/Modal';
 
 const HeroSection = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false)
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  
   return (
     <section className="relative w-full h-[55vh] md:h-[90vh] lg:h-[700px] xl:h-screen overflow-hidden">
-      {/* Background Image */}
+      
+      {/* Background Image - Desktop */}
       <Image
-        src={"/admissionPageImages/hero.png"}
+        src="/admissionPageImages/hero.png"
         alt="Hero Background"
-        className="absolute inset-0 w-full h-full hidden md:block object-cover lg:object-center md:object-[80%_center] object-[80%_center] "
+        fill
+        unoptimized
+        className="hidden md:block object-cover lg:object-center md:object-[80%_center] object-[80%_center]"
         priority
       />
-         <Image
-        src={"/admissionPageImages/heroMobile.png"}
+      
+      {/* Background Image - Mobile */}
+      <Image
+        src="/admissionPageImages/heroMobile.png"
         alt="Hero Background"
-        className="absolute inset-0 w-full h-full md:hidden object-cover object-cover ] "
+        fill
+        unoptimized
+        className="md:hidden object-cover"
         priority
       />
 
@@ -27,15 +35,21 @@ const HeroSection = () => {
           Where Learning <br /> Meets Innovation
         </h2>
         <p className="text-[#CDE5FF] text-[16px] pe-10 leading-[1.3] md:text-[31px] mt-2">
-          Begin your engineering   journey with a  <br className='md:hidden'/> foundation-built curriculum.
+          Begin your engineering  journey with a  <br className='md:hidden'/> foundation-built curriculum.
         </p>
-        <button aria-label='Apply Now' onClick={()=>setIsOpen(true)} className="mt-6 text-lg bg-white text-[#2884CA] font-bold px-10 py-2 lg:py-4 cursor-pointer rounded-full  ">
+        <button 
+          aria-label='Apply Now' 
+          onClick={() => setIsOpen(true)} 
+          className="mt-6 text-lg bg-white text-[#2884CA] font-bold px-10 py-2 lg:py-4 cursor-pointer rounded-full"
+        >
           Apply Now
         </button>
       </div>
+      
       <ContactFormModal isOpen={isOpen} onClose={setIsOpen} />
+      
     </section>
-  )
+  );
 }
 
-export default HeroSection
+export default HeroSection;
